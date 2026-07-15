@@ -1,0 +1,1089 @@
+{
+	"batchIndex": 90,
+	"files": [
+		{
+			"path": "packages/host-service/src/trpc/router/workspace-creation/shared/worktree-paths.ts",
+			"language": "typescript",
+			"sizeLines": 58,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/host-service/src/trpc/router/workspace-creation/utils/ai-branch-name.ts",
+			"language": "typescript",
+			"sizeLines": 64,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/host-service/src/trpc/router/workspace-creation/utils/ai-workspace-names.ts",
+			"language": "typescript",
+			"sizeLines": 220,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/host-service/src/trpc/router/workspace-creation/utils/branch-prefix.ts",
+			"language": "typescript",
+			"sizeLines": 102,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/host-service/src/trpc/router/workspace-creation/utils/exec-gh.ts",
+			"language": "typescript",
+			"sizeLines": 40,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/host-service/src/trpc/router/workspace-creation/utils/list-branch-names.ts",
+			"language": "typescript",
+			"sizeLines": 36,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/host-service/src/trpc/router/workspace-creation/utils/pr-branch-materialize.ts",
+			"language": "typescript",
+			"sizeLines": 457,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/host-service/src/trpc/router/workspace-creation/utils/pr-branch-name.ts",
+			"language": "typescript",
+			"sizeLines": 35,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/host-service/src/trpc/router/workspace-creation/utils/resolve-start-point.ts",
+			"language": "typescript",
+			"sizeLines": 63,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/host-service/src/trpc/router/workspace-creation/utils/sanitize-branch.ts",
+			"language": "typescript",
+			"sizeLines": 41,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/host-service/src/trpc/router/workspace-creation/workspace-creation.ts",
+			"language": "typescript",
+			"sizeLines": 16,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/host-service/src/trpc/router/workspace/index.ts",
+			"language": "typescript",
+			"sizeLines": 1,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/host-service/src/trpc/router/workspace/workspace.ts",
+			"language": "typescript",
+			"sizeLines": 165,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/host-service/src/trpc/router/workspaces/index.ts",
+			"language": "typescript",
+			"sizeLines": 1,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/host-service/src/trpc/router/workspaces/workspaces.ts",
+			"language": "typescript",
+			"sizeLines": 1161,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/host-service/src/tunnel/connect.ts",
+			"language": "typescript",
+			"sizeLines": 40,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/host-service/src/tunnel/index.ts",
+			"language": "typescript",
+			"sizeLines": 2,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/host-service/src/tunnel/tunnel-client.ts",
+			"language": "typescript",
+			"sizeLines": 419,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/host-service/src/tunnel/types.ts",
+			"language": "typescript",
+			"sizeLines": 11,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/host-service/src/types.ts",
+			"language": "typescript",
+			"sizeLines": 45,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/host-service/src/workspaces/local-workspace-store.ts",
+			"language": "typescript",
+			"sizeLines": 292,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/host-service/test/helpers/cloud-fakes.ts",
+			"language": "typescript",
+			"sizeLines": 76,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/host-service/test/helpers/createTestHost.ts",
+			"language": "typescript",
+			"sizeLines": 191,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/host-service/test/helpers/fakes.ts",
+			"language": "typescript",
+			"sizeLines": 108,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/host-service/test/helpers/git-fixture.ts",
+			"language": "typescript",
+			"sizeLines": 53,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/host-service/test/helpers/scenarios.ts",
+			"language": "typescript",
+			"sizeLines": 130,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/host-service/test/helpers/seed.ts",
+			"language": "typescript",
+			"sizeLines": 159,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/host-service/test/integration/pull-requests-scaling.bench.ts",
+			"language": "typescript",
+			"sizeLines": 249,
+			"fileCategory": "code"
+		}
+	],
+	"batchImportData": {
+		"packages/host-service/src/trpc/router/workspace-creation/shared/worktree-paths.ts": [],
+		"packages/host-service/src/trpc/router/workspace-creation/utils/ai-branch-name.ts": [
+			"packages/host-service/src/trpc/router/workspace-creation/utils/sanitize-branch.ts"
+		],
+		"packages/host-service/src/trpc/router/workspace-creation/utils/ai-workspace-names.ts": [
+			"packages/host-service/src/trpc/router/workspace-creation/utils/list-branch-names.ts",
+			"packages/host-service/src/trpc/router/workspace-creation/utils/sanitize-branch.ts",
+			"packages/host-service/src/types.ts",
+			"packages/host-service/src/workspaces/local-workspace-store.ts"
+		],
+		"packages/host-service/src/trpc/router/workspace-creation/utils/branch-prefix.ts": [
+			"packages/host-service/src/db/schema.ts",
+			"packages/host-service/src/trpc/router/workspace-creation/shared/local-project.ts",
+			"packages/host-service/src/trpc/router/workspace-creation/utils/exec-gh.ts",
+			"packages/host-service/src/types.ts"
+		],
+		"packages/host-service/src/trpc/router/workspace-creation/utils/exec-gh.ts": [
+			"packages/host-service/src/terminal/clean-shell-env.ts"
+		],
+		"packages/host-service/src/trpc/router/workspace-creation/utils/list-branch-names.ts": [
+			"packages/host-service/src/types.ts"
+		],
+		"packages/host-service/src/trpc/router/workspace-creation/utils/pr-branch-materialize.ts": [
+			"packages/host-service/src/trpc/router/workspace-creation/shared/types.ts"
+		],
+		"packages/host-service/src/trpc/router/workspace-creation/utils/pr-branch-name.ts": [],
+		"packages/host-service/src/trpc/router/workspace-creation/utils/resolve-start-point.ts": [
+			"packages/host-service/src/runtime/git/refs.ts"
+		],
+		"packages/host-service/src/trpc/router/workspace-creation/utils/sanitize-branch.ts": [],
+		"packages/host-service/src/trpc/router/workspace-creation/workspace-creation.ts": [
+			"packages/host-service/src/trpc/index.ts",
+			"packages/host-service/src/trpc/router/workspace-creation/procedures/index.ts"
+		],
+		"packages/host-service/src/trpc/router/workspace/index.ts": [],
+		"packages/host-service/src/trpc/router/workspace/workspace.ts": [
+			"packages/host-service/src/db/schema.ts",
+			"packages/host-service/src/runtime/workspace-cloud-sync.ts",
+			"packages/host-service/src/trpc/index.ts",
+			"packages/host-service/src/trpc/router/workspace-cleanup/index.ts",
+			"packages/host-service/src/workspaces/local-workspace-store.ts"
+		],
+		"packages/host-service/src/trpc/router/workspaces/index.ts": [],
+		"packages/host-service/src/trpc/router/workspaces/workspaces.ts": [
+			"packages/host-service/src/db/schema.ts",
+			"packages/host-service/src/runtime/git/refs.ts",
+			"packages/host-service/src/runtime/workspace-cloud-sync.ts",
+			"packages/host-service/src/trpc/index.ts",
+			"packages/host-service/src/trpc/router/agents/index.ts",
+			"packages/host-service/src/trpc/router/project/utils/ensure-main-workspace.ts",
+			"packages/host-service/src/trpc/router/settings/worktree-location.ts",
+			"packages/host-service/src/trpc/router/workspace-creation/shared/adopt-existing-worktree.ts",
+			"packages/host-service/src/trpc/router/workspace-creation/shared/branch-search.ts",
+			"packages/host-service/src/trpc/router/workspace-creation/shared/command-terminal.ts",
+			"packages/host-service/src/trpc/router/workspace-creation/shared/git-config.ts",
+			"packages/host-service/src/trpc/router/workspace-creation/shared/local-project.ts",
+			"packages/host-service/src/trpc/router/workspace-creation/shared/setup-terminal.ts",
+			"packages/host-service/src/trpc/router/workspace-creation/shared/types.ts",
+			"packages/host-service/src/trpc/router/workspace-creation/shared/worktree-paths.ts",
+			"packages/host-service/src/trpc/router/workspace-creation/utils/ai-branch-name.ts",
+			"packages/host-service/src/trpc/router/workspace-creation/utils/ai-workspace-names.ts",
+			"packages/host-service/src/trpc/router/workspace-creation/utils/branch-prefix.ts",
+			"packages/host-service/src/trpc/router/workspace-creation/utils/exec-gh.ts",
+			"packages/host-service/src/trpc/router/workspace-creation/utils/list-branch-names.ts",
+			"packages/host-service/src/trpc/router/workspace-creation/utils/pr-branch-materialize.ts",
+			"packages/host-service/src/trpc/router/workspace-creation/utils/pr-branch-name.ts",
+			"packages/host-service/src/trpc/router/workspace-creation/utils/resolve-start-point.ts",
+			"packages/host-service/src/trpc/router/workspace-creation/utils/sanitize-branch.ts",
+			"packages/host-service/src/types.ts",
+			"packages/host-service/src/workspaces/local-workspace-store.ts"
+		],
+		"packages/host-service/src/tunnel/connect.ts": [
+			"packages/host-service/src/providers/auth/JwtAuthProvider/JwtAuthProvider.ts",
+			"packages/host-service/src/tunnel/tunnel-client.ts",
+			"packages/host-service/src/types.ts"
+		],
+		"packages/host-service/src/tunnel/index.ts": [],
+		"packages/host-service/src/tunnel/tunnel-client.ts": [
+			"packages/host-service/src/tunnel/types.ts"
+		],
+		"packages/host-service/src/tunnel/types.ts": [],
+		"packages/host-service/src/types.ts": [
+			"packages/host-service/src/db/index.ts",
+			"packages/host-service/src/events/index.ts",
+			"packages/host-service/src/runtime/acp-sessions/index.ts",
+			"packages/host-service/src/runtime/chat/index.ts",
+			"packages/host-service/src/runtime/filesystem/index.ts",
+			"packages/host-service/src/runtime/git/index.ts",
+			"packages/host-service/src/runtime/pull-requests/index.ts",
+			"packages/host-service/src/terminal-agents/index.ts",
+			"packages/host-service/src/trpc/router/workspace-creation/utils/exec-gh.ts"
+		],
+		"packages/host-service/src/workspaces/local-workspace-store.ts": [
+			"packages/host-service/src/db/index.ts",
+			"packages/host-service/src/db/schema.ts",
+			"packages/host-service/src/events/index.ts",
+			"packages/host-service/src/events/types.ts"
+		],
+		"packages/host-service/test/helpers/cloud-fakes.ts": [
+			"packages/host-service/test/helpers/fakes.ts"
+		],
+		"packages/host-service/test/helpers/createTestHost.ts": [
+			"packages/host-service/src/app.ts",
+			"packages/host-service/src/db/index.ts",
+			"packages/host-service/src/db/schema.ts",
+			"packages/host-service/src/trpc/router/index.ts",
+			"packages/host-service/test/helpers/fakes.ts"
+		],
+		"packages/host-service/test/helpers/fakes.ts": [
+			"packages/host-service/src/providers/auth/index.ts",
+			"packages/host-service/src/providers/host-auth/index.ts",
+			"packages/host-service/src/providers/model-providers/index.ts",
+			"packages/host-service/src/runtime/git/types.ts",
+			"packages/host-service/src/types.ts"
+		],
+		"packages/host-service/test/helpers/git-fixture.ts": [],
+		"packages/host-service/test/helpers/scenarios.ts": [
+			"packages/host-service/test/helpers/createTestHost.ts",
+			"packages/host-service/test/helpers/git-fixture.ts",
+			"packages/host-service/test/helpers/seed.ts"
+		],
+		"packages/host-service/test/helpers/seed.ts": [
+			"packages/host-service/src/db/schema.ts",
+			"packages/host-service/test/helpers/createTestHost.ts"
+		],
+		"packages/host-service/test/integration/pull-requests-scaling.bench.ts": [
+			"packages/host-service/src/db/index.ts",
+			"packages/host-service/src/db/schema.ts",
+			"packages/host-service/src/events/git-watcher.ts",
+			"packages/host-service/src/runtime/filesystem/index.ts",
+			"packages/host-service/src/runtime/pull-requests/pull-requests.ts",
+			"packages/host-service/test/helpers/createTestHost.ts",
+			"packages/host-service/test/helpers/git-fixture.ts",
+			"packages/host-service/test/helpers/seed.ts"
+		]
+	},
+	"neighborMap": {
+		"packages/host-service/src/trpc/router/workspace-creation/shared/worktree-paths.ts": [
+			{
+				"path": "packages/host-service/src/trpc/router/project/project.ts",
+				"batchIndex": 68,
+				"symbols": ["projectRouter"]
+			},
+			{
+				"path": "packages/host-service/src/trpc/router/settings/worktree-location.ts",
+				"batchIndex": 69,
+				"symbols": ["getHostWorktreeBaseDir", "worktreeLocationRouter"]
+			}
+		],
+		"packages/host-service/src/trpc/router/workspace-creation/utils/branch-prefix.ts": [
+			{
+				"path": "packages/host-service/src/db/schema.ts",
+				"batchIndex": 65,
+				"symbols": [
+					"terminalSessions",
+					"terminalAgentBindings",
+					"projects",
+					"hostSettings",
+					"pullRequests",
+					"hostAgentConfigs",
+					"workspaces",
+					"acpSessions",
+					"workspaceCloudDeletes"
+				]
+			},
+			{
+				"path": "packages/host-service/src/trpc/router/workspace-creation/shared/local-project.ts",
+				"batchIndex": 69,
+				"symbols": ["findLocalProject", "requireLocalProject"]
+			},
+			{
+				"path": "packages/host-service/src/trpc/router/settings/branch-prefix.ts",
+				"batchIndex": 69,
+				"symbols": ["branchPrefixRouter"]
+			}
+		],
+		"packages/host-service/src/trpc/router/workspace-creation/utils/exec-gh.ts": [
+			{
+				"path": "packages/host-service/src/terminal/clean-shell-env.ts",
+				"batchIndex": 67,
+				"symbols": [
+					"augmentPathForMacOS",
+					"buildMinimalEnv",
+					"parseEnvOutput",
+					"getStrictShellEnvironment",
+					"clearStrictShellEnvCache"
+				]
+			},
+			{
+				"path": "packages/host-service/src/app.ts",
+				"batchIndex": 65,
+				"symbols": ["createApp"]
+			},
+			{
+				"path": "packages/host-service/src/runtime/pull-requests/pull-requests.ts",
+				"batchIndex": 66,
+				"symbols": ["PullRequestRuntimeManager"]
+			},
+			{
+				"path": "packages/host-service/src/runtime/pull-requests/utils/github-query/github-query.ts",
+				"batchIndex": 66,
+				"symbols": [
+					"fetchPullRequestByHeadFromGh",
+					"fetchPullRequestByHead",
+					"fetchOpenPullRequestsFromGh",
+					"fetchOpenPullRequests",
+					"fetchPullRequestMergeQueueStateFromGh",
+					"fetchPullRequestMergeQueueState",
+					"fetchPullRequestReviewDecisionFromGh",
+					"fetchPullRequestReviewDecision",
+					"fetchPullRequestChecksFromGh",
+					"fetchPullRequestChecks"
+				]
+			},
+			{
+				"path": "packages/host-service/src/trpc/router/issues/procedures/get-content.ts",
+				"batchIndex": 68,
+				"symbols": ["getContent"]
+			},
+			{
+				"path": "packages/host-service/src/trpc/router/pull-requests/procedures/get-content.ts",
+				"batchIndex": 69,
+				"symbols": ["getContent"]
+			},
+			{
+				"path": "packages/host-service/src/trpc/router/workspace-creation/procedures/search-github-issues.ts",
+				"batchIndex": 69,
+				"symbols": ["searchGitHubIssues"]
+			},
+			{
+				"path": "packages/host-service/src/trpc/router/workspace-creation/procedures/search-pull-requests.ts",
+				"batchIndex": 69,
+				"symbols": ["searchPullRequests"]
+			}
+		],
+		"packages/host-service/src/trpc/router/workspace-creation/utils/pr-branch-materialize.ts": [
+			{
+				"path": "packages/host-service/src/trpc/router/workspace-creation/shared/types.ts",
+				"batchIndex": 69,
+				"symbols": []
+			}
+		],
+		"packages/host-service/src/trpc/router/workspace-creation/utils/resolve-start-point.ts": [
+			{
+				"path": "packages/host-service/src/runtime/git/refs.ts",
+				"batchIndex": 66,
+				"symbols": [
+					"asLocalRef",
+					"asRemoteRef",
+					"resolveRef",
+					"resolveDefaultBranchName",
+					"resolveUpstream"
+				]
+			}
+		],
+		"packages/host-service/src/trpc/router/workspace-creation/workspace-creation.ts": [
+			{
+				"path": "packages/host-service/src/trpc/index.ts",
+				"batchIndex": 67,
+				"symbols": [
+					"router",
+					"publicProcedure",
+					"protectedProcedure",
+					"queryProcedure",
+					"ProjectNotSetupCause",
+					"TeardownFailureCause",
+					"AppRouter"
+				]
+			},
+			{
+				"path": "packages/host-service/src/trpc/router/workspace-creation/procedures/index.ts",
+				"batchIndex": 69,
+				"symbols": [
+					"adopt",
+					"listProjectWorktrees",
+					"searchBranches",
+					"searchGitHubIssues",
+					"searchPullRequests"
+				]
+			}
+		],
+		"packages/host-service/src/trpc/router/workspace/index.ts": [
+			{
+				"path": "packages/host-service/src/trpc/router/router.ts",
+				"batchIndex": 69,
+				"symbols": ["appRouter"]
+			}
+		],
+		"packages/host-service/src/trpc/router/workspace/workspace.ts": [
+			{
+				"path": "packages/host-service/src/db/schema.ts",
+				"batchIndex": 65,
+				"symbols": [
+					"terminalSessions",
+					"terminalAgentBindings",
+					"projects",
+					"hostSettings",
+					"pullRequests",
+					"hostAgentConfigs",
+					"workspaces",
+					"acpSessions",
+					"workspaceCloudDeletes"
+				]
+			},
+			{
+				"path": "packages/host-service/src/runtime/workspace-cloud-sync.ts",
+				"batchIndex": 66,
+				"symbols": [
+					"ensureHostRegistered",
+					"pushWorkspaceCreateToCloud",
+					"startWorkspaceCloudSync"
+				]
+			},
+			{
+				"path": "packages/host-service/src/trpc/index.ts",
+				"batchIndex": 67,
+				"symbols": [
+					"router",
+					"publicProcedure",
+					"protectedProcedure",
+					"queryProcedure",
+					"ProjectNotSetupCause",
+					"TeardownFailureCause",
+					"AppRouter"
+				]
+			},
+			{
+				"path": "packages/host-service/src/trpc/router/workspace-cleanup/index.ts",
+				"batchIndex": 69,
+				"symbols": ["destroyWorkspace", "workspaceCleanupRouter"]
+			}
+		],
+		"packages/host-service/src/trpc/router/workspaces/index.ts": [
+			{
+				"path": "packages/host-service/src/trpc/router/router.ts",
+				"batchIndex": 69,
+				"symbols": ["appRouter"]
+			}
+		],
+		"packages/host-service/src/trpc/router/workspaces/workspaces.ts": [
+			{
+				"path": "packages/host-service/src/db/schema.ts",
+				"batchIndex": 65,
+				"symbols": [
+					"terminalSessions",
+					"terminalAgentBindings",
+					"projects",
+					"hostSettings",
+					"pullRequests",
+					"hostAgentConfigs",
+					"workspaces",
+					"acpSessions",
+					"workspaceCloudDeletes"
+				]
+			},
+			{
+				"path": "packages/host-service/src/runtime/git/refs.ts",
+				"batchIndex": 66,
+				"symbols": [
+					"asLocalRef",
+					"asRemoteRef",
+					"resolveRef",
+					"resolveDefaultBranchName",
+					"resolveUpstream"
+				]
+			},
+			{
+				"path": "packages/host-service/src/runtime/workspace-cloud-sync.ts",
+				"batchIndex": 66,
+				"symbols": [
+					"ensureHostRegistered",
+					"pushWorkspaceCreateToCloud",
+					"startWorkspaceCloudSync"
+				]
+			},
+			{
+				"path": "packages/host-service/src/trpc/index.ts",
+				"batchIndex": 67,
+				"symbols": [
+					"router",
+					"publicProcedure",
+					"protectedProcedure",
+					"queryProcedure",
+					"ProjectNotSetupCause",
+					"TeardownFailureCause",
+					"AppRouter"
+				]
+			},
+			{
+				"path": "packages/host-service/src/trpc/router/agents/index.ts",
+				"batchIndex": 67,
+				"symbols": [
+					"AgentRunInput",
+					"AgentRunResult",
+					"agentsRouter",
+					"runAgentInWorkspace"
+				]
+			},
+			{
+				"path": "packages/host-service/src/trpc/router/project/utils/ensure-main-workspace.ts",
+				"batchIndex": 68,
+				"symbols": ["ensureMainWorkspace", "ensureMainWorkspaceStrict"]
+			},
+			{
+				"path": "packages/host-service/src/trpc/router/settings/worktree-location.ts",
+				"batchIndex": 69,
+				"symbols": ["getHostWorktreeBaseDir", "worktreeLocationRouter"]
+			},
+			{
+				"path": "packages/host-service/src/trpc/router/workspace-creation/shared/adopt-existing-worktree.ts",
+				"batchIndex": 69,
+				"symbols": ["adoptExistingWorktree"]
+			},
+			{
+				"path": "packages/host-service/src/trpc/router/workspace-creation/shared/branch-search.ts",
+				"batchIndex": 69,
+				"symbols": [
+					"decodeCursor",
+					"encodeNextCursor",
+					"shouldRefetchRemote",
+					"markRefetchRemote",
+					"listWorktreeBranches",
+					"findWorktreeAtPath",
+					"getWorktreeBranchAtPath",
+					"getRecentBranchOrder"
+				]
+			},
+			{
+				"path": "packages/host-service/src/trpc/router/workspace-creation/shared/command-terminal.ts",
+				"batchIndex": 69,
+				"symbols": ["startCommandTerminal"]
+			},
+			{
+				"path": "packages/host-service/src/trpc/router/workspace-creation/shared/git-config.ts",
+				"batchIndex": 69,
+				"symbols": ["enablePushAutoSetupRemote"]
+			},
+			{
+				"path": "packages/host-service/src/trpc/router/workspace-creation/shared/local-project.ts",
+				"batchIndex": 69,
+				"symbols": ["findLocalProject", "requireLocalProject"]
+			},
+			{
+				"path": "packages/host-service/src/trpc/router/workspace-creation/shared/setup-terminal.ts",
+				"batchIndex": 69,
+				"symbols": ["startSetupTerminalIfPresent", "resolveInitialCommand"]
+			},
+			{
+				"path": "packages/host-service/src/trpc/router/workspace-creation/shared/types.ts",
+				"batchIndex": 69,
+				"symbols": []
+			}
+		],
+		"packages/host-service/src/tunnel/connect.ts": [
+			{
+				"path": "packages/host-service/src/providers/auth/JwtAuthProvider/JwtAuthProvider.ts",
+				"batchIndex": 65,
+				"symbols": ["JwtApiAuthProvider"]
+			}
+		],
+		"packages/host-service/src/tunnel/index.ts": [
+			{
+				"path": "packages/host-service/src/serve.ts",
+				"batchIndex": 66,
+				"symbols": []
+			}
+		],
+		"packages/host-service/src/types.ts": [
+			{
+				"path": "packages/host-service/src/db/index.ts",
+				"batchIndex": 65,
+				"symbols": ["createDb", "HostDb"]
+			},
+			{
+				"path": "packages/host-service/src/events/index.ts",
+				"batchIndex": 65,
+				"symbols": [
+					"EventBus",
+					"registerEventBusRoute",
+					"GitChangedEvent",
+					"GitWatcher",
+					"AgentLifecycleEventType",
+					"mapEventType",
+					"AgentLifecycleMessage",
+					"ClientMessage",
+					"EventBusErrorMessage",
+					"FsEventsMessage",
+					"FsUnwatchCommand",
+					"FsWatchCommand",
+					"GitChangedMessage",
+					"PortChangedMessage",
+					"ServerMessage",
+					"TerminalLifecycleMessage"
+				]
+			},
+			{
+				"path": "packages/host-service/src/runtime/acp-sessions/index.ts",
+				"batchIndex": 66,
+				"symbols": [
+					"AcpSessionDeadError",
+					"AcpSessionManager",
+					"AcpSessionManagerOptions",
+					"AcpSessionNotFoundError",
+					"AcpWorkspaceMismatchError",
+					"JournalPage",
+					"SessionJournal",
+					"AcpSessionPersistence",
+					"AcpSessionRecord",
+					"SqliteAcpSessionPersistence",
+					"AcpSessionStreamSource",
+					"registerAcpSessionStreamRoute"
+				]
+			},
+			{
+				"path": "packages/host-service/src/runtime/chat/index.ts",
+				"batchIndex": 66,
+				"symbols": ["ChatRuntimeManager"]
+			},
+			{
+				"path": "packages/host-service/src/runtime/filesystem/index.ts",
+				"batchIndex": 66,
+				"symbols": [
+					"WorkspaceFilesystemManagerOptions",
+					"WorkspaceFilesystemManager"
+				]
+			},
+			{
+				"path": "packages/host-service/src/runtime/git/index.ts",
+				"batchIndex": 66,
+				"symbols": [
+					"createGitFactory",
+					"ResolvedRef",
+					"ResolveRefOptions",
+					"asLocalRef",
+					"asRemoteRef",
+					"resolveDefaultBranchName",
+					"resolveRef",
+					"resolveUpstream",
+					"GitCredentialProvider",
+					"GitFactory"
+				]
+			},
+			{
+				"path": "packages/host-service/src/runtime/pull-requests/index.ts",
+				"batchIndex": 66,
+				"symbols": [
+					"CheckoutPullRequestMetadata",
+					"PullRequestRuntimeManager",
+					"PullRequestRuntimeManagerOptions",
+					"PullRequestStateSnapshot",
+					"PullRequestWorkspaceSnapshot"
+				]
+			},
+			{
+				"path": "packages/host-service/src/terminal-agents/index.ts",
+				"batchIndex": 66,
+				"symbols": [
+					"SqliteTerminalAgentBindingPersistence",
+					"TerminalAgentBindingListFilter",
+					"TerminalAgentBindingPersistence",
+					"TerminalAgentStore",
+					"TerminalAgentBinding",
+					"TerminalAgentId"
+				]
+			},
+			{
+				"path": "packages/host-service/scripts/git-status-large-repo-profile.ts",
+				"batchIndex": 65,
+				"symbols": []
+			},
+			{
+				"path": "packages/host-service/src/api/createApiClient/createApiClient.ts",
+				"batchIndex": 65,
+				"symbols": ["createApiClient"]
+			},
+			{
+				"path": "packages/host-service/src/app.ts",
+				"batchIndex": 65,
+				"symbols": ["createApp"]
+			},
+			{
+				"path": "packages/host-service/src/runtime/workspace-backfill.ts",
+				"batchIndex": 66,
+				"symbols": ["runWorkspaceBackfill"]
+			},
+			{
+				"path": "packages/host-service/src/runtime/workspace-cloud-sync.ts",
+				"batchIndex": 66,
+				"symbols": [
+					"ensureHostRegistered",
+					"pushWorkspaceCreateToCloud",
+					"startWorkspaceCloudSync"
+				]
+			},
+			{
+				"path": "packages/host-service/src/trpc/index.ts",
+				"batchIndex": 67,
+				"symbols": [
+					"router",
+					"publicProcedure",
+					"protectedProcedure",
+					"queryProcedure",
+					"ProjectNotSetupCause",
+					"TeardownFailureCause",
+					"AppRouter"
+				]
+			},
+			{
+				"path": "packages/host-service/src/trpc/router/agents/agents.ts",
+				"batchIndex": 67,
+				"symbols": [
+					"resolveHostAgentConfig",
+					"buildAgentCommandString",
+					"runAgentInWorkspace",
+					"agentsRouter"
+				]
+			},
+			{
+				"path": "packages/host-service/src/trpc/router/config/config.ts",
+				"batchIndex": 67,
+				"symbols": ["configRouter"]
+			},
+			{
+				"path": "packages/host-service/src/trpc/router/filesystem/filesystem.ts",
+				"batchIndex": 67,
+				"symbols": ["filesystemRouter"]
+			},
+			{
+				"path": "packages/host-service/src/trpc/router/host/host.ts",
+				"batchIndex": 68,
+				"symbols": ["hostRouter"]
+			},
+			{
+				"path": "packages/host-service/src/trpc/router/project/handlers.ts",
+				"batchIndex": 68,
+				"symbols": [
+					"createFromClone",
+					"createFromImportLocal",
+					"createFromEmpty",
+					"createFromTemplate"
+				]
+			},
+			{
+				"path": "packages/host-service/src/trpc/router/project/utils/ensure-main-workspace.ts",
+				"batchIndex": 68,
+				"symbols": ["ensureMainWorkspace", "ensureMainWorkspaceStrict"]
+			},
+			{
+				"path": "packages/host-service/src/trpc/router/project/utils/persist-project.ts",
+				"batchIndex": 68,
+				"symbols": ["persistLocalProject"]
+			},
+			{
+				"path": "packages/host-service/src/trpc/router/settings/worktree-location.ts",
+				"batchIndex": 69,
+				"symbols": ["getHostWorktreeBaseDir", "worktreeLocationRouter"]
+			},
+			{
+				"path": "packages/host-service/src/trpc/router/terminal/terminal.ts",
+				"batchIndex": 69,
+				"symbols": ["terminalRouter"]
+			},
+			{
+				"path": "packages/host-service/src/trpc/router/workspace-cleanup/is-main-workspace.ts",
+				"batchIndex": 69,
+				"symbols": ["MAIN_WORKSPACE_REASON", "isMainWorkspace"]
+			},
+			{
+				"path": "packages/host-service/src/trpc/router/workspace-cleanup/workspace-cleanup.ts",
+				"batchIndex": 69,
+				"symbols": [
+					"__testDestroysInFlight",
+					"workspaceCleanupRouter",
+					"destroyWorkspace"
+				]
+			},
+			{
+				"path": "packages/host-service/src/trpc/router/workspace-creation/shared/adopt-existing-worktree.ts",
+				"batchIndex": 69,
+				"symbols": ["adoptExistingWorktree"]
+			},
+			{
+				"path": "packages/host-service/src/trpc/router/workspace-creation/shared/command-terminal.ts",
+				"batchIndex": 69,
+				"symbols": ["startCommandTerminal"]
+			},
+			{
+				"path": "packages/host-service/src/trpc/router/workspace-creation/shared/local-project.ts",
+				"batchIndex": 69,
+				"symbols": ["findLocalProject", "requireLocalProject"]
+			},
+			{
+				"path": "packages/host-service/src/trpc/router/workspace-creation/shared/project-helpers.ts",
+				"batchIndex": 69,
+				"symbols": ["projectNotSetupError", "resolveGithubRepo"]
+			},
+			{
+				"path": "packages/host-service/src/trpc/router/workspace-creation/shared/setup-terminal.ts",
+				"batchIndex": 69,
+				"symbols": ["startSetupTerminalIfPresent", "resolveInitialCommand"]
+			},
+			{
+				"path": "packages/host-service/src/trpc/router/workspace-creation/shared/types.ts",
+				"batchIndex": 69,
+				"symbols": []
+			}
+		],
+		"packages/host-service/src/workspaces/local-workspace-store.ts": [
+			{
+				"path": "packages/host-service/src/db/index.ts",
+				"batchIndex": 65,
+				"symbols": ["createDb", "HostDb"]
+			},
+			{
+				"path": "packages/host-service/src/db/schema.ts",
+				"batchIndex": 65,
+				"symbols": [
+					"terminalSessions",
+					"terminalAgentBindings",
+					"projects",
+					"hostSettings",
+					"pullRequests",
+					"hostAgentConfigs",
+					"workspaces",
+					"acpSessions",
+					"workspaceCloudDeletes"
+				]
+			},
+			{
+				"path": "packages/host-service/src/events/index.ts",
+				"batchIndex": 65,
+				"symbols": [
+					"EventBus",
+					"registerEventBusRoute",
+					"GitChangedEvent",
+					"GitWatcher",
+					"AgentLifecycleEventType",
+					"mapEventType",
+					"AgentLifecycleMessage",
+					"ClientMessage",
+					"EventBusErrorMessage",
+					"FsEventsMessage",
+					"FsUnwatchCommand",
+					"FsWatchCommand",
+					"GitChangedMessage",
+					"PortChangedMessage",
+					"ServerMessage",
+					"TerminalLifecycleMessage"
+				]
+			},
+			{
+				"path": "packages/host-service/src/events/types.ts",
+				"batchIndex": 65,
+				"symbols": []
+			},
+			{
+				"path": "packages/host-service/src/runtime/workspace-cloud-sync.ts",
+				"batchIndex": 66,
+				"symbols": [
+					"ensureHostRegistered",
+					"pushWorkspaceCreateToCloud",
+					"startWorkspaceCloudSync"
+				]
+			},
+			{
+				"path": "packages/host-service/src/trpc/router/project/project.ts",
+				"batchIndex": 68,
+				"symbols": ["projectRouter"]
+			},
+			{
+				"path": "packages/host-service/src/trpc/router/project/utils/ensure-main-workspace.ts",
+				"batchIndex": 68,
+				"symbols": ["ensureMainWorkspace", "ensureMainWorkspaceStrict"]
+			},
+			{
+				"path": "packages/host-service/src/trpc/router/workspace-cleanup/workspace-cleanup.ts",
+				"batchIndex": 69,
+				"symbols": [
+					"__testDestroysInFlight",
+					"workspaceCleanupRouter",
+					"destroyWorkspace"
+				]
+			},
+			{
+				"path": "packages/host-service/src/trpc/router/workspace-creation/shared/adopt-existing-worktree.ts",
+				"batchIndex": 69,
+				"symbols": ["adoptExistingWorktree"]
+			}
+		],
+		"packages/host-service/test/helpers/createTestHost.ts": [
+			{
+				"path": "packages/host-service/src/app.ts",
+				"batchIndex": 65,
+				"symbols": ["createApp"]
+			},
+			{
+				"path": "packages/host-service/src/db/index.ts",
+				"batchIndex": 65,
+				"symbols": ["createDb", "HostDb"]
+			},
+			{
+				"path": "packages/host-service/src/db/schema.ts",
+				"batchIndex": 65,
+				"symbols": [
+					"terminalSessions",
+					"terminalAgentBindings",
+					"projects",
+					"hostSettings",
+					"pullRequests",
+					"hostAgentConfigs",
+					"workspaces",
+					"acpSessions",
+					"workspaceCloudDeletes"
+				]
+			},
+			{
+				"path": "packages/host-service/src/trpc/router/index.ts",
+				"batchIndex": 68,
+				"symbols": ["AppRouter", "appRouter"]
+			}
+		],
+		"packages/host-service/test/helpers/fakes.ts": [
+			{
+				"path": "packages/host-service/src/providers/auth/index.ts",
+				"batchIndex": 65,
+				"symbols": [
+					"ConfigFileSessionTokenSource",
+					"DeviceKeyApiAuthProvider",
+					"JwtApiAuthProvider",
+					"ApiAuthProvider"
+				]
+			},
+			{
+				"path": "packages/host-service/src/providers/host-auth/index.ts",
+				"batchIndex": 65,
+				"symbols": ["PskHostAuthProvider", "HostAuthProvider"]
+			},
+			{
+				"path": "packages/host-service/src/providers/model-providers/index.ts",
+				"batchIndex": 65,
+				"symbols": [
+					"CloudModelProvider",
+					"LocalModelProvider",
+					"ModelProviderRuntimeResolver"
+				]
+			},
+			{
+				"path": "packages/host-service/src/runtime/git/types.ts",
+				"batchIndex": 66,
+				"symbols": []
+			}
+		],
+		"packages/host-service/test/helpers/seed.ts": [
+			{
+				"path": "packages/host-service/src/db/schema.ts",
+				"batchIndex": 65,
+				"symbols": [
+					"terminalSessions",
+					"terminalAgentBindings",
+					"projects",
+					"hostSettings",
+					"pullRequests",
+					"hostAgentConfigs",
+					"workspaces",
+					"acpSessions",
+					"workspaceCloudDeletes"
+				]
+			}
+		],
+		"packages/host-service/test/integration/pull-requests-scaling.bench.ts": [
+			{
+				"path": "packages/host-service/src/db/index.ts",
+				"batchIndex": 65,
+				"symbols": ["createDb", "HostDb"]
+			},
+			{
+				"path": "packages/host-service/src/db/schema.ts",
+				"batchIndex": 65,
+				"symbols": [
+					"terminalSessions",
+					"terminalAgentBindings",
+					"projects",
+					"hostSettings",
+					"pullRequests",
+					"hostAgentConfigs",
+					"workspaces",
+					"acpSessions",
+					"workspaceCloudDeletes"
+				]
+			},
+			{
+				"path": "packages/host-service/src/events/git-watcher.ts",
+				"batchIndex": 65,
+				"symbols": [
+					"DEBOUNCE_MS",
+					"GIT_DIR_DEBOUNCE_MS",
+					"isStatusRelevantGitDirEvent",
+					"GitWatcher"
+				]
+			},
+			{
+				"path": "packages/host-service/src/runtime/filesystem/index.ts",
+				"batchIndex": 66,
+				"symbols": [
+					"WorkspaceFilesystemManagerOptions",
+					"WorkspaceFilesystemManager"
+				]
+			},
+			{
+				"path": "packages/host-service/src/runtime/pull-requests/pull-requests.ts",
+				"batchIndex": 66,
+				"symbols": ["PullRequestRuntimeManager"]
+			}
+		]
+	}
+}

@@ -1,0 +1,460 @@
+{
+	"scriptCompleted": true,
+	"filesAnalyzed": 10,
+	"filesSkipped": [],
+	"results": [
+		{
+			"path": "packages/auth/src/env.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 38,
+			"nonEmptyLines": 36,
+			"exports": [
+				{
+					"name": "env",
+					"line": 8,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "packages/auth/src/lib/accept-invitation-endpoint.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 292,
+			"nonEmptyLines": 257,
+			"functions": [
+				{
+					"name": "verificationMatchesInvitation",
+					"startLine": 13,
+					"endLine": 26,
+					"params": [
+						"{\n\tverificationIdentifier,\n\tinvitationId,\n\tinvitationEmail,\n}"
+					]
+				},
+				{
+					"name": "getInvitationAcceptError",
+					"startLine": 28,
+					"endLine": 50,
+					"params": ["error"]
+				},
+				{
+					"name": "getProcessedInvitationError",
+					"startLine": 52,
+					"endLine": 60,
+					"params": ["status"]
+				}
+			],
+			"exports": [
+				{
+					"name": "acceptInvitationEndpoint",
+					"line": 62,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "verificationMatchesInvitation",
+					"callee": "verificationIdentifier.toLowerCase",
+					"lineNumber": 24
+				},
+				{
+					"caller": "verificationMatchesInvitation",
+					"callee": "invitationEmail.toLowerCase",
+					"lineNumber": 24
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 3,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "packages/auth/src/lib/generate-magic-token.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 25,
+			"nonEmptyLines": 21,
+			"functions": [
+				{
+					"name": "generateMagicTokenForInvite",
+					"startLine": 5,
+					"endLine": 25,
+					"params": ["{\n\tinvitationId,\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "generateMagicTokenForInvite",
+					"line": 5,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "generateMagicTokenForInvite",
+					"callee": "crypto.randomBytes(32).toString",
+					"lineNumber": 11
+				},
+				{
+					"caller": "generateMagicTokenForInvite",
+					"callee": "crypto.randomBytes",
+					"lineNumber": 11
+				},
+				{
+					"caller": "generateMagicTokenForInvite",
+					"callee": "Date.now",
+					"lineNumber": 14
+				},
+				{
+					"caller": "generateMagicTokenForInvite",
+					"callee": "db.insert(verifications).values",
+					"lineNumber": 18
+				},
+				{
+					"caller": "generateMagicTokenForInvite",
+					"callee": "db.insert",
+					"lineNumber": 18
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "packages/auth/src/lib/rate-limit.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 15,
+			"nonEmptyLines": 13,
+			"exports": [
+				{
+					"name": "invitationRateLimit",
+					"line": 11,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "packages/auth/src/lib/resend.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 5,
+			"nonEmptyLines": 3,
+			"exports": [
+				{
+					"name": "resend",
+					"line": 5,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "packages/auth/src/lib/resolve-session-organization-state.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 123,
+			"nonEmptyLines": 111,
+			"functions": [
+				{
+					"name": "resolveSessionOrganizationState",
+					"startLine": 59,
+					"endLine": 123,
+					"params": ["{\n\t\tuserId,\n\t\tsession,\n\t}", "deps"]
+				}
+			],
+			"exports": [
+				{
+					"name": "resolveSessionOrganizationState",
+					"line": 59,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "resolveSessionOrganizationState",
+					"callee": "deps.listMemberships",
+					"lineNumber": 79
+				},
+				{
+					"caller": "resolveSessionOrganizationState",
+					"callee": "allMemberships.find",
+					"lineNumber": 83
+				},
+				{
+					"caller": "resolveSessionOrganizationState",
+					"callee": "deps.updateSessionActiveOrganization",
+					"lineNumber": 91
+				},
+				{
+					"caller": "resolveSessionOrganizationState",
+					"callee": "deps.getSessionActiveOrganization",
+					"lineNumber": 102
+				},
+				{
+					"caller": "resolveSessionOrganizationState",
+					"callee": "allMemberships.find",
+					"lineNumber": 113
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "packages/auth/src/seed-dev.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 68,
+			"nonEmptyLines": 61,
+			"functions": [
+				{
+					"name": "seedDevAccount",
+					"startLine": 11,
+					"endLine": 61,
+					"params": []
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "seedDevAccount",
+					"callee": "db.query.users.findFirst",
+					"lineNumber": 18
+				},
+				{
+					"caller": "seedDevAccount",
+					"callee": "eq",
+					"lineNumber": 19
+				},
+				{
+					"caller": "seedDevAccount",
+					"callee": "console.log",
+					"lineNumber": 22
+				},
+				{
+					"caller": "seedDevAccount",
+					"callee": "auth.api.signUpEmail",
+					"lineNumber": 24
+				},
+				{
+					"caller": "seedDevAccount",
+					"callee": "db.query.users.findFirst",
+					"lineNumber": 27
+				},
+				{
+					"caller": "seedDevAccount",
+					"callee": "eq",
+					"lineNumber": 28
+				},
+				{
+					"caller": "seedDevAccount",
+					"callee": "console.log",
+					"lineNumber": 30
+				},
+				{
+					"caller": "seedDevAccount",
+					"callee": "db\n\t\t.update(users)\n\t\t.set({ onboardedAt: new Date() })\n\t\t.where",
+					"lineNumber": 34
+				},
+				{
+					"caller": "seedDevAccount",
+					"callee": "db\n\t\t.update(users)\n\t\t.set",
+					"lineNumber": 34
+				},
+				{
+					"caller": "seedDevAccount",
+					"callee": "db\n\t\t.update",
+					"lineNumber": 34
+				},
+				{
+					"caller": "seedDevAccount",
+					"callee": "eq",
+					"lineNumber": 37
+				},
+				{
+					"caller": "seedDevAccount",
+					"callee": "db.query.members.findFirst",
+					"lineNumber": 39
+				},
+				{
+					"caller": "seedDevAccount",
+					"callee": "eq",
+					"lineNumber": 40
+				},
+				{
+					"caller": "seedDevAccount",
+					"callee": "db.query.subscriptions.findFirst",
+					"lineNumber": 44
+				},
+				{
+					"caller": "seedDevAccount",
+					"callee": "and",
+					"lineNumber": 45
+				},
+				{
+					"caller": "seedDevAccount",
+					"callee": "eq",
+					"lineNumber": 46
+				},
+				{
+					"caller": "seedDevAccount",
+					"callee": "eq",
+					"lineNumber": 47
+				},
+				{
+					"caller": "seedDevAccount",
+					"callee": "db.insert(subscriptions).values",
+					"lineNumber": 51
+				},
+				{
+					"caller": "seedDevAccount",
+					"callee": "db.insert",
+					"lineNumber": 51
+				},
+				{
+					"caller": "seedDevAccount",
+					"callee": "console.log",
+					"lineNumber": 60
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 0,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "packages/auth/src/server.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1211,
+			"nonEmptyLines": 1099,
+			"functions": [
+				{
+					"name": "serializeCancellationDetails",
+					"startLine": 62,
+					"endLine": 80,
+					"params": ["cancellationDetails"]
+				},
+				{
+					"name": "mintUserJwt",
+					"startLine": 1186,
+					"endLine": 1211,
+					"params": ["args"]
+				}
+			],
+			"exports": [
+				{
+					"name": "auth",
+					"line": 82,
+					"isDefault": false
+				},
+				{
+					"name": "mintUserJwt",
+					"line": 1186,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "serializeCancellationDetails",
+					"callee": "console.error",
+					"lineNumber": 74
+				},
+				{
+					"caller": "mintUserJwt",
+					"callee": "Math.floor",
+					"lineNumber": 1195
+				},
+				{
+					"caller": "mintUserJwt",
+					"callee": "Date.now",
+					"lineNumber": 1195
+				},
+				{
+					"caller": "mintUserJwt",
+					"callee": "auth.api.signJWT",
+					"lineNumber": 1197
+				}
+			],
+			"metrics": {
+				"importCount": 8,
+				"exportCount": 2,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "packages/auth/src/stripe.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 4,
+			"nonEmptyLines": 3,
+			"exports": [
+				{
+					"name": "stripeClient",
+					"line": 4,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "packages/auth/src/utils/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "formatPrice",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "getOrganizationOwners",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 2,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		}
+	]
+}

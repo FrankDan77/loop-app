@@ -1,0 +1,245 @@
+{
+	"projectRoot": "/Users/wushengyu/Develop/hustle/superset/apps/desktop",
+	"batchFiles": [
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/hooks/useTerminalHotkeys.ts",
+			"language": "typescript",
+			"sizeLines": 60,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/hooks/useTerminalLifecycle.ts",
+			"language": "typescript",
+			"sizeLines": 855,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/hooks/useTerminalRefs.ts",
+			"language": "typescript",
+			"sizeLines": 126,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/hooks/useTerminalRestore.ts",
+			"language": "typescript",
+			"sizeLines": 254,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/hooks/workspaceRun.ts",
+			"language": "typescript",
+			"sizeLines": 141,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/link-providers/index.ts",
+			"language": "typescript",
+			"sizeLines": 5,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/state.ts",
+			"language": "typescript",
+			"sizeLines": 17,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/suppressQueryResponses.ts",
+			"language": "typescript",
+			"sizeLines": 52,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/types.ts",
+			"language": "typescript",
+			"sizeLines": 138,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/utils.ts",
+			"language": "typescript",
+			"sizeLines": 10,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/v1-terminal-cache.ts",
+			"language": "typescript",
+			"sizeLines": 390,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/components/CodeEditor/constants.ts",
+			"language": "typescript",
+			"sizeLines": 3,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/components/CodeEditor/createCodeMirrorTheme.ts",
+			"language": "typescript",
+			"sizeLines": 92,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/utils/code-theme/diff-theme.ts",
+			"language": "typescript",
+			"sizeLines": 147,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/utils/code-theme/diff-viewer-style.ts",
+			"language": "typescript",
+			"sizeLines": 38,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/utils/code-theme/index.ts",
+			"language": "typescript",
+			"sizeLines": 4,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/utils/code-theme/syntax-highlighting.ts",
+			"language": "typescript",
+			"sizeLines": 70,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/renderer/stores/tabs/preset-launch.test.ts",
+			"language": "typescript",
+			"sizeLines": 178,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/renderer/stores/tabs/preset-launch.ts",
+			"language": "typescript",
+			"sizeLines": 92,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/renderer/stores/tabs/terminal-callbacks.ts",
+			"language": "typescript",
+			"sizeLines": 118,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/renderer/stores/tabs/utils/terminal-cleanup.ts",
+			"language": "typescript",
+			"sizeLines": 15,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/renderer/stores/theme/utils/index.ts",
+			"language": "typescript",
+			"sizeLines": 7,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/shared/themes/index.ts",
+			"language": "typescript",
+			"sizeLines": 29,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/shared/themes/utils.test.ts",
+			"language": "typescript",
+			"sizeLines": 79,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/shared/themes/utils.ts",
+			"language": "typescript",
+			"sizeLines": 56,
+			"fileCategory": "code"
+		}
+	],
+	"batchImportData": {
+		"src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/hooks/useTerminalHotkeys.ts": [
+			"src/renderer/hotkeys/index.ts",
+			"src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/utils.ts"
+		],
+		"src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/hooks/useTerminalLifecycle.ts": [
+			"src/renderer/lib/terminal/launch-command.ts",
+			"src/renderer/lib/terminal/links/index.ts",
+			"src/renderer/lib/terminal/parser-idle-gate.ts",
+			"src/renderer/lib/terminal/session-readiness.ts",
+			"src/renderer/lib/terminal/terminal-key-event-handler.ts",
+			"src/renderer/lib/trpc-client.ts",
+			"src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/attach-cancel.ts",
+			"src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/attach-scheduler.ts",
+			"src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/commandBuffer.ts",
+			"src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/config.ts",
+			"src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/helpers.ts",
+			"src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/hooks/attach-request-id.ts",
+			"src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/hooks/workspaceRun.ts",
+			"src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/pane-guards.ts",
+			"src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/state.ts",
+			"src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/types.ts",
+			"src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/utils.ts",
+			"src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/v1-terminal-cache.ts",
+			"src/renderer/stores/tabs/store.ts",
+			"src/renderer/stores/tabs/utils/terminal-cleanup.ts"
+		],
+		"src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/hooks/useTerminalRefs.ts": [
+			"src/renderer/lib/terminal/links/index.ts",
+			"src/renderer/stores/tabs/terminal-callbacks.ts"
+		],
+		"src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/hooks/useTerminalRestore.ts": [
+			"src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/config.ts",
+			"src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/types.ts",
+			"src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/utils.ts"
+		],
+		"src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/hooks/workspaceRun.ts": [
+			"src/renderer/lib/trpc-client.ts",
+			"src/renderer/stores/tabs/workspace-run.ts"
+		],
+		"src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/link-providers/index.ts": [],
+		"src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/state.ts": [
+			"src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/types.ts"
+		],
+		"src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/suppressQueryResponses.ts": [],
+		"src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/types.ts": [],
+		"src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/utils.ts": [],
+		"src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/v1-terminal-cache.ts": [
+			"src/renderer/lib/terminal/appearance/index.ts",
+			"src/renderer/lib/terminal/font-settle.ts",
+			"src/renderer/lib/terminal/parser-idle-gate.ts",
+			"src/renderer/lib/terminal/terminal-parking.ts",
+			"src/renderer/lib/trpc-client.ts",
+			"src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/config.ts",
+			"src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/helpers.ts",
+			"src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/types.ts"
+		],
+		"src/renderer/screens/main/components/WorkspaceView/components/CodeEditor/constants.ts": [],
+		"src/renderer/screens/main/components/WorkspaceView/components/CodeEditor/createCodeMirrorTheme.ts": [
+			"src/renderer/screens/main/components/WorkspaceView/components/CodeEditor/constants.ts",
+			"src/shared/themes/index.ts"
+		],
+		"src/renderer/screens/main/components/WorkspaceView/utils/code-theme/diff-theme.ts": [
+			"src/shared/themes/index.ts",
+			"src/shared/themes/utils.ts"
+		],
+		"src/renderer/screens/main/components/WorkspaceView/utils/code-theme/diff-viewer-style.ts": [
+			"src/renderer/screens/main/components/WorkspaceView/components/CodeEditor/constants.ts",
+			"src/shared/themes/index.ts"
+		],
+		"src/renderer/screens/main/components/WorkspaceView/utils/code-theme/index.ts": [],
+		"src/renderer/screens/main/components/WorkspaceView/utils/code-theme/syntax-highlighting.ts": [
+			"src/shared/themes/index.ts"
+		],
+		"src/renderer/stores/tabs/preset-launch.test.ts": [
+			"src/renderer/stores/tabs/preset-launch.ts"
+		],
+		"src/renderer/stores/tabs/preset-launch.ts": [
+			"src/renderer/lib/terminal/launch-command.ts"
+		],
+		"src/renderer/stores/tabs/terminal-callbacks.ts": [],
+		"src/renderer/stores/tabs/utils/terminal-cleanup.ts": [
+			"src/renderer/lib/terminal/session-readiness.ts",
+			"src/renderer/lib/trpc-client.ts"
+		],
+		"src/renderer/stores/theme/utils/index.ts": [],
+		"src/shared/themes/index.ts": [],
+		"src/shared/themes/utils.test.ts": ["src/shared/themes/utils.ts"],
+		"src/shared/themes/utils.ts": []
+	}
+}

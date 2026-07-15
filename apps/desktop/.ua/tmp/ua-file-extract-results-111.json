@@ -1,0 +1,1334 @@
+{
+	"scriptCompleted": true,
+	"filesAnalyzed": 25,
+	"filesSkipped": [],
+	"results": [
+		{
+			"path": "src/renderer/routes/_authenticated/components/GlobalBrowserLifecycle/GlobalBrowserLifecycle.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 6,
+			"nonEmptyLines": 5,
+			"functions": [
+				{
+					"name": "GlobalBrowserLifecycle",
+					"startLine": 3,
+					"endLine": 6,
+					"params": []
+				}
+			],
+			"exports": [
+				{
+					"name": "GlobalBrowserLifecycle",
+					"line": 3,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "GlobalBrowserLifecycle",
+					"callee": "useGlobalBrowserLifecycle",
+					"lineNumber": 4
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/components/GlobalBrowserLifecycle/hooks/useGlobalBrowserLifecycle/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "useGlobalBrowserLifecycle",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/components/ProjectThumbnail/ProjectThumbnail.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 48,
+			"nonEmptyLines": 43,
+			"functions": [
+				{
+					"name": "ProjectThumbnail",
+					"startLine": 10,
+					"endLine": 48,
+					"params": ["{\n\tprojectName,\n\ticonUrl,\n\tclassName,\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "ProjectThumbnail",
+					"line": 10,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "ProjectThumbnail",
+					"callee": "useState",
+					"lineNumber": 15
+				},
+				{
+					"caller": "ProjectThumbnail",
+					"callee": "projectName.charAt(0).toUpperCase",
+					"lineNumber": 17
+				},
+				{
+					"caller": "ProjectThumbnail",
+					"callee": "projectName.charAt",
+					"lineNumber": 17
+				},
+				{
+					"caller": "ProjectThumbnail",
+					"callee": "cn",
+					"lineNumber": 22
+				},
+				{
+					"caller": "ProjectThumbnail",
+					"callee": "setFailedUrl",
+					"lineNumber": 31
+				},
+				{
+					"caller": "ProjectThumbnail",
+					"callee": "cn",
+					"lineNumber": 39
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/components/TeardownLogsDialog/TeardownLogsDialog.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 195,
+			"nonEmptyLines": 177,
+			"functions": [
+				{
+					"name": "stripAnsi",
+					"startLine": 19,
+					"endLine": 21,
+					"params": ["text"]
+				},
+				{
+					"name": "showTeardownLogs",
+					"startLine": 27,
+					"endLine": 38,
+					"params": ["logs", "options"]
+				},
+				{
+					"name": "showTeardownFailedToast",
+					"startLine": 40,
+					"endLine": 61,
+					"params": ["{\n\ttoastId,\n\toutput,\n\tonForceDelete,\n}"]
+				},
+				{
+					"name": "forceDeleteWithToast",
+					"startLine": 63,
+					"endLine": 84,
+					"params": ["{\n\tname,\n\tdeleteFn,\n}"]
+				},
+				{
+					"name": "deleteWithToast",
+					"startLine": 86,
+					"endLine": 134,
+					"params": ["{\n\tname,\n\tdeleteFn,\n\tforceDeleteFn,\n}"]
+				},
+				{
+					"name": "TeardownLogsDialog",
+					"startLine": 136,
+					"endLine": 195,
+					"params": []
+				}
+			],
+			"exports": [
+				{
+					"name": "showTeardownLogs",
+					"line": 27,
+					"isDefault": false
+				},
+				{
+					"name": "deleteWithToast",
+					"line": 86,
+					"isDefault": false
+				},
+				{
+					"name": "TeardownLogsDialog",
+					"line": 136,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "stripAnsi",
+					"callee": "text.replace",
+					"lineNumber": 20
+				},
+				{
+					"caller": "showTeardownLogs",
+					"callee": "console.error",
+					"lineNumber": 32
+				},
+				{
+					"caller": "showTeardownLogs",
+					"callee": "showLogsFn",
+					"lineNumber": 37
+				},
+				{
+					"caller": "showTeardownFailedToast",
+					"callee": "toast.error",
+					"lineNumber": 49
+				},
+				{
+					"caller": "showTeardownFailedToast",
+					"callee": "showTeardownLogs",
+					"lineNumber": 58
+				},
+				{
+					"caller": "forceDeleteWithToast",
+					"callee": "toast.loading",
+					"lineNumber": 70
+				},
+				{
+					"caller": "forceDeleteWithToast",
+					"callee": "deleteFn",
+					"lineNumber": 73
+				},
+				{
+					"caller": "forceDeleteWithToast",
+					"callee": "toast.success",
+					"lineNumber": 75
+				},
+				{
+					"caller": "forceDeleteWithToast",
+					"callee": "toast.error",
+					"lineNumber": 77
+				},
+				{
+					"caller": "forceDeleteWithToast",
+					"callee": "toast.error",
+					"lineNumber": 80
+				},
+				{
+					"caller": "deleteWithToast",
+					"callee": "toast.loading",
+					"lineNumber": 100
+				},
+				{
+					"caller": "deleteWithToast",
+					"callee": "deleteFn",
+					"lineNumber": 103
+				},
+				{
+					"caller": "deleteWithToast",
+					"callee": "showTeardownFailedToast",
+					"lineNumber": 108
+				},
+				{
+					"caller": "deleteWithToast",
+					"callee": "forceDeleteWithToast",
+					"lineNumber": 112
+				},
+				{
+					"caller": "deleteWithToast",
+					"callee": "toast.error",
+					"lineNumber": 115
+				},
+				{
+					"caller": "deleteWithToast",
+					"callee": "toast.success",
+					"lineNumber": 120
+				},
+				{
+					"caller": "deleteWithToast",
+					"callee": "setTimeout",
+					"lineNumber": 123
+				},
+				{
+					"caller": "deleteWithToast",
+					"callee": "toast.warning",
+					"lineNumber": 124
+				},
+				{
+					"caller": "deleteWithToast",
+					"callee": "toast.error",
+					"lineNumber": 130
+				},
+				{
+					"caller": "TeardownLogsDialog",
+					"callee": "useState",
+					"lineNumber": 137
+				},
+				{
+					"caller": "TeardownLogsDialog",
+					"callee": "useState",
+					"lineNumber": 138
+				},
+				{
+					"caller": "TeardownLogsDialog",
+					"callee": "useState",
+					"lineNumber": 139
+				},
+				{
+					"caller": "TeardownLogsDialog",
+					"callee": "setLogs",
+					"lineNumber": 144
+				},
+				{
+					"caller": "TeardownLogsDialog",
+					"callee": "setOnDeleteAnyway",
+					"lineNumber": 145
+				},
+				{
+					"caller": "TeardownLogsDialog",
+					"callee": "setIsOpen",
+					"lineNumber": 146
+				},
+				{
+					"caller": "TeardownLogsDialog",
+					"callee": "stripAnsi",
+					"lineNumber": 149
+				},
+				{
+					"caller": "handleClose",
+					"callee": "setIsOpen",
+					"lineNumber": 152
+				},
+				{
+					"caller": "handleClose",
+					"callee": "setOnDeleteAnyway",
+					"lineNumber": 153
+				},
+				{
+					"caller": "handleDeleteAnyway",
+					"callee": "handleClose",
+					"lineNumber": 157
+				},
+				{
+					"caller": "handleDeleteAnyway",
+					"callee": "onDeleteAnyway",
+					"lineNumber": 158
+				},
+				{
+					"caller": "TeardownLogsDialog",
+					"callee": "handleClose",
+					"lineNumber": 165
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 3,
+				"functionCount": 6,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/components/utils/paneLifecycleRows/paneLifecycleRows.test.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 109,
+			"nonEmptyLines": 100,
+			"functions": [
+				{
+					"name": "row",
+					"startLine": 10,
+					"endLine": 29,
+					"params": ["workspaceId", "panes"]
+				},
+				{
+					"name": "terminalPane",
+					"startLine": 31,
+					"endLine": 37,
+					"params": ["id"]
+				},
+				{
+					"name": "terminalIdForPane",
+					"startLine": 39,
+					"endLine": 46,
+					"params": ["pane"]
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 0,
+				"functionCount": 3,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/components/utils/paneLifecycleRows/paneLifecycleRows.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 93,
+			"nonEmptyLines": 78,
+			"functions": [
+				{
+					"name": "extractWorkspaceIds",
+					"startLine": 13,
+					"endLine": 21,
+					"params": ["rows"]
+				},
+				{
+					"name": "extractPaneLocations",
+					"startLine": 23,
+					"endLine": 46,
+					"params": ["rows", "getTrackedPaneId"]
+				},
+				{
+					"name": "extractPaneIds",
+					"startLine": 48,
+					"endLine": 69,
+					"params": ["rows", "getTrackedPaneId"]
+				},
+				{
+					"name": "getRemovedPaneLocations",
+					"startLine": 71,
+					"endLine": 93,
+					"params": [
+						"{\n\tpreviousLocations,\n\tcurrentLocations,\n\tcurrentWorkspaceIds,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "extractWorkspaceIds",
+					"line": 13,
+					"isDefault": false
+				},
+				{
+					"name": "extractPaneLocations",
+					"line": 23,
+					"isDefault": false
+				},
+				{
+					"name": "extractPaneIds",
+					"line": 48,
+					"isDefault": false
+				},
+				{
+					"name": "getRemovedPaneLocations",
+					"line": 71,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "extractWorkspaceIds",
+					"callee": "workspaceIds.add",
+					"lineNumber": 17
+				},
+				{
+					"caller": "extractPaneLocations",
+					"callee": "Object.values",
+					"lineNumber": 36
+				},
+				{
+					"caller": "extractPaneLocations",
+					"callee": "getTrackedPaneId",
+					"lineNumber": 37
+				},
+				{
+					"caller": "extractPaneLocations",
+					"callee": "locations.set",
+					"lineNumber": 39
+				},
+				{
+					"caller": "extractPaneIds",
+					"callee": "Object.values",
+					"lineNumber": 59
+				},
+				{
+					"caller": "extractPaneIds",
+					"callee": "getTrackedPaneId",
+					"lineNumber": 60
+				},
+				{
+					"caller": "extractPaneIds",
+					"callee": "ids.add",
+					"lineNumber": 62
+				},
+				{
+					"caller": "getRemovedPaneLocations",
+					"callee": "currentLocations.has",
+					"lineNumber": 83
+				},
+				{
+					"caller": "getRemovedPaneLocations",
+					"callee": "currentWorkspaceIds.has",
+					"lineNumber": 88
+				},
+				{
+					"caller": "getRemovedPaneLocations",
+					"callee": "removed.push",
+					"lineNumber": 89
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 4,
+				"functionCount": 4,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/components/V1ImportModal/components/ImportPageShell/ImportPageShell.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 77,
+			"nonEmptyLines": 75,
+			"functions": [
+				{
+					"name": "ImportPageShell",
+					"startLine": 18,
+					"endLine": 77,
+					"params": [
+						"{\n\ttitle,\n\tdescription,\n\tisLoading,\n\temptyMessage,\n\titemCount,\n\tonRefresh,\n\tisRefreshing,\n\theaderAction,\n\tchildren,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "ImportPageShell",
+					"line": 18,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/components/V1ImportModal/components/ImportRow/ImportRow.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 227,
+			"nonEmptyLines": 222,
+			"functions": [
+				{
+					"name": "ImportRow",
+					"startLine": 48,
+					"endLine": 103,
+					"params": ["{\n\ticon,\n\tprimary,\n\tsecondary,\n\taction,\n}"]
+				},
+				{
+					"name": "RowActionView",
+					"startLine": 105,
+					"endLine": 227,
+					"params": ["{ action }"]
+				}
+			],
+			"exports": [
+				{
+					"name": "ImportRow",
+					"line": 48,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "RowActionView",
+					"callee": "cn",
+					"lineNumber": 136
+				},
+				{
+					"caller": "RowActionView",
+					"callee": "action.candidates.map",
+					"lineNumber": 202
+				},
+				{
+					"caller": "RowActionView",
+					"callee": "action.onPick",
+					"lineNumber": 205
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/components/V1ImportModal/components/IntroPage/IntroPage.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 13,
+			"nonEmptyLines": 13,
+			"functions": [
+				{
+					"name": "IntroPage",
+					"startLine": 1,
+					"endLine": 13,
+					"params": []
+				}
+			],
+			"exports": [
+				{
+					"name": "IntroPage",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/components/V1ImportModal/components/StepProgress/StepProgress.test.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 28,
+			"nonEmptyLines": 25,
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/components/V1ImportModal/components/StepProgress/StepProgress.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 43,
+			"nonEmptyLines": 39,
+			"functions": [
+				{
+					"name": "getStepProgress",
+					"startLine": 6,
+					"endLine": 23,
+					"params": ["{\n\tcurrentIndex,\n\ttotalSteps,\n}"]
+				},
+				{
+					"name": "StepProgress",
+					"startLine": 25,
+					"endLine": 43,
+					"params": ["props"]
+				}
+			],
+			"exports": [
+				{
+					"name": "getStepProgress",
+					"line": 6,
+					"isDefault": false
+				},
+				{
+					"name": "StepProgress",
+					"line": 25,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "getStepProgress",
+					"callee": "Math.max",
+					"lineNumber": 10
+				},
+				{
+					"caller": "getStepProgress",
+					"callee": "Math.min",
+					"lineNumber": 11
+				},
+				{
+					"caller": "getStepProgress",
+					"callee": "Math.max",
+					"lineNumber": 12
+				},
+				{
+					"caller": "StepProgress",
+					"callee": "getStepProgress",
+					"lineNumber": 26
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 2,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/components/V1ImportModal/components/WelcomePage/WelcomePage.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 63,
+			"nonEmptyLines": 58,
+			"functions": [
+				{
+					"name": "WelcomePage",
+					"startLine": 17,
+					"endLine": 32,
+					"params": []
+				},
+				{
+					"name": "DitheredBackground",
+					"startLine": 39,
+					"endLine": 63,
+					"params": ["{\n\tcolors,\n\tclassName = \"\",\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "WelcomePage",
+					"line": 17,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "DitheredBackground",
+					"callee": "cn",
+					"lineNumber": 45
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/lib/pierreWorker/pierreWorker.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 3,
+			"nonEmptyLines": 2,
+			"functions": [
+				{
+					"name": "createPierreWorker",
+					"startLine": 3,
+					"endLine": 3,
+					"params": []
+				}
+			],
+			"exports": [
+				{
+					"name": "createPierreWorker",
+					"line": 3,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/onboarding/components/PaginationDots/PaginationDots.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 24,
+			"nonEmptyLines": 22,
+			"functions": [
+				{
+					"name": "PaginationDots",
+					"startLine": 8,
+					"endLine": 24,
+					"params": ["{ current, total }"]
+				}
+			],
+			"exports": [
+				{
+					"name": "PaginationDots",
+					"line": 8,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "PaginationDots",
+					"callee": "Array.from",
+					"lineNumber": 9
+				},
+				{
+					"caller": "PaginationDots",
+					"callee": "dots.map",
+					"lineNumber": 12
+				},
+				{
+					"caller": "PaginationDots",
+					"callee": "cn",
+					"lineNumber": 16
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/onboarding/components/StepShell/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 6,
+			"nonEmptyLines": 6,
+			"exports": [
+				{
+					"name": "StepHeader",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "StepShell",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "SupersetPill",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "useSetupChromeStore",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 4,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/onboarding/components/StepShell/StepShell.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 87,
+			"nonEmptyLines": 77,
+			"functions": [
+				{
+					"name": "StepShell",
+					"startLine": 30,
+					"endLine": 55,
+					"params": [
+						"{\n\tchildren,\n\tbackTo,\n\tmaxWidth = \"md\",\n\tclassName,\n}"
+					]
+				},
+				{
+					"name": "StepHeader",
+					"startLine": 63,
+					"endLine": 75,
+					"params": ["{ title, subtitle, icon }"]
+				},
+				{
+					"name": "SupersetPill",
+					"startLine": 81,
+					"endLine": 87,
+					"params": ["{ children }"]
+				}
+			],
+			"exports": [
+				{
+					"name": "useSetupChromeStore",
+					"line": 10,
+					"isDefault": false
+				},
+				{
+					"name": "StepShell",
+					"line": 30,
+					"isDefault": false
+				},
+				{
+					"name": "StepHeader",
+					"line": 63,
+					"isDefault": false
+				},
+				{
+					"name": "SupersetPill",
+					"line": 81,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "StepShell",
+					"callee": "useSetupChromeStore",
+					"lineNumber": 36
+				},
+				{
+					"caller": "StepShell",
+					"callee": "useEffect",
+					"lineNumber": 37
+				},
+				{
+					"caller": "StepShell",
+					"callee": "setBackTo",
+					"lineNumber": 38
+				},
+				{
+					"caller": "StepShell",
+					"callee": "setBackTo",
+					"lineNumber": 39
+				},
+				{
+					"caller": "StepShell",
+					"callee": "cn",
+					"lineNumber": 45
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 4,
+				"functionCount": 3,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/onboarding/providers/components/ClaudeBrandIcon/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "ClaudeBrandIcon",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/onboarding/providers/components/ClaudeLogo/ClaudeLogo.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 24,
+			"nonEmptyLines": 22,
+			"functions": [
+				{
+					"name": "ClaudeLogo",
+					"startLine": 7,
+					"endLine": 24,
+					"params": ["{ className }"]
+				}
+			],
+			"exports": [
+				{
+					"name": "ClaudeLogo",
+					"line": 7,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "ClaudeLogo",
+					"callee": "cn",
+					"lineNumber": 13
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/onboarding/providers/components/CodexBrandIcon/CodexBrandIcon.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 34,
+			"nonEmptyLines": 32,
+			"functions": [
+				{
+					"name": "CodexBrandIcon",
+					"startLine": 8,
+					"endLine": 34,
+					"params": ["{\n\tclassName,\n\ticonClassName,\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "CodexBrandIcon",
+					"line": 8,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "CodexBrandIcon",
+					"callee": "cn",
+					"lineNumber": 14
+				},
+				{
+					"caller": "CodexBrandIcon",
+					"callee": "cn",
+					"lineNumber": 23
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/onboarding/providers/components/CodexBrandIcon/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "CodexBrandIcon",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/onboarding/providers/components/SupersetIcon/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "SupersetIcon",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/onboarding/providers/components/SupersetIcon/SupersetIcon.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 23,
+			"nonEmptyLines": 21,
+			"functions": [
+				{
+					"name": "SupersetIcon",
+					"startLine": 7,
+					"endLine": 23,
+					"params": ["{ className }"]
+				}
+			],
+			"exports": [
+				{
+					"name": "SupersetIcon",
+					"line": 7,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "SupersetIcon",
+					"callee": "cn",
+					"lineNumber": 13
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/providers/CollectionsProvider/dashboardSidebarLocal/sidebarVisibility.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 50,
+			"nonEmptyLines": 46,
+			"functions": [
+				{
+					"name": "getSidebarWorkspaceIsHidden",
+					"startLine": 5,
+					"endLine": 12,
+					"params": ["workspace"]
+				},
+				{
+					"name": "isSidebarWorkspaceVisible",
+					"startLine": 14,
+					"endLine": 18,
+					"params": ["workspace"]
+				},
+				{
+					"name": "getVisibleSidebarWorkspaces",
+					"startLine": 20,
+					"endLine": 24,
+					"params": ["workspaces"]
+				},
+				{
+					"name": "isAutoIncludedLocalMainWorkspace",
+					"startLine": 33,
+					"endLine": 50,
+					"params": [
+						"workspace",
+						"{\n\t\tlocalStateWorkspaceIds,\n\t\tsidebarProjectIds,\n\t\tmachineId,\n\t}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "getSidebarWorkspaceIsHidden",
+					"line": 5,
+					"isDefault": false
+				},
+				{
+					"name": "isSidebarWorkspaceVisible",
+					"line": 14,
+					"isDefault": false
+				},
+				{
+					"name": "getVisibleSidebarWorkspaces",
+					"line": 20,
+					"isDefault": false
+				},
+				{
+					"name": "isAutoIncludedLocalMainWorkspace",
+					"line": 33,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "isSidebarWorkspaceVisible",
+					"callee": "getSidebarWorkspaceIsHidden",
+					"lineNumber": 17
+				},
+				{
+					"caller": "getVisibleSidebarWorkspaces",
+					"callee": "workspaces.filter",
+					"lineNumber": 23
+				},
+				{
+					"caller": "isAutoIncludedLocalMainWorkspace",
+					"callee": "localStateWorkspaceIds.has",
+					"lineNumber": 46
+				},
+				{
+					"caller": "isAutoIncludedLocalMainWorkspace",
+					"callee": "sidebarProjectIds.has",
+					"lineNumber": 48
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 4,
+				"functionCount": 4,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/providers/CollectionsProvider/dashboardSidebarLocal/tabOrder.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 22,
+			"nonEmptyLines": 21,
+			"functions": [
+				{
+					"name": "getPrependTabOrder",
+					"startLine": 7,
+					"endLine": 14,
+					"params": ["items"]
+				},
+				{
+					"name": "getNextTabOrder",
+					"startLine": 16,
+					"endLine": 22,
+					"params": ["items"]
+				}
+			],
+			"exports": [
+				{
+					"name": "getPrependTabOrder",
+					"line": 7,
+					"isDefault": false
+				},
+				{
+					"name": "getNextTabOrder",
+					"line": 16,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "getPrependTabOrder",
+					"callee": "items.reduce",
+					"lineNumber": 9
+				},
+				{
+					"caller": "getPrependTabOrder",
+					"callee": "Math.min",
+					"lineNumber": 10
+				},
+				{
+					"caller": "getNextTabOrder",
+					"callee": "items.reduce",
+					"lineNumber": 17
+				},
+				{
+					"caller": "getNextTabOrder",
+					"callee": "Math.max",
+					"lineNumber": 18
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 2,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/providers/DeletingWorkspacesProvider/DeletingWorkspacesProvider.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 76,
+			"nonEmptyLines": 67,
+			"functions": [
+				{
+					"name": "DeletingWorkspacesProvider",
+					"startLine": 26,
+					"endLine": 66,
+					"params": ["{\n\tchildren,\n}"]
+				},
+				{
+					"name": "useDeletingWorkspaces",
+					"startLine": 68,
+					"endLine": 76,
+					"params": []
+				}
+			],
+			"exports": [
+				{
+					"name": "DeletingWorkspacesProvider",
+					"line": 26,
+					"isDefault": false
+				},
+				{
+					"name": "useDeletingWorkspaces",
+					"line": 68,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "DeletingWorkspacesProvider",
+					"callee": "useState",
+					"lineNumber": 31
+				},
+				{
+					"caller": "DeletingWorkspacesProvider",
+					"callee": "useCallback",
+					"lineNumber": 33
+				},
+				{
+					"caller": "DeletingWorkspacesProvider",
+					"callee": "ids.has",
+					"lineNumber": 34
+				},
+				{
+					"caller": "DeletingWorkspacesProvider",
+					"callee": "useCallback",
+					"lineNumber": 38
+				},
+				{
+					"caller": "DeletingWorkspacesProvider",
+					"callee": "setIds",
+					"lineNumber": 39
+				},
+				{
+					"caller": "DeletingWorkspacesProvider",
+					"callee": "prev.has",
+					"lineNumber": 40
+				},
+				{
+					"caller": "DeletingWorkspacesProvider",
+					"callee": "next.add",
+					"lineNumber": 42
+				},
+				{
+					"caller": "DeletingWorkspacesProvider",
+					"callee": "useCallback",
+					"lineNumber": 47
+				},
+				{
+					"caller": "DeletingWorkspacesProvider",
+					"callee": "setIds",
+					"lineNumber": 48
+				},
+				{
+					"caller": "DeletingWorkspacesProvider",
+					"callee": "prev.has",
+					"lineNumber": 49
+				},
+				{
+					"caller": "DeletingWorkspacesProvider",
+					"callee": "next.delete",
+					"lineNumber": 51
+				},
+				{
+					"caller": "DeletingWorkspacesProvider",
+					"callee": "useMemo",
+					"lineNumber": 56
+				},
+				{
+					"caller": "useDeletingWorkspaces",
+					"callee": "useContext",
+					"lineNumber": 69
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 2,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		}
+	]
+}

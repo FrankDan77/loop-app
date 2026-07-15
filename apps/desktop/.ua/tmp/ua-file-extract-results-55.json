@@ -1,0 +1,2770 @@
+{
+	"scriptCompleted": true,
+	"filesAnalyzed": 31,
+	"filesSkipped": [],
+	"results": [
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/ChangesContent/utils/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 6,
+			"nonEmptyLines": 6,
+			"exports": [
+				{
+					"name": "FileListViewMode",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "sortFiles",
+					"line": 2,
+					"isDefault": false
+				},
+				{
+					"name": "sortFilesGroupedOrder",
+					"line": 2,
+					"isDefault": false
+				},
+				{
+					"name": "sortFilesTreeOrder",
+					"line": 2,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 4,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/ChangesContent/utils/sortFiles.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 114,
+			"nonEmptyLines": 94,
+			"functions": [
+				{
+					"name": "sortFilesTreeOrder",
+					"startLine": 3,
+					"endLine": 67,
+					"params": ["files"]
+				},
+				{
+					"name": "sortFilesGroupedOrder",
+					"startLine": 69,
+					"endLine": 103,
+					"params": ["files"]
+				},
+				{
+					"name": "sortFiles",
+					"startLine": 107,
+					"endLine": 114,
+					"params": ["files", "viewMode"]
+				}
+			],
+			"exports": [
+				{
+					"name": "sortFilesTreeOrder",
+					"line": 3,
+					"isDefault": false
+				},
+				{
+					"name": "sortFilesGroupedOrder",
+					"line": 69,
+					"isDefault": false
+				},
+				{
+					"name": "sortFiles",
+					"line": 107,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "sortFilesTreeOrder",
+					"callee": "file.path.split",
+					"lineNumber": 16
+				},
+				{
+					"caller": "sortFilesTreeOrder",
+					"callee": "parts.slice(0, i + 1).join",
+					"lineNumber": 22
+				},
+				{
+					"caller": "sortFilesTreeOrder",
+					"callee": "parts.slice",
+					"lineNumber": 22
+				},
+				{
+					"caller": "sortFilesTreeOrder",
+					"callee": "current.has",
+					"lineNumber": 24
+				},
+				{
+					"caller": "sortFilesTreeOrder",
+					"callee": "current.set",
+					"lineNumber": 25
+				},
+				{
+					"caller": "sortFilesTreeOrder",
+					"callee": "current.get",
+					"lineNumber": 32
+				},
+				{
+					"caller": "sortFilesTreeOrder",
+					"callee": "current.get",
+					"lineNumber": 37
+				},
+				{
+					"caller": "traverse",
+					"callee": "Array.from(nodes.values()).sort",
+					"lineNumber": 46
+				},
+				{
+					"caller": "traverse",
+					"callee": "Array.from",
+					"lineNumber": 46
+				},
+				{
+					"caller": "traverse",
+					"callee": "nodes.values",
+					"lineNumber": 46
+				},
+				{
+					"caller": "traverse",
+					"callee": "a.name.localeCompare",
+					"lineNumber": 52
+				},
+				{
+					"caller": "traverse",
+					"callee": "result.push",
+					"lineNumber": 57
+				},
+				{
+					"caller": "traverse",
+					"callee": "traverse",
+					"lineNumber": 60
+				},
+				{
+					"caller": "sortFilesTreeOrder",
+					"callee": "traverse",
+					"lineNumber": 65
+				},
+				{
+					"caller": "sortFilesGroupedOrder",
+					"callee": "file.path.split",
+					"lineNumber": 75
+				},
+				{
+					"caller": "sortFilesGroupedOrder",
+					"callee": "pathParts.slice(0, -1).join",
+					"lineNumber": 77
+				},
+				{
+					"caller": "sortFilesGroupedOrder",
+					"callee": "pathParts.slice",
+					"lineNumber": 77
+				},
+				{
+					"caller": "sortFilesGroupedOrder",
+					"callee": "folderMap.has",
+					"lineNumber": 79
+				},
+				{
+					"caller": "sortFilesGroupedOrder",
+					"callee": "folderMap.set",
+					"lineNumber": 80
+				},
+				{
+					"caller": "sortFilesGroupedOrder",
+					"callee": "folderMap.get",
+					"lineNumber": 82
+				},
+				{
+					"caller": "sortFilesGroupedOrder",
+					"callee": "folderFiles.push",
+					"lineNumber": 83
+				},
+				{
+					"caller": "sortFilesGroupedOrder",
+					"callee": "Array.from(folderMap.keys()).sort",
+					"lineNumber": 86
+				},
+				{
+					"caller": "sortFilesGroupedOrder",
+					"callee": "Array.from",
+					"lineNumber": 86
+				},
+				{
+					"caller": "sortFilesGroupedOrder",
+					"callee": "folderMap.keys",
+					"lineNumber": 86
+				},
+				{
+					"caller": "sortFilesGroupedOrder",
+					"callee": "a.localeCompare",
+					"lineNumber": 87
+				},
+				{
+					"caller": "sortFilesGroupedOrder",
+					"callee": "folderMap.get",
+					"lineNumber": 92
+				},
+				{
+					"caller": "sortFilesGroupedOrder",
+					"callee": "folderFiles.sort",
+					"lineNumber": 94
+				},
+				{
+					"caller": "sortFilesGroupedOrder",
+					"callee": "a.path.split(\"/\").pop",
+					"lineNumber": 95
+				},
+				{
+					"caller": "sortFilesGroupedOrder",
+					"callee": "a.path.split",
+					"lineNumber": 95
+				},
+				{
+					"caller": "sortFilesGroupedOrder",
+					"callee": "b.path.split(\"/\").pop",
+					"lineNumber": 96
+				},
+				{
+					"caller": "sortFilesGroupedOrder",
+					"callee": "b.path.split",
+					"lineNumber": 96
+				},
+				{
+					"caller": "sortFilesGroupedOrder",
+					"callee": "aName.localeCompare",
+					"lineNumber": 97
+				},
+				{
+					"caller": "sortFilesGroupedOrder",
+					"callee": "result.push",
+					"lineNumber": 99
+				},
+				{
+					"caller": "sortFiles",
+					"callee": "sortFilesTreeOrder",
+					"lineNumber": 112
+				},
+				{
+					"caller": "sortFiles",
+					"callee": "sortFilesGroupedOrder",
+					"lineNumber": 113
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 3,
+				"functionCount": 3,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/FileViewerPane/components/FileViewerContent/utils/diff-location.test.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 127,
+			"nonEmptyLines": 115,
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/FileViewerPane/components/FileViewerContent/utils/diff-location.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 362,
+			"nonEmptyLines": 305,
+			"functions": [
+				{
+					"name": "getLineCount",
+					"startLine": 36,
+					"endLine": 38,
+					"params": ["lines"]
+				},
+				{
+					"name": "isSupportedLineType",
+					"startLine": 40,
+					"endLine": 47,
+					"params": ["lineType"]
+				},
+				{
+					"name": "clampLineNumber",
+					"startLine": 49,
+					"endLine": 53,
+					"params": ["lineNumber", "modifiedLines"]
+				},
+				{
+					"name": "parseHunkStartLines",
+					"startLine": 55,
+					"endLine": 81,
+					"params": ["hunkSpecs"]
+				},
+				{
+					"name": "resolveHunkStartLine",
+					"startLine": 83,
+					"endLine": 104,
+					"params": ["hunk", "side"]
+				},
+				{
+					"name": "clampColumn",
+					"startLine": 106,
+					"endLine": 116,
+					"params": ["lineNumber", "column", "modifiedLines"]
+				},
+				{
+					"name": "getDiffCodeElement",
+					"startLine": 118,
+					"endLine": 121,
+					"params": ["lineElement"]
+				},
+				{
+					"name": "getMeasurementContext",
+					"startLine": 125,
+					"endLine": 131,
+					"params": []
+				},
+				{
+					"name": "measureColumnFromRenderedText",
+					"startLine": 133,
+					"endLine": 184,
+					"params": ["codeElement", "clientX"]
+				},
+				{
+					"name": "mapOldSideLineToRawLine",
+					"startLine": 186,
+					"endLine": 241,
+					"params": ["contents", "lineNumber"]
+				},
+				{
+					"name": "mapDiffLocationToRawPosition",
+					"startLine": 243,
+					"endLine": 260,
+					"params": ["{\n\tcontents,\n\tlineNumber,\n\tside,\n\tcolumn,\n}"]
+				},
+				{
+					"name": "getColumnFromDiffPoint",
+					"startLine": 262,
+					"endLine": 303,
+					"params": [
+						"{\n\tlineElement,\n\tclientX,\n\tclientY,\n\tnumberColumn = false,\n}"
+					]
+				},
+				{
+					"name": "getDiffLocationFromTarget",
+					"startLine": 305,
+					"endLine": 347,
+					"params": ["target"]
+				},
+				{
+					"name": "getDiffLocationFromEvent",
+					"startLine": 349,
+					"endLine": 362,
+					"params": ["event"]
+				}
+			],
+			"exports": [
+				{
+					"name": "mapDiffLocationToRawPosition",
+					"line": 243,
+					"isDefault": false
+				},
+				{
+					"name": "getColumnFromDiffPoint",
+					"line": 262,
+					"isDefault": false
+				},
+				{
+					"name": "getDiffLocationFromTarget",
+					"line": 305,
+					"isDefault": false
+				},
+				{
+					"name": "getDiffLocationFromEvent",
+					"line": 349,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "clampLineNumber",
+					"callee": "Number.isFinite",
+					"lineNumber": 51
+				},
+				{
+					"caller": "clampLineNumber",
+					"callee": "Math.max",
+					"lineNumber": 52
+				},
+				{
+					"caller": "clampLineNumber",
+					"callee": "Math.min",
+					"lineNumber": 52
+				},
+				{
+					"caller": "parseHunkStartLines",
+					"callee": "/@@ -(\\d+)(?:,\\d+)? \\+(\\d+)(?:,\\d+)? @@/.exec",
+					"lineNumber": 66
+				},
+				{
+					"caller": "parseHunkStartLines",
+					"callee": "Number.parseInt",
+					"lineNumber": 74
+				},
+				{
+					"caller": "parseHunkStartLines",
+					"callee": "Number.parseInt",
+					"lineNumber": 75
+				},
+				{
+					"caller": "parseHunkStartLines",
+					"callee": "Number.isFinite",
+					"lineNumber": 78
+				},
+				{
+					"caller": "parseHunkStartLines",
+					"callee": "Number.isFinite",
+					"lineNumber": 79
+				},
+				{
+					"caller": "resolveHunkStartLine",
+					"callee": "Number.isFinite",
+					"lineNumber": 93
+				},
+				{
+					"caller": "resolveHunkStartLine",
+					"callee": "parseHunkStartLines",
+					"lineNumber": 97
+				},
+				{
+					"caller": "clampColumn",
+					"callee": "clampLineNumber",
+					"lineNumber": 111
+				},
+				{
+					"caller": "clampColumn",
+					"callee": "Math.max",
+					"lineNumber": 115
+				},
+				{
+					"caller": "clampColumn",
+					"callee": "Math.min",
+					"lineNumber": 115
+				},
+				{
+					"caller": "getDiffCodeElement",
+					"callee": "lineElement.querySelector",
+					"lineNumber": 119
+				},
+				{
+					"caller": "getMeasurementContext",
+					"callee": "document.createElement",
+					"lineNumber": 127
+				},
+				{
+					"caller": "getMeasurementContext",
+					"callee": "measurementCanvas.getContext",
+					"lineNumber": 130
+				},
+				{
+					"caller": "measureColumnFromRenderedText",
+					"callee": "codeElement.getBoundingClientRect",
+					"lineNumber": 142
+				},
+				{
+					"caller": "measureColumnFromRenderedText",
+					"callee": "window.getComputedStyle",
+					"lineNumber": 147
+				},
+				{
+					"caller": "measureColumnFromRenderedText",
+					"callee": "getMeasurementContext",
+					"lineNumber": 148
+				},
+				{
+					"caller": "measureColumnFromRenderedText",
+					"callee": "[\n\t\tstyle.fontStyle,\n\t\tstyle.fontVariant,\n\t\tstyle.fontWeight,\n\t\tstyle.fontSize,\n\t\tstyle.fontFamily,\n\t]\n\t\t.filter(Boolean)\n\t\t.join",
+					"lineNumber": 153
+				},
+				{
+					"caller": "measureColumnFromRenderedText",
+					"callee": "[\n\t\tstyle.fontStyle,\n\t\tstyle.fontVariant,\n\t\tstyle.fontWeight,\n\t\tstyle.fontSize,\n\t\tstyle.fontFamily,\n\t]\n\t\t.filter",
+					"lineNumber": 153
+				},
+				{
+					"caller": "measureColumnFromRenderedText",
+					"callee": "Number.parseInt",
+					"lineNumber": 163
+				},
+				{
+					"caller": "measureColumnFromRenderedText",
+					"callee": "Number.isFinite",
+					"lineNumber": 164
+				},
+				{
+					"caller": "measureColumnFromRenderedText",
+					"callee": "Array.from",
+					"lineNumber": 168
+				},
+				{
+					"caller": "measureColumnFromRenderedText",
+					"callee": "\" \".repeat",
+					"lineNumber": 172
+				},
+				{
+					"caller": "measureColumnFromRenderedText",
+					"callee": "context.measureText",
+					"lineNumber": 173
+				},
+				{
+					"caller": "mapOldSideLineToRawLine",
+					"callee": "contents.modified.split",
+					"lineNumber": 190
+				},
+				{
+					"caller": "mapOldSideLineToRawLine",
+					"callee": "parseDiffFromFile",
+					"lineNumber": 191
+				},
+				{
+					"caller": "mapOldSideLineToRawLine",
+					"callee": "resolveHunkStartLine",
+					"lineNumber": 198
+				},
+				{
+					"caller": "mapOldSideLineToRawLine",
+					"callee": "resolveHunkStartLine",
+					"lineNumber": 199
+				},
+				{
+					"caller": "mapOldSideLineToRawLine",
+					"callee": "clampLineNumber",
+					"lineNumber": 202
+				},
+				{
+					"caller": "mapOldSideLineToRawLine",
+					"callee": "getLineCount",
+					"lineNumber": 210
+				},
+				{
+					"caller": "mapOldSideLineToRawLine",
+					"callee": "clampLineNumber",
+					"lineNumber": 214
+				},
+				{
+					"caller": "mapOldSideLineToRawLine",
+					"callee": "clampLineNumber",
+					"lineNumber": 223
+				},
+				{
+					"caller": "mapOldSideLineToRawLine",
+					"callee": "getLineCount",
+					"lineNumber": 224
+				},
+				{
+					"caller": "mapOldSideLineToRawLine",
+					"callee": "getLineCount",
+					"lineNumber": 225
+				},
+				{
+					"caller": "mapOldSideLineToRawLine",
+					"callee": "clampLineNumber",
+					"lineNumber": 240
+				},
+				{
+					"caller": "mapDiffLocationToRawPosition",
+					"callee": "contents.modified.split",
+					"lineNumber": 249
+				},
+				{
+					"caller": "mapDiffLocationToRawPosition",
+					"callee": "clampLineNumber",
+					"lineNumber": 253
+				},
+				{
+					"caller": "mapDiffLocationToRawPosition",
+					"callee": "mapOldSideLineToRawLine",
+					"lineNumber": 254
+				},
+				{
+					"caller": "mapDiffLocationToRawPosition",
+					"callee": "clampColumn",
+					"lineNumber": 258
+				},
+				{
+					"caller": "getColumnFromDiffPoint",
+					"callee": "getDiffCodeElement",
+					"lineNumber": 272
+				},
+				{
+					"caller": "getColumnFromDiffPoint",
+					"callee": "documentWithCaretApi.caretPositionFromPoint",
+					"lineNumber": 280
+				},
+				{
+					"caller": "getColumnFromDiffPoint",
+					"callee": "codeElement.contains",
+					"lineNumber": 284
+				},
+				{
+					"caller": "getColumnFromDiffPoint",
+					"callee": "document.createRange",
+					"lineNumber": 285
+				},
+				{
+					"caller": "getColumnFromDiffPoint",
+					"callee": "measureRange.selectNodeContents",
+					"lineNumber": 286
+				},
+				{
+					"caller": "getColumnFromDiffPoint",
+					"callee": "measureRange.setEnd",
+					"lineNumber": 287
+				},
+				{
+					"caller": "getColumnFromDiffPoint",
+					"callee": "Math.max",
+					"lineNumber": 288
+				},
+				{
+					"caller": "getColumnFromDiffPoint",
+					"callee": "measureRange.toString",
+					"lineNumber": 288
+				},
+				{
+					"caller": "getColumnFromDiffPoint",
+					"callee": "documentWithCaretApi.caretRangeFromPoint",
+					"lineNumber": 291
+				},
+				{
+					"caller": "getColumnFromDiffPoint",
+					"callee": "codeElement.contains",
+					"lineNumber": 295
+				},
+				{
+					"caller": "getColumnFromDiffPoint",
+					"callee": "document.createRange",
+					"lineNumber": 296
+				},
+				{
+					"caller": "getColumnFromDiffPoint",
+					"callee": "measureRange.selectNodeContents",
+					"lineNumber": 297
+				},
+				{
+					"caller": "getColumnFromDiffPoint",
+					"callee": "measureRange.setEnd",
+					"lineNumber": 298
+				},
+				{
+					"caller": "getColumnFromDiffPoint",
+					"callee": "Math.max",
+					"lineNumber": 299
+				},
+				{
+					"caller": "getColumnFromDiffPoint",
+					"callee": "measureRange.toString",
+					"lineNumber": 299
+				},
+				{
+					"caller": "getColumnFromDiffPoint",
+					"callee": "measureColumnFromRenderedText",
+					"lineNumber": 302
+				},
+				{
+					"caller": "getDiffLocationFromTarget",
+					"callee": "targetElement?.closest",
+					"lineNumber": 314
+				},
+				{
+					"caller": "getDiffLocationFromTarget",
+					"callee": "Number.parseInt",
+					"lineNumber": 319
+				},
+				{
+					"caller": "getDiffLocationFromTarget",
+					"callee": "Number.isFinite",
+					"lineNumber": 322
+				},
+				{
+					"caller": "getDiffLocationFromTarget",
+					"callee": "isSupportedLineType",
+					"lineNumber": 324
+				},
+				{
+					"caller": "getDiffLocationFromTarget",
+					"callee": "targetElement?.closest",
+					"lineNumber": 329
+				},
+				{
+					"caller": "getDiffLocationFromTarget",
+					"callee": "lineElement.closest",
+					"lineNumber": 330
+				},
+				{
+					"caller": "getDiffLocationFromEvent",
+					"callee": "event.composedPath",
+					"lineNumber": 352
+				},
+				{
+					"caller": "getDiffLocationFromEvent",
+					"callee": "getDiffLocationFromTarget",
+					"lineNumber": 355
+				},
+				{
+					"caller": "getDiffLocationFromEvent",
+					"callee": "getDiffLocationFromTarget",
+					"lineNumber": 361
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 4,
+				"functionCount": 14,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/RightSidebar/ChangesView/components/CategorySection/CategorySection.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 105,
+			"nonEmptyLines": 99,
+			"functions": [
+				{
+					"name": "CategorySection",
+					"startLine": 23,
+					"endLine": 105,
+					"params": [
+						"{\n\tid,\n\ttitle,\n\tcount,\n\tisExpanded,\n\tonToggle,\n\tchildren,\n\tactions,\n\tonMove,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "CategorySection",
+					"line": 23,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "CategorySection",
+					"callee": "useChangesSectionDnd",
+					"lineNumber": 34
+				},
+				{
+					"caller": "CategorySection",
+					"callee": "cn",
+					"lineNumber": 51
+				},
+				{
+					"caller": "CategorySection",
+					"callee": "cn",
+					"lineNumber": 58
+				},
+				{
+					"caller": "CategorySection",
+					"callee": "cn",
+					"lineNumber": 64
+				},
+				{
+					"caller": "CategorySection",
+					"callee": "cn",
+					"lineNumber": 70
+				},
+				{
+					"caller": "CategorySection",
+					"callee": "cn",
+					"lineNumber": 76
+				},
+				{
+					"caller": "CategorySection",
+					"callee": "cn",
+					"lineNumber": 84
+				},
+				{
+					"caller": "CategorySection",
+					"callee": "cn",
+					"lineNumber": 87
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/RightSidebar/ChangesView/components/ChangesHeader/ChangesHeader.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 283,
+			"nonEmptyLines": 269,
+			"functions": [
+				{
+					"name": "BaseBranchSelector",
+					"startLine": 50,
+					"endLine": 152,
+					"params": ["{ worktreePath }"]
+				},
+				{
+					"name": "StashDropdown",
+					"startLine": 154,
+					"endLine": 201,
+					"params": [
+						"{\n\tonStash,\n\tonStashIncludeUntracked,\n\tonStashPop,\n\tisPending,\n}"
+					]
+				},
+				{
+					"name": "RefreshButton",
+					"startLine": 203,
+					"endLine": 240,
+					"params": ["{ onRefresh }"]
+				},
+				{
+					"name": "ChangesHeader",
+					"startLine": 242,
+					"endLine": 283,
+					"params": [
+						"{\n\tonRefresh,\n\tviewMode,\n\tonViewModeChange,\n\tshowViewModeToggle = true,\n\tworktreePath,\n\tpr,\n\tisPRStatusLoading,\n\tcanCreatePR,\n\tcreatePRBlockedReason,\n\tonStash,\n\tonStashIncludeUntracked,\n\tonStashPop,\n\tisStashPending,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "ChangesHeader",
+					"line": 242,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "BaseBranchSelector",
+					"callee": "useState",
+					"lineNumber": 51
+				},
+				{
+					"caller": "BaseBranchSelector",
+					"callee": "useState",
+					"lineNumber": 52
+				},
+				{
+					"caller": "BaseBranchSelector",
+					"callee": "electronTrpc.useUtils",
+					"lineNumber": 53
+				},
+				{
+					"caller": "BaseBranchSelector",
+					"callee": "electronTrpc.changes.getBranches.useQuery",
+					"lineNumber": 55
+				},
+				{
+					"caller": "BaseBranchSelector",
+					"callee": "electronTrpc.changes.updateBaseBranch.useMutation",
+					"lineNumber": 64
+				},
+				{
+					"caller": "BaseBranchSelector",
+					"callee": "utils.changes.getBranches.invalidate",
+					"lineNumber": 66
+				},
+				{
+					"caller": "BaseBranchSelector",
+					"callee": "useMemo",
+					"lineNumber": 72
+				},
+				{
+					"caller": "BaseBranchSelector",
+					"callee": "[...(branchData?.remote ?? [])].sort",
+					"lineNumber": 73
+				},
+				{
+					"caller": "BaseBranchSelector",
+					"callee": "a.localeCompare",
+					"lineNumber": 78
+				},
+				{
+					"caller": "BaseBranchSelector",
+					"callee": "useMemo",
+					"lineNumber": 82
+				},
+				{
+					"caller": "BaseBranchSelector",
+					"callee": "sortedBranches.filter",
+					"lineNumber": 83
+				},
+				{
+					"caller": "BaseBranchSelector",
+					"callee": "search.toLowerCase",
+					"lineNumber": 84
+				},
+				{
+					"caller": "BaseBranchSelector",
+					"callee": "sortedBranches.filter",
+					"lineNumber": 85
+				},
+				{
+					"caller": "BaseBranchSelector",
+					"callee": "branch?.toLowerCase().includes",
+					"lineNumber": 86
+				},
+				{
+					"caller": "BaseBranchSelector",
+					"callee": "branch?.toLowerCase",
+					"lineNumber": 86
+				},
+				{
+					"caller": "handleBranchSelect",
+					"callee": "updateBaseBranch.mutate",
+					"lineNumber": 91
+				},
+				{
+					"caller": "handleBranchSelect",
+					"callee": "setOpen",
+					"lineNumber": 95
+				},
+				{
+					"caller": "handleBranchSelect",
+					"callee": "setSearch",
+					"lineNumber": 96
+				},
+				{
+					"caller": "BaseBranchSelector",
+					"callee": "filteredBranches.map",
+					"lineNumber": 127
+				},
+				{
+					"caller": "BaseBranchSelector",
+					"callee": "handleBranchSelect",
+					"lineNumber": 131
+				},
+				{
+					"caller": "RefreshButton",
+					"callee": "useState",
+					"lineNumber": 204
+				},
+				{
+					"caller": "RefreshButton",
+					"callee": "useRef",
+					"lineNumber": 205
+				},
+				{
+					"caller": "handleClick",
+					"callee": "setIsSpinning",
+					"lineNumber": 208
+				},
+				{
+					"caller": "handleClick",
+					"callee": "onRefresh",
+					"lineNumber": 209
+				},
+				{
+					"caller": "handleClick",
+					"callee": "clearTimeout",
+					"lineNumber": 210
+				},
+				{
+					"caller": "handleClick",
+					"callee": "setTimeout",
+					"lineNumber": 211
+				},
+				{
+					"caller": "handleClick",
+					"callee": "setIsSpinning",
+					"lineNumber": 211
+				},
+				{
+					"caller": "RefreshButton",
+					"callee": "useEffect",
+					"lineNumber": 214
+				},
+				{
+					"caller": "RefreshButton",
+					"callee": "clearTimeout",
+					"lineNumber": 216
+				}
+			],
+			"metrics": {
+				"importCount": 4,
+				"exportCount": 1,
+				"functionCount": 4,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/RightSidebar/ChangesView/components/ChangesHeader/components/PRButton/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "PRButton",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/RightSidebar/ChangesView/components/CommitItem/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "CommitItem",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/RightSidebar/ChangesView/components/CommitListVirtualized/CommitListVirtualized.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 87,
+			"nonEmptyLines": 80,
+			"functions": [
+				{
+					"name": "CommitListVirtualized",
+					"startLine": 23,
+					"endLine": 87,
+					"params": [
+						"{\n\tcommits,\n\texpandedCommits,\n\tonCommitToggle,\n\tselectedFile,\n\tselectedCommitHash,\n\tonFileSelect,\n\tviewMode,\n\tworktreePath,\n\tprojectId,\n\tisExpandedView,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "CommitListVirtualized",
+					"line": 23,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "CommitListVirtualized",
+					"callee": "useRef",
+					"lineNumber": 35
+				},
+				{
+					"caller": "CommitListVirtualized",
+					"callee": "useVirtualizer",
+					"lineNumber": 37
+				},
+				{
+					"caller": "CommitListVirtualized",
+					"callee": "listRef.current?.closest",
+					"lineNumber": 40
+				},
+				{
+					"caller": "CommitListVirtualized",
+					"callee": "virtualizer.getVirtualItems",
+					"lineNumber": 48
+				},
+				{
+					"caller": "CommitListVirtualized",
+					"callee": "virtualizer.getTotalSize",
+					"lineNumber": 54
+				},
+				{
+					"caller": "CommitListVirtualized",
+					"callee": "items.map",
+					"lineNumber": 56
+				},
+				{
+					"caller": "CommitListVirtualized",
+					"callee": "expandedCommits.has",
+					"lineNumber": 71
+				},
+				{
+					"caller": "CommitListVirtualized",
+					"callee": "onCommitToggle",
+					"lineNumber": 72
+				}
+			],
+			"metrics": {
+				"importCount": 3,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/RightSidebar/ChangesView/components/CommitListVirtualized/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "CommitListVirtualized",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/RightSidebar/ChangesView/components/FileItem/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "FileItem",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/RightSidebar/ChangesView/components/FileList/FileList.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 156,
+			"nonEmptyLines": 148,
+			"functions": [
+				{
+					"name": "FileList",
+					"startLine": 32,
+					"endLine": 156,
+					"params": [
+						"{\n\tfiles,\n\tviewMode,\n\tselectedFile,\n\tselectedCommitHash,\n\tonFileSelect,\n\tshowStats = true,\n\tonStage,\n\tonUnstage,\n\tonStageFiles,\n\tonUnstageFiles,\n\tisActioning,\n\tworktreePath,\n\tonDiscardFiles,\n\tcategory,\n\tcommitHash,\n\tisExpandedView,\n\tprojectId,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "FileList",
+					"line": 32,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "FileList",
+					"callee": "electronTrpc.projects.getDefaultApp.useQuery",
+					"lineNumber": 51
+				},
+				{
+					"caller": "FileList",
+					"callee": "useDeferredValue",
+					"lineNumber": 55
+				}
+			],
+			"metrics": {
+				"importCount": 7,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/RightSidebar/ChangesView/components/FileList/FileListGrouped.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 214,
+			"nonEmptyLines": 199,
+			"functions": [
+				{
+					"name": "groupFilesByFolder",
+					"startLine": 33,
+					"endLine": 64,
+					"params": ["files"]
+				},
+				{
+					"name": "FolderGroupItem",
+					"startLine": 85,
+					"endLine": 167,
+					"params": [
+						"{\n\tgroup,\n\tselectedFile,\n\tonFileSelect,\n\tshowStats,\n\tonStage,\n\tonUnstage,\n\tonStageFiles,\n\tonUnstageFiles,\n\tisActioning,\n\tworktreePath,\n\tonDiscardFiles,\n\tcategory,\n\tcommitHash,\n\tisExpandedView,\n\tprojectId,\n\tdefaultApp,\n}"
+					]
+				},
+				{
+					"name": "FileListGrouped",
+					"startLine": 169,
+					"endLine": 214,
+					"params": [
+						"{\n\tfiles,\n\tselectedFile,\n\tonFileSelect,\n\tshowStats = true,\n\tonStage,\n\tonUnstage,\n\tonStageFiles,\n\tonUnstageFiles,\n\tisActioning,\n\tworktreePath,\n\tonDiscardFiles,\n\tcategory,\n\tcommitHash,\n\tisExpandedView,\n\tprojectId,\n\tdefaultApp,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "FileListGrouped",
+					"line": 169,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "groupFilesByFolder",
+					"callee": "file.path.split",
+					"lineNumber": 37
+				},
+				{
+					"caller": "groupFilesByFolder",
+					"callee": "pathParts.slice(0, -1).join",
+					"lineNumber": 39
+				},
+				{
+					"caller": "groupFilesByFolder",
+					"callee": "pathParts.slice",
+					"lineNumber": 39
+				},
+				{
+					"caller": "groupFilesByFolder",
+					"callee": "folderMap.has",
+					"lineNumber": 41
+				},
+				{
+					"caller": "groupFilesByFolder",
+					"callee": "folderMap.set",
+					"lineNumber": 42
+				},
+				{
+					"caller": "groupFilesByFolder",
+					"callee": "folderMap.get(folderPath)?.push",
+					"lineNumber": 44
+				},
+				{
+					"caller": "groupFilesByFolder",
+					"callee": "folderMap.get",
+					"lineNumber": 44
+				},
+				{
+					"caller": "groupFilesByFolder",
+					"callee": "Array.from(folderMap.entries())\n\t\t.map(([folderPath, files]) => {\n\t\t\tconst pathParts = folderPath.split(\"/\");\n\t\t\tconst folderName =\n\t\t\t\tfolderPath === \"\" ? \"\" : pathParts[pathParts.length - 1];\n\n\t\t\treturn {\n\t\t\t\tfolderPath,\n\t\t\t\tfolderName,\n\t\t\t\tfiles: files.sort((a, b) => {\n\t\t\t\t\tconst aName = a.path.split(\"/\").pop() || \"\";\n\t\t\t\t\tconst bName = b.path.split(\"/\").pop() || \"\";\n\t\t\t\t\treturn aName.localeCompare(bName);\n\t\t\t\t}),\n\t\t\t};\n\t\t})\n\t\t.sort",
+					"lineNumber": 47
+				},
+				{
+					"caller": "groupFilesByFolder",
+					"callee": "Array.from(folderMap.entries())\n\t\t.map",
+					"lineNumber": 47
+				},
+				{
+					"caller": "groupFilesByFolder",
+					"callee": "Array.from",
+					"lineNumber": 47
+				},
+				{
+					"caller": "groupFilesByFolder",
+					"callee": "folderMap.entries",
+					"lineNumber": 47
+				},
+				{
+					"caller": "groupFilesByFolder",
+					"callee": "folderPath.split",
+					"lineNumber": 49
+				},
+				{
+					"caller": "groupFilesByFolder",
+					"callee": "files.sort",
+					"lineNumber": 56
+				},
+				{
+					"caller": "groupFilesByFolder",
+					"callee": "a.path.split(\"/\").pop",
+					"lineNumber": 57
+				},
+				{
+					"caller": "groupFilesByFolder",
+					"callee": "a.path.split",
+					"lineNumber": 57
+				},
+				{
+					"caller": "groupFilesByFolder",
+					"callee": "b.path.split(\"/\").pop",
+					"lineNumber": 58
+				},
+				{
+					"caller": "groupFilesByFolder",
+					"callee": "b.path.split",
+					"lineNumber": 58
+				},
+				{
+					"caller": "groupFilesByFolder",
+					"callee": "aName.localeCompare",
+					"lineNumber": 59
+				},
+				{
+					"caller": "groupFilesByFolder",
+					"callee": "a.folderPath.localeCompare",
+					"lineNumber": 63
+				},
+				{
+					"caller": "FolderGroupItem",
+					"callee": "useState",
+					"lineNumber": 103
+				},
+				{
+					"caller": "FolderGroupItem",
+					"callee": "useCallback",
+					"lineNumber": 106
+				},
+				{
+					"caller": "FolderGroupItem",
+					"callee": "onStageFiles",
+					"lineNumber": 108
+				},
+				{
+					"caller": "FolderGroupItem",
+					"callee": "onStage",
+					"lineNumber": 111
+				},
+				{
+					"caller": "FolderGroupItem",
+					"callee": "useCallback",
+					"lineNumber": 116
+				},
+				{
+					"caller": "FolderGroupItem",
+					"callee": "onUnstageFiles",
+					"lineNumber": 118
+				},
+				{
+					"caller": "FolderGroupItem",
+					"callee": "onUnstage",
+					"lineNumber": 121
+				},
+				{
+					"caller": "FolderGroupItem",
+					"callee": "useCallback",
+					"lineNumber": 126
+				},
+				{
+					"caller": "FolderGroupItem",
+					"callee": "onDiscardFiles",
+					"lineNumber": 127
+				},
+				{
+					"caller": "FolderGroupItem",
+					"callee": "group.files.map",
+					"lineNumber": 146
+				},
+				{
+					"caller": "FolderGroupItem",
+					"callee": "onFileSelect",
+					"lineNumber": 151
+				},
+				{
+					"caller": "FolderGroupItem",
+					"callee": "onStage",
+					"lineNumber": 153
+				},
+				{
+					"caller": "FolderGroupItem",
+					"callee": "onUnstage",
+					"lineNumber": 154
+				},
+				{
+					"caller": "FolderGroupItem",
+					"callee": "onDiscardFiles",
+					"lineNumber": 159
+				},
+				{
+					"caller": "FileListGrouped",
+					"callee": "useMemo",
+					"lineNumber": 187
+				},
+				{
+					"caller": "FileListGrouped",
+					"callee": "groupFilesByFolder",
+					"lineNumber": 187
+				},
+				{
+					"caller": "FileListGrouped",
+					"callee": "groups.map",
+					"lineNumber": 191
+				}
+			],
+			"metrics": {
+				"importCount": 3,
+				"exportCount": 1,
+				"functionCount": 3,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/RightSidebar/ChangesView/components/FileList/FileListGroupedVirtualized.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 240,
+			"nonEmptyLines": 221,
+			"functions": [
+				{
+					"name": "groupFilesByFolder",
+					"startLine": 37,
+					"endLine": 62,
+					"params": ["files"]
+				},
+				{
+					"name": "FileListGroupedVirtualized",
+					"startLine": 68,
+					"endLine": 240,
+					"params": [
+						"{\n\tfiles,\n\tselectedFile,\n\tselectedCommitHash,\n\tonFileSelect,\n\tshowStats = true,\n\tonStage,\n\tonUnstage,\n\tonStageFiles,\n\tonUnstageFiles,\n\tisActioning,\n\tworktreePath,\n\tonDiscardFiles,\n\tcategory,\n\tcommitHash,\n\tisExpandedView,\n\tprojectId,\n\tdefaultApp,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "FileListGroupedVirtualized",
+					"line": 68,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "groupFilesByFolder",
+					"callee": "file.path.split",
+					"lineNumber": 41
+				},
+				{
+					"caller": "groupFilesByFolder",
+					"callee": "pathParts.slice(0, -1).join",
+					"lineNumber": 43
+				},
+				{
+					"caller": "groupFilesByFolder",
+					"callee": "pathParts.slice",
+					"lineNumber": 43
+				},
+				{
+					"caller": "groupFilesByFolder",
+					"callee": "folderMap.has",
+					"lineNumber": 45
+				},
+				{
+					"caller": "groupFilesByFolder",
+					"callee": "folderMap.set",
+					"lineNumber": 46
+				},
+				{
+					"caller": "groupFilesByFolder",
+					"callee": "folderMap.get(folderPath)?.push",
+					"lineNumber": 48
+				},
+				{
+					"caller": "groupFilesByFolder",
+					"callee": "folderMap.get",
+					"lineNumber": 48
+				},
+				{
+					"caller": "groupFilesByFolder",
+					"callee": "Array.from(folderMap.entries())\n\t\t.map(([folderPath, groupFiles]) => ({\n\t\t\tfolderPath,\n\t\t\tdisplayName: folderPath || \"Root Path\",\n\t\t\tfiles: groupFiles.sort((a, b) => {\n\t\t\t\tconst aName = a.path.split(\"/\").pop() || \"\";\n\t\t\t\tconst bName = b.path.split(\"/\").pop() || \"\";\n\t\t\t\treturn aName.localeCompare(bName);\n\t\t\t}),\n\t\t}))\n\t\t.sort",
+					"lineNumber": 51
+				},
+				{
+					"caller": "groupFilesByFolder",
+					"callee": "Array.from(folderMap.entries())\n\t\t.map",
+					"lineNumber": 51
+				},
+				{
+					"caller": "groupFilesByFolder",
+					"callee": "Array.from",
+					"lineNumber": 51
+				},
+				{
+					"caller": "groupFilesByFolder",
+					"callee": "folderMap.entries",
+					"lineNumber": 51
+				},
+				{
+					"caller": "groupFilesByFolder",
+					"callee": "groupFiles.sort",
+					"lineNumber": 55
+				},
+				{
+					"caller": "groupFilesByFolder",
+					"callee": "a.path.split(\"/\").pop",
+					"lineNumber": 56
+				},
+				{
+					"caller": "groupFilesByFolder",
+					"callee": "a.path.split",
+					"lineNumber": 56
+				},
+				{
+					"caller": "groupFilesByFolder",
+					"callee": "b.path.split(\"/\").pop",
+					"lineNumber": 57
+				},
+				{
+					"caller": "groupFilesByFolder",
+					"callee": "b.path.split",
+					"lineNumber": 57
+				},
+				{
+					"caller": "groupFilesByFolder",
+					"callee": "aName.localeCompare",
+					"lineNumber": 58
+				},
+				{
+					"caller": "groupFilesByFolder",
+					"callee": "a.folderPath.localeCompare",
+					"lineNumber": 61
+				},
+				{
+					"caller": "FileListGroupedVirtualized",
+					"callee": "useRef",
+					"lineNumber": 87
+				},
+				{
+					"caller": "FileListGroupedVirtualized",
+					"callee": "useState",
+					"lineNumber": 88
+				},
+				{
+					"caller": "FileListGroupedVirtualized",
+					"callee": "useMemo",
+					"lineNumber": 92
+				},
+				{
+					"caller": "FileListGroupedVirtualized",
+					"callee": "groupFilesByFolder",
+					"lineNumber": 92
+				},
+				{
+					"caller": "FileListGroupedVirtualized",
+					"callee": "useMemo",
+					"lineNumber": 94
+				},
+				{
+					"caller": "FileListGroupedVirtualized",
+					"callee": "nextRows.push",
+					"lineNumber": 98
+				},
+				{
+					"caller": "FileListGroupedVirtualized",
+					"callee": "nextRows.push",
+					"lineNumber": 108
+				},
+				{
+					"caller": "FileListGroupedVirtualized",
+					"callee": "useVirtualizer",
+					"lineNumber": 120
+				},
+				{
+					"caller": "FileListGroupedVirtualized",
+					"callee": "listRef.current?.closest",
+					"lineNumber": 123
+				},
+				{
+					"caller": "FileListGroupedVirtualized",
+					"callee": "virtualizer.getVirtualItems",
+					"lineNumber": 132
+				},
+				{
+					"caller": "FileListGroupedVirtualized",
+					"callee": "virtualizer.getTotalSize",
+					"lineNumber": 138
+				},
+				{
+					"caller": "FileListGroupedVirtualized",
+					"callee": "items.map",
+					"lineNumber": 140
+				},
+				{
+					"caller": "FileListGroupedVirtualized",
+					"callee": "setExpandedFolders",
+					"lineNumber": 159
+				},
+				{
+					"caller": "FileListGroupedVirtualized",
+					"callee": "onStageFiles",
+					"lineNumber": 174
+				},
+				{
+					"caller": "FileListGroupedVirtualized",
+					"callee": "onStage",
+					"lineNumber": 178
+				},
+				{
+					"caller": "FileListGroupedVirtualized",
+					"callee": "onUnstageFiles",
+					"lineNumber": 187
+				},
+				{
+					"caller": "FileListGroupedVirtualized",
+					"callee": "onUnstage",
+					"lineNumber": 191
+				},
+				{
+					"caller": "FileListGroupedVirtualized",
+					"callee": "onDiscardFiles",
+					"lineNumber": 198
+				},
+				{
+					"caller": "FileListGroupedVirtualized",
+					"callee": "onFileSelect",
+					"lineNumber": 213
+				},
+				{
+					"caller": "FileListGroupedVirtualized",
+					"callee": "onStage",
+					"lineNumber": 215
+				},
+				{
+					"caller": "FileListGroupedVirtualized",
+					"callee": "onUnstage",
+					"lineNumber": 217
+				},
+				{
+					"caller": "FileListGroupedVirtualized",
+					"callee": "onDiscardFiles",
+					"lineNumber": 225
+				}
+			],
+			"metrics": {
+				"importCount": 3,
+				"exportCount": 1,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/RightSidebar/ChangesView/components/FileList/FileListTree.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 293,
+			"nonEmptyLines": 269,
+			"functions": [
+				{
+					"name": "collectFilesFromNode",
+					"startLine": 16,
+					"endLine": 30,
+					"params": ["node"]
+				},
+				{
+					"name": "buildFileTree",
+					"startLine": 52,
+					"endLine": 102,
+					"params": ["files"]
+				},
+				{
+					"name": "TreeNodeComponent",
+					"startLine": 125,
+					"endLine": 244,
+					"params": [
+						"{\n\tnode,\n\tlevel = 0,\n\tselectedPath,\n\tselectedCommitHash,\n\tonFileSelect,\n\tshowStats,\n\tonStage,\n\tonUnstage,\n\tonStageFiles,\n\tonUnstageFiles,\n\tisActioning,\n\tworktreePath,\n\tonDiscardFiles,\n\tcategory,\n\tcommitHash,\n\tisExpandedView,\n\tprojectId,\n\tdefaultApp,\n}"
+					]
+				},
+				{
+					"name": "FileListTree",
+					"startLine": 246,
+					"endLine": 293,
+					"params": [
+						"{\n\tfiles,\n\tselectedFile,\n\tselectedCommitHash,\n\tonFileSelect,\n\tshowStats = true,\n\tonStage,\n\tonUnstage,\n\tonStageFiles,\n\tonUnstageFiles,\n\tisActioning,\n\tworktreePath,\n\tonDiscardFiles,\n\tcategory,\n\tcommitHash,\n\tisExpandedView,\n\tprojectId,\n\tdefaultApp,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "FileListTree",
+					"line": 246,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "collectFilesFromNode",
+					"callee": "files.push",
+					"lineNumber": 20
+				},
+				{
+					"caller": "collectFilesFromNode",
+					"callee": "files.push",
+					"lineNumber": 25
+				},
+				{
+					"caller": "collectFilesFromNode",
+					"callee": "collectFilesFromNode",
+					"lineNumber": 25
+				},
+				{
+					"caller": "buildFileTree",
+					"callee": "file.path.split",
+					"lineNumber": 60
+				},
+				{
+					"caller": "buildFileTree",
+					"callee": "parts.slice(0, i + 1).join",
+					"lineNumber": 66
+				},
+				{
+					"caller": "buildFileTree",
+					"callee": "parts.slice",
+					"lineNumber": 66
+				},
+				{
+					"caller": "convertToArray",
+					"callee": "Object.values(nodes)\n\t\t\t.map((node) => ({\n\t\t\t\t...node,\n\t\t\t\tchildren: node.children ? convertToArray(node.children) : undefined,\n\t\t\t}))\n\t\t\t.sort",
+					"lineNumber": 88
+				},
+				{
+					"caller": "convertToArray",
+					"callee": "Object.values(nodes)\n\t\t\t.map",
+					"lineNumber": 88
+				},
+				{
+					"caller": "convertToArray",
+					"callee": "Object.values",
+					"lineNumber": 88
+				},
+				{
+					"caller": "convertToArray",
+					"callee": "convertToArray",
+					"lineNumber": 91
+				},
+				{
+					"caller": "convertToArray",
+					"callee": "a.name.localeCompare",
+					"lineNumber": 97
+				},
+				{
+					"caller": "buildFileTree",
+					"callee": "convertToArray",
+					"lineNumber": 101
+				},
+				{
+					"caller": "TreeNodeComponent",
+					"callee": "useState",
+					"lineNumber": 145
+				},
+				{
+					"caller": "TreeNodeComponent",
+					"callee": "useCallback",
+					"lineNumber": 150
+				},
+				{
+					"caller": "TreeNodeComponent",
+					"callee": "onStageFiles",
+					"lineNumber": 152
+				},
+				{
+					"caller": "TreeNodeComponent",
+					"callee": "collectFilesFromNode",
+					"lineNumber": 152
+				},
+				{
+					"caller": "TreeNodeComponent",
+					"callee": "collectFilesFromNode",
+					"lineNumber": 154
+				},
+				{
+					"caller": "TreeNodeComponent",
+					"callee": "onStage",
+					"lineNumber": 155
+				},
+				{
+					"caller": "TreeNodeComponent",
+					"callee": "useCallback",
+					"lineNumber": 160
+				},
+				{
+					"caller": "TreeNodeComponent",
+					"callee": "onUnstageFiles",
+					"lineNumber": 162
+				},
+				{
+					"caller": "TreeNodeComponent",
+					"callee": "collectFilesFromNode",
+					"lineNumber": 162
+				},
+				{
+					"caller": "TreeNodeComponent",
+					"callee": "collectFilesFromNode",
+					"lineNumber": 164
+				},
+				{
+					"caller": "TreeNodeComponent",
+					"callee": "onUnstage",
+					"lineNumber": 165
+				},
+				{
+					"caller": "TreeNodeComponent",
+					"callee": "useCallback",
+					"lineNumber": 170
+				},
+				{
+					"caller": "TreeNodeComponent",
+					"callee": "onDiscardFiles",
+					"lineNumber": 171
+				},
+				{
+					"caller": "TreeNodeComponent",
+					"callee": "collectFilesFromNode",
+					"lineNumber": 171
+				},
+				{
+					"caller": "TreeNodeComponent",
+					"callee": "node.children?.map",
+					"lineNumber": 193
+				},
+				{
+					"caller": "TreeNodeComponent",
+					"callee": "onFileSelect",
+					"lineNumber": 226
+				},
+				{
+					"caller": "TreeNodeComponent",
+					"callee": "onStage",
+					"lineNumber": 229
+				},
+				{
+					"caller": "TreeNodeComponent",
+					"callee": "onUnstage",
+					"lineNumber": 230
+				},
+				{
+					"caller": "TreeNodeComponent",
+					"callee": "onDiscardFiles",
+					"lineNumber": 235
+				},
+				{
+					"caller": "FileListTree",
+					"callee": "useMemo",
+					"lineNumber": 265
+				},
+				{
+					"caller": "FileListTree",
+					"callee": "buildFileTree",
+					"lineNumber": 265
+				},
+				{
+					"caller": "FileListTree",
+					"callee": "tree.map",
+					"lineNumber": 269
+				}
+			],
+			"metrics": {
+				"importCount": 3,
+				"exportCount": 1,
+				"functionCount": 4,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/RightSidebar/ChangesView/components/FileList/FileListTreeVirtualized.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 310,
+			"nonEmptyLines": 281,
+			"functions": [
+				{
+					"name": "buildFileTree",
+					"startLine": 44,
+					"endLine": 94,
+					"params": ["files"]
+				},
+				{
+					"name": "buildFolderFileMap",
+					"startLine": 96,
+					"endLine": 118,
+					"params": ["tree"]
+				},
+				{
+					"name": "flattenTreeRows",
+					"startLine": 120,
+					"endLine": 156,
+					"params": ["nodes", "expandedFolders", "level"]
+				},
+				{
+					"name": "FileListTreeVirtualized",
+					"startLine": 158,
+					"endLine": 310,
+					"params": [
+						"{\n\tfiles,\n\tselectedFile,\n\tselectedCommitHash,\n\tonFileSelect,\n\tshowStats = true,\n\tonStage,\n\tonUnstage,\n\tonStageFiles,\n\tonUnstageFiles,\n\tisActioning,\n\tworktreePath,\n\tonDiscardFiles,\n\tcategory,\n\tcommitHash,\n\tisExpandedView,\n\tprojectId,\n\tdefaultApp,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "FileListTreeVirtualized",
+					"line": 158,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "buildFileTree",
+					"callee": "file.path.split",
+					"lineNumber": 52
+				},
+				{
+					"caller": "buildFileTree",
+					"callee": "parts.slice(0, i + 1).join",
+					"lineNumber": 58
+				},
+				{
+					"caller": "buildFileTree",
+					"callee": "parts.slice",
+					"lineNumber": 58
+				},
+				{
+					"caller": "convertToArray",
+					"callee": "Object.values(nodes)\n\t\t\t.map((node) => ({\n\t\t\t\t...node,\n\t\t\t\tchildren: node.children ? convertToArray(node.children) : undefined,\n\t\t\t}))\n\t\t\t.sort",
+					"lineNumber": 80
+				},
+				{
+					"caller": "convertToArray",
+					"callee": "Object.values(nodes)\n\t\t\t.map",
+					"lineNumber": 80
+				},
+				{
+					"caller": "convertToArray",
+					"callee": "Object.values",
+					"lineNumber": 80
+				},
+				{
+					"caller": "convertToArray",
+					"callee": "convertToArray",
+					"lineNumber": 83
+				},
+				{
+					"caller": "convertToArray",
+					"callee": "a.name.localeCompare",
+					"lineNumber": 89
+				},
+				{
+					"caller": "buildFileTree",
+					"callee": "convertToArray",
+					"lineNumber": 93
+				},
+				{
+					"caller": "collect",
+					"callee": "files.push",
+					"lineNumber": 106
+				},
+				{
+					"caller": "collect",
+					"callee": "collect",
+					"lineNumber": 106
+				},
+				{
+					"caller": "collect",
+					"callee": "fileMap.set",
+					"lineNumber": 109
+				},
+				{
+					"caller": "buildFolderFileMap",
+					"callee": "collect",
+					"lineNumber": 114
+				},
+				{
+					"caller": "flattenTreeRows",
+					"callee": "rows.push",
+					"lineNumber": 129
+				},
+				{
+					"caller": "flattenTreeRows",
+					"callee": "rows.push",
+					"lineNumber": 138
+				},
+				{
+					"caller": "flattenTreeRows",
+					"callee": "flattenTreeRows",
+					"lineNumber": 139
+				},
+				{
+					"caller": "flattenTreeRows",
+					"callee": "rows.push",
+					"lineNumber": 146
+				},
+				{
+					"caller": "FileListTreeVirtualized",
+					"callee": "useRef",
+					"lineNumber": 177
+				},
+				{
+					"caller": "FileListTreeVirtualized",
+					"callee": "useState",
+					"lineNumber": 178
+				},
+				{
+					"caller": "FileListTreeVirtualized",
+					"callee": "useMemo",
+					"lineNumber": 182
+				},
+				{
+					"caller": "FileListTreeVirtualized",
+					"callee": "buildFileTree",
+					"lineNumber": 182
+				},
+				{
+					"caller": "FileListTreeVirtualized",
+					"callee": "useMemo",
+					"lineNumber": 183
+				},
+				{
+					"caller": "FileListTreeVirtualized",
+					"callee": "buildFolderFileMap",
+					"lineNumber": 183
+				},
+				{
+					"caller": "FileListTreeVirtualized",
+					"callee": "useMemo",
+					"lineNumber": 184
+				},
+				{
+					"caller": "FileListTreeVirtualized",
+					"callee": "flattenTreeRows",
+					"lineNumber": 185
+				},
+				{
+					"caller": "FileListTreeVirtualized",
+					"callee": "useVirtualizer",
+					"lineNumber": 189
+				},
+				{
+					"caller": "FileListTreeVirtualized",
+					"callee": "listRef.current?.closest",
+					"lineNumber": 192
+				},
+				{
+					"caller": "FileListTreeVirtualized",
+					"callee": "virtualizer.getVirtualItems",
+					"lineNumber": 201
+				},
+				{
+					"caller": "FileListTreeVirtualized",
+					"callee": "virtualizer.getTotalSize",
+					"lineNumber": 207
+				},
+				{
+					"caller": "FileListTreeVirtualized",
+					"callee": "items.map",
+					"lineNumber": 209
+				},
+				{
+					"caller": "FileListTreeVirtualized",
+					"callee": "setExpandedFolders",
+					"lineNumber": 228
+				},
+				{
+					"caller": "FileListTreeVirtualized",
+					"callee": "folderFileMap.get",
+					"lineNumber": 243
+				},
+				{
+					"caller": "FileListTreeVirtualized",
+					"callee": "onStageFiles",
+					"lineNumber": 245
+				},
+				{
+					"caller": "FileListTreeVirtualized",
+					"callee": "onStage",
+					"lineNumber": 249
+				},
+				{
+					"caller": "FileListTreeVirtualized",
+					"callee": "folderFileMap.get",
+					"lineNumber": 258
+				},
+				{
+					"caller": "FileListTreeVirtualized",
+					"callee": "onUnstageFiles",
+					"lineNumber": 260
+				},
+				{
+					"caller": "FileListTreeVirtualized",
+					"callee": "onUnstage",
+					"lineNumber": 264
+				},
+				{
+					"caller": "FileListTreeVirtualized",
+					"callee": "onDiscardFiles",
+					"lineNumber": 272
+				},
+				{
+					"caller": "FileListTreeVirtualized",
+					"callee": "folderFileMap.get",
+					"lineNumber": 272
+				},
+				{
+					"caller": "FileListTreeVirtualized",
+					"callee": "onFileSelect",
+					"lineNumber": 285
+				},
+				{
+					"caller": "FileListTreeVirtualized",
+					"callee": "onStage",
+					"lineNumber": 288
+				},
+				{
+					"caller": "FileListTreeVirtualized",
+					"callee": "onUnstage",
+					"lineNumber": 289
+				},
+				{
+					"caller": "FileListTreeVirtualized",
+					"callee": "onDiscardFiles",
+					"lineNumber": 296
+				}
+			],
+			"metrics": {
+				"importCount": 3,
+				"exportCount": 1,
+				"functionCount": 4,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/RightSidebar/ChangesView/components/FileList/FileListVirtualized.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 105,
+			"nonEmptyLines": 98,
+			"functions": [
+				{
+					"name": "FileListVirtualized",
+					"startLine": 28,
+					"endLine": 105,
+					"params": [
+						"{\n\tfiles,\n\tselectedFile,\n\tselectedCommitHash,\n\tonFileSelect,\n\tshowStats = true,\n\tonStage,\n\tonUnstage,\n\tisActioning,\n\tworktreePath,\n\tonDiscard,\n\tcategory,\n\tcommitHash,\n\tisExpandedView,\n\tprojectId,\n\tdefaultApp,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "FileListVirtualized",
+					"line": 28,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "FileListVirtualized",
+					"callee": "useRef",
+					"lineNumber": 45
+				},
+				{
+					"caller": "FileListVirtualized",
+					"callee": "useVirtualizer",
+					"lineNumber": 47
+				},
+				{
+					"caller": "FileListVirtualized",
+					"callee": "listRef.current?.closest",
+					"lineNumber": 50
+				},
+				{
+					"caller": "FileListVirtualized",
+					"callee": "virtualizer.getVirtualItems",
+					"lineNumber": 59
+				},
+				{
+					"caller": "FileListVirtualized",
+					"callee": "virtualizer.getTotalSize",
+					"lineNumber": 65
+				},
+				{
+					"caller": "FileListVirtualized",
+					"callee": "items.map",
+					"lineNumber": 67
+				},
+				{
+					"caller": "FileListVirtualized",
+					"callee": "onFileSelect",
+					"lineNumber": 86
+				},
+				{
+					"caller": "FileListVirtualized",
+					"callee": "onStage",
+					"lineNumber": 88
+				},
+				{
+					"caller": "FileListVirtualized",
+					"callee": "onUnstage",
+					"lineNumber": 89
+				},
+				{
+					"caller": "FileListVirtualized",
+					"callee": "onDiscard",
+					"lineNumber": 94
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/RightSidebar/ChangesView/components/FileList/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 6,
+			"nonEmptyLines": 6,
+			"exports": [
+				{
+					"name": "FileList",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "FileListGrouped",
+					"line": 2,
+					"isDefault": false
+				},
+				{
+					"name": "FileListGroupedVirtualized",
+					"line": 3,
+					"isDefault": false
+				},
+				{
+					"name": "FileListTree",
+					"line": 4,
+					"isDefault": false
+				},
+				{
+					"name": "FileListTreeVirtualized",
+					"line": 5,
+					"isDefault": false
+				},
+				{
+					"name": "FileListVirtualized",
+					"line": 6,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 6,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/RightSidebar/ChangesView/components/FolderRow/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "FolderRow",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/RightSidebar/ChangesView/components/ViewModeToggle/ViewModeToggle.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 47,
+			"nonEmptyLines": 44,
+			"functions": [
+				{
+					"name": "ViewModeToggle",
+					"startLine": 11,
+					"endLine": 47,
+					"params": ["{\n\tviewMode,\n\tonViewModeChange,\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "ViewModeToggle",
+					"line": 11,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "handleToggle",
+					"callee": "onViewModeChange",
+					"lineNumber": 16
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/RightSidebar/ChangesView/components/ViewModeToggle/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "ViewModeToggle",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/RightSidebar/ChangesView/hooks/useOrderedSections/useOrderedSections.test.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 104,
+			"nonEmptyLines": 97,
+			"functions": [
+				{
+					"name": "emptyFile",
+					"startLine": 9,
+					"endLine": 14,
+					"params": []
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 0,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/RightSidebar/ChangesView/hooks/useOrderedSections/useOrderedSections.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 260,
+			"nonEmptyLines": 255,
+			"functions": [
+				{
+					"name": "useOrderedSections",
+					"startLine": 63,
+					"endLine": 260,
+					"params": [
+						"{\n\tsectionOrder,\n\teffectiveBaseBranch,\n\texpandedSections,\n\ttoggleSection,\n\tfileListViewMode,\n\tselectedFile,\n\tselectedCommitHash,\n\tworktreePath,\n\tprojectId,\n\tisExpandedView,\n\tagainstBaseFiles,\n\tonAgainstBaseFileSelect,\n\tcommitsWithFiles,\n\texpandedCommits,\n\tonCommitToggle,\n\tonCommitFileSelect,\n\tstagedFiles,\n\tonStagedFileSelect,\n\tonUnstageFile,\n\tonUnstageFiles,\n\tonShowDiscardStagedDialog,\n\tonUnstageAll,\n\tisDiscardAllStagedPending,\n\tisUnstageAllPending,\n\tisStagedActioning,\n\tunstagedFiles,\n\tonUnstagedFileSelect,\n\tonStageFile,\n\tonStageFiles,\n\tonDiscardFiles,\n\tonShowDiscardUnstagedDialog,\n\tonStageAll,\n\tisDiscardAllUnstagedPending,\n\tisStageAllPending,\n\tisUnstagedActioning,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "useOrderedSections",
+					"line": 63,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "useOrderedSections",
+					"callee": "toggleSection",
+					"lineNumber": 108
+				},
+				{
+					"caller": "useOrderedSections",
+					"callee": "toggleSection",
+					"lineNumber": 128
+				},
+				{
+					"caller": "useOrderedSections",
+					"callee": "toggleSection",
+					"lineNumber": 149
+				},
+				{
+					"caller": "useOrderedSections",
+					"callee": "toggleSection",
+					"lineNumber": 204
+				},
+				{
+					"caller": "useOrderedSections",
+					"callee": "getOrderedChangeSectionIds(sectionOrder).map",
+					"lineNumber": 257
+				},
+				{
+					"caller": "useOrderedSections",
+					"callee": "getOrderedChangeSectionIds",
+					"lineNumber": 257
+				}
+			],
+			"metrics": {
+				"importCount": 5,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/RightSidebar/ChangesView/types.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 14,
+			"nonEmptyLines": 13,
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/RightSidebar/ChangesView/utils/status.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 46,
+			"nonEmptyLines": 44,
+			"functions": [
+				{
+					"name": "getStatusColor",
+					"startLine": 11,
+					"endLine": 27,
+					"params": ["status"]
+				},
+				{
+					"name": "getStatusIndicator",
+					"startLine": 29,
+					"endLine": 46,
+					"params": ["status"]
+				}
+			],
+			"exports": [
+				{
+					"name": "getStatusColor",
+					"line": 11,
+					"isDefault": false
+				},
+				{
+					"name": "getStatusIndicator",
+					"line": 29,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 2,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/hooks/useChangesSectionDnd/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "useChangesSectionDnd",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/hooks/useChangesSectionDnd/useChangesSectionDnd.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 56,
+			"nonEmptyLines": 48,
+			"functions": [
+				{
+					"name": "useChangesSectionDnd",
+					"startLine": 16,
+					"endLine": 56,
+					"params": ["{\n\tid,\n\tonMove,\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "useChangesSectionDnd",
+					"line": 16,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "useChangesSectionDnd",
+					"callee": "useRef",
+					"lineNumber": 20
+				},
+				{
+					"caller": "useChangesSectionDnd",
+					"callee": "useDrag",
+					"lineNumber": 22
+				},
+				{
+					"caller": "useChangesSectionDnd",
+					"callee": "monitor.isDragging",
+					"lineNumber": 27
+				},
+				{
+					"caller": "useChangesSectionDnd",
+					"callee": "useDrop",
+					"lineNumber": 33
+				},
+				{
+					"caller": "useChangesSectionDnd",
+					"callee": "onMove",
+					"lineNumber": 38
+				},
+				{
+					"caller": "useChangesSectionDnd",
+					"callee": "monitor.isOver",
+					"lineNumber": 41
+				},
+				{
+					"caller": "useChangesSectionDnd",
+					"callee": "useEffect",
+					"lineNumber": 47
+				},
+				{
+					"caller": "useChangesSectionDnd",
+					"callee": "drag",
+					"lineNumber": 48
+				},
+				{
+					"caller": "useChangesSectionDnd",
+					"callee": "drop",
+					"lineNumber": 48
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/hooks/useGitChangesStatus/useGitChangesStatus.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 75,
+			"nonEmptyLines": 66,
+			"functions": [
+				{
+					"name": "useGitChangesStatus",
+					"startLine": 19,
+					"endLine": 75,
+					"params": [
+						"{\n\tworktreePath,\n\tenabled = true,\n\trefetchInterval,\n\trefetchOnWindowFocus,\n\tstaleTime,\n\tbranchRefetchInterval,\n\tbranchRefetchOnWindowFocus,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "useGitChangesStatus",
+					"line": 19,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "useGitChangesStatus",
+					"callee": "electronTrpc.changes.getBranches.useQuery",
+					"lineNumber": 28
+				},
+				{
+					"caller": "useGitChangesStatus",
+					"callee": "electronTrpc.changes.getStatus.useQuery",
+					"lineNumber": 45
+				},
+				{
+					"caller": "useGitChangesStatus",
+					"callee": "Math.max",
+					"lineNumber": 64
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/stores/changes/section-order.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 40,
+			"nonEmptyLines": 33,
+			"functions": [
+				{
+					"name": "normalizeChangeSectionOrder",
+					"startLine": 10,
+					"endLine": 34,
+					"params": ["sectionOrder"]
+				},
+				{
+					"name": "getOrderedChangeSectionIds",
+					"startLine": 36,
+					"endLine": 40,
+					"params": ["sectionOrder"]
+				}
+			],
+			"exports": [
+				{
+					"name": "DEFAULT_CHANGE_SECTION_ORDER",
+					"line": 3,
+					"isDefault": false
+				},
+				{
+					"name": "normalizeChangeSectionOrder",
+					"line": 10,
+					"isDefault": false
+				},
+				{
+					"name": "getOrderedChangeSectionIds",
+					"line": 36,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "normalizeChangeSectionOrder",
+					"callee": "validSections.has",
+					"lineNumber": 22
+				},
+				{
+					"caller": "normalizeChangeSectionOrder",
+					"callee": "seen.has",
+					"lineNumber": 23
+				},
+				{
+					"caller": "normalizeChangeSectionOrder",
+					"callee": "seen.add",
+					"lineNumber": 24
+				},
+				{
+					"caller": "normalizeChangeSectionOrder",
+					"callee": "normalized.push",
+					"lineNumber": 25
+				},
+				{
+					"caller": "normalizeChangeSectionOrder",
+					"callee": "seen.has",
+					"lineNumber": 29
+				},
+				{
+					"caller": "normalizeChangeSectionOrder",
+					"callee": "normalized.push",
+					"lineNumber": 30
+				},
+				{
+					"caller": "getOrderedChangeSectionIds",
+					"callee": "normalizeChangeSectionOrder",
+					"lineNumber": 39
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 3,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/stores/changes/store.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 269,
+			"nonEmptyLines": 243,
+			"exports": [
+				{
+					"name": "useChangesStore",
+					"line": 83,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 3,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/shared/changes-types.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 84,
+			"nonEmptyLines": 74,
+			"functions": [
+				{
+					"name": "isNewFile",
+					"startLine": 59,
+					"endLine": 61,
+					"params": ["status"]
+				},
+				{
+					"name": "isDiffEditable",
+					"startLine": 64,
+					"endLine": 66,
+					"params": ["category"]
+				}
+			],
+			"exports": [
+				{
+					"name": "isNewFile",
+					"line": 59,
+					"isDefault": false
+				},
+				{
+					"name": "isDiffEditable",
+					"line": 64,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 2,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		}
+	]
+}

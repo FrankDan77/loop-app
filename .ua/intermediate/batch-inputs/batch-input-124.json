@@ -1,0 +1,110 @@
+{
+	"batchIndex": 124,
+	"files": [
+		{
+			"path": "apps/relay/src/access.ts",
+			"language": "typescript",
+			"sizeLines": 76,
+			"fileCategory": "code"
+		},
+		{
+			"path": "apps/relay/src/api-client.ts",
+			"language": "typescript",
+			"sizeLines": 16,
+			"fileCategory": "code"
+		},
+		{
+			"path": "apps/relay/src/auth.ts",
+			"language": "typescript",
+			"sizeLines": 51,
+			"fileCategory": "code"
+		},
+		{
+			"path": "apps/relay/src/directory.ts",
+			"language": "typescript",
+			"sizeLines": 183,
+			"fileCategory": "code"
+		},
+		{
+			"path": "apps/relay/src/env.ts",
+			"language": "typescript",
+			"sizeLines": 22,
+			"fileCategory": "code"
+		},
+		{
+			"path": "apps/relay/src/index.ts",
+			"language": "typescript",
+			"sizeLines": 473,
+			"fileCategory": "code"
+		},
+		{
+			"path": "apps/relay/src/proxy.ts",
+			"language": "typescript",
+			"sizeLines": 136,
+			"fileCategory": "code"
+		},
+		{
+			"path": "apps/relay/src/sentry.ts",
+			"language": "typescript",
+			"sizeLines": 47,
+			"fileCategory": "code"
+		},
+		{
+			"path": "apps/relay/src/synthetic.ts",
+			"language": "typescript",
+			"sizeLines": 84,
+			"fileCategory": "code"
+		},
+		{
+			"path": "apps/relay/src/trpc-error.ts",
+			"language": "typescript",
+			"sizeLines": 41,
+			"fileCategory": "code"
+		},
+		{
+			"path": "apps/relay/src/tunnel.ts",
+			"language": "typescript",
+			"sizeLines": 459,
+			"fileCategory": "code"
+		},
+		{
+			"path": "apps/relay/src/types.ts",
+			"language": "typescript",
+			"sizeLines": 11,
+			"fileCategory": "code"
+		}
+	],
+	"batchImportData": {
+		"apps/relay/src/access.ts": [
+			"apps/relay/src/api-client.ts",
+			"apps/relay/src/auth.ts"
+		],
+		"apps/relay/src/api-client.ts": ["apps/relay/src/env.ts"],
+		"apps/relay/src/auth.ts": [],
+		"apps/relay/src/directory.ts": ["apps/relay/src/env.ts"],
+		"apps/relay/src/env.ts": [],
+		"apps/relay/src/index.ts": [
+			"apps/relay/src/access.ts",
+			"apps/relay/src/auth.ts",
+			"apps/relay/src/directory.ts",
+			"apps/relay/src/env.ts",
+			"apps/relay/src/proxy.ts",
+			"apps/relay/src/sentry.ts",
+			"apps/relay/src/synthetic.ts",
+			"apps/relay/src/trpc-error.ts",
+			"apps/relay/src/tunnel.ts"
+		],
+		"apps/relay/src/proxy.ts": [],
+		"apps/relay/src/sentry.ts": ["apps/relay/src/env.ts"],
+		"apps/relay/src/synthetic.ts": ["apps/relay/src/sentry.ts"],
+		"apps/relay/src/trpc-error.ts": [],
+		"apps/relay/src/tunnel.ts": [
+			"apps/relay/src/api-client.ts",
+			"apps/relay/src/directory.ts",
+			"apps/relay/src/env.ts",
+			"apps/relay/src/types.ts"
+		],
+		"apps/relay/src/types.ts": []
+	},
+	"neighborMap": {}
+}

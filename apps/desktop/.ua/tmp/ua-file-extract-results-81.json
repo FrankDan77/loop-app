@@ -1,0 +1,1142 @@
+{
+	"scriptCompleted": true,
+	"filesAnalyzed": 11,
+	"filesSkipped": [],
+	"results": [
+		{
+			"path": "src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/AnthropicOAuthDialog/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "AnthropicOAuthDialog",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OpenAIOAuthDialog/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "OpenAIOAuthDialog",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicOAuth/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "useAnthropicOAuth",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIOAuth/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "useOpenAIOAuth",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/onboarding/components/ProviderConnectModal/ProviderConnectModal.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 270,
+			"nonEmptyLines": 254,
+			"functions": [
+				{
+					"name": "ProviderConnectModal",
+					"startLine": 27,
+					"endLine": 38,
+					"params": ["{\n\tprovider,\n\tonOpenChange,\n}"]
+				},
+				{
+					"name": "AnthropicConnectDialog",
+					"startLine": 40,
+					"endLine": 99,
+					"params": ["{\n\tonOpenChange,\n}"]
+				},
+				{
+					"name": "OpenAIConnectDialog",
+					"startLine": 101,
+					"endLine": 159,
+					"params": ["{\n\tonOpenChange,\n}"]
+				},
+				{
+					"name": "ConnectDialogShell",
+					"startLine": 174,
+					"endLine": 270,
+					"params": [
+						"{\n\ttitle,\n\tdescription,\n\toauthLabel,\n\toauthPreparing,\n\tonOAuth,\n\tapiKeyPlaceholder,\n\tapiKeyHelpUrl,\n\tapiKeyHelpLabel,\n\tonApiKeySubmit,\n\tonOpenChange,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "ProviderConnectModal",
+					"line": 27,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "AnthropicConnectDialog",
+					"callee": "chatServiceTrpc.auth.getAnthropicStatus.useQuery",
+					"lineNumber": 45
+				},
+				{
+					"caller": "AnthropicConnectDialog",
+					"callee": "chatServiceTrpc.auth.setAnthropicApiKey.useMutation",
+					"lineNumber": 46
+				},
+				{
+					"caller": "AnthropicConnectDialog",
+					"callee": "useAnthropicOAuth",
+					"lineNumber": 48
+				},
+				{
+					"caller": "AnthropicConnectDialog",
+					"callee": "refetch",
+					"lineNumber": 52
+				},
+				{
+					"caller": "AnthropicConnectDialog",
+					"callee": "track",
+					"lineNumber": 54
+				},
+				{
+					"caller": "AnthropicConnectDialog",
+					"callee": "onOpenChange",
+					"lineNumber": 58
+				},
+				{
+					"caller": "handleApiKeySubmit",
+					"callee": "setApiKey.mutateAsync",
+					"lineNumber": 64
+				},
+				{
+					"caller": "handleApiKeySubmit",
+					"callee": "track",
+					"lineNumber": 65
+				},
+				{
+					"caller": "handleApiKeySubmit",
+					"callee": "refetch",
+					"lineNumber": 69
+				},
+				{
+					"caller": "handleApiKeySubmit",
+					"callee": "onOpenChange",
+					"lineNumber": 70
+				},
+				{
+					"caller": "AnthropicConnectDialog",
+					"callee": "oauthDialog.onOpenChange",
+					"lineNumber": 78
+				},
+				{
+					"caller": "AnthropicConnectDialog",
+					"callee": "onOpenChange",
+					"lineNumber": 79
+				},
+				{
+					"caller": "OpenAIConnectDialog",
+					"callee": "chatServiceTrpc.auth.getOpenAIStatus.useQuery",
+					"lineNumber": 106
+				},
+				{
+					"caller": "OpenAIConnectDialog",
+					"callee": "chatServiceTrpc.auth.setOpenAIApiKey.useMutation",
+					"lineNumber": 107
+				},
+				{
+					"caller": "OpenAIConnectDialog",
+					"callee": "useOpenAIOAuth",
+					"lineNumber": 108
+				},
+				{
+					"caller": "OpenAIConnectDialog",
+					"callee": "refetch",
+					"lineNumber": 112
+				},
+				{
+					"caller": "OpenAIConnectDialog",
+					"callee": "track",
+					"lineNumber": 114
+				},
+				{
+					"caller": "OpenAIConnectDialog",
+					"callee": "onOpenChange",
+					"lineNumber": 118
+				},
+				{
+					"caller": "handleApiKeySubmit",
+					"callee": "setApiKey.mutateAsync",
+					"lineNumber": 124
+				},
+				{
+					"caller": "handleApiKeySubmit",
+					"callee": "track",
+					"lineNumber": 125
+				},
+				{
+					"caller": "handleApiKeySubmit",
+					"callee": "refetch",
+					"lineNumber": 129
+				},
+				{
+					"caller": "handleApiKeySubmit",
+					"callee": "onOpenChange",
+					"lineNumber": 130
+				},
+				{
+					"caller": "OpenAIConnectDialog",
+					"callee": "oauthDialog.onOpenChange",
+					"lineNumber": 138
+				},
+				{
+					"caller": "OpenAIConnectDialog",
+					"callee": "onOpenChange",
+					"lineNumber": 139
+				},
+				{
+					"caller": "ConnectDialogShell",
+					"callee": "useState",
+					"lineNumber": 186
+				},
+				{
+					"caller": "ConnectDialogShell",
+					"callee": "useState",
+					"lineNumber": 187
+				},
+				{
+					"caller": "ConnectDialogShell",
+					"callee": "useState",
+					"lineNumber": 188
+				},
+				{
+					"caller": "handleSubmit",
+					"callee": "e.preventDefault",
+					"lineNumber": 191
+				},
+				{
+					"caller": "handleSubmit",
+					"callee": "apiKey.trim",
+					"lineNumber": 192
+				},
+				{
+					"caller": "handleSubmit",
+					"callee": "setSubmitting",
+					"lineNumber": 194
+				},
+				{
+					"caller": "handleSubmit",
+					"callee": "onApiKeySubmit",
+					"lineNumber": 196
+				},
+				{
+					"caller": "handleSubmit",
+					"callee": "toast.error",
+					"lineNumber": 198
+				},
+				{
+					"caller": "handleSubmit",
+					"callee": "setSubmitting",
+					"lineNumber": 202
+				},
+				{
+					"caller": "ConnectDialogShell",
+					"callee": "onOAuth",
+					"lineNumber": 218
+				},
+				{
+					"caller": "ConnectDialogShell",
+					"callee": "setMode",
+					"lineNumber": 226
+				},
+				{
+					"caller": "ConnectDialogShell",
+					"callee": "setApiKey",
+					"lineNumber": 239
+				},
+				{
+					"caller": "ConnectDialogShell",
+					"callee": "setMode",
+					"lineNumber": 256
+				}
+			],
+			"metrics": {
+				"importCount": 5,
+				"exportCount": 1,
+				"functionCount": 4,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/models/components/ModelsSettings/ModelsSettings.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 509,
+			"nonEmptyLines": 487,
+			"functions": [
+				{
+					"name": "ModelsSettings",
+					"startLine": 45,
+					"endLine": 509,
+					"params": ["{ visibleItems }"]
+				}
+			],
+			"exports": [
+				{
+					"name": "ModelsSettings",
+					"line": 45,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "ModelsSettings",
+					"callee": "isItemVisible",
+					"lineNumber": 46
+				},
+				{
+					"caller": "ModelsSettings",
+					"callee": "isItemVisible",
+					"lineNumber": 50
+				},
+				{
+					"caller": "ModelsSettings",
+					"callee": "useState",
+					"lineNumber": 51
+				},
+				{
+					"caller": "ModelsSettings",
+					"callee": "useState",
+					"lineNumber": 52
+				},
+				{
+					"caller": "ModelsSettings",
+					"callee": "useState",
+					"lineNumber": 53
+				},
+				{
+					"caller": "ModelsSettings",
+					"callee": "useState",
+					"lineNumber": 54
+				},
+				{
+					"caller": "ModelsSettings",
+					"callee": "chatServiceTrpc.auth.getAnthropicStatus.useQuery",
+					"lineNumber": 57
+				},
+				{
+					"caller": "ModelsSettings",
+					"callee": "chatServiceTrpc.auth.getOpenAIStatus.useQuery",
+					"lineNumber": 59
+				},
+				{
+					"caller": "ModelsSettings",
+					"callee": "chatServiceTrpc.auth.getAnthropicEnvConfig.useQuery",
+					"lineNumber": 61
+				},
+				{
+					"caller": "ModelsSettings",
+					"callee": "chatServiceTrpc.auth.setAnthropicApiKey.useMutation",
+					"lineNumber": 63
+				},
+				{
+					"caller": "ModelsSettings",
+					"callee": "chatServiceTrpc.auth.clearAnthropicApiKey.useMutation",
+					"lineNumber": 65
+				},
+				{
+					"caller": "ModelsSettings",
+					"callee": "chatServiceTrpc.auth.setAnthropicEnvConfig.useMutation",
+					"lineNumber": 67
+				},
+				{
+					"caller": "ModelsSettings",
+					"callee": "chatServiceTrpc.auth.clearAnthropicEnvConfig.useMutation",
+					"lineNumber": 69
+				},
+				{
+					"caller": "ModelsSettings",
+					"callee": "chatServiceTrpc.auth.setOpenAIApiKey.useMutation",
+					"lineNumber": 71
+				},
+				{
+					"caller": "ModelsSettings",
+					"callee": "chatServiceTrpc.auth.clearOpenAIApiKey.useMutation",
+					"lineNumber": 73
+				},
+				{
+					"caller": "ModelsSettings",
+					"callee": "useAnthropicOAuth",
+					"lineNumber": 79
+				},
+				{
+					"caller": "ModelsSettings",
+					"callee": "refetchAnthropicAuthStatus",
+					"lineNumber": 82
+				},
+				{
+					"caller": "ModelsSettings",
+					"callee": "useOpenAIOAuth",
+					"lineNumber": 89
+				},
+				{
+					"caller": "ModelsSettings",
+					"callee": "useEffect",
+					"lineNumber": 100
+				},
+				{
+					"caller": "ModelsSettings",
+					"callee": "setAnthropicForm",
+					"lineNumber": 101
+				},
+				{
+					"caller": "ModelsSettings",
+					"callee": "parseAnthropicForm",
+					"lineNumber": 101
+				},
+				{
+					"caller": "ModelsSettings",
+					"callee": "setAnthropicApiKeyInput",
+					"lineNumber": 102
+				},
+				{
+					"caller": "ModelsSettings",
+					"callee": "useMemo",
+					"lineNumber": 105
+				},
+				{
+					"caller": "ModelsSettings",
+					"callee": "resolveProviderStatus",
+					"lineNumber": 107
+				},
+				{
+					"caller": "ModelsSettings",
+					"callee": "useMemo",
+					"lineNumber": 114
+				},
+				{
+					"caller": "ModelsSettings",
+					"callee": "resolveProviderStatus",
+					"lineNumber": 116
+				},
+				{
+					"caller": "ModelsSettings",
+					"callee": "useMemo",
+					"lineNumber": 123
+				},
+				{
+					"caller": "ModelsSettings",
+					"callee": "getStatusBadge",
+					"lineNumber": 124
+				},
+				{
+					"caller": "ModelsSettings",
+					"callee": "useMemo",
+					"lineNumber": 127
+				},
+				{
+					"caller": "ModelsSettings",
+					"callee": "getStatusBadge",
+					"lineNumber": 128
+				},
+				{
+					"caller": "saveAnthropicForm",
+					"callee": "buildAnthropicEnvText",
+					"lineNumber": 133
+				},
+				{
+					"caller": "saveAnthropicForm",
+					"callee": "setAnthropicEnvConfigMutation.mutateAsync",
+					"lineNumber": 136
+				},
+				{
+					"caller": "saveAnthropicForm",
+					"callee": "clearAnthropicEnvConfigMutation.mutateAsync",
+					"lineNumber": 138
+				},
+				{
+					"caller": "saveAnthropicForm",
+					"callee": "Promise.all",
+					"lineNumber": 140
+				},
+				{
+					"caller": "saveAnthropicForm",
+					"callee": "refetchAnthropicEnvConfig",
+					"lineNumber": 141
+				},
+				{
+					"caller": "saveAnthropicForm",
+					"callee": "refetchAnthropicAuthStatus",
+					"lineNumber": 142
+				},
+				{
+					"caller": "saveAnthropicForm",
+					"callee": "toast.success",
+					"lineNumber": 144
+				},
+				{
+					"caller": "saveAnthropicForm",
+					"callee": "toast.error",
+					"lineNumber": 147
+				},
+				{
+					"caller": "handleAnthropicFormBlur",
+					"callee": "buildAnthropicEnvText",
+					"lineNumber": 154
+				},
+				{
+					"caller": "handleAnthropicFormBlur",
+					"callee": "currentEnvText.trim",
+					"lineNumber": 155
+				},
+				{
+					"caller": "handleAnthropicFormBlur",
+					"callee": "nextEnvText.trim",
+					"lineNumber": 155
+				},
+				{
+					"caller": "handleAnthropicFormBlur",
+					"callee": "saveAnthropicForm",
+					"lineNumber": 156
+				},
+				{
+					"caller": "resetAnthropicAdvanced",
+					"callee": "setAnthropicForm",
+					"lineNumber": 166
+				},
+				{
+					"caller": "resetAnthropicAdvanced",
+					"callee": "saveAnthropicForm",
+					"lineNumber": 167
+				},
+				{
+					"caller": "ModelsSettings",
+					"callee": "anthropicForm.authToken.trim",
+					"lineNumber": 171
+				},
+				{
+					"caller": "ModelsSettings",
+					"callee": "anthropicForm.baseUrl.trim",
+					"lineNumber": 172
+				},
+				{
+					"caller": "ModelsSettings",
+					"callee": "anthropicForm.extraEnv.trim",
+					"lineNumber": 173
+				},
+				{
+					"caller": "saveAnthropicApiKey",
+					"callee": "anthropicApiKeyInput.trim",
+					"lineNumber": 176
+				},
+				{
+					"caller": "saveAnthropicApiKey",
+					"callee": "setAnthropicApiKeyMutation.mutateAsync",
+					"lineNumber": 179
+				},
+				{
+					"caller": "saveAnthropicApiKey",
+					"callee": "setAnthropicApiKeyInput",
+					"lineNumber": 180
+				},
+				{
+					"caller": "saveAnthropicApiKey",
+					"callee": "refetchAnthropicAuthStatus",
+					"lineNumber": 181
+				},
+				{
+					"caller": "saveAnthropicApiKey",
+					"callee": "toast.success",
+					"lineNumber": 182
+				},
+				{
+					"caller": "saveAnthropicApiKey",
+					"callee": "toast.error",
+					"lineNumber": 184
+				},
+				{
+					"caller": "saveOpenAIApiKey",
+					"callee": "openAIApiKeyInput.trim",
+					"lineNumber": 189
+				},
+				{
+					"caller": "saveOpenAIApiKey",
+					"callee": "setOpenAIApiKeyMutation.mutateAsync",
+					"lineNumber": 192
+				},
+				{
+					"caller": "saveOpenAIApiKey",
+					"callee": "setOpenAIApiKeyInput",
+					"lineNumber": 193
+				},
+				{
+					"caller": "saveOpenAIApiKey",
+					"callee": "refetchOpenAIAuthStatus",
+					"lineNumber": 194
+				},
+				{
+					"caller": "saveOpenAIApiKey",
+					"callee": "toast.success",
+					"lineNumber": 195
+				},
+				{
+					"caller": "saveOpenAIApiKey",
+					"callee": "toast.error",
+					"lineNumber": 197
+				},
+				{
+					"caller": "renderProviderAction",
+					"callee": "getProviderAction",
+					"lineNumber": 212
+				},
+				{
+					"caller": "renderProviderAction",
+					"callee": "startOAuth",
+					"lineNumber": 224
+				},
+				{
+					"caller": "ModelsSettings",
+					"callee": "renderProviderAction",
+					"lineNumber": 255
+				},
+				{
+					"caller": "ModelsSettings",
+					"callee": "anthropicOAuthDialog.onDisconnect",
+					"lineNumber": 261
+				},
+				{
+					"caller": "ModelsSettings",
+					"callee": "clearAnthropicApiKeyMutation.mutateAsync",
+					"lineNumber": 263
+				},
+				{
+					"caller": "ModelsSettings",
+					"callee": "setAnthropicApiKeyInput",
+					"lineNumber": 264
+				},
+				{
+					"caller": "ModelsSettings",
+					"callee": "refetchAnthropicAuthStatus",
+					"lineNumber": 266
+				},
+				{
+					"caller": "ModelsSettings",
+					"callee": "setAnthropicApiKeyInput",
+					"lineNumber": 281
+				},
+				{
+					"caller": "ModelsSettings",
+					"callee": "saveAnthropicApiKey",
+					"lineNumber": 293
+				},
+				{
+					"caller": "ModelsSettings",
+					"callee": "(async () => {\n\t\t\t\t\t\t\t\t\t\ttry {\n\t\t\t\t\t\t\t\t\t\t\tawait clearAnthropicApiKeyMutation.mutateAsync();\n\t\t\t\t\t\t\t\t\t\t\tsetAnthropicApiKeyInput(\"\");\n\t\t\t\t\t\t\t\t\t\t\tsetAnthropicForm(nextForm);\n\t\t\t\t\t\t\t\t\t\t\tawait refetchAnthropicAuthStatus();\n\t\t\t\t\t\t\t\t\t\t\ttoast.success(\"Anthropic API key cleared\");\n\t\t\t\t\t\t\t\t\t\t} catch (error) {\n\t\t\t\t\t\t\t\t\t\t\ttoast.error(\n\t\t\t\t\t\t\t\t\t\t\t\terror instanceof Error\n\t\t\t\t\t\t\t\t\t\t\t\t\t? error.message\n\t\t\t\t\t\t\t\t\t\t\t\t\t: \"Failed to clear\",\n\t\t\t\t\t\t\t\t\t\t\t);\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t})",
+					"lineNumber": 297
+				},
+				{
+					"caller": "ModelsSettings",
+					"callee": "clearAnthropicApiKeyMutation.mutateAsync",
+					"lineNumber": 299
+				},
+				{
+					"caller": "ModelsSettings",
+					"callee": "setAnthropicApiKeyInput",
+					"lineNumber": 300
+				},
+				{
+					"caller": "ModelsSettings",
+					"callee": "setAnthropicForm",
+					"lineNumber": 301
+				},
+				{
+					"caller": "ModelsSettings",
+					"callee": "refetchAnthropicAuthStatus",
+					"lineNumber": 302
+				},
+				{
+					"caller": "ModelsSettings",
+					"callee": "toast.success",
+					"lineNumber": 303
+				},
+				{
+					"caller": "ModelsSettings",
+					"callee": "toast.error",
+					"lineNumber": 305
+				},
+				{
+					"caller": "ModelsSettings",
+					"callee": "anthropicApiKeyInput.trim",
+					"lineNumber": 313
+				},
+				{
+					"caller": "ModelsSettings",
+					"callee": "setAnthropicForm",
+					"lineNumber": 356
+				},
+				{
+					"caller": "ModelsSettings",
+					"callee": "setAnthropicForm",
+					"lineNumber": 378
+				},
+				{
+					"caller": "ModelsSettings",
+					"callee": "setAnthropicForm",
+					"lineNumber": 400
+				},
+				{
+					"caller": "ModelsSettings",
+					"callee": "renderProviderAction",
+					"lineNumber": 439
+				},
+				{
+					"caller": "ModelsSettings",
+					"callee": "openAIOAuthDialog.onDisconnect",
+					"lineNumber": 445
+				},
+				{
+					"caller": "ModelsSettings",
+					"callee": "clearOpenAIApiKeyMutation.mutateAsync",
+					"lineNumber": 447
+				},
+				{
+					"caller": "ModelsSettings",
+					"callee": "setOpenAIApiKeyInput",
+					"lineNumber": 448
+				},
+				{
+					"caller": "ModelsSettings",
+					"callee": "refetchOpenAIAuthStatus",
+					"lineNumber": 450
+				},
+				{
+					"caller": "ModelsSettings",
+					"callee": "setOpenAIApiKeyInput",
+					"lineNumber": 465
+				},
+				{
+					"caller": "ModelsSettings",
+					"callee": "saveOpenAIApiKey",
+					"lineNumber": 477
+				},
+				{
+					"caller": "ModelsSettings",
+					"callee": "(async () => {\n\t\t\t\t\t\t\t\t\t\ttry {\n\t\t\t\t\t\t\t\t\t\t\tawait clearOpenAIApiKeyMutation.mutateAsync();\n\t\t\t\t\t\t\t\t\t\t\tsetOpenAIApiKeyInput(\"\");\n\t\t\t\t\t\t\t\t\t\t\tawait refetchOpenAIAuthStatus();\n\t\t\t\t\t\t\t\t\t\t\ttoast.success(\"OpenAI API key cleared\");\n\t\t\t\t\t\t\t\t\t\t} catch (error) {\n\t\t\t\t\t\t\t\t\t\t\ttoast.error(\n\t\t\t\t\t\t\t\t\t\t\t\terror instanceof Error\n\t\t\t\t\t\t\t\t\t\t\t\t\t? error.message\n\t\t\t\t\t\t\t\t\t\t\t\t\t: \"Failed to clear\",\n\t\t\t\t\t\t\t\t\t\t\t);\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t})",
+					"lineNumber": 480
+				},
+				{
+					"caller": "ModelsSettings",
+					"callee": "clearOpenAIApiKeyMutation.mutateAsync",
+					"lineNumber": 482
+				},
+				{
+					"caller": "ModelsSettings",
+					"callee": "setOpenAIApiKeyInput",
+					"lineNumber": 483
+				},
+				{
+					"caller": "ModelsSettings",
+					"callee": "refetchOpenAIAuthStatus",
+					"lineNumber": 484
+				},
+				{
+					"caller": "ModelsSettings",
+					"callee": "toast.success",
+					"lineNumber": 485
+				},
+				{
+					"caller": "ModelsSettings",
+					"callee": "toast.error",
+					"lineNumber": 487
+				},
+				{
+					"caller": "ModelsSettings",
+					"callee": "openAIApiKeyInput.trim",
+					"lineNumber": 495
+				}
+			],
+			"metrics": {
+				"importCount": 8,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/models/components/ModelsSettings/components/ConfigRow/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "ConfigRow",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/models/components/ModelsSettings/components/SettingsSection/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "SettingsSection",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/models/components/ModelsSettings/utils.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 150,
+			"nonEmptyLines": 136,
+			"functions": [
+				{
+					"name": "parseAnthropicForm",
+					"startLine": 22,
+					"endLine": 57,
+					"params": ["envText"]
+				},
+				{
+					"name": "buildAnthropicEnvText",
+					"startLine": 59,
+					"endLine": 72,
+					"params": ["values"]
+				},
+				{
+					"name": "getProviderSubtitle",
+					"startLine": 79,
+					"endLine": 99,
+					"params": ["providerId", "status"]
+				},
+				{
+					"name": "getStatusBadge",
+					"startLine": 101,
+					"endLine": 117,
+					"params": ["status"]
+				},
+				{
+					"name": "resolveProviderStatus",
+					"startLine": 119,
+					"endLine": 126,
+					"params": ["params"]
+				},
+				{
+					"name": "getProviderAction",
+					"startLine": 137,
+					"endLine": 150,
+					"params": ["status"]
+				}
+			],
+			"exports": [
+				{
+					"name": "EMPTY_ANTHROPIC_FORM",
+					"line": 15,
+					"isDefault": false
+				},
+				{
+					"name": "parseAnthropicForm",
+					"line": 22,
+					"isDefault": false
+				},
+				{
+					"name": "buildAnthropicEnvText",
+					"line": 59,
+					"isDefault": false
+				},
+				{
+					"name": "getProviderSubtitle",
+					"line": 79,
+					"isDefault": false
+				},
+				{
+					"name": "getStatusBadge",
+					"line": 101,
+					"isDefault": false
+				},
+				{
+					"name": "resolveProviderStatus",
+					"line": 119,
+					"isDefault": false
+				},
+				{
+					"name": "getProviderAction",
+					"line": 137,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "parseAnthropicForm",
+					"callee": "envText\n\t\t.split(\"\\n\")\n\t\t.map((line) => line.trim())\n\t\t.filter",
+					"lineNumber": 23
+				},
+				{
+					"caller": "parseAnthropicForm",
+					"callee": "envText\n\t\t.split(\"\\n\")\n\t\t.map",
+					"lineNumber": 23
+				},
+				{
+					"caller": "parseAnthropicForm",
+					"callee": "envText\n\t\t.split",
+					"lineNumber": 23
+				},
+				{
+					"caller": "parseAnthropicForm",
+					"callee": "line.trim",
+					"lineNumber": 25
+				},
+				{
+					"caller": "parseAnthropicForm",
+					"callee": "line.replace",
+					"lineNumber": 31
+				},
+				{
+					"caller": "parseAnthropicForm",
+					"callee": "normalized.indexOf",
+					"lineNumber": 32
+				},
+				{
+					"caller": "parseAnthropicForm",
+					"callee": "remaining.push",
+					"lineNumber": 34
+				},
+				{
+					"caller": "parseAnthropicForm",
+					"callee": "normalized.slice(0, eqIndex).trim",
+					"lineNumber": 38
+				},
+				{
+					"caller": "parseAnthropicForm",
+					"callee": "normalized.slice",
+					"lineNumber": 38
+				},
+				{
+					"caller": "parseAnthropicForm",
+					"callee": "normalized.slice(eqIndex + 1).trim",
+					"lineNumber": 39
+				},
+				{
+					"caller": "parseAnthropicForm",
+					"callee": "normalized.slice",
+					"lineNumber": 39
+				},
+				{
+					"caller": "parseAnthropicForm",
+					"callee": "remaining.push",
+					"lineNumber": 51
+				},
+				{
+					"caller": "parseAnthropicForm",
+					"callee": "remaining.join",
+					"lineNumber": 55
+				},
+				{
+					"caller": "buildAnthropicEnvText",
+					"callee": "[\n\t\tvalues.apiKey.trim() ? `ANTHROPIC_API_KEY=${values.apiKey.trim()}` : null,\n\t\tvalues.authToken.trim()\n\t\t\t? `ANTHROPIC_AUTH_TOKEN=${values.authToken.trim()}`\n\t\t\t: null,\n\t\tvalues.baseUrl.trim()\n\t\t\t? `ANTHROPIC_BASE_URL=${values.baseUrl.trim()}`\n\t\t\t: null,\n\t\tvalues.extraEnv.trim() ? values.extraEnv.trim() : null,\n\t].filter",
+					"lineNumber": 60
+				},
+				{
+					"caller": "buildAnthropicEnvText",
+					"callee": "values.apiKey.trim",
+					"lineNumber": 61
+				},
+				{
+					"caller": "buildAnthropicEnvText",
+					"callee": "values.apiKey.trim",
+					"lineNumber": 61
+				},
+				{
+					"caller": "buildAnthropicEnvText",
+					"callee": "values.authToken.trim",
+					"lineNumber": 62
+				},
+				{
+					"caller": "buildAnthropicEnvText",
+					"callee": "values.authToken.trim",
+					"lineNumber": 63
+				},
+				{
+					"caller": "buildAnthropicEnvText",
+					"callee": "values.baseUrl.trim",
+					"lineNumber": 65
+				},
+				{
+					"caller": "buildAnthropicEnvText",
+					"callee": "values.baseUrl.trim",
+					"lineNumber": 66
+				},
+				{
+					"caller": "buildAnthropicEnvText",
+					"callee": "values.extraEnv.trim",
+					"lineNumber": 68
+				},
+				{
+					"caller": "buildAnthropicEnvText",
+					"callee": "values.extraEnv.trim",
+					"lineNumber": 68
+				},
+				{
+					"caller": "buildAnthropicEnvText",
+					"callee": "Boolean",
+					"lineNumber": 69
+				},
+				{
+					"caller": "buildAnthropicEnvText",
+					"callee": "lines.join",
+					"lineNumber": 71
+				},
+				{
+					"caller": "resolveProviderStatus",
+					"callee": "deriveModelProviderStatus",
+					"lineNumber": 125
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 7,
+				"functionCount": 6,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/shared/ai/provider-status.test.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 60,
+			"nonEmptyLines": 54,
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/shared/ai/provider-status.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 91,
+			"nonEmptyLines": 77,
+			"functions": [
+				{
+					"name": "getProviderName",
+					"startLine": 42,
+					"endLine": 44,
+					"params": ["providerId"]
+				},
+				{
+					"name": "getIssueFromAuthStatus",
+					"startLine": 46,
+					"endLine": 59,
+					"params": ["providerId", "authStatus"]
+				},
+				{
+					"name": "deriveModelProviderStatus",
+					"startLine": 61,
+					"endLine": 91,
+					"params": ["params"]
+				}
+			],
+			"exports": [
+				{
+					"name": "getProviderName",
+					"line": 42,
+					"isDefault": false
+				},
+				{
+					"name": "deriveModelProviderStatus",
+					"line": 61,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "getIssueFromAuthStatus",
+					"callee": "getProviderName",
+					"lineNumber": 54
+				},
+				{
+					"caller": "deriveModelProviderStatus",
+					"callee": "getIssueFromAuthStatus",
+					"lineNumber": 66
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 2,
+				"functionCount": 3,
+				"classCount": 0
+			}
+		}
+	]
+}

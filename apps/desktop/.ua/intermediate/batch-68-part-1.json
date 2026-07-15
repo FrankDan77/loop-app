@@ -1,0 +1,778 @@
+{
+	"nodes": [
+		{
+			"id": "file:src/renderer/hotkeys/display.test.ts",
+			"type": "file",
+			"name": "display.test.ts",
+			"filePath": "src/renderer/hotkeys/display.test.ts",
+			"summary": "TypeScript source file at renderer/hotkeys/display.test.ts.",
+			"tags": ["test"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "file:src/renderer/hotkeys/display.ts",
+			"type": "file",
+			"name": "display.ts",
+			"filePath": "src/renderer/hotkeys/display.ts",
+			"summary": "TypeScript source file at renderer/hotkeys/display.ts.",
+			"tags": ["utility"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:src/renderer/hotkeys/display.ts:glyphForCode",
+			"type": "function",
+			"name": "glyphForCode",
+			"filePath": "src/renderer/hotkeys/display.ts",
+			"lineRange": [68, 81],
+			"summary": "Function glyphForCode in display.ts.",
+			"tags": ["utility"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/renderer/hotkeys/display.ts:formatHotkeyDisplay",
+			"type": "function",
+			"name": "formatHotkeyDisplay",
+			"filePath": "src/renderer/hotkeys/display.ts",
+			"lineRange": [100, 129],
+			"summary": "Function formatHotkeyDisplay in display.ts.",
+			"tags": ["utility"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "file:src/renderer/hotkeys/hooks/useBinding/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "src/renderer/hotkeys/hooks/useBinding/index.ts",
+			"summary": "TypeScript source file at hooks/useBinding/index.ts.",
+			"tags": ["barrel", "entry-point"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/hotkeys/hooks/useBinding/useBinding.ts",
+			"type": "file",
+			"name": "useBinding.ts",
+			"filePath": "src/renderer/hotkeys/hooks/useBinding/useBinding.ts",
+			"summary": "TypeScript source file at hooks/useBinding/useBinding.ts.",
+			"tags": ["hook"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/renderer/hotkeys/hooks/useBinding/useBinding.ts:useBinding",
+			"type": "function",
+			"name": "useBinding",
+			"filePath": "src/renderer/hotkeys/hooks/useBinding/useBinding.ts",
+			"lineRange": [13, 19],
+			"summary": "Function useBinding in useBinding.ts.",
+			"tags": ["utility"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/renderer/hotkeys/hooks/useBinding/useBinding.ts:getBinding",
+			"type": "function",
+			"name": "getBinding",
+			"filePath": "src/renderer/hotkeys/hooks/useBinding/useBinding.ts",
+			"lineRange": [22, 27],
+			"summary": "Function getBinding in useBinding.ts.",
+			"tags": ["utility"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/renderer/hotkeys/hooks/useBinding/useBinding.ts:getDispatchChord",
+			"type": "function",
+			"name": "getDispatchChord",
+			"filePath": "src/renderer/hotkeys/hooks/useBinding/useBinding.ts",
+			"lineRange": [35, 37],
+			"summary": "Function getDispatchChord in useBinding.ts.",
+			"tags": ["utility"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/hotkeys/hooks/useHotkey/useHotkey.ts",
+			"type": "file",
+			"name": "useHotkey.ts",
+			"filePath": "src/renderer/hotkeys/hooks/useHotkey/useHotkey.ts",
+			"summary": "TypeScript source file at hooks/useHotkey/useHotkey.ts.",
+			"tags": ["hook"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/renderer/hotkeys/hooks/useHotkey/useHotkey.ts:useHotkey",
+			"type": "function",
+			"name": "useHotkey",
+			"filePath": "src/renderer/hotkeys/hooks/useHotkey/useHotkey.ts",
+			"lineRange": [21, 51],
+			"summary": "Function useHotkey in useHotkey.ts.",
+			"tags": ["utility"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "file:src/renderer/hotkeys/hooks/useHotkeyDisplay/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "src/renderer/hotkeys/hooks/useHotkeyDisplay/index.ts",
+			"summary": "TypeScript source file at hooks/useHotkeyDisplay/index.ts.",
+			"tags": ["barrel", "entry-point"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/hotkeys/hooks/useHotkeyDisplay/useHotkeyDisplay.ts",
+			"type": "file",
+			"name": "useHotkeyDisplay.ts",
+			"filePath": "src/renderer/hotkeys/hooks/useHotkeyDisplay/useHotkeyDisplay.ts",
+			"summary": "TypeScript source file at hooks/useHotkeyDisplay/useHotkeyDisplay.ts.",
+			"tags": ["hook"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/renderer/hotkeys/hooks/useHotkeyDisplay/useHotkeyDisplay.ts:useHotkeyDisplay",
+			"type": "function",
+			"name": "useHotkeyDisplay",
+			"filePath": "src/renderer/hotkeys/hooks/useHotkeyDisplay/useHotkeyDisplay.ts",
+			"lineRange": [9, 17],
+			"summary": "Function useHotkeyDisplay in useHotkeyDisplay.ts.",
+			"tags": ["utility"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/renderer/hotkeys/hooks/useHotkeyDisplay/useHotkeyDisplay.ts:useFormatBinding",
+			"type": "function",
+			"name": "useFormatBinding",
+			"filePath": "src/renderer/hotkeys/hooks/useHotkeyDisplay/useHotkeyDisplay.ts",
+			"lineRange": [25, 34],
+			"summary": "Function useFormatBinding in useHotkeyDisplay.ts.",
+			"tags": ["utility"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/hotkeys/hooks/useRecordHotkeys/useRecordHotkeys.test.ts",
+			"type": "file",
+			"name": "useRecordHotkeys.test.ts",
+			"filePath": "src/renderer/hotkeys/hooks/useRecordHotkeys/useRecordHotkeys.test.ts",
+			"summary": "TypeScript source file at hooks/useRecordHotkeys/useRecordHotkeys.test.ts.",
+			"tags": ["test"],
+			"complexity": "complex"
+		},
+		{
+			"id": "function:src/renderer/hotkeys/hooks/useRecordHotkeys/useRecordHotkeys.test.ts:ev",
+			"type": "function",
+			"name": "ev",
+			"filePath": "src/renderer/hotkeys/hooks/useRecordHotkeys/useRecordHotkeys.test.ts",
+			"lineRange": [25, 37],
+			"summary": "Function ev in useRecordHotkeys.test.ts.",
+			"tags": ["utility"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/hotkeys/hooks/useRecordHotkeys/useRecordHotkeys.ts",
+			"type": "file",
+			"name": "useRecordHotkeys.ts",
+			"filePath": "src/renderer/hotkeys/hooks/useRecordHotkeys/useRecordHotkeys.ts",
+			"summary": "TypeScript source file at hooks/useRecordHotkeys/useRecordHotkeys.ts.",
+			"tags": ["hook"],
+			"complexity": "complex"
+		},
+		{
+			"id": "function:src/renderer/hotkeys/hooks/useRecordHotkeys/useRecordHotkeys.ts:captureHotkeyFromEvent",
+			"type": "function",
+			"name": "captureHotkeyFromEvent",
+			"filePath": "src/renderer/hotkeys/hooks/useRecordHotkeys/useRecordHotkeys.ts",
+			"lineRange": [39, 80],
+			"summary": "Function captureHotkeyFromEvent in useRecordHotkeys.ts.",
+			"tags": ["utility"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:src/renderer/hotkeys/hooks/useRecordHotkeys/useRecordHotkeys.ts:resolveCapturedBinding",
+			"type": "function",
+			"name": "resolveCapturedBinding",
+			"filePath": "src/renderer/hotkeys/hooks/useRecordHotkeys/useRecordHotkeys.ts",
+			"lineRange": [86, 95],
+			"summary": "Function resolveCapturedBinding in useRecordHotkeys.ts.",
+			"tags": ["utility"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/renderer/hotkeys/hooks/useRecordHotkeys/useRecordHotkeys.ts:checkReserved",
+			"type": "function",
+			"name": "checkReserved",
+			"filePath": "src/renderer/hotkeys/hooks/useRecordHotkeys/useRecordHotkeys.ts",
+			"lineRange": [123, 137],
+			"summary": "Function checkReserved in useRecordHotkeys.ts.",
+			"tags": ["utility"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/renderer/hotkeys/hooks/useRecordHotkeys/useRecordHotkeys.ts:getHotkeyConflict",
+			"type": "function",
+			"name": "getHotkeyConflict",
+			"filePath": "src/renderer/hotkeys/hooks/useRecordHotkeys/useRecordHotkeys.ts",
+			"lineRange": [139, 156],
+			"summary": "Function getHotkeyConflict in useRecordHotkeys.ts.",
+			"tags": ["utility"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:src/renderer/hotkeys/hooks/useRecordHotkeys/useRecordHotkeys.ts:useRecordHotkeys",
+			"type": "function",
+			"name": "useRecordHotkeys",
+			"filePath": "src/renderer/hotkeys/hooks/useRecordHotkeys/useRecordHotkeys.ts",
+			"lineRange": [179, 247],
+			"summary": "Function useRecordHotkeys in useRecordHotkeys.ts.",
+			"tags": ["utility"],
+			"complexity": "complex"
+		},
+		{
+			"id": "file:src/renderer/hotkeys/registry.test.ts",
+			"type": "file",
+			"name": "registry.test.ts",
+			"filePath": "src/renderer/hotkeys/registry.test.ts",
+			"summary": "TypeScript source file at renderer/hotkeys/registry.test.ts.",
+			"tags": ["test"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "file:src/renderer/hotkeys/registry.ts",
+			"type": "file",
+			"name": "registry.ts",
+			"filePath": "src/renderer/hotkeys/registry.ts",
+			"summary": "TypeScript source file at renderer/hotkeys/registry.ts.",
+			"tags": ["utility"],
+			"complexity": "complex"
+		},
+		{
+			"id": "file:src/renderer/hotkeys/stores/hotkeyOverridesStore.ts",
+			"type": "file",
+			"name": "hotkeyOverridesStore.ts",
+			"filePath": "src/renderer/hotkeys/stores/hotkeyOverridesStore.ts",
+			"summary": "TypeScript source file at hotkeys/stores/hotkeyOverridesStore.ts.",
+			"tags": ["store"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/hotkeys/stores/keyboardLayoutStore.ts",
+			"type": "file",
+			"name": "keyboardLayoutStore.ts",
+			"filePath": "src/renderer/hotkeys/stores/keyboardLayoutStore.ts",
+			"summary": "TypeScript source file at hotkeys/stores/keyboardLayoutStore.ts.",
+			"tags": ["store"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:src/renderer/hotkeys/stores/keyboardLayoutStore.ts:startKeyboardLayoutSync",
+			"type": "function",
+			"name": "startKeyboardLayoutSync",
+			"filePath": "src/renderer/hotkeys/stores/keyboardLayoutStore.ts",
+			"lineRange": [46, 60],
+			"summary": "Function startKeyboardLayoutSync in keyboardLayoutStore.ts.",
+			"tags": ["utility"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/hotkeys/stores/keyboardPreferencesStore.ts",
+			"type": "file",
+			"name": "keyboardPreferencesStore.ts",
+			"filePath": "src/renderer/hotkeys/stores/keyboardPreferencesStore.ts",
+			"summary": "TypeScript source file at hotkeys/stores/keyboardPreferencesStore.ts.",
+			"tags": ["store"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/renderer/hotkeys/stores/keyboardPreferencesStore.ts:useEffectiveLayoutMap",
+			"type": "function",
+			"name": "useEffectiveLayoutMap",
+			"filePath": "src/renderer/hotkeys/stores/keyboardPreferencesStore.ts",
+			"lineRange": [42, 46],
+			"summary": "Function useEffectiveLayoutMap in keyboardPreferencesStore.ts.",
+			"tags": ["utility"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/renderer/hotkeys/stores/keyboardPreferencesStore.ts:getEffectiveLayoutMap",
+			"type": "function",
+			"name": "getEffectiveLayoutMap",
+			"filePath": "src/renderer/hotkeys/stores/keyboardPreferencesStore.ts",
+			"lineRange": [49, 52],
+			"summary": "Function getEffectiveLayoutMap in keyboardPreferencesStore.ts.",
+			"tags": ["utility"],
+			"complexity": "simple"
+		}
+	],
+	"edges": [
+		{
+			"source": "file:src/renderer/hotkeys/display.test.ts",
+			"target": "file:src/renderer/hotkeys/display.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/hotkeys/display.ts",
+			"target": "function:src/renderer/hotkeys/display.ts:glyphForCode",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/hotkeys/display.ts",
+			"target": "function:src/renderer/hotkeys/display.ts:glyphForCode",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/hotkeys/display.ts",
+			"target": "function:src/renderer/hotkeys/display.ts:formatHotkeyDisplay",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/hotkeys/display.ts",
+			"target": "function:src/renderer/hotkeys/display.ts:formatHotkeyDisplay",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/hotkeys/display.ts",
+			"target": "file:src/renderer/hotkeys/types.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/hotkeys/display.ts",
+			"target": "file:src/renderer/hotkeys/utils/resolveHotkeyFromEvent.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/hotkeys/display.ts",
+			"target": "file:src/renderer/hotkeys/display.test.ts",
+			"type": "tested_by",
+			"direction": "forward",
+			"weight": 0.5
+		},
+		{
+			"source": "file:src/renderer/hotkeys/hooks/useBinding/useBinding.ts",
+			"target": "function:src/renderer/hotkeys/hooks/useBinding/useBinding.ts:useBinding",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/hotkeys/hooks/useBinding/useBinding.ts",
+			"target": "function:src/renderer/hotkeys/hooks/useBinding/useBinding.ts:useBinding",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/hotkeys/hooks/useBinding/useBinding.ts",
+			"target": "function:src/renderer/hotkeys/hooks/useBinding/useBinding.ts:getBinding",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/hotkeys/hooks/useBinding/useBinding.ts",
+			"target": "function:src/renderer/hotkeys/hooks/useBinding/useBinding.ts:getBinding",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/hotkeys/hooks/useBinding/useBinding.ts",
+			"target": "function:src/renderer/hotkeys/hooks/useBinding/useBinding.ts:getDispatchChord",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/hotkeys/hooks/useBinding/useBinding.ts",
+			"target": "function:src/renderer/hotkeys/hooks/useBinding/useBinding.ts:getDispatchChord",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/hotkeys/hooks/useBinding/useBinding.ts",
+			"target": "file:src/renderer/hotkeys/registry.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/hotkeys/hooks/useBinding/useBinding.ts",
+			"target": "file:src/renderer/hotkeys/stores/hotkeyOverridesStore.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/hotkeys/hooks/useBinding/useBinding.ts",
+			"target": "file:src/renderer/hotkeys/stores/keyboardPreferencesStore.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/hotkeys/hooks/useBinding/useBinding.ts",
+			"target": "file:src/renderer/hotkeys/types.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/hotkeys/hooks/useBinding/useBinding.ts",
+			"target": "file:src/renderer/hotkeys/utils/binding.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/hotkeys/hooks/useHotkey/useHotkey.ts",
+			"target": "function:src/renderer/hotkeys/hooks/useHotkey/useHotkey.ts:useHotkey",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/hotkeys/hooks/useHotkey/useHotkey.ts",
+			"target": "function:src/renderer/hotkeys/hooks/useHotkey/useHotkey.ts:useHotkey",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/hotkeys/hooks/useHotkey/useHotkey.ts",
+			"target": "file:src/renderer/hotkeys/display.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/hotkeys/hooks/useHotkey/useHotkey.ts",
+			"target": "file:src/renderer/hotkeys/hooks/useBinding/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/hotkeys/hooks/useHotkey/useHotkey.ts",
+			"target": "file:src/renderer/hotkeys/registry.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/hotkeys/hooks/useHotkey/useHotkey.ts",
+			"target": "file:src/renderer/hotkeys/stores/keyboardPreferencesStore.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/hotkeys/hooks/useHotkey/useHotkey.ts",
+			"target": "file:src/renderer/hotkeys/types.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/hotkeys/hooks/useHotkey/useHotkey.ts",
+			"target": "file:src/renderer/hotkeys/utils/binding.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/hotkeys/hooks/useHotkeyDisplay/useHotkeyDisplay.ts",
+			"target": "function:src/renderer/hotkeys/hooks/useHotkeyDisplay/useHotkeyDisplay.ts:useHotkeyDisplay",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/hotkeys/hooks/useHotkeyDisplay/useHotkeyDisplay.ts",
+			"target": "function:src/renderer/hotkeys/hooks/useHotkeyDisplay/useHotkeyDisplay.ts:useHotkeyDisplay",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/hotkeys/hooks/useHotkeyDisplay/useHotkeyDisplay.ts",
+			"target": "function:src/renderer/hotkeys/hooks/useHotkeyDisplay/useHotkeyDisplay.ts:useFormatBinding",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/hotkeys/hooks/useHotkeyDisplay/useHotkeyDisplay.ts",
+			"target": "function:src/renderer/hotkeys/hooks/useHotkeyDisplay/useHotkeyDisplay.ts:useFormatBinding",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/hotkeys/hooks/useHotkeyDisplay/useHotkeyDisplay.ts",
+			"target": "file:src/renderer/hotkeys/display.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/hotkeys/hooks/useHotkeyDisplay/useHotkeyDisplay.ts",
+			"target": "file:src/renderer/hotkeys/hooks/useBinding/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/hotkeys/hooks/useHotkeyDisplay/useHotkeyDisplay.ts",
+			"target": "file:src/renderer/hotkeys/registry.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/hotkeys/hooks/useHotkeyDisplay/useHotkeyDisplay.ts",
+			"target": "file:src/renderer/hotkeys/stores/keyboardPreferencesStore.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/hotkeys/hooks/useHotkeyDisplay/useHotkeyDisplay.ts",
+			"target": "file:src/renderer/hotkeys/types.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/hotkeys/hooks/useHotkeyDisplay/useHotkeyDisplay.ts",
+			"target": "file:src/renderer/hotkeys/utils/binding.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/hotkeys/hooks/useRecordHotkeys/useRecordHotkeys.test.ts",
+			"target": "function:src/renderer/hotkeys/hooks/useRecordHotkeys/useRecordHotkeys.test.ts:ev",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/hotkeys/hooks/useRecordHotkeys/useRecordHotkeys.test.ts",
+			"target": "file:src/renderer/hotkeys/hooks/useRecordHotkeys/useRecordHotkeys.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/hotkeys/hooks/useRecordHotkeys/useRecordHotkeys.ts",
+			"target": "function:src/renderer/hotkeys/hooks/useRecordHotkeys/useRecordHotkeys.ts:captureHotkeyFromEvent",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/hotkeys/hooks/useRecordHotkeys/useRecordHotkeys.ts",
+			"target": "function:src/renderer/hotkeys/hooks/useRecordHotkeys/useRecordHotkeys.ts:captureHotkeyFromEvent",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/hotkeys/hooks/useRecordHotkeys/useRecordHotkeys.ts",
+			"target": "function:src/renderer/hotkeys/hooks/useRecordHotkeys/useRecordHotkeys.ts:resolveCapturedBinding",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/hotkeys/hooks/useRecordHotkeys/useRecordHotkeys.ts",
+			"target": "function:src/renderer/hotkeys/hooks/useRecordHotkeys/useRecordHotkeys.ts:resolveCapturedBinding",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/hotkeys/hooks/useRecordHotkeys/useRecordHotkeys.ts",
+			"target": "function:src/renderer/hotkeys/hooks/useRecordHotkeys/useRecordHotkeys.ts:checkReserved",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/hotkeys/hooks/useRecordHotkeys/useRecordHotkeys.ts",
+			"target": "function:src/renderer/hotkeys/hooks/useRecordHotkeys/useRecordHotkeys.ts:getHotkeyConflict",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/hotkeys/hooks/useRecordHotkeys/useRecordHotkeys.ts",
+			"target": "function:src/renderer/hotkeys/hooks/useRecordHotkeys/useRecordHotkeys.ts:useRecordHotkeys",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/hotkeys/hooks/useRecordHotkeys/useRecordHotkeys.ts",
+			"target": "function:src/renderer/hotkeys/hooks/useRecordHotkeys/useRecordHotkeys.ts:useRecordHotkeys",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/hotkeys/hooks/useRecordHotkeys/useRecordHotkeys.ts",
+			"target": "file:src/renderer/hotkeys/registry.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/hotkeys/hooks/useRecordHotkeys/useRecordHotkeys.ts",
+			"target": "file:src/renderer/hotkeys/stores/hotkeyOverridesStore.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/hotkeys/hooks/useRecordHotkeys/useRecordHotkeys.ts",
+			"target": "file:src/renderer/hotkeys/stores/keyboardPreferencesStore.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/hotkeys/hooks/useRecordHotkeys/useRecordHotkeys.ts",
+			"target": "file:src/renderer/hotkeys/types.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/hotkeys/hooks/useRecordHotkeys/useRecordHotkeys.ts",
+			"target": "file:src/renderer/hotkeys/utils/binding.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/hotkeys/hooks/useRecordHotkeys/useRecordHotkeys.ts",
+			"target": "file:src/renderer/hotkeys/utils/resolveHotkeyFromEvent.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/hotkeys/hooks/useRecordHotkeys/useRecordHotkeys.ts",
+			"target": "file:src/renderer/hotkeys/hooks/useRecordHotkeys/useRecordHotkeys.test.ts",
+			"type": "tested_by",
+			"direction": "forward",
+			"weight": 0.5
+		},
+		{
+			"source": "file:src/renderer/hotkeys/registry.test.ts",
+			"target": "file:src/renderer/hotkeys/registry.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/hotkeys/registry.ts",
+			"target": "file:src/renderer/hotkeys/types.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/hotkeys/registry.ts",
+			"target": "file:src/renderer/hotkeys/registry.test.ts",
+			"type": "tested_by",
+			"direction": "forward",
+			"weight": 0.5
+		},
+		{
+			"source": "file:src/renderer/hotkeys/registry.ts",
+			"target": "file:src/renderer/hotkeys/utils/resolveHotkeyFromEvent.test.ts",
+			"type": "tested_by",
+			"direction": "forward",
+			"weight": 0.5
+		},
+		{
+			"source": "file:src/renderer/hotkeys/stores/hotkeyOverridesStore.ts",
+			"target": "file:src/renderer/hotkeys/types.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/hotkeys/stores/hotkeyOverridesStore.ts",
+			"target": "file:src/renderer/hotkeys/utils/resolveHotkeyFromEvent.test.ts",
+			"type": "tested_by",
+			"direction": "forward",
+			"weight": 0.5
+		},
+		{
+			"source": "file:src/renderer/hotkeys/stores/keyboardLayoutStore.ts",
+			"target": "function:src/renderer/hotkeys/stores/keyboardLayoutStore.ts:startKeyboardLayoutSync",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/hotkeys/stores/keyboardLayoutStore.ts",
+			"target": "file:src/main/lib/keyboardLayout.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/hotkeys/stores/keyboardLayoutStore.ts",
+			"target": "file:src/renderer/lib/trpc-client.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/hotkeys/stores/keyboardPreferencesStore.ts",
+			"target": "function:src/renderer/hotkeys/stores/keyboardPreferencesStore.ts:useEffectiveLayoutMap",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/hotkeys/stores/keyboardPreferencesStore.ts",
+			"target": "function:src/renderer/hotkeys/stores/keyboardPreferencesStore.ts:useEffectiveLayoutMap",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/hotkeys/stores/keyboardPreferencesStore.ts",
+			"target": "function:src/renderer/hotkeys/stores/keyboardPreferencesStore.ts:getEffectiveLayoutMap",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/hotkeys/stores/keyboardPreferencesStore.ts",
+			"target": "function:src/renderer/hotkeys/stores/keyboardPreferencesStore.ts:getEffectiveLayoutMap",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/hotkeys/stores/keyboardPreferencesStore.ts",
+			"target": "file:src/renderer/hotkeys/stores/keyboardLayoutStore.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		}
+	]
+}

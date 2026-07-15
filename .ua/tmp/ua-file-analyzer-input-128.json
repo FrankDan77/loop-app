@@ -1,0 +1,111 @@
+{
+	"projectRoot": "/Users/wushengyu/Develop/hustle/superset",
+	"batchFiles": [
+		{
+			"path": "packages/session-protocol/src/acp.ts",
+			"language": "typescript",
+			"sizeLines": 12,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/session-protocol/src/api.ts",
+			"language": "typescript",
+			"sizeLines": 170,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/session-protocol/src/client/index.ts",
+			"language": "typescript",
+			"sizeLines": 1,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/session-protocol/src/client/subscribeToSession/subscribeToSession.ts",
+			"language": "typescript",
+			"sizeLines": 242,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/session-protocol/src/envelope.ts",
+			"language": "typescript",
+			"sizeLines": 30,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/session-protocol/src/fold/fold.ts",
+			"language": "typescript",
+			"sizeLines": 607,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/session-protocol/src/fold/index.ts",
+			"language": "typescript",
+			"sizeLines": 1,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/session-protocol/src/react/useAcpPermissions/useAcpPermissions.ts",
+			"language": "typescript",
+			"sizeLines": 57,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/session-protocol/src/react/useAcpSession/index.ts",
+			"language": "typescript",
+			"sizeLines": 1,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/session-protocol/src/react/useAcpSession/useAcpSession.ts",
+			"language": "typescript",
+			"sizeLines": 273,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/session-protocol/src/state.ts",
+			"language": "typescript",
+			"sizeLines": 100,
+			"fileCategory": "code"
+		}
+	],
+	"batchImportData": {
+		"packages/session-protocol/src/acp.ts": [],
+		"packages/session-protocol/src/api.ts": [
+			"packages/session-protocol/src/acp.ts",
+			"packages/session-protocol/src/envelope.ts",
+			"packages/session-protocol/src/state.ts"
+		],
+		"packages/session-protocol/src/client/index.ts": [],
+		"packages/session-protocol/src/client/subscribeToSession/subscribeToSession.ts": [
+			"packages/session-protocol/src/envelope.ts"
+		],
+		"packages/session-protocol/src/envelope.ts": [
+			"packages/session-protocol/src/acp.ts",
+			"packages/session-protocol/src/state.ts"
+		],
+		"packages/session-protocol/src/fold/fold.ts": [
+			"packages/session-protocol/src/acp.ts",
+			"packages/session-protocol/src/envelope.ts",
+			"packages/session-protocol/src/state.ts"
+		],
+		"packages/session-protocol/src/fold/index.ts": [],
+		"packages/session-protocol/src/react/useAcpPermissions/useAcpPermissions.ts": [
+			"packages/session-protocol/src/acp.ts",
+			"packages/session-protocol/src/api.ts",
+			"packages/session-protocol/src/react/useAcpSession/index.ts",
+			"packages/session-protocol/src/state.ts"
+		],
+		"packages/session-protocol/src/react/useAcpSession/index.ts": [],
+		"packages/session-protocol/src/react/useAcpSession/useAcpSession.ts": [
+			"packages/session-protocol/src/acp.ts",
+			"packages/session-protocol/src/api.ts",
+			"packages/session-protocol/src/client/index.ts",
+			"packages/session-protocol/src/envelope.ts",
+			"packages/session-protocol/src/fold/index.ts",
+			"packages/session-protocol/src/state.ts"
+		],
+		"packages/session-protocol/src/state.ts": [
+			"packages/session-protocol/src/acp.ts"
+		]
+	}
+}

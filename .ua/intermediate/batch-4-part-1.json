@@ -1,0 +1,721 @@
+{
+	"nodes": [
+		{
+			"id": "file:apps/desktop/src/renderer/hooks/ports/usePortKillActions/killPortTarget.ts",
+			"type": "file",
+			"name": "killPortTarget.ts",
+			"filePath": "apps/desktop/src/renderer/hooks/ports/usePortKillActions/killPortTarget.ts",
+			"summary": "Sends a kill request for a process occupying a port, first trying the host service's remote kill mutation and falling back to a provided local kill function.",
+			"tags": ["utility", "api-handler", "error-handler"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:apps/desktop/src/renderer/hooks/ports/usePortKillActions/usePortKillActions.ts",
+			"type": "file",
+			"name": "usePortKillActions.ts",
+			"filePath": "apps/desktop/src/renderer/hooks/ports/usePortKillActions/usePortKillActions.ts",
+			"summary": "React hook that kills one or more port targets, tracking a pending count, surfacing failures via toast, and invalidating a query key afterward.",
+			"tags": ["hook", "event-handler", "utility"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "file:apps/desktop/src/renderer/hooks/useAgentEffortPreference/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "apps/desktop/src/renderer/hooks/useAgentEffortPreference/index.ts",
+			"summary": "Barrel re-export for the useAgentEffortPreference hook implemented in a sibling file.",
+			"tags": ["barrel", "entry-point"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:apps/desktop/src/renderer/hooks/useAgentModelPreference/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "apps/desktop/src/renderer/hooks/useAgentModelPreference/index.ts",
+			"summary": "Barrel re-export for the useAgentModelPreference hook implemented in a sibling file.",
+			"tags": ["barrel", "entry-point"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:apps/desktop/src/renderer/hooks/useCurrentPlan.ts",
+			"type": "file",
+			"name": "useCurrentPlan.ts",
+			"filePath": "apps/desktop/src/renderer/hooks/useCurrentPlan.ts",
+			"summary": "Resolves the user's effective subscription plan tier from live subscription and session data, exposing a hook with a loaded flag alongside a pure resolver function.",
+			"tags": ["hook", "data-model", "utility"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "file:apps/desktop/src/renderer/hooks/useEnsureV2Project/useEnsureV2Project.ts",
+			"type": "file",
+			"name": "useEnsureV2Project.ts",
+			"filePath": "apps/desktop/src/renderer/hooks/useEnsureV2Project/useEnsureV2Project.ts",
+			"summary": "Hook ensuring a V2 project exists for the current local path, looking it up on the local host service and creating/setting it up when missing.",
+			"tags": ["hook", "api-handler", "service"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "file:apps/desktop/src/renderer/hooks/useFileOpenMode/useFileOpenMode.ts",
+			"type": "file",
+			"name": "useFileOpenMode.ts",
+			"filePath": "apps/desktop/src/renderer/hooks/useFileOpenMode/useFileOpenMode.ts",
+			"summary": "Hook and helper exposing the user's configured file-open mode setting, read through the Electron tRPC bridge.",
+			"tags": ["hook", "config", "utility"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:apps/desktop/src/renderer/hooks/useIsV2CloudEnabled.ts",
+			"type": "file",
+			"name": "useIsV2CloudEnabled.ts",
+			"filePath": "apps/desktop/src/renderer/hooks/useIsV2CloudEnabled.ts",
+			"summary": "Hooks determining whether the current session belongs to a V2-only cloud user and whether V2 cloud features should be enabled, combining auth session state with a local override store.",
+			"tags": ["hook", "feature-flag", "utility"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:apps/desktop/src/renderer/hooks/useOnlineStatus.ts",
+			"type": "file",
+			"name": "useOnlineStatus.ts",
+			"filePath": "apps/desktop/src/renderer/hooks/useOnlineStatus.ts",
+			"summary": "Hook tracking browser online/offline connectivity via window events.",
+			"tags": ["hook", "event-handler", "utility"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:apps/desktop/src/renderer/hooks/useRelayUrl/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "apps/desktop/src/renderer/hooks/useRelayUrl/index.ts",
+			"summary": "Barrel re-export for the useRelayUrl hook implemented in a sibling file.",
+			"tags": ["barrel", "entry-point"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:apps/desktop/src/renderer/hooks/useRelayUrl/useRelayUrl.ts",
+			"type": "file",
+			"name": "useRelayUrl.ts",
+			"filePath": "apps/desktop/src/renderer/hooks/useRelayUrl/useRelayUrl.ts",
+			"summary": "Hook exposing the relay URL feature-flag payload used to route desktop network traffic through a relay.",
+			"tags": ["hook", "feature-flag", "utility"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:apps/desktop/src/renderer/hooks/useSignOut/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "apps/desktop/src/renderer/hooks/useSignOut/index.ts",
+			"summary": "Barrel re-exporting the useSignOut hook and its associated local-storage key constants.",
+			"tags": ["barrel", "entry-point"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:apps/desktop/src/renderer/hooks/useSignOut/useSignOut.ts",
+			"type": "file",
+			"name": "useSignOut.ts",
+			"filePath": "apps/desktop/src/renderer/hooks/useSignOut/useSignOut.ts",
+			"summary": "Hook that signs the user out across Electron tRPC, PostHog analytics, and local/auth storage, clearing session-related local-storage keys.",
+			"tags": ["hook", "auth", "event-handler"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:apps/desktop/src/renderer/hooks/useV2AgentChoices/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "apps/desktop/src/renderer/hooks/useV2AgentChoices/index.ts",
+			"summary": "Barrel re-export for the useV2AgentChoices hook implemented in a sibling file.",
+			"tags": ["barrel", "entry-point"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:apps/desktop/src/renderer/hooks/useV2AgentChoices/useV2AgentChoices.ts",
+			"type": "file",
+			"name": "useV2AgentChoices.ts",
+			"filePath": "apps/desktop/src/renderer/hooks/useV2AgentChoices/useV2AgentChoices.ts",
+			"summary": "Hook that maps a host's V2 agent configs into a simplified list of agent choices for selection UIs.",
+			"tags": ["hook", "data-model", "utility"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:apps/desktop/src/renderer/hooks/useV2AgentConfigs/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "apps/desktop/src/renderer/hooks/useV2AgentConfigs/index.ts",
+			"summary": "Barrel re-exporting the useV2AgentConfigs hook and its shared query-key constant.",
+			"tags": ["barrel", "entry-point"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:apps/desktop/src/renderer/hooks/useV2AgentConfigs/useV2AgentConfigs.ts",
+			"type": "file",
+			"name": "useV2AgentConfigs.ts",
+			"filePath": "apps/desktop/src/renderer/hooks/useV2AgentConfigs/useV2AgentConfigs.ts",
+			"summary": "Hook that queries the list of V2 agent configs from the host service for a given host URL, exposing a shared query key for cache invalidation.",
+			"tags": ["hook", "api-handler", "service"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:apps/desktop/src/renderer/hooks/useV2UserPreferences/useV2UserPreferences.ts",
+			"type": "file",
+			"name": "useV2UserPreferences.ts",
+			"filePath": "apps/desktop/src/renderer/hooks/useV2UserPreferences/useV2UserPreferences.ts",
+			"summary": "Hook exposing V2 user preferences (link tiers, sidebar state, presets bar) backed by a live-query collection, with setters that upsert preference rows via get/insert/update.",
+			"tags": ["hook", "data-model", "state-management"],
+			"complexity": "complex",
+			"languageNotes": "Uses TanStack DB's useLiveQuery plus collection get/insert/update calls for local-first optimistic state instead of plain component state."
+		},
+		{
+			"id": "function:apps/desktop/src/renderer/hooks/ports/usePortKillActions/killPortTarget.ts:killPortTarget",
+			"type": "function",
+			"name": "killPortTarget",
+			"filePath": "apps/desktop/src/renderer/hooks/ports/usePortKillActions/killPortTarget.ts",
+			"lineRange": [23, 51],
+			"summary": "Attempts to kill a port target via the host service's remote kill mutation, falling back to a provided local kill function and normalizing errors to strings.",
+			"tags": ["utility", "error-handler", "api-handler"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:apps/desktop/src/renderer/hooks/ports/usePortKillActions/usePortKillActions.ts:usePortKillActions",
+			"type": "function",
+			"name": "usePortKillActions",
+			"filePath": "apps/desktop/src/renderer/hooks/ports/usePortKillActions/usePortKillActions.ts",
+			"lineRange": [21, 90],
+			"summary": "Hook that runs killPortTarget for one or more targets, tracks in-flight pending counts, shows failure toasts, and triggers a refresh/query invalidation on completion.",
+			"tags": ["hook", "event-handler", "utility"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:apps/desktop/src/renderer/hooks/useCurrentPlan.ts:resolveCurrentPlan",
+			"type": "function",
+			"name": "resolveCurrentPlan",
+			"filePath": "apps/desktop/src/renderer/hooks/useCurrentPlan.ts",
+			"lineRange": [21, 39],
+			"summary": "Pure function that determines the effective plan tier from a subscription plan and session plan, preferring the paid subscription plan when active.",
+			"tags": ["utility", "data-model"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:apps/desktop/src/renderer/hooks/useCurrentPlan.ts:useCurrentPlan",
+			"type": "function",
+			"name": "useCurrentPlan",
+			"filePath": "apps/desktop/src/renderer/hooks/useCurrentPlan.ts",
+			"lineRange": [41, 62],
+			"summary": "Hook that combines the auth session and a live subscription collection query to compute the current plan tier and whether subscription data has loaded.",
+			"tags": ["hook", "data-model", "utility"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:apps/desktop/src/renderer/hooks/useEnsureV2Project/useEnsureV2Project.ts:useEnsureV2Project",
+			"type": "function",
+			"name": "useEnsureV2Project",
+			"filePath": "apps/desktop/src/renderer/hooks/useEnsureV2Project/useEnsureV2Project.ts",
+			"lineRange": [13, 72],
+			"summary": "Hook that looks up a V2 project by path on the local host service and creates/sets it up if it does not already exist, surfacing unavailable-service errors.",
+			"tags": ["hook", "api-handler", "service"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:apps/desktop/src/renderer/hooks/useFileOpenMode/useFileOpenMode.ts:getFileOpenMode",
+			"type": "function",
+			"name": "getFileOpenMode",
+			"filePath": "apps/desktop/src/renderer/hooks/useFileOpenMode/useFileOpenMode.ts",
+			"lineRange": [8, 10],
+			"summary": "Reads the file-open mode setting synchronously via the Electron tRPC query utilities.",
+			"tags": ["utility", "config"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:apps/desktop/src/renderer/hooks/useFileOpenMode/useFileOpenMode.ts:useFileOpenMode",
+			"type": "function",
+			"name": "useFileOpenMode",
+			"filePath": "apps/desktop/src/renderer/hooks/useFileOpenMode/useFileOpenMode.ts",
+			"lineRange": [12, 17],
+			"summary": "Hook wrapper exposing the file-open mode setting reactively via Electron tRPC's useQuery.",
+			"tags": ["hook", "config"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:apps/desktop/src/renderer/hooks/useIsV2CloudEnabled.ts:useIsV2OnlyUser",
+			"type": "function",
+			"name": "useIsV2OnlyUser",
+			"filePath": "apps/desktop/src/renderer/hooks/useIsV2CloudEnabled.ts",
+			"lineRange": [10, 13],
+			"summary": "Hook returning whether the currently authenticated session belongs to a V2-only user.",
+			"tags": ["hook", "feature-flag"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:apps/desktop/src/renderer/hooks/useIsV2CloudEnabled.ts:useIsV2CloudEnabled",
+			"type": "function",
+			"name": "useIsV2CloudEnabled",
+			"filePath": "apps/desktop/src/renderer/hooks/useIsV2CloudEnabled.ts",
+			"lineRange": [16, 21],
+			"summary": "Hook combining the V2-only user check with a local override store to decide whether V2 cloud features are enabled.",
+			"tags": ["hook", "feature-flag"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:apps/desktop/src/renderer/hooks/useOnlineStatus.ts:useOnlineStatus",
+			"type": "function",
+			"name": "useOnlineStatus",
+			"filePath": "apps/desktop/src/renderer/hooks/useOnlineStatus.ts",
+			"lineRange": [3, 20],
+			"summary": "Hook that tracks the browser's online/offline state by subscribing to window online/offline events.",
+			"tags": ["hook", "event-handler"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:apps/desktop/src/renderer/hooks/useRelayUrl/useRelayUrl.ts:useRelayUrl",
+			"type": "function",
+			"name": "useRelayUrl",
+			"filePath": "apps/desktop/src/renderer/hooks/useRelayUrl/useRelayUrl.ts",
+			"lineRange": [16, 23],
+			"summary": "Hook that reads the relay URL feature-flag payload for the current user.",
+			"tags": ["hook", "feature-flag"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:apps/desktop/src/renderer/hooks/useSignOut/useSignOut.ts:useSignOut",
+			"type": "function",
+			"name": "useSignOut",
+			"filePath": "apps/desktop/src/renderer/hooks/useSignOut/useSignOut.ts",
+			"lineRange": [8, 20],
+			"summary": "Hook returning a sign-out callback that clears the Electron tRPC session, resets PostHog identity, removes local-storage auth keys, and calls the auth client's signOut.",
+			"tags": ["hook", "auth", "event-handler"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:apps/desktop/src/renderer/hooks/useV2AgentChoices/useV2AgentChoices.ts:useV2AgentChoices",
+			"type": "function",
+			"name": "useV2AgentChoices",
+			"filePath": "apps/desktop/src/renderer/hooks/useV2AgentChoices/useV2AgentChoices.ts",
+			"lineRange": [19, 37],
+			"summary": "Hook that fetches V2 agent configs for a host and maps them into a memoized list of agent-choice objects for pickers.",
+			"tags": ["hook", "data-model"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:apps/desktop/src/renderer/hooks/useV2AgentConfigs/useV2AgentConfigs.ts:useV2AgentConfigs",
+			"type": "function",
+			"name": "useV2AgentConfigs",
+			"filePath": "apps/desktop/src/renderer/hooks/useV2AgentConfigs/useV2AgentConfigs.ts",
+			"lineRange": [15, 27],
+			"summary": "Hook wrapping a tRPC query for the list of V2 agent configs on a given host URL.",
+			"tags": ["hook", "api-handler"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:apps/desktop/src/renderer/hooks/useV2UserPreferences/useV2UserPreferences.ts:useV2UserPreferences",
+			"type": "function",
+			"name": "useV2UserPreferences",
+			"filePath": "apps/desktop/src/renderer/hooks/useV2UserPreferences/useV2UserPreferences.ts",
+			"lineRange": [29, 216],
+			"summary": "Hook exposing the full V2UserPreferencesApi surface (link tiers, sidebar state, presets bar toggle) backed by a live-query row, upserting via collection get/insert/update on each setter call.",
+			"tags": ["hook", "state-management", "data-model"],
+			"complexity": "complex"
+		}
+	],
+	"edges": [
+		{
+			"source": "file:apps/desktop/src/renderer/hooks/ports/usePortKillActions/killPortTarget.ts",
+			"target": "function:apps/desktop/src/renderer/hooks/ports/usePortKillActions/killPortTarget.ts:killPortTarget",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/hooks/ports/usePortKillActions/usePortKillActions.ts",
+			"target": "function:apps/desktop/src/renderer/hooks/ports/usePortKillActions/usePortKillActions.ts:usePortKillActions",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/hooks/useCurrentPlan.ts",
+			"target": "function:apps/desktop/src/renderer/hooks/useCurrentPlan.ts:resolveCurrentPlan",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/hooks/useCurrentPlan.ts",
+			"target": "function:apps/desktop/src/renderer/hooks/useCurrentPlan.ts:useCurrentPlan",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/hooks/useEnsureV2Project/useEnsureV2Project.ts",
+			"target": "function:apps/desktop/src/renderer/hooks/useEnsureV2Project/useEnsureV2Project.ts:useEnsureV2Project",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/hooks/useFileOpenMode/useFileOpenMode.ts",
+			"target": "function:apps/desktop/src/renderer/hooks/useFileOpenMode/useFileOpenMode.ts:getFileOpenMode",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/hooks/useFileOpenMode/useFileOpenMode.ts",
+			"target": "function:apps/desktop/src/renderer/hooks/useFileOpenMode/useFileOpenMode.ts:useFileOpenMode",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/hooks/useIsV2CloudEnabled.ts",
+			"target": "function:apps/desktop/src/renderer/hooks/useIsV2CloudEnabled.ts:useIsV2OnlyUser",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/hooks/useIsV2CloudEnabled.ts",
+			"target": "function:apps/desktop/src/renderer/hooks/useIsV2CloudEnabled.ts:useIsV2CloudEnabled",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/hooks/useOnlineStatus.ts",
+			"target": "function:apps/desktop/src/renderer/hooks/useOnlineStatus.ts:useOnlineStatus",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/hooks/useRelayUrl/useRelayUrl.ts",
+			"target": "function:apps/desktop/src/renderer/hooks/useRelayUrl/useRelayUrl.ts:useRelayUrl",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/hooks/useSignOut/useSignOut.ts",
+			"target": "function:apps/desktop/src/renderer/hooks/useSignOut/useSignOut.ts:useSignOut",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/hooks/useV2AgentChoices/useV2AgentChoices.ts",
+			"target": "function:apps/desktop/src/renderer/hooks/useV2AgentChoices/useV2AgentChoices.ts:useV2AgentChoices",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/hooks/useV2AgentConfigs/useV2AgentConfigs.ts",
+			"target": "function:apps/desktop/src/renderer/hooks/useV2AgentConfigs/useV2AgentConfigs.ts:useV2AgentConfigs",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/hooks/useV2UserPreferences/useV2UserPreferences.ts",
+			"target": "function:apps/desktop/src/renderer/hooks/useV2UserPreferences/useV2UserPreferences.ts:useV2UserPreferences",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+
+		{
+			"source": "file:apps/desktop/src/renderer/hooks/ports/usePortKillActions/killPortTarget.ts",
+			"target": "function:apps/desktop/src/renderer/hooks/ports/usePortKillActions/killPortTarget.ts:killPortTarget",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/hooks/ports/usePortKillActions/usePortKillActions.ts",
+			"target": "function:apps/desktop/src/renderer/hooks/ports/usePortKillActions/usePortKillActions.ts:usePortKillActions",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/hooks/useCurrentPlan.ts",
+			"target": "function:apps/desktop/src/renderer/hooks/useCurrentPlan.ts:resolveCurrentPlan",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/hooks/useCurrentPlan.ts",
+			"target": "function:apps/desktop/src/renderer/hooks/useCurrentPlan.ts:useCurrentPlan",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/hooks/useEnsureV2Project/useEnsureV2Project.ts",
+			"target": "function:apps/desktop/src/renderer/hooks/useEnsureV2Project/useEnsureV2Project.ts:useEnsureV2Project",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/hooks/useFileOpenMode/useFileOpenMode.ts",
+			"target": "function:apps/desktop/src/renderer/hooks/useFileOpenMode/useFileOpenMode.ts:getFileOpenMode",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/hooks/useFileOpenMode/useFileOpenMode.ts",
+			"target": "function:apps/desktop/src/renderer/hooks/useFileOpenMode/useFileOpenMode.ts:useFileOpenMode",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/hooks/useIsV2CloudEnabled.ts",
+			"target": "function:apps/desktop/src/renderer/hooks/useIsV2CloudEnabled.ts:useIsV2OnlyUser",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/hooks/useIsV2CloudEnabled.ts",
+			"target": "function:apps/desktop/src/renderer/hooks/useIsV2CloudEnabled.ts:useIsV2CloudEnabled",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/hooks/useOnlineStatus.ts",
+			"target": "function:apps/desktop/src/renderer/hooks/useOnlineStatus.ts:useOnlineStatus",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/hooks/useRelayUrl/useRelayUrl.ts",
+			"target": "function:apps/desktop/src/renderer/hooks/useRelayUrl/useRelayUrl.ts:useRelayUrl",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/hooks/useSignOut/useSignOut.ts",
+			"target": "function:apps/desktop/src/renderer/hooks/useSignOut/useSignOut.ts:useSignOut",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/hooks/useV2AgentChoices/useV2AgentChoices.ts",
+			"target": "function:apps/desktop/src/renderer/hooks/useV2AgentChoices/useV2AgentChoices.ts:useV2AgentChoices",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/hooks/useV2AgentConfigs/useV2AgentConfigs.ts",
+			"target": "function:apps/desktop/src/renderer/hooks/useV2AgentConfigs/useV2AgentConfigs.ts:useV2AgentConfigs",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/hooks/useV2UserPreferences/useV2UserPreferences.ts",
+			"target": "function:apps/desktop/src/renderer/hooks/useV2UserPreferences/useV2UserPreferences.ts:useV2UserPreferences",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+
+		{
+			"source": "file:apps/desktop/src/renderer/hooks/ports/usePortKillActions/killPortTarget.ts",
+			"target": "file:apps/desktop/src/renderer/lib/host-service-client.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/hooks/ports/usePortKillActions/usePortKillActions.ts",
+			"target": "file:apps/desktop/src/renderer/hooks/ports/usePortKillActions/killPortTarget.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/hooks/useCurrentPlan.ts",
+			"target": "file:apps/desktop/src/renderer/lib/auth-client.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/hooks/useCurrentPlan.ts",
+			"target": "file:apps/desktop/src/renderer/routes/_authenticated/providers/CollectionsProvider/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/hooks/useEnsureV2Project/useEnsureV2Project.ts",
+			"target": "file:apps/desktop/src/renderer/lib/host-service-client.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/hooks/useEnsureV2Project/useEnsureV2Project.ts",
+			"target": "file:apps/desktop/src/renderer/lib/host-service-unavailable.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/hooks/useEnsureV2Project/useEnsureV2Project.ts",
+			"target": "file:apps/desktop/src/renderer/routes/_authenticated/providers/LocalHostServiceProvider/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/hooks/useFileOpenMode/useFileOpenMode.ts",
+			"target": "file:apps/desktop/src/renderer/lib/electron-trpc.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/hooks/useFileOpenMode/useFileOpenMode.ts",
+			"target": "file:apps/desktop/src/shared/constants.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/hooks/useIsV2CloudEnabled.ts",
+			"target": "file:apps/desktop/src/renderer/env.renderer.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/hooks/useIsV2CloudEnabled.ts",
+			"target": "file:apps/desktop/src/renderer/lib/auth-client.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/hooks/useIsV2CloudEnabled.ts",
+			"target": "file:apps/desktop/src/renderer/stores/v2-local-override.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/hooks/useRelayUrl/useRelayUrl.ts",
+			"target": "file:apps/desktop/src/renderer/env.renderer.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/hooks/useSignOut/useSignOut.ts",
+			"target": "file:apps/desktop/src/renderer/lib/auth-client.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/hooks/useSignOut/useSignOut.ts",
+			"target": "file:apps/desktop/src/renderer/lib/electron-trpc.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/hooks/useSignOut/useSignOut.ts",
+			"target": "file:apps/desktop/src/renderer/lib/posthog.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/hooks/useV2AgentChoices/useV2AgentChoices.ts",
+			"target": "file:apps/desktop/src/renderer/components/AgentSelect/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/hooks/useV2AgentChoices/useV2AgentChoices.ts",
+			"target": "file:apps/desktop/src/renderer/hooks/useV2AgentConfigs/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/hooks/useV2AgentConfigs/useV2AgentConfigs.ts",
+			"target": "file:apps/desktop/src/renderer/lib/host-service-client.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/hooks/useV2UserPreferences/useV2UserPreferences.ts",
+			"target": "file:apps/desktop/src/renderer/routes/_authenticated/providers/CollectionsProvider/dashboardSidebarLocal/schema.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/hooks/useV2UserPreferences/useV2UserPreferences.ts",
+			"target": "file:apps/desktop/src/renderer/routes/_authenticated/providers/CollectionsProvider/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+
+		{
+			"source": "function:apps/desktop/src/renderer/hooks/ports/usePortKillActions/usePortKillActions.ts:usePortKillActions",
+			"target": "function:apps/desktop/src/renderer/hooks/ports/usePortKillActions/killPortTarget.ts:killPortTarget",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "function:apps/desktop/src/renderer/hooks/useEnsureV2Project/useEnsureV2Project.ts:useEnsureV2Project",
+			"target": "function:apps/desktop/src/renderer/lib/host-service-unavailable.ts:getHostServiceUnavailableMessage",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "function:apps/desktop/src/renderer/hooks/useEnsureV2Project/useEnsureV2Project.ts:useEnsureV2Project",
+			"target": "function:apps/desktop/src/renderer/lib/host-service-client.ts:getHostServiceClientByUrl",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "function:apps/desktop/src/renderer/hooks/useV2AgentChoices/useV2AgentChoices.ts:useV2AgentChoices",
+			"target": "function:apps/desktop/src/renderer/hooks/useV2AgentConfigs/useV2AgentConfigs.ts:useV2AgentConfigs",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "function:apps/desktop/src/renderer/hooks/useV2AgentConfigs/useV2AgentConfigs.ts:useV2AgentConfigs",
+			"target": "function:apps/desktop/src/renderer/lib/host-service-client.ts:getHostServiceClientByUrl",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "function:apps/desktop/src/renderer/hooks/ports/usePortKillActions/killPortTarget.ts:killPortTarget",
+			"target": "function:apps/desktop/src/renderer/lib/host-service-client.ts:getHostServiceClientByUrl",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		}
+	]
+}

@@ -1,0 +1,610 @@
+{
+	"batchIndex": 80,
+	"files": [
+		{
+			"path": "packages/cli/src/commands/tasks/create/command.ts",
+			"language": "typescript",
+			"sizeLines": 53,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/cli/src/commands/tasks/delete/command.ts",
+			"language": "typescript",
+			"sizeLines": 42,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/cli/src/commands/tasks/get/command.ts",
+			"language": "typescript",
+			"sizeLines": 24,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/cli/src/commands/tasks/list/command.ts",
+			"language": "typescript",
+			"sizeLines": 65,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/cli/src/commands/tasks/statuses/list/command.ts",
+			"language": "typescript",
+			"sizeLines": 15,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/cli/src/commands/tasks/update/command.ts",
+			"language": "typescript",
+			"sizeLines": 63,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/cli/src/commands/terminals/create/command.ts",
+			"language": "typescript",
+			"sizeLines": 55,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/cli/src/commands/update/command.ts",
+			"language": "typescript",
+			"sizeLines": 223,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/cli/src/commands/workspaces/create/command.ts",
+			"language": "typescript",
+			"sizeLines": 108,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/cli/src/commands/workspaces/delete/command.ts",
+			"language": "typescript",
+			"sizeLines": 75,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/cli/src/commands/workspaces/get/command.ts",
+			"language": "typescript",
+			"sizeLines": 102,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/cli/src/commands/workspaces/list/command.ts",
+			"language": "typescript",
+			"sizeLines": 93,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/cli/src/commands/workspaces/open/command.ts",
+			"language": "typescript",
+			"sizeLines": 75,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/cli/src/commands/workspaces/update/command.ts",
+			"language": "typescript",
+			"sizeLines": 73,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/cli/src/lib/analytics.ts",
+			"language": "typescript",
+			"sizeLines": 22,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/cli/src/lib/api-client.ts",
+			"language": "typescript",
+			"sizeLines": 37,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/cli/src/lib/auth.ts",
+			"language": "typescript",
+			"sizeLines": 416,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/cli/src/lib/command.ts",
+			"language": "typescript",
+			"sizeLines": 13,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/cli/src/lib/config.ts",
+			"language": "typescript",
+			"sizeLines": 74,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/cli/src/lib/env.ts",
+			"language": "typescript",
+			"sizeLines": 12,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/cli/src/lib/host-target/index.ts",
+			"language": "typescript",
+			"sizeLines": 10,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/cli/src/lib/host-target/resolveHostTarget.ts",
+			"language": "typescript",
+			"sizeLines": 87,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/cli/src/lib/host-workspaces/index.ts",
+			"language": "typescript",
+			"sizeLines": 12,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/cli/src/lib/host-workspaces/listHostWorkspaces.ts",
+			"language": "typescript",
+			"sizeLines": 190,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/cli/src/lib/host/manifest.ts",
+			"language": "typescript",
+			"sizeLines": 77,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/cli/src/lib/host/relay-url.ts",
+			"language": "typescript",
+			"sizeLines": 30,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/cli/src/lib/host/resolve.ts",
+			"language": "typescript",
+			"sizeLines": 39,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/cli/src/lib/host/spawn.ts",
+			"language": "typescript",
+			"sizeLines": 153,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/cli/src/lib/resolve-auth.ts",
+			"language": "typescript",
+			"sizeLines": 72,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/cli/src/lib/resolve-org.ts",
+			"language": "typescript",
+			"sizeLines": 89,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/cli/src/lib/upload-attachments.ts",
+			"language": "typescript",
+			"sizeLines": 31,
+			"fileCategory": "code"
+		}
+	],
+	"batchImportData": {
+		"packages/cli/src/commands/tasks/create/command.ts": [
+			"packages/cli/src/lib/command.ts"
+		],
+		"packages/cli/src/commands/tasks/delete/command.ts": [
+			"packages/cli/src/lib/command.ts"
+		],
+		"packages/cli/src/commands/tasks/get/command.ts": [
+			"packages/cli/src/lib/command.ts"
+		],
+		"packages/cli/src/commands/tasks/list/command.ts": [
+			"packages/cli/src/lib/command.ts"
+		],
+		"packages/cli/src/commands/tasks/statuses/list/command.ts": [
+			"packages/cli/src/lib/command.ts"
+		],
+		"packages/cli/src/commands/tasks/update/command.ts": [
+			"packages/cli/src/lib/command.ts"
+		],
+		"packages/cli/src/commands/terminals/create/command.ts": [
+			"packages/cli/src/lib/command.ts",
+			"packages/cli/src/lib/host-target/index.ts",
+			"packages/cli/src/lib/host-workspaces/index.ts"
+		],
+		"packages/cli/src/commands/update/command.ts": [
+			"packages/cli/src/lib/command.ts",
+			"packages/cli/src/lib/env.ts"
+		],
+		"packages/cli/src/commands/workspaces/create/command.ts": [
+			"packages/cli/src/lib/command.ts",
+			"packages/cli/src/lib/host-target/index.ts",
+			"packages/cli/src/lib/upload-attachments.ts"
+		],
+		"packages/cli/src/commands/workspaces/delete/command.ts": [
+			"packages/cli/src/lib/command.ts",
+			"packages/cli/src/lib/host-target/index.ts",
+			"packages/cli/src/lib/host-workspaces/index.ts"
+		],
+		"packages/cli/src/commands/workspaces/get/command.ts": [
+			"packages/cli/src/lib/command.ts",
+			"packages/cli/src/lib/host-workspaces/index.ts"
+		],
+		"packages/cli/src/commands/workspaces/list/command.ts": [
+			"packages/cli/src/lib/command.ts",
+			"packages/cli/src/lib/host-target/index.ts",
+			"packages/cli/src/lib/host-workspaces/index.ts"
+		],
+		"packages/cli/src/commands/workspaces/open/command.ts": [
+			"packages/cli/src/lib/command.ts",
+			"packages/cli/src/lib/host-workspaces/index.ts"
+		],
+		"packages/cli/src/commands/workspaces/update/command.ts": [
+			"packages/cli/src/lib/command.ts",
+			"packages/cli/src/lib/host-target/index.ts",
+			"packages/cli/src/lib/host-workspaces/index.ts"
+		],
+		"packages/cli/src/lib/analytics.ts": [
+			"packages/cli/src/lib/api-client.ts",
+			"packages/cli/src/lib/env.ts"
+		],
+		"packages/cli/src/lib/api-client.ts": ["packages/cli/src/lib/config.ts"],
+		"packages/cli/src/lib/auth.ts": ["packages/cli/src/lib/env.ts"],
+		"packages/cli/src/lib/command.ts": [
+			"packages/cli/src/lib/api-client.ts",
+			"packages/cli/src/lib/config.ts",
+			"packages/cli/src/lib/resolve-auth.ts"
+		],
+		"packages/cli/src/lib/config.ts": ["packages/cli/src/lib/env.ts"],
+		"packages/cli/src/lib/env.ts": [],
+		"packages/cli/src/lib/host-target/index.ts": [],
+		"packages/cli/src/lib/host-target/resolveHostTarget.ts": [
+			"packages/cli/src/lib/env.ts",
+			"packages/cli/src/lib/host/manifest.ts"
+		],
+		"packages/cli/src/lib/host-workspaces/index.ts": [],
+		"packages/cli/src/lib/host-workspaces/listHostWorkspaces.ts": [
+			"packages/cli/src/lib/api-client.ts",
+			"packages/cli/src/lib/host-target/index.ts",
+			"packages/cli/src/lib/host/manifest.ts"
+		],
+		"packages/cli/src/lib/host/manifest.ts": ["packages/cli/src/lib/config.ts"],
+		"packages/cli/src/lib/host/relay-url.ts": [
+			"packages/cli/src/lib/api-client.ts",
+			"packages/cli/src/lib/env.ts"
+		],
+		"packages/cli/src/lib/host/resolve.ts": [
+			"packages/cli/src/lib/api-client.ts"
+		],
+		"packages/cli/src/lib/host/spawn.ts": [
+			"packages/cli/src/lib/api-client.ts",
+			"packages/cli/src/lib/env.ts",
+			"packages/cli/src/lib/host/manifest.ts",
+			"packages/cli/src/lib/host/relay-url.ts"
+		],
+		"packages/cli/src/lib/resolve-auth.ts": [
+			"packages/cli/src/lib/api-client.ts",
+			"packages/cli/src/lib/auth.ts",
+			"packages/cli/src/lib/config.ts"
+		],
+		"packages/cli/src/lib/resolve-org.ts": [
+			"packages/cli/src/lib/api-client.ts"
+		],
+		"packages/cli/src/lib/upload-attachments.ts": [
+			"packages/cli/src/lib/host-target/index.ts"
+		]
+	},
+	"neighborMap": {
+		"packages/cli/src/lib/analytics.ts": [
+			{
+				"path": "packages/cli/src/commands/middleware.ts",
+				"batchIndex": 74,
+				"symbols": []
+			}
+		],
+		"packages/cli/src/lib/api-client.ts": [
+			{
+				"path": "packages/cli/src/commands/auth/login/command.ts",
+				"batchIndex": 74,
+				"symbols": []
+			},
+			{
+				"path": "packages/cli/src/commands/status/command.ts",
+				"batchIndex": 74,
+				"symbols": []
+			}
+		],
+		"packages/cli/src/lib/auth.ts": [
+			{
+				"path": "packages/cli/src/commands/auth/login/command.ts",
+				"batchIndex": 74,
+				"symbols": []
+			}
+		],
+		"packages/cli/src/lib/command.ts": [
+			{
+				"path": "packages/cli/src/commands/agents/create/command.ts",
+				"batchIndex": 74,
+				"symbols": []
+			},
+			{
+				"path": "packages/cli/src/commands/agents/list/command.ts",
+				"batchIndex": 74,
+				"symbols": []
+			},
+			{
+				"path": "packages/cli/src/commands/auth/login/command.ts",
+				"batchIndex": 74,
+				"symbols": []
+			},
+			{
+				"path": "packages/cli/src/commands/auth/logout/command.ts",
+				"batchIndex": 74,
+				"symbols": []
+			},
+			{
+				"path": "packages/cli/src/commands/auth/whoami/command.ts",
+				"batchIndex": 74,
+				"symbols": []
+			},
+			{
+				"path": "packages/cli/src/commands/automations/create/command.ts",
+				"batchIndex": 74,
+				"symbols": []
+			},
+			{
+				"path": "packages/cli/src/commands/automations/delete/command.ts",
+				"batchIndex": 74,
+				"symbols": []
+			},
+			{
+				"path": "packages/cli/src/commands/automations/get/command.ts",
+				"batchIndex": 74,
+				"symbols": []
+			},
+			{
+				"path": "packages/cli/src/commands/automations/list/command.ts",
+				"batchIndex": 74,
+				"symbols": []
+			},
+			{
+				"path": "packages/cli/src/commands/automations/logs/command.ts",
+				"batchIndex": 74,
+				"symbols": []
+			},
+			{
+				"path": "packages/cli/src/commands/automations/pause/command.ts",
+				"batchIndex": 74,
+				"symbols": []
+			},
+			{
+				"path": "packages/cli/src/commands/automations/prompt/get/command.ts",
+				"batchIndex": 74,
+				"symbols": []
+			},
+			{
+				"path": "packages/cli/src/commands/automations/prompt/set/command.ts",
+				"batchIndex": 74,
+				"symbols": []
+			},
+			{
+				"path": "packages/cli/src/commands/automations/resume/command.ts",
+				"batchIndex": 74,
+				"symbols": []
+			},
+			{
+				"path": "packages/cli/src/commands/automations/run/command.ts",
+				"batchIndex": 74,
+				"symbols": []
+			},
+			{
+				"path": "packages/cli/src/commands/automations/update/command.ts",
+				"batchIndex": 74,
+				"symbols": []
+			},
+			{
+				"path": "packages/cli/src/commands/hosts/list/command.ts",
+				"batchIndex": 74,
+				"symbols": []
+			},
+			{
+				"path": "packages/cli/src/commands/hosts/set-wake/command.ts",
+				"batchIndex": 74,
+				"symbols": []
+			},
+			{
+				"path": "packages/cli/src/commands/hosts/wake/command.ts",
+				"batchIndex": 74,
+				"symbols": []
+			},
+			{
+				"path": "packages/cli/src/commands/organization/list/command.ts",
+				"batchIndex": 74,
+				"symbols": []
+			},
+			{
+				"path": "packages/cli/src/commands/organization/members/list/command.ts",
+				"batchIndex": 74,
+				"symbols": []
+			},
+			{
+				"path": "packages/cli/src/commands/organization/switch/command.ts",
+				"batchIndex": 74,
+				"symbols": []
+			},
+			{
+				"path": "packages/cli/src/commands/projects/create/command.ts",
+				"batchIndex": 74,
+				"symbols": []
+			},
+			{
+				"path": "packages/cli/src/commands/projects/list/command.ts",
+				"batchIndex": 74,
+				"symbols": []
+			},
+			{
+				"path": "packages/cli/src/commands/projects/setup/command.ts",
+				"batchIndex": 74,
+				"symbols": []
+			},
+			{
+				"path": "packages/cli/src/commands/start/command.ts",
+				"batchIndex": 74,
+				"symbols": []
+			},
+			{
+				"path": "packages/cli/src/commands/status/command.ts",
+				"batchIndex": 74,
+				"symbols": []
+			},
+			{
+				"path": "packages/cli/src/commands/stop/command.ts",
+				"batchIndex": 74,
+				"symbols": []
+			}
+		],
+		"packages/cli/src/lib/config.ts": [
+			{
+				"path": "packages/cli/src/commands/auth/login/command.ts",
+				"batchIndex": 74,
+				"symbols": []
+			},
+			{
+				"path": "packages/cli/src/commands/auth/logout/command.ts",
+				"batchIndex": 74,
+				"symbols": []
+			},
+			{
+				"path": "packages/cli/src/commands/organization/switch/command.ts",
+				"batchIndex": 74,
+				"symbols": []
+			},
+			{
+				"path": "packages/cli/src/commands/start/command.ts",
+				"batchIndex": 74,
+				"symbols": []
+			}
+		],
+		"packages/cli/src/lib/host-target/index.ts": [
+			{
+				"path": "packages/cli/src/commands/agents/create/command.ts",
+				"batchIndex": 74,
+				"symbols": []
+			},
+			{
+				"path": "packages/cli/src/commands/agents/list/command.ts",
+				"batchIndex": 74,
+				"symbols": []
+			},
+			{
+				"path": "packages/cli/src/commands/projects/create/command.ts",
+				"batchIndex": 74,
+				"symbols": []
+			},
+			{
+				"path": "packages/cli/src/commands/projects/list/command.ts",
+				"batchIndex": 74,
+				"symbols": []
+			},
+			{
+				"path": "packages/cli/src/commands/projects/setup/command.ts",
+				"batchIndex": 74,
+				"symbols": []
+			}
+		],
+		"packages/cli/src/lib/host-workspaces/index.ts": [
+			{
+				"path": "packages/cli/src/commands/agents/create/command.ts",
+				"batchIndex": 74,
+				"symbols": []
+			},
+			{
+				"path": "packages/cli/src/commands/automations/create/command.ts",
+				"batchIndex": 74,
+				"symbols": []
+			},
+			{
+				"path": "packages/cli/src/commands/automations/update/command.ts",
+				"batchIndex": 74,
+				"symbols": []
+			}
+		],
+		"packages/cli/src/lib/host/manifest.ts": [
+			{
+				"path": "packages/cli/src/commands/start/command.ts",
+				"batchIndex": 74,
+				"symbols": []
+			},
+			{
+				"path": "packages/cli/src/commands/status/command.ts",
+				"batchIndex": 74,
+				"symbols": []
+			},
+			{
+				"path": "packages/cli/src/commands/stop/command.ts",
+				"batchIndex": 74,
+				"symbols": []
+			}
+		],
+		"packages/cli/src/lib/host/resolve.ts": [
+			{
+				"path": "packages/cli/src/commands/hosts/set-wake/command.ts",
+				"batchIndex": 74,
+				"symbols": []
+			},
+			{
+				"path": "packages/cli/src/commands/hosts/wake/command.ts",
+				"batchIndex": 74,
+				"symbols": []
+			}
+		],
+		"packages/cli/src/lib/host/spawn.ts": [
+			{
+				"path": "packages/cli/src/commands/start/command.ts",
+				"batchIndex": 74,
+				"symbols": []
+			}
+		],
+		"packages/cli/src/lib/resolve-auth.ts": [
+			{
+				"path": "packages/cli/src/commands/middleware.ts",
+				"batchIndex": 74,
+				"symbols": []
+			}
+		],
+		"packages/cli/src/lib/resolve-org.ts": [
+			{
+				"path": "packages/cli/src/commands/hosts/list/command.ts",
+				"batchIndex": 74,
+				"symbols": []
+			},
+			{
+				"path": "packages/cli/src/commands/hosts/set-wake/command.ts",
+				"batchIndex": 74,
+				"symbols": []
+			},
+			{
+				"path": "packages/cli/src/commands/hosts/wake/command.ts",
+				"batchIndex": 74,
+				"symbols": []
+			},
+			{
+				"path": "packages/cli/src/commands/start/command.ts",
+				"batchIndex": 74,
+				"symbols": []
+			},
+			{
+				"path": "packages/cli/src/commands/status/command.ts",
+				"batchIndex": 74,
+				"symbols": []
+			}
+		],
+		"packages/cli/src/lib/upload-attachments.ts": [
+			{
+				"path": "packages/cli/src/commands/agents/create/command.ts",
+				"batchIndex": 74,
+				"symbols": []
+			}
+		]
+	}
+}

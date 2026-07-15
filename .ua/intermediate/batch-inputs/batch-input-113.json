@@ -1,0 +1,647 @@
+{
+	"batchIndex": 113,
+	"files": [
+		{
+			"path": "packages/sdk/src/internal/utils/base64.ts",
+			"language": "typescript",
+			"sizeLines": 46,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/sdk/src/internal/utils/bytes.ts",
+			"language": "typescript",
+			"sizeLines": 34,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/sdk/src/internal/utils/env.ts",
+			"language": "typescript",
+			"sizeLines": 18,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/sdk/src/internal/utils/log.ts",
+			"language": "typescript",
+			"sizeLines": 131,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/sdk/src/internal/utils/path.ts",
+			"language": "typescript",
+			"sizeLines": 97,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/sdk/src/internal/utils/query.ts",
+			"language": "typescript",
+			"sizeLines": 7,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/sdk/src/internal/utils/sleep.ts",
+			"language": "typescript",
+			"sizeLines": 4,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/sdk/src/internal/utils/uuid.ts",
+			"language": "typescript",
+			"sizeLines": 19,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/sdk/src/internal/utils/values.ts",
+			"language": "typescript",
+			"sizeLines": 118,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/sdk/src/resources/agents.ts",
+			"language": "typescript",
+			"sizeLines": 117,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/sdk/src/resources/automations.ts",
+			"language": "typescript",
+			"sizeLines": 313,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/sdk/src/resources/host-workspaces.ts",
+			"language": "typescript",
+			"sizeLines": 70,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/sdk/src/resources/hosts.ts",
+			"language": "typescript",
+			"sizeLines": 43,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/sdk/src/resources/index.ts",
+			"language": "typescript",
+			"sizeLines": 60,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/sdk/src/resources/organization.ts",
+			"language": "typescript",
+			"sizeLines": 55,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/sdk/src/resources/projects.ts",
+			"language": "typescript",
+			"sizeLines": 42,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/sdk/src/resources/tasks.ts",
+			"language": "typescript",
+			"sizeLines": 223,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/sdk/src/resources/terminals.ts",
+			"language": "typescript",
+			"sizeLines": 65,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/sdk/src/resources/workspaces.ts",
+			"language": "typescript",
+			"sizeLines": 258,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/sdk/src/version.ts",
+			"language": "typescript",
+			"sizeLines": 1,
+			"fileCategory": "code"
+		}
+	],
+	"batchImportData": {
+		"packages/sdk/src/internal/utils/base64.ts": [
+			"packages/sdk/src/core/error.ts",
+			"packages/sdk/src/internal/utils/bytes.ts"
+		],
+		"packages/sdk/src/internal/utils/bytes.ts": [],
+		"packages/sdk/src/internal/utils/env.ts": [],
+		"packages/sdk/src/internal/utils/log.ts": [
+			"packages/sdk/src/client.ts",
+			"packages/sdk/src/internal/request-options.ts",
+			"packages/sdk/src/internal/utils/values.ts"
+		],
+		"packages/sdk/src/internal/utils/path.ts": [
+			"packages/sdk/src/core/error.ts"
+		],
+		"packages/sdk/src/internal/utils/query.ts": [
+			"packages/sdk/src/internal/qs/stringify.ts"
+		],
+		"packages/sdk/src/internal/utils/sleep.ts": [],
+		"packages/sdk/src/internal/utils/uuid.ts": [],
+		"packages/sdk/src/internal/utils/values.ts": [
+			"packages/sdk/src/core/error.ts"
+		],
+		"packages/sdk/src/resources/agents.ts": [
+			"packages/sdk/src/core/error.ts",
+			"packages/sdk/src/core/resource.ts",
+			"packages/sdk/src/internal/request-options.ts",
+			"packages/sdk/src/resources/host-workspaces.ts"
+		],
+		"packages/sdk/src/resources/automations.ts": [
+			"packages/sdk/src/core/api-promise.ts",
+			"packages/sdk/src/core/resource.ts",
+			"packages/sdk/src/internal/request-options.ts"
+		],
+		"packages/sdk/src/resources/host-workspaces.ts": [
+			"packages/sdk/src/client.ts",
+			"packages/sdk/src/core/error.ts"
+		],
+		"packages/sdk/src/resources/hosts.ts": [
+			"packages/sdk/src/core/api-promise.ts",
+			"packages/sdk/src/core/error.ts",
+			"packages/sdk/src/core/resource.ts",
+			"packages/sdk/src/internal/request-options.ts"
+		],
+		"packages/sdk/src/resources/index.ts": [],
+		"packages/sdk/src/resources/organization.ts": [
+			"packages/sdk/src/core/api-promise.ts",
+			"packages/sdk/src/core/resource.ts",
+			"packages/sdk/src/internal/request-options.ts"
+		],
+		"packages/sdk/src/resources/projects.ts": [
+			"packages/sdk/src/core/api-promise.ts",
+			"packages/sdk/src/core/error.ts",
+			"packages/sdk/src/core/resource.ts",
+			"packages/sdk/src/internal/request-options.ts"
+		],
+		"packages/sdk/src/resources/tasks.ts": [
+			"packages/sdk/src/core/api-promise.ts",
+			"packages/sdk/src/core/resource.ts",
+			"packages/sdk/src/internal/request-options.ts"
+		],
+		"packages/sdk/src/resources/terminals.ts": [
+			"packages/sdk/src/core/error.ts",
+			"packages/sdk/src/core/resource.ts",
+			"packages/sdk/src/resources/host-workspaces.ts"
+		],
+		"packages/sdk/src/resources/workspaces.ts": [
+			"packages/sdk/src/core/api-promise.ts",
+			"packages/sdk/src/core/error.ts",
+			"packages/sdk/src/core/resource.ts",
+			"packages/sdk/src/internal/request-options.ts",
+			"packages/sdk/src/resources/host-workspaces.ts"
+		],
+		"packages/sdk/src/version.ts": []
+	},
+	"neighborMap": {
+		"packages/sdk/src/internal/utils/base64.ts": [
+			{
+				"path": "packages/sdk/src/core/error.ts",
+				"batchIndex": 112,
+				"symbols": [
+					"SupersetError",
+					"APIError",
+					"APIUserAbortError",
+					"APIConnectionError",
+					"APIConnectionTimeoutError",
+					"BadRequestError",
+					"AuthenticationError",
+					"PermissionDeniedError",
+					"NotFoundError",
+					"ConflictError",
+					"UnprocessableEntityError",
+					"RateLimitError",
+					"InternalServerError"
+				]
+			}
+		],
+		"packages/sdk/src/internal/utils/env.ts": [
+			{
+				"path": "packages/sdk/src/client.ts",
+				"batchIndex": 112,
+				"symbols": ["Logger", "LogLevel", "Superset"]
+			}
+		],
+		"packages/sdk/src/internal/utils/log.ts": [
+			{
+				"path": "packages/sdk/src/client.ts",
+				"batchIndex": 112,
+				"symbols": ["Logger", "LogLevel", "Superset"]
+			},
+			{
+				"path": "packages/sdk/src/internal/request-options.ts",
+				"batchIndex": 112,
+				"symbols": ["FallbackEncoder"]
+			},
+			{
+				"path": "packages/sdk/src/internal/parse.ts",
+				"batchIndex": 112,
+				"symbols": ["defaultParseResponse"]
+			}
+		],
+		"packages/sdk/src/internal/utils/path.ts": [
+			{
+				"path": "packages/sdk/src/core/error.ts",
+				"batchIndex": 112,
+				"symbols": [
+					"SupersetError",
+					"APIError",
+					"APIUserAbortError",
+					"APIConnectionError",
+					"APIConnectionTimeoutError",
+					"BadRequestError",
+					"AuthenticationError",
+					"PermissionDeniedError",
+					"NotFoundError",
+					"ConflictError",
+					"UnprocessableEntityError",
+					"RateLimitError",
+					"InternalServerError"
+				]
+			}
+		],
+		"packages/sdk/src/internal/utils/query.ts": [
+			{
+				"path": "packages/sdk/src/internal/qs/stringify.ts",
+				"batchIndex": 112,
+				"symbols": ["stringify"]
+			},
+			{
+				"path": "packages/sdk/src/client.ts",
+				"batchIndex": 112,
+				"symbols": ["Logger", "LogLevel", "Superset"]
+			}
+		],
+		"packages/sdk/src/internal/utils/sleep.ts": [
+			{
+				"path": "packages/sdk/src/client.ts",
+				"batchIndex": 112,
+				"symbols": ["Logger", "LogLevel", "Superset"]
+			}
+		],
+		"packages/sdk/src/internal/utils/uuid.ts": [
+			{
+				"path": "packages/sdk/src/client.ts",
+				"batchIndex": 112,
+				"symbols": ["Logger", "LogLevel", "Superset"]
+			}
+		],
+		"packages/sdk/src/internal/utils/values.ts": [
+			{
+				"path": "packages/sdk/src/core/error.ts",
+				"batchIndex": 112,
+				"symbols": [
+					"SupersetError",
+					"APIError",
+					"APIUserAbortError",
+					"APIConnectionError",
+					"APIConnectionTimeoutError",
+					"BadRequestError",
+					"AuthenticationError",
+					"PermissionDeniedError",
+					"NotFoundError",
+					"ConflictError",
+					"UnprocessableEntityError",
+					"RateLimitError",
+					"InternalServerError"
+				]
+			},
+			{
+				"path": "packages/sdk/src/client.ts",
+				"batchIndex": 112,
+				"symbols": ["Logger", "LogLevel", "Superset"]
+			},
+			{
+				"path": "packages/sdk/src/internal/headers.ts",
+				"batchIndex": 112,
+				"symbols": ["buildHeaders", "isEmptyHeaders"]
+			},
+			{
+				"path": "packages/sdk/src/internal/qs/stringify.ts",
+				"batchIndex": 112,
+				"symbols": ["stringify"]
+			},
+			{
+				"path": "packages/sdk/src/internal/qs/utils.ts",
+				"batchIndex": 112,
+				"symbols": [
+					"has",
+					"merge",
+					"assign_single_source",
+					"decode",
+					"encode",
+					"compact",
+					"is_regexp",
+					"is_buffer",
+					"combine",
+					"maybe_map"
+				]
+			}
+		],
+		"packages/sdk/src/resources/agents.ts": [
+			{
+				"path": "packages/sdk/src/core/error.ts",
+				"batchIndex": 112,
+				"symbols": [
+					"SupersetError",
+					"APIError",
+					"APIUserAbortError",
+					"APIConnectionError",
+					"APIConnectionTimeoutError",
+					"BadRequestError",
+					"AuthenticationError",
+					"PermissionDeniedError",
+					"NotFoundError",
+					"ConflictError",
+					"UnprocessableEntityError",
+					"RateLimitError",
+					"InternalServerError"
+				]
+			},
+			{
+				"path": "packages/sdk/src/core/resource.ts",
+				"batchIndex": 112,
+				"symbols": ["APIResource"]
+			},
+			{
+				"path": "packages/sdk/src/internal/request-options.ts",
+				"batchIndex": 112,
+				"symbols": ["FallbackEncoder"]
+			},
+			{
+				"path": "packages/sdk/src/client.ts",
+				"batchIndex": 112,
+				"symbols": ["Logger", "LogLevel", "Superset"]
+			}
+		],
+		"packages/sdk/src/resources/automations.ts": [
+			{
+				"path": "packages/sdk/src/core/api-promise.ts",
+				"batchIndex": 112,
+				"symbols": ["APIPromise"]
+			},
+			{
+				"path": "packages/sdk/src/core/resource.ts",
+				"batchIndex": 112,
+				"symbols": ["APIResource"]
+			},
+			{
+				"path": "packages/sdk/src/internal/request-options.ts",
+				"batchIndex": 112,
+				"symbols": ["FallbackEncoder"]
+			},
+			{
+				"path": "packages/sdk/src/client.ts",
+				"batchIndex": 112,
+				"symbols": ["Logger", "LogLevel", "Superset"]
+			}
+		],
+		"packages/sdk/src/resources/host-workspaces.ts": [
+			{
+				"path": "packages/sdk/src/client.ts",
+				"batchIndex": 112,
+				"symbols": ["Logger", "LogLevel", "Superset"]
+			},
+			{
+				"path": "packages/sdk/src/core/error.ts",
+				"batchIndex": 112,
+				"symbols": [
+					"SupersetError",
+					"APIError",
+					"APIUserAbortError",
+					"APIConnectionError",
+					"APIConnectionTimeoutError",
+					"BadRequestError",
+					"AuthenticationError",
+					"PermissionDeniedError",
+					"NotFoundError",
+					"ConflictError",
+					"UnprocessableEntityError",
+					"RateLimitError",
+					"InternalServerError"
+				]
+			}
+		],
+		"packages/sdk/src/resources/hosts.ts": [
+			{
+				"path": "packages/sdk/src/core/api-promise.ts",
+				"batchIndex": 112,
+				"symbols": ["APIPromise"]
+			},
+			{
+				"path": "packages/sdk/src/core/error.ts",
+				"batchIndex": 112,
+				"symbols": [
+					"SupersetError",
+					"APIError",
+					"APIUserAbortError",
+					"APIConnectionError",
+					"APIConnectionTimeoutError",
+					"BadRequestError",
+					"AuthenticationError",
+					"PermissionDeniedError",
+					"NotFoundError",
+					"ConflictError",
+					"UnprocessableEntityError",
+					"RateLimitError",
+					"InternalServerError"
+				]
+			},
+			{
+				"path": "packages/sdk/src/core/resource.ts",
+				"batchIndex": 112,
+				"symbols": ["APIResource"]
+			},
+			{
+				"path": "packages/sdk/src/internal/request-options.ts",
+				"batchIndex": 112,
+				"symbols": ["FallbackEncoder"]
+			},
+			{
+				"path": "packages/sdk/src/client.ts",
+				"batchIndex": 112,
+				"symbols": ["Logger", "LogLevel", "Superset"]
+			}
+		],
+		"packages/sdk/src/resources/index.ts": [
+			{
+				"path": "packages/sdk/src/client.ts",
+				"batchIndex": 112,
+				"symbols": ["Logger", "LogLevel", "Superset"]
+			}
+		],
+		"packages/sdk/src/resources/organization.ts": [
+			{
+				"path": "packages/sdk/src/core/api-promise.ts",
+				"batchIndex": 112,
+				"symbols": ["APIPromise"]
+			},
+			{
+				"path": "packages/sdk/src/core/resource.ts",
+				"batchIndex": 112,
+				"symbols": ["APIResource"]
+			},
+			{
+				"path": "packages/sdk/src/internal/request-options.ts",
+				"batchIndex": 112,
+				"symbols": ["FallbackEncoder"]
+			},
+			{
+				"path": "packages/sdk/src/client.ts",
+				"batchIndex": 112,
+				"symbols": ["Logger", "LogLevel", "Superset"]
+			}
+		],
+		"packages/sdk/src/resources/projects.ts": [
+			{
+				"path": "packages/sdk/src/core/api-promise.ts",
+				"batchIndex": 112,
+				"symbols": ["APIPromise"]
+			},
+			{
+				"path": "packages/sdk/src/core/error.ts",
+				"batchIndex": 112,
+				"symbols": [
+					"SupersetError",
+					"APIError",
+					"APIUserAbortError",
+					"APIConnectionError",
+					"APIConnectionTimeoutError",
+					"BadRequestError",
+					"AuthenticationError",
+					"PermissionDeniedError",
+					"NotFoundError",
+					"ConflictError",
+					"UnprocessableEntityError",
+					"RateLimitError",
+					"InternalServerError"
+				]
+			},
+			{
+				"path": "packages/sdk/src/core/resource.ts",
+				"batchIndex": 112,
+				"symbols": ["APIResource"]
+			},
+			{
+				"path": "packages/sdk/src/internal/request-options.ts",
+				"batchIndex": 112,
+				"symbols": ["FallbackEncoder"]
+			},
+			{
+				"path": "packages/sdk/src/client.ts",
+				"batchIndex": 112,
+				"symbols": ["Logger", "LogLevel", "Superset"]
+			}
+		],
+		"packages/sdk/src/resources/tasks.ts": [
+			{
+				"path": "packages/sdk/src/core/api-promise.ts",
+				"batchIndex": 112,
+				"symbols": ["APIPromise"]
+			},
+			{
+				"path": "packages/sdk/src/core/resource.ts",
+				"batchIndex": 112,
+				"symbols": ["APIResource"]
+			},
+			{
+				"path": "packages/sdk/src/internal/request-options.ts",
+				"batchIndex": 112,
+				"symbols": ["FallbackEncoder"]
+			},
+			{
+				"path": "packages/sdk/src/client.ts",
+				"batchIndex": 112,
+				"symbols": ["Logger", "LogLevel", "Superset"]
+			}
+		],
+		"packages/sdk/src/resources/terminals.ts": [
+			{
+				"path": "packages/sdk/src/core/error.ts",
+				"batchIndex": 112,
+				"symbols": [
+					"SupersetError",
+					"APIError",
+					"APIUserAbortError",
+					"APIConnectionError",
+					"APIConnectionTimeoutError",
+					"BadRequestError",
+					"AuthenticationError",
+					"PermissionDeniedError",
+					"NotFoundError",
+					"ConflictError",
+					"UnprocessableEntityError",
+					"RateLimitError",
+					"InternalServerError"
+				]
+			},
+			{
+				"path": "packages/sdk/src/core/resource.ts",
+				"batchIndex": 112,
+				"symbols": ["APIResource"]
+			},
+			{
+				"path": "packages/sdk/src/client.ts",
+				"batchIndex": 112,
+				"symbols": ["Logger", "LogLevel", "Superset"]
+			}
+		],
+		"packages/sdk/src/resources/workspaces.ts": [
+			{
+				"path": "packages/sdk/src/core/api-promise.ts",
+				"batchIndex": 112,
+				"symbols": ["APIPromise"]
+			},
+			{
+				"path": "packages/sdk/src/core/error.ts",
+				"batchIndex": 112,
+				"symbols": [
+					"SupersetError",
+					"APIError",
+					"APIUserAbortError",
+					"APIConnectionError",
+					"APIConnectionTimeoutError",
+					"BadRequestError",
+					"AuthenticationError",
+					"PermissionDeniedError",
+					"NotFoundError",
+					"ConflictError",
+					"UnprocessableEntityError",
+					"RateLimitError",
+					"InternalServerError"
+				]
+			},
+			{
+				"path": "packages/sdk/src/core/resource.ts",
+				"batchIndex": 112,
+				"symbols": ["APIResource"]
+			},
+			{
+				"path": "packages/sdk/src/internal/request-options.ts",
+				"batchIndex": 112,
+				"symbols": ["FallbackEncoder"]
+			},
+			{
+				"path": "packages/sdk/src/client.ts",
+				"batchIndex": 112,
+				"symbols": ["Logger", "LogLevel", "Superset"]
+			}
+		],
+		"packages/sdk/src/version.ts": [
+			{
+				"path": "packages/sdk/src/client.ts",
+				"batchIndex": 112,
+				"symbols": ["Logger", "LogLevel", "Superset"]
+			},
+			{
+				"path": "packages/sdk/src/internal/detect-platform.ts",
+				"batchIndex": 112,
+				"symbols": ["isRunningInBrowser", "getPlatformHeaders"]
+			}
+		]
+	}
+}

@@ -1,0 +1,1281 @@
+{
+	"scriptCompleted": true,
+	"filesAnalyzed": 25,
+	"filesSkipped": [],
+	"results": [
+		{
+			"path": "src/renderer/routes/_authenticated/providers/HostWorkspacesProvider/HostWorkspacesProvider.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 39,
+			"nonEmptyLines": 36,
+			"functions": [
+				{
+					"name": "HostWorkspacesProvider",
+					"startLine": 17,
+					"endLine": 24,
+					"params": ["{ children }"]
+				},
+				{
+					"name": "useHostWorkspaces",
+					"startLine": 31,
+					"endLine": 39,
+					"params": []
+				}
+			],
+			"exports": [
+				{
+					"name": "HostWorkspacesProvider",
+					"line": 17,
+					"isDefault": false
+				},
+				{
+					"name": "useHostWorkspaces",
+					"line": 31,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "HostWorkspacesProvider",
+					"callee": "useHostWorkspacesSource",
+					"lineNumber": 18
+				},
+				{
+					"caller": "useHostWorkspaces",
+					"callee": "useContext",
+					"lineNumber": 32
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 2,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/account/components/AccountSettings/components/ProfileSkeleton/ProfileSkeleton.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 26,
+			"nonEmptyLines": 25,
+			"functions": [
+				{
+					"name": "ProfileSkeleton",
+					"startLine": 3,
+					"endLine": 26,
+					"params": []
+				}
+			],
+			"exports": [
+				{
+					"name": "ProfileSkeleton",
+					"line": 3,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/agents/components/AgentsSettings/components/AgentCard/components/AgentCardActions/AgentCardActions.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 20,
+			"nonEmptyLines": 18,
+			"functions": [
+				{
+					"name": "AgentCardActions",
+					"startLine": 9,
+					"endLine": 20,
+					"params": ["{\n\tisResetting,\n\tonReset,\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "AgentCardActions",
+					"line": 9,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/appearance/components/AppearanceSettings/components/FontSettingSection/hooks/useSystemFonts/useSystemFonts.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 197,
+			"nonEmptyLines": 168,
+			"functions": [
+				{
+					"name": "getCanvasCtx",
+					"startLine": 67,
+					"endLine": 72,
+					"params": []
+				},
+				{
+					"name": "isFontAvailable",
+					"startLine": 74,
+					"endLine": 93,
+					"params": ["family"]
+				},
+				{
+					"name": "classifyFont",
+					"startLine": 95,
+					"endLine": 103,
+					"params": ["family"]
+				},
+				{
+					"name": "isMonospaceByMeasurement",
+					"startLine": 105,
+					"endLine": 112,
+					"params": ["family"]
+				},
+				{
+					"name": "discoverSystemFonts",
+					"startLine": 114,
+					"endLine": 127,
+					"params": []
+				},
+				{
+					"name": "useSystemFonts",
+					"startLine": 131,
+					"endLine": 197,
+					"params": []
+				}
+			],
+			"exports": [
+				{
+					"name": "useSystemFonts",
+					"line": 131,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "getCanvasCtx",
+					"callee": "document.createElement(\"canvas\").getContext",
+					"lineNumber": 69
+				},
+				{
+					"caller": "getCanvasCtx",
+					"callee": "document.createElement",
+					"lineNumber": 69
+				},
+				{
+					"caller": "isFontAvailable",
+					"callee": "getCanvasCtx",
+					"lineNumber": 75
+				},
+				{
+					"caller": "isFontAvailable",
+					"callee": "ctx.measureText",
+					"lineNumber": 83
+				},
+				{
+					"caller": "isFontAvailable",
+					"callee": "ctx.measureText",
+					"lineNumber": 86
+				},
+				{
+					"caller": "isFontAvailable",
+					"callee": "Math.abs",
+					"lineNumber": 88
+				},
+				{
+					"caller": "classifyFont",
+					"callee": "/Nerd Font/i.test",
+					"lineNumber": 96
+				},
+				{
+					"caller": "classifyFont",
+					"callee": "/ NF$/i.test",
+					"lineNumber": 96
+				},
+				{
+					"caller": "classifyFont",
+					"callee": "KNOWN_MONO_SET.has",
+					"lineNumber": 99
+				},
+				{
+					"caller": "isMonospaceByMeasurement",
+					"callee": "getCanvasCtx",
+					"lineNumber": 106
+				},
+				{
+					"caller": "isMonospaceByMeasurement",
+					"callee": "ctx.measureText",
+					"lineNumber": 109
+				},
+				{
+					"caller": "isMonospaceByMeasurement",
+					"callee": "ctx.measureText",
+					"lineNumber": 110
+				},
+				{
+					"caller": "isMonospaceByMeasurement",
+					"callee": "Math.abs",
+					"lineNumber": 111
+				},
+				{
+					"caller": "discoverSystemFonts",
+					"callee": "isFontAvailable",
+					"lineNumber": 117
+				},
+				{
+					"caller": "discoverSystemFonts",
+					"callee": "result.push",
+					"lineNumber": 118
+				},
+				{
+					"caller": "discoverSystemFonts",
+					"callee": "isFontAvailable",
+					"lineNumber": 122
+				},
+				{
+					"caller": "discoverSystemFonts",
+					"callee": "result.push",
+					"lineNumber": 123
+				},
+				{
+					"caller": "useSystemFonts",
+					"callee": "useState",
+					"lineNumber": 132
+				},
+				{
+					"caller": "useSystemFonts",
+					"callee": "useState",
+					"lineNumber": 133
+				},
+				{
+					"caller": "useSystemFonts",
+					"callee": "useEffect",
+					"lineNumber": 135
+				},
+				{
+					"caller": "loadFonts",
+					"callee": "isFontAvailable",
+					"lineNumber": 148
+				},
+				{
+					"caller": "loadFonts",
+					"callee": "result.push",
+					"lineNumber": 149
+				},
+				{
+					"caller": "loadFonts",
+					"callee": "seen.add",
+					"lineNumber": 150
+				},
+				{
+					"caller": "loadFonts",
+					"callee": "discoverSystemFonts",
+					"lineNumber": 154
+				},
+				{
+					"caller": "loadFonts",
+					"callee": "seen.has",
+					"lineNumber": 155
+				},
+				{
+					"caller": "loadFonts",
+					"callee": "seen.add",
+					"lineNumber": 156
+				},
+				{
+					"caller": "loadFonts",
+					"callee": "result.push",
+					"lineNumber": 157
+				},
+				{
+					"caller": "loadFonts",
+					"callee": "window.queryLocalFonts",
+					"lineNumber": 163
+				},
+				{
+					"caller": "loadFonts",
+					"callee": "seen.has",
+					"lineNumber": 165
+				},
+				{
+					"caller": "loadFonts",
+					"callee": "seen.add",
+					"lineNumber": 166
+				},
+				{
+					"caller": "loadFonts",
+					"callee": "classifyFont",
+					"lineNumber": 168
+				},
+				{
+					"caller": "loadFonts",
+					"callee": "isMonospaceByMeasurement",
+					"lineNumber": 169
+				},
+				{
+					"caller": "loadFonts",
+					"callee": "result.push",
+					"lineNumber": 172
+				},
+				{
+					"caller": "loadFonts",
+					"callee": "console.warn",
+					"lineNumber": 175
+				},
+				{
+					"caller": "loadFonts",
+					"callee": "result.sort",
+					"lineNumber": 179
+				},
+				{
+					"caller": "loadFonts",
+					"callee": "a.family.localeCompare",
+					"lineNumber": 179
+				},
+				{
+					"caller": "loadFonts",
+					"callee": "setFonts",
+					"lineNumber": 183
+				},
+				{
+					"caller": "loadFonts",
+					"callee": "setIsLoading",
+					"lineNumber": 184
+				},
+				{
+					"caller": "useSystemFonts",
+					"callee": "loadFonts().catch",
+					"lineNumber": 188
+				},
+				{
+					"caller": "useSystemFonts",
+					"callee": "loadFonts",
+					"lineNumber": 188
+				},
+				{
+					"caller": "useSystemFonts",
+					"callee": "console.warn",
+					"lineNumber": 189
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 6,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/appearance/components/AppearanceSettings/components/FontSettingSection/types.d.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 10,
+			"nonEmptyLines": 10,
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/components/HostSelect/HostSelect.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 79,
+			"nonEmptyLines": 75,
+			"functions": [
+				{
+					"name": "HostSelect",
+					"startLine": 25,
+					"endLine": 79,
+					"params": [
+						"{\n\tvalue,\n\toptions,\n\tonValueChange,\n\talign = \"end\",\n\tclassName,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "HostSelect",
+					"line": 25,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "HostSelect",
+					"callee": "options.find",
+					"lineNumber": 32
+				},
+				{
+					"caller": "HostSelect",
+					"callee": "options.map",
+					"lineNumber": 59
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/components/SearchResultsBanner/SearchResultsBanner.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 41,
+			"nonEmptyLines": 38,
+			"functions": [
+				{
+					"name": "SearchResultsBanner",
+					"startLine": 9,
+					"endLine": 41,
+					"params": ["{\n\tquery,\n\tmatchCount,\n\tonClear,\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "SearchResultsBanner",
+					"line": 9,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/components/SettingsListSidebar/SettingsListSidebar.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 114,
+			"nonEmptyLines": 104,
+			"functions": [
+				{
+					"name": "SettingsListSidebar",
+					"startLine": 28,
+					"endLine": 104,
+					"params": [
+						"{\n\tsearchPlaceholder,\n\tsearchAriaLabel,\n\thideFilterWhenEmpty,\n\ttoolbar,\n\tlistHeader,\n\tgroups,\n\tfilterRow,\n\tgetRowKey,\n\trenderRow,\n\temptyLabel,\n\tnoMatchLabel,\n}"
+					]
+				},
+				{
+					"name": "settingsListItemClass",
+					"startLine": 106,
+					"endLine": 114,
+					"params": ["isActive", "extra"]
+				}
+			],
+			"exports": [
+				{
+					"name": "SettingsListSidebar",
+					"line": 28,
+					"isDefault": false
+				},
+				{
+					"name": "settingsListItemClass",
+					"line": 106,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "SettingsListSidebar",
+					"callee": "useState",
+					"lineNumber": 41
+				},
+				{
+					"caller": "SettingsListSidebar",
+					"callee": "filter.trim",
+					"lineNumber": 42
+				},
+				{
+					"caller": "SettingsListSidebar",
+					"callee": "groups.map",
+					"lineNumber": 44
+				},
+				{
+					"caller": "SettingsListSidebar",
+					"callee": "g.rows.filter",
+					"lineNumber": 46
+				},
+				{
+					"caller": "SettingsListSidebar",
+					"callee": "filterRow",
+					"lineNumber": 46
+				},
+				{
+					"caller": "SettingsListSidebar",
+					"callee": "filteredGroups.filter",
+					"lineNumber": 48
+				},
+				{
+					"caller": "SettingsListSidebar",
+					"callee": "groups.reduce",
+					"lineNumber": 50
+				},
+				{
+					"caller": "SettingsListSidebar",
+					"callee": "setFilter",
+					"lineNumber": 68
+				},
+				{
+					"caller": "SettingsListSidebar",
+					"callee": "noMatchLabel",
+					"lineNumber": 83
+				},
+				{
+					"caller": "SettingsListSidebar",
+					"callee": "groupsWithRows.map",
+					"lineNumber": 87
+				},
+				{
+					"caller": "SettingsListSidebar",
+					"callee": "group.rows.map",
+					"lineNumber": 95
+				},
+				{
+					"caller": "SettingsListSidebar",
+					"callee": "getRowKey",
+					"lineNumber": 96
+				},
+				{
+					"caller": "SettingsListSidebar",
+					"callee": "renderRow",
+					"lineNumber": 96
+				},
+				{
+					"caller": "settingsListItemClass",
+					"callee": "cn",
+					"lineNumber": 107
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 2,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/components/SettingsRow/SettingsRow.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 28,
+			"nonEmptyLines": 26,
+			"functions": [
+				{
+					"name": "SettingsRow",
+					"startLine": 11,
+					"endLine": 28,
+					"params": ["{\n\tlabel,\n\thint,\n\thtmlFor,\n\tchildren,\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "SettingsRow",
+					"line": 11,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/hooks/useScrollReset/useScrollReset.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 11,
+			"nonEmptyLines": 10,
+			"functions": [
+				{
+					"name": "useScrollReset",
+					"startLine": 4,
+					"endLine": 11,
+					"params": ["trigger"]
+				}
+			],
+			"exports": [
+				{
+					"name": "useScrollReset",
+					"line": 4,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "useScrollReset",
+					"callee": "useRef",
+					"lineNumber": 5
+				},
+				{
+					"caller": "useScrollReset",
+					"callee": "useEffect",
+					"lineNumber": 7
+				},
+				{
+					"caller": "useScrollReset",
+					"callee": "ref.current?.scrollTo",
+					"lineNumber": 8
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/hosts/$hostId/components/HostSettings/components/AddMemberDropdown/AddMemberDropdown.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 59,
+			"nonEmptyLines": 55,
+			"functions": [
+				{
+					"name": "AddMemberDropdown",
+					"startLine": 21,
+					"endLine": 59,
+					"params": ["{\n\tcandidates,\n\tonPick,\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "AddMemberDropdown",
+					"line": 21,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "AddMemberDropdown",
+					"callee": "candidates.map",
+					"lineNumber": 43
+				},
+				{
+					"caller": "AddMemberDropdown",
+					"callee": "onPick",
+					"lineNumber": 46
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/hosts/$hostId/components/HostSettings/components/MembersTable/components/MemberRow/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "MemberRow",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "MemberRowData",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 2,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/hosts/$hostId/components/HostSettings/components/MembersTable/components/MemberRow/MemberRow.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 71,
+			"nonEmptyLines": 68,
+			"functions": [
+				{
+					"name": "MemberRow",
+					"startLine": 27,
+					"endLine": 71,
+					"params": ["{\n\tmember,\n\tisOwner,\n\tonSetRole,\n\tonRemove,\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "MemberRow",
+					"line": 27,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "MemberRow",
+					"callee": "onSetRole",
+					"lineNumber": 42
+				},
+				{
+					"caller": "MemberRow",
+					"callee": "onRemove",
+					"lineNumber": 62
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/hosts/$hostId/components/HostSettings/components/MembersTable/MembersTable.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 59,
+			"nonEmptyLines": 57,
+			"functions": [
+				{
+					"name": "MembersTable",
+					"startLine": 18,
+					"endLine": 59,
+					"params": ["{\n\tmembers,\n\tisOwner,\n\tonSetRole,\n\tonRemove,\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "MembersTable",
+					"line": 18,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "MembersTable",
+					"callee": "members.map",
+					"lineNumber": 36
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/members/components/MembersSettings/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/models/components/ModelsSettings/components/ConfigRow/ConfigRow.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 65,
+			"nonEmptyLines": 63,
+			"functions": [
+				{
+					"name": "ConfigRow",
+					"startLine": 22,
+					"endLine": 65,
+					"params": [
+						"{\n\ttitle,\n\tdescription,\n\thtmlFor,\n\tfield,\n\tonSave,\n\tonClear,\n\tsaveLabel = \"Save\",\n\tclearLabel = \"Clear\",\n\tshowSave = true,\n\tshowClear = true,\n\tdisableSave,\n\tdisableClear,\n\tclassName,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "ConfigRow",
+					"line": 22,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "ConfigRow",
+					"callee": "cn",
+					"lineNumber": 38
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/models/components/ModelsSettings/components/SettingsSection/SettingsSection.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 37,
+			"nonEmptyLines": 35,
+			"functions": [
+				{
+					"name": "SettingsSection",
+					"startLine": 11,
+					"endLine": 37,
+					"params": [
+						"{\n\ttitle,\n\ticon,\n\tdescription,\n\taction,\n\tchildren,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "SettingsSection",
+					"line": 11,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/organization/components/OrganizationSettings/components/OrganizationLogo/OrganizationLogo.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 34,
+			"nonEmptyLines": 31,
+			"functions": [
+				{
+					"name": "OrganizationLogo",
+					"startLine": 7,
+					"endLine": 34,
+					"params": ["{\n\tlogo,\n\tname,\n\tsize = \"md\",\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "OrganizationLogo",
+					"line": 7,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "OrganizationLogo",
+					"callee": "name?.charAt(0).toUpperCase",
+					"lineNumber": 30
+				},
+				{
+					"caller": "OrganizationLogo",
+					"callee": "name?.charAt",
+					"lineNumber": 30
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/page.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 9,
+			"nonEmptyLines": 7,
+			"functions": [
+				{
+					"name": "SettingsPage",
+					"startLine": 7,
+					"endLine": 9,
+					"params": []
+				}
+			],
+			"exports": [
+				{
+					"name": "Route",
+					"line": 3,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/presets/page.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 29,
+			"nonEmptyLines": 26,
+			"functions": [
+				{
+					"name": "PresetsRedirect",
+					"startLine": 18,
+					"endLine": 29,
+					"params": []
+				}
+			],
+			"exports": [
+				{
+					"name": "Route",
+					"line": 8,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "PresetsRedirect",
+					"callee": "Route.useSearch",
+					"lineNumber": 19
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/project/$projectId/cloud/page.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 32,
+			"nonEmptyLines": 28,
+			"functions": [
+				{
+					"name": "CloudSettingsIndex",
+					"startLine": 11,
+					"endLine": 32,
+					"params": []
+				}
+			],
+			"exports": [
+				{
+					"name": "Route",
+					"line": 5,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "CloudSettingsIndex",
+					"callee": "Route.useParams",
+					"lineNumber": 12
+				},
+				{
+					"caller": "CloudSettingsIndex",
+					"callee": "useFeatureFlagEnabled",
+					"lineNumber": 13
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/project/$projectId/cloud/secrets/components/SecretsSettings/utils/env-file/env-file.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 91,
+			"nonEmptyLines": 75,
+			"functions": [
+				{
+					"name": "validateEnvContent",
+					"startLine": 7,
+					"endLine": 37,
+					"params": ["text"]
+				},
+				{
+					"name": "parseEnvContent",
+					"startLine": 44,
+					"endLine": 91,
+					"params": ["content"]
+				}
+			],
+			"exports": [
+				{
+					"name": "validateEnvContent",
+					"line": 7,
+					"isDefault": false
+				},
+				{
+					"name": "parseEnvContent",
+					"line": 44,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "validateEnvContent",
+					"callee": "text.includes",
+					"lineNumber": 10
+				},
+				{
+					"caller": "validateEnvContent",
+					"callee": "text.split",
+					"lineNumber": 12
+				},
+				{
+					"caller": "validateEnvContent",
+					"callee": "lines[i].trim",
+					"lineNumber": 17
+				},
+				{
+					"caller": "validateEnvContent",
+					"callee": "line.startsWith",
+					"lineNumber": 20
+				},
+				{
+					"caller": "validateEnvContent",
+					"callee": "ENV_LINE.test",
+					"lineNumber": 21
+				},
+				{
+					"caller": "validateEnvContent",
+					"callee": "line.slice(line.indexOf(\"=\") + 1).trim",
+					"lineNumber": 25
+				},
+				{
+					"caller": "validateEnvContent",
+					"callee": "line.slice",
+					"lineNumber": 25
+				},
+				{
+					"caller": "validateEnvContent",
+					"callee": "line.indexOf",
+					"lineNumber": 25
+				},
+				{
+					"caller": "validateEnvContent",
+					"callee": "afterEq.endsWith",
+					"lineNumber": 27
+				},
+				{
+					"caller": "validateEnvContent",
+					"callee": "lines[i].trimEnd().endsWith",
+					"lineNumber": 28
+				},
+				{
+					"caller": "validateEnvContent",
+					"callee": "lines[i].trimEnd",
+					"lineNumber": 28
+				},
+				{
+					"caller": "parseEnvContent",
+					"callee": "content.split",
+					"lineNumber": 46
+				},
+				{
+					"caller": "parseEnvContent",
+					"callee": "lines[i].trim",
+					"lineNumber": 50
+				},
+				{
+					"caller": "parseEnvContent",
+					"callee": "line.startsWith",
+					"lineNumber": 53
+				},
+				{
+					"caller": "parseEnvContent",
+					"callee": "line.indexOf",
+					"lineNumber": 55
+				},
+				{
+					"caller": "parseEnvContent",
+					"callee": "line\n\t\t\t.slice(0, eqIndex)\n\t\t\t.trim()\n\t\t\t.replace",
+					"lineNumber": 58
+				},
+				{
+					"caller": "parseEnvContent",
+					"callee": "line\n\t\t\t.slice(0, eqIndex)\n\t\t\t.trim",
+					"lineNumber": 58
+				},
+				{
+					"caller": "parseEnvContent",
+					"callee": "line\n\t\t\t.slice",
+					"lineNumber": 58
+				},
+				{
+					"caller": "parseEnvContent",
+					"callee": "line.slice(eqIndex + 1).trim",
+					"lineNumber": 64
+				},
+				{
+					"caller": "parseEnvContent",
+					"callee": "line.slice",
+					"lineNumber": 64
+				},
+				{
+					"caller": "parseEnvContent",
+					"callee": "value.endsWith",
+					"lineNumber": 68
+				},
+				{
+					"caller": "parseEnvContent",
+					"callee": "value.slice",
+					"lineNumber": 69
+				},
+				{
+					"caller": "parseEnvContent",
+					"callee": "nextLine.trimEnd().endsWith",
+					"lineNumber": 73
+				},
+				{
+					"caller": "parseEnvContent",
+					"callee": "nextLine.trimEnd",
+					"lineNumber": 73
+				},
+				{
+					"caller": "parseEnvContent",
+					"callee": "valueLines.push",
+					"lineNumber": 74
+				},
+				{
+					"caller": "parseEnvContent",
+					"callee": "nextLine.trimEnd().slice",
+					"lineNumber": 74
+				},
+				{
+					"caller": "parseEnvContent",
+					"callee": "nextLine.trimEnd",
+					"lineNumber": 74
+				},
+				{
+					"caller": "parseEnvContent",
+					"callee": "valueLines.push",
+					"lineNumber": 77
+				},
+				{
+					"caller": "parseEnvContent",
+					"callee": "valueLines.join",
+					"lineNumber": 79
+				},
+				{
+					"caller": "parseEnvContent",
+					"callee": "value.startsWith",
+					"lineNumber": 81
+				},
+				{
+					"caller": "parseEnvContent",
+					"callee": "value.endsWith",
+					"lineNumber": 81
+				},
+				{
+					"caller": "parseEnvContent",
+					"callee": "value.startsWith",
+					"lineNumber": 82
+				},
+				{
+					"caller": "parseEnvContent",
+					"callee": "value.endsWith",
+					"lineNumber": 82
+				},
+				{
+					"caller": "parseEnvContent",
+					"callee": "value.slice",
+					"lineNumber": 84
+				},
+				{
+					"caller": "parseEnvContent",
+					"callee": "entries.push",
+					"lineNumber": 87
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 2,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/project/$projectId/components/ProjectSettingsHeader/ProjectSettingsHeader.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 18,
+			"nonEmptyLines": 16,
+			"functions": [
+				{
+					"name": "ProjectSettingsHeader",
+					"startLine": 8,
+					"endLine": 18,
+					"params": ["{\n\ttitle,\n\tchildren,\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "ProjectSettingsHeader",
+					"line": 8,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/team/components/InvitationActions/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/teams/$teamId/components/TeamDetailSettings/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		}
+	]
+}

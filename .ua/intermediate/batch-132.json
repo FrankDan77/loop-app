@@ -1,0 +1,142 @@
+{
+	"nodes": [
+		{
+			"id": "file:apps/desktop/src/renderer/components/Paywall/components/FeaturePreview/FeaturePreview.tsx",
+			"type": "file",
+			"name": "FeaturePreview.tsx",
+			"filePath": "apps/desktop/src/renderer/components/Paywall/components/FeaturePreview/FeaturePreview.tsx",
+			"summary": "React component that renders the paywall's feature-preview panel: a layered dithered gradient background per Pro feature plus the demo component matching the currently selected feature, with title/badge/description underneath.",
+			"tags": ["component", "paywall", "demo", "conditional-rendering", "ui"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "file:apps/desktop/src/renderer/components/Paywall/components/FeaturePreview/components/DitheredBackground/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "apps/desktop/src/renderer/components/Paywall/components/FeaturePreview/components/DitheredBackground/index.ts",
+			"summary": "Barrel file re-exporting the DitheredBackground component for consumption by FeaturePreview.",
+			"tags": ["barrel", "re-export", "entry-point"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:apps/desktop/src/renderer/components/Paywall/components/FeaturePreview/components/MobileAppDemo/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "apps/desktop/src/renderer/components/Paywall/components/FeaturePreview/components/MobileAppDemo/index.ts",
+			"summary": "Barrel file re-exporting the MobileAppDemo component for consumption by FeaturePreview.",
+			"tags": ["barrel", "re-export", "entry-point"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:apps/desktop/src/renderer/components/Paywall/components/FeaturePreview/components/RemoteWorkspacesDemo/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "apps/desktop/src/renderer/components/Paywall/components/FeaturePreview/components/RemoteWorkspacesDemo/index.ts",
+			"summary": "Barrel file re-exporting the RemoteWorkspacesDemo component for consumption by FeaturePreview.",
+			"tags": ["barrel", "re-export", "entry-point"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:apps/desktop/src/renderer/components/Paywall/components/FeaturePreview/components/SlackIntegrationDemo/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "apps/desktop/src/renderer/components/Paywall/components/FeaturePreview/components/SlackIntegrationDemo/index.ts",
+			"summary": "Barrel file re-exporting the SlackIntegrationDemo component for consumption by FeaturePreview.",
+			"tags": ["barrel", "re-export", "entry-point"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:apps/desktop/src/renderer/components/Paywall/components/FeaturePreview/components/TasksDemo/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "apps/desktop/src/renderer/components/Paywall/components/FeaturePreview/components/TasksDemo/index.ts",
+			"summary": "Barrel file re-exporting the TasksDemo component for consumption by FeaturePreview.",
+			"tags": ["barrel", "re-export", "entry-point"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:apps/desktop/src/renderer/components/Paywall/components/FeaturePreview/components/TeamCollaborationDemo/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "apps/desktop/src/renderer/components/Paywall/components/FeaturePreview/components/TeamCollaborationDemo/index.ts",
+			"summary": "Barrel file re-exporting the TeamCollaborationDemo component for consumption by FeaturePreview.",
+			"tags": ["barrel", "re-export", "entry-point"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:apps/desktop/src/renderer/components/Paywall/components/FeaturePreview/FeaturePreview.tsx:FeaturePreview",
+			"type": "function",
+			"name": "FeaturePreview",
+			"filePath": "apps/desktop/src/renderer/components/Paywall/components/FeaturePreview/FeaturePreview.tsx",
+			"lineRange": [25, 71],
+			"summary": "Renders the preview card for a selected Pro feature: cross-fades between per-feature dithered gradient backgrounds, swaps in the matching demo component from DEMO_COMPONENTS, and displays the feature's title, PRO badge, and description.",
+			"tags": ["component", "conditional-rendering", "ui"],
+			"complexity": "moderate"
+		}
+	],
+	"edges": [
+		{
+			"source": "file:apps/desktop/src/renderer/components/Paywall/components/FeaturePreview/FeaturePreview.tsx",
+			"target": "file:apps/desktop/src/renderer/components/Paywall/components/FeaturePreview/components/DitheredBackground/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/components/Paywall/components/FeaturePreview/FeaturePreview.tsx",
+			"target": "file:apps/desktop/src/renderer/components/Paywall/components/FeaturePreview/components/MobileAppDemo/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/components/Paywall/components/FeaturePreview/FeaturePreview.tsx",
+			"target": "file:apps/desktop/src/renderer/components/Paywall/components/FeaturePreview/components/RemoteWorkspacesDemo/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/components/Paywall/components/FeaturePreview/FeaturePreview.tsx",
+			"target": "file:apps/desktop/src/renderer/components/Paywall/components/FeaturePreview/components/SlackIntegrationDemo/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/components/Paywall/components/FeaturePreview/FeaturePreview.tsx",
+			"target": "file:apps/desktop/src/renderer/components/Paywall/components/FeaturePreview/components/TasksDemo/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/components/Paywall/components/FeaturePreview/FeaturePreview.tsx",
+			"target": "file:apps/desktop/src/renderer/components/Paywall/components/FeaturePreview/components/TeamCollaborationDemo/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/components/Paywall/components/FeaturePreview/FeaturePreview.tsx",
+			"target": "file:apps/desktop/src/renderer/components/Paywall/constants.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/components/Paywall/components/FeaturePreview/FeaturePreview.tsx",
+			"target": "function:apps/desktop/src/renderer/components/Paywall/components/FeaturePreview/FeaturePreview.tsx:FeaturePreview",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/components/Paywall/components/FeaturePreview/FeaturePreview.tsx",
+			"target": "function:apps/desktop/src/renderer/components/Paywall/components/FeaturePreview/FeaturePreview.tsx:FeaturePreview",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		}
+	]
+}

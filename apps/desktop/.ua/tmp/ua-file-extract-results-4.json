@@ -1,0 +1,2176 @@
+{
+	"scriptCompleted": true,
+	"filesAnalyzed": 35,
+	"filesSkipped": [],
+	"results": [
+		{
+			"path": "src/lib/trpc/routers/window.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 138,
+			"nonEmptyLines": 120,
+			"functions": [
+				{
+					"name": "createWindowRouter",
+					"startLine": 9,
+					"endLine": 136,
+					"params": ["getWindow"]
+				}
+			],
+			"exports": [
+				{
+					"name": "createWindowRouter",
+					"line": 9,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "createWindowRouter",
+					"callee": "router",
+					"lineNumber": 10
+				},
+				{
+					"caller": "createWindowRouter",
+					"callee": "publicProcedure.mutation",
+					"lineNumber": 11
+				},
+				{
+					"caller": "createWindowRouter",
+					"callee": "getWindow",
+					"lineNumber": 12
+				},
+				{
+					"caller": "createWindowRouter",
+					"callee": "window.minimize",
+					"lineNumber": 14
+				},
+				{
+					"caller": "createWindowRouter",
+					"callee": "publicProcedure.mutation",
+					"lineNumber": 18
+				},
+				{
+					"caller": "createWindowRouter",
+					"callee": "getWindow",
+					"lineNumber": 19
+				},
+				{
+					"caller": "createWindowRouter",
+					"callee": "window.isMaximized",
+					"lineNumber": 21
+				},
+				{
+					"caller": "createWindowRouter",
+					"callee": "window.unmaximize",
+					"lineNumber": 22
+				},
+				{
+					"caller": "createWindowRouter",
+					"callee": "window.maximize",
+					"lineNumber": 24
+				},
+				{
+					"caller": "createWindowRouter",
+					"callee": "window.isMaximized",
+					"lineNumber": 26
+				},
+				{
+					"caller": "createWindowRouter",
+					"callee": "publicProcedure.mutation",
+					"lineNumber": 29
+				},
+				{
+					"caller": "createWindowRouter",
+					"callee": "getWindow",
+					"lineNumber": 30
+				},
+				{
+					"caller": "createWindowRouter",
+					"callee": "window.close",
+					"lineNumber": 32
+				},
+				{
+					"caller": "createWindowRouter",
+					"callee": "publicProcedure.query",
+					"lineNumber": 36
+				},
+				{
+					"caller": "createWindowRouter",
+					"callee": "getWindow",
+					"lineNumber": 37
+				},
+				{
+					"caller": "createWindowRouter",
+					"callee": "window.isMaximized",
+					"lineNumber": 39
+				},
+				{
+					"caller": "createWindowRouter",
+					"callee": "publicProcedure.query",
+					"lineNumber": 42
+				},
+				{
+					"caller": "createWindowRouter",
+					"callee": "publicProcedure.query",
+					"lineNumber": 47
+				},
+				{
+					"caller": "createWindowRouter",
+					"callee": "getWindow",
+					"lineNumber": 48
+				},
+				{
+					"caller": "createWindowRouter",
+					"callee": "window.webContents.getZoomFactor",
+					"lineNumber": 50
+				},
+				{
+					"caller": "createWindowRouter",
+					"callee": "publicProcedure.query",
+					"lineNumber": 53
+				},
+				{
+					"caller": "createWindowRouter",
+					"callee": "homedir",
+					"lineNumber": 54
+				},
+				{
+					"caller": "createWindowRouter",
+					"callee": "publicProcedure\n\t\t\t.input(\n\t\t\t\tz.object({\n\t\t\t\t\tpath: z.string(),\n\t\t\t\t}),\n\t\t\t)\n\t\t\t.query",
+					"lineNumber": 57
+				},
+				{
+					"caller": "createWindowRouter",
+					"callee": "publicProcedure\n\t\t\t.input",
+					"lineNumber": 57
+				},
+				{
+					"caller": "createWindowRouter",
+					"callee": "z.object",
+					"lineNumber": 59
+				},
+				{
+					"caller": "createWindowRouter",
+					"callee": "z.string",
+					"lineNumber": 60
+				},
+				{
+					"caller": "createWindowRouter",
+					"callee": "fs.stat",
+					"lineNumber": 65
+				},
+				{
+					"caller": "createWindowRouter",
+					"callee": "stats.isDirectory",
+					"lineNumber": 68
+				},
+				{
+					"caller": "createWindowRouter",
+					"callee": "publicProcedure\n\t\t\t.input(\n\t\t\t\tz\n\t\t\t\t\t.object({\n\t\t\t\t\t\ttitle: z.string().optional(),\n\t\t\t\t\t\tdefaultPath: z.string().optional(),\n\t\t\t\t\t})\n\t\t\t\t\t.optional(),\n\t\t\t)\n\t\t\t.mutation",
+					"lineNumber": 78
+				},
+				{
+					"caller": "createWindowRouter",
+					"callee": "publicProcedure\n\t\t\t.input",
+					"lineNumber": 78
+				},
+				{
+					"caller": "createWindowRouter",
+					"callee": "z\n\t\t\t\t\t.object({\n\t\t\t\t\t\ttitle: z.string().optional(),\n\t\t\t\t\t\tdefaultPath: z.string().optional(),\n\t\t\t\t\t})\n\t\t\t\t\t.optional",
+					"lineNumber": 80
+				},
+				{
+					"caller": "createWindowRouter",
+					"callee": "z\n\t\t\t\t\t.object",
+					"lineNumber": 80
+				},
+				{
+					"caller": "createWindowRouter",
+					"callee": "z.string().optional",
+					"lineNumber": 82
+				},
+				{
+					"caller": "createWindowRouter",
+					"callee": "z.string",
+					"lineNumber": 82
+				},
+				{
+					"caller": "createWindowRouter",
+					"callee": "z.string().optional",
+					"lineNumber": 83
+				},
+				{
+					"caller": "createWindowRouter",
+					"callee": "z.string",
+					"lineNumber": 83
+				},
+				{
+					"caller": "createWindowRouter",
+					"callee": "getWindow",
+					"lineNumber": 88
+				},
+				{
+					"caller": "createWindowRouter",
+					"callee": "dialog.showOpenDialog",
+					"lineNumber": 93
+				},
+				{
+					"caller": "createWindowRouter",
+					"callee": "publicProcedure.mutation",
+					"lineNumber": 106
+				},
+				{
+					"caller": "createWindowRouter",
+					"callee": "getWindow",
+					"lineNumber": 107
+				},
+				{
+					"caller": "createWindowRouter",
+					"callee": "dialog.showOpenDialog",
+					"lineNumber": 112
+				},
+				{
+					"caller": "createWindowRouter",
+					"callee": "fs.readFile",
+					"lineNumber": 128
+				},
+				{
+					"caller": "createWindowRouter",
+					"callee": "getImageMimeType",
+					"lineNumber": 129
+				},
+				{
+					"caller": "createWindowRouter",
+					"callee": "buffer.toString",
+					"lineNumber": 130
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/components/CommentMarkdown/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "CommentMarkdown",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/components/MarkdownRenderer/components/TipTapMarkdownRenderer/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "TipTapMarkdownRenderer",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/hooks/host-service/useGitStatus/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "useGitStatus",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/hooks/useV2UserPreferences/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 2,
+			"nonEmptyLines": 2,
+			"exports": [
+				{
+					"name": "V2UserPreferencesApi",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "useV2UserPreferences",
+					"line": 2,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 2,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/lib/pathBasename/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "getBaseName",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/lib/performance/stress-instrumentation.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 56,
+			"nonEmptyLines": 47,
+			"functions": [
+				{
+					"name": "useRenderStressInstrumentation",
+					"startLine": 13,
+					"endLine": 48,
+					"params": ["name", "options"]
+				},
+				{
+					"name": "logStressEvent",
+					"startLine": 50,
+					"endLine": 56,
+					"params": ["name", "details"]
+				}
+			],
+			"exports": [
+				{
+					"name": "useRenderStressInstrumentation",
+					"line": 13,
+					"isDefault": false
+				},
+				{
+					"name": "logStressEvent",
+					"line": 50,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "useRenderStressInstrumentation",
+					"callee": "useRef",
+					"lineNumber": 17
+				},
+				{
+					"caller": "useRenderStressInstrumentation",
+					"callee": "useEffect",
+					"lineNumber": 19
+				},
+				{
+					"caller": "useRenderStressInstrumentation",
+					"callee": "performance.now",
+					"lineNumber": 22
+				},
+				{
+					"caller": "useRenderStressInstrumentation",
+					"callee": "console.warn",
+					"lineNumber": 37
+				},
+				{
+					"caller": "useRenderStressInstrumentation",
+					"callee": "JSON.stringify",
+					"lineNumber": 39
+				},
+				{
+					"caller": "useRenderStressInstrumentation",
+					"callee": "options.getDetails",
+					"lineNumber": 43
+				},
+				{
+					"caller": "logStressEvent",
+					"callee": "console.debug",
+					"lineNumber": 55
+				},
+				{
+					"caller": "logStressEvent",
+					"callee": "JSON.stringify",
+					"lineNumber": 55
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 2,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/lib/ringtones/play.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 85,
+			"nonEmptyLines": 74,
+			"functions": [
+				{
+					"name": "resolveRingtoneUrl",
+					"startLine": 23,
+					"endLine": 32,
+					"params": ["ringtoneId"]
+				},
+				{
+					"name": "getBuiltInAudio",
+					"startLine": 34,
+					"endLine": 42,
+					"params": ["url"]
+				},
+				{
+					"name": "isUserGesturePlaybackError",
+					"startLine": 44,
+					"endLine": 51,
+					"params": ["error"]
+				},
+				{
+					"name": "playRingtone",
+					"startLine": 53,
+					"endLine": 85,
+					"params": ["opts"]
+				}
+			],
+			"exports": [
+				{
+					"name": "playRingtone",
+					"line": 53,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "resolveRingtoneUrl",
+					"callee": "getRingtoneById",
+					"lineNumber": 24
+				},
+				{
+					"caller": "resolveRingtoneUrl",
+					"callee": "getRingtoneById",
+					"lineNumber": 30
+				},
+				{
+					"caller": "getBuiltInAudio",
+					"callee": "builtInAudioByUrl.get",
+					"lineNumber": 35
+				},
+				{
+					"caller": "getBuiltInAudio",
+					"callee": "builtInAudioByUrl.set",
+					"lineNumber": 39
+				},
+				{
+					"caller": "isUserGesturePlaybackError",
+					"callee": "error.message.includes",
+					"lineNumber": 48
+				},
+				{
+					"caller": "isUserGesturePlaybackError",
+					"callee": "error.message.includes",
+					"lineNumber": 49
+				},
+				{
+					"caller": "playRingtone",
+					"callee": "Math.max",
+					"lineNumber": 55
+				},
+				{
+					"caller": "playRingtone",
+					"callee": "Math.min",
+					"lineNumber": 55
+				},
+				{
+					"caller": "playRingtone",
+					"callee": "electronTrpcClient.ringtone.playNotification.mutate",
+					"lineNumber": 61
+				},
+				{
+					"caller": "playRingtone",
+					"callee": "console.warn",
+					"lineNumber": 66
+				},
+				{
+					"caller": "playRingtone",
+					"callee": "resolveRingtoneUrl",
+					"lineNumber": 71
+				},
+				{
+					"caller": "playRingtone",
+					"callee": "getBuiltInAudio",
+					"lineNumber": 74
+				},
+				{
+					"caller": "playRingtone",
+					"callee": "audio.play",
+					"lineNumber": 79
+				},
+				{
+					"caller": "playRingtone",
+					"callee": "isUserGesturePlaybackError",
+					"lineNumber": 81
+				},
+				{
+					"caller": "playRingtone",
+					"callee": "console.warn",
+					"lineNumber": 82
+				}
+			],
+			"metrics": {
+				"importCount": 3,
+				"exportCount": 1,
+				"functionCount": 4,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/lib/ringtones/urls.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 48,
+			"nonEmptyLines": 48,
+			"exports": [
+				{
+					"name": "builtInRingtoneUrls",
+					"line": 7,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/lib/terminal/terminal-background-intents.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 64,
+			"nonEmptyLines": 52,
+			"functions": [
+				{
+					"name": "emitMarkerChange",
+					"startLine": 5,
+					"endLine": 9,
+					"params": []
+				},
+				{
+					"name": "getWorkspaceMarkers",
+					"startLine": 11,
+					"endLine": 18,
+					"params": ["workspaceId"]
+				},
+				{
+					"name": "markTerminalForBackground",
+					"startLine": 20,
+					"endLine": 33,
+					"params": ["terminalId", "workspaceId"]
+				},
+				{
+					"name": "consumeTerminalBackgroundIntent",
+					"startLine": 35,
+					"endLine": 37,
+					"params": ["terminalId"]
+				},
+				{
+					"name": "clearTerminalBackgroundMarker",
+					"startLine": 39,
+					"endLine": 50,
+					"params": ["workspaceId", "terminalId"]
+				},
+				{
+					"name": "getTerminalBackgroundMarkerIdsKey",
+					"startLine": 52,
+					"endLine": 55,
+					"params": ["workspaceId"]
+				},
+				{
+					"name": "subscribeTerminalBackgroundMarkers",
+					"startLine": 57,
+					"endLine": 64,
+					"params": ["listener"]
+				}
+			],
+			"exports": [
+				{
+					"name": "markTerminalForBackground",
+					"line": 20,
+					"isDefault": false
+				},
+				{
+					"name": "consumeTerminalBackgroundIntent",
+					"line": 35,
+					"isDefault": false
+				},
+				{
+					"name": "clearTerminalBackgroundMarker",
+					"line": 39,
+					"isDefault": false
+				},
+				{
+					"name": "getTerminalBackgroundMarkerIdsKey",
+					"line": 52,
+					"isDefault": false
+				},
+				{
+					"name": "subscribeTerminalBackgroundMarkers",
+					"line": 57,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "emitMarkerChange",
+					"callee": "listener",
+					"lineNumber": 7
+				},
+				{
+					"caller": "getWorkspaceMarkers",
+					"callee": "backgroundTerminalMarkersByWorkspace.get",
+					"lineNumber": 12
+				},
+				{
+					"caller": "getWorkspaceMarkers",
+					"callee": "backgroundTerminalMarkersByWorkspace.set",
+					"lineNumber": 16
+				},
+				{
+					"caller": "markTerminalForBackground",
+					"callee": "backgroundTerminalIds.add",
+					"lineNumber": 24
+				},
+				{
+					"caller": "markTerminalForBackground",
+					"callee": "getWorkspaceMarkers",
+					"lineNumber": 28
+				},
+				{
+					"caller": "markTerminalForBackground",
+					"callee": "markers.has",
+					"lineNumber": 29
+				},
+				{
+					"caller": "markTerminalForBackground",
+					"callee": "markers.add",
+					"lineNumber": 31
+				},
+				{
+					"caller": "markTerminalForBackground",
+					"callee": "emitMarkerChange",
+					"lineNumber": 32
+				},
+				{
+					"caller": "consumeTerminalBackgroundIntent",
+					"callee": "backgroundTerminalIds.delete",
+					"lineNumber": 36
+				},
+				{
+					"caller": "clearTerminalBackgroundMarker",
+					"callee": "backgroundTerminalMarkersByWorkspace.get",
+					"lineNumber": 43
+				},
+				{
+					"caller": "clearTerminalBackgroundMarker",
+					"callee": "markers?.delete",
+					"lineNumber": 44
+				},
+				{
+					"caller": "clearTerminalBackgroundMarker",
+					"callee": "backgroundTerminalMarkersByWorkspace.delete",
+					"lineNumber": 47
+				},
+				{
+					"caller": "clearTerminalBackgroundMarker",
+					"callee": "emitMarkerChange",
+					"lineNumber": 49
+				},
+				{
+					"caller": "getTerminalBackgroundMarkerIdsKey",
+					"callee": "backgroundTerminalMarkersByWorkspace.get",
+					"lineNumber": 53
+				},
+				{
+					"caller": "getTerminalBackgroundMarkerIdsKey",
+					"callee": "JSON.stringify",
+					"lineNumber": 54
+				},
+				{
+					"caller": "getTerminalBackgroundMarkerIdsKey",
+					"callee": "[...markers].sort",
+					"lineNumber": 54
+				},
+				{
+					"caller": "subscribeTerminalBackgroundMarkers",
+					"callee": "markerListeners.add",
+					"lineNumber": 60
+				},
+				{
+					"caller": "subscribeTerminalBackgroundMarkers",
+					"callee": "markerListeners.delete",
+					"lineNumber": 62
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 5,
+				"functionCount": 7,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/AddRepositoryModals/components/GitInitConfirmDialog/GitInitConfirmDialog.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 53,
+			"nonEmptyLines": 50,
+			"functions": [
+				{
+					"name": "GitInitConfirmDialog",
+					"startLine": 18,
+					"endLine": 53,
+					"params": []
+				}
+			],
+			"exports": [
+				{
+					"name": "GitInitConfirmDialog",
+					"line": 18,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "GitInitConfirmDialog",
+					"callee": "useGitInitConfirmStore",
+					"lineNumber": 19
+				},
+				{
+					"caller": "GitInitConfirmDialog",
+					"callee": "useGitInitConfirmStore",
+					"lineNumber": 20
+				},
+				{
+					"caller": "GitInitConfirmDialog",
+					"callee": "useGitInitConfirmStore",
+					"lineNumber": 21
+				},
+				{
+					"caller": "GitInitConfirmDialog",
+					"callee": "getBaseName",
+					"lineNumber": 23
+				},
+				{
+					"caller": "GitInitConfirmDialog",
+					"callee": "resolve",
+					"lineNumber": 29
+				},
+				{
+					"caller": "GitInitConfirmDialog",
+					"callee": "resolve",
+					"lineNumber": 45
+				},
+				{
+					"caller": "GitInitConfirmDialog",
+					"callee": "resolve",
+					"lineNumber": 48
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/AddRepositoryModals/hooks/useFolderFirstImport/useFolderFirstImport.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 131,
+			"nonEmptyLines": 120,
+			"functions": [
+				{
+					"name": "useFolderFirstImport",
+					"startLine": 22,
+					"endLine": 131,
+					"params": ["options"]
+				}
+			],
+			"exports": [
+				{
+					"name": "useFolderFirstImport",
+					"line": 22,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "useFolderFirstImport",
+					"callee": "useLocalHostService",
+					"lineNumber": 26
+				},
+				{
+					"caller": "useFolderFirstImport",
+					"callee": "useFinalizeProjectSetup",
+					"lineNumber": 28
+				},
+				{
+					"caller": "useFolderFirstImport",
+					"callee": "electronTrpc.window.selectDirectory.useMutation",
+					"lineNumber": 29
+				},
+				{
+					"caller": "useFolderFirstImport",
+					"callee": "useRequestGitInitConfirm",
+					"lineNumber": 30
+				},
+				{
+					"caller": "useFolderFirstImport",
+					"callee": "useCallback",
+					"lineNumber": 33
+				},
+				{
+					"caller": "useFolderFirstImport",
+					"callee": "onError",
+					"lineNumber": 35
+				},
+				{
+					"caller": "useFolderFirstImport",
+					"callee": "getHostServiceUnavailableMessage",
+					"lineNumber": 36
+				},
+				{
+					"caller": "useFolderFirstImport",
+					"callee": "selectDirectory.mutateAsync",
+					"lineNumber": 45
+				},
+				{
+					"caller": "useFolderFirstImport",
+					"callee": "onError",
+					"lineNumber": 51
+				},
+				{
+					"caller": "useFolderFirstImport",
+					"callee": "String",
+					"lineNumber": 51
+				},
+				{
+					"caller": "useFolderFirstImport",
+					"callee": "getHostServiceClientByUrl",
+					"lineNumber": 55
+				},
+				{
+					"caller": "useFolderFirstImport",
+					"callee": "client.project.findByPath.query",
+					"lineNumber": 58
+				},
+				{
+					"caller": "useFolderFirstImport",
+					"callee": "requestGitInit",
+					"lineNumber": 63
+				},
+				{
+					"caller": "useFolderFirstImport",
+					"callee": "client.project.create.mutate",
+					"lineNumber": 65
+				},
+				{
+					"caller": "useFolderFirstImport",
+					"callee": "getBaseName",
+					"lineNumber": 66
+				},
+				{
+					"caller": "useFolderFirstImport",
+					"callee": "finalizeSetup",
+					"lineNumber": 69
+				},
+				{
+					"caller": "useFolderFirstImport",
+					"callee": "onError",
+					"lineNumber": 76
+				},
+				{
+					"caller": "useFolderFirstImport",
+					"callee": "onError",
+					"lineNumber": 80
+				},
+				{
+					"caller": "useFolderFirstImport",
+					"callee": "String",
+					"lineNumber": 80
+				},
+				{
+					"caller": "useFolderFirstImport",
+					"callee": "onMultipleProjects",
+					"lineNumber": 87
+				},
+				{
+					"caller": "useFolderFirstImport",
+					"callee": "onError",
+					"lineNumber": 89
+				},
+				{
+					"caller": "useFolderFirstImport",
+					"callee": "client.project.setup.mutate",
+					"lineNumber": 99
+				},
+				{
+					"caller": "useFolderFirstImport",
+					"callee": "client.project.create.mutate",
+					"lineNumber": 109
+				},
+				{
+					"caller": "useFolderFirstImport",
+					"callee": "getBaseName",
+					"lineNumber": 110
+				},
+				{
+					"caller": "useFolderFirstImport",
+					"callee": "finalizeSetup",
+					"lineNumber": 114
+				},
+				{
+					"caller": "useFolderFirstImport",
+					"callee": "onError",
+					"lineNumber": 117
+				},
+				{
+					"caller": "useFolderFirstImport",
+					"callee": "String",
+					"lineNumber": 117
+				}
+			],
+			"metrics": {
+				"importCount": 7,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/TopBar/components/RightSidebarToggle/RightSidebarToggle.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 50,
+			"nonEmptyLines": 46,
+			"functions": [
+				{
+					"name": "RightSidebarToggle",
+					"startLine": 10,
+					"endLine": 50,
+					"params": []
+				}
+			],
+			"exports": [
+				{
+					"name": "RightSidebarToggle",
+					"line": 10,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "RightSidebarToggle",
+					"callee": "useV2UserPreferences",
+					"lineNumber": 11
+				},
+				{
+					"caller": "toggle",
+					"callee": "setRightSidebarOpen",
+					"lineNumber": 14
+				},
+				{
+					"caller": "RightSidebarToggle",
+					"callee": "getToggleIcon",
+					"lineNumber": 39
+				},
+				{
+					"caller": "RightSidebarToggle",
+					"callee": "getToggleIcon",
+					"lineNumber": 41
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/AddTabMenu/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "AddTabMenu",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/BackgroundTerminalsButton/BackgroundTerminalsButton.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 305,
+			"nonEmptyLines": 289,
+			"functions": [
+				{
+					"name": "areBackgroundTerminalsButtonPropsEqual",
+					"startLine": 300,
+					"endLine": 305,
+					"params": ["prev", "next"]
+				}
+			],
+			"exports": [
+				{
+					"name": "BackgroundTerminalsButton",
+					"line": 59,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "handleAdopt",
+					"callee": "clearTerminalBackgroundMarker",
+					"lineNumber": 204
+				},
+				{
+					"caller": "handleAdopt",
+					"callee": "focusOrAddTerminalPane",
+					"lineNumber": 205
+				},
+				{
+					"caller": "handleAdopt",
+					"callee": "utils.terminal.listSessions.invalidate",
+					"lineNumber": 206
+				},
+				{
+					"caller": "handleAdopt",
+					"callee": "utils.terminal.countBackgroundSessions.invalidate",
+					"lineNumber": 207
+				},
+				{
+					"caller": "handleAdopt",
+					"callee": "logStressEvent",
+					"lineNumber": 208
+				},
+				{
+					"caller": "handleAdopt",
+					"callee": "setIsOpen",
+					"lineNumber": 209
+				},
+				{
+					"caller": "handleKill",
+					"callee": "killSession.mutateAsync",
+					"lineNumber": 214
+				},
+				{
+					"caller": "handleKill",
+					"callee": "clearTerminalBackgroundMarker",
+					"lineNumber": 215
+				},
+				{
+					"caller": "handleKill",
+					"callee": "console.error",
+					"lineNumber": 217
+				},
+				{
+					"caller": "handleKill",
+					"callee": "toast.error",
+					"lineNumber": 221
+				},
+				{
+					"caller": "handleKill",
+					"callee": "utils.terminal.listSessions.invalidate",
+					"lineNumber": 223
+				},
+				{
+					"caller": "handleKill",
+					"callee": "utils.terminal.countBackgroundSessions.invalidate",
+					"lineNumber": 224
+				}
+			],
+			"metrics": {
+				"importCount": 7,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/BackgroundTerminalsButton/BackgroundTerminalsButton.utils.test.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 60,
+			"nonEmptyLines": 55,
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/BackgroundTerminalsButton/BackgroundTerminalsButton.utils.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 81,
+			"nonEmptyLines": 71,
+			"functions": [
+				{
+					"name": "getTerminalIdFromPaneData",
+					"startLine": 19,
+					"endLine": 25,
+					"params": ["data"]
+				},
+				{
+					"name": "getAttachedTerminalIdsKey",
+					"startLine": 27,
+					"endLine": 39,
+					"params": ["tabs"]
+				},
+				{
+					"name": "parseAttachedTerminalIdsKey",
+					"startLine": 41,
+					"endLine": 50,
+					"params": ["key"]
+				},
+				{
+					"name": "getBackgroundTerminalSessions",
+					"startLine": 52,
+					"endLine": 59,
+					"params": ["sessions", "attachedTerminalIds"]
+				},
+				{
+					"name": "getUnattachedTerminalIds",
+					"startLine": 61,
+					"endLine": 69,
+					"params": ["terminalIds", "attachedTerminalIds"]
+				},
+				{
+					"name": "getBackgroundTerminalCountRefetchInterval",
+					"startLine": 71,
+					"endLine": 75,
+					"params": ["isOpen"]
+				},
+				{
+					"name": "getBackgroundTerminalListRefetchInterval",
+					"startLine": 77,
+					"endLine": 81,
+					"params": ["isOpen"]
+				}
+			],
+			"exports": [
+				{
+					"name": "BACKGROUND_TERMINAL_ATTACHMENT_DEBOUNCE_MS",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "BACKGROUND_TERMINAL_COUNT_REFETCH_INTERVAL_MS",
+					"line": 2,
+					"isDefault": false
+				},
+				{
+					"name": "BACKGROUND_TERMINAL_LIST_REFETCH_INTERVAL_MS",
+					"line": 3,
+					"isDefault": false
+				},
+				{
+					"name": "getAttachedTerminalIdsKey",
+					"line": 27,
+					"isDefault": false
+				},
+				{
+					"name": "parseAttachedTerminalIdsKey",
+					"line": 41,
+					"isDefault": false
+				},
+				{
+					"name": "getBackgroundTerminalSessions",
+					"line": 52,
+					"isDefault": false
+				},
+				{
+					"name": "getUnattachedTerminalIds",
+					"line": 61,
+					"isDefault": false
+				},
+				{
+					"name": "getBackgroundTerminalCountRefetchInterval",
+					"line": 71,
+					"isDefault": false
+				},
+				{
+					"name": "getBackgroundTerminalListRefetchInterval",
+					"line": 77,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "getAttachedTerminalIdsKey",
+					"callee": "Object.values",
+					"lineNumber": 32
+				},
+				{
+					"caller": "getAttachedTerminalIdsKey",
+					"callee": "getTerminalIdFromPaneData",
+					"lineNumber": 34
+				},
+				{
+					"caller": "getAttachedTerminalIdsKey",
+					"callee": "ids.add",
+					"lineNumber": 35
+				},
+				{
+					"caller": "getAttachedTerminalIdsKey",
+					"callee": "JSON.stringify",
+					"lineNumber": 38
+				},
+				{
+					"caller": "getAttachedTerminalIdsKey",
+					"callee": "[...ids].sort",
+					"lineNumber": 38
+				},
+				{
+					"caller": "parseAttachedTerminalIdsKey",
+					"callee": "JSON.parse",
+					"lineNumber": 43
+				},
+				{
+					"caller": "parseAttachedTerminalIdsKey",
+					"callee": "Array.isArray",
+					"lineNumber": 44
+				},
+				{
+					"caller": "parseAttachedTerminalIdsKey",
+					"callee": "parsed.filter",
+					"lineNumber": 45
+				},
+				{
+					"caller": "getBackgroundTerminalSessions",
+					"callee": "sessions\n\t\t.filter((session) => !attached.has(session.terminalId))\n\t\t.sort",
+					"lineNumber": 56
+				},
+				{
+					"caller": "getBackgroundTerminalSessions",
+					"callee": "sessions\n\t\t.filter",
+					"lineNumber": 56
+				},
+				{
+					"caller": "getBackgroundTerminalSessions",
+					"callee": "attached.has",
+					"lineNumber": 57
+				},
+				{
+					"caller": "getUnattachedTerminalIds",
+					"callee": "[...new Set(terminalIds)]\n\t\t.filter((terminalId) => !attached.has(terminalId))\n\t\t.sort",
+					"lineNumber": 66
+				},
+				{
+					"caller": "getUnattachedTerminalIds",
+					"callee": "[...new Set(terminalIds)]\n\t\t.filter",
+					"lineNumber": 66
+				},
+				{
+					"caller": "getUnattachedTerminalIds",
+					"callee": "attached.has",
+					"lineNumber": 67
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 9,
+				"functionCount": 7,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/BackgroundTerminalsButton/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "BackgroundTerminalsButton",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/V2NotificationStatusIndicator/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "V2NotificationStatusIndicator",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/V2PresetsBar/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "V2PresetsBar",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/V2WorkspaceRunButton/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "V2WorkspaceRunButton",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceEmptyState/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "WorkspaceEmptyState",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceMissingWorktreeState/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "WorkspaceMissingWorktreeState",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/components/PRActionHeader/PRActionHeader.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 177,
+			"nonEmptyLines": 166,
+			"functions": [
+				{
+					"name": "PRActionHeader",
+					"startLine": 24,
+					"endLine": 47,
+					"params": [
+						"{\n\tworkspaceId,\n\tstate,\n\tdispatch,\n\tonRetry,\n\tcreatePREnabled = true,\n}"
+					]
+				},
+				{
+					"name": "ActionSlot",
+					"startLine": 54,
+					"endLine": 118,
+					"params": [
+						"{\n\tvariant,\n\tstate,\n\tdispatch,\n\tonRetry,\n\tcreatePREnabled,\n\tworkspaceId,\n}"
+					]
+				},
+				{
+					"name": "UnavailableIcon",
+					"startLine": 120,
+					"endLine": 138,
+					"params": ["{\n\treason,\n\ttooltip,\n}"]
+				},
+				{
+					"name": "unavailableTooltip",
+					"startLine": 140,
+					"endLine": 153,
+					"params": ["reason"]
+				},
+				{
+					"name": "CreatePRIconButton",
+					"startLine": 155,
+					"endLine": 177,
+					"params": ["{\n\tstate,\n\tdispatch,\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "PRActionHeader",
+					"line": 24,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "PRActionHeader",
+					"callee": "selectActionButton",
+					"lineNumber": 31
+				},
+				{
+					"caller": "UnavailableIcon",
+					"callee": "unavailableTooltip",
+					"lineNumber": 127
+				},
+				{
+					"caller": "CreatePRIconButton",
+					"callee": "dispatch",
+					"lineNumber": 167
+				}
+			],
+			"metrics": {
+				"importCount": 3,
+				"exportCount": 1,
+				"functionCount": 5,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/components/PRActionHeader/components/PRStatusGroup/PRStatusGroup.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 252,
+			"nonEmptyLines": 240,
+			"functions": [
+				{
+					"name": "PRStatusGroup",
+					"startLine": 41,
+					"endLine": 208,
+					"params": ["{\n\tstate,\n\tworkspaceId,\n\tonRefresh,\n}"]
+				},
+				{
+					"name": "stateTintClasses",
+					"startLine": 215,
+					"endLine": 252,
+					"params": ["state"]
+				}
+			],
+			"exports": [
+				{
+					"name": "PRStatusGroup",
+					"line": 41,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "PRStatusGroup",
+					"callee": "workspaceTrpc.pullRequests.refreshByWorkspaces.useMutation",
+					"lineNumber": 58
+				},
+				{
+					"caller": "PRStatusGroup",
+					"callee": "workspaceTrpc.github.mergePR.useMutation",
+					"lineNumber": 60
+				},
+				{
+					"caller": "PRStatusGroup",
+					"callee": "toast.loading",
+					"lineNumber": 62
+				},
+				{
+					"caller": "PRStatusGroup",
+					"callee": "toast.success",
+					"lineNumber": 66
+				},
+				{
+					"caller": "PRStatusGroup",
+					"callee": "refreshPRMutation.mutateAsync",
+					"lineNumber": 68
+				},
+				{
+					"caller": "PRStatusGroup",
+					"callee": "console.warn",
+					"lineNumber": 70
+				},
+				{
+					"caller": "PRStatusGroup",
+					"callee": "toast.warning",
+					"lineNumber": 71
+				},
+				{
+					"caller": "PRStatusGroup",
+					"callee": "onRefresh",
+					"lineNumber": 75
+				},
+				{
+					"caller": "PRStatusGroup",
+					"callee": "toast.error",
+					"lineNumber": 79
+				},
+				{
+					"caller": "PRStatusGroup",
+					"callee": "useMemo",
+					"lineNumber": 83
+				},
+				{
+					"caller": "PRStatusGroup",
+					"callee": "computeChecksRollup",
+					"lineNumber": 84
+				},
+				{
+					"caller": "handleMerge",
+					"callee": "mergePRMutation.mutate",
+					"lineNumber": 104
+				},
+				{
+					"caller": "PRStatusGroup",
+					"callee": "stateTintClasses",
+					"lineNumber": 112
+				},
+				{
+					"caller": "PRStatusGroup",
+					"callee": "cn",
+					"lineNumber": 116
+				},
+				{
+					"caller": "PRStatusGroup",
+					"callee": "cn",
+					"lineNumber": 128
+				},
+				{
+					"caller": "PRStatusGroup",
+					"callee": "cn",
+					"lineNumber": 151
+				},
+				{
+					"caller": "PRStatusGroup",
+					"callee": "cn",
+					"lineNumber": 156
+				},
+				{
+					"caller": "PRStatusGroup",
+					"callee": "handleMerge",
+					"lineNumber": 179
+				},
+				{
+					"caller": "PRStatusGroup",
+					"callee": "handleMerge",
+					"lineNumber": 187
+				},
+				{
+					"caller": "PRStatusGroup",
+					"callee": "handleMerge",
+					"lineNumber": 195
+				}
+			],
+			"metrics": {
+				"importCount": 5,
+				"exportCount": 1,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/components/PRActionHeader/components/PRStatusGroup/components/PRDetailCard/PRDetailCard.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 193,
+			"nonEmptyLines": 182,
+			"functions": [
+				{
+					"name": "PRDetailCard",
+					"startLine": 26,
+					"endLine": 101,
+					"params": ["{ pr, checks, linkState }"]
+				},
+				{
+					"name": "ChecksLine",
+					"startLine": 103,
+					"endLine": 149,
+					"params": ["{ checks }"]
+				},
+				{
+					"name": "DetailLine",
+					"startLine": 151,
+					"endLine": 178,
+					"params": ["{\n\ticon,\n\ttext,\n\tmuted,\n\taccent,\n}"]
+				},
+				{
+					"name": "stateLabelToPillClass",
+					"startLine": 180,
+					"endLine": 193,
+					"params": ["state"]
+				}
+			],
+			"exports": [
+				{
+					"name": "PRDetailCard",
+					"line": 26,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "PRDetailCard",
+					"callee": "stateLabelToPillClass",
+					"lineNumber": 36
+				},
+				{
+					"caller": "PRDetailCard",
+					"callee": "formatDistanceToNow",
+					"lineNumber": 39
+				},
+				{
+					"caller": "PRDetailCard",
+					"callee": "cn",
+					"lineNumber": 54
+				},
+				{
+					"caller": "DetailLine",
+					"callee": "cn",
+					"lineNumber": 166
+				}
+			],
+			"metrics": {
+				"importCount": 3,
+				"exportCount": 1,
+				"functionCount": 4,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/components/PRActionHeader/components/PRStatusGroup/components/PRDetailCard/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "PRDetailCard",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/components/PRActionHeader/components/PRStatusGroup/components/PRStatusIndicators/PRStatusIndicators.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 46,
+			"nonEmptyLines": 42,
+			"functions": [
+				{
+					"name": "PRStatusIndicators",
+					"startLine": 13,
+					"endLine": 21,
+					"params": ["{ checks }"]
+				},
+				{
+					"name": "ChecksDot",
+					"startLine": 23,
+					"endLine": 46,
+					"params": ["{ status }"]
+				}
+			],
+			"exports": [
+				{
+					"name": "PRStatusIndicators",
+					"line": 13,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "ChecksDot",
+					"callee": "cn",
+					"lineNumber": 28
+				},
+				{
+					"caller": "ChecksDot",
+					"callee": "cn",
+					"lineNumber": 36
+				},
+				{
+					"caller": "ChecksDot",
+					"callee": "cn",
+					"lineNumber": 43
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/components/PRActionHeader/components/PRStatusGroup/components/PRStatusIndicators/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "PRStatusIndicators",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/components/PRActionHeader/components/PRStatusGroup/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "PRStatusGroup",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/components/PRActionHeader/utils/buildPRContext/buildPRContext.test.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 71,
+			"nonEmptyLines": 61,
+			"functions": [
+				{
+					"name": "sync",
+					"startLine": 5,
+					"endLine": 16,
+					"params": ["overrides"]
+				},
+				{
+					"name": "noPrState",
+					"startLine": 18,
+					"endLine": 21,
+					"params": ["overrides"]
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "noPrState",
+					"callee": "sync",
+					"lineNumber": 20
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 0,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/components/PRActionHeader/utils/buildPRContext/buildPRContext.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 82,
+			"nonEmptyLines": 74,
+			"functions": [
+				{
+					"name": "buildPRContext",
+					"startLine": 8,
+					"endLine": 15,
+					"params": ["state"]
+				},
+				{
+					"name": "renderNoPR",
+					"startLine": 17,
+					"endLine": 78,
+					"params": ["sync"]
+				},
+				{
+					"name": "renderStub",
+					"startLine": 80,
+					"endLine": 82,
+					"params": ["kind"]
+				}
+			],
+			"exports": [
+				{
+					"name": "buildPRContext",
+					"line": 8,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "buildPRContext",
+					"callee": "renderNoPR",
+					"lineNumber": 11
+				},
+				{
+					"caller": "buildPRContext",
+					"callee": "renderStub",
+					"lineNumber": 13
+				},
+				{
+					"caller": "renderNoPR",
+					"callee": "lines.push",
+					"lineNumber": 19
+				},
+				{
+					"caller": "renderNoPR",
+					"callee": "lines.push",
+					"lineNumber": 20
+				},
+				{
+					"caller": "renderNoPR",
+					"callee": "lines.push",
+					"lineNumber": 21
+				},
+				{
+					"caller": "renderNoPR",
+					"callee": "lines.push",
+					"lineNumber": 25
+				},
+				{
+					"caller": "renderNoPR",
+					"callee": "lines.push",
+					"lineNumber": 27
+				},
+				{
+					"caller": "renderNoPR",
+					"callee": "lines.push",
+					"lineNumber": 28
+				},
+				{
+					"caller": "renderNoPR",
+					"callee": "lines.push",
+					"lineNumber": 29
+				},
+				{
+					"caller": "renderNoPR",
+					"callee": "lines.push",
+					"lineNumber": 30
+				},
+				{
+					"caller": "renderNoPR",
+					"callee": "lines.push",
+					"lineNumber": 31
+				},
+				{
+					"caller": "renderNoPR",
+					"callee": "lines.push",
+					"lineNumber": 33
+				},
+				{
+					"caller": "renderNoPR",
+					"callee": "lines.push",
+					"lineNumber": 34
+				},
+				{
+					"caller": "renderNoPR",
+					"callee": "lines.push",
+					"lineNumber": 37
+				},
+				{
+					"caller": "renderNoPR",
+					"callee": "lines.push",
+					"lineNumber": 40
+				},
+				{
+					"caller": "renderNoPR",
+					"callee": "lines.push",
+					"lineNumber": 41
+				},
+				{
+					"caller": "renderNoPR",
+					"callee": "lines.push",
+					"lineNumber": 43
+				},
+				{
+					"caller": "renderNoPR",
+					"callee": "lines.push",
+					"lineNumber": 45
+				},
+				{
+					"caller": "renderNoPR",
+					"callee": "lines.push",
+					"lineNumber": 48
+				},
+				{
+					"caller": "renderNoPR",
+					"callee": "lines.push",
+					"lineNumber": 50
+				},
+				{
+					"caller": "renderNoPR",
+					"callee": "lines.push",
+					"lineNumber": 53
+				},
+				{
+					"caller": "renderNoPR",
+					"callee": "lines.push",
+					"lineNumber": 58
+				},
+				{
+					"caller": "renderNoPR",
+					"callee": "lines.push",
+					"lineNumber": 60
+				},
+				{
+					"caller": "renderNoPR",
+					"callee": "lines.push",
+					"lineNumber": 62
+				},
+				{
+					"caller": "renderNoPR",
+					"callee": "lines.push",
+					"lineNumber": 66
+				},
+				{
+					"caller": "renderNoPR",
+					"callee": "lines.push",
+					"lineNumber": 71
+				},
+				{
+					"caller": "renderNoPR",
+					"callee": "lines.push",
+					"lineNumber": 74
+				},
+				{
+					"caller": "renderNoPR",
+					"callee": "lines.push",
+					"lineNumber": 75
+				},
+				{
+					"caller": "renderNoPR",
+					"callee": "lines.join",
+					"lineNumber": 77
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 3,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/components/PRActionHeader/utils/buildPRContext/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "buildPRContext",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/components/PRActionHeader/utils/computeChecksStatus/computeChecksStatus.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 76,
+			"nonEmptyLines": 70,
+			"functions": [
+				{
+					"name": "coerceCheckStatus",
+					"startLine": 29,
+					"endLine": 41,
+					"params": ["status", "conclusion"]
+				},
+				{
+					"name": "computeChecksRollup",
+					"startLine": 52,
+					"endLine": 76,
+					"params": ["checks"]
+				}
+			],
+			"exports": [
+				{
+					"name": "coerceCheckStatus",
+					"line": 29,
+					"isDefault": false
+				},
+				{
+					"name": "computeChecksRollup",
+					"line": 52,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "coerceCheckStatus",
+					"callee": "KNOWN_EFFECTIVE_STATUSES.has",
+					"lineNumber": 33
+				},
+				{
+					"caller": "computeChecksRollup",
+					"callee": "coerceCheckStatus",
+					"lineNumber": 57
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 2,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/components/PRActionHeader/utils/computeChecksStatus/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 6,
+			"nonEmptyLines": 6,
+			"exports": [
+				{
+					"name": "ChecksRollup",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "coerceCheckStatus",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "computeChecksRollup",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "EffectiveCheckStatus",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 4,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		}
+	]
+}

@@ -1,0 +1,116 @@
+{
+	"batchIndex": 177,
+	"files": [
+		{
+			"path": "apps/desktop/AGENTS.md",
+			"language": "markdown",
+			"sizeLines": 55,
+			"fileCategory": "docs"
+		},
+		{
+			"path": "apps/desktop/BUILDING.md",
+			"language": "markdown",
+			"sizeLines": 39,
+			"fileCategory": "docs"
+		},
+		{
+			"path": "apps/desktop/CLAUDE.md",
+			"language": "markdown",
+			"sizeLines": 1,
+			"fileCategory": "docs"
+		},
+		{
+			"path": "apps/desktop/RELEASE.md",
+			"language": "markdown",
+			"sizeLines": 122,
+			"fileCategory": "docs"
+		},
+		{
+			"path": "apps/desktop/bunfig.toml",
+			"language": "toml",
+			"sizeLines": 9,
+			"fileCategory": "config"
+		},
+		{
+			"path": "apps/desktop/components.json",
+			"language": "json",
+			"sizeLines": 21,
+			"fileCategory": "config"
+		},
+		{
+			"path": "apps/desktop/package.json",
+			"language": "json",
+			"sizeLines": 278,
+			"fileCategory": "config"
+		},
+		{
+			"path": "apps/desktop/trusted-dependencies-scripts.json",
+			"language": "json",
+			"sizeLines": 7,
+			"fileCategory": "config"
+		},
+		{
+			"path": "apps/desktop/tsconfig.json",
+			"language": "json",
+			"sizeLines": 24,
+			"fileCategory": "config"
+		},
+		{
+			"path": "apps/desktop/tsr.config.json",
+			"language": "json",
+			"sizeLines": 8,
+			"fileCategory": "config"
+		}
+	],
+	"batchImportData": {
+		"apps/desktop/AGENTS.md": [],
+		"apps/desktop/BUILDING.md": [],
+		"apps/desktop/CLAUDE.md": [],
+		"apps/desktop/RELEASE.md": [],
+		"apps/desktop/bunfig.toml": [],
+		"apps/desktop/components.json": [],
+		"apps/desktop/package.json": [],
+		"apps/desktop/trusted-dependencies-scripts.json": [],
+		"apps/desktop/tsconfig.json": [],
+		"apps/desktop/tsr.config.json": []
+	},
+	"neighborMap": {
+		"apps/desktop/package.json": [
+			{
+				"path": "apps/desktop/electron-builder.canary.ts",
+				"batchIndex": 131,
+				"symbols": []
+			},
+			{
+				"path": "apps/desktop/electron-builder.ts",
+				"batchIndex": 131,
+				"symbols": []
+			},
+			{
+				"path": "apps/desktop/electron.vite.config.ts",
+				"batchIndex": 131,
+				"symbols": []
+			},
+			{
+				"path": "apps/desktop/src/main/windows/main.ts",
+				"batchIndex": 70,
+				"symbols": ["MainWindow"]
+			},
+			{
+				"path": "apps/desktop/src/shared/utils.ts",
+				"batchIndex": 70,
+				"symbols": ["makeAppId"]
+			},
+			{
+				"path": "apps/desktop/vite/helpers.ts",
+				"batchIndex": 131,
+				"symbols": [
+					"devPath",
+					"defineEnv",
+					"copyResourcesPlugin",
+					"htmlEnvTransformPlugin"
+				]
+			}
+		]
+	}
+}

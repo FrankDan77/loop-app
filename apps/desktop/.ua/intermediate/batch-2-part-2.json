@@ -1,0 +1,1326 @@
+{
+	"nodes": [
+		{
+			"id": "file:src/lib/trpc/routers/permissions/full-disk-access.test.ts",
+			"type": "file",
+			"name": "full-disk-access.test.ts",
+			"filePath": "src/lib/trpc/routers/permissions/full-disk-access.test.ts",
+			"summary": "Test suite for full-disk-access functionality",
+			"tags": ["trpc", "router", "test", "permissions", "backend"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "file:src/lib/trpc/routers/permissions/full-disk-access.ts",
+			"type": "file",
+			"name": "full-disk-access.ts",
+			"filePath": "src/lib/trpc/routers/permissions/full-disk-access.ts",
+			"summary": "tRPC router for full-disk-access operations",
+			"tags": ["trpc", "router", "permissions", "backend", "typescript"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/lib/trpc/routers/permissions/full-disk-access.ts:checkFullDiskAccess",
+			"type": "function",
+			"name": "checkFullDiskAccess",
+			"filePath": "src/lib/trpc/routers/permissions/full-disk-access.ts",
+			"summary": "Function implementing checkFullDiskAccess logic",
+			"tags": ["trpc", "router", "permissions", "function"],
+			"complexity": "moderate",
+			"lineRange": {
+				"start": 34,
+				"end": 57
+			}
+		},
+		{
+			"id": "file:src/lib/trpc/routers/permissions/native-permissions.ts",
+			"type": "file",
+			"name": "native-permissions.ts",
+			"filePath": "src/lib/trpc/routers/permissions/native-permissions.ts",
+			"summary": "tRPC router for native-permissions operations",
+			"tags": ["trpc", "router", "permissions", "backend", "typescript"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:src/lib/trpc/routers/permissions/native-permissions.ts:checkAccessibility",
+			"type": "function",
+			"name": "checkAccessibility",
+			"filePath": "src/lib/trpc/routers/permissions/native-permissions.ts",
+			"summary": "Function implementing checkAccessibility logic",
+			"tags": ["trpc", "router", "permissions", "function"],
+			"complexity": "simple",
+			"lineRange": {
+				"start": 36,
+				"end": 45
+			}
+		},
+		{
+			"id": "function:src/lib/trpc/routers/permissions/native-permissions.ts:checkMicrophone",
+			"type": "function",
+			"name": "checkMicrophone",
+			"filePath": "src/lib/trpc/routers/permissions/native-permissions.ts",
+			"summary": "Function implementing checkMicrophone logic",
+			"tags": ["trpc", "router", "permissions", "function"],
+			"complexity": "simple",
+			"lineRange": {
+				"start": 47,
+				"end": 59
+			}
+		},
+		{
+			"id": "function:src/lib/trpc/routers/permissions/native-permissions.ts:getPermissionStatus",
+			"type": "function",
+			"name": "getPermissionStatus",
+			"filePath": "src/lib/trpc/routers/permissions/native-permissions.ts",
+			"summary": "Function implementing getPermissionStatus logic",
+			"tags": ["trpc", "router", "permissions", "function"],
+			"complexity": "simple",
+			"lineRange": {
+				"start": 61,
+				"end": 67
+			}
+		},
+		{
+			"id": "function:src/lib/trpc/routers/permissions/native-permissions.ts:requestFullDiskAccess",
+			"type": "function",
+			"name": "requestFullDiskAccess",
+			"filePath": "src/lib/trpc/routers/permissions/native-permissions.ts",
+			"summary": "Function implementing requestFullDiskAccess logic",
+			"tags": ["trpc", "router", "permissions", "function"],
+			"complexity": "simple",
+			"lineRange": {
+				"start": 69,
+				"end": 75
+			}
+		},
+		{
+			"id": "function:src/lib/trpc/routers/permissions/native-permissions.ts:requestAccessibility",
+			"type": "function",
+			"name": "requestAccessibility",
+			"filePath": "src/lib/trpc/routers/permissions/native-permissions.ts",
+			"summary": "Function implementing requestAccessibility logic",
+			"tags": ["trpc", "router", "permissions", "function"],
+			"complexity": "simple",
+			"lineRange": {
+				"start": 77,
+				"end": 83
+			}
+		},
+		{
+			"id": "function:src/lib/trpc/routers/permissions/native-permissions.ts:requestMicrophone",
+			"type": "function",
+			"name": "requestMicrophone",
+			"filePath": "src/lib/trpc/routers/permissions/native-permissions.ts",
+			"summary": "Function implementing requestMicrophone logic",
+			"tags": ["trpc", "router", "permissions", "function"],
+			"complexity": "moderate",
+			"lineRange": {
+				"start": 85,
+				"end": 107
+			}
+		},
+		{
+			"id": "function:src/lib/trpc/routers/permissions/native-permissions.ts:requestAppleEvents",
+			"type": "function",
+			"name": "requestAppleEvents",
+			"filePath": "src/lib/trpc/routers/permissions/native-permissions.ts",
+			"summary": "Function implementing requestAppleEvents logic",
+			"tags": ["trpc", "router", "permissions", "function"],
+			"complexity": "simple",
+			"lineRange": {
+				"start": 109,
+				"end": 115
+			}
+		},
+		{
+			"id": "function:src/lib/trpc/routers/permissions/native-permissions.ts:requestLocalNetwork",
+			"type": "function",
+			"name": "requestLocalNetwork",
+			"filePath": "src/lib/trpc/routers/permissions/native-permissions.ts",
+			"summary": "Function implementing requestLocalNetwork logic",
+			"tags": ["trpc", "router", "permissions", "function"],
+			"complexity": "simple",
+			"lineRange": {
+				"start": 117,
+				"end": 123
+			}
+		},
+		{
+			"id": "file:src/lib/trpc/routers/ports/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "src/lib/trpc/routers/ports/index.ts",
+			"summary": "Router entry point for ports functionality",
+			"tags": ["trpc", "router", "backend", "typescript", "api"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/lib/trpc/routers/ports/label-cache.ts",
+			"type": "file",
+			"name": "label-cache.ts",
+			"filePath": "src/lib/trpc/routers/ports/label-cache.ts",
+			"summary": "tRPC router for label-cache operations",
+			"tags": ["trpc", "router", "backend", "typescript", "api"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:src/lib/trpc/routers/ports/label-cache.ts:getPortsFileSignature",
+			"type": "function",
+			"name": "getPortsFileSignature",
+			"filePath": "src/lib/trpc/routers/ports/label-cache.ts",
+			"summary": "Function implementing getPortsFileSignature logic",
+			"tags": ["trpc", "router", "backend", "function"],
+			"complexity": "simple",
+			"lineRange": {
+				"start": 16,
+				"end": 26
+			}
+		},
+		{
+			"id": "function:src/lib/trpc/routers/ports/label-cache.ts:safeGetPortsFileSignature",
+			"type": "function",
+			"name": "safeGetPortsFileSignature",
+			"filePath": "src/lib/trpc/routers/ports/label-cache.ts",
+			"summary": "Function implementing safeGetPortsFileSignature logic",
+			"tags": ["trpc", "router", "backend", "function"],
+			"complexity": "simple",
+			"lineRange": {
+				"start": 33,
+				"end": 43
+			}
+		},
+		{
+			"id": "function:src/lib/trpc/routers/ports/label-cache.ts:safeLoadLabelsForWorktree",
+			"type": "function",
+			"name": "safeLoadLabelsForWorktree",
+			"filePath": "src/lib/trpc/routers/ports/label-cache.ts",
+			"summary": "Function implementing safeLoadLabelsForWorktree logic",
+			"tags": ["trpc", "router", "backend", "function"],
+			"complexity": "simple",
+			"lineRange": {
+				"start": 45,
+				"end": 57
+			}
+		},
+		{
+			"id": "function:src/lib/trpc/routers/ports/label-cache.ts:loadLabelsForWorktree",
+			"type": "function",
+			"name": "loadLabelsForWorktree",
+			"filePath": "src/lib/trpc/routers/ports/label-cache.ts",
+			"summary": "Function implementing loadLabelsForWorktree logic",
+			"tags": ["trpc", "router", "backend", "function"],
+			"complexity": "simple",
+			"lineRange": {
+				"start": 77,
+				"end": 90
+			}
+		},
+		{
+			"id": "function:src/lib/trpc/routers/ports/label-cache.ts:setLabelCache",
+			"type": "function",
+			"name": "setLabelCache",
+			"filePath": "src/lib/trpc/routers/ports/label-cache.ts",
+			"summary": "Function implementing setLabelCache logic",
+			"tags": ["trpc", "router", "backend", "function"],
+			"complexity": "simple",
+			"lineRange": {
+				"start": 92,
+				"end": 106
+			}
+		},
+		{
+			"id": "function:src/lib/trpc/routers/ports/label-cache.ts:getLabelsForWorkspace",
+			"type": "function",
+			"name": "getLabelsForWorkspace",
+			"filePath": "src/lib/trpc/routers/ports/label-cache.ts",
+			"summary": "Function implementing getLabelsForWorkspace logic",
+			"tags": ["trpc", "router", "backend", "function"],
+			"complexity": "moderate",
+			"lineRange": {
+				"start": 108,
+				"end": 141
+			}
+		},
+		{
+			"id": "function:src/lib/trpc/routers/ports/label-cache.ts:invalidatePortLabelCache",
+			"type": "function",
+			"name": "invalidatePortLabelCache",
+			"filePath": "src/lib/trpc/routers/ports/label-cache.ts",
+			"summary": "Function implementing invalidatePortLabelCache logic",
+			"tags": ["trpc", "router", "backend", "function"],
+			"complexity": "simple",
+			"lineRange": {
+				"start": 147,
+				"end": 153
+			}
+		},
+		{
+			"id": "file:src/lib/trpc/routers/ports/ports.ts",
+			"type": "file",
+			"name": "ports.ts",
+			"filePath": "src/lib/trpc/routers/ports/ports.ts",
+			"summary": "tRPC router for ports operations",
+			"tags": ["trpc", "router", "backend", "typescript", "api"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:src/lib/trpc/routers/ports/ports.ts:createPortsRouter",
+			"type": "function",
+			"name": "createPortsRouter",
+			"filePath": "src/lib/trpc/routers/ports/ports.ts",
+			"summary": "Function implementing createPortsRouter logic",
+			"tags": ["trpc", "router", "backend", "function"],
+			"complexity": "moderate",
+			"lineRange": {
+				"start": 14,
+				"end": 62
+			}
+		},
+		{
+			"id": "file:src/lib/trpc/routers/projects/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "src/lib/trpc/routers/projects/index.ts",
+			"summary": "Router entry point for projects functionality",
+			"tags": ["trpc", "router", "project", "backend", "typescript"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/lib/trpc/routers/projects/projects.ts",
+			"type": "file",
+			"name": "projects.ts",
+			"filePath": "src/lib/trpc/routers/projects/projects.ts",
+			"summary": "tRPC router for projects operations",
+			"tags": ["trpc", "router", "project", "backend", "typescript"],
+			"complexity": "complex"
+		},
+		{
+			"id": "function:src/lib/trpc/routers/projects/projects.ts:isRawPullRequest",
+			"type": "function",
+			"name": "isRawPullRequest",
+			"filePath": "src/lib/trpc/routers/projects/projects.ts",
+			"summary": "Function implementing isRawPullRequest logic",
+			"tags": ["trpc", "router", "project", "function"],
+			"complexity": "simple",
+			"lineRange": {
+				"start": 66,
+				"end": 83
+			}
+		},
+		{
+			"id": "function:src/lib/trpc/routers/projects/projects.ts:parsePullRequests",
+			"type": "function",
+			"name": "parsePullRequests",
+			"filePath": "src/lib/trpc/routers/projects/projects.ts",
+			"summary": "Function implementing parsePullRequests logic",
+			"tags": ["trpc", "router", "project", "function"],
+			"complexity": "simple",
+			"lineRange": {
+				"start": 85,
+				"end": 98
+			}
+		},
+		{
+			"id": "function:src/lib/trpc/routers/projects/projects.ts:initGitRepo",
+			"type": "function",
+			"name": "initGitRepo",
+			"filePath": "src/lib/trpc/routers/projects/projects.ts",
+			"summary": "Function implementing initGitRepo logic",
+			"tags": ["trpc", "router", "project", "function"],
+			"complexity": "moderate",
+			"lineRange": {
+				"start": 110,
+				"end": 140
+			}
+		},
+		{
+			"id": "function:src/lib/trpc/routers/projects/projects.ts:upsertProject",
+			"type": "function",
+			"name": "upsertProject",
+			"filePath": "src/lib/trpc/routers/projects/projects.ts",
+			"summary": "Function implementing upsertProject logic",
+			"tags": ["trpc", "router", "project", "function"],
+			"complexity": "moderate",
+			"lineRange": {
+				"start": 143,
+				"end": 173
+			}
+		},
+		{
+			"id": "function:src/lib/trpc/routers/projects/projects.ts:ensureMainWorkspace",
+			"type": "function",
+			"name": "ensureMainWorkspace",
+			"filePath": "src/lib/trpc/routers/projects/projects.ts",
+			"summary": "Function implementing ensureMainWorkspace logic",
+			"tags": ["trpc", "router", "project", "function"],
+			"complexity": "complex",
+			"lineRange": {
+				"start": 175,
+				"end": 253
+			}
+		},
+		{
+			"id": "function:src/lib/trpc/routers/projects/projects.ts:extractRepoName",
+			"type": "function",
+			"name": "extractRepoName",
+			"filePath": "src/lib/trpc/routers/projects/projects.ts",
+			"summary": "Function implementing extractRepoName logic",
+			"tags": ["trpc", "router", "project", "function"],
+			"complexity": "moderate",
+			"lineRange": {
+				"start": 262,
+				"end": 303
+			}
+		},
+		{
+			"id": "function:src/lib/trpc/routers/projects/projects.ts:createProjectsRouter",
+			"type": "function",
+			"name": "createProjectsRouter",
+			"filePath": "src/lib/trpc/routers/projects/projects.ts",
+			"summary": "Function implementing createProjectsRouter logic",
+			"tags": ["trpc", "router", "project", "function"],
+			"complexity": "complex",
+			"lineRange": {
+				"start": 306,
+				"end": 1797
+			}
+		},
+		{
+			"id": "file:src/lib/trpc/routers/projects/utils/colors/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "src/lib/trpc/routers/projects/utils/colors/index.ts",
+			"summary": "Router entry point for colors functionality",
+			"tags": ["trpc", "router", "utility", "project", "backend"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/lib/trpc/routers/projects/utils/favicon-discovery.ts",
+			"type": "file",
+			"name": "favicon-discovery.ts",
+			"filePath": "src/lib/trpc/routers/projects/utils/favicon-discovery.ts",
+			"summary": "tRPC router for favicon-discovery operations",
+			"tags": ["trpc", "router", "utility", "project", "backend"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:src/lib/trpc/routers/projects/utils/favicon-discovery.ts:discoverAndSaveProjectIcon",
+			"type": "function",
+			"name": "discoverAndSaveProjectIcon",
+			"filePath": "src/lib/trpc/routers/projects/utils/favicon-discovery.ts",
+			"summary": "Function implementing discoverAndSaveProjectIcon logic",
+			"tags": ["trpc", "router", "utility", "function"],
+			"complexity": "moderate",
+			"lineRange": {
+				"start": 40,
+				"end": 86
+			}
+		},
+		{
+			"id": "file:src/lib/trpc/routers/projects/utils/github.ts",
+			"type": "file",
+			"name": "github.ts",
+			"filePath": "src/lib/trpc/routers/projects/utils/github.ts",
+			"summary": "tRPC router for github operations",
+			"tags": ["trpc", "router", "utility", "project", "backend"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/lib/trpc/routers/projects/utils/github.ts:fetchGitHubOwner",
+			"type": "function",
+			"name": "fetchGitHubOwner",
+			"filePath": "src/lib/trpc/routers/projects/utils/github.ts",
+			"summary": "Function implementing fetchGitHubOwner logic",
+			"tags": ["trpc", "router", "utility", "function"],
+			"complexity": "simple",
+			"lineRange": {
+				"start": 7,
+				"end": 21
+			}
+		},
+		{
+			"id": "function:src/lib/trpc/routers/projects/utils/github.ts:getGitHubAvatarUrl",
+			"type": "function",
+			"name": "getGitHubAvatarUrl",
+			"filePath": "src/lib/trpc/routers/projects/utils/github.ts",
+			"summary": "Function implementing getGitHubAvatarUrl logic",
+			"tags": ["trpc", "router", "utility", "function"],
+			"complexity": "simple",
+			"lineRange": {
+				"start": 27,
+				"end": 29
+			}
+		},
+		{
+			"id": "file:src/lib/trpc/routers/resource-metrics.schema.test.ts",
+			"type": "file",
+			"name": "resource-metrics.schema.test.ts",
+			"filePath": "src/lib/trpc/routers/resource-metrics.schema.test.ts",
+			"summary": "Test suite for resource-metrics.schema functionality",
+			"tags": ["trpc", "router", "test", "schema", "backend"],
+			"complexity": "moderate"
+		}
+	],
+	"edges": [
+		{
+			"from": "file:src/lib/trpc/routers/permissions/full-disk-access.test.ts",
+			"to": "file:src/lib/trpc/routers/permissions/full-disk-access.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/permissions/full-disk-access.ts",
+			"to": "file:src/lib/trpc/routers/permissions/full-disk-access.test.ts",
+			"type": "tested_by",
+			"weight": 0.5,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/permissions/full-disk-access.ts",
+			"to": "function:src/lib/trpc/routers/permissions/full-disk-access.ts:checkFullDiskAccess",
+			"type": "contains",
+			"weight": 1.0,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/permissions/full-disk-access.ts",
+			"to": "function:src/lib/trpc/routers/permissions/full-disk-access.ts:checkFullDiskAccess",
+			"type": "exports",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/permissions/native-permissions.ts",
+			"to": "function:src/lib/trpc/routers/permissions/native-permissions.ts:checkAccessibility",
+			"type": "contains",
+			"weight": 1.0,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/permissions/native-permissions.ts",
+			"to": "function:src/lib/trpc/routers/permissions/native-permissions.ts:checkAccessibility",
+			"type": "exports",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/permissions/native-permissions.ts",
+			"to": "function:src/lib/trpc/routers/permissions/native-permissions.ts:checkMicrophone",
+			"type": "contains",
+			"weight": 1.0,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/permissions/native-permissions.ts",
+			"to": "function:src/lib/trpc/routers/permissions/native-permissions.ts:checkMicrophone",
+			"type": "exports",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/permissions/native-permissions.ts",
+			"to": "function:src/lib/trpc/routers/permissions/native-permissions.ts:getPermissionStatus",
+			"type": "contains",
+			"weight": 1.0,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/permissions/native-permissions.ts",
+			"to": "function:src/lib/trpc/routers/permissions/native-permissions.ts:getPermissionStatus",
+			"type": "exports",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/permissions/native-permissions.ts",
+			"to": "function:src/lib/trpc/routers/permissions/native-permissions.ts:requestFullDiskAccess",
+			"type": "contains",
+			"weight": 1.0,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/permissions/native-permissions.ts",
+			"to": "function:src/lib/trpc/routers/permissions/native-permissions.ts:requestFullDiskAccess",
+			"type": "exports",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/permissions/native-permissions.ts",
+			"to": "function:src/lib/trpc/routers/permissions/native-permissions.ts:requestAccessibility",
+			"type": "contains",
+			"weight": 1.0,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/permissions/native-permissions.ts",
+			"to": "function:src/lib/trpc/routers/permissions/native-permissions.ts:requestAccessibility",
+			"type": "exports",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/permissions/native-permissions.ts",
+			"to": "function:src/lib/trpc/routers/permissions/native-permissions.ts:requestMicrophone",
+			"type": "contains",
+			"weight": 1.0,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/permissions/native-permissions.ts",
+			"to": "function:src/lib/trpc/routers/permissions/native-permissions.ts:requestMicrophone",
+			"type": "exports",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/permissions/native-permissions.ts",
+			"to": "function:src/lib/trpc/routers/permissions/native-permissions.ts:requestAppleEvents",
+			"type": "contains",
+			"weight": 1.0,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/permissions/native-permissions.ts",
+			"to": "function:src/lib/trpc/routers/permissions/native-permissions.ts:requestAppleEvents",
+			"type": "exports",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/permissions/native-permissions.ts",
+			"to": "function:src/lib/trpc/routers/permissions/native-permissions.ts:requestLocalNetwork",
+			"type": "contains",
+			"weight": 1.0,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/permissions/native-permissions.ts",
+			"to": "function:src/lib/trpc/routers/permissions/native-permissions.ts:requestLocalNetwork",
+			"type": "exports",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/permissions/native-permissions.ts",
+			"to": "file:src/lib/trpc/routers/permissions/full-disk-access.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/ports/label-cache.ts",
+			"to": "function:src/lib/trpc/routers/ports/label-cache.ts:getPortsFileSignature",
+			"type": "contains",
+			"weight": 1.0,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/ports/label-cache.ts",
+			"to": "function:src/lib/trpc/routers/ports/label-cache.ts:safeGetPortsFileSignature",
+			"type": "contains",
+			"weight": 1.0,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/ports/label-cache.ts",
+			"to": "function:src/lib/trpc/routers/ports/label-cache.ts:safeLoadLabelsForWorktree",
+			"type": "contains",
+			"weight": 1.0,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/ports/label-cache.ts",
+			"to": "function:src/lib/trpc/routers/ports/label-cache.ts:loadLabelsForWorktree",
+			"type": "contains",
+			"weight": 1.0,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/ports/label-cache.ts",
+			"to": "function:src/lib/trpc/routers/ports/label-cache.ts:setLabelCache",
+			"type": "contains",
+			"weight": 1.0,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/ports/label-cache.ts",
+			"to": "function:src/lib/trpc/routers/ports/label-cache.ts:getLabelsForWorkspace",
+			"type": "contains",
+			"weight": 1.0,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/ports/label-cache.ts",
+			"to": "function:src/lib/trpc/routers/ports/label-cache.ts:getLabelsForWorkspace",
+			"type": "exports",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/ports/label-cache.ts",
+			"to": "function:src/lib/trpc/routers/ports/label-cache.ts:invalidatePortLabelCache",
+			"type": "contains",
+			"weight": 1.0,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/ports/label-cache.ts",
+			"to": "function:src/lib/trpc/routers/ports/label-cache.ts:invalidatePortLabelCache",
+			"type": "exports",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/ports/label-cache.ts",
+			"to": "file:src/lib/trpc/routers/workspaces/utils/worktree.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/ports/label-cache.ts",
+			"to": "file:src/main/lib/local-db/index.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/ports/label-cache.ts",
+			"to": "file:src/main/lib/static-ports/index.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/ports/label-cache.ts",
+			"to": "file:src/shared/constants.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/ports/label-cache.ts:loadLabelsForWorktree",
+			"to": "file:src/main/lib/static-ports/index.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/ports/label-cache.ts:getLabelsForWorkspace",
+			"to": "file:src/lib/trpc/routers/workspaces/utils/worktree.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/ports/ports.ts",
+			"to": "function:src/lib/trpc/routers/ports/ports.ts:createPortsRouter",
+			"type": "contains",
+			"weight": 1.0,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/ports/ports.ts",
+			"to": "function:src/lib/trpc/routers/ports/ports.ts:createPortsRouter",
+			"type": "exports",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/ports/ports.ts",
+			"to": "file:src/lib/trpc/index.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/ports/ports.ts",
+			"to": "file:src/lib/trpc/routers/ports/label-cache.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/ports/ports.ts",
+			"to": "file:src/main/lib/terminal/port-manager.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/ports/ports.ts",
+			"to": "file:src/shared/types/index.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/ports/ports.ts:createPortsRouter",
+			"to": "file:src/lib/trpc/index.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/projects/projects.ts",
+			"to": "function:src/lib/trpc/routers/projects/projects.ts:isRawPullRequest",
+			"type": "contains",
+			"weight": 1.0,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/projects/projects.ts",
+			"to": "function:src/lib/trpc/routers/projects/projects.ts:parsePullRequests",
+			"type": "contains",
+			"weight": 1.0,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/projects/projects.ts",
+			"to": "function:src/lib/trpc/routers/projects/projects.ts:initGitRepo",
+			"type": "contains",
+			"weight": 1.0,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/projects/projects.ts",
+			"to": "function:src/lib/trpc/routers/projects/projects.ts:upsertProject",
+			"type": "contains",
+			"weight": 1.0,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/projects/projects.ts",
+			"to": "function:src/lib/trpc/routers/projects/projects.ts:ensureMainWorkspace",
+			"type": "contains",
+			"weight": 1.0,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/projects/projects.ts",
+			"to": "function:src/lib/trpc/routers/projects/projects.ts:extractRepoName",
+			"type": "contains",
+			"weight": 1.0,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/projects/projects.ts",
+			"to": "function:src/lib/trpc/routers/projects/projects.ts:createProjectsRouter",
+			"type": "contains",
+			"weight": 1.0,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/projects/projects.ts",
+			"to": "function:src/lib/trpc/routers/projects/projects.ts:createProjectsRouter",
+			"type": "exports",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/projects/projects.ts",
+			"to": "file:src/lib/trpc/index.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/projects/projects.ts",
+			"to": "file:src/lib/trpc/routers/external/index.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/projects/projects.ts",
+			"to": "file:src/lib/trpc/routers/ports/label-cache.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/projects/projects.ts",
+			"to": "file:src/lib/trpc/routers/projects/utils/colors/index.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/projects/projects.ts",
+			"to": "file:src/lib/trpc/routers/projects/utils/favicon-discovery.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/projects/projects.ts",
+			"to": "file:src/lib/trpc/routers/projects/utils/github.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/projects/projects.ts",
+			"to": "file:src/lib/trpc/routers/workspaces/utils/db-helpers.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/projects/projects.ts",
+			"to": "file:src/lib/trpc/routers/workspaces/utils/git-client.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/projects/projects.ts",
+			"to": "file:src/lib/trpc/routers/workspaces/utils/git.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/projects/projects.ts",
+			"to": "file:src/lib/trpc/routers/workspaces/utils/shell-env.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/projects/projects.ts",
+			"to": "file:src/main/lib/analytics/index.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/projects/projects.ts",
+			"to": "file:src/main/lib/local-db/index.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/projects/projects.ts",
+			"to": "file:src/main/lib/project-icons.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/projects/projects.ts",
+			"to": "file:src/main/lib/workspace-runtime/index.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/projects/projects.ts",
+			"to": "file:src/shared/constants/project-colors.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/projects/projects.ts:initGitRepo",
+			"to": "file:src/lib/trpc/routers/workspaces/utils/git-client.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/projects/projects.ts:initGitRepo",
+			"to": "file:src/lib/trpc/routers/workspaces/utils/git.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/projects/projects.ts:ensureMainWorkspace",
+			"to": "file:src/lib/trpc/routers/workspaces/utils/db-helpers.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/projects/projects.ts:ensureMainWorkspace",
+			"to": "file:src/lib/trpc/routers/workspaces/utils/db-helpers.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/projects/projects.ts:ensureMainWorkspace",
+			"to": "file:src/lib/trpc/routers/workspaces/utils/db-helpers.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/projects/projects.ts:ensureMainWorkspace",
+			"to": "file:src/lib/trpc/routers/workspaces/utils/db-helpers.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/projects/projects.ts:ensureMainWorkspace",
+			"to": "file:src/lib/trpc/routers/workspaces/utils/git.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/projects/projects.ts:ensureMainWorkspace",
+			"to": "file:src/lib/trpc/routers/workspaces/utils/db-helpers.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/projects/projects.ts:ensureMainWorkspace",
+			"to": "file:src/lib/trpc/routers/workspaces/utils/db-helpers.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/projects/projects.ts:ensureMainWorkspace",
+			"to": "file:src/main/lib/analytics/index.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/projects/projects.ts:createProjectsRouter",
+			"to": "file:src/lib/trpc/index.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/projects/projects.ts:createProjectsRouter",
+			"to": "file:src/lib/trpc/routers/workspaces/utils/shell-env.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/projects/projects.ts:createProjectsRouter",
+			"to": "file:src/lib/trpc/routers/workspaces/utils/shell-env.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/projects/projects.ts:createProjectsRouter",
+			"to": "file:src/lib/trpc/routers/workspaces/utils/shell-env.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/projects/projects.ts:createProjectsRouter",
+			"to": "file:src/lib/trpc/routers/workspaces/utils/shell-env.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/projects/projects.ts:createProjectsRouter",
+			"to": "file:src/lib/trpc/routers/workspaces/utils/git-client.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/projects/projects.ts:createProjectsRouter",
+			"to": "file:src/lib/trpc/routers/workspaces/utils/git.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/projects/projects.ts:createProjectsRouter",
+			"to": "file:src/lib/trpc/routers/workspaces/utils/git-client.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/projects/projects.ts:createProjectsRouter",
+			"to": "file:src/lib/trpc/routers/workspaces/utils/git.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/projects/projects.ts:createProjectsRouter",
+			"to": "file:src/lib/trpc/routers/workspaces/utils/git.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/projects/projects.ts:createProjectsRouter",
+			"to": "file:src/lib/trpc/routers/workspaces/utils/git-client.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/projects/projects.ts:createProjectsRouter",
+			"to": "file:src/lib/trpc/routers/workspaces/utils/git.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/projects/projects.ts:createProjectsRouter",
+			"to": "file:src/lib/trpc/routers/workspaces/utils/git.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/projects/projects.ts:createProjectsRouter",
+			"to": "file:src/lib/trpc/routers/workspaces/utils/git.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/projects/projects.ts:createProjectsRouter",
+			"to": "file:src/main/lib/analytics/index.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/projects/projects.ts:createProjectsRouter",
+			"to": "file:src/lib/trpc/routers/workspaces/utils/git.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/projects/projects.ts:createProjectsRouter",
+			"to": "file:src/lib/trpc/routers/workspaces/utils/git.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/projects/projects.ts:createProjectsRouter",
+			"to": "file:src/main/lib/analytics/index.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/projects/projects.ts:createProjectsRouter",
+			"to": "file:src/main/lib/analytics/index.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/projects/projects.ts:createProjectsRouter",
+			"to": "file:src/main/lib/analytics/index.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/projects/projects.ts:createProjectsRouter",
+			"to": "file:src/lib/trpc/routers/workspaces/utils/git-client.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/projects/projects.ts:createProjectsRouter",
+			"to": "file:src/lib/trpc/routers/workspaces/utils/git.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/projects/projects.ts:createProjectsRouter",
+			"to": "file:src/main/lib/analytics/index.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/projects/projects.ts:createProjectsRouter",
+			"to": "file:src/main/lib/analytics/index.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/projects/projects.ts:createProjectsRouter",
+			"to": "file:src/lib/trpc/routers/workspaces/utils/git.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/projects/projects.ts:createProjectsRouter",
+			"to": "file:src/lib/trpc/routers/workspaces/utils/git.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/projects/projects.ts:createProjectsRouter",
+			"to": "file:src/main/lib/workspace-runtime/index.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/projects/projects.ts:createProjectsRouter",
+			"to": "file:src/main/lib/project-icons.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/projects/projects.ts:createProjectsRouter",
+			"to": "file:src/lib/trpc/routers/workspaces/utils/db-helpers.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/projects/projects.ts:createProjectsRouter",
+			"to": "file:src/lib/trpc/routers/workspaces/utils/db-helpers.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/projects/projects.ts:createProjectsRouter",
+			"to": "file:src/main/lib/analytics/index.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/projects/projects.ts:createProjectsRouter",
+			"to": "file:src/lib/trpc/routers/workspaces/utils/git.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/projects/projects.ts:createProjectsRouter",
+			"to": "file:src/lib/trpc/routers/workspaces/utils/git.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/projects/projects.ts:createProjectsRouter",
+			"to": "file:src/main/lib/project-icons.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/projects/projects.ts:createProjectsRouter",
+			"to": "file:src/main/lib/project-icons.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/projects/utils/favicon-discovery.ts",
+			"to": "function:src/lib/trpc/routers/projects/utils/favicon-discovery.ts:discoverAndSaveProjectIcon",
+			"type": "contains",
+			"weight": 1.0,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/projects/utils/favicon-discovery.ts",
+			"to": "function:src/lib/trpc/routers/projects/utils/favicon-discovery.ts:discoverAndSaveProjectIcon",
+			"type": "exports",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/projects/utils/favicon-discovery.ts",
+			"to": "file:src/main/lib/project-icons.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/projects/utils/favicon-discovery.ts:discoverAndSaveProjectIcon",
+			"to": "file:src/main/lib/project-icons.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/projects/utils/favicon-discovery.ts:discoverAndSaveProjectIcon",
+			"to": "file:src/main/lib/project-icons.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/projects/utils/github.ts",
+			"to": "function:src/lib/trpc/routers/projects/utils/github.ts:fetchGitHubOwner",
+			"type": "contains",
+			"weight": 1.0,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/projects/utils/github.ts",
+			"to": "function:src/lib/trpc/routers/projects/utils/github.ts:fetchGitHubOwner",
+			"type": "exports",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/projects/utils/github.ts",
+			"to": "function:src/lib/trpc/routers/projects/utils/github.ts:getGitHubAvatarUrl",
+			"type": "contains",
+			"weight": 1.0,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/projects/utils/github.ts",
+			"to": "function:src/lib/trpc/routers/projects/utils/github.ts:getGitHubAvatarUrl",
+			"type": "exports",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/projects/utils/github.ts",
+			"to": "file:src/lib/trpc/routers/workspaces/utils/shell-env.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/projects/utils/github.ts:fetchGitHubOwner",
+			"to": "file:src/lib/trpc/routers/workspaces/utils/shell-env.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/resource-metrics.schema.test.ts",
+			"to": "file:src/lib/trpc/routers/resource-metrics.schema.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		}
+	]
+}

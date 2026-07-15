@@ -1,0 +1,2993 @@
+{
+	"scriptCompleted": true,
+	"filesAnalyzed": 31,
+	"filesSkipped": [],
+	"results": [
+		{
+			"path": "src/lib/trpc/routers/changes/utils/apply-numstat.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 25,
+			"nonEmptyLines": 22,
+			"functions": [
+				{
+					"name": "applyNumstatToFiles",
+					"startLine": 5,
+					"endLine": 25,
+					"params": ["git", "files", "diffArgs"]
+				}
+			],
+			"exports": [
+				{
+					"name": "applyNumstatToFiles",
+					"line": 5,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "applyNumstatToFiles",
+					"callee": "git.raw",
+					"lineNumber": 13
+				},
+				{
+					"caller": "applyNumstatToFiles",
+					"callee": "parseDiffNumstat",
+					"lineNumber": 14
+				},
+				{
+					"caller": "applyNumstatToFiles",
+					"callee": "stats.get",
+					"lineNumber": 17
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/lib/trpc/routers/changes/utils/parse-status.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 204,
+			"nonEmptyLines": 173,
+			"functions": [
+				{
+					"name": "mapGitStatus",
+					"startLine": 9,
+					"endLine": 16,
+					"params": ["gitIndex", "gitWorking"]
+				},
+				{
+					"name": "toChangedFile",
+					"startLine": 18,
+					"endLine": 29,
+					"params": ["path", "gitIndex", "gitWorking"]
+				},
+				{
+					"name": "parseGitStatus",
+					"startLine": 31,
+					"endLine": 74,
+					"params": ["status"]
+				},
+				{
+					"name": "parseGitLog",
+					"startLine": 76,
+					"endLine": 117,
+					"params": ["logOutput"]
+				},
+				{
+					"name": "parseDiffNumstat",
+					"startLine": 119,
+					"endLine": 156,
+					"params": ["numstatOutput"]
+				},
+				{
+					"name": "parseNameStatus",
+					"startLine": 158,
+					"endLine": 204,
+					"params": ["nameStatusOutput"]
+				}
+			],
+			"exports": [
+				{
+					"name": "parseGitStatus",
+					"line": 31,
+					"isDefault": false
+				},
+				{
+					"name": "parseGitLog",
+					"line": 76,
+					"isDefault": false
+				},
+				{
+					"name": "parseDiffNumstat",
+					"line": 119,
+					"isDefault": false
+				},
+				{
+					"name": "parseNameStatus",
+					"line": 158,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "toChangedFile",
+					"callee": "mapGitStatus",
+					"lineNumber": 25
+				},
+				{
+					"caller": "parseGitStatus",
+					"callee": "untracked.push",
+					"lineNumber": 44
+				},
+				{
+					"caller": "parseGitStatus",
+					"callee": "toChangedFile",
+					"lineNumber": 44
+				},
+				{
+					"caller": "parseGitStatus",
+					"callee": "staged.push",
+					"lineNumber": 49
+				},
+				{
+					"caller": "parseGitStatus",
+					"callee": "mapGitStatus",
+					"lineNumber": 52
+				},
+				{
+					"caller": "parseGitStatus",
+					"callee": "unstaged.push",
+					"lineNumber": 59
+				},
+				{
+					"caller": "parseGitStatus",
+					"callee": "mapGitStatus",
+					"lineNumber": 61
+				},
+				{
+					"caller": "parseGitLog",
+					"callee": "logOutput.trim",
+					"lineNumber": 77
+				},
+				{
+					"caller": "parseGitLog",
+					"callee": "logOutput.trim().split",
+					"lineNumber": 80
+				},
+				{
+					"caller": "parseGitLog",
+					"callee": "logOutput.trim",
+					"lineNumber": 80
+				},
+				{
+					"caller": "parseGitLog",
+					"callee": "line.trim",
+					"lineNumber": 83
+				},
+				{
+					"caller": "parseGitLog",
+					"callee": "line.split",
+					"lineNumber": 87
+				},
+				{
+					"caller": "parseGitLog",
+					"callee": "parts[0]?.trim",
+					"lineNumber": 90
+				},
+				{
+					"caller": "parseGitLog",
+					"callee": "parts[1]?.trim",
+					"lineNumber": 91
+				},
+				{
+					"caller": "parseGitLog",
+					"callee": "parts.slice(2, -2).join(\"|\").trim",
+					"lineNumber": 92
+				},
+				{
+					"caller": "parseGitLog",
+					"callee": "parts.slice(2, -2).join",
+					"lineNumber": 92
+				},
+				{
+					"caller": "parseGitLog",
+					"callee": "parts.slice",
+					"lineNumber": 92
+				},
+				{
+					"caller": "parseGitLog",
+					"callee": "parts[parts.length - 2]?.trim",
+					"lineNumber": 93
+				},
+				{
+					"caller": "parseGitLog",
+					"callee": "parts[parts.length - 1]?.trim",
+					"lineNumber": 94
+				},
+				{
+					"caller": "parseGitLog",
+					"callee": "Number.isNaN",
+					"lineNumber": 101
+				},
+				{
+					"caller": "parseGitLog",
+					"callee": "parsed.getTime",
+					"lineNumber": 101
+				},
+				{
+					"caller": "parseGitLog",
+					"callee": "commits.push",
+					"lineNumber": 106
+				},
+				{
+					"caller": "parseDiffNumstat",
+					"callee": "numstatOutput.trim().split",
+					"lineNumber": 127
+				},
+				{
+					"caller": "parseDiffNumstat",
+					"callee": "numstatOutput.trim",
+					"lineNumber": 127
+				},
+				{
+					"caller": "parseDiffNumstat",
+					"callee": "line.trim",
+					"lineNumber": 128
+				},
+				{
+					"caller": "parseDiffNumstat",
+					"callee": "line.split",
+					"lineNumber": 132
+				},
+				{
+					"caller": "parseDiffNumstat",
+					"callee": "pathParts.join",
+					"lineNumber": 133
+				},
+				{
+					"caller": "parseDiffNumstat",
+					"callee": "Number.parseInt",
+					"lineNumber": 136
+				},
+				{
+					"caller": "parseDiffNumstat",
+					"callee": "Number.parseInt",
+					"lineNumber": 137
+				},
+				{
+					"caller": "parseDiffNumstat",
+					"callee": "rawPath.match",
+					"lineNumber": 144
+				},
+				{
+					"caller": "parseDiffNumstat",
+					"callee": "stats.set",
+					"lineNumber": 148
+				},
+				{
+					"caller": "parseDiffNumstat",
+					"callee": "stats.set",
+					"lineNumber": 149
+				},
+				{
+					"caller": "parseDiffNumstat",
+					"callee": "stats.set",
+					"lineNumber": 151
+				},
+				{
+					"caller": "parseNameStatus",
+					"callee": "nameStatusOutput.trim().split",
+					"lineNumber": 161
+				},
+				{
+					"caller": "parseNameStatus",
+					"callee": "nameStatusOutput.trim",
+					"lineNumber": 161
+				},
+				{
+					"caller": "parseNameStatus",
+					"callee": "line.trim",
+					"lineNumber": 162
+				},
+				{
+					"caller": "parseNameStatus",
+					"callee": "line.split",
+					"lineNumber": 165
+				},
+				{
+					"caller": "parseNameStatus",
+					"callee": "statusCode.startsWith",
+					"lineNumber": 170
+				},
+				{
+					"caller": "parseNameStatus",
+					"callee": "statusCode.startsWith",
+					"lineNumber": 170
+				},
+				{
+					"caller": "parseNameStatus",
+					"callee": "files.push",
+					"lineNumber": 194
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 4,
+				"functionCount": 6,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/lib/trpc/routers/changes/workers/git-task-handlers.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 325,
+			"nonEmptyLines": 292,
+			"functions": [
+				{
+					"name": "logWorkerWarning",
+					"startLine": 42,
+					"endLine": 44,
+					"params": ["message", "error"]
+				},
+				{
+					"name": "logWorkerDebug",
+					"startLine": 46,
+					"endLine": 49,
+					"params": ["message", "error"]
+				},
+				{
+					"name": "isPathWithinWorktree",
+					"startLine": 51,
+					"endLine": 62,
+					"params": ["worktreePath", "candidate"]
+				},
+				{
+					"name": "resolvePathInWorktree",
+					"startLine": 64,
+					"endLine": 73,
+					"params": ["worktreePath", "filePath"]
+				},
+				{
+					"name": "applyUntrackedLineCount",
+					"startLine": 75,
+					"endLine": 163,
+					"params": ["worktreePath", "untracked"]
+				},
+				{
+					"name": "getBranchComparison",
+					"startLine": 165,
+					"endLine": 215,
+					"params": ["git", "defaultBranch"]
+				},
+				{
+					"name": "getTrackingBranchStatus",
+					"startLine": 217,
+					"endLine": 246,
+					"params": ["git"]
+				},
+				{
+					"name": "computeStatus",
+					"startLine": 248,
+					"endLine": 279,
+					"params": ["{\n\tworktreePath,\n\tdefaultBranch,\n}"]
+				},
+				{
+					"name": "computeCommitFiles",
+					"startLine": 281,
+					"endLine": 305,
+					"params": ["{\n\tworktreePath,\n\tcommitHash,\n}"]
+				},
+				{
+					"name": "executeGitTask",
+					"startLine": 307,
+					"endLine": 325,
+					"params": ["taskType", "payload"]
+				}
+			],
+			"exports": [
+				{
+					"name": "executeGitTask",
+					"line": 307,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "logWorkerWarning",
+					"callee": "console.warn",
+					"lineNumber": 43
+				},
+				{
+					"caller": "logWorkerDebug",
+					"callee": "logWorkerWarning",
+					"lineNumber": 48
+				},
+				{
+					"caller": "isPathWithinWorktree",
+					"callee": "relative",
+					"lineNumber": 55
+				},
+				{
+					"caller": "isPathWithinWorktree",
+					"callee": "relativePath.startsWith",
+					"lineNumber": 59
+				},
+				{
+					"caller": "isPathWithinWorktree",
+					"callee": "isAbsolute",
+					"lineNumber": 60
+				},
+				{
+					"caller": "resolvePathInWorktree",
+					"callee": "resolve",
+					"lineNumber": 68
+				},
+				{
+					"caller": "resolvePathInWorktree",
+					"callee": "isPathWithinWorktree",
+					"lineNumber": 69
+				},
+				{
+					"caller": "applyUntrackedLineCount",
+					"callee": "realpath",
+					"lineNumber": 81
+				},
+				{
+					"caller": "applyUntrackedLineCount",
+					"callee": "logWorkerWarning",
+					"lineNumber": 83
+				},
+				{
+					"caller": "applyUntrackedLineCount",
+					"callee": "resolvePathInWorktree",
+					"lineNumber": 92
+				},
+				{
+					"caller": "applyUntrackedLineCount",
+					"callee": "realpath",
+					"lineNumber": 95
+				},
+				{
+					"caller": "applyUntrackedLineCount",
+					"callee": "isPathWithinWorktree",
+					"lineNumber": 96
+				},
+				{
+					"caller": "applyUntrackedLineCount",
+					"callee": "stat",
+					"lineNumber": 98
+				},
+				{
+					"caller": "applyUntrackedLineCount",
+					"callee": "stats.isFile",
+					"lineNumber": 99
+				},
+				{
+					"caller": "applyUntrackedLineCount",
+					"callee": "isBinaryMediaFile",
+					"lineNumber": 101
+				},
+				{
+					"caller": "applyUntrackedLineCount",
+					"callee": "open",
+					"lineNumber": 113
+				},
+				{
+					"caller": "applyUntrackedLineCount",
+					"callee": "Buffer.allocUnsafe",
+					"lineNumber": 115
+				},
+				{
+					"caller": "applyUntrackedLineCount",
+					"callee": "handle.read",
+					"lineNumber": 116
+				},
+				{
+					"caller": "applyUntrackedLineCount",
+					"callee": "Math.min",
+					"lineNumber": 118
+				},
+				{
+					"caller": "applyUntrackedLineCount",
+					"callee": "handle.read",
+					"lineNumber": 145
+				},
+				{
+					"caller": "applyUntrackedLineCount",
+					"callee": "handle.close",
+					"lineNumber": 154
+				},
+				{
+					"caller": "applyUntrackedLineCount",
+					"callee": "logWorkerDebug",
+					"lineNumber": 157
+				},
+				{
+					"caller": "getBranchComparison",
+					"callee": "git.raw",
+					"lineNumber": 175
+				},
+				{
+					"caller": "getBranchComparison",
+					"callee": "tracking.trim().split",
+					"lineNumber": 181
+				},
+				{
+					"caller": "getBranchComparison",
+					"callee": "tracking.trim",
+					"lineNumber": 181
+				},
+				{
+					"caller": "getBranchComparison",
+					"callee": "Number.parseInt",
+					"lineNumber": 182
+				},
+				{
+					"caller": "getBranchComparison",
+					"callee": "Number.parseInt",
+					"lineNumber": 183
+				},
+				{
+					"caller": "getBranchComparison",
+					"callee": "git.raw",
+					"lineNumber": 185
+				},
+				{
+					"caller": "getBranchComparison",
+					"callee": "parseGitLog",
+					"lineNumber": 191
+				},
+				{
+					"caller": "getBranchComparison",
+					"callee": "git.raw",
+					"lineNumber": 194
+				},
+				{
+					"caller": "getBranchComparison",
+					"callee": "parseNameStatus",
+					"lineNumber": 199
+				},
+				{
+					"caller": "getBranchComparison",
+					"callee": "applyNumstatToFiles",
+					"lineNumber": 201
+				},
+				{
+					"caller": "getBranchComparison",
+					"callee": "logWorkerDebug",
+					"lineNumber": 208
+				},
+				{
+					"caller": "getTrackingBranchStatus",
+					"callee": "git.raw",
+					"lineNumber": 221
+				},
+				{
+					"caller": "getTrackingBranchStatus",
+					"callee": "upstream.trim",
+					"lineNumber": 226
+				},
+				{
+					"caller": "getTrackingBranchStatus",
+					"callee": "git.raw",
+					"lineNumber": 230
+				},
+				{
+					"caller": "getTrackingBranchStatus",
+					"callee": "tracking.trim().split",
+					"lineNumber": 236
+				},
+				{
+					"caller": "getTrackingBranchStatus",
+					"callee": "tracking.trim",
+					"lineNumber": 236
+				},
+				{
+					"caller": "getTrackingBranchStatus",
+					"callee": "Number.parseInt",
+					"lineNumber": 238
+				},
+				{
+					"caller": "getTrackingBranchStatus",
+					"callee": "Number.parseInt",
+					"lineNumber": 239
+				},
+				{
+					"caller": "getTrackingBranchStatus",
+					"callee": "logWorkerDebug",
+					"lineNumber": 243
+				},
+				{
+					"caller": "computeStatus",
+					"callee": "getSimpleGitWithShellPath",
+					"lineNumber": 252
+				},
+				{
+					"caller": "computeStatus",
+					"callee": "getStatusNoLock",
+					"lineNumber": 254
+				},
+				{
+					"caller": "computeStatus",
+					"callee": "parseGitStatus",
+					"lineNumber": 255
+				},
+				{
+					"caller": "computeStatus",
+					"callee": "Promise.all",
+					"lineNumber": 257
+				},
+				{
+					"caller": "computeStatus",
+					"callee": "getBranchComparison",
+					"lineNumber": 258
+				},
+				{
+					"caller": "computeStatus",
+					"callee": "getTrackingBranchStatus",
+					"lineNumber": 259
+				},
+				{
+					"caller": "computeStatus",
+					"callee": "applyNumstatToFiles",
+					"lineNumber": 260
+				},
+				{
+					"caller": "computeStatus",
+					"callee": "applyNumstatToFiles",
+					"lineNumber": 261
+				},
+				{
+					"caller": "computeStatus",
+					"callee": "applyUntrackedLineCount",
+					"lineNumber": 262
+				},
+				{
+					"caller": "computeCommitFiles",
+					"callee": "getSimpleGitWithShellPath",
+					"lineNumber": 285
+				},
+				{
+					"caller": "computeCommitFiles",
+					"callee": "git.raw",
+					"lineNumber": 287
+				},
+				{
+					"caller": "computeCommitFiles",
+					"callee": "parseNameStatus",
+					"lineNumber": 294
+				},
+				{
+					"caller": "computeCommitFiles",
+					"callee": "applyNumstatToFiles",
+					"lineNumber": 296
+				},
+				{
+					"caller": "executeGitTask",
+					"callee": "computeStatus",
+					"lineNumber": 313
+				},
+				{
+					"caller": "executeGitTask",
+					"callee": "computeCommitFiles",
+					"lineNumber": 317
+				}
+			],
+			"metrics": {
+				"importCount": 6,
+				"exportCount": 1,
+				"functionCount": 10,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/lib/trpc/routers/changes/workers/git-task-runner.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 68,
+			"nonEmptyLines": 62,
+			"functions": [
+				{
+					"name": "getWorkerScriptPath",
+					"startLine": 19,
+					"endLine": 28,
+					"params": []
+				},
+				{
+					"name": "getRunner",
+					"startLine": 30,
+					"endLine": 56,
+					"params": []
+				},
+				{
+					"name": "runGitTask",
+					"startLine": 58,
+					"endLine": 68,
+					"params": ["taskType", "payload", "options"]
+				}
+			],
+			"exports": [
+				{
+					"name": "runGitTask",
+					"line": 58,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "getWorkerScriptPath",
+					"callee": "require",
+					"lineNumber": 22
+				},
+				{
+					"caller": "getWorkerScriptPath",
+					"callee": "import",
+					"lineNumber": 22
+				},
+				{
+					"caller": "getWorkerScriptPath",
+					"callee": "app?.getAppPath",
+					"lineNumber": 23
+				},
+				{
+					"caller": "getWorkerScriptPath",
+					"callee": "process.cwd",
+					"lineNumber": 23
+				},
+				{
+					"caller": "getWorkerScriptPath",
+					"callee": "join",
+					"lineNumber": 24
+				},
+				{
+					"caller": "getWorkerScriptPath",
+					"callee": "join",
+					"lineNumber": 26
+				},
+				{
+					"caller": "getWorkerScriptPath",
+					"callee": "process.cwd",
+					"lineNumber": 26
+				},
+				{
+					"caller": "getRunner",
+					"callee": "getWorkerScriptPath",
+					"lineNumber": 33
+				},
+				{
+					"caller": "getRunner",
+					"callee": "require",
+					"lineNumber": 41
+				},
+				{
+					"caller": "getRunner",
+					"callee": "import",
+					"lineNumber": 41
+				},
+				{
+					"caller": "getRunner",
+					"callee": "app?.once",
+					"lineNumber": 42
+				},
+				{
+					"caller": "getRunner",
+					"callee": "gitTaskRunner?.dispose",
+					"lineNumber": 43
+				},
+				{
+					"caller": "getRunner",
+					"callee": "console.warn",
+					"lineNumber": 48
+				},
+				{
+					"caller": "runGitTask",
+					"callee": "getRunner().runTask",
+					"lineNumber": 63
+				},
+				{
+					"caller": "runGitTask",
+					"callee": "getRunner",
+					"lineNumber": 63
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 1,
+				"functionCount": 3,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/lib/trpc/routers/changes/workers/git-task-types.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 19,
+			"nonEmptyLines": 16,
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/lib/trpc/workers/WorkerTaskRunner.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 481,
+			"nonEmptyLines": 411,
+			"classes": [
+				{
+					"name": "WorkerTaskError",
+					"startLine": 9,
+					"endLine": 18,
+					"methods": ["constructor"],
+					"properties": ["code"]
+				},
+				{
+					"name": "WorkerTaskAbortedError",
+					"startLine": 20,
+					"endLine": 25,
+					"methods": ["constructor"],
+					"properties": []
+				},
+				{
+					"name": "WorkerTaskRunner",
+					"startLine": 68,
+					"endLine": 479,
+					"methods": [
+						"constructor",
+						"runTask",
+						"dispose",
+						"spawnWorker",
+						"drainQueue",
+						"handleWorkerMessage",
+						"isWorkerResultMessage",
+						"handleTaskTimeout",
+						"abortTask",
+						"handleWorkerFailure",
+						"dropQueuedTasksByKey",
+						"resolveTask",
+						"rejectTask",
+						"cleanupTask",
+						"clearTaskTimeout",
+						"log",
+						"ensureWorkerCapacity",
+						"getActiveSlotCount",
+						"hasOutstandingWork"
+					],
+					"properties": [
+						"workerScriptPath",
+						"concurrency",
+						"name",
+						"debug",
+						"workerSlots",
+						"queue",
+						"tasks",
+						"inFlightByKey",
+						"generationByKey",
+						"workerCounter",
+						"disposed"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "WorkerTaskError",
+					"line": 9,
+					"isDefault": false
+				},
+				{
+					"name": "WorkerTaskAbortedError",
+					"line": 20,
+					"isDefault": false
+				},
+				{
+					"name": "WorkerTaskRunner",
+					"line": 68,
+					"isDefault": false
+				},
+				{
+					"name": "WorkerTaskOptions",
+					"line": 481,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "constructor",
+					"callee": "super",
+					"lineNumber": 13
+				},
+				{
+					"caller": "constructor",
+					"callee": "super",
+					"lineNumber": 22
+				},
+				{
+					"caller": "constructor",
+					"callee": "Math.max",
+					"lineNumber": 83
+				},
+				{
+					"caller": "runTask",
+					"callee": "Promise.reject",
+					"lineNumber": 94
+				},
+				{
+					"caller": "runTask",
+					"callee": "Boolean",
+					"lineNumber": 102
+				},
+				{
+					"caller": "runTask",
+					"callee": "this.inFlightByKey.get",
+					"lineNumber": 105
+				},
+				{
+					"caller": "runTask",
+					"callee": "this.generationByKey.get",
+					"lineNumber": 113
+				},
+				{
+					"caller": "runTask",
+					"callee": "this.generationByKey.set",
+					"lineNumber": 116
+				},
+				{
+					"caller": "runTask",
+					"callee": "randomUUID",
+					"lineNumber": 119
+				},
+				{
+					"caller": "runTask",
+					"callee": "resolve",
+					"lineNumber": 126
+				},
+				{
+					"caller": "abortTask",
+					"callee": "this.abortTask",
+					"lineNumber": 136
+				},
+				{
+					"caller": "runTask",
+					"callee": "task.abortSignal.addEventListener",
+					"lineNumber": 138
+				},
+				{
+					"caller": "runTask",
+					"callee": "this.tasks.set",
+					"lineNumber": 141
+				},
+				{
+					"caller": "runTask",
+					"callee": "this.dropQueuedTasksByKey",
+					"lineNumber": 144
+				},
+				{
+					"caller": "runTask",
+					"callee": "this.queue.push",
+					"lineNumber": 147
+				},
+				{
+					"caller": "runTask",
+					"callee": "this.drainQueue",
+					"lineNumber": 148
+				},
+				{
+					"caller": "runTask",
+					"callee": "this.inFlightByKey.set",
+					"lineNumber": 152
+				},
+				{
+					"caller": "runTask",
+					"callee": "taskPromise.finally",
+					"lineNumber": 155
+				},
+				{
+					"caller": "runTask",
+					"callee": "this.inFlightByKey.get",
+					"lineNumber": 156
+				},
+				{
+					"caller": "runTask",
+					"callee": "this.inFlightByKey.delete",
+					"lineNumber": 157
+				},
+				{
+					"caller": "runTask",
+					"callee": "this.generationByKey.get",
+					"lineNumber": 162
+				},
+				{
+					"caller": "runTask",
+					"callee": "this.generationByKey.delete",
+					"lineNumber": 164
+				},
+				{
+					"caller": "dispose",
+					"callee": "this.rejectTask",
+					"lineNumber": 173
+				},
+				{
+					"caller": "dispose",
+					"callee": "this.workerSlots.values",
+					"lineNumber": 180
+				},
+				{
+					"caller": "dispose",
+					"callee": "this.rejectTask",
+					"lineNumber": 183
+				},
+				{
+					"caller": "dispose",
+					"callee": "slot.worker.terminate",
+					"lineNumber": 188
+				},
+				{
+					"caller": "dispose",
+					"callee": "this.workerSlots.clear",
+					"lineNumber": 191
+				},
+				{
+					"caller": "spawnWorker",
+					"callee": "worker.on",
+					"lineNumber": 204
+				},
+				{
+					"caller": "spawnWorker",
+					"callee": "this.handleWorkerMessage",
+					"lineNumber": 205
+				},
+				{
+					"caller": "spawnWorker",
+					"callee": "worker.on",
+					"lineNumber": 208
+				},
+				{
+					"caller": "spawnWorker",
+					"callee": "this.log",
+					"lineNumber": 209
+				},
+				{
+					"caller": "spawnWorker",
+					"callee": "this.handleWorkerFailure",
+					"lineNumber": 210
+				},
+				{
+					"caller": "spawnWorker",
+					"callee": "worker.on",
+					"lineNumber": 213
+				},
+				{
+					"caller": "spawnWorker",
+					"callee": "this.log",
+					"lineNumber": 216
+				},
+				{
+					"caller": "spawnWorker",
+					"callee": "this.handleWorkerFailure",
+					"lineNumber": 218
+				},
+				{
+					"caller": "spawnWorker",
+					"callee": "this.workerSlots.set",
+					"lineNumber": 224
+				},
+				{
+					"caller": "drainQueue",
+					"callee": "this.ensureWorkerCapacity",
+					"lineNumber": 230
+				},
+				{
+					"caller": "drainQueue",
+					"callee": "this.workerSlots.values",
+					"lineNumber": 232
+				},
+				{
+					"caller": "drainQueue",
+					"callee": "this.queue.shift",
+					"lineNumber": 236
+				},
+				{
+					"caller": "drainQueue",
+					"callee": "this.tasks.get",
+					"lineNumber": 238
+				},
+				{
+					"caller": "drainQueue",
+					"callee": "this.rejectTask",
+					"lineNumber": 242
+				},
+				{
+					"caller": "drainQueue",
+					"callee": "setTimeout",
+					"lineNumber": 248
+				},
+				{
+					"caller": "drainQueue",
+					"callee": "this.handleTaskTimeout",
+					"lineNumber": 249
+				},
+				{
+					"caller": "drainQueue",
+					"callee": "slot.worker.postMessage",
+					"lineNumber": 258
+				},
+				{
+					"caller": "handleWorkerMessage",
+					"callee": "this.workerSlots.get",
+					"lineNumber": 263
+				},
+				{
+					"caller": "handleWorkerMessage",
+					"callee": "this.isWorkerResultMessage",
+					"lineNumber": 266
+				},
+				{
+					"caller": "handleWorkerMessage",
+					"callee": "this.log",
+					"lineNumber": 272
+				},
+				{
+					"caller": "handleWorkerMessage",
+					"callee": "this.tasks.get",
+					"lineNumber": 278
+				},
+				{
+					"caller": "handleWorkerMessage",
+					"callee": "this.log",
+					"lineNumber": 280
+				},
+				{
+					"caller": "handleWorkerMessage",
+					"callee": "slot.worker.terminate",
+					"lineNumber": 285
+				},
+				{
+					"caller": "handleWorkerMessage",
+					"callee": "this.clearTaskTimeout",
+					"lineNumber": 290
+				},
+				{
+					"caller": "handleWorkerMessage",
+					"callee": "this.generationByKey.get",
+					"lineNumber": 297
+				},
+				{
+					"caller": "handleWorkerMessage",
+					"callee": "this.rejectTask",
+					"lineNumber": 299
+				},
+				{
+					"caller": "handleWorkerMessage",
+					"callee": "this.resolveTask",
+					"lineNumber": 304
+				},
+				{
+					"caller": "handleWorkerMessage",
+					"callee": "this.rejectTask",
+					"lineNumber": 307
+				},
+				{
+					"caller": "handleWorkerMessage",
+					"callee": "this.drainQueue",
+					"lineNumber": 313
+				},
+				{
+					"caller": "handleTaskTimeout",
+					"callee": "this.tasks.get",
+					"lineNumber": 340
+				},
+				{
+					"caller": "handleTaskTimeout",
+					"callee": "this.rejectTask",
+					"lineNumber": 343
+				},
+				{
+					"caller": "handleTaskTimeout",
+					"callee": "this.workerSlots.get",
+					"lineNumber": 351
+				},
+				{
+					"caller": "handleTaskTimeout",
+					"callee": "slot.worker.terminate",
+					"lineNumber": 354
+				},
+				{
+					"caller": "handleTaskTimeout",
+					"callee": "this.hasOutstandingWork",
+					"lineNumber": 355
+				},
+				{
+					"caller": "handleTaskTimeout",
+					"callee": "this.ensureWorkerCapacity",
+					"lineNumber": 356
+				},
+				{
+					"caller": "handleTaskTimeout",
+					"callee": "this.drainQueue",
+					"lineNumber": 357
+				},
+				{
+					"caller": "abortTask",
+					"callee": "this.tasks.get",
+					"lineNumber": 364
+				},
+				{
+					"caller": "abortTask",
+					"callee": "this.rejectTask",
+					"lineNumber": 367
+				},
+				{
+					"caller": "abortTask",
+					"callee": "this.workerSlots.get",
+					"lineNumber": 370
+				},
+				{
+					"caller": "abortTask",
+					"callee": "slot.worker.terminate",
+					"lineNumber": 373
+				},
+				{
+					"caller": "abortTask",
+					"callee": "this.hasOutstandingWork",
+					"lineNumber": 374
+				},
+				{
+					"caller": "abortTask",
+					"callee": "this.ensureWorkerCapacity",
+					"lineNumber": 375
+				},
+				{
+					"caller": "abortTask",
+					"callee": "this.drainQueue",
+					"lineNumber": 376
+				},
+				{
+					"caller": "handleWorkerFailure",
+					"callee": "this.workerSlots.get",
+					"lineNumber": 383
+				},
+				{
+					"caller": "handleWorkerFailure",
+					"callee": "this.workerSlots.delete",
+					"lineNumber": 387
+				},
+				{
+					"caller": "handleWorkerFailure",
+					"callee": "this.rejectTask",
+					"lineNumber": 390
+				},
+				{
+					"caller": "handleWorkerFailure",
+					"callee": "this.hasOutstandingWork",
+					"lineNumber": 393
+				},
+				{
+					"caller": "handleWorkerFailure",
+					"callee": "this.ensureWorkerCapacity",
+					"lineNumber": 394
+				},
+				{
+					"caller": "handleWorkerFailure",
+					"callee": "this.drainQueue",
+					"lineNumber": 395
+				},
+				{
+					"caller": "dropQueuedTasksByKey",
+					"callee": "this.tasks.get",
+					"lineNumber": 402
+				},
+				{
+					"caller": "dropQueuedTasksByKey",
+					"callee": "this.queue.splice",
+					"lineNumber": 407
+				},
+				{
+					"caller": "dropQueuedTasksByKey",
+					"callee": "this.rejectTask",
+					"lineNumber": 408
+				},
+				{
+					"caller": "resolveTask",
+					"callee": "this.tasks.get",
+					"lineNumber": 416
+				},
+				{
+					"caller": "resolveTask",
+					"callee": "this.cleanupTask",
+					"lineNumber": 418
+				},
+				{
+					"caller": "resolveTask",
+					"callee": "task.resolve",
+					"lineNumber": 419
+				},
+				{
+					"caller": "rejectTask",
+					"callee": "this.tasks.get",
+					"lineNumber": 423
+				},
+				{
+					"caller": "rejectTask",
+					"callee": "this.queue.indexOf",
+					"lineNumber": 426
+				},
+				{
+					"caller": "rejectTask",
+					"callee": "this.queue.splice",
+					"lineNumber": 428
+				},
+				{
+					"caller": "rejectTask",
+					"callee": "this.workerSlots.get",
+					"lineNumber": 431
+				},
+				{
+					"caller": "rejectTask",
+					"callee": "this.cleanupTask",
+					"lineNumber": 436
+				},
+				{
+					"caller": "rejectTask",
+					"callee": "task.reject",
+					"lineNumber": 437
+				},
+				{
+					"caller": "cleanupTask",
+					"callee": "this.clearTaskTimeout",
+					"lineNumber": 441
+				},
+				{
+					"caller": "cleanupTask",
+					"callee": "task.abortSignal.removeEventListener",
+					"lineNumber": 443
+				},
+				{
+					"caller": "cleanupTask",
+					"callee": "this.tasks.delete",
+					"lineNumber": 445
+				},
+				{
+					"caller": "clearTaskTimeout",
+					"callee": "clearTimeout",
+					"lineNumber": 450
+				},
+				{
+					"caller": "log",
+					"callee": "console.log",
+					"lineNumber": 457
+				},
+				{
+					"caller": "ensureWorkerCapacity",
+					"callee": "this.getActiveSlotCount",
+					"lineNumber": 461
+				},
+				{
+					"caller": "ensureWorkerCapacity",
+					"callee": "this.spawnWorker",
+					"lineNumber": 462
+				},
+				{
+					"caller": "getActiveSlotCount",
+					"callee": "this.workerSlots.values",
+					"lineNumber": 468
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 4,
+				"functionCount": 0,
+				"classCount": 3
+			}
+		},
+		{
+			"path": "src/lib/trpc/workers/worker-task-protocol.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 48,
+			"nonEmptyLines": 42,
+			"functions": [
+				{
+					"name": "serializeWorkerError",
+					"startLine": 29,
+					"endLine": 48,
+					"params": ["error"]
+				}
+			],
+			"exports": [
+				{
+					"name": "serializeWorkerError",
+					"line": 29,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "serializeWorkerError",
+					"callee": "String",
+					"lineNumber": 46
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/main/git-task-worker.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 50,
+			"nonEmptyLines": 46,
+			"functions": [
+				{
+					"name": "isWorkerTaskRequestMessage",
+					"startLine": 13,
+					"endLine": 25,
+					"params": ["message"]
+				}
+			],
+			"metrics": {
+				"importCount": 3,
+				"exportCount": 0,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/FileDiffSection/components/FileDiffHeader/FileDiffHeader.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 249,
+			"nonEmptyLines": 237,
+			"functions": [
+				{
+					"name": "FileDiffHeader",
+					"startLine": 38,
+					"endLine": 249,
+					"params": [
+						"{\n\tfile,\n\tfileKey,\n\tisExpanded,\n\tonToggleExpanded,\n\tisViewed,\n\tonViewedChange,\n\tstatusBadgeColor,\n\tstatusIndicator,\n\tshowStats,\n\tonOpenInEditor,\n\tonCopyPath,\n\tisCopied,\n\tisEditing,\n\tonToggleEdit,\n\tonStage,\n\tonUnstage,\n\tonDiscard,\n\tisActioning,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "FileDiffHeader",
+					"line": 38,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "FileDiffHeader",
+					"callee": "cn",
+					"lineNumber": 63
+				},
+				{
+					"caller": "FileDiffHeader",
+					"callee": "cn",
+					"lineNumber": 79
+				},
+				{
+					"caller": "FileDiffHeader",
+					"callee": "e.stopPropagation",
+					"lineNumber": 125
+				},
+				{
+					"caller": "FileDiffHeader",
+					"callee": "onToggleEdit",
+					"lineNumber": 126
+				},
+				{
+					"caller": "FileDiffHeader",
+					"callee": "cn",
+					"lineNumber": 128
+				},
+				{
+					"caller": "FileDiffHeader",
+					"callee": "e.stopPropagation",
+					"lineNumber": 165
+				},
+				{
+					"caller": "FileDiffHeader",
+					"callee": "onViewedChange",
+					"lineNumber": 170
+				},
+				{
+					"caller": "FileDiffHeader",
+					"callee": "e.stopPropagation",
+					"lineNumber": 185
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/FileDiffSection/constants.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 2,
+			"nonEmptyLines": 2,
+			"exports": [
+				{
+					"name": "FILE_DIFF_SECTION_COLLAPSED_HEIGHT",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "FILE_DIFF_SECTION_PLACEHOLDER_HEIGHT",
+					"line": 2,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 2,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/FileDiffSection/hooks/useFileDiffEdit/useFileDiffEdit.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 83,
+			"nonEmptyLines": 72,
+			"functions": [
+				{
+					"name": "useFileDiffEdit",
+					"startLine": 14,
+					"endLine": 83,
+					"params": ["{\n\tcategory,\n\tworkspaceId,\n\tabsolutePath,\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "useFileDiffEdit",
+					"line": 14,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "useFileDiffEdit",
+					"callee": "useState",
+					"lineNumber": 19
+				},
+				{
+					"caller": "useFileDiffEdit",
+					"callee": "isDiffEditable",
+					"lineNumber": 20
+				},
+				{
+					"caller": "useFileDiffEdit",
+					"callee": "electronTrpc.useUtils",
+					"lineNumber": 22
+				},
+				{
+					"caller": "useFileDiffEdit",
+					"callee": "electronTrpc.filesystem.writeFile.useMutation",
+					"lineNumber": 23
+				},
+				{
+					"caller": "useFileDiffEdit",
+					"callee": "useCallback",
+					"lineNumber": 25
+				},
+				{
+					"caller": "useFileDiffEdit",
+					"callee": "utils.filesystem.readFile.fetch",
+					"lineNumber": 35
+				},
+				{
+					"caller": "useFileDiffEdit",
+					"callee": "writeFileMutation.mutateAsync",
+					"lineNumber": 51
+				},
+				{
+					"caller": "useFileDiffEdit",
+					"callee": "utils.changes.getGitFileContents.invalidate",
+					"lineNumber": 59
+				},
+				{
+					"caller": "useFileDiffEdit",
+					"callee": "utils.changes.getGitOriginalContent.invalidate",
+					"lineNumber": 60
+				},
+				{
+					"caller": "useFileDiffEdit",
+					"callee": "utils.changes.getStatus.invalidate",
+					"lineNumber": 61
+				},
+				{
+					"caller": "useFileDiffEdit",
+					"callee": "utils.filesystem.readFile.invalidate",
+					"lineNumber": 62
+				},
+				{
+					"caller": "useFileDiffEdit",
+					"callee": "setIsEditing",
+					"lineNumber": 74
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/FileDiffSection/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "FileDiffSection",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/InfiniteScrollView.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 243,
+			"nonEmptyLines": 229,
+			"functions": [
+				{
+					"name": "InfiniteScrollView",
+					"startLine": 21,
+					"endLine": 243,
+					"params": ["{\n\tstatus,\n\tworktreePath,\n\tbaseBranch,\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "InfiniteScrollView",
+					"line": 21,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "InfiniteScrollView",
+					"callee": "useScrollContext",
+					"lineNumber": 26
+				},
+				{
+					"caller": "InfiniteScrollView",
+					"callee": "useChangesStore",
+					"lineNumber": 37
+				},
+				{
+					"caller": "InfiniteScrollView",
+					"callee": "useSidebarStore",
+					"lineNumber": 38
+				},
+				{
+					"caller": "InfiniteScrollView",
+					"callee": "useSidebarStore",
+					"lineNumber": 41
+				},
+				{
+					"caller": "InfiniteScrollView",
+					"callee": "useState",
+					"lineNumber": 42
+				},
+				{
+					"caller": "InfiniteScrollView",
+					"callee": "useFileMutations",
+					"lineNumber": 45
+				},
+				{
+					"caller": "InfiniteScrollView",
+					"callee": "useMemo",
+					"lineNumber": 47
+				},
+				{
+					"caller": "InfiniteScrollView",
+					"callee": "status.commits.reduce",
+					"lineNumber": 54
+				},
+				{
+					"caller": "InfiniteScrollView",
+					"callee": "useCallback",
+					"lineNumber": 80
+				},
+				{
+					"caller": "InfiniteScrollView",
+					"callee": "setCollapsedFiles",
+					"lineNumber": 81
+				},
+				{
+					"caller": "InfiniteScrollView",
+					"callee": "next.has",
+					"lineNumber": 83
+				},
+				{
+					"caller": "InfiniteScrollView",
+					"callee": "next.delete",
+					"lineNumber": 84
+				},
+				{
+					"caller": "InfiniteScrollView",
+					"callee": "next.add",
+					"lineNumber": 86
+				},
+				{
+					"caller": "InfiniteScrollView",
+					"callee": "useMemo",
+					"lineNumber": 92
+				},
+				{
+					"caller": "InfiniteScrollView",
+					"callee": "sortFiles",
+					"lineNumber": 93
+				},
+				{
+					"caller": "InfiniteScrollView",
+					"callee": "useMemo",
+					"lineNumber": 96
+				},
+				{
+					"caller": "InfiniteScrollView",
+					"callee": "sortFiles",
+					"lineNumber": 97
+				},
+				{
+					"caller": "InfiniteScrollView",
+					"callee": "useMemo",
+					"lineNumber": 100
+				},
+				{
+					"caller": "InfiniteScrollView",
+					"callee": "sortFiles",
+					"lineNumber": 102
+				},
+				{
+					"caller": "InfiniteScrollView",
+					"callee": "useFocusMode",
+					"lineNumber": 119
+				},
+				{
+					"caller": "InfiniteScrollView",
+					"callee": "stageFileMutation.mutate",
+					"lineNumber": 127
+				},
+				{
+					"caller": "InfiniteScrollView",
+					"callee": "unstageFileMutation.mutate",
+					"lineNumber": 128
+				},
+				{
+					"caller": "InfiniteScrollView",
+					"callee": "useOrderedSections",
+					"lineNumber": 137
+				},
+				{
+					"caller": "InfiniteScrollView",
+					"callee": "unstageFileMutation.mutate",
+					"lineNumber": 151
+				},
+				{
+					"caller": "InfiniteScrollView",
+					"callee": "stageFileMutation.mutate",
+					"lineNumber": 156
+				},
+				{
+					"caller": "InfiniteScrollView",
+					"callee": "setSidebarMode",
+					"lineNumber": 172
+				},
+				{
+					"caller": "InfiniteScrollView",
+					"callee": "collapsedFiles.has",
+					"lineNumber": 220
+				},
+				{
+					"caller": "InfiniteScrollView",
+					"callee": "toggleFile",
+					"lineNumber": 221
+				},
+				{
+					"caller": "InfiniteScrollView",
+					"callee": "getFocusedFileActions",
+					"lineNumber": 222
+				},
+				{
+					"caller": "InfiniteScrollView",
+					"callee": "orderedSections\n\t\t\t\t\t\t.filter((section) => section.count > 0)\n\t\t\t\t\t\t.map",
+					"lineNumber": 226
+				},
+				{
+					"caller": "InfiniteScrollView",
+					"callee": "orderedSections\n\t\t\t\t\t\t.filter",
+					"lineNumber": 226
+				}
+			],
+			"metrics": {
+				"importCount": 11,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/components/CategoryHeader/CategoryHeader.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 51,
+			"nonEmptyLines": 47,
+			"functions": [
+				{
+					"name": "CategoryHeader",
+					"startLine": 15,
+					"endLine": 51,
+					"params": [
+						"{\n\tid,\n\ttitle,\n\tcount,\n\tisExpanded,\n\tonToggle,\n\tonMove,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "CategoryHeader",
+					"line": 15,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "CategoryHeader",
+					"callee": "useChangesSectionDnd",
+					"lineNumber": 24
+				},
+				{
+					"caller": "CategoryHeader",
+					"callee": "cn",
+					"lineNumber": 33
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/components/CategoryHeader/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "CategoryHeader",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/components/CommitSection/CommitSection.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 69,
+			"nonEmptyLines": 64,
+			"functions": [
+				{
+					"name": "CommitSection",
+					"startLine": 15,
+					"endLine": 69,
+					"params": [
+						"{\n\tcommit,\n\tworktreePath,\n\tcollapsedFiles,\n\tonToggleFile,\n\tscrollElementRef,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "CommitSection",
+					"line": 15,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "CommitSection",
+					"callee": "useState",
+					"lineNumber": 22
+				},
+				{
+					"caller": "CommitSection",
+					"callee": "electronTrpc.changes.getCommitFiles.useQuery",
+					"lineNumber": 24
+				},
+				{
+					"caller": "CommitSection",
+					"callee": "setIsCommitExpanded",
+					"lineNumber": 38
+				}
+			],
+			"metrics": {
+				"importCount": 3,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/components/CommitSection/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "CommitSection",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/components/DiffToolbar/DiffToolbar.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 251,
+			"nonEmptyLines": 245,
+			"functions": [
+				{
+					"name": "DiffToolbar",
+					"startLine": 48,
+					"endLine": 251,
+					"params": [
+						"{\n\tviewedCount,\n\ttotalFiles,\n\ttotalAdditions,\n\ttotalDeletions,\n\tpushCount,\n\tpullCount,\n\thasUpstream,\n\tdiffViewMode,\n\tonDiffViewModeChange,\n\thideUnchangedRegions,\n\tonToggleHideUnchangedRegions,\n\tfocusMode,\n\tonToggleFocusMode,\n\tsections,\n\tcurrentSection,\n\tindexWithinSection,\n\tonNavigatePrev,\n\tonNavigateNext,\n\tonNavigateToSection,\n\tisFirstFile,\n\tisLastFile,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "DiffToolbar",
+					"line": 48,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "DiffToolbar",
+					"callee": "sections.map",
+					"lineNumber": 139
+				},
+				{
+					"caller": "DiffToolbar",
+					"callee": "onNavigateToSection",
+					"lineNumber": 142
+				},
+				{
+					"caller": "DiffToolbar",
+					"callee": "cn",
+					"lineNumber": 143
+				},
+				{
+					"caller": "DiffToolbar",
+					"callee": "cn",
+					"lineNumber": 176
+				},
+				{
+					"caller": "DiffToolbar",
+					"callee": "onDiffViewModeChange",
+					"lineNumber": 199
+				},
+				{
+					"caller": "DiffToolbar",
+					"callee": "cn",
+					"lineNumber": 228
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/components/DiffToolbar/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "DiffToolbar",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/hooks/useFileMutations/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "useFileMutations",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/hooks/useFileMutations/useFileMutations.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 96,
+			"nonEmptyLines": 88,
+			"functions": [
+				{
+					"name": "useFileMutations",
+					"startLine": 6,
+					"endLine": 96,
+					"params": ["{\n\tworktreePath,\n\tbaseBranch,\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "useFileMutations",
+					"line": 6,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "useFileMutations",
+					"callee": "electronTrpc.useUtils",
+					"lineNumber": 13
+				},
+				{
+					"caller": "useFileMutations",
+					"callee": "useCallback",
+					"lineNumber": 14
+				},
+				{
+					"caller": "useFileMutations",
+					"callee": "trpcUtils.changes.getStatus.invalidate",
+					"lineNumber": 15
+				},
+				{
+					"caller": "useFileMutations",
+					"callee": "electronTrpc.changes.stageFile.useMutation",
+					"lineNumber": 21
+				},
+				{
+					"caller": "useFileMutations",
+					"callee": "refetch",
+					"lineNumber": 22
+				},
+				{
+					"caller": "useFileMutations",
+					"callee": "console.error",
+					"lineNumber": 24
+				},
+				{
+					"caller": "useFileMutations",
+					"callee": "toast.error",
+					"lineNumber": 28
+				},
+				{
+					"caller": "useFileMutations",
+					"callee": "electronTrpc.changes.unstageFile.useMutation",
+					"lineNumber": 32
+				},
+				{
+					"caller": "useFileMutations",
+					"callee": "refetch",
+					"lineNumber": 33
+				},
+				{
+					"caller": "useFileMutations",
+					"callee": "console.error",
+					"lineNumber": 35
+				},
+				{
+					"caller": "useFileMutations",
+					"callee": "toast.error",
+					"lineNumber": 39
+				},
+				{
+					"caller": "useFileMutations",
+					"callee": "electronTrpc.changes.discardChanges.useMutation",
+					"lineNumber": 44
+				},
+				{
+					"caller": "useFileMutations",
+					"callee": "refetch",
+					"lineNumber": 45
+				},
+				{
+					"caller": "useFileMutations",
+					"callee": "console.error",
+					"lineNumber": 47
+				},
+				{
+					"caller": "useFileMutations",
+					"callee": "toast.error",
+					"lineNumber": 51
+				},
+				{
+					"caller": "useFileMutations",
+					"callee": "electronTrpc.changes.deleteUntracked.useMutation",
+					"lineNumber": 56
+				},
+				{
+					"caller": "useFileMutations",
+					"callee": "refetch",
+					"lineNumber": 57
+				},
+				{
+					"caller": "useFileMutations",
+					"callee": "console.error",
+					"lineNumber": 59
+				},
+				{
+					"caller": "useFileMutations",
+					"callee": "toast.error",
+					"lineNumber": 63
+				},
+				{
+					"caller": "useFileMutations",
+					"callee": "useCallback",
+					"lineNumber": 67
+				},
+				{
+					"caller": "useFileMutations",
+					"callee": "deleteUntrackedMutation.mutate",
+					"lineNumber": 70
+				},
+				{
+					"caller": "useFileMutations",
+					"callee": "discardChangesMutation.mutate",
+					"lineNumber": 75
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/hooks/useFocusMode/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 2,
+			"nonEmptyLines": 2,
+			"exports": [
+				{
+					"name": "FlatFileEntry",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "SectionInfo",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "useFocusMode",
+					"line": 2,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 3,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/hooks/useFocusMode/useFocusMode.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 288,
+			"nonEmptyLines": 267,
+			"functions": [
+				{
+					"name": "useFocusMode",
+					"startLine": 34,
+					"endLine": 288,
+					"params": [
+						"{\n\tsortedAgainstBase,\n\tcommits,\n\tsortedStaged,\n\tsortedUnstaged,\n\tsectionOrder,\n\tworktreePath,\n\tbaseBranch,\n\tstageFile,\n\tunstageFile,\n\thandleDiscard,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "useFocusMode",
+					"line": 34,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "useFocusMode",
+					"callee": "useScrollContext",
+					"lineNumber": 47
+				},
+				{
+					"caller": "useFocusMode",
+					"callee": "useChangesStore",
+					"lineNumber": 48
+				},
+				{
+					"caller": "useFocusMode",
+					"callee": "useMemo",
+					"lineNumber": 49
+				},
+				{
+					"caller": "useFocusMode",
+					"callee": "getOrderedChangeSectionIds",
+					"lineNumber": 50
+				},
+				{
+					"caller": "useFocusMode",
+					"callee": "useMemo",
+					"lineNumber": 54
+				},
+				{
+					"caller": "useFocusMode",
+					"callee": "entries.push",
+					"lineNumber": 61
+				},
+				{
+					"caller": "useFocusMode",
+					"callee": "createFileKey",
+					"lineNumber": 64
+				},
+				{
+					"caller": "useFocusMode",
+					"callee": "entries.push",
+					"lineNumber": 71
+				},
+				{
+					"caller": "useFocusMode",
+					"callee": "createFileKey",
+					"lineNumber": 75
+				},
+				{
+					"caller": "useFocusMode",
+					"callee": "entries.push",
+					"lineNumber": 87
+				},
+				{
+					"caller": "useFocusMode",
+					"callee": "createFileKey",
+					"lineNumber": 90
+				},
+				{
+					"caller": "useFocusMode",
+					"callee": "entries.push",
+					"lineNumber": 96
+				},
+				{
+					"caller": "useFocusMode",
+					"callee": "createFileKey",
+					"lineNumber": 99
+				},
+				{
+					"caller": "useFocusMode",
+					"callee": "useMemo",
+					"lineNumber": 116
+				},
+				{
+					"caller": "useFocusMode",
+					"callee": "commits.reduce",
+					"lineNumber": 119
+				},
+				{
+					"caller": "useFocusMode",
+					"callee": "result.push",
+					"lineNumber": 125
+				},
+				{
+					"caller": "useFocusMode",
+					"callee": "result.push",
+					"lineNumber": 136
+				},
+				{
+					"caller": "useFocusMode",
+					"callee": "result.push",
+					"lineNumber": 147
+				},
+				{
+					"caller": "useFocusMode",
+					"callee": "result.push",
+					"lineNumber": 158
+				},
+				{
+					"caller": "useFocusMode",
+					"callee": "flatFileList.find",
+					"lineNumber": 181
+				},
+				{
+					"caller": "useFocusMode",
+					"callee": "flatFileList.findIndex",
+					"lineNumber": 187
+				},
+				{
+					"caller": "useFocusMode",
+					"callee": "useMemo",
+					"lineNumber": 190
+				},
+				{
+					"caller": "useFocusMode",
+					"callee": "useCallback",
+					"lineNumber": 203
+				},
+				{
+					"caller": "useFocusMode",
+					"callee": "setFocusedFileKey",
+					"lineNumber": 207
+				},
+				{
+					"caller": "useFocusMode",
+					"callee": "setActiveFileKey",
+					"lineNumber": 208
+				},
+				{
+					"caller": "useFocusMode",
+					"callee": "useCallback",
+					"lineNumber": 214
+				},
+				{
+					"caller": "useFocusMode",
+					"callee": "navigateToIndex",
+					"lineNumber": 216
+				},
+				{
+					"caller": "useFocusMode",
+					"callee": "useCallback",
+					"lineNumber": 220
+				},
+				{
+					"caller": "useFocusMode",
+					"callee": "navigateToIndex",
+					"lineNumber": 222
+				},
+				{
+					"caller": "useFocusMode",
+					"callee": "useCallback",
+					"lineNumber": 226
+				},
+				{
+					"caller": "useFocusMode",
+					"callee": "sections.find",
+					"lineNumber": 228
+				},
+				{
+					"caller": "useFocusMode",
+					"callee": "navigateToIndex",
+					"lineNumber": 230
+				},
+				{
+					"caller": "useFocusMode",
+					"callee": "useCallback",
+					"lineNumber": 236
+				},
+				{
+					"caller": "useFocusMode",
+					"callee": "setFocusedFileKey",
+					"lineNumber": 239
+				},
+				{
+					"caller": "useFocusMode",
+					"callee": "setActiveFileKey",
+					"lineNumber": 240
+				},
+				{
+					"caller": "useFocusMode",
+					"callee": "toggleFocusMode",
+					"lineNumber": 242
+				},
+				{
+					"caller": "useFocusMode",
+					"callee": "useCallback",
+					"lineNumber": 252
+				},
+				{
+					"caller": "useFocusMode",
+					"callee": "unstageFile",
+					"lineNumber": 258
+				},
+				{
+					"caller": "useFocusMode",
+					"callee": "handleDiscard",
+					"lineNumber": 259
+				},
+				{
+					"caller": "useFocusMode",
+					"callee": "stageFile",
+					"lineNumber": 264
+				},
+				{
+					"caller": "useFocusMode",
+					"callee": "handleDiscard",
+					"lineNumber": 265
+				}
+			],
+			"metrics": {
+				"importCount": 4,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/hooks/useOrderedSections/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 2,
+			"nonEmptyLines": 2,
+			"exports": [
+				{
+					"name": "OrderedSection",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "useOrderedSections",
+					"line": 2,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 2,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/hooks/useOrderedSections/useOrderedSections.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 147,
+			"nonEmptyLines": 142,
+			"functions": [
+				{
+					"name": "useOrderedSections",
+					"startLine": 39,
+					"endLine": 147,
+					"params": [
+						"{\n\tsectionOrder,\n\tbaseBranch,\n\tworktreePath,\n\tscrollElementRef,\n\tcollapsedFiles,\n\tonToggleFile,\n\texpandedSections,\n\ttoggleSection,\n\tagainstBaseFiles,\n\tcommits,\n\tstagedFiles,\n\tunstagedFiles,\n\tonUnstageFile,\n\tonStageFile,\n\tonDiscardFile,\n\tisActioning,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "useOrderedSections",
+					"line": 39,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "useOrderedSections",
+					"callee": "commits.reduce",
+					"lineNumber": 57
+				},
+				{
+					"caller": "useOrderedSections",
+					"callee": "toggleSection",
+					"lineNumber": 68
+				},
+				{
+					"caller": "useOrderedSections",
+					"callee": "toggleSection",
+					"lineNumber": 86
+				},
+				{
+					"caller": "useOrderedSections",
+					"callee": "commits.map",
+					"lineNumber": 89
+				},
+				{
+					"caller": "useOrderedSections",
+					"callee": "toggleSection",
+					"lineNumber": 107
+				},
+				{
+					"caller": "useOrderedSections",
+					"callee": "toggleSection",
+					"lineNumber": 127
+				},
+				{
+					"caller": "useOrderedSections",
+					"callee": "getOrderedChangeSectionIds(sectionOrder).map",
+					"lineNumber": 144
+				},
+				{
+					"caller": "useOrderedSections",
+					"callee": "getOrderedChangeSectionIds",
+					"lineNumber": 144
+				}
+			],
+			"metrics": {
+				"importCount": 4,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/VirtualizedFileList/VirtualizedFileList.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 103,
+			"nonEmptyLines": 96,
+			"functions": [
+				{
+					"name": "VirtualizedFileList",
+					"startLine": 25,
+					"endLine": 103,
+					"params": [
+						"{\n\tfiles,\n\tcategory,\n\tcommitHash,\n\tworktreePath,\n\tbaseBranch,\n\tcollapsedFiles,\n\tonToggleFile,\n\tscrollElementRef,\n\tonStage,\n\tonUnstage,\n\tonDiscard,\n\tisActioning = false,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "VirtualizedFileList",
+					"line": 25,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "VirtualizedFileList",
+					"callee": "useRef",
+					"lineNumber": 39
+				},
+				{
+					"caller": "VirtualizedFileList",
+					"callee": "useVirtualizer",
+					"lineNumber": 41
+				},
+				{
+					"caller": "VirtualizedFileList",
+					"callee": "createFileKey",
+					"lineNumber": 46
+				},
+				{
+					"caller": "VirtualizedFileList",
+					"callee": "getEstimatedFileDiffSectionHeight",
+					"lineNumber": 47
+				},
+				{
+					"caller": "VirtualizedFileList",
+					"callee": "collapsedFiles.has",
+					"lineNumber": 49
+				},
+				{
+					"caller": "VirtualizedFileList",
+					"callee": "virtualizer.getVirtualItems",
+					"lineNumber": 57
+				},
+				{
+					"caller": "VirtualizedFileList",
+					"callee": "virtualizer.getTotalSize",
+					"lineNumber": 63
+				},
+				{
+					"caller": "VirtualizedFileList",
+					"callee": "items.map",
+					"lineNumber": 65
+				},
+				{
+					"caller": "VirtualizedFileList",
+					"callee": "createFileKey",
+					"lineNumber": 67
+				},
+				{
+					"caller": "VirtualizedFileList",
+					"callee": "collapsedFiles.has",
+					"lineNumber": 90
+				},
+				{
+					"caller": "VirtualizedFileList",
+					"callee": "onToggleFile",
+					"lineNumber": 91
+				},
+				{
+					"caller": "VirtualizedFileList",
+					"callee": "onStage",
+					"lineNumber": 92
+				},
+				{
+					"caller": "VirtualizedFileList",
+					"callee": "onUnstage",
+					"lineNumber": 93
+				},
+				{
+					"caller": "VirtualizedFileList",
+					"callee": "onDiscard",
+					"lineNumber": 94
+				}
+			],
+			"metrics": {
+				"importCount": 4,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/VirtualizedFileList/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "VirtualizedFileList",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/VirtualizedFileList/utils/getEstimatedFileDiffSectionHeight.test.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 82,
+			"nonEmptyLines": 74,
+			"functions": [
+				{
+					"name": "createFile",
+					"startLine": 6,
+					"endLine": 17,
+					"params": ["path", "overrides"]
+				}
+			],
+			"metrics": {
+				"importCount": 3,
+				"exportCount": 0,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/VirtualizedFileList/utils/getEstimatedFileDiffSectionHeight.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 82,
+			"nonEmptyLines": 68,
+			"functions": [
+				{
+					"name": "isGeneratedFile",
+					"startLine": 36,
+					"endLine": 41,
+					"params": ["filePath"]
+				},
+				{
+					"name": "getPlaceholderHeight",
+					"startLine": 43,
+					"endLine": 71,
+					"params": ["file"]
+				},
+				{
+					"name": "getEstimatedFileDiffSectionHeight",
+					"startLine": 73,
+					"endLine": 82,
+					"params": ["params"]
+				}
+			],
+			"exports": [
+				{
+					"name": "getEstimatedFileDiffSectionHeight",
+					"line": 73,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "isGeneratedFile",
+					"callee": "filePath.split(\"/\").pop",
+					"lineNumber": 37
+				},
+				{
+					"caller": "isGeneratedFile",
+					"callee": "filePath.split",
+					"lineNumber": 37
+				},
+				{
+					"caller": "isGeneratedFile",
+					"callee": "GENERATED_FILE_PATTERNS.some",
+					"lineNumber": 38
+				},
+				{
+					"caller": "isGeneratedFile",
+					"callee": "pattern.test",
+					"lineNumber": 39
+				},
+				{
+					"caller": "isGeneratedFile",
+					"callee": "pattern.test",
+					"lineNumber": 39
+				},
+				{
+					"caller": "getPlaceholderHeight",
+					"callee": "isVideoFile",
+					"lineNumber": 46
+				},
+				{
+					"caller": "getPlaceholderHeight",
+					"callee": "isGeneratedFile",
+					"lineNumber": 54
+				},
+				{
+					"caller": "getEstimatedFileDiffSectionHeight",
+					"callee": "getPlaceholderHeight",
+					"lineNumber": 81
+				}
+			],
+			"metrics": {
+				"importCount": 3,
+				"exportCount": 1,
+				"functionCount": 3,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/ChangesContent/context/ScrollContext.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 146,
+			"nonEmptyLines": 134,
+			"functions": [
+				{
+					"name": "createFileKey",
+					"startLine": 14,
+					"endLine": 24,
+					"params": ["file", "category", "commitHash", "worktreePath"]
+				},
+				{
+					"name": "ScrollProvider",
+					"startLine": 52,
+					"endLine": 136,
+					"params": ["{ children }"]
+				},
+				{
+					"name": "useScrollContext",
+					"startLine": 138,
+					"endLine": 144,
+					"params": []
+				}
+			],
+			"exports": [
+				{
+					"name": "ScrollProvider",
+					"line": 52,
+					"isDefault": false
+				},
+				{
+					"name": "useScrollContext",
+					"line": 138,
+					"isDefault": false
+				},
+				{
+					"name": "createFileKey",
+					"line": 146,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "createFileKey",
+					"callee": "toAbsoluteWorkspacePath",
+					"lineNumber": 21
+				},
+				{
+					"caller": "ScrollProvider",
+					"callee": "useRef",
+					"lineNumber": 53
+				},
+				{
+					"caller": "ScrollProvider",
+					"callee": "useRef",
+					"lineNumber": 54
+				},
+				{
+					"caller": "ScrollProvider",
+					"callee": "useState",
+					"lineNumber": 55
+				},
+				{
+					"caller": "ScrollProvider",
+					"callee": "useState",
+					"lineNumber": 56
+				},
+				{
+					"caller": "ScrollProvider",
+					"callee": "useState",
+					"lineNumber": 57
+				},
+				{
+					"caller": "ScrollProvider",
+					"callee": "useCallback",
+					"lineNumber": 59
+				},
+				{
+					"caller": "ScrollProvider",
+					"callee": "createFileKey",
+					"lineNumber": 67
+				},
+				{
+					"caller": "ScrollProvider",
+					"callee": "fileRefs.current.set",
+					"lineNumber": 69
+				},
+				{
+					"caller": "ScrollProvider",
+					"callee": "fileRefs.current.delete",
+					"lineNumber": 71
+				},
+				{
+					"caller": "ScrollProvider",
+					"callee": "useCallback",
+					"lineNumber": 77
+				},
+				{
+					"caller": "ScrollProvider",
+					"callee": "createFileKey",
+					"lineNumber": 84
+				},
+				{
+					"caller": "ScrollProvider",
+					"callee": "setFocusedFileKey",
+					"lineNumber": 85
+				},
+				{
+					"caller": "ScrollProvider",
+					"callee": "setActiveFileKey",
+					"lineNumber": 86
+				},
+				{
+					"caller": "ScrollProvider",
+					"callee": "fileRefs.current.get",
+					"lineNumber": 87
+				},
+				{
+					"caller": "ScrollProvider",
+					"callee": "element.scrollIntoView",
+					"lineNumber": 89
+				},
+				{
+					"caller": "ScrollProvider",
+					"callee": "useCallback",
+					"lineNumber": 95
+				},
+				{
+					"caller": "ScrollProvider",
+					"callee": "setViewedFiles",
+					"lineNumber": 96
+				},
+				{
+					"caller": "ScrollProvider",
+					"callee": "next.add",
+					"lineNumber": 99
+				},
+				{
+					"caller": "ScrollProvider",
+					"callee": "next.delete",
+					"lineNumber": 101
+				},
+				{
+					"caller": "ScrollProvider",
+					"callee": "useMemo",
+					"lineNumber": 109
+				},
+				{
+					"caller": "useScrollContext",
+					"callee": "useContext",
+					"lineNumber": 139
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 3,
+				"functionCount": 3,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/ChangesContent/context/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 5,
+			"nonEmptyLines": 5,
+			"exports": [
+				{
+					"name": "createFileKey",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "ScrollProvider",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "useScrollContext",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 3,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		}
+	]
+}

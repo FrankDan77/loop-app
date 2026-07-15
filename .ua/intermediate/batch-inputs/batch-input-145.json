@@ -1,0 +1,51 @@
+{
+	"batchIndex": 145,
+	"files": [
+		{
+			"path": "packages/workspace-client/src/hooks/useEventBus/useEventBus.ts",
+			"language": "typescript",
+			"sizeLines": 12,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/workspace-client/src/hooks/useGitChangeEvents/useGitChangeEvents.ts",
+			"language": "typescript",
+			"sizeLines": 27,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/workspace-client/src/lib/eventBus.ts",
+			"language": "typescript",
+			"sizeLines": 326,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/workspace-client/src/lib/relaySocket/index.ts",
+			"language": "typescript",
+			"sizeLines": 9,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/workspace-client/src/providers/WorkspaceClientProvider/index.ts",
+			"language": "typescript",
+			"sizeLines": 7,
+			"fileCategory": "code"
+		}
+	],
+	"batchImportData": {
+		"packages/workspace-client/src/hooks/useEventBus/useEventBus.ts": [
+			"packages/workspace-client/src/lib/eventBus.ts",
+			"packages/workspace-client/src/providers/WorkspaceClientProvider/index.ts"
+		],
+		"packages/workspace-client/src/hooks/useGitChangeEvents/useGitChangeEvents.ts": [
+			"packages/workspace-client/src/lib/eventBus.ts",
+			"packages/workspace-client/src/providers/WorkspaceClientProvider/index.ts"
+		],
+		"packages/workspace-client/src/lib/eventBus.ts": [
+			"packages/workspace-client/src/lib/relaySocket/index.ts"
+		],
+		"packages/workspace-client/src/lib/relaySocket/index.ts": [],
+		"packages/workspace-client/src/providers/WorkspaceClientProvider/index.ts": []
+	},
+	"neighborMap": {}
+}

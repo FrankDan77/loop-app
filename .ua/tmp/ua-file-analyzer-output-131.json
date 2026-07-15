@@ -1,0 +1,2055 @@
+{
+	"scriptCompleted": true,
+	"filesAnalyzed": 7,
+	"filesSkipped": [],
+	"results": [
+		{
+			"path": "apps/desktop/electron-builder.canary.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 58,
+			"nonEmptyLines": 50,
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "apps/desktop/electron-builder.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 171,
+			"nonEmptyLines": 154,
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "apps/desktop/electron.vite.config.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 271,
+			"nonEmptyLines": 251,
+			"metrics": {
+				"importCount": 3,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "apps/desktop/runtime-dependencies.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 137,
+			"nonEmptyLines": 128,
+			"functions": [
+				{
+					"name": "copyWholeModule",
+					"startLine": 14,
+					"endLine": 20,
+					"params": ["moduleName"]
+				},
+				{
+					"name": "copyModuleSubtree",
+					"startLine": 22,
+					"endLine": 31,
+					"params": ["moduleName", "filter"]
+				}
+			],
+			"exports": [
+				{
+					"name": "mainExternalizedDependencies",
+					"line": 107,
+					"isDefault": false
+				},
+				{
+					"name": "packagedNodeModuleCopies",
+					"line": 117,
+					"isDefault": false
+				},
+				{
+					"name": "packagedAsarUnpackGlobs",
+					"line": 122,
+					"isDefault": false
+				},
+				{
+					"name": "requiredMaterializedNodeModules",
+					"line": 128,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 4,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "apps/desktop/scripts/copy-native-modules.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 540,
+			"nonEmptyLines": 476,
+			"functions": [
+				{
+					"name": "getWorkspaceRootNodeModulesDir",
+					"startLine": 37,
+					"endLine": 39,
+					"params": ["nodeModulesDir"]
+				},
+				{
+					"name": "getBunFlatNodeModulesDir",
+					"startLine": 41,
+					"endLine": 47,
+					"params": ["nodeModulesDir"]
+				},
+				{
+					"name": "getBunStoreDir",
+					"startLine": 49,
+					"endLine": 51,
+					"params": ["nodeModulesDir"]
+				},
+				{
+					"name": "findBunStoreFolderName",
+					"startLine": 53,
+					"endLine": 65,
+					"params": ["bunStoreDir", "moduleName", "version"]
+				},
+				{
+					"name": "copyModuleIfSymlink",
+					"startLine": 67,
+					"endLine": 112,
+					"params": ["nodeModulesDir", "moduleName", "required"]
+				},
+				{
+					"name": "readInstalledModuleVersion",
+					"startLine": 114,
+					"endLine": 122,
+					"params": ["modulePath"]
+				},
+				{
+					"name": "copyExactModuleVersion",
+					"startLine": 124,
+					"endLine": 164,
+					"params": [
+						"nodeModulesDir",
+						"moduleName",
+						"version",
+						"destPath",
+						"required"
+					]
+				},
+				{
+					"name": "copyDependencyForPackage",
+					"startLine": 166,
+					"endLine": 225,
+					"params": [
+						"nodeModulesDir",
+						"parentModuleName",
+						"dependencyName",
+						"dependencyRange",
+						"required"
+					]
+				},
+				{
+					"name": "fetchNpmPackage",
+					"startLine": 231,
+					"endLine": 258,
+					"params": ["packageName", "version", "destPath"]
+				},
+				{
+					"name": "copyAstGrepPlatformPackages",
+					"startLine": 260,
+					"endLine": 344,
+					"params": ["nodeModulesDir"]
+				},
+				{
+					"name": "copyLibsqlDependencies",
+					"startLine": 346,
+					"endLine": 401,
+					"params": ["nodeModulesDir"]
+				},
+				{
+					"name": "copyParcelWatcherPlatformPackages",
+					"startLine": 403,
+					"endLine": 471,
+					"params": ["nodeModulesDir"]
+				},
+				{
+					"name": "copyDuckdbPlatformPackages",
+					"startLine": 473,
+					"endLine": 515,
+					"params": ["nodeModulesDir"]
+				},
+				{
+					"name": "prepareNativeModules",
+					"startLine": 517,
+					"endLine": 538,
+					"params": []
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "getWorkspaceRootNodeModulesDir",
+					"callee": "join",
+					"lineNumber": 38
+				},
+				{
+					"caller": "getBunFlatNodeModulesDir",
+					"callee": "join",
+					"lineNumber": 42
+				},
+				{
+					"caller": "getBunFlatNodeModulesDir",
+					"callee": "getWorkspaceRootNodeModulesDir",
+					"lineNumber": 43
+				},
+				{
+					"caller": "getBunStoreDir",
+					"callee": "join",
+					"lineNumber": 50
+				},
+				{
+					"caller": "getBunStoreDir",
+					"callee": "getWorkspaceRootNodeModulesDir",
+					"lineNumber": 50
+				},
+				{
+					"caller": "findBunStoreFolderName",
+					"callee": "existsSync",
+					"lineNumber": 58
+				},
+				{
+					"caller": "findBunStoreFolderName",
+					"callee": "readdirSync",
+					"lineNumber": 59
+				},
+				{
+					"caller": "findBunStoreFolderName",
+					"callee": "moduleName.replace",
+					"lineNumber": 60
+				},
+				{
+					"caller": "findBunStoreFolderName",
+					"callee": "entries.find",
+					"lineNumber": 62
+				},
+				{
+					"caller": "findBunStoreFolderName",
+					"callee": "entry.startsWith",
+					"lineNumber": 62
+				},
+				{
+					"caller": "findBunStoreFolderName",
+					"callee": "entries.find",
+					"lineNumber": 64
+				},
+				{
+					"caller": "findBunStoreFolderName",
+					"callee": "entry.startsWith",
+					"lineNumber": 64
+				},
+				{
+					"caller": "copyModuleIfSymlink",
+					"callee": "join",
+					"lineNumber": 72
+				},
+				{
+					"caller": "copyModuleIfSymlink",
+					"callee": "getBunFlatNodeModulesDir",
+					"lineNumber": 73
+				},
+				{
+					"caller": "copyModuleIfSymlink",
+					"callee": "join",
+					"lineNumber": 74
+				},
+				{
+					"caller": "copyModuleIfSymlink",
+					"callee": "existsSync",
+					"lineNumber": 76
+				},
+				{
+					"caller": "copyModuleIfSymlink",
+					"callee": "existsSync",
+					"lineNumber": 77
+				},
+				{
+					"caller": "copyModuleIfSymlink",
+					"callee": "console.log",
+					"lineNumber": 78
+				},
+				{
+					"caller": "copyModuleIfSymlink",
+					"callee": "mkdirSync",
+					"lineNumber": 79
+				},
+				{
+					"caller": "copyModuleIfSymlink",
+					"callee": "dirname",
+					"lineNumber": 79
+				},
+				{
+					"caller": "copyModuleIfSymlink",
+					"callee": "cpSync",
+					"lineNumber": 80
+				},
+				{
+					"caller": "copyModuleIfSymlink",
+					"callee": "realpathSync",
+					"lineNumber": 80
+				},
+				{
+					"caller": "copyModuleIfSymlink",
+					"callee": "console.log",
+					"lineNumber": 81
+				},
+				{
+					"caller": "copyModuleIfSymlink",
+					"callee": "console.error",
+					"lineNumber": 85
+				},
+				{
+					"caller": "copyModuleIfSymlink",
+					"callee": "process.exit",
+					"lineNumber": 86
+				},
+				{
+					"caller": "copyModuleIfSymlink",
+					"callee": "console.log",
+					"lineNumber": 88
+				},
+				{
+					"caller": "copyModuleIfSymlink",
+					"callee": "lstatSync",
+					"lineNumber": 92
+				},
+				{
+					"caller": "copyModuleIfSymlink",
+					"callee": "stats.isSymbolicLink",
+					"lineNumber": 94
+				},
+				{
+					"caller": "copyModuleIfSymlink",
+					"callee": "realpathSync",
+					"lineNumber": 96
+				},
+				{
+					"caller": "copyModuleIfSymlink",
+					"callee": "console.log",
+					"lineNumber": 97
+				},
+				{
+					"caller": "copyModuleIfSymlink",
+					"callee": "console.log",
+					"lineNumber": 98
+				},
+				{
+					"caller": "copyModuleIfSymlink",
+					"callee": "rmSync",
+					"lineNumber": 101
+				},
+				{
+					"caller": "copyModuleIfSymlink",
+					"callee": "cpSync",
+					"lineNumber": 104
+				},
+				{
+					"caller": "copyModuleIfSymlink",
+					"callee": "console.log",
+					"lineNumber": 106
+				},
+				{
+					"caller": "copyModuleIfSymlink",
+					"callee": "console.log",
+					"lineNumber": 108
+				},
+				{
+					"caller": "readInstalledModuleVersion",
+					"callee": "join",
+					"lineNumber": 115
+				},
+				{
+					"caller": "readInstalledModuleVersion",
+					"callee": "existsSync",
+					"lineNumber": 116
+				},
+				{
+					"caller": "readInstalledModuleVersion",
+					"callee": "JSON.parse",
+					"lineNumber": 118
+				},
+				{
+					"caller": "readInstalledModuleVersion",
+					"callee": "readFileSync",
+					"lineNumber": 119
+				},
+				{
+					"caller": "copyExactModuleVersion",
+					"callee": "getBunStoreDir",
+					"lineNumber": 131
+				},
+				{
+					"caller": "copyExactModuleVersion",
+					"callee": "findBunStoreFolderName",
+					"lineNumber": 132
+				},
+				{
+					"caller": "copyExactModuleVersion",
+					"callee": "join",
+					"lineNumber": 138
+				},
+				{
+					"caller": "copyExactModuleVersion",
+					"callee": "existsSync",
+					"lineNumber": 144
+				},
+				{
+					"caller": "copyExactModuleVersion",
+					"callee": "mkdirSync",
+					"lineNumber": 145
+				},
+				{
+					"caller": "copyExactModuleVersion",
+					"callee": "dirname",
+					"lineNumber": 145
+				},
+				{
+					"caller": "copyExactModuleVersion",
+					"callee": "cpSync",
+					"lineNumber": 146
+				},
+				{
+					"caller": "copyExactModuleVersion",
+					"callee": "console.log",
+					"lineNumber": 147
+				},
+				{
+					"caller": "copyExactModuleVersion",
+					"callee": "fetchNpmPackage",
+					"lineNumber": 152
+				},
+				{
+					"caller": "copyExactModuleVersion",
+					"callee": "console.error",
+					"lineNumber": 157
+				},
+				{
+					"caller": "copyExactModuleVersion",
+					"callee": "process.exit",
+					"lineNumber": 160
+				},
+				{
+					"caller": "copyDependencyForPackage",
+					"callee": "join",
+					"lineNumber": 173
+				},
+				{
+					"caller": "copyDependencyForPackage",
+					"callee": "readInstalledModuleVersion",
+					"lineNumber": 174
+				},
+				{
+					"caller": "copyDependencyForPackage",
+					"callee": "satisfies",
+					"lineNumber": 176
+				},
+				{
+					"caller": "copyDependencyForPackage",
+					"callee": "copyModuleIfSymlink",
+					"lineNumber": 177
+				},
+				{
+					"caller": "copyDependencyForPackage",
+					"callee": "console.log",
+					"lineNumber": 182
+				},
+				{
+					"caller": "copyDependencyForPackage",
+					"callee": "copyExactModuleVersion",
+					"lineNumber": 185
+				},
+				{
+					"caller": "copyDependencyForPackage",
+					"callee": "join",
+					"lineNumber": 195
+				},
+				{
+					"caller": "copyDependencyForPackage",
+					"callee": "readInstalledModuleVersion",
+					"lineNumber": 201
+				},
+				{
+					"caller": "copyDependencyForPackage",
+					"callee": "satisfies",
+					"lineNumber": 202
+				},
+				{
+					"caller": "copyDependencyForPackage",
+					"callee": "lstatSync",
+					"lineNumber": 203
+				},
+				{
+					"caller": "copyDependencyForPackage",
+					"callee": "nestedStats.isSymbolicLink",
+					"lineNumber": 204
+				},
+				{
+					"caller": "copyDependencyForPackage",
+					"callee": "realpathSync",
+					"lineNumber": 205
+				},
+				{
+					"caller": "copyDependencyForPackage",
+					"callee": "rmSync",
+					"lineNumber": 206
+				},
+				{
+					"caller": "copyDependencyForPackage",
+					"callee": "cpSync",
+					"lineNumber": 207
+				},
+				{
+					"caller": "copyDependencyForPackage",
+					"callee": "console.log",
+					"lineNumber": 214
+				},
+				{
+					"caller": "copyDependencyForPackage",
+					"callee": "copyExactModuleVersion",
+					"lineNumber": 218
+				},
+				{
+					"caller": "fetchNpmPackage",
+					"callee": "packageName.includes",
+					"lineNumber": 237
+				},
+				{
+					"caller": "fetchNpmPackage",
+					"callee": "packageName.split",
+					"lineNumber": 238
+				},
+				{
+					"caller": "fetchNpmPackage",
+					"callee": "console.log",
+					"lineNumber": 241
+				},
+				{
+					"caller": "fetchNpmPackage",
+					"callee": "mkdirSync",
+					"lineNumber": 243
+				},
+				{
+					"caller": "fetchNpmPackage",
+					"callee": "execSync",
+					"lineNumber": 244
+				},
+				{
+					"caller": "fetchNpmPackage",
+					"callee": "console.log",
+					"lineNumber": 250
+				},
+				{
+					"caller": "fetchNpmPackage",
+					"callee": "console.error",
+					"lineNumber": 253
+				},
+				{
+					"caller": "copyAstGrepPlatformPackages",
+					"callee": "join",
+					"lineNumber": 261
+				},
+				{
+					"caller": "copyAstGrepPlatformPackages",
+					"callee": "existsSync",
+					"lineNumber": 262
+				},
+				{
+					"caller": "copyAstGrepPlatformPackages",
+					"callee": "join",
+					"lineNumber": 264
+				},
+				{
+					"caller": "copyAstGrepPlatformPackages",
+					"callee": "existsSync",
+					"lineNumber": 265
+				},
+				{
+					"caller": "copyAstGrepPlatformPackages",
+					"callee": "JSON.parse",
+					"lineNumber": 270
+				},
+				{
+					"caller": "copyAstGrepPlatformPackages",
+					"callee": "readFileSync",
+					"lineNumber": 271
+				},
+				{
+					"caller": "copyAstGrepPlatformPackages",
+					"callee": "Object.entries(optionalDeps)\n\t\t.filter(([name]) => name.startsWith(\"@ast-grep/napi-\"))\n\t\t.map",
+					"lineNumber": 274
+				},
+				{
+					"caller": "copyAstGrepPlatformPackages",
+					"callee": "Object.entries(optionalDeps)\n\t\t.filter",
+					"lineNumber": 274
+				},
+				{
+					"caller": "copyAstGrepPlatformPackages",
+					"callee": "Object.entries",
+					"lineNumber": 274
+				},
+				{
+					"caller": "copyAstGrepPlatformPackages",
+					"callee": "name.startsWith",
+					"lineNumber": 275
+				},
+				{
+					"caller": "copyAstGrepPlatformPackages",
+					"callee": "platformPackages.find",
+					"lineNumber": 282
+				},
+				{
+					"caller": "copyAstGrepPlatformPackages",
+					"callee": "pkg.name.includes",
+					"lineNumber": 283
+				},
+				{
+					"caller": "copyAstGrepPlatformPackages",
+					"callee": "getBunStoreDir",
+					"lineNumber": 287
+				},
+				{
+					"caller": "copyAstGrepPlatformPackages",
+					"callee": "join",
+					"lineNumber": 292
+				},
+				{
+					"caller": "copyAstGrepPlatformPackages",
+					"callee": "existsSync",
+					"lineNumber": 293
+				},
+				{
+					"caller": "copyAstGrepPlatformPackages",
+					"callee": "copyModuleIfSymlink",
+					"lineNumber": 294
+				},
+				{
+					"caller": "copyAstGrepPlatformPackages",
+					"callee": "findBunStoreFolderName",
+					"lineNumber": 303
+				},
+				{
+					"caller": "copyAstGrepPlatformPackages",
+					"callee": "join",
+					"lineNumber": 309
+				},
+				{
+					"caller": "copyAstGrepPlatformPackages",
+					"callee": "existsSync",
+					"lineNumber": 315
+				},
+				{
+					"caller": "copyAstGrepPlatformPackages",
+					"callee": "console.log",
+					"lineNumber": 316
+				},
+				{
+					"caller": "copyAstGrepPlatformPackages",
+					"callee": "mkdirSync",
+					"lineNumber": 317
+				},
+				{
+					"caller": "copyAstGrepPlatformPackages",
+					"callee": "dirname",
+					"lineNumber": 317
+				},
+				{
+					"caller": "copyAstGrepPlatformPackages",
+					"callee": "cpSync",
+					"lineNumber": 318
+				},
+				{
+					"caller": "copyAstGrepPlatformPackages",
+					"callee": "fetchNpmPackage",
+					"lineNumber": 327
+				},
+				{
+					"caller": "copyAstGrepPlatformPackages",
+					"callee": "console.warn",
+					"lineNumber": 333
+				},
+				{
+					"caller": "copyAstGrepPlatformPackages",
+					"callee": "console.error",
+					"lineNumber": 339
+				},
+				{
+					"caller": "copyAstGrepPlatformPackages",
+					"callee": "process.exit",
+					"lineNumber": 342
+				},
+				{
+					"caller": "copyLibsqlDependencies",
+					"callee": "join",
+					"lineNumber": 347
+				},
+				{
+					"caller": "copyLibsqlDependencies",
+					"callee": "join",
+					"lineNumber": 348
+				},
+				{
+					"caller": "copyLibsqlDependencies",
+					"callee": "existsSync",
+					"lineNumber": 349
+				},
+				{
+					"caller": "copyLibsqlDependencies",
+					"callee": "JSON.parse",
+					"lineNumber": 355
+				},
+				{
+					"caller": "copyLibsqlDependencies",
+					"callee": "readFileSync",
+					"lineNumber": 356
+				},
+				{
+					"caller": "copyLibsqlDependencies",
+					"callee": "console.log",
+					"lineNumber": 361
+				},
+				{
+					"caller": "copyLibsqlDependencies",
+					"callee": "Object.entries",
+					"lineNumber": 362
+				},
+				{
+					"caller": "copyLibsqlDependencies",
+					"callee": "copyDependencyForPackage",
+					"lineNumber": 363
+				},
+				{
+					"caller": "copyLibsqlDependencies",
+					"callee": "Object.keys",
+					"lineNumber": 367
+				},
+				{
+					"caller": "copyLibsqlDependencies",
+					"callee": "copyModuleIfSymlink",
+					"lineNumber": 368
+				},
+				{
+					"caller": "copyLibsqlDependencies",
+					"callee": "join",
+					"lineNumber": 373
+				},
+				{
+					"caller": "copyLibsqlDependencies",
+					"callee": "getBunFlatNodeModulesDir",
+					"lineNumber": 374
+				},
+				{
+					"caller": "copyLibsqlDependencies",
+					"callee": "existsSync",
+					"lineNumber": 377
+				},
+				{
+					"caller": "copyLibsqlDependencies",
+					"callee": "readdirSync",
+					"lineNumber": 378
+				},
+				{
+					"caller": "copyLibsqlDependencies",
+					"callee": "entry.includes",
+					"lineNumber": 380
+				},
+				{
+					"caller": "copyLibsqlDependencies",
+					"callee": "entry.includes",
+					"lineNumber": 381
+				},
+				{
+					"caller": "copyLibsqlDependencies",
+					"callee": "entry.includes",
+					"lineNumber": 382
+				},
+				{
+					"caller": "copyLibsqlDependencies",
+					"callee": "copyModuleIfSymlink",
+					"lineNumber": 386
+				},
+				{
+					"caller": "copyLibsqlDependencies",
+					"callee": "Object.entries(optionalDeps).filter",
+					"lineNumber": 392
+				},
+				{
+					"caller": "copyLibsqlDependencies",
+					"callee": "Object.entries",
+					"lineNumber": 392
+				},
+				{
+					"caller": "copyLibsqlDependencies",
+					"callee": "name.includes",
+					"lineNumber": 393
+				},
+				{
+					"caller": "copyLibsqlDependencies",
+					"callee": "join",
+					"lineNumber": 396
+				},
+				{
+					"caller": "copyLibsqlDependencies",
+					"callee": "existsSync",
+					"lineNumber": 397
+				},
+				{
+					"caller": "copyLibsqlDependencies",
+					"callee": "fetchNpmPackage",
+					"lineNumber": 398
+				},
+				{
+					"caller": "copyParcelWatcherPlatformPackages",
+					"callee": "join",
+					"lineNumber": 404
+				},
+				{
+					"caller": "copyParcelWatcherPlatformPackages",
+					"callee": "join",
+					"lineNumber": 405
+				},
+				{
+					"caller": "copyParcelWatcherPlatformPackages",
+					"callee": "existsSync",
+					"lineNumber": 406
+				},
+				{
+					"caller": "copyParcelWatcherPlatformPackages",
+					"callee": "JSON.parse",
+					"lineNumber": 411
+				},
+				{
+					"caller": "copyParcelWatcherPlatformPackages",
+					"callee": "readFileSync",
+					"lineNumber": 412
+				},
+				{
+					"caller": "copyParcelWatcherPlatformPackages",
+					"callee": "Object.entries(optionalDeps)\n\t\t.filter(([name]) => name.startsWith(\"@parcel/watcher-\"))\n\t\t.map",
+					"lineNumber": 415
+				},
+				{
+					"caller": "copyParcelWatcherPlatformPackages",
+					"callee": "Object.entries(optionalDeps)\n\t\t.filter",
+					"lineNumber": 415
+				},
+				{
+					"caller": "copyParcelWatcherPlatformPackages",
+					"callee": "Object.entries",
+					"lineNumber": 415
+				},
+				{
+					"caller": "copyParcelWatcherPlatformPackages",
+					"callee": "name.startsWith",
+					"lineNumber": 416
+				},
+				{
+					"caller": "copyParcelWatcherPlatformPackages",
+					"callee": "console.log",
+					"lineNumber": 421
+				},
+				{
+					"caller": "copyParcelWatcherPlatformPackages",
+					"callee": "getBunStoreDir",
+					"lineNumber": 422
+				},
+				{
+					"caller": "copyParcelWatcherPlatformPackages",
+					"callee": "join",
+					"lineNumber": 426
+				},
+				{
+					"caller": "copyParcelWatcherPlatformPackages",
+					"callee": "existsSync",
+					"lineNumber": 427
+				},
+				{
+					"caller": "copyParcelWatcherPlatformPackages",
+					"callee": "copyModuleIfSymlink",
+					"lineNumber": 429
+				},
+				{
+					"caller": "copyParcelWatcherPlatformPackages",
+					"callee": "findBunStoreFolderName",
+					"lineNumber": 434
+				},
+				{
+					"caller": "copyParcelWatcherPlatformPackages",
+					"callee": "console.warn",
+					"lineNumber": 440
+				},
+				{
+					"caller": "copyParcelWatcherPlatformPackages",
+					"callee": "join",
+					"lineNumber": 446
+				},
+				{
+					"caller": "copyParcelWatcherPlatformPackages",
+					"callee": "existsSync",
+					"lineNumber": 452
+				},
+				{
+					"caller": "copyParcelWatcherPlatformPackages",
+					"callee": "console.warn",
+					"lineNumber": 453
+				},
+				{
+					"caller": "copyParcelWatcherPlatformPackages",
+					"callee": "console.log",
+					"lineNumber": 459
+				},
+				{
+					"caller": "copyParcelWatcherPlatformPackages",
+					"callee": "mkdirSync",
+					"lineNumber": 460
+				},
+				{
+					"caller": "copyParcelWatcherPlatformPackages",
+					"callee": "dirname",
+					"lineNumber": 460
+				},
+				{
+					"caller": "copyParcelWatcherPlatformPackages",
+					"callee": "cpSync",
+					"lineNumber": 461
+				},
+				{
+					"caller": "copyParcelWatcherPlatformPackages",
+					"callee": "console.error",
+					"lineNumber": 466
+				},
+				{
+					"caller": "copyParcelWatcherPlatformPackages",
+					"callee": "process.exit",
+					"lineNumber": 469
+				},
+				{
+					"caller": "copyDuckdbPlatformPackages",
+					"callee": "join",
+					"lineNumber": 474
+				},
+				{
+					"caller": "copyDuckdbPlatformPackages",
+					"callee": "join",
+					"lineNumber": 475
+				},
+				{
+					"caller": "copyDuckdbPlatformPackages",
+					"callee": "existsSync",
+					"lineNumber": 476
+				},
+				{
+					"caller": "copyDuckdbPlatformPackages",
+					"callee": "JSON.parse",
+					"lineNumber": 481
+				},
+				{
+					"caller": "copyDuckdbPlatformPackages",
+					"callee": "readFileSync",
+					"lineNumber": 482
+				},
+				{
+					"caller": "copyDuckdbPlatformPackages",
+					"callee": "console.log",
+					"lineNumber": 486
+				},
+				{
+					"caller": "copyDuckdbPlatformPackages",
+					"callee": "Object.entries(optionalDeps).find",
+					"lineNumber": 491
+				},
+				{
+					"caller": "copyDuckdbPlatformPackages",
+					"callee": "Object.entries",
+					"lineNumber": 491
+				},
+				{
+					"caller": "copyDuckdbPlatformPackages",
+					"callee": "name.endsWith",
+					"lineNumber": 492
+				},
+				{
+					"caller": "copyDuckdbPlatformPackages",
+					"callee": "console.error",
+					"lineNumber": 495
+				},
+				{
+					"caller": "copyDuckdbPlatformPackages",
+					"callee": "process.exit",
+					"lineNumber": 498
+				},
+				{
+					"caller": "copyDuckdbPlatformPackages",
+					"callee": "join",
+					"lineNumber": 502
+				},
+				{
+					"caller": "copyDuckdbPlatformPackages",
+					"callee": "existsSync",
+					"lineNumber": 503
+				},
+				{
+					"caller": "copyDuckdbPlatformPackages",
+					"callee": "copyModuleIfSymlink",
+					"lineNumber": 504
+				},
+				{
+					"caller": "copyDuckdbPlatformPackages",
+					"callee": "copyExactModuleVersion",
+					"lineNumber": 508
+				},
+				{
+					"caller": "prepareNativeModules",
+					"callee": "console.log",
+					"lineNumber": 518
+				},
+				{
+					"caller": "prepareNativeModules",
+					"callee": "console.log",
+					"lineNumber": 519
+				},
+				{
+					"caller": "prepareNativeModules",
+					"callee": "join",
+					"lineNumber": 524
+				},
+				{
+					"caller": "prepareNativeModules",
+					"callee": "dirname",
+					"lineNumber": 524
+				},
+				{
+					"caller": "prepareNativeModules",
+					"callee": "console.log",
+					"lineNumber": 526
+				},
+				{
+					"caller": "prepareNativeModules",
+					"callee": "copyModuleIfSymlink",
+					"lineNumber": 528
+				},
+				{
+					"caller": "prepareNativeModules",
+					"callee": "console.log",
+					"lineNumber": 531
+				},
+				{
+					"caller": "prepareNativeModules",
+					"callee": "copyAstGrepPlatformPackages",
+					"lineNumber": 532
+				},
+				{
+					"caller": "prepareNativeModules",
+					"callee": "copyParcelWatcherPlatformPackages",
+					"lineNumber": 533
+				},
+				{
+					"caller": "prepareNativeModules",
+					"callee": "copyLibsqlDependencies",
+					"lineNumber": 534
+				},
+				{
+					"caller": "prepareNativeModules",
+					"callee": "copyDuckdbPlatformPackages",
+					"lineNumber": 535
+				},
+				{
+					"caller": "prepareNativeModules",
+					"callee": "console.log",
+					"lineNumber": 537
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 0,
+				"functionCount": 14,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "apps/desktop/scripts/validate-native-runtime.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 539,
+			"nonEmptyLines": 473,
+			"functions": [
+				{
+					"name": "fail",
+					"startLine": 31,
+					"endLine": 34,
+					"params": ["message"]
+				},
+				{
+					"name": "assertExists",
+					"startLine": 36,
+					"endLine": 40,
+					"params": ["path", "reason"]
+				},
+				{
+					"name": "validateLibsqlNotBundled",
+					"startLine": 42,
+					"endLine": 91,
+					"params": []
+				},
+				{
+					"name": "validateParcelWatcherNotBundled",
+					"startLine": 93,
+					"endLine": 141,
+					"params": []
+				},
+				{
+					"name": "validateWorkspacePackagesBundled",
+					"startLine": 143,
+					"endLine": 177,
+					"params": []
+				},
+				{
+					"name": "getPackageName",
+					"startLine": 179,
+					"endLine": 186,
+					"params": ["specifier"]
+				},
+				{
+					"name": "isAllowedBareRequire",
+					"startLine": 188,
+					"endLine": 194,
+					"params": ["specifier"]
+				},
+				{
+					"name": "collectBareRequireSpecifiers",
+					"startLine": 196,
+					"endLine": 228,
+					"params": ["filePath"]
+				},
+				{
+					"name": "validateOnlyExpectedExternalRequires",
+					"startLine": 230,
+					"endLine": 273,
+					"params": []
+				},
+				{
+					"name": "collectFiles",
+					"startLine": 275,
+					"endLine": 287,
+					"params": ["rootDir"]
+				},
+				{
+					"name": "getPlatformLibsqlCandidates",
+					"startLine": 289,
+					"endLine": 314,
+					"params": []
+				},
+				{
+					"name": "getPlatformAstGrepCandidates",
+					"startLine": 316,
+					"endLine": 340,
+					"params": []
+				},
+				{
+					"name": "validateNativeModulesPrepared",
+					"startLine": 342,
+					"endLine": 428,
+					"params": []
+				},
+				{
+					"name": "getPlatformParcelWatcherCandidates",
+					"startLine": 430,
+					"endLine": 477,
+					"params": []
+				},
+				{
+					"name": "validateParcelWatcherPrepared",
+					"startLine": 479,
+					"endLine": 505,
+					"params": []
+				},
+				{
+					"name": "validateDuckdbPrepared",
+					"startLine": 507,
+					"endLine": 526,
+					"params": []
+				},
+				{
+					"name": "main",
+					"startLine": 528,
+					"endLine": 537,
+					"params": []
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "fail",
+					"callee": "console.error",
+					"lineNumber": 32
+				},
+				{
+					"caller": "fail",
+					"callee": "process.exit",
+					"lineNumber": 33
+				},
+				{
+					"caller": "assertExists",
+					"callee": "existsSync",
+					"lineNumber": 37
+				},
+				{
+					"caller": "assertExists",
+					"callee": "fail",
+					"lineNumber": 38
+				},
+				{
+					"caller": "validateLibsqlNotBundled",
+					"callee": "join",
+					"lineNumber": 43
+				},
+				{
+					"caller": "validateLibsqlNotBundled",
+					"callee": "assertExists",
+					"lineNumber": 44
+				},
+				{
+					"caller": "validateLibsqlNotBundled",
+					"callee": "readFileSync",
+					"lineNumber": 49
+				},
+				{
+					"caller": "validateLibsqlNotBundled",
+					"callee": "sourceMap.includes",
+					"lineNumber": 50
+				},
+				{
+					"caller": "validateLibsqlNotBundled",
+					"callee": "fail",
+					"lineNumber": 51
+				},
+				{
+					"caller": "validateLibsqlNotBundled",
+					"callee": "[\n\t\t\t\t\"Detected bundled `libsql` sources in dist/main/index.js.map.\",\n\t\t\t\t\"This usually causes runtime dynamic require failures in packaged apps.\",\n\t\t\t\t\"Ensure `libsql` stays in `rollupOptions.external` for the main process.\",\n\t\t\t].join",
+					"lineNumber": 52
+				},
+				{
+					"caller": "validateLibsqlNotBundled",
+					"callee": "join",
+					"lineNumber": 60
+				},
+				{
+					"caller": "validateLibsqlNotBundled",
+					"callee": "assertExists",
+					"lineNumber": 61
+				},
+				{
+					"caller": "validateLibsqlNotBundled",
+					"callee": "collectFiles(distMainDir).filter",
+					"lineNumber": 66
+				},
+				{
+					"caller": "validateLibsqlNotBundled",
+					"callee": "collectFiles",
+					"lineNumber": 66
+				},
+				{
+					"caller": "validateLibsqlNotBundled",
+					"callee": "filePath.endsWith",
+					"lineNumber": 67
+				},
+				{
+					"caller": "validateLibsqlNotBundled",
+					"callee": "readFileSync",
+					"lineNumber": 70
+				},
+				{
+					"caller": "validateLibsqlNotBundled",
+					"callee": "/@libsql\\/\\$\\{target\\}/.test",
+					"lineNumber": 71
+				},
+				{
+					"caller": "validateLibsqlNotBundled",
+					"callee": "content.includes",
+					"lineNumber": 76
+				},
+				{
+					"caller": "validateLibsqlNotBundled",
+					"callee": "fail",
+					"lineNumber": 78
+				},
+				{
+					"caller": "validateLibsqlNotBundled",
+					"callee": "[\n\t\t\t\t\t\"Detected dynamic `@libsql/<platform>` require logic in bundled JS output.\",\n\t\t\t\t\t\"This indicates libsql internals were bundled instead of externalized.\",\n\t\t\t\t\t`Offending file: ${filePath}`,\n\t\t\t\t].join",
+					"lineNumber": 79
+				},
+				{
+					"caller": "validateLibsqlNotBundled",
+					"callee": "console.log",
+					"lineNumber": 88
+				},
+				{
+					"caller": "validateParcelWatcherNotBundled",
+					"callee": "join",
+					"lineNumber": 94
+				},
+				{
+					"caller": "validateParcelWatcherNotBundled",
+					"callee": "assertExists",
+					"lineNumber": 95
+				},
+				{
+					"caller": "validateParcelWatcherNotBundled",
+					"callee": "readFileSync",
+					"lineNumber": 100
+				},
+				{
+					"caller": "validateParcelWatcherNotBundled",
+					"callee": "sourceMap.includes",
+					"lineNumber": 101
+				},
+				{
+					"caller": "validateParcelWatcherNotBundled",
+					"callee": "fail",
+					"lineNumber": 102
+				},
+				{
+					"caller": "validateParcelWatcherNotBundled",
+					"callee": "[\n\t\t\t\t\"Detected bundled `@parcel/watcher` sources in dist/main/index.js.map.\",\n\t\t\t\t\"This usually causes runtime dynamic require failures in packaged apps.\",\n\t\t\t\t\"Ensure `@parcel/watcher` stays in `rollupOptions.external` for the main process.\",\n\t\t\t].join",
+					"lineNumber": 103
+				},
+				{
+					"caller": "validateParcelWatcherNotBundled",
+					"callee": "join",
+					"lineNumber": 111
+				},
+				{
+					"caller": "validateParcelWatcherNotBundled",
+					"callee": "assertExists",
+					"lineNumber": 112
+				},
+				{
+					"caller": "validateParcelWatcherNotBundled",
+					"callee": "collectFiles(distMainDir).filter",
+					"lineNumber": 117
+				},
+				{
+					"caller": "validateParcelWatcherNotBundled",
+					"callee": "collectFiles",
+					"lineNumber": 117
+				},
+				{
+					"caller": "validateParcelWatcherNotBundled",
+					"callee": "filePath.endsWith",
+					"lineNumber": 118
+				},
+				{
+					"caller": "validateParcelWatcherNotBundled",
+					"callee": "readFileSync",
+					"lineNumber": 122
+				},
+				{
+					"caller": "validateParcelWatcherNotBundled",
+					"callee": "content.includes",
+					"lineNumber": 124
+				},
+				{
+					"caller": "validateParcelWatcherNotBundled",
+					"callee": "content.includes",
+					"lineNumber": 125
+				},
+				{
+					"caller": "validateParcelWatcherNotBundled",
+					"callee": "content.includes",
+					"lineNumber": 126
+				},
+				{
+					"caller": "validateParcelWatcherNotBundled",
+					"callee": "fail",
+					"lineNumber": 128
+				},
+				{
+					"caller": "validateParcelWatcherNotBundled",
+					"callee": "[\n\t\t\t\t\t\"Detected bundled dynamic `@parcel/watcher-<platform>` require logic in dist/main output.\",\n\t\t\t\t\t\"This indicates watcher internals were bundled instead of externalized.\",\n\t\t\t\t\t`Offending file: ${filePath}`,\n\t\t\t\t].join",
+					"lineNumber": 129
+				},
+				{
+					"caller": "validateParcelWatcherNotBundled",
+					"callee": "console.log",
+					"lineNumber": 138
+				},
+				{
+					"caller": "validateWorkspacePackagesBundled",
+					"callee": "join",
+					"lineNumber": 144
+				},
+				{
+					"caller": "validateWorkspacePackagesBundled",
+					"callee": "assertExists",
+					"lineNumber": 145
+				},
+				{
+					"caller": "validateWorkspacePackagesBundled",
+					"callee": "collectFiles(distMainDir).filter",
+					"lineNumber": 150
+				},
+				{
+					"caller": "validateWorkspacePackagesBundled",
+					"callee": "collectFiles",
+					"lineNumber": 150
+				},
+				{
+					"caller": "validateWorkspacePackagesBundled",
+					"callee": "filePath.endsWith",
+					"lineNumber": 151
+				},
+				{
+					"caller": "validateWorkspacePackagesBundled",
+					"callee": "readFileSync",
+					"lineNumber": 155
+				},
+				{
+					"caller": "validateWorkspacePackagesBundled",
+					"callee": "content.matchAll",
+					"lineNumber": 156
+				},
+				{
+					"caller": "validateWorkspacePackagesBundled",
+					"callee": "allowedBareRequirePackages.has",
+					"lineNumber": 160
+				},
+				{
+					"caller": "validateWorkspacePackagesBundled",
+					"callee": "fail",
+					"lineNumber": 163
+				},
+				{
+					"caller": "validateWorkspacePackagesBundled",
+					"callee": "[\n\t\t\t\t\t\"Detected externalized workspace package require in dist/main output.\",\n\t\t\t\t\t\"Workspace packages should be bundled for the desktop main process.\",\n\t\t\t\t\t`Offending file: ${filePath}`,\n\t\t\t\t\t`Match: ${match[0]}`,\n\t\t\t\t].join",
+					"lineNumber": 164
+				},
+				{
+					"caller": "validateWorkspacePackagesBundled",
+					"callee": "console.log",
+					"lineNumber": 174
+				},
+				{
+					"caller": "getPackageName",
+					"callee": "specifier.startsWith",
+					"lineNumber": 180
+				},
+				{
+					"caller": "getPackageName",
+					"callee": "specifier.split",
+					"lineNumber": 181
+				},
+				{
+					"caller": "getPackageName",
+					"callee": "specifier.split",
+					"lineNumber": 185
+				},
+				{
+					"caller": "isAllowedBareRequire",
+					"callee": "builtinModuleSpecifiers.has",
+					"lineNumber": 189
+				},
+				{
+					"caller": "isAllowedBareRequire",
+					"callee": "allowedBareRequirePackages.has",
+					"lineNumber": 193
+				},
+				{
+					"caller": "isAllowedBareRequire",
+					"callee": "getPackageName",
+					"lineNumber": 193
+				},
+				{
+					"caller": "collectBareRequireSpecifiers",
+					"callee": "readFileSync",
+					"lineNumber": 197
+				},
+				{
+					"caller": "collectBareRequireSpecifiers",
+					"callee": "ts.createSourceFile",
+					"lineNumber": 198
+				},
+				{
+					"caller": "visit",
+					"callee": "ts.isCallExpression",
+					"lineNumber": 209
+				},
+				{
+					"caller": "visit",
+					"callee": "ts.isIdentifier",
+					"lineNumber": 210
+				},
+				{
+					"caller": "visit",
+					"callee": "ts.isStringLiteralLike",
+					"lineNumber": 215
+				},
+				{
+					"caller": "visit",
+					"callee": "specifiers.push",
+					"lineNumber": 216
+				},
+				{
+					"caller": "visit",
+					"callee": "ts.forEachChild",
+					"lineNumber": 220
+				},
+				{
+					"caller": "collectBareRequireSpecifiers",
+					"callee": "visit",
+					"lineNumber": 223
+				},
+				{
+					"caller": "collectBareRequireSpecifiers",
+					"callee": "specifiers.filter",
+					"lineNumber": 225
+				},
+				{
+					"caller": "collectBareRequireSpecifiers",
+					"callee": "specifier.startsWith",
+					"lineNumber": 226
+				},
+				{
+					"caller": "collectBareRequireSpecifiers",
+					"callee": "specifier.startsWith",
+					"lineNumber": 226
+				},
+				{
+					"caller": "validateOnlyExpectedExternalRequires",
+					"callee": "join",
+					"lineNumber": 231
+				},
+				{
+					"caller": "validateOnlyExpectedExternalRequires",
+					"callee": "assertExists",
+					"lineNumber": 232
+				},
+				{
+					"caller": "validateOnlyExpectedExternalRequires",
+					"callee": "collectFiles(distMainDir).filter",
+					"lineNumber": 237
+				},
+				{
+					"caller": "validateOnlyExpectedExternalRequires",
+					"callee": "collectFiles",
+					"lineNumber": 237
+				},
+				{
+					"caller": "validateOnlyExpectedExternalRequires",
+					"callee": "filePath.endsWith",
+					"lineNumber": 238
+				},
+				{
+					"caller": "validateOnlyExpectedExternalRequires",
+					"callee": "collectBareRequireSpecifiers",
+					"lineNumber": 243
+				},
+				{
+					"caller": "validateOnlyExpectedExternalRequires",
+					"callee": "isAllowedBareRequire",
+					"lineNumber": 244
+				},
+				{
+					"caller": "validateOnlyExpectedExternalRequires",
+					"callee": "unexpectedRequires.get",
+					"lineNumber": 248
+				},
+				{
+					"caller": "validateOnlyExpectedExternalRequires",
+					"callee": "existingFiles.add",
+					"lineNumber": 249
+				},
+				{
+					"caller": "validateOnlyExpectedExternalRequires",
+					"callee": "unexpectedRequires.set",
+					"lineNumber": 250
+				},
+				{
+					"caller": "validateOnlyExpectedExternalRequires",
+					"callee": "[...unexpectedRequires.entries()]\n\t\t\t.sort(([left], [right]) => left.localeCompare(right))\n\t\t\t.map",
+					"lineNumber": 255
+				},
+				{
+					"caller": "validateOnlyExpectedExternalRequires",
+					"callee": "[...unexpectedRequires.entries()]\n\t\t\t.sort",
+					"lineNumber": 255
+				},
+				{
+					"caller": "validateOnlyExpectedExternalRequires",
+					"callee": "unexpectedRequires.entries",
+					"lineNumber": 255
+				},
+				{
+					"caller": "validateOnlyExpectedExternalRequires",
+					"callee": "left.localeCompare",
+					"lineNumber": 256
+				},
+				{
+					"caller": "validateOnlyExpectedExternalRequires",
+					"callee": "[...files].sort().join",
+					"lineNumber": 259
+				},
+				{
+					"caller": "validateOnlyExpectedExternalRequires",
+					"callee": "[...files].sort",
+					"lineNumber": 259
+				},
+				{
+					"caller": "validateOnlyExpectedExternalRequires",
+					"callee": "fail",
+					"lineNumber": 261
+				},
+				{
+					"caller": "validateOnlyExpectedExternalRequires",
+					"callee": "[\n\t\t\t\t\"Detected unexpected external package requires in dist/main output.\",\n\t\t\t\t\"Only Node builtins, `electron`, and the explicit runtime/native allowlist may remain external.\",\n\t\t\t\t...unexpectedList,\n\t\t\t].join",
+					"lineNumber": 262
+				},
+				{
+					"caller": "validateOnlyExpectedExternalRequires",
+					"callee": "console.log",
+					"lineNumber": 270
+				},
+				{
+					"caller": "collectFiles",
+					"callee": "readdirSync",
+					"lineNumber": 276
+				},
+				{
+					"caller": "collectFiles",
+					"callee": "join",
+					"lineNumber": 279
+				},
+				{
+					"caller": "collectFiles",
+					"callee": "entry.isDirectory",
+					"lineNumber": 280
+				},
+				{
+					"caller": "collectFiles",
+					"callee": "files.push",
+					"lineNumber": 281
+				},
+				{
+					"caller": "collectFiles",
+					"callee": "collectFiles",
+					"lineNumber": 281
+				},
+				{
+					"caller": "collectFiles",
+					"callee": "files.push",
+					"lineNumber": 284
+				},
+				{
+					"caller": "validateNativeModulesPrepared",
+					"callee": "join",
+					"lineNumber": 343
+				},
+				{
+					"caller": "validateNativeModulesPrepared",
+					"callee": "assertExists",
+					"lineNumber": 344
+				},
+				{
+					"caller": "validateNativeModulesPrepared",
+					"callee": "assertExists",
+					"lineNumber": 360
+				},
+				{
+					"caller": "validateNativeModulesPrepared",
+					"callee": "join",
+					"lineNumber": 361
+				},
+				{
+					"caller": "validateNativeModulesPrepared",
+					"callee": "join",
+					"lineNumber": 367
+				},
+				{
+					"caller": "validateNativeModulesPrepared",
+					"callee": "assertExists",
+					"lineNumber": 368
+				},
+				{
+					"caller": "validateNativeModulesPrepared",
+					"callee": "lstatSync(modulePath).isSymbolicLink",
+					"lineNumber": 372
+				},
+				{
+					"caller": "validateNativeModulesPrepared",
+					"callee": "lstatSync",
+					"lineNumber": 372
+				},
+				{
+					"caller": "validateNativeModulesPrepared",
+					"callee": "fail",
+					"lineNumber": 373
+				},
+				{
+					"caller": "validateNativeModulesPrepared",
+					"callee": "[\n\t\t\t\t\t\"Required materialized runtime dependency is still a symlink.\",\n\t\t\t\t\t`Dependency: ${moduleName}`,\n\t\t\t\t\t`Path: ${modulePath}`,\n\t\t\t\t\t\"Run `bun run copy:native-modules` and ensure Bun store symlinks are replaced with real files.\",\n\t\t\t\t].join",
+					"lineNumber": 374
+				},
+				{
+					"caller": "validateNativeModulesPrepared",
+					"callee": "getPlatformLibsqlCandidates",
+					"lineNumber": 384
+				},
+				{
+					"caller": "validateNativeModulesPrepared",
+					"callee": "console.warn",
+					"lineNumber": 386
+				},
+				{
+					"caller": "validateNativeModulesPrepared",
+					"callee": "platformCandidates.some",
+					"lineNumber": 392
+				},
+				{
+					"caller": "validateNativeModulesPrepared",
+					"callee": "existsSync",
+					"lineNumber": 393
+				},
+				{
+					"caller": "validateNativeModulesPrepared",
+					"callee": "join",
+					"lineNumber": 393
+				},
+				{
+					"caller": "validateNativeModulesPrepared",
+					"callee": "fail",
+					"lineNumber": 396
+				},
+				{
+					"caller": "validateNativeModulesPrepared",
+					"callee": "[\n\t\t\t\t\"Missing platform-specific @libsql package.\",\n\t\t\t\t`Expected one of: ${platformCandidates.join(\", \")}`,\n\t\t\t\t\"Run `bun run copy:native-modules` and ensure optional dependencies are materialized.\",\n\t\t\t].join",
+					"lineNumber": 397
+				},
+				{
+					"caller": "validateNativeModulesPrepared",
+					"callee": "platformCandidates.join",
+					"lineNumber": 399
+				},
+				{
+					"caller": "validateNativeModulesPrepared",
+					"callee": "console.log",
+					"lineNumber": 405
+				},
+				{
+					"caller": "validateNativeModulesPrepared",
+					"callee": "platformCandidates.join",
+					"lineNumber": 406
+				},
+				{
+					"caller": "validateNativeModulesPrepared",
+					"callee": "getPlatformAstGrepCandidates",
+					"lineNumber": 410
+				},
+				{
+					"caller": "validateNativeModulesPrepared",
+					"callee": "astGrepCandidates.some",
+					"lineNumber": 412
+				},
+				{
+					"caller": "validateNativeModulesPrepared",
+					"callee": "existsSync",
+					"lineNumber": 413
+				},
+				{
+					"caller": "validateNativeModulesPrepared",
+					"callee": "join",
+					"lineNumber": 413
+				},
+				{
+					"caller": "validateNativeModulesPrepared",
+					"callee": "fail",
+					"lineNumber": 416
+				},
+				{
+					"caller": "validateNativeModulesPrepared",
+					"callee": "[\n\t\t\t\t\t\"Missing platform-specific @ast-grep/napi package.\",\n\t\t\t\t\t`Expected one of: ${astGrepCandidates.join(\", \")}`,\n\t\t\t\t\t\"Run `bun run copy:native-modules` and ensure optional dependencies are materialized.\",\n\t\t\t\t].join",
+					"lineNumber": 417
+				},
+				{
+					"caller": "validateNativeModulesPrepared",
+					"callee": "astGrepCandidates.join",
+					"lineNumber": 419
+				},
+				{
+					"caller": "validateNativeModulesPrepared",
+					"callee": "console.log",
+					"lineNumber": 424
+				},
+				{
+					"caller": "validateNativeModulesPrepared",
+					"callee": "astGrepCandidates.join",
+					"lineNumber": 425
+				},
+				{
+					"caller": "validateParcelWatcherPrepared",
+					"callee": "join",
+					"lineNumber": 480
+				},
+				{
+					"caller": "validateParcelWatcherPrepared",
+					"callee": "getPlatformParcelWatcherCandidates",
+					"lineNumber": 481
+				},
+				{
+					"caller": "validateParcelWatcherPrepared",
+					"callee": "console.warn",
+					"lineNumber": 483
+				},
+				{
+					"caller": "validateParcelWatcherPrepared",
+					"callee": "platformCandidates.some",
+					"lineNumber": 489
+				},
+				{
+					"caller": "validateParcelWatcherPrepared",
+					"callee": "existsSync",
+					"lineNumber": 490
+				},
+				{
+					"caller": "validateParcelWatcherPrepared",
+					"callee": "join",
+					"lineNumber": 490
+				},
+				{
+					"caller": "validateParcelWatcherPrepared",
+					"callee": "fail",
+					"lineNumber": 493
+				},
+				{
+					"caller": "validateParcelWatcherPrepared",
+					"callee": "[\n\t\t\t\t\"Missing platform-specific @parcel/watcher package.\",\n\t\t\t\t`Expected one of: ${platformCandidates.join(\", \")}`,\n\t\t\t\t\"Run `bun run copy:native-modules` and ensure optional dependencies are materialized.\",\n\t\t\t].join",
+					"lineNumber": 494
+				},
+				{
+					"caller": "validateParcelWatcherPrepared",
+					"callee": "platformCandidates.join",
+					"lineNumber": 496
+				},
+				{
+					"caller": "validateParcelWatcherPrepared",
+					"callee": "console.log",
+					"lineNumber": 502
+				},
+				{
+					"caller": "validateParcelWatcherPrepared",
+					"callee": "platformCandidates.join",
+					"lineNumber": 503
+				},
+				{
+					"caller": "validateDuckdbPrepared",
+					"callee": "join",
+					"lineNumber": 508
+				},
+				{
+					"caller": "validateDuckdbPrepared",
+					"callee": "existsSync",
+					"lineNumber": 513
+				},
+				{
+					"caller": "validateDuckdbPrepared",
+					"callee": "join",
+					"lineNumber": 513
+				},
+				{
+					"caller": "validateDuckdbPrepared",
+					"callee": "fail",
+					"lineNumber": 514
+				},
+				{
+					"caller": "validateDuckdbPrepared",
+					"callee": "[\n\t\t\t\t\"Missing platform-specific @duckdb/node-bindings package.\",\n\t\t\t\t`Expected: ${bindingPackage}/duckdb.node`,\n\t\t\t\t\"Run `bun run copy:native-modules` and ensure optional dependencies are materialized.\",\n\t\t\t].join",
+					"lineNumber": 515
+				},
+				{
+					"caller": "validateDuckdbPrepared",
+					"callee": "console.log",
+					"lineNumber": 523
+				},
+				{
+					"caller": "main",
+					"callee": "validateWorkspacePackagesBundled",
+					"lineNumber": 529
+				},
+				{
+					"caller": "main",
+					"callee": "validateOnlyExpectedExternalRequires",
+					"lineNumber": 530
+				},
+				{
+					"caller": "main",
+					"callee": "validateLibsqlNotBundled",
+					"lineNumber": 531
+				},
+				{
+					"caller": "main",
+					"callee": "validateParcelWatcherNotBundled",
+					"lineNumber": 532
+				},
+				{
+					"caller": "main",
+					"callee": "validateNativeModulesPrepared",
+					"lineNumber": 533
+				},
+				{
+					"caller": "main",
+					"callee": "validateParcelWatcherPrepared",
+					"lineNumber": 534
+				},
+				{
+					"caller": "main",
+					"callee": "validateDuckdbPrepared",
+					"lineNumber": 535
+				},
+				{
+					"caller": "main",
+					"callee": "console.log",
+					"lineNumber": 536
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 0,
+				"functionCount": 17,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "apps/desktop/vite/helpers.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 98,
+			"nonEmptyLines": 90,
+			"functions": [
+				{
+					"name": "copyDir",
+					"startLine": 9,
+					"endLine": 17,
+					"params": ["{ src, dest }"]
+				},
+				{
+					"name": "defineEnv",
+					"startLine": 19,
+					"endLine": 24,
+					"params": ["value", "fallback"]
+				},
+				{
+					"name": "copyResourcesPlugin",
+					"startLine": 58,
+					"endLine": 67,
+					"params": []
+				},
+				{
+					"name": "htmlEnvTransformPlugin",
+					"startLine": 72,
+					"endLine": 98,
+					"params": []
+				}
+			],
+			"exports": [
+				{
+					"name": "devPath",
+					"line": 7,
+					"isDefault": false
+				},
+				{
+					"name": "defineEnv",
+					"line": 19,
+					"isDefault": false
+				},
+				{
+					"name": "copyResourcesPlugin",
+					"line": 58,
+					"isDefault": false
+				},
+				{
+					"name": "htmlEnvTransformPlugin",
+					"line": 72,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "copyDir",
+					"callee": "existsSync",
+					"lineNumber": 10
+				},
+				{
+					"caller": "copyDir",
+					"callee": "existsSync",
+					"lineNumber": 12
+				},
+				{
+					"caller": "copyDir",
+					"callee": "rmSync",
+					"lineNumber": 13
+				},
+				{
+					"caller": "copyDir",
+					"callee": "mkdirSync",
+					"lineNumber": 15
+				},
+				{
+					"caller": "copyDir",
+					"callee": "cpSync",
+					"lineNumber": 16
+				},
+				{
+					"caller": "defineEnv",
+					"callee": "JSON.stringify",
+					"lineNumber": 23
+				},
+				{
+					"caller": "writeBundle",
+					"callee": "copyDir",
+					"lineNumber": 63
+				},
+				{
+					"caller": "transformIndexHtml",
+					"callee": "html\n\t\t\t\t.replace(\n\t\t\t\t\t/%NEXT_PUBLIC_API_URL%/g,\n\t\t\t\t\tprocess.env.NEXT_PUBLIC_API_URL || \"https://api.superset.sh\",\n\t\t\t\t)\n\t\t\t\t.replace(\n\t\t\t\t\t/%NEXT_PUBLIC_ELECTRIC_URL%/g,\n\t\t\t\t\tnew URL(\n\t\t\t\t\t\tprocess.env.NEXT_PUBLIC_ELECTRIC_URL ||\n\t\t\t\t\t\t\t\"https://electric-proxy.avi-6ac.workers.dev\",\n\t\t\t\t\t).origin,\n\t\t\t\t)\n\t\t\t\t.replace(\n\t\t\t\t\t/%NEXT_PUBLIC_STREAMS_URL%/g,\n\t\t\t\t\tprocess.env.NEXT_PUBLIC_STREAMS_URL || \"https://streams.superset.sh\",\n\t\t\t\t)\n\t\t\t\t.replace",
+					"lineNumber": 76
+				},
+				{
+					"caller": "transformIndexHtml",
+					"callee": "html\n\t\t\t\t.replace(\n\t\t\t\t\t/%NEXT_PUBLIC_API_URL%/g,\n\t\t\t\t\tprocess.env.NEXT_PUBLIC_API_URL || \"https://api.superset.sh\",\n\t\t\t\t)\n\t\t\t\t.replace(\n\t\t\t\t\t/%NEXT_PUBLIC_ELECTRIC_URL%/g,\n\t\t\t\t\tnew URL(\n\t\t\t\t\t\tprocess.env.NEXT_PUBLIC_ELECTRIC_URL ||\n\t\t\t\t\t\t\t\"https://electric-proxy.avi-6ac.workers.dev\",\n\t\t\t\t\t).origin,\n\t\t\t\t)\n\t\t\t\t.replace",
+					"lineNumber": 76
+				},
+				{
+					"caller": "transformIndexHtml",
+					"callee": "html\n\t\t\t\t.replace(\n\t\t\t\t\t/%NEXT_PUBLIC_API_URL%/g,\n\t\t\t\t\tprocess.env.NEXT_PUBLIC_API_URL || \"https://api.superset.sh\",\n\t\t\t\t)\n\t\t\t\t.replace",
+					"lineNumber": 76
+				},
+				{
+					"caller": "transformIndexHtml",
+					"callee": "html\n\t\t\t\t.replace",
+					"lineNumber": 76
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 4,
+				"functionCount": 4,
+				"classCount": 0
+			}
+		}
+	]
+}

@@ -1,0 +1,2664 @@
+{
+	"batchIndex": 41,
+	"totalBatches": 117,
+	"nodes": [
+		{
+			"id": "file:src/renderer/hooks/useSignOut/useSignOut.ts",
+			"type": "file",
+			"path": "src/renderer/hooks/useSignOut/useSignOut.ts",
+			"language": "typescript",
+			"totalLines": 20,
+			"nonEmptyLines": 17,
+			"functionCount": 1,
+			"classCount": 0,
+			"exportCount": 3,
+			"importCount": 3
+		},
+		{
+			"id": "function:src/renderer/hooks/useSignOut/useSignOut.ts:useSignOut",
+			"type": "function",
+			"name": "useSignOut",
+			"startLine": 8,
+			"endLine": 20,
+			"params": []
+		},
+		{
+			"id": "file:src/renderer/hooks/useVersionCheck/useVersionCheck.ts",
+			"type": "file",
+			"path": "src/renderer/hooks/useVersionCheck/useVersionCheck.ts",
+			"language": "typescript",
+			"totalLines": 88,
+			"nonEmptyLines": 75,
+			"functionCount": 1,
+			"classCount": 0,
+			"exportCount": 1,
+			"importCount": 1
+		},
+		{
+			"id": "function:src/renderer/hooks/useVersionCheck/useVersionCheck.ts:useVersionCheck",
+			"type": "function",
+			"name": "useVersionCheck",
+			"startLine": 17,
+			"endLine": 88,
+			"params": []
+		},
+		{
+			"id": "file:src/renderer/index.tsx",
+			"type": "file",
+			"path": "src/renderer/index.tsx",
+			"language": "typescript",
+			"totalLines": 83,
+			"nonEmptyLines": 73,
+			"functionCount": 1,
+			"classCount": 0,
+			"exportCount": 0,
+			"importCount": 9
+		},
+		{
+			"id": "function:src/renderer/index.tsx:handleDeepLink",
+			"type": "function",
+			"name": "handleDeepLink",
+			"startLine": 43,
+			"endLine": 46,
+			"params": ["path"]
+		},
+		{
+			"id": "file:src/renderer/lib/analytics/index.ts",
+			"type": "file",
+			"path": "src/renderer/lib/analytics/index.ts",
+			"language": "typescript",
+			"totalLines": 8,
+			"nonEmptyLines": 7,
+			"functionCount": 1,
+			"classCount": 0,
+			"exportCount": 1,
+			"importCount": 1
+		},
+		{
+			"id": "function:src/renderer/lib/analytics/index.ts:track",
+			"type": "function",
+			"name": "track",
+			"startLine": 3,
+			"endLine": 8,
+			"params": ["event", "properties"]
+		},
+		{
+			"id": "file:src/renderer/lib/api-trpc-client.ts",
+			"type": "file",
+			"path": "src/renderer/lib/api-trpc-client.ts",
+			"language": "typescript",
+			"totalLines": 28,
+			"nonEmptyLines": 27,
+			"functionCount": 0,
+			"classCount": 0,
+			"exportCount": 1,
+			"importCount": 2
+		},
+		{
+			"id": "file:src/renderer/lib/auth-client.ts",
+			"type": "file",
+			"path": "src/renderer/lib/auth-client.ts",
+			"language": "typescript",
+			"totalLines": 127,
+			"nonEmptyLines": 117,
+			"functionCount": 6,
+			"classCount": 0,
+			"exportCount": 6,
+			"importCount": 2
+		},
+		{
+			"id": "function:src/renderer/lib/auth-client.ts:setAuthToken",
+			"type": "function",
+			"name": "setAuthToken",
+			"startLine": 15,
+			"endLine": 17,
+			"params": ["token"]
+		},
+		{
+			"id": "function:src/renderer/lib/auth-client.ts:getAuthToken",
+			"type": "function",
+			"name": "getAuthToken",
+			"startLine": 19,
+			"endLine": 21,
+			"params": []
+		},
+		{
+			"id": "function:src/renderer/lib/auth-client.ts:setJwt",
+			"type": "function",
+			"name": "setJwt",
+			"startLine": 32,
+			"endLine": 36,
+			"params": ["token"]
+		},
+		{
+			"id": "function:src/renderer/lib/auth-client.ts:jwtIsFresh",
+			"type": "function",
+			"name": "jwtIsFresh",
+			"startLine": 38,
+			"endLine": 42,
+			"params": []
+		},
+		{
+			"id": "function:src/renderer/lib/auth-client.ts:getJwt",
+			"type": "function",
+			"name": "getJwt",
+			"startLine": 44,
+			"endLine": 51,
+			"params": []
+		},
+		{
+			"id": "function:src/renderer/lib/auth-client.ts:ensureFreshJwt",
+			"type": "function",
+			"name": "ensureFreshJwt",
+			"startLine": 58,
+			"endLine": 86,
+			"params": []
+		},
+		{
+			"id": "file:src/renderer/lib/boot-errors.ts",
+			"type": "file",
+			"path": "src/renderer/lib/boot-errors.ts",
+			"language": "typescript",
+			"totalLines": 99,
+			"nonEmptyLines": 84,
+			"functionCount": 8,
+			"classCount": 0,
+			"exportCount": 5,
+			"importCount": 0
+		},
+		{
+			"id": "function:src/renderer/lib/boot-errors.ts:renderBootError",
+			"type": "function",
+			"name": "renderBootError",
+			"startLine": 6,
+			"endLine": 62,
+			"params": ["message", "error"]
+		},
+		{
+			"id": "function:src/renderer/lib/boot-errors.ts:reportBootError",
+			"type": "function",
+			"name": "reportBootError",
+			"startLine": 64,
+			"endLine": 68,
+			"params": ["message", "error"]
+		},
+		{
+			"id": "function:src/renderer/lib/boot-errors.ts:handleGlobalError",
+			"type": "function",
+			"name": "handleGlobalError",
+			"startLine": 70,
+			"endLine": 73,
+			"params": ["event"]
+		},
+		{
+			"id": "function:src/renderer/lib/boot-errors.ts:handleUnhandledRejection",
+			"type": "function",
+			"name": "handleUnhandledRejection",
+			"startLine": 75,
+			"endLine": 78,
+			"params": ["event"]
+		},
+		{
+			"id": "function:src/renderer/lib/boot-errors.ts:initBootErrorHandling",
+			"type": "function",
+			"name": "initBootErrorHandling",
+			"startLine": 80,
+			"endLine": 86,
+			"params": ["root"]
+		},
+		{
+			"id": "function:src/renderer/lib/boot-errors.ts:cleanupBootErrorHandling",
+			"type": "function",
+			"name": "cleanupBootErrorHandling",
+			"startLine": 88,
+			"endLine": 93,
+			"params": []
+		},
+		{
+			"id": "function:src/renderer/lib/boot-errors.ts:markBootMounted",
+			"type": "function",
+			"name": "markBootMounted",
+			"startLine": 95,
+			"endLine": 97,
+			"params": []
+		},
+		{
+			"id": "function:src/renderer/lib/boot-errors.ts:isBootErrorReported",
+			"type": "function",
+			"name": "isBootErrorReported",
+			"startLine": 99,
+			"endLine": 99,
+			"params": []
+		},
+		{
+			"id": "file:src/renderer/lib/dev-chat.test.ts",
+			"type": "file",
+			"path": "src/renderer/lib/dev-chat.test.ts",
+			"language": "typescript",
+			"totalLines": 43,
+			"nonEmptyLines": 39,
+			"functionCount": 0,
+			"classCount": 0,
+			"exportCount": 0,
+			"importCount": 1
+		},
+		{
+			"id": "file:src/renderer/lib/dev-chat.ts",
+			"type": "file",
+			"path": "src/renderer/lib/dev-chat.ts",
+			"language": "typescript",
+			"totalLines": 79,
+			"nonEmptyLines": 74,
+			"functionCount": 4,
+			"classCount": 0,
+			"exportCount": 5,
+			"importCount": 3
+		},
+		{
+			"id": "function:src/renderer/lib/dev-chat.ts:isDesktopChatDevMode",
+			"type": "function",
+			"name": "isDesktopChatDevMode",
+			"startLine": 48,
+			"endLine": 52,
+			"params": ["skipEnvValidation"]
+		},
+		{
+			"id": "function:src/renderer/lib/dev-chat.ts:resolveDesktopChatOrganizationId",
+			"type": "function",
+			"name": "resolveDesktopChatOrganizationId",
+			"startLine": 54,
+			"endLine": 60,
+			"params": ["activeOrganizationId", "skipEnvValidation"]
+		},
+		{
+			"id": "function:src/renderer/lib/dev-chat.ts:isDesktopChatSessionReady",
+			"type": "function",
+			"name": "isDesktopChatSessionReady",
+			"startLine": 62,
+			"endLine": 73,
+			"params": [
+				"{\n\tsessionId,\n\thasPersistedSession,\n\tskipEnvValidation = env.SKIP_ENV_VALIDATION,\n}"
+			]
+		},
+		{
+			"id": "function:src/renderer/lib/dev-chat.ts:getDesktopChatModelOptions",
+			"type": "function",
+			"name": "getDesktopChatModelOptions",
+			"startLine": 75,
+			"endLine": 79,
+			"params": ["skipEnvValidation"]
+		},
+		{
+			"id": "file:src/renderer/lib/dnd.ts",
+			"type": "file",
+			"path": "src/renderer/lib/dnd.ts",
+			"language": "typescript",
+			"totalLines": 5,
+			"nonEmptyLines": 4,
+			"functionCount": 0,
+			"classCount": 0,
+			"exportCount": 1,
+			"importCount": 0
+		},
+		{
+			"id": "file:src/renderer/lib/jwt-expiry.test.ts",
+			"type": "file",
+			"path": "src/renderer/lib/jwt-expiry.test.ts",
+			"language": "typescript",
+			"totalLines": 28,
+			"nonEmptyLines": 24,
+			"functionCount": 1,
+			"classCount": 0,
+			"exportCount": 0,
+			"importCount": 1
+		},
+		{
+			"id": "function:src/renderer/lib/jwt-expiry.test.ts:makeJwt",
+			"type": "function",
+			"name": "makeJwt",
+			"startLine": 4,
+			"endLine": 11,
+			"params": ["payload"]
+		},
+		{
+			"id": "file:src/renderer/lib/jwt-expiry.ts",
+			"type": "file",
+			"path": "src/renderer/lib/jwt-expiry.ts",
+			"language": "typescript",
+			"totalLines": 13,
+			"nonEmptyLines": 13,
+			"functionCount": 1,
+			"classCount": 0,
+			"exportCount": 1,
+			"importCount": 0
+		},
+		{
+			"id": "function:src/renderer/lib/jwt-expiry.ts:decodeJwtExpiresAtMs",
+			"type": "function",
+			"name": "decodeJwtExpiresAtMs",
+			"startLine": 2,
+			"endLine": 13,
+			"params": ["token"]
+		},
+		{
+			"id": "file:src/renderer/lib/jwt-refresh/jwt-refresh.test.ts",
+			"type": "file",
+			"path": "src/renderer/lib/jwt-refresh/jwt-refresh.test.ts",
+			"language": "typescript",
+			"totalLines": 96,
+			"nonEmptyLines": 87,
+			"functionCount": 1,
+			"classCount": 0,
+			"exportCount": 0,
+			"importCount": 1
+		},
+		{
+			"id": "function:src/renderer/lib/jwt-refresh/jwt-refresh.test.ts:state",
+			"type": "function",
+			"name": "state",
+			"startLine": 12,
+			"endLine": 17,
+			"params": ["over"]
+		},
+		{
+			"id": "file:src/renderer/lib/jwt-refresh/jwt-refresh.ts",
+			"type": "file",
+			"path": "src/renderer/lib/jwt-refresh/jwt-refresh.ts",
+			"language": "typescript",
+			"totalLines": 111,
+			"nonEmptyLines": 104,
+			"functionCount": 3,
+			"classCount": 0,
+			"exportCount": 7,
+			"importCount": 1
+		},
+		{
+			"id": "function:src/renderer/lib/jwt-refresh/jwt-refresh.ts:shouldAttemptJwtRefresh",
+			"type": "function",
+			"name": "shouldAttemptJwtRefresh",
+			"startLine": 37,
+			"endLine": 54,
+			"params": ["state", "now"]
+		},
+		{
+			"id": "function:src/renderer/lib/jwt-refresh/jwt-refresh.ts:applyJwtRefreshResult",
+			"type": "function",
+			"name": "applyJwtRefreshResult",
+			"startLine": 57,
+			"endLine": 66,
+			"params": ["state", "succeeded"]
+		},
+		{
+			"id": "function:src/renderer/lib/jwt-refresh/jwt-refresh.ts:refreshJwtAfterUnauthorized",
+			"type": "function",
+			"name": "refreshJwtAfterUnauthorized",
+			"startLine": 85,
+			"endLine": 111,
+			"params": ["now"]
+		},
+		{
+			"id": "file:src/renderer/lib/persistent-hash-history/index.ts",
+			"type": "file",
+			"path": "src/renderer/lib/persistent-hash-history/index.ts",
+			"language": "typescript",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"functionCount": 0,
+			"classCount": 0,
+			"exportCount": 1,
+			"importCount": 0
+		},
+		{
+			"id": "file:src/renderer/lib/posthog.ts",
+			"type": "file",
+			"path": "src/renderer/lib/posthog.ts",
+			"language": "typescript",
+			"totalLines": 49,
+			"nonEmptyLines": 45,
+			"functionCount": 1,
+			"classCount": 0,
+			"exportCount": 2,
+			"importCount": 1
+		},
+		{
+			"id": "function:src/renderer/lib/posthog.ts:initPostHog",
+			"type": "function",
+			"name": "initPostHog",
+			"startLine": 9,
+			"endLine": 49,
+			"params": []
+		},
+		{
+			"id": "file:src/renderer/lib/sentry.ts",
+			"type": "file",
+			"path": "src/renderer/lib/sentry.ts",
+			"language": "typescript",
+			"totalLines": 27,
+			"nonEmptyLines": 21,
+			"functionCount": 1,
+			"classCount": 0,
+			"exportCount": 1,
+			"importCount": 1
+		},
+		{
+			"id": "function:src/renderer/lib/sentry.ts:initSentry",
+			"type": "function",
+			"name": "initSentry",
+			"startLine": 5,
+			"endLine": 27,
+			"params": []
+		},
+		{
+			"id": "file:src/renderer/providers/AuthProvider/AuthProvider.tsx",
+			"type": "file",
+			"path": "src/renderer/providers/AuthProvider/AuthProvider.tsx",
+			"language": "typescript",
+			"totalLines": 117,
+			"nonEmptyLines": 105,
+			"functionCount": 1,
+			"classCount": 0,
+			"exportCount": 1,
+			"importCount": 3
+		},
+		{
+			"id": "function:src/renderer/providers/AuthProvider/AuthProvider.tsx:AuthProvider",
+			"type": "function",
+			"name": "AuthProvider",
+			"startLine": 6,
+			"endLine": 117,
+			"params": ["{ children }"]
+		},
+		{
+			"id": "file:src/renderer/providers/AuthProvider/index.ts",
+			"type": "file",
+			"path": "src/renderer/providers/AuthProvider/index.ts",
+			"language": "typescript",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"functionCount": 0,
+			"classCount": 0,
+			"exportCount": 1,
+			"importCount": 0
+		},
+		{
+			"id": "file:src/renderer/providers/ElectronTRPCProvider/index.ts",
+			"type": "file",
+			"path": "src/renderer/providers/ElectronTRPCProvider/index.ts",
+			"language": "typescript",
+			"totalLines": 4,
+			"nonEmptyLines": 4,
+			"functionCount": 0,
+			"classCount": 0,
+			"exportCount": 2,
+			"importCount": 0
+		},
+		{
+			"id": "file:src/renderer/providers/PostHogProvider/PostHogProvider.tsx",
+			"type": "file",
+			"path": "src/renderer/providers/PostHogProvider/PostHogProvider.tsx",
+			"language": "typescript",
+			"totalLines": 30,
+			"nonEmptyLines": 25,
+			"functionCount": 1,
+			"classCount": 0,
+			"exportCount": 1,
+			"importCount": 2
+		},
+		{
+			"id": "function:src/renderer/providers/PostHogProvider/PostHogProvider.tsx:PostHogProvider",
+			"type": "function",
+			"name": "PostHogProvider",
+			"startLine": 11,
+			"endLine": 30,
+			"params": ["{ children }"]
+		},
+		{
+			"id": "file:src/renderer/providers/PostHogProvider/index.ts",
+			"type": "file",
+			"path": "src/renderer/providers/PostHogProvider/index.ts",
+			"language": "typescript",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"functionCount": 0,
+			"classCount": 0,
+			"exportCount": 1,
+			"importCount": 0
+		},
+		{
+			"id": "file:src/renderer/react-query/projects/InitGitDialog.tsx",
+			"type": "file",
+			"path": "src/renderer/react-query/projects/InitGitDialog.tsx",
+			"language": "typescript",
+			"totalLines": 75,
+			"nonEmptyLines": 72,
+			"functionCount": 1,
+			"classCount": 0,
+			"exportCount": 1,
+			"importCount": 1
+		},
+		{
+			"id": "function:src/renderer/react-query/projects/InitGitDialog.tsx:InitGitDialog",
+			"type": "function",
+			"name": "InitGitDialog",
+			"startLine": 12,
+			"endLine": 75,
+			"params": []
+		},
+		{
+			"id": "file:src/renderer/react-query/workspaces/useUpdateWorkspace.ts",
+			"type": "file",
+			"path": "src/renderer/react-query/workspaces/useUpdateWorkspace.ts",
+			"language": "typescript",
+			"totalLines": 22,
+			"nonEmptyLines": 19,
+			"functionCount": 1,
+			"classCount": 0,
+			"exportCount": 1,
+			"importCount": 1
+		},
+		{
+			"id": "function:src/renderer/react-query/workspaces/useUpdateWorkspace.ts:useUpdateWorkspace",
+			"type": "function",
+			"name": "useUpdateWorkspace",
+			"startLine": 7,
+			"endLine": 22,
+			"params": ["options"]
+		},
+		{
+			"id": "file:src/renderer/routes/-layout.tsx",
+			"type": "file",
+			"path": "src/renderer/routes/-layout.tsx",
+			"language": "typescript",
+			"totalLines": 26,
+			"nonEmptyLines": 25,
+			"functionCount": 1,
+			"classCount": 0,
+			"exportCount": 1,
+			"importCount": 7
+		},
+		{
+			"id": "function:src/renderer/routes/-layout.tsx:RootLayout",
+			"type": "function",
+			"name": "RootLayout",
+			"startLine": 11,
+			"endLine": 26,
+			"params": ["{ children }"]
+		},
+		{
+			"id": "file:src/renderer/routes/__root.tsx",
+			"type": "file",
+			"path": "src/renderer/routes/__root.tsx",
+			"language": "typescript",
+			"totalLines": 23,
+			"nonEmptyLines": 20,
+			"functionCount": 1,
+			"classCount": 0,
+			"exportCount": 1,
+			"importCount": 3
+		},
+		{
+			"id": "function:src/renderer/routes/__root.tsx:RootComponent",
+			"type": "function",
+			"name": "RootComponent",
+			"startLine": 17,
+			"endLine": 23,
+			"params": []
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarHelpMenu/components/SubmitPromptDialog/SubmitPromptDialog.tsx",
+			"type": "file",
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarHelpMenu/components/SubmitPromptDialog/SubmitPromptDialog.tsx",
+			"language": "typescript",
+			"totalLines": 119,
+			"nonEmptyLines": 111,
+			"functionCount": 1,
+			"classCount": 0,
+			"exportCount": 1,
+			"importCount": 1
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarHelpMenu/components/SubmitPromptDialog/SubmitPromptDialog.tsx:SubmitPromptDialog",
+			"type": "function",
+			"name": "SubmitPromptDialog",
+			"startLine": 22,
+			"endLine": 119,
+			"params": ["{\n\topen,\n\tonOpenChange,\n}"]
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/components/NavigationControls/components/HistoryDropdown/hooks/useRecentlyViewed/useRecentlyViewed.ts",
+			"type": "file",
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/NavigationControls/components/HistoryDropdown/hooks/useRecentlyViewed/useRecentlyViewed.ts",
+			"language": "typescript",
+			"totalLines": 88,
+			"nonEmptyLines": 78,
+			"functionCount": 3,
+			"classCount": 0,
+			"exportCount": 1,
+			"importCount": 1
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/components/NavigationControls/components/HistoryDropdown/hooks/useRecentlyViewed/useRecentlyViewed.ts:pathnameOf",
+			"type": "function",
+			"name": "pathnameOf",
+			"startLine": 12,
+			"endLine": 17,
+			"params": ["href"]
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/components/NavigationControls/components/HistoryDropdown/hooks/useRecentlyViewed/useRecentlyViewed.ts:parseResourceEntry",
+			"type": "function",
+			"name": "parseResourceEntry",
+			"startLine": 19,
+			"endLine": 58,
+			"params": ["entry"]
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/components/NavigationControls/components/HistoryDropdown/hooks/useRecentlyViewed/useRecentlyViewed.ts:useRecentlyViewed",
+			"type": "function",
+			"name": "useRecentlyViewed",
+			"startLine": 60,
+			"endLine": 88,
+			"params": ["limit"]
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/components/TopBar/components/OrganizationDropdown/OrganizationDropdown.tsx",
+			"type": "file",
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/TopBar/components/OrganizationDropdown/OrganizationDropdown.tsx",
+			"language": "typescript",
+			"totalLines": 202,
+			"nonEmptyLines": 189,
+			"functionCount": 1,
+			"classCount": 0,
+			"exportCount": 1,
+			"importCount": 5
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/components/TopBar/components/OrganizationDropdown/OrganizationDropdown.tsx:OrganizationDropdown",
+			"type": "function",
+			"name": "OrganizationDropdown",
+			"startLine": 30,
+			"endLine": 202,
+			"params": ["{\n\tvariant = \"topbar\",\n}"]
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/hooks/useFailedAutomations/useFailedAutomations.ts",
+			"type": "file",
+			"path": "src/renderer/routes/_authenticated/_dashboard/hooks/useFailedAutomations/useFailedAutomations.ts",
+			"language": "typescript",
+			"totalLines": 71,
+			"nonEmptyLines": 66,
+			"functionCount": 1,
+			"classCount": 0,
+			"exportCount": 1,
+			"importCount": 2
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/hooks/useFailedAutomations/useFailedAutomations.ts:useFailedAutomations",
+			"type": "function",
+			"name": "useFailedAutomations",
+			"startLine": 21,
+			"endLine": 71,
+			"params": []
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/utils/uploadFiles/uploadFiles.ts",
+			"type": "file",
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/utils/uploadFiles/uploadFiles.ts",
+			"language": "typescript",
+			"totalLines": 81,
+			"nonEmptyLines": 73,
+			"functionCount": 4,
+			"classCount": 0,
+			"exportCount": 1,
+			"importCount": 2
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/utils/uploadFiles/uploadFiles.ts:getHttpErrorDetail",
+			"type": "function",
+			"name": "getHttpErrorDetail",
+			"startLine": 5,
+			"endLine": 13,
+			"params": ["response"]
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/utils/uploadFiles/uploadFiles.ts:blobToDataUrl",
+			"type": "function",
+			"name": "blobToDataUrl",
+			"startLine": 15,
+			"endLine": 31,
+			"params": ["blob"]
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/utils/uploadFiles/uploadFiles.ts:uploadFile",
+			"type": "function",
+			"name": "uploadFile",
+			"startLine": 33,
+			"endLine": 72,
+			"params": ["sessionId", "file", "signal"]
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/utils/uploadFiles/uploadFiles.ts:uploadFiles",
+			"type": "function",
+			"name": "uploadFiles",
+			"startLine": 74,
+			"endLine": 81,
+			"params": ["sessionId", "files", "signal"]
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/hooks/useWorkspaceChatController/useWorkspaceChatController.ts",
+			"type": "file",
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/hooks/useWorkspaceChatController/useWorkspaceChatController.ts",
+			"language": "typescript",
+			"totalLines": 189,
+			"nonEmptyLines": 173,
+			"functionCount": 3,
+			"classCount": 0,
+			"exportCount": 1,
+			"importCount": 6
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/hooks/useWorkspaceChatController/useWorkspaceChatController.ts:toSessionSelectorItem",
+			"type": "function",
+			"name": "toSessionSelectorItem",
+			"startLine": 21,
+			"endLine": 39,
+			"params": ["session"]
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/hooks/useWorkspaceChatController/useWorkspaceChatController.ts:createSessionRecord",
+			"type": "function",
+			"name": "createSessionRecord",
+			"startLine": 41,
+			"endLine": 50,
+			"params": ["input"]
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/hooks/useWorkspaceChatController/useWorkspaceChatController.ts:useWorkspaceChatController",
+			"type": "function",
+			"name": "useWorkspaceChatController",
+			"startLine": 52,
+			"endLine": 189,
+			"params": ["{\n\tsessionId,\n\tonSessionIdChange,\n\tworkspaceId,\n}"]
+		}
+	],
+	"edges": [
+		{
+			"from": "file:src/renderer/hooks/useSignOut/useSignOut.ts",
+			"to": "function:src/renderer/hooks/useSignOut/useSignOut.ts:useSignOut",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"from": "file:src/renderer/hooks/useSignOut/useSignOut.ts",
+			"to": "function:src/renderer/hooks/useSignOut/useSignOut.ts:useSignOut",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"from": "file:src/renderer/hooks/useVersionCheck/useVersionCheck.ts",
+			"to": "function:src/renderer/hooks/useVersionCheck/useVersionCheck.ts:useVersionCheck",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"from": "file:src/renderer/hooks/useVersionCheck/useVersionCheck.ts",
+			"to": "function:src/renderer/hooks/useVersionCheck/useVersionCheck.ts:useVersionCheck",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"from": "file:src/renderer/index.tsx",
+			"to": "function:src/renderer/index.tsx:handleDeepLink",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"from": "file:src/renderer/lib/analytics/index.ts",
+			"to": "function:src/renderer/lib/analytics/index.ts:track",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"from": "file:src/renderer/lib/analytics/index.ts",
+			"to": "function:src/renderer/lib/analytics/index.ts:track",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"from": "file:src/renderer/lib/auth-client.ts",
+			"to": "function:src/renderer/lib/auth-client.ts:setAuthToken",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"from": "file:src/renderer/lib/auth-client.ts",
+			"to": "function:src/renderer/lib/auth-client.ts:getAuthToken",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"from": "file:src/renderer/lib/auth-client.ts",
+			"to": "function:src/renderer/lib/auth-client.ts:setJwt",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"from": "file:src/renderer/lib/auth-client.ts",
+			"to": "function:src/renderer/lib/auth-client.ts:jwtIsFresh",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"from": "file:src/renderer/lib/auth-client.ts",
+			"to": "function:src/renderer/lib/auth-client.ts:getJwt",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"from": "file:src/renderer/lib/auth-client.ts",
+			"to": "function:src/renderer/lib/auth-client.ts:ensureFreshJwt",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"from": "file:src/renderer/lib/auth-client.ts",
+			"to": "function:src/renderer/lib/auth-client.ts:setAuthToken",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"from": "file:src/renderer/lib/auth-client.ts",
+			"to": "function:src/renderer/lib/auth-client.ts:getAuthToken",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"from": "file:src/renderer/lib/auth-client.ts",
+			"to": "function:src/renderer/lib/auth-client.ts:setJwt",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"from": "file:src/renderer/lib/auth-client.ts",
+			"to": "function:src/renderer/lib/auth-client.ts:getJwt",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"from": "file:src/renderer/lib/auth-client.ts",
+			"to": "function:src/renderer/lib/auth-client.ts:ensureFreshJwt",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"from": "function:src/renderer/lib/auth-client.ts:getJwt",
+			"to": "function:src/renderer/lib/auth-client.ts:jwtIsFresh",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "function:src/renderer/lib/auth-client.ts:getJwt",
+			"to": "function:src/renderer/lib/auth-client.ts:ensureFreshJwt",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "function:src/renderer/lib/auth-client.ts:ensureFreshJwt",
+			"to": "function:src/renderer/lib/auth-client.ts:jwtIsFresh",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "function:src/renderer/lib/auth-client.ts:ensureFreshJwt",
+			"to": "function:src/renderer/lib/auth-client.ts:setJwt",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "file:src/renderer/lib/boot-errors.ts",
+			"to": "function:src/renderer/lib/boot-errors.ts:renderBootError",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"from": "file:src/renderer/lib/boot-errors.ts",
+			"to": "function:src/renderer/lib/boot-errors.ts:reportBootError",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"from": "file:src/renderer/lib/boot-errors.ts",
+			"to": "function:src/renderer/lib/boot-errors.ts:handleGlobalError",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"from": "file:src/renderer/lib/boot-errors.ts",
+			"to": "function:src/renderer/lib/boot-errors.ts:handleUnhandledRejection",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"from": "file:src/renderer/lib/boot-errors.ts",
+			"to": "function:src/renderer/lib/boot-errors.ts:initBootErrorHandling",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"from": "file:src/renderer/lib/boot-errors.ts",
+			"to": "function:src/renderer/lib/boot-errors.ts:cleanupBootErrorHandling",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"from": "file:src/renderer/lib/boot-errors.ts",
+			"to": "function:src/renderer/lib/boot-errors.ts:markBootMounted",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"from": "file:src/renderer/lib/boot-errors.ts",
+			"to": "function:src/renderer/lib/boot-errors.ts:isBootErrorReported",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"from": "file:src/renderer/lib/boot-errors.ts",
+			"to": "function:src/renderer/lib/boot-errors.ts:reportBootError",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"from": "file:src/renderer/lib/boot-errors.ts",
+			"to": "function:src/renderer/lib/boot-errors.ts:initBootErrorHandling",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"from": "file:src/renderer/lib/boot-errors.ts",
+			"to": "function:src/renderer/lib/boot-errors.ts:cleanupBootErrorHandling",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"from": "file:src/renderer/lib/boot-errors.ts",
+			"to": "function:src/renderer/lib/boot-errors.ts:markBootMounted",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"from": "file:src/renderer/lib/boot-errors.ts",
+			"to": "function:src/renderer/lib/boot-errors.ts:isBootErrorReported",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"from": "function:src/renderer/lib/boot-errors.ts:reportBootError",
+			"to": "function:src/renderer/lib/boot-errors.ts:renderBootError",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "function:src/renderer/lib/boot-errors.ts:handleGlobalError",
+			"to": "function:src/renderer/lib/boot-errors.ts:reportBootError",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "function:src/renderer/lib/boot-errors.ts:handleUnhandledRejection",
+			"to": "function:src/renderer/lib/boot-errors.ts:reportBootError",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "file:src/renderer/lib/dev-chat.ts",
+			"to": "function:src/renderer/lib/dev-chat.ts:isDesktopChatDevMode",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"from": "file:src/renderer/lib/dev-chat.ts",
+			"to": "function:src/renderer/lib/dev-chat.ts:resolveDesktopChatOrganizationId",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"from": "file:src/renderer/lib/dev-chat.ts",
+			"to": "function:src/renderer/lib/dev-chat.ts:isDesktopChatSessionReady",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"from": "file:src/renderer/lib/dev-chat.ts",
+			"to": "function:src/renderer/lib/dev-chat.ts:getDesktopChatModelOptions",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"from": "file:src/renderer/lib/dev-chat.ts",
+			"to": "function:src/renderer/lib/dev-chat.ts:isDesktopChatDevMode",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"from": "file:src/renderer/lib/dev-chat.ts",
+			"to": "function:src/renderer/lib/dev-chat.ts:resolveDesktopChatOrganizationId",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"from": "file:src/renderer/lib/dev-chat.ts",
+			"to": "function:src/renderer/lib/dev-chat.ts:isDesktopChatSessionReady",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"from": "file:src/renderer/lib/dev-chat.ts",
+			"to": "function:src/renderer/lib/dev-chat.ts:getDesktopChatModelOptions",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"from": "file:src/renderer/lib/jwt-expiry.test.ts",
+			"to": "function:src/renderer/lib/jwt-expiry.test.ts:makeJwt",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"from": "file:src/renderer/lib/jwt-expiry.ts",
+			"to": "function:src/renderer/lib/jwt-expiry.ts:decodeJwtExpiresAtMs",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"from": "file:src/renderer/lib/jwt-expiry.ts",
+			"to": "function:src/renderer/lib/jwt-expiry.ts:decodeJwtExpiresAtMs",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"from": "file:src/renderer/lib/jwt-refresh/jwt-refresh.test.ts",
+			"to": "function:src/renderer/lib/jwt-refresh/jwt-refresh.test.ts:state",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"from": "file:src/renderer/lib/jwt-refresh/jwt-refresh.ts",
+			"to": "function:src/renderer/lib/jwt-refresh/jwt-refresh.ts:shouldAttemptJwtRefresh",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"from": "file:src/renderer/lib/jwt-refresh/jwt-refresh.ts",
+			"to": "function:src/renderer/lib/jwt-refresh/jwt-refresh.ts:applyJwtRefreshResult",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"from": "file:src/renderer/lib/jwt-refresh/jwt-refresh.ts",
+			"to": "function:src/renderer/lib/jwt-refresh/jwt-refresh.ts:refreshJwtAfterUnauthorized",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"from": "file:src/renderer/lib/jwt-refresh/jwt-refresh.ts",
+			"to": "function:src/renderer/lib/jwt-refresh/jwt-refresh.ts:shouldAttemptJwtRefresh",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"from": "file:src/renderer/lib/jwt-refresh/jwt-refresh.ts",
+			"to": "function:src/renderer/lib/jwt-refresh/jwt-refresh.ts:applyJwtRefreshResult",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"from": "file:src/renderer/lib/jwt-refresh/jwt-refresh.ts",
+			"to": "function:src/renderer/lib/jwt-refresh/jwt-refresh.ts:refreshJwtAfterUnauthorized",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"from": "function:src/renderer/lib/jwt-refresh/jwt-refresh.ts:refreshJwtAfterUnauthorized",
+			"to": "function:src/renderer/lib/jwt-refresh/jwt-refresh.ts:shouldAttemptJwtRefresh",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "function:src/renderer/lib/jwt-refresh/jwt-refresh.ts:refreshJwtAfterUnauthorized",
+			"to": "function:src/renderer/lib/jwt-refresh/jwt-refresh.ts:applyJwtRefreshResult",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "file:src/renderer/lib/posthog.ts",
+			"to": "function:src/renderer/lib/posthog.ts:initPostHog",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"from": "file:src/renderer/lib/posthog.ts",
+			"to": "function:src/renderer/lib/posthog.ts:initPostHog",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"from": "file:src/renderer/lib/sentry.ts",
+			"to": "function:src/renderer/lib/sentry.ts:initSentry",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"from": "file:src/renderer/lib/sentry.ts",
+			"to": "function:src/renderer/lib/sentry.ts:initSentry",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"from": "file:src/renderer/providers/AuthProvider/AuthProvider.tsx",
+			"to": "function:src/renderer/providers/AuthProvider/AuthProvider.tsx:AuthProvider",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"from": "file:src/renderer/providers/AuthProvider/AuthProvider.tsx",
+			"to": "function:src/renderer/providers/AuthProvider/AuthProvider.tsx:AuthProvider",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"from": "file:src/renderer/providers/PostHogProvider/PostHogProvider.tsx",
+			"to": "function:src/renderer/providers/PostHogProvider/PostHogProvider.tsx:PostHogProvider",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"from": "file:src/renderer/providers/PostHogProvider/PostHogProvider.tsx",
+			"to": "function:src/renderer/providers/PostHogProvider/PostHogProvider.tsx:PostHogProvider",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"from": "file:src/renderer/react-query/projects/InitGitDialog.tsx",
+			"to": "function:src/renderer/react-query/projects/InitGitDialog.tsx:InitGitDialog",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"from": "file:src/renderer/react-query/projects/InitGitDialog.tsx",
+			"to": "function:src/renderer/react-query/projects/InitGitDialog.tsx:InitGitDialog",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"from": "file:src/renderer/react-query/workspaces/useUpdateWorkspace.ts",
+			"to": "function:src/renderer/react-query/workspaces/useUpdateWorkspace.ts:useUpdateWorkspace",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"from": "file:src/renderer/react-query/workspaces/useUpdateWorkspace.ts",
+			"to": "function:src/renderer/react-query/workspaces/useUpdateWorkspace.ts:useUpdateWorkspace",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"from": "file:src/renderer/routes/-layout.tsx",
+			"to": "function:src/renderer/routes/-layout.tsx:RootLayout",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"from": "file:src/renderer/routes/-layout.tsx",
+			"to": "function:src/renderer/routes/-layout.tsx:RootLayout",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"from": "file:src/renderer/routes/__root.tsx",
+			"to": "function:src/renderer/routes/__root.tsx:RootComponent",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarHelpMenu/components/SubmitPromptDialog/SubmitPromptDialog.tsx",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarHelpMenu/components/SubmitPromptDialog/SubmitPromptDialog.tsx:SubmitPromptDialog",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarHelpMenu/components/SubmitPromptDialog/SubmitPromptDialog.tsx",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarHelpMenu/components/SubmitPromptDialog/SubmitPromptDialog.tsx:SubmitPromptDialog",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/NavigationControls/components/HistoryDropdown/hooks/useRecentlyViewed/useRecentlyViewed.ts",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/components/NavigationControls/components/HistoryDropdown/hooks/useRecentlyViewed/useRecentlyViewed.ts:pathnameOf",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/NavigationControls/components/HistoryDropdown/hooks/useRecentlyViewed/useRecentlyViewed.ts",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/components/NavigationControls/components/HistoryDropdown/hooks/useRecentlyViewed/useRecentlyViewed.ts:parseResourceEntry",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/NavigationControls/components/HistoryDropdown/hooks/useRecentlyViewed/useRecentlyViewed.ts",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/components/NavigationControls/components/HistoryDropdown/hooks/useRecentlyViewed/useRecentlyViewed.ts:useRecentlyViewed",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/NavigationControls/components/HistoryDropdown/hooks/useRecentlyViewed/useRecentlyViewed.ts",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/components/NavigationControls/components/HistoryDropdown/hooks/useRecentlyViewed/useRecentlyViewed.ts:useRecentlyViewed",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"from": "function:src/renderer/routes/_authenticated/_dashboard/components/NavigationControls/components/HistoryDropdown/hooks/useRecentlyViewed/useRecentlyViewed.ts:parseResourceEntry",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/components/NavigationControls/components/HistoryDropdown/hooks/useRecentlyViewed/useRecentlyViewed.ts:pathnameOf",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "function:src/renderer/routes/_authenticated/_dashboard/components/NavigationControls/components/HistoryDropdown/hooks/useRecentlyViewed/useRecentlyViewed.ts:useRecentlyViewed",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/components/NavigationControls/components/HistoryDropdown/hooks/useRecentlyViewed/useRecentlyViewed.ts:parseResourceEntry",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/TopBar/components/OrganizationDropdown/OrganizationDropdown.tsx",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/components/TopBar/components/OrganizationDropdown/OrganizationDropdown.tsx:OrganizationDropdown",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/TopBar/components/OrganizationDropdown/OrganizationDropdown.tsx",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/components/TopBar/components/OrganizationDropdown/OrganizationDropdown.tsx:OrganizationDropdown",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/hooks/useFailedAutomations/useFailedAutomations.ts",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/hooks/useFailedAutomations/useFailedAutomations.ts:useFailedAutomations",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/hooks/useFailedAutomations/useFailedAutomations.ts",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/hooks/useFailedAutomations/useFailedAutomations.ts:useFailedAutomations",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/utils/uploadFiles/uploadFiles.ts",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/utils/uploadFiles/uploadFiles.ts:getHttpErrorDetail",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/utils/uploadFiles/uploadFiles.ts",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/utils/uploadFiles/uploadFiles.ts:blobToDataUrl",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/utils/uploadFiles/uploadFiles.ts",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/utils/uploadFiles/uploadFiles.ts:uploadFile",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/utils/uploadFiles/uploadFiles.ts",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/utils/uploadFiles/uploadFiles.ts:uploadFiles",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/utils/uploadFiles/uploadFiles.ts",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/utils/uploadFiles/uploadFiles.ts:uploadFiles",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"from": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/utils/uploadFiles/uploadFiles.ts:uploadFile",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/utils/uploadFiles/uploadFiles.ts:getHttpErrorDetail",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/utils/uploadFiles/uploadFiles.ts:uploadFile",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/utils/uploadFiles/uploadFiles.ts:blobToDataUrl",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/utils/uploadFiles/uploadFiles.ts:uploadFiles",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/utils/uploadFiles/uploadFiles.ts:uploadFile",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/hooks/useWorkspaceChatController/useWorkspaceChatController.ts",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/hooks/useWorkspaceChatController/useWorkspaceChatController.ts:toSessionSelectorItem",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/hooks/useWorkspaceChatController/useWorkspaceChatController.ts",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/hooks/useWorkspaceChatController/useWorkspaceChatController.ts:createSessionRecord",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/hooks/useWorkspaceChatController/useWorkspaceChatController.ts",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/hooks/useWorkspaceChatController/useWorkspaceChatController.ts:useWorkspaceChatController",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/hooks/useWorkspaceChatController/useWorkspaceChatController.ts",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/hooks/useWorkspaceChatController/useWorkspaceChatController.ts:useWorkspaceChatController",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"from": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/hooks/useWorkspaceChatController/useWorkspaceChatController.ts:useWorkspaceChatController",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/hooks/useWorkspaceChatController/useWorkspaceChatController.ts:createSessionRecord",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/hooks/useWorkspaceChatController/useWorkspaceChatController.ts:useWorkspaceChatController",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/hooks/useWorkspaceChatController/useWorkspaceChatController.ts:createSessionRecord",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/hooks/useWorkspaceChatController/useWorkspaceChatController.ts:useWorkspaceChatController",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/hooks/useWorkspaceChatController/useWorkspaceChatController.ts:toSessionSelectorItem",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "file:src/renderer/hooks/useSignOut/useSignOut.ts",
+			"to": "file:src/renderer/lib/auth-client.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/hooks/useSignOut/useSignOut.ts",
+			"to": "file:src/renderer/lib/electron-trpc.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/hooks/useSignOut/useSignOut.ts",
+			"to": "file:src/renderer/lib/posthog.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/hooks/useVersionCheck/useVersionCheck.ts",
+			"to": "file:src/renderer/env.renderer.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/index.tsx",
+			"to": "file:src/renderer/components/BootErrorBoundary/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/index.tsx",
+			"to": "file:src/renderer/globals.css",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/index.tsx",
+			"to": "file:src/renderer/lib/boot-errors.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/index.tsx",
+			"to": "file:src/renderer/lib/persistent-hash-history/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/index.tsx",
+			"to": "file:src/renderer/lib/posthog.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/index.tsx",
+			"to": "file:src/renderer/lib/sentry.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/index.tsx",
+			"to": "file:src/renderer/providers/ElectronTRPCProvider/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/index.tsx",
+			"to": "file:src/renderer/routes/not-found.tsx",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/index.tsx",
+			"to": "file:src/renderer/styles/bundled-fonts.css",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/lib/analytics/index.ts",
+			"to": "file:src/renderer/lib/posthog.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/lib/api-trpc-client.ts",
+			"to": "file:src/renderer/env.renderer.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/lib/api-trpc-client.ts",
+			"to": "file:src/renderer/lib/auth-client.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/lib/auth-client.ts",
+			"to": "file:src/renderer/env.renderer.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/lib/auth-client.ts",
+			"to": "file:src/renderer/lib/jwt-expiry.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/lib/dev-chat.test.ts",
+			"to": "file:src/renderer/lib/dev-chat.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/lib/dev-chat.ts",
+			"to": "file:src/renderer/components/Chat/ChatInterface/types.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/lib/dev-chat.ts",
+			"to": "file:src/renderer/env.renderer.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/lib/dev-chat.ts",
+			"to": "file:src/shared/constants.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/lib/jwt-expiry.test.ts",
+			"to": "file:src/renderer/lib/jwt-expiry.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/lib/jwt-refresh/jwt-refresh.test.ts",
+			"to": "file:src/renderer/lib/jwt-refresh/jwt-refresh.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/lib/jwt-refresh/jwt-refresh.ts",
+			"to": "file:src/renderer/lib/auth-client.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/lib/posthog.ts",
+			"to": "file:src/renderer/env.renderer.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/lib/sentry.ts",
+			"to": "file:src/renderer/env.renderer.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/providers/AuthProvider/AuthProvider.tsx",
+			"to": "file:src/renderer/lib/auth-client.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/providers/AuthProvider/AuthProvider.tsx",
+			"to": "file:src/renderer/lib/electron-trpc.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/providers/AuthProvider/AuthProvider.tsx",
+			"to": "file:src/renderer/routes/sign-in/components/SupersetLogo/SupersetLogo.tsx",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/providers/PostHogProvider/PostHogProvider.tsx",
+			"to": "file:src/renderer/lib/analytics/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/providers/PostHogProvider/PostHogProvider.tsx",
+			"to": "file:src/renderer/lib/posthog.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/react-query/projects/InitGitDialog.tsx",
+			"to": "file:src/renderer/stores/git-init-dialog.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/react-query/workspaces/useUpdateWorkspace.ts",
+			"to": "file:src/renderer/lib/electron-trpc.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/routes/-layout.tsx",
+			"to": "file:src/renderer/components/PostHogSurfaceTagger/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/routes/-layout.tsx",
+			"to": "file:src/renderer/components/PostHogUserIdentifier/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/routes/-layout.tsx",
+			"to": "file:src/renderer/components/TelemetrySync/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/routes/-layout.tsx",
+			"to": "file:src/renderer/components/ThemedToaster/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/routes/-layout.tsx",
+			"to": "file:src/renderer/providers/AuthProvider/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/routes/-layout.tsx",
+			"to": "file:src/renderer/providers/ElectronTRPCProvider/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/routes/-layout.tsx",
+			"to": "file:src/renderer/providers/PostHogProvider/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/routes/__root.tsx",
+			"to": "file:src/renderer/routes/-layout.tsx",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/routes/__root.tsx",
+			"to": "file:src/renderer/routes/error.tsx",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/routes/__root.tsx",
+			"to": "file:src/renderer/routes/not-found.tsx",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarHelpMenu/components/SubmitPromptDialog/SubmitPromptDialog.tsx",
+			"to": "file:src/renderer/lib/api-trpc-client.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/NavigationControls/components/HistoryDropdown/hooks/useRecentlyViewed/useRecentlyViewed.ts",
+			"to": "file:src/renderer/lib/persistent-hash-history/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/TopBar/components/OrganizationDropdown/OrganizationDropdown.tsx",
+			"to": "file:src/renderer/components/HotkeyMenuShortcut/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/TopBar/components/OrganizationDropdown/OrganizationDropdown.tsx",
+			"to": "file:src/renderer/hooks/useCurrentPlan.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/TopBar/components/OrganizationDropdown/OrganizationDropdown.tsx",
+			"to": "file:src/renderer/hooks/useSignOut/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/TopBar/components/OrganizationDropdown/OrganizationDropdown.tsx",
+			"to": "file:src/renderer/lib/auth-client.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/TopBar/components/OrganizationDropdown/OrganizationDropdown.tsx",
+			"to": "file:src/renderer/routes/_authenticated/providers/CollectionsProvider/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/hooks/useFailedAutomations/useFailedAutomations.ts",
+			"to": "file:src/renderer/lib/auth-client.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/hooks/useFailedAutomations/useFailedAutomations.ts",
+			"to": "file:src/renderer/routes/_authenticated/providers/CollectionsProvider/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/utils/uploadFiles/uploadFiles.ts",
+			"to": "file:src/renderer/lib/api-trpc-client.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/utils/uploadFiles/uploadFiles.ts",
+			"to": "file:src/renderer/lib/dev-chat.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/hooks/useWorkspaceChatController/useWorkspaceChatController.ts",
+			"to": "file:src/renderer/lib/api-trpc-client.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/hooks/useWorkspaceChatController/useWorkspaceChatController.ts",
+			"to": "file:src/renderer/lib/auth-client.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/hooks/useWorkspaceChatController/useWorkspaceChatController.ts",
+			"to": "file:src/renderer/lib/dev-chat.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/hooks/useWorkspaceChatController/useWorkspaceChatController.ts",
+			"to": "file:src/renderer/lib/posthog.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/hooks/useWorkspaceChatController/useWorkspaceChatController.ts",
+			"to": "file:src/renderer/routes/_authenticated/hooks/useOptimisticCollectionActions/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/hooks/useWorkspaceChatController/useWorkspaceChatController.ts",
+			"to": "file:src/renderer/routes/_authenticated/providers/CollectionsProvider/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/lib/dev-chat.ts",
+			"to": "file:src/renderer/lib/dev-chat.test.ts",
+			"type": "tested_by",
+			"weight": 0.5
+		},
+		{
+			"from": "file:src/renderer/lib/jwt-expiry.ts",
+			"to": "file:src/renderer/lib/jwt-expiry.test.ts",
+			"type": "tested_by",
+			"weight": 0.5
+		},
+		{
+			"from": "file:src/renderer/lib/jwt-refresh/jwt-refresh.ts",
+			"to": "file:src/renderer/lib/jwt-refresh/jwt-refresh.test.ts",
+			"type": "tested_by",
+			"weight": 0.5
+		},
+		{
+			"from": "file:src/renderer/hooks/useSignOut/useSignOut.ts",
+			"to": "file:src/renderer/lib/electron-trpc.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/hooks/useVersionCheck/useVersionCheck.ts",
+			"to": "file:src/renderer/env.renderer.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/index.tsx",
+			"to": "file:src/renderer/components/BootErrorBoundary/index.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/index.tsx",
+			"to": "file:src/renderer/globals.css",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/index.tsx",
+			"to": "file:src/renderer/routes/not-found.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/index.tsx",
+			"to": "file:src/renderer/styles/bundled-fonts.css",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/analytics/index.ts",
+			"to": "file:src/renderer/commandPalette/core/execute.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/analytics/index.ts",
+			"to": "file:src/renderer/commandPalette/core/frames.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/analytics/index.ts",
+			"to": "file:src/renderer/components/Paywall/Paywall.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/analytics/index.ts",
+			"to": "file:src/renderer/components/PostHogUserIdentifier/PostHogUserIdentifier.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/analytics/index.ts",
+			"to": "file:src/renderer/components/V2AvailableBanner/V2AvailableBanner.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/analytics/index.ts",
+			"to": "file:src/renderer/routes/_authenticated/onboarding/components/ProviderConnectModal/ProviderConnectModal.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/analytics/index.ts",
+			"to": "file:src/renderer/routes/_authenticated/onboarding/project/page.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/analytics/index.ts",
+			"to": "file:src/renderer/routes/_authenticated/settings/billing/plans/page.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/analytics/index.ts",
+			"to": "file:src/renderer/routes/_authenticated/settings/experimental/components/ExperimentalSettings/ExperimentalSettings.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/analytics/index.ts",
+			"to": "file:src/renderer/routes/sign-in/page.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/api-trpc-client.ts",
+			"to": "file:src/renderer/env.renderer.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/api-trpc-client.ts",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/automations/$automationId/components/AutomationBody/AutomationBody.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/api-trpc-client.ts",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/automations/$automationId/components/AutomationDetailSidebar/AutomationDetailSidebar.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/api-trpc-client.ts",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/automations/$automationId/components/VersionHistorySheet/VersionHistorySheet.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/api-trpc-client.ts",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/automations/$automationId/page.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/api-trpc-client.ts",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/automations/components/CreateAutomationDialog/CreateAutomationDialog.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/api-trpc-client.ts",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/automations/page.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/api-trpc-client.ts",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/tasks/$taskId/page.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/api-trpc-client.ts",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/components/TasksTopBar/components/CreateTaskDialog/CreateTaskDialog.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/api-trpc-client.ts",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/ChatPaneInterface.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/api-trpc-client.ts",
+			"to": "file:src/renderer/routes/_authenticated/components/AgentHooks/hooks/useDevicePresence/useDevicePresence.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/api-trpc-client.ts",
+			"to": "file:src/renderer/routes/_authenticated/onboarding/project/page.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/api-trpc-client.ts",
+			"to": "file:src/renderer/routes/_authenticated/settings/account/components/AccountSettings/AccountSettings.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/api-trpc-client.ts",
+			"to": "file:src/renderer/routes/_authenticated/settings/api-keys/components/ApiKeysSettings/ApiKeysSettings.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/api-trpc-client.ts",
+			"to": "file:src/renderer/routes/_authenticated/settings/billing/components/BillingOverview/components/BillingDetails/BillingDetails.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/api-trpc-client.ts",
+			"to": "file:src/renderer/routes/_authenticated/settings/billing/components/BillingOverview/components/RecentInvoices/RecentInvoices.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/api-trpc-client.ts",
+			"to": "file:src/renderer/routes/_authenticated/settings/integrations/components/IntegrationsSettings/IntegrationsSettings.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/api-trpc-client.ts",
+			"to": "file:src/renderer/routes/_authenticated/settings/members/components/MembersSettings/components/MemberActions/MemberActions.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/api-trpc-client.ts",
+			"to": "file:src/renderer/routes/_authenticated/settings/organization/components/OrganizationSettings/components/SlugDialog/SlugDialog.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/api-trpc-client.ts",
+			"to": "file:src/renderer/routes/_authenticated/settings/organization/components/OrganizationSettings/OrganizationSettings.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/api-trpc-client.ts",
+			"to": "file:src/renderer/routes/_authenticated/settings/project/$projectId/cloud/secrets/components/SecretsSettings/components/AddSecretSheet/AddSecretSheet.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/api-trpc-client.ts",
+			"to": "file:src/renderer/routes/_authenticated/settings/project/$projectId/cloud/secrets/components/SecretsSettings/components/EditSecretDialog/EditSecretDialog.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/api-trpc-client.ts",
+			"to": "file:src/renderer/routes/_authenticated/settings/project/$projectId/cloud/secrets/components/SecretsSettings/components/EnvironmentVariablesList/components/SecretRow/SecretRow.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/api-trpc-client.ts",
+			"to": "file:src/renderer/routes/_authenticated/settings/project/$projectId/cloud/secrets/components/SecretsSettings/components/EnvironmentVariablesList/EnvironmentVariablesList.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/api-trpc-client.ts",
+			"to": "file:src/renderer/routes/_authenticated/settings/project/$projectId/cloud/secrets/components/SecretsSettings/SecretsSettings.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/api-trpc-client.ts",
+			"to": "file:src/renderer/routes/_authenticated/settings/teams/$teamId/components/TeamDetailSettings/components/AddMemberButton/AddMemberButton.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/api-trpc-client.ts",
+			"to": "file:src/renderer/routes/_authenticated/settings/teams/$teamId/components/TeamDetailSettings/TeamDetailSettings.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/api-trpc-client.ts",
+			"to": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/IconUploadField/IconUploadField.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/api-trpc-client.ts",
+			"to": "file:src/renderer/routes/create-organization/page.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/api-trpc-client.ts",
+			"to": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/ChatPane/ChatPaneInterface/ChatPaneInterface.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/api-trpc-client.ts",
+			"to": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/ChatPane/ChatPaneInterface/utils/uploadFiles/uploadFiles.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/api-trpc-client.ts",
+			"to": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/ChatPane/hooks/useChatPaneController/useChatPaneController.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/api-trpc-client.ts",
+			"to": "file:src/renderer/stores/new-workspace-prompt-context/fetchers.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/auth-client.ts",
+			"to": "file:src/renderer/env.renderer.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/auth-client.ts",
+			"to": "file:src/renderer/routes/_authenticated/components/DashboardNewWorkspaceModal/components/DashboardNewWorkspaceForm/PromptGroup/PromptGroup.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/auth-client.ts",
+			"to": "file:src/renderer/routes/_authenticated/layout.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/auth-client.ts",
+			"to": "file:src/renderer/hooks/useIsV2CloudEnabled.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/auth-client.ts",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/tasks/$taskId/components/PropertiesSidebar/components/OpenInWorkspaceV2/OpenInWorkspaceV2.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/auth-client.ts",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/components/TasksTopBar/components/RunInWorkspacePopoverV2/RunInWorkspacePopoverV2.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/auth-client.ts",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/components/TasksTopBar/components/RunIssuesInWorkspacePopover/RunIssuesInWorkspacePopover.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/auth-client.ts",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/components/TopBar/components/ResourceConsumption/ResourceConsumption.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/auth-client.ts",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/automations/page.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/auth-client.ts",
+			"to": "file:src/renderer/routes/_authenticated/onboarding/project/page.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/auth-client.ts",
+			"to": "file:src/renderer/routes/_authenticated/settings/organization/components/OrganizationSettings/OrganizationSettings.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/auth-client.ts",
+			"to": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/ChatPane/hooks/useChatPaneController/useChatPaneController.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/auth-client.ts",
+			"to": "file:src/renderer/routes/_authenticated/components/V1ImportModal/V1ImportModal.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/auth-client.ts",
+			"to": "file:src/renderer/stores/workspace-creates/useWorkspaceCreates.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/auth-client.ts",
+			"to": "file:src/renderer/lib/host-service-auth.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/auth-client.ts",
+			"to": "file:src/renderer/routes/_authenticated/providers/CollectionsProvider/collections.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/auth-client.ts",
+			"to": "file:src/renderer/routes/_authenticated/settings/hosts/$hostId/components/HostSettings/HostSettings.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/auth-client.ts",
+			"to": "file:src/renderer/routes/_authenticated/components/DashboardNewWorkspaceModal/components/DashboardNewWorkspaceForm/PromptGroup/hooks/useSubmitWorkspace/useSubmitWorkspace.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/auth-client.ts",
+			"to": "file:src/renderer/routes/_authenticated/settings/billing/components/BillingOverview/BillingOverview.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/auth-client.ts",
+			"to": "file:src/renderer/routes/_authenticated/settings/project/$projectId/cloud/secrets/components/SecretsSettings/SecretsSettings.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/auth-client.ts",
+			"to": "file:src/renderer/routes/_authenticated/settings/projects/$projectId/page.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/auth-client.ts",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspaces/hooks/useAccessibleV2Workspaces/useAccessibleV2Workspaces.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/auth-client.ts",
+			"to": "file:src/renderer/routes/_authenticated/components/DashboardNewWorkspaceModal/components/DashboardNewWorkspaceForm/components/DevicePicker/hooks/useWorkspaceHostOptions/useWorkspaceHostOptions.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/auth-client.ts",
+			"to": "file:src/renderer/routes/_authenticated/components/DashboardNewWorkspaceModal/components/DashboardNewWorkspaceModalContent/DashboardNewWorkspaceModalContent.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/auth-client.ts",
+			"to": "file:src/renderer/routes/_authenticated/settings/account/components/AccountSettings/AccountSettings.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/auth-client.ts",
+			"to": "file:src/renderer/stores/new-workspace-prompt-context/useNewWorkspacePromptContext.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/auth-client.ts",
+			"to": "file:src/renderer/routes/_authenticated/components/AgentHooks/hooks/useCommandWatcher/useCommandWatcher.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/auth-client.ts",
+			"to": "file:src/renderer/routes/_authenticated/providers/LocalHostServiceProvider/LocalHostServiceProvider.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/auth-client.ts",
+			"to": "file:src/renderer/routes/_authenticated/settings/projects/components/ProjectsSettingsSidebar/ProjectsSettingsSidebar.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/auth-client.ts",
+			"to": "file:src/renderer/hooks/useCurrentPlan.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/auth-client.ts",
+			"to": "file:src/renderer/lib/terminal/terminal-ws-transport.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/auth-client.ts",
+			"to": "file:src/renderer/routes/_authenticated/settings/billing/plans/page.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/auth-client.ts",
+			"to": "file:src/renderer/routes/_authenticated/settings/members/components/MembersSettings/MembersSettings.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/auth-client.ts",
+			"to": "file:src/renderer/routes/sign-in/page.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/auth-client.ts",
+			"to": "file:src/renderer/components/PostHogUserIdentifier/PostHogUserIdentifier.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/auth-client.ts",
+			"to": "file:src/renderer/routes/_authenticated/onboarding/layout.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/auth-client.ts",
+			"to": "file:src/renderer/routes/_authenticated/providers/CollectionsProvider/CollectionsProvider.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/auth-client.ts",
+			"to": "file:src/renderer/routes/_authenticated/settings/api-keys/components/ApiKeysSettings/ApiKeysSettings.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/auth-client.ts",
+			"to": "file:src/renderer/routes/_authenticated/settings/hosts/components/HostsSettingsSidebar/HostsSettingsSidebar.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/auth-client.ts",
+			"to": "file:src/renderer/routes/_authenticated/settings/integrations/components/IntegrationsSettings/IntegrationsSettings.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/auth-client.ts",
+			"to": "file:src/renderer/routes/_authenticated/settings/projects/page.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/auth-client.ts",
+			"to": "file:src/renderer/components/Paywall/usePaywall.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/auth-client.ts",
+			"to": "file:src/renderer/routes/_authenticated/settings/hosts/page.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/auth-client.ts",
+			"to": "file:src/renderer/routes/_authenticated/settings/members/components/MembersSettings/components/MemberActions/MemberActions.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/auth-client.ts",
+			"to": "file:src/renderer/routes/_authenticated/settings/teams/$teamId/components/TeamDetailSettings/TeamDetailSettings.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/auth-client.ts",
+			"to": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/DeleteProjectSection/DeleteProjectSection.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/auth-client.ts",
+			"to": "file:src/renderer/components/PostHogSurfaceTagger/PostHogSurfaceTagger.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/auth-client.ts",
+			"to": "file:src/renderer/hooks/host-service/useHostTargetUrl/useHostTargetUrl.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/auth-client.ts",
+			"to": "file:src/renderer/routes/_authenticated/components/AgentHooks/hooks/useDevicePresence/useDevicePresence.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/auth-client.ts",
+			"to": "file:src/renderer/routes/_authenticated/settings/teams/components/TeamsSettings/TeamsSettings.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/dev-chat.ts",
+			"to": "file:src/renderer/components/Chat/ChatInterface/types.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/dev-chat.ts",
+			"to": "file:src/renderer/env.renderer.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/dev-chat.ts",
+			"to": "file:src/shared/constants.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/dev-chat.ts",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/ChatPaneInterface.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/dev-chat.ts",
+			"to": "file:src/renderer/routes/_authenticated/hooks/useOptimisticCollectionActions/useOptimisticCollectionActions.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/dev-chat.ts",
+			"to": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/ChatPane/ChatPaneInterface/ChatPaneInterface.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/dev-chat.ts",
+			"to": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/ChatPane/ChatPaneInterface/utils/uploadFiles/uploadFiles.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/dev-chat.ts",
+			"to": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/ChatPane/hooks/useChatPaneController/useChatPaneController.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/dnd.ts",
+			"to": "file:src/renderer/routes/_authenticated/layout.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/dnd.ts",
+			"to": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/index.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/posthog.ts",
+			"to": "file:src/renderer/env.renderer.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/posthog.ts",
+			"to": "file:src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/ToolCallBlock.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/posthog.ts",
+			"to": "file:src/renderer/components/PostHogSurfaceTagger/PostHogSurfaceTagger.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/posthog.ts",
+			"to": "file:src/renderer/components/PostHogUserIdentifier/PostHogUserIdentifier.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/posthog.ts",
+			"to": "file:src/renderer/components/TelemetrySync/TelemetrySync.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/posthog.ts",
+			"to": "file:src/renderer/lib/agent-session-orchestrator/agent-session-orchestrator.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/posthog.ts",
+			"to": "file:src/renderer/lib/terminal/terminal-ws-transport.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/posthog.ts",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/ChatPaneInterface.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/posthog.ts",
+			"to": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/ChatPane/ChatPaneInterface/ChatPaneInterface.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/posthog.ts",
+			"to": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/ChatPane/hooks/useChatPaneController/useChatPaneController.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/posthog.ts",
+			"to": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/ChatPane/utils/reportChatError.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/posthog.ts",
+			"to": "file:src/renderer/stores/tabs/store.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/sentry.ts",
+			"to": "file:src/renderer/env.renderer.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/providers/AuthProvider/AuthProvider.tsx",
+			"to": "file:src/renderer/lib/electron-trpc.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/providers/AuthProvider/AuthProvider.tsx",
+			"to": "file:src/renderer/routes/sign-in/components/SupersetLogo/SupersetLogo.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/providers/ElectronTRPCProvider/index.ts",
+			"to": "file:src/renderer/commandPalette/modules/actions/commands.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/providers/ElectronTRPCProvider/index.ts",
+			"to": "file:src/renderer/routes/_authenticated/onboarding/layout.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/providers/ElectronTRPCProvider/index.ts",
+			"to": "file:src/renderer/routes/_authenticated/settings/models/page.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/providers/ElectronTRPCProvider/index.ts",
+			"to": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/ChatPane/ChatPane.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/react-query/projects/InitGitDialog.tsx",
+			"to": "file:src/renderer/stores/git-init-dialog.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/react-query/projects/InitGitDialog.tsx",
+			"to": "file:src/renderer/routes/_authenticated/layout.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/react-query/workspaces/useUpdateWorkspace.ts",
+			"to": "file:src/renderer/lib/electron-trpc.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/react-query/workspaces/useUpdateWorkspace.ts",
+			"to": "file:src/renderer/routes/_authenticated/components/AgentHooks/hooks/useCommandWatcher/useCommandWatcher.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/react-query/workspaces/useUpdateWorkspace.ts",
+			"to": "file:src/renderer/screens/main/hooks/useWorkspaceRename/useWorkspaceRename.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/routes/-layout.tsx",
+			"to": "file:src/renderer/components/PostHogSurfaceTagger/index.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/routes/-layout.tsx",
+			"to": "file:src/renderer/components/PostHogUserIdentifier/index.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/routes/-layout.tsx",
+			"to": "file:src/renderer/components/TelemetrySync/index.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/routes/-layout.tsx",
+			"to": "file:src/renderer/components/ThemedToaster/index.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/routes/__root.tsx",
+			"to": "file:src/renderer/routes/error.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/routes/__root.tsx",
+			"to": "file:src/renderer/routes/not-found.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/TopBar/components/OrganizationDropdown/OrganizationDropdown.tsx",
+			"to": "file:src/renderer/components/HotkeyMenuShortcut/index.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/TopBar/components/OrganizationDropdown/OrganizationDropdown.tsx",
+			"to": "file:src/renderer/hooks/useCurrentPlan.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/TopBar/components/OrganizationDropdown/OrganizationDropdown.tsx",
+			"to": "file:src/renderer/hooks/useSignOut/index.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/TopBar/components/OrganizationDropdown/OrganizationDropdown.tsx",
+			"to": "file:src/renderer/routes/_authenticated/providers/CollectionsProvider/index.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/hooks/useFailedAutomations/useFailedAutomations.ts",
+			"to": "file:src/renderer/routes/_authenticated/providers/CollectionsProvider/index.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/hooks/useWorkspaceChatController/useWorkspaceChatController.ts",
+			"to": "file:src/renderer/routes/_authenticated/hooks/useOptimisticCollectionActions/index.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/hooks/useWorkspaceChatController/useWorkspaceChatController.ts",
+			"to": "file:src/renderer/routes/_authenticated/providers/CollectionsProvider/index.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		}
+	],
+	"metadata": {
+		"fileCount": 32,
+		"nodeCount": 81,
+		"edgeCount": 310,
+		"nodeTypes": {
+			"file": 32,
+			"function": 49,
+			"class": 0
+		},
+		"edgeTypes": {
+			"contains": 49,
+			"exports": 34,
+			"calls": 17,
+			"imports": 61,
+			"tested_by": 3,
+			"depends_on": 146
+		}
+	}
+}

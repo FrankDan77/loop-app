@@ -1,0 +1,1569 @@
+{
+	"scriptCompleted": true,
+	"filesAnalyzed": 29,
+	"filesSkipped": [],
+	"results": [
+		{
+			"path": "src/main/lib/static-ports/loader.test.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 303,
+			"nonEmptyLines": 252,
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/main/lib/static-ports/loader.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 57,
+			"nonEmptyLines": 51,
+			"functions": [
+				{
+					"name": "loadStaticPorts",
+					"startLine": 13,
+					"endLine": 42,
+					"params": ["worktreePath"]
+				},
+				{
+					"name": "hasStaticPortsConfig",
+					"startLine": 50,
+					"endLine": 57,
+					"params": ["worktreePath"]
+				}
+			],
+			"exports": [
+				{
+					"name": "loadStaticPorts",
+					"line": 13,
+					"isDefault": false
+				},
+				{
+					"name": "hasStaticPortsConfig",
+					"line": 50,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "loadStaticPorts",
+					"callee": "join",
+					"lineNumber": 14
+				},
+				{
+					"caller": "loadStaticPorts",
+					"callee": "existsSync",
+					"lineNumber": 20
+				},
+				{
+					"caller": "loadStaticPorts",
+					"callee": "readFileSync",
+					"lineNumber": 26
+				},
+				{
+					"caller": "loadStaticPorts",
+					"callee": "String",
+					"lineNumber": 28
+				},
+				{
+					"caller": "loadStaticPorts",
+					"callee": "parseStaticPortsConfig",
+					"lineNumber": 36
+				},
+				{
+					"caller": "hasStaticPortsConfig",
+					"callee": "join",
+					"lineNumber": 51
+				},
+				{
+					"caller": "hasStaticPortsConfig",
+					"callee": "existsSync",
+					"lineNumber": 56
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 2,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/commandPalette/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 12,
+			"nonEmptyLines": 12,
+			"exports": [
+				{
+					"name": "CommandPaletteHost",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "useCommandContext",
+					"line": 2,
+					"isDefault": false
+				},
+				{
+					"name": "executeCommand",
+					"line": 3,
+					"isDefault": false
+				},
+				{
+					"name": "useFrameStackStore",
+					"line": 4,
+					"isDefault": false
+				},
+				{
+					"name": "registerProvider",
+					"line": 5,
+					"isDefault": false
+				},
+				{
+					"name": "Command",
+					"line": 6,
+					"isDefault": false
+				},
+				{
+					"name": "CommandContext",
+					"line": 6,
+					"isDefault": false
+				},
+				{
+					"name": "CommandProvider",
+					"line": 6,
+					"isDefault": false
+				},
+				{
+					"name": "CommandSection",
+					"line": 6,
+					"isDefault": false
+				},
+				{
+					"name": "SectionId",
+					"line": 6,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 10,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/hooks/host-service/useDiffStats/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "DiffStats",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "useDiffStats",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 2,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/hooks/ports/usePortKillActions/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 7,
+			"nonEmptyLines": 7,
+			"exports": [
+				{
+					"name": "killPortTarget",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "LocalPortKill",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "PortKillResult",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "PortKillTarget",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "usePortKillActions",
+					"line": 7,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 5,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/AddRepositoryModals/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "AddRepositoryModals",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/CrossVersionMismatchState/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "CrossVersionMismatchState",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/DashboardSidebar.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 309,
+			"nonEmptyLines": 293,
+			"functions": [
+				{
+					"name": "DashboardSidebar",
+					"startLine": 98,
+					"endLine": 309,
+					"params": ["{\n\tisCollapsed = false,\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "DashboardSidebar",
+					"line": 98,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "DashboardSidebar",
+					"callee": "useDashboardSidebarData",
+					"lineNumber": 102
+				},
+				{
+					"caller": "DashboardSidebar",
+					"callee": "useDashboardSidebarState",
+					"lineNumber": 103
+				},
+				{
+					"caller": "DashboardSidebar",
+					"callee": "useNavigate",
+					"lineNumber": 104
+				},
+				{
+					"caller": "DashboardSidebar",
+					"callee": "useMatchRoute",
+					"lineNumber": 105
+				},
+				{
+					"caller": "DashboardSidebar",
+					"callee": "useHotkeyDisplay",
+					"lineNumber": 106
+				},
+				{
+					"caller": "DashboardSidebar",
+					"callee": "matchRoute",
+					"lineNumber": 107
+				},
+				{
+					"caller": "DashboardSidebar",
+					"callee": "useLocalHostService",
+					"lineNumber": 108
+				},
+				{
+					"caller": "DashboardSidebar",
+					"callee": "useInlineWorkspacePortsEnabled",
+					"lineNumber": 109
+				},
+				{
+					"caller": "DashboardSidebar",
+					"callee": "matchRoute",
+					"lineNumber": 110
+				},
+				{
+					"caller": "DashboardSidebar",
+					"callee": "useSensors",
+					"lineNumber": 113
+				},
+				{
+					"caller": "DashboardSidebar",
+					"callee": "useSensor",
+					"lineNumber": 114
+				},
+				{
+					"caller": "DashboardSidebar",
+					"callee": "useSensor",
+					"lineNumber": 115
+				},
+				{
+					"caller": "DashboardSidebar",
+					"callee": "useSensor",
+					"lineNumber": 118
+				},
+				{
+					"caller": "DashboardSidebar",
+					"callee": "useState",
+					"lineNumber": 124
+				},
+				{
+					"caller": "DashboardSidebar",
+					"callee": "useState",
+					"lineNumber": 127
+				},
+				{
+					"caller": "DashboardSidebar",
+					"callee": "groups.map",
+					"lineNumber": 128
+				},
+				{
+					"caller": "DashboardSidebar",
+					"callee": "useEffect",
+					"lineNumber": 130
+				},
+				{
+					"caller": "DashboardSidebar",
+					"callee": "setProjectOrder",
+					"lineNumber": 131
+				},
+				{
+					"caller": "DashboardSidebar",
+					"callee": "groups.map",
+					"lineNumber": 131
+				},
+				{
+					"caller": "DashboardSidebar",
+					"callee": "useMemo",
+					"lineNumber": 134
+				},
+				{
+					"caller": "DashboardSidebar",
+					"callee": "groups.map",
+					"lineNumber": 135
+				},
+				{
+					"caller": "DashboardSidebar",
+					"callee": "projectOrder\n\t\t\t.map((id) => byId.get(id))\n\t\t\t.filter",
+					"lineNumber": 136
+				},
+				{
+					"caller": "DashboardSidebar",
+					"callee": "projectOrder\n\t\t\t.map",
+					"lineNumber": 136
+				},
+				{
+					"caller": "DashboardSidebar",
+					"callee": "byId.get",
+					"lineNumber": 137
+				},
+				{
+					"caller": "DashboardSidebar",
+					"callee": "useDashboardSidebarShortcuts",
+					"lineNumber": 141
+				},
+				{
+					"caller": "DashboardSidebar",
+					"callee": "useMemo",
+					"lineNumber": 143
+				},
+				{
+					"caller": "DashboardSidebar",
+					"callee": "useCallback",
+					"lineNumber": 163
+				},
+				{
+					"caller": "DashboardSidebar",
+					"callee": "projectOrder.indexOf",
+					"lineNumber": 166
+				},
+				{
+					"caller": "DashboardSidebar",
+					"callee": "String",
+					"lineNumber": 166
+				},
+				{
+					"caller": "DashboardSidebar",
+					"callee": "projectOrder.indexOf",
+					"lineNumber": 167
+				},
+				{
+					"caller": "DashboardSidebar",
+					"callee": "String",
+					"lineNumber": 167
+				},
+				{
+					"caller": "DashboardSidebar",
+					"callee": "arrayMove",
+					"lineNumber": 169
+				},
+				{
+					"caller": "DashboardSidebar",
+					"callee": "setProjectOrder",
+					"lineNumber": 170
+				},
+				{
+					"caller": "DashboardSidebar",
+					"callee": "reorderProjects",
+					"lineNumber": 171
+				},
+				{
+					"caller": "DashboardSidebar",
+					"callee": "setActiveProject",
+					"lineNumber": 174
+				},
+				{
+					"caller": "DashboardSidebar",
+					"callee": "groups.find",
+					"lineNumber": 195
+				},
+				{
+					"caller": "DashboardSidebar",
+					"callee": "setActiveProject",
+					"lineNumber": 196
+				},
+				{
+					"caller": "DashboardSidebar",
+					"callee": "setActiveProject",
+					"lineNumber": 199
+				},
+				{
+					"caller": "DashboardSidebar",
+					"callee": "orderedGroups.map",
+					"lineNumber": 205
+				},
+				{
+					"caller": "DashboardSidebar",
+					"callee": "createPortal",
+					"lineNumber": 218
+				},
+				{
+					"caller": "DashboardSidebar",
+					"callee": "cn",
+					"lineNumber": 248
+				},
+				{
+					"caller": "DashboardSidebar",
+					"callee": "navigate",
+					"lineNumber": 261
+				},
+				{
+					"caller": "DashboardSidebar",
+					"callee": "cn",
+					"lineNumber": 262
+				},
+				{
+					"caller": "DashboardSidebar",
+					"callee": "navigate",
+					"lineNumber": 277
+				},
+				{
+					"caller": "DashboardSidebar",
+					"callee": "cn",
+					"lineNumber": 278
+				},
+				{
+					"caller": "DashboardSidebar",
+					"callee": "cn",
+					"lineNumber": 289
+				}
+			],
+			"metrics": {
+				"importCount": 17,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarChipStrip/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "DashboardSidebarChipStrip",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarDeleteDialog/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "DashboardSidebarDeleteDialog",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarHeader/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "DashboardSidebarHeader",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarHelpMenu/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "DashboardSidebarHelpMenu",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarHoverCardOverlay/DashboardSidebarHoverCardOverlay.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 81,
+			"nonEmptyLines": 75,
+			"functions": [
+				{
+					"name": "DashboardSidebarHoverCardOverlay",
+					"startLine": 11,
+					"endLine": 81,
+					"params": ["{\n\tchildren,\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "DashboardSidebarHoverCardOverlay",
+					"line": 11,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "DashboardSidebarHoverCardOverlay",
+					"callee": "useDashboardSidebarHover",
+					"lineNumber": 24
+				},
+				{
+					"caller": "DashboardSidebarHoverCardOverlay",
+					"callee": "useRef",
+					"lineNumber": 26
+				},
+				{
+					"caller": "DashboardSidebarHoverCardOverlay",
+					"callee": "useDiffStats",
+					"lineNumber": 30
+				},
+				{
+					"caller": "DashboardSidebarHoverCardOverlay",
+					"callee": "useState",
+					"lineNumber": 35
+				},
+				{
+					"caller": "DashboardSidebarHoverCardOverlay",
+					"callee": "useRef",
+					"lineNumber": 36
+				},
+				{
+					"caller": "DashboardSidebarHoverCardOverlay",
+					"callee": "useEffect",
+					"lineNumber": 37
+				},
+				{
+					"caller": "DashboardSidebarHoverCardOverlay",
+					"callee": "setHasPositioned",
+					"lineNumber": 39
+				},
+				{
+					"caller": "DashboardSidebarHoverCardOverlay",
+					"callee": "requestAnimationFrame",
+					"lineNumber": 42
+				},
+				{
+					"caller": "DashboardSidebarHoverCardOverlay",
+					"callee": "requestAnimationFrame",
+					"lineNumber": 43
+				},
+				{
+					"caller": "DashboardSidebarHoverCardOverlay",
+					"callee": "setHasPositioned",
+					"lineNumber": 43
+				},
+				{
+					"caller": "DashboardSidebarHoverCardOverlay",
+					"callee": "cancelAnimationFrame",
+					"lineNumber": 47
+				},
+				{
+					"caller": "DashboardSidebarHoverCardOverlay",
+					"callee": "forceClose",
+					"lineNumber": 55
+				},
+				{
+					"caller": "DashboardSidebarHoverCardOverlay",
+					"callee": "event.preventDefault",
+					"lineNumber": 66
+				},
+				{
+					"caller": "DashboardSidebarHoverCardOverlay",
+					"callee": "requestClose",
+					"lineNumber": 69
+				}
+			],
+			"metrics": {
+				"importCount": 4,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarHoverCardOverlay/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "DashboardSidebarHoverCardOverlay",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarPortsList/DashboardSidebarPortsList.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 73,
+			"nonEmptyLines": 67,
+			"functions": [
+				{
+					"name": "DashboardSidebarPortsList",
+					"startLine": 11,
+					"endLine": 73,
+					"params": []
+				}
+			],
+			"exports": [
+				{
+					"name": "DashboardSidebarPortsList",
+					"line": 11,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "DashboardSidebarPortsList",
+					"callee": "usePortsStore",
+					"lineNumber": 12
+				},
+				{
+					"caller": "DashboardSidebarPortsList",
+					"callee": "usePortsStore",
+					"lineNumber": 13
+				},
+				{
+					"caller": "DashboardSidebarPortsList",
+					"callee": "useDashboardSidebarAllPorts",
+					"lineNumber": 14
+				},
+				{
+					"caller": "handleOpenPortsDocs",
+					"callee": "e.stopPropagation",
+					"lineNumber": 21
+				},
+				{
+					"caller": "handleOpenPortsDocs",
+					"callee": "window.open",
+					"lineNumber": 22
+				},
+				{
+					"caller": "DashboardSidebarPortsList",
+					"callee": "workspacePortGroups.map",
+					"lineNumber": 66
+				}
+			],
+			"metrics": {
+				"importCount": 4,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarPortsList/components/DashboardSidebarPortBadge/DashboardSidebarPortBadge.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 208,
+			"nonEmptyLines": 198,
+			"functions": [
+				{
+					"name": "DashboardSidebarPortBadge",
+					"startLine": 30,
+					"endLine": 208,
+					"params": ["{\n\tport,\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "DashboardSidebarPortBadge",
+					"line": 30,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "DashboardSidebarPortBadge",
+					"callee": "useNavigate",
+					"lineNumber": 33
+				},
+				{
+					"caller": "DashboardSidebarPortBadge",
+					"callee": "electronTrpc.external.openUrl.useMutation",
+					"lineNumber": 34
+				},
+				{
+					"caller": "DashboardSidebarPortBadge",
+					"callee": "useDashboardSidebarPortKill",
+					"lineNumber": 35
+				},
+				{
+					"caller": "DashboardSidebarPortBadge",
+					"callee": "useV2UserPreferences",
+					"lineNumber": 36
+				},
+				{
+					"caller": "handleWorkspaceClick",
+					"callee": "navigateToV2Workspace",
+					"lineNumber": 42
+				},
+				{
+					"caller": "handleWorkspaceClick",
+					"callee": "crypto.randomUUID",
+					"lineNumber": 45
+				},
+				{
+					"caller": "handleOpenExternal",
+					"callee": "openUrl.mutate",
+					"lineNumber": 54
+				},
+				{
+					"caller": "handleOpenInApp",
+					"callee": "navigateToV2Workspace",
+					"lineNumber": 59
+				},
+				{
+					"caller": "handleOpenInApp",
+					"callee": "crypto.randomUUID",
+					"lineNumber": 63
+				},
+				{
+					"caller": "handleOpenInBrowser",
+					"callee": "handleOpenExternal",
+					"lineNumber": 72
+				},
+				{
+					"caller": "handleOpenInBrowser",
+					"callee": "handleOpenInApp",
+					"lineNumber": 75
+				},
+				{
+					"caller": "handleClose",
+					"callee": "killPort",
+					"lineNumber": 88
+				},
+				{
+					"caller": "DashboardSidebarPortBadge",
+					"callee": "cn",
+					"lineNumber": 93
+				},
+				{
+					"caller": "DashboardSidebarPortBadge",
+					"callee": "event.preventDefault",
+					"lineNumber": 166
+				},
+				{
+					"caller": "DashboardSidebarPortBadge",
+					"callee": "handleOpenInApp",
+					"lineNumber": 179
+				}
+			],
+			"metrics": {
+				"importCount": 6,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarPortsList/components/DashboardSidebarPortBadge/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "DashboardSidebarPortBadge",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarPortsList/components/DashboardSidebarPortGroup/DashboardSidebarPortGroup.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 82,
+			"nonEmptyLines": 77,
+			"functions": [
+				{
+					"name": "DashboardSidebarPortGroup",
+					"startLine": 16,
+					"endLine": 82,
+					"params": ["{\n\tgroup,\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "DashboardSidebarPortGroup",
+					"line": 16,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "DashboardSidebarPortGroup",
+					"callee": "useNavigate",
+					"lineNumber": 19
+				},
+				{
+					"caller": "DashboardSidebarPortGroup",
+					"callee": "useDashboardSidebarPortKill",
+					"lineNumber": 20
+				},
+				{
+					"caller": "handleWorkspaceClick",
+					"callee": "navigateToV2Workspace",
+					"lineNumber": 23
+				},
+				{
+					"caller": "handleCloseAll",
+					"callee": "killPorts",
+					"lineNumber": 28
+				},
+				{
+					"caller": "DashboardSidebarPortGroup",
+					"callee": "cn",
+					"lineNumber": 52
+				},
+				{
+					"caller": "DashboardSidebarPortGroup",
+					"callee": "group.ports.map",
+					"lineNumber": 73
+				}
+			],
+			"metrics": {
+				"importCount": 6,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarPortsList/components/DashboardSidebarPortGroup/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "DashboardSidebarPortGroup",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarPortsList/hooks/useDashboardSidebarPortKill/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "useDashboardSidebarPortKill",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarPortsList/hooks/useDashboardSidebarPortKill/useDashboardSidebarPortKill.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 10,
+			"nonEmptyLines": 8,
+			"functions": [
+				{
+					"name": "useDashboardSidebarPortKill",
+					"startLine": 6,
+					"endLine": 10,
+					"params": []
+				}
+			],
+			"exports": [
+				{
+					"name": "useDashboardSidebarPortKill",
+					"line": 6,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "useDashboardSidebarPortKill",
+					"callee": "usePortKillActions",
+					"lineNumber": 7
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarPortsList/hooks/useDashboardSidebarPortsData/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 5,
+			"nonEmptyLines": 5,
+			"exports": [
+				{
+					"name": "DashboardSidebarPort",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "DashboardSidebarPortGroup",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "useDashboardSidebarPortsData",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 3,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarPortsList/hooks/useDashboardSidebarPortsData/useDashboardSidebarPortsData.test.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 371,
+			"nonEmptyLines": 347,
+			"functions": [
+				{
+					"name": "createResult",
+					"startLine": 10,
+					"endLine": 28,
+					"params": []
+				},
+				{
+					"name": "createPortEvent",
+					"startLine": 30,
+					"endLine": 49,
+					"params": ["eventType", "overrides"]
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 0,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarPortsList/hooks/useDashboardSidebarPortsData/useDashboardSidebarPortsData.utils.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 257,
+			"nonEmptyLines": 226,
+			"functions": [
+				{
+					"name": "getHostPortsQueryKey",
+					"startLine": 60,
+					"endLine": 69,
+					"params": ["host"]
+				},
+				{
+					"name": "getPortCacheKey",
+					"startLine": 71,
+					"endLine": 75,
+					"params": ["port"]
+				},
+				{
+					"name": "mergeSortedWorkspaceIds",
+					"startLine": 77,
+					"endLine": 82,
+					"params": ["left", "right"]
+				},
+				{
+					"name": "applyPortEventsToHostPortsResult",
+					"startLine": 84,
+					"endLine": 120,
+					"params": ["result", "events", "host"]
+				},
+				{
+					"name": "deriveHostPortQueryTargets",
+					"startLine": 122,
+					"endLine": 204,
+					"params": [
+						"{\n\tactiveHostUrl,\n\thosts,\n\tmachineId,\n\trelayUrl,\n\tworkspaces,\n}"
+					]
+				},
+				{
+					"name": "groupDashboardSidebarPorts",
+					"startLine": 206,
+					"endLine": 257,
+					"params": ["{\n\thostPortResults,\n\tworkspaces,\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "getHostPortsQueryKey",
+					"line": 60,
+					"isDefault": false
+				},
+				{
+					"name": "applyPortEventsToHostPortsResult",
+					"line": 84,
+					"isDefault": false
+				},
+				{
+					"name": "deriveHostPortQueryTargets",
+					"line": 122,
+					"isDefault": false
+				},
+				{
+					"name": "groupDashboardSidebarPorts",
+					"line": 206,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "mergeSortedWorkspaceIds",
+					"callee": "Array.from(new Set([...left, ...right])).sort",
+					"lineNumber": 81
+				},
+				{
+					"caller": "mergeSortedWorkspaceIds",
+					"callee": "Array.from",
+					"lineNumber": 81
+				},
+				{
+					"caller": "applyPortEventsToHostPortsResult",
+					"callee": "events.some",
+					"lineNumber": 93
+				},
+				{
+					"caller": "applyPortEventsToHostPortsResult",
+					"callee": "getPortCacheKey",
+					"lineNumber": 102
+				},
+				{
+					"caller": "applyPortEventsToHostPortsResult",
+					"callee": "ports.filter",
+					"lineNumber": 103
+				},
+				{
+					"caller": "applyPortEventsToHostPortsResult",
+					"callee": "getPortCacheKey",
+					"lineNumber": 104
+				},
+				{
+					"caller": "deriveHostPortQueryTargets",
+					"callee": "workspaceIdsByHostId.get",
+					"lineNumber": 137
+				},
+				{
+					"caller": "deriveHostPortQueryTargets",
+					"callee": "existing.push",
+					"lineNumber": 139
+				},
+				{
+					"caller": "deriveHostPortQueryTargets",
+					"callee": "workspaceIdsByHostId.set",
+					"lineNumber": 141
+				},
+				{
+					"caller": "deriveHostPortQueryTargets",
+					"callee": "workspaceIdsByHostId.values",
+					"lineNumber": 144
+				},
+				{
+					"caller": "deriveHostPortQueryTargets",
+					"callee": "workspaceIds.sort",
+					"lineNumber": 145
+				},
+				{
+					"caller": "deriveHostPortQueryTargets",
+					"callee": "workspaces\n\t\t.map((workspace) => workspace.id)\n\t\t.sort",
+					"lineNumber": 147
+				},
+				{
+					"caller": "deriveHostPortQueryTargets",
+					"callee": "workspaces\n\t\t.map",
+					"lineNumber": 147
+				},
+				{
+					"caller": "deriveHostPortQueryTargets",
+					"callee": "a.localeCompare",
+					"lineNumber": 149
+				},
+				{
+					"caller": "deriveHostPortQueryTargets",
+					"callee": "hosts.flatMap",
+					"lineNumber": 151
+				},
+				{
+					"caller": "deriveHostPortQueryTargets",
+					"callee": "workspaceIdsByHostId.get",
+					"lineNumber": 152
+				},
+				{
+					"caller": "deriveHostPortQueryTargets",
+					"callee": "buildHostRoutingKey",
+					"lineNumber": 160
+				},
+				{
+					"caller": "deriveHostPortQueryTargets",
+					"callee": "targets.findIndex",
+					"lineNumber": 179
+				},
+				{
+					"caller": "deriveHostPortQueryTargets",
+					"callee": "mergeSortedWorkspaceIds",
+					"lineNumber": 187
+				},
+				{
+					"caller": "deriveHostPortQueryTargets",
+					"callee": "targets.push",
+					"lineNumber": 194
+				},
+				{
+					"caller": "groupDashboardSidebarPorts",
+					"callee": "workspaces.map",
+					"lineNumber": 214
+				},
+				{
+					"caller": "groupDashboardSidebarPorts",
+					"callee": "workspacesById.get",
+					"lineNumber": 227
+				},
+				{
+					"caller": "groupDashboardSidebarPorts",
+					"callee": "groupMap.get",
+					"lineNumber": 237
+				},
+				{
+					"caller": "groupDashboardSidebarPorts",
+					"callee": "existing.ports.push",
+					"lineNumber": 239
+				},
+				{
+					"caller": "groupDashboardSidebarPorts",
+					"callee": "groupMap.set",
+					"lineNumber": 241
+				},
+				{
+					"caller": "groupDashboardSidebarPorts",
+					"callee": "Array.from(groupMap.values())\n\t\t.map((group) => ({\n\t\t\t...group,\n\t\t\tports: group.ports.sort((a, b) => a.port - b.port),\n\t\t}))\n\t\t.sort",
+					"lineNumber": 251
+				},
+				{
+					"caller": "groupDashboardSidebarPorts",
+					"callee": "Array.from(groupMap.values())\n\t\t.map",
+					"lineNumber": 251
+				},
+				{
+					"caller": "groupDashboardSidebarPorts",
+					"callee": "Array.from",
+					"lineNumber": 251
+				},
+				{
+					"caller": "groupDashboardSidebarPorts",
+					"callee": "groupMap.values",
+					"lineNumber": 251
+				},
+				{
+					"caller": "groupDashboardSidebarPorts",
+					"callee": "group.ports.sort",
+					"lineNumber": 254
+				},
+				{
+					"caller": "groupDashboardSidebarPorts",
+					"callee": "a.workspaceName.localeCompare",
+					"lineNumber": 256
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 4,
+				"functionCount": 6,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarPortsList/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "DashboardSidebarPortsList",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarProjectSection/DashboardSidebarProjectSection.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 139,
+			"nonEmptyLines": 132,
+			"functions": [
+				{
+					"name": "DashboardSidebarProjectSection",
+					"startLine": 27,
+					"endLine": 139,
+					"params": [
+						"{\n\tproject,\n\tisSidebarCollapsed = false,\n\tisDraggingProject = false,\n\tworkspaceShortcutLabels,\n\tonWorkspaceHover,\n\tonToggleCollapse,\n\tdragHandleListeners,\n\tdragHandleAttributes,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "DashboardSidebarProjectSection",
+					"line": 27,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "DashboardSidebarProjectSection",
+					"callee": "useMemo",
+					"lineNumber": 37
+				},
+				{
+					"caller": "DashboardSidebarProjectSection",
+					"callee": "getProjectChildrenWorkspaces",
+					"lineNumber": 38
+				},
+				{
+					"caller": "DashboardSidebarProjectSection",
+					"callee": "useDashboardSidebarProjectSectionActions",
+					"lineNumber": 57
+				},
+				{
+					"caller": "DashboardSidebarProjectSection",
+					"callee": "cn",
+					"lineNumber": 72
+				},
+				{
+					"caller": "DashboardSidebarProjectSection",
+					"callee": "onToggleCollapse",
+					"lineNumber": 81
+				},
+				{
+					"caller": "DashboardSidebarProjectSection",
+					"callee": "cn",
+					"lineNumber": 89
+				},
+				{
+					"caller": "DashboardSidebarProjectSection",
+					"callee": "onToggleCollapse",
+					"lineNumber": 108
+				}
+			],
+			"metrics": {
+				"importCount": 7,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarProjectSection/components/DashboardSidebarCollapsedProjectContent/DashboardSidebarCollapsedProjectContent.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 97,
+			"nonEmptyLines": 94,
+			"exports": [
+				{
+					"name": "DashboardSidebarCollapsedProjectContent",
+					"line": 21,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 3,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarProjectSection/components/DashboardSidebarCollapsedProjectContent/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "DashboardSidebarCollapsedProjectContent",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarProjectSection/components/DashboardSidebarExpandedProjectContent/DashboardSidebarExpandedProjectContent.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 151,
+			"nonEmptyLines": 144,
+			"functions": [
+				{
+					"name": "DashboardSidebarExpandedProjectContent",
+					"startLine": 26,
+					"endLine": 151,
+					"params": [
+						"{\n\tprojectId,\n\tisCollapsed,\n\tprojectChildren,\n\tworkspaceShortcutLabels,\n\tonWorkspaceHover,\n\tonDeleteSection,\n\tonRenameSection,\n\tonToggleSectionCollapse,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "DashboardSidebarExpandedProjectContent",
+					"line": 26,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "DashboardSidebarExpandedProjectContent",
+					"callee": "useSidebarDnd",
+					"lineNumber": 51
+				},
+				{
+					"caller": "DashboardSidebarExpandedProjectContent",
+					"callee": "flatItems.map",
+					"lineNumber": 74
+				},
+				{
+					"caller": "DashboardSidebarExpandedProjectContent",
+					"callee": "parseId",
+					"lineNumber": 75
+				},
+				{
+					"caller": "DashboardSidebarExpandedProjectContent",
+					"callee": "sectionsById.get",
+					"lineNumber": 79
+				},
+				{
+					"caller": "DashboardSidebarExpandedProjectContent",
+					"callee": "String",
+					"lineNumber": 83
+				},
+				{
+					"caller": "DashboardSidebarExpandedProjectContent",
+					"callee": "String",
+					"lineNumber": 84
+				},
+				{
+					"caller": "DashboardSidebarExpandedProjectContent",
+					"callee": "workspacesById.get",
+					"lineNumber": 93
+				},
+				{
+					"caller": "DashboardSidebarExpandedProjectContent",
+					"callee": "groupInfo.get",
+					"lineNumber": 95
+				},
+				{
+					"caller": "DashboardSidebarExpandedProjectContent",
+					"callee": "collapsedSectionIds.has",
+					"lineNumber": 98
+				},
+				{
+					"caller": "DashboardSidebarExpandedProjectContent",
+					"callee": "String",
+					"lineNumber": 104
+				},
+				{
+					"caller": "DashboardSidebarExpandedProjectContent",
+					"callee": "String",
+					"lineNumber": 113
+				},
+				{
+					"caller": "DashboardSidebarExpandedProjectContent",
+					"callee": "groupInfo.has",
+					"lineNumber": 118
+				},
+				{
+					"caller": "DashboardSidebarExpandedProjectContent",
+					"callee": "onWorkspaceHover",
+					"lineNumber": 120
+				},
+				{
+					"caller": "DashboardSidebarExpandedProjectContent",
+					"callee": "workspaceShortcutLabels.get",
+					"lineNumber": 122
+				},
+				{
+					"caller": "DashboardSidebarExpandedProjectContent",
+					"callee": "createPortal",
+					"lineNumber": 137
+				}
+			],
+			"metrics": {
+				"importCount": 6,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		}
+	]
+}

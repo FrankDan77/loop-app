@@ -1,0 +1,457 @@
+{
+	"nodes": [
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/components/ChatInputFooter/hooks/useDocumentDrag/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/components/ChatInputFooter/hooks/useDocumentDrag/index.ts",
+			"summary": "Barrel re-exporting the useDocumentDrag hook and DragType enum.",
+			"tags": ["barrel", "entry-point", "hook"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/components/ChatInputFooter/hooks/useDocumentDrag/useDocumentDrag.ts",
+			"type": "file",
+			"name": "useDocumentDrag.ts",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/components/ChatInputFooter/hooks/useDocumentDrag/useDocumentDrag.ts",
+			"summary": "Hook that tracks document-level drag state, classifying the dragged item as file or mention.",
+			"tags": ["hook", "drag-and-drop", "workspace", "chat"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/hooks/useWorkspaceAgentSession/useWorkspaceAgentSession.ts",
+			"type": "file",
+			"name": "useWorkspaceAgentSession.ts",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/hooks/useWorkspaceAgentSession/useWorkspaceAgentSession.ts",
+			"summary": "Hook managing workspace agent session state, loading history, and orchestrating send/retry/cancel actions.",
+			"tags": ["hook", "chat", "agent", "workspace", "state-management"],
+			"complexity": "complex"
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/hooks/useWorkspaceSlashCommands/useWorkspaceSlashCommands.ts",
+			"type": "file",
+			"name": "useWorkspaceSlashCommands.ts",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/hooks/useWorkspaceSlashCommands/useWorkspaceSlashCommands.ts",
+			"summary": "Hook deriving available slash commands from workspace project settings and global command registry.",
+			"tags": ["hook", "slash-command", "workspace", "chat"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/DiffPane.tsx",
+			"type": "file",
+			"name": "DiffPane.tsx",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/DiffPane.tsx",
+			"summary": "Diff viewer pane showing a file's changes between working and base versions using Monaco editor.",
+			"tags": ["component", "diff", "pane", "workspace", "monaco"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/EditorPane/EditorPane.tsx",
+			"type": "file",
+			"name": "EditorPane.tsx",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/EditorPane/EditorPane.tsx",
+			"summary": "Monaco-based editor pane for viewing and editing workspace files with save/discard controls and read-only detection.",
+			"tags": ["component", "editor", "pane", "workspace", "monaco"],
+			"complexity": "complex"
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/UnknownFilePane/UnknownFilePane.tsx",
+			"type": "file",
+			"name": "UnknownFilePane.tsx",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/UnknownFilePane/UnknownFilePane.tsx",
+			"summary": "Fallback pane shown when a file's MIME type cannot be resolved, offering open-in-finder and copy-path actions.",
+			"tags": ["component", "pane", "workspace", "fallback"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/UnsupportedFilePane/UnsupportedFilePane.tsx",
+			"type": "file",
+			"name": "UnsupportedFilePane.tsx",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/UnsupportedFilePane/UnsupportedFilePane.tsx",
+			"summary": "Fallback pane shown for recognized but unsupported file types, offering open-in-finder and copy-path actions.",
+			"tags": ["component", "pane", "workspace", "fallback"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/lib/pane-id.ts",
+			"type": "file",
+			"name": "pane-id.ts",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/lib/pane-id.ts",
+			"summary": "Utilities for parsing and generating pane IDs encoding pane kind and payload for workspace tabs.",
+			"tags": ["utility", "pane", "workspace", "serialization"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/stores/workspaceAgentSessionStore/workspaceAgentSessionStore.ts",
+			"type": "file",
+			"name": "workspaceAgentSessionStore.ts",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/stores/workspaceAgentSessionStore/workspaceAgentSessionStore.ts",
+			"summary": "Zustand store managing workspace agent session lifecycle, message history, settings, and active-session state.",
+			"tags": ["state-management", "zustand", "agent", "workspace", "chat"],
+			"complexity": "complex"
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/utils/flattenFileTree/flattenFileTree.ts",
+			"type": "file",
+			"name": "flattenFileTree.ts",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/utils/flattenFileTree/flattenFileTree.ts",
+			"summary": "Recursively flattens a hierarchical file tree into a flat array of file entries.",
+			"tags": ["utility", "file-tree", "workspace"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/layout.tsx",
+			"type": "file",
+			"name": "layout.tsx",
+			"filePath": "src/renderer/routes/_authenticated/layout.tsx",
+			"summary": "TanStack Router layout enforcing authentication and showing login page when unauthenticated.",
+			"tags": ["routing", "layout", "authentication", "entry-point"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "file:src/renderer/routes/index.tsx",
+			"type": "file",
+			"name": "index.tsx",
+			"filePath": "src/renderer/routes/index.tsx",
+			"summary": "Root route redirecting to the dashboard.",
+			"tags": ["routing", "entry-point"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/stores/agentStore/agentStore.ts",
+			"type": "file",
+			"name": "agentStore.ts",
+			"filePath": "src/renderer/stores/agentStore/agentStore.ts",
+			"summary": "Zustand store managing the active agent preset, model, and effort selections.",
+			"tags": ["state-management", "zustand", "agent"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/stores/draggableFileStore/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "src/renderer/stores/draggableFileStore/index.ts",
+			"summary": "Barrel re-exporting the draggable file Zustand store.",
+			"tags": ["barrel", "entry-point", "state-management"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/stores/linearStore/linearStore.ts",
+			"type": "file",
+			"name": "linearStore.ts",
+			"filePath": "src/renderer/stores/linearStore/linearStore.ts",
+			"summary": "Zustand store caching and exposing Linear integration queries with workspace-keyed state.",
+			"tags": ["state-management", "zustand", "integration", "linear"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "file:src/renderer/test/render.tsx",
+			"type": "file",
+			"name": "render.tsx",
+			"filePath": "src/renderer/test/render.tsx",
+			"summary": "Test utilities providing a custom render wrapper with TanStack Router and React Query contexts.",
+			"tags": ["test", "utility", "setup"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "file:src/renderer/test/setup.ts",
+			"type": "file",
+			"name": "setup.ts",
+			"filePath": "src/renderer/test/setup.ts",
+			"summary": "Vitest setup script configuring jsdom, TextEncoder, and jest-dom matchers.",
+			"tags": ["test", "config", "setup"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/trpc/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "src/renderer/trpc/index.ts",
+			"summary": "Barrel re-exporting the tRPC electron-renderer client proxy.",
+			"tags": ["barrel", "entry-point", "trpc"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/trpc/trpc.ts",
+			"type": "file",
+			"name": "trpc.ts",
+			"filePath": "src/renderer/trpc/trpc.ts",
+			"summary": "tRPC client configured for Electron IPC transport using trpc-electron, exposing typed procedure proxies.",
+			"tags": ["trpc", "ipc", "client", "entry-point"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/hooks/useWorkspaceAgentSession/useWorkspaceAgentSession.ts:useWorkspaceAgentSession",
+			"type": "function",
+			"name": "useWorkspaceAgentSession",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/hooks/useWorkspaceAgentSession/useWorkspaceAgentSession.ts",
+			"lineRange": [28, 267],
+			"summary": "Orchestrates the workspace agent session lifecycle including loading, send, retry, cancel, and history effects.",
+			"tags": ["hook", "agent", "chat", "workspace"],
+			"complexity": "complex"
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/hooks/useWorkspaceSlashCommands/useWorkspaceSlashCommands.ts:useWorkspaceSlashCommands",
+			"type": "function",
+			"name": "useWorkspaceSlashCommands",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/hooks/useWorkspaceSlashCommands/useWorkspaceSlashCommands.ts",
+			"lineRange": [13, 47],
+			"summary": "Combines project slash commands with global command registry into a merged workspace command list.",
+			"tags": ["hook", "slash-command", "workspace"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/DiffPane.tsx:DiffPane",
+			"type": "function",
+			"name": "DiffPane",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/DiffPane.tsx",
+			"lineRange": [20, 130],
+			"summary": "Renders a Monaco diff editor showing working vs base file content with loading and error states.",
+			"tags": ["component", "diff", "pane", "monaco"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/EditorPane/EditorPane.tsx:EditorPane",
+			"type": "function",
+			"name": "EditorPane",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/EditorPane/EditorPane.tsx",
+			"lineRange": [37, 234],
+			"summary": "Monaco editor pane with save/discard controls, unsaved-changes tracking, and read-only mode for binary or permission-denied files.",
+			"tags": ["component", "editor", "pane", "monaco"],
+			"complexity": "complex"
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/UnknownFilePane/UnknownFilePane.tsx:UnknownFilePane",
+			"type": "function",
+			"name": "UnknownFilePane",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/UnknownFilePane/UnknownFilePane.tsx",
+			"lineRange": [18, 54],
+			"summary": "Renders fallback UI for unknown files with open-in-finder and copy-path actions.",
+			"tags": ["component", "pane", "fallback"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/UnsupportedFilePane/UnsupportedFilePane.tsx:UnsupportedFilePane",
+			"type": "function",
+			"name": "UnsupportedFilePane",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/UnsupportedFilePane/UnsupportedFilePane.tsx",
+			"lineRange": [21, 60],
+			"summary": "Renders fallback UI for unsupported file types with open-in-finder and copy-path actions.",
+			"tags": ["component", "pane", "fallback"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/lib/pane-id.ts:parsePaneId",
+			"type": "function",
+			"name": "parsePaneId",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/lib/pane-id.ts",
+			"lineRange": [21, 37],
+			"summary": "Parses a pane ID string into kind and payload, handling both legacy formats and new base64-encoded structure.",
+			"tags": ["utility", "parsing", "pane"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/lib/pane-id.ts:makePaneId",
+			"type": "function",
+			"name": "makePaneId",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/lib/pane-id.ts",
+			"lineRange": [39, 48],
+			"summary": "Builds a pane ID from kind and payload, base64-encoding the payload for safe URL embedding.",
+			"tags": ["utility", "serialization", "pane"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/utils/flattenFileTree/flattenFileTree.ts:flattenFileTree",
+			"type": "function",
+			"name": "flattenFileTree",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/utils/flattenFileTree/flattenFileTree.ts",
+			"lineRange": [7, 16],
+			"summary": "Recursively flattens a file tree into a single array of file nodes.",
+			"tags": ["utility", "file-tree"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/layout.tsx:Component",
+			"type": "function",
+			"name": "Component",
+			"filePath": "src/renderer/routes/_authenticated/layout.tsx",
+			"lineRange": [9, 27],
+			"summary": "Authenticated layout gate redirecting to login when unauthenticated, rendering nested outlet otherwise.",
+			"tags": ["routing", "layout", "authentication"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:src/renderer/routes/index.tsx:Index",
+			"type": "function",
+			"name": "Index",
+			"filePath": "src/renderer/routes/index.tsx",
+			"lineRange": [6, 9],
+			"summary": "Root route component that redirects to the dashboard.",
+			"tags": ["routing", "redirect"],
+			"complexity": "simple"
+		}
+	],
+	"edges": [
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/components/ChatInputFooter/hooks/useDocumentDrag/useDocumentDrag.ts",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/components/ChatInputFooter/hooks/useDocumentDrag/useDocumentDrag.ts:useDocumentDrag",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/hooks/useWorkspaceAgentSession/useWorkspaceAgentSession.ts",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/hooks/useWorkspaceAgentSession/useWorkspaceAgentSession.ts:useWorkspaceAgentSession",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/hooks/useWorkspaceAgentSession/useWorkspaceAgentSession.ts",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/hooks/useWorkspaceAgentSession/useWorkspaceAgentSession.ts:useWorkspaceAgentSession",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/hooks/useWorkspaceSlashCommands/useWorkspaceSlashCommands.ts",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/hooks/useWorkspaceSlashCommands/useWorkspaceSlashCommands.ts:useWorkspaceSlashCommands",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/hooks/useWorkspaceSlashCommands/useWorkspaceSlashCommands.ts",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/hooks/useWorkspaceSlashCommands/useWorkspaceSlashCommands.ts:useWorkspaceSlashCommands",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/DiffPane.tsx",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/DiffPane.tsx:DiffPane",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/DiffPane.tsx",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/DiffPane.tsx:DiffPane",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/EditorPane/EditorPane.tsx",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/EditorPane/EditorPane.tsx:EditorPane",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/EditorPane/EditorPane.tsx",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/EditorPane/EditorPane.tsx:EditorPane",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/UnknownFilePane/UnknownFilePane.tsx",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/UnknownFilePane/UnknownFilePane.tsx:UnknownFilePane",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/UnknownFilePane/UnknownFilePane.tsx",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/UnknownFilePane/UnknownFilePane.tsx:UnknownFilePane",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/UnsupportedFilePane/UnsupportedFilePane.tsx",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/UnsupportedFilePane/UnsupportedFilePane.tsx:UnsupportedFilePane",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/UnsupportedFilePane/UnsupportedFilePane.tsx",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/UnsupportedFilePane/UnsupportedFilePane.tsx:UnsupportedFilePane",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/lib/pane-id.ts",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/lib/pane-id.ts:parsePaneId",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/lib/pane-id.ts",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/lib/pane-id.ts:parsePaneId",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/lib/pane-id.ts",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/lib/pane-id.ts:makePaneId",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/lib/pane-id.ts",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/lib/pane-id.ts:makePaneId",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/utils/flattenFileTree/flattenFileTree.ts",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/utils/flattenFileTree/flattenFileTree.ts:flattenFileTree",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/utils/flattenFileTree/flattenFileTree.ts",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/utils/flattenFileTree/flattenFileTree.ts:flattenFileTree",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/layout.tsx",
+			"target": "function:src/renderer/routes/_authenticated/layout.tsx:Component",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/layout.tsx",
+			"target": "function:src/renderer/routes/_authenticated/layout.tsx:Component",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/routes/index.tsx",
+			"target": "function:src/renderer/routes/index.tsx:Index",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/routes/index.tsx",
+			"target": "function:src/renderer/routes/index.tsx:Index",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		}
+	]
+}

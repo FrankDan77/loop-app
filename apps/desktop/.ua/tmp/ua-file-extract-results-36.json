@@ -1,0 +1,3472 @@
+{
+	"scriptCompleted": true,
+	"filesAnalyzed": 33,
+	"filesSkipped": [],
+	"results": [
+		{
+			"path": "src/renderer/routes/_authenticated/settings/agents/components/AgentsSettings/components/AgentCard/components/AgentCardPreview/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "AgentCardPreview",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/agents/components/V2AgentsSettings/components/AgentFormControls/AgentFormControls.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 195,
+			"nonEmptyLines": 182,
+			"functions": [
+				{
+					"name": "AgentDetailHeader",
+					"startLine": 21,
+					"endLine": 38,
+					"params": ["{\n\ticonId,\n\tpresetId,\n\ttitle,\n\tsubtitle,\n}"]
+				},
+				{
+					"name": "AgentLaunchFields",
+					"startLine": 59,
+					"endLine": 118,
+					"params": [
+						"{\n\tidPrefix,\n\tcommandText,\n\tonCommandTextChange,\n\tonCommandBlur,\n\tpromptArgsText,\n\tonPromptArgsTextChange,\n\tonPromptArgsBlur,\n\tpromptTransport,\n\tonPromptTransportChange,\n}"
+					]
+				},
+				{
+					"name": "Section",
+					"startLine": 120,
+					"endLine": 133,
+					"params": ["{\n\ttitle,\n\tchildren,\n}"]
+				},
+				{
+					"name": "StackedField",
+					"startLine": 142,
+					"endLine": 157,
+					"params": ["{\n\tlabel,\n\thint,\n\thtmlFor,\n\tchildren,\n}"]
+				},
+				{
+					"name": "PromptTransportToggle",
+					"startLine": 166,
+					"endLine": 195,
+					"params": ["{\n\tvalue,\n\tonChange,\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "AgentDetailHeader",
+					"line": 21,
+					"isDefault": false
+				},
+				{
+					"name": "AgentLaunchFields",
+					"line": 59,
+					"isDefault": false
+				},
+				{
+					"name": "Section",
+					"line": 120,
+					"isDefault": false
+				},
+				{
+					"name": "StackedField",
+					"line": 142,
+					"isDefault": false
+				},
+				{
+					"name": "PromptTransportToggle",
+					"line": 166,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "AgentLaunchFields",
+					"callee": "onCommandTextChange",
+					"lineNumber": 81
+				},
+				{
+					"caller": "AgentLaunchFields",
+					"callee": "onPromptArgsTextChange",
+					"lineNumber": 101
+				},
+				{
+					"caller": "PromptTransportToggle",
+					"callee": "TRANSPORT_OPTIONS.map",
+					"lineNumber": 172
+				},
+				{
+					"caller": "PromptTransportToggle",
+					"callee": "onChange",
+					"lineNumber": 180
+				},
+				{
+					"caller": "PromptTransportToggle",
+					"callee": "cn",
+					"lineNumber": 181
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 5,
+				"functionCount": 5,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/agents/components/V2AgentsSettings/components/AgentIcon/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "AgentIcon",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/agents/components/V2AgentsSettings/components/AgentIconPicker/AgentIconPicker.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 115,
+			"nonEmptyLines": 110,
+			"functions": [
+				{
+					"name": "AgentIconPicker",
+					"startLine": 28,
+					"endLine": 115,
+					"params": ["{\n\tvalue,\n\tonChange,\n\tdisabled,\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "AgentIconPicker",
+					"line": 28,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "AgentIconPicker",
+					"callee": "electronTrpc.window.selectImageFile.useMutation",
+					"lineNumber": 33
+				},
+				{
+					"caller": "AgentIconPicker",
+					"callee": "useState",
+					"lineNumber": 36
+				},
+				{
+					"caller": "AgentIconPicker",
+					"callee": "isDataImageUri",
+					"lineNumber": 37
+				},
+				{
+					"caller": "AgentIconPicker",
+					"callee": "AGENT_ICON_OPTIONS.find",
+					"lineNumber": 38
+				},
+				{
+					"caller": "handleUpload",
+					"callee": "setIsProcessing",
+					"lineNumber": 42
+				},
+				{
+					"caller": "handleUpload",
+					"callee": "selectImageMutation.mutateAsync",
+					"lineNumber": 44
+				},
+				{
+					"caller": "handleUpload",
+					"callee": "resizeImageDataUrl",
+					"lineNumber": 46
+				},
+				{
+					"caller": "handleUpload",
+					"callee": "onChange",
+					"lineNumber": 47
+				},
+				{
+					"caller": "handleUpload",
+					"callee": "toast.error",
+					"lineNumber": 49
+				},
+				{
+					"caller": "handleUpload",
+					"callee": "setIsProcessing",
+					"lineNumber": 51
+				},
+				{
+					"caller": "AgentIconPicker",
+					"callee": "cn",
+					"lineNumber": 65
+				},
+				{
+					"caller": "AgentIconPicker",
+					"callee": "e.preventDefault",
+					"lineNumber": 80
+				},
+				{
+					"caller": "AgentIconPicker",
+					"callee": "handleUpload",
+					"lineNumber": 81
+				},
+				{
+					"caller": "AgentIconPicker",
+					"callee": "onChange",
+					"lineNumber": 89
+				},
+				{
+					"caller": "AgentIconPicker",
+					"callee": "AGENT_ICON_OPTIONS.map",
+					"lineNumber": 95
+				},
+				{
+					"caller": "AgentIconPicker",
+					"callee": "onChange",
+					"lineNumber": 99
+				}
+			],
+			"metrics": {
+				"importCount": 5,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/agents/components/V2AgentsSettings/components/AgentIconPicker/agent-icon-options.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 23,
+			"nonEmptyLines": 22,
+			"exports": [
+				{
+					"name": "AGENT_ICON_OPTIONS",
+					"line": 11,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/agents/components/V2AgentsSettings/components/AgentIconPicker/resize-image.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 41,
+			"nonEmptyLines": 38,
+			"functions": [
+				{
+					"name": "resizeImageDataUrl",
+					"startLine": 11,
+					"endLine": 32,
+					"params": ["dataUrl", "maxDimension"]
+				},
+				{
+					"name": "loadImage",
+					"startLine": 34,
+					"endLine": 41,
+					"params": ["src"]
+				}
+			],
+			"exports": [
+				{
+					"name": "MAX_ICON_DIMENSION",
+					"line": 9,
+					"isDefault": false
+				},
+				{
+					"name": "resizeImageDataUrl",
+					"line": 11,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "resizeImageDataUrl",
+					"callee": "loadImage",
+					"lineNumber": 16
+				},
+				{
+					"caller": "resizeImageDataUrl",
+					"callee": "Math.max",
+					"lineNumber": 17
+				},
+				{
+					"caller": "resizeImageDataUrl",
+					"callee": "Math.min",
+					"lineNumber": 18
+				},
+				{
+					"caller": "resizeImageDataUrl",
+					"callee": "Math.max",
+					"lineNumber": 19
+				},
+				{
+					"caller": "resizeImageDataUrl",
+					"callee": "Math.round",
+					"lineNumber": 19
+				},
+				{
+					"caller": "resizeImageDataUrl",
+					"callee": "Math.max",
+					"lineNumber": 20
+				},
+				{
+					"caller": "resizeImageDataUrl",
+					"callee": "Math.round",
+					"lineNumber": 20
+				},
+				{
+					"caller": "resizeImageDataUrl",
+					"callee": "document.createElement",
+					"lineNumber": 22
+				},
+				{
+					"caller": "resizeImageDataUrl",
+					"callee": "canvas.getContext",
+					"lineNumber": 25
+				},
+				{
+					"caller": "resizeImageDataUrl",
+					"callee": "ctx.drawImage",
+					"lineNumber": 27
+				},
+				{
+					"caller": "resizeImageDataUrl",
+					"callee": "canvas.toDataURL",
+					"lineNumber": 28
+				},
+				{
+					"caller": "loadImage",
+					"callee": "resolve",
+					"lineNumber": 37
+				},
+				{
+					"caller": "loadImage",
+					"callee": "reject",
+					"lineNumber": 38
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 2,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/components/BranchPrefixControl/BranchPrefixControl.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 112,
+			"nonEmptyLines": 103,
+			"functions": [
+				{
+					"name": "BranchPrefixControl",
+					"startLine": 46,
+					"endLine": 112,
+					"params": [
+						"{\n\tmode,\n\tcustomPrefix,\n\tshowDefault = false,\n\tdisabled,\n\tonChange,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "BranchPrefixControl",
+					"line": 46,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "BranchPrefixControl",
+					"callee": "useState",
+					"lineNumber": 53
+				},
+				{
+					"caller": "BranchPrefixControl",
+					"callee": "useEffect",
+					"lineNumber": 56
+				},
+				{
+					"caller": "BranchPrefixControl",
+					"callee": "setCustomPrefixInput",
+					"lineNumber": 57
+				},
+				{
+					"caller": "handleModeChange",
+					"callee": "onChange",
+					"lineNumber": 69
+				},
+				{
+					"caller": "handleCustomPrefixBlur",
+					"callee": "sanitizeSegment",
+					"lineNumber": 73
+				},
+				{
+					"caller": "handleCustomPrefixBlur",
+					"callee": "setCustomPrefixInput",
+					"lineNumber": 74
+				},
+				{
+					"caller": "handleCustomPrefixBlur",
+					"callee": "onChange",
+					"lineNumber": 79
+				},
+				{
+					"caller": "BranchPrefixControl",
+					"callee": "Object.entries(labels).map",
+					"lineNumber": 93
+				},
+				{
+					"caller": "BranchPrefixControl",
+					"callee": "Object.entries",
+					"lineNumber": 93
+				},
+				{
+					"caller": "BranchPrefixControl",
+					"callee": "setCustomPrefixInput",
+					"lineNumber": 104
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/components/ClickablePath/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "ClickablePath",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/components/V2WorktreeLocationPicker/V2WorktreeLocationPicker.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 118,
+			"nonEmptyLines": 112,
+			"functions": [
+				{
+					"name": "V2WorktreeLocationPicker",
+					"startLine": 21,
+					"endLine": 118,
+					"params": [
+						"{\n\tcurrentPath,\n\tfallbackPath,\n\thostUrl,\n\thostName,\n\tisRemoteTarget,\n\tdisabled,\n\tbrowseTitle = \"Select worktree location\",\n\tbrowseDescription,\n\tonSelect,\n\tonReset,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "V2WorktreeLocationPicker",
+					"line": 21,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "V2WorktreeLocationPicker",
+					"callee": "electronTrpc.window.selectDirectory.useMutation",
+					"lineNumber": 33
+				},
+				{
+					"caller": "V2WorktreeLocationPicker",
+					"callee": "useState",
+					"lineNumber": 34
+				},
+				{
+					"caller": "handleBrowse",
+					"callee": "setRemoteBrowseOpen",
+					"lineNumber": 42
+				},
+				{
+					"caller": "handleBrowse",
+					"callee": "selectDirectory.mutateAsync",
+					"lineNumber": 45
+				},
+				{
+					"caller": "handleBrowse",
+					"callee": "onSelect",
+					"lineNumber": 50
+				},
+				{
+					"caller": "V2WorktreeLocationPicker",
+					"callee": "onSelect",
+					"lineNumber": 113
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/components/WorktreeLocationPicker/WorktreeLocationPicker.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 71,
+			"nonEmptyLines": 66,
+			"functions": [
+				{
+					"name": "useDefaultWorktreePath",
+					"startLine": 15,
+					"endLine": 18,
+					"params": []
+				},
+				{
+					"name": "WorktreeLocationPicker",
+					"startLine": 20,
+					"endLine": 71,
+					"params": [
+						"{\n\tcurrentPath,\n\tdefaultPathLabel,\n\tdialogTitle = \"Select worktree location\",\n\tdefaultBrowsePath,\n\tdisabled,\n\tonSelect,\n\tonReset,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "useDefaultWorktreePath",
+					"line": 15,
+					"isDefault": false
+				},
+				{
+					"name": "WorktreeLocationPicker",
+					"line": 20,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "useDefaultWorktreePath",
+					"callee": "electronTrpc.window.getHomeDir.useQuery",
+					"lineNumber": 16
+				},
+				{
+					"caller": "WorktreeLocationPicker",
+					"callee": "electronTrpc.window.selectDirectory.useMutation",
+					"lineNumber": 29
+				},
+				{
+					"caller": "handleBrowse",
+					"callee": "selectDirectory.mutateAsync",
+					"lineNumber": 32
+				},
+				{
+					"caller": "handleBrowse",
+					"callee": "onSelect",
+					"lineNumber": 37
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 2,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/git/components/GitSettings/GitSettings.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 211,
+			"nonEmptyLines": 195,
+			"functions": [
+				{
+					"name": "GitSettings",
+					"startLine": 30,
+					"endLine": 211,
+					"params": ["{ visibleItems }"]
+				}
+			],
+			"exports": [
+				{
+					"name": "GitSettings",
+					"line": 30,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "GitSettings",
+					"callee": "isItemVisible",
+					"lineNumber": 31
+				},
+				{
+					"caller": "GitSettings",
+					"callee": "isItemVisible",
+					"lineNumber": 35
+				},
+				{
+					"caller": "GitSettings",
+					"callee": "isItemVisible",
+					"lineNumber": 39
+				},
+				{
+					"caller": "GitSettings",
+					"callee": "electronTrpc.useUtils",
+					"lineNumber": 44
+				},
+				{
+					"caller": "GitSettings",
+					"callee": "electronTrpc.settings.getDeleteLocalBranch.useQuery",
+					"lineNumber": 47
+				},
+				{
+					"caller": "GitSettings",
+					"callee": "electronTrpc.settings.setDeleteLocalBranch.useMutation",
+					"lineNumber": 49
+				},
+				{
+					"caller": "GitSettings",
+					"callee": "utils.settings.getDeleteLocalBranch.cancel",
+					"lineNumber": 51
+				},
+				{
+					"caller": "GitSettings",
+					"callee": "utils.settings.getDeleteLocalBranch.getData",
+					"lineNumber": 52
+				},
+				{
+					"caller": "GitSettings",
+					"callee": "utils.settings.getDeleteLocalBranch.setData",
+					"lineNumber": 53
+				},
+				{
+					"caller": "GitSettings",
+					"callee": "utils.settings.getDeleteLocalBranch.setData",
+					"lineNumber": 58
+				},
+				{
+					"caller": "GitSettings",
+					"callee": "utils.settings.getDeleteLocalBranch.invalidate",
+					"lineNumber": 65
+				},
+				{
+					"caller": "handleDeleteBranchToggle",
+					"callee": "setDeleteLocalBranch.mutate",
+					"lineNumber": 70
+				},
+				{
+					"caller": "GitSettings",
+					"callee": "electronTrpc.settings.getBranchPrefix.useQuery",
+					"lineNumber": 74
+				},
+				{
+					"caller": "GitSettings",
+					"callee": "electronTrpc.settings.getGitInfo.useQuery",
+					"lineNumber": 75
+				},
+				{
+					"caller": "GitSettings",
+					"callee": "useState",
+					"lineNumber": 77
+				},
+				{
+					"caller": "GitSettings",
+					"callee": "useEffect",
+					"lineNumber": 81
+				},
+				{
+					"caller": "GitSettings",
+					"callee": "setCustomPrefixInput",
+					"lineNumber": 82
+				},
+				{
+					"caller": "GitSettings",
+					"callee": "electronTrpc.settings.setBranchPrefix.useMutation",
+					"lineNumber": 85
+				},
+				{
+					"caller": "GitSettings",
+					"callee": "console.error",
+					"lineNumber": 87
+				},
+				{
+					"caller": "GitSettings",
+					"callee": "utils.settings.getBranchPrefix.invalidate",
+					"lineNumber": 90
+				},
+				{
+					"caller": "handleBranchPrefixModeChange",
+					"callee": "setBranchPrefix.mutate",
+					"lineNumber": 95
+				},
+				{
+					"caller": "handleCustomPrefixBlur",
+					"callee": "sanitizeSegment",
+					"lineNumber": 102
+				},
+				{
+					"caller": "handleCustomPrefixBlur",
+					"callee": "setCustomPrefixInput",
+					"lineNumber": 103
+				},
+				{
+					"caller": "handleCustomPrefixBlur",
+					"callee": "setBranchPrefix.mutate",
+					"lineNumber": 104
+				},
+				{
+					"caller": "GitSettings",
+					"callee": "resolveBranchPrefix",
+					"lineNumber": 111
+				},
+				{
+					"caller": "GitSettings",
+					"callee": "handleBranchPrefixModeChange",
+					"lineNumber": 173
+				},
+				{
+					"caller": "GitSettings",
+					"callee": "(\n\t\t\t\t\t\t\t\t\t\tObject.entries(BRANCH_PREFIX_MODE_LABELS) as [\n\t\t\t\t\t\t\t\t\t\t\tBranchPrefixMode,\n\t\t\t\t\t\t\t\t\t\t\tstring,\n\t\t\t\t\t\t\t\t\t\t][]\n\t\t\t\t\t\t\t\t\t).map",
+					"lineNumber": 181
+				},
+				{
+					"caller": "GitSettings",
+					"callee": "Object.entries",
+					"lineNumber": 182
+				},
+				{
+					"caller": "GitSettings",
+					"callee": "setCustomPrefixInput",
+					"lineNumber": 197
+				}
+			],
+			"metrics": {
+				"importCount": 4,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/git/components/GitSettings/components/UserWorktreeLocationSection/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "UserWorktreeLocationSection",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/project/$projectId/components/ProjectSettings/ProjectSettings.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 592,
+			"nonEmptyLines": 561,
+			"functions": [
+				{
+					"name": "SettingsSection",
+					"startLine": 55,
+					"endLine": 80,
+					"params": ["{\n\ticon,\n\ttitle,\n\tdescription,\n\tchildren,\n}"]
+				},
+				{
+					"name": "ProjectSettings",
+					"startLine": 87,
+					"endLine": 592,
+					"params": ["{\n\tprojectId,\n\tvisibleItems,\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "SettingsSection",
+					"line": 55,
+					"isDefault": false
+				},
+				{
+					"name": "ProjectSettings",
+					"line": 87,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "ProjectSettings",
+					"callee": "electronTrpc.useUtils",
+					"lineNumber": 91
+				},
+				{
+					"caller": "ProjectSettings",
+					"callee": "electronTrpc.projects.get.useQuery",
+					"lineNumber": 92
+				},
+				{
+					"caller": "ProjectSettings",
+					"callee": "electronTrpc.projects.getBranches.useQuery",
+					"lineNumber": 96
+				},
+				{
+					"caller": "ProjectSettings",
+					"callee": "electronTrpc.projects.getGitAuthor.useQuery",
+					"lineNumber": 100
+				},
+				{
+					"caller": "ProjectSettings",
+					"callee": "electronTrpc.settings.getBranchPrefix.useQuery",
+					"lineNumber": 104
+				},
+				{
+					"caller": "ProjectSettings",
+					"callee": "electronTrpc.settings.getGitInfo.useQuery",
+					"lineNumber": 105
+				},
+				{
+					"caller": "ProjectSettings",
+					"callee": "useState",
+					"lineNumber": 107
+				},
+				{
+					"caller": "ProjectSettings",
+					"callee": "useState",
+					"lineNumber": 110
+				},
+				{
+					"caller": "ProjectSettings",
+					"callee": "useEffect",
+					"lineNumber": 114
+				},
+				{
+					"caller": "ProjectSettings",
+					"callee": "setCustomPrefixInput",
+					"lineNumber": 115
+				},
+				{
+					"caller": "ProjectSettings",
+					"callee": "electronTrpc.projects.update.useMutation",
+					"lineNumber": 118
+				},
+				{
+					"caller": "ProjectSettings",
+					"callee": "console.error",
+					"lineNumber": 120
+				},
+				{
+					"caller": "ProjectSettings",
+					"callee": "utils.projects.get.invalidate",
+					"lineNumber": 123
+				},
+				{
+					"caller": "ProjectSettings",
+					"callee": "utils.workspaces.getAllGrouped.invalidate",
+					"lineNumber": 124
+				},
+				{
+					"caller": "ProjectSettings",
+					"callee": "electronTrpc.projects.setProjectIcon.useMutation",
+					"lineNumber": 128
+				},
+				{
+					"caller": "ProjectSettings",
+					"callee": "console.error",
+					"lineNumber": 130
+				},
+				{
+					"caller": "ProjectSettings",
+					"callee": "toast.error",
+					"lineNumber": 131
+				},
+				{
+					"caller": "ProjectSettings",
+					"callee": "utils.projects.get.invalidate",
+					"lineNumber": 134
+				},
+				{
+					"caller": "ProjectSettings",
+					"callee": "utils.workspaces.getAllGrouped.invalidate",
+					"lineNumber": 135
+				},
+				{
+					"caller": "ProjectSettings",
+					"callee": "useRef",
+					"lineNumber": 139
+				},
+				{
+					"caller": "ProjectSettings",
+					"callee": "useCallback",
+					"lineNumber": 141
+				},
+				{
+					"caller": "ProjectSettings",
+					"callee": "fileInputRef.current.click",
+					"lineNumber": 144
+				},
+				{
+					"caller": "ProjectSettings",
+					"callee": "useCallback",
+					"lineNumber": 147
+				},
+				{
+					"caller": "ProjectSettings",
+					"callee": "setProjectIcon.mutate",
+					"lineNumber": 155
+				},
+				{
+					"caller": "ProjectSettings",
+					"callee": "reader.readAsDataURL",
+					"lineNumber": 157
+				},
+				{
+					"caller": "ProjectSettings",
+					"callee": "useCallback",
+					"lineNumber": 165
+				},
+				{
+					"caller": "ProjectSettings",
+					"callee": "setProjectIcon.mutate",
+					"lineNumber": 166
+				},
+				{
+					"caller": "handleBranchPrefixModeChange",
+					"callee": "updateProject.mutate",
+					"lineNumber": 171
+				},
+				{
+					"caller": "handleBranchPrefixModeChange",
+					"callee": "updateProject.mutate",
+					"lineNumber": 179
+				},
+				{
+					"caller": "handleCustomPrefixBlur",
+					"callee": "sanitizeSegment",
+					"lineNumber": 190
+				},
+				{
+					"caller": "handleCustomPrefixBlur",
+					"callee": "setCustomPrefixInput",
+					"lineNumber": 191
+				},
+				{
+					"caller": "handleCustomPrefixBlur",
+					"callee": "updateProject.mutate",
+					"lineNumber": 192
+				},
+				{
+					"caller": "handleWorkspaceBaseBranchChange",
+					"callee": "updateProject.mutate",
+					"lineNumber": 202
+				},
+				{
+					"caller": "ProjectSettings",
+					"callee": "electronTrpc.settings.getWorktreeBaseDir.useQuery",
+					"lineNumber": 211
+				},
+				{
+					"caller": "ProjectSettings",
+					"callee": "useDefaultWorktreePath",
+					"lineNumber": 212
+				},
+				{
+					"caller": "ProjectSettings",
+					"callee": "electronTrpc.workspaces.getExternalWorktrees.useQuery",
+					"lineNumber": 216
+				},
+				{
+					"caller": "ProjectSettings",
+					"callee": "externalWorktrees.filter",
+					"lineNumber": 220
+				},
+				{
+					"caller": "ProjectSettings",
+					"callee": "useImportAllWorktrees",
+					"lineNumber": 223
+				},
+				{
+					"caller": "ProjectSettings",
+					"callee": "useOpenExternalWorktree",
+					"lineNumber": 224
+				},
+				{
+					"caller": "handleImportAll",
+					"callee": "importAllWorktrees.mutateAsync",
+					"lineNumber": 228
+				},
+				{
+					"caller": "handleImportAll",
+					"callee": "toast.success",
+					"lineNumber": 229
+				},
+				{
+					"caller": "handleImportAll",
+					"callee": "toast.error",
+					"lineNumber": 233
+				},
+				{
+					"caller": "handleImportWorktree",
+					"callee": "toast.promise",
+					"lineNumber": 240
+				},
+				{
+					"caller": "handleImportWorktree",
+					"callee": "openExternalWorktree.mutateAsync",
+					"lineNumber": 241
+				},
+				{
+					"caller": "getPreviewPrefix",
+					"callee": "getPreviewPrefix",
+					"lineNumber": 258
+				},
+				{
+					"caller": "getPreviewPrefix",
+					"callee": "resolveBranchPrefix",
+					"lineNumber": 261
+				},
+				{
+					"caller": "ProjectSettings",
+					"callee": "getPreviewPrefix",
+					"lineNumber": 280
+				},
+				{
+					"caller": "ProjectSettings",
+					"callee": "branchData.branches.some",
+					"lineNumber": 289
+				},
+				{
+					"caller": "ProjectSettings",
+					"callee": "(\n\t\t\t\t\t\t\t\t\t\tObject.entries(BRANCH_PREFIX_MODE_LABELS_WITH_DEFAULT) as [\n\t\t\t\t\t\t\t\t\t\t\tBranchPrefixMode | \"default\",\n\t\t\t\t\t\t\t\t\t\t\tstring,\n\t\t\t\t\t\t\t\t\t\t][]\n\t\t\t\t\t\t\t\t\t).map",
+					"lineNumber": 322
+				},
+				{
+					"caller": "ProjectSettings",
+					"callee": "Object.entries",
+					"lineNumber": 323
+				},
+				{
+					"caller": "ProjectSettings",
+					"callee": "setCustomPrefixInput",
+					"lineNumber": 338
+				},
+				{
+					"caller": "ProjectSettings",
+					"callee": "(branchData?.branches ?? []).map",
+					"lineNumber": 374
+				},
+				{
+					"caller": "ProjectSettings",
+					"callee": "updateProject.mutate",
+					"lineNumber": 398
+				},
+				{
+					"caller": "ProjectSettings",
+					"callee": "updateProject.mutate",
+					"lineNumber": 404
+				},
+				{
+					"caller": "ProjectSettings",
+					"callee": "isItemVisible",
+					"lineNumber": 413
+				},
+				{
+					"caller": "ProjectSettings",
+					"callee": "setSelectedWorktreePath",
+					"lineNumber": 432
+				},
+				{
+					"caller": "ProjectSettings",
+					"callee": "importableExternalWorktrees.map",
+					"lineNumber": 444
+				},
+				{
+					"caller": "ProjectSettings",
+					"callee": "importableExternalWorktrees.find",
+					"lineNumber": 457
+				},
+				{
+					"caller": "ProjectSettings",
+					"callee": "handleImportWorktree",
+					"lineNumber": 461
+				},
+				{
+					"caller": "ProjectSettings",
+					"callee": "setSelectedWorktreePath",
+					"lineNumber": 462
+				},
+				{
+					"caller": "ProjectSettings",
+					"callee": "isItemVisible",
+					"lineNumber": 514
+				},
+				{
+					"caller": "ProjectSettings",
+					"callee": "updateProject.mutate",
+					"lineNumber": 523
+				},
+				{
+					"caller": "ProjectSettings",
+					"callee": "cn",
+					"lineNumber": 549
+				},
+				{
+					"caller": "ProjectSettings",
+					"callee": "cn",
+					"lineNumber": 562
+				},
+				{
+					"caller": "ProjectSettings",
+					"callee": "updateProject.mutate",
+					"lineNumber": 579
+				}
+			],
+			"metrics": {
+				"importCount": 9,
+				"exportCount": 2,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/project/$projectId/components/ProjectSettings/components/ScriptsEditor/ScriptsEditor.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 413,
+			"nonEmptyLines": 373,
+			"functions": [
+				{
+					"name": "parseContentFromConfig",
+					"startLine": 19,
+					"endLine": 38,
+					"params": ["content"]
+				},
+				{
+					"name": "ScriptTextarea",
+					"startLine": 48,
+					"endLine": 164,
+					"params": [
+						"{\n\tdescription,\n\tplaceholder,\n\tvalue,\n\tonChange,\n\tonBlur,\n}"
+					]
+				},
+				{
+					"name": "ScriptsEditor",
+					"startLine": 168,
+					"endLine": 413,
+					"params": ["{ projectId, className }"]
+				}
+			],
+			"exports": [
+				{
+					"name": "ScriptsEditor",
+					"line": 168,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "parseContentFromConfig",
+					"callee": "JSON.parse",
+					"lineNumber": 29
+				},
+				{
+					"caller": "parseContentFromConfig",
+					"callee": "(parsed.setup ?? []).join",
+					"lineNumber": 31
+				},
+				{
+					"caller": "parseContentFromConfig",
+					"callee": "(parsed.teardown ?? []).join",
+					"lineNumber": 32
+				},
+				{
+					"caller": "parseContentFromConfig",
+					"callee": "(parsed.run ?? []).join",
+					"lineNumber": 33
+				},
+				{
+					"caller": "ScriptTextarea",
+					"callee": "useState",
+					"lineNumber": 55
+				},
+				{
+					"caller": "ScriptTextarea",
+					"callee": "useRef",
+					"lineNumber": 56
+				},
+				{
+					"caller": "ScriptTextarea",
+					"callee": "useCallback",
+					"lineNumber": 58
+				},
+				{
+					"caller": "ScriptTextarea",
+					"callee": "files.find",
+					"lineNumber": 60
+				},
+				{
+					"caller": "ScriptTextarea",
+					"callee": "file.name.match",
+					"lineNumber": 61
+				},
+				{
+					"caller": "ScriptTextarea",
+					"callee": "scriptFile.text",
+					"lineNumber": 68
+				},
+				{
+					"caller": "ScriptTextarea",
+					"callee": "onChange",
+					"lineNumber": 69
+				},
+				{
+					"caller": "ScriptTextarea",
+					"callee": "console.error",
+					"lineNumber": 71
+				},
+				{
+					"caller": "ScriptTextarea",
+					"callee": "useCallback",
+					"lineNumber": 77
+				},
+				{
+					"caller": "ScriptTextarea",
+					"callee": "e.preventDefault",
+					"lineNumber": 78
+				},
+				{
+					"caller": "ScriptTextarea",
+					"callee": "e.stopPropagation",
+					"lineNumber": 79
+				},
+				{
+					"caller": "ScriptTextarea",
+					"callee": "setIsDragOver",
+					"lineNumber": 80
+				},
+				{
+					"caller": "ScriptTextarea",
+					"callee": "useCallback",
+					"lineNumber": 83
+				},
+				{
+					"caller": "ScriptTextarea",
+					"callee": "e.preventDefault",
+					"lineNumber": 84
+				},
+				{
+					"caller": "ScriptTextarea",
+					"callee": "e.stopPropagation",
+					"lineNumber": 85
+				},
+				{
+					"caller": "ScriptTextarea",
+					"callee": "setIsDragOver",
+					"lineNumber": 86
+				},
+				{
+					"caller": "ScriptTextarea",
+					"callee": "useCallback",
+					"lineNumber": 89
+				},
+				{
+					"caller": "ScriptTextarea",
+					"callee": "e.preventDefault",
+					"lineNumber": 91
+				},
+				{
+					"caller": "ScriptTextarea",
+					"callee": "e.stopPropagation",
+					"lineNumber": 92
+				},
+				{
+					"caller": "ScriptTextarea",
+					"callee": "setIsDragOver",
+					"lineNumber": 93
+				},
+				{
+					"caller": "ScriptTextarea",
+					"callee": "importFirstFile",
+					"lineNumber": 95
+				},
+				{
+					"caller": "ScriptTextarea",
+					"callee": "Array.from",
+					"lineNumber": 95
+				},
+				{
+					"caller": "ScriptTextarea",
+					"callee": "useCallback",
+					"lineNumber": 100
+				},
+				{
+					"caller": "ScriptTextarea",
+					"callee": "Array.from",
+					"lineNumber": 102
+				},
+				{
+					"caller": "ScriptTextarea",
+					"callee": "importFirstFile",
+					"lineNumber": 103
+				},
+				{
+					"caller": "ScriptTextarea",
+					"callee": "cn",
+					"lineNumber": 118
+				},
+				{
+					"caller": "ScriptTextarea",
+					"callee": "onChange",
+					"lineNumber": 130
+				},
+				{
+					"caller": "ScriptTextarea",
+					"callee": "fileInputRef.current?.click",
+					"lineNumber": 149
+				},
+				{
+					"caller": "ScriptsEditor",
+					"callee": "electronTrpc.useUtils",
+					"lineNumber": 169
+				},
+				{
+					"caller": "ScriptsEditor",
+					"callee": "electronTrpc.config.getConfigContent.useQuery",
+					"lineNumber": 172
+				},
+				{
+					"caller": "ScriptsEditor",
+					"callee": "useState",
+					"lineNumber": 177
+				},
+				{
+					"caller": "ScriptsEditor",
+					"callee": "useState",
+					"lineNumber": 178
+				},
+				{
+					"caller": "ScriptsEditor",
+					"callee": "useState",
+					"lineNumber": 179
+				},
+				{
+					"caller": "ScriptsEditor",
+					"callee": "useState",
+					"lineNumber": 180
+				},
+				{
+					"caller": "ScriptsEditor",
+					"callee": "useRef",
+					"lineNumber": 181
+				},
+				{
+					"caller": "ScriptsEditor",
+					"callee": "useRef",
+					"lineNumber": 186
+				},
+				{
+					"caller": "ScriptsEditor",
+					"callee": "useRef",
+					"lineNumber": 187
+				},
+				{
+					"caller": "ScriptsEditor",
+					"callee": "useRef",
+					"lineNumber": 188
+				},
+				{
+					"caller": "ScriptsEditor",
+					"callee": "useRef",
+					"lineNumber": 189
+				},
+				{
+					"caller": "ScriptsEditor",
+					"callee": "useRef",
+					"lineNumber": 190
+				},
+				{
+					"caller": "ScriptsEditor",
+					"callee": "useCallback",
+					"lineNumber": 198
+				},
+				{
+					"caller": "ScriptsEditor",
+					"callee": "content.setup.trim",
+					"lineNumber": 201
+				},
+				{
+					"caller": "ScriptsEditor",
+					"callee": "content.setup.trim",
+					"lineNumber": 201
+				},
+				{
+					"caller": "ScriptsEditor",
+					"callee": "content.teardown.trim",
+					"lineNumber": 202
+				},
+				{
+					"caller": "ScriptsEditor",
+					"callee": "content.teardown.trim",
+					"lineNumber": 202
+				},
+				{
+					"caller": "ScriptsEditor",
+					"callee": "content.run.trim",
+					"lineNumber": 203
+				},
+				{
+					"caller": "ScriptsEditor",
+					"callee": "content.run.trim",
+					"lineNumber": 203
+				},
+				{
+					"caller": "ScriptsEditor",
+					"callee": "useCallback",
+					"lineNumber": 208
+				},
+				{
+					"caller": "ScriptsEditor",
+					"callee": "JSON.stringify",
+					"lineNumber": 210
+				},
+				{
+					"caller": "ScriptsEditor",
+					"callee": "useEffect",
+					"lineNumber": 214
+				},
+				{
+					"caller": "ScriptsEditor",
+					"callee": "parseContentFromConfig",
+					"lineNumber": 221
+				},
+				{
+					"caller": "ScriptsEditor",
+					"callee": "setSetupContent",
+					"lineNumber": 222
+				},
+				{
+					"caller": "ScriptsEditor",
+					"callee": "setTeardownContent",
+					"lineNumber": 223
+				},
+				{
+					"caller": "ScriptsEditor",
+					"callee": "setRunContent",
+					"lineNumber": 224
+				},
+				{
+					"caller": "ScriptsEditor",
+					"callee": "serializePayload",
+					"lineNumber": 225
+				},
+				{
+					"caller": "ScriptsEditor",
+					"callee": "buildPayload",
+					"lineNumber": 226
+				},
+				{
+					"caller": "ScriptsEditor",
+					"callee": "electronTrpc.config.updateConfig.useMutation",
+					"lineNumber": 234
+				},
+				{
+					"caller": "ScriptsEditor",
+					"callee": "useCallback",
+					"lineNumber": 236
+				},
+				{
+					"caller": "ScriptsEditor",
+					"callee": "clearTimeout",
+					"lineNumber": 244
+				},
+				{
+					"caller": "ScriptsEditor",
+					"callee": "setSaveStatus",
+					"lineNumber": 249
+				},
+				{
+					"caller": "ScriptsEditor",
+					"callee": "buildPayload",
+					"lineNumber": 253
+				},
+				{
+					"caller": "ScriptsEditor",
+					"callee": "serializePayload",
+					"lineNumber": 254
+				},
+				{
+					"caller": "ScriptsEditor",
+					"callee": "updateConfigMutation.mutateAsync",
+					"lineNumber": 260
+				},
+				{
+					"caller": "ScriptsEditor",
+					"callee": "invalidateProjectScriptQueries",
+					"lineNumber": 262
+				},
+				{
+					"caller": "ScriptsEditor",
+					"callee": "setSaveStatus",
+					"lineNumber": 264
+				},
+				{
+					"caller": "ScriptsEditor",
+					"callee": "setTimeout",
+					"lineNumber": 266
+				},
+				{
+					"caller": "ScriptsEditor",
+					"callee": "setSaveStatus",
+					"lineNumber": 266
+				},
+				{
+					"caller": "ScriptsEditor",
+					"callee": "console.error",
+					"lineNumber": 268
+				},
+				{
+					"caller": "ScriptsEditor",
+					"callee": "clearTimeout",
+					"lineNumber": 271
+				},
+				{
+					"caller": "ScriptsEditor",
+					"callee": "setSaveStatus",
+					"lineNumber": 274
+				},
+				{
+					"caller": "ScriptsEditor",
+					"callee": "useCallback",
+					"lineNumber": 280
+				},
+				{
+					"caller": "ScriptsEditor",
+					"callee": "clearTimeout",
+					"lineNumber": 283
+				},
+				{
+					"caller": "ScriptsEditor",
+					"callee": "setTimeout",
+					"lineNumber": 288
+				},
+				{
+					"caller": "ScriptsEditor",
+					"callee": "handleSave",
+					"lineNumber": 290
+				},
+				{
+					"caller": "ScriptsEditor",
+					"callee": "useCallback",
+					"lineNumber": 294
+				},
+				{
+					"caller": "ScriptsEditor",
+					"callee": "clearTimeout",
+					"lineNumber": 297
+				},
+				{
+					"caller": "ScriptsEditor",
+					"callee": "handleSave",
+					"lineNumber": 300
+				},
+				{
+					"caller": "ScriptsEditor",
+					"callee": "useEffect",
+					"lineNumber": 304
+				},
+				{
+					"caller": "ScriptsEditor",
+					"callee": "clearTimeout",
+					"lineNumber": 307
+				},
+				{
+					"caller": "ScriptsEditor",
+					"callee": "clearTimeout",
+					"lineNumber": 310
+				},
+				{
+					"caller": "ScriptsEditor",
+					"callee": "useCallback",
+					"lineNumber": 315
+				},
+				{
+					"caller": "ScriptsEditor",
+					"callee": "setSetupContent",
+					"lineNumber": 317
+				},
+				{
+					"caller": "ScriptsEditor",
+					"callee": "debouncedSave",
+					"lineNumber": 318
+				},
+				{
+					"caller": "ScriptsEditor",
+					"callee": "useCallback",
+					"lineNumber": 323
+				},
+				{
+					"caller": "ScriptsEditor",
+					"callee": "setTeardownContent",
+					"lineNumber": 325
+				},
+				{
+					"caller": "ScriptsEditor",
+					"callee": "debouncedSave",
+					"lineNumber": 326
+				},
+				{
+					"caller": "ScriptsEditor",
+					"callee": "useCallback",
+					"lineNumber": 331
+				},
+				{
+					"caller": "ScriptsEditor",
+					"callee": "setRunContent",
+					"lineNumber": 333
+				},
+				{
+					"caller": "ScriptsEditor",
+					"callee": "debouncedSave",
+					"lineNumber": 334
+				},
+				{
+					"caller": "ScriptsEditor",
+					"callee": "cn",
+					"lineNumber": 341
+				},
+				{
+					"caller": "ScriptsEditor",
+					"callee": "cn",
+					"lineNumber": 348
+				}
+			],
+			"metrics": {
+				"importCount": 3,
+				"exportCount": 1,
+				"functionCount": 3,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/project/$projectId/components/ProjectSettings/components/ScriptsEditor/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "ScriptsEditor",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/ringtones/components/RingtonesSettings/components/VolumeDropdown/VolumeDropdown.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 94,
+			"nonEmptyLines": 88,
+			"functions": [
+				{
+					"name": "getVolumeLabel",
+					"startLine": 20,
+					"endLine": 23,
+					"params": ["volume"]
+				},
+				{
+					"name": "VolumeDropdown",
+					"startLine": 25,
+					"endLine": 94,
+					"params": []
+				}
+			],
+			"exports": [
+				{
+					"name": "VolumeDropdown",
+					"line": 25,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "getVolumeLabel",
+					"callee": "VOLUME_LEVELS.find",
+					"lineNumber": 21
+				},
+				{
+					"caller": "VolumeDropdown",
+					"callee": "electronTrpc.useUtils",
+					"lineNumber": 26
+				},
+				{
+					"caller": "VolumeDropdown",
+					"callee": "electronTrpc.settings.getNotificationVolume.useQuery",
+					"lineNumber": 28
+				},
+				{
+					"caller": "VolumeDropdown",
+					"callee": "electronTrpc.settings.setNotificationVolume.useMutation",
+					"lineNumber": 31
+				},
+				{
+					"caller": "VolumeDropdown",
+					"callee": "utils.settings.getNotificationVolume.cancel",
+					"lineNumber": 33
+				},
+				{
+					"caller": "VolumeDropdown",
+					"callee": "utils.settings.getNotificationVolume.getData",
+					"lineNumber": 34
+				},
+				{
+					"caller": "VolumeDropdown",
+					"callee": "utils.settings.getNotificationVolume.setData",
+					"lineNumber": 35
+				},
+				{
+					"caller": "VolumeDropdown",
+					"callee": "utils.settings.getNotificationVolume.setData",
+					"lineNumber": 40
+				},
+				{
+					"caller": "VolumeDropdown",
+					"callee": "utils.settings.getNotificationVolume.invalidate",
+					"lineNumber": 47
+				},
+				{
+					"caller": "VolumeDropdown",
+					"callee": "useCallback",
+					"lineNumber": 51
+				},
+				{
+					"caller": "VolumeDropdown",
+					"callee": "Number.parseInt",
+					"lineNumber": 53
+				},
+				{
+					"caller": "VolumeDropdown",
+					"callee": "setVolume.mutate",
+					"lineNumber": 54
+				},
+				{
+					"caller": "VolumeDropdown",
+					"callee": "volume.toString",
+					"lineNumber": 66
+				},
+				{
+					"caller": "VolumeDropdown",
+					"callee": "getVolumeLabel",
+					"lineNumber": 73
+				},
+				{
+					"caller": "VolumeDropdown",
+					"callee": "VOLUME_LEVELS.map",
+					"lineNumber": 79
+				},
+				{
+					"caller": "VolumeDropdown",
+					"callee": "level.value.toString",
+					"lineNumber": 80
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/utils/branch-prefix/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 4,
+			"nonEmptyLines": 4,
+			"exports": [
+				{
+					"name": "BRANCH_PREFIX_MODE_LABELS",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "BRANCH_PREFIX_MODE_LABELS_WITH_DEFAULT",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 2,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/ProjectLocationSection/ProjectLocationSection.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 294,
+			"nonEmptyLines": 281,
+			"functions": [
+				{
+					"name": "ProjectLocationSection",
+					"startLine": 40,
+					"endLine": 294,
+					"params": [
+						"{\n\tprojectId,\n\tcurrentPath,\n\trepoCloneUrl,\n\thostId,\n\thostUrl,\n\thostName,\n\tisRemoteTarget,\n\tonChanged,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "ProjectLocationSection",
+					"line": 40,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "ProjectLocationSection",
+					"callee": "electronTrpc.window.selectDirectory.useMutation",
+					"lineNumber": 50
+				},
+				{
+					"caller": "ProjectLocationSection",
+					"callee": "useNavigate",
+					"lineNumber": 51
+				},
+				{
+					"caller": "ProjectLocationSection",
+					"callee": "useDashboardSidebarState",
+					"lineNumber": 53
+				},
+				{
+					"caller": "ProjectLocationSection",
+					"callee": "useState",
+					"lineNumber": 55
+				},
+				{
+					"caller": "ProjectLocationSection",
+					"callee": "useState",
+					"lineNumber": 56
+				},
+				{
+					"caller": "ProjectLocationSection",
+					"callee": "useState",
+					"lineNumber": 57
+				},
+				{
+					"caller": "ProjectLocationSection",
+					"callee": "useState",
+					"lineNumber": 58
+				},
+				{
+					"caller": "ProjectLocationSection",
+					"callee": "useState",
+					"lineNumber": 59
+				},
+				{
+					"caller": "pickPath",
+					"callee": "toast.error",
+					"lineNumber": 63
+				},
+				{
+					"caller": "pickPath",
+					"callee": "selectDirectory.mutateAsync",
+					"lineNumber": 67
+				},
+				{
+					"caller": "pickPath",
+					"callee": "toast.error",
+					"lineNumber": 74
+				},
+				{
+					"caller": "pickPath",
+					"callee": "String",
+					"lineNumber": 74
+				},
+				{
+					"caller": "proposeRelocate",
+					"callee": "toast.info",
+					"lineNumber": 81
+				},
+				{
+					"caller": "proposeRelocate",
+					"callee": "toast.error",
+					"lineNumber": 85
+				},
+				{
+					"caller": "proposeRelocate",
+					"callee": "getHostServiceClientByUrl",
+					"lineNumber": 89
+				},
+				{
+					"caller": "proposeRelocate",
+					"callee": "client.project.findBackfillConflict.query",
+					"lineNumber": 90
+				},
+				{
+					"caller": "proposeRelocate",
+					"callee": "setConflict",
+					"lineNumber": 95
+				},
+				{
+					"caller": "proposeRelocate",
+					"callee": "toast.error",
+					"lineNumber": 99
+				},
+				{
+					"caller": "proposeRelocate",
+					"callee": "String",
+					"lineNumber": 99
+				},
+				{
+					"caller": "proposeRelocate",
+					"callee": "setPendingPath",
+					"lineNumber": 102
+				},
+				{
+					"caller": "handleChange",
+					"callee": "setChangeBrowseOpen",
+					"lineNumber": 107
+				},
+				{
+					"caller": "handleChange",
+					"callee": "pickPath",
+					"lineNumber": 110
+				},
+				{
+					"caller": "handleChange",
+					"callee": "proposeRelocate",
+					"lineNumber": 112
+				},
+				{
+					"caller": "handleConfirmRelocate",
+					"callee": "toast.error",
+					"lineNumber": 118
+				},
+				{
+					"caller": "handleConfirmRelocate",
+					"callee": "setIsSubmitting",
+					"lineNumber": 121
+				},
+				{
+					"caller": "handleConfirmRelocate",
+					"callee": "getHostServiceClientByUrl",
+					"lineNumber": 123
+				},
+				{
+					"caller": "handleConfirmRelocate",
+					"callee": "client.project.setup.mutate",
+					"lineNumber": 124
+				},
+				{
+					"caller": "handleConfirmRelocate",
+					"callee": "toast.success",
+					"lineNumber": 128
+				},
+				{
+					"caller": "handleConfirmRelocate",
+					"callee": "ensureWorkspaceInSidebar",
+					"lineNumber": 130
+				},
+				{
+					"caller": "handleConfirmRelocate",
+					"callee": "ensureProjectInSidebar",
+					"lineNumber": 132
+				},
+				{
+					"caller": "handleConfirmRelocate",
+					"callee": "onChanged",
+					"lineNumber": 134
+				},
+				{
+					"caller": "handleConfirmRelocate",
+					"callee": "setPendingPath",
+					"lineNumber": 135
+				},
+				{
+					"caller": "handleConfirmRelocate",
+					"callee": "toast.error",
+					"lineNumber": 137
+				},
+				{
+					"caller": "handleConfirmRelocate",
+					"callee": "String",
+					"lineNumber": 137
+				},
+				{
+					"caller": "handleConfirmRelocate",
+					"callee": "setIsSubmitting",
+					"lineNumber": 139
+				},
+				{
+					"caller": "ProjectLocationSection",
+					"callee": "setSetupOpen",
+					"lineNumber": 176
+				},
+				{
+					"caller": "ProjectLocationSection",
+					"callee": "proposeRelocate",
+					"lineNumber": 206
+				},
+				{
+					"caller": "ProjectLocationSection",
+					"callee": "setConflict",
+					"lineNumber": 214
+				},
+				{
+					"caller": "ProjectLocationSection",
+					"callee": "setIsSubmitting",
+					"lineNumber": 215
+				},
+				{
+					"caller": "ProjectLocationSection",
+					"callee": "e.preventDefault",
+					"lineNumber": 232
+				},
+				{
+					"caller": "ProjectLocationSection",
+					"callee": "setConflict",
+					"lineNumber": 235
+				},
+				{
+					"caller": "ProjectLocationSection",
+					"callee": "setIsSubmitting",
+					"lineNumber": 236
+				},
+				{
+					"caller": "ProjectLocationSection",
+					"callee": "navigate",
+					"lineNumber": 237
+				},
+				{
+					"caller": "ProjectLocationSection",
+					"callee": "setPendingPath",
+					"lineNumber": 253
+				},
+				{
+					"caller": "ProjectLocationSection",
+					"callee": "e.preventDefault",
+					"lineNumber": 282
+				},
+				{
+					"caller": "ProjectLocationSection",
+					"callee": "handleConfirmRelocate",
+					"lineNumber": 283
+				}
+			],
+			"metrics": {
+				"importCount": 6,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/SetupProjectModal/SetupProjectModal.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 369,
+			"nonEmptyLines": 352,
+			"functions": [
+				{
+					"name": "SetupProjectModal",
+					"startLine": 35,
+					"endLine": 369,
+					"params": [
+						"{\n\topen,\n\tonOpenChange,\n\tprojectId,\n\thostUrl,\n\thostName,\n\trepoCloneUrl,\n\tisRemoteTarget,\n\tonChanged,\n\tonConflict,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "SetupProjectModal",
+					"line": 35,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "SetupProjectModal",
+					"callee": "electronTrpc.window.selectDirectory.useMutation",
+					"lineNumber": 46
+				},
+				{
+					"caller": "SetupProjectModal",
+					"callee": "useDashboardSidebarState",
+					"lineNumber": 48
+				},
+				{
+					"caller": "SetupProjectModal",
+					"callee": "useState",
+					"lineNumber": 50
+				},
+				{
+					"caller": "SetupProjectModal",
+					"callee": "useState",
+					"lineNumber": 53
+				},
+				{
+					"caller": "SetupProjectModal",
+					"callee": "useState",
+					"lineNumber": 54
+				},
+				{
+					"caller": "SetupProjectModal",
+					"callee": "useState",
+					"lineNumber": 55
+				},
+				{
+					"caller": "SetupProjectModal",
+					"callee": "useState",
+					"lineNumber": 56
+				},
+				{
+					"caller": "SetupProjectModal",
+					"callee": "useEffect",
+					"lineNumber": 60
+				},
+				{
+					"caller": "SetupProjectModal",
+					"callee": "setMode",
+					"lineNumber": 62
+				},
+				{
+					"caller": "reset",
+					"callee": "setParentDir",
+					"lineNumber": 66
+				},
+				{
+					"caller": "reset",
+					"callee": "setImportPath",
+					"lineNumber": 67
+				},
+				{
+					"caller": "reset",
+					"callee": "setWorking",
+					"lineNumber": 68
+				},
+				{
+					"caller": "handleOpenChange",
+					"callee": "reset",
+					"lineNumber": 73
+				},
+				{
+					"caller": "handleOpenChange",
+					"callee": "onOpenChange",
+					"lineNumber": 74
+				},
+				{
+					"caller": "browseFor",
+					"callee": "selectDirectory.mutateAsync",
+					"lineNumber": 82
+				},
+				{
+					"caller": "browseFor",
+					"callee": "setParentDir",
+					"lineNumber": 84
+				},
+				{
+					"caller": "browseFor",
+					"callee": "setImportPath",
+					"lineNumber": 85
+				},
+				{
+					"caller": "browseFor",
+					"callee": "toast.error",
+					"lineNumber": 87
+				},
+				{
+					"caller": "browseFor",
+					"callee": "String",
+					"lineNumber": 87
+				},
+				{
+					"caller": "runClone",
+					"callee": "toast.error",
+					"lineNumber": 93
+				},
+				{
+					"caller": "runClone",
+					"callee": "parentDir.trim",
+					"lineNumber": 96
+				},
+				{
+					"caller": "runClone",
+					"callee": "toast.error",
+					"lineNumber": 98
+				},
+				{
+					"caller": "runClone",
+					"callee": "setWorking",
+					"lineNumber": 105
+				},
+				{
+					"caller": "runClone",
+					"callee": "getHostServiceClientByUrl",
+					"lineNumber": 107
+				},
+				{
+					"caller": "runClone",
+					"callee": "client.project.setup.mutate",
+					"lineNumber": 108
+				},
+				{
+					"caller": "runClone",
+					"callee": "toast.success",
+					"lineNumber": 112
+				},
+				{
+					"caller": "runClone",
+					"callee": "ensureWorkspaceInSidebar",
+					"lineNumber": 114
+				},
+				{
+					"caller": "runClone",
+					"callee": "ensureProjectInSidebar",
+					"lineNumber": 116
+				},
+				{
+					"caller": "runClone",
+					"callee": "onChanged",
+					"lineNumber": 118
+				},
+				{
+					"caller": "runClone",
+					"callee": "reset",
+					"lineNumber": 119
+				},
+				{
+					"caller": "runClone",
+					"callee": "onOpenChange",
+					"lineNumber": 120
+				},
+				{
+					"caller": "runClone",
+					"callee": "toast.error",
+					"lineNumber": 122
+				},
+				{
+					"caller": "runClone",
+					"callee": "String",
+					"lineNumber": 122
+				},
+				{
+					"caller": "runClone",
+					"callee": "setWorking",
+					"lineNumber": 124
+				},
+				{
+					"caller": "runImport",
+					"callee": "toast.error",
+					"lineNumber": 130
+				},
+				{
+					"caller": "runImport",
+					"callee": "importPath.trim",
+					"lineNumber": 133
+				},
+				{
+					"caller": "runImport",
+					"callee": "toast.error",
+					"lineNumber": 135
+				},
+				{
+					"caller": "runImport",
+					"callee": "setWorking",
+					"lineNumber": 142
+				},
+				{
+					"caller": "runImport",
+					"callee": "getHostServiceClientByUrl",
+					"lineNumber": 144
+				},
+				{
+					"caller": "runImport",
+					"callee": "client.project.findBackfillConflict.query",
+					"lineNumber": 145
+				},
+				{
+					"caller": "runImport",
+					"callee": "onConflict",
+					"lineNumber": 150
+				},
+				{
+					"caller": "runImport",
+					"callee": "onOpenChange",
+					"lineNumber": 151
+				},
+				{
+					"caller": "runImport",
+					"callee": "client.project.setup.mutate",
+					"lineNumber": 154
+				},
+				{
+					"caller": "runImport",
+					"callee": "toast.success",
+					"lineNumber": 158
+				},
+				{
+					"caller": "runImport",
+					"callee": "ensureWorkspaceInSidebar",
+					"lineNumber": 160
+				},
+				{
+					"caller": "runImport",
+					"callee": "ensureProjectInSidebar",
+					"lineNumber": 162
+				},
+				{
+					"caller": "runImport",
+					"callee": "onChanged",
+					"lineNumber": 164
+				},
+				{
+					"caller": "runImport",
+					"callee": "reset",
+					"lineNumber": 165
+				},
+				{
+					"caller": "runImport",
+					"callee": "onOpenChange",
+					"lineNumber": 166
+				},
+				{
+					"caller": "runImport",
+					"callee": "toast.error",
+					"lineNumber": 168
+				},
+				{
+					"caller": "runImport",
+					"callee": "String",
+					"lineNumber": 168
+				},
+				{
+					"caller": "runImport",
+					"callee": "setWorking",
+					"lineNumber": 170
+				},
+				{
+					"caller": "SetupProjectModal",
+					"callee": "setMode",
+					"lineNumber": 191
+				},
+				{
+					"caller": "SetupProjectModal",
+					"callee": "setParentDir",
+					"lineNumber": 230
+				},
+				{
+					"caller": "SetupProjectModal",
+					"callee": "runClone",
+					"lineNumber": 239
+				},
+				{
+					"caller": "SetupProjectModal",
+					"callee": "setBrowseTarget",
+					"lineNumber": 248
+				},
+				{
+					"caller": "SetupProjectModal",
+					"callee": "browseFor",
+					"lineNumber": 250
+				},
+				{
+					"caller": "SetupProjectModal",
+					"callee": "setImportPath",
+					"lineNumber": 277
+				},
+				{
+					"caller": "SetupProjectModal",
+					"callee": "runImport",
+					"lineNumber": 286
+				},
+				{
+					"caller": "SetupProjectModal",
+					"callee": "setBrowseTarget",
+					"lineNumber": 295
+				},
+				{
+					"caller": "SetupProjectModal",
+					"callee": "browseFor",
+					"lineNumber": 297
+				},
+				{
+					"caller": "SetupProjectModal",
+					"callee": "handleOpenChange",
+					"lineNumber": 315
+				},
+				{
+					"caller": "SetupProjectModal",
+					"callee": "submit",
+					"lineNumber": 322
+				},
+				{
+					"caller": "SetupProjectModal",
+					"callee": "setBrowseTarget",
+					"lineNumber": 343
+				},
+				{
+					"caller": "SetupProjectModal",
+					"callee": "setParentDir",
+					"lineNumber": 363
+				},
+				{
+					"caller": "SetupProjectModal",
+					"callee": "setImportPath",
+					"lineNumber": 364
+				}
+			],
+			"metrics": {
+				"importCount": 4,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/SetupProjectModal/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "SetupProjectModal",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/AppFrame.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 7,
+			"nonEmptyLines": 6,
+			"functions": [
+				{
+					"name": "AppFrame",
+					"startLine": 5,
+					"endLine": 7,
+					"params": ["{ children }"]
+				}
+			],
+			"exports": [
+				{
+					"name": "AppFrame",
+					"line": 5,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/Background.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 39,
+			"nonEmptyLines": 37,
+			"functions": [
+				{
+					"name": "Background",
+					"startLine": 1,
+					"endLine": 39,
+					"params": []
+				}
+			],
+			"exports": [
+				{
+					"name": "Background",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceSidebar/MultiDragPreview/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "MultiDragPreview",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceSidebar/PortsList/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "PortsList",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceSidebar/ProjectSection/CloseProjectDialog.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 69,
+			"nonEmptyLines": 66,
+			"functions": [
+				{
+					"name": "CloseProjectDialog",
+					"startLine": 20,
+					"endLine": 69,
+					"params": [
+						"{\n\tprojectName,\n\tworkspaceCount,\n\topen,\n\tonOpenChange,\n\tonConfirm,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "CloseProjectDialog",
+					"line": 20,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "CloseProjectDialog",
+					"callee": "onOpenChange",
+					"lineNumber": 53
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceSidebar/ProjectSection/ProjectHeader.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 395,
+			"nonEmptyLines": 370,
+			"functions": [
+				{
+					"name": "ProjectHeader",
+					"startLine": 54,
+					"endLine": 395,
+					"params": [
+						"{\n\tprojectId,\n\tprojectName,\n\tprojectColor,\n\tgithubOwner,\n\tmainRepoPath,\n\thideImage,\n\ticonUrl,\n\tisCollapsed,\n\tisSidebarCollapsed = false,\n\tonToggleCollapse,\n\tworkspaceCount,\n\tonNewWorkspace,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "ProjectHeader",
+					"line": 54,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "ProjectHeader",
+					"callee": "electronTrpc.useUtils",
+					"lineNumber": 68
+				},
+				{
+					"caller": "ProjectHeader",
+					"callee": "useNavigate",
+					"lineNumber": 69
+				},
+				{
+					"caller": "ProjectHeader",
+					"callee": "useParams",
+					"lineNumber": 70
+				},
+				{
+					"caller": "ProjectHeader",
+					"callee": "useState",
+					"lineNumber": 71
+				},
+				{
+					"caller": "ProjectHeader",
+					"callee": "useProjectRename",
+					"lineNumber": 72
+				},
+				{
+					"caller": "ProjectHeader",
+					"callee": "electronTrpc.projects.close.useMutation",
+					"lineNumber": 74
+				},
+				{
+					"caller": "ProjectHeader",
+					"callee": "utils.workspaces.get.fetch",
+					"lineNumber": 80
+				},
+				{
+					"caller": "ProjectHeader",
+					"callee": "console.warn",
+					"lineNumber": 85
+				},
+				{
+					"caller": "ProjectHeader",
+					"callee": "utils.workspaces.getAllGrouped.invalidate",
+					"lineNumber": 95
+				},
+				{
+					"caller": "ProjectHeader",
+					"callee": "utils.projects.getRecents.invalidate",
+					"lineNumber": 96
+				},
+				{
+					"caller": "ProjectHeader",
+					"callee": "utils.workspaces.getAllGrouped.fetch",
+					"lineNumber": 99
+				},
+				{
+					"caller": "ProjectHeader",
+					"callee": "groups\n\t\t\t\t\t.flatMap((group) => group.workspaces)\n\t\t\t\t\t.find",
+					"lineNumber": 100
+				},
+				{
+					"caller": "ProjectHeader",
+					"callee": "groups\n\t\t\t\t\t.flatMap",
+					"lineNumber": 100
+				},
+				{
+					"caller": "ProjectHeader",
+					"callee": "navigateToWorkspace",
+					"lineNumber": 105
+				},
+				{
+					"caller": "ProjectHeader",
+					"callee": "navigate",
+					"lineNumber": 107
+				},
+				{
+					"caller": "ProjectHeader",
+					"callee": "toast.warning",
+					"lineNumber": 112
+				},
+				{
+					"caller": "ProjectHeader",
+					"callee": "toast.error",
+					"lineNumber": 116
+				},
+				{
+					"caller": "ProjectHeader",
+					"callee": "electronTrpc.external.openInFinder.useMutation",
+					"lineNumber": 120
+				},
+				{
+					"caller": "ProjectHeader",
+					"callee": "toast.error",
+					"lineNumber": 121
+				},
+				{
+					"caller": "handleCloseProject",
+					"callee": "setIsCloseDialogOpen",
+					"lineNumber": 125
+				},
+				{
+					"caller": "handleConfirmClose",
+					"callee": "closeProject.mutate",
+					"lineNumber": 129
+				},
+				{
+					"caller": "handleOpenInFinder",
+					"callee": "openInFinder.mutate",
+					"lineNumber": 133
+				},
+				{
+					"caller": "handleOpenSettings",
+					"callee": "navigate",
+					"lineNumber": 137
+				},
+				{
+					"caller": "ProjectHeader",
+					"callee": "useUpdateProject",
+					"lineNumber": 140
+				},
+				{
+					"caller": "ProjectHeader",
+					"callee": "toast.error",
+					"lineNumber": 141
+				},
+				{
+					"caller": "handleColorChange",
+					"callee": "updateProject.mutate",
+					"lineNumber": 145
+				},
+				{
+					"caller": "handleToggleImage",
+					"callee": "updateProject.mutate",
+					"lineNumber": 149
+				},
+				{
+					"caller": "ProjectHeader",
+					"callee": "electronTrpc.workspaces.createSection.useMutation",
+					"lineNumber": 152
+				},
+				{
+					"caller": "ProjectHeader",
+					"callee": "utils.workspaces.getAllGrouped.invalidate",
+					"lineNumber": 153
+				},
+				{
+					"caller": "ProjectHeader",
+					"callee": "toast.error",
+					"lineNumber": 155
+				},
+				{
+					"caller": "handleNewSection",
+					"callee": "createSection.mutate",
+					"lineNumber": 159
+				},
+				{
+					"caller": "ProjectHeader",
+					"callee": "cn",
+					"lineNumber": 188
+				},
+				{
+					"caller": "ProjectHeader",
+					"callee": "cn",
+					"lineNumber": 264
+				},
+				{
+					"caller": "ProjectHeader",
+					"callee": "e.stopPropagation",
+					"lineNumber": 314
+				},
+				{
+					"caller": "ProjectHeader",
+					"callee": "onNewWorkspace",
+					"lineNumber": 315
+				},
+				{
+					"caller": "ProjectHeader",
+					"callee": "e.stopPropagation",
+					"lineNumber": 317
+				},
+				{
+					"caller": "ProjectHeader",
+					"callee": "e.stopPropagation",
+					"lineNumber": 331
+				},
+				{
+					"caller": "ProjectHeader",
+					"callee": "cn",
+					"lineNumber": 336
+				}
+			],
+			"metrics": {
+				"importCount": 9,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceSidebar/ProjectSection/ProjectSection.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 440,
+			"nonEmptyLines": 420,
+			"functions": [
+				{
+					"name": "ProjectSection",
+					"startLine": 55,
+					"endLine": 440,
+					"params": [
+						"{\n\tprojectId,\n\tprojectName,\n\tprojectColor,\n\tgithubOwner,\n\tmainRepoPath,\n\thideImage,\n\ticonUrl,\n\tworkspaces,\n\tsections,\n\ttopLevelItems,\n\tshortcutBaseIndex,\n\tindex,\n\tisCollapsed: isSidebarCollapsed = false,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "ProjectSection",
+					"line": 55,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "ProjectSection",
+					"callee": "useWorkspaceSidebarStore",
+					"lineNumber": 71
+				},
+				{
+					"caller": "ProjectSection",
+					"callee": "useOpenNewWorkspaceModal",
+					"lineNumber": 72
+				},
+				{
+					"caller": "ProjectSection",
+					"callee": "useReorderProjects",
+					"lineNumber": 73
+				},
+				{
+					"caller": "ProjectSection",
+					"callee": "electronTrpc.useUtils",
+					"lineNumber": 74
+				},
+				{
+					"caller": "ProjectSection",
+					"callee": "isProjectCollapsed",
+					"lineNumber": 76
+				},
+				{
+					"caller": "ProjectSection",
+					"callee": "sections.reduce",
+					"lineNumber": 79
+				},
+				{
+					"caller": "ProjectSection",
+					"callee": "useMemo",
+					"lineNumber": 81
+				},
+				{
+					"caller": "ProjectSection",
+					"callee": "workspaces.map",
+					"lineNumber": 83
+				},
+				{
+					"caller": "ProjectSection",
+					"callee": "sections.map",
+					"lineNumber": 86
+				},
+				{
+					"caller": "ProjectSection",
+					"callee": "topLevelItems.entries",
+					"lineNumber": 92
+				},
+				{
+					"caller": "ProjectSection",
+					"callee": "topLevelWorkspacesById.get",
+					"lineNumber": 94
+				},
+				{
+					"caller": "ProjectSection",
+					"callee": "ids.push",
+					"lineNumber": 96
+				},
+				{
+					"caller": "ProjectSection",
+					"callee": "renderables.push",
+					"lineNumber": 99
+				},
+				{
+					"caller": "ProjectSection",
+					"callee": "sectionsById.get",
+					"lineNumber": 108
+				},
+				{
+					"caller": "ProjectSection",
+					"callee": "ids.push",
+					"lineNumber": 111
+				},
+				{
+					"caller": "ProjectSection",
+					"callee": "renderables.push",
+					"lineNumber": 113
+				},
+				{
+					"caller": "ProjectSection",
+					"callee": "useSectionDropZone",
+					"lineNumber": 128
+				},
+				{
+					"caller": "ProjectSection",
+					"callee": "useSectionDropZone",
+					"lineNumber": 135
+				},
+				{
+					"caller": "getRootDropZoneClassName",
+					"callee": "cn",
+					"lineNumber": 148
+				},
+				{
+					"caller": "handleNewWorkspace",
+					"callee": "openModal",
+					"lineNumber": 155
+				},
+				{
+					"caller": "ProjectSection",
+					"callee": "useDrag",
+					"lineNumber": 158
+				},
+				{
+					"caller": "ProjectSection",
+					"callee": "monitor.didDrop",
+					"lineNumber": 164
+				},
+				{
+					"caller": "ProjectSection",
+					"callee": "reorderProjects.mutate",
+					"lineNumber": 166
+				},
+				{
+					"caller": "ProjectSection",
+					"callee": "toast.error",
+					"lineNumber": 170
+				},
+				{
+					"caller": "ProjectSection",
+					"callee": "utils.workspaces.getAllGrouped.invalidate",
+					"lineNumber": 171
+				},
+				{
+					"caller": "ProjectSection",
+					"callee": "monitor.isDragging",
+					"lineNumber": 177
+				},
+				{
+					"caller": "ProjectSection",
+					"callee": "useDrop",
+					"lineNumber": 183
+				},
+				{
+					"caller": "ProjectSection",
+					"callee": "utils.workspaces.getAllGrouped.setData",
+					"lineNumber": 191
+				},
+				{
+					"caller": "ProjectSection",
+					"callee": "newGroups.splice",
+					"lineNumber": 194
+				},
+				{
+					"caller": "ProjectSection",
+					"callee": "newGroups.splice",
+					"lineNumber": 195
+				},
+				{
+					"caller": "ProjectSection",
+					"callee": "reorderProjects.mutate",
+					"lineNumber": 207
+				},
+				{
+					"caller": "ProjectSection",
+					"callee": "toast.error",
+					"lineNumber": 211
+				},
+				{
+					"caller": "ProjectSection",
+					"callee": "utils.workspaces.getAllGrouped.invalidate",
+					"lineNumber": 212
+				},
+				{
+					"caller": "ProjectSection",
+					"callee": "useRef",
+					"lineNumber": 220
+				},
+				{
+					"caller": "ProjectSection",
+					"callee": "useEffect",
+					"lineNumber": 222
+				},
+				{
+					"caller": "ProjectSection",
+					"callee": "drag",
+					"lineNumber": 223
+				},
+				{
+					"caller": "ProjectSection",
+					"callee": "drop",
+					"lineNumber": 223
+				},
+				{
+					"caller": "ProjectSection",
+					"callee": "cn",
+					"lineNumber": 230
+				},
+				{
+					"caller": "ProjectSection",
+					"callee": "toggleProjectCollapsed",
+					"lineNumber": 247
+				},
+				{
+					"caller": "ProjectSection",
+					"callee": "cn",
+					"lineNumber": 265
+				},
+				{
+					"caller": "ProjectSection",
+					"callee": "getRootDropZoneClassName",
+					"lineNumber": 267
+				},
+				{
+					"caller": "ProjectSection",
+					"callee": "topLevelChildren.map",
+					"lineNumber": 274
+				},
+				{
+					"caller": "ProjectSection",
+					"callee": "cn",
+					"lineNumber": 312
+				},
+				{
+					"caller": "ProjectSection",
+					"callee": "getRootDropZoneClassName",
+					"lineNumber": 314
+				},
+				{
+					"caller": "ProjectSection",
+					"callee": "cn",
+					"lineNumber": 332
+				},
+				{
+					"caller": "ProjectSection",
+					"callee": "toggleProjectCollapsed",
+					"lineNumber": 349
+				},
+				{
+					"caller": "ProjectSection",
+					"callee": "cn",
+					"lineNumber": 368
+				},
+				{
+					"caller": "ProjectSection",
+					"callee": "getRootDropZoneClassName",
+					"lineNumber": 370
+				},
+				{
+					"caller": "ProjectSection",
+					"callee": "cn",
+					"lineNumber": 380
+				},
+				{
+					"caller": "ProjectSection",
+					"callee": "getRootDropZoneClassName",
+					"lineNumber": 382
+				},
+				{
+					"caller": "ProjectSection",
+					"callee": "topLevelChildren.map",
+					"lineNumber": 389
+				},
+				{
+					"caller": "ProjectSection",
+					"callee": "cn",
+					"lineNumber": 425
+				},
+				{
+					"caller": "ProjectSection",
+					"callee": "getRootDropZoneClassName",
+					"lineNumber": 427
+				}
+			],
+			"metrics": {
+				"importCount": 9,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceSidebar/ProjectSection/ProjectThumbnail/ProjectThumbnail.test.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 64,
+			"nonEmptyLines": 58,
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceSidebar/ProjectSection/ProjectThumbnail/ProjectThumbnail.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 154,
+			"nonEmptyLines": 141,
+			"functions": [
+				{
+					"name": "getGitHubAvatarUrl",
+					"startLine": 16,
+					"endLine": 18,
+					"params": ["owner"]
+				},
+				{
+					"name": "hexToRgba",
+					"startLine": 23,
+					"endLine": 28,
+					"params": ["hex", "alpha"]
+				},
+				{
+					"name": "isCustomColor",
+					"startLine": 33,
+					"endLine": 35,
+					"params": ["color"]
+				},
+				{
+					"name": "shouldShowGitHubAvatar",
+					"startLine": 41,
+					"endLine": 51,
+					"params": ["{\n\towner,\n\timageError,\n\thideImage,\n}"]
+				},
+				{
+					"name": "ProjectThumbnail",
+					"startLine": 53,
+					"endLine": 154,
+					"params": [
+						"{\n\tprojectId,\n\tprojectName,\n\tprojectColor,\n\tgithubOwner,\n\thideImage,\n\ticonUrl,\n\tclassName,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "shouldShowGitHubAvatar",
+					"line": 41,
+					"isDefault": false
+				},
+				{
+					"name": "ProjectThumbnail",
+					"line": 53,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "hexToRgba",
+					"callee": "Number.parseInt",
+					"lineNumber": 24
+				},
+				{
+					"caller": "hexToRgba",
+					"callee": "hex.slice",
+					"lineNumber": 24
+				},
+				{
+					"caller": "hexToRgba",
+					"callee": "Number.parseInt",
+					"lineNumber": 25
+				},
+				{
+					"caller": "hexToRgba",
+					"callee": "hex.slice",
+					"lineNumber": 25
+				},
+				{
+					"caller": "hexToRgba",
+					"callee": "Number.parseInt",
+					"lineNumber": 26
+				},
+				{
+					"caller": "hexToRgba",
+					"callee": "hex.slice",
+					"lineNumber": 26
+				},
+				{
+					"caller": "isCustomColor",
+					"callee": "color.startsWith",
+					"lineNumber": 34
+				},
+				{
+					"caller": "ProjectThumbnail",
+					"callee": "useState",
+					"lineNumber": 62
+				},
+				{
+					"caller": "ProjectThumbnail",
+					"callee": "useState",
+					"lineNumber": 63
+				},
+				{
+					"caller": "ProjectThumbnail",
+					"callee": "electronTrpc.projects.getGitHubAvatar.useQuery",
+					"lineNumber": 65
+				},
+				{
+					"caller": "ProjectThumbnail",
+					"callee": "projectName.charAt(0).toUpperCase",
+					"lineNumber": 74
+				},
+				{
+					"caller": "ProjectThumbnail",
+					"callee": "projectName.charAt",
+					"lineNumber": 74
+				},
+				{
+					"caller": "ProjectThumbnail",
+					"callee": "isCustomColor",
+					"lineNumber": 75
+				},
+				{
+					"caller": "ProjectThumbnail",
+					"callee": "cn",
+					"lineNumber": 79
+				},
+				{
+					"caller": "ProjectThumbnail",
+					"callee": "hexToRgba",
+					"lineNumber": 84
+				},
+				{
+					"caller": "ProjectThumbnail",
+					"callee": "cn",
+					"lineNumber": 91
+				},
+				{
+					"caller": "ProjectThumbnail",
+					"callee": "setIconError",
+					"lineNumber": 104
+				},
+				{
+					"caller": "ProjectThumbnail",
+					"callee": "shouldShowGitHubAvatar",
+					"lineNumber": 111
+				},
+				{
+					"caller": "ProjectThumbnail",
+					"callee": "cn",
+					"lineNumber": 114
+				},
+				{
+					"caller": "ProjectThumbnail",
+					"callee": "getGitHubAvatarUrl",
+					"lineNumber": 122
+				},
+				{
+					"caller": "ProjectThumbnail",
+					"callee": "setImageError",
+					"lineNumber": 125
+				},
+				{
+					"caller": "ProjectThumbnail",
+					"callee": "hexToRgba",
+					"lineNumber": 134
+				},
+				{
+					"caller": "ProjectThumbnail",
+					"callee": "hexToRgba",
+					"lineNumber": 135
+				},
+				{
+					"caller": "ProjectThumbnail",
+					"callee": "cn",
+					"lineNumber": 142
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 2,
+				"functionCount": 5,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceSidebar/ProjectSection/ProjectThumbnail/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "ProjectThumbnail",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceSidebar/ProjectSection/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 2,
+			"nonEmptyLines": 2,
+			"exports": [
+				{
+					"name": "ProjectHeader",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "ProjectSection",
+					"line": 2,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 2,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceSidebar/RenameInput/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "RenameInput",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceSidebar/SetupScriptCard/SetupScriptCard.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 66,
+			"nonEmptyLines": 60,
+			"functions": [
+				{
+					"name": "SetupScriptCard",
+					"startLine": 12,
+					"endLine": 66,
+					"params": ["{\n\tisCollapsed,\n\tprojectId,\n\tprojectName,\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "SetupScriptCard",
+					"line": 12,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "SetupScriptCard",
+					"callee": "electronTrpc.config.shouldShowSetupCard.useQuery",
+					"lineNumber": 17
+				},
+				{
+					"caller": "SetupScriptCard",
+					"callee": "electronTrpc.config.dismissSetupCard.useMutation",
+					"lineNumber": 22
+				},
+				{
+					"caller": "SetupScriptCard",
+					"callee": "electronTrpc.useUtils",
+					"lineNumber": 23
+				},
+				{
+					"caller": "SetupScriptCard",
+					"callee": "useNavigate",
+					"lineNumber": 24
+				},
+				{
+					"caller": "handleDismiss",
+					"callee": "dismissMutation.mutate",
+					"lineNumber": 31
+				},
+				{
+					"caller": "handleDismiss",
+					"callee": "utils.config.shouldShowSetupCard.invalidate",
+					"lineNumber": 35
+				},
+				{
+					"caller": "SetupScriptCard",
+					"callee": "navigate",
+					"lineNumber": 56
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		}
+	]
+}

@@ -1,0 +1,68 @@
+{
+	"projectRoot": "/Users/wushengyu/Develop/hustle/superset/apps/desktop",
+	"batchFiles": [
+		{
+			"path": "src/renderer/lib/fileIcons/FileIcon.tsx",
+			"language": "typescript",
+			"sizeLines": 18,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/renderer/lib/fileIcons/getFileIcon.ts",
+			"language": "typescript",
+			"sizeLines": 62,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/renderer/lib/fileIcons/loadFallthroughIcons.ts",
+			"language": "typescript",
+			"sizeLines": 266,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/renderer/lib/fileIcons/manifest.ts",
+			"language": "typescript",
+			"sizeLines": 19,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/renderer/lib/fileIcons/resolveFileIconAssetUrl.test.ts",
+			"language": "typescript",
+			"sizeLines": 25,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/renderer/lib/fileIcons/resolveFileIconAssetUrl.ts",
+			"language": "typescript",
+			"sizeLines": 8,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/renderer/lib/fileIcons/useFallthroughIcons.ts",
+			"language": "typescript",
+			"sizeLines": 24,
+			"fileCategory": "code"
+		}
+	],
+	"batchImportData": {
+		"src/renderer/lib/fileIcons/FileIcon.tsx": [
+			"src/renderer/lib/fileIcons/getFileIcon.ts"
+		],
+		"src/renderer/lib/fileIcons/getFileIcon.ts": [
+			"src/renderer/lib/fileIcons/manifest.ts",
+			"src/renderer/lib/fileIcons/resolveFileIconAssetUrl.ts"
+		],
+		"src/renderer/lib/fileIcons/loadFallthroughIcons.ts": [
+			"src/renderer/lib/fileIcons/manifest.ts",
+			"src/renderer/lib/fileIcons/resolveFileIconAssetUrl.ts"
+		],
+		"src/renderer/lib/fileIcons/manifest.ts": [],
+		"src/renderer/lib/fileIcons/resolveFileIconAssetUrl.test.ts": [
+			"src/renderer/lib/fileIcons/resolveFileIconAssetUrl.ts"
+		],
+		"src/renderer/lib/fileIcons/resolveFileIconAssetUrl.ts": [],
+		"src/renderer/lib/fileIcons/useFallthroughIcons.ts": [
+			"src/renderer/lib/fileIcons/loadFallthroughIcons.ts"
+		]
+	}
+}

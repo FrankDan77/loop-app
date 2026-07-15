@@ -1,0 +1,1411 @@
+{
+	"scriptCompleted": true,
+	"filesAnalyzed": 32,
+	"filesSkipped": [],
+	"results": [
+		{
+			"path": "src/renderer/commandPalette/core/execute.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 17,
+			"nonEmptyLines": 16,
+			"functions": [
+				{
+					"name": "executeCommand",
+					"startLine": 5,
+					"endLine": 17,
+					"params": ["command", "context"]
+				}
+			],
+			"exports": [
+				{
+					"name": "executeCommand",
+					"line": 5,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "executeCommand",
+					"callee": "track",
+					"lineNumber": 9
+				},
+				{
+					"caller": "executeCommand",
+					"callee": "command.run",
+					"lineNumber": 12
+				},
+				{
+					"caller": "executeCommand",
+					"callee": "String",
+					"lineNumber": 14
+				},
+				{
+					"caller": "executeCommand",
+					"callee": "toast.error",
+					"lineNumber": 15
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/components/BootErrorBoundary/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "BootErrorBoundary",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/components/MarkdownEditor/components/LinearImage/LinearImage.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 52,
+			"nonEmptyLines": 45,
+			"functions": [
+				{
+					"name": "isLinearImageUrl",
+					"startLine": 8,
+					"endLine": 15,
+					"params": ["src"]
+				},
+				{
+					"name": "getLinearProxyUrl",
+					"startLine": 20,
+					"endLine": 24,
+					"params": ["linearUrl"]
+				},
+				{
+					"name": "LinearImage",
+					"startLine": 36,
+					"endLine": 52,
+					"params": ["{ src, alt, title }"]
+				}
+			],
+			"exports": [
+				{
+					"name": "LinearImage",
+					"line": 36,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "getLinearProxyUrl",
+					"callee": "proxyUrl.searchParams.set",
+					"lineNumber": 22
+				},
+				{
+					"caller": "getLinearProxyUrl",
+					"callee": "proxyUrl.toString",
+					"lineNumber": 23
+				},
+				{
+					"caller": "LinearImage",
+					"callee": "isLinearImageUrl",
+					"lineNumber": 41
+				},
+				{
+					"caller": "LinearImage",
+					"callee": "getLinearProxyUrl",
+					"lineNumber": 41
+				},
+				{
+					"caller": "LinearImage",
+					"callee": "isLinearImageUrl",
+					"lineNumber": 49
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 3,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/components/NewWorkspaceModal/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "NewWorkspaceModal",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/components/Paywall/Paywall.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 160,
+			"nonEmptyLines": 142,
+			"functions": [
+				{
+					"name": "Paywall",
+					"startLine": 18,
+					"endLine": 147,
+					"params": []
+				},
+				{
+					"name": "paywall",
+					"startLine": 149,
+					"endLine": 160,
+					"params": ["feature", "context"]
+				}
+			],
+			"exports": [
+				{
+					"name": "Paywall",
+					"line": 18,
+					"isDefault": false
+				},
+				{
+					"name": "paywall",
+					"line": 149,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "Paywall",
+					"callee": "useNavigate",
+					"lineNumber": 19
+				},
+				{
+					"caller": "Paywall",
+					"callee": "useState",
+					"lineNumber": 20
+				},
+				{
+					"caller": "Paywall",
+					"callee": "useState",
+					"lineNumber": 23
+				},
+				{
+					"caller": "Paywall",
+					"callee": "useRef",
+					"lineNumber": 24
+				},
+				{
+					"caller": "Paywall",
+					"callee": "useRef",
+					"lineNumber": 25
+				},
+				{
+					"caller": "Paywall",
+					"callee": "setPaywallOptions",
+					"lineNumber": 28
+				},
+				{
+					"caller": "Paywall",
+					"callee": "setIsOpen",
+					"lineNumber": 29
+				},
+				{
+					"caller": "Paywall",
+					"callee": "useEffect",
+					"lineNumber": 32
+				},
+				{
+					"caller": "Paywall",
+					"callee": "useState",
+					"lineNumber": 45
+				},
+				{
+					"caller": "Paywall",
+					"callee": "useEffect",
+					"lineNumber": 48
+				},
+				{
+					"caller": "Paywall",
+					"callee": "Date.now",
+					"lineNumber": 50
+				},
+				{
+					"caller": "Paywall",
+					"callee": "PRO_FEATURES.find",
+					"lineNumber": 53
+				},
+				{
+					"caller": "Paywall",
+					"callee": "track",
+					"lineNumber": 54
+				},
+				{
+					"caller": "Paywall",
+					"callee": "useEffect",
+					"lineNumber": 62
+				},
+				{
+					"caller": "Paywall",
+					"callee": "setSelectedFeatureId",
+					"lineNumber": 67
+				},
+				{
+					"caller": "handleSelectFeature",
+					"callee": "PRO_FEATURES.find",
+					"lineNumber": 74
+				},
+				{
+					"caller": "handleSelectFeature",
+					"callee": "track",
+					"lineNumber": 75
+				},
+				{
+					"caller": "handleSelectFeature",
+					"callee": "featuresViewedRef.current.add",
+					"lineNumber": 81
+				},
+				{
+					"caller": "handleSelectFeature",
+					"callee": "setSelectedFeatureId",
+					"lineNumber": 83
+				},
+				{
+					"caller": "handleOpenChange",
+					"callee": "Date.now",
+					"lineNumber": 89
+				},
+				{
+					"caller": "handleOpenChange",
+					"callee": "track",
+					"lineNumber": 91
+				},
+				{
+					"caller": "handleOpenChange",
+					"callee": "setIsOpen",
+					"lineNumber": 97
+				},
+				{
+					"caller": "Paywall",
+					"callee": "PRO_FEATURES.find",
+					"lineNumber": 102
+				},
+				{
+					"caller": "handleUpgrade",
+					"callee": "Date.now",
+					"lineNumber": 110
+				},
+				{
+					"caller": "handleUpgrade",
+					"callee": "track",
+					"lineNumber": 112
+				},
+				{
+					"caller": "handleUpgrade",
+					"callee": "setIsOpen",
+					"lineNumber": 119
+				},
+				{
+					"caller": "handleUpgrade",
+					"callee": "navigate",
+					"lineNumber": 120
+				},
+				{
+					"caller": "Paywall",
+					"callee": "handleOpenChange",
+					"lineNumber": 139
+				},
+				{
+					"caller": "paywall",
+					"callee": "console.error",
+					"lineNumber": 154
+				},
+				{
+					"caller": "paywall",
+					"callee": "showPaywallFn",
+					"lineNumber": 159
+				}
+			],
+			"metrics": {
+				"importCount": 4,
+				"exportCount": 2,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/components/Paywall/components/FeaturePreview/FeaturePreview.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 71,
+			"nonEmptyLines": 65,
+			"functions": [
+				{
+					"name": "FeaturePreview",
+					"startLine": 25,
+					"endLine": 71,
+					"params": ["{ selectedFeature }"]
+				}
+			],
+			"exports": [
+				{
+					"name": "FeaturePreview",
+					"line": 25,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "FeaturePreview",
+					"callee": "PRO_FEATURES.map",
+					"lineNumber": 31
+				},
+				{
+					"caller": "FeaturePreview",
+					"callee": "cn",
+					"lineNumber": 34
+				}
+			],
+			"metrics": {
+				"importCount": 7,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/components/Paywall/components/FeaturePreview/components/DitheredBackground/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "DitheredBackground",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/components/Paywall/components/FeaturePreview/components/MobileAppDemo/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "MobileAppDemo",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/components/Paywall/components/FeaturePreview/components/RemoteWorkspacesDemo/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "RemoteWorkspacesDemo",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/components/Paywall/components/FeaturePreview/components/SlackIntegrationDemo/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "SlackIntegrationDemo",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/components/Paywall/components/FeaturePreview/components/TasksDemo/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "TasksDemo",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/components/Paywall/components/FeaturePreview/components/TeamCollaborationDemo/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "TeamCollaborationDemo",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/components/Paywall/components/FeaturePreview/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "FeaturePreview",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/components/Paywall/components/FeatureSidebar/FeatureSidebar.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 95,
+			"nonEmptyLines": 86,
+			"functions": [
+				{
+					"name": "FeatureSidebar",
+					"startLine": 12,
+					"endLine": 47,
+					"params": [
+						"{\n\tselectedFeatureId,\n\thighlightedFeatureId,\n\tonSelectFeature,\n}"
+					]
+				},
+				{
+					"name": "FeatureButton",
+					"startLine": 55,
+					"endLine": 95,
+					"params": ["{ feature, isSelected, onSelect }"]
+				}
+			],
+			"exports": [
+				{
+					"name": "FeatureSidebar",
+					"line": 12,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "FeatureSidebar",
+					"callee": "useMemo",
+					"lineNumber": 17
+				},
+				{
+					"caller": "FeatureSidebar",
+					"callee": "PRO_FEATURES.find",
+					"lineNumber": 20
+				},
+				{
+					"caller": "FeatureSidebar",
+					"callee": "PRO_FEATURES.filter",
+					"lineNumber": 25
+				},
+				{
+					"caller": "FeatureSidebar",
+					"callee": "orderedFeatures.map",
+					"lineNumber": 36
+				},
+				{
+					"caller": "FeatureSidebar",
+					"callee": "onSelectFeature",
+					"lineNumber": 41
+				},
+				{
+					"caller": "FeatureButton",
+					"callee": "cn",
+					"lineNumber": 62
+				},
+				{
+					"caller": "FeatureButton",
+					"callee": "cn",
+					"lineNumber": 71
+				},
+				{
+					"caller": "FeatureButton",
+					"callee": "cn",
+					"lineNumber": 80
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/components/Paywall/components/FeatureSidebar/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "FeatureSidebar",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/components/Paywall/constants.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 84,
+			"nonEmptyLines": 79,
+			"exports": [
+				{
+					"name": "GATED_FEATURES",
+					"line": 10,
+					"isDefault": false
+				},
+				{
+					"name": "PRO_FEATURES",
+					"line": 29,
+					"isDefault": false
+				},
+				{
+					"name": "FEATURE_ID_MAP",
+					"line": 79,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 3,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/components/Paywall/usePaywall.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 43,
+			"nonEmptyLines": 39,
+			"functions": [
+				{
+					"name": "usePaywall",
+					"startLine": 6,
+					"endLine": 43,
+					"params": []
+				}
+			],
+			"exports": [
+				{
+					"name": "usePaywall",
+					"line": 6,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "usePaywall",
+					"callee": "authClient.useSession",
+					"lineNumber": 7
+				},
+				{
+					"caller": "usePaywall",
+					"callee": "useCurrentPlan",
+					"lineNumber": 8
+				},
+				{
+					"caller": "gateFeature",
+					"callee": "hasAccess",
+					"lineNumber": 20
+				},
+				{
+					"caller": "gateFeature",
+					"callee": "callback",
+					"lineNumber": 21
+				},
+				{
+					"caller": "gateFeature",
+					"callee": "result.catch",
+					"lineNumber": 23
+				},
+				{
+					"caller": "gateFeature",
+					"callee": "console.error",
+					"lineNumber": 24
+				},
+				{
+					"caller": "gateFeature",
+					"callee": "paywall",
+					"lineNumber": 33
+				}
+			],
+			"metrics": {
+				"importCount": 4,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/components/PostHogSurfaceTagger/PostHogSurfaceTagger.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 30,
+			"nonEmptyLines": 24,
+			"functions": [
+				{
+					"name": "PostHogSurfaceTagger",
+					"startLine": 6,
+					"endLine": 30,
+					"params": []
+				}
+			],
+			"exports": [
+				{
+					"name": "PostHogSurfaceTagger",
+					"line": 6,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "PostHogSurfaceTagger",
+					"callee": "useIsV2CloudEnabled",
+					"lineNumber": 7
+				},
+				{
+					"caller": "PostHogSurfaceTagger",
+					"callee": "authClient.useSession",
+					"lineNumber": 8
+				},
+				{
+					"caller": "PostHogSurfaceTagger",
+					"callee": "useEffect",
+					"lineNumber": 11
+				},
+				{
+					"caller": "PostHogSurfaceTagger",
+					"callee": "posthog.register",
+					"lineNumber": 15
+				},
+				{
+					"caller": "PostHogSurfaceTagger",
+					"callee": "posthog.people.set",
+					"lineNumber": 19
+				},
+				{
+					"caller": "PostHogSurfaceTagger",
+					"callee": "posthog.people.set_once",
+					"lineNumber": 20
+				},
+				{
+					"caller": "PostHogSurfaceTagger",
+					"callee": "posthog.people.set_once",
+					"lineNumber": 22
+				},
+				{
+					"caller": "PostHogSurfaceTagger",
+					"callee": "new Date().toISOString",
+					"lineNumber": 23
+				}
+			],
+			"metrics": {
+				"importCount": 3,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/components/PostHogSurfaceTagger/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "PostHogSurfaceTagger",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/components/PostHogUserIdentifier/PostHogUserIdentifier.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 45,
+			"nonEmptyLines": 39,
+			"functions": [
+				{
+					"name": "PostHogUserIdentifier",
+					"startLine": 11,
+					"endLine": 45,
+					"params": []
+				}
+			],
+			"exports": [
+				{
+					"name": "PostHogUserIdentifier",
+					"line": 11,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "PostHogUserIdentifier",
+					"callee": "authClient.useSession",
+					"lineNumber": 12
+				},
+				{
+					"caller": "PostHogUserIdentifier",
+					"callee": "electronTrpc.analytics.setUserId.useMutation",
+					"lineNumber": 15
+				},
+				{
+					"caller": "PostHogUserIdentifier",
+					"callee": "useEffect",
+					"lineNumber": 17
+				},
+				{
+					"caller": "PostHogUserIdentifier",
+					"callee": "posthog.identify",
+					"lineNumber": 19
+				},
+				{
+					"caller": "PostHogUserIdentifier",
+					"callee": "posthog.reloadFeatureFlags",
+					"lineNumber": 24
+				},
+				{
+					"caller": "PostHogUserIdentifier",
+					"callee": "setUserId",
+					"lineNumber": 25
+				},
+				{
+					"caller": "PostHogUserIdentifier",
+					"callee": "localStorage.getItem",
+					"lineNumber": 27
+				},
+				{
+					"caller": "PostHogUserIdentifier",
+					"callee": "track",
+					"lineNumber": 29
+				},
+				{
+					"caller": "PostHogUserIdentifier",
+					"callee": "localStorage.setItem",
+					"lineNumber": 30
+				},
+				{
+					"caller": "PostHogUserIdentifier",
+					"callee": "useEffect",
+					"lineNumber": 34
+				},
+				{
+					"caller": "PostHogUserIdentifier",
+					"callee": "localStorage.setItem",
+					"lineNumber": 38
+				},
+				{
+					"caller": "PostHogUserIdentifier",
+					"callee": "localStorage.removeItem",
+					"lineNumber": 40
+				}
+			],
+			"metrics": {
+				"importCount": 5,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/components/PostHogUserIdentifier/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "PostHogUserIdentifier",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/components/TelemetrySync/TelemetrySync.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 24,
+			"nonEmptyLines": 20,
+			"functions": [
+				{
+					"name": "TelemetrySync",
+					"startLine": 5,
+					"endLine": 24,
+					"params": []
+				}
+			],
+			"exports": [
+				{
+					"name": "TelemetrySync",
+					"line": 5,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "TelemetrySync",
+					"callee": "electronTrpc.settings.getTelemetryEnabled.useQuery",
+					"lineNumber": 7
+				},
+				{
+					"caller": "TelemetrySync",
+					"callee": "useEffect",
+					"lineNumber": 9
+				},
+				{
+					"caller": "TelemetrySync",
+					"callee": "posthog.opt_in_capturing",
+					"lineNumber": 14
+				},
+				{
+					"caller": "TelemetrySync",
+					"callee": "posthog.opt_out_capturing",
+					"lineNumber": 18
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/components/TelemetrySync/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "TelemetrySync",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/components/ThemedToaster/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "ThemedToaster",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/components/V2AvailableBanner/V2AvailableBanner.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 48,
+			"nonEmptyLines": 43,
+			"functions": [
+				{
+					"name": "V2AvailableBanner",
+					"startLine": 8,
+					"endLine": 48,
+					"params": []
+				}
+			],
+			"exports": [
+				{
+					"name": "V2AvailableBanner",
+					"line": 8,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "V2AvailableBanner",
+					"callee": "useIsV2CloudEnabled",
+					"lineNumber": 9
+				},
+				{
+					"caller": "V2AvailableBanner",
+					"callee": "useV2AvailableBannerStore",
+					"lineNumber": 10
+				},
+				{
+					"caller": "V2AvailableBanner",
+					"callee": "useV2AvailableBannerStore",
+					"lineNumber": 11
+				},
+				{
+					"caller": "V2AvailableBanner",
+					"callee": "useNavigate",
+					"lineNumber": 12
+				},
+				{
+					"caller": "handleManage",
+					"callee": "track",
+					"lineNumber": 15
+				},
+				{
+					"caller": "handleManage",
+					"callee": "navigate",
+					"lineNumber": 16
+				},
+				{
+					"caller": "handleDismiss",
+					"callee": "track",
+					"lineNumber": 20
+				},
+				{
+					"caller": "handleDismiss",
+					"callee": "dismiss",
+					"lineNumber": 21
+				}
+			],
+			"metrics": {
+				"importCount": 3,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/env.renderer.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 62,
+			"nonEmptyLines": 58,
+			"exports": [
+				{
+					"name": "env",
+					"line": 57,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/hooks/useCurrentPlan.test.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 44,
+			"nonEmptyLines": 40,
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/hooks/useCurrentPlan.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 62,
+			"nonEmptyLines": 51,
+			"functions": [
+				{
+					"name": "isPaidPlanTier",
+					"startLine": 15,
+					"endLine": 19,
+					"params": ["plan"]
+				},
+				{
+					"name": "resolveCurrentPlan",
+					"startLine": 21,
+					"endLine": 39,
+					"params": [
+						"{\n\tsubscriptionPlan,\n\tsessionPlan,\n\tsubscriptionsLoaded,\n}"
+					]
+				},
+				{
+					"name": "useCurrentPlan",
+					"startLine": 41,
+					"endLine": 62,
+					"params": []
+				}
+			],
+			"exports": [
+				{
+					"name": "resolveCurrentPlan",
+					"line": 21,
+					"isDefault": false
+				},
+				{
+					"name": "useCurrentPlan",
+					"line": 41,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "resolveCurrentPlan",
+					"callee": "isPaidPlanTier",
+					"lineNumber": 26
+				},
+				{
+					"caller": "resolveCurrentPlan",
+					"callee": "isPaidPlanTier",
+					"lineNumber": 34
+				},
+				{
+					"caller": "useCurrentPlan",
+					"callee": "authClient.useSession",
+					"lineNumber": 42
+				},
+				{
+					"caller": "useCurrentPlan",
+					"callee": "useCollections",
+					"lineNumber": 43
+				},
+				{
+					"caller": "useCurrentPlan",
+					"callee": "useLiveQuery",
+					"lineNumber": 45
+				},
+				{
+					"caller": "useCurrentPlan",
+					"callee": "q.from",
+					"lineNumber": 46
+				},
+				{
+					"caller": "useCurrentPlan",
+					"callee": "subscriptionsData.find",
+					"lineNumber": 50
+				},
+				{
+					"caller": "useCurrentPlan",
+					"callee": "isActiveSubscriptionStatus",
+					"lineNumber": 51
+				},
+				{
+					"caller": "useCurrentPlan",
+					"callee": "resolveCurrentPlan",
+					"lineNumber": 55
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 2,
+				"functionCount": 3,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/hooks/useIsV2CloudEnabled.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 21,
+			"nonEmptyLines": 19,
+			"functions": [
+				{
+					"name": "useIsV2OnlyUser",
+					"startLine": 10,
+					"endLine": 13,
+					"params": []
+				},
+				{
+					"name": "useIsV2CloudEnabled",
+					"startLine": 16,
+					"endLine": 21,
+					"params": []
+				}
+			],
+			"exports": [
+				{
+					"name": "useIsV2OnlyUser",
+					"line": 10,
+					"isDefault": false
+				},
+				{
+					"name": "useIsV2CloudEnabled",
+					"line": 16,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "useIsV2OnlyUser",
+					"callee": "authClient.useSession",
+					"lineNumber": 11
+				},
+				{
+					"caller": "useIsV2OnlyUser",
+					"callee": "isV2OnlyUser",
+					"lineNumber": 12
+				},
+				{
+					"caller": "useIsV2CloudEnabled",
+					"callee": "useIsV2OnlyUser",
+					"lineNumber": 17
+				},
+				{
+					"caller": "useIsV2CloudEnabled",
+					"callee": "useV2LocalOverrideStore",
+					"lineNumber": 18
+				}
+			],
+			"metrics": {
+				"importCount": 3,
+				"exportCount": 2,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/hooks/useOnlineStatus.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 20,
+			"nonEmptyLines": 15,
+			"functions": [
+				{
+					"name": "useOnlineStatus",
+					"startLine": 3,
+					"endLine": 20,
+					"params": []
+				}
+			],
+			"exports": [
+				{
+					"name": "useOnlineStatus",
+					"line": 3,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "useOnlineStatus",
+					"callee": "useState",
+					"lineNumber": 4
+				},
+				{
+					"caller": "useOnlineStatus",
+					"callee": "useEffect",
+					"lineNumber": 6
+				},
+				{
+					"caller": "handleOnline",
+					"callee": "setIsOnline",
+					"lineNumber": 7
+				},
+				{
+					"caller": "handleOffline",
+					"callee": "setIsOnline",
+					"lineNumber": 8
+				},
+				{
+					"caller": "useOnlineStatus",
+					"callee": "window.addEventListener",
+					"lineNumber": 10
+				},
+				{
+					"caller": "useOnlineStatus",
+					"callee": "window.addEventListener",
+					"lineNumber": 11
+				},
+				{
+					"caller": "useOnlineStatus",
+					"callee": "window.removeEventListener",
+					"lineNumber": 14
+				},
+				{
+					"caller": "useOnlineStatus",
+					"callee": "window.removeEventListener",
+					"lineNumber": 15
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/hooks/useRelayUrl/useRelayUrl.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 23,
+			"nonEmptyLines": 21,
+			"functions": [
+				{
+					"name": "useRelayUrl",
+					"startLine": 16,
+					"endLine": 23,
+					"params": []
+				}
+			],
+			"exports": [
+				{
+					"name": "useRelayUrl",
+					"line": 16,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "useRelayUrl",
+					"callee": "useFeatureFlagPayload",
+					"lineNumber": 17
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/hooks/useSignOut/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 5,
+			"nonEmptyLines": 5,
+			"exports": [
+				{
+					"name": "ACTIVE_ORG_ID_KEY",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "AUTH_COMPLETED_KEY",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "useSignOut",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 3,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		}
+	]
+}

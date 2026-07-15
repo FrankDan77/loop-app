@@ -1,0 +1,1133 @@
+{
+	"scriptCompleted": true,
+	"filesAnalyzed": 9,
+	"filesSkipped": [],
+	"results": [
+		{
+			"path": "src/renderer/lib/terminal/links/buffer-helpers.test.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 534,
+			"nonEmptyLines": 509,
+			"functions": [
+				{
+					"name": "createMockBufferLine",
+					"startLine": 22,
+					"endLine": 117,
+					"params": ["descriptor"]
+				},
+				{
+					"name": "createBufferLineArray",
+					"startLine": 119,
+					"endLine": 123,
+					"params": ["descriptors"]
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "createMockBufferLine",
+					"callee": "char.codePointAt",
+					"lineNumber": 34
+				},
+				{
+					"caller": "createMockBufferLine",
+					"callee": "cells.push",
+					"lineNumber": 58
+				},
+				{
+					"caller": "createMockBufferLine",
+					"callee": "cells.push",
+					"lineNumber": 60
+				},
+				{
+					"caller": "createMockBufferLine",
+					"callee": "cells.push",
+					"lineNumber": 62
+				},
+				{
+					"caller": "createMockBufferLine",
+					"callee": "cells.push",
+					"lineNumber": 68
+				},
+				{
+					"caller": "getCell",
+					"callee": "cell.chars.codePointAt",
+					"lineNumber": 80
+				},
+				{
+					"caller": "translateToString",
+					"callee": "result.replace",
+					"lineNumber": 112
+				},
+				{
+					"caller": "createBufferLineArray",
+					"callee": "descriptors.map",
+					"lineNumber": 122
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 0,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/lib/terminal/links/buffer-helpers.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 224,
+			"nonEmptyLines": 214,
+			"functions": [
+				{
+					"name": "convertLinkRangeToBuffer",
+					"startLine": 31,
+					"endLine": 144,
+					"params": ["lines", "bufferWidth", "range", "startLine"]
+				},
+				{
+					"name": "getXtermRangesByAttr",
+					"startLine": 156,
+					"endLine": 202,
+					"params": ["buffer", "lineStart", "lineEnd", "cols"]
+				},
+				{
+					"name": "getXtermLineContent",
+					"startLine": 208,
+					"endLine": 224,
+					"params": ["buffer", "lineStart", "lineEnd", "cols"]
+				}
+			],
+			"exports": [
+				{
+					"name": "convertLinkRangeToBuffer",
+					"line": 31,
+					"isDefault": false
+				},
+				{
+					"name": "getXtermRangesByAttr",
+					"line": 156,
+					"isDefault": false
+				},
+				{
+					"name": "getXtermLineContent",
+					"line": 208,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "convertLinkRangeToBuffer",
+					"callee": "Math.ceil",
+					"lineNumber": 50
+				},
+				{
+					"caller": "convertLinkRangeToBuffer",
+					"callee": "Math.min",
+					"lineNumber": 51
+				},
+				{
+					"caller": "convertLinkRangeToBuffer",
+					"callee": "Math.min",
+					"lineNumber": 52
+				},
+				{
+					"caller": "convertLinkRangeToBuffer",
+					"callee": "Math.min",
+					"lineNumber": 61
+				},
+				{
+					"caller": "convertLinkRangeToBuffer",
+					"callee": "line.getCell",
+					"lineNumber": 62
+				},
+				{
+					"caller": "convertLinkRangeToBuffer",
+					"callee": "cell.getWidth",
+					"lineNumber": 66
+				},
+				{
+					"caller": "convertLinkRangeToBuffer",
+					"callee": "cell.getChars",
+					"lineNumber": 70
+				},
+				{
+					"caller": "convertLinkRangeToBuffer",
+					"callee": "Math.ceil",
+					"lineNumber": 80
+				},
+				{
+					"caller": "convertLinkRangeToBuffer",
+					"callee": "Math.max",
+					"lineNumber": 82
+				},
+				{
+					"caller": "convertLinkRangeToBuffer",
+					"callee": "Math.min",
+					"lineNumber": 90
+				},
+				{
+					"caller": "convertLinkRangeToBuffer",
+					"callee": "Math.min",
+					"lineNumber": 101
+				},
+				{
+					"caller": "convertLinkRangeToBuffer",
+					"callee": "line.getCell",
+					"lineNumber": 104
+				},
+				{
+					"caller": "convertLinkRangeToBuffer",
+					"callee": "cell.getWidth",
+					"lineNumber": 108
+				},
+				{
+					"caller": "convertLinkRangeToBuffer",
+					"callee": "cell.getChars",
+					"lineNumber": 109
+				},
+				{
+					"caller": "convertLinkRangeToBuffer",
+					"callee": "cell.getWidth",
+					"lineNumber": 120
+				},
+				{
+					"caller": "getXtermRangesByAttr",
+					"callee": "buffer.getLine",
+					"lineNumber": 167
+				},
+				{
+					"caller": "getXtermRangesByAttr",
+					"callee": "line.getCell",
+					"lineNumber": 172
+				},
+				{
+					"caller": "getXtermRangesByAttr",
+					"callee": "cell.isBold",
+					"lineNumber": 179
+				},
+				{
+					"caller": "getXtermRangesByAttr",
+					"callee": "cell.isInverse",
+					"lineNumber": 180
+				},
+				{
+					"caller": "getXtermRangesByAttr",
+					"callee": "cell.isStrikethrough",
+					"lineNumber": 181
+				},
+				{
+					"caller": "getXtermRangesByAttr",
+					"callee": "cell.isUnderline",
+					"lineNumber": 182
+				},
+				{
+					"caller": "getXtermRangesByAttr",
+					"callee": "cell.isDim",
+					"lineNumber": 183
+				},
+				{
+					"caller": "getXtermRangesByAttr",
+					"callee": "cell.isItalic",
+					"lineNumber": 183
+				},
+				{
+					"caller": "getXtermRangesByAttr",
+					"callee": "ranges.push",
+					"lineNumber": 189
+				},
+				{
+					"caller": "getXtermLineContent",
+					"callee": "Math.max",
+					"lineNumber": 214
+				},
+				{
+					"caller": "getXtermLineContent",
+					"callee": "Math.min",
+					"lineNumber": 215
+				},
+				{
+					"caller": "getXtermLineContent",
+					"callee": "buffer.getLine",
+					"lineNumber": 218
+				},
+				{
+					"caller": "getXtermLineContent",
+					"callee": "line.translateToString",
+					"lineNumber": 220
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 3,
+				"functionCount": 3,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/lib/terminal/links/link-detector-adapter.test.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 204,
+			"nonEmptyLines": 173,
+			"functions": [
+				{
+					"name": "createMockTerminal",
+					"startLine": 17,
+					"endLine": 55,
+					"params": ["lineDescriptors", "cols"]
+				},
+				{
+					"name": "createAdapter",
+					"startLine": 57,
+					"endLine": 78,
+					"params": ["lineDescriptors", "validPaths", "opts"]
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "createMockTerminal",
+					"callee": "lineDescriptors.map",
+					"lineNumber": 21
+				},
+				{
+					"caller": "createMockTerminal",
+					"callee": "result.padEnd",
+					"lineNumber": 31
+				},
+				{
+					"caller": "createMockTerminal",
+					"callee": "result.substring",
+					"lineNumber": 32
+				},
+				{
+					"caller": "createMockTerminal",
+					"callee": "result.replace",
+					"lineNumber": 33
+				},
+				{
+					"caller": "createAdapter",
+					"callee": "lineDescriptors.map",
+					"lineNumber": 62
+				},
+				{
+					"caller": "statMock",
+					"callee": "validPaths.includes",
+					"lineNumber": 66
+				},
+				{
+					"caller": "createAdapter",
+					"callee": "createMockTerminal",
+					"lineNumber": 73
+				}
+			],
+			"metrics": {
+				"importCount": 3,
+				"exportCount": 0,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/lib/terminal/links/link-detector-adapter.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 255,
+			"nonEmptyLines": 227,
+			"classes": [
+				{
+					"name": "LinkDetectorAdapter",
+					"startLine": 33,
+					"endLine": 255,
+					"methods": [
+						"constructor",
+						"provideLinks",
+						"_provideLinks",
+						"_detectStyledTextLinks",
+						"_mapDetectedLinks"
+					],
+					"properties": ["_activeRequests"]
+				}
+			],
+			"exports": [
+				{
+					"name": "LinkDetectorAdapter",
+					"line": 33,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "provideLinks",
+					"callee": "this._activeRequests.get",
+					"lineNumber": 57
+				},
+				{
+					"caller": "provideLinks",
+					"callee": "this._provideLinks",
+					"lineNumber": 59
+				},
+				{
+					"caller": "provideLinks",
+					"callee": "this._activeRequests.set",
+					"lineNumber": 60
+				},
+				{
+					"caller": "provideLinks",
+					"callee": "request.then",
+					"lineNumber": 62
+				},
+				{
+					"caller": "provideLinks",
+					"callee": "this._activeRequests.delete",
+					"lineNumber": 64
+				},
+				{
+					"caller": "provideLinks",
+					"callee": "callback",
+					"lineNumber": 65
+				},
+				{
+					"caller": "provideLinks",
+					"callee": "this._activeRequests.delete",
+					"lineNumber": 68
+				},
+				{
+					"caller": "provideLinks",
+					"callee": "callback",
+					"lineNumber": 69
+				},
+				{
+					"caller": "_provideLinks",
+					"callee": "buffer.getLine",
+					"lineNumber": 84
+				},
+				{
+					"caller": "_provideLinks",
+					"callee": "lines.push",
+					"lineNumber": 86
+				},
+				{
+					"caller": "_provideLinks",
+					"callee": "Math.max",
+					"lineNumber": 88
+				},
+				{
+					"caller": "_provideLinks",
+					"callee": "Math.ceil",
+					"lineNumber": 89
+				},
+				{
+					"caller": "_provideLinks",
+					"callee": "Math.max",
+					"lineNumber": 90
+				},
+				{
+					"caller": "_provideLinks",
+					"callee": "Math.min",
+					"lineNumber": 91
+				},
+				{
+					"caller": "_provideLinks",
+					"callee": "buffer.getLine",
+					"lineNumber": 94
+				},
+				{
+					"caller": "_provideLinks",
+					"callee": "buffer.getLine",
+					"lineNumber": 95
+				},
+				{
+					"caller": "_provideLinks",
+					"callee": "lines.unshift",
+					"lineNumber": 97
+				},
+				{
+					"caller": "_provideLinks",
+					"callee": "buffer.getLine",
+					"lineNumber": 102
+				},
+				{
+					"caller": "_provideLinks",
+					"callee": "buffer.getLine",
+					"lineNumber": 103
+				},
+				{
+					"caller": "_provideLinks",
+					"callee": "lines.push",
+					"lineNumber": 105
+				},
+				{
+					"caller": "_provideLinks",
+					"callee": "getXtermLineContent",
+					"lineNumber": 110
+				},
+				{
+					"caller": "_provideLinks",
+					"callee": "this._detector.detect",
+					"lineNumber": 113
+				},
+				{
+					"caller": "_provideLinks",
+					"callee": "this._mapDetectedLinks",
+					"lineNumber": 114
+				},
+				{
+					"caller": "_provideLinks",
+					"callee": "this._detectStyledTextLinks",
+					"lineNumber": 128
+				},
+				{
+					"caller": "_detectStyledTextLinks",
+					"callee": "getXtermRangesByAttr",
+					"lineNumber": 151
+				},
+				{
+					"caller": "_detectStyledTextLinks",
+					"callee": "buffer.getLine",
+					"lineNumber": 161
+				},
+				{
+					"caller": "_detectStyledTextLinks",
+					"callee": "line.translateToString",
+					"lineNumber": 167
+				},
+				{
+					"caller": "_detectStyledTextLinks",
+					"callee": "text.trim",
+					"lineNumber": 170
+				},
+				{
+					"caller": "_detectStyledTextLinks",
+					"callee": "this._detector.detect",
+					"lineNumber": 189
+				},
+				{
+					"caller": "_detectStyledTextLinks",
+					"callee": "text.trim",
+					"lineNumber": 189
+				},
+				{
+					"caller": "_detectStyledTextLinks",
+					"callee": "result.push",
+					"lineNumber": 191
+				},
+				{
+					"caller": "_detectStyledTextLinks",
+					"callee": "this._onActivate",
+					"lineNumber": 195
+				},
+				{
+					"caller": "_detectStyledTextLinks",
+					"callee": "this._onHover",
+					"lineNumber": 198
+				},
+				{
+					"caller": "_detectStyledTextLinks",
+					"callee": "this._onLeave",
+					"lineNumber": 201
+				},
+				{
+					"caller": "_mapDetectedLinks",
+					"callee": "convertLinkRangeToBuffer",
+					"lineNumber": 221
+				},
+				{
+					"caller": "_mapDetectedLinks",
+					"callee": "result.push",
+					"lineNumber": 238
+				},
+				{
+					"caller": "_mapDetectedLinks",
+					"callee": "this._onActivate",
+					"lineNumber": 242
+				},
+				{
+					"caller": "_mapDetectedLinks",
+					"callee": "this._onHover",
+					"lineNumber": 245
+				},
+				{
+					"caller": "_mapDetectedLinks",
+					"callee": "this._onLeave",
+					"lineNumber": 248
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 1
+			}
+		},
+		{
+			"path": "src/renderer/lib/terminal/links/link-resolver.test.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 203,
+			"nonEmptyLines": 174,
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/lib/terminal/links/link-resolver.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 169,
+			"nonEmptyLines": 151,
+			"classes": [
+				{
+					"name": "TerminalLinkResolver",
+					"startLine": 62,
+					"endLine": 169,
+					"methods": [
+						"constructor",
+						"resolveLink",
+						"resolveMultipleCandidates",
+						"clearCache",
+						"_cacheSet"
+					],
+					"properties": ["_cache", "_cacheTtl", "_ttlMs"]
+				}
+			],
+			"exports": [
+				{
+					"name": "TerminalLinkResolver",
+					"line": 62,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "resolveLink",
+					"callee": "link.trim",
+					"lineNumber": 78
+				},
+				{
+					"caller": "resolveLink",
+					"callee": "this._cache.get",
+					"lineNumber": 83
+				},
+				{
+					"caller": "resolveLink",
+					"callee": "removeLinkSuffix",
+					"lineNumber": 89
+				},
+				{
+					"caller": "resolveLink",
+					"callee": "removeLinkQueryString",
+					"lineNumber": 90
+				},
+				{
+					"caller": "resolveLink",
+					"callee": "this._cacheSet",
+					"lineNumber": 93
+				},
+				{
+					"caller": "resolveLink",
+					"callee": "linkPath.startsWith",
+					"lineNumber": 98
+				},
+				{
+					"caller": "resolveLink",
+					"callee": "decodeURIComponent",
+					"lineNumber": 101
+				},
+				{
+					"caller": "resolveLink",
+					"callee": "decodeURIComponent",
+					"lineNumber": 104
+				},
+				{
+					"caller": "resolveLink",
+					"callee": "linkPath.replace",
+					"lineNumber": 104
+				},
+				{
+					"caller": "resolveLink",
+					"callee": "linkPath.replace",
+					"lineNumber": 107
+				},
+				{
+					"caller": "resolveLink",
+					"callee": "this._stat",
+					"lineNumber": 115
+				},
+				{
+					"caller": "resolveLink",
+					"callee": "this._cacheSet",
+					"lineNumber": 121
+				},
+				{
+					"caller": "resolveLink",
+					"callee": "this._cacheSet",
+					"lineNumber": 124
+				},
+				{
+					"caller": "resolveLink",
+					"callee": "this._cacheSet",
+					"lineNumber": 127
+				},
+				{
+					"caller": "resolveMultipleCandidates",
+					"callee": "this.resolveLink",
+					"lineNumber": 139
+				},
+				{
+					"caller": "clearCache",
+					"callee": "this._cache.clear",
+					"lineNumber": 151
+				},
+				{
+					"caller": "clearCache",
+					"callee": "clearTimeout",
+					"lineNumber": 153
+				},
+				{
+					"caller": "_cacheSet",
+					"callee": "clearTimeout",
+					"lineNumber": 160
+				},
+				{
+					"caller": "_cacheSet",
+					"callee": "setTimeout",
+					"lineNumber": 162
+				},
+				{
+					"caller": "_cacheSet",
+					"callee": "this._cache.clear",
+					"lineNumber": 163
+				},
+				{
+					"caller": "_cacheSet",
+					"callee": "this._cache.set",
+					"lineNumber": 167
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 1
+			}
+		},
+		{
+			"path": "src/renderer/lib/terminal/links/local-link-detector.test.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 290,
+			"nonEmptyLines": 261,
+			"functions": [
+				{
+					"name": "createDetector",
+					"startLine": 20,
+					"endLine": 55,
+					"params": ["validPaths", "workspaceRoot"]
+				},
+				{
+					"name": "formatLink",
+					"startLine": 57,
+					"endLine": 67,
+					"params": ["fmt", "path", "line", "col"]
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "statMock",
+					"callee": "validPaths.includes",
+					"lineNumber": 23
+				},
+				{
+					"caller": "statMock",
+					"callee": "path.startsWith",
+					"lineNumber": 28
+				},
+				{
+					"caller": "statMock",
+					"callee": "path.startsWith",
+					"lineNumber": 28
+				},
+				{
+					"caller": "statMock",
+					"callee": "`${workspaceRoot}/${path}`.split(\"/\").filter",
+					"lineNumber": 29
+				},
+				{
+					"caller": "statMock",
+					"callee": "`${workspaceRoot}/${path}`.split",
+					"lineNumber": 29
+				},
+				{
+					"caller": "statMock",
+					"callee": "normalized.pop",
+					"lineNumber": 34
+				},
+				{
+					"caller": "statMock",
+					"callee": "normalized.push",
+					"lineNumber": 36
+				},
+				{
+					"caller": "statMock",
+					"callee": "normalized.join",
+					"lineNumber": 39
+				},
+				{
+					"caller": "statMock",
+					"callee": "validPaths.includes",
+					"lineNumber": 40
+				},
+				{
+					"caller": "statMock",
+					"callee": "path.startsWith",
+					"lineNumber": 45
+				},
+				{
+					"caller": "statMock",
+					"callee": "path.substring",
+					"lineNumber": 46
+				},
+				{
+					"caller": "statMock",
+					"callee": "validPaths.includes",
+					"lineNumber": 47
+				},
+				{
+					"caller": "formatLink",
+					"callee": "fmt\n\t\t.replace(\"{0}\", path)\n\t\t.replace(\"{1}\", line ?? \"\")\n\t\t.replace",
+					"lineNumber": 63
+				},
+				{
+					"caller": "formatLink",
+					"callee": "fmt\n\t\t.replace(\"{0}\", path)\n\t\t.replace",
+					"lineNumber": 63
+				},
+				{
+					"caller": "formatLink",
+					"callee": "fmt\n\t\t.replace",
+					"lineNumber": 63
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 0,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/lib/terminal/links/local-link-detector.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 215,
+			"nonEmptyLines": 190,
+			"classes": [
+				{
+					"name": "LocalLinkDetector",
+					"startLine": 62,
+					"endLine": 215,
+					"methods": ["constructor", "detect", "_isUrl", "_buildCandidates"],
+					"properties": []
+				}
+			],
+			"exports": [
+				{
+					"name": "LocalLinkDetector",
+					"line": 62,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "detect",
+					"callee": "getCurrentOS",
+					"lineNumber": 73
+				},
+				{
+					"caller": "detect",
+					"callee": "detectLinks",
+					"lineNumber": 74
+				},
+				{
+					"caller": "detect",
+					"callee": "this._isUrl",
+					"lineNumber": 82
+				},
+				{
+					"caller": "detect",
+					"callee": "this._buildCandidates",
+					"lineNumber": 87
+				},
+				{
+					"caller": "detect",
+					"callee": "generateTrimmedCandidates",
+					"lineNumber": 92
+				},
+				{
+					"caller": "detect",
+					"callee": "trimmedCandidates.push",
+					"lineNumber": 93
+				},
+				{
+					"caller": "detect",
+					"callee": "this._resolver.resolveMultipleCandidates",
+					"lineNumber": 99
+				},
+				{
+					"caller": "detect",
+					"callee": "links.push",
+					"lineNumber": 108
+				},
+				{
+					"caller": "detect",
+					"callee": "text.substring",
+					"lineNumber": 109
+				},
+				{
+					"caller": "detect",
+					"callee": "detectFallbackLinks",
+					"lineNumber": 129
+				},
+				{
+					"caller": "detect",
+					"callee": "this._resolver.resolveLink",
+					"lineNumber": 135
+				},
+				{
+					"caller": "detect",
+					"callee": "links.push",
+					"lineNumber": 137
+				},
+				{
+					"caller": "detect",
+					"callee": "text.trim",
+					"lineNumber": 162
+				},
+				{
+					"caller": "detect",
+					"callee": "text.trim",
+					"lineNumber": 163
+				},
+				{
+					"caller": "detect",
+					"callee": "this._resolver.resolveLink",
+					"lineNumber": 164
+				},
+				{
+					"caller": "detect",
+					"callee": "text.indexOf",
+					"lineNumber": 166
+				},
+				{
+					"caller": "detect",
+					"callee": "links.push",
+					"lineNumber": 167
+				},
+				{
+					"caller": "_isUrl",
+					"callee": "text.startsWith",
+					"lineNumber": 186
+				},
+				{
+					"caller": "_isUrl",
+					"callee": "text.startsWith",
+					"lineNumber": 187
+				},
+				{
+					"caller": "_isUrl",
+					"callee": "text.startsWith",
+					"lineNumber": 188
+				},
+				{
+					"caller": "_buildCandidates",
+					"callee": "removeLinkSuffix",
+					"lineNumber": 200
+				},
+				{
+					"caller": "_buildCandidates",
+					"callee": "candidates.push",
+					"lineNumber": 205
+				},
+				{
+					"caller": "_buildCandidates",
+					"callee": "cleanPath.match",
+					"lineNumber": 208
+				},
+				{
+					"caller": "_buildCandidates",
+					"callee": "candidates.push",
+					"lineNumber": 210
+				},
+				{
+					"caller": "_buildCandidates",
+					"callee": "cleanPath.replace",
+					"lineNumber": 210
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 1
+			}
+		},
+		{
+			"path": "src/renderer/lib/terminal/links/word-link-detector.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 142,
+			"nonEmptyLines": 123,
+			"functions": [
+				{
+					"name": "buildSeparatorRegex",
+					"startLine": 22,
+					"endLine": 29,
+					"params": ["separators"]
+				}
+			],
+			"classes": [
+				{
+					"name": "WordLinkDetector",
+					"startLine": 45,
+					"endLine": 142,
+					"methods": [
+						"constructor",
+						"provideLinks",
+						"_provideLinks",
+						"_parseWords"
+					],
+					"properties": ["_separatorRegex"]
+				}
+			],
+			"exports": [
+				{
+					"name": "WordLinkDetector",
+					"line": 45,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "buildSeparatorRegex",
+					"callee": "String.fromCharCode",
+					"lineNumber": 25
+				},
+				{
+					"caller": "buildSeparatorRegex",
+					"callee": "separators.replace",
+					"lineNumber": 27
+				},
+				{
+					"caller": "constructor",
+					"callee": "buildSeparatorRegex",
+					"lineNumber": 61
+				},
+				{
+					"caller": "provideLinks",
+					"callee": "this._provideLinks(bufferLineNumber).then",
+					"lineNumber": 68
+				},
+				{
+					"caller": "provideLinks",
+					"callee": "this._provideLinks",
+					"lineNumber": 68
+				},
+				{
+					"caller": "provideLinks",
+					"callee": "callback",
+					"lineNumber": 69
+				},
+				{
+					"caller": "provideLinks",
+					"callee": "callback",
+					"lineNumber": 70
+				},
+				{
+					"caller": "_provideLinks",
+					"callee": "buffer.getLine",
+					"lineNumber": 76
+				},
+				{
+					"caller": "_provideLinks",
+					"callee": "line.translateToString",
+					"lineNumber": 79
+				},
+				{
+					"caller": "_provideLinks",
+					"callee": "this._parseWords",
+					"lineNumber": 82
+				},
+				{
+					"caller": "_provideLinks",
+					"callee": "wordText.endsWith",
+					"lineNumber": 90
+				},
+				{
+					"caller": "_provideLinks",
+					"callee": "wordText.slice",
+					"lineNumber": 91
+				},
+				{
+					"caller": "_provideLinks",
+					"callee": "wordText.includes",
+					"lineNumber": 95
+				},
+				{
+					"caller": "_provideLinks",
+					"callee": "wordText.startsWith",
+					"lineNumber": 98
+				},
+				{
+					"caller": "_provideLinks",
+					"callee": "wordText.startsWith",
+					"lineNumber": 98
+				},
+				{
+					"caller": "_provideLinks",
+					"callee": "this._resolver.resolveLink",
+					"lineNumber": 101
+				},
+				{
+					"caller": "_provideLinks",
+					"callee": "links.push",
+					"lineNumber": 104
+				},
+				{
+					"caller": "_provideLinks",
+					"callee": "this._onActivate",
+					"lineNumber": 114
+				},
+				{
+					"caller": "_provideLinks",
+					"callee": "this._onHover",
+					"lineNumber": 117
+				},
+				{
+					"caller": "_provideLinks",
+					"callee": "this._onLeave",
+					"lineNumber": 120
+				},
+				{
+					"caller": "_parseWords",
+					"callee": "text.split",
+					"lineNumber": 130
+				},
+				{
+					"caller": "_parseWords",
+					"callee": "words.push",
+					"lineNumber": 133
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 1
+			}
+		}
+	]
+}

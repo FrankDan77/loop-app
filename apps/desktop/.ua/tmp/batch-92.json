@@ -1,0 +1,151 @@
+{
+  "batchIndex": 92,
+  "nodes": [
+    {
+      "id": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/AnthropicOAuthDialog/AnthropicOAuthDialog.tsx",
+      "type": "file",
+      "name": "AnthropicOAuthDialog.tsx",
+      "filePath": "src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/AnthropicOAuthDialog/AnthropicOAuthDialog.tsx",
+      "summary": "React component: AnthropicOAuthDialog",
+      "tags": [
+        "component",
+        "dialog",
+        "renderer",
+        "react"
+      ],
+      "complexity": "simple",
+      "metadata": {
+        "totalLines": 24,
+        "nonEmptyLines": 21,
+        "language": "typescript"
+      }
+    },
+    {
+      "id": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/AnthropicOAuthDialog/AnthropicOAuthDialog.tsx:AnthropicOAuthDialog",
+      "type": "function",
+      "name": "AnthropicOAuthDialog",
+      "filePath": "src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/AnthropicOAuthDialog/AnthropicOAuthDialog.tsx",
+      "summary": "Function AnthropicOAuthDialog",
+      "lineRange": [
+        16,
+        24
+      ],
+      "metadata": {
+        "params": [
+          "props"
+        ],
+        "isExported": true
+      }
+    },
+    {
+      "id": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OAuthDialog/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OAuthDialog/index.ts",
+      "summary": "index module",
+      "tags": [
+        "component",
+        "dialog",
+        "renderer",
+        "typescript"
+      ],
+      "complexity": "simple",
+      "metadata": {
+        "totalLines": 1,
+        "nonEmptyLines": 1,
+        "language": "typescript"
+      }
+    },
+    {
+      "id": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OpenAIOAuthDialog/OpenAIOAuthDialog.tsx",
+      "type": "file",
+      "name": "OpenAIOAuthDialog.tsx",
+      "filePath": "src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OpenAIOAuthDialog/OpenAIOAuthDialog.tsx",
+      "summary": "React component: OpenAIOAuthDialog",
+      "tags": [
+        "component",
+        "dialog",
+        "renderer",
+        "react"
+      ],
+      "complexity": "simple",
+      "metadata": {
+        "totalLines": 17,
+        "nonEmptyLines": 14,
+        "language": "typescript"
+      }
+    },
+    {
+      "id": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OpenAIOAuthDialog/OpenAIOAuthDialog.tsx:OpenAIOAuthDialog",
+      "type": "function",
+      "name": "OpenAIOAuthDialog",
+      "filePath": "src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OpenAIOAuthDialog/OpenAIOAuthDialog.tsx",
+      "summary": "Function OpenAIOAuthDialog",
+      "lineRange": [
+        15,
+        17
+      ],
+      "metadata": {
+        "params": [
+          "props"
+        ],
+        "isExported": true
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/AnthropicOAuthDialog/AnthropicOAuthDialog.tsx",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/AnthropicOAuthDialog/AnthropicOAuthDialog.tsx:AnthropicOAuthDialog",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/AnthropicOAuthDialog/AnthropicOAuthDialog.tsx",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/AnthropicOAuthDialog/AnthropicOAuthDialog.tsx:AnthropicOAuthDialog",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/AnthropicOAuthDialog/AnthropicOAuthDialog.tsx",
+      "target": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OAuthDialog/index.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/AnthropicOAuthDialog/AnthropicOAuthDialog.tsx",
+      "target": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OAuthDialog/index.ts",
+      "type": "depends_on",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OpenAIOAuthDialog/OpenAIOAuthDialog.tsx",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OpenAIOAuthDialog/OpenAIOAuthDialog.tsx:OpenAIOAuthDialog",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OpenAIOAuthDialog/OpenAIOAuthDialog.tsx",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OpenAIOAuthDialog/OpenAIOAuthDialog.tsx:OpenAIOAuthDialog",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OpenAIOAuthDialog/OpenAIOAuthDialog.tsx",
+      "target": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OAuthDialog/index.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OpenAIOAuthDialog/OpenAIOAuthDialog.tsx",
+      "target": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OAuthDialog/index.ts",
+      "type": "depends_on",
+      "weight": 0.6
+    }
+  ],
+  "metadata": {
+    "nodeCount": 5,
+    "edgeCount": 8,
+    "filesProcessed": 3
+  }
+}

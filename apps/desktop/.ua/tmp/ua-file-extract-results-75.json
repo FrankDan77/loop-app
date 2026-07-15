@@ -1,0 +1,1273 @@
+{
+	"scriptCompleted": true,
+	"filesAnalyzed": 25,
+	"filesSkipped": [],
+	"results": [
+		{
+			"path": "scripts/demo-launch-spec.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 248,
+			"nonEmptyLines": 228,
+			"functions": [
+				{
+					"name": "divider",
+					"startLine": 164,
+					"endLine": 166,
+					"params": ["char", "n"]
+				},
+				{
+					"name": "indent",
+					"startLine": 168,
+					"endLine": 173,
+					"params": ["text", "prefix"]
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "divider",
+					"callee": "char.repeat",
+					"lineNumber": 165
+				},
+				{
+					"caller": "indent",
+					"callee": "text\n\t\t.split(\"\\n\")\n\t\t.map((line) => prefix + line)\n\t\t.join",
+					"lineNumber": 169
+				},
+				{
+					"caller": "indent",
+					"callee": "text\n\t\t.split(\"\\n\")\n\t\t.map",
+					"lineNumber": 169
+				},
+				{
+					"caller": "indent",
+					"callee": "text\n\t\t.split",
+					"lineNumber": 169
+				}
+			],
+			"metrics": {
+				"importCount": 4,
+				"exportCount": 0,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/shared/context/__fixtures__/attachment.logs-txt.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 23,
+			"nonEmptyLines": 21,
+			"exports": [
+				{
+					"name": "attachmentLogsTxt",
+					"line": 3,
+					"isDefault": false
+				},
+				{
+					"name": "attachmentScreenshotPng",
+					"line": 11,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 2,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/shared/context/__fixtures__/githubIssue.auth-middleware.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 17,
+			"nonEmptyLines": 15,
+			"exports": [
+				{
+					"name": "githubIssueAuthMiddleware",
+					"line": 3,
+					"isDefault": false
+				},
+				{
+					"name": "githubIssueTokenRotation",
+					"line": 11,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 2,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/shared/context/__fixtures__/githubPr.auth-rewrite.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 9,
+			"nonEmptyLines": 8,
+			"exports": [
+				{
+					"name": "githubPrAuthRewrite",
+					"line": 3,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/shared/context/__fixtures__/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 6,
+			"nonEmptyLines": 6,
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/shared/context/__fixtures__/internalTask.refactor-auth.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 9,
+			"nonEmptyLines": 8,
+			"exports": [
+				{
+					"name": "internalTaskRefactorAuth",
+					"line": 3,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/shared/context/__fixtures__/launchContext.multi-source.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 119,
+			"nonEmptyLines": 117,
+			"exports": [
+				{
+					"name": "launchContextMultiSource",
+					"line": 26,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 5,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/shared/context/__fixtures__/launchContext.prompt-only.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 24,
+			"nonEmptyLines": 22,
+			"exports": [
+				{
+					"name": "launchContextPromptOnly",
+					"line": 10,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/shared/context/buildLaunchSpec.test.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 442,
+			"nonEmptyLines": 398,
+			"functions": [
+				{
+					"name": "getConfig",
+					"startLine": 11,
+					"endLine": 16,
+					"params": ["id"]
+				},
+				{
+					"name": "baseCtx",
+					"startLine": 18,
+					"endLine": 27,
+					"params": ["overrides"]
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "getConfig",
+					"callee": "indexResolvedAgentConfigs",
+					"lineNumber": 12
+				},
+				{
+					"caller": "getConfig",
+					"callee": "resolveAgentConfigs",
+					"lineNumber": 12
+				},
+				{
+					"caller": "getConfig",
+					"callee": "configs.get",
+					"lineNumber": 13
+				}
+			],
+			"metrics": {
+				"importCount": 3,
+				"exportCount": 0,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/shared/context/buildLaunchSpec.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 236,
+			"nonEmptyLines": 216,
+			"functions": [
+				{
+					"name": "buildLaunchSpec",
+					"startLine": 31,
+					"endLine": 57,
+					"params": ["ctx", "agentConfig"]
+				},
+				{
+					"name": "renderScalarTemplate",
+					"startLine": 59,
+					"endLine": 65,
+					"params": ["template", "variables"]
+				},
+				{
+					"name": "renderUserTemplate",
+					"startLine": 75,
+					"endLine": 107,
+					"params": ["template", "userPromptParts", "nonUserVariables"]
+				},
+				{
+					"name": "substituteVariables",
+					"startLine": 113,
+					"endLine": 121,
+					"params": ["template", "variables"]
+				},
+				{
+					"name": "finalize",
+					"startLine": 128,
+					"endLine": 144,
+					"params": ["parts"]
+				},
+				{
+					"name": "buildNonUserPromptVariables",
+					"startLine": 146,
+					"endLine": 155,
+					"params": ["sections"]
+				},
+				{
+					"name": "sectionsOfKind",
+					"startLine": 157,
+					"endLine": 162,
+					"params": ["sections", "kind"]
+				},
+				{
+					"name": "textPartsOf",
+					"startLine": 164,
+					"endLine": 170,
+					"params": ["section"]
+				},
+				{
+					"name": "collectUserPromptContent",
+					"startLine": 172,
+					"endLine": 174,
+					"params": ["sections"]
+				},
+				{
+					"name": "renderKindBlock",
+					"startLine": 176,
+					"endLine": 182,
+					"params": ["sections"]
+				},
+				{
+					"name": "renderAttachmentsList",
+					"startLine": 191,
+					"endLine": 214,
+					"params": ["sections"]
+				},
+				{
+					"name": "collectExplicitAttachments",
+					"startLine": 216,
+					"endLine": 220,
+					"params": ["sections"]
+				},
+				{
+					"name": "mergeAdjacentTextParts",
+					"startLine": 222,
+					"endLine": 236,
+					"params": ["parts"]
+				}
+			],
+			"exports": [
+				{
+					"name": "buildLaunchSpec",
+					"line": 31,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "buildLaunchSpec",
+					"callee": "buildNonUserPromptVariables",
+					"lineNumber": 37
+				},
+				{
+					"caller": "buildLaunchSpec",
+					"callee": "collectUserPromptContent",
+					"lineNumber": 38
+				},
+				{
+					"caller": "buildLaunchSpec",
+					"callee": "renderScalarTemplate",
+					"lineNumber": 40
+				},
+				{
+					"caller": "buildLaunchSpec",
+					"callee": "renderUserTemplate",
+					"lineNumber": 44
+				},
+				{
+					"caller": "buildLaunchSpec",
+					"callee": "collectExplicitAttachments",
+					"lineNumber": 54
+				},
+				{
+					"caller": "renderScalarTemplate",
+					"callee": "renderPromptTemplate",
+					"lineNumber": 63
+				},
+				{
+					"caller": "renderUserTemplate",
+					"callee": "template.match",
+					"lineNumber": 81
+				},
+				{
+					"caller": "renderUserTemplate",
+					"callee": "template.slice",
+					"lineNumber": 87
+				},
+				{
+					"caller": "renderUserTemplate",
+					"callee": "template.slice",
+					"lineNumber": 88
+				},
+				{
+					"caller": "renderUserTemplate",
+					"callee": "substituteVariables",
+					"lineNumber": 91
+				},
+				{
+					"caller": "renderUserTemplate",
+					"callee": "substituteVariables",
+					"lineNumber": 92
+				},
+				{
+					"caller": "renderUserTemplate",
+					"callee": "parts.push",
+					"lineNumber": 98
+				},
+				{
+					"caller": "renderUserTemplate",
+					"callee": "parts.push",
+					"lineNumber": 99
+				},
+				{
+					"caller": "renderUserTemplate",
+					"callee": "parts.push",
+					"lineNumber": 101
+				},
+				{
+					"caller": "renderUserTemplate",
+					"callee": "parts.push",
+					"lineNumber": 102
+				},
+				{
+					"caller": "renderUserTemplate",
+					"callee": "parts.push",
+					"lineNumber": 103
+				},
+				{
+					"caller": "renderUserTemplate",
+					"callee": "finalize",
+					"lineNumber": 106
+				},
+				{
+					"caller": "renderUserTemplate",
+					"callee": "mergeAdjacentTextParts",
+					"lineNumber": 106
+				},
+				{
+					"caller": "substituteVariables",
+					"callee": "template.replace",
+					"lineNumber": 117
+				},
+				{
+					"caller": "substituteVariables",
+					"callee": "rawKey.trim",
+					"lineNumber": 118
+				},
+				{
+					"caller": "substituteVariables",
+					"callee": "Object.hasOwn",
+					"lineNumber": 119
+				},
+				{
+					"caller": "finalize",
+					"callee": "out.push",
+					"lineNumber": 134
+				},
+				{
+					"caller": "finalize",
+					"callee": "part.text.replace",
+					"lineNumber": 137
+				},
+				{
+					"caller": "finalize",
+					"callee": "text.replace",
+					"lineNumber": 138
+				},
+				{
+					"caller": "finalize",
+					"callee": "text.replace",
+					"lineNumber": 139
+				},
+				{
+					"caller": "finalize",
+					"callee": "out.push",
+					"lineNumber": 141
+				},
+				{
+					"caller": "buildNonUserPromptVariables",
+					"callee": "renderKindBlock",
+					"lineNumber": 150
+				},
+				{
+					"caller": "buildNonUserPromptVariables",
+					"callee": "sectionsOfKind",
+					"lineNumber": 150
+				},
+				{
+					"caller": "buildNonUserPromptVariables",
+					"callee": "renderKindBlock",
+					"lineNumber": 151
+				},
+				{
+					"caller": "buildNonUserPromptVariables",
+					"callee": "sectionsOfKind",
+					"lineNumber": 151
+				},
+				{
+					"caller": "buildNonUserPromptVariables",
+					"callee": "renderKindBlock",
+					"lineNumber": 152
+				},
+				{
+					"caller": "buildNonUserPromptVariables",
+					"callee": "sectionsOfKind",
+					"lineNumber": 152
+				},
+				{
+					"caller": "buildNonUserPromptVariables",
+					"callee": "renderAttachmentsList",
+					"lineNumber": 153
+				},
+				{
+					"caller": "sectionsOfKind",
+					"callee": "sections.filter",
+					"lineNumber": 161
+				},
+				{
+					"caller": "textPartsOf",
+					"callee": "section.content\n\t\t.filter(\n\t\t\t(p): p is Extract<ContentPart, { type: \"text\" }> => p.type === \"text\",\n\t\t)\n\t\t.map",
+					"lineNumber": 165
+				},
+				{
+					"caller": "textPartsOf",
+					"callee": "section.content\n\t\t.filter",
+					"lineNumber": 165
+				},
+				{
+					"caller": "collectUserPromptContent",
+					"callee": "sectionsOfKind(sections, \"user-prompt\").flatMap",
+					"lineNumber": 173
+				},
+				{
+					"caller": "collectUserPromptContent",
+					"callee": "sectionsOfKind",
+					"lineNumber": 173
+				},
+				{
+					"caller": "renderKindBlock",
+					"callee": "sections\n\t\t.map((s) => textPartsOf(s).join(\"\\n\\n\"))\n\t\t.filter(Boolean)\n\t\t.join",
+					"lineNumber": 178
+				},
+				{
+					"caller": "renderKindBlock",
+					"callee": "sections\n\t\t.map((s) => textPartsOf(s).join(\"\\n\\n\"))\n\t\t.filter",
+					"lineNumber": 178
+				},
+				{
+					"caller": "renderKindBlock",
+					"callee": "sections\n\t\t.map",
+					"lineNumber": 178
+				},
+				{
+					"caller": "renderKindBlock",
+					"callee": "textPartsOf(s).join",
+					"lineNumber": 179
+				},
+				{
+					"caller": "renderKindBlock",
+					"callee": "textPartsOf",
+					"lineNumber": 179
+				},
+				{
+					"caller": "renderAttachmentsList",
+					"callee": "sectionsOfKind",
+					"lineNumber": 193
+				},
+				{
+					"caller": "renderAttachmentsList",
+					"callee": "refs.push",
+					"lineNumber": 194
+				},
+				{
+					"caller": "renderAttachmentsList",
+					"callee": "sectionsOfKind",
+					"lineNumber": 196
+				},
+				{
+					"caller": "renderAttachmentsList",
+					"callee": "refs.push",
+					"lineNumber": 200
+				},
+				{
+					"caller": "renderAttachmentsList",
+					"callee": "[\n\t\t\"# Attached files\",\n\t\t\"\",\n\t\t\"The user attached these files alongside the prompt. They've been\",\n\t\t\"written into the worktree at `.superset/attachments/`. Read them\",\n\t\t\"to understand the request — they're part of the task, not\",\n\t\t\"optional reference.\",\n\t\t\"\",\n\t\trefs.join(\"\\n\"),\n\t].join",
+					"lineNumber": 204
+				},
+				{
+					"caller": "renderAttachmentsList",
+					"callee": "refs.join",
+					"lineNumber": 212
+				},
+				{
+					"caller": "collectExplicitAttachments",
+					"callee": "sectionsOfKind(sections, \"attachment\").flatMap",
+					"lineNumber": 217
+				},
+				{
+					"caller": "collectExplicitAttachments",
+					"callee": "sectionsOfKind",
+					"lineNumber": 217
+				},
+				{
+					"caller": "collectExplicitAttachments",
+					"callee": "s.content.filter",
+					"lineNumber": 218
+				},
+				{
+					"caller": "mergeAdjacentTextParts",
+					"callee": "merged.push",
+					"lineNumber": 232
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 13,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/shared/context/composer.integration.test.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 82,
+			"nonEmptyLines": 78,
+			"metrics": {
+				"importCount": 4,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/shared/context/composer.test.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 324,
+			"nonEmptyLines": 308,
+			"functions": [
+				{
+					"name": "makeContributor",
+					"startLine": 11,
+					"endLine": 24,
+					"params": ["kind", "resolver"]
+				},
+				{
+					"name": "registry",
+					"startLine": 26,
+					"endLine": 77,
+					"params": ["overrides"]
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "makeContributor",
+					"callee": "resolver",
+					"lineNumber": 22
+				},
+				{
+					"caller": "registry",
+					"callee": "makeContributor",
+					"lineNumber": 34
+				},
+				{
+					"caller": "registry",
+					"callee": "makeContributor",
+					"lineNumber": 40
+				},
+				{
+					"caller": "registry",
+					"callee": "makeContributor",
+					"lineNumber": 47
+				},
+				{
+					"caller": "registry",
+					"callee": "makeContributor",
+					"lineNumber": 54
+				},
+				{
+					"caller": "registry",
+					"callee": "makeContributor",
+					"lineNumber": 61
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 0,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/shared/context/composer.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 159,
+			"nonEmptyLines": 144,
+			"functions": [
+				{
+					"name": "buildLaunchContext",
+					"startLine": 31,
+					"endLine": 66,
+					"params": ["inputs", "deps"]
+				},
+				{
+					"name": "resolveOne",
+					"startLine": 72,
+					"endLine": 98,
+					"params": ["source", "contributors", "resolveCtx", "timeoutMs"]
+				},
+				{
+					"name": "withTimeout",
+					"startLine": 100,
+					"endLine": 111,
+					"params": ["promise", "timeoutMs"]
+				},
+				{
+					"name": "kindRank",
+					"startLine": 113,
+					"endLine": 116,
+					"params": ["kind"]
+				},
+				{
+					"name": "sourceIdentity",
+					"startLine": 122,
+					"endLine": 135,
+					"params": ["source"]
+				},
+				{
+					"name": "dedupeSources",
+					"startLine": 137,
+					"endLine": 151,
+					"params": ["sources"]
+				},
+				{
+					"name": "deriveTaskSlug",
+					"startLine": 153,
+					"endLine": 159,
+					"params": ["sections"]
+				}
+			],
+			"exports": [
+				{
+					"name": "CONTRIBUTOR_TIMEOUT_MS",
+					"line": 11,
+					"isDefault": false
+				},
+				{
+					"name": "buildLaunchContext",
+					"line": 31,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "buildLaunchContext",
+					"callee": "dedupeSources",
+					"lineNumber": 36
+				},
+				{
+					"caller": "buildLaunchContext",
+					"callee": "Promise.all",
+					"lineNumber": 37
+				},
+				{
+					"caller": "buildLaunchContext",
+					"callee": "deduped.map",
+					"lineNumber": 38
+				},
+				{
+					"caller": "buildLaunchContext",
+					"callee": "resolveOne",
+					"lineNumber": 39
+				},
+				{
+					"caller": "buildLaunchContext",
+					"callee": "sections.push",
+					"lineNumber": 50
+				},
+				{
+					"caller": "buildLaunchContext",
+					"callee": "failures.push",
+					"lineNumber": 52
+				},
+				{
+					"caller": "buildLaunchContext",
+					"callee": "sections.sort",
+					"lineNumber": 56
+				},
+				{
+					"caller": "buildLaunchContext",
+					"callee": "kindRank",
+					"lineNumber": 56
+				},
+				{
+					"caller": "buildLaunchContext",
+					"callee": "kindRank",
+					"lineNumber": 56
+				},
+				{
+					"caller": "buildLaunchContext",
+					"callee": "deriveTaskSlug",
+					"lineNumber": 63
+				},
+				{
+					"caller": "resolveOne",
+					"callee": "withTimeout",
+					"lineNumber": 86
+				},
+				{
+					"caller": "resolveOne",
+					"callee": "contributor.resolve",
+					"lineNumber": 88
+				},
+				{
+					"caller": "resolveOne",
+					"callee": "String",
+					"lineNumber": 95
+				},
+				{
+					"caller": "withTimeout",
+					"callee": "setTimeout",
+					"lineNumber": 103
+				},
+				{
+					"caller": "withTimeout",
+					"callee": "reject",
+					"lineNumber": 104
+				},
+				{
+					"caller": "withTimeout",
+					"callee": "Promise.race([promise, timeout]).finally",
+					"lineNumber": 108
+				},
+				{
+					"caller": "withTimeout",
+					"callee": "Promise.race",
+					"lineNumber": 108
+				},
+				{
+					"caller": "withTimeout",
+					"callee": "clearTimeout",
+					"lineNumber": 109
+				},
+				{
+					"caller": "kindRank",
+					"callee": "KIND_ORDER.indexOf",
+					"lineNumber": 114
+				},
+				{
+					"caller": "dedupeSources",
+					"callee": "sourceIdentity",
+					"lineNumber": 141
+				},
+				{
+					"caller": "dedupeSources",
+					"callee": "out.push",
+					"lineNumber": 143
+				},
+				{
+					"caller": "dedupeSources",
+					"callee": "seen.has",
+					"lineNumber": 146
+				},
+				{
+					"caller": "dedupeSources",
+					"callee": "seen.add",
+					"lineNumber": 147
+				},
+				{
+					"caller": "dedupeSources",
+					"callee": "out.push",
+					"lineNumber": 148
+				},
+				{
+					"caller": "deriveTaskSlug",
+					"callee": "sections.find",
+					"lineNumber": 154
+				},
+				{
+					"caller": "deriveTaskSlug",
+					"callee": "sections.find",
+					"lineNumber": 156
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 2,
+				"functionCount": 7,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/shared/context/contributors/attachment.test.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 87,
+			"nonEmptyLines": 81,
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/shared/context/contributors/attachment.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 29,
+			"nonEmptyLines": 27,
+			"exports": [
+				{
+					"name": "attachmentContributor",
+					"line": 3,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "resolve",
+					"callee": "file.mediaType.startsWith",
+					"lineNumber": 13
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/shared/context/contributors/githubIssue.test.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 77,
+			"nonEmptyLines": 70,
+			"functions": [
+				{
+					"name": "makeCtx",
+					"startLine": 5,
+					"endLine": 19,
+					"params": ["fetchIssue"]
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 0,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/shared/context/contributors/githubIssue.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 40,
+			"nonEmptyLines": 37,
+			"functions": [
+				{
+					"name": "isNotFound",
+					"startLine": 3,
+					"endLine": 10,
+					"params": ["err"]
+				}
+			],
+			"exports": [
+				{
+					"name": "githubIssueContributor",
+					"line": 12,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "resolve",
+					"callee": "ctx.fetchIssue",
+					"lineNumber": 23
+				},
+				{
+					"caller": "resolve",
+					"callee": "isNotFound",
+					"lineNumber": 25
+				},
+				{
+					"caller": "resolve",
+					"callee": "issue.body.trim",
+					"lineNumber": 29
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/shared/context/contributors/githubPr.test.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 69,
+			"nonEmptyLines": 63,
+			"functions": [
+				{
+					"name": "makeCtx",
+					"startLine": 5,
+					"endLine": 19,
+					"params": ["fetchPullRequest"]
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 0,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/shared/context/contributors/githubPr.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 50,
+			"nonEmptyLines": 47,
+			"functions": [
+				{
+					"name": "isNotFound",
+					"startLine": 3,
+					"endLine": 10,
+					"params": ["err"]
+				}
+			],
+			"exports": [
+				{
+					"name": "githubPrContributor",
+					"line": 12,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "resolve",
+					"callee": "ctx.fetchPullRequest",
+					"lineNumber": 23
+				},
+				{
+					"caller": "resolve",
+					"callee": "isNotFound",
+					"lineNumber": 25
+				},
+				{
+					"caller": "resolve",
+					"callee": "pr.body.trim",
+					"lineNumber": 29
+				},
+				{
+					"caller": "resolve",
+					"callee": "[`# PR #${pr.number} — ${pr.title}`, branchLine].filter",
+					"lineNumber": 37
+				},
+				{
+					"caller": "resolve",
+					"callee": "headerParts.join",
+					"lineNumber": 40
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/shared/context/contributors/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 22,
+			"nonEmptyLines": 20,
+			"exports": [
+				{
+					"name": "defaultContributorRegistry",
+					"line": 8,
+					"isDefault": false
+				},
+				{
+					"name": "attachmentContributor",
+					"line": 16,
+					"isDefault": false
+				},
+				{
+					"name": "githubIssueContributor",
+					"line": 16,
+					"isDefault": false
+				},
+				{
+					"name": "githubPrContributor",
+					"line": 16,
+					"isDefault": false
+				},
+				{
+					"name": "internalTaskContributor",
+					"line": 16,
+					"isDefault": false
+				},
+				{
+					"name": "userPromptContributor",
+					"line": 16,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 6,
+				"exportCount": 6,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/shared/context/contributors/internalTask.test.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 65,
+			"nonEmptyLines": 59,
+			"functions": [
+				{
+					"name": "makeCtx",
+					"startLine": 5,
+					"endLine": 19,
+					"params": ["fetchInternalTask"]
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 0,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/shared/context/contributors/internalTask.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 40,
+			"nonEmptyLines": 37,
+			"functions": [
+				{
+					"name": "isNotFound",
+					"startLine": 3,
+					"endLine": 10,
+					"params": ["err"]
+				}
+			],
+			"exports": [
+				{
+					"name": "internalTaskContributor",
+					"line": 12,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "resolve",
+					"callee": "ctx.fetchInternalTask",
+					"lineNumber": 23
+				},
+				{
+					"caller": "resolve",
+					"callee": "isNotFound",
+					"lineNumber": 25
+				},
+				{
+					"caller": "resolve",
+					"callee": "task.description?.trim",
+					"lineNumber": 29
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/shared/context/contributors/userPrompt.test.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 101,
+			"nonEmptyLines": 93,
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/shared/context/contributors/userPrompt.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 64,
+			"nonEmptyLines": 60,
+			"functions": [
+				{
+					"name": "userPromptFromText",
+					"startLine": 8,
+					"endLine": 12,
+					"params": ["text"]
+				},
+				{
+					"name": "normalize",
+					"startLine": 18,
+					"endLine": 44,
+					"params": ["content"]
+				}
+			],
+			"exports": [
+				{
+					"name": "userPromptFromText",
+					"line": 8,
+					"isDefault": false
+				},
+				{
+					"name": "userPromptContributor",
+					"line": 46,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "normalize",
+					"callee": "text.trim",
+					"lineNumber": 23
+				},
+				{
+					"caller": "normalize",
+					"callee": "normalized.push",
+					"lineNumber": 24
+				},
+				{
+					"caller": "normalize",
+					"callee": "normalized.push",
+					"lineNumber": 26
+				},
+				{
+					"caller": "normalize",
+					"callee": "first.text.trimStart",
+					"lineNumber": 34
+				},
+				{
+					"caller": "normalize",
+					"callee": "last.text.trimEnd",
+					"lineNumber": 40
+				},
+				{
+					"caller": "resolve",
+					"callee": "normalize",
+					"lineNumber": 55
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 2,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/shared/context/types.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 154,
+			"nonEmptyLines": 140,
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		}
+	]
+}

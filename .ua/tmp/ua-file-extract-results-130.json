@@ -1,0 +1,2268 @@
+{
+	"scriptCompleted": true,
+	"filesAnalyzed": 9,
+	"filesSkipped": [],
+	"results": [
+		{
+			"path": "packages/chat/src/client/provider/chat-service-provider.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 30,
+			"nonEmptyLines": 25,
+			"functions": [
+				{
+					"name": "ChatServiceProvider",
+					"startLine": 20,
+					"endLine": 30,
+					"params": ["{\n\tclient,\n\tqueryClient,\n\tchildren,\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "chatServiceTrpc",
+					"line": 8,
+					"isDefault": false
+				},
+				{
+					"name": "ChatServiceProvider",
+					"line": 20,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 2,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "packages/chat/src/server/desktop/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 27,
+			"nonEmptyLines": 27,
+			"exports": [
+				{
+					"name": "AnthropicProviderOptions",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "ClaudeCredentials",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "getAnthropicProviderOptions",
+					"line": 5,
+					"isDefault": false
+				},
+				{
+					"name": "getCredentialsFromAnySource",
+					"line": 5,
+					"isDefault": false
+				},
+				{
+					"name": "getCredentialsFromAuthStorage",
+					"line": 5,
+					"isDefault": false
+				},
+				{
+					"name": "getCredentialsFromConfig",
+					"line": 5,
+					"isDefault": false
+				},
+				{
+					"name": "getCredentialsFromKeychain",
+					"line": 5,
+					"isDefault": false
+				},
+				{
+					"name": "getOpenAICredentialsFromAnySource",
+					"line": 12,
+					"isDefault": false
+				},
+				{
+					"name": "getOpenAICredentialsFromAuthStorage",
+					"line": 12,
+					"isDefault": false
+				},
+				{
+					"name": "ChatService",
+					"line": 16,
+					"isDefault": false
+				},
+				{
+					"name": "AnthropicEnvVariables",
+					"line": 17,
+					"isDefault": false
+				},
+				{
+					"name": "AuthStatus",
+					"line": 18,
+					"isDefault": false
+				},
+				{
+					"name": "ChatServiceRouter",
+					"line": 19,
+					"isDefault": false
+				},
+				{
+					"name": "createChatServiceRouter",
+					"line": 20,
+					"isDefault": false
+				},
+				{
+					"name": "SlashCommand",
+					"line": 21,
+					"isDefault": false
+				},
+				{
+					"name": "getSlashCommands",
+					"line": 22,
+					"isDefault": false
+				},
+				{
+					"name": "resolveSlashCommand",
+					"line": 22,
+					"isDefault": false
+				},
+				{
+					"name": "ResolvedSlashCommand",
+					"line": 26,
+					"isDefault": false
+				},
+				{
+					"name": "generateTitleFromMessage",
+					"line": 27,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 19,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "packages/chat/src/server/trpc/service.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 408,
+			"nonEmptyLines": 377,
+			"functions": [
+				{
+					"name": "respondToQuestionWithOptimisticState",
+					"startLine": 44,
+					"endLine": 87,
+					"params": ["runtime", "payload"]
+				}
+			],
+			"classes": [
+				{
+					"name": "ChatRuntimeService",
+					"startLine": 95,
+					"endLine": 404,
+					"methods": ["constructor", "getOrCreateRuntime", "createRouter"],
+					"properties": ["runtimes", "runtimeCreations", "apiClient"]
+				}
+			],
+			"exports": [
+				{
+					"name": "ChatRuntimeService",
+					"line": 95,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "respondToQuestionWithOptimisticState",
+					"callee": "runtime.pendingQuestionResponses.get",
+					"lineNumber": 49
+				},
+				{
+					"caller": "respondToQuestionWithOptimisticState",
+					"callee": "runtime.answeredQuestionIds.has",
+					"lineNumber": 52
+				},
+				{
+					"caller": "respondToQuestionWithOptimisticState",
+					"callee": "runtime.answeredQuestionIds.add",
+					"lineNumber": 57
+				},
+				{
+					"caller": "respondToQuestionWithOptimisticState",
+					"callee": "Promise.resolve()\n\t\t.then(() => runtime.harness.respondToQuestion(payload))\n\t\t.catch((error) => {\n\t\t\tif (\n\t\t\t\truntime.pendingQuestionResponses.get(questionId) === responsePromise\n\t\t\t) {\n\t\t\t\tif (!wasAlreadyAnswered) {\n\t\t\t\t\truntime.answeredQuestionIds.delete(questionId);\n\t\t\t\t}\n\t\t\t\tif (clearsSandboxQuestion && runtime.pendingSandboxQuestion === null) {\n\t\t\t\t\truntime.pendingSandboxQuestion = previousSandboxQuestion;\n\t\t\t\t}\n\t\t\t}\n\t\t\tthrow error;\n\t\t})\n\t\t.finally",
+					"lineNumber": 63
+				},
+				{
+					"caller": "respondToQuestionWithOptimisticState",
+					"callee": "Promise.resolve()\n\t\t.then(() => runtime.harness.respondToQuestion(payload))\n\t\t.catch",
+					"lineNumber": 63
+				},
+				{
+					"caller": "respondToQuestionWithOptimisticState",
+					"callee": "Promise.resolve()\n\t\t.then",
+					"lineNumber": 63
+				},
+				{
+					"caller": "respondToQuestionWithOptimisticState",
+					"callee": "Promise.resolve",
+					"lineNumber": 63
+				},
+				{
+					"caller": "respondToQuestionWithOptimisticState",
+					"callee": "runtime.harness.respondToQuestion",
+					"lineNumber": 64
+				},
+				{
+					"caller": "respondToQuestionWithOptimisticState",
+					"callee": "runtime.pendingQuestionResponses.get",
+					"lineNumber": 67
+				},
+				{
+					"caller": "respondToQuestionWithOptimisticState",
+					"callee": "runtime.answeredQuestionIds.delete",
+					"lineNumber": 70
+				},
+				{
+					"caller": "respondToQuestionWithOptimisticState",
+					"callee": "runtime.pendingQuestionResponses.get",
+					"lineNumber": 80
+				},
+				{
+					"caller": "respondToQuestionWithOptimisticState",
+					"callee": "runtime.pendingQuestionResponses.delete",
+					"lineNumber": 82
+				},
+				{
+					"caller": "respondToQuestionWithOptimisticState",
+					"callee": "runtime.pendingQuestionResponses.set",
+					"lineNumber": 85
+				},
+				{
+					"caller": "constructor",
+					"callee": "createTRPCClient",
+					"lineNumber": 104
+				},
+				{
+					"caller": "constructor",
+					"callee": "httpBatchLink",
+					"lineNumber": 106
+				},
+				{
+					"caller": "headers",
+					"callee": "opts.headers",
+					"lineNumber": 110
+				},
+				{
+					"caller": "getOrCreateRuntime",
+					"callee": "process.cwd",
+					"lineNumber": 121
+				},
+				{
+					"caller": "getOrCreateRuntime",
+					"callee": "this.runtimes.get",
+					"lineNumber": 124
+				},
+				{
+					"caller": "getOrCreateRuntime",
+					"callee": "destroyRuntime",
+					"lineNumber": 127
+				},
+				{
+					"caller": "getOrCreateRuntime",
+					"callee": "this.runtimes.delete",
+					"lineNumber": 128
+				},
+				{
+					"caller": "getOrCreateRuntime",
+					"callee": "reloadHookConfig",
+					"lineNumber": 130
+				},
+				{
+					"caller": "getOrCreateRuntime",
+					"callee": "this.runtimeCreations.get",
+					"lineNumber": 135
+				},
+				{
+					"caller": "getOrCreateRuntime",
+					"callee": "(async () => {\n\t\t\ttry {\n\t\t\t\tconst extraTools = await getSupersetMcpTools(\n\t\t\t\t\t() => Promise.resolve(this.opts.headers()),\n\t\t\t\t\tthis.opts.apiUrl,\n\t\t\t\t);\n\n\t\t\t\tconst runtime = await createMastraCode({\n\t\t\t\t\tcwd: runtimeCwd,\n\t\t\t\t\textraTools,\n\t\t\t\t\tdisableMcp: !ENABLE_MASTRA_MCP_SERVERS,\n\t\t\t\t\tmemory: new Memory({ options: { observationalMemory: false } }),\n\t\t\t\t});\n\t\t\t\truntime.hookManager?.setSessionId(sessionId);\n\t\t\t\tawait runtime.harness.init();\n\t\t\t\truntime.harness.setResourceId({ resourceId: sessionId });\n\t\t\t\tawait runtime.harness.selectOrCreateThread();\n\n\t\t\t\tconst sessionRuntime: RuntimeSession = {\n\t\t\t\t\tsessionId,\n\t\t\t\t\tharness: runtime.harness,\n\t\t\t\t\tmcpManager: runtime.mcpManager,\n\t\t\t\t\thookManager: runtime.hookManager,\n\t\t\t\t\tmcpManualStatuses: new Map(),\n\t\t\t\t\tlastErrorMessage: null,\n\t\t\t\t\tpendingSandboxQuestion: null,\n\t\t\t\t\tansweredQuestionIds: new Set(),\n\t\t\t\t\tpendingQuestionResponses: new Map(),\n\t\t\t\t\tcwd: runtimeCwd,\n\t\t\t\t};\n\t\t\t\tsyncRuntimeHookSessionId(sessionRuntime);\n\t\t\t\tawait runSessionStartHook(sessionRuntime).catch(() => {});\n\t\t\t\tsubscribeToSessionEvents(sessionRuntime, this.opts.onLifecycleEvent);\n\t\t\t\tthis.runtimes.set(sessionId, sessionRuntime);\n\t\t\t\treturn sessionRuntime;\n\t\t\t} finally {\n\t\t\t\tthis.runtimeCreations.delete(runtimeKey);\n\t\t\t}\n\t\t})",
+					"lineNumber": 140
+				},
+				{
+					"caller": "getOrCreateRuntime",
+					"callee": "getSupersetMcpTools",
+					"lineNumber": 142
+				},
+				{
+					"caller": "getOrCreateRuntime",
+					"callee": "Promise.resolve",
+					"lineNumber": 143
+				},
+				{
+					"caller": "getOrCreateRuntime",
+					"callee": "this.opts.headers",
+					"lineNumber": 143
+				},
+				{
+					"caller": "getOrCreateRuntime",
+					"callee": "createMastraCode",
+					"lineNumber": 147
+				},
+				{
+					"caller": "getOrCreateRuntime",
+					"callee": "runtime.hookManager?.setSessionId",
+					"lineNumber": 153
+				},
+				{
+					"caller": "getOrCreateRuntime",
+					"callee": "runtime.harness.init",
+					"lineNumber": 154
+				},
+				{
+					"caller": "getOrCreateRuntime",
+					"callee": "runtime.harness.setResourceId",
+					"lineNumber": 155
+				},
+				{
+					"caller": "getOrCreateRuntime",
+					"callee": "runtime.harness.selectOrCreateThread",
+					"lineNumber": 156
+				},
+				{
+					"caller": "getOrCreateRuntime",
+					"callee": "syncRuntimeHookSessionId",
+					"lineNumber": 170
+				},
+				{
+					"caller": "getOrCreateRuntime",
+					"callee": "runSessionStartHook(sessionRuntime).catch",
+					"lineNumber": 171
+				},
+				{
+					"caller": "getOrCreateRuntime",
+					"callee": "runSessionStartHook",
+					"lineNumber": 171
+				},
+				{
+					"caller": "getOrCreateRuntime",
+					"callee": "subscribeToSessionEvents",
+					"lineNumber": 172
+				},
+				{
+					"caller": "getOrCreateRuntime",
+					"callee": "this.runtimes.set",
+					"lineNumber": 173
+				},
+				{
+					"caller": "getOrCreateRuntime",
+					"callee": "this.runtimeCreations.delete",
+					"lineNumber": 176
+				},
+				{
+					"caller": "getOrCreateRuntime",
+					"callee": "this.runtimeCreations.set",
+					"lineNumber": 180
+				},
+				{
+					"caller": "createRouter",
+					"callee": "initTRPC.create",
+					"lineNumber": 185
+				},
+				{
+					"caller": "createRouter",
+					"callee": "t.router",
+					"lineNumber": 187
+				},
+				{
+					"caller": "createRouter",
+					"callee": "t.router",
+					"lineNumber": 188
+				},
+				{
+					"caller": "createRouter",
+					"callee": "t.procedure\n\t\t\t\t\t.input(searchFilesInput)\n\t\t\t\t\t.query",
+					"lineNumber": 189
+				},
+				{
+					"caller": "createRouter",
+					"callee": "t.procedure\n\t\t\t\t\t.input",
+					"lineNumber": 189
+				},
+				{
+					"caller": "createRouter",
+					"callee": "searchFiles",
+					"lineNumber": 192
+				},
+				{
+					"caller": "createRouter",
+					"callee": "t.procedure\n\t\t\t\t\t.input(mcpOverviewInput)\n\t\t\t\t\t.query",
+					"lineNumber": 200
+				},
+				{
+					"caller": "createRouter",
+					"callee": "t.procedure\n\t\t\t\t\t.input",
+					"lineNumber": 200
+				},
+				{
+					"caller": "createRouter",
+					"callee": "this.getOrCreateRuntime",
+					"lineNumber": 207
+				},
+				{
+					"caller": "createRouter",
+					"callee": "getRuntimeMcpOverview",
+					"lineNumber": 211
+				},
+				{
+					"caller": "createRouter",
+					"callee": "t.procedure\n\t\t\t\t\t.input(mcpServerAuthInput)\n\t\t\t\t\t.mutation",
+					"lineNumber": 213
+				},
+				{
+					"caller": "createRouter",
+					"callee": "t.procedure\n\t\t\t\t\t.input",
+					"lineNumber": 213
+				},
+				{
+					"caller": "createRouter",
+					"callee": "this.getOrCreateRuntime",
+					"lineNumber": 220
+				},
+				{
+					"caller": "createRouter",
+					"callee": "authenticateRuntimeMcpServer",
+					"lineNumber": 224
+				},
+				{
+					"caller": "createRouter",
+					"callee": "t.router",
+					"lineNumber": 228
+				},
+				{
+					"caller": "createRouter",
+					"callee": "t.procedure\n\t\t\t\t\t.input(displayStateInput)\n\t\t\t\t\t.query",
+					"lineNumber": 229
+				},
+				{
+					"caller": "createRouter",
+					"callee": "t.procedure\n\t\t\t\t\t.input",
+					"lineNumber": 229
+				},
+				{
+					"caller": "createRouter",
+					"callee": "this.getOrCreateRuntime",
+					"lineNumber": 232
+				},
+				{
+					"caller": "createRouter",
+					"callee": "runtime.harness.getDisplayState",
+					"lineNumber": 236
+				},
+				{
+					"caller": "createRouter",
+					"callee": "currentMessage.errorMessage.trim",
+					"lineNumber": 245
+				},
+				{
+					"caller": "createRouter",
+					"callee": "currentMessage.errorMessage.trim",
+					"lineNumber": 246
+				},
+				{
+					"caller": "createRouter",
+					"callee": "runtime.answeredQuestionIds.has",
+					"lineNumber": 268
+				},
+				{
+					"caller": "createRouter",
+					"callee": "t.procedure\n\t\t\t\t\t.input(listMessagesInput)\n\t\t\t\t\t.query",
+					"lineNumber": 280
+				},
+				{
+					"caller": "createRouter",
+					"callee": "t.procedure\n\t\t\t\t\t.input",
+					"lineNumber": 280
+				},
+				{
+					"caller": "createRouter",
+					"callee": "this.getOrCreateRuntime",
+					"lineNumber": 283
+				},
+				{
+					"caller": "createRouter",
+					"callee": "runtime.harness.listMessages",
+					"lineNumber": 287
+				},
+				{
+					"caller": "createRouter",
+					"callee": "t.procedure\n\t\t\t\t\t.input(sendMessageInput)\n\t\t\t\t\t.mutation",
+					"lineNumber": 290
+				},
+				{
+					"caller": "createRouter",
+					"callee": "t.procedure\n\t\t\t\t\t.input",
+					"lineNumber": 290
+				},
+				{
+					"caller": "createRouter",
+					"callee": "this.getOrCreateRuntime",
+					"lineNumber": 293
+				},
+				{
+					"caller": "createRouter",
+					"callee": "input.payload.content.trim",
+					"lineNumber": 299
+				},
+				{
+					"caller": "createRouter",
+					"callee": "onUserPromptSubmit",
+					"lineNumber": 300
+				},
+				{
+					"caller": "createRouter",
+					"callee": "input.payload.content.trim",
+					"lineNumber": 301
+				},
+				{
+					"caller": "createRouter",
+					"callee": "input.metadata?.model?.trim",
+					"lineNumber": 302
+				},
+				{
+					"caller": "createRouter",
+					"callee": "runtime.harness.switchModel",
+					"lineNumber": 304
+				},
+				{
+					"caller": "createRouter",
+					"callee": "runtime.harness.setState",
+					"lineNumber": 311
+				},
+				{
+					"caller": "createRouter",
+					"callee": "generateAndSetTitle",
+					"lineNumber": 313
+				},
+				{
+					"caller": "createRouter",
+					"callee": "runtime.harness.sendMessage",
+					"lineNumber": 319
+				},
+				{
+					"caller": "createRouter",
+					"callee": "t.procedure\n\t\t\t\t\t.input(restartFromMessageInput)\n\t\t\t\t\t.mutation",
+					"lineNumber": 322
+				},
+				{
+					"caller": "createRouter",
+					"callee": "t.procedure\n\t\t\t\t\t.input",
+					"lineNumber": 322
+				},
+				{
+					"caller": "createRouter",
+					"callee": "this.getOrCreateRuntime",
+					"lineNumber": 325
+				},
+				{
+					"caller": "createRouter",
+					"callee": "input.payload.content.trim",
+					"lineNumber": 331
+				},
+				{
+					"caller": "createRouter",
+					"callee": "onUserPromptSubmit",
+					"lineNumber": 332
+				},
+				{
+					"caller": "createRouter",
+					"callee": "input.payload.content.trim",
+					"lineNumber": 333
+				},
+				{
+					"caller": "createRouter",
+					"callee": "restartRuntimeFromUserMessage",
+					"lineNumber": 334
+				},
+				{
+					"caller": "createRouter",
+					"callee": "generateAndSetTitle",
+					"lineNumber": 339
+				},
+				{
+					"caller": "createRouter",
+					"callee": "t.procedure.input(sessionIdInput).mutation",
+					"lineNumber": 347
+				},
+				{
+					"caller": "createRouter",
+					"callee": "t.procedure.input",
+					"lineNumber": 347
+				},
+				{
+					"caller": "createRouter",
+					"callee": "this.getOrCreateRuntime",
+					"lineNumber": 348
+				},
+				{
+					"caller": "createRouter",
+					"callee": "runtime.harness.abort",
+					"lineNumber": 352
+				},
+				{
+					"caller": "createRouter",
+					"callee": "t.procedure.input(sessionIdInput).mutation",
+					"lineNumber": 355
+				},
+				{
+					"caller": "createRouter",
+					"callee": "t.procedure.input",
+					"lineNumber": 355
+				},
+				{
+					"caller": "createRouter",
+					"callee": "this.getOrCreateRuntime",
+					"lineNumber": 356
+				},
+				{
+					"caller": "createRouter",
+					"callee": "runtime.harness.abort",
+					"lineNumber": 360
+				},
+				{
+					"caller": "createRouter",
+					"callee": "t.router",
+					"lineNumber": 363
+				},
+				{
+					"caller": "createRouter",
+					"callee": "t.procedure\n\t\t\t\t\t\t.input(approvalRespondInput)\n\t\t\t\t\t\t.mutation",
+					"lineNumber": 364
+				},
+				{
+					"caller": "createRouter",
+					"callee": "t.procedure\n\t\t\t\t\t\t.input",
+					"lineNumber": 364
+				},
+				{
+					"caller": "createRouter",
+					"callee": "this.getOrCreateRuntime",
+					"lineNumber": 367
+				},
+				{
+					"caller": "createRouter",
+					"callee": "runtime.harness.respondToToolApproval",
+					"lineNumber": 371
+				},
+				{
+					"caller": "createRouter",
+					"callee": "t.router",
+					"lineNumber": 375
+				},
+				{
+					"caller": "createRouter",
+					"callee": "t.procedure\n\t\t\t\t\t\t.input(questionRespondInput)\n\t\t\t\t\t\t.mutation",
+					"lineNumber": 376
+				},
+				{
+					"caller": "createRouter",
+					"callee": "t.procedure\n\t\t\t\t\t\t.input",
+					"lineNumber": 376
+				},
+				{
+					"caller": "createRouter",
+					"callee": "this.getOrCreateRuntime",
+					"lineNumber": 379
+				},
+				{
+					"caller": "createRouter",
+					"callee": "respondToQuestionWithOptimisticState",
+					"lineNumber": 383
+				},
+				{
+					"caller": "createRouter",
+					"callee": "t.router",
+					"lineNumber": 390
+				},
+				{
+					"caller": "createRouter",
+					"callee": "t.procedure\n\t\t\t\t\t\t.input(planRespondInput)\n\t\t\t\t\t\t.mutation",
+					"lineNumber": 391
+				},
+				{
+					"caller": "createRouter",
+					"callee": "t.procedure\n\t\t\t\t\t\t.input",
+					"lineNumber": 391
+				},
+				{
+					"caller": "createRouter",
+					"callee": "this.getOrCreateRuntime",
+					"lineNumber": 394
+				},
+				{
+					"caller": "createRouter",
+					"callee": "runtime.harness.respondToPlanApproval",
+					"lineNumber": 398
+				}
+			],
+			"metrics": {
+				"importCount": 4,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 1
+			}
+		},
+		{
+			"path": "packages/chat/src/server/trpc/utils/file-search/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 6,
+			"nonEmptyLines": 6,
+			"exports": [
+				{
+					"name": "FileSearchItem",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "FileSearchResult",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "SearchFilesOptions",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "searchFiles",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 4,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "packages/chat/src/server/trpc/utils/runtime/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 21,
+			"nonEmptyLines": 21,
+			"exports": [
+				{
+					"name": "destroyRuntime",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "generateAndSetTitle",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "LifecycleEvent",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "onUserPromptSubmit",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "RuntimeHarness",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "RuntimeHookManager",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "RuntimeMcpManager",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "RuntimeMcpServerStatus",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "RuntimeQuestionResponse",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "RuntimeSession",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "reloadHookConfig",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "restartRuntimeFromUserMessage",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "runSessionStartHook",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "subscribeToSessionEvents",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "syncRuntimeHookSessionId",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "authenticateRuntimeMcpServer",
+					"line": 18,
+					"isDefault": false
+				},
+				{
+					"name": "getRuntimeMcpOverview",
+					"line": 18,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 17,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "packages/chat/src/server/trpc/utils/runtime/runtime.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 537,
+			"nonEmptyLines": 485,
+			"functions": [
+				{
+					"name": "syncRuntimeHookSessionId",
+					"startLine": 43,
+					"endLine": 45,
+					"params": ["runtime"]
+				},
+				{
+					"name": "getRuntimeMemoryStore",
+					"startLine": 114,
+					"endLine": 129,
+					"params": ["runtime"]
+				},
+				{
+					"name": "onUserPromptSubmit",
+					"startLine": 135,
+					"endLine": 144,
+					"params": ["runtime", "userMessage"]
+				},
+				{
+					"name": "runSessionStartHook",
+					"startLine": 149,
+					"endLine": 154,
+					"params": ["runtime"]
+				},
+				{
+					"name": "reloadHookConfig",
+					"startLine": 159,
+					"endLine": 166,
+					"params": ["runtime"]
+				},
+				{
+					"name": "destroyRuntime",
+					"startLine": 171,
+					"endLine": 179,
+					"params": ["runtime"]
+				},
+				{
+					"name": "subscribeToSessionEvents",
+					"startLine": 194,
+					"endLine": 255,
+					"params": ["runtime", "onLifecycleEvent"]
+				},
+				{
+					"name": "isObjectRecord",
+					"startLine": 257,
+					"endLine": 259,
+					"params": ["value"]
+				},
+				{
+					"name": "isHarnessErrorEvent",
+					"startLine": 261,
+					"endLine": 265,
+					"params": ["event"]
+				},
+				{
+					"name": "isHarnessWorkspaceErrorEvent",
+					"startLine": 267,
+					"endLine": 275,
+					"params": ["event"]
+				},
+				{
+					"name": "isHarnessAgentStartEvent",
+					"startLine": 277,
+					"endLine": 281,
+					"params": ["event"]
+				},
+				{
+					"name": "isHarnessAgentEndEvent",
+					"startLine": 283,
+					"endLine": 287,
+					"params": ["event"]
+				},
+				{
+					"name": "isHarnessSandboxAccessRequestEvent",
+					"startLine": 289,
+					"endLine": 302,
+					"params": ["event"]
+				},
+				{
+					"name": "isHarnessAskQuestionEvent",
+					"startLine": 304,
+					"endLine": 312,
+					"params": ["event"]
+				},
+				{
+					"name": "isHarnessThreadChangedEvent",
+					"startLine": 314,
+					"endLine": 322,
+					"params": ["event"]
+				},
+				{
+					"name": "isHarnessThreadCreatedEvent",
+					"startLine": 324,
+					"endLine": 333,
+					"params": ["event"]
+				},
+				{
+					"name": "toRuntimeErrorMessage",
+					"startLine": 335,
+					"endLine": 348,
+					"params": ["error"]
+				},
+				{
+					"name": "normalizeErrorMessage",
+					"startLine": 350,
+					"endLine": 352,
+					"params": ["message"]
+				},
+				{
+					"name": "extractProviderMessage",
+					"startLine": 354,
+					"endLine": 389,
+					"params": ["error"]
+				},
+				{
+					"name": "restartRuntimeFromUserMessage",
+					"startLine": 391,
+					"endLine": 454,
+					"params": ["runtime", "input"]
+				},
+				{
+					"name": "extractTextContent",
+					"startLine": 456,
+					"endLine": 464,
+					"params": ["parts"]
+				},
+				{
+					"name": "generateAndSetTitle",
+					"startLine": 466,
+					"endLine": 537,
+					"params": ["runtime", "apiClient", "options"]
+				}
+			],
+			"exports": [
+				{
+					"name": "syncRuntimeHookSessionId",
+					"line": 43,
+					"isDefault": false
+				},
+				{
+					"name": "onUserPromptSubmit",
+					"line": 135,
+					"isDefault": false
+				},
+				{
+					"name": "runSessionStartHook",
+					"line": 149,
+					"isDefault": false
+				},
+				{
+					"name": "reloadHookConfig",
+					"line": 159,
+					"isDefault": false
+				},
+				{
+					"name": "destroyRuntime",
+					"line": 171,
+					"isDefault": false
+				},
+				{
+					"name": "subscribeToSessionEvents",
+					"line": 194,
+					"isDefault": false
+				},
+				{
+					"name": "restartRuntimeFromUserMessage",
+					"line": 391,
+					"isDefault": false
+				},
+				{
+					"name": "generateAndSetTitle",
+					"line": 466,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "syncRuntimeHookSessionId",
+					"callee": "runtime.hookManager?.setSessionId",
+					"lineNumber": 44
+				},
+				{
+					"caller": "getRuntimeMemoryStore",
+					"callee": "storage.getStore",
+					"lineNumber": 123
+				},
+				{
+					"caller": "onUserPromptSubmit",
+					"callee": "runtime.hookManager.runUserPromptSubmit",
+					"lineNumber": 140
+				},
+				{
+					"caller": "runSessionStartHook",
+					"callee": "runtime.hookManager.runSessionStart",
+					"lineNumber": 153
+				},
+				{
+					"caller": "reloadHookConfig",
+					"callee": "runtime.hookManager.reload",
+					"lineNumber": 162
+				},
+				{
+					"caller": "destroyRuntime",
+					"callee": "runtime.hookManager.runSessionEnd().catch",
+					"lineNumber": 173
+				},
+				{
+					"caller": "destroyRuntime",
+					"callee": "runtime.hookManager.runSessionEnd",
+					"lineNumber": 173
+				},
+				{
+					"caller": "destroyRuntime",
+					"callee": "harnessWithDestroy.destroy?.().catch",
+					"lineNumber": 178
+				},
+				{
+					"caller": "destroyRuntime",
+					"callee": "harnessWithDestroy.destroy",
+					"lineNumber": 178
+				},
+				{
+					"caller": "subscribeToSessionEvents",
+					"callee": "runtime.harness.subscribe",
+					"lineNumber": 198
+				},
+				{
+					"caller": "subscribeToSessionEvents",
+					"callee": "isHarnessThreadChangedEvent",
+					"lineNumber": 200
+				},
+				{
+					"caller": "subscribeToSessionEvents",
+					"callee": "isHarnessThreadCreatedEvent",
+					"lineNumber": 201
+				},
+				{
+					"caller": "subscribeToSessionEvents",
+					"callee": "syncRuntimeHookSessionId",
+					"lineNumber": 203
+				},
+				{
+					"caller": "subscribeToSessionEvents",
+					"callee": "isHarnessErrorEvent",
+					"lineNumber": 206
+				},
+				{
+					"caller": "subscribeToSessionEvents",
+					"callee": "isHarnessWorkspaceErrorEvent",
+					"lineNumber": 206
+				},
+				{
+					"caller": "subscribeToSessionEvents",
+					"callee": "toRuntimeErrorMessage",
+					"lineNumber": 207
+				},
+				{
+					"caller": "subscribeToSessionEvents",
+					"callee": "isHarnessAskQuestionEvent",
+					"lineNumber": 210
+				},
+				{
+					"caller": "subscribeToSessionEvents",
+					"callee": "onLifecycleEvent",
+					"lineNumber": 211
+				},
+				{
+					"caller": "subscribeToSessionEvents",
+					"callee": "isHarnessSandboxAccessRequestEvent",
+					"lineNumber": 217
+				},
+				{
+					"caller": "subscribeToSessionEvents",
+					"callee": "onLifecycleEvent",
+					"lineNumber": 223
+				},
+				{
+					"caller": "subscribeToSessionEvents",
+					"callee": "isHarnessAgentStartEvent",
+					"lineNumber": 229
+				},
+				{
+					"caller": "subscribeToSessionEvents",
+					"callee": "runtime.answeredQuestionIds.clear",
+					"lineNumber": 232
+				},
+				{
+					"caller": "subscribeToSessionEvents",
+					"callee": "runtime.pendingQuestionResponses.clear",
+					"lineNumber": 233
+				},
+				{
+					"caller": "subscribeToSessionEvents",
+					"callee": "onLifecycleEvent",
+					"lineNumber": 234
+				},
+				{
+					"caller": "subscribeToSessionEvents",
+					"callee": "isHarnessAgentEndEvent",
+					"lineNumber": 240
+				},
+				{
+					"caller": "subscribeToSessionEvents",
+					"callee": "runtime.answeredQuestionIds.clear",
+					"lineNumber": 242
+				},
+				{
+					"caller": "subscribeToSessionEvents",
+					"callee": "runtime.pendingQuestionResponses.clear",
+					"lineNumber": 243
+				},
+				{
+					"caller": "subscribeToSessionEvents",
+					"callee": "runtime.hookManager.runStop(undefined, reason).catch",
+					"lineNumber": 247
+				},
+				{
+					"caller": "subscribeToSessionEvents",
+					"callee": "runtime.hookManager.runStop",
+					"lineNumber": 247
+				},
+				{
+					"caller": "subscribeToSessionEvents",
+					"callee": "onLifecycleEvent",
+					"lineNumber": 249
+				},
+				{
+					"caller": "isHarnessErrorEvent",
+					"callee": "isObjectRecord",
+					"lineNumber": 264
+				},
+				{
+					"caller": "isHarnessWorkspaceErrorEvent",
+					"callee": "isObjectRecord",
+					"lineNumber": 271
+				},
+				{
+					"caller": "isHarnessAgentStartEvent",
+					"callee": "isObjectRecord",
+					"lineNumber": 280
+				},
+				{
+					"caller": "isHarnessAgentEndEvent",
+					"callee": "isObjectRecord",
+					"lineNumber": 286
+				},
+				{
+					"caller": "isHarnessSandboxAccessRequestEvent",
+					"callee": "isObjectRecord",
+					"lineNumber": 295
+				},
+				{
+					"caller": "isHarnessAskQuestionEvent",
+					"callee": "isObjectRecord",
+					"lineNumber": 308
+				},
+				{
+					"caller": "isHarnessThreadChangedEvent",
+					"callee": "isObjectRecord",
+					"lineNumber": 318
+				},
+				{
+					"caller": "isHarnessThreadCreatedEvent",
+					"callee": "isObjectRecord",
+					"lineNumber": 328
+				},
+				{
+					"caller": "isHarnessThreadCreatedEvent",
+					"callee": "isObjectRecord",
+					"lineNumber": 330
+				},
+				{
+					"caller": "toRuntimeErrorMessage",
+					"callee": "extractProviderMessage",
+					"lineNumber": 336
+				},
+				{
+					"caller": "toRuntimeErrorMessage",
+					"callee": "error.message.trim",
+					"lineNumber": 338
+				},
+				{
+					"caller": "toRuntimeErrorMessage",
+					"callee": "normalizeErrorMessage",
+					"lineNumber": 339
+				},
+				{
+					"caller": "toRuntimeErrorMessage",
+					"callee": "error.trim",
+					"lineNumber": 341
+				},
+				{
+					"caller": "toRuntimeErrorMessage",
+					"callee": "normalizeErrorMessage",
+					"lineNumber": 342
+				},
+				{
+					"caller": "toRuntimeErrorMessage",
+					"callee": "isObjectRecord",
+					"lineNumber": 344
+				},
+				{
+					"caller": "toRuntimeErrorMessage",
+					"callee": "normalizeErrorMessage",
+					"lineNumber": 345
+				},
+				{
+					"caller": "normalizeErrorMessage",
+					"callee": "message.trim().replace",
+					"lineNumber": 351
+				},
+				{
+					"caller": "normalizeErrorMessage",
+					"callee": "message.trim",
+					"lineNumber": 351
+				},
+				{
+					"caller": "extractProviderMessage",
+					"callee": "isObjectRecord",
+					"lineNumber": 355
+				},
+				{
+					"caller": "extractProviderMessage",
+					"callee": "isObjectRecord",
+					"lineNumber": 358
+				},
+				{
+					"caller": "extractProviderMessage",
+					"callee": "isObjectRecord",
+					"lineNumber": 361
+				},
+				{
+					"caller": "extractProviderMessage",
+					"callee": "normalizeErrorMessage",
+					"lineNumber": 364
+				},
+				{
+					"caller": "extractProviderMessage",
+					"callee": "isObjectRecord",
+					"lineNumber": 369
+				},
+				{
+					"caller": "extractProviderMessage",
+					"callee": "normalizeErrorMessage",
+					"lineNumber": 370
+				},
+				{
+					"caller": "extractProviderMessage",
+					"callee": "error.responseBody.trim",
+					"lineNumber": 373
+				},
+				{
+					"caller": "extractProviderMessage",
+					"callee": "JSON.parse",
+					"lineNumber": 375
+				},
+				{
+					"caller": "extractProviderMessage",
+					"callee": "isObjectRecord",
+					"lineNumber": 377
+				},
+				{
+					"caller": "extractProviderMessage",
+					"callee": "isObjectRecord",
+					"lineNumber": 378
+				},
+				{
+					"caller": "extractProviderMessage",
+					"callee": "normalizeErrorMessage",
+					"lineNumber": 381
+				},
+				{
+					"caller": "restartRuntimeFromUserMessage",
+					"callee": "runtime.harness.getCurrentThreadId",
+					"lineNumber": 395
+				},
+				{
+					"caller": "restartRuntimeFromUserMessage",
+					"callee": "getRuntimeMemoryStore",
+					"lineNumber": 400
+				},
+				{
+					"caller": "restartRuntimeFromUserMessage",
+					"callee": "memoryStore.getThreadById",
+					"lineNumber": 401
+				},
+				{
+					"caller": "restartRuntimeFromUserMessage",
+					"callee": "memoryStore.listMessages",
+					"lineNumber": 406
+				},
+				{
+					"caller": "restartRuntimeFromUserMessage",
+					"callee": "sourceMessages.messages.findIndex",
+					"lineNumber": 411
+				},
+				{
+					"caller": "restartRuntimeFromUserMessage",
+					"callee": "memoryStore.cloneThread",
+					"lineNumber": 423
+				},
+				{
+					"caller": "restartRuntimeFromUserMessage",
+					"callee": "sourceMessages.messages\n\t\t\t\t\t.slice(0, targetIndex)\n\t\t\t\t\t.map",
+					"lineNumber": 429
+				},
+				{
+					"caller": "restartRuntimeFromUserMessage",
+					"callee": "sourceMessages.messages\n\t\t\t\t\t.slice",
+					"lineNumber": 429
+				},
+				{
+					"caller": "restartRuntimeFromUserMessage",
+					"callee": "runtime.harness.abort",
+					"lineNumber": 436
+				},
+				{
+					"caller": "restartRuntimeFromUserMessage",
+					"callee": "runtime.harness.switchThread",
+					"lineNumber": 437
+				},
+				{
+					"caller": "restartRuntimeFromUserMessage",
+					"callee": "input.metadata?.model?.trim",
+					"lineNumber": 439
+				},
+				{
+					"caller": "restartRuntimeFromUserMessage",
+					"callee": "runtime.harness.switchModel",
+					"lineNumber": 441
+				},
+				{
+					"caller": "restartRuntimeFromUserMessage",
+					"callee": "runtime.harness.setState",
+					"lineNumber": 449
+				},
+				{
+					"caller": "restartRuntimeFromUserMessage",
+					"callee": "runtime.harness.sendMessage",
+					"lineNumber": 453
+				},
+				{
+					"caller": "extractTextContent",
+					"callee": "parts\n\t\t.filter(\n\t\t\t(c): c is TextContentPart =>\n\t\t\t\tc.type === \"text\" && typeof c.text === \"string\",\n\t\t)\n\t\t.map((c) => c.text)\n\t\t.join",
+					"lineNumber": 457
+				},
+				{
+					"caller": "extractTextContent",
+					"callee": "parts\n\t\t.filter(\n\t\t\t(c): c is TextContentPart =>\n\t\t\t\tc.type === \"text\" && typeof c.text === \"string\",\n\t\t)\n\t\t.map",
+					"lineNumber": 457
+				},
+				{
+					"caller": "extractTextContent",
+					"callee": "parts\n\t\t.filter",
+					"lineNumber": 457
+				},
+				{
+					"caller": "generateAndSetTitle",
+					"callee": "runtime.harness.listMessages",
+					"lineNumber": 474
+				},
+				{
+					"caller": "generateAndSetTitle",
+					"callee": "options?.submittedUserMessage?.trim",
+					"lineNumber": 475
+				},
+				{
+					"caller": "generateAndSetTitle",
+					"callee": "[...messages]\n\t\t\t.reverse()\n\t\t\t.find",
+					"lineNumber": 476
+				},
+				{
+					"caller": "generateAndSetTitle",
+					"callee": "[...messages]\n\t\t\t.reverse",
+					"lineNumber": 476
+				},
+				{
+					"caller": "generateAndSetTitle",
+					"callee": "Boolean",
+					"lineNumber": 480
+				},
+				{
+					"caller": "generateAndSetTitle",
+					"callee": "extractTextContent(latestPersistedUserMessage.content).trim",
+					"lineNumber": 482
+				},
+				{
+					"caller": "generateAndSetTitle",
+					"callee": "extractTextContent",
+					"lineNumber": 482
+				},
+				{
+					"caller": "generateAndSetTitle",
+					"callee": "messagesForTitle.filter",
+					"lineNumber": 495
+				},
+				{
+					"caller": "generateAndSetTitle",
+					"callee": "extractTextContent(firstMessage.content).slice",
+					"lineNumber": 505
+				},
+				{
+					"caller": "generateAndSetTitle",
+					"callee": "extractTextContent",
+					"lineNumber": 505
+				},
+				{
+					"caller": "generateAndSetTitle",
+					"callee": "messagesForTitle\n\t\t\t\t.slice(-10)\n\t\t\t\t.map((m) => `${m.role}: ${extractTextContent(m.content)}`)\n\t\t\t\t.join(\"\\n\")\n\t\t\t\t.slice",
+					"lineNumber": 507
+				},
+				{
+					"caller": "generateAndSetTitle",
+					"callee": "messagesForTitle\n\t\t\t\t.slice(-10)\n\t\t\t\t.map((m) => `${m.role}: ${extractTextContent(m.content)}`)\n\t\t\t\t.join",
+					"lineNumber": 507
+				},
+				{
+					"caller": "generateAndSetTitle",
+					"callee": "messagesForTitle\n\t\t\t\t.slice(-10)\n\t\t\t\t.map",
+					"lineNumber": 507
+				},
+				{
+					"caller": "generateAndSetTitle",
+					"callee": "messagesForTitle\n\t\t\t\t.slice",
+					"lineNumber": 507
+				},
+				{
+					"caller": "generateAndSetTitle",
+					"callee": "extractTextContent",
+					"lineNumber": 509
+				},
+				{
+					"caller": "generateAndSetTitle",
+					"callee": "text.trim",
+					"lineNumber": 513
+				},
+				{
+					"caller": "generateAndSetTitle",
+					"callee": "runtime.harness.getCurrentMode",
+					"lineNumber": 515
+				},
+				{
+					"caller": "generateAndSetTitle",
+					"callee": "mode.agent",
+					"lineNumber": 520
+				},
+				{
+					"caller": "generateAndSetTitle",
+					"callee": "runtime.harness.getState",
+					"lineNumber": 520
+				},
+				{
+					"caller": "generateAndSetTitle",
+					"callee": "generateTitleFromMessage",
+					"lineNumber": 523
+				},
+				{
+					"caller": "generateAndSetTitle",
+					"callee": "runtime.harness.getFullModelId",
+					"lineNumber": 526
+				},
+				{
+					"caller": "generateAndSetTitle",
+					"callee": "title?.trim",
+					"lineNumber": 528
+				},
+				{
+					"caller": "generateAndSetTitle",
+					"callee": "apiClient.chat.updateTitle.mutate",
+					"lineNumber": 530
+				},
+				{
+					"caller": "generateAndSetTitle",
+					"callee": "title.trim",
+					"lineNumber": 532
+				},
+				{
+					"caller": "generateAndSetTitle",
+					"callee": "console.warn",
+					"lineNumber": 535
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 8,
+				"functionCount": 22,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "packages/chat/src/server/trpc/utils/runtime/superset-mcp.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 43,
+			"nonEmptyLines": 39,
+			"functions": [
+				{
+					"name": "getSupersetMcpTools",
+					"startLine": 8,
+					"endLine": 43,
+					"params": ["headers", "apiUrl"]
+				}
+			],
+			"exports": [
+				{
+					"name": "getSupersetMcpTools",
+					"line": 8,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "getSupersetMcpTools",
+					"callee": "headers",
+					"lineNumber": 13
+				},
+				{
+					"caller": "getSupersetMcpTools",
+					"callee": "Date.now",
+					"lineNumber": 17
+				},
+				{
+					"caller": "getSupersetMcpTools",
+					"callee": "Object.entries",
+					"lineNumber": 23
+				},
+				{
+					"caller": "getSupersetMcpTools",
+					"callee": "headers",
+					"lineNumber": 23
+				},
+				{
+					"caller": "getSupersetMcpTools",
+					"callee": "merged.set",
+					"lineNumber": 24
+				},
+				{
+					"caller": "getSupersetMcpTools",
+					"callee": "fetch",
+					"lineNumber": 26
+				},
+				{
+					"caller": "getSupersetMcpTools",
+					"callee": "client.listTools",
+					"lineNumber": 32
+				},
+				{
+					"caller": "getSupersetMcpTools",
+					"callee": "console.warn",
+					"lineNumber": 37
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "packages/chat/src/server/trpc/utils/runtime/utils/mcp-overview/mcp-overview.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 429,
+			"nonEmptyLines": 374,
+			"functions": [
+				{
+					"name": "toNonEmptyString",
+					"startLine": 38,
+					"endLine": 42,
+					"params": ["value"]
+				},
+				{
+					"name": "toStringArray",
+					"startLine": 44,
+					"endLine": 49,
+					"params": ["value"]
+				},
+				{
+					"name": "toStringRecord",
+					"startLine": 51,
+					"endLine": 64,
+					"params": ["value"]
+				},
+				{
+					"name": "toConfigRecord",
+					"startLine": 66,
+					"endLine": 71,
+					"params": ["rawConfig"]
+				},
+				{
+					"name": "parseMcpConfig",
+					"startLine": 73,
+					"endLine": 93,
+					"params": ["rawConfig"]
+				},
+				{
+					"name": "findRemoteUrl",
+					"startLine": 95,
+					"endLine": 97,
+					"params": ["args"]
+				},
+				{
+					"name": "isMcpRemote",
+					"startLine": 99,
+					"endLine": 110,
+					"params": ["config"]
+				},
+				{
+					"name": "resolveTransport",
+					"startLine": 112,
+					"endLine": 136,
+					"params": ["config"]
+				},
+				{
+					"name": "resolveTarget",
+					"startLine": 138,
+					"endLine": 160,
+					"params": ["config", "transport"]
+				},
+				{
+					"name": "resolveState",
+					"startLine": 162,
+					"endLine": 180,
+					"params": ["config", "transport", "status"]
+				},
+				{
+					"name": "toErrorMessage",
+					"startLine": 182,
+					"endLine": 194,
+					"params": ["error"]
+				},
+				{
+					"name": "withTimeout",
+					"startLine": 196,
+					"endLine": 213,
+					"params": ["promise", "timeoutMs", "timeoutMessage"]
+				},
+				{
+					"name": "toRuntimeStatusMap",
+					"startLine": 215,
+					"endLine": 253,
+					"params": ["runtime"]
+				},
+				{
+					"name": "toOverviewServer",
+					"startLine": 255,
+					"endLine": 277,
+					"params": ["name", "rawConfig", "statusesByName"]
+				},
+				{
+					"name": "buildOverview",
+					"startLine": 279,
+					"endLine": 294,
+					"params": ["sourcePath", "mcpServers", "statusesByName"]
+				},
+				{
+					"name": "buildProbeServerDefinition",
+					"startLine": 296,
+					"endLine": 333,
+					"params": ["rawConfig"]
+				},
+				{
+					"name": "probeMcpServer",
+					"startLine": 335,
+					"endLine": 374,
+					"params": ["serverName", "serverDefinition"]
+				},
+				{
+					"name": "getRuntimeMcpOverview",
+					"startLine": 376,
+					"endLine": 391,
+					"params": ["runtime"]
+				},
+				{
+					"name": "authenticateRuntimeMcpServer",
+					"startLine": 393,
+					"endLine": 429,
+					"params": ["runtime", "serverName"]
+				}
+			],
+			"exports": [
+				{
+					"name": "getRuntimeMcpOverview",
+					"line": 376,
+					"isDefault": false
+				},
+				{
+					"name": "authenticateRuntimeMcpServer",
+					"line": 393,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "toNonEmptyString",
+					"callee": "value.trim",
+					"lineNumber": 40
+				},
+				{
+					"caller": "toStringArray",
+					"callee": "Array.isArray",
+					"lineNumber": 45
+				},
+				{
+					"caller": "toStringArray",
+					"callee": "value\n\t\t.map((item) => (typeof item === \"string\" ? item.trim() : \"\"))\n\t\t.filter",
+					"lineNumber": 46
+				},
+				{
+					"caller": "toStringArray",
+					"callee": "value\n\t\t.map",
+					"lineNumber": 46
+				},
+				{
+					"caller": "toStringArray",
+					"callee": "item.trim",
+					"lineNumber": 47
+				},
+				{
+					"caller": "toStringRecord",
+					"callee": "Array.isArray",
+					"lineNumber": 52
+				},
+				{
+					"caller": "toStringRecord",
+					"callee": "Object.entries(value).filter",
+					"lineNumber": 56
+				},
+				{
+					"caller": "toStringRecord",
+					"callee": "Object.entries",
+					"lineNumber": 56
+				},
+				{
+					"caller": "toStringRecord",
+					"callee": "key.trim",
+					"lineNumber": 57
+				},
+				{
+					"caller": "toStringRecord",
+					"callee": "Object.fromEntries",
+					"lineNumber": 63
+				},
+				{
+					"caller": "toConfigRecord",
+					"callee": "Array.isArray",
+					"lineNumber": 67
+				},
+				{
+					"caller": "parseMcpConfig",
+					"callee": "toConfigRecord",
+					"lineNumber": 74
+				},
+				{
+					"caller": "parseMcpConfig",
+					"callee": "toNonEmptyString(config.type)?.toLowerCase",
+					"lineNumber": 75
+				},
+				{
+					"caller": "parseMcpConfig",
+					"callee": "toNonEmptyString",
+					"lineNumber": 75
+				},
+				{
+					"caller": "parseMcpConfig",
+					"callee": "toNonEmptyString",
+					"lineNumber": 76
+				},
+				{
+					"caller": "parseMcpConfig",
+					"callee": "toNonEmptyString",
+					"lineNumber": 77
+				},
+				{
+					"caller": "parseMcpConfig",
+					"callee": "toNonEmptyString",
+					"lineNumber": 78
+				},
+				{
+					"caller": "parseMcpConfig",
+					"callee": "command?.toLowerCase",
+					"lineNumber": 79
+				},
+				{
+					"caller": "parseMcpConfig",
+					"callee": "toStringArray",
+					"lineNumber": 80
+				},
+				{
+					"caller": "parseMcpConfig",
+					"callee": "toStringArray",
+					"lineNumber": 81
+				},
+				{
+					"caller": "findRemoteUrl",
+					"callee": "args.find",
+					"lineNumber": 96
+				},
+				{
+					"caller": "findRemoteUrl",
+					"callee": "/^https?:\\/\\//i.test",
+					"lineNumber": 96
+				},
+				{
+					"caller": "matchesMcpRemote",
+					"callee": "arg.toLowerCase",
+					"lineNumber": 105
+				},
+				{
+					"caller": "isMcpRemote",
+					"callee": "config.commandParts.some",
+					"lineNumber": 107
+				},
+				{
+					"caller": "isMcpRemote",
+					"callee": "config.args.some",
+					"lineNumber": 108
+				},
+				{
+					"caller": "resolveTransport",
+					"callee": "findRemoteUrl",
+					"lineNumber": 122
+				},
+				{
+					"caller": "resolveTransport",
+					"callee": "isMcpRemote",
+					"lineNumber": 122
+				},
+				{
+					"caller": "resolveTarget",
+					"callee": "findRemoteUrl",
+					"lineNumber": 146
+				},
+				{
+					"caller": "resolveTarget",
+					"callee": "[config.command, ...config.args].join",
+					"lineNumber": 152
+				},
+				{
+					"caller": "resolveTarget",
+					"callee": "config.commandParts.join",
+					"lineNumber": 156
+				},
+				{
+					"caller": "withTimeout",
+					"callee": "setTimeout",
+					"lineNumber": 203
+				},
+				{
+					"caller": "withTimeout",
+					"callee": "reject",
+					"lineNumber": 203
+				},
+				{
+					"caller": "withTimeout",
+					"callee": "Promise.race",
+					"lineNumber": 207
+				},
+				{
+					"caller": "withTimeout",
+					"callee": "clearTimeout",
+					"lineNumber": 210
+				},
+				{
+					"caller": "toRuntimeStatusMap",
+					"callee": "runtime.mcpManager?.getServerStatuses",
+					"lineNumber": 220
+				},
+				{
+					"caller": "toRuntimeStatusMap",
+					"callee": "Array.isArray",
+					"lineNumber": 225
+				},
+				{
+					"caller": "toRuntimeStatusMap",
+					"callee": "toNonEmptyString",
+					"lineNumber": 231
+				},
+				{
+					"caller": "toRuntimeStatusMap",
+					"callee": "Number.isFinite",
+					"lineNumber": 237
+				},
+				{
+					"caller": "toRuntimeStatusMap",
+					"callee": "toNonEmptyString",
+					"lineNumber": 240
+				},
+				{
+					"caller": "toRuntimeStatusMap",
+					"callee": "map.set",
+					"lineNumber": 241
+				},
+				{
+					"caller": "toRuntimeStatusMap",
+					"callee": "map.set",
+					"lineNumber": 249
+				},
+				{
+					"caller": "toOverviewServer",
+					"callee": "parseMcpConfig",
+					"lineNumber": 260
+				},
+				{
+					"caller": "toOverviewServer",
+					"callee": "resolveTransport",
+					"lineNumber": 261
+				},
+				{
+					"caller": "toOverviewServer",
+					"callee": "statusesByName.get",
+					"lineNumber": 262
+				},
+				{
+					"caller": "toOverviewServer",
+					"callee": "resolveState",
+					"lineNumber": 266
+				},
+				{
+					"caller": "toOverviewServer",
+					"callee": "resolveTarget",
+					"lineNumber": 268
+				},
+				{
+					"caller": "buildOverview",
+					"callee": "Object.entries(mcpServers)\n\t\t.map(([name, rawConfig]) =>\n\t\t\ttoOverviewServer(name, rawConfig, statusesByName),\n\t\t)\n\t\t.sort",
+					"lineNumber": 284
+				},
+				{
+					"caller": "buildOverview",
+					"callee": "Object.entries(mcpServers)\n\t\t.map",
+					"lineNumber": 284
+				},
+				{
+					"caller": "buildOverview",
+					"callee": "Object.entries",
+					"lineNumber": 284
+				},
+				{
+					"caller": "buildOverview",
+					"callee": "toOverviewServer",
+					"lineNumber": 286
+				},
+				{
+					"caller": "buildOverview",
+					"callee": "left.name.localeCompare",
+					"lineNumber": 288
+				},
+				{
+					"caller": "buildProbeServerDefinition",
+					"callee": "toConfigRecord",
+					"lineNumber": 299
+				},
+				{
+					"caller": "buildProbeServerDefinition",
+					"callee": "parseMcpConfig",
+					"lineNumber": 300
+				},
+				{
+					"caller": "buildProbeServerDefinition",
+					"callee": "toStringRecord",
+					"lineNumber": 301
+				},
+				{
+					"caller": "buildProbeServerDefinition",
+					"callee": "findRemoteUrl",
+					"lineNumber": 302
+				},
+				{
+					"caller": "probeMcpServer",
+					"callee": "Date.now",
+					"lineNumber": 342
+				},
+				{
+					"caller": "probeMcpServer",
+					"callee": "Math.random().toString(36).slice",
+					"lineNumber": 342
+				},
+				{
+					"caller": "probeMcpServer",
+					"callee": "Math.random().toString",
+					"lineNumber": 342
+				},
+				{
+					"caller": "probeMcpServer",
+					"callee": "Math.random",
+					"lineNumber": 342
+				},
+				{
+					"caller": "probeMcpServer",
+					"callee": "withTimeout",
+					"lineNumber": 348
+				},
+				{
+					"caller": "probeMcpServer",
+					"callee": "client.listTools",
+					"lineNumber": 349
+				},
+				{
+					"caller": "probeMcpServer",
+					"callee": "Object.keys(tools).filter",
+					"lineNumber": 354
+				},
+				{
+					"caller": "probeMcpServer",
+					"callee": "Object.keys",
+					"lineNumber": 354
+				},
+				{
+					"caller": "probeMcpServer",
+					"callee": "toolName.startsWith",
+					"lineNumber": 355
+				},
+				{
+					"caller": "probeMcpServer",
+					"callee": "Object.keys",
+					"lineNumber": 358
+				},
+				{
+					"caller": "probeMcpServer",
+					"callee": "toErrorMessage",
+					"lineNumber": 367
+				},
+				{
+					"caller": "probeMcpServer",
+					"callee": "client.disconnect().catch",
+					"lineNumber": 371
+				},
+				{
+					"caller": "probeMcpServer",
+					"callee": "client.disconnect",
+					"lineNumber": 371
+				},
+				{
+					"caller": "getRuntimeMcpOverview",
+					"callee": "manager.hasServers",
+					"lineNumber": 380
+				},
+				{
+					"caller": "getRuntimeMcpOverview",
+					"callee": "manager.getConfig",
+					"lineNumber": 384
+				},
+				{
+					"caller": "getRuntimeMcpOverview",
+					"callee": "toRuntimeStatusMap",
+					"lineNumber": 385
+				},
+				{
+					"caller": "getRuntimeMcpOverview",
+					"callee": "buildOverview",
+					"lineNumber": 386
+				},
+				{
+					"caller": "getRuntimeMcpOverview",
+					"callee": "manager.getConfigPaths",
+					"lineNumber": 387
+				},
+				{
+					"caller": "authenticateRuntimeMcpServer",
+					"callee": "manager.hasServers",
+					"lineNumber": 398
+				},
+				{
+					"caller": "authenticateRuntimeMcpServer",
+					"callee": "serverName.trim",
+					"lineNumber": 402
+				},
+				{
+					"caller": "authenticateRuntimeMcpServer",
+					"callee": "manager.getConfig",
+					"lineNumber": 407
+				},
+				{
+					"caller": "authenticateRuntimeMcpServer",
+					"callee": "buildProbeServerDefinition",
+					"lineNumber": 413
+				},
+				{
+					"caller": "authenticateRuntimeMcpServer",
+					"callee": "probeMcpServer",
+					"lineNumber": 415
+				},
+				{
+					"caller": "authenticateRuntimeMcpServer",
+					"callee": "runtime.mcpManualStatuses.set",
+					"lineNumber": 422
+				},
+				{
+					"caller": "authenticateRuntimeMcpServer",
+					"callee": "toRuntimeStatusMap",
+					"lineNumber": 423
+				},
+				{
+					"caller": "authenticateRuntimeMcpServer",
+					"callee": "buildOverview",
+					"lineNumber": 424
+				},
+				{
+					"caller": "authenticateRuntimeMcpServer",
+					"callee": "manager.getConfigPaths",
+					"lineNumber": 425
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 2,
+				"functionCount": 19,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "packages/chat/src/server/trpc/zod.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 139,
+			"nonEmptyLines": 121,
+			"exports": [
+				{
+					"name": "searchFilesInput",
+					"line": 10,
+					"isDefault": false
+				},
+				{
+					"name": "mcpOverviewInput",
+					"line": 17,
+					"isDefault": false
+				},
+				{
+					"name": "mcpServerAuthInput",
+					"line": 22,
+					"isDefault": false
+				},
+				{
+					"name": "sessionIdInput",
+					"line": 28,
+					"isDefault": false
+				},
+				{
+					"name": "sendMessagePayloadSchema",
+					"line": 33,
+					"isDefault": false
+				},
+				{
+					"name": "approvalPayloadSchema",
+					"line": 46,
+					"isDefault": false
+				},
+				{
+					"name": "questionPayloadSchema",
+					"line": 50,
+					"isDefault": false
+				},
+				{
+					"name": "planPayloadSchema",
+					"line": 55,
+					"isDefault": false
+				},
+				{
+					"name": "displayStateInput",
+					"line": 63,
+					"isDefault": false
+				},
+				{
+					"name": "listMessagesInput",
+					"line": 68,
+					"isDefault": false
+				},
+				{
+					"name": "thinkingLevelSchema",
+					"line": 73,
+					"isDefault": false
+				},
+				{
+					"name": "sendMessageInput",
+					"line": 81,
+					"isDefault": false
+				},
+				{
+					"name": "restartFromMessageInput",
+					"line": 93,
+					"isDefault": false
+				},
+				{
+					"name": "approvalRespondInput",
+					"line": 106,
+					"isDefault": false
+				},
+				{
+					"name": "questionRespondInput",
+					"line": 112,
+					"isDefault": false
+				},
+				{
+					"name": "planRespondInput",
+					"line": 118,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 16,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		}
+	]
+}

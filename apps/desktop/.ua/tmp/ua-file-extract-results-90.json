@@ -1,0 +1,320 @@
+{
+	"scriptCompleted": true,
+	"filesAnalyzed": 4,
+	"filesSkipped": [],
+	"results": [
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/BrowserToolbar.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 220,
+			"nonEmptyLines": 207,
+			"functions": [
+				{
+					"name": "displayUrl",
+					"startLine": 12,
+					"endLine": 16,
+					"params": ["url"]
+				},
+				{
+					"name": "BrowserToolbar",
+					"startLine": 30,
+					"endLine": 220,
+					"params": [
+						"{\n\tcurrentUrl,\n\tpageTitle,\n\tisLoading,\n\tcanGoBack,\n\tcanGoForward,\n\tonGoBack,\n\tonGoForward,\n\tonReload,\n\tonNavigate,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "BrowserToolbar",
+					"line": 30,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "displayUrl",
+					"callee": "url.endsWith",
+					"lineNumber": 15
+				},
+				{
+					"caller": "displayUrl",
+					"callee": "url.slice",
+					"lineNumber": 15
+				},
+				{
+					"caller": "BrowserToolbar",
+					"callee": "useState",
+					"lineNumber": 41
+				},
+				{
+					"caller": "BrowserToolbar",
+					"callee": "useState",
+					"lineNumber": 42
+				},
+				{
+					"caller": "BrowserToolbar",
+					"callee": "useRef",
+					"lineNumber": 43
+				},
+				{
+					"caller": "BrowserToolbar",
+					"callee": "displayUrl",
+					"lineNumber": 45
+				},
+				{
+					"caller": "BrowserToolbar",
+					"callee": "useUrlAutocomplete",
+					"lineNumber": 48
+				},
+				{
+					"caller": "BrowserToolbar",
+					"callee": "onNavigate",
+					"lineNumber": 50
+				},
+				{
+					"caller": "BrowserToolbar",
+					"callee": "setIsEditing",
+					"lineNumber": 51
+				},
+				{
+					"caller": "BrowserToolbar",
+					"callee": "useEffect",
+					"lineNumber": 56
+				},
+				{
+					"caller": "BrowserToolbar",
+					"callee": "inputRef.current?.focus",
+					"lineNumber": 58
+				},
+				{
+					"caller": "BrowserToolbar",
+					"callee": "inputRef.current?.select",
+					"lineNumber": 59
+				},
+				{
+					"caller": "BrowserToolbar",
+					"callee": "useCallback",
+					"lineNumber": 63
+				},
+				{
+					"caller": "BrowserToolbar",
+					"callee": "setUrlInputValue",
+					"lineNumber": 64
+				},
+				{
+					"caller": "BrowserToolbar",
+					"callee": "setIsEditing",
+					"lineNumber": 65
+				},
+				{
+					"caller": "BrowserToolbar",
+					"callee": "autocomplete.open",
+					"lineNumber": 66
+				},
+				{
+					"caller": "BrowserToolbar",
+					"callee": "autocomplete.updateQuery",
+					"lineNumber": 67
+				},
+				{
+					"caller": "BrowserToolbar",
+					"callee": "useCallback",
+					"lineNumber": 70
+				},
+				{
+					"caller": "BrowserToolbar",
+					"callee": "setIsEditing",
+					"lineNumber": 71
+				},
+				{
+					"caller": "BrowserToolbar",
+					"callee": "autocomplete.close",
+					"lineNumber": 72
+				},
+				{
+					"caller": "BrowserToolbar",
+					"callee": "useCallback",
+					"lineNumber": 75
+				},
+				{
+					"caller": "BrowserToolbar",
+					"callee": "e.preventDefault",
+					"lineNumber": 77
+				},
+				{
+					"caller": "BrowserToolbar",
+					"callee": "urlInputValue.trim",
+					"lineNumber": 78
+				},
+				{
+					"caller": "BrowserToolbar",
+					"callee": "onNavigate",
+					"lineNumber": 80
+				},
+				{
+					"caller": "BrowserToolbar",
+					"callee": "setIsEditing",
+					"lineNumber": 81
+				},
+				{
+					"caller": "BrowserToolbar",
+					"callee": "autocomplete.close",
+					"lineNumber": 82
+				},
+				{
+					"caller": "BrowserToolbar",
+					"callee": "useCallback",
+					"lineNumber": 88
+				},
+				{
+					"caller": "BrowserToolbar",
+					"callee": "setUrlInputValue",
+					"lineNumber": 91
+				},
+				{
+					"caller": "BrowserToolbar",
+					"callee": "autocomplete.updateQuery",
+					"lineNumber": 92
+				},
+				{
+					"caller": "BrowserToolbar",
+					"callee": "autocomplete.open",
+					"lineNumber": 94
+				},
+				{
+					"caller": "BrowserToolbar",
+					"callee": "useCallback",
+					"lineNumber": 100
+				},
+				{
+					"caller": "BrowserToolbar",
+					"callee": "autocomplete.handleKeyDown",
+					"lineNumber": 103
+				},
+				{
+					"caller": "BrowserToolbar",
+					"callee": "setIsEditing",
+					"lineNumber": 108
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 1,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/components/UrlSuggestions/UrlSuggestions.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 77,
+			"nonEmptyLines": 72,
+			"functions": [
+				{
+					"name": "UrlSuggestions",
+					"startLine": 11,
+					"endLine": 77,
+					"params": ["{\n\tsuggestions,\n\thighlightedIndex,\n\tonSelect,\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "UrlSuggestions",
+					"line": 11,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "UrlSuggestions",
+					"callee": "useRef",
+					"lineNumber": 16
+				},
+				{
+					"caller": "UrlSuggestions",
+					"callee": "useEffect",
+					"lineNumber": 19
+				},
+				{
+					"caller": "UrlSuggestions",
+					"callee": "item?.scrollIntoView",
+					"lineNumber": 23
+				},
+				{
+					"caller": "UrlSuggestions",
+					"callee": "suggestions.map",
+					"lineNumber": 33
+				},
+				{
+					"caller": "UrlSuggestions",
+					"callee": "e.preventDefault",
+					"lineNumber": 39
+				},
+				{
+					"caller": "UrlSuggestions",
+					"callee": "onSelect",
+					"lineNumber": 40
+				},
+				{
+					"caller": "UrlSuggestions",
+					"callee": "e.currentTarget.nextElementSibling?.classList.remove",
+					"lineNumber": 54
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/components/UrlSuggestions/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "UrlSuggestions",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/hooks/useUrlAutocomplete/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 2,
+			"nonEmptyLines": 2,
+			"exports": [
+				{
+					"name": "HistorySuggestion",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "useUrlAutocomplete",
+					"line": 2,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 2,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		}
+	]
+}

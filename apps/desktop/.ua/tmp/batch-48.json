@@ -1,0 +1,2368 @@
+{
+  "batchIndex": 48,
+  "nodes": [
+    {
+      "id": "file:src/lib/trpc/routers/changes/utils/apply-numstat.ts",
+      "type": "file",
+      "name": "apply-numstat.ts",
+      "filePath": "src/lib/trpc/routers/changes/utils/apply-numstat.ts",
+      "summary": "Utility function: applyNumstatToFiles",
+      "tags": [
+        "typescript",
+        "code",
+        "utility"
+      ],
+      "complexity": "simple",
+      "metadata": {
+        "language": "typescript",
+        "totalLines": 25,
+        "nonEmptyLines": 22
+      }
+    },
+    {
+      "id": "function:src/lib/trpc/routers/changes/utils/apply-numstat.ts:applyNumstatToFiles",
+      "type": "function",
+      "name": "applyNumstatToFiles",
+      "filePath": "src/lib/trpc/routers/changes/utils/apply-numstat.ts",
+      "summary": "Function applyNumstatToFiles",
+      "tags": [
+        "function",
+        "typescript"
+      ],
+      "complexity": "simple",
+      "lineRange": {
+        "start": 5,
+        "end": 25
+      }
+    },
+    {
+      "id": "file:src/lib/trpc/routers/changes/utils/parse-status.ts",
+      "type": "file",
+      "name": "parse-status.ts",
+      "filePath": "src/lib/trpc/routers/changes/utils/parse-status.ts",
+      "summary": "Module with 6 functions",
+      "tags": [
+        "typescript",
+        "code",
+        "utility"
+      ],
+      "complexity": "moderate",
+      "metadata": {
+        "language": "typescript",
+        "totalLines": 204,
+        "nonEmptyLines": 173
+      }
+    },
+    {
+      "id": "function:src/lib/trpc/routers/changes/utils/parse-status.ts:toChangedFile",
+      "type": "function",
+      "name": "toChangedFile",
+      "filePath": "src/lib/trpc/routers/changes/utils/parse-status.ts",
+      "summary": "Function toChangedFile",
+      "tags": [
+        "function",
+        "typescript"
+      ],
+      "complexity": "simple",
+      "lineRange": {
+        "start": 18,
+        "end": 29
+      }
+    },
+    {
+      "id": "function:src/lib/trpc/routers/changes/utils/parse-status.ts:parseGitStatus",
+      "type": "function",
+      "name": "parseGitStatus",
+      "filePath": "src/lib/trpc/routers/changes/utils/parse-status.ts",
+      "summary": "Function parseGitStatus",
+      "tags": [
+        "function",
+        "typescript"
+      ],
+      "complexity": "simple",
+      "lineRange": {
+        "start": 31,
+        "end": 74
+      }
+    },
+    {
+      "id": "function:src/lib/trpc/routers/changes/utils/parse-status.ts:parseGitLog",
+      "type": "function",
+      "name": "parseGitLog",
+      "filePath": "src/lib/trpc/routers/changes/utils/parse-status.ts",
+      "summary": "Function parseGitLog",
+      "tags": [
+        "function",
+        "typescript"
+      ],
+      "complexity": "simple",
+      "lineRange": {
+        "start": 76,
+        "end": 117
+      }
+    },
+    {
+      "id": "function:src/lib/trpc/routers/changes/utils/parse-status.ts:parseDiffNumstat",
+      "type": "function",
+      "name": "parseDiffNumstat",
+      "filePath": "src/lib/trpc/routers/changes/utils/parse-status.ts",
+      "summary": "Function parseDiffNumstat",
+      "tags": [
+        "function",
+        "typescript"
+      ],
+      "complexity": "simple",
+      "lineRange": {
+        "start": 119,
+        "end": 156
+      }
+    },
+    {
+      "id": "function:src/lib/trpc/routers/changes/utils/parse-status.ts:parseNameStatus",
+      "type": "function",
+      "name": "parseNameStatus",
+      "filePath": "src/lib/trpc/routers/changes/utils/parse-status.ts",
+      "summary": "Function parseNameStatus",
+      "tags": [
+        "function",
+        "typescript"
+      ],
+      "complexity": "simple",
+      "lineRange": {
+        "start": 158,
+        "end": 204
+      }
+    },
+    {
+      "id": "file:src/lib/trpc/routers/changes/workers/git-task-handlers.ts",
+      "type": "file",
+      "name": "git-task-handlers.ts",
+      "filePath": "src/lib/trpc/routers/changes/workers/git-task-handlers.ts",
+      "summary": "Module with 10 functions",
+      "tags": [
+        "typescript",
+        "code"
+      ],
+      "complexity": "complex",
+      "metadata": {
+        "language": "typescript",
+        "totalLines": 325,
+        "nonEmptyLines": 292
+      }
+    },
+    {
+      "id": "function:src/lib/trpc/routers/changes/workers/git-task-handlers.ts:isPathWithinWorktree",
+      "type": "function",
+      "name": "isPathWithinWorktree",
+      "filePath": "src/lib/trpc/routers/changes/workers/git-task-handlers.ts",
+      "summary": "Function isPathWithinWorktree",
+      "tags": [
+        "function",
+        "typescript"
+      ],
+      "complexity": "simple",
+      "lineRange": {
+        "start": 51,
+        "end": 62
+      }
+    },
+    {
+      "id": "function:src/lib/trpc/routers/changes/workers/git-task-handlers.ts:resolvePathInWorktree",
+      "type": "function",
+      "name": "resolvePathInWorktree",
+      "filePath": "src/lib/trpc/routers/changes/workers/git-task-handlers.ts",
+      "summary": "Function resolvePathInWorktree",
+      "tags": [
+        "function",
+        "typescript"
+      ],
+      "complexity": "simple",
+      "lineRange": {
+        "start": 64,
+        "end": 73
+      }
+    },
+    {
+      "id": "function:src/lib/trpc/routers/changes/workers/git-task-handlers.ts:applyUntrackedLineCount",
+      "type": "function",
+      "name": "applyUntrackedLineCount",
+      "filePath": "src/lib/trpc/routers/changes/workers/git-task-handlers.ts",
+      "summary": "Function applyUntrackedLineCount",
+      "tags": [
+        "function",
+        "typescript"
+      ],
+      "complexity": "moderate",
+      "lineRange": {
+        "start": 75,
+        "end": 163
+      }
+    },
+    {
+      "id": "function:src/lib/trpc/routers/changes/workers/git-task-handlers.ts:getBranchComparison",
+      "type": "function",
+      "name": "getBranchComparison",
+      "filePath": "src/lib/trpc/routers/changes/workers/git-task-handlers.ts",
+      "summary": "Function getBranchComparison",
+      "tags": [
+        "function",
+        "typescript"
+      ],
+      "complexity": "moderate",
+      "lineRange": {
+        "start": 165,
+        "end": 215
+      }
+    },
+    {
+      "id": "function:src/lib/trpc/routers/changes/workers/git-task-handlers.ts:getTrackingBranchStatus",
+      "type": "function",
+      "name": "getTrackingBranchStatus",
+      "filePath": "src/lib/trpc/routers/changes/workers/git-task-handlers.ts",
+      "summary": "Function getTrackingBranchStatus",
+      "tags": [
+        "function",
+        "typescript"
+      ],
+      "complexity": "simple",
+      "lineRange": {
+        "start": 217,
+        "end": 246
+      }
+    },
+    {
+      "id": "function:src/lib/trpc/routers/changes/workers/git-task-handlers.ts:computeStatus",
+      "type": "function",
+      "name": "computeStatus",
+      "filePath": "src/lib/trpc/routers/changes/workers/git-task-handlers.ts",
+      "summary": "Function computeStatus",
+      "tags": [
+        "function",
+        "typescript"
+      ],
+      "complexity": "simple",
+      "lineRange": {
+        "start": 248,
+        "end": 279
+      }
+    },
+    {
+      "id": "function:src/lib/trpc/routers/changes/workers/git-task-handlers.ts:computeCommitFiles",
+      "type": "function",
+      "name": "computeCommitFiles",
+      "filePath": "src/lib/trpc/routers/changes/workers/git-task-handlers.ts",
+      "summary": "Function computeCommitFiles",
+      "tags": [
+        "function",
+        "typescript"
+      ],
+      "complexity": "simple",
+      "lineRange": {
+        "start": 281,
+        "end": 305
+      }
+    },
+    {
+      "id": "function:src/lib/trpc/routers/changes/workers/git-task-handlers.ts:executeGitTask",
+      "type": "function",
+      "name": "executeGitTask",
+      "filePath": "src/lib/trpc/routers/changes/workers/git-task-handlers.ts",
+      "summary": "Function executeGitTask",
+      "tags": [
+        "function",
+        "typescript"
+      ],
+      "complexity": "simple",
+      "lineRange": {
+        "start": 307,
+        "end": 325
+      }
+    },
+    {
+      "id": "file:src/lib/trpc/routers/changes/workers/git-task-runner.ts",
+      "type": "file",
+      "name": "git-task-runner.ts",
+      "filePath": "src/lib/trpc/routers/changes/workers/git-task-runner.ts",
+      "summary": "Module with 3 functions",
+      "tags": [
+        "typescript",
+        "code"
+      ],
+      "complexity": "moderate",
+      "metadata": {
+        "language": "typescript",
+        "totalLines": 68,
+        "nonEmptyLines": 62
+      }
+    },
+    {
+      "id": "function:src/lib/trpc/routers/changes/workers/git-task-runner.ts:getWorkerScriptPath",
+      "type": "function",
+      "name": "getWorkerScriptPath",
+      "filePath": "src/lib/trpc/routers/changes/workers/git-task-runner.ts",
+      "summary": "Function getWorkerScriptPath",
+      "tags": [
+        "function",
+        "typescript"
+      ],
+      "complexity": "simple",
+      "lineRange": {
+        "start": 19,
+        "end": 28
+      }
+    },
+    {
+      "id": "function:src/lib/trpc/routers/changes/workers/git-task-runner.ts:getRunner",
+      "type": "function",
+      "name": "getRunner",
+      "filePath": "src/lib/trpc/routers/changes/workers/git-task-runner.ts",
+      "summary": "Function getRunner",
+      "tags": [
+        "function",
+        "typescript"
+      ],
+      "complexity": "simple",
+      "lineRange": {
+        "start": 30,
+        "end": 56
+      }
+    },
+    {
+      "id": "function:src/lib/trpc/routers/changes/workers/git-task-runner.ts:runGitTask",
+      "type": "function",
+      "name": "runGitTask",
+      "filePath": "src/lib/trpc/routers/changes/workers/git-task-runner.ts",
+      "summary": "Function runGitTask",
+      "tags": [
+        "function",
+        "typescript"
+      ],
+      "complexity": "simple",
+      "lineRange": {
+        "start": 58,
+        "end": 68
+      }
+    },
+    {
+      "id": "file:src/lib/trpc/routers/changes/workers/git-task-types.ts",
+      "type": "file",
+      "name": "git-task-types.ts",
+      "filePath": "src/lib/trpc/routers/changes/workers/git-task-types.ts",
+      "summary": "git-task-types.ts module",
+      "tags": [
+        "typescript",
+        "code"
+      ],
+      "complexity": "simple",
+      "metadata": {
+        "language": "typescript",
+        "totalLines": 19,
+        "nonEmptyLines": 16
+      }
+    },
+    {
+      "id": "file:src/lib/trpc/workers/WorkerTaskRunner.ts",
+      "type": "file",
+      "name": "WorkerTaskRunner.ts",
+      "filePath": "src/lib/trpc/workers/WorkerTaskRunner.ts",
+      "summary": "Class definition: WorkerTaskError",
+      "tags": [
+        "typescript",
+        "code"
+      ],
+      "complexity": "complex",
+      "metadata": {
+        "language": "typescript",
+        "totalLines": 481,
+        "nonEmptyLines": 411
+      }
+    },
+    {
+      "id": "class:src/lib/trpc/workers/WorkerTaskRunner.ts:WorkerTaskError",
+      "type": "class",
+      "name": "WorkerTaskError",
+      "filePath": "src/lib/trpc/workers/WorkerTaskRunner.ts",
+      "summary": "Class WorkerTaskError",
+      "tags": [
+        "class",
+        "typescript"
+      ],
+      "complexity": "simple",
+      "lineRange": {
+        "start": 9,
+        "end": 18
+      },
+      "metadata": {
+        "methods": 1
+      }
+    },
+    {
+      "id": "class:src/lib/trpc/workers/WorkerTaskRunner.ts:WorkerTaskAbortedError",
+      "type": "class",
+      "name": "WorkerTaskAbortedError",
+      "filePath": "src/lib/trpc/workers/WorkerTaskRunner.ts",
+      "summary": "Class WorkerTaskAbortedError",
+      "tags": [
+        "class",
+        "typescript"
+      ],
+      "complexity": "simple",
+      "lineRange": {
+        "start": 20,
+        "end": 25
+      },
+      "metadata": {
+        "methods": 1
+      }
+    },
+    {
+      "id": "class:src/lib/trpc/workers/WorkerTaskRunner.ts:WorkerTaskRunner",
+      "type": "class",
+      "name": "WorkerTaskRunner",
+      "filePath": "src/lib/trpc/workers/WorkerTaskRunner.ts",
+      "summary": "Class WorkerTaskRunner",
+      "tags": [
+        "class",
+        "typescript"
+      ],
+      "complexity": "complex",
+      "lineRange": {
+        "start": 68,
+        "end": 479
+      },
+      "metadata": {
+        "methods": 19
+      }
+    },
+    {
+      "id": "file:src/lib/trpc/workers/worker-task-protocol.ts",
+      "type": "file",
+      "name": "worker-task-protocol.ts",
+      "filePath": "src/lib/trpc/workers/worker-task-protocol.ts",
+      "summary": "Utility function: serializeWorkerError",
+      "tags": [
+        "typescript",
+        "code"
+      ],
+      "complexity": "simple",
+      "metadata": {
+        "language": "typescript",
+        "totalLines": 48,
+        "nonEmptyLines": 42
+      }
+    },
+    {
+      "id": "function:src/lib/trpc/workers/worker-task-protocol.ts:serializeWorkerError",
+      "type": "function",
+      "name": "serializeWorkerError",
+      "filePath": "src/lib/trpc/workers/worker-task-protocol.ts",
+      "summary": "Function serializeWorkerError",
+      "tags": [
+        "function",
+        "typescript"
+      ],
+      "complexity": "simple",
+      "lineRange": {
+        "start": 29,
+        "end": 48
+      }
+    },
+    {
+      "id": "file:src/main/git-task-worker.ts",
+      "type": "file",
+      "name": "git-task-worker.ts",
+      "filePath": "src/main/git-task-worker.ts",
+      "summary": "Utility function: isWorkerTaskRequestMessage",
+      "tags": [
+        "typescript",
+        "code"
+      ],
+      "complexity": "simple",
+      "metadata": {
+        "language": "typescript",
+        "totalLines": 50,
+        "nonEmptyLines": 46
+      }
+    },
+    {
+      "id": "function:src/main/git-task-worker.ts:isWorkerTaskRequestMessage",
+      "type": "function",
+      "name": "isWorkerTaskRequestMessage",
+      "filePath": "src/main/git-task-worker.ts",
+      "summary": "Function isWorkerTaskRequestMessage",
+      "tags": [
+        "function",
+        "typescript"
+      ],
+      "complexity": "simple",
+      "lineRange": {
+        "start": 13,
+        "end": 25
+      }
+    },
+    {
+      "id": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/FileDiffSection/components/FileDiffHeader/FileDiffHeader.tsx",
+      "type": "file",
+      "name": "FileDiffHeader.tsx",
+      "filePath": "src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/FileDiffSection/components/FileDiffHeader/FileDiffHeader.tsx",
+      "summary": "React component: FileDiffHeader",
+      "tags": [
+        "typescript",
+        "code",
+        "component"
+      ],
+      "complexity": "complex",
+      "metadata": {
+        "language": "typescript",
+        "totalLines": 249,
+        "nonEmptyLines": 237
+      }
+    },
+    {
+      "id": "function:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/FileDiffSection/components/FileDiffHeader/FileDiffHeader.tsx:FileDiffHeader",
+      "type": "function",
+      "name": "FileDiffHeader",
+      "filePath": "src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/FileDiffSection/components/FileDiffHeader/FileDiffHeader.tsx",
+      "summary": "Function FileDiffHeader",
+      "tags": [
+        "function",
+        "typescript"
+      ],
+      "complexity": "complex",
+      "lineRange": {
+        "start": 38,
+        "end": 249
+      }
+    },
+    {
+      "id": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/FileDiffSection/constants.ts",
+      "type": "file",
+      "name": "constants.ts",
+      "filePath": "src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/FileDiffSection/constants.ts",
+      "summary": "constants.ts module",
+      "tags": [
+        "typescript",
+        "code",
+        "component"
+      ],
+      "complexity": "simple",
+      "metadata": {
+        "language": "typescript",
+        "totalLines": 2,
+        "nonEmptyLines": 2
+      }
+    },
+    {
+      "id": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/FileDiffSection/hooks/useFileDiffEdit/useFileDiffEdit.ts",
+      "type": "file",
+      "name": "useFileDiffEdit.ts",
+      "filePath": "src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/FileDiffSection/hooks/useFileDiffEdit/useFileDiffEdit.ts",
+      "summary": "Utility function: useFileDiffEdit",
+      "tags": [
+        "typescript",
+        "code",
+        "component",
+        "hook"
+      ],
+      "complexity": "moderate",
+      "metadata": {
+        "language": "typescript",
+        "totalLines": 83,
+        "nonEmptyLines": 72
+      }
+    },
+    {
+      "id": "function:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/FileDiffSection/hooks/useFileDiffEdit/useFileDiffEdit.ts:useFileDiffEdit",
+      "type": "function",
+      "name": "useFileDiffEdit",
+      "filePath": "src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/FileDiffSection/hooks/useFileDiffEdit/useFileDiffEdit.ts",
+      "summary": "Function useFileDiffEdit",
+      "tags": [
+        "function",
+        "typescript"
+      ],
+      "complexity": "moderate",
+      "lineRange": {
+        "start": 14,
+        "end": 83
+      }
+    },
+    {
+      "id": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/FileDiffSection/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/FileDiffSection/index.ts",
+      "summary": "index.ts module",
+      "tags": [
+        "typescript",
+        "code",
+        "component"
+      ],
+      "complexity": "simple",
+      "metadata": {
+        "language": "typescript",
+        "totalLines": 1,
+        "nonEmptyLines": 1
+      }
+    },
+    {
+      "id": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/InfiniteScrollView.tsx",
+      "type": "file",
+      "name": "InfiniteScrollView.tsx",
+      "filePath": "src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/InfiniteScrollView.tsx",
+      "summary": "React component: InfiniteScrollView",
+      "tags": [
+        "typescript",
+        "code",
+        "component"
+      ],
+      "complexity": "complex",
+      "metadata": {
+        "language": "typescript",
+        "totalLines": 243,
+        "nonEmptyLines": 229
+      }
+    },
+    {
+      "id": "function:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/InfiniteScrollView.tsx:InfiniteScrollView",
+      "type": "function",
+      "name": "InfiniteScrollView",
+      "filePath": "src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/InfiniteScrollView.tsx",
+      "summary": "Function InfiniteScrollView",
+      "tags": [
+        "function",
+        "typescript"
+      ],
+      "complexity": "complex",
+      "lineRange": {
+        "start": 21,
+        "end": 243
+      }
+    },
+    {
+      "id": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/components/CategoryHeader/CategoryHeader.tsx",
+      "type": "file",
+      "name": "CategoryHeader.tsx",
+      "filePath": "src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/components/CategoryHeader/CategoryHeader.tsx",
+      "summary": "React component: CategoryHeader",
+      "tags": [
+        "typescript",
+        "code",
+        "component"
+      ],
+      "complexity": "simple",
+      "metadata": {
+        "language": "typescript",
+        "totalLines": 51,
+        "nonEmptyLines": 47
+      }
+    },
+    {
+      "id": "function:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/components/CategoryHeader/CategoryHeader.tsx:CategoryHeader",
+      "type": "function",
+      "name": "CategoryHeader",
+      "filePath": "src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/components/CategoryHeader/CategoryHeader.tsx",
+      "summary": "Function CategoryHeader",
+      "tags": [
+        "function",
+        "typescript"
+      ],
+      "complexity": "simple",
+      "lineRange": {
+        "start": 15,
+        "end": 51
+      }
+    },
+    {
+      "id": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/components/CategoryHeader/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/components/CategoryHeader/index.ts",
+      "summary": "index.ts module",
+      "tags": [
+        "typescript",
+        "code",
+        "component"
+      ],
+      "complexity": "simple",
+      "metadata": {
+        "language": "typescript",
+        "totalLines": 1,
+        "nonEmptyLines": 1
+      }
+    },
+    {
+      "id": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/components/CommitSection/CommitSection.tsx",
+      "type": "file",
+      "name": "CommitSection.tsx",
+      "filePath": "src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/components/CommitSection/CommitSection.tsx",
+      "summary": "React component: CommitSection",
+      "tags": [
+        "typescript",
+        "code",
+        "component"
+      ],
+      "complexity": "moderate",
+      "metadata": {
+        "language": "typescript",
+        "totalLines": 69,
+        "nonEmptyLines": 64
+      }
+    },
+    {
+      "id": "function:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/components/CommitSection/CommitSection.tsx:CommitSection",
+      "type": "function",
+      "name": "CommitSection",
+      "filePath": "src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/components/CommitSection/CommitSection.tsx",
+      "summary": "Function CommitSection",
+      "tags": [
+        "function",
+        "typescript"
+      ],
+      "complexity": "moderate",
+      "lineRange": {
+        "start": 15,
+        "end": 69
+      }
+    },
+    {
+      "id": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/components/CommitSection/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/components/CommitSection/index.ts",
+      "summary": "index.ts module",
+      "tags": [
+        "typescript",
+        "code",
+        "component"
+      ],
+      "complexity": "simple",
+      "metadata": {
+        "language": "typescript",
+        "totalLines": 1,
+        "nonEmptyLines": 1
+      }
+    },
+    {
+      "id": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/components/DiffToolbar/DiffToolbar.tsx",
+      "type": "file",
+      "name": "DiffToolbar.tsx",
+      "filePath": "src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/components/DiffToolbar/DiffToolbar.tsx",
+      "summary": "React component: DiffToolbar",
+      "tags": [
+        "typescript",
+        "code",
+        "component"
+      ],
+      "complexity": "complex",
+      "metadata": {
+        "language": "typescript",
+        "totalLines": 251,
+        "nonEmptyLines": 245
+      }
+    },
+    {
+      "id": "function:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/components/DiffToolbar/DiffToolbar.tsx:DiffToolbar",
+      "type": "function",
+      "name": "DiffToolbar",
+      "filePath": "src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/components/DiffToolbar/DiffToolbar.tsx",
+      "summary": "Function DiffToolbar",
+      "tags": [
+        "function",
+        "typescript"
+      ],
+      "complexity": "complex",
+      "lineRange": {
+        "start": 48,
+        "end": 251
+      }
+    },
+    {
+      "id": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/components/DiffToolbar/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/components/DiffToolbar/index.ts",
+      "summary": "index.ts module",
+      "tags": [
+        "typescript",
+        "code",
+        "component"
+      ],
+      "complexity": "simple",
+      "metadata": {
+        "language": "typescript",
+        "totalLines": 1,
+        "nonEmptyLines": 1
+      }
+    },
+    {
+      "id": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/hooks/useFileMutations/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/hooks/useFileMutations/index.ts",
+      "summary": "index.ts module",
+      "tags": [
+        "typescript",
+        "code",
+        "component",
+        "hook"
+      ],
+      "complexity": "simple",
+      "metadata": {
+        "language": "typescript",
+        "totalLines": 1,
+        "nonEmptyLines": 1
+      }
+    },
+    {
+      "id": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/hooks/useFileMutations/useFileMutations.ts",
+      "type": "file",
+      "name": "useFileMutations.ts",
+      "filePath": "src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/hooks/useFileMutations/useFileMutations.ts",
+      "summary": "Utility function: useFileMutations",
+      "tags": [
+        "typescript",
+        "code",
+        "component",
+        "hook"
+      ],
+      "complexity": "moderate",
+      "metadata": {
+        "language": "typescript",
+        "totalLines": 96,
+        "nonEmptyLines": 88
+      }
+    },
+    {
+      "id": "function:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/hooks/useFileMutations/useFileMutations.ts:useFileMutations",
+      "type": "function",
+      "name": "useFileMutations",
+      "filePath": "src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/hooks/useFileMutations/useFileMutations.ts",
+      "summary": "Function useFileMutations",
+      "tags": [
+        "function",
+        "typescript"
+      ],
+      "complexity": "moderate",
+      "lineRange": {
+        "start": 6,
+        "end": 96
+      }
+    },
+    {
+      "id": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/hooks/useFocusMode/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/hooks/useFocusMode/index.ts",
+      "summary": "index.ts module",
+      "tags": [
+        "typescript",
+        "code",
+        "component",
+        "hook"
+      ],
+      "complexity": "simple",
+      "metadata": {
+        "language": "typescript",
+        "totalLines": 2,
+        "nonEmptyLines": 2
+      }
+    },
+    {
+      "id": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/hooks/useFocusMode/useFocusMode.ts",
+      "type": "file",
+      "name": "useFocusMode.ts",
+      "filePath": "src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/hooks/useFocusMode/useFocusMode.ts",
+      "summary": "Utility function: useFocusMode",
+      "tags": [
+        "typescript",
+        "code",
+        "component",
+        "hook"
+      ],
+      "complexity": "complex",
+      "metadata": {
+        "language": "typescript",
+        "totalLines": 288,
+        "nonEmptyLines": 267
+      }
+    },
+    {
+      "id": "function:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/hooks/useFocusMode/useFocusMode.ts:useFocusMode",
+      "type": "function",
+      "name": "useFocusMode",
+      "filePath": "src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/hooks/useFocusMode/useFocusMode.ts",
+      "summary": "Function useFocusMode",
+      "tags": [
+        "function",
+        "typescript"
+      ],
+      "complexity": "complex",
+      "lineRange": {
+        "start": 34,
+        "end": 288
+      }
+    },
+    {
+      "id": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/hooks/useOrderedSections/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/hooks/useOrderedSections/index.ts",
+      "summary": "index.ts module",
+      "tags": [
+        "typescript",
+        "code",
+        "component",
+        "hook"
+      ],
+      "complexity": "simple",
+      "metadata": {
+        "language": "typescript",
+        "totalLines": 2,
+        "nonEmptyLines": 2
+      }
+    },
+    {
+      "id": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/hooks/useOrderedSections/useOrderedSections.tsx",
+      "type": "file",
+      "name": "useOrderedSections.tsx",
+      "filePath": "src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/hooks/useOrderedSections/useOrderedSections.tsx",
+      "summary": "React component: useOrderedSections",
+      "tags": [
+        "typescript",
+        "code",
+        "component",
+        "hook"
+      ],
+      "complexity": "moderate",
+      "metadata": {
+        "language": "typescript",
+        "totalLines": 147,
+        "nonEmptyLines": 142
+      }
+    },
+    {
+      "id": "function:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/hooks/useOrderedSections/useOrderedSections.tsx:useOrderedSections",
+      "type": "function",
+      "name": "useOrderedSections",
+      "filePath": "src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/hooks/useOrderedSections/useOrderedSections.tsx",
+      "summary": "Function useOrderedSections",
+      "tags": [
+        "function",
+        "typescript"
+      ],
+      "complexity": "moderate",
+      "lineRange": {
+        "start": 39,
+        "end": 147
+      }
+    },
+    {
+      "id": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/VirtualizedFileList/VirtualizedFileList.tsx",
+      "type": "file",
+      "name": "VirtualizedFileList.tsx",
+      "filePath": "src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/VirtualizedFileList/VirtualizedFileList.tsx",
+      "summary": "React component: VirtualizedFileList",
+      "tags": [
+        "typescript",
+        "code",
+        "component"
+      ],
+      "complexity": "moderate",
+      "metadata": {
+        "language": "typescript",
+        "totalLines": 103,
+        "nonEmptyLines": 96
+      }
+    },
+    {
+      "id": "function:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/VirtualizedFileList/VirtualizedFileList.tsx:VirtualizedFileList",
+      "type": "function",
+      "name": "VirtualizedFileList",
+      "filePath": "src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/VirtualizedFileList/VirtualizedFileList.tsx",
+      "summary": "Function VirtualizedFileList",
+      "tags": [
+        "function",
+        "typescript"
+      ],
+      "complexity": "moderate",
+      "lineRange": {
+        "start": 25,
+        "end": 103
+      }
+    },
+    {
+      "id": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/VirtualizedFileList/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/VirtualizedFileList/index.ts",
+      "summary": "index.ts module",
+      "tags": [
+        "typescript",
+        "code",
+        "component"
+      ],
+      "complexity": "simple",
+      "metadata": {
+        "language": "typescript",
+        "totalLines": 1,
+        "nonEmptyLines": 1
+      }
+    },
+    {
+      "id": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/VirtualizedFileList/utils/getEstimatedFileDiffSectionHeight.test.ts",
+      "type": "file",
+      "name": "getEstimatedFileDiffSectionHeight.test.ts",
+      "filePath": "src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/VirtualizedFileList/utils/getEstimatedFileDiffSectionHeight.test.ts",
+      "summary": "Test suite for getEstimatedFileDiffSectionHeight.ts",
+      "tags": [
+        "typescript",
+        "code",
+        "component",
+        "utility",
+        "test"
+      ],
+      "complexity": "moderate",
+      "metadata": {
+        "language": "typescript",
+        "totalLines": 82,
+        "nonEmptyLines": 74
+      }
+    },
+    {
+      "id": "function:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/VirtualizedFileList/utils/getEstimatedFileDiffSectionHeight.test.ts:createFile",
+      "type": "function",
+      "name": "createFile",
+      "filePath": "src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/VirtualizedFileList/utils/getEstimatedFileDiffSectionHeight.test.ts",
+      "summary": "Function createFile",
+      "tags": [
+        "function",
+        "typescript"
+      ],
+      "complexity": "simple",
+      "lineRange": {
+        "start": 6,
+        "end": 17
+      }
+    },
+    {
+      "id": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/VirtualizedFileList/utils/getEstimatedFileDiffSectionHeight.ts",
+      "type": "file",
+      "name": "getEstimatedFileDiffSectionHeight.ts",
+      "filePath": "src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/VirtualizedFileList/utils/getEstimatedFileDiffSectionHeight.ts",
+      "summary": "Module with 3 functions",
+      "tags": [
+        "typescript",
+        "code",
+        "component",
+        "utility"
+      ],
+      "complexity": "moderate",
+      "metadata": {
+        "language": "typescript",
+        "totalLines": 82,
+        "nonEmptyLines": 68
+      }
+    },
+    {
+      "id": "function:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/VirtualizedFileList/utils/getEstimatedFileDiffSectionHeight.ts:getPlaceholderHeight",
+      "type": "function",
+      "name": "getPlaceholderHeight",
+      "filePath": "src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/VirtualizedFileList/utils/getEstimatedFileDiffSectionHeight.ts",
+      "summary": "Function getPlaceholderHeight",
+      "tags": [
+        "function",
+        "typescript"
+      ],
+      "complexity": "simple",
+      "lineRange": {
+        "start": 43,
+        "end": 71
+      }
+    },
+    {
+      "id": "function:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/VirtualizedFileList/utils/getEstimatedFileDiffSectionHeight.ts:getEstimatedFileDiffSectionHeight",
+      "type": "function",
+      "name": "getEstimatedFileDiffSectionHeight",
+      "filePath": "src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/VirtualizedFileList/utils/getEstimatedFileDiffSectionHeight.ts",
+      "summary": "Function getEstimatedFileDiffSectionHeight",
+      "tags": [
+        "function",
+        "typescript"
+      ],
+      "complexity": "simple",
+      "lineRange": {
+        "start": 73,
+        "end": 82
+      }
+    },
+    {
+      "id": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/context/ScrollContext.tsx",
+      "type": "file",
+      "name": "ScrollContext.tsx",
+      "filePath": "src/renderer/screens/main/components/WorkspaceView/ChangesContent/context/ScrollContext.tsx",
+      "summary": "React component: createFileKey",
+      "tags": [
+        "typescript",
+        "code",
+        "component"
+      ],
+      "complexity": "moderate",
+      "metadata": {
+        "language": "typescript",
+        "totalLines": 146,
+        "nonEmptyLines": 134
+      }
+    },
+    {
+      "id": "function:src/renderer/screens/main/components/WorkspaceView/ChangesContent/context/ScrollContext.tsx:createFileKey",
+      "type": "function",
+      "name": "createFileKey",
+      "filePath": "src/renderer/screens/main/components/WorkspaceView/ChangesContent/context/ScrollContext.tsx",
+      "summary": "Function createFileKey",
+      "tags": [
+        "function",
+        "typescript"
+      ],
+      "complexity": "simple",
+      "lineRange": {
+        "start": 14,
+        "end": 24
+      }
+    },
+    {
+      "id": "function:src/renderer/screens/main/components/WorkspaceView/ChangesContent/context/ScrollContext.tsx:ScrollProvider",
+      "type": "function",
+      "name": "ScrollProvider",
+      "filePath": "src/renderer/screens/main/components/WorkspaceView/ChangesContent/context/ScrollContext.tsx",
+      "summary": "Function ScrollProvider",
+      "tags": [
+        "function",
+        "typescript"
+      ],
+      "complexity": "moderate",
+      "lineRange": {
+        "start": 52,
+        "end": 136
+      }
+    },
+    {
+      "id": "function:src/renderer/screens/main/components/WorkspaceView/ChangesContent/context/ScrollContext.tsx:useScrollContext",
+      "type": "function",
+      "name": "useScrollContext",
+      "filePath": "src/renderer/screens/main/components/WorkspaceView/ChangesContent/context/ScrollContext.tsx",
+      "summary": "Function useScrollContext",
+      "tags": [
+        "function",
+        "typescript"
+      ],
+      "complexity": "simple",
+      "lineRange": {
+        "start": 138,
+        "end": 144
+      }
+    },
+    {
+      "id": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/context/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "src/renderer/screens/main/components/WorkspaceView/ChangesContent/context/index.ts",
+      "summary": "index.ts module",
+      "tags": [
+        "typescript",
+        "code",
+        "component"
+      ],
+      "complexity": "simple",
+      "metadata": {
+        "language": "typescript",
+        "totalLines": 5,
+        "nonEmptyLines": 5
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/lib/trpc/routers/changes/utils/apply-numstat.ts",
+      "target": "function:src/lib/trpc/routers/changes/utils/apply-numstat.ts:applyNumstatToFiles",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/trpc/routers/changes/utils/apply-numstat.ts",
+      "target": "function:src/lib/trpc/routers/changes/utils/apply-numstat.ts:applyNumstatToFiles",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/trpc/routers/changes/utils/parse-status.ts",
+      "target": "function:src/lib/trpc/routers/changes/utils/parse-status.ts:toChangedFile",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/trpc/routers/changes/utils/parse-status.ts",
+      "target": "function:src/lib/trpc/routers/changes/utils/parse-status.ts:parseGitStatus",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/trpc/routers/changes/utils/parse-status.ts",
+      "target": "function:src/lib/trpc/routers/changes/utils/parse-status.ts:parseGitStatus",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/trpc/routers/changes/utils/parse-status.ts",
+      "target": "function:src/lib/trpc/routers/changes/utils/parse-status.ts:parseGitLog",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/trpc/routers/changes/utils/parse-status.ts",
+      "target": "function:src/lib/trpc/routers/changes/utils/parse-status.ts:parseGitLog",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/trpc/routers/changes/utils/parse-status.ts",
+      "target": "function:src/lib/trpc/routers/changes/utils/parse-status.ts:parseDiffNumstat",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/trpc/routers/changes/utils/parse-status.ts",
+      "target": "function:src/lib/trpc/routers/changes/utils/parse-status.ts:parseDiffNumstat",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/trpc/routers/changes/utils/parse-status.ts",
+      "target": "function:src/lib/trpc/routers/changes/utils/parse-status.ts:parseNameStatus",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/trpc/routers/changes/utils/parse-status.ts",
+      "target": "function:src/lib/trpc/routers/changes/utils/parse-status.ts:parseNameStatus",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/lib/trpc/routers/changes/utils/parse-status.ts:parseGitStatus",
+      "target": "function:src/lib/trpc/routers/changes/utils/parse-status.ts:toChangedFile",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/trpc/routers/changes/workers/git-task-handlers.ts",
+      "target": "function:src/lib/trpc/routers/changes/workers/git-task-handlers.ts:isPathWithinWorktree",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/trpc/routers/changes/workers/git-task-handlers.ts",
+      "target": "function:src/lib/trpc/routers/changes/workers/git-task-handlers.ts:resolvePathInWorktree",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/trpc/routers/changes/workers/git-task-handlers.ts",
+      "target": "function:src/lib/trpc/routers/changes/workers/git-task-handlers.ts:applyUntrackedLineCount",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/trpc/routers/changes/workers/git-task-handlers.ts",
+      "target": "function:src/lib/trpc/routers/changes/workers/git-task-handlers.ts:getBranchComparison",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/trpc/routers/changes/workers/git-task-handlers.ts",
+      "target": "function:src/lib/trpc/routers/changes/workers/git-task-handlers.ts:getTrackingBranchStatus",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/trpc/routers/changes/workers/git-task-handlers.ts",
+      "target": "function:src/lib/trpc/routers/changes/workers/git-task-handlers.ts:computeStatus",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/trpc/routers/changes/workers/git-task-handlers.ts",
+      "target": "function:src/lib/trpc/routers/changes/workers/git-task-handlers.ts:computeCommitFiles",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/trpc/routers/changes/workers/git-task-handlers.ts",
+      "target": "function:src/lib/trpc/routers/changes/workers/git-task-handlers.ts:executeGitTask",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/trpc/routers/changes/workers/git-task-handlers.ts",
+      "target": "function:src/lib/trpc/routers/changes/workers/git-task-handlers.ts:executeGitTask",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/lib/trpc/routers/changes/workers/git-task-handlers.ts:resolvePathInWorktree",
+      "target": "function:src/lib/trpc/routers/changes/workers/git-task-handlers.ts:isPathWithinWorktree",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/lib/trpc/routers/changes/workers/git-task-handlers.ts:applyUntrackedLineCount",
+      "target": "function:src/lib/trpc/routers/changes/workers/git-task-handlers.ts:resolvePathInWorktree",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/lib/trpc/routers/changes/workers/git-task-handlers.ts:applyUntrackedLineCount",
+      "target": "function:src/lib/trpc/routers/changes/workers/git-task-handlers.ts:isPathWithinWorktree",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/lib/trpc/routers/changes/workers/git-task-handlers.ts:computeStatus",
+      "target": "function:src/lib/trpc/routers/changes/workers/git-task-handlers.ts:getBranchComparison",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/lib/trpc/routers/changes/workers/git-task-handlers.ts:computeStatus",
+      "target": "function:src/lib/trpc/routers/changes/workers/git-task-handlers.ts:getTrackingBranchStatus",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/lib/trpc/routers/changes/workers/git-task-handlers.ts:computeStatus",
+      "target": "function:src/lib/trpc/routers/changes/workers/git-task-handlers.ts:applyUntrackedLineCount",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/lib/trpc/routers/changes/workers/git-task-handlers.ts:executeGitTask",
+      "target": "function:src/lib/trpc/routers/changes/workers/git-task-handlers.ts:computeStatus",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/lib/trpc/routers/changes/workers/git-task-handlers.ts:executeGitTask",
+      "target": "function:src/lib/trpc/routers/changes/workers/git-task-handlers.ts:computeCommitFiles",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/trpc/routers/changes/workers/git-task-runner.ts",
+      "target": "function:src/lib/trpc/routers/changes/workers/git-task-runner.ts:getWorkerScriptPath",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/trpc/routers/changes/workers/git-task-runner.ts",
+      "target": "function:src/lib/trpc/routers/changes/workers/git-task-runner.ts:getRunner",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/trpc/routers/changes/workers/git-task-runner.ts",
+      "target": "function:src/lib/trpc/routers/changes/workers/git-task-runner.ts:runGitTask",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/trpc/routers/changes/workers/git-task-runner.ts",
+      "target": "function:src/lib/trpc/routers/changes/workers/git-task-runner.ts:runGitTask",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/lib/trpc/routers/changes/workers/git-task-runner.ts:getRunner",
+      "target": "function:src/lib/trpc/routers/changes/workers/git-task-runner.ts:getWorkerScriptPath",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/lib/trpc/routers/changes/workers/git-task-runner.ts:runGitTask",
+      "target": "function:src/lib/trpc/routers/changes/workers/git-task-runner.ts:getRunner",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/trpc/workers/WorkerTaskRunner.ts",
+      "target": "class:src/lib/trpc/workers/WorkerTaskRunner.ts:WorkerTaskError",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/trpc/workers/WorkerTaskRunner.ts",
+      "target": "class:src/lib/trpc/workers/WorkerTaskRunner.ts:WorkerTaskError",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/trpc/workers/WorkerTaskRunner.ts",
+      "target": "class:src/lib/trpc/workers/WorkerTaskRunner.ts:WorkerTaskAbortedError",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/trpc/workers/WorkerTaskRunner.ts",
+      "target": "class:src/lib/trpc/workers/WorkerTaskRunner.ts:WorkerTaskAbortedError",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/trpc/workers/WorkerTaskRunner.ts",
+      "target": "class:src/lib/trpc/workers/WorkerTaskRunner.ts:WorkerTaskRunner",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/trpc/workers/WorkerTaskRunner.ts",
+      "target": "class:src/lib/trpc/workers/WorkerTaskRunner.ts:WorkerTaskRunner",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/trpc/workers/worker-task-protocol.ts",
+      "target": "function:src/lib/trpc/workers/worker-task-protocol.ts:serializeWorkerError",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/trpc/workers/worker-task-protocol.ts",
+      "target": "function:src/lib/trpc/workers/worker-task-protocol.ts:serializeWorkerError",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/git-task-worker.ts",
+      "target": "function:src/main/git-task-worker.ts:isWorkerTaskRequestMessage",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/FileDiffSection/components/FileDiffHeader/FileDiffHeader.tsx",
+      "target": "function:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/FileDiffSection/components/FileDiffHeader/FileDiffHeader.tsx:FileDiffHeader",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/FileDiffSection/components/FileDiffHeader/FileDiffHeader.tsx",
+      "target": "function:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/FileDiffSection/components/FileDiffHeader/FileDiffHeader.tsx:FileDiffHeader",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/FileDiffSection/hooks/useFileDiffEdit/useFileDiffEdit.ts",
+      "target": "function:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/FileDiffSection/hooks/useFileDiffEdit/useFileDiffEdit.ts:useFileDiffEdit",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/FileDiffSection/hooks/useFileDiffEdit/useFileDiffEdit.ts",
+      "target": "function:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/FileDiffSection/hooks/useFileDiffEdit/useFileDiffEdit.ts:useFileDiffEdit",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/InfiniteScrollView.tsx",
+      "target": "function:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/InfiniteScrollView.tsx:InfiniteScrollView",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/InfiniteScrollView.tsx",
+      "target": "function:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/InfiniteScrollView.tsx:InfiniteScrollView",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/components/CategoryHeader/CategoryHeader.tsx",
+      "target": "function:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/components/CategoryHeader/CategoryHeader.tsx:CategoryHeader",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/components/CategoryHeader/CategoryHeader.tsx",
+      "target": "function:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/components/CategoryHeader/CategoryHeader.tsx:CategoryHeader",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/components/CommitSection/CommitSection.tsx",
+      "target": "function:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/components/CommitSection/CommitSection.tsx:CommitSection",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/components/CommitSection/CommitSection.tsx",
+      "target": "function:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/components/CommitSection/CommitSection.tsx:CommitSection",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/components/DiffToolbar/DiffToolbar.tsx",
+      "target": "function:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/components/DiffToolbar/DiffToolbar.tsx:DiffToolbar",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/components/DiffToolbar/DiffToolbar.tsx",
+      "target": "function:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/components/DiffToolbar/DiffToolbar.tsx:DiffToolbar",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/hooks/useFileMutations/useFileMutations.ts",
+      "target": "function:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/hooks/useFileMutations/useFileMutations.ts:useFileMutations",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/hooks/useFileMutations/useFileMutations.ts",
+      "target": "function:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/hooks/useFileMutations/useFileMutations.ts:useFileMutations",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/hooks/useFocusMode/useFocusMode.ts",
+      "target": "function:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/hooks/useFocusMode/useFocusMode.ts:useFocusMode",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/hooks/useFocusMode/useFocusMode.ts",
+      "target": "function:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/hooks/useFocusMode/useFocusMode.ts:useFocusMode",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/hooks/useOrderedSections/useOrderedSections.tsx",
+      "target": "function:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/hooks/useOrderedSections/useOrderedSections.tsx:useOrderedSections",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/hooks/useOrderedSections/useOrderedSections.tsx",
+      "target": "function:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/hooks/useOrderedSections/useOrderedSections.tsx:useOrderedSections",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/VirtualizedFileList/VirtualizedFileList.tsx",
+      "target": "function:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/VirtualizedFileList/VirtualizedFileList.tsx:VirtualizedFileList",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/VirtualizedFileList/VirtualizedFileList.tsx",
+      "target": "function:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/VirtualizedFileList/VirtualizedFileList.tsx:VirtualizedFileList",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/VirtualizedFileList/utils/getEstimatedFileDiffSectionHeight.test.ts",
+      "target": "function:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/VirtualizedFileList/utils/getEstimatedFileDiffSectionHeight.test.ts:createFile",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/VirtualizedFileList/utils/getEstimatedFileDiffSectionHeight.ts",
+      "target": "function:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/VirtualizedFileList/utils/getEstimatedFileDiffSectionHeight.ts:getPlaceholderHeight",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/VirtualizedFileList/utils/getEstimatedFileDiffSectionHeight.ts",
+      "target": "function:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/VirtualizedFileList/utils/getEstimatedFileDiffSectionHeight.ts:getEstimatedFileDiffSectionHeight",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/VirtualizedFileList/utils/getEstimatedFileDiffSectionHeight.ts",
+      "target": "function:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/VirtualizedFileList/utils/getEstimatedFileDiffSectionHeight.ts:getEstimatedFileDiffSectionHeight",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/VirtualizedFileList/utils/getEstimatedFileDiffSectionHeight.ts:getEstimatedFileDiffSectionHeight",
+      "target": "function:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/VirtualizedFileList/utils/getEstimatedFileDiffSectionHeight.ts:getPlaceholderHeight",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/context/ScrollContext.tsx",
+      "target": "function:src/renderer/screens/main/components/WorkspaceView/ChangesContent/context/ScrollContext.tsx:createFileKey",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/context/ScrollContext.tsx",
+      "target": "function:src/renderer/screens/main/components/WorkspaceView/ChangesContent/context/ScrollContext.tsx:createFileKey",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/context/ScrollContext.tsx",
+      "target": "function:src/renderer/screens/main/components/WorkspaceView/ChangesContent/context/ScrollContext.tsx:ScrollProvider",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/context/ScrollContext.tsx",
+      "target": "function:src/renderer/screens/main/components/WorkspaceView/ChangesContent/context/ScrollContext.tsx:ScrollProvider",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/context/ScrollContext.tsx",
+      "target": "function:src/renderer/screens/main/components/WorkspaceView/ChangesContent/context/ScrollContext.tsx:useScrollContext",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/context/ScrollContext.tsx",
+      "target": "function:src/renderer/screens/main/components/WorkspaceView/ChangesContent/context/ScrollContext.tsx:useScrollContext",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/screens/main/components/WorkspaceView/ChangesContent/context/ScrollContext.tsx:ScrollProvider",
+      "target": "function:src/renderer/screens/main/components/WorkspaceView/ChangesContent/context/ScrollContext.tsx:createFileKey",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/screens/main/components/WorkspaceView/ChangesContent/context/ScrollContext.tsx:ScrollProvider",
+      "target": "function:src/renderer/screens/main/components/WorkspaceView/ChangesContent/context/ScrollContext.tsx:createFileKey",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/trpc/routers/changes/utils/apply-numstat.ts",
+      "target": "file:src/lib/trpc/routers/changes/utils/parse-status.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/lib/trpc/routers/changes/utils/apply-numstat.ts",
+      "target": "file:src/lib/trpc/routers/changes/utils/parse-status.ts",
+      "type": "depends_on",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/lib/trpc/routers/changes/utils/apply-numstat.ts",
+      "target": "file:src/shared/changes-types.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/lib/trpc/routers/changes/utils/apply-numstat.ts",
+      "target": "file:src/shared/changes-types.ts",
+      "type": "depends_on",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/lib/trpc/routers/changes/utils/parse-status.ts",
+      "target": "file:src/shared/changes-types.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/lib/trpc/routers/changes/utils/parse-status.ts",
+      "target": "file:src/shared/changes-types.ts",
+      "type": "depends_on",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/lib/trpc/routers/changes/workers/git-task-handlers.ts",
+      "target": "file:src/lib/trpc/routers/changes/utils/apply-numstat.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/lib/trpc/routers/changes/workers/git-task-handlers.ts",
+      "target": "file:src/lib/trpc/routers/changes/utils/apply-numstat.ts",
+      "type": "depends_on",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/lib/trpc/routers/changes/workers/git-task-handlers.ts",
+      "target": "file:src/lib/trpc/routers/changes/utils/parse-status.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/lib/trpc/routers/changes/workers/git-task-handlers.ts",
+      "target": "file:src/lib/trpc/routers/changes/utils/parse-status.ts",
+      "type": "depends_on",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/lib/trpc/routers/changes/workers/git-task-handlers.ts",
+      "target": "file:src/lib/trpc/routers/changes/workers/git-task-types.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/lib/trpc/routers/changes/workers/git-task-handlers.ts",
+      "target": "file:src/lib/trpc/routers/changes/workers/git-task-types.ts",
+      "type": "depends_on",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/lib/trpc/routers/changes/workers/git-task-handlers.ts",
+      "target": "file:src/lib/trpc/routers/workspaces/utils/git-client.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/lib/trpc/routers/changes/workers/git-task-handlers.ts",
+      "target": "file:src/lib/trpc/routers/workspaces/utils/git-client.ts",
+      "type": "depends_on",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/lib/trpc/routers/changes/workers/git-task-handlers.ts",
+      "target": "file:src/lib/trpc/routers/workspaces/utils/git.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/lib/trpc/routers/changes/workers/git-task-handlers.ts",
+      "target": "file:src/lib/trpc/routers/workspaces/utils/git.ts",
+      "type": "depends_on",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/lib/trpc/routers/changes/workers/git-task-handlers.ts",
+      "target": "file:src/shared/changes-types.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/lib/trpc/routers/changes/workers/git-task-handlers.ts",
+      "target": "file:src/shared/changes-types.ts",
+      "type": "depends_on",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/lib/trpc/routers/changes/workers/git-task-runner.ts",
+      "target": "file:src/lib/trpc/routers/changes/workers/git-task-types.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/lib/trpc/routers/changes/workers/git-task-runner.ts",
+      "target": "file:src/lib/trpc/routers/changes/workers/git-task-types.ts",
+      "type": "depends_on",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/lib/trpc/routers/changes/workers/git-task-runner.ts",
+      "target": "file:src/lib/trpc/workers/WorkerTaskRunner.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/lib/trpc/routers/changes/workers/git-task-runner.ts",
+      "target": "file:src/lib/trpc/workers/WorkerTaskRunner.ts",
+      "type": "depends_on",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/lib/trpc/routers/changes/workers/git-task-types.ts",
+      "target": "file:src/shared/changes-types.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/lib/trpc/routers/changes/workers/git-task-types.ts",
+      "target": "file:src/shared/changes-types.ts",
+      "type": "depends_on",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/lib/trpc/workers/WorkerTaskRunner.ts",
+      "target": "file:src/lib/trpc/workers/worker-task-protocol.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/lib/trpc/workers/WorkerTaskRunner.ts",
+      "target": "file:src/lib/trpc/workers/worker-task-protocol.ts",
+      "type": "depends_on",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/main/git-task-worker.ts",
+      "target": "file:src/lib/trpc/routers/changes/workers/git-task-handlers.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/git-task-worker.ts",
+      "target": "file:src/lib/trpc/routers/changes/workers/git-task-handlers.ts",
+      "type": "depends_on",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/main/git-task-worker.ts",
+      "target": "file:src/lib/trpc/routers/changes/workers/git-task-types.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/git-task-worker.ts",
+      "target": "file:src/lib/trpc/routers/changes/workers/git-task-types.ts",
+      "type": "depends_on",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/main/git-task-worker.ts",
+      "target": "file:src/lib/trpc/workers/worker-task-protocol.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/git-task-worker.ts",
+      "target": "file:src/lib/trpc/workers/worker-task-protocol.ts",
+      "type": "depends_on",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/FileDiffSection/components/FileDiffHeader/FileDiffHeader.tsx",
+      "target": "file:src/shared/changes-types.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/FileDiffSection/components/FileDiffHeader/FileDiffHeader.tsx",
+      "target": "file:src/shared/changes-types.ts",
+      "type": "depends_on",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/FileDiffSection/hooks/useFileDiffEdit/useFileDiffEdit.ts",
+      "target": "file:src/renderer/lib/electron-trpc.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/FileDiffSection/hooks/useFileDiffEdit/useFileDiffEdit.ts",
+      "target": "file:src/renderer/lib/electron-trpc.ts",
+      "type": "depends_on",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/FileDiffSection/hooks/useFileDiffEdit/useFileDiffEdit.ts",
+      "target": "file:src/shared/changes-types.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/FileDiffSection/hooks/useFileDiffEdit/useFileDiffEdit.ts",
+      "target": "file:src/shared/changes-types.ts",
+      "type": "depends_on",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/InfiniteScrollView.tsx",
+      "target": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/FileDiffSection/index.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/InfiniteScrollView.tsx",
+      "target": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/FileDiffSection/index.ts",
+      "type": "depends_on",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/InfiniteScrollView.tsx",
+      "target": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/components/CategoryHeader/index.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/InfiniteScrollView.tsx",
+      "target": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/components/CategoryHeader/index.ts",
+      "type": "depends_on",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/InfiniteScrollView.tsx",
+      "target": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/components/DiffToolbar/index.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/InfiniteScrollView.tsx",
+      "target": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/components/DiffToolbar/index.ts",
+      "type": "depends_on",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/InfiniteScrollView.tsx",
+      "target": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/hooks/useFileMutations/index.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/InfiniteScrollView.tsx",
+      "target": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/hooks/useFileMutations/index.ts",
+      "type": "depends_on",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/InfiniteScrollView.tsx",
+      "target": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/hooks/useFocusMode/index.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/InfiniteScrollView.tsx",
+      "target": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/hooks/useFocusMode/index.ts",
+      "type": "depends_on",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/InfiniteScrollView.tsx",
+      "target": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/hooks/useOrderedSections/index.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/InfiniteScrollView.tsx",
+      "target": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/hooks/useOrderedSections/index.ts",
+      "type": "depends_on",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/InfiniteScrollView.tsx",
+      "target": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/context/index.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/InfiniteScrollView.tsx",
+      "target": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/context/index.ts",
+      "type": "depends_on",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/InfiniteScrollView.tsx",
+      "target": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/utils/index.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/InfiniteScrollView.tsx",
+      "target": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/utils/index.ts",
+      "type": "depends_on",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/InfiniteScrollView.tsx",
+      "target": "file:src/renderer/stores/changes/index.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/InfiniteScrollView.tsx",
+      "target": "file:src/renderer/stores/changes/index.ts",
+      "type": "depends_on",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/InfiniteScrollView.tsx",
+      "target": "file:src/renderer/stores/sidebar-state.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/InfiniteScrollView.tsx",
+      "target": "file:src/renderer/stores/sidebar-state.ts",
+      "type": "depends_on",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/InfiniteScrollView.tsx",
+      "target": "file:src/shared/changes-types.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/InfiniteScrollView.tsx",
+      "target": "file:src/shared/changes-types.ts",
+      "type": "depends_on",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/components/CategoryHeader/CategoryHeader.tsx",
+      "target": "file:src/renderer/screens/main/components/WorkspaceView/hooks/useChangesSectionDnd/index.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/components/CategoryHeader/CategoryHeader.tsx",
+      "target": "file:src/renderer/screens/main/components/WorkspaceView/hooks/useChangesSectionDnd/index.ts",
+      "type": "depends_on",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/components/CategoryHeader/CategoryHeader.tsx",
+      "target": "file:src/shared/changes-types.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/components/CategoryHeader/CategoryHeader.tsx",
+      "target": "file:src/shared/changes-types.ts",
+      "type": "depends_on",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/components/CommitSection/CommitSection.tsx",
+      "target": "file:src/renderer/lib/electron-trpc.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/components/CommitSection/CommitSection.tsx",
+      "target": "file:src/renderer/lib/electron-trpc.ts",
+      "type": "depends_on",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/components/CommitSection/CommitSection.tsx",
+      "target": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/VirtualizedFileList/index.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/components/CommitSection/CommitSection.tsx",
+      "target": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/VirtualizedFileList/index.ts",
+      "type": "depends_on",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/components/CommitSection/CommitSection.tsx",
+      "target": "file:src/shared/changes-types.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/components/CommitSection/CommitSection.tsx",
+      "target": "file:src/shared/changes-types.ts",
+      "type": "depends_on",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/components/DiffToolbar/DiffToolbar.tsx",
+      "target": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/hooks/useFocusMode/index.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/components/DiffToolbar/DiffToolbar.tsx",
+      "target": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/hooks/useFocusMode/index.ts",
+      "type": "depends_on",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/components/DiffToolbar/DiffToolbar.tsx",
+      "target": "file:src/shared/changes-types.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/components/DiffToolbar/DiffToolbar.tsx",
+      "target": "file:src/shared/changes-types.ts",
+      "type": "depends_on",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/hooks/useFileMutations/useFileMutations.ts",
+      "target": "file:src/renderer/lib/electron-trpc.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/hooks/useFileMutations/useFileMutations.ts",
+      "target": "file:src/renderer/lib/electron-trpc.ts",
+      "type": "depends_on",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/hooks/useFileMutations/useFileMutations.ts",
+      "target": "file:src/shared/changes-types.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/hooks/useFileMutations/useFileMutations.ts",
+      "target": "file:src/shared/changes-types.ts",
+      "type": "depends_on",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/hooks/useFocusMode/useFocusMode.ts",
+      "target": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/context/index.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/hooks/useFocusMode/useFocusMode.ts",
+      "target": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/context/index.ts",
+      "type": "depends_on",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/hooks/useFocusMode/useFocusMode.ts",
+      "target": "file:src/renderer/stores/changes/index.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/hooks/useFocusMode/useFocusMode.ts",
+      "target": "file:src/renderer/stores/changes/index.ts",
+      "type": "depends_on",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/hooks/useFocusMode/useFocusMode.ts",
+      "target": "file:src/renderer/stores/changes/section-order.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/hooks/useFocusMode/useFocusMode.ts",
+      "target": "file:src/renderer/stores/changes/section-order.ts",
+      "type": "depends_on",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/hooks/useFocusMode/useFocusMode.ts",
+      "target": "file:src/shared/changes-types.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/hooks/useFocusMode/useFocusMode.ts",
+      "target": "file:src/shared/changes-types.ts",
+      "type": "depends_on",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/hooks/useOrderedSections/useOrderedSections.tsx",
+      "target": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/components/CommitSection/index.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/hooks/useOrderedSections/useOrderedSections.tsx",
+      "target": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/components/CommitSection/index.ts",
+      "type": "depends_on",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/hooks/useOrderedSections/useOrderedSections.tsx",
+      "target": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/VirtualizedFileList/index.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/hooks/useOrderedSections/useOrderedSections.tsx",
+      "target": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/VirtualizedFileList/index.ts",
+      "type": "depends_on",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/hooks/useOrderedSections/useOrderedSections.tsx",
+      "target": "file:src/renderer/stores/changes/section-order.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/hooks/useOrderedSections/useOrderedSections.tsx",
+      "target": "file:src/renderer/stores/changes/section-order.ts",
+      "type": "depends_on",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/hooks/useOrderedSections/useOrderedSections.tsx",
+      "target": "file:src/shared/changes-types.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/hooks/useOrderedSections/useOrderedSections.tsx",
+      "target": "file:src/shared/changes-types.ts",
+      "type": "depends_on",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/VirtualizedFileList/VirtualizedFileList.tsx",
+      "target": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/FileDiffSection/index.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/VirtualizedFileList/VirtualizedFileList.tsx",
+      "target": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/FileDiffSection/index.ts",
+      "type": "depends_on",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/VirtualizedFileList/VirtualizedFileList.tsx",
+      "target": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/VirtualizedFileList/utils/getEstimatedFileDiffSectionHeight.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/VirtualizedFileList/VirtualizedFileList.tsx",
+      "target": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/VirtualizedFileList/utils/getEstimatedFileDiffSectionHeight.ts",
+      "type": "depends_on",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/VirtualizedFileList/VirtualizedFileList.tsx",
+      "target": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/context/index.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/VirtualizedFileList/VirtualizedFileList.tsx",
+      "target": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/context/index.ts",
+      "type": "depends_on",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/VirtualizedFileList/VirtualizedFileList.tsx",
+      "target": "file:src/shared/changes-types.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/VirtualizedFileList/VirtualizedFileList.tsx",
+      "target": "file:src/shared/changes-types.ts",
+      "type": "depends_on",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/VirtualizedFileList/utils/getEstimatedFileDiffSectionHeight.test.ts",
+      "target": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/FileDiffSection/constants.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/VirtualizedFileList/utils/getEstimatedFileDiffSectionHeight.test.ts",
+      "target": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/FileDiffSection/constants.ts",
+      "type": "depends_on",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/VirtualizedFileList/utils/getEstimatedFileDiffSectionHeight.test.ts",
+      "target": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/VirtualizedFileList/utils/getEstimatedFileDiffSectionHeight.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/VirtualizedFileList/utils/getEstimatedFileDiffSectionHeight.test.ts",
+      "target": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/VirtualizedFileList/utils/getEstimatedFileDiffSectionHeight.ts",
+      "type": "depends_on",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/VirtualizedFileList/utils/getEstimatedFileDiffSectionHeight.test.ts",
+      "target": "file:src/shared/changes-types.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/VirtualizedFileList/utils/getEstimatedFileDiffSectionHeight.test.ts",
+      "target": "file:src/shared/changes-types.ts",
+      "type": "depends_on",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/VirtualizedFileList/utils/getEstimatedFileDiffSectionHeight.ts",
+      "target": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/FileDiffSection/constants.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/VirtualizedFileList/utils/getEstimatedFileDiffSectionHeight.ts",
+      "target": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/FileDiffSection/constants.ts",
+      "type": "depends_on",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/VirtualizedFileList/utils/getEstimatedFileDiffSectionHeight.ts",
+      "target": "file:src/shared/changes-types.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/VirtualizedFileList/utils/getEstimatedFileDiffSectionHeight.ts",
+      "target": "file:src/shared/changes-types.ts",
+      "type": "depends_on",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/VirtualizedFileList/utils/getEstimatedFileDiffSectionHeight.ts",
+      "target": "file:src/shared/file-types.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/VirtualizedFileList/utils/getEstimatedFileDiffSectionHeight.ts",
+      "target": "file:src/shared/file-types.ts",
+      "type": "depends_on",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/context/ScrollContext.tsx",
+      "target": "file:src/shared/absolute-paths.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/context/ScrollContext.tsx",
+      "target": "file:src/shared/absolute-paths.ts",
+      "type": "depends_on",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/context/ScrollContext.tsx",
+      "target": "file:src/shared/changes-types.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/context/ScrollContext.tsx",
+      "target": "file:src/shared/changes-types.ts",
+      "type": "depends_on",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/VirtualizedFileList/utils/getEstimatedFileDiffSectionHeight.test.ts",
+      "target": "file:src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/VirtualizedFileList/utils/getEstimatedFileDiffSectionHeight.ts",
+      "type": "tested_by",
+      "weight": 0.5
+    }
+  ],
+  "metadata": {
+    "processedAt": "2026-07-15T05:06:27.183Z",
+    "fileCount": 31,
+    "nodeCount": 69,
+    "edgeCount": 196
+  }
+}

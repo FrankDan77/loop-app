@@ -1,0 +1,523 @@
+{
+  "batchIndex": 90,
+  "nodes": [
+    {
+      "id": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/BrowserToolbar.tsx",
+      "type": "file",
+      "name": "BrowserToolbar.tsx",
+      "filePath": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/BrowserToolbar.tsx",
+      "summary": "React component: displayUrl",
+      "tags": [
+        "component",
+        "pane",
+        "renderer",
+        "react"
+      ],
+      "complexity": "complex",
+      "metadata": {
+        "totalLines": 220,
+        "nonEmptyLines": 207,
+        "language": "typescript"
+      }
+    },
+    {
+      "id": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/BrowserToolbar.tsx:BrowserToolbar",
+      "type": "function",
+      "name": "BrowserToolbar",
+      "filePath": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/BrowserToolbar.tsx",
+      "summary": "Function BrowserToolbar",
+      "lineRange": [
+        30,
+        220
+      ],
+      "metadata": {
+        "params": [
+          "{\n\tcurrentUrl,\n\tpageTitle,\n\tisLoading,\n\tcanGoBack,\n\tcanGoForward,\n\tonGoBack,\n\tonGoForward,\n\tonReload,\n\tonNavigate,\n}"
+        ],
+        "isExported": true
+      }
+    },
+    {
+      "id": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/components/UrlSuggestions/UrlSuggestions.tsx",
+      "type": "file",
+      "name": "UrlSuggestions.tsx",
+      "filePath": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/components/UrlSuggestions/UrlSuggestions.tsx",
+      "summary": "React component: UrlSuggestions",
+      "tags": [
+        "component",
+        "pane",
+        "renderer",
+        "react"
+      ],
+      "complexity": "moderate",
+      "metadata": {
+        "totalLines": 77,
+        "nonEmptyLines": 72,
+        "language": "typescript"
+      }
+    },
+    {
+      "id": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/components/UrlSuggestions/UrlSuggestions.tsx:UrlSuggestions",
+      "type": "function",
+      "name": "UrlSuggestions",
+      "filePath": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/components/UrlSuggestions/UrlSuggestions.tsx",
+      "summary": "Function UrlSuggestions",
+      "lineRange": [
+        11,
+        77
+      ],
+      "metadata": {
+        "params": [
+          "{\n\tsuggestions,\n\thighlightedIndex,\n\tonSelect,\n}"
+        ],
+        "isExported": true
+      }
+    },
+    {
+      "id": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/components/UrlSuggestions/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/components/UrlSuggestions/index.ts",
+      "summary": "index module",
+      "tags": [
+        "component",
+        "pane",
+        "renderer",
+        "typescript"
+      ],
+      "complexity": "simple",
+      "metadata": {
+        "totalLines": 1,
+        "nonEmptyLines": 1,
+        "language": "typescript"
+      }
+    },
+    {
+      "id": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/hooks/useUrlAutocomplete/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/hooks/useUrlAutocomplete/index.ts",
+      "summary": "index module",
+      "tags": [
+        "component",
+        "hook",
+        "pane"
+      ],
+      "complexity": "simple",
+      "metadata": {
+        "totalLines": 2,
+        "nonEmptyLines": 2,
+        "language": "typescript"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/BrowserToolbar.tsx",
+      "target": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/BrowserToolbar.tsx:BrowserToolbar",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/BrowserToolbar.tsx",
+      "target": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/BrowserToolbar.tsx:BrowserToolbar",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/BrowserToolbar.tsx:BrowserToolbar",
+      "target": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/BrowserToolbar.tsx:useState",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 41
+      }
+    },
+    {
+      "source": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/BrowserToolbar.tsx:BrowserToolbar",
+      "target": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/BrowserToolbar.tsx:useState",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 42
+      }
+    },
+    {
+      "source": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/BrowserToolbar.tsx:BrowserToolbar",
+      "target": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/BrowserToolbar.tsx:useRef",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 43
+      }
+    },
+    {
+      "source": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/BrowserToolbar.tsx:BrowserToolbar",
+      "target": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/BrowserToolbar.tsx:displayUrl",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 45
+      }
+    },
+    {
+      "source": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/BrowserToolbar.tsx:BrowserToolbar",
+      "target": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/BrowserToolbar.tsx:useUrlAutocomplete",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 48
+      }
+    },
+    {
+      "source": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/BrowserToolbar.tsx:BrowserToolbar",
+      "target": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/BrowserToolbar.tsx:onNavigate",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 50
+      }
+    },
+    {
+      "source": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/BrowserToolbar.tsx:BrowserToolbar",
+      "target": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/BrowserToolbar.tsx:setIsEditing",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 51
+      }
+    },
+    {
+      "source": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/BrowserToolbar.tsx:BrowserToolbar",
+      "target": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/BrowserToolbar.tsx:useEffect",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 56
+      }
+    },
+    {
+      "source": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/BrowserToolbar.tsx:BrowserToolbar",
+      "target": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/BrowserToolbar.tsx:inputRef.current?.focus",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 58
+      }
+    },
+    {
+      "source": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/BrowserToolbar.tsx:BrowserToolbar",
+      "target": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/BrowserToolbar.tsx:inputRef.current?.select",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 59
+      }
+    },
+    {
+      "source": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/BrowserToolbar.tsx:BrowserToolbar",
+      "target": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/BrowserToolbar.tsx:useCallback",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 63
+      }
+    },
+    {
+      "source": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/BrowserToolbar.tsx:BrowserToolbar",
+      "target": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/BrowserToolbar.tsx:setUrlInputValue",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 64
+      }
+    },
+    {
+      "source": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/BrowserToolbar.tsx:BrowserToolbar",
+      "target": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/BrowserToolbar.tsx:setIsEditing",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 65
+      }
+    },
+    {
+      "source": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/BrowserToolbar.tsx:BrowserToolbar",
+      "target": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/BrowserToolbar.tsx:autocomplete.open",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 66
+      }
+    },
+    {
+      "source": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/BrowserToolbar.tsx:BrowserToolbar",
+      "target": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/BrowserToolbar.tsx:autocomplete.updateQuery",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 67
+      }
+    },
+    {
+      "source": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/BrowserToolbar.tsx:BrowserToolbar",
+      "target": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/BrowserToolbar.tsx:useCallback",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 70
+      }
+    },
+    {
+      "source": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/BrowserToolbar.tsx:BrowserToolbar",
+      "target": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/BrowserToolbar.tsx:setIsEditing",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 71
+      }
+    },
+    {
+      "source": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/BrowserToolbar.tsx:BrowserToolbar",
+      "target": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/BrowserToolbar.tsx:autocomplete.close",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 72
+      }
+    },
+    {
+      "source": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/BrowserToolbar.tsx:BrowserToolbar",
+      "target": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/BrowserToolbar.tsx:useCallback",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 75
+      }
+    },
+    {
+      "source": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/BrowserToolbar.tsx:BrowserToolbar",
+      "target": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/BrowserToolbar.tsx:e.preventDefault",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 77
+      }
+    },
+    {
+      "source": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/BrowserToolbar.tsx:BrowserToolbar",
+      "target": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/BrowserToolbar.tsx:urlInputValue.trim",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 78
+      }
+    },
+    {
+      "source": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/BrowserToolbar.tsx:BrowserToolbar",
+      "target": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/BrowserToolbar.tsx:onNavigate",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 80
+      }
+    },
+    {
+      "source": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/BrowserToolbar.tsx:BrowserToolbar",
+      "target": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/BrowserToolbar.tsx:setIsEditing",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 81
+      }
+    },
+    {
+      "source": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/BrowserToolbar.tsx:BrowserToolbar",
+      "target": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/BrowserToolbar.tsx:autocomplete.close",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 82
+      }
+    },
+    {
+      "source": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/BrowserToolbar.tsx:BrowserToolbar",
+      "target": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/BrowserToolbar.tsx:useCallback",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 88
+      }
+    },
+    {
+      "source": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/BrowserToolbar.tsx:BrowserToolbar",
+      "target": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/BrowserToolbar.tsx:setUrlInputValue",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 91
+      }
+    },
+    {
+      "source": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/BrowserToolbar.tsx:BrowserToolbar",
+      "target": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/BrowserToolbar.tsx:autocomplete.updateQuery",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 92
+      }
+    },
+    {
+      "source": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/BrowserToolbar.tsx:BrowserToolbar",
+      "target": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/BrowserToolbar.tsx:autocomplete.open",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 94
+      }
+    },
+    {
+      "source": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/BrowserToolbar.tsx:BrowserToolbar",
+      "target": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/BrowserToolbar.tsx:useCallback",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 100
+      }
+    },
+    {
+      "source": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/BrowserToolbar.tsx:BrowserToolbar",
+      "target": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/BrowserToolbar.tsx:autocomplete.handleKeyDown",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 103
+      }
+    },
+    {
+      "source": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/BrowserToolbar.tsx:BrowserToolbar",
+      "target": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/BrowserToolbar.tsx:setIsEditing",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 108
+      }
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/BrowserToolbar.tsx",
+      "target": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/components/UrlSuggestions/index.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/BrowserToolbar.tsx",
+      "target": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/components/UrlSuggestions/index.ts",
+      "type": "depends_on",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/BrowserToolbar.tsx",
+      "target": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/hooks/useUrlAutocomplete/index.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/BrowserToolbar.tsx",
+      "target": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/hooks/useUrlAutocomplete/index.ts",
+      "type": "depends_on",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/components/UrlSuggestions/UrlSuggestions.tsx",
+      "target": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/components/UrlSuggestions/UrlSuggestions.tsx:UrlSuggestions",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/components/UrlSuggestions/UrlSuggestions.tsx",
+      "target": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/components/UrlSuggestions/UrlSuggestions.tsx:UrlSuggestions",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/components/UrlSuggestions/UrlSuggestions.tsx:UrlSuggestions",
+      "target": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/components/UrlSuggestions/UrlSuggestions.tsx:useRef",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 16
+      }
+    },
+    {
+      "source": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/components/UrlSuggestions/UrlSuggestions.tsx:UrlSuggestions",
+      "target": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/components/UrlSuggestions/UrlSuggestions.tsx:useEffect",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 19
+      }
+    },
+    {
+      "source": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/components/UrlSuggestions/UrlSuggestions.tsx:UrlSuggestions",
+      "target": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/components/UrlSuggestions/UrlSuggestions.tsx:item?.scrollIntoView",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 23
+      }
+    },
+    {
+      "source": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/components/UrlSuggestions/UrlSuggestions.tsx:UrlSuggestions",
+      "target": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/components/UrlSuggestions/UrlSuggestions.tsx:suggestions.map",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 33
+      }
+    },
+    {
+      "source": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/components/UrlSuggestions/UrlSuggestions.tsx:UrlSuggestions",
+      "target": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/components/UrlSuggestions/UrlSuggestions.tsx:e.preventDefault",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 39
+      }
+    },
+    {
+      "source": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/components/UrlSuggestions/UrlSuggestions.tsx:UrlSuggestions",
+      "target": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/components/UrlSuggestions/UrlSuggestions.tsx:onSelect",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 40
+      }
+    },
+    {
+      "source": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/components/UrlSuggestions/UrlSuggestions.tsx:UrlSuggestions",
+      "target": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/components/UrlSuggestions/UrlSuggestions.tsx:e.currentTarget.nextElementSibling?.classList.remove",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 54
+      }
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/components/UrlSuggestions/UrlSuggestions.tsx",
+      "target": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/hooks/useUrlAutocomplete/index.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/components/UrlSuggestions/UrlSuggestions.tsx",
+      "target": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/hooks/useUrlAutocomplete/index.ts",
+      "type": "depends_on",
+      "weight": 0.6
+    }
+  ],
+  "metadata": {
+    "nodeCount": 6,
+    "edgeCount": 48,
+    "filesProcessed": 4
+  }
+}

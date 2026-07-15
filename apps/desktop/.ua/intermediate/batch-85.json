@@ -1,0 +1,372 @@
+{
+	"nodes": [
+		{
+			"id": "file:src/renderer/lib/fileIcons/FileIcon.tsx",
+			"type": "file",
+			"language": "typescript",
+			"category": "code",
+			"metrics": {
+				"totalLines": 18,
+				"nonEmptyLines": 16,
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"id": "file:src/renderer/lib/fileIcons/getFileIcon.ts",
+			"type": "file",
+			"language": "typescript",
+			"category": "code",
+			"metrics": {
+				"totalLines": 62,
+				"nonEmptyLines": 57,
+				"importCount": 2,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"id": "file:src/renderer/lib/fileIcons/loadFallthroughIcons.ts",
+			"type": "file",
+			"language": "typescript",
+			"category": "code",
+			"metrics": {
+				"totalLines": 266,
+				"nonEmptyLines": 252,
+				"importCount": 2,
+				"exportCount": 1,
+				"functionCount": 4,
+				"classCount": 0
+			}
+		},
+		{
+			"id": "file:src/renderer/lib/fileIcons/manifest.ts",
+			"type": "file",
+			"language": "typescript",
+			"category": "code",
+			"metrics": {
+				"totalLines": 19,
+				"nonEmptyLines": 17,
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"id": "file:src/renderer/lib/fileIcons/resolveFileIconAssetUrl.test.ts",
+			"type": "file",
+			"language": "typescript",
+			"category": "code",
+			"metrics": {
+				"totalLines": 25,
+				"nonEmptyLines": 22,
+				"importCount": 1,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"id": "file:src/renderer/lib/fileIcons/resolveFileIconAssetUrl.ts",
+			"type": "file",
+			"language": "typescript",
+			"category": "code",
+			"metrics": {
+				"totalLines": 8,
+				"nonEmptyLines": 7,
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"id": "file:src/renderer/lib/fileIcons/useFallthroughIcons.ts",
+			"type": "file",
+			"language": "typescript",
+			"category": "code",
+			"metrics": {
+				"totalLines": 24,
+				"nonEmptyLines": 23,
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"id": "function:src/renderer/lib/fileIcons/FileIcon.tsx:FileIcon",
+			"type": "function",
+			"name": "FileIcon",
+			"startLine": 10,
+			"endLine": 18
+		},
+		{
+			"id": "function:src/renderer/lib/fileIcons/getFileIcon.ts:getFileIcon",
+			"type": "function",
+			"name": "getFileIcon",
+			"startLine": 13,
+			"endLine": 62
+		},
+		{
+			"id": "function:src/renderer/lib/fileIcons/loadFallthroughIcons.ts:loadFallthroughIcons",
+			"type": "function",
+			"name": "loadFallthroughIcons",
+			"startLine": 171,
+			"endLine": 179
+		},
+		{
+			"id": "function:src/renderer/lib/fileIcons/loadFallthroughIcons.ts:doLoad",
+			"type": "function",
+			"name": "doLoad",
+			"startLine": 181,
+			"endLine": 236
+		},
+		{
+			"id": "function:src/renderer/lib/fileIcons/loadFallthroughIcons.ts:fetchSymbolBody",
+			"type": "function",
+			"name": "fetchSymbolBody",
+			"startLine": 238,
+			"endLine": 255
+		},
+		{
+			"id": "function:src/renderer/lib/fileIcons/loadFallthroughIcons.ts:toSymbol",
+			"type": "function",
+			"name": "toSymbol",
+			"startLine": 257,
+			"endLine": 266
+		},
+		{
+			"id": "function:src/renderer/lib/fileIcons/resolveFileIconAssetUrl.ts:resolveFileIconAssetUrl",
+			"type": "function",
+			"name": "resolveFileIconAssetUrl",
+			"startLine": 3,
+			"endLine": 8
+		},
+		{
+			"id": "function:src/renderer/lib/fileIcons/useFallthroughIcons.ts:useFallthroughIcons",
+			"type": "function",
+			"name": "useFallthroughIcons",
+			"startLine": 13,
+			"endLine": 24
+		}
+	],
+	"edges": [
+		{
+			"source": "file:src/renderer/lib/fileIcons/FileIcon.tsx",
+			"target": "file:src/renderer/lib/fileIcons/getFileIcon.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/lib/fileIcons/getFileIcon.ts",
+			"target": "file:src/renderer/lib/fileIcons/manifest.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/lib/fileIcons/getFileIcon.ts",
+			"target": "file:src/renderer/lib/fileIcons/resolveFileIconAssetUrl.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/lib/fileIcons/loadFallthroughIcons.ts",
+			"target": "file:src/renderer/lib/fileIcons/manifest.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/lib/fileIcons/loadFallthroughIcons.ts",
+			"target": "file:src/renderer/lib/fileIcons/resolveFileIconAssetUrl.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/lib/fileIcons/resolveFileIconAssetUrl.test.ts",
+			"target": "file:src/renderer/lib/fileIcons/resolveFileIconAssetUrl.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/lib/fileIcons/useFallthroughIcons.ts",
+			"target": "file:src/renderer/lib/fileIcons/loadFallthroughIcons.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/lib/fileIcons/FileIcon.tsx",
+			"target": "function:src/renderer/lib/fileIcons/FileIcon.tsx:FileIcon",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/lib/fileIcons/getFileIcon.ts",
+			"target": "function:src/renderer/lib/fileIcons/getFileIcon.ts:getFileIcon",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/lib/fileIcons/loadFallthroughIcons.ts",
+			"target": "function:src/renderer/lib/fileIcons/loadFallthroughIcons.ts:loadFallthroughIcons",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/lib/fileIcons/loadFallthroughIcons.ts",
+			"target": "function:src/renderer/lib/fileIcons/loadFallthroughIcons.ts:doLoad",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/lib/fileIcons/loadFallthroughIcons.ts",
+			"target": "function:src/renderer/lib/fileIcons/loadFallthroughIcons.ts:fetchSymbolBody",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/lib/fileIcons/loadFallthroughIcons.ts",
+			"target": "function:src/renderer/lib/fileIcons/loadFallthroughIcons.ts:toSymbol",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/lib/fileIcons/resolveFileIconAssetUrl.ts",
+			"target": "function:src/renderer/lib/fileIcons/resolveFileIconAssetUrl.ts:resolveFileIconAssetUrl",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/lib/fileIcons/useFallthroughIcons.ts",
+			"target": "function:src/renderer/lib/fileIcons/useFallthroughIcons.ts:useFallthroughIcons",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/lib/fileIcons/FileIcon.tsx",
+			"target": "function:src/renderer/lib/fileIcons/FileIcon.tsx:FileIcon",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/lib/fileIcons/getFileIcon.ts",
+			"target": "function:src/renderer/lib/fileIcons/getFileIcon.ts:getFileIcon",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/lib/fileIcons/loadFallthroughIcons.ts",
+			"target": "function:src/renderer/lib/fileIcons/loadFallthroughIcons.ts:loadFallthroughIcons",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/lib/fileIcons/resolveFileIconAssetUrl.ts",
+			"target": "function:src/renderer/lib/fileIcons/resolveFileIconAssetUrl.ts:resolveFileIconAssetUrl",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/lib/fileIcons/useFallthroughIcons.ts",
+			"target": "function:src/renderer/lib/fileIcons/useFallthroughIcons.ts:useFallthroughIcons",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/lib/fileIcons/FileIcon.tsx:FileIcon",
+			"target": "function:src/renderer/lib/fileIcons/getFileIcon.ts:getFileIcon",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/lib/fileIcons/getFileIcon.ts:getFileIcon",
+			"target": "function:src/renderer/lib/fileIcons/resolveFileIconAssetUrl.ts:resolveFileIconAssetUrl",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/lib/fileIcons/loadFallthroughIcons.ts:loadFallthroughIcons",
+			"target": "function:src/renderer/lib/fileIcons/loadFallthroughIcons.ts:doLoad",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/lib/fileIcons/loadFallthroughIcons.ts:doLoad",
+			"target": "function:src/renderer/lib/fileIcons/loadFallthroughIcons.ts:fetchSymbolBody",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/lib/fileIcons/loadFallthroughIcons.ts:doLoad",
+			"target": "function:src/renderer/lib/fileIcons/loadFallthroughIcons.ts:toSymbol",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/lib/fileIcons/loadFallthroughIcons.ts:fetchSymbolBody",
+			"target": "function:src/renderer/lib/fileIcons/resolveFileIconAssetUrl.ts:resolveFileIconAssetUrl",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/lib/fileIcons/useFallthroughIcons.ts:useFallthroughIcons",
+			"target": "function:src/renderer/lib/fileIcons/loadFallthroughIcons.ts:loadFallthroughIcons",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/lib/fileIcons/resolveFileIconAssetUrl.test.ts",
+			"target": "file:src/renderer/lib/fileIcons/resolveFileIconAssetUrl.ts",
+			"type": "tested_by",
+			"weight": 0.5
+		},
+		{
+			"source": "file:src/renderer/lib/fileIcons/FileIcon.tsx",
+			"target": "file:src/renderer/lib/fileIcons/getFileIcon.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/lib/fileIcons/getFileIcon.ts",
+			"target": "file:src/renderer/lib/fileIcons/resolveFileIconAssetUrl.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/lib/fileIcons/getFileIcon.ts",
+			"target": "file:src/renderer/lib/fileIcons/manifest.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/lib/fileIcons/loadFallthroughIcons.ts",
+			"target": "file:src/renderer/lib/fileIcons/resolveFileIconAssetUrl.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/lib/fileIcons/loadFallthroughIcons.ts",
+			"target": "file:src/renderer/lib/fileIcons/manifest.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/lib/fileIcons/useFallthroughIcons.ts",
+			"target": "file:src/renderer/lib/fileIcons/loadFallthroughIcons.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		}
+	],
+	"metadata": {
+		"batchIndex": 85,
+		"totalBatches": 117,
+		"filesAnalyzed": 7,
+		"nodesCreated": 15,
+		"edgesCreated": 34,
+		"module": "fileIcons"
+	}
+}

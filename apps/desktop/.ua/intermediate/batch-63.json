@@ -1,0 +1,1374 @@
+{
+	"batchIndex": 63,
+	"totalBatches": 117,
+	"generatedAt": "2026-07-15T02:20:34.721Z",
+	"stats": {
+		"files": 29,
+		"nodes": 86,
+		"edges": 135,
+		"edgesByType": {
+			"contains": 23,
+			"exports": 17,
+			"calls": 11,
+			"imports": 25,
+			"depends_on": 59
+		},
+		"nodesByType": {
+			"file": 63,
+			"function": 23
+		}
+	},
+	"nodes": [
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/components/DashboardSidebarWorkspaceHoverCardContent/components/ChecksSummary/index.ts",
+			"type": "file",
+			"language": "typescript",
+			"totalLines": 1,
+			"exportNames": ["ChecksSummary"]
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/components/DashboardSidebarWorkspaceHoverCardContent/components/LinkedTaskSection/index.ts",
+			"type": "file",
+			"language": "typescript",
+			"totalLines": 1,
+			"exportNames": ["LinkedTaskSection"]
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/components/DashboardSidebarWorkspaceHoverCardContent/components/PullRequestStatusBadge/index.ts",
+			"type": "file",
+			"language": "typescript",
+			"totalLines": 1,
+			"exportNames": ["PullRequestStatusBadge"]
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/components/DashboardSidebarWorkspaceHoverCardContent/components/ReviewStatus/index.ts",
+			"type": "file",
+			"language": "typescript",
+			"totalLines": 1,
+			"exportNames": ["ReviewStatus"]
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/components/DashboardSidebarWorkspaceHoverCardContent/index.ts",
+			"type": "file",
+			"language": "typescript",
+			"totalLines": 1,
+			"exportNames": ["DashboardSidebarWorkspaceHoverCardContent"]
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/components/DashboardSidebarWorkspaceIcon/index.ts",
+			"type": "file",
+			"language": "typescript",
+			"totalLines": 1,
+			"exportNames": ["DashboardSidebarWorkspaceIcon"]
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/components/DashboardSidebarWorkspaceStatusBadge/DashboardSidebarWorkspaceStatusBadge.tsx",
+			"type": "file",
+			"language": "typescript",
+			"totalLines": 105,
+			"exportNames": ["DashboardSidebarWorkspaceStatusBadge"]
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/components/DashboardSidebarWorkspaceStatusBadge/DashboardSidebarWorkspaceStatusBadge.tsx:DashboardSidebarWorkspaceStatusBadge",
+			"type": "function",
+			"startLine": 18,
+			"endLine": 105
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/hooks/useDashboardSidebarWorkspaceItemActions/index.ts",
+			"type": "file",
+			"language": "typescript",
+			"totalLines": 1,
+			"exportNames": ["useDashboardSidebarWorkspaceItemActions"]
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/index.ts",
+			"type": "file",
+			"language": "typescript",
+			"totalLines": 1,
+			"exportNames": ["DashboardSidebarWorkspaceItem"]
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/SidebarDragOverlay/SidebarDragOverlay.tsx",
+			"type": "file",
+			"language": "typescript",
+			"totalLines": 52,
+			"exportNames": ["SidebarDragOverlay"]
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/SidebarDragOverlay/SidebarDragOverlay.tsx:SidebarDragOverlay",
+			"type": "function",
+			"startLine": 17,
+			"endLine": 52
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/SidebarDragOverlay/index.ts",
+			"type": "file",
+			"language": "typescript",
+			"totalLines": 1,
+			"exportNames": ["SidebarDragOverlay"]
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/SortableSectionHeader/SortableSectionHeader.tsx",
+			"type": "file",
+			"language": "typescript",
+			"totalLines": 111,
+			"exportNames": ["SortableSectionHeader"]
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/SortableSectionHeader/SortableSectionHeader.tsx:SortableSectionHeader",
+			"type": "function",
+			"startLine": 22,
+			"endLine": 111
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/SortableSectionHeader/index.ts",
+			"type": "file",
+			"language": "typescript",
+			"totalLines": 1,
+			"exportNames": ["SortableSectionHeader"]
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/SortableWorkspaceItem/SortableWorkspaceItem.tsx",
+			"type": "file",
+			"language": "typescript",
+			"totalLines": 54,
+			"exportNames": ["SortableWorkspaceItem"]
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/SortableWorkspaceItem/SortableWorkspaceItem.tsx:SortableWorkspaceItem",
+			"type": "function",
+			"startLine": 16,
+			"endLine": 54
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/SortableWorkspaceItem/index.ts",
+			"type": "file",
+			"language": "typescript",
+			"totalLines": 1,
+			"exportNames": ["SortableWorkspaceItem"]
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/V2SetupScriptCard/index.ts",
+			"type": "file",
+			"language": "typescript",
+			"totalLines": 1,
+			"exportNames": ["V2SetupScriptCard"]
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarData/derivePullRequestQueryTargets.ts",
+			"type": "file",
+			"language": "typescript",
+			"totalLines": 104,
+			"exportNames": [
+				"derivePullRequestQueryTargets",
+				"getDashboardSidebarPullRequestQueryKey"
+			]
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarData/derivePullRequestQueryTargets.ts:derivePullRequestQueryTargets",
+			"type": "function",
+			"startLine": 22,
+			"endLine": 92
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarData/derivePullRequestQueryTargets.ts:getDashboardSidebarPullRequestQueryKey",
+			"type": "function",
+			"startLine": 94,
+			"endLine": 104
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarData/index.ts",
+			"type": "file",
+			"language": "typescript",
+			"totalLines": 1,
+			"exportNames": ["useDashboardSidebarData"]
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarShortcuts/index.ts",
+			"type": "file",
+			"language": "typescript",
+			"totalLines": 1,
+			"exportNames": ["useDashboardSidebarShortcuts"]
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarShortcuts/useDashboardSidebarShortcuts.ts",
+			"type": "file",
+			"language": "typescript",
+			"totalLines": 166,
+			"exportNames": ["useDashboardSidebarShortcuts"]
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarShortcuts/useDashboardSidebarShortcuts.ts:haveSameIds",
+			"type": "function",
+			"startLine": 19,
+			"endLine": 24
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarShortcuts/useDashboardSidebarShortcuts.ts:useStableWorkspaceShortcutLabels",
+			"type": "function",
+			"startLine": 26,
+			"endLine": 49
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarShortcuts/useDashboardSidebarShortcuts.ts:useDashboardSidebarShortcuts",
+			"type": "function",
+			"startLine": 51,
+			"endLine": 166
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useSidebarDnd/index.ts",
+			"type": "file",
+			"language": "typescript",
+			"totalLines": 1,
+			"exportNames": ["useSidebarDnd"]
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useSidebarDnd/useSidebarDnd.ts",
+			"type": "file",
+			"language": "typescript",
+			"totalLines": 362,
+			"exportNames": [
+				"wsId",
+				"secId",
+				"isSec",
+				"parseId",
+				"measuring",
+				"useSidebarDnd"
+			]
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useSidebarDnd/useSidebarDnd.ts:wsId",
+			"type": "function",
+			"startLine": 28,
+			"endLine": 28
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useSidebarDnd/useSidebarDnd.ts:secId",
+			"type": "function",
+			"startLine": 29,
+			"endLine": 29
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useSidebarDnd/useSidebarDnd.ts:isSec",
+			"type": "function",
+			"startLine": 30,
+			"endLine": 30
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useSidebarDnd/useSidebarDnd.ts:parseId",
+			"type": "function",
+			"startLine": 32,
+			"endLine": 39
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useSidebarDnd/useSidebarDnd.ts:buildFlatItems",
+			"type": "function",
+			"startLine": 49,
+			"endLine": 65
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useSidebarDnd/useSidebarDnd.ts:parseFlatItems",
+			"type": "function",
+			"startLine": 74,
+			"endLine": 94
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useSidebarDnd/useSidebarDnd.ts:useSidebarDnd",
+			"type": "function",
+			"startLine": 103,
+			"endLine": 362
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/index.ts",
+			"type": "file",
+			"language": "typescript",
+			"totalLines": 1,
+			"exportNames": ["DashboardSidebar"]
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/providers/DashboardSidebarHoverProvider/DashboardSidebarHoverProvider.tsx",
+			"type": "file",
+			"language": "typescript",
+			"totalLines": 185,
+			"exportNames": [
+				"DashboardSidebarHoverProvider",
+				"useDashboardSidebarHover"
+			]
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/providers/DashboardSidebarHoverProvider/DashboardSidebarHoverProvider.tsx:DashboardSidebarHoverProvider",
+			"type": "function",
+			"startLine": 45,
+			"endLine": 175
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/providers/DashboardSidebarHoverProvider/DashboardSidebarHoverProvider.tsx:useDashboardSidebarHover",
+			"type": "function",
+			"startLine": 177,
+			"endLine": 185
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/providers/DashboardSidebarHoverProvider/index.ts",
+			"type": "file",
+			"language": "typescript",
+			"totalLines": 5,
+			"exportNames": [
+				"DashboardSidebarHoverPayload",
+				"DashboardSidebarHoverProvider",
+				"useDashboardSidebarHover"
+			]
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/providers/DashboardSidebarPortsProvider/DashboardSidebarPortsProvider.tsx",
+			"type": "file",
+			"language": "typescript",
+			"totalLines": 91,
+			"exportNames": [
+				"DashboardSidebarPortsProvider",
+				"useDashboardSidebarAllPorts",
+				"useDashboardSidebarWorkspacePorts"
+			]
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/providers/DashboardSidebarPortsProvider/DashboardSidebarPortsProvider.tsx:DashboardSidebarPortsProviderInner",
+			"type": "function",
+			"startLine": 16,
+			"endLine": 40
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/providers/DashboardSidebarPortsProvider/DashboardSidebarPortsProvider.tsx:DashboardSidebarPortsProvider",
+			"type": "function",
+			"startLine": 42,
+			"endLine": 61
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/providers/DashboardSidebarPortsProvider/DashboardSidebarPortsProvider.tsx:useDashboardSidebarPortsContext",
+			"type": "function",
+			"startLine": 63,
+			"endLine": 73
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/providers/DashboardSidebarPortsProvider/DashboardSidebarPortsProvider.tsx:useDashboardSidebarAllPorts",
+			"type": "function",
+			"startLine": 76,
+			"endLine": 83
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/providers/DashboardSidebarPortsProvider/DashboardSidebarPortsProvider.tsx:useDashboardSidebarWorkspacePorts",
+			"type": "function",
+			"startLine": 86,
+			"endLine": 91
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/providers/DashboardSidebarPortsProvider/index.ts",
+			"type": "file",
+			"language": "typescript",
+			"totalLines": 5,
+			"exportNames": [
+				"DashboardSidebarPortsProvider",
+				"useDashboardSidebarAllPorts",
+				"useDashboardSidebarWorkspacePorts"
+			]
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/types.ts",
+			"type": "file",
+			"language": "typescript",
+			"totalLines": 82,
+			"exportNames": []
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/utils/projectChildren/index.ts",
+			"type": "file",
+			"language": "typescript",
+			"totalLines": 4,
+			"exportNames": [
+				"getProjectChildrenSections",
+				"getProjectChildrenWorkspaces"
+			]
+		},
+		{
+			"id": "file:src/renderer/lib/electron-trpc.ts",
+			"type": "file",
+			"external": true
+		},
+		{
+			"id": "file:src/shared/constants/project-colors.ts",
+			"type": "file",
+			"external": true
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarSection/components/DashboardSidebarSectionContextMenu/index.ts",
+			"type": "file",
+			"external": true
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarSection/components/DashboardSidebarSectionHeader/index.ts",
+			"type": "file",
+			"external": true
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarSectionRenameContext/index.ts",
+			"type": "file",
+			"external": true
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/hooks/useDashboardSidebarState/index.ts",
+			"type": "file",
+			"external": true
+		},
+		{
+			"id": "file:src/renderer/hotkeys/index.ts",
+			"type": "file",
+			"external": true
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/utils/workspace-navigation.ts",
+			"type": "file",
+			"external": true
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/providers/DeletingWorkspacesProvider/index.ts",
+			"type": "file",
+			"external": true
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarPortsList/hooks/useDashboardSidebarPortsData/index.ts",
+			"type": "file",
+			"external": true
+		},
+		{
+			"id": "file:src/renderer/stores/workspace-creates/index.ts",
+			"type": "file",
+			"external": true
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/components/DashboardSidebarWorkspaceHoverCardContent/DashboardSidebarWorkspaceHoverCardContent.tsx",
+			"type": "file",
+			"external": true
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarHoverCardOverlay/DashboardSidebarHoverCardOverlay.tsx",
+			"type": "file",
+			"external": true
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/components/DashboardSidebarCollapsedWorkspaceButton/DashboardSidebarCollapsedWorkspaceButton.tsx",
+			"type": "file",
+			"external": true
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/components/DashboardSidebarExpandedWorkspaceRow/DashboardSidebarExpandedWorkspaceRow.tsx",
+			"type": "file",
+			"external": true
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/DashboardSidebarWorkspaceItem.tsx",
+			"type": "file",
+			"external": true
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarProjectSection/components/DashboardSidebarCollapsedProjectContent/DashboardSidebarCollapsedProjectContent.tsx",
+			"type": "file",
+			"external": true
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarProjectSection/components/DashboardSidebarExpandedProjectContent/DashboardSidebarExpandedProjectContent.tsx",
+			"type": "file",
+			"external": true
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/DashboardSidebar.tsx",
+			"type": "file",
+			"external": true
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarData/useDashboardSidebarData.ts",
+			"type": "file",
+			"external": true
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/layout.tsx",
+			"type": "file",
+			"external": true
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/components/DashboardSidebarWorkspaceContextMenu/DashboardSidebarWorkspaceContextMenu.tsx",
+			"type": "file",
+			"external": true
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarPortsList/DashboardSidebarPortsList.tsx",
+			"type": "file",
+			"external": true
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/components/DashboardSidebarWorkspaceDetails/DashboardSidebarWorkspaceDetails.tsx",
+			"type": "file",
+			"external": true
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarPortsList/hooks/useDashboardSidebarPortsData/useDashboardSidebarPortsData.utils.ts",
+			"type": "file",
+			"external": true
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarProjectSection/DashboardSidebarProjectSection.tsx",
+			"type": "file",
+			"external": true
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarProjectSection/hooks/useDashboardSidebarProjectSectionActions/useDashboardSidebarProjectSectionActions.ts",
+			"type": "file",
+			"external": true
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarSection/components/DashboardSidebarSectionHeader/DashboardSidebarSectionHeader.tsx",
+			"type": "file",
+			"external": true
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/components/DashboardSidebarWorkspaceHoverCardContent/components/ChecksList/ChecksList.tsx",
+			"type": "file",
+			"external": true
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/components/DashboardSidebarWorkspaceHoverCardContent/components/ChecksList/components/CheckItemRow/CheckItemRow.tsx",
+			"type": "file",
+			"external": true
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/components/DashboardSidebarWorkspaceHoverCardContent/components/ChecksSummary/ChecksSummary.tsx",
+			"type": "file",
+			"external": true
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/components/DashboardSidebarWorkspaceIcon/DashboardSidebarWorkspaceIcon.tsx",
+			"type": "file",
+			"external": true
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarData/buildDashboardSidebarProjects.ts",
+			"type": "file",
+			"external": true
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/utils/projectChildren/projectChildren.ts",
+			"type": "file",
+			"external": true
+		}
+	],
+	"edges": [
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/components/DashboardSidebarWorkspaceStatusBadge/DashboardSidebarWorkspaceStatusBadge.tsx",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/components/DashboardSidebarWorkspaceStatusBadge/DashboardSidebarWorkspaceStatusBadge.tsx:DashboardSidebarWorkspaceStatusBadge",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/components/DashboardSidebarWorkspaceStatusBadge/DashboardSidebarWorkspaceStatusBadge.tsx",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/components/DashboardSidebarWorkspaceStatusBadge/DashboardSidebarWorkspaceStatusBadge.tsx:DashboardSidebarWorkspaceStatusBadge",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/SidebarDragOverlay/SidebarDragOverlay.tsx",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/SidebarDragOverlay/SidebarDragOverlay.tsx:SidebarDragOverlay",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/SidebarDragOverlay/SidebarDragOverlay.tsx",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/SidebarDragOverlay/SidebarDragOverlay.tsx:SidebarDragOverlay",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/SortableSectionHeader/SortableSectionHeader.tsx",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/SortableSectionHeader/SortableSectionHeader.tsx:SortableSectionHeader",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/SortableSectionHeader/SortableSectionHeader.tsx",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/SortableSectionHeader/SortableSectionHeader.tsx:SortableSectionHeader",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/SortableWorkspaceItem/SortableWorkspaceItem.tsx",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/SortableWorkspaceItem/SortableWorkspaceItem.tsx:SortableWorkspaceItem",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/SortableWorkspaceItem/SortableWorkspaceItem.tsx",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/SortableWorkspaceItem/SortableWorkspaceItem.tsx:SortableWorkspaceItem",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarData/derivePullRequestQueryTargets.ts",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarData/derivePullRequestQueryTargets.ts:derivePullRequestQueryTargets",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarData/derivePullRequestQueryTargets.ts",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarData/derivePullRequestQueryTargets.ts:getDashboardSidebarPullRequestQueryKey",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarData/derivePullRequestQueryTargets.ts",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarData/derivePullRequestQueryTargets.ts:derivePullRequestQueryTargets",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarData/derivePullRequestQueryTargets.ts",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarData/derivePullRequestQueryTargets.ts:getDashboardSidebarPullRequestQueryKey",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarShortcuts/useDashboardSidebarShortcuts.ts",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarShortcuts/useDashboardSidebarShortcuts.ts:haveSameIds",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarShortcuts/useDashboardSidebarShortcuts.ts",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarShortcuts/useDashboardSidebarShortcuts.ts:useStableWorkspaceShortcutLabels",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarShortcuts/useDashboardSidebarShortcuts.ts",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarShortcuts/useDashboardSidebarShortcuts.ts:useDashboardSidebarShortcuts",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarShortcuts/useDashboardSidebarShortcuts.ts",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarShortcuts/useDashboardSidebarShortcuts.ts:useDashboardSidebarShortcuts",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"from": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarShortcuts/useDashboardSidebarShortcuts.ts:useStableWorkspaceShortcutLabels",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarShortcuts/useDashboardSidebarShortcuts.ts:haveSameIds",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarShortcuts/useDashboardSidebarShortcuts.ts:useDashboardSidebarShortcuts",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarShortcuts/useDashboardSidebarShortcuts.ts:useStableWorkspaceShortcutLabels",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useSidebarDnd/useSidebarDnd.ts",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useSidebarDnd/useSidebarDnd.ts:wsId",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useSidebarDnd/useSidebarDnd.ts",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useSidebarDnd/useSidebarDnd.ts:secId",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useSidebarDnd/useSidebarDnd.ts",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useSidebarDnd/useSidebarDnd.ts:isSec",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useSidebarDnd/useSidebarDnd.ts",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useSidebarDnd/useSidebarDnd.ts:parseId",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useSidebarDnd/useSidebarDnd.ts",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useSidebarDnd/useSidebarDnd.ts:buildFlatItems",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useSidebarDnd/useSidebarDnd.ts",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useSidebarDnd/useSidebarDnd.ts:parseFlatItems",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useSidebarDnd/useSidebarDnd.ts",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useSidebarDnd/useSidebarDnd.ts:useSidebarDnd",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useSidebarDnd/useSidebarDnd.ts",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useSidebarDnd/useSidebarDnd.ts:wsId",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useSidebarDnd/useSidebarDnd.ts",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useSidebarDnd/useSidebarDnd.ts:secId",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useSidebarDnd/useSidebarDnd.ts",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useSidebarDnd/useSidebarDnd.ts:isSec",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useSidebarDnd/useSidebarDnd.ts",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useSidebarDnd/useSidebarDnd.ts:parseId",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useSidebarDnd/useSidebarDnd.ts",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useSidebarDnd/useSidebarDnd.ts:useSidebarDnd",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"from": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useSidebarDnd/useSidebarDnd.ts:buildFlatItems",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useSidebarDnd/useSidebarDnd.ts:wsId",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useSidebarDnd/useSidebarDnd.ts:buildFlatItems",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useSidebarDnd/useSidebarDnd.ts:secId",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useSidebarDnd/useSidebarDnd.ts:parseFlatItems",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useSidebarDnd/useSidebarDnd.ts:parseId",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useSidebarDnd/useSidebarDnd.ts:useSidebarDnd",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useSidebarDnd/useSidebarDnd.ts:buildFlatItems",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useSidebarDnd/useSidebarDnd.ts:useSidebarDnd",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useSidebarDnd/useSidebarDnd.ts:isSec",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useSidebarDnd/useSidebarDnd.ts:useSidebarDnd",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useSidebarDnd/useSidebarDnd.ts:parseId",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useSidebarDnd/useSidebarDnd.ts:useSidebarDnd",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useSidebarDnd/useSidebarDnd.ts:parseFlatItems",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/providers/DashboardSidebarHoverProvider/DashboardSidebarHoverProvider.tsx",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/providers/DashboardSidebarHoverProvider/DashboardSidebarHoverProvider.tsx:DashboardSidebarHoverProvider",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/providers/DashboardSidebarHoverProvider/DashboardSidebarHoverProvider.tsx",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/providers/DashboardSidebarHoverProvider/DashboardSidebarHoverProvider.tsx:useDashboardSidebarHover",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/providers/DashboardSidebarHoverProvider/DashboardSidebarHoverProvider.tsx",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/providers/DashboardSidebarHoverProvider/DashboardSidebarHoverProvider.tsx:DashboardSidebarHoverProvider",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/providers/DashboardSidebarHoverProvider/DashboardSidebarHoverProvider.tsx",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/providers/DashboardSidebarHoverProvider/DashboardSidebarHoverProvider.tsx:useDashboardSidebarHover",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/providers/DashboardSidebarPortsProvider/DashboardSidebarPortsProvider.tsx",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/providers/DashboardSidebarPortsProvider/DashboardSidebarPortsProvider.tsx:DashboardSidebarPortsProviderInner",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/providers/DashboardSidebarPortsProvider/DashboardSidebarPortsProvider.tsx",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/providers/DashboardSidebarPortsProvider/DashboardSidebarPortsProvider.tsx:DashboardSidebarPortsProvider",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/providers/DashboardSidebarPortsProvider/DashboardSidebarPortsProvider.tsx",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/providers/DashboardSidebarPortsProvider/DashboardSidebarPortsProvider.tsx:useDashboardSidebarPortsContext",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/providers/DashboardSidebarPortsProvider/DashboardSidebarPortsProvider.tsx",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/providers/DashboardSidebarPortsProvider/DashboardSidebarPortsProvider.tsx:useDashboardSidebarAllPorts",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/providers/DashboardSidebarPortsProvider/DashboardSidebarPortsProvider.tsx",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/providers/DashboardSidebarPortsProvider/DashboardSidebarPortsProvider.tsx:useDashboardSidebarWorkspacePorts",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/providers/DashboardSidebarPortsProvider/DashboardSidebarPortsProvider.tsx",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/providers/DashboardSidebarPortsProvider/DashboardSidebarPortsProvider.tsx:DashboardSidebarPortsProvider",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/providers/DashboardSidebarPortsProvider/DashboardSidebarPortsProvider.tsx",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/providers/DashboardSidebarPortsProvider/DashboardSidebarPortsProvider.tsx:useDashboardSidebarAllPorts",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/providers/DashboardSidebarPortsProvider/DashboardSidebarPortsProvider.tsx",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/providers/DashboardSidebarPortsProvider/DashboardSidebarPortsProvider.tsx:useDashboardSidebarWorkspacePorts",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"from": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/providers/DashboardSidebarPortsProvider/DashboardSidebarPortsProvider.tsx:useDashboardSidebarAllPorts",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/providers/DashboardSidebarPortsProvider/DashboardSidebarPortsProvider.tsx:useDashboardSidebarPortsContext",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/providers/DashboardSidebarPortsProvider/DashboardSidebarPortsProvider.tsx:useDashboardSidebarWorkspacePorts",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/providers/DashboardSidebarPortsProvider/DashboardSidebarPortsProvider.tsx:useDashboardSidebarPortsContext",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/components/DashboardSidebarWorkspaceStatusBadge/DashboardSidebarWorkspaceStatusBadge.tsx",
+			"to": "file:src/renderer/lib/electron-trpc.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/components/DashboardSidebarWorkspaceStatusBadge/DashboardSidebarWorkspaceStatusBadge.tsx",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/types.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/SidebarDragOverlay/SidebarDragOverlay.tsx",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/SidebarDragOverlay/SidebarDragOverlay.tsx",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/types.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/SidebarDragOverlay/SidebarDragOverlay.tsx",
+			"to": "file:src/shared/constants/project-colors.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/SortableSectionHeader/SortableSectionHeader.tsx",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarSection/components/DashboardSidebarSectionContextMenu/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/SortableSectionHeader/SortableSectionHeader.tsx",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarSection/components/DashboardSidebarSectionHeader/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/SortableSectionHeader/SortableSectionHeader.tsx",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarSectionRenameContext/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/SortableSectionHeader/SortableSectionHeader.tsx",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/types.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/SortableSectionHeader/SortableSectionHeader.tsx",
+			"to": "file:src/renderer/routes/_authenticated/hooks/useDashboardSidebarState/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/SortableSectionHeader/SortableSectionHeader.tsx",
+			"to": "file:src/shared/constants/project-colors.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/SortableWorkspaceItem/SortableWorkspaceItem.tsx",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/SortableWorkspaceItem/SortableWorkspaceItem.tsx",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/types.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarData/derivePullRequestQueryTargets.ts",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/types.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarShortcuts/useDashboardSidebarShortcuts.ts",
+			"to": "file:src/renderer/hotkeys/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarShortcuts/useDashboardSidebarShortcuts.ts",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/types.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarShortcuts/useDashboardSidebarShortcuts.ts",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/utils/projectChildren/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarShortcuts/useDashboardSidebarShortcuts.ts",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/utils/workspace-navigation.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarShortcuts/useDashboardSidebarShortcuts.ts",
+			"to": "file:src/renderer/routes/_authenticated/hooks/useDashboardSidebarState/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarShortcuts/useDashboardSidebarShortcuts.ts",
+			"to": "file:src/renderer/routes/_authenticated/providers/DeletingWorkspacesProvider/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useSidebarDnd/useSidebarDnd.ts",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/types.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useSidebarDnd/useSidebarDnd.ts",
+			"to": "file:src/renderer/routes/_authenticated/hooks/useDashboardSidebarState/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/providers/DashboardSidebarHoverProvider/DashboardSidebarHoverProvider.tsx",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/types.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/providers/DashboardSidebarPortsProvider/DashboardSidebarPortsProvider.tsx",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarPortsList/hooks/useDashboardSidebarPortsData/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/types.ts",
+			"to": "file:src/renderer/stores/workspace-creates/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/components/DashboardSidebarWorkspaceHoverCardContent/DashboardSidebarWorkspaceHoverCardContent.tsx",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/components/DashboardSidebarWorkspaceHoverCardContent/components/ChecksSummary/index.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/components/DashboardSidebarWorkspaceHoverCardContent/DashboardSidebarWorkspaceHoverCardContent.tsx",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/components/DashboardSidebarWorkspaceHoverCardContent/components/LinkedTaskSection/index.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/components/DashboardSidebarWorkspaceHoverCardContent/DashboardSidebarWorkspaceHoverCardContent.tsx",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/components/DashboardSidebarWorkspaceHoverCardContent/components/PullRequestStatusBadge/index.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/components/DashboardSidebarWorkspaceHoverCardContent/DashboardSidebarWorkspaceHoverCardContent.tsx",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/components/DashboardSidebarWorkspaceHoverCardContent/components/ReviewStatus/index.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarHoverCardOverlay/DashboardSidebarHoverCardOverlay.tsx",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/components/DashboardSidebarWorkspaceHoverCardContent/index.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/components/DashboardSidebarCollapsedWorkspaceButton/DashboardSidebarCollapsedWorkspaceButton.tsx",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/components/DashboardSidebarWorkspaceIcon/index.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/components/DashboardSidebarExpandedWorkspaceRow/DashboardSidebarExpandedWorkspaceRow.tsx",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/components/DashboardSidebarWorkspaceIcon/index.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/lib/electron-trpc.ts",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/components/DashboardSidebarWorkspaceStatusBadge/DashboardSidebarWorkspaceStatusBadge.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/DashboardSidebarWorkspaceItem.tsx",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/hooks/useDashboardSidebarWorkspaceItemActions/index.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarProjectSection/components/DashboardSidebarCollapsedProjectContent/DashboardSidebarCollapsedProjectContent.tsx",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/index.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/shared/constants/project-colors.ts",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/SidebarDragOverlay/SidebarDragOverlay.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarProjectSection/components/DashboardSidebarExpandedProjectContent/DashboardSidebarExpandedProjectContent.tsx",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/SidebarDragOverlay/index.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarSection/components/DashboardSidebarSectionContextMenu/index.ts",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/SortableSectionHeader/SortableSectionHeader.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarSection/components/DashboardSidebarSectionHeader/index.ts",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/SortableSectionHeader/SortableSectionHeader.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarSectionRenameContext/index.ts",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/SortableSectionHeader/SortableSectionHeader.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/hooks/useDashboardSidebarState/index.ts",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/SortableSectionHeader/SortableSectionHeader.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/shared/constants/project-colors.ts",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/SortableSectionHeader/SortableSectionHeader.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarProjectSection/components/DashboardSidebarExpandedProjectContent/DashboardSidebarExpandedProjectContent.tsx",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/SortableSectionHeader/index.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarProjectSection/components/DashboardSidebarExpandedProjectContent/DashboardSidebarExpandedProjectContent.tsx",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/SortableWorkspaceItem/index.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/DashboardSidebar.tsx",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/V2SetupScriptCard/index.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarData/useDashboardSidebarData.ts",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarData/derivePullRequestQueryTargets.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/DashboardSidebar.tsx",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarData/index.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/DashboardSidebar.tsx",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarShortcuts/index.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/hotkeys/index.ts",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarShortcuts/useDashboardSidebarShortcuts.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/utils/workspace-navigation.ts",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarShortcuts/useDashboardSidebarShortcuts.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/hooks/useDashboardSidebarState/index.ts",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarShortcuts/useDashboardSidebarShortcuts.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/providers/DeletingWorkspacesProvider/index.ts",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarShortcuts/useDashboardSidebarShortcuts.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarProjectSection/components/DashboardSidebarExpandedProjectContent/DashboardSidebarExpandedProjectContent.tsx",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useSidebarDnd/index.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/hooks/useDashboardSidebarState/index.ts",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useSidebarDnd/useSidebarDnd.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarProjectSection/components/DashboardSidebarExpandedProjectContent/DashboardSidebarExpandedProjectContent.tsx",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useSidebarDnd/useSidebarDnd.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/layout.tsx",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/index.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarHoverCardOverlay/DashboardSidebarHoverCardOverlay.tsx",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/providers/DashboardSidebarHoverProvider/index.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/components/DashboardSidebarWorkspaceContextMenu/DashboardSidebarWorkspaceContextMenu.tsx",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/providers/DashboardSidebarHoverProvider/index.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/DashboardSidebarWorkspaceItem.tsx",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/providers/DashboardSidebarHoverProvider/index.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/DashboardSidebar.tsx",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/providers/DashboardSidebarHoverProvider/index.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarPortsList/hooks/useDashboardSidebarPortsData/index.ts",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/providers/DashboardSidebarPortsProvider/DashboardSidebarPortsProvider.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarPortsList/DashboardSidebarPortsList.tsx",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/providers/DashboardSidebarPortsProvider/index.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/components/DashboardSidebarWorkspaceDetails/DashboardSidebarWorkspaceDetails.tsx",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/providers/DashboardSidebarPortsProvider/index.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/DashboardSidebar.tsx",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/providers/DashboardSidebarPortsProvider/index.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/stores/workspace-creates/index.ts",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/types.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarPortsList/hooks/useDashboardSidebarPortsData/useDashboardSidebarPortsData.utils.ts",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/types.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarProjectSection/components/DashboardSidebarCollapsedProjectContent/DashboardSidebarCollapsedProjectContent.tsx",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/types.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarProjectSection/components/DashboardSidebarExpandedProjectContent/DashboardSidebarExpandedProjectContent.tsx",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/types.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarProjectSection/DashboardSidebarProjectSection.tsx",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/types.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarProjectSection/hooks/useDashboardSidebarProjectSectionActions/useDashboardSidebarProjectSectionActions.ts",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/types.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarSection/components/DashboardSidebarSectionHeader/DashboardSidebarSectionHeader.tsx",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/types.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/components/DashboardSidebarCollapsedWorkspaceButton/DashboardSidebarCollapsedWorkspaceButton.tsx",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/types.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/components/DashboardSidebarExpandedWorkspaceRow/DashboardSidebarExpandedWorkspaceRow.tsx",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/types.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/components/DashboardSidebarWorkspaceHoverCardContent/components/ChecksList/ChecksList.tsx",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/types.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/components/DashboardSidebarWorkspaceHoverCardContent/components/ChecksList/components/CheckItemRow/CheckItemRow.tsx",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/types.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/components/DashboardSidebarWorkspaceHoverCardContent/components/ChecksSummary/ChecksSummary.tsx",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/types.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/components/DashboardSidebarWorkspaceHoverCardContent/DashboardSidebarWorkspaceHoverCardContent.tsx",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/types.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/components/DashboardSidebarWorkspaceIcon/DashboardSidebarWorkspaceIcon.tsx",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/types.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/DashboardSidebarWorkspaceItem.tsx",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/types.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/DashboardSidebar.tsx",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/types.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarData/buildDashboardSidebarProjects.ts",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/types.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarData/useDashboardSidebarData.ts",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/types.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/utils/projectChildren/projectChildren.ts",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/types.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarProjectSection/DashboardSidebarProjectSection.tsx",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/utils/projectChildren/index.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		}
+	]
+}

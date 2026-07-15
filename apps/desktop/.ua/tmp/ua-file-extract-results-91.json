@@ -1,0 +1,126 @@
+{
+	"scriptCompleted": true,
+	"filesAnalyzed": 3,
+	"filesSkipped": [],
+	"results": [
+		{
+			"path": "src/main/lib/safe-url/safe-url.test.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 46,
+			"nonEmptyLines": 41,
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/main/lib/safe-url/safe-url.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 29,
+			"nonEmptyLines": 28,
+			"functions": [
+				{
+					"name": "safeOpenExternal",
+					"startLine": 10,
+					"endLine": 29,
+					"params": ["url"]
+				}
+			],
+			"exports": [
+				{
+					"name": "safeOpenExternal",
+					"line": 10,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "safeOpenExternal",
+					"callee": "isSafeExternalUrl",
+					"lineNumber": 11
+				},
+				{
+					"caller": "safeOpenExternal",
+					"callee": "console.warn",
+					"lineNumber": 12
+				},
+				{
+					"caller": "safeOpenExternal",
+					"callee": "externalUrlLogLabel",
+					"lineNumber": 14
+				},
+				{
+					"caller": "safeOpenExternal",
+					"callee": "shell.openExternal",
+					"lineNumber": 19
+				},
+				{
+					"caller": "safeOpenExternal",
+					"callee": "console.error",
+					"lineNumber": 22
+				},
+				{
+					"caller": "safeOpenExternal",
+					"callee": "externalUrlLogLabel",
+					"lineNumber": 24
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/main/lib/safe-url/scheme.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 24,
+			"nonEmptyLines": 22,
+			"functions": [
+				{
+					"name": "isSafeExternalUrl",
+					"startLine": 8,
+					"endLine": 15,
+					"params": ["url"]
+				},
+				{
+					"name": "externalUrlLogLabel",
+					"startLine": 17,
+					"endLine": 24,
+					"params": ["url"]
+				}
+			],
+			"exports": [
+				{
+					"name": "isSafeExternalUrl",
+					"line": 8,
+					"isDefault": false
+				},
+				{
+					"name": "externalUrlLogLabel",
+					"line": 17,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "isSafeExternalUrl",
+					"callee": "ALLOWED_SCHEMES.has",
+					"lineNumber": 11
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 2,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		}
+	]
+}

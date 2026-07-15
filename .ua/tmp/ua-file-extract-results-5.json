@@ -1,0 +1,3532 @@
+{
+	"scriptCompleted": true,
+	"filesAnalyzed": 35,
+	"filesSkipped": [],
+	"results": [
+		{
+			"path": "apps/desktop/src/renderer/providers/PostHogProvider/PostHogProvider.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 30,
+			"nonEmptyLines": 25,
+			"functions": [
+				{
+					"name": "PostHogProvider",
+					"startLine": 11,
+					"endLine": 30,
+					"params": ["{ children }"]
+				}
+			],
+			"exports": [
+				{
+					"name": "PostHogProvider",
+					"line": 11,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "PostHogProvider",
+					"callee": "useState",
+					"lineNumber": 12
+				},
+				{
+					"caller": "PostHogProvider",
+					"callee": "useEffect",
+					"lineNumber": 14
+				},
+				{
+					"caller": "PostHogProvider",
+					"callee": "initPostHog",
+					"lineNumber": 16
+				},
+				{
+					"caller": "PostHogProvider",
+					"callee": "track",
+					"lineNumber": 17
+				},
+				{
+					"caller": "PostHogProvider",
+					"callee": "console.error",
+					"lineNumber": 19
+				},
+				{
+					"caller": "PostHogProvider",
+					"callee": "setIsInitialized",
+					"lineNumber": 21
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "apps/desktop/src/renderer/react-query/projects/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 15,
+			"nonEmptyLines": 15,
+			"exports": [
+				{
+					"name": "processOpenNewResults",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "useCreateV1Project",
+					"line": 2,
+					"isDefault": false
+				},
+				{
+					"name": "ProjectSetupResult",
+					"line": 3,
+					"isDefault": false
+				},
+				{
+					"name": "useFinalizeProjectSetup",
+					"line": 3,
+					"isDefault": false
+				},
+				{
+					"name": "hostProjectListQueryKey",
+					"line": 7,
+					"isDefault": false
+				},
+				{
+					"name": "useHostProjectIds",
+					"line": 7,
+					"isDefault": false
+				},
+				{
+					"name": "useOpenFromPath",
+					"line": 11,
+					"isDefault": false
+				},
+				{
+					"name": "useOpenNew",
+					"line": 12,
+					"isDefault": false
+				},
+				{
+					"name": "useOpenProject",
+					"line": 13,
+					"isDefault": false
+				},
+				{
+					"name": "useReorderProjects",
+					"line": 14,
+					"isDefault": false
+				},
+				{
+					"name": "useUpdateProject",
+					"line": 15,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 11,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "apps/desktop/src/renderer/react-query/projects/useFinalizeProjectSetup/useFinalizeProjectSetup.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 35,
+			"nonEmptyLines": 32,
+			"functions": [
+				{
+					"name": "useFinalizeProjectSetup",
+					"startLine": 17,
+					"endLine": 35,
+					"params": []
+				}
+			],
+			"exports": [
+				{
+					"name": "useFinalizeProjectSetup",
+					"line": 17,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "useFinalizeProjectSetup",
+					"callee": "useDashboardSidebarState",
+					"lineNumber": 19
+				},
+				{
+					"caller": "useFinalizeProjectSetup",
+					"callee": "useQueryClient",
+					"lineNumber": 20
+				},
+				{
+					"caller": "useFinalizeProjectSetup",
+					"callee": "useCallback",
+					"lineNumber": 22
+				},
+				{
+					"caller": "useFinalizeProjectSetup",
+					"callee": "ensureWorkspaceInSidebar",
+					"lineNumber": 25
+				},
+				{
+					"caller": "useFinalizeProjectSetup",
+					"callee": "ensureProjectInSidebar",
+					"lineNumber": 27
+				},
+				{
+					"caller": "useFinalizeProjectSetup",
+					"callee": "queryClient.invalidateQueries",
+					"lineNumber": 29
+				},
+				{
+					"caller": "useFinalizeProjectSetup",
+					"callee": "hostProjectListQueryKey",
+					"lineNumber": 30
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "apps/desktop/src/renderer/react-query/projects/useHostProjectIds/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 4,
+			"nonEmptyLines": 4,
+			"exports": [
+				{
+					"name": "hostProjectListQueryKey",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "useHostProjectIds",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 2,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "apps/desktop/src/renderer/react-query/projects/useHostProjectIds/useHostProjectIds.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 32,
+			"nonEmptyLines": 29,
+			"functions": [
+				{
+					"name": "hostProjectListQueryKey",
+					"startLine": 4,
+					"endLine": 5,
+					"params": ["hostUrl"]
+				},
+				{
+					"name": "useHostProjectIds",
+					"startLine": 11,
+					"endLine": 32,
+					"params": ["hostUrl"]
+				}
+			],
+			"exports": [
+				{
+					"name": "hostProjectListQueryKey",
+					"line": 4,
+					"isDefault": false
+				},
+				{
+					"name": "useHostProjectIds",
+					"line": 11,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "useHostProjectIds",
+					"callee": "useQuery",
+					"lineNumber": 12
+				},
+				{
+					"caller": "useHostProjectIds",
+					"callee": "hostProjectListQueryKey",
+					"lineNumber": 13
+				},
+				{
+					"caller": "useHostProjectIds",
+					"callee": "getHostServiceClientByUrl",
+					"lineNumber": 18
+				},
+				{
+					"caller": "useHostProjectIds",
+					"callee": "client.project.list.query",
+					"lineNumber": 19
+				},
+				{
+					"caller": "useHostProjectIds",
+					"callee": "rows.map",
+					"lineNumber": 20
+				},
+				{
+					"caller": "useHostProjectIds",
+					"callee": "console.warn",
+					"lineNumber": 22
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 2,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "apps/desktop/src/renderer/react-query/workspaces/useUpdateWorkspace.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 22,
+			"nonEmptyLines": 19,
+			"functions": [
+				{
+					"name": "useUpdateWorkspace",
+					"startLine": 7,
+					"endLine": 22,
+					"params": ["options"]
+				}
+			],
+			"exports": [
+				{
+					"name": "useUpdateWorkspace",
+					"line": 7,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "useUpdateWorkspace",
+					"callee": "electronTrpc.useUtils",
+					"lineNumber": 10
+				},
+				{
+					"caller": "useUpdateWorkspace",
+					"callee": "electronTrpc.workspaces.update.useMutation",
+					"lineNumber": 12
+				},
+				{
+					"caller": "useUpdateWorkspace",
+					"callee": "utils.workspaces.invalidate",
+					"lineNumber": 16
+				},
+				{
+					"caller": "useUpdateWorkspace",
+					"callee": "options?.onSuccess",
+					"lineNumber": 19
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/automations/$automationId/components/VersionHistorySheet/VersionHistorySheet.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 181,
+			"nonEmptyLines": 167,
+			"functions": [
+				{
+					"name": "VersionHistorySheet",
+					"startLine": 30,
+					"endLine": 181,
+					"params": [
+						"{\n\tautomationId,\n\tautomationName,\n\tcurrentPrompt,\n\topen,\n\tonOpenChange,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "VersionHistorySheet",
+					"line": 30,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "VersionHistorySheet",
+					"callee": "useQueryClient",
+					"lineNumber": 37
+				},
+				{
+					"caller": "VersionHistorySheet",
+					"callee": "useState",
+					"lineNumber": 38
+				},
+				{
+					"caller": "VersionHistorySheet",
+					"callee": "useMemo",
+					"lineNumber": 42
+				},
+				{
+					"caller": "VersionHistorySheet",
+					"callee": "useQuery",
+					"lineNumber": 47
+				},
+				{
+					"caller": "VersionHistorySheet",
+					"callee": "apiTrpcClient.automation.versions.list.query",
+					"lineNumber": 50
+				},
+				{
+					"caller": "VersionHistorySheet",
+					"callee": "useEffect",
+					"lineNumber": 54
+				},
+				{
+					"caller": "VersionHistorySheet",
+					"callee": "setSelectedVersionId",
+					"lineNumber": 56
+				},
+				{
+					"caller": "VersionHistorySheet",
+					"callee": "setSelectedVersionId",
+					"lineNumber": 60
+				},
+				{
+					"caller": "VersionHistorySheet",
+					"callee": "useQuery",
+					"lineNumber": 64
+				},
+				{
+					"caller": "VersionHistorySheet",
+					"callee": "apiTrpcClient.automation.versions.getContent.query",
+					"lineNumber": 68
+				},
+				{
+					"caller": "VersionHistorySheet",
+					"callee": "useMutation",
+					"lineNumber": 76
+				},
+				{
+					"caller": "VersionHistorySheet",
+					"callee": "apiTrpcClient.automation.versions.restore.mutate",
+					"lineNumber": 78
+				},
+				{
+					"caller": "VersionHistorySheet",
+					"callee": "queryClient.invalidateQueries",
+					"lineNumber": 80
+				},
+				{
+					"caller": "VersionHistorySheet",
+					"callee": "setSelectedVersionId",
+					"lineNumber": 81
+				},
+				{
+					"caller": "VersionHistorySheet",
+					"callee": "toast.success",
+					"lineNumber": 82
+				},
+				{
+					"caller": "handleRestoreClick",
+					"callee": "alert",
+					"lineNumber": 91
+				},
+				{
+					"caller": "handleRestoreClick",
+					"callee": "restoreMutation.mutateAsync",
+					"lineNumber": 101
+				},
+				{
+					"caller": "handleRestoreClick",
+					"callee": "toast.error",
+					"lineNumber": 103
+				},
+				{
+					"caller": "VersionHistorySheet",
+					"callee": "event.preventDefault",
+					"lineNumber": 120
+				},
+				{
+					"caller": "VersionHistorySheet",
+					"callee": "event.preventDefault",
+					"lineNumber": 121
+				},
+				{
+					"caller": "VersionHistorySheet",
+					"callee": "versions.map",
+					"lineNumber": 157
+				},
+				{
+					"caller": "VersionHistorySheet",
+					"callee": "setSelectedVersionId",
+					"lineNumber": 164
+				}
+			],
+			"metrics": {
+				"importCount": 3,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/automations/$automationId/components/VersionHistorySheet/components/VersionRow/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "VersionRow",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/automations/components/AgentCell/AgentCell.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 32,
+			"nonEmptyLines": 30,
+			"functions": [
+				{
+					"name": "AgentCell",
+					"startLine": 7,
+					"endLine": 32,
+					"params": ["{\n\tagentId,\n\thostId,\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "AgentCell",
+					"line": 7,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "AgentCell",
+					"callee": "useHostUrl",
+					"lineNumber": 14
+				},
+				{
+					"caller": "AgentCell",
+					"callee": "useV2AgentChoices",
+					"lineNumber": 15
+				},
+				{
+					"caller": "AgentCell",
+					"callee": "agents.find",
+					"lineNumber": 16
+				},
+				{
+					"caller": "AgentCell",
+					"callee": "getPresetById",
+					"lineNumber": 17
+				},
+				{
+					"caller": "AgentCell",
+					"callee": "usePresetIcon",
+					"lineNumber": 20
+				}
+			],
+			"metrics": {
+				"importCount": 3,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/automations/components/AgentCell/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "AgentCell",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/automations/components/AgentPicker/AgentPicker.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 93,
+			"nonEmptyLines": 90,
+			"functions": [
+				{
+					"name": "AgentPicker",
+					"startLine": 25,
+					"endLine": 93,
+					"params": ["{\n\thostId,\n\tvalue,\n\tonChange,\n\tclassName,\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "AgentPicker",
+					"line": 25,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "AgentPicker",
+					"callee": "useNavigate",
+					"lineNumber": 31
+				},
+				{
+					"caller": "AgentPicker",
+					"callee": "useHostUrl",
+					"lineNumber": 32
+				},
+				{
+					"caller": "AgentPicker",
+					"callee": "useV2AgentChoices",
+					"lineNumber": 33
+				},
+				{
+					"caller": "AgentPicker",
+					"callee": "useIsDarkTheme",
+					"lineNumber": 34
+				},
+				{
+					"caller": "AgentPicker",
+					"callee": "agents.find",
+					"lineNumber": 35
+				},
+				{
+					"caller": "AgentPicker",
+					"callee": "getPresetById",
+					"lineNumber": 36
+				},
+				{
+					"caller": "AgentPicker",
+					"callee": "getPresetIcon",
+					"lineNumber": 41
+				},
+				{
+					"caller": "AgentPicker",
+					"callee": "agents.map",
+					"lineNumber": 64
+				},
+				{
+					"caller": "AgentPicker",
+					"callee": "getPresetIcon",
+					"lineNumber": 65
+				},
+				{
+					"caller": "AgentPicker",
+					"callee": "onChange",
+					"lineNumber": 69
+				},
+				{
+					"caller": "AgentPicker",
+					"callee": "navigate",
+					"lineNumber": 86
+				}
+			],
+			"metrics": {
+				"importCount": 4,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/automations/components/AutomationRow/AutomationRow.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 259,
+			"nonEmptyLines": 245,
+			"functions": [
+				{
+					"name": "AutomationRow",
+					"startLine": 55,
+					"endLine": 259,
+					"params": [
+						"{\n\tautomation,\n\towner,\n\tshowOwner,\n\tproject,\n\tworkspaceLabel,\n\thostLabel,\n\tlastRunStatus,\n\tisOwner,\n\tonRunNow,\n\tonDelete,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "AutomationRow",
+					"line": 55,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "AutomationRow",
+					"callee": "useNavigate",
+					"lineNumber": 67
+				},
+				{
+					"caller": "AutomationRow",
+					"callee": "describeSchedule",
+					"lineNumber": 68
+				},
+				{
+					"caller": "openDetail",
+					"callee": "navigate",
+					"lineNumber": 71
+				},
+				{
+					"caller": "openHistory",
+					"callee": "navigate",
+					"lineNumber": 76
+				},
+				{
+					"caller": "actionsMenuItems",
+					"callee": "onRunNow",
+					"lineNumber": 87
+				},
+				{
+					"caller": "actionsMenuItems",
+					"callee": "onDelete",
+					"lineNumber": 89
+				},
+				{
+					"caller": "AutomationRow",
+					"callee": "event.preventDefault",
+					"lineNumber": 102
+				},
+				{
+					"caller": "AutomationRow",
+					"callee": "openDetail",
+					"lineNumber": 103
+				},
+				{
+					"caller": "AutomationRow",
+					"callee": "cn",
+					"lineNumber": 111
+				},
+				{
+					"caller": "AutomationRow",
+					"callee": "cn",
+					"lineNumber": 119
+				},
+				{
+					"caller": "AutomationRow",
+					"callee": "(() => {\n\t\t\t\t\t\t\t\tconst meta = LAST_RUN_META[lastRunStatus];\n\t\t\t\t\t\t\t\tconst cell = (\n\t\t\t\t\t\t\t\t\t<span\n\t\t\t\t\t\t\t\t\t\tclassName={cn(\n\t\t\t\t\t\t\t\t\t\t\t\"flex items-center gap-1.5\",\n\t\t\t\t\t\t\t\t\t\t\tmeta.failed && \"text-red-600 dark:text-red-400\",\n\t\t\t\t\t\t\t\t\t\t)}\n\t\t\t\t\t\t\t\t\t>\n\t\t\t\t\t\t\t\t\t\t<span\n\t\t\t\t\t\t\t\t\t\t\tclassName={cn(\n\t\t\t\t\t\t\t\t\t\t\t\t\"inline-block size-1.5 shrink-0 rounded-full\",\n\t\t\t\t\t\t\t\t\t\t\t\tmeta.dot,\n\t\t\t\t\t\t\t\t\t\t\t)}\n\t\t\t\t\t\t\t\t\t\t/>\n\t\t\t\t\t\t\t\t\t\t{meta.label}\n\t\t\t\t\t\t\t\t\t</span>\n\t\t\t\t\t\t\t\t);\n\t\t\t\t\t\t\t\treturn meta.failed ? (\n\t\t\t\t\t\t\t\t\t<Tooltip>\n\t\t\t\t\t\t\t\t\t\t<TooltipTrigger asChild>{cell}</TooltipTrigger>\n\t\t\t\t\t\t\t\t\t\t<TooltipContent>\n\t\t\t\t\t\t\t\t\t\t\tThe last run failed. Click to see why.\n\t\t\t\t\t\t\t\t\t\t</TooltipContent>\n\t\t\t\t\t\t\t\t\t</Tooltip>\n\t\t\t\t\t\t\t\t) : (\n\t\t\t\t\t\t\t\t\tcell\n\t\t\t\t\t\t\t\t);\n\t\t\t\t\t\t\t})",
+					"lineNumber": 193
+				},
+				{
+					"caller": "AutomationRow",
+					"callee": "cn",
+					"lineNumber": 197
+				},
+				{
+					"caller": "AutomationRow",
+					"callee": "cn",
+					"lineNumber": 203
+				},
+				{
+					"caller": "AutomationRow",
+					"callee": "e.stopPropagation",
+					"lineNumber": 235
+				},
+				{
+					"caller": "AutomationRow",
+					"callee": "e.stopPropagation",
+					"lineNumber": 244
+				},
+				{
+					"caller": "AutomationRow",
+					"callee": "actionsMenuItems",
+					"lineNumber": 246
+				},
+				{
+					"caller": "AutomationRow",
+					"callee": "event.preventDefault",
+					"lineNumber": 254
+				},
+				{
+					"caller": "AutomationRow",
+					"callee": "actionsMenuItems",
+					"lineNumber": 255
+				}
+			],
+			"metrics": {
+				"importCount": 5,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/automations/components/AutomationRow/components/AutomationActionsMenuItems/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "AutomationActionsMenuItems",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/automations/components/CellWithIcon/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "CellWithIcon",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/automations/components/ProjectPicker/ProjectPicker.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 82,
+			"nonEmptyLines": 79,
+			"functions": [
+				{
+					"name": "ProjectPicker",
+					"startLine": 24,
+					"endLine": 82,
+					"params": [
+						"{\n\tselectedProject,\n\trecentProjects,\n\tonSelectProject,\n\tclassName,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "ProjectPicker",
+					"line": 24,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "ProjectPicker",
+					"callee": "useState",
+					"lineNumber": 30
+				},
+				{
+					"caller": "ProjectPicker",
+					"callee": "recentProjects.map",
+					"lineNumber": 57
+				},
+				{
+					"caller": "ProjectPicker",
+					"callee": "onSelectProject",
+					"lineNumber": 62
+				},
+				{
+					"caller": "ProjectPicker",
+					"callee": "setOpen",
+					"lineNumber": 63
+				}
+			],
+			"metrics": {
+				"importCount": 3,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/automations/components/SchedulePicker/SchedulePicker.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 222,
+			"nonEmptyLines": 205,
+			"functions": [
+				{
+					"name": "stateFromRrule",
+					"startLine": 56,
+					"endLine": 81,
+					"params": ["rrule"]
+				},
+				{
+					"name": "rruleFromState",
+					"startLine": 84,
+					"endLine": 110,
+					"params": ["state"]
+				},
+				{
+					"name": "formatTimeInputValue",
+					"startLine": 112,
+					"endLine": 114,
+					"params": ["hour", "minute"]
+				},
+				{
+					"name": "parseTimeInputValue",
+					"startLine": 116,
+					"endLine": 124,
+					"params": ["value"]
+				},
+				{
+					"name": "SchedulePicker",
+					"startLine": 126,
+					"endLine": 222,
+					"params": ["{\n\trrule,\n\tonRruleChange,\n\tclassName,\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "SchedulePicker",
+					"line": 126,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "stateFromRrule",
+					"callee": "matchPreset",
+					"lineNumber": 57
+				},
+				{
+					"caller": "rruleFromState",
+					"callee": "buildRrule",
+					"lineNumber": 87
+				},
+				{
+					"caller": "rruleFromState",
+					"callee": "buildRrule",
+					"lineNumber": 89
+				},
+				{
+					"caller": "rruleFromState",
+					"callee": "buildRrule",
+					"lineNumber": 95
+				},
+				{
+					"caller": "rruleFromState",
+					"callee": "buildRrule",
+					"lineNumber": 101
+				},
+				{
+					"caller": "rruleFromState",
+					"callee": "state.customRrule.trim",
+					"lineNumber": 108
+				},
+				{
+					"caller": "formatTimeInputValue",
+					"callee": "String(hour).padStart",
+					"lineNumber": 113
+				},
+				{
+					"caller": "formatTimeInputValue",
+					"callee": "String",
+					"lineNumber": 113
+				},
+				{
+					"caller": "formatTimeInputValue",
+					"callee": "String(minute).padStart",
+					"lineNumber": 113
+				},
+				{
+					"caller": "formatTimeInputValue",
+					"callee": "String",
+					"lineNumber": 113
+				},
+				{
+					"caller": "parseTimeInputValue",
+					"callee": "value.split",
+					"lineNumber": 119
+				},
+				{
+					"caller": "parseTimeInputValue",
+					"callee": "Number.parseInt",
+					"lineNumber": 120
+				},
+				{
+					"caller": "parseTimeInputValue",
+					"callee": "Number.parseInt",
+					"lineNumber": 121
+				},
+				{
+					"caller": "parseTimeInputValue",
+					"callee": "Number.isFinite",
+					"lineNumber": 122
+				},
+				{
+					"caller": "parseTimeInputValue",
+					"callee": "Number.isFinite",
+					"lineNumber": 122
+				},
+				{
+					"caller": "SchedulePicker",
+					"callee": "useState",
+					"lineNumber": 131
+				},
+				{
+					"caller": "SchedulePicker",
+					"callee": "stateFromRrule",
+					"lineNumber": 132
+				},
+				{
+					"caller": "update",
+					"callee": "setState",
+					"lineNumber": 137
+				},
+				{
+					"caller": "update",
+					"callee": "onRruleChange",
+					"lineNumber": 138
+				},
+				{
+					"caller": "update",
+					"callee": "rruleFromState",
+					"lineNumber": 138
+				},
+				{
+					"caller": "SchedulePicker",
+					"callee": "useMemo",
+					"lineNumber": 141
+				},
+				{
+					"caller": "SchedulePicker",
+					"callee": "describeSchedule",
+					"lineNumber": 141
+				},
+				{
+					"caller": "SchedulePicker",
+					"callee": "update",
+					"lineNumber": 160
+				},
+				{
+					"caller": "SchedulePicker",
+					"callee": "PRESET_OPTIONS.map",
+					"lineNumber": 166
+				},
+				{
+					"caller": "SchedulePicker",
+					"callee": "update",
+					"lineNumber": 177
+				},
+				{
+					"caller": "SchedulePicker",
+					"callee": "DAY_OPTIONS.map",
+					"lineNumber": 183
+				},
+				{
+					"caller": "SchedulePicker",
+					"callee": "formatTimeInputValue",
+					"lineNumber": 201
+				},
+				{
+					"caller": "SchedulePicker",
+					"callee": "parseTimeInputValue",
+					"lineNumber": 203
+				},
+				{
+					"caller": "SchedulePicker",
+					"callee": "update",
+					"lineNumber": 204
+				},
+				{
+					"caller": "SchedulePicker",
+					"callee": "update",
+					"lineNumber": 215
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 5,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/automations/components/TimezonePicker/TimezonePicker.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 76,
+			"nonEmptyLines": 72,
+			"functions": [
+				{
+					"name": "listTimezones",
+					"startLine": 21,
+					"endLine": 27,
+					"params": []
+				},
+				{
+					"name": "TimezonePicker",
+					"startLine": 29,
+					"endLine": 76,
+					"params": ["{\n\tvalue,\n\tonChange,\n\tclassName,\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "TimezonePicker",
+					"line": 29,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "listTimezones",
+					"callee": "Intl.supportedValuesOf",
+					"lineNumber": 24
+				},
+				{
+					"caller": "TimezonePicker",
+					"callee": "useState",
+					"lineNumber": 34
+				},
+				{
+					"caller": "TimezonePicker",
+					"callee": "useMemo",
+					"lineNumber": 35
+				},
+				{
+					"caller": "TimezonePicker",
+					"callee": "timezones.map",
+					"lineNumber": 57
+				},
+				{
+					"caller": "TimezonePicker",
+					"callee": "onChange",
+					"lineNumber": 62
+				},
+				{
+					"caller": "TimezonePicker",
+					"callee": "setOpen",
+					"lineNumber": 63
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/automations/components/WorkspacePicker/WorkspacePicker.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 166,
+			"nonEmptyLines": 158,
+			"functions": [
+				{
+					"name": "WorkspacePicker",
+					"startLine": 27,
+					"endLine": 166,
+					"params": [
+						"{\n\thostId,\n\tprojectId,\n\tvalue,\n\tonChange,\n\tclassName,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "WorkspacePicker",
+					"line": 27,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "WorkspacePicker",
+					"callee": "useState",
+					"lineNumber": 34
+				},
+				{
+					"caller": "WorkspacePicker",
+					"callee": "useCollections",
+					"lineNumber": 35
+				},
+				{
+					"caller": "WorkspacePicker",
+					"callee": "useHostWorkspaces",
+					"lineNumber": 37
+				},
+				{
+					"caller": "WorkspacePicker",
+					"callee": "useMemo",
+					"lineNumber": 38
+				},
+				{
+					"caller": "WorkspacePicker",
+					"callee": "[...hostWorkspaces].sort",
+					"lineNumber": 40
+				},
+				{
+					"caller": "WorkspacePicker",
+					"callee": "new Date(b.createdAt).getTime",
+					"lineNumber": 42
+				},
+				{
+					"caller": "WorkspacePicker",
+					"callee": "new Date(a.createdAt).getTime",
+					"lineNumber": 42
+				},
+				{
+					"caller": "WorkspacePicker",
+					"callee": "useLiveQuery",
+					"lineNumber": 47
+				},
+				{
+					"caller": "WorkspacePicker",
+					"callee": "q.from({ h: collections.v2Hosts }).select",
+					"lineNumber": 48
+				},
+				{
+					"caller": "WorkspacePicker",
+					"callee": "q.from",
+					"lineNumber": 48
+				},
+				{
+					"caller": "WorkspacePicker",
+					"callee": "useMemo",
+					"lineNumber": 54
+				},
+				{
+					"caller": "WorkspacePicker",
+					"callee": "workspaceRows.filter",
+					"lineNumber": 57
+				},
+				{
+					"caller": "WorkspacePicker",
+					"callee": "workspaceRows.find",
+					"lineNumber": 69
+				},
+				{
+					"caller": "WorkspacePicker",
+					"callee": "hostRows.find",
+					"lineNumber": 75
+				},
+				{
+					"caller": "WorkspacePicker",
+					"callee": "cn",
+					"lineNumber": 91
+				},
+				{
+					"caller": "WorkspacePicker",
+					"callee": "onChange",
+					"lineNumber": 117
+				},
+				{
+					"caller": "WorkspacePicker",
+					"callee": "setOpen",
+					"lineNumber": 118
+				},
+				{
+					"caller": "WorkspacePicker",
+					"callee": "setOpen",
+					"lineNumber": 131
+				},
+				{
+					"caller": "WorkspacePicker",
+					"callee": "workspaces.map",
+					"lineNumber": 144
+				},
+				{
+					"caller": "WorkspacePicker",
+					"callee": "onChange",
+					"lineNumber": 149
+				},
+				{
+					"caller": "WorkspacePicker",
+					"callee": "setOpen",
+					"lineNumber": 150
+				}
+			],
+			"metrics": {
+				"importCount": 3,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/automations/hooks/useProjectFileSearch/useProjectFileSearch.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 35,
+			"nonEmptyLines": 32,
+			"functions": [
+				{
+					"name": "useProjectFileSearch",
+					"startLine": 8,
+					"endLine": 35,
+					"params": ["{\n\thostId,\n\tprojectId,\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "useProjectFileSearch",
+					"line": 8,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "useProjectFileSearch",
+					"callee": "useHostUrl",
+					"lineNumber": 15
+				},
+				{
+					"caller": "useProjectFileSearch",
+					"callee": "useCallback",
+					"lineNumber": 17
+				},
+				{
+					"caller": "useProjectFileSearch",
+					"callee": "getHostServiceClientByUrl",
+					"lineNumber": 20
+				},
+				{
+					"caller": "useProjectFileSearch",
+					"callee": "client.filesystem.searchFiles.query",
+					"lineNumber": 21
+				},
+				{
+					"caller": "useProjectFileSearch",
+					"callee": "result.matches.map",
+					"lineNumber": 26
+				}
+			],
+			"metrics": {
+				"importCount": 3,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/automations/hooks/useRecentProjects/useRecentProjects.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 45,
+			"nonEmptyLines": 41,
+			"functions": [
+				{
+					"name": "useRecentProjects",
+					"startLine": 6,
+					"endLine": 45,
+					"params": []
+				}
+			],
+			"exports": [
+				{
+					"name": "useRecentProjects",
+					"line": 6,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "useRecentProjects",
+					"callee": "useCollections",
+					"lineNumber": 7
+				},
+				{
+					"caller": "useRecentProjects",
+					"callee": "useLiveQuery",
+					"lineNumber": 9
+				},
+				{
+					"caller": "useRecentProjects",
+					"callee": "q\n\t\t\t\t.from({ projects: collections.v2Projects })\n\t\t\t\t.select",
+					"lineNumber": 11
+				},
+				{
+					"caller": "useRecentProjects",
+					"callee": "q\n\t\t\t\t.from",
+					"lineNumber": 11
+				},
+				{
+					"caller": "useRecentProjects",
+					"callee": "useLiveQuery",
+					"lineNumber": 17
+				},
+				{
+					"caller": "useRecentProjects",
+					"callee": "q.from({ repos: collections.githubRepositories }).select",
+					"lineNumber": 19
+				},
+				{
+					"caller": "useRecentProjects",
+					"callee": "q.from",
+					"lineNumber": 19
+				},
+				{
+					"caller": "useRecentProjects",
+					"callee": "useMemo",
+					"lineNumber": 27
+				},
+				{
+					"caller": "useRecentProjects",
+					"callee": "(githubRepositories ?? []).map",
+					"lineNumber": 29
+				},
+				{
+					"caller": "useRecentProjects",
+					"callee": "(v2Projects ?? []).map",
+					"lineNumber": 31
+				},
+				{
+					"caller": "useRecentProjects",
+					"callee": "repoById.get",
+					"lineNumber": 33
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/automations/hooks/useRelayHostTarget/useRelayHostTarget.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 20,
+			"nonEmptyLines": 17,
+			"functions": [
+				{
+					"name": "useRelayHostTarget",
+					"startLine": 8,
+					"endLine": 20,
+					"params": ["hostId"]
+				}
+			],
+			"exports": [
+				{
+					"name": "useRelayHostTarget",
+					"line": 8,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "useRelayHostTarget",
+					"callee": "useLocalHostService",
+					"lineNumber": 9
+				},
+				{
+					"caller": "useRelayHostTarget",
+					"callee": "useWorkspaceHostOptions",
+					"lineNumber": 11
+				},
+				{
+					"caller": "useRelayHostTarget",
+					"callee": "otherHosts.find",
+					"lineNumber": 17
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/AddRepositoryModals/components/NewProjectModal/NewProjectModal.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 259,
+			"nonEmptyLines": 243,
+			"functions": [
+				{
+					"name": "deriveProjectNameFromUrl",
+					"startLine": 32,
+					"endLine": 40,
+					"params": ["url"]
+				},
+				{
+					"name": "NewProjectModal",
+					"startLine": 42,
+					"endLine": 259,
+					"params": ["{\n\topen,\n\tonOpenChange,\n\tonSuccess,\n\tonError,\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "NewProjectModal",
+					"line": 42,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "deriveProjectNameFromUrl",
+					"callee": "url\n\t\t.trim()\n\t\t.replace(/[?#].*$/, \"\")\n\t\t.replace(/[\\\\/]+$/, \"\")\n\t\t.replace",
+					"lineNumber": 33
+				},
+				{
+					"caller": "deriveProjectNameFromUrl",
+					"callee": "url\n\t\t.trim()\n\t\t.replace(/[?#].*$/, \"\")\n\t\t.replace",
+					"lineNumber": 33
+				},
+				{
+					"caller": "deriveProjectNameFromUrl",
+					"callee": "url\n\t\t.trim()\n\t\t.replace",
+					"lineNumber": 33
+				},
+				{
+					"caller": "deriveProjectNameFromUrl",
+					"callee": "url\n\t\t.trim",
+					"lineNumber": 33
+				},
+				{
+					"caller": "deriveProjectNameFromUrl",
+					"callee": "trimmed.split(/[/:\\\\]/).filter",
+					"lineNumber": 38
+				},
+				{
+					"caller": "deriveProjectNameFromUrl",
+					"callee": "trimmed.split",
+					"lineNumber": 38
+				},
+				{
+					"caller": "NewProjectModal",
+					"callee": "useIsV2CloudEnabled",
+					"lineNumber": 48
+				},
+				{
+					"caller": "NewProjectModal",
+					"callee": "useLocalHostService",
+					"lineNumber": 49
+				},
+				{
+					"caller": "NewProjectModal",
+					"callee": "useFinalizeProjectSetup",
+					"lineNumber": 51
+				},
+				{
+					"caller": "NewProjectModal",
+					"callee": "useCreateV1Project",
+					"lineNumber": 52
+				},
+				{
+					"caller": "NewProjectModal",
+					"callee": "electronTrpc.window.selectDirectory.useMutation",
+					"lineNumber": 53
+				},
+				{
+					"caller": "NewProjectModal",
+					"callee": "electronTrpc.window.getHomeDir.useQuery",
+					"lineNumber": 54
+				},
+				{
+					"caller": "NewProjectModal",
+					"callee": "useState",
+					"lineNumber": 56
+				},
+				{
+					"caller": "NewProjectModal",
+					"callee": "useState",
+					"lineNumber": 57
+				},
+				{
+					"caller": "NewProjectModal",
+					"callee": "useState",
+					"lineNumber": 58
+				},
+				{
+					"caller": "NewProjectModal",
+					"callee": "useState",
+					"lineNumber": 59
+				},
+				{
+					"caller": "NewProjectModal",
+					"callee": "useState",
+					"lineNumber": 60
+				},
+				{
+					"caller": "NewProjectModal",
+					"callee": "useEffect",
+					"lineNumber": 62
+				},
+				{
+					"caller": "NewProjectModal",
+					"callee": "setParentDir",
+					"lineNumber": 64
+				},
+				{
+					"caller": "NewProjectModal",
+					"callee": "useEffect",
+					"lineNumber": 67
+				},
+				{
+					"caller": "NewProjectModal",
+					"callee": "setName",
+					"lineNumber": 69
+				},
+				{
+					"caller": "NewProjectModal",
+					"callee": "deriveProjectNameFromUrl",
+					"lineNumber": 69
+				},
+				{
+					"caller": "reset",
+					"callee": "setUrl",
+					"lineNumber": 73
+				},
+				{
+					"caller": "reset",
+					"callee": "setName",
+					"lineNumber": 74
+				},
+				{
+					"caller": "reset",
+					"callee": "setNameTouched",
+					"lineNumber": 75
+				},
+				{
+					"caller": "reset",
+					"callee": "setWorking",
+					"lineNumber": 76
+				},
+				{
+					"caller": "handleOpenChange",
+					"callee": "reset",
+					"lineNumber": 81
+				},
+				{
+					"caller": "handleOpenChange",
+					"callee": "onOpenChange",
+					"lineNumber": 82
+				},
+				{
+					"caller": "handleBrowse",
+					"callee": "selectDirectory.mutateAsync",
+					"lineNumber": 87
+				},
+				{
+					"caller": "handleBrowse",
+					"callee": "setParentDir",
+					"lineNumber": 92
+				},
+				{
+					"caller": "handleBrowse",
+					"callee": "toast.error",
+					"lineNumber": 95
+				},
+				{
+					"caller": "handleBrowse",
+					"callee": "String",
+					"lineNumber": 95
+				},
+				{
+					"caller": "createFromClone",
+					"callee": "url.trim",
+					"lineNumber": 100
+				},
+				{
+					"caller": "createFromClone",
+					"callee": "parentDir.trim",
+					"lineNumber": 101
+				},
+				{
+					"caller": "createFromClone",
+					"callee": "toast.error",
+					"lineNumber": 103
+				},
+				{
+					"caller": "createFromClone",
+					"callee": "toast.error",
+					"lineNumber": 107
+				},
+				{
+					"caller": "createFromClone",
+					"callee": "setWorking",
+					"lineNumber": 111
+				},
+				{
+					"caller": "createFromClone",
+					"callee": "createV1Project.cloneFromUrl",
+					"lineNumber": 114
+				},
+				{
+					"caller": "createFromClone",
+					"callee": "onSuccess",
+					"lineNumber": 119
+				},
+				{
+					"caller": "createFromClone",
+					"callee": "reset",
+					"lineNumber": 120
+				},
+				{
+					"caller": "createFromClone",
+					"callee": "onOpenChange",
+					"lineNumber": 121
+				},
+				{
+					"caller": "createFromClone",
+					"callee": "showHostServiceUnavailableToast",
+					"lineNumber": 125
+				},
+				{
+					"caller": "createFromClone",
+					"callee": "name.trim",
+					"lineNumber": 130
+				},
+				{
+					"caller": "createFromClone",
+					"callee": "deriveProjectNameFromUrl",
+					"lineNumber": 130
+				},
+				{
+					"caller": "createFromClone",
+					"callee": "toast.error",
+					"lineNumber": 132
+				},
+				{
+					"caller": "createFromClone",
+					"callee": "getHostServiceClientByUrl",
+					"lineNumber": 135
+				},
+				{
+					"caller": "createFromClone",
+					"callee": "client.project.create.mutate",
+					"lineNumber": 136
+				},
+				{
+					"caller": "createFromClone",
+					"callee": "finalizeSetup",
+					"lineNumber": 140
+				},
+				{
+					"caller": "createFromClone",
+					"callee": "onSuccess",
+					"lineNumber": 141
+				},
+				{
+					"caller": "createFromClone",
+					"callee": "reset",
+					"lineNumber": 142
+				},
+				{
+					"caller": "createFromClone",
+					"callee": "onOpenChange",
+					"lineNumber": 143
+				},
+				{
+					"caller": "createFromClone",
+					"callee": "String",
+					"lineNumber": 145
+				},
+				{
+					"caller": "createFromClone",
+					"callee": "raw.startsWith",
+					"lineNumber": 149
+				},
+				{
+					"caller": "createFromClone",
+					"callee": "console.error",
+					"lineNumber": 150
+				},
+				{
+					"caller": "createFromClone",
+					"callee": "toast.error",
+					"lineNumber": 154
+				},
+				{
+					"caller": "createFromClone",
+					"callee": "onError",
+					"lineNumber": 155
+				},
+				{
+					"caller": "createFromClone",
+					"callee": "setWorking",
+					"lineNumber": 157
+				},
+				{
+					"caller": "NewProjectModal",
+					"callee": "setUrl",
+					"lineNumber": 179
+				},
+				{
+					"caller": "NewProjectModal",
+					"callee": "createFromClone",
+					"lineNumber": 184
+				},
+				{
+					"caller": "NewProjectModal",
+					"callee": "setName",
+					"lineNumber": 200
+				},
+				{
+					"caller": "NewProjectModal",
+					"callee": "setNameTouched",
+					"lineNumber": 201
+				},
+				{
+					"caller": "NewProjectModal",
+					"callee": "setParentDir",
+					"lineNumber": 217
+				},
+				{
+					"caller": "NewProjectModal",
+					"callee": "handleOpenChange",
+					"lineNumber": 240
+				},
+				{
+					"caller": "NewProjectModal",
+					"callee": "createFromClone",
+					"lineNumber": 245
+				}
+			],
+			"metrics": {
+				"importCount": 6,
+				"exportCount": 1,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/AddRepositoryModals/hooks/useFolderFirstImport/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 4,
+			"nonEmptyLines": 4,
+			"exports": [
+				{
+					"name": "UseFolderFirstImportResult",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "useFolderFirstImport",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 2,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/AddRepositoryModals/hooks/useFolderFirstImport/useFolderFirstImport.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 131,
+			"nonEmptyLines": 120,
+			"functions": [
+				{
+					"name": "useFolderFirstImport",
+					"startLine": 22,
+					"endLine": 131,
+					"params": ["options"]
+				}
+			],
+			"exports": [
+				{
+					"name": "useFolderFirstImport",
+					"line": 22,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "useFolderFirstImport",
+					"callee": "useLocalHostService",
+					"lineNumber": 26
+				},
+				{
+					"caller": "useFolderFirstImport",
+					"callee": "useFinalizeProjectSetup",
+					"lineNumber": 28
+				},
+				{
+					"caller": "useFolderFirstImport",
+					"callee": "electronTrpc.window.selectDirectory.useMutation",
+					"lineNumber": 29
+				},
+				{
+					"caller": "useFolderFirstImport",
+					"callee": "useRequestGitInitConfirm",
+					"lineNumber": 30
+				},
+				{
+					"caller": "useFolderFirstImport",
+					"callee": "useCallback",
+					"lineNumber": 33
+				},
+				{
+					"caller": "useFolderFirstImport",
+					"callee": "onError",
+					"lineNumber": 35
+				},
+				{
+					"caller": "useFolderFirstImport",
+					"callee": "getHostServiceUnavailableMessage",
+					"lineNumber": 36
+				},
+				{
+					"caller": "useFolderFirstImport",
+					"callee": "selectDirectory.mutateAsync",
+					"lineNumber": 45
+				},
+				{
+					"caller": "useFolderFirstImport",
+					"callee": "onError",
+					"lineNumber": 51
+				},
+				{
+					"caller": "useFolderFirstImport",
+					"callee": "String",
+					"lineNumber": 51
+				},
+				{
+					"caller": "useFolderFirstImport",
+					"callee": "getHostServiceClientByUrl",
+					"lineNumber": 55
+				},
+				{
+					"caller": "useFolderFirstImport",
+					"callee": "client.project.findByPath.query",
+					"lineNumber": 58
+				},
+				{
+					"caller": "useFolderFirstImport",
+					"callee": "requestGitInit",
+					"lineNumber": 63
+				},
+				{
+					"caller": "useFolderFirstImport",
+					"callee": "client.project.create.mutate",
+					"lineNumber": 65
+				},
+				{
+					"caller": "useFolderFirstImport",
+					"callee": "getBaseName",
+					"lineNumber": 66
+				},
+				{
+					"caller": "useFolderFirstImport",
+					"callee": "finalizeSetup",
+					"lineNumber": 69
+				},
+				{
+					"caller": "useFolderFirstImport",
+					"callee": "onError",
+					"lineNumber": 76
+				},
+				{
+					"caller": "useFolderFirstImport",
+					"callee": "onError",
+					"lineNumber": 80
+				},
+				{
+					"caller": "useFolderFirstImport",
+					"callee": "String",
+					"lineNumber": 80
+				},
+				{
+					"caller": "useFolderFirstImport",
+					"callee": "onMultipleProjects",
+					"lineNumber": 87
+				},
+				{
+					"caller": "useFolderFirstImport",
+					"callee": "onError",
+					"lineNumber": 89
+				},
+				{
+					"caller": "useFolderFirstImport",
+					"callee": "client.project.setup.mutate",
+					"lineNumber": 99
+				},
+				{
+					"caller": "useFolderFirstImport",
+					"callee": "client.project.create.mutate",
+					"lineNumber": 109
+				},
+				{
+					"caller": "useFolderFirstImport",
+					"callee": "getBaseName",
+					"lineNumber": 110
+				},
+				{
+					"caller": "useFolderFirstImport",
+					"callee": "finalizeSetup",
+					"lineNumber": 114
+				},
+				{
+					"caller": "useFolderFirstImport",
+					"callee": "onError",
+					"lineNumber": 117
+				},
+				{
+					"caller": "useFolderFirstImport",
+					"callee": "String",
+					"lineNumber": 117
+				}
+			],
+			"metrics": {
+				"importCount": 7,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarDeleteDialog/hooks/useDestroyDialogState/useDestroyDialogState.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 185,
+			"nonEmptyLines": 171,
+			"functions": [
+				{
+					"name": "useDestroyDialogState",
+					"startLine": 30,
+					"endLine": 185,
+					"params": [
+						"{\n\tworkspaceId,\n\tworkspaceName,\n\topen,\n\tonOpenChange,\n\tonDeleted,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "useDestroyDialogState",
+					"line": 30,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "useDestroyDialogState",
+					"callee": "useDestroyWorkspace",
+					"lineNumber": 37
+				},
+				{
+					"caller": "useDestroyDialogState",
+					"callee": "useHostWorkspaces",
+					"lineNumber": 39
+				},
+				{
+					"caller": "useDestroyDialogState",
+					"callee": "useDeletingWorkspaces",
+					"lineNumber": 40
+				},
+				{
+					"caller": "useDestroyDialogState",
+					"callee": "useNavigateAwayFromWorkspace",
+					"lineNumber": 41
+				},
+				{
+					"caller": "useDestroyDialogState",
+					"callee": "useV2UserPreferences",
+					"lineNumber": 44
+				},
+				{
+					"caller": "useDestroyDialogState",
+					"callee": "useState",
+					"lineNumber": 47
+				},
+				{
+					"caller": "useDestroyDialogState",
+					"callee": "useState",
+					"lineNumber": 50
+				},
+				{
+					"caller": "useDestroyDialogState",
+					"callee": "useRef",
+					"lineNumber": 51
+				},
+				{
+					"caller": "useDestroyDialogState",
+					"callee": "useEffect",
+					"lineNumber": 57
+				},
+				{
+					"caller": "useDestroyDialogState",
+					"callee": "setInspectState",
+					"lineNumber": 59
+				},
+				{
+					"caller": "useDestroyDialogState",
+					"callee": "setInspectState",
+					"lineNumber": 66
+				},
+				{
+					"caller": "useDestroyDialogState",
+					"callee": "setInspectState",
+					"lineNumber": 70
+				},
+				{
+					"caller": "useDestroyDialogState",
+					"callee": "inspect()\n\t\t\t.then((preview) => {\n\t\t\t\tif (cancelled) return;\n\t\t\t\tsetInspectState({ status: \"ready\", preview });\n\t\t\t})\n\t\t\t.catch",
+					"lineNumber": 71
+				},
+				{
+					"caller": "useDestroyDialogState",
+					"callee": "inspect()\n\t\t\t.then",
+					"lineNumber": 71
+				},
+				{
+					"caller": "useDestroyDialogState",
+					"callee": "inspect",
+					"lineNumber": 71
+				},
+				{
+					"caller": "useDestroyDialogState",
+					"callee": "setInspectState",
+					"lineNumber": 74
+				},
+				{
+					"caller": "useDestroyDialogState",
+					"callee": "setInspectState",
+					"lineNumber": 80
+				},
+				{
+					"caller": "useDestroyDialogState",
+					"callee": "useCallback",
+					"lineNumber": 90
+				},
+				{
+					"caller": "useDestroyDialogState",
+					"callee": "setError",
+					"lineNumber": 92
+				},
+				{
+					"caller": "useDestroyDialogState",
+					"callee": "onOpenChange",
+					"lineNumber": 93
+				},
+				{
+					"caller": "useDestroyDialogState",
+					"callee": "useCallback",
+					"lineNumber": 98
+				},
+				{
+					"caller": "useDestroyDialogState",
+					"callee": "setError",
+					"lineNumber": 103
+				},
+				{
+					"caller": "useDestroyDialogState",
+					"callee": "onOpenChange",
+					"lineNumber": 104
+				},
+				{
+					"caller": "useDestroyDialogState",
+					"callee": "markDeleting",
+					"lineNumber": 105
+				},
+				{
+					"caller": "useDestroyDialogState",
+					"callee": "navigateAwayFromWorkspace",
+					"lineNumber": 108
+				},
+				{
+					"caller": "useDestroyDialogState",
+					"callee": "toast",
+					"lineNumber": 109
+				},
+				{
+					"caller": "useDestroyDialogState",
+					"callee": "hostWorkspaces.find",
+					"lineNumber": 111
+				},
+				{
+					"caller": "useDestroyDialogState",
+					"callee": "destroy",
+					"lineNumber": 118
+				},
+				{
+					"caller": "useDestroyDialogState",
+					"callee": "destroy",
+					"lineNumber": 128
+				},
+				{
+					"caller": "useDestroyDialogState",
+					"callee": "hostWorkspacesCache.removeWorkspace",
+					"lineNumber": 137
+				},
+				{
+					"caller": "useDestroyDialogState",
+					"callee": "toast.warning",
+					"lineNumber": 139
+				},
+				{
+					"caller": "useDestroyDialogState",
+					"callee": "onDeleted",
+					"lineNumber": 140
+				},
+				{
+					"caller": "useDestroyDialogState",
+					"callee": "setError",
+					"lineNumber": 144
+				},
+				{
+					"caller": "useDestroyDialogState",
+					"callee": "onOpenChange",
+					"lineNumber": 145
+				},
+				{
+					"caller": "useDestroyDialogState",
+					"callee": "toast.error",
+					"lineNumber": 147
+				},
+				{
+					"caller": "useDestroyDialogState",
+					"callee": "toast.error",
+					"lineNumber": 149
+				},
+				{
+					"caller": "useDestroyDialogState",
+					"callee": "String",
+					"lineNumber": 150
+				},
+				{
+					"caller": "useDestroyDialogState",
+					"callee": "clearDeleting",
+					"lineNumber": 154
+				}
+			],
+			"metrics": {
+				"importCount": 5,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarHelpMenu/components/SubmitPromptDialog/SubmitPromptDialog.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 119,
+			"nonEmptyLines": 111,
+			"functions": [
+				{
+					"name": "SubmitPromptDialog",
+					"startLine": 22,
+					"endLine": 119,
+					"params": ["{\n\topen,\n\tonOpenChange,\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "SubmitPromptDialog",
+					"line": 22,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "SubmitPromptDialog",
+					"callee": "useState",
+					"lineNumber": 26
+				},
+				{
+					"caller": "SubmitPromptDialog",
+					"callee": "useState",
+					"lineNumber": 27
+				},
+				{
+					"caller": "SubmitPromptDialog",
+					"callee": "useState",
+					"lineNumber": 28
+				},
+				{
+					"caller": "reset",
+					"callee": "setPromptText",
+					"lineNumber": 31
+				},
+				{
+					"caller": "reset",
+					"callee": "setSubmitterName",
+					"lineNumber": 32
+				},
+				{
+					"caller": "reset",
+					"callee": "setIsSubmitting",
+					"lineNumber": 33
+				},
+				{
+					"caller": "handleOpenChange",
+					"callee": "reset",
+					"lineNumber": 37
+				},
+				{
+					"caller": "handleOpenChange",
+					"callee": "onOpenChange",
+					"lineNumber": 38
+				},
+				{
+					"caller": "SubmitPromptDialog",
+					"callee": "promptText.trim",
+					"lineNumber": 41
+				},
+				{
+					"caller": "handleSubmit",
+					"callee": "setIsSubmitting",
+					"lineNumber": 45
+				},
+				{
+					"caller": "handleSubmit",
+					"callee": "apiTrpcClient.support.submitPrompt.mutate",
+					"lineNumber": 47
+				},
+				{
+					"caller": "handleSubmit",
+					"callee": "promptText.trim",
+					"lineNumber": 48
+				},
+				{
+					"caller": "handleSubmit",
+					"callee": "submitterName.trim",
+					"lineNumber": 49
+				},
+				{
+					"caller": "handleSubmit",
+					"callee": "toast.success",
+					"lineNumber": 51
+				},
+				{
+					"caller": "handleSubmit",
+					"callee": "handleOpenChange",
+					"lineNumber": 52
+				},
+				{
+					"caller": "handleSubmit",
+					"callee": "console.error",
+					"lineNumber": 54
+				},
+				{
+					"caller": "handleSubmit",
+					"callee": "toast.error",
+					"lineNumber": 55
+				},
+				{
+					"caller": "handleSubmit",
+					"callee": "setIsSubmitting",
+					"lineNumber": 56
+				},
+				{
+					"caller": "handleKeyDown",
+					"callee": "event.preventDefault",
+					"lineNumber": 62
+				},
+				{
+					"caller": "handleKeyDown",
+					"callee": "handleSubmit",
+					"lineNumber": 63
+				},
+				{
+					"caller": "SubmitPromptDialog",
+					"callee": "setPromptText",
+					"lineNumber": 83
+				},
+				{
+					"caller": "SubmitPromptDialog",
+					"callee": "setSubmitterName",
+					"lineNumber": 101
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarPortsList/hooks/useDashboardSidebarPortsData/useDashboardSidebarPortsData.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 192,
+			"nonEmptyLines": 178,
+			"functions": [
+				{
+					"name": "useDashboardSidebarPortsData",
+					"startLine": 33,
+					"endLine": 192,
+					"params": []
+				}
+			],
+			"exports": [
+				{
+					"name": "DashboardSidebarPort",
+					"line": 25,
+					"isDefault": false
+				},
+				{
+					"name": "DashboardSidebarPortGroup",
+					"line": 25,
+					"isDefault": false
+				},
+				{
+					"name": "useDashboardSidebarPortsData",
+					"line": 33,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "useDashboardSidebarPortsData",
+					"callee": "useCollections",
+					"lineNumber": 38
+				},
+				{
+					"caller": "useDashboardSidebarPortsData",
+					"callee": "useQueryClient",
+					"lineNumber": 39
+				},
+				{
+					"caller": "useDashboardSidebarPortsData",
+					"callee": "useLocalHostService",
+					"lineNumber": 40
+				},
+				{
+					"caller": "useDashboardSidebarPortsData",
+					"callee": "useRelayUrl",
+					"lineNumber": 41
+				},
+				{
+					"caller": "useDashboardSidebarPortsData",
+					"callee": "useVisibleSidebarWorkspaceIds",
+					"lineNumber": 42
+				},
+				{
+					"caller": "useDashboardSidebarPortsData",
+					"callee": "useLiveQuery",
+					"lineNumber": 44
+				},
+				{
+					"caller": "useDashboardSidebarPortsData",
+					"callee": "q.from({ hosts: collections.v2Hosts }).select",
+					"lineNumber": 46
+				},
+				{
+					"caller": "useDashboardSidebarPortsData",
+					"callee": "q.from",
+					"lineNumber": 46
+				},
+				{
+					"caller": "useDashboardSidebarPortsData",
+					"callee": "useHostWorkspaces",
+					"lineNumber": 54
+				},
+				{
+					"caller": "useDashboardSidebarPortsData",
+					"callee": "useMemo",
+					"lineNumber": 55
+				},
+				{
+					"caller": "useDashboardSidebarPortsData",
+					"callee": "allWorkspaces\n\t\t\t\t.filter((workspace) => visibleWorkspaceIds.has(workspace.id))\n\t\t\t\t.map",
+					"lineNumber": 57
+				},
+				{
+					"caller": "useDashboardSidebarPortsData",
+					"callee": "allWorkspaces\n\t\t\t\t.filter",
+					"lineNumber": 57
+				},
+				{
+					"caller": "useDashboardSidebarPortsData",
+					"callee": "visibleWorkspaceIds.has",
+					"lineNumber": 58
+				},
+				{
+					"caller": "useDashboardSidebarPortsData",
+					"callee": "useMemo",
+					"lineNumber": 67
+				},
+				{
+					"caller": "useDashboardSidebarPortsData",
+					"callee": "deriveHostPortQueryTargets",
+					"lineNumber": 69
+				},
+				{
+					"caller": "useDashboardSidebarPortsData",
+					"callee": "useQueries",
+					"lineNumber": 79
+				},
+				{
+					"caller": "useDashboardSidebarPortsData",
+					"callee": "hostsToQuery.map",
+					"lineNumber": 80
+				},
+				{
+					"caller": "useDashboardSidebarPortsData",
+					"callee": "getHostPortsQueryKey",
+					"lineNumber": 81
+				},
+				{
+					"caller": "useDashboardSidebarPortsData",
+					"callee": "getHostServiceClientByUrl",
+					"lineNumber": 84
+				},
+				{
+					"caller": "useDashboardSidebarPortsData",
+					"callee": "client.ports.getAll.query",
+					"lineNumber": 85
+				},
+				{
+					"caller": "useDashboardSidebarPortsData",
+					"callee": "useEffect",
+					"lineNumber": 98
+				},
+				{
+					"caller": "flushPortEvents",
+					"callee": "pendingEvents.splice",
+					"lineNumber": 107
+				},
+				{
+					"caller": "flushPortEvents",
+					"callee": "queryClient.setQueryData",
+					"lineNumber": 109
+				},
+				{
+					"caller": "flushPortEvents",
+					"callee": "getHostPortsQueryKey",
+					"lineNumber": 110
+				},
+				{
+					"caller": "flushPortEvents",
+					"callee": "applyPortEventsToHostPortsResult",
+					"lineNumber": 112
+				},
+				{
+					"caller": "enqueuePortEvent",
+					"callee": "pendingEvents.push",
+					"lineNumber": 120
+				},
+				{
+					"caller": "enqueuePortEvent",
+					"callee": "setTimeout",
+					"lineNumber": 122
+				},
+				{
+					"caller": "useDashboardSidebarPortsData",
+					"callee": "getEventBus",
+					"lineNumber": 127
+				},
+				{
+					"caller": "useDashboardSidebarPortsData",
+					"callee": "getHostServiceWsToken",
+					"lineNumber": 128
+				},
+				{
+					"caller": "useDashboardSidebarPortsData",
+					"callee": "bus.on",
+					"lineNumber": 130
+				},
+				{
+					"caller": "useDashboardSidebarPortsData",
+					"callee": "workspaceIds.has",
+					"lineNumber": 134
+				},
+				{
+					"caller": "useDashboardSidebarPortsData",
+					"callee": "enqueuePortEvent",
+					"lineNumber": 135
+				},
+				{
+					"caller": "useDashboardSidebarPortsData",
+					"callee": "bus.retain",
+					"lineNumber": 138
+				},
+				{
+					"caller": "useDashboardSidebarPortsData",
+					"callee": "cleanups.push",
+					"lineNumber": 139
+				},
+				{
+					"caller": "useDashboardSidebarPortsData",
+					"callee": "clearTimeout",
+					"lineNumber": 141
+				},
+				{
+					"caller": "useDashboardSidebarPortsData",
+					"callee": "flushPortEvents",
+					"lineNumber": 144
+				},
+				{
+					"caller": "useDashboardSidebarPortsData",
+					"callee": "removeListener",
+					"lineNumber": 145
+				},
+				{
+					"caller": "useDashboardSidebarPortsData",
+					"callee": "releaseBus",
+					"lineNumber": 146
+				},
+				{
+					"caller": "useDashboardSidebarPortsData",
+					"callee": "cleanup",
+					"lineNumber": 152
+				},
+				{
+					"caller": "useDashboardSidebarPortsData",
+					"callee": "useMemo",
+					"lineNumber": 157
+				},
+				{
+					"caller": "useDashboardSidebarPortsData",
+					"callee": "groupDashboardSidebarPorts",
+					"lineNumber": 159
+				},
+				{
+					"caller": "useDashboardSidebarPortsData",
+					"callee": "queries.map",
+					"lineNumber": 160
+				},
+				{
+					"caller": "useDashboardSidebarPortsData",
+					"callee": "workspacePortGroups.reduce",
+					"lineNumber": 166
+				},
+				{
+					"caller": "useDashboardSidebarPortsData",
+					"callee": "queries.flatMap",
+					"lineNumber": 171
+				}
+			],
+			"metrics": {
+				"importCount": 8,
+				"exportCount": 3,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarProjectSection/hooks/useDashboardSidebarProjectSectionActions/useDashboardSidebarProjectSectionActions.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 106,
+			"nonEmptyLines": 94,
+			"functions": [
+				{
+					"name": "useDashboardSidebarProjectSectionActions",
+					"startLine": 15,
+					"endLine": 106,
+					"params": ["{\n\tproject,\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "useDashboardSidebarProjectSectionActions",
+					"line": 15,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "useDashboardSidebarProjectSectionActions",
+					"callee": "useOpenNewWorkspaceModal",
+					"lineNumber": 18
+				},
+				{
+					"caller": "useDashboardSidebarProjectSectionActions",
+					"callee": "useNavigate",
+					"lineNumber": 19
+				},
+				{
+					"caller": "useDashboardSidebarProjectSectionActions",
+					"callee": "useOptimisticCollectionActions",
+					"lineNumber": 20
+				},
+				{
+					"caller": "useDashboardSidebarProjectSectionActions",
+					"callee": "useDashboardSidebarSectionRename",
+					"lineNumber": 21
+				},
+				{
+					"caller": "useDashboardSidebarProjectSectionActions",
+					"callee": "useDashboardSidebarState",
+					"lineNumber": 29
+				},
+				{
+					"caller": "useDashboardSidebarProjectSectionActions",
+					"callee": "useState",
+					"lineNumber": 31
+				},
+				{
+					"caller": "useDashboardSidebarProjectSectionActions",
+					"callee": "useState",
+					"lineNumber": 32
+				},
+				{
+					"caller": "startRename",
+					"callee": "setRenameValue",
+					"lineNumber": 35
+				},
+				{
+					"caller": "startRename",
+					"callee": "setIsRenaming",
+					"lineNumber": 36
+				},
+				{
+					"caller": "cancelRename",
+					"callee": "setIsRenaming",
+					"lineNumber": 40
+				},
+				{
+					"caller": "cancelRename",
+					"callee": "setRenameValue",
+					"lineNumber": 41
+				},
+				{
+					"caller": "submitRename",
+					"callee": "setIsRenaming",
+					"lineNumber": 45
+				},
+				{
+					"caller": "submitRename",
+					"callee": "renameValue.trim",
+					"lineNumber": 46
+				},
+				{
+					"caller": "submitRename",
+					"callee": "projectActions.renameProject",
+					"lineNumber": 48
+				},
+				{
+					"caller": "handleOpenInFinder",
+					"callee": "toast.info",
+					"lineNumber": 52
+				},
+				{
+					"caller": "handleOpenSettings",
+					"callee": "navigate",
+					"lineNumber": 56
+				},
+				{
+					"caller": "confirmRemoveFromSidebar",
+					"callee": "alert",
+					"lineNumber": 63
+				},
+				{
+					"caller": "confirmRemoveFromSidebar",
+					"callee": "removeProjectFromSidebar",
+					"lineNumber": 72
+				},
+				{
+					"caller": "handleNewWorkspace",
+					"callee": "openModal",
+					"lineNumber": 79
+				},
+				{
+					"caller": "handleNewSection",
+					"callee": "createSection",
+					"lineNumber": 83
+				},
+				{
+					"caller": "handleNewSection",
+					"callee": "requestSectionRename",
+					"lineNumber": 84
+				},
+				{
+					"caller": "handleNewSection",
+					"callee": "toggleProjectCollapsed",
+					"lineNumber": 86
+				}
+			],
+			"metrics": {
+				"importCount": 5,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarSection/components/DashboardSidebarSectionContextMenu/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 2,
+			"nonEmptyLines": 2,
+			"exports": [
+				{
+					"name": "DashboardSidebarSectionActionsDropdown",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "DashboardSidebarSectionContextMenu",
+					"line": 2,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 2,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarSection/components/DashboardSidebarSectionHeader/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "DashboardSidebarSectionHeader",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarSectionRenameContext/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 4,
+			"nonEmptyLines": 4,
+			"exports": [
+				{
+					"name": "DashboardSidebarSectionRenameProvider",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "useDashboardSidebarSectionRename",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 2,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/hooks/useDashboardSidebarWorkspaceItemActions/useDashboardSidebarWorkspaceItemActions.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 201,
+			"nonEmptyLines": 182,
+			"functions": [
+				{
+					"name": "useDashboardSidebarWorkspaceItemActions",
+					"startLine": 27,
+					"endLine": 201,
+					"params": [
+						"{\n\tworkspaceId,\n\tprojectId,\n\tworkspaceName,\n\tbranch,\n\tisMainWorkspace = false,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "useDashboardSidebarWorkspaceItemActions",
+					"line": 27,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "useDashboardSidebarWorkspaceItemActions",
+					"callee": "useNavigate",
+					"lineNumber": 34
+				},
+				{
+					"caller": "useDashboardSidebarWorkspaceItemActions",
+					"callee": "useMatchRoute",
+					"lineNumber": 35
+				},
+				{
+					"caller": "useDashboardSidebarWorkspaceItemActions",
+					"callee": "useLocalHostService",
+					"lineNumber": 36
+				},
+				{
+					"caller": "useDashboardSidebarWorkspaceItemActions",
+					"callee": "useCopyToClipboard",
+					"lineNumber": 38
+				},
+				{
+					"caller": "useDashboardSidebarWorkspaceItemActions",
+					"callee": "useOptimisticCollectionActions",
+					"lineNumber": 39
+				},
+				{
+					"caller": "useDashboardSidebarWorkspaceItemActions",
+					"callee": "useDashboardSidebarSectionRename",
+					"lineNumber": 40
+				},
+				{
+					"caller": "useDashboardSidebarWorkspaceItemActions",
+					"callee": "useV2NotificationStore",
+					"lineNumber": 41
+				},
+				{
+					"caller": "useDashboardSidebarWorkspaceItemActions",
+					"callee": "useV2NotificationStore",
+					"lineNumber": 42
+				},
+				{
+					"caller": "useDashboardSidebarWorkspaceItemActions",
+					"callee": "useMarkWorkspaceTerminalsSeen",
+					"lineNumber": 43
+				},
+				{
+					"caller": "useDashboardSidebarWorkspaceItemActions",
+					"callee": "useV2WorkspaceIsUnread",
+					"lineNumber": 44
+				},
+				{
+					"caller": "clearWorkspaceAttention",
+					"callee": "clearManualUnread",
+					"lineNumber": 47
+				},
+				{
+					"caller": "clearWorkspaceAttention",
+					"callee": "markWorkspaceTerminalsSeen",
+					"lineNumber": 48
+				},
+				{
+					"caller": "useDashboardSidebarWorkspaceItemActions",
+					"callee": "useDashboardSidebarState",
+					"lineNumber": 51
+				},
+				{
+					"caller": "useDashboardSidebarWorkspaceItemActions",
+					"callee": "useState",
+					"lineNumber": 53
+				},
+				{
+					"caller": "useDashboardSidebarWorkspaceItemActions",
+					"callee": "useState",
+					"lineNumber": 54
+				},
+				{
+					"caller": "useDashboardSidebarWorkspaceItemActions",
+					"callee": "useState",
+					"lineNumber": 55
+				},
+				{
+					"caller": "useDashboardSidebarWorkspaceItemActions",
+					"callee": "matchRoute",
+					"lineNumber": 57
+				},
+				{
+					"caller": "handleClick",
+					"callee": "clearWorkspaceAttention",
+					"lineNumber": 65
+				},
+				{
+					"caller": "handleClick",
+					"callee": "navigate",
+					"lineNumber": 66
+				},
+				{
+					"caller": "startRename",
+					"callee": "setRenameValue",
+					"lineNumber": 73
+				},
+				{
+					"caller": "startRename",
+					"callee": "setIsRenaming",
+					"lineNumber": 74
+				},
+				{
+					"caller": "cancelRename",
+					"callee": "setIsRenaming",
+					"lineNumber": 78
+				},
+				{
+					"caller": "cancelRename",
+					"callee": "setRenameValue",
+					"lineNumber": 79
+				},
+				{
+					"caller": "submitRename",
+					"callee": "setIsRenaming",
+					"lineNumber": 83
+				},
+				{
+					"caller": "submitRename",
+					"callee": "renameValue.trim",
+					"lineNumber": 84
+				},
+				{
+					"caller": "submitRename",
+					"callee": "workspaceActions.renameWorkspace",
+					"lineNumber": 86
+				},
+				{
+					"caller": "handleDeleted",
+					"callee": "removeWorkspaceFromSidebar",
+					"lineNumber": 90
+				},
+				{
+					"caller": "handleRemoveFromSidebar",
+					"callee": "useRemoveFromSidebarIntent.getState().request",
+					"lineNumber": 94
+				},
+				{
+					"caller": "handleRemoveFromSidebar",
+					"callee": "useRemoveFromSidebarIntent.getState",
+					"lineNumber": 94
+				},
+				{
+					"caller": "handleCreateSection",
+					"callee": "createSection",
+					"lineNumber": 103
+				},
+				{
+					"caller": "handleCreateSection",
+					"callee": "moveWorkspaceToSection",
+					"lineNumber": 104
+				},
+				{
+					"caller": "handleCreateSection",
+					"callee": "requestSectionRename",
+					"lineNumber": 105
+				},
+				{
+					"caller": "resolveWorktreePath",
+					"callee": "showHostServiceUnavailableToast",
+					"lineNumber": 110
+				},
+				{
+					"caller": "resolveWorktreePath",
+					"callee": "getHostServiceClientByUrl(\n\t\t\tactiveHostUrl,\n\t\t).workspace.get.query",
+					"lineNumber": 115
+				},
+				{
+					"caller": "resolveWorktreePath",
+					"callee": "getHostServiceClientByUrl",
+					"lineNumber": 115
+				},
+				{
+					"caller": "resolveWorktreePath",
+					"callee": "toast.error",
+					"lineNumber": 119
+				},
+				{
+					"caller": "handleOpenInFinder",
+					"callee": "resolveWorktreePath",
+					"lineNumber": 127
+				},
+				{
+					"caller": "handleOpenInFinder",
+					"callee": "electronTrpcClient.external.openInFinder.mutate",
+					"lineNumber": 129
+				},
+				{
+					"caller": "handleOpenInFinder",
+					"callee": "toast.error",
+					"lineNumber": 131
+				},
+				{
+					"caller": "handleCopyPath",
+					"callee": "resolveWorktreePath",
+					"lineNumber": 139
+				},
+				{
+					"caller": "handleCopyPath",
+					"callee": "copyToClipboard",
+					"lineNumber": 141
+				},
+				{
+					"caller": "handleCopyPath",
+					"callee": "toast.success",
+					"lineNumber": 142
+				},
+				{
+					"caller": "handleCopyPath",
+					"callee": "toast.error",
+					"lineNumber": 144
+				},
+				{
+					"caller": "handleToggleUnread",
+					"callee": "clearWorkspaceAttention",
+					"lineNumber": 152
+				},
+				{
+					"caller": "handleToggleUnread",
+					"callee": "setManualUnread",
+					"lineNumber": 154
+				},
+				{
+					"caller": "handleClearStatus",
+					"callee": "clearWorkspaceAttention",
+					"lineNumber": 161
+				},
+				{
+					"caller": "handleCopyBranchName",
+					"callee": "toast.error",
+					"lineNumber": 166
+				},
+				{
+					"caller": "handleCopyBranchName",
+					"callee": "copyToClipboard",
+					"lineNumber": 170
+				},
+				{
+					"caller": "handleCopyBranchName",
+					"callee": "toast.success",
+					"lineNumber": 171
+				},
+				{
+					"caller": "handleCopyBranchName",
+					"callee": "toast.error",
+					"lineNumber": 173
+				}
+			],
+			"metrics": {
+				"importCount": 11,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/SortableSectionHeader/SortableSectionHeader.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 111,
+			"nonEmptyLines": 104,
+			"functions": [
+				{
+					"name": "SortableSectionHeader",
+					"startLine": 22,
+					"endLine": 111,
+					"params": [
+						"{\n\tsortableId,\n\tsection,\n\tonDelete,\n\tonRename,\n\tonToggleCollapse,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "SortableSectionHeader",
+					"line": 22,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "SortableSectionHeader",
+					"callee": "useDashboardSidebarState",
+					"lineNumber": 29
+				},
+				{
+					"caller": "SortableSectionHeader",
+					"callee": "useDashboardSidebarSectionRename",
+					"lineNumber": 31
+				},
+				{
+					"caller": "SortableSectionHeader",
+					"callee": "useState",
+					"lineNumber": 32
+				},
+				{
+					"caller": "SortableSectionHeader",
+					"callee": "useState",
+					"lineNumber": 33
+				},
+				{
+					"caller": "SortableSectionHeader",
+					"callee": "useSortable",
+					"lineNumber": 42
+				},
+				{
+					"caller": "handleSubmitRename",
+					"callee": "renameValue.trim",
+					"lineNumber": 48
+				},
+				{
+					"caller": "handleSubmitRename",
+					"callee": "onRename",
+					"lineNumber": 49
+				},
+				{
+					"caller": "handleSubmitRename",
+					"callee": "setIsRenaming",
+					"lineNumber": 50
+				},
+				{
+					"caller": "SortableSectionHeader",
+					"callee": "useCallback",
+					"lineNumber": 52
+				},
+				{
+					"caller": "SortableSectionHeader",
+					"callee": "setRenameValue",
+					"lineNumber": 53
+				},
+				{
+					"caller": "SortableSectionHeader",
+					"callee": "setIsRenaming",
+					"lineNumber": 54
+				},
+				{
+					"caller": "SortableSectionHeader",
+					"callee": "useEffect",
+					"lineNumber": 57
+				},
+				{
+					"caller": "SortableSectionHeader",
+					"callee": "startRename",
+					"lineNumber": 59
+				},
+				{
+					"caller": "SortableSectionHeader",
+					"callee": "clearPendingSectionRename",
+					"lineNumber": 60
+				},
+				{
+					"caller": "SortableSectionHeader",
+					"callee": "CSS.Translate.toString",
+					"lineNumber": 72
+				},
+				{
+					"caller": "SortableSectionHeader",
+					"callee": "setSectionColor",
+					"lineNumber": 83
+				},
+				{
+					"caller": "SortableSectionHeader",
+					"callee": "onDelete",
+					"lineNumber": 84
+				},
+				{
+					"caller": "SortableSectionHeader",
+					"callee": "setRenameValue",
+					"lineNumber": 93
+				},
+				{
+					"caller": "SortableSectionHeader",
+					"callee": "setIsRenaming",
+					"lineNumber": 94
+				},
+				{
+					"caller": "SortableSectionHeader",
+					"callee": "onToggleCollapse",
+					"lineNumber": 96
+				},
+				{
+					"caller": "SortableSectionHeader",
+					"callee": "setSectionColor",
+					"lineNumber": 101
+				},
+				{
+					"caller": "SortableSectionHeader",
+					"callee": "onDelete",
+					"lineNumber": 102
+				}
+			],
+			"metrics": {
+				"importCount": 6,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/V2SetupScriptCard/V2SetupScriptCard.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 71,
+			"nonEmptyLines": 65,
+			"functions": [
+				{
+					"name": "V2SetupScriptCard",
+					"startLine": 17,
+					"endLine": 71,
+					"params": [
+						"{\n\thostUrl,\n\tprojectId,\n\tprojectName,\n\tisCollapsed,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "V2SetupScriptCard",
+					"line": 17,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "V2SetupScriptCard",
+					"callee": "useOpenNewWorkspaceModal",
+					"lineNumber": 23
+				},
+				{
+					"caller": "V2SetupScriptCard",
+					"callee": "useV2SetupCardDismissalsStore",
+					"lineNumber": 24
+				},
+				{
+					"caller": "V2SetupScriptCard",
+					"callee": "s.isDismissed",
+					"lineNumber": 25
+				},
+				{
+					"caller": "V2SetupScriptCard",
+					"callee": "useV2SetupCardDismissalsStore",
+					"lineNumber": 27
+				},
+				{
+					"caller": "V2SetupScriptCard",
+					"callee": "useQuery",
+					"lineNumber": 29
+				},
+				{
+					"caller": "V2SetupScriptCard",
+					"callee": "getHostServiceClientByUrl(hostUrl).config.shouldShowSetupCard.query",
+					"lineNumber": 32
+				},
+				{
+					"caller": "V2SetupScriptCard",
+					"callee": "getHostServiceClientByUrl",
+					"lineNumber": 32
+				},
+				{
+					"caller": "handleConfigure",
+					"callee": "useNewWorkspaceDraftStore.getState",
+					"lineNumber": 44
+				},
+				{
+					"caller": "handleConfigure",
+					"callee": "draftStore.resetDraft",
+					"lineNumber": 45
+				},
+				{
+					"caller": "handleConfigure",
+					"callee": "draftStore.updateDraft",
+					"lineNumber": 46
+				},
+				{
+					"caller": "handleConfigure",
+					"callee": "openNewWorkspaceModal",
+					"lineNumber": 47
+				},
+				{
+					"caller": "V2SetupScriptCard",
+					"callee": "dismiss",
+					"lineNumber": 66
+				}
+			],
+			"metrics": {
+				"importCount": 4,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarData/buildDashboardSidebarProjects.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 251,
+			"nonEmptyLines": 229,
+			"functions": [
+				{
+					"name": "buildDashboardSidebarProjects",
+					"startLine": 60,
+					"endLine": 251,
+					"params": [
+						"{\n\tsidebarProjects,\n\tsidebarSections,\n\tvisibleSidebarWorkspaces,\n\tmachineId,\n\tpullRequestsByWorkspaceId,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "buildDashboardSidebarProjects",
+					"line": 60,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "buildDashboardSidebarProjects",
+					"callee": "projectsById.set",
+					"lineNumber": 83
+				},
+				{
+					"caller": "buildDashboardSidebarProjects",
+					"callee": "projectsById.get",
+					"lineNumber": 93
+				},
+				{
+					"caller": "buildDashboardSidebarProjects",
+					"callee": "project.sectionMap.set",
+					"lineNumber": 101
+				},
+				{
+					"caller": "buildDashboardSidebarProjects",
+					"callee": "project.childEntries.push",
+					"lineNumber": 102
+				},
+				{
+					"caller": "buildDashboardSidebarProjects",
+					"callee": "projectsById.get",
+					"lineNumber": 112
+				},
+				{
+					"caller": "buildDashboardSidebarProjects",
+					"callee": "getV2WorkspaceDisplayName",
+					"lineNumber": 127
+				},
+				{
+					"caller": "buildDashboardSidebarProjects",
+					"callee": "pullRequestsByWorkspaceId.get",
+					"lineNumber": 129
+				},
+				{
+					"caller": "buildDashboardSidebarProjects",
+					"callee": "project.sectionMap.get",
+					"lineNumber": 146
+				},
+				{
+					"caller": "buildDashboardSidebarProjects",
+					"callee": "section.workspaces.push",
+					"lineNumber": 148
+				},
+				{
+					"caller": "buildDashboardSidebarProjects",
+					"callee": "project.orphanedWorkspaces.push",
+					"lineNumber": 154
+				},
+				{
+					"caller": "buildDashboardSidebarProjects",
+					"callee": "project.childEntries.push",
+					"lineNumber": 161
+				},
+				{
+					"caller": "buildDashboardSidebarProjects",
+					"callee": "sidebarProjects.flatMap",
+					"lineNumber": 170
+				},
+				{
+					"caller": "buildDashboardSidebarProjects",
+					"callee": "projectsById.get",
+					"lineNumber": 171
+				},
+				{
+					"caller": "compareByLocalMainThenTabOrder",
+					"callee": "isLocalMainWorkspace",
+					"lineNumber": 187
+				},
+				{
+					"caller": "compareByLocalMainThenTabOrder",
+					"callee": "isLocalMainWorkspace",
+					"lineNumber": 188
+				},
+				{
+					"caller": "buildDashboardSidebarProjects",
+					"callee": "childEntries\n\t\t\t.sort((left, right) => {\n\t\t\t\tconst leftLocalMain =\n\t\t\t\t\tleft.child.type === \"workspace\" &&\n\t\t\t\t\tisLocalMainWorkspace(left.child.workspace);\n\t\t\t\tconst rightLocalMain =\n\t\t\t\t\tright.child.type === \"workspace\" &&\n\t\t\t\t\tisLocalMainWorkspace(right.child.workspace);\n\t\t\t\tif (leftLocalMain !== rightLocalMain) {\n\t\t\t\t\treturn leftLocalMain ? -1 : 1;\n\t\t\t\t}\n\t\t\t\treturn left.tabOrder - right.tabOrder;\n\t\t\t})\n\t\t\t.map",
+					"lineNumber": 195
+				},
+				{
+					"caller": "buildDashboardSidebarProjects",
+					"callee": "childEntries\n\t\t\t.sort",
+					"lineNumber": 195
+				},
+				{
+					"caller": "buildDashboardSidebarProjects",
+					"callee": "isLocalMainWorkspace",
+					"lineNumber": 199
+				},
+				{
+					"caller": "buildDashboardSidebarProjects",
+					"callee": "isLocalMainWorkspace",
+					"lineNumber": 202
+				},
+				{
+					"caller": "buildDashboardSidebarProjects",
+					"callee": "children.push",
+					"lineNumber": 219
+				},
+				{
+					"caller": "buildDashboardSidebarProjects",
+					"callee": "currentSection.workspaces.push",
+					"lineNumber": 221
+				},
+				{
+					"caller": "buildDashboardSidebarProjects",
+					"callee": "children.push",
+					"lineNumber": 226
+				},
+				{
+					"caller": "buildDashboardSidebarProjects",
+					"callee": "children.findIndex",
+					"lineNumber": 231
+				},
+				{
+					"caller": "buildDashboardSidebarProjects",
+					"callee": "children.splice",
+					"lineNumber": 236
+				},
+				{
+					"caller": "buildDashboardSidebarProjects",
+					"callee": "orphanedWorkspaces\n\t\t\t\t\t.sort(compareByLocalMainThenTabOrder)\n\t\t\t\t\t.map",
+					"lineNumber": 239
+				},
+				{
+					"caller": "buildDashboardSidebarProjects",
+					"callee": "orphanedWorkspaces\n\t\t\t\t\t.sort",
+					"lineNumber": 239
+				}
+			],
+			"metrics": {
+				"importCount": 3,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		}
+	]
+}

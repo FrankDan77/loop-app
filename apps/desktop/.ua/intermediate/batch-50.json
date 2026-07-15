@@ -1,0 +1,4206 @@
+{
+	"batchIndex": 50,
+	"totalBatches": 117,
+	"nodeCount": 226,
+	"edgeCount": 374,
+	"nodes": [
+		{
+			"id": "file:src/main/lib/window-state/index.ts",
+			"type": "file",
+			"path": "src/main/lib/window-state/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 11,
+			"isTest": false
+		},
+		{
+			"id": "file:src/main/lib/window-state/window-state.test.ts",
+			"type": "file",
+			"path": "src/main/lib/window-state/window-state.test.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 378,
+			"isTest": true
+		},
+		{
+			"id": "file:src/main/lib/window-state/window-state.ts",
+			"type": "file",
+			"path": "src/main/lib/window-state/window-state.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 75,
+			"isTest": false
+		},
+		{
+			"id": "function:src/main/lib/window-state/window-state.ts:loadWindowState",
+			"type": "function",
+			"path": "src/main/lib/window-state/window-state.ts",
+			"name": "loadWindowState",
+			"startLine": 24,
+			"endLine": 38,
+			"params": []
+		},
+		{
+			"id": "function:src/main/lib/window-state/window-state.ts:saveWindowState",
+			"type": "function",
+			"path": "src/main/lib/window-state/window-state.ts",
+			"name": "saveWindowState",
+			"startLine": 44,
+			"endLine": 60,
+			"params": ["state"]
+		},
+		{
+			"id": "function:src/main/lib/window-state/window-state.ts:isValidWindowState",
+			"type": "function",
+			"path": "src/main/lib/window-state/window-state.ts",
+			"name": "isValidWindowState",
+			"startLine": 62,
+			"endLine": 75,
+			"params": ["value"]
+		},
+		{
+			"id": "file:src/main/lib/workspace-init-manager.ts",
+			"type": "file",
+			"path": "src/main/lib/workspace-init-manager.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 305,
+			"isTest": false
+		},
+		{
+			"id": "class:src/main/lib/workspace-init-manager.ts:WorkspaceInitManager",
+			"type": "class",
+			"path": "src/main/lib/workspace-init-manager.ts",
+			"name": "WorkspaceInitManager",
+			"startLine": 25,
+			"endLine": 302,
+			"methods": [
+				"isInitializing",
+				"hasFailed",
+				"getProgress",
+				"getAllProgress",
+				"startJob",
+				"updateProgress",
+				"markWorktreeCreated",
+				"wasWorktreeCreated",
+				"cancel",
+				"isCancelled",
+				"isCancellationRequested",
+				"clearJob",
+				"finalizeJob",
+				"waitForInit",
+				"acquireProjectLock",
+				"releaseProjectLock",
+				"hasProjectLock"
+			],
+			"properties": [
+				"jobs",
+				"projectLocks",
+				"projectLockResolvers",
+				"donePromises",
+				"doneResolvers",
+				"cancellations"
+			]
+		},
+		{
+			"id": "file:src/main/lib/workspace-runtime/index.ts",
+			"type": "file",
+			"path": "src/main/lib/workspace-runtime/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 31,
+			"isTest": false
+		},
+		{
+			"id": "file:src/main/lib/workspace-runtime/local.ts",
+			"type": "file",
+			"path": "src/main/lib/workspace-runtime/local.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 254,
+			"isTest": false
+		},
+		{
+			"id": "class:src/main/lib/workspace-runtime/local.ts:LocalTerminalRuntime",
+			"type": "class",
+			"path": "src/main/lib/workspace-runtime/local.ts",
+			"name": "LocalTerminalRuntime",
+			"startLine": 36,
+			"endLine": 224,
+			"methods": [
+				"constructor",
+				"on",
+				"off",
+				"once",
+				"emit",
+				"addListener",
+				"removeListener",
+				"removeAllListeners",
+				"setMaxListeners",
+				"getMaxListeners",
+				"listeners",
+				"rawListeners",
+				"listenerCount",
+				"prependListener",
+				"prependOnceListener",
+				"eventNames",
+				"detachAllListeners"
+			],
+			"properties": [
+				"backend",
+				"management",
+				"capabilities",
+				"createOrAttach",
+				"cancelCreateOrAttach",
+				"write",
+				"resize",
+				"signal",
+				"kill",
+				"detach",
+				"clearScrollback",
+				"ackColdRestore",
+				"getSession",
+				"killByWorkspaceId",
+				"getSessionCountByWorkspaceId",
+				"refreshPromptsForWorkspace",
+				"cleanup"
+			]
+		},
+		{
+			"id": "class:src/main/lib/workspace-runtime/local.ts:LocalWorkspaceRuntime",
+			"type": "class",
+			"path": "src/main/lib/workspace-runtime/local.ts",
+			"name": "LocalWorkspaceRuntime",
+			"startLine": 236,
+			"endLine": 254,
+			"methods": ["constructor"],
+			"properties": ["id", "terminal", "capabilities"]
+		},
+		{
+			"id": "file:src/main/lib/workspace-runtime/registry.ts",
+			"type": "file",
+			"path": "src/main/lib/workspace-runtime/registry.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 88,
+			"isTest": false
+		},
+		{
+			"id": "function:src/main/lib/workspace-runtime/registry.ts:getWorkspaceRuntimeRegistry",
+			"type": "function",
+			"path": "src/main/lib/workspace-runtime/registry.ts",
+			"name": "getWorkspaceRuntimeRegistry",
+			"startLine": 75,
+			"endLine": 80,
+			"params": []
+		},
+		{
+			"id": "function:src/main/lib/workspace-runtime/registry.ts:resetWorkspaceRuntimeRegistry",
+			"type": "function",
+			"path": "src/main/lib/workspace-runtime/registry.ts",
+			"name": "resetWorkspaceRuntimeRegistry",
+			"startLine": 86,
+			"endLine": 88,
+			"params": []
+		},
+		{
+			"id": "class:src/main/lib/workspace-runtime/registry.ts:DefaultWorkspaceRuntimeRegistry",
+			"type": "class",
+			"path": "src/main/lib/workspace-runtime/registry.ts",
+			"name": "DefaultWorkspaceRuntimeRegistry",
+			"startLine": 29,
+			"endLine": 56,
+			"methods": ["getForWorkspaceId", "getDefault"],
+			"properties": ["localRuntime"]
+		},
+		{
+			"id": "file:src/main/lib/workspace-runtime/types.ts",
+			"type": "file",
+			"path": "src/main/lib/workspace-runtime/types.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 231,
+			"isTest": false
+		},
+		{
+			"id": "file:src/main/network-logger/index.ts",
+			"type": "file",
+			"path": "src/main/network-logger/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 101,
+			"isTest": false
+		},
+		{
+			"id": "function:src/main/network-logger/index.ts:logsDir",
+			"type": "function",
+			"path": "src/main/network-logger/index.ts",
+			"name": "logsDir",
+			"startLine": 14,
+			"endLine": 18,
+			"params": []
+		},
+		{
+			"id": "function:src/main/network-logger/index.ts:archivePreviousSession",
+			"type": "function",
+			"path": "src/main/network-logger/index.ts",
+			"name": "archivePreviousSession",
+			"startLine": 20,
+			"endLine": 31,
+			"params": []
+		},
+		{
+			"id": "function:src/main/network-logger/index.ts:finalizeIfNeeded",
+			"type": "function",
+			"path": "src/main/network-logger/index.ts",
+			"name": "finalizeIfNeeded",
+			"startLine": 37,
+			"endLine": 56,
+			"params": ["filePath"]
+		},
+		{
+			"id": "function:src/main/network-logger/index.ts:pruneOldSessions",
+			"type": "function",
+			"path": "src/main/network-logger/index.ts",
+			"name": "pruneOldSessions",
+			"startLine": 58,
+			"endLine": 78,
+			"params": []
+		},
+		{
+			"id": "function:src/main/network-logger/index.ts:startNetworkLogger",
+			"type": "function",
+			"path": "src/main/network-logger/index.ts",
+			"name": "startNetworkLogger",
+			"startLine": 80,
+			"endLine": 91,
+			"params": []
+		},
+		{
+			"id": "function:src/main/network-logger/index.ts:stopNetworkLogger",
+			"type": "function",
+			"path": "src/main/network-logger/index.ts",
+			"name": "stopNetworkLogger",
+			"startLine": 93,
+			"endLine": 101,
+			"params": []
+		},
+		{
+			"id": "file:src/main/terminal-host/index.ts",
+			"type": "file",
+			"path": "src/main/terminal-host/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 839,
+			"isTest": false
+		},
+		{
+			"id": "function:src/main/terminal-host/index.ts:log",
+			"type": "function",
+			"path": "src/main/terminal-host/index.ts",
+			"name": "log",
+			"startLine": 71,
+			"endLine": 83,
+			"params": ["level", "message", "data"]
+		},
+		{
+			"id": "function:src/main/terminal-host/index.ts:ensureAuthToken",
+			"type": "function",
+			"path": "src/main/terminal-host/index.ts",
+			"name": "ensureAuthToken",
+			"startLine": 91,
+			"endLine": 102,
+			"params": []
+		},
+		{
+			"id": "function:src/main/terminal-host/index.ts:validateToken",
+			"type": "function",
+			"path": "src/main/terminal-host/index.ts",
+			"name": "validateToken",
+			"startLine": 104,
+			"endLine": 106,
+			"params": ["token"]
+		},
+		{
+			"id": "function:src/main/terminal-host/index.ts:sendResponse",
+			"type": "function",
+			"path": "src/main/terminal-host/index.ts",
+			"name": "sendResponse",
+			"startLine": 153,
+			"endLine": 158,
+			"params": ["socket", "response"]
+		},
+		{
+			"id": "function:src/main/terminal-host/index.ts:sendSuccess",
+			"type": "function",
+			"path": "src/main/terminal-host/index.ts",
+			"name": "sendSuccess",
+			"startLine": 160,
+			"endLine": 162,
+			"params": ["socket", "id", "payload"]
+		},
+		{
+			"id": "function:src/main/terminal-host/index.ts:sendError",
+			"type": "function",
+			"path": "src/main/terminal-host/index.ts",
+			"name": "sendError",
+			"startLine": 164,
+			"endLine": 166,
+			"params": ["socket", "id", "code", "message"]
+		},
+		{
+			"id": "function:src/main/terminal-host/index.ts:isValidRole",
+			"type": "function",
+			"path": "src/main/terminal-host/index.ts",
+			"name": "isValidRole",
+			"startLine": 198,
+			"endLine": 200,
+			"params": ["role"]
+		},
+		{
+			"id": "function:src/main/terminal-host/index.ts:broadcastEventToAllStreamSockets",
+			"type": "function",
+			"path": "src/main/terminal-host/index.ts",
+			"name": "broadcastEventToAllStreamSockets",
+			"startLine": 202,
+			"endLine": 226,
+			"params": ["event"]
+		},
+		{
+			"id": "function:src/main/terminal-host/index.ts:getStreamSocketForClient",
+			"type": "function",
+			"path": "src/main/terminal-host/index.ts",
+			"name": "getStreamSocketForClient",
+			"startLine": 228,
+			"endLine": 234,
+			"params": ["clientState"]
+		},
+		{
+			"id": "function:src/main/terminal-host/index.ts:handleRequest",
+			"type": "function",
+			"path": "src/main/terminal-host/index.ts",
+			"name": "handleRequest",
+			"startLine": 564,
+			"endLine": 588,
+			"params": ["socket", "request", "clientState"]
+		},
+		{
+			"id": "function:src/main/terminal-host/index.ts:handleConnection",
+			"type": "function",
+			"path": "src/main/terminal-host/index.ts",
+			"name": "handleConnection",
+			"startLine": 596,
+			"endLine": 653,
+			"params": ["socket"]
+		},
+		{
+			"id": "function:src/main/terminal-host/index.ts:isSocketLive",
+			"type": "function",
+			"path": "src/main/terminal-host/index.ts",
+			"name": "isSocketLive",
+			"startLine": 659,
+			"endLine": 685,
+			"params": []
+		},
+		{
+			"id": "function:src/main/terminal-host/index.ts:startServer",
+			"type": "function",
+			"path": "src/main/terminal-host/index.ts",
+			"name": "startServer",
+			"startLine": 687,
+			"endLine": 782,
+			"params": []
+		},
+		{
+			"id": "function:src/main/terminal-host/index.ts:stopServer",
+			"type": "function",
+			"path": "src/main/terminal-host/index.ts",
+			"name": "stopServer",
+			"startLine": 784,
+			"endLine": 807,
+			"params": []
+		},
+		{
+			"id": "function:src/main/terminal-host/index.ts:setupSignalHandlers",
+			"type": "function",
+			"path": "src/main/terminal-host/index.ts",
+			"name": "setupSignalHandlers",
+			"startLine": 813,
+			"endLine": 818,
+			"params": []
+		},
+		{
+			"id": "function:src/main/terminal-host/index.ts:main",
+			"type": "function",
+			"path": "src/main/terminal-host/index.ts",
+			"name": "main",
+			"startLine": 824,
+			"endLine": 837,
+			"params": []
+		},
+		{
+			"id": "class:src/main/terminal-host/index.ts:NdjsonParser",
+			"type": "class",
+			"path": "src/main/terminal-host/index.ts",
+			"name": "NdjsonParser",
+			"startLine": 112,
+			"endLine": 151,
+			"methods": ["parse"],
+			"properties": ["buffer"]
+		},
+		{
+			"id": "file:src/main/terminal-host/pty-subprocess-ipc.ts",
+			"type": "file",
+			"path": "src/main/terminal-host/pty-subprocess-ipc.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 129,
+			"isTest": false
+		},
+		{
+			"id": "function:src/main/terminal-host/pty-subprocess-ipc.ts:createFrameHeader",
+			"type": "function",
+			"path": "src/main/terminal-host/pty-subprocess-ipc.ts",
+			"name": "createFrameHeader",
+			"startLine": 30,
+			"endLine": 38,
+			"params": ["type", "payloadLength"]
+		},
+		{
+			"id": "function:src/main/terminal-host/pty-subprocess-ipc.ts:writeFrame",
+			"type": "function",
+			"path": "src/main/terminal-host/pty-subprocess-ipc.ts",
+			"name": "writeFrame",
+			"startLine": 40,
+			"endLine": 57,
+			"params": ["writable", "type", "payload"]
+		},
+		{
+			"id": "class:src/main/terminal-host/pty-subprocess-ipc.ts:PtySubprocessFrameDecoder",
+			"type": "class",
+			"path": "src/main/terminal-host/pty-subprocess-ipc.ts",
+			"name": "PtySubprocessFrameDecoder",
+			"startLine": 59,
+			"endLine": 129,
+			"methods": ["push"],
+			"properties": [
+				"header",
+				"headerOffset",
+				"frameType",
+				"payload",
+				"payloadOffset"
+			]
+		},
+		{
+			"id": "file:src/main/terminal-host/pty-subprocess.ts",
+			"type": "file",
+			"path": "src/main/terminal-host/pty-subprocess.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 534,
+			"isTest": false
+		},
+		{
+			"id": "function:src/main/terminal-host/pty-subprocess.ts:send",
+			"type": "function",
+			"path": "src/main/terminal-host/pty-subprocess.ts",
+			"name": "send",
+			"startLine": 79,
+			"endLine": 87,
+			"params": ["type", "payload"]
+		},
+		{
+			"id": "function:src/main/terminal-host/pty-subprocess.ts:sendError",
+			"type": "function",
+			"path": "src/main/terminal-host/pty-subprocess.ts",
+			"name": "sendError",
+			"startLine": 97,
+			"endLine": 99,
+			"params": ["message"]
+		},
+		{
+			"id": "function:src/main/terminal-host/pty-subprocess.ts:queueOutput",
+			"type": "function",
+			"path": "src/main/terminal-host/pty-subprocess.ts",
+			"name": "queueOutput",
+			"startLine": 101,
+			"endLine": 117,
+			"params": ["data"]
+		},
+		{
+			"id": "function:src/main/terminal-host/pty-subprocess.ts:flushOutput",
+			"type": "function",
+			"path": "src/main/terminal-host/pty-subprocess.ts",
+			"name": "flushOutput",
+			"startLine": 119,
+			"endLine": 137,
+			"params": []
+		},
+		{
+			"id": "function:src/main/terminal-host/pty-subprocess.ts:maybePauseStdin",
+			"type": "function",
+			"path": "src/main/terminal-host/pty-subprocess.ts",
+			"name": "maybePauseStdin",
+			"startLine": 139,
+			"endLine": 145,
+			"params": []
+		},
+		{
+			"id": "function:src/main/terminal-host/pty-subprocess.ts:maybeResumeStdin",
+			"type": "function",
+			"path": "src/main/terminal-host/pty-subprocess.ts",
+			"name": "maybeResumeStdin",
+			"startLine": 147,
+			"endLine": 153,
+			"params": []
+		},
+		{
+			"id": "function:src/main/terminal-host/pty-subprocess.ts:queueWriteBuffer",
+			"type": "function",
+			"path": "src/main/terminal-host/pty-subprocess.ts",
+			"name": "queueWriteBuffer",
+			"startLine": 155,
+			"endLine": 166,
+			"params": ["buf"]
+		},
+		{
+			"id": "function:src/main/terminal-host/pty-subprocess.ts:scheduleFlush",
+			"type": "function",
+			"path": "src/main/terminal-host/pty-subprocess.ts",
+			"name": "scheduleFlush",
+			"startLine": 168,
+			"endLine": 172,
+			"params": []
+		},
+		{
+			"id": "function:src/main/terminal-host/pty-subprocess.ts:flush",
+			"type": "function",
+			"path": "src/main/terminal-host/pty-subprocess.ts",
+			"name": "flush",
+			"startLine": 174,
+			"endLine": 264,
+			"params": []
+		},
+		{
+			"id": "function:src/main/terminal-host/pty-subprocess.ts:signalProcessTreeGroups",
+			"type": "function",
+			"path": "src/main/terminal-host/pty-subprocess.ts",
+			"name": "signalProcessTreeGroups",
+			"startLine": 266,
+			"endLine": 274,
+			"params": ["rootPid", "signal"]
+		},
+		{
+			"id": "function:src/main/terminal-host/pty-subprocess.ts:logProcessSignalError",
+			"type": "function",
+			"path": "src/main/terminal-host/pty-subprocess.ts",
+			"name": "logProcessSignalError",
+			"startLine": 276,
+			"endLine": 284,
+			"params": ["event"]
+		},
+		{
+			"id": "function:src/main/terminal-host/pty-subprocess.ts:handleSpawn",
+			"type": "function",
+			"path": "src/main/terminal-host/pty-subprocess.ts",
+			"name": "handleSpawn",
+			"startLine": 290,
+			"endLine": 364,
+			"params": ["payload"]
+		},
+		{
+			"id": "function:src/main/terminal-host/pty-subprocess.ts:handleWrite",
+			"type": "function",
+			"path": "src/main/terminal-host/pty-subprocess.ts",
+			"name": "handleWrite",
+			"startLine": 366,
+			"endLine": 373,
+			"params": ["payload"]
+		},
+		{
+			"id": "function:src/main/terminal-host/pty-subprocess.ts:handleResize",
+			"type": "function",
+			"path": "src/main/terminal-host/pty-subprocess.ts",
+			"name": "handleResize",
+			"startLine": 375,
+			"endLine": 385,
+			"params": ["payload"]
+		},
+		{
+			"id": "function:src/main/terminal-host/pty-subprocess.ts:handleKill",
+			"type": "function",
+			"path": "src/main/terminal-host/pty-subprocess.ts",
+			"name": "handleKill",
+			"startLine": 387,
+			"endLine": 441,
+			"params": ["payload"]
+		},
+		{
+			"id": "function:src/main/terminal-host/pty-subprocess.ts:handleSignal",
+			"type": "function",
+			"path": "src/main/terminal-host/pty-subprocess.ts",
+			"name": "handleSignal",
+			"startLine": 448,
+			"endLine": 460,
+			"params": ["payload"]
+		},
+		{
+			"id": "function:src/main/terminal-host/pty-subprocess.ts:handleDispose",
+			"type": "function",
+			"path": "src/main/terminal-host/pty-subprocess.ts",
+			"name": "handleDispose",
+			"startLine": 462,
+			"endLine": 490,
+			"params": []
+		},
+		{
+			"id": "file:src/main/terminal-host/session-shell-ready.test.ts",
+			"type": "file",
+			"path": "src/main/terminal-host/session-shell-ready.test.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 351,
+			"isTest": true
+		},
+		{
+			"id": "function:src/main/terminal-host/session-shell-ready.test.ts:sendFrame",
+			"type": "function",
+			"path": "src/main/terminal-host/session-shell-ready.test.ts",
+			"name": "sendFrame",
+			"startLine": 46,
+			"endLine": 54,
+			"params": ["proc", "type", "payload"]
+		},
+		{
+			"id": "function:src/main/terminal-host/session-shell-ready.test.ts:sendReady",
+			"type": "function",
+			"path": "src/main/terminal-host/session-shell-ready.test.ts",
+			"name": "sendReady",
+			"startLine": 57,
+			"endLine": 59,
+			"params": ["proc"]
+		},
+		{
+			"id": "function:src/main/terminal-host/session-shell-ready.test.ts:sendSpawned",
+			"type": "function",
+			"path": "src/main/terminal-host/session-shell-ready.test.ts",
+			"name": "sendSpawned",
+			"startLine": 62,
+			"endLine": 66,
+			"params": ["proc", "pid"]
+		},
+		{
+			"id": "function:src/main/terminal-host/session-shell-ready.test.ts:sendData",
+			"type": "function",
+			"path": "src/main/terminal-host/session-shell-ready.test.ts",
+			"name": "sendData",
+			"startLine": 69,
+			"endLine": 71,
+			"params": ["proc", "data"]
+		},
+		{
+			"id": "function:src/main/terminal-host/session-shell-ready.test.ts:sendExit",
+			"type": "function",
+			"path": "src/main/terminal-host/session-shell-ready.test.ts",
+			"name": "sendExit",
+			"startLine": 74,
+			"endLine": 79,
+			"params": ["proc", "code"]
+		},
+		{
+			"id": "function:src/main/terminal-host/session-shell-ready.test.ts:getWrittenData",
+			"type": "function",
+			"path": "src/main/terminal-host/session-shell-ready.test.ts",
+			"name": "getWrittenData",
+			"startLine": 82,
+			"endLine": 88,
+			"params": ["proc"]
+		},
+		{
+			"id": "function:src/main/terminal-host/session-shell-ready.test.ts:createTestSession",
+			"type": "function",
+			"path": "src/main/terminal-host/session-shell-ready.test.ts",
+			"name": "createTestSession",
+			"startLine": 91,
+			"endLine": 108,
+			"params": ["shell"]
+		},
+		{
+			"id": "function:src/main/terminal-host/session-shell-ready.test.ts:spawnAndReady",
+			"type": "function",
+			"path": "src/main/terminal-host/session-shell-ready.test.ts",
+			"name": "spawnAndReady",
+			"startLine": 111,
+			"endLine": 118,
+			"params": ["session", "proc"]
+		},
+		{
+			"id": "class:src/main/terminal-host/session-shell-ready.test.ts:FakeStdout",
+			"type": "class",
+			"path": "src/main/terminal-host/session-shell-ready.test.ts",
+			"name": "FakeStdout",
+			"startLine": 20,
+			"endLine": 20,
+			"methods": [],
+			"properties": []
+		},
+		{
+			"id": "class:src/main/terminal-host/session-shell-ready.test.ts:FakeStdin",
+			"type": "class",
+			"path": "src/main/terminal-host/session-shell-ready.test.ts",
+			"name": "FakeStdin",
+			"startLine": 22,
+			"endLine": 31,
+			"methods": ["write"],
+			"properties": ["writes"]
+		},
+		{
+			"id": "class:src/main/terminal-host/session-shell-ready.test.ts:FakeChildProcess",
+			"type": "class",
+			"path": "src/main/terminal-host/session-shell-ready.test.ts",
+			"name": "FakeChildProcess",
+			"startLine": 33,
+			"endLine": 40,
+			"methods": ["kill"],
+			"properties": ["stdout", "stdin", "pid"]
+		},
+		{
+			"id": "file:src/main/terminal-host/session.test.ts",
+			"type": "file",
+			"path": "src/main/terminal-host/session.test.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 491,
+			"isTest": true
+		},
+		{
+			"id": "function:src/main/terminal-host/session.test.ts:sendFrame",
+			"type": "function",
+			"path": "src/main/terminal-host/session.test.ts",
+			"name": "sendFrame",
+			"startLine": 53,
+			"endLine": 61,
+			"params": ["proc", "type", "payload"]
+		},
+		{
+			"id": "function:src/main/terminal-host/session.test.ts:sendReady",
+			"type": "function",
+			"path": "src/main/terminal-host/session.test.ts",
+			"name": "sendReady",
+			"startLine": 63,
+			"endLine": 65,
+			"params": ["proc"]
+		},
+		{
+			"id": "function:src/main/terminal-host/session.test.ts:sendSpawned",
+			"type": "function",
+			"path": "src/main/terminal-host/session.test.ts",
+			"name": "sendSpawned",
+			"startLine": 67,
+			"endLine": 71,
+			"params": ["proc", "pid"]
+		},
+		{
+			"id": "function:src/main/terminal-host/session.test.ts:getSpawnPayload",
+			"type": "function",
+			"path": "src/main/terminal-host/session.test.ts",
+			"name": "getSpawnPayload",
+			"startLine": 73,
+			"endLine": 88,
+			"params": ["fakeChild"]
+		},
+		{
+			"id": "function:src/main/terminal-host/session.test.ts:spawnAndReadySession",
+			"type": "function",
+			"path": "src/main/terminal-host/session.test.ts",
+			"name": "spawnAndReadySession",
+			"startLine": 90,
+			"endLine": 99,
+			"params": ["session"]
+		},
+		{
+			"id": "class:src/main/terminal-host/session.test.ts:FakeStdout",
+			"type": "class",
+			"path": "src/main/terminal-host/session.test.ts",
+			"name": "FakeStdout",
+			"startLine": 15,
+			"endLine": 28,
+			"methods": ["pause", "resume"],
+			"properties": ["pauseCalls", "resumeCalls"]
+		},
+		{
+			"id": "class:src/main/terminal-host/session.test.ts:FakeStdin",
+			"type": "class",
+			"path": "src/main/terminal-host/session.test.ts",
+			"name": "FakeStdin",
+			"startLine": 30,
+			"endLine": 39,
+			"methods": ["write"],
+			"properties": ["writes"]
+		},
+		{
+			"id": "class:src/main/terminal-host/session.test.ts:FakeChildProcess",
+			"type": "class",
+			"path": "src/main/terminal-host/session.test.ts",
+			"name": "FakeChildProcess",
+			"startLine": 41,
+			"endLine": 48,
+			"methods": ["kill"],
+			"properties": ["stdout", "stdin", "pid"]
+		},
+		{
+			"id": "file:src/main/terminal-host/session.ts",
+			"type": "file",
+			"path": "src/main/terminal-host/session.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1198,
+			"isTest": false
+		},
+		{
+			"id": "function:src/main/terminal-host/session.ts:createSession",
+			"type": "function",
+			"path": "src/main/terminal-host/session.ts",
+			"name": "createSession",
+			"startLine": 1182,
+			"endLine": 1198,
+			"params": ["request"]
+		},
+		{
+			"id": "class:src/main/terminal-host/session.ts:Session",
+			"type": "class",
+			"path": "src/main/terminal-host/session.ts",
+			"name": "Session",
+			"startLine": 131,
+			"endLine": 1173,
+			"methods": [
+				"constructor",
+				"spawn",
+				"handleSubprocessFrame",
+				"handleSubprocessExit",
+				"flushSubprocessStdinQueue",
+				"sendFrameToSubprocess",
+				"sendSpawnToSubprocess",
+				"sendWriteToSubprocess",
+				"sendResizeToSubprocess",
+				"sendKillToSubprocess",
+				"sendSignalToSubprocess",
+				"sendDisposeToSubprocess",
+				"enqueueEmulatorWrite",
+				"scheduleEmulatorWrite",
+				"processEmulatorWriteQueue",
+				"resolveReachedSnapshotBoundaryWaiters",
+				"resolveAllSnapshotBoundaryWaiters",
+				"flushToSnapshotBoundary",
+				"isAlive",
+				"pid",
+				"isTerminating",
+				"isAttachable",
+				"waitForReady",
+				"clientCount",
+				"attach",
+				"detach",
+				"detachAttachedClient",
+				"write",
+				"resize",
+				"clearScrollback",
+				"getSnapshot",
+				"getMeta",
+				"sendSignal",
+				"kill",
+				"dispose",
+				"collectProcessPids",
+				"resetProcessState",
+				"onExit",
+				"resolveShellReady",
+				"broadcastEvent",
+				"handleClientBackpressure",
+				"maybePauseSubprocessStdoutForEmulatorBackpressure",
+				"maybeResumeSubprocessStdoutForEmulatorBackpressure",
+				"updateSubprocessStdoutFlow",
+				"getDefaultShell"
+			],
+			"properties": [
+				"sessionId",
+				"workspaceId",
+				"paneId",
+				"tabId",
+				"shell",
+				"command",
+				"createdAt",
+				"spawnProcess",
+				"subprocess",
+				"subprocessReady",
+				"emulator",
+				"attachedClients",
+				"clientSocketsWaitingForDrain",
+				"subprocessStdoutPaused",
+				"lastAttachedAt",
+				"exitCode",
+				"disposed",
+				"terminatingAt",
+				"subprocessDecoder",
+				"subprocessStdinQueue",
+				"subprocessStdinQueuedBytes",
+				"subprocessStdinDrainArmed",
+				"ptyPid",
+				"emulatorWriteBackpressured",
+				"ptyReadyPromise",
+				"ptyReadyResolve",
+				"shellReadyState",
+				"shellReadyTimeoutId",
+				"scanState",
+				"emulatorWriteQueue",
+				"emulatorWriteQueuedBytes",
+				"emulatorWriteScheduled",
+				"emulatorFlushWaiters",
+				"emulatorWriteProcessedItems",
+				"nextSnapshotBoundaryWaiterId",
+				"snapshotBoundaryWaiters",
+				"onSessionExit",
+				"pendingSpawn"
+			]
+		},
+		{
+			"id": "file:src/main/terminal-host/signal-handlers.ts",
+			"type": "file",
+			"path": "src/main/terminal-host/signal-handlers.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 213,
+			"isTest": false
+		},
+		{
+			"id": "function:src/main/terminal-host/signal-handlers.ts:isTransientError",
+			"type": "function",
+			"path": "src/main/terminal-host/signal-handlers.ts",
+			"name": "isTransientError",
+			"startLine": 45,
+			"endLine": 54,
+			"params": ["error"]
+		},
+		{
+			"id": "function:src/main/terminal-host/signal-handlers.ts:getTransientErrorIdentifier",
+			"type": "function",
+			"path": "src/main/terminal-host/signal-handlers.ts",
+			"name": "getTransientErrorIdentifier",
+			"startLine": 56,
+			"endLine": 62,
+			"params": ["error"]
+		},
+		{
+			"id": "function:src/main/terminal-host/signal-handlers.ts:setupTerminalHostSignalHandlers",
+			"type": "function",
+			"path": "src/main/terminal-host/signal-handlers.ts",
+			"name": "setupTerminalHostSignalHandlers",
+			"startLine": 64,
+			"endLine": 213,
+			"params": ["{\n\tlog,\n\tstopServer,\n}"]
+		},
+		{
+			"id": "file:src/main/terminal-host/terminal-host.test.ts",
+			"type": "file",
+			"path": "src/main/terminal-host/terminal-host.test.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 220,
+			"isTest": true
+		},
+		{
+			"id": "function:src/main/terminal-host/terminal-host.test.ts:emitReadyAndSpawned",
+			"type": "function",
+			"path": "src/main/terminal-host/terminal-host.test.ts",
+			"name": "emitReadyAndSpawned",
+			"startLine": 44,
+			"endLine": 53,
+			"params": ["child", "pid"]
+		},
+		{
+			"id": "function:src/main/terminal-host/terminal-host.test.ts:emitReadyOnly",
+			"type": "function",
+			"path": "src/main/terminal-host/terminal-host.test.ts",
+			"name": "emitReadyOnly",
+			"startLine": 55,
+			"endLine": 57,
+			"params": ["child"]
+		},
+		{
+			"id": "function:src/main/terminal-host/terminal-host.test.ts:emitReadyThenError",
+			"type": "function",
+			"path": "src/main/terminal-host/terminal-host.test.ts",
+			"name": "emitReadyThenError",
+			"startLine": 59,
+			"endLine": 70,
+			"params": ["child", "errorMsg"]
+		},
+		{
+			"id": "class:src/main/terminal-host/terminal-host.test.ts:FakeStdout",
+			"type": "class",
+			"path": "src/main/terminal-host/terminal-host.test.ts",
+			"name": "FakeStdout",
+			"startLine": 14,
+			"endLine": 18,
+			"methods": ["write"],
+			"properties": []
+		},
+		{
+			"id": "class:src/main/terminal-host/terminal-host.test.ts:FakeStdin",
+			"type": "class",
+			"path": "src/main/terminal-host/terminal-host.test.ts",
+			"name": "FakeStdin",
+			"startLine": 20,
+			"endLine": 29,
+			"methods": ["write"],
+			"properties": ["writes"]
+		},
+		{
+			"id": "class:src/main/terminal-host/terminal-host.test.ts:FakeChildProcess",
+			"type": "class",
+			"path": "src/main/terminal-host/terminal-host.test.ts",
+			"name": "FakeChildProcess",
+			"startLine": 31,
+			"endLine": 38,
+			"methods": ["kill"],
+			"properties": ["stdout", "stdin", "pid"]
+		},
+		{
+			"id": "file:src/main/terminal-host/terminal-host.ts",
+			"type": "file",
+			"path": "src/main/terminal-host/terminal-host.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 495,
+			"isTest": false
+		},
+		{
+			"id": "function:src/main/terminal-host/terminal-host.ts:throwIfAborted",
+			"type": "function",
+			"path": "src/main/terminal-host/terminal-host.ts",
+			"name": "throwIfAborted",
+			"startLine": 28,
+			"endLine": 32,
+			"params": ["signal"]
+		},
+		{
+			"id": "function:src/main/terminal-host/terminal-host.ts:promiseWithTimeout",
+			"type": "function",
+			"path": "src/main/terminal-host/terminal-host.ts",
+			"name": "promiseWithTimeout",
+			"startLine": 34,
+			"endLine": 53,
+			"params": ["promise", "timeoutMs"]
+		},
+		{
+			"id": "class:src/main/terminal-host/terminal-host.ts:TerminalHost",
+			"type": "class",
+			"path": "src/main/terminal-host/terminal-host.ts",
+			"name": "TerminalHost",
+			"startLine": 55,
+			"endLine": 435,
+			"methods": [
+				"constructor",
+				"createOrAttach",
+				"cancelCreateOrAttach",
+				"write",
+				"resize",
+				"detach",
+				"signal",
+				"kill",
+				"killAll",
+				"listSessions",
+				"clearScrollback",
+				"detachFromAllSessions",
+				"dispose",
+				"getActiveSession",
+				"handleSessionExit",
+				"clearKillTimer",
+				"scheduleSessionCleanup"
+			],
+			"properties": [
+				"sessions",
+				"killTimers",
+				"pendingAttaches",
+				"spawnLimiter",
+				"onUnattachedExit"
+			]
+		},
+		{
+			"id": "class:src/main/terminal-host/terminal-host.ts:Semaphore",
+			"type": "class",
+			"path": "src/main/terminal-host/terminal-host.ts",
+			"name": "Semaphore",
+			"startLine": 437,
+			"endLine": 495,
+			"methods": ["constructor", "acquire", "release"],
+			"properties": ["inUse", "queue"]
+		},
+		{
+			"id": "file:src/main/terminal-host/transient-error-window.test.ts",
+			"type": "file",
+			"path": "src/main/terminal-host/transient-error-window.test.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 35,
+			"isTest": true
+		},
+		{
+			"id": "file:src/main/terminal-host/transient-error-window.ts",
+			"type": "file",
+			"path": "src/main/terminal-host/transient-error-window.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 15,
+			"isTest": false
+		},
+		{
+			"id": "function:src/main/terminal-host/transient-error-window.ts:recordTransientErrorInWindow",
+			"type": "function",
+			"path": "src/main/terminal-host/transient-error-window.ts",
+			"name": "recordTransientErrorInWindow",
+			"startLine": 1,
+			"endLine": 15,
+			"params": ["timestamps", "now", "windowMs"]
+		},
+		{
+			"id": "file:src/main/terminal-host/xterm-env-polyfill.ts",
+			"type": "file",
+			"path": "src/main/terminal-host/xterm-env-polyfill.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 17,
+			"isTest": false
+		},
+		{
+			"id": "file:src/main/windows/main.ts",
+			"type": "file",
+			"path": "src/main/windows/main.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 374,
+			"isTest": false
+		},
+		{
+			"id": "function:src/main/windows/main.ts:getWorkspaceNameFromDb",
+			"type": "function",
+			"path": "src/main/windows/main.ts",
+			"name": "getWorkspaceNameFromDb",
+			"startLine": 43,
+			"endLine": 63,
+			"params": ["workspaceId"]
+		},
+		{
+			"id": "function:src/main/windows/main.ts:getWindow",
+			"type": "function",
+			"path": "src/main/windows/main.ts",
+			"name": "getWindow",
+			"startLine": 68,
+			"endLine": 68,
+			"params": []
+		},
+		{
+			"id": "function:src/main/windows/main.ts:forceRepaint",
+			"type": "function",
+			"path": "src/main/windows/main.ts",
+			"name": "forceRepaint",
+			"startLine": 72,
+			"endLine": 81,
+			"params": ["win"]
+		},
+		{
+			"id": "function:src/main/windows/main.ts:MainWindow",
+			"type": "function",
+			"path": "src/main/windows/main.ts",
+			"name": "MainWindow",
+			"startLine": 92,
+			"endLine": 374,
+			"params": []
+		},
+		{
+			"id": "file:src/renderer/stores/ringtone/store.ts",
+			"type": "file",
+			"path": "src/renderer/stores/ringtone/store.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 171,
+			"isTest": false
+		},
+		{
+			"id": "function:src/renderer/stores/ringtone/store.ts:isValidRingtoneId",
+			"type": "function",
+			"path": "src/renderer/stores/ringtone/store.ts",
+			"name": "isValidRingtoneId",
+			"startLine": 37,
+			"endLine": 41,
+			"params": ["id"]
+		},
+		{
+			"id": "function:src/renderer/stores/ringtone/store.ts:getDefaultRingtone",
+			"type": "function",
+			"path": "src/renderer/stores/ringtone/store.ts",
+			"name": "getDefaultRingtone",
+			"startLine": 44,
+			"endLine": 52,
+			"params": []
+		},
+		{
+			"id": "function:src/renderer/stores/ringtone/store.ts:useSelectedRingtoneId",
+			"type": "function",
+			"path": "src/renderer/stores/ringtone/store.ts",
+			"name": "useSelectedRingtoneId",
+			"startLine": 168,
+			"endLine": 169,
+			"params": []
+		},
+		{
+			"id": "function:src/renderer/stores/ringtone/store.ts:useSetRingtone",
+			"type": "function",
+			"path": "src/renderer/stores/ringtone/store.ts",
+			"name": "useSetRingtone",
+			"startLine": 170,
+			"endLine": 171,
+			"params": []
+		},
+		{
+			"id": "file:src/shared/constants.ts",
+			"type": "file",
+			"path": "src/shared/constants.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 59,
+			"isTest": false
+		},
+		{
+			"id": "file:src/shared/env.shared.ts",
+			"type": "file",
+			"path": "src/shared/env.shared.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 49,
+			"isTest": false
+		},
+		{
+			"id": "function:src/shared/env.shared.ts:getWorkspaceName",
+			"type": "function",
+			"path": "src/shared/env.shared.ts",
+			"name": "getWorkspaceName",
+			"startLine": 42,
+			"endLine": 49,
+			"params": []
+		},
+		{
+			"id": "file:src/shared/notification-types.ts",
+			"type": "file",
+			"path": "src/shared/notification-types.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 25,
+			"isTest": false
+		},
+		{
+			"id": "file:src/shared/ringtones.ts",
+			"type": "file",
+			"path": "src/shared/ringtones.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 145,
+			"isTest": false
+		},
+		{
+			"id": "function:src/shared/ringtones.ts:getRingtoneById",
+			"type": "function",
+			"path": "src/shared/ringtones.ts",
+			"name": "getRingtoneById",
+			"startLine": 130,
+			"endLine": 132,
+			"params": ["id"]
+		},
+		{
+			"id": "function:src/shared/ringtones.ts:isBuiltInRingtoneId",
+			"type": "function",
+			"path": "src/shared/ringtones.ts",
+			"name": "isBuiltInRingtoneId",
+			"startLine": 134,
+			"endLine": 136,
+			"params": ["id"]
+		},
+		{
+			"id": "function:src/shared/ringtones.ts:getRingtoneFilename",
+			"type": "function",
+			"path": "src/shared/ringtones.ts",
+			"name": "getRingtoneFilename",
+			"startLine": 142,
+			"endLine": 145,
+			"params": ["id"]
+		},
+		{
+			"id": "file:src/shared/types/electron.ts",
+			"type": "file",
+			"path": "src/shared/types/electron.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 8,
+			"isTest": false
+		},
+		{
+			"id": "file:src/shared/utils.ts",
+			"type": "file",
+			"path": "src/shared/utils.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 17,
+			"isTest": false
+		},
+		{
+			"id": "function:src/shared/utils.ts:makeAppId",
+			"type": "function",
+			"path": "src/shared/utils.ts",
+			"name": "makeAppId",
+			"startLine": 15,
+			"endLine": 17,
+			"params": ["id"]
+		},
+		{
+			"id": "file:src/shared/worktree-id.test.ts",
+			"type": "file",
+			"path": "src/shared/worktree-id.test.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 77,
+			"isTest": true
+		},
+		{
+			"id": "file:src/shared/worktree-id.ts",
+			"type": "file",
+			"path": "src/shared/worktree-id.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 47,
+			"isTest": false
+		},
+		{
+			"id": "function:src/shared/worktree-id.ts:normalizeWorkspaceName",
+			"type": "function",
+			"path": "src/shared/worktree-id.ts",
+			"name": "normalizeWorkspaceName",
+			"startLine": 7,
+			"endLine": 13,
+			"params": ["name"]
+		},
+		{
+			"id": "function:src/shared/worktree-id.ts:deriveWorkspaceNameFromWorktreeSegments",
+			"type": "function",
+			"path": "src/shared/worktree-id.ts",
+			"name": "deriveWorkspaceNameFromWorktreeSegments",
+			"startLine": 24,
+			"endLine": 43,
+			"params": ["segments"]
+		},
+		{
+			"id": "function:src/shared/worktree-id.ts:getWorkspaceName",
+			"type": "function",
+			"path": "src/shared/worktree-id.ts",
+			"name": "getWorkspaceName",
+			"startLine": 45,
+			"endLine": 47,
+			"params": []
+		},
+		{
+			"id": "file:src/main/lib/app-environment.ts",
+			"type": "file",
+			"path": "src/main/lib/app-environment.ts",
+			"external": true
+		},
+		{
+			"id": "file:src/shared/types/workspace-init.ts",
+			"type": "file",
+			"path": "src/shared/types/workspace-init.ts",
+			"external": true
+		},
+		{
+			"id": "file:src/main/lib/terminal/index.ts",
+			"type": "file",
+			"path": "src/main/lib/terminal/index.ts",
+			"external": true
+		},
+		{
+			"id": "file:src/main/lib/terminal-host/types.ts",
+			"type": "file",
+			"path": "src/main/lib/terminal-host/types.ts",
+			"external": true
+		},
+		{
+			"id": "file:src/main/lib/terminal/types.ts",
+			"type": "file",
+			"path": "src/main/lib/terminal/types.ts",
+			"external": true
+		},
+		{
+			"id": "file:src/main/lib/terminal/errors.ts",
+			"type": "file",
+			"path": "src/main/lib/terminal/errors.ts",
+			"external": true
+		},
+		{
+			"id": "file:src/main/lib/agent-setup/shell-wrappers.ts",
+			"type": "file",
+			"path": "src/main/lib/agent-setup/shell-wrappers.ts",
+			"external": true
+		},
+		{
+			"id": "file:src/main/lib/terminal-host/headless-emulator.ts",
+			"type": "file",
+			"path": "src/main/lib/terminal-host/headless-emulator.ts",
+			"external": true
+		},
+		{
+			"id": "file:src/main/lib/terminal/abort.ts",
+			"type": "file",
+			"path": "src/main/lib/terminal/abort.ts",
+			"external": true
+		},
+		{
+			"id": "file:src/main/lib/terminal/env.ts",
+			"type": "file",
+			"path": "src/main/lib/terminal/env.ts",
+			"external": true
+		},
+		{
+			"id": "file:src/main/lib/tree-kill.ts",
+			"type": "file",
+			"path": "src/main/lib/tree-kill.ts",
+			"external": true
+		},
+		{
+			"id": "file:package.json",
+			"type": "file",
+			"path": "package.json",
+			"external": true
+		},
+		{
+			"id": "file:src/lib/electron-app/factories/windows/create.ts",
+			"type": "file",
+			"path": "src/lib/electron-app/factories/windows/create.ts",
+			"external": true
+		},
+		{
+			"id": "file:src/lib/trpc/routers/index.ts",
+			"type": "file",
+			"path": "src/lib/trpc/routers/index.ts",
+			"external": true
+		},
+		{
+			"id": "file:src/main/lib/app-state/index.ts",
+			"type": "file",
+			"path": "src/main/lib/app-state/index.ts",
+			"external": true
+		},
+		{
+			"id": "file:src/main/lib/browser/browser-manager.ts",
+			"type": "file",
+			"path": "src/main/lib/browser/browser-manager.ts",
+			"external": true
+		},
+		{
+			"id": "file:src/main/lib/edit-context-menu.ts",
+			"type": "file",
+			"path": "src/main/lib/edit-context-menu.ts",
+			"external": true
+		},
+		{
+			"id": "file:src/main/lib/local-db/index.ts",
+			"type": "file",
+			"path": "src/main/lib/local-db/index.ts",
+			"external": true
+		},
+		{
+			"id": "file:src/main/lib/menu.ts",
+			"type": "file",
+			"path": "src/main/lib/menu.ts",
+			"external": true
+		},
+		{
+			"id": "file:src/main/lib/notification-sound.ts",
+			"type": "file",
+			"path": "src/main/lib/notification-sound.ts",
+			"external": true
+		},
+		{
+			"id": "file:src/main/lib/notifications/notification-manager.ts",
+			"type": "file",
+			"path": "src/main/lib/notifications/notification-manager.ts",
+			"external": true
+		},
+		{
+			"id": "file:src/main/lib/notifications/server.ts",
+			"type": "file",
+			"path": "src/main/lib/notifications/server.ts",
+			"external": true
+		},
+		{
+			"id": "file:src/main/lib/notifications/utils.ts",
+			"type": "file",
+			"path": "src/main/lib/notifications/utils.ts",
+			"external": true
+		},
+		{
+			"id": "file:src/renderer/lib/trpc-client.ts",
+			"type": "file",
+			"path": "src/renderer/lib/trpc-client.ts",
+			"external": true
+		},
+		{
+			"id": "file:src/lib/window-loader.ts",
+			"type": "file",
+			"path": "src/lib/window-loader.ts",
+			"external": true
+		},
+		{
+			"id": "file:src/main/lib/window-state/bounds-validation.ts",
+			"type": "file",
+			"path": "src/main/lib/window-state/bounds-validation.ts",
+			"external": true
+		},
+		{
+			"id": "file:src/lib/trpc/routers/workspaces/procedures/create.ts",
+			"type": "file",
+			"path": "src/lib/trpc/routers/workspaces/procedures/create.ts",
+			"external": true
+		},
+		{
+			"id": "file:src/lib/trpc/routers/workspaces/procedures/delete.ts",
+			"type": "file",
+			"path": "src/lib/trpc/routers/workspaces/procedures/delete.ts",
+			"external": true
+		},
+		{
+			"id": "file:src/lib/trpc/routers/workspaces/procedures/init.ts",
+			"type": "file",
+			"path": "src/lib/trpc/routers/workspaces/procedures/init.ts",
+			"external": true
+		},
+		{
+			"id": "file:src/lib/trpc/routers/workspaces/utils/usability.ts",
+			"type": "file",
+			"path": "src/lib/trpc/routers/workspaces/utils/usability.ts",
+			"external": true
+		},
+		{
+			"id": "file:src/lib/trpc/routers/workspaces/utils/workspace-init.ts",
+			"type": "file",
+			"path": "src/lib/trpc/routers/workspaces/utils/workspace-init.ts",
+			"external": true
+		},
+		{
+			"id": "file:src/lib/trpc/routers/projects/projects.ts",
+			"type": "file",
+			"path": "src/lib/trpc/routers/projects/projects.ts",
+			"external": true
+		},
+		{
+			"id": "file:src/lib/trpc/routers/terminal/terminal.ts",
+			"type": "file",
+			"path": "src/lib/trpc/routers/terminal/terminal.ts",
+			"external": true
+		},
+		{
+			"id": "file:src/main/lib/resource-metrics/session-sources.ts",
+			"type": "file",
+			"path": "src/main/lib/resource-metrics/session-sources.ts",
+			"external": true
+		},
+		{
+			"id": "file:src/main/index.ts",
+			"type": "file",
+			"path": "src/main/index.ts",
+			"external": true
+		},
+		{
+			"id": "file:src/main/lib/terminal/session.ts",
+			"type": "file",
+			"path": "src/main/lib/terminal/session.ts",
+			"external": true
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/layout.tsx",
+			"type": "file",
+			"path": "src/renderer/routes/_authenticated/layout.tsx",
+			"external": true
+		},
+		{
+			"id": "file:src/lib/trpc/routers/settings/index.ts",
+			"type": "file",
+			"path": "src/lib/trpc/routers/settings/index.ts",
+			"external": true
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/tasks/$taskId/components/PropertiesSidebar/components/OpenInWorkspaceV2/OpenInWorkspaceV2.tsx",
+			"type": "file",
+			"path": "src/renderer/routes/_authenticated/_dashboard/tasks/$taskId/components/PropertiesSidebar/components/OpenInWorkspaceV2/OpenInWorkspaceV2.tsx",
+			"external": true
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/components/TasksTopBar/components/RunInWorkspacePopoverV2/RunInWorkspacePopoverV2.tsx",
+			"type": "file",
+			"path": "src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/components/TasksTopBar/components/RunInWorkspacePopoverV2/RunInWorkspacePopoverV2.tsx",
+			"external": true
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/components/TasksTopBar/components/RunIssuesInWorkspacePopover/RunIssuesInWorkspacePopover.tsx",
+			"type": "file",
+			"path": "src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/components/TasksTopBar/components/RunIssuesInWorkspacePopover/RunIssuesInWorkspacePopover.tsx",
+			"external": true
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/components/V2NotificationController/V2NotificationController.tsx",
+			"type": "file",
+			"path": "src/renderer/routes/_authenticated/components/V2NotificationController/V2NotificationController.tsx",
+			"external": true
+		},
+		{
+			"id": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/GroupStrip/GroupStrip.tsx",
+			"type": "file",
+			"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/GroupStrip/GroupStrip.tsx",
+			"external": true
+		},
+		{
+			"id": "file:src/lib/trpc/routers/auth/utils/auth-functions.ts",
+			"type": "file",
+			"path": "src/lib/trpc/routers/auth/utils/auth-functions.ts",
+			"external": true
+		},
+		{
+			"id": "file:src/renderer/lib/dev-chat.ts",
+			"type": "file",
+			"path": "src/renderer/lib/dev-chat.ts",
+			"external": true
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/components/V1ImportModal/V1ImportModal.tsx",
+			"type": "file",
+			"path": "src/renderer/routes/_authenticated/components/V1ImportModal/V1ImportModal.tsx",
+			"external": true
+		},
+		{
+			"id": "file:src/lib/trpc/routers/workspaces/utils/setup.ts",
+			"type": "file",
+			"path": "src/lib/trpc/routers/workspaces/utils/setup.ts",
+			"external": true
+		},
+		{
+			"id": "file:src/main/lib/analytics/index.ts",
+			"type": "file",
+			"path": "src/main/lib/analytics/index.ts",
+			"external": true
+		},
+		{
+			"id": "file:src/renderer/lib/terminal/terminal-runtime.ts",
+			"type": "file",
+			"path": "src/renderer/lib/terminal/terminal-runtime.ts",
+			"external": true
+		},
+		{
+			"id": "file:src/renderer/screens/main/components/WorkspaceInitEffects.tsx",
+			"type": "file",
+			"path": "src/renderer/screens/main/components/WorkspaceInitEffects.tsx",
+			"external": true
+		},
+		{
+			"id": "file:src/main/lib/auto-updater.ts",
+			"type": "file",
+			"path": "src/main/lib/auto-updater.ts",
+			"external": true
+		},
+		{
+			"id": "file:src/main/lib/terminal-host/client.ts",
+			"type": "file",
+			"path": "src/main/lib/terminal-host/client.ts",
+			"external": true
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/settings/projects/$projectId/page.tsx",
+			"type": "file",
+			"path": "src/renderer/routes/_authenticated/settings/projects/$projectId/page.tsx",
+			"external": true
+		},
+		{
+			"id": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/config.ts",
+			"type": "file",
+			"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/config.ts",
+			"external": true
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspaces/hooks/useAccessibleV2Workspaces/useAccessibleV2Workspaces.ts",
+			"type": "file",
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspaces/hooks/useAccessibleV2Workspaces/useAccessibleV2Workspaces.ts",
+			"external": true
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/components/DashboardNewWorkspaceModal/components/DashboardNewWorkspaceForm/components/DevicePicker/hooks/useWorkspaceHostOptions/useWorkspaceHostOptions.ts",
+			"type": "file",
+			"path": "src/renderer/routes/_authenticated/components/DashboardNewWorkspaceModal/components/DashboardNewWorkspaceForm/components/DevicePicker/hooks/useWorkspaceHostOptions/useWorkspaceHostOptions.ts",
+			"external": true
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/components/DashboardNewWorkspaceModal/components/DashboardNewWorkspaceModalContent/DashboardNewWorkspaceModalContent.tsx",
+			"type": "file",
+			"path": "src/renderer/routes/_authenticated/components/DashboardNewWorkspaceModal/components/DashboardNewWorkspaceModalContent/DashboardNewWorkspaceModalContent.tsx",
+			"external": true
+		},
+		{
+			"id": "file:src/lib/trpc/routers/auth/index.ts",
+			"type": "file",
+			"path": "src/lib/trpc/routers/auth/index.ts",
+			"external": true
+		},
+		{
+			"id": "file:src/lib/trpc/routers/ports/label-cache.ts",
+			"type": "file",
+			"path": "src/lib/trpc/routers/ports/label-cache.ts",
+			"external": true
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/providers/LocalHostServiceProvider/LocalHostServiceProvider.tsx",
+			"type": "file",
+			"path": "src/renderer/routes/_authenticated/providers/LocalHostServiceProvider/LocalHostServiceProvider.tsx",
+			"external": true
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/settings/projects/components/ProjectsSettingsSidebar/ProjectsSettingsSidebar.tsx",
+			"type": "file",
+			"path": "src/renderer/routes/_authenticated/settings/projects/components/ProjectsSettingsSidebar/ProjectsSettingsSidebar.tsx",
+			"external": true
+		},
+		{
+			"id": "file:src/renderer/stores/tabs/useAgentHookListener.ts",
+			"type": "file",
+			"path": "src/renderer/stores/tabs/useAgentHookListener.ts",
+			"external": true
+		},
+		{
+			"id": "file:src/lib/electron-app/factories/app/setup.ts",
+			"type": "file",
+			"path": "src/lib/electron-app/factories/app/setup.ts",
+			"external": true
+		},
+		{
+			"id": "file:src/lib/trpc/routers/chat-runtime-service/index.ts",
+			"type": "file",
+			"path": "src/lib/trpc/routers/chat-runtime-service/index.ts",
+			"external": true
+		},
+		{
+			"id": "file:src/lib/trpc/routers/workspaces/utils/teardown.ts",
+			"type": "file",
+			"path": "src/lib/trpc/routers/workspaces/utils/teardown.ts",
+			"external": true
+		},
+		{
+			"id": "file:src/lib/trpc/routers/notifications.ts",
+			"type": "file",
+			"path": "src/lib/trpc/routers/notifications.ts",
+			"external": true
+		},
+		{
+			"id": "file:src/lib/trpc/routers/workspaces/utils/resolve-worktree-path.ts",
+			"type": "file",
+			"path": "src/lib/trpc/routers/workspaces/utils/resolve-worktree-path.ts",
+			"external": true
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/providers/CollectionsProvider/CollectionsProvider.tsx",
+			"type": "file",
+			"path": "src/renderer/routes/_authenticated/providers/CollectionsProvider/CollectionsProvider.tsx",
+			"external": true
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/settings/hosts/components/HostsSettingsSidebar/HostsSettingsSidebar.tsx",
+			"type": "file",
+			"path": "src/renderer/routes/_authenticated/settings/hosts/components/HostsSettingsSidebar/HostsSettingsSidebar.tsx",
+			"external": true
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/settings/projects/page.tsx",
+			"type": "file",
+			"path": "src/renderer/routes/_authenticated/settings/projects/page.tsx",
+			"external": true
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/settings/hosts/page.tsx",
+			"type": "file",
+			"path": "src/renderer/routes/_authenticated/settings/hosts/page.tsx",
+			"external": true
+		},
+		{
+			"id": "file:src/main/lib/static-ports/loader.ts",
+			"type": "file",
+			"path": "src/main/lib/static-ports/loader.ts",
+			"external": true
+		},
+		{
+			"id": "file:src/main/lib/terminal-history.ts",
+			"type": "file",
+			"path": "src/main/lib/terminal-history.ts",
+			"external": true
+		},
+		{
+			"id": "file:src/renderer/components/ConfigFilePreview/ConfigFilePreview.tsx",
+			"type": "file",
+			"path": "src/renderer/components/ConfigFilePreview/ConfigFilePreview.tsx",
+			"external": true
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/settings/project/$projectId/components/ProjectSettings/components/ScriptsEditor/ScriptsEditor.tsx",
+			"type": "file",
+			"path": "src/renderer/routes/_authenticated/settings/project/$projectId/components/ProjectSettings/components/ScriptsEditor/ScriptsEditor.tsx",
+			"external": true
+		},
+		{
+			"id": "file:src/lib/trpc/routers/workspaces/utils/setup.test.ts",
+			"type": "file",
+			"path": "src/lib/trpc/routers/workspaces/utils/setup.test.ts",
+			"external": true
+		},
+		{
+			"id": "file:src/renderer/hooks/useFileOpenMode/useFileOpenMode.ts",
+			"type": "file",
+			"path": "src/renderer/hooks/useFileOpenMode/useFileOpenMode.ts",
+			"external": true
+		},
+		{
+			"id": "file:src/lib/trpc/routers/workspaces/utils/teardown.test.ts",
+			"type": "file",
+			"path": "src/lib/trpc/routers/workspaces/utils/teardown.test.ts",
+			"external": true
+		},
+		{
+			"id": "file:src/main/lib/agent-setup/agent-wrappers-copilot.ts",
+			"type": "file",
+			"path": "src/main/lib/agent-setup/agent-wrappers-copilot.ts",
+			"external": true
+		},
+		{
+			"id": "file:src/main/lib/agent-setup/agent-wrappers-cursor.ts",
+			"type": "file",
+			"path": "src/main/lib/agent-setup/agent-wrappers-cursor.ts",
+			"external": true
+		},
+		{
+			"id": "file:src/main/lib/agent-setup/agent-wrappers-gemini.ts",
+			"type": "file",
+			"path": "src/main/lib/agent-setup/agent-wrappers-gemini.ts",
+			"external": true
+		},
+		{
+			"id": "file:src/main/lib/agent-setup/notify-hook.ts",
+			"type": "file",
+			"path": "src/main/lib/agent-setup/notify-hook.ts",
+			"external": true
+		},
+		{
+			"id": "file:src/main/lib/dev-workspace-name.ts",
+			"type": "file",
+			"path": "src/main/lib/dev-workspace-name.ts",
+			"external": true
+		},
+		{
+			"id": "file:src/main/lib/dock-icon.ts",
+			"type": "file",
+			"path": "src/main/lib/dock-icon.ts",
+			"external": true
+		},
+		{
+			"id": "file:src/main/lib/host-service-coordinator.ts",
+			"type": "file",
+			"path": "src/main/lib/host-service-coordinator.ts",
+			"external": true
+		},
+		{
+			"id": "file:src/main/lib/notifications/notification-manager.test.ts",
+			"type": "file",
+			"path": "src/main/lib/notifications/notification-manager.test.ts",
+			"external": true
+		},
+		{
+			"id": "file:src/renderer/stores/tabs/utils/resolve-notification-target.ts",
+			"type": "file",
+			"path": "src/renderer/stores/tabs/utils/resolve-notification-target.ts",
+			"external": true
+		},
+		{
+			"id": "file:src/lib/trpc/routers/ringtone/index.ts",
+			"type": "file",
+			"path": "src/lib/trpc/routers/ringtone/index.ts",
+			"external": true
+		},
+		{
+			"id": "file:src/main/lib/custom-ringtones.ts",
+			"type": "file",
+			"path": "src/main/lib/custom-ringtones.ts",
+			"external": true
+		},
+		{
+			"id": "file:src/renderer/lib/ringtones/play.ts",
+			"type": "file",
+			"path": "src/renderer/lib/ringtones/play.ts",
+			"external": true
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/settings/ringtones/components/RingtonesSettings/RingtonesSettings.tsx",
+			"type": "file",
+			"path": "src/renderer/routes/_authenticated/settings/ringtones/components/RingtonesSettings/RingtonesSettings.tsx",
+			"external": true
+		},
+		{
+			"id": "file:scripts/patch-dev-protocol.ts",
+			"type": "file",
+			"path": "scripts/patch-dev-protocol.ts",
+			"external": true
+		}
+	],
+	"edges": [
+		{
+			"from": "file:src/main/lib/window-state/window-state.ts",
+			"to": "function:src/main/lib/window-state/window-state.ts:loadWindowState",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/lib/window-state/window-state.ts",
+			"to": "function:src/main/lib/window-state/window-state.ts:saveWindowState",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/lib/window-state/window-state.ts",
+			"to": "function:src/main/lib/window-state/window-state.ts:isValidWindowState",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/lib/workspace-init-manager.ts",
+			"to": "class:src/main/lib/workspace-init-manager.ts:WorkspaceInitManager",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/lib/workspace-runtime/local.ts",
+			"to": "class:src/main/lib/workspace-runtime/local.ts:LocalTerminalRuntime",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/lib/workspace-runtime/local.ts",
+			"to": "class:src/main/lib/workspace-runtime/local.ts:LocalWorkspaceRuntime",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/lib/workspace-runtime/registry.ts",
+			"to": "function:src/main/lib/workspace-runtime/registry.ts:getWorkspaceRuntimeRegistry",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/lib/workspace-runtime/registry.ts",
+			"to": "function:src/main/lib/workspace-runtime/registry.ts:resetWorkspaceRuntimeRegistry",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/lib/workspace-runtime/registry.ts",
+			"to": "class:src/main/lib/workspace-runtime/registry.ts:DefaultWorkspaceRuntimeRegistry",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/network-logger/index.ts",
+			"to": "function:src/main/network-logger/index.ts:logsDir",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/network-logger/index.ts",
+			"to": "function:src/main/network-logger/index.ts:archivePreviousSession",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/network-logger/index.ts",
+			"to": "function:src/main/network-logger/index.ts:finalizeIfNeeded",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/network-logger/index.ts",
+			"to": "function:src/main/network-logger/index.ts:pruneOldSessions",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/network-logger/index.ts",
+			"to": "function:src/main/network-logger/index.ts:startNetworkLogger",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/network-logger/index.ts",
+			"to": "function:src/main/network-logger/index.ts:stopNetworkLogger",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/terminal-host/index.ts",
+			"to": "function:src/main/terminal-host/index.ts:log",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/terminal-host/index.ts",
+			"to": "function:src/main/terminal-host/index.ts:ensureAuthToken",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/terminal-host/index.ts",
+			"to": "function:src/main/terminal-host/index.ts:validateToken",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/terminal-host/index.ts",
+			"to": "function:src/main/terminal-host/index.ts:sendResponse",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/terminal-host/index.ts",
+			"to": "function:src/main/terminal-host/index.ts:sendSuccess",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/terminal-host/index.ts",
+			"to": "function:src/main/terminal-host/index.ts:sendError",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/terminal-host/index.ts",
+			"to": "function:src/main/terminal-host/index.ts:isValidRole",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/terminal-host/index.ts",
+			"to": "function:src/main/terminal-host/index.ts:broadcastEventToAllStreamSockets",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/terminal-host/index.ts",
+			"to": "function:src/main/terminal-host/index.ts:getStreamSocketForClient",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/terminal-host/index.ts",
+			"to": "function:src/main/terminal-host/index.ts:handleRequest",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/terminal-host/index.ts",
+			"to": "function:src/main/terminal-host/index.ts:handleConnection",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/terminal-host/index.ts",
+			"to": "function:src/main/terminal-host/index.ts:isSocketLive",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/terminal-host/index.ts",
+			"to": "function:src/main/terminal-host/index.ts:startServer",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/terminal-host/index.ts",
+			"to": "function:src/main/terminal-host/index.ts:stopServer",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/terminal-host/index.ts",
+			"to": "function:src/main/terminal-host/index.ts:setupSignalHandlers",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/terminal-host/index.ts",
+			"to": "function:src/main/terminal-host/index.ts:main",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/terminal-host/index.ts",
+			"to": "class:src/main/terminal-host/index.ts:NdjsonParser",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/terminal-host/pty-subprocess-ipc.ts",
+			"to": "function:src/main/terminal-host/pty-subprocess-ipc.ts:createFrameHeader",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/terminal-host/pty-subprocess-ipc.ts",
+			"to": "function:src/main/terminal-host/pty-subprocess-ipc.ts:writeFrame",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/terminal-host/pty-subprocess-ipc.ts",
+			"to": "class:src/main/terminal-host/pty-subprocess-ipc.ts:PtySubprocessFrameDecoder",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/terminal-host/pty-subprocess.ts",
+			"to": "function:src/main/terminal-host/pty-subprocess.ts:send",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/terminal-host/pty-subprocess.ts",
+			"to": "function:src/main/terminal-host/pty-subprocess.ts:sendError",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/terminal-host/pty-subprocess.ts",
+			"to": "function:src/main/terminal-host/pty-subprocess.ts:queueOutput",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/terminal-host/pty-subprocess.ts",
+			"to": "function:src/main/terminal-host/pty-subprocess.ts:flushOutput",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/terminal-host/pty-subprocess.ts",
+			"to": "function:src/main/terminal-host/pty-subprocess.ts:maybePauseStdin",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/terminal-host/pty-subprocess.ts",
+			"to": "function:src/main/terminal-host/pty-subprocess.ts:maybeResumeStdin",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/terminal-host/pty-subprocess.ts",
+			"to": "function:src/main/terminal-host/pty-subprocess.ts:queueWriteBuffer",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/terminal-host/pty-subprocess.ts",
+			"to": "function:src/main/terminal-host/pty-subprocess.ts:scheduleFlush",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/terminal-host/pty-subprocess.ts",
+			"to": "function:src/main/terminal-host/pty-subprocess.ts:flush",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/terminal-host/pty-subprocess.ts",
+			"to": "function:src/main/terminal-host/pty-subprocess.ts:signalProcessTreeGroups",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/terminal-host/pty-subprocess.ts",
+			"to": "function:src/main/terminal-host/pty-subprocess.ts:logProcessSignalError",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/terminal-host/pty-subprocess.ts",
+			"to": "function:src/main/terminal-host/pty-subprocess.ts:handleSpawn",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/terminal-host/pty-subprocess.ts",
+			"to": "function:src/main/terminal-host/pty-subprocess.ts:handleWrite",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/terminal-host/pty-subprocess.ts",
+			"to": "function:src/main/terminal-host/pty-subprocess.ts:handleResize",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/terminal-host/pty-subprocess.ts",
+			"to": "function:src/main/terminal-host/pty-subprocess.ts:handleKill",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/terminal-host/pty-subprocess.ts",
+			"to": "function:src/main/terminal-host/pty-subprocess.ts:handleSignal",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/terminal-host/pty-subprocess.ts",
+			"to": "function:src/main/terminal-host/pty-subprocess.ts:handleDispose",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/terminal-host/session-shell-ready.test.ts",
+			"to": "function:src/main/terminal-host/session-shell-ready.test.ts:sendFrame",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/terminal-host/session-shell-ready.test.ts",
+			"to": "function:src/main/terminal-host/session-shell-ready.test.ts:sendReady",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/terminal-host/session-shell-ready.test.ts",
+			"to": "function:src/main/terminal-host/session-shell-ready.test.ts:sendSpawned",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/terminal-host/session-shell-ready.test.ts",
+			"to": "function:src/main/terminal-host/session-shell-ready.test.ts:sendData",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/terminal-host/session-shell-ready.test.ts",
+			"to": "function:src/main/terminal-host/session-shell-ready.test.ts:sendExit",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/terminal-host/session-shell-ready.test.ts",
+			"to": "function:src/main/terminal-host/session-shell-ready.test.ts:getWrittenData",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/terminal-host/session-shell-ready.test.ts",
+			"to": "function:src/main/terminal-host/session-shell-ready.test.ts:createTestSession",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/terminal-host/session-shell-ready.test.ts",
+			"to": "function:src/main/terminal-host/session-shell-ready.test.ts:spawnAndReady",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/terminal-host/session-shell-ready.test.ts",
+			"to": "class:src/main/terminal-host/session-shell-ready.test.ts:FakeStdout",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/terminal-host/session-shell-ready.test.ts",
+			"to": "class:src/main/terminal-host/session-shell-ready.test.ts:FakeStdin",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/terminal-host/session-shell-ready.test.ts",
+			"to": "class:src/main/terminal-host/session-shell-ready.test.ts:FakeChildProcess",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/terminal-host/session.test.ts",
+			"to": "function:src/main/terminal-host/session.test.ts:sendFrame",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/terminal-host/session.test.ts",
+			"to": "function:src/main/terminal-host/session.test.ts:sendReady",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/terminal-host/session.test.ts",
+			"to": "function:src/main/terminal-host/session.test.ts:sendSpawned",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/terminal-host/session.test.ts",
+			"to": "function:src/main/terminal-host/session.test.ts:getSpawnPayload",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/terminal-host/session.test.ts",
+			"to": "function:src/main/terminal-host/session.test.ts:spawnAndReadySession",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/terminal-host/session.test.ts",
+			"to": "class:src/main/terminal-host/session.test.ts:FakeStdout",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/terminal-host/session.test.ts",
+			"to": "class:src/main/terminal-host/session.test.ts:FakeStdin",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/terminal-host/session.test.ts",
+			"to": "class:src/main/terminal-host/session.test.ts:FakeChildProcess",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/terminal-host/session.ts",
+			"to": "function:src/main/terminal-host/session.ts:createSession",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/terminal-host/session.ts",
+			"to": "class:src/main/terminal-host/session.ts:Session",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/terminal-host/signal-handlers.ts",
+			"to": "function:src/main/terminal-host/signal-handlers.ts:isTransientError",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/terminal-host/signal-handlers.ts",
+			"to": "function:src/main/terminal-host/signal-handlers.ts:getTransientErrorIdentifier",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/terminal-host/signal-handlers.ts",
+			"to": "function:src/main/terminal-host/signal-handlers.ts:setupTerminalHostSignalHandlers",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/terminal-host/terminal-host.test.ts",
+			"to": "function:src/main/terminal-host/terminal-host.test.ts:emitReadyAndSpawned",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/terminal-host/terminal-host.test.ts",
+			"to": "function:src/main/terminal-host/terminal-host.test.ts:emitReadyOnly",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/terminal-host/terminal-host.test.ts",
+			"to": "function:src/main/terminal-host/terminal-host.test.ts:emitReadyThenError",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/terminal-host/terminal-host.test.ts",
+			"to": "class:src/main/terminal-host/terminal-host.test.ts:FakeStdout",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/terminal-host/terminal-host.test.ts",
+			"to": "class:src/main/terminal-host/terminal-host.test.ts:FakeStdin",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/terminal-host/terminal-host.test.ts",
+			"to": "class:src/main/terminal-host/terminal-host.test.ts:FakeChildProcess",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/terminal-host/terminal-host.ts",
+			"to": "function:src/main/terminal-host/terminal-host.ts:throwIfAborted",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/terminal-host/terminal-host.ts",
+			"to": "function:src/main/terminal-host/terminal-host.ts:promiseWithTimeout",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/terminal-host/terminal-host.ts",
+			"to": "class:src/main/terminal-host/terminal-host.ts:TerminalHost",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/terminal-host/terminal-host.ts",
+			"to": "class:src/main/terminal-host/terminal-host.ts:Semaphore",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/terminal-host/transient-error-window.ts",
+			"to": "function:src/main/terminal-host/transient-error-window.ts:recordTransientErrorInWindow",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/windows/main.ts",
+			"to": "function:src/main/windows/main.ts:getWorkspaceNameFromDb",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/windows/main.ts",
+			"to": "function:src/main/windows/main.ts:getWindow",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/windows/main.ts",
+			"to": "function:src/main/windows/main.ts:forceRepaint",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/windows/main.ts",
+			"to": "function:src/main/windows/main.ts:MainWindow",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/renderer/stores/ringtone/store.ts",
+			"to": "function:src/renderer/stores/ringtone/store.ts:isValidRingtoneId",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/renderer/stores/ringtone/store.ts",
+			"to": "function:src/renderer/stores/ringtone/store.ts:getDefaultRingtone",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/renderer/stores/ringtone/store.ts",
+			"to": "function:src/renderer/stores/ringtone/store.ts:useSelectedRingtoneId",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/renderer/stores/ringtone/store.ts",
+			"to": "function:src/renderer/stores/ringtone/store.ts:useSetRingtone",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/shared/env.shared.ts",
+			"to": "function:src/shared/env.shared.ts:getWorkspaceName",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/shared/ringtones.ts",
+			"to": "function:src/shared/ringtones.ts:getRingtoneById",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/shared/ringtones.ts",
+			"to": "function:src/shared/ringtones.ts:isBuiltInRingtoneId",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/shared/ringtones.ts",
+			"to": "function:src/shared/ringtones.ts:getRingtoneFilename",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/shared/utils.ts",
+			"to": "function:src/shared/utils.ts:makeAppId",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/shared/worktree-id.ts",
+			"to": "function:src/shared/worktree-id.ts:normalizeWorkspaceName",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/shared/worktree-id.ts",
+			"to": "function:src/shared/worktree-id.ts:deriveWorkspaceNameFromWorktreeSegments",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/shared/worktree-id.ts",
+			"to": "function:src/shared/worktree-id.ts:getWorkspaceName",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/main/lib/window-state/window-state.ts",
+			"to": "function:src/main/lib/window-state/window-state.ts:loadWindowState",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"from": "file:src/main/lib/window-state/window-state.ts",
+			"to": "function:src/main/lib/window-state/window-state.ts:saveWindowState",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"from": "file:src/main/lib/window-state/window-state.ts",
+			"to": "function:src/main/lib/window-state/window-state.ts:isValidWindowState",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"from": "file:src/main/lib/workspace-runtime/local.ts",
+			"to": "class:src/main/lib/workspace-runtime/local.ts:LocalWorkspaceRuntime",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"from": "file:src/main/lib/workspace-runtime/registry.ts",
+			"to": "function:src/main/lib/workspace-runtime/registry.ts:getWorkspaceRuntimeRegistry",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"from": "file:src/main/lib/workspace-runtime/registry.ts",
+			"to": "function:src/main/lib/workspace-runtime/registry.ts:resetWorkspaceRuntimeRegistry",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"from": "file:src/main/network-logger/index.ts",
+			"to": "function:src/main/network-logger/index.ts:startNetworkLogger",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"from": "file:src/main/network-logger/index.ts",
+			"to": "function:src/main/network-logger/index.ts:stopNetworkLogger",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"from": "file:src/main/terminal-host/pty-subprocess-ipc.ts",
+			"to": "function:src/main/terminal-host/pty-subprocess-ipc.ts:createFrameHeader",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"from": "file:src/main/terminal-host/pty-subprocess-ipc.ts",
+			"to": "function:src/main/terminal-host/pty-subprocess-ipc.ts:writeFrame",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"from": "file:src/main/terminal-host/pty-subprocess-ipc.ts",
+			"to": "class:src/main/terminal-host/pty-subprocess-ipc.ts:PtySubprocessFrameDecoder",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"from": "file:src/main/terminal-host/session.ts",
+			"to": "class:src/main/terminal-host/session.ts:Session",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"from": "file:src/main/terminal-host/session.ts",
+			"to": "function:src/main/terminal-host/session.ts:createSession",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"from": "file:src/main/terminal-host/signal-handlers.ts",
+			"to": "function:src/main/terminal-host/signal-handlers.ts:setupTerminalHostSignalHandlers",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"from": "file:src/main/terminal-host/terminal-host.ts",
+			"to": "class:src/main/terminal-host/terminal-host.ts:TerminalHost",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"from": "file:src/main/terminal-host/transient-error-window.ts",
+			"to": "function:src/main/terminal-host/transient-error-window.ts:recordTransientErrorInWindow",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"from": "file:src/main/windows/main.ts",
+			"to": "function:src/main/windows/main.ts:MainWindow",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"from": "file:src/renderer/stores/ringtone/store.ts",
+			"to": "function:src/renderer/stores/ringtone/store.ts:useSelectedRingtoneId",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"from": "file:src/renderer/stores/ringtone/store.ts",
+			"to": "function:src/renderer/stores/ringtone/store.ts:useSetRingtone",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"from": "file:src/shared/env.shared.ts",
+			"to": "function:src/shared/env.shared.ts:getWorkspaceName",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"from": "file:src/shared/ringtones.ts",
+			"to": "function:src/shared/ringtones.ts:getRingtoneById",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"from": "file:src/shared/ringtones.ts",
+			"to": "function:src/shared/ringtones.ts:isBuiltInRingtoneId",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"from": "file:src/shared/ringtones.ts",
+			"to": "function:src/shared/ringtones.ts:getRingtoneFilename",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"from": "file:src/shared/utils.ts",
+			"to": "function:src/shared/utils.ts:makeAppId",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"from": "file:src/shared/worktree-id.ts",
+			"to": "function:src/shared/worktree-id.ts:normalizeWorkspaceName",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"from": "file:src/shared/worktree-id.ts",
+			"to": "function:src/shared/worktree-id.ts:deriveWorkspaceNameFromWorktreeSegments",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"from": "file:src/shared/worktree-id.ts",
+			"to": "function:src/shared/worktree-id.ts:getWorkspaceName",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"from": "file:src/main/lib/window-state/window-state.test.ts",
+			"to": "file:src/main/lib/window-state/window-state.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/main/lib/window-state/window-state.ts",
+			"to": "file:src/main/lib/app-environment.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/main/lib/workspace-init-manager.ts",
+			"to": "file:src/shared/types/workspace-init.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/main/lib/workspace-runtime/local.ts",
+			"to": "file:src/main/lib/terminal/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/main/lib/workspace-runtime/local.ts",
+			"to": "file:src/main/lib/workspace-runtime/types.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/main/lib/workspace-runtime/registry.ts",
+			"to": "file:src/main/lib/workspace-runtime/local.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/main/lib/workspace-runtime/registry.ts",
+			"to": "file:src/main/lib/workspace-runtime/types.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/main/lib/workspace-runtime/types.ts",
+			"to": "file:src/main/lib/terminal-host/types.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/main/lib/workspace-runtime/types.ts",
+			"to": "file:src/main/lib/terminal/types.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/main/terminal-host/index.ts",
+			"to": "file:src/main/lib/terminal-host/types.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/main/terminal-host/index.ts",
+			"to": "file:src/main/terminal-host/signal-handlers.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/main/terminal-host/index.ts",
+			"to": "file:src/main/terminal-host/terminal-host.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/main/terminal-host/index.ts",
+			"to": "file:src/shared/constants.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/main/terminal-host/pty-subprocess.ts",
+			"to": "file:src/main/terminal-host/pty-subprocess-ipc.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/main/terminal-host/session-shell-ready.test.ts",
+			"to": "file:src/main/terminal-host/pty-subprocess-ipc.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/main/terminal-host/session-shell-ready.test.ts",
+			"to": "file:src/main/terminal-host/xterm-env-polyfill.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/main/terminal-host/session.test.ts",
+			"to": "file:src/main/lib/terminal/errors.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/main/terminal-host/session.test.ts",
+			"to": "file:src/main/terminal-host/pty-subprocess-ipc.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/main/terminal-host/session.test.ts",
+			"to": "file:src/main/terminal-host/xterm-env-polyfill.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/main/terminal-host/session.ts",
+			"to": "file:src/main/lib/agent-setup/shell-wrappers.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/main/terminal-host/session.ts",
+			"to": "file:src/main/lib/terminal-host/headless-emulator.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/main/terminal-host/session.ts",
+			"to": "file:src/main/lib/terminal-host/types.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/main/terminal-host/session.ts",
+			"to": "file:src/main/lib/terminal/abort.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/main/terminal-host/session.ts",
+			"to": "file:src/main/lib/terminal/env.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/main/terminal-host/session.ts",
+			"to": "file:src/main/lib/terminal/errors.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/main/terminal-host/session.ts",
+			"to": "file:src/main/lib/tree-kill.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/main/terminal-host/session.ts",
+			"to": "file:src/main/terminal-host/pty-subprocess-ipc.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/main/terminal-host/session.ts",
+			"to": "file:src/shared/constants.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/main/terminal-host/signal-handlers.ts",
+			"to": "file:src/main/terminal-host/transient-error-window.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/main/terminal-host/terminal-host.test.ts",
+			"to": "file:src/main/terminal-host/pty-subprocess-ipc.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/main/terminal-host/terminal-host.test.ts",
+			"to": "file:src/main/terminal-host/xterm-env-polyfill.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/main/terminal-host/terminal-host.ts",
+			"to": "file:src/main/lib/terminal-host/types.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/main/terminal-host/terminal-host.ts",
+			"to": "file:src/main/lib/terminal/errors.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/main/terminal-host/terminal-host.ts",
+			"to": "file:src/main/terminal-host/session.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/main/terminal-host/transient-error-window.test.ts",
+			"to": "file:src/main/terminal-host/transient-error-window.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/main/windows/main.ts",
+			"to": "file:package.json",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/main/windows/main.ts",
+			"to": "file:src/lib/electron-app/factories/windows/create.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/main/windows/main.ts",
+			"to": "file:src/lib/trpc/routers/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/main/windows/main.ts",
+			"to": "file:src/main/lib/app-state/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/main/windows/main.ts",
+			"to": "file:src/main/lib/browser/browser-manager.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/main/windows/main.ts",
+			"to": "file:src/main/lib/edit-context-menu.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/main/windows/main.ts",
+			"to": "file:src/main/lib/local-db/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/main/windows/main.ts",
+			"to": "file:src/main/lib/menu.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/main/windows/main.ts",
+			"to": "file:src/main/lib/notification-sound.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/main/windows/main.ts",
+			"to": "file:src/main/lib/notifications/notification-manager.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/main/windows/main.ts",
+			"to": "file:src/main/lib/notifications/server.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/main/windows/main.ts",
+			"to": "file:src/main/lib/notifications/utils.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/main/windows/main.ts",
+			"to": "file:src/main/lib/window-state/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/main/windows/main.ts",
+			"to": "file:src/main/lib/workspace-runtime/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/main/windows/main.ts",
+			"to": "file:src/shared/constants.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/main/windows/main.ts",
+			"to": "file:src/shared/env.shared.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/main/windows/main.ts",
+			"to": "file:src/shared/notification-types.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/stores/ringtone/store.ts",
+			"to": "file:src/renderer/lib/trpc-client.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/stores/ringtone/store.ts",
+			"to": "file:src/shared/ringtones.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/shared/constants.ts",
+			"to": "file:src/shared/env.shared.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/shared/types/electron.ts",
+			"to": "file:src/lib/window-loader.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/shared/utils.ts",
+			"to": "file:package.json",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/shared/worktree-id.test.ts",
+			"to": "file:src/shared/worktree-id.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "function:src/main/lib/window-state/window-state.ts:loadWindowState",
+			"to": "function:src/main/lib/window-state/window-state.ts:isValidWindowState",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "function:src/main/network-logger/index.ts:archivePreviousSession",
+			"to": "function:src/main/network-logger/index.ts:logsDir",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "function:src/main/network-logger/index.ts:archivePreviousSession",
+			"to": "function:src/main/network-logger/index.ts:finalizeIfNeeded",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "function:src/main/network-logger/index.ts:pruneOldSessions",
+			"to": "function:src/main/network-logger/index.ts:logsDir",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "function:src/main/network-logger/index.ts:startNetworkLogger",
+			"to": "function:src/main/network-logger/index.ts:archivePreviousSession",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "function:src/main/network-logger/index.ts:startNetworkLogger",
+			"to": "function:src/main/network-logger/index.ts:pruneOldSessions",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "function:src/main/network-logger/index.ts:startNetworkLogger",
+			"to": "function:src/main/network-logger/index.ts:logsDir",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "function:src/main/terminal-host/index.ts:ensureAuthToken",
+			"to": "function:src/main/terminal-host/index.ts:log",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "class:src/main/terminal-host/index.ts:NdjsonParser",
+			"to": "function:src/main/terminal-host/index.ts:log",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "function:src/main/terminal-host/index.ts:sendSuccess",
+			"to": "function:src/main/terminal-host/index.ts:sendResponse",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "function:src/main/terminal-host/index.ts:sendError",
+			"to": "function:src/main/terminal-host/index.ts:sendResponse",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "function:src/main/terminal-host/index.ts:handleRequest",
+			"to": "function:src/main/terminal-host/index.ts:sendError",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "function:src/main/terminal-host/index.ts:handleRequest",
+			"to": "function:src/main/terminal-host/index.ts:log",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "function:src/main/terminal-host/index.ts:handleConnection",
+			"to": "function:src/main/terminal-host/index.ts:log",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "function:src/main/terminal-host/index.ts:handleConnection",
+			"to": "function:src/main/terminal-host/index.ts:handleRequest",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "function:src/main/terminal-host/index.ts:startServer",
+			"to": "function:src/main/terminal-host/index.ts:log",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "function:src/main/terminal-host/index.ts:startServer",
+			"to": "function:src/main/terminal-host/index.ts:isSocketLive",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "function:src/main/terminal-host/index.ts:startServer",
+			"to": "function:src/main/terminal-host/index.ts:ensureAuthToken",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "function:src/main/terminal-host/index.ts:startServer",
+			"to": "function:src/main/terminal-host/index.ts:broadcastEventToAllStreamSockets",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "function:src/main/terminal-host/index.ts:stopServer",
+			"to": "function:src/main/terminal-host/index.ts:log",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "function:src/main/terminal-host/index.ts:main",
+			"to": "function:src/main/terminal-host/index.ts:log",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "function:src/main/terminal-host/index.ts:main",
+			"to": "function:src/main/terminal-host/index.ts:setupSignalHandlers",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "function:src/main/terminal-host/index.ts:main",
+			"to": "function:src/main/terminal-host/index.ts:startServer",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "function:src/main/terminal-host/pty-subprocess-ipc.ts:writeFrame",
+			"to": "function:src/main/terminal-host/pty-subprocess-ipc.ts:createFrameHeader",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "function:src/main/terminal-host/pty-subprocess.ts:sendError",
+			"to": "function:src/main/terminal-host/pty-subprocess.ts:send",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "function:src/main/terminal-host/pty-subprocess.ts:queueOutput",
+			"to": "function:src/main/terminal-host/pty-subprocess.ts:flushOutput",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "function:src/main/terminal-host/pty-subprocess.ts:flushOutput",
+			"to": "function:src/main/terminal-host/pty-subprocess.ts:send",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "function:src/main/terminal-host/pty-subprocess.ts:queueWriteBuffer",
+			"to": "function:src/main/terminal-host/pty-subprocess.ts:sendError",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "function:src/main/terminal-host/pty-subprocess.ts:queueWriteBuffer",
+			"to": "function:src/main/terminal-host/pty-subprocess.ts:maybePauseStdin",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "function:src/main/terminal-host/pty-subprocess.ts:queueWriteBuffer",
+			"to": "function:src/main/terminal-host/pty-subprocess.ts:scheduleFlush",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "function:src/main/terminal-host/pty-subprocess.ts:flush",
+			"to": "function:src/main/terminal-host/pty-subprocess.ts:sendError",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "function:src/main/terminal-host/pty-subprocess.ts:flush",
+			"to": "function:src/main/terminal-host/pty-subprocess.ts:maybeResumeStdin",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "function:src/main/terminal-host/pty-subprocess.ts:handleSpawn",
+			"to": "function:src/main/terminal-host/pty-subprocess.ts:sendError",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "function:src/main/terminal-host/pty-subprocess.ts:handleSpawn",
+			"to": "function:src/main/terminal-host/pty-subprocess.ts:queueOutput",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "function:src/main/terminal-host/pty-subprocess.ts:handleSpawn",
+			"to": "function:src/main/terminal-host/pty-subprocess.ts:flushOutput",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "function:src/main/terminal-host/pty-subprocess.ts:handleSpawn",
+			"to": "function:src/main/terminal-host/pty-subprocess.ts:send",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "function:src/main/terminal-host/pty-subprocess.ts:handleWrite",
+			"to": "function:src/main/terminal-host/pty-subprocess.ts:sendError",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "function:src/main/terminal-host/pty-subprocess.ts:handleWrite",
+			"to": "function:src/main/terminal-host/pty-subprocess.ts:queueWriteBuffer",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "function:src/main/terminal-host/pty-subprocess.ts:handleKill",
+			"to": "function:src/main/terminal-host/pty-subprocess.ts:signalProcessTreeGroups",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "function:src/main/terminal-host/pty-subprocess.ts:handleKill",
+			"to": "function:src/main/terminal-host/pty-subprocess.ts:send",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "function:src/main/terminal-host/pty-subprocess.ts:handleDispose",
+			"to": "function:src/main/terminal-host/pty-subprocess.ts:flushOutput",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "function:src/main/terminal-host/pty-subprocess.ts:handleDispose",
+			"to": "function:src/main/terminal-host/pty-subprocess.ts:signalProcessTreeGroups",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "function:src/main/terminal-host/session-shell-ready.test.ts:sendReady",
+			"to": "function:src/main/terminal-host/session-shell-ready.test.ts:sendFrame",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "function:src/main/terminal-host/session-shell-ready.test.ts:sendSpawned",
+			"to": "function:src/main/terminal-host/session-shell-ready.test.ts:sendFrame",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "function:src/main/terminal-host/session-shell-ready.test.ts:sendData",
+			"to": "function:src/main/terminal-host/session-shell-ready.test.ts:sendFrame",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "function:src/main/terminal-host/session-shell-ready.test.ts:sendExit",
+			"to": "function:src/main/terminal-host/session-shell-ready.test.ts:sendFrame",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "function:src/main/terminal-host/session-shell-ready.test.ts:spawnAndReady",
+			"to": "function:src/main/terminal-host/session-shell-ready.test.ts:sendReady",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "function:src/main/terminal-host/session-shell-ready.test.ts:spawnAndReady",
+			"to": "function:src/main/terminal-host/session-shell-ready.test.ts:sendSpawned",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "function:src/main/terminal-host/session.test.ts:sendReady",
+			"to": "function:src/main/terminal-host/session.test.ts:sendFrame",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "function:src/main/terminal-host/session.test.ts:sendSpawned",
+			"to": "function:src/main/terminal-host/session.test.ts:sendFrame",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "function:src/main/terminal-host/session.test.ts:spawnAndReadySession",
+			"to": "function:src/main/terminal-host/session.test.ts:sendReady",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "function:src/main/terminal-host/session.test.ts:spawnAndReadySession",
+			"to": "function:src/main/terminal-host/session.test.ts:sendSpawned",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "function:src/main/terminal-host/signal-handlers.ts:setupTerminalHostSignalHandlers",
+			"to": "function:src/main/terminal-host/signal-handlers.ts:isTransientError",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "function:src/main/terminal-host/signal-handlers.ts:setupTerminalHostSignalHandlers",
+			"to": "function:src/main/terminal-host/signal-handlers.ts:getTransientErrorIdentifier",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "class:src/main/terminal-host/terminal-host.ts:TerminalHost",
+			"to": "function:src/main/terminal-host/terminal-host.ts:throwIfAborted",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "class:src/main/terminal-host/terminal-host.ts:TerminalHost",
+			"to": "function:src/main/terminal-host/terminal-host.ts:promiseWithTimeout",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "function:src/shared/ringtones.ts:getRingtoneFilename",
+			"to": "function:src/shared/ringtones.ts:getRingtoneById",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "function:src/shared/worktree-id.ts:deriveWorkspaceNameFromWorktreeSegments",
+			"to": "function:src/shared/worktree-id.ts:normalizeWorkspaceName",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "function:src/shared/worktree-id.ts:getWorkspaceName",
+			"to": "function:src/shared/worktree-id.ts:normalizeWorkspaceName",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "file:src/main/lib/window-state/window-state.ts",
+			"to": "file:src/main/lib/window-state/window-state.test.ts",
+			"type": "tested_by",
+			"weight": 0.5
+		},
+		{
+			"from": "file:src/main/terminal-host/pty-subprocess-ipc.ts",
+			"to": "file:src/main/terminal-host/session-shell-ready.test.ts",
+			"type": "tested_by",
+			"weight": 0.5
+		},
+		{
+			"from": "file:src/main/terminal-host/xterm-env-polyfill.ts",
+			"to": "file:src/main/terminal-host/session-shell-ready.test.ts",
+			"type": "tested_by",
+			"weight": 0.5
+		},
+		{
+			"from": "file:src/main/terminal-host/pty-subprocess-ipc.ts",
+			"to": "file:src/main/terminal-host/session.test.ts",
+			"type": "tested_by",
+			"weight": 0.5
+		},
+		{
+			"from": "file:src/main/terminal-host/xterm-env-polyfill.ts",
+			"to": "file:src/main/terminal-host/session.test.ts",
+			"type": "tested_by",
+			"weight": 0.5
+		},
+		{
+			"from": "file:src/main/terminal-host/pty-subprocess-ipc.ts",
+			"to": "file:src/main/terminal-host/terminal-host.test.ts",
+			"type": "tested_by",
+			"weight": 0.5
+		},
+		{
+			"from": "file:src/main/terminal-host/xterm-env-polyfill.ts",
+			"to": "file:src/main/terminal-host/terminal-host.test.ts",
+			"type": "tested_by",
+			"weight": 0.5
+		},
+		{
+			"from": "file:src/main/terminal-host/transient-error-window.ts",
+			"to": "file:src/main/terminal-host/transient-error-window.test.ts",
+			"type": "tested_by",
+			"weight": 0.5
+		},
+		{
+			"from": "file:src/shared/worktree-id.ts",
+			"to": "file:src/shared/worktree-id.test.ts",
+			"type": "tested_by",
+			"weight": 0.5
+		},
+		{
+			"from": "file:src/main/lib/window-state/window-state.ts",
+			"to": "file:src/main/lib/app-environment.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/main/lib/window-state/window-state.ts",
+			"to": "file:src/main/lib/window-state/bounds-validation.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/main/lib/workspace-init-manager.ts",
+			"to": "file:src/shared/types/workspace-init.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/main/lib/workspace-init-manager.ts",
+			"to": "file:src/lib/trpc/routers/workspaces/procedures/create.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/main/lib/workspace-init-manager.ts",
+			"to": "file:src/lib/trpc/routers/workspaces/procedures/delete.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/main/lib/workspace-init-manager.ts",
+			"to": "file:src/lib/trpc/routers/workspaces/procedures/init.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/main/lib/workspace-init-manager.ts",
+			"to": "file:src/lib/trpc/routers/workspaces/utils/usability.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/main/lib/workspace-init-manager.ts",
+			"to": "file:src/lib/trpc/routers/workspaces/utils/workspace-init.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/main/lib/workspace-runtime/index.ts",
+			"to": "file:src/lib/trpc/routers/projects/projects.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/main/lib/workspace-runtime/index.ts",
+			"to": "file:src/lib/trpc/routers/terminal/terminal.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/main/lib/workspace-runtime/index.ts",
+			"to": "file:src/lib/trpc/routers/workspaces/procedures/delete.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/main/lib/workspace-runtime/local.ts",
+			"to": "file:src/main/lib/terminal/index.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/main/lib/workspace-runtime/registry.ts",
+			"to": "file:src/main/lib/resource-metrics/session-sources.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/main/lib/workspace-runtime/types.ts",
+			"to": "file:src/main/lib/terminal-host/types.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/main/lib/workspace-runtime/types.ts",
+			"to": "file:src/main/lib/terminal/types.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/main/network-logger/index.ts",
+			"to": "file:src/main/index.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/main/terminal-host/index.ts",
+			"to": "file:src/main/lib/terminal-host/types.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/main/terminal-host/session.test.ts",
+			"to": "file:src/main/lib/terminal/errors.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/main/terminal-host/session.ts",
+			"to": "file:src/main/lib/agent-setup/shell-wrappers.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/main/terminal-host/session.ts",
+			"to": "file:src/main/lib/terminal-host/headless-emulator.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/main/terminal-host/session.ts",
+			"to": "file:src/main/lib/terminal-host/types.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/main/terminal-host/session.ts",
+			"to": "file:src/main/lib/terminal/abort.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/main/terminal-host/session.ts",
+			"to": "file:src/main/lib/terminal/env.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/main/terminal-host/session.ts",
+			"to": "file:src/main/lib/terminal/errors.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/main/terminal-host/session.ts",
+			"to": "file:src/main/lib/tree-kill.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/main/terminal-host/terminal-host.ts",
+			"to": "file:src/main/lib/terminal-host/types.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/main/terminal-host/terminal-host.ts",
+			"to": "file:src/main/lib/terminal/errors.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/main/terminal-host/xterm-env-polyfill.ts",
+			"to": "file:src/main/lib/terminal-host/headless-emulator.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/main/terminal-host/xterm-env-polyfill.ts",
+			"to": "file:src/main/lib/terminal/session.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/main/windows/main.ts",
+			"to": "file:package.json",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/main/windows/main.ts",
+			"to": "file:src/lib/electron-app/factories/windows/create.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/main/windows/main.ts",
+			"to": "file:src/lib/trpc/routers/index.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/main/windows/main.ts",
+			"to": "file:src/main/lib/app-state/index.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/main/windows/main.ts",
+			"to": "file:src/main/lib/browser/browser-manager.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/main/windows/main.ts",
+			"to": "file:src/main/lib/edit-context-menu.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/main/windows/main.ts",
+			"to": "file:src/main/lib/local-db/index.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/main/windows/main.ts",
+			"to": "file:src/main/lib/menu.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/main/windows/main.ts",
+			"to": "file:src/main/lib/notification-sound.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/main/windows/main.ts",
+			"to": "file:src/main/lib/notifications/notification-manager.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/main/windows/main.ts",
+			"to": "file:src/main/lib/notifications/server.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/main/windows/main.ts",
+			"to": "file:src/main/lib/notifications/utils.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/main/windows/main.ts",
+			"to": "file:src/main/index.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/renderer/stores/ringtone/store.ts",
+			"to": "file:src/renderer/lib/trpc-client.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/shared/constants.ts",
+			"to": "file:src/renderer/routes/_authenticated/layout.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/shared/constants.ts",
+			"to": "file:src/main/index.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/shared/constants.ts",
+			"to": "file:src/lib/trpc/routers/settings/index.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/shared/constants.ts",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/tasks/$taskId/components/PropertiesSidebar/components/OpenInWorkspaceV2/OpenInWorkspaceV2.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/shared/constants.ts",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/components/TasksTopBar/components/RunInWorkspacePopoverV2/RunInWorkspacePopoverV2.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/shared/constants.ts",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/components/TasksTopBar/components/RunIssuesInWorkspacePopover/RunIssuesInWorkspacePopover.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/shared/constants.ts",
+			"to": "file:src/main/lib/app-environment.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/shared/constants.ts",
+			"to": "file:src/renderer/routes/_authenticated/components/V2NotificationController/V2NotificationController.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/shared/constants.ts",
+			"to": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/GroupStrip/GroupStrip.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/shared/constants.ts",
+			"to": "file:src/lib/trpc/routers/auth/utils/auth-functions.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/shared/constants.ts",
+			"to": "file:src/renderer/lib/dev-chat.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/shared/constants.ts",
+			"to": "file:src/renderer/routes/_authenticated/components/V1ImportModal/V1ImportModal.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/shared/constants.ts",
+			"to": "file:src/lib/trpc/routers/workspaces/utils/setup.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/shared/constants.ts",
+			"to": "file:src/main/lib/analytics/index.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/shared/constants.ts",
+			"to": "file:src/main/lib/notifications/server.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/shared/constants.ts",
+			"to": "file:src/renderer/lib/terminal/terminal-runtime.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/shared/constants.ts",
+			"to": "file:src/renderer/screens/main/components/WorkspaceInitEffects.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/shared/constants.ts",
+			"to": "file:src/main/lib/auto-updater.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/shared/constants.ts",
+			"to": "file:src/main/lib/terminal-host/client.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/shared/constants.ts",
+			"to": "file:src/renderer/routes/_authenticated/settings/projects/$projectId/page.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/shared/constants.ts",
+			"to": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/config.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/shared/constants.ts",
+			"to": "file:src/main/lib/terminal/session.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/shared/constants.ts",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspaces/hooks/useAccessibleV2Workspaces/useAccessibleV2Workspaces.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/shared/constants.ts",
+			"to": "file:src/renderer/routes/_authenticated/components/DashboardNewWorkspaceModal/components/DashboardNewWorkspaceForm/components/DevicePicker/hooks/useWorkspaceHostOptions/useWorkspaceHostOptions.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/shared/constants.ts",
+			"to": "file:src/renderer/routes/_authenticated/components/DashboardNewWorkspaceModal/components/DashboardNewWorkspaceModalContent/DashboardNewWorkspaceModalContent.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/shared/constants.ts",
+			"to": "file:src/lib/trpc/routers/auth/index.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/shared/constants.ts",
+			"to": "file:src/lib/trpc/routers/ports/label-cache.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/shared/constants.ts",
+			"to": "file:src/renderer/routes/_authenticated/providers/LocalHostServiceProvider/LocalHostServiceProvider.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/shared/constants.ts",
+			"to": "file:src/renderer/routes/_authenticated/settings/projects/components/ProjectsSettingsSidebar/ProjectsSettingsSidebar.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/shared/constants.ts",
+			"to": "file:src/renderer/stores/tabs/useAgentHookListener.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/shared/constants.ts",
+			"to": "file:src/lib/electron-app/factories/app/setup.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/shared/constants.ts",
+			"to": "file:src/lib/trpc/routers/chat-runtime-service/index.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/shared/constants.ts",
+			"to": "file:src/lib/trpc/routers/workspaces/utils/teardown.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/shared/constants.ts",
+			"to": "file:src/lib/trpc/routers/notifications.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/shared/constants.ts",
+			"to": "file:src/lib/trpc/routers/workspaces/utils/resolve-worktree-path.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/shared/constants.ts",
+			"to": "file:src/renderer/routes/_authenticated/providers/CollectionsProvider/CollectionsProvider.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/shared/constants.ts",
+			"to": "file:src/renderer/routes/_authenticated/settings/hosts/components/HostsSettingsSidebar/HostsSettingsSidebar.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/shared/constants.ts",
+			"to": "file:src/renderer/routes/_authenticated/settings/projects/page.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/shared/constants.ts",
+			"to": "file:src/main/lib/terminal-host/headless-emulator.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/shared/constants.ts",
+			"to": "file:src/renderer/routes/_authenticated/settings/hosts/page.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/shared/constants.ts",
+			"to": "file:src/main/lib/static-ports/loader.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/shared/constants.ts",
+			"to": "file:src/main/lib/terminal-history.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/shared/constants.ts",
+			"to": "file:src/renderer/components/ConfigFilePreview/ConfigFilePreview.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/shared/constants.ts",
+			"to": "file:src/renderer/routes/_authenticated/settings/project/$projectId/components/ProjectSettings/components/ScriptsEditor/ScriptsEditor.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/shared/constants.ts",
+			"to": "file:src/lib/trpc/routers/workspaces/utils/setup.test.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/shared/constants.ts",
+			"to": "file:src/renderer/hooks/useFileOpenMode/useFileOpenMode.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/shared/constants.ts",
+			"to": "file:src/lib/trpc/routers/workspaces/utils/teardown.test.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/shared/env.shared.ts",
+			"to": "file:src/lib/trpc/routers/auth/index.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/shared/env.shared.ts",
+			"to": "file:src/lib/window-loader.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/shared/env.shared.ts",
+			"to": "file:src/main/lib/agent-setup/agent-wrappers-copilot.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/shared/env.shared.ts",
+			"to": "file:src/main/lib/agent-setup/agent-wrappers-cursor.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/shared/env.shared.ts",
+			"to": "file:src/main/lib/agent-setup/agent-wrappers-gemini.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/shared/env.shared.ts",
+			"to": "file:src/main/lib/agent-setup/notify-hook.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/shared/env.shared.ts",
+			"to": "file:src/main/lib/dev-workspace-name.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/shared/env.shared.ts",
+			"to": "file:src/main/lib/dock-icon.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/shared/env.shared.ts",
+			"to": "file:src/main/lib/host-service-coordinator.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/shared/env.shared.ts",
+			"to": "file:src/main/lib/notifications/server.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/shared/env.shared.ts",
+			"to": "file:src/main/lib/terminal/env.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/shared/notification-types.ts",
+			"to": "file:src/lib/trpc/routers/notifications.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/shared/notification-types.ts",
+			"to": "file:src/main/lib/notifications/notification-manager.test.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/shared/notification-types.ts",
+			"to": "file:src/main/lib/notifications/notification-manager.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/shared/notification-types.ts",
+			"to": "file:src/main/lib/notifications/server.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/shared/notification-types.ts",
+			"to": "file:src/renderer/routes/_authenticated/components/V2NotificationController/V2NotificationController.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/shared/notification-types.ts",
+			"to": "file:src/renderer/stores/tabs/utils/resolve-notification-target.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/shared/ringtones.ts",
+			"to": "file:src/lib/trpc/routers/ringtone/index.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/shared/ringtones.ts",
+			"to": "file:src/lib/trpc/routers/settings/index.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/shared/ringtones.ts",
+			"to": "file:src/main/lib/custom-ringtones.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/shared/ringtones.ts",
+			"to": "file:src/main/lib/notification-sound.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/shared/ringtones.ts",
+			"to": "file:src/renderer/lib/ringtones/play.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/shared/ringtones.ts",
+			"to": "file:src/renderer/routes/_authenticated/settings/ringtones/components/RingtonesSettings/RingtonesSettings.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/shared/types/electron.ts",
+			"to": "file:src/lib/window-loader.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/shared/utils.ts",
+			"to": "file:package.json",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/shared/utils.ts",
+			"to": "file:src/lib/electron-app/factories/app/setup.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/shared/worktree-id.ts",
+			"to": "file:scripts/patch-dev-protocol.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"from": "file:src/shared/worktree-id.ts",
+			"to": "file:src/main/lib/dev-workspace-name.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		}
+	]
+}

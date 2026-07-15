@@ -1,0 +1,1472 @@
+{
+	"scriptCompleted": true,
+	"filesAnalyzed": 14,
+	"filesSkipped": [],
+	"results": [
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/TopBar/components/ResourceConsumption/ResourceConsumption.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 516,
+			"nonEmptyLines": 474,
+			"functions": [
+				{
+					"name": "getTotalUsage",
+					"startLine": 54,
+					"endLine": 62,
+					"params": ["cpu", "memory"]
+				},
+				{
+					"name": "getTrackedMemorySharePercent",
+					"startLine": 64,
+					"endLine": 70,
+					"params": ["totalMemory", "hostTotalMemory"]
+				},
+				{
+					"name": "getTerminalIdFromPaneData",
+					"startLine": 72,
+					"endLine": 78,
+					"params": ["data"]
+				},
+				{
+					"name": "getTerminalTitleOverrides",
+					"startLine": 80,
+					"endLine": 99,
+					"params": ["rows"]
+				},
+				{
+					"name": "ResourceConsumption",
+					"startLine": 106,
+					"endLine": 152,
+					"params": ["{\n\tsurface = \"v1\",\n\tclassName,\n}"]
+				},
+				{
+					"name": "ResourceConsumptionContent",
+					"startLine": 159,
+					"endLine": 516,
+					"params": ["{\n\tsurface,\n\tonClose,\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "ResourceConsumption",
+					"line": 106,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "getTerminalTitleOverrides",
+					"callee": "Array.isArray",
+					"lineNumber": 86
+				},
+				{
+					"caller": "getTerminalTitleOverrides",
+					"callee": "Object.values",
+					"lineNumber": 89
+				},
+				{
+					"caller": "getTerminalTitleOverrides",
+					"callee": "getTerminalIdFromPaneData",
+					"lineNumber": 91
+				},
+				{
+					"caller": "getTerminalTitleOverrides",
+					"callee": "overrides.has",
+					"lineNumber": 92
+				},
+				{
+					"caller": "getTerminalTitleOverrides",
+					"callee": "overrides.set",
+					"lineNumber": 93
+				},
+				{
+					"caller": "ResourceConsumption",
+					"callee": "useState",
+					"lineNumber": 110
+				},
+				{
+					"caller": "ResourceConsumption",
+					"callee": "electronTrpc.settings.getShowResourceMonitor.useQuery",
+					"lineNumber": 112
+				},
+				{
+					"caller": "ResourceConsumption",
+					"callee": "useRenderStressInstrumentation",
+					"lineNumber": 114
+				},
+				{
+					"caller": "ResourceConsumption",
+					"callee": "cn",
+					"lineNumber": 130
+				},
+				{
+					"caller": "ResourceConsumption",
+					"callee": "setOpen",
+					"lineNumber": 147
+				},
+				{
+					"caller": "ResourceConsumptionContent",
+					"callee": "useState",
+					"lineNumber": 163
+				},
+				{
+					"caller": "ResourceConsumptionContent",
+					"callee": "useState",
+					"lineNumber": 164
+				},
+				{
+					"caller": "ResourceConsumptionContent",
+					"callee": "useState",
+					"lineNumber": 167
+				},
+				{
+					"caller": "ResourceConsumptionContent",
+					"callee": "useNavigate",
+					"lineNumber": 171
+				},
+				{
+					"caller": "ResourceConsumptionContent",
+					"callee": "useTabsStore",
+					"lineNumber": 172
+				},
+				{
+					"caller": "ResourceConsumptionContent",
+					"callee": "useTabsStore",
+					"lineNumber": 173
+				},
+				{
+					"caller": "ResourceConsumptionContent",
+					"callee": "useTabsStore",
+					"lineNumber": 174
+				},
+				{
+					"caller": "ResourceConsumptionContent",
+					"callee": "useCollections",
+					"lineNumber": 175
+				},
+				{
+					"caller": "ResourceConsumptionContent",
+					"callee": "authClient.useSession",
+					"lineNumber": 177
+				},
+				{
+					"caller": "ResourceConsumptionContent",
+					"callee": "useRenderStressInstrumentation",
+					"lineNumber": 180
+				},
+				{
+					"caller": "ResourceConsumptionContent",
+					"callee": "useLiveQuery",
+					"lineNumber": 185
+				},
+				{
+					"caller": "ResourceConsumptionContent",
+					"callee": "q\n\t\t\t\t.from({ sp: collections.v2SidebarProjects })\n\t\t\t\t.orderBy(({ sp }) => sp.tabOrder, \"asc\")\n\t\t\t\t.select",
+					"lineNumber": 187
+				},
+				{
+					"caller": "ResourceConsumptionContent",
+					"callee": "q\n\t\t\t\t.from({ sp: collections.v2SidebarProjects })\n\t\t\t\t.orderBy",
+					"lineNumber": 187
+				},
+				{
+					"caller": "ResourceConsumptionContent",
+					"callee": "q\n\t\t\t\t.from",
+					"lineNumber": 187
+				},
+				{
+					"caller": "ResourceConsumptionContent",
+					"callee": "useLiveQuery",
+					"lineNumber": 194
+				},
+				{
+					"caller": "ResourceConsumptionContent",
+					"callee": "q\n\t\t\t\t.from({ ws: collections.v2WorkspaceLocalState })\n\t\t\t\t.orderBy(({ ws }) => ws.sidebarState.tabOrder, \"asc\")\n\t\t\t\t.select",
+					"lineNumber": 196
+				},
+				{
+					"caller": "ResourceConsumptionContent",
+					"callee": "q\n\t\t\t\t.from({ ws: collections.v2WorkspaceLocalState })\n\t\t\t\t.orderBy",
+					"lineNumber": 196
+				},
+				{
+					"caller": "ResourceConsumptionContent",
+					"callee": "q\n\t\t\t\t.from",
+					"lineNumber": 196
+				},
+				{
+					"caller": "ResourceConsumptionContent",
+					"callee": "useMemo",
+					"lineNumber": 207
+				},
+				{
+					"caller": "ResourceConsumptionContent",
+					"callee": "rawSidebarProjects.map",
+					"lineNumber": 208
+				},
+				{
+					"caller": "ResourceConsumptionContent",
+					"callee": "useMemo",
+					"lineNumber": 212
+				},
+				{
+					"caller": "ResourceConsumptionContent",
+					"callee": "getVisibleSidebarWorkspaces(rawSidebarWorkspaces).map",
+					"lineNumber": 214
+				},
+				{
+					"caller": "ResourceConsumptionContent",
+					"callee": "getVisibleSidebarWorkspaces",
+					"lineNumber": 214
+				},
+				{
+					"caller": "ResourceConsumptionContent",
+					"callee": "useMemo",
+					"lineNumber": 220
+				},
+				{
+					"caller": "ResourceConsumptionContent",
+					"callee": "getTerminalTitleOverrides",
+					"lineNumber": 221
+				},
+				{
+					"caller": "ResourceConsumptionContent",
+					"callee": "useLiveQuery",
+					"lineNumber": 225
+				},
+				{
+					"caller": "ResourceConsumptionContent",
+					"callee": "q.from({ project: collections.v2Projects }).select",
+					"lineNumber": 227
+				},
+				{
+					"caller": "ResourceConsumptionContent",
+					"callee": "q.from",
+					"lineNumber": 227
+				},
+				{
+					"caller": "ResourceConsumptionContent",
+					"callee": "useHostWorkspaces",
+					"lineNumber": 234
+				},
+				{
+					"caller": "ResourceConsumptionContent",
+					"callee": "shouldQueryResourceMonitor",
+					"lineNumber": 236
+				},
+				{
+					"caller": "ResourceConsumptionContent",
+					"callee": "electronTrpc.resourceMetrics.getSnapshot.useQuery",
+					"lineNumber": 245
+				},
+				{
+					"caller": "ResourceConsumptionContent",
+					"callee": "getResourceMonitorRefetchInterval",
+					"lineNumber": 253
+				},
+				{
+					"caller": "ResourceConsumptionContent",
+					"callee": "useEffect",
+					"lineNumber": 257
+				},
+				{
+					"caller": "ResourceConsumptionContent",
+					"callee": "logStressEvent",
+					"lineNumber": 259
+				},
+				{
+					"caller": "ResourceConsumptionContent",
+					"callee": "useMemo",
+					"lineNumber": 262
+				},
+				{
+					"caller": "ResourceConsumptionContent",
+					"callee": "normalizeResourceMetricsSnapshot",
+					"lineNumber": 263
+				},
+				{
+					"caller": "ResourceConsumptionContent",
+					"callee": "rawV2Projects.map",
+					"lineNumber": 267
+				},
+				{
+					"caller": "ResourceConsumptionContent",
+					"callee": "rawV2Workspaces.map",
+					"lineNumber": 270
+				},
+				{
+					"caller": "ResourceConsumptionContent",
+					"callee": "normalized.workspaces.map",
+					"lineNumber": 275
+				},
+				{
+					"caller": "ResourceConsumptionContent",
+					"callee": "workspaceById.get",
+					"lineNumber": 276
+				},
+				{
+					"caller": "ResourceConsumptionContent",
+					"callee": "projectById.get",
+					"lineNumber": 278
+				},
+				{
+					"caller": "ResourceConsumptionContent",
+					"callee": "workspace.sessions.map",
+					"lineNumber": 284
+				},
+				{
+					"caller": "ResourceConsumptionContent",
+					"callee": "terminalTitleOverrides.get",
+					"lineNumber": 287
+				},
+				{
+					"caller": "getPaneName",
+					"callee": "session.sessionId.slice",
+					"lineNumber": 298
+				},
+				{
+					"caller": "getPaneName",
+					"callee": "session.paneId.slice",
+					"lineNumber": 301
+				},
+				{
+					"caller": "navigateToWorkspace",
+					"callee": "navigateToV2Workspace",
+					"lineNumber": 306
+				},
+				{
+					"caller": "navigateToWorkspace",
+					"callee": "navigateToV1Workspace",
+					"lineNumber": 308
+				},
+				{
+					"caller": "navigateToWorkspace",
+					"callee": "onClose",
+					"lineNumber": 310
+				},
+				{
+					"caller": "navigateToPane",
+					"callee": "navigateToV2Workspace",
+					"lineNumber": 315
+				},
+				{
+					"caller": "navigateToPane",
+					"callee": "crypto.randomUUID",
+					"lineNumber": 318
+				},
+				{
+					"caller": "navigateToPane",
+					"callee": "onClose",
+					"lineNumber": 321
+				},
+				{
+					"caller": "navigateToPane",
+					"callee": "setActiveTab",
+					"lineNumber": 327
+				},
+				{
+					"caller": "navigateToPane",
+					"callee": "setFocusedPane",
+					"lineNumber": 328
+				},
+				{
+					"caller": "navigateToPane",
+					"callee": "navigateToV1Workspace",
+					"lineNumber": 330
+				},
+				{
+					"caller": "navigateToPane",
+					"callee": "onClose",
+					"lineNumber": 331
+				},
+				{
+					"caller": "toggleWorkspace",
+					"callee": "setCollapsedWorkspaces",
+					"lineNumber": 335
+				},
+				{
+					"caller": "toggleWorkspace",
+					"callee": "next.has",
+					"lineNumber": 337
+				},
+				{
+					"caller": "toggleWorkspace",
+					"callee": "next.delete",
+					"lineNumber": 338
+				},
+				{
+					"caller": "toggleWorkspace",
+					"callee": "next.add",
+					"lineNumber": 340
+				},
+				{
+					"caller": "toggleProject",
+					"callee": "setCollapsedProjects",
+					"lineNumber": 347
+				},
+				{
+					"caller": "toggleProject",
+					"callee": "next.has",
+					"lineNumber": 349
+				},
+				{
+					"caller": "toggleProject",
+					"callee": "next.delete",
+					"lineNumber": 350
+				},
+				{
+					"caller": "toggleProject",
+					"callee": "next.add",
+					"lineNumber": 352
+				},
+				{
+					"caller": "ResourceConsumptionContent",
+					"callee": "getTotalUsage",
+					"lineNumber": 358
+				},
+				{
+					"caller": "ResourceConsumptionContent",
+					"callee": "getTrackedMemorySharePercent",
+					"lineNumber": 364
+				},
+				{
+					"caller": "ResourceConsumptionContent",
+					"callee": "getTrackedHostMemorySeverity",
+					"lineNumber": 370
+				},
+				{
+					"caller": "ResourceConsumptionContent",
+					"callee": "setSortOption",
+					"lineNumber": 401
+				},
+				{
+					"caller": "ResourceConsumptionContent",
+					"callee": "refetch",
+					"lineNumber": 418
+				},
+				{
+					"caller": "ResourceConsumptionContent",
+					"callee": "cn",
+					"lineNumber": 423
+				},
+				{
+					"caller": "ResourceConsumptionContent",
+					"callee": "formatCpu",
+					"lineNumber": 434
+				},
+				{
+					"caller": "ResourceConsumptionContent",
+					"callee": "formatMemory",
+					"lineNumber": 439
+				},
+				{
+					"caller": "ResourceConsumptionContent",
+					"callee": "formatPercent",
+					"lineNumber": 444
+				},
+				{
+					"caller": "ResourceConsumptionContent",
+					"callee": "Math.round",
+					"lineNumber": 454
+				},
+				{
+					"caller": "ResourceConsumptionContent",
+					"callee": "cn",
+					"lineNumber": 459
+				},
+				{
+					"caller": "ResourceConsumptionContent",
+					"callee": "Math.min",
+					"lineNumber": 464
+				},
+				{
+					"caller": "ResourceConsumptionContent",
+					"callee": "Math.max",
+					"lineNumber": 464
+				},
+				{
+					"caller": "ResourceConsumptionContent",
+					"callee": "formatPercent",
+					"lineNumber": 470
+				}
+			],
+			"metrics": {
+				"importCount": 16,
+				"exportCount": 1,
+				"functionCount": 6,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/TopBar/components/ResourceConsumption/components/AppResourceSection/AppResourceSection.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 87,
+			"nonEmptyLines": 80,
+			"functions": [
+				{
+					"name": "SubRow",
+					"startLine": 23,
+					"endLine": 38,
+					"params": ["{ label, cpu, memory, severity }"]
+				},
+				{
+					"name": "AppResourceSection",
+					"startLine": 40,
+					"endLine": 87,
+					"params": ["{\n\tapp,\n\ttotalUsage,\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "AppResourceSection",
+					"line": 40,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "SubRow",
+					"callee": "cn",
+					"lineNumber": 32
+				},
+				{
+					"caller": "SubRow",
+					"callee": "formatCpu",
+					"lineNumber": 33
+				},
+				{
+					"caller": "SubRow",
+					"callee": "formatMemory",
+					"lineNumber": 34
+				},
+				{
+					"caller": "AppResourceSection",
+					"callee": "getUsageSeverity",
+					"lineNumber": 44
+				},
+				{
+					"caller": "AppResourceSection",
+					"callee": "getUsageSeverity",
+					"lineNumber": 45
+				},
+				{
+					"caller": "AppResourceSection",
+					"callee": "getUsageSeverity",
+					"lineNumber": 46
+				},
+				{
+					"caller": "AppResourceSection",
+					"callee": "getUsageSeverity",
+					"lineNumber": 47
+				},
+				{
+					"caller": "AppResourceSection",
+					"callee": "cn",
+					"lineNumber": 59
+				},
+				{
+					"caller": "AppResourceSection",
+					"callee": "formatCpu",
+					"lineNumber": 60
+				},
+				{
+					"caller": "AppResourceSection",
+					"callee": "formatMemory",
+					"lineNumber": 61
+				}
+			],
+			"metrics": {
+				"importCount": 4,
+				"exportCount": 1,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/TopBar/components/ResourceConsumption/components/AppResourceSection/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "AppResourceSection",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/TopBar/components/ResourceConsumption/components/MetricBadge/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "MetricBadge",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/TopBar/components/ResourceConsumption/components/UsageSeverityBadge/UsageSeverityBadge.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 21,
+			"nonEmptyLines": 18,
+			"functions": [
+				{
+					"name": "UsageSeverityBadge",
+					"startLine": 8,
+					"endLine": 21,
+					"params": ["{ severity }"]
+				}
+			],
+			"exports": [
+				{
+					"name": "UsageSeverityBadge",
+					"line": 8,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "UsageSeverityBadge",
+					"callee": "cn",
+					"lineNumber": 15
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/TopBar/components/ResourceConsumption/components/UsageSeverityBadge/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "UsageSeverityBadge",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/TopBar/components/ResourceConsumption/components/WorkspaceResourceSection/WorkspaceResourceSection.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 298,
+			"nonEmptyLines": 281,
+			"functions": [
+				{
+					"name": "groupWorkspacesByProject",
+					"startLine": 34,
+					"endLine": 60,
+					"params": ["workspaces"]
+				},
+				{
+					"name": "sortWorkspaces",
+					"startLine": 62,
+					"endLine": 91,
+					"params": ["workspaces", "sortOption", "sidebarWorkspaceOrder"]
+				},
+				{
+					"name": "sortProjectGroups",
+					"startLine": 93,
+					"endLine": 122,
+					"params": ["groups", "sortOption", "sidebarProjectOrder"]
+				},
+				{
+					"name": "getProjectTotals",
+					"startLine": 124,
+					"endLine": 132,
+					"params": ["projects"]
+				},
+				{
+					"name": "WorkspaceResourceSection",
+					"startLine": 134,
+					"endLine": 298,
+					"params": [
+						"{\n\tworkspaces,\n\tsortOption,\n\tsidebarProjectOrder,\n\tsidebarWorkspaceOrder,\n\tcollapsedProjects,\n\ttoggleProject,\n\tcollapsedWorkspaces,\n\ttoggleWorkspace,\n\tnavigateToWorkspace,\n\tnavigateToPane,\n\tgetPaneName,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "WorkspaceResourceSection",
+					"line": 134,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "groupWorkspacesByProject",
+					"callee": "projectMap.get",
+					"lineNumber": 42
+				},
+				{
+					"caller": "groupWorkspacesByProject",
+					"callee": "projectMap.set",
+					"lineNumber": 51
+				},
+				{
+					"caller": "groupWorkspacesByProject",
+					"callee": "group.workspaces.push",
+					"lineNumber": 56
+				},
+				{
+					"caller": "groupWorkspacesByProject",
+					"callee": "projectMap.values",
+					"lineNumber": 59
+				},
+				{
+					"caller": "sortWorkspaces",
+					"callee": "sorted.sort",
+					"lineNumber": 70
+				},
+				{
+					"caller": "sortWorkspaces",
+					"callee": "sorted.sort",
+					"lineNumber": 73
+				},
+				{
+					"caller": "sortWorkspaces",
+					"callee": "sorted.sort",
+					"lineNumber": 76
+				},
+				{
+					"caller": "sortWorkspaces",
+					"callee": "a.workspaceName.localeCompare",
+					"lineNumber": 76
+				},
+				{
+					"caller": "sortWorkspaces",
+					"callee": "sidebarWorkspaceOrder.map",
+					"lineNumber": 80
+				},
+				{
+					"caller": "sortWorkspaces",
+					"callee": "sorted.sort",
+					"lineNumber": 82
+				},
+				{
+					"caller": "sortWorkspaces",
+					"callee": "orderMap.get",
+					"lineNumber": 84
+				},
+				{
+					"caller": "sortWorkspaces",
+					"callee": "orderMap.get",
+					"lineNumber": 85
+				},
+				{
+					"caller": "sortProjectGroups",
+					"callee": "sorted.sort",
+					"lineNumber": 101
+				},
+				{
+					"caller": "sortProjectGroups",
+					"callee": "sorted.sort",
+					"lineNumber": 104
+				},
+				{
+					"caller": "sortProjectGroups",
+					"callee": "sorted.sort",
+					"lineNumber": 107
+				},
+				{
+					"caller": "sortProjectGroups",
+					"callee": "a.projectName.localeCompare",
+					"lineNumber": 107
+				},
+				{
+					"caller": "sortProjectGroups",
+					"callee": "sidebarProjectOrder.map",
+					"lineNumber": 111
+				},
+				{
+					"caller": "sortProjectGroups",
+					"callee": "sorted.sort",
+					"lineNumber": 113
+				},
+				{
+					"caller": "sortProjectGroups",
+					"callee": "orderMap.get",
+					"lineNumber": 115
+				},
+				{
+					"caller": "sortProjectGroups",
+					"callee": "orderMap.get",
+					"lineNumber": 116
+				},
+				{
+					"caller": "getProjectTotals",
+					"callee": "projects.reduce",
+					"lineNumber": 125
+				},
+				{
+					"caller": "WorkspaceResourceSection",
+					"callee": "groupWorkspacesByProject",
+					"lineNumber": 147
+				},
+				{
+					"caller": "WorkspaceResourceSection",
+					"callee": "sortProjectGroups",
+					"lineNumber": 148
+				},
+				{
+					"caller": "WorkspaceResourceSection",
+					"callee": "sortedProjectGroups.map",
+					"lineNumber": 153
+				},
+				{
+					"caller": "WorkspaceResourceSection",
+					"callee": "sortWorkspaces",
+					"lineNumber": 155
+				},
+				{
+					"caller": "WorkspaceResourceSection",
+					"callee": "getProjectTotals",
+					"lineNumber": 161
+				},
+				{
+					"caller": "WorkspaceResourceSection",
+					"callee": "projectGroups.map",
+					"lineNumber": 163
+				},
+				{
+					"caller": "WorkspaceResourceSection",
+					"callee": "collapsedProjects.has",
+					"lineNumber": 164
+				},
+				{
+					"caller": "WorkspaceResourceSection",
+					"callee": "getUsageSeverity",
+					"lineNumber": 165
+				},
+				{
+					"caller": "WorkspaceResourceSection",
+					"callee": "cn",
+					"lineNumber": 170
+				},
+				{
+					"caller": "WorkspaceResourceSection",
+					"callee": "toggleProject",
+					"lineNumber": 174
+				},
+				{
+					"caller": "WorkspaceResourceSection",
+					"callee": "cn",
+					"lineNumber": 193
+				},
+				{
+					"caller": "WorkspaceResourceSection",
+					"callee": "formatCpu",
+					"lineNumber": 194
+				},
+				{
+					"caller": "WorkspaceResourceSection",
+					"callee": "formatMemory",
+					"lineNumber": 195
+				},
+				{
+					"caller": "WorkspaceResourceSection",
+					"callee": "project.workspaces.map",
+					"lineNumber": 200
+				},
+				{
+					"caller": "WorkspaceResourceSection",
+					"callee": "collapsedWorkspaces.has",
+					"lineNumber": 201
+				},
+				{
+					"caller": "WorkspaceResourceSection",
+					"callee": "getUsageSeverity",
+					"lineNumber": 202
+				},
+				{
+					"caller": "WorkspaceResourceSection",
+					"callee": "toggleWorkspace",
+					"lineNumber": 211
+				},
+				{
+					"caller": "WorkspaceResourceSection",
+					"callee": "navigateToWorkspace",
+					"lineNumber": 228
+				},
+				{
+					"caller": "WorkspaceResourceSection",
+					"callee": "cn",
+					"lineNumber": 238
+				},
+				{
+					"caller": "WorkspaceResourceSection",
+					"callee": "formatCpu",
+					"lineNumber": 244
+				},
+				{
+					"caller": "WorkspaceResourceSection",
+					"callee": "formatMemory",
+					"lineNumber": 247
+				},
+				{
+					"caller": "WorkspaceResourceSection",
+					"callee": "workspace.sessions.map",
+					"lineNumber": 254
+				},
+				{
+					"caller": "WorkspaceResourceSection",
+					"callee": "getUsageSeverity",
+					"lineNumber": 255
+				},
+				{
+					"caller": "WorkspaceResourceSection",
+					"callee": "navigateToPane",
+					"lineNumber": 265
+				},
+				{
+					"caller": "WorkspaceResourceSection",
+					"callee": "getPaneName",
+					"lineNumber": 272
+				},
+				{
+					"caller": "WorkspaceResourceSection",
+					"callee": "cn",
+					"lineNumber": 277
+				},
+				{
+					"caller": "WorkspaceResourceSection",
+					"callee": "formatCpu",
+					"lineNumber": 283
+				},
+				{
+					"caller": "WorkspaceResourceSection",
+					"callee": "formatMemory",
+					"lineNumber": 286
+				}
+			],
+			"metrics": {
+				"importCount": 4,
+				"exportCount": 1,
+				"functionCount": 5,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/TopBar/components/ResourceConsumption/components/WorkspaceResourceSection/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "WorkspaceResourceSection",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/TopBar/components/ResourceConsumption/resourceConsumptionPolicy.test.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 35,
+			"nonEmptyLines": 33,
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/TopBar/components/ResourceConsumption/resourceConsumptionPolicy.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 17,
+			"nonEmptyLines": 15,
+			"functions": [
+				{
+					"name": "shouldQueryResourceMonitor",
+					"startLine": 3,
+					"endLine": 11,
+					"params": ["{\n\tenabled,\n\topen,\n}"]
+				},
+				{
+					"name": "getResourceMonitorRefetchInterval",
+					"startLine": 13,
+					"endLine": 17,
+					"params": ["open"]
+				}
+			],
+			"exports": [
+				{
+					"name": "RESOURCE_MONITOR_REFETCH_INTERVAL_MS",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "shouldQueryResourceMonitor",
+					"line": 3,
+					"isDefault": false
+				},
+				{
+					"name": "getResourceMonitorRefetchInterval",
+					"line": 13,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 3,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/TopBar/components/ResourceConsumption/types.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 54,
+			"nonEmptyLines": 46,
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/TopBar/components/ResourceConsumption/utils/formatters.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 14,
+			"nonEmptyLines": 12,
+			"functions": [
+				{
+					"name": "formatMemory",
+					"startLine": 1,
+					"endLine": 6,
+					"params": ["bytes"]
+				},
+				{
+					"name": "formatCpu",
+					"startLine": 8,
+					"endLine": 10,
+					"params": ["percent"]
+				},
+				{
+					"name": "formatPercent",
+					"startLine": 12,
+					"endLine": 14,
+					"params": ["value"]
+				}
+			],
+			"exports": [
+				{
+					"name": "formatMemory",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "formatCpu",
+					"line": 8,
+					"isDefault": false
+				},
+				{
+					"name": "formatPercent",
+					"line": 12,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "formatMemory",
+					"callee": "(bytes / 1024).toFixed",
+					"lineNumber": 2
+				},
+				{
+					"caller": "formatMemory",
+					"callee": "(bytes / (1024 * 1024)).toFixed",
+					"lineNumber": 4
+				},
+				{
+					"caller": "formatMemory",
+					"callee": "(bytes / (1024 * 1024 * 1024)).toFixed",
+					"lineNumber": 5
+				},
+				{
+					"caller": "formatCpu",
+					"callee": "percent.toFixed",
+					"lineNumber": 9
+				},
+				{
+					"caller": "formatPercent",
+					"callee": "value.toFixed",
+					"lineNumber": 13
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 3,
+				"functionCount": 3,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/TopBar/components/ResourceConsumption/utils/normalizeSnapshot.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 171,
+			"nonEmptyLines": 158,
+			"functions": [
+				{
+					"name": "normalizeFiniteNumber",
+					"startLine": 8,
+					"endLine": 11,
+					"params": ["value"]
+				},
+				{
+					"name": "normalizeNonEmptyString",
+					"startLine": 13,
+					"endLine": 17,
+					"params": ["value", "fallback"]
+				},
+				{
+					"name": "normalizeOptionalString",
+					"startLine": 19,
+					"endLine": 23,
+					"params": ["value"]
+				},
+				{
+					"name": "normalizeUsageValues",
+					"startLine": 25,
+					"endLine": 35,
+					"params": ["value"]
+				},
+				{
+					"name": "normalizeSession",
+					"startLine": 37,
+					"endLine": 62,
+					"params": ["value", "index", "fallbackWorkspaceId"]
+				},
+				{
+					"name": "normalizeWorkspace",
+					"startLine": 64,
+					"endLine": 95,
+					"params": ["value", "index"]
+				},
+				{
+					"name": "normalizeAppMetrics",
+					"startLine": 97,
+					"endLine": 113,
+					"params": ["value"]
+				},
+				{
+					"name": "normalizeResourceMetricsSnapshot",
+					"startLine": 115,
+					"endLine": 171,
+					"params": ["value"]
+				}
+			],
+			"exports": [
+				{
+					"name": "normalizeResourceMetricsSnapshot",
+					"line": 115,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "normalizeFiniteNumber",
+					"callee": "Number.isFinite",
+					"lineNumber": 9
+				},
+				{
+					"caller": "normalizeFiniteNumber",
+					"callee": "Math.max",
+					"lineNumber": 10
+				},
+				{
+					"caller": "normalizeNonEmptyString",
+					"callee": "value.trim",
+					"lineNumber": 15
+				},
+				{
+					"caller": "normalizeOptionalString",
+					"callee": "value.trim",
+					"lineNumber": 21
+				},
+				{
+					"caller": "normalizeUsageValues",
+					"callee": "normalizeFiniteNumber",
+					"lineNumber": 32
+				},
+				{
+					"caller": "normalizeUsageValues",
+					"callee": "normalizeFiniteNumber",
+					"lineNumber": 33
+				},
+				{
+					"caller": "normalizeSession",
+					"callee": "normalizeUsageValues",
+					"lineNumber": 46
+				},
+				{
+					"caller": "normalizeSession",
+					"callee": "normalizeNonEmptyString",
+					"lineNumber": 49
+				},
+				{
+					"caller": "normalizeSession",
+					"callee": "normalizeNonEmptyString",
+					"lineNumber": 53
+				},
+				{
+					"caller": "normalizeSession",
+					"callee": "Math.floor",
+					"lineNumber": 57
+				},
+				{
+					"caller": "normalizeSession",
+					"callee": "normalizeFiniteNumber",
+					"lineNumber": 57
+				},
+				{
+					"caller": "normalizeSession",
+					"callee": "normalizeOptionalString",
+					"lineNumber": 58
+				},
+				{
+					"caller": "normalizeWorkspace",
+					"callee": "normalizeUsageValues",
+					"lineNumber": 69
+				},
+				{
+					"caller": "normalizeWorkspace",
+					"callee": "normalizeNonEmptyString",
+					"lineNumber": 70
+				},
+				{
+					"caller": "normalizeWorkspace",
+					"callee": "Array.isArray",
+					"lineNumber": 74
+				},
+				{
+					"caller": "normalizeWorkspace",
+					"callee": "normalizeNonEmptyString",
+					"lineNumber": 80
+				},
+				{
+					"caller": "normalizeWorkspace",
+					"callee": "normalizeNonEmptyString",
+					"lineNumber": 81
+				},
+				{
+					"caller": "normalizeWorkspace",
+					"callee": "normalizeNonEmptyString",
+					"lineNumber": 85
+				},
+				{
+					"caller": "normalizeWorkspace",
+					"callee": "rawSessions.map",
+					"lineNumber": 91
+				},
+				{
+					"caller": "normalizeWorkspace",
+					"callee": "normalizeSession",
+					"lineNumber": 92
+				},
+				{
+					"caller": "normalizeAppMetrics",
+					"callee": "normalizeUsageValues",
+					"lineNumber": 102
+				},
+				{
+					"caller": "normalizeAppMetrics",
+					"callee": "normalizeUsageValues",
+					"lineNumber": 103
+				},
+				{
+					"caller": "normalizeAppMetrics",
+					"callee": "normalizeUsageValues",
+					"lineNumber": 104
+				},
+				{
+					"caller": "normalizeResourceMetricsSnapshot",
+					"callee": "normalizeAppMetrics",
+					"lineNumber": 120
+				},
+				{
+					"caller": "normalizeResourceMetricsSnapshot",
+					"callee": "Array.isArray",
+					"lineNumber": 121
+				},
+				{
+					"caller": "normalizeResourceMetricsSnapshot",
+					"callee": "snapshot.workspaces.map",
+					"lineNumber": 122
+				},
+				{
+					"caller": "normalizeResourceMetricsSnapshot",
+					"callee": "normalizeWorkspace",
+					"lineNumber": 123
+				},
+				{
+					"caller": "normalizeResourceMetricsSnapshot",
+					"callee": "workspaces.reduce",
+					"lineNumber": 126
+				},
+				{
+					"caller": "normalizeResourceMetricsSnapshot",
+					"callee": "workspaces.reduce",
+					"lineNumber": 130
+				},
+				{
+					"caller": "normalizeResourceMetricsSnapshot",
+					"callee": "normalizeFiniteNumber",
+					"lineNumber": 138
+				},
+				{
+					"caller": "normalizeResourceMetricsSnapshot",
+					"callee": "normalizeFiniteNumber",
+					"lineNumber": 139
+				},
+				{
+					"caller": "normalizeResourceMetricsSnapshot",
+					"callee": "Math.max",
+					"lineNumber": 140
+				},
+				{
+					"caller": "normalizeResourceMetricsSnapshot",
+					"callee": "normalizeFiniteNumber",
+					"lineNumber": 148
+				},
+				{
+					"caller": "normalizeResourceMetricsSnapshot",
+					"callee": "normalizeFiniteNumber",
+					"lineNumber": 151
+				},
+				{
+					"caller": "normalizeResourceMetricsSnapshot",
+					"callee": "Math.max",
+					"lineNumber": 154
+				},
+				{
+					"caller": "normalizeResourceMetricsSnapshot",
+					"callee": "Math.floor",
+					"lineNumber": 156
+				},
+				{
+					"caller": "normalizeResourceMetricsSnapshot",
+					"callee": "normalizeFiniteNumber",
+					"lineNumber": 156
+				},
+				{
+					"caller": "normalizeResourceMetricsSnapshot",
+					"callee": "normalizeFiniteNumber",
+					"lineNumber": 158
+				},
+				{
+					"caller": "normalizeResourceMetricsSnapshot",
+					"callee": "normalizeFiniteNumber",
+					"lineNumber": 161
+				},
+				{
+					"caller": "normalizeResourceMetricsSnapshot",
+					"callee": "normalizeFiniteNumber",
+					"lineNumber": 163
+				},
+				{
+					"caller": "normalizeResourceMetricsSnapshot",
+					"callee": "Number.isFinite",
+					"lineNumber": 167
+				},
+				{
+					"caller": "normalizeResourceMetricsSnapshot",
+					"callee": "Date.now",
+					"lineNumber": 169
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 8,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/TopBar/components/ResourceConsumption/utils/resourceSeverity.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 47,
+			"nonEmptyLines": 37,
+			"functions": [
+				{
+					"name": "getUsageSeverity",
+					"startLine": 7,
+					"endLine": 39,
+					"params": ["values", "totals", "options"]
+				},
+				{
+					"name": "getTrackedHostMemorySeverity",
+					"startLine": 41,
+					"endLine": 47,
+					"params": ["trackedMemorySharePercent"]
+				}
+			],
+			"exports": [
+				{
+					"name": "getUsageSeverity",
+					"line": 7,
+					"isDefault": false
+				},
+				{
+					"name": "getTrackedHostMemorySeverity",
+					"line": 41,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 2,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		}
+	]
+}

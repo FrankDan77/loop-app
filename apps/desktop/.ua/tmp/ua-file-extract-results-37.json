@@ -1,0 +1,3853 @@
+{
+	"scriptCompleted": true,
+	"filesAnalyzed": 33,
+	"filesSkipped": [],
+	"results": [
+		{
+			"path": "src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetRow/PresetRow.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 219,
+			"nonEmptyLines": 205,
+			"functions": [
+				{
+					"name": "PresetRow",
+					"startLine": 43,
+					"endLine": 219,
+					"params": [
+						"{\n\tpreset,\n\trowIndex,\n\tprojectOptionsById,\n\tagents,\n\tonEdit,\n\tonLocalReorder,\n\tonPersistReorder,\n\tonToggleVisibility,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "PresetRow",
+					"line": 43,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "PresetRow",
+					"callee": "useRef",
+					"lineNumber": 53
+				},
+				{
+					"caller": "PresetRow",
+					"callee": "useRef",
+					"lineNumber": 54
+				},
+				{
+					"caller": "PresetRow",
+					"callee": "useDrag",
+					"lineNumber": 56
+				},
+				{
+					"caller": "PresetRow",
+					"callee": "monitor.isDragging",
+					"lineNumber": 61
+				},
+				{
+					"caller": "PresetRow",
+					"callee": "useDrop",
+					"lineNumber": 67
+				},
+				{
+					"caller": "PresetRow",
+					"callee": "onLocalReorder",
+					"lineNumber": 71
+				},
+				{
+					"caller": "PresetRow",
+					"callee": "onPersistReorder",
+					"lineNumber": 77
+				},
+				{
+					"caller": "PresetRow",
+					"callee": "useEffect",
+					"lineNumber": 82
+				},
+				{
+					"caller": "PresetRow",
+					"callee": "preview",
+					"lineNumber": 83
+				},
+				{
+					"caller": "PresetRow",
+					"callee": "drop",
+					"lineNumber": 83
+				},
+				{
+					"caller": "PresetRow",
+					"callee": "drag",
+					"lineNumber": 84
+				},
+				{
+					"caller": "PresetRow",
+					"callee": "useIsDarkTheme",
+					"lineNumber": 87
+				},
+				{
+					"caller": "PresetRow",
+					"callee": "resolveV2PresetIcon",
+					"lineNumber": 88
+				},
+				{
+					"caller": "PresetRow",
+					"callee": "resolvePresetLaunchCommands",
+					"lineNumber": 93
+				},
+				{
+					"caller": "PresetRow",
+					"callee": "normalizeExecutionMode",
+					"lineNumber": 102
+				},
+				{
+					"caller": "PresetRow",
+					"callee": "getPresetModeLabel",
+					"lineNumber": 103
+				},
+				{
+					"caller": "PresetRow",
+					"callee": "commands.find((cmd) => cmd.trim().length > 0)?.trim",
+					"lineNumber": 105
+				},
+				{
+					"caller": "PresetRow",
+					"callee": "commands.find",
+					"lineNumber": 105
+				},
+				{
+					"caller": "PresetRow",
+					"callee": "cmd.trim",
+					"lineNumber": 105
+				},
+				{
+					"caller": "PresetRow",
+					"callee": "getPresetProjectTargetLabel",
+					"lineNumber": 110
+				},
+				{
+					"caller": "PresetRow",
+					"callee": "onEdit",
+					"lineNumber": 121
+				},
+				{
+					"caller": "PresetRow",
+					"callee": "e.preventDefault",
+					"lineNumber": 125
+				},
+				{
+					"caller": "PresetRow",
+					"callee": "onEdit",
+					"lineNumber": 126
+				},
+				{
+					"caller": "PresetRow",
+					"callee": "cn",
+					"lineNumber": 129
+				},
+				{
+					"caller": "PresetRow",
+					"callee": "preset.name.trim",
+					"lineNumber": 145
+				},
+				{
+					"caller": "PresetRow",
+					"callee": "cn",
+					"lineNumber": 183
+				},
+				{
+					"caller": "PresetRow",
+					"callee": "e.stopPropagation",
+					"lineNumber": 190
+				},
+				{
+					"caller": "PresetRow",
+					"callee": "onToggleVisibility",
+					"lineNumber": 191
+				},
+				{
+					"caller": "PresetRow",
+					"callee": "e.stopPropagation",
+					"lineNumber": 207
+				},
+				{
+					"caller": "PresetRow",
+					"callee": "cn",
+					"lineNumber": 208
+				}
+			],
+			"metrics": {
+				"importCount": 6,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetRow/PresetRow.utils.test.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 14,
+			"nonEmptyLines": 12,
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetRow/PresetRow.utils.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 22,
+			"nonEmptyLines": 17,
+			"functions": [
+				{
+					"name": "getPresetModeLabel",
+					"startLine": 3,
+					"endLine": 22,
+					"params": ["modeValue", "commandCount"]
+				}
+			],
+			"exports": [
+				{
+					"name": "getPresetModeLabel",
+					"line": 3,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetRow/components/CommandsEditor/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "CommandsEditor",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetRow/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "PresetRow",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/PresetsSection.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 553,
+			"nonEmptyLines": 495,
+			"functions": [
+				{
+					"name": "PresetsSection",
+					"startLine": 32,
+					"endLine": 553,
+					"params": [
+						"{\n\tshowPresets,\n\tshowQuickAdd,\n\teditingPresetId: editingPresetIdFromRoute,\n\tonEditingPresetIdChange,\n\tpendingCreateProjectId,\n\tonPendingCreateProjectIdChange,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "PresetsSection",
+					"line": 32,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "PresetsSection",
+					"callee": "useIsDarkTheme",
+					"lineNumber": 40
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "electronTrpc.workspaces.getAllGrouped.useQuery",
+					"lineNumber": 42
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "usePresets",
+					"lineNumber": 51
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "useState",
+					"lineNumber": 54
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "useState",
+					"lineNumber": 55
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "useRef",
+					"lineNumber": 58
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "useRef",
+					"lineNumber": 59
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "useRef",
+					"lineNumber": 60
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "useRef",
+					"lineNumber": 61
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "serverPresets.map",
+					"lineNumber": 62
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "useRef",
+					"lineNumber": 64
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "useRef",
+					"lineNumber": 65
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "useMemo",
+					"lineNumber": 67
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "groupedProjects.map",
+					"lineNumber": 69
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "useMemo",
+					"lineNumber": 77
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "projectOptions.map",
+					"lineNumber": 78
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "useEffect",
+					"lineNumber": 82
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "useCallback",
+					"lineNumber": 86
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "setEditingPresetId",
+					"lineNumber": 88
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "onEditingPresetIdChange",
+					"lineNumber": 89
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "useEffect",
+					"lineNumber": 94
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "setEditingPresetId",
+					"lineNumber": 95
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "useEffect",
+					"lineNumber": 98
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "setLocalPresets",
+					"lineNumber": 99
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "serverPresets.find",
+					"lineNumber": 103
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "previousIds.has",
+					"lineNumber": 104
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "setEditingPreset",
+					"lineNumber": 107
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "requestAnimationFrame",
+					"lineNumber": 113
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "presetsContainerRef.current?.scrollTo",
+					"lineNumber": 114
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "serverPresets.map",
+					"lineNumber": 122
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "useMemo",
+					"lineNumber": 126
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "localPresets.findIndex",
+					"lineNumber": 128
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "useMemo",
+					"lineNumber": 131
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "useEffect",
+					"lineNumber": 136
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "localPresets.some",
+					"lineNumber": 139
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "setEditingPreset",
+					"lineNumber": 141
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "useMemo",
+					"lineNumber": 145
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "serverPresets.map",
+					"lineNumber": 146
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "useMemo",
+					"lineNumber": 150
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "PRESET_TEMPLATES.map",
+					"lineNumber": 152
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "useCallback",
+					"lineNumber": 161
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "existingPresetNames.has",
+					"lineNumber": 162
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "useCallback",
+					"lineNumber": 166
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "setLocalPresets",
+					"lineNumber": 168
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "prev.map",
+					"lineNumber": 169
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "useCallback",
+					"lineNumber": 177
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "setLocalPresets",
+					"lineNumber": 179
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "serverPresetsRef.current.find",
+					"lineNumber": 182
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "updatePreset.mutate",
+					"lineNumber": 188
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "useCallback",
+					"lineNumber": 198
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "setLocalPresets",
+					"lineNumber": 200
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "prev.map",
+					"lineNumber": 203
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "updatePreset.mutate",
+					"lineNumber": 208
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "useCallback",
+					"lineNumber": 219
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "setLocalPresets",
+					"lineNumber": 221
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "serverPresetsRef.current.find",
+					"lineNumber": 224
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "JSON.stringify",
+					"lineNumber": 229
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "JSON.stringify",
+					"lineNumber": 230
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "updatePreset.mutate",
+					"lineNumber": 235
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "useCallback",
+					"lineNumber": 245
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "setLocalPresets",
+					"lineNumber": 247
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "currentLocal.map",
+					"lineNumber": 251
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "updatePreset.mutate",
+					"lineNumber": 257
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "useCallback",
+					"lineNumber": 268
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "createPreset.mutate",
+					"lineNumber": 271
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "useCallback",
+					"lineNumber": 282
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "existingPresetNames.has",
+					"lineNumber": 284
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "createPreset.mutate",
+					"lineNumber": 285
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "useEffect",
+					"lineNumber": 295
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "handleAddRow",
+					"lineNumber": 306
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "onPendingCreateProjectIdChange",
+					"lineNumber": 307
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "useCallback",
+					"lineNumber": 310
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "setLocalPresets",
+					"lineNumber": 312
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "deletePreset.mutate",
+					"lineNumber": 315
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "useCallback",
+					"lineNumber": 323
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "setPresetAutoApply.mutate",
+					"lineNumber": 325
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "useCallback",
+					"lineNumber": 330
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "updatePreset.mutate",
+					"lineNumber": 332
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "useCallback",
+					"lineNumber": 340
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "updatePreset.mutate",
+					"lineNumber": 342
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "useCallback",
+					"lineNumber": 350
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "setLocalPresets",
+					"lineNumber": 352
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "newPresets.splice",
+					"lineNumber": 354
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "newPresets.splice",
+					"lineNumber": 355
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "useCallback",
+					"lineNumber": 362
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "reorderPresets.mutate",
+					"lineNumber": 364
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "useCallback",
+					"lineNumber": 369
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "setEditingPreset",
+					"lineNumber": 370
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "useCallback",
+					"lineNumber": 373
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "handleDeleteRow",
+					"lineNumber": 375
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "setEditingPreset",
+					"lineNumber": 376
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "normalizeExecutionMode",
+					"lineNumber": 383
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "useCallback",
+					"lineNumber": 390
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "handleCellChange",
+					"lineNumber": 393
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "useCallback",
+					"lineNumber": 398
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "handleCellBlur",
+					"lineNumber": 401
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "useCallback",
+					"lineNumber": 406
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "setLocalPresets",
+					"lineNumber": 410
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "prev.map",
+					"lineNumber": 411
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "updatePreset.mutate",
+					"lineNumber": 416
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "useCallback",
+					"lineNumber": 424
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "setLocalPresets",
+					"lineNumber": 428
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "prev.map",
+					"lineNumber": 429
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "updatePreset.mutate",
+					"lineNumber": 434
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "useCallback",
+					"lineNumber": 442
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "handleCommandsChange",
+					"lineNumber": 445
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "useCallback",
+					"lineNumber": 450
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "handleCommandsBlur",
+					"lineNumber": 452
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "useCallback",
+					"lineNumber": 455
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "handleExecutionModeChange",
+					"lineNumber": 458
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "useCallback",
+					"lineNumber": 463
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "handleToggleAutoApply",
+					"lineNumber": 466
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "useCallback",
+					"lineNumber": 471
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "handleToggleWorkspaceRun",
+					"lineNumber": 474
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "handleAddRow",
+					"lineNumber": 494
+				},
+				{
+					"caller": "PresetsSection",
+					"callee": "handleCloseEditor",
+					"lineNumber": 534
+				}
+			],
+			"metrics": {
+				"importCount": 9,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetEditorDialog/PresetEditorDialog.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 624,
+			"nonEmptyLines": 595,
+			"functions": [
+				{
+					"name": "getWorkspaceIdFromRoute",
+					"startLine": 86,
+					"endLine": 89,
+					"params": ["route"]
+				},
+				{
+					"name": "toPresetDirectoryValue",
+					"startLine": 91,
+					"endLine": 100,
+					"params": ["workspacePath", "selectedPath"]
+				},
+				{
+					"name": "DialogRow",
+					"startLine": 110,
+					"endLine": 141,
+					"params": [
+						"{\n\tlabel,\n\thint,\n\thtmlFor,\n\tstacked,\n\tchildren,\n}"
+					]
+				},
+				{
+					"name": "Segmented",
+					"startLine": 155,
+					"endLine": 183,
+					"params": ["{\n\tvalue,\n\tonChange,\n\toptions,\n\tclassName,\n}"]
+				},
+				{
+					"name": "PresetEditorDialog",
+					"startLine": 185,
+					"endLine": 624,
+					"params": [
+						"{\n\tpreset,\n\tprojects,\n\tagents,\n\topen,\n\tonOpenChange,\n\tonDeletePreset,\n\tonFieldChange,\n\tonFieldBlur,\n\tonProjectIdsChange,\n\tonDirectorySelect,\n\tonCommandsChange,\n\tonCommandsBlur,\n\tonModeChange,\n\tonToggleAutoApply,\n\tonToggleWorkspaceRun,\n\tmodeValue,\n\thasMultipleCommands,\n\tisWorkspaceRun,\n\tisWorkspaceCreation,\n\tisNewTab,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "PresetEditorDialog",
+					"line": 185,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "getWorkspaceIdFromRoute",
+					"callee": "route.match",
+					"lineNumber": 87
+				},
+				{
+					"caller": "toPresetDirectoryValue",
+					"callee": "toRelativeWorkspacePath",
+					"lineNumber": 95
+				},
+				{
+					"caller": "toPresetDirectoryValue",
+					"callee": "isAbsoluteFilesystemPath",
+					"lineNumber": 96
+				},
+				{
+					"caller": "Segmented",
+					"callee": "`inline-flex rounded-md border border-border overflow-hidden w-full ${className ?? \"\"}`.trim",
+					"lineNumber": 163
+				},
+				{
+					"caller": "Segmented",
+					"callee": "options.map",
+					"lineNumber": 165
+				},
+				{
+					"caller": "Segmented",
+					"callee": "onChange",
+					"lineNumber": 169
+				},
+				{
+					"caller": "PresetEditorDialog",
+					"callee": "useMemo",
+					"lineNumber": 207
+				},
+				{
+					"caller": "PresetEditorDialog",
+					"callee": "findLinkedAgent",
+					"lineNumber": 209
+				},
+				{
+					"caller": "PresetEditorDialog",
+					"callee": "useMemo",
+					"lineNumber": 213
+				},
+				{
+					"caller": "PresetEditorDialog",
+					"callee": "resolvePresetLaunchCommands",
+					"lineNumber": 216
+				},
+				{
+					"caller": "PresetEditorDialog",
+					"callee": "useLocalHostService",
+					"lineNumber": 220
+				},
+				{
+					"caller": "PresetEditorDialog",
+					"callee": "useQueryClient",
+					"lineNumber": 222
+				},
+				{
+					"caller": "PresetEditorDialog",
+					"callee": "useState",
+					"lineNumber": 224
+				},
+				{
+					"caller": "PresetEditorDialog",
+					"callee": "getAgentCommandText",
+					"lineNumber": 225
+				},
+				{
+					"caller": "PresetEditorDialog",
+					"callee": "electronTrpc.window.selectDirectory.useMutation",
+					"lineNumber": 227
+				},
+				{
+					"caller": "PresetEditorDialog",
+					"callee": "useSettingsOriginRoute",
+					"lineNumber": 228
+				},
+				{
+					"caller": "PresetEditorDialog",
+					"callee": "useEffect",
+					"lineNumber": 230
+				},
+				{
+					"caller": "PresetEditorDialog",
+					"callee": "setLinkedCommandText",
+					"lineNumber": 231
+				},
+				{
+					"caller": "PresetEditorDialog",
+					"callee": "getAgentCommandText",
+					"lineNumber": 231
+				},
+				{
+					"caller": "PresetEditorDialog",
+					"callee": "useMutation",
+					"lineNumber": 234
+				},
+				{
+					"caller": "PresetEditorDialog",
+					"callee": "getHostServiceUnavailableMessage",
+					"lineNumber": 244
+				},
+				{
+					"caller": "PresetEditorDialog",
+					"callee": "getHostServiceClientByUrl(\n\t\t\t\tactiveHostUrl,\n\t\t\t).settings.agentConfigs.update.mutate",
+					"lineNumber": 249
+				},
+				{
+					"caller": "PresetEditorDialog",
+					"callee": "getHostServiceClientByUrl",
+					"lineNumber": 249
+				},
+				{
+					"caller": "PresetEditorDialog",
+					"callee": "queryClient.setQueriesData",
+					"lineNumber": 254
+				},
+				{
+					"caller": "PresetEditorDialog",
+					"callee": "current?.map",
+					"lineNumber": 255
+				},
+				{
+					"caller": "PresetEditorDialog",
+					"callee": "queryClient.invalidateQueries",
+					"lineNumber": 259
+				},
+				{
+					"caller": "PresetEditorDialog",
+					"callee": "toast.error",
+					"lineNumber": 262
+				},
+				{
+					"caller": "handleLinkedCommandBlur",
+					"callee": "parseAgentCommandText",
+					"lineNumber": 267
+				},
+				{
+					"caller": "handleLinkedCommandBlur",
+					"callee": "toast.error",
+					"lineNumber": 269
+				},
+				{
+					"caller": "handleLinkedCommandBlur",
+					"callee": "setLinkedCommandText",
+					"lineNumber": 270
+				},
+				{
+					"caller": "handleLinkedCommandBlur",
+					"callee": "getAgentCommandText",
+					"lineNumber": 270
+				},
+				{
+					"caller": "handleLinkedCommandBlur",
+					"callee": "isAgentCommandPatchChanged",
+					"lineNumber": 273
+				},
+				{
+					"caller": "handleLinkedCommandBlur",
+					"callee": "updateLinkedAgentMutation.mutate",
+					"lineNumber": 274
+				},
+				{
+					"caller": "PresetEditorDialog",
+					"callee": "preset?.cwd.trim",
+					"lineNumber": 277
+				},
+				{
+					"caller": "PresetEditorDialog",
+					"callee": "useMemo",
+					"lineNumber": 278
+				},
+				{
+					"caller": "PresetEditorDialog",
+					"callee": "getWorkspaceIdFromRoute",
+					"lineNumber": 279
+				},
+				{
+					"caller": "PresetEditorDialog",
+					"callee": "electronTrpc.workspaces.get.useQuery",
+					"lineNumber": 282
+				},
+				{
+					"caller": "PresetEditorDialog",
+					"callee": "isAbsoluteFilesystemPath",
+					"lineNumber": 286
+				},
+				{
+					"caller": "PresetEditorDialog",
+					"callee": "toAbsoluteWorkspacePath",
+					"lineNumber": 289
+				},
+				{
+					"caller": "PresetEditorDialog",
+					"callee": "electronTrpc.window.getDirectoryStatus.useQuery",
+					"lineNumber": 295
+				},
+				{
+					"caller": "PresetEditorDialog",
+					"callee": "Boolean",
+					"lineNumber": 298
+				},
+				{
+					"caller": "handleBrowseDirectory",
+					"callee": "selectDirectory.mutateAsync",
+					"lineNumber": 304
+				},
+				{
+					"caller": "handleBrowseDirectory",
+					"callee": "onDirectorySelect",
+					"lineNumber": 310
+				},
+				{
+					"caller": "handleBrowseDirectory",
+					"callee": "toPresetDirectoryValue",
+					"lineNumber": 311
+				},
+				{
+					"caller": "handleBrowseDirectory",
+					"callee": "onDirectorySelect",
+					"lineNumber": 315
+				},
+				{
+					"caller": "PresetEditorDialog",
+					"callee": "(linkedAgent?.label ?? preset.name).trim",
+					"lineNumber": 367
+				},
+				{
+					"caller": "PresetEditorDialog",
+					"callee": "onOpenChange",
+					"lineNumber": 388
+				},
+				{
+					"caller": "PresetEditorDialog",
+					"callee": "setLinkedCommandText",
+					"lineNumber": 400
+				},
+				{
+					"caller": "PresetEditorDialog",
+					"callee": "liveCommands.map",
+					"lineNumber": 408
+				},
+				{
+					"caller": "PresetEditorDialog",
+					"callee": "onFieldChange",
+					"lineNumber": 435
+				},
+				{
+					"caller": "PresetEditorDialog",
+					"callee": "onFieldBlur",
+					"lineNumber": 436
+				},
+				{
+					"caller": "PresetEditorDialog",
+					"callee": "onFieldChange",
+					"lineNumber": 450
+				},
+				{
+					"caller": "PresetEditorDialog",
+					"callee": "onFieldBlur",
+					"lineNumber": 452
+				},
+				{
+					"caller": "PresetEditorDialog",
+					"callee": "onFieldChange",
+					"lineNumber": 493
+				},
+				{
+					"caller": "PresetEditorDialog",
+					"callee": "onFieldBlur",
+					"lineNumber": 494
+				},
+				{
+					"caller": "PresetEditorDialog",
+					"callee": "onModeChange",
+					"lineNumber": 527
+				},
+				{
+					"caller": "PresetEditorDialog",
+					"callee": "launchModeOptions.map",
+					"lineNumber": 534
+				},
+				{
+					"caller": "PresetEditorDialog",
+					"callee": "onModeChange",
+					"lineNumber": 544
+				},
+				{
+					"caller": "PresetEditorDialog",
+					"callee": "onToggleAutoApply",
+					"lineNumber": 577
+				},
+				{
+					"caller": "PresetEditorDialog",
+					"callee": "onToggleAutoApply",
+					"lineNumber": 593
+				},
+				{
+					"caller": "PresetEditorDialog",
+					"callee": "onOpenChange",
+					"lineNumber": 614
+				}
+			],
+			"metrics": {
+				"importCount": 13,
+				"exportCount": 1,
+				"functionCount": 5,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetEditorDialog/components/ProjectTargetingField/ProjectTargetingField.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 178,
+			"nonEmptyLines": 169,
+			"functions": [
+				{
+					"name": "ProjectTargetingField",
+					"startLine": 30,
+					"endLine": 178,
+					"params": [
+						"{\n\tprojectIds,\n\tprojects,\n\tpreferredProjectId,\n\tonChange,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "ProjectTargetingField",
+					"line": 30,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "ProjectTargetingField",
+					"callee": "useState",
+					"lineNumber": 36
+				},
+				{
+					"caller": "ProjectTargetingField",
+					"callee": "useMemo",
+					"lineNumber": 37
+				},
+				{
+					"caller": "ProjectTargetingField",
+					"callee": "projects.map",
+					"lineNumber": 38
+				},
+				{
+					"caller": "ProjectTargetingField",
+					"callee": "normalizePresetProjectIds",
+					"lineNumber": 41
+				},
+				{
+					"caller": "ProjectTargetingField",
+					"callee": "useMemo",
+					"lineNumber": 42
+				},
+				{
+					"caller": "ProjectTargetingField",
+					"callee": "resolveSelectedPresetProjects",
+					"lineNumber": 44
+				},
+				{
+					"caller": "ProjectTargetingField",
+					"callee": "getPresetProjectTargetLabel",
+					"lineNumber": 48
+				},
+				{
+					"caller": "handleScopeChange",
+					"callee": "onChange",
+					"lineNumber": 55
+				},
+				{
+					"caller": "handleScopeChange",
+					"callee": "onChange",
+					"lineNumber": 59
+				},
+				{
+					"caller": "handleScopeChange",
+					"callee": "projectOptionsById.has",
+					"lineNumber": 63
+				},
+				{
+					"caller": "handleScopeChange",
+					"callee": "onChange",
+					"lineNumber": 67
+				},
+				{
+					"caller": "toggleProject",
+					"callee": "nextIds.has",
+					"lineNumber": 72
+				},
+				{
+					"caller": "toggleProject",
+					"callee": "nextIds.delete",
+					"lineNumber": 74
+				},
+				{
+					"caller": "toggleProject",
+					"callee": "nextIds.add",
+					"lineNumber": 76
+				},
+				{
+					"caller": "toggleProject",
+					"callee": "onChange",
+					"lineNumber": 78
+				},
+				{
+					"caller": "toggleProject",
+					"callee": "normalizePresetProjectIds",
+					"lineNumber": 78
+				},
+				{
+					"caller": "ProjectTargetingField",
+					"callee": "segmentedOptions.map",
+					"lineNumber": 89
+				},
+				{
+					"caller": "ProjectTargetingField",
+					"callee": "handleScopeChange",
+					"lineNumber": 93
+				},
+				{
+					"caller": "ProjectTargetingField",
+					"callee": "cn",
+					"lineNumber": 95
+				},
+				{
+					"caller": "ProjectTargetingField",
+					"callee": "projects.map",
+					"lineNumber": 129
+				},
+				{
+					"caller": "ProjectTargetingField",
+					"callee": "normalizedProjectIds?.includes",
+					"lineNumber": 131
+				},
+				{
+					"caller": "ProjectTargetingField",
+					"callee": "toggleProject",
+					"lineNumber": 136
+				},
+				{
+					"caller": "ProjectTargetingField",
+					"callee": "cn",
+					"lineNumber": 149
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetEditorDialog/components/ProjectTargetingField/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "ProjectTargetingField",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetEditorDialog/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "PresetEditorDialog",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetsTable/PresetsTable.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 68,
+			"nonEmptyLines": 66,
+			"functions": [
+				{
+					"name": "PresetsTable",
+					"startLine": 23,
+					"endLine": 68,
+					"params": [
+						"{\n\tpresets,\n\tisLoading,\n\tprojectOptionsById,\n\tagents,\n\tpresetsContainerRef,\n\tonEdit,\n\tonLocalReorder,\n\tonPersistReorder,\n\tonToggleVisibility,\n\tbordered = true,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "PresetsTable",
+					"line": 23,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "PresetsTable",
+					"callee": "cn",
+					"lineNumber": 38
+				},
+				{
+					"caller": "PresetsTable",
+					"callee": "presets.map",
+					"lineNumber": 48
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetsTable/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "PresetsTable",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/QuickAddPresets/QuickAddPresets.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 100,
+			"nonEmptyLines": 97,
+			"functions": [
+				{
+					"name": "QuickAddPresets",
+					"startLine": 30,
+					"endLine": 100,
+					"params": [
+						"{\n\tpills,\n\tisDark,\n\tisAddDisabled,\n\tkeepOpenOnAdd,\n\tisPillAdded,\n\tonAddPill,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "QuickAddPresets",
+					"line": 30,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "QuickAddPresets",
+					"callee": "pills.map",
+					"lineNumber": 52
+				},
+				{
+					"caller": "QuickAddPresets",
+					"callee": "isPillAdded",
+					"lineNumber": 53
+				},
+				{
+					"caller": "QuickAddPresets",
+					"callee": "getPresetIcon",
+					"lineNumber": 54
+				},
+				{
+					"caller": "QuickAddPresets",
+					"callee": "event.preventDefault",
+					"lineNumber": 61
+				},
+				{
+					"caller": "QuickAddPresets",
+					"callee": "event.preventDefault",
+					"lineNumber": 65
+				},
+				{
+					"caller": "QuickAddPresets",
+					"callee": "onAddPill",
+					"lineNumber": 67
+				},
+				{
+					"caller": "QuickAddPresets",
+					"callee": "cn",
+					"lineNumber": 69
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/QuickAddPresets/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 4,
+			"nonEmptyLines": 4,
+			"exports": [
+				{
+					"name": "QuickAddAgentPill",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "QuickAddPresets",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 2,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/constants.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 27,
+			"nonEmptyLines": 24,
+			"exports": [
+				{
+					"name": "PRESET_TEMPLATES",
+					"line": 19,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/preset-project-options.test.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 40,
+			"nonEmptyLines": 37,
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/preset-project-options.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 43,
+			"nonEmptyLines": 37,
+			"functions": [
+				{
+					"name": "resolveSelectedPresetProjects",
+					"startLine": 10,
+					"endLine": 23,
+					"params": ["projectIds", "projectOptionsById"]
+				},
+				{
+					"name": "getPresetProjectTargetLabel",
+					"startLine": 25,
+					"endLine": 43,
+					"params": ["projectIds", "projectOptionsById"]
+				}
+			],
+			"exports": [
+				{
+					"name": "resolveSelectedPresetProjects",
+					"line": 10,
+					"isDefault": false
+				},
+				{
+					"name": "getPresetProjectTargetLabel",
+					"line": 25,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "resolveSelectedPresetProjects",
+					"callee": "normalizePresetProjectIds",
+					"lineNumber": 14
+				},
+				{
+					"caller": "resolveSelectedPresetProjects",
+					"callee": "normalizedProjectIds.flatMap",
+					"lineNumber": 19
+				},
+				{
+					"caller": "resolveSelectedPresetProjects",
+					"callee": "projectOptionsById.get",
+					"lineNumber": 20
+				},
+				{
+					"caller": "getPresetProjectTargetLabel",
+					"callee": "normalizePresetProjectIds",
+					"lineNumber": 29
+				},
+				{
+					"caller": "getPresetProjectTargetLabel",
+					"callee": "resolveSelectedPresetProjects",
+					"lineNumber": 34
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 2,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/V2PresetsSection/V2PresetsSection.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 669,
+			"nonEmptyLines": 596,
+			"functions": [
+				{
+					"name": "V2PresetsSection",
+					"startLine": 47,
+					"endLine": 669,
+					"params": [
+						"{\n\tshowPresets,\n\tshowQuickAdd,\n\teditingPresetId: editingPresetIdFromRoute,\n\tonEditingPresetIdChange,\n\tpendingCreateProjectId,\n\tonPendingCreateProjectIdChange,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "V2PresetsSection",
+					"line": 47,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "V2PresetsSection",
+					"callee": "useIsDarkTheme",
+					"lineNumber": 55
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "useCollections",
+					"lineNumber": 56
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "useLocalHostService",
+					"lineNumber": 61
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "useV2AgentConfigs",
+					"lineNumber": 62
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "useLiveQuery",
+					"lineNumber": 64
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "query\n\t\t\t\t.from({ v2TerminalPresets: collections.v2TerminalPresets })\n\t\t\t\t.orderBy",
+					"lineNumber": 66
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "query\n\t\t\t\t.from",
+					"lineNumber": 66
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "useLiveQuery",
+					"lineNumber": 72
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "query\n\t\t\t\t.from({ v2Projects: collections.v2Projects })\n\t\t\t\t.orderBy",
+					"lineNumber": 74
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "query\n\t\t\t\t.from",
+					"lineNumber": 74
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "useMemo",
+					"lineNumber": 82
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "useState",
+					"lineNumber": 88
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "useState",
+					"lineNumber": 89
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "useRef",
+					"lineNumber": 92
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "useRef",
+					"lineNumber": 93
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "useRef",
+					"lineNumber": 94
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "useRef",
+					"lineNumber": 95
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "serverPresets.map",
+					"lineNumber": 96
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "useRef",
+					"lineNumber": 98
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "useRef",
+					"lineNumber": 99
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "useMemo",
+					"lineNumber": 101
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "v2Projects.map",
+					"lineNumber": 103
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "useMemo",
+					"lineNumber": 112
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "projectOptions.map",
+					"lineNumber": 113
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "useEffect",
+					"lineNumber": 117
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "useCallback",
+					"lineNumber": 121
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "setEditingPresetId",
+					"lineNumber": 123
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "onEditingPresetIdChange",
+					"lineNumber": 124
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "useEffect",
+					"lineNumber": 129
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "setEditingPresetId",
+					"lineNumber": 130
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "useEffect",
+					"lineNumber": 133
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "setLocalPresets",
+					"lineNumber": 134
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "serverPresets.find",
+					"lineNumber": 138
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "previousIds.has",
+					"lineNumber": 139
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "setEditingPreset",
+					"lineNumber": 142
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "requestAnimationFrame",
+					"lineNumber": 148
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "presetsContainerRef.current?.scrollTo",
+					"lineNumber": 149
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "serverPresets.map",
+					"lineNumber": 157
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "useMemo",
+					"lineNumber": 161
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "localPresets.findIndex",
+					"lineNumber": 163
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "useMemo",
+					"lineNumber": 166
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "useEffect",
+					"lineNumber": 171
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "localPresets.some",
+					"lineNumber": 174
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "setEditingPreset",
+					"lineNumber": 176
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "useMemo",
+					"lineNumber": 180
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "serverPresets\n\t\t\t\t\t.map((preset) => (preset as V2TerminalPresetRow).agentId)\n\t\t\t\t\t.filter",
+					"lineNumber": 183
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "serverPresets\n\t\t\t\t\t.map",
+					"lineNumber": 183
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "useMemo",
+					"lineNumber": 192
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "agent.command.trim",
+					"lineNumber": 195
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "pills.push",
+					"lineNumber": 198
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "DESCRIPTION_BY_PRESET_ID.get",
+					"lineNumber": 202
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "getAgentCommandText",
+					"lineNumber": 203
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "useCallback",
+					"lineNumber": 209
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "existingAgentIds.has",
+					"lineNumber": 210
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "useCallback",
+					"lineNumber": 214
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "v2Presets.reduce",
+					"lineNumber": 226
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "Math.max",
+					"lineNumber": 227
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "collections.v2TerminalPresets.insert",
+					"lineNumber": 230
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "crypto.randomUUID",
+					"lineNumber": 231
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "useCallback",
+					"lineNumber": 248
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "collections.v2TerminalPresets.update",
+					"lineNumber": 250
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "Object.entries",
+					"lineNumber": 251
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "useEffect",
+					"lineNumber": 264
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "agents.some",
+					"lineNumber": 270
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "agents.filter",
+					"lineNumber": 272
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "updateV2Preset",
+					"lineNumber": 279
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "useCallback",
+					"lineNumber": 283
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "collections.v2TerminalPresets.delete",
+					"lineNumber": 285
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "useCallback",
+					"lineNumber": 290
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "v2Presets.map",
+					"lineNumber": 292
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "orderedIds.indexOf",
+					"lineNumber": 293
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "orderedIds.splice",
+					"lineNumber": 297
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "orderedIds.splice",
+					"lineNumber": 298
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "orderedIds.entries",
+					"lineNumber": 300
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "collections.v2TerminalPresets.update",
+					"lineNumber": 301
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "useCallback",
+					"lineNumber": 309
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "setLocalPresets",
+					"lineNumber": 311
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "prev.map",
+					"lineNumber": 312
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "useCallback",
+					"lineNumber": 320
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "setLocalPresets",
+					"lineNumber": 322
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "serverPresetsRef.current.find",
+					"lineNumber": 325
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "updateV2Preset",
+					"lineNumber": 331
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "useCallback",
+					"lineNumber": 338
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "setLocalPresets",
+					"lineNumber": 340
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "prev.map",
+					"lineNumber": 343
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "updateV2Preset",
+					"lineNumber": 348
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "useCallback",
+					"lineNumber": 356
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "setLocalPresets",
+					"lineNumber": 358
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "serverPresetsRef.current.find",
+					"lineNumber": 361
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "JSON.stringify",
+					"lineNumber": 366
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "JSON.stringify",
+					"lineNumber": 367
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "updateV2Preset",
+					"lineNumber": 372
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "useCallback",
+					"lineNumber": 379
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "setLocalPresets",
+					"lineNumber": 381
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "currentLocal.map",
+					"lineNumber": 385
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "updateV2Preset",
+					"lineNumber": 391
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "useCallback",
+					"lineNumber": 399
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "insertV2Preset",
+					"lineNumber": 402
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "useCallback",
+					"lineNumber": 413
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "existingAgentIds.has",
+					"lineNumber": 415
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "insertV2Preset",
+					"lineNumber": 416
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "useEffect",
+					"lineNumber": 427
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "handleAddRow",
+					"lineNumber": 438
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "onPendingCreateProjectIdChange",
+					"lineNumber": 439
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "useCallback",
+					"lineNumber": 442
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "setLocalPresets",
+					"lineNumber": 444
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "deleteV2Preset",
+					"lineNumber": 447
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "useCallback",
+					"lineNumber": 455
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "updateV2Preset",
+					"lineNumber": 457
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "useCallback",
+					"lineNumber": 462
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "updateV2Preset",
+					"lineNumber": 464
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "useCallback",
+					"lineNumber": 469
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "updateV2Preset",
+					"lineNumber": 471
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "useCallback",
+					"lineNumber": 476
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "setLocalPresets",
+					"lineNumber": 478
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "newPresets.splice",
+					"lineNumber": 480
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "newPresets.splice",
+					"lineNumber": 481
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "useCallback",
+					"lineNumber": 488
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "reorderV2Presets",
+					"lineNumber": 490
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "useCallback",
+					"lineNumber": 495
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "setEditingPreset",
+					"lineNumber": 496
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "useCallback",
+					"lineNumber": 499
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "handleDeleteRow",
+					"lineNumber": 501
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "setEditingPreset",
+					"lineNumber": 502
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "normalizeExecutionMode",
+					"lineNumber": 509
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "useCallback",
+					"lineNumber": 516
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "handleCellChange",
+					"lineNumber": 519
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "useCallback",
+					"lineNumber": 524
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "handleCellBlur",
+					"lineNumber": 527
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "useCallback",
+					"lineNumber": 532
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "setLocalPresets",
+					"lineNumber": 536
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "prev.map",
+					"lineNumber": 537
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "updateV2Preset",
+					"lineNumber": 542
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "useCallback",
+					"lineNumber": 547
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "setLocalPresets",
+					"lineNumber": 551
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "prev.map",
+					"lineNumber": 552
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "updateV2Preset",
+					"lineNumber": 557
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "useCallback",
+					"lineNumber": 562
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "handleCommandsChange",
+					"lineNumber": 565
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "useCallback",
+					"lineNumber": 570
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "handleCommandsBlur",
+					"lineNumber": 572
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "useCallback",
+					"lineNumber": 575
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "handleExecutionModeChange",
+					"lineNumber": 578
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "useCallback",
+					"lineNumber": 583
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "handleToggleAutoApply",
+					"lineNumber": 586
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "useCallback",
+					"lineNumber": 591
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "handleToggleWorkspaceRun",
+					"lineNumber": 594
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "handleAddRow",
+					"lineNumber": 621
+				},
+				{
+					"caller": "V2PresetsSection",
+					"callee": "handleCloseEditor",
+					"lineNumber": 650
+				}
+			],
+			"metrics": {
+				"importCount": 12,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/V2SessionsSection/V2SessionsSection.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 405,
+			"nonEmptyLines": 389,
+			"functions": [
+				{
+					"name": "V2SessionsSection",
+					"startLine": 42,
+					"endLine": 65,
+					"params": []
+				},
+				{
+					"name": "V2SessionsSectionInner",
+					"startLine": 67,
+					"endLine": 405,
+					"params": []
+				}
+			],
+			"exports": [
+				{
+					"name": "V2SessionsSection",
+					"line": 42,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "V2SessionsSection",
+					"callee": "useLocalHostService",
+					"lineNumber": 43
+				},
+				{
+					"caller": "V2SessionsSection",
+					"callee": "getHostServiceHeaders",
+					"lineNumber": 59
+				},
+				{
+					"caller": "V2SessionsSection",
+					"callee": "getHostServiceWsToken",
+					"lineNumber": 60
+				},
+				{
+					"caller": "V2SessionsSectionInner",
+					"callee": "useState",
+					"lineNumber": 68
+				},
+				{
+					"caller": "V2SessionsSectionInner",
+					"callee": "useState",
+					"lineNumber": 69
+				},
+				{
+					"caller": "V2SessionsSectionInner",
+					"callee": "useState",
+					"lineNumber": 73
+				},
+				{
+					"caller": "V2SessionsSectionInner",
+					"callee": "workspaceTrpc.terminal.daemon.getUpdateStatus.useQuery",
+					"lineNumber": 78
+				},
+				{
+					"caller": "V2SessionsSectionInner",
+					"callee": "workspaceTrpc.terminal.daemon.listSessions.useQuery",
+					"lineNumber": 81
+				},
+				{
+					"caller": "V2SessionsSectionInner",
+					"callee": "console.error",
+					"lineNumber": 93
+				},
+				{
+					"caller": "V2SessionsSectionInner",
+					"callee": "console.error",
+					"lineNumber": 99
+				},
+				{
+					"caller": "V2SessionsSectionInner",
+					"callee": "workspaceTrpc.terminal.daemon.restart.useMutation",
+					"lineNumber": 105
+				},
+				{
+					"caller": "V2SessionsSectionInner",
+					"callee": "toast.success",
+					"lineNumber": 108
+				},
+				{
+					"caller": "V2SessionsSectionInner",
+					"callee": "updateStatusQuery.refetch",
+					"lineNumber": 114
+				},
+				{
+					"caller": "V2SessionsSectionInner",
+					"callee": "sessionsQuery.refetch",
+					"lineNumber": 115
+				},
+				{
+					"caller": "V2SessionsSectionInner",
+					"callee": "toast.error",
+					"lineNumber": 118
+				},
+				{
+					"caller": "V2SessionsSectionInner",
+					"callee": "workspaceTrpc.terminal.daemon.update.useMutation",
+					"lineNumber": 122
+				},
+				{
+					"caller": "V2SessionsSectionInner",
+					"callee": "toast.success",
+					"lineNumber": 126
+				},
+				{
+					"caller": "V2SessionsSectionInner",
+					"callee": "updateStatusQuery.refetch",
+					"lineNumber": 132
+				},
+				{
+					"caller": "V2SessionsSectionInner",
+					"callee": "sessionsQuery.refetch",
+					"lineNumber": 133
+				},
+				{
+					"caller": "V2SessionsSectionInner",
+					"callee": "setUpdateFailureReason",
+					"lineNumber": 138
+				},
+				{
+					"caller": "V2SessionsSectionInner",
+					"callee": "setUpdateFailureReason",
+					"lineNumber": 143
+				},
+				{
+					"caller": "V2SessionsSectionInner",
+					"callee": "sessions.filter",
+					"lineNumber": 149
+				},
+				{
+					"caller": "V2SessionsSectionInner",
+					"callee": "(() => {\n\t\tif (sessions === null) return \"Daemon unavailable\";\n\t\tif (aliveCount === 0) return \"No sessions running\";\n\t\treturn `${aliveCount} session${aliveCount === 1 ? \"\" : \"s\"} running`;\n\t})",
+					"lineNumber": 153
+				},
+				{
+					"caller": "V2SessionsSectionInner",
+					"callee": "(() => {\n\t\tif (!versions) return null;\n\t\tif (versions.running === \"unknown\") {\n\t\t\treturn `bundled ${versions.expected}`;\n\t\t}\n\t\tif (updatePending) {\n\t\t\treturn `${versions.running} → ${versions.expected} pending`;\n\t\t}\n\t\treturn versions.running;\n\t})",
+					"lineNumber": 159
+				},
+				{
+					"caller": "V2SessionsSectionInner",
+					"callee": "updateDaemon.mutate",
+					"lineNumber": 199
+				},
+				{
+					"caller": "V2SessionsSectionInner",
+					"callee": "setConfirmRestartOpen",
+					"lineNumber": 207
+				},
+				{
+					"caller": "V2SessionsSectionInner",
+					"callee": "setShowSessionList",
+					"lineNumber": 218
+				},
+				{
+					"caller": "V2SessionsSectionInner",
+					"callee": "cn",
+					"lineNumber": 222
+				},
+				{
+					"caller": "V2SessionsSectionInner",
+					"callee": "cn",
+					"lineNumber": 235
+				},
+				{
+					"caller": "V2SessionsSectionInner",
+					"callee": "cn",
+					"lineNumber": 242
+				},
+				{
+					"caller": "V2SessionsSectionInner",
+					"callee": "sessions.map",
+					"lineNumber": 269
+				},
+				{
+					"caller": "V2SessionsSectionInner",
+					"callee": "setUpdateFailureReason",
+					"lineNumber": 298
+				},
+				{
+					"caller": "V2SessionsSectionInner",
+					"callee": "setUpdateFailureReason",
+					"lineNumber": 329
+				},
+				{
+					"caller": "V2SessionsSectionInner",
+					"callee": "setUpdateFailureReason",
+					"lineNumber": 338
+				},
+				{
+					"caller": "V2SessionsSectionInner",
+					"callee": "restartDaemon.mutate",
+					"lineNumber": 339
+				},
+				{
+					"caller": "V2SessionsSectionInner",
+					"callee": "setConfirmRestartOpen",
+					"lineNumber": 385
+				},
+				{
+					"caller": "V2SessionsSectionInner",
+					"callee": "setConfirmRestartOpen",
+					"lineNumber": 394
+				},
+				{
+					"caller": "V2SessionsSectionInner",
+					"callee": "restartDaemon.mutate",
+					"lineNumber": 395
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 1,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/V2ProjectSettings.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 219,
+			"nonEmptyLines": 208,
+			"functions": [
+				{
+					"name": "V2ProjectSettings",
+					"startLine": 30,
+					"endLine": 219,
+					"params": ["{\n\tprojectId,\n\thostId,\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "V2ProjectSettings",
+					"line": 30,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "V2ProjectSettings",
+					"callee": "useNavigate",
+					"lineNumber": 34
+				},
+				{
+					"caller": "V2ProjectSettings",
+					"callee": "useCollections",
+					"lineNumber": 35
+				},
+				{
+					"caller": "V2ProjectSettings",
+					"callee": "useLocalHostService",
+					"lineNumber": 36
+				},
+				{
+					"caller": "V2ProjectSettings",
+					"callee": "useWorkspaceHostOptions",
+					"lineNumber": 38
+				},
+				{
+					"caller": "V2ProjectSettings",
+					"callee": "useHostUrl",
+					"lineNumber": 39
+				},
+				{
+					"caller": "V2ProjectSettings",
+					"callee": "useLiveQuery",
+					"lineNumber": 42
+				},
+				{
+					"caller": "V2ProjectSettings",
+					"callee": "q\n\t\t\t\t.from({ projects: collections.v2Projects })\n\t\t\t\t.where(({ projects }) => eq(projects.id, projectId))\n\t\t\t\t.select",
+					"lineNumber": 44
+				},
+				{
+					"caller": "V2ProjectSettings",
+					"callee": "q\n\t\t\t\t.from({ projects: collections.v2Projects })\n\t\t\t\t.where",
+					"lineNumber": 44
+				},
+				{
+					"caller": "V2ProjectSettings",
+					"callee": "q\n\t\t\t\t.from",
+					"lineNumber": 44
+				},
+				{
+					"caller": "V2ProjectSettings",
+					"callee": "eq",
+					"lineNumber": 46
+				},
+				{
+					"caller": "V2ProjectSettings",
+					"callee": "useMemo",
+					"lineNumber": 51
+				},
+				{
+					"caller": "V2ProjectSettings",
+					"callee": "options.push",
+					"lineNumber": 54
+				},
+				{
+					"caller": "V2ProjectSettings",
+					"callee": "options.push",
+					"lineNumber": 62
+				},
+				{
+					"caller": "V2ProjectSettings",
+					"callee": "options.some",
+					"lineNumber": 69
+				},
+				{
+					"caller": "V2ProjectSettings",
+					"callee": "options.push",
+					"lineNumber": 70
+				},
+				{
+					"caller": "V2ProjectSettings",
+					"callee": "useMemo",
+					"lineNumber": 80
+				},
+				{
+					"caller": "V2ProjectSettings",
+					"callee": "hostOptions.find",
+					"lineNumber": 81
+				},
+				{
+					"caller": "V2ProjectSettings",
+					"callee": "useMemo",
+					"lineNumber": 84
+				},
+				{
+					"caller": "V2ProjectSettings",
+					"callee": "Boolean",
+					"lineNumber": 90
+				},
+				{
+					"caller": "V2ProjectSettings",
+					"callee": "useQuery",
+					"lineNumber": 94
+				},
+				{
+					"caller": "V2ProjectSettings",
+					"callee": "getHostServiceClientByUrl",
+					"lineNumber": 99
+				},
+				{
+					"caller": "V2ProjectSettings",
+					"callee": "client.project.get.query",
+					"lineNumber": 100
+				},
+				{
+					"caller": "V2ProjectSettings",
+					"callee": "navigate",
+					"lineNumber": 130
+				},
+				{
+					"caller": "V2ProjectSettings",
+					"callee": "refetchHostProject",
+					"lineNumber": 162
+				},
+				{
+					"caller": "V2ProjectSettings",
+					"callee": "refetchHostProject",
+					"lineNumber": 178
+				},
+				{
+					"caller": "V2ProjectSettings",
+					"callee": "Boolean",
+					"lineNumber": 192
+				},
+				{
+					"caller": "V2ProjectSettings",
+					"callee": "refetchHostProject",
+					"lineNumber": 193
+				}
+			],
+			"metrics": {
+				"importCount": 15,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/BranchPrefixSection/BranchPrefixSection.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 48,
+			"nonEmptyLines": 45,
+			"functions": [
+				{
+					"name": "BranchPrefixSection",
+					"startLine": 16,
+					"endLine": 48,
+					"params": [
+						"{\n\tprojectId,\n\thostUrl,\n\tmode,\n\tcustomPrefix,\n\tonChanged,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "BranchPrefixSection",
+					"line": 16,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "BranchPrefixSection",
+					"callee": "useMutation",
+					"lineNumber": 23
+				},
+				{
+					"caller": "BranchPrefixSection",
+					"callee": "getHostServiceClientByUrl(hostUrl).project.setBranchPrefix.mutate",
+					"lineNumber": 28
+				},
+				{
+					"caller": "BranchPrefixSection",
+					"callee": "getHostServiceClientByUrl",
+					"lineNumber": 28
+				},
+				{
+					"caller": "BranchPrefixSection",
+					"callee": "onChanged",
+					"lineNumber": 32
+				},
+				{
+					"caller": "BranchPrefixSection",
+					"callee": "toast.error",
+					"lineNumber": 34
+				},
+				{
+					"caller": "BranchPrefixSection",
+					"callee": "setMutation.mutate",
+					"lineNumber": 45
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/BranchPrefixSection/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "BranchPrefixSection",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/DeleteProjectSection/DeleteProjectSection.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 131,
+			"nonEmptyLines": 127,
+			"functions": [
+				{
+					"name": "DeleteProjectSection",
+					"startLine": 27,
+					"endLine": 131,
+					"params": ["{\n\tprojectId,\n\tprojectName,\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "DeleteProjectSection",
+					"line": 27,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "DeleteProjectSection",
+					"callee": "useNavigate",
+					"lineNumber": 31
+				},
+				{
+					"caller": "DeleteProjectSection",
+					"callee": "useLocalHostService",
+					"lineNumber": 32
+				},
+				{
+					"caller": "DeleteProjectSection",
+					"callee": "authClient.useSession",
+					"lineNumber": 34
+				},
+				{
+					"caller": "DeleteProjectSection",
+					"callee": "authClient.useActiveOrganization",
+					"lineNumber": 35
+				},
+				{
+					"caller": "DeleteProjectSection",
+					"callee": "activeOrg?.members?.find",
+					"lineNumber": 37
+				},
+				{
+					"caller": "DeleteProjectSection",
+					"callee": "useState",
+					"lineNumber": 41
+				},
+				{
+					"caller": "DeleteProjectSection",
+					"callee": "useState",
+					"lineNumber": 42
+				},
+				{
+					"caller": "handleDelete",
+					"callee": "showHostServiceUnavailableToast",
+					"lineNumber": 46
+				},
+				{
+					"caller": "handleDelete",
+					"callee": "setIsDeleting",
+					"lineNumber": 51
+				},
+				{
+					"caller": "handleDelete",
+					"callee": "getHostServiceClientByUrl",
+					"lineNumber": 53
+				},
+				{
+					"caller": "handleDelete",
+					"callee": "client.project.remove.mutate",
+					"lineNumber": 54
+				},
+				{
+					"caller": "handleDelete",
+					"callee": "toast.success",
+					"lineNumber": 55
+				},
+				{
+					"caller": "handleDelete",
+					"callee": "setIsOpen",
+					"lineNumber": 56
+				},
+				{
+					"caller": "handleDelete",
+					"callee": "navigate",
+					"lineNumber": 57
+				},
+				{
+					"caller": "handleDelete",
+					"callee": "toast.error",
+					"lineNumber": 59
+				},
+				{
+					"caller": "handleDelete",
+					"callee": "setIsDeleting",
+					"lineNumber": 61
+				},
+				{
+					"caller": "DeleteProjectSection",
+					"callee": "e.preventDefault",
+					"lineNumber": 117
+				},
+				{
+					"caller": "DeleteProjectSection",
+					"callee": "handleDelete",
+					"lineNumber": 118
+				}
+			],
+			"metrics": {
+				"importCount": 4,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/DeleteProjectSection/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "DeleteProjectSection",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/IconUploadField/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "IconUploadField",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/NameSection/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "NameSection",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/ProjectLocationSection/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "ProjectLocationSection",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/RepositorySection/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "RepositorySection",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/V2ScriptsEditor/V2ScriptsEditor.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 362,
+			"nonEmptyLines": 323,
+			"functions": [
+				{
+					"name": "parseConfigContent",
+					"startLine": 30,
+					"endLine": 53,
+					"params": ["content"]
+				},
+				{
+					"name": "toCommandsArray",
+					"startLine": 55,
+					"endLine": 60,
+					"params": ["value"]
+				},
+				{
+					"name": "arraysEqual",
+					"startLine": 62,
+					"endLine": 64,
+					"params": ["a", "b"]
+				},
+				{
+					"name": "buildPayload",
+					"startLine": 66,
+					"endLine": 72,
+					"params": ["values"]
+				},
+				{
+					"name": "payloadsEqual",
+					"startLine": 74,
+					"endLine": 80,
+					"params": ["a", "b"]
+				},
+				{
+					"name": "trimScriptValue",
+					"startLine": 82,
+					"endLine": 88,
+					"params": ["value"]
+				},
+				{
+					"name": "V2ScriptsEditor",
+					"startLine": 92,
+					"endLine": 362,
+					"params": ["{\n\thostUrl,\n\tprojectId,\n\tclassName,\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "V2ScriptsEditor",
+					"line": 92,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "parseConfigContent",
+					"callee": "JSON.parse",
+					"lineNumber": 33
+				},
+				{
+					"caller": "parseConfigContent",
+					"callee": "Array.isArray",
+					"lineNumber": 34
+				},
+				{
+					"caller": "parseConfigContent",
+					"callee": "parsed.setup.filter",
+					"lineNumber": 35
+				},
+				{
+					"caller": "parseConfigContent",
+					"callee": "Array.isArray",
+					"lineNumber": 37
+				},
+				{
+					"caller": "parseConfigContent",
+					"callee": "parsed.teardown.filter",
+					"lineNumber": 38
+				},
+				{
+					"caller": "parseConfigContent",
+					"callee": "Array.isArray",
+					"lineNumber": 42
+				},
+				{
+					"caller": "parseConfigContent",
+					"callee": "parsed.run.filter",
+					"lineNumber": 43
+				},
+				{
+					"caller": "parseConfigContent",
+					"callee": "setup.join",
+					"lineNumber": 46
+				},
+				{
+					"caller": "parseConfigContent",
+					"callee": "teardown.join",
+					"lineNumber": 47
+				},
+				{
+					"caller": "parseConfigContent",
+					"callee": "run.join",
+					"lineNumber": 48
+				},
+				{
+					"caller": "toCommandsArray",
+					"callee": "value\n\t\t.split(\"\\n\")\n\t\t.map((line) => line.trim())\n\t\t.filter",
+					"lineNumber": 56
+				},
+				{
+					"caller": "toCommandsArray",
+					"callee": "value\n\t\t.split(\"\\n\")\n\t\t.map",
+					"lineNumber": 56
+				},
+				{
+					"caller": "toCommandsArray",
+					"callee": "value\n\t\t.split",
+					"lineNumber": 56
+				},
+				{
+					"caller": "toCommandsArray",
+					"callee": "line.trim",
+					"lineNumber": 58
+				},
+				{
+					"caller": "arraysEqual",
+					"callee": "a.every",
+					"lineNumber": 63
+				},
+				{
+					"caller": "buildPayload",
+					"callee": "toCommandsArray",
+					"lineNumber": 68
+				},
+				{
+					"caller": "buildPayload",
+					"callee": "toCommandsArray",
+					"lineNumber": 69
+				},
+				{
+					"caller": "buildPayload",
+					"callee": "toCommandsArray",
+					"lineNumber": 70
+				},
+				{
+					"caller": "payloadsEqual",
+					"callee": "arraysEqual",
+					"lineNumber": 76
+				},
+				{
+					"caller": "payloadsEqual",
+					"callee": "arraysEqual",
+					"lineNumber": 77
+				},
+				{
+					"caller": "payloadsEqual",
+					"callee": "arraysEqual",
+					"lineNumber": 78
+				},
+				{
+					"caller": "trimScriptValue",
+					"callee": "value\n\t\t.split(\"\\n\")\n\t\t.map((line) => line.trim())\n\t\t.join(\"\\n\")\n\t\t.replace",
+					"lineNumber": 83
+				},
+				{
+					"caller": "trimScriptValue",
+					"callee": "value\n\t\t.split(\"\\n\")\n\t\t.map((line) => line.trim())\n\t\t.join",
+					"lineNumber": 83
+				},
+				{
+					"caller": "trimScriptValue",
+					"callee": "value\n\t\t.split(\"\\n\")\n\t\t.map",
+					"lineNumber": 83
+				},
+				{
+					"caller": "trimScriptValue",
+					"callee": "value\n\t\t.split",
+					"lineNumber": 83
+				},
+				{
+					"caller": "trimScriptValue",
+					"callee": "line.trim",
+					"lineNumber": 85
+				},
+				{
+					"caller": "V2ScriptsEditor",
+					"callee": "useQueryClient",
+					"lineNumber": 97
+				},
+				{
+					"caller": "V2ScriptsEditor",
+					"callee": "useQuery",
+					"lineNumber": 106
+				},
+				{
+					"caller": "V2ScriptsEditor",
+					"callee": "getHostServiceClientByUrl(hostUrl).config.getConfigContent.query",
+					"lineNumber": 109
+				},
+				{
+					"caller": "V2ScriptsEditor",
+					"callee": "getHostServiceClientByUrl",
+					"lineNumber": 109
+				},
+				{
+					"caller": "V2ScriptsEditor",
+					"callee": "useState",
+					"lineNumber": 114
+				},
+				{
+					"caller": "V2ScriptsEditor",
+					"callee": "useState",
+					"lineNumber": 115
+				},
+				{
+					"caller": "V2ScriptsEditor",
+					"callee": "useState",
+					"lineNumber": 116
+				},
+				{
+					"caller": "V2ScriptsEditor",
+					"callee": "useState",
+					"lineNumber": 117
+				},
+				{
+					"caller": "V2ScriptsEditor",
+					"callee": "useRef",
+					"lineNumber": 118
+				},
+				{
+					"caller": "V2ScriptsEditor",
+					"callee": "useRef",
+					"lineNumber": 119
+				},
+				{
+					"caller": "V2ScriptsEditor",
+					"callee": "useRef",
+					"lineNumber": 124
+				},
+				{
+					"caller": "V2ScriptsEditor",
+					"callee": "useRef",
+					"lineNumber": 129
+				},
+				{
+					"caller": "V2ScriptsEditor",
+					"callee": "useRef",
+					"lineNumber": 130
+				},
+				{
+					"caller": "V2ScriptsEditor",
+					"callee": "useRef",
+					"lineNumber": 131
+				},
+				{
+					"caller": "V2ScriptsEditor",
+					"callee": "useRef",
+					"lineNumber": 132
+				},
+				{
+					"caller": "V2ScriptsEditor",
+					"callee": "useEffect",
+					"lineNumber": 134
+				},
+				{
+					"caller": "V2ScriptsEditor",
+					"callee": "parseConfigContent",
+					"lineNumber": 144
+				},
+				{
+					"caller": "V2ScriptsEditor",
+					"callee": "setSetupValue",
+					"lineNumber": 145
+				},
+				{
+					"caller": "V2ScriptsEditor",
+					"callee": "setTeardownValue",
+					"lineNumber": 146
+				},
+				{
+					"caller": "V2ScriptsEditor",
+					"callee": "setRunValue",
+					"lineNumber": 147
+				},
+				{
+					"caller": "V2ScriptsEditor",
+					"callee": "buildPayload",
+					"lineNumber": 149
+				},
+				{
+					"caller": "V2ScriptsEditor",
+					"callee": "useEffect",
+					"lineNumber": 152
+				},
+				{
+					"caller": "V2ScriptsEditor",
+					"callee": "clearTimeout",
+					"lineNumber": 154
+				},
+				{
+					"caller": "V2ScriptsEditor",
+					"callee": "clearTimeout",
+					"lineNumber": 155
+				},
+				{
+					"caller": "V2ScriptsEditor",
+					"callee": "useMutation",
+					"lineNumber": 159
+				},
+				{
+					"caller": "V2ScriptsEditor",
+					"callee": "getHostServiceClientByUrl(hostUrl).config.updateConfig.mutate",
+					"lineNumber": 165
+				},
+				{
+					"caller": "V2ScriptsEditor",
+					"callee": "getHostServiceClientByUrl",
+					"lineNumber": 165
+				},
+				{
+					"caller": "V2ScriptsEditor",
+					"callee": "queryClient.invalidateQueries",
+					"lineNumber": 167
+				},
+				{
+					"caller": "V2ScriptsEditor",
+					"callee": "useCallback",
+					"lineNumber": 171
+				},
+				{
+					"caller": "V2ScriptsEditor",
+					"callee": "buildPayload",
+					"lineNumber": 172
+				},
+				{
+					"caller": "V2ScriptsEditor",
+					"callee": "payloadsEqual",
+					"lineNumber": 173
+				},
+				{
+					"caller": "V2ScriptsEditor",
+					"callee": "clearTimeout",
+					"lineNumber": 183
+				},
+				{
+					"caller": "V2ScriptsEditor",
+					"callee": "setSaveStatus",
+					"lineNumber": 187
+				},
+				{
+					"caller": "V2ScriptsEditor",
+					"callee": "payloadsEqual",
+					"lineNumber": 195
+				},
+				{
+					"caller": "V2ScriptsEditor",
+					"callee": "updateMutation.mutateAsync",
+					"lineNumber": 196
+				},
+				{
+					"caller": "V2ScriptsEditor",
+					"callee": "setSaveStatus",
+					"lineNumber": 203
+				},
+				{
+					"caller": "V2ScriptsEditor",
+					"callee": "setTimeout",
+					"lineNumber": 204
+				},
+				{
+					"caller": "V2ScriptsEditor",
+					"callee": "setSaveStatus",
+					"lineNumber": 205
+				},
+				{
+					"caller": "V2ScriptsEditor",
+					"callee": "console.error",
+					"lineNumber": 209
+				},
+				{
+					"caller": "V2ScriptsEditor",
+					"callee": "buildPayload",
+					"lineNumber": 211
+				},
+				{
+					"caller": "V2ScriptsEditor",
+					"callee": "setSaveStatus",
+					"lineNumber": 212
+				},
+				{
+					"caller": "V2ScriptsEditor",
+					"callee": "clearTimeout",
+					"lineNumber": 213
+				},
+				{
+					"caller": "V2ScriptsEditor",
+					"callee": "setTimeout",
+					"lineNumber": 214
+				},
+				{
+					"caller": "V2ScriptsEditor",
+					"callee": "flushSave",
+					"lineNumber": 218
+				},
+				{
+					"caller": "V2ScriptsEditor",
+					"callee": "useCallback",
+					"lineNumber": 227
+				},
+				{
+					"caller": "V2ScriptsEditor",
+					"callee": "clearTimeout",
+					"lineNumber": 231
+				},
+				{
+					"caller": "V2ScriptsEditor",
+					"callee": "setTimeout",
+					"lineNumber": 233
+				},
+				{
+					"caller": "V2ScriptsEditor",
+					"callee": "flushSave",
+					"lineNumber": 235
+				},
+				{
+					"caller": "V2ScriptsEditor",
+					"callee": "buildPayload",
+					"lineNumber": 235
+				},
+				{
+					"caller": "V2ScriptsEditor",
+					"callee": "useCallback",
+					"lineNumber": 241
+				},
+				{
+					"caller": "V2ScriptsEditor",
+					"callee": "setSetupValue",
+					"lineNumber": 246
+				},
+				{
+					"caller": "V2ScriptsEditor",
+					"callee": "setTeardownValue",
+					"lineNumber": 247
+				},
+				{
+					"caller": "V2ScriptsEditor",
+					"callee": "setRunValue",
+					"lineNumber": 248
+				},
+				{
+					"caller": "V2ScriptsEditor",
+					"callee": "scheduleSave",
+					"lineNumber": 250
+				},
+				{
+					"caller": "V2ScriptsEditor",
+					"callee": "useCallback",
+					"lineNumber": 255
+				},
+				{
+					"caller": "V2ScriptsEditor",
+					"callee": "clearTimeout",
+					"lineNumber": 259
+				},
+				{
+					"caller": "V2ScriptsEditor",
+					"callee": "trimScriptValue",
+					"lineNumber": 264
+				},
+				{
+					"caller": "V2ScriptsEditor",
+					"callee": "trimScriptValue",
+					"lineNumber": 265
+				},
+				{
+					"caller": "V2ScriptsEditor",
+					"callee": "trimScriptValue",
+					"lineNumber": 266
+				},
+				{
+					"caller": "V2ScriptsEditor",
+					"callee": "setSetupValue",
+					"lineNumber": 270
+				},
+				{
+					"caller": "V2ScriptsEditor",
+					"callee": "setTeardownValue",
+					"lineNumber": 272
+				},
+				{
+					"caller": "V2ScriptsEditor",
+					"callee": "setRunValue",
+					"lineNumber": 274
+				},
+				{
+					"caller": "V2ScriptsEditor",
+					"callee": "flushSave",
+					"lineNumber": 276
+				},
+				{
+					"caller": "V2ScriptsEditor",
+					"callee": "buildPayload",
+					"lineNumber": 276
+				},
+				{
+					"caller": "V2ScriptsEditor",
+					"callee": "cn",
+					"lineNumber": 281
+				},
+				{
+					"caller": "V2ScriptsEditor",
+					"callee": "cn",
+					"lineNumber": 293
+				},
+				{
+					"caller": "V2ScriptsEditor",
+					"callee": "handleChange",
+					"lineNumber": 330
+				},
+				{
+					"caller": "V2ScriptsEditor",
+					"callee": "handleBlur",
+					"lineNumber": 334
+				},
+				{
+					"caller": "V2ScriptsEditor",
+					"callee": "handleChange",
+					"lineNumber": 341
+				},
+				{
+					"caller": "V2ScriptsEditor",
+					"callee": "handleBlur",
+					"lineNumber": 345
+				},
+				{
+					"caller": "V2ScriptsEditor",
+					"callee": "handleChange",
+					"lineNumber": 352
+				},
+				{
+					"caller": "V2ScriptsEditor",
+					"callee": "handleBlur",
+					"lineNumber": 356
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 1,
+				"functionCount": 7,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/V2ScriptsEditor/components/ScriptField/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "ScriptField",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/V2ScriptsEditor/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "V2ScriptsEditor",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/WorktreeLocationSection/WorktreeLocationSection.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 78,
+			"nonEmptyLines": 74,
+			"functions": [
+				{
+					"name": "WorktreeLocationSection",
+					"startLine": 20,
+					"endLine": 78,
+					"params": [
+						"{\n\tprojectId,\n\tcurrentPath,\n\thostUrl,\n\thostName,\n\tisRemoteTarget,\n\tisHostOnline,\n\tisProjectSetup,\n\tonChanged,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "WorktreeLocationSection",
+					"line": 20,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "WorktreeLocationSection",
+					"callee": "useV2WorktreeLocationSettings",
+					"lineNumber": 30
+				},
+				{
+					"caller": "WorktreeLocationSection",
+					"callee": "useMutation",
+					"lineNumber": 34
+				},
+				{
+					"caller": "WorktreeLocationSection",
+					"callee": "getHostServiceClientByUrl(\n\t\t\t\thostUrl,\n\t\t\t).project.setWorktreeBaseDir.mutate",
+					"lineNumber": 37
+				},
+				{
+					"caller": "WorktreeLocationSection",
+					"callee": "getHostServiceClientByUrl",
+					"lineNumber": 37
+				},
+				{
+					"caller": "WorktreeLocationSection",
+					"callee": "toast.success",
+					"lineNumber": 42
+				},
+				{
+					"caller": "WorktreeLocationSection",
+					"callee": "onChanged",
+					"lineNumber": 47
+				},
+				{
+					"caller": "WorktreeLocationSection",
+					"callee": "toast.error",
+					"lineNumber": 50
+				},
+				{
+					"caller": "WorktreeLocationSection",
+					"callee": "String",
+					"lineNumber": 50
+				},
+				{
+					"caller": "WorktreeLocationSection",
+					"callee": "setLocation.mutate",
+					"lineNumber": 74
+				},
+				{
+					"caller": "WorktreeLocationSection",
+					"callee": "setLocation.mutate",
+					"lineNumber": 75
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/WorktreeLocationSection/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "WorktreeLocationSection",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		}
+	]
+}

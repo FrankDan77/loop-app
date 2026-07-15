@@ -1,0 +1,124 @@
+{
+  "batchIndex": 100,
+  "nodes": [
+    {
+      "id": "file:src/main/lib/agent-setup/templates/codex-wrapper-exec.template.sh",
+      "type": "file",
+      "name": "codex-wrapper-exec.template.sh",
+      "filePath": "src/main/lib/agent-setup/templates/codex-wrapper-exec.template.sh",
+      "summary": "Module with 6 functions",
+      "tags": [
+        "multi-function"
+      ],
+      "complexity": "moderate",
+      "metadata": {
+        "totalLines": 131,
+        "nonEmptyLines": 112,
+        "language": "shell"
+      }
+    },
+    {
+      "id": "function:src/main/lib/agent-setup/templates/codex-wrapper-exec.template.sh:_superset_configure_project_trust",
+      "type": "function",
+      "name": "_superset_configure_project_trust",
+      "filePath": "src/main/lib/agent-setup/templates/codex-wrapper-exec.template.sh",
+      "summary": "Function _superset_configure_project_trust",
+      "lineRange": [
+        31,
+        41
+      ],
+      "metadata": {
+        "params": []
+      }
+    },
+    {
+      "id": "function:src/main/lib/agent-setup/templates/codex-wrapper-exec.template.sh:_superset_cleanup_session_watcher",
+      "type": "function",
+      "name": "_superset_cleanup_session_watcher",
+      "filePath": "src/main/lib/agent-setup/templates/codex-wrapper-exec.template.sh",
+      "summary": "Function _superset_cleanup_session_watcher",
+      "lineRange": [
+        53,
+        70
+      ],
+      "metadata": {
+        "params": []
+      }
+    },
+    {
+      "id": "file:src/main/lib/agent-setup/templates/copilot-hook.template.sh",
+      "type": "file",
+      "name": "copilot-hook.template.sh",
+      "filePath": "src/main/lib/agent-setup/templates/copilot-hook.template.sh",
+      "summary": "Utility function: json_escape",
+      "tags": [],
+      "complexity": "moderate",
+      "metadata": {
+        "totalLines": 64,
+        "nonEmptyLines": 52,
+        "language": "shell"
+      }
+    },
+    {
+      "id": "file:src/main/lib/agent-setup/templates/cursor-hook.template.sh",
+      "type": "file",
+      "name": "cursor-hook.template.sh",
+      "filePath": "src/main/lib/agent-setup/templates/cursor-hook.template.sh",
+      "summary": "Utility function: json_escape",
+      "tags": [],
+      "complexity": "moderate",
+      "metadata": {
+        "totalLines": 62,
+        "nonEmptyLines": 50,
+        "language": "shell"
+      }
+    },
+    {
+      "id": "file:src/main/lib/agent-setup/templates/gemini-hook.template.sh",
+      "type": "file",
+      "name": "gemini-hook.template.sh",
+      "filePath": "src/main/lib/agent-setup/templates/gemini-hook.template.sh",
+      "summary": "Utility function: json_escape",
+      "tags": [],
+      "complexity": "moderate",
+      "metadata": {
+        "totalLines": 64,
+        "nonEmptyLines": 52,
+        "language": "shell"
+      }
+    },
+    {
+      "id": "file:src/main/lib/agent-setup/templates/notify-hook.template.sh",
+      "type": "file",
+      "name": "notify-hook.template.sh",
+      "filePath": "src/main/lib/agent-setup/templates/notify-hook.template.sh",
+      "summary": "Module with 2 functions",
+      "tags": [],
+      "complexity": "moderate",
+      "metadata": {
+        "totalLines": 131,
+        "nonEmptyLines": 113,
+        "language": "shell"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/main/lib/agent-setup/templates/codex-wrapper-exec.template.sh",
+      "target": "function:src/main/lib/agent-setup/templates/codex-wrapper-exec.template.sh:_superset_configure_project_trust",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/lib/agent-setup/templates/codex-wrapper-exec.template.sh",
+      "target": "function:src/main/lib/agent-setup/templates/codex-wrapper-exec.template.sh:_superset_cleanup_session_watcher",
+      "type": "contains",
+      "weight": 1
+    }
+  ],
+  "metadata": {
+    "nodeCount": 7,
+    "edgeCount": 2,
+    "filesProcessed": 5
+  }
+}

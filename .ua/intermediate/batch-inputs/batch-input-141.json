@@ -1,0 +1,51 @@
+{
+	"batchIndex": 141,
+	"files": [
+		{
+			"path": "apps/electric-proxy/src/auth.ts",
+			"language": "typescript",
+			"sizeLines": 45,
+			"fileCategory": "code"
+		},
+		{
+			"path": "apps/electric-proxy/src/electric.ts",
+			"language": "typescript",
+			"sizeLines": 51,
+			"fileCategory": "code"
+		},
+		{
+			"path": "apps/electric-proxy/src/index.ts",
+			"language": "typescript",
+			"sizeLines": 96,
+			"fileCategory": "code"
+		},
+		{
+			"path": "apps/electric-proxy/src/types.ts",
+			"language": "typescript",
+			"sizeLines": 7,
+			"fileCategory": "code"
+		},
+		{
+			"path": "apps/electric-proxy/src/where.ts",
+			"language": "typescript",
+			"sizeLines": 166,
+			"fileCategory": "code"
+		}
+	],
+	"batchImportData": {
+		"apps/electric-proxy/src/auth.ts": [],
+		"apps/electric-proxy/src/electric.ts": [
+			"apps/electric-proxy/src/auth.ts",
+			"apps/electric-proxy/src/types.ts"
+		],
+		"apps/electric-proxy/src/index.ts": [
+			"apps/electric-proxy/src/auth.ts",
+			"apps/electric-proxy/src/electric.ts",
+			"apps/electric-proxy/src/types.ts",
+			"apps/electric-proxy/src/where.ts"
+		],
+		"apps/electric-proxy/src/types.ts": [],
+		"apps/electric-proxy/src/where.ts": ["apps/electric-proxy/src/auth.ts"]
+	},
+	"neighborMap": {}
+}

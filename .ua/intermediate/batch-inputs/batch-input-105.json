@@ -1,0 +1,513 @@
+{
+	"batchIndex": 105,
+	"files": [
+		{
+			"path": "packages/trpc/src/router/project/secrets/secrets.ts",
+			"language": "typescript",
+			"sizeLines": 193,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/trpc/src/router/project/secrets/utils/crypto.ts",
+			"language": "typescript",
+			"sizeLines": 41,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/trpc/src/router/project/secrets/utils/secrets-validation.ts",
+			"language": "typescript",
+			"sizeLines": 55,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/trpc/src/router/support/support.ts",
+			"language": "typescript",
+			"sizeLines": 173,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/trpc/src/router/task/index.ts",
+			"language": "typescript",
+			"sizeLines": 1,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/trpc/src/router/task/schema.ts",
+			"language": "typescript",
+			"sizeLines": 52,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/trpc/src/router/task/statuses.ts",
+			"language": "typescript",
+			"sizeLines": 23,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/trpc/src/router/task/task.ts",
+			"language": "typescript",
+			"sizeLines": 499,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/trpc/src/router/team/index.ts",
+			"language": "typescript",
+			"sizeLines": 1,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/trpc/src/router/team/team.ts",
+			"language": "typescript",
+			"sizeLines": 67,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/trpc/src/router/user/index.ts",
+			"language": "typescript",
+			"sizeLines": 1,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/trpc/src/router/user/user.ts",
+			"language": "typescript",
+			"sizeLines": 115,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/trpc/src/router/utils/active-org.ts",
+			"language": "typescript",
+			"sizeLines": 59,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/trpc/src/router/utils/org-resource-access.ts",
+			"language": "typescript",
+			"sizeLines": 61,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/trpc/src/router/v2-host/index.ts",
+			"language": "typescript",
+			"sizeLines": 1,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/trpc/src/router/v2-host/v2-host.ts",
+			"language": "typescript",
+			"sizeLines": 418,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/trpc/src/router/v2-project/index.ts",
+			"language": "typescript",
+			"sizeLines": 1,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/trpc/src/router/v2-project/v2-project.ts",
+			"language": "typescript",
+			"sizeLines": 685,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/trpc/src/router/v2-workspace/index.ts",
+			"language": "typescript",
+			"sizeLines": 1,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/trpc/src/router/v2-workspace/v2-workspace.ts",
+			"language": "typescript",
+			"sizeLines": 676,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/trpc/src/router/workspace/index.ts",
+			"language": "typescript",
+			"sizeLines": 1,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/trpc/src/router/workspace/workspace.ts",
+			"language": "typescript",
+			"sizeLines": 183,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/trpc/src/trpc.ts",
+			"language": "typescript",
+			"sizeLines": 137,
+			"fileCategory": "code"
+		}
+	],
+	"batchImportData": {
+		"packages/trpc/src/router/project/secrets/secrets.ts": [
+			"packages/trpc/src/router/integration/utils.ts",
+			"packages/trpc/src/router/project/secrets/utils/crypto.ts",
+			"packages/trpc/src/router/project/secrets/utils/secrets-validation.ts",
+			"packages/trpc/src/router/utils/org-resource-access.ts",
+			"packages/trpc/src/trpc.ts"
+		],
+		"packages/trpc/src/router/project/secrets/utils/crypto.ts": [],
+		"packages/trpc/src/router/project/secrets/utils/secrets-validation.ts": [],
+		"packages/trpc/src/router/support/support.ts": [
+			"packages/trpc/src/env.ts",
+			"packages/trpc/src/trpc.ts"
+		],
+		"packages/trpc/src/router/task/index.ts": [],
+		"packages/trpc/src/router/task/schema.ts": [],
+		"packages/trpc/src/router/task/statuses.ts": [
+			"packages/trpc/src/router/utils/active-org.ts",
+			"packages/trpc/src/trpc.ts"
+		],
+		"packages/trpc/src/router/task/task.ts": [
+			"packages/trpc/src/lib/integrations/sync/index.ts",
+			"packages/trpc/src/router/integration/utils.ts",
+			"packages/trpc/src/router/task/schema.ts",
+			"packages/trpc/src/router/task/statuses.ts",
+			"packages/trpc/src/router/utils/active-org.ts",
+			"packages/trpc/src/router/utils/org-resource-access.ts",
+			"packages/trpc/src/trpc.ts"
+		],
+		"packages/trpc/src/router/team/index.ts": [],
+		"packages/trpc/src/router/team/team.ts": [
+			"packages/trpc/src/router/integration/utils.ts",
+			"packages/trpc/src/router/utils/active-org.ts",
+			"packages/trpc/src/trpc.ts"
+		],
+		"packages/trpc/src/router/user/index.ts": [],
+		"packages/trpc/src/router/user/user.ts": [
+			"packages/trpc/src/lib/upload.ts",
+			"packages/trpc/src/trpc.ts"
+		],
+		"packages/trpc/src/router/utils/active-org.ts": [
+			"packages/trpc/src/router/integration/utils.ts",
+			"packages/trpc/src/trpc.ts"
+		],
+		"packages/trpc/src/router/utils/org-resource-access.ts": [
+			"packages/trpc/src/router/integration/utils.ts"
+		],
+		"packages/trpc/src/router/v2-host/index.ts": [],
+		"packages/trpc/src/router/v2-host/v2-host.ts": [
+			"packages/trpc/src/router/utils/active-org.ts",
+			"packages/trpc/src/trpc.ts"
+		],
+		"packages/trpc/src/router/v2-project/index.ts": [],
+		"packages/trpc/src/router/v2-project/v2-project.ts": [
+			"packages/trpc/src/lib/analytics.ts",
+			"packages/trpc/src/lib/github-avatar.ts",
+			"packages/trpc/src/lib/upload.ts",
+			"packages/trpc/src/router/integration/utils.ts",
+			"packages/trpc/src/router/utils/active-org.ts",
+			"packages/trpc/src/router/utils/org-resource-access.ts",
+			"packages/trpc/src/trpc.ts"
+		],
+		"packages/trpc/src/router/v2-workspace/index.ts": [],
+		"packages/trpc/src/router/v2-workspace/v2-workspace.ts": [
+			"packages/trpc/src/lib/analytics.ts",
+			"packages/trpc/src/router/utils/active-org.ts",
+			"packages/trpc/src/router/utils/org-resource-access.ts",
+			"packages/trpc/src/trpc.ts"
+		],
+		"packages/trpc/src/router/workspace/index.ts": [],
+		"packages/trpc/src/router/workspace/workspace.ts": [
+			"packages/trpc/src/router/integration/utils.ts",
+			"packages/trpc/src/router/utils/org-resource-access.ts",
+			"packages/trpc/src/trpc.ts"
+		],
+		"packages/trpc/src/trpc.ts": []
+	},
+	"neighborMap": {
+		"packages/trpc/src/router/project/secrets/secrets.ts": [
+			{
+				"path": "packages/trpc/src/router/integration/utils.ts",
+				"batchIndex": 99,
+				"symbols": [
+					"verifyOrgMembership",
+					"verifyOrgAdmin",
+					"verifyOrgOwner",
+					"verifyOrgMembershipWithSubscription"
+				]
+			}
+		],
+		"packages/trpc/src/router/support/support.ts": [
+			{
+				"path": "packages/trpc/src/env.ts",
+				"batchIndex": 98,
+				"symbols": ["env"]
+			},
+			{
+				"path": "packages/trpc/src/root.ts",
+				"batchIndex": 98,
+				"symbols": ["appRouter", "createCaller"]
+			}
+		],
+		"packages/trpc/src/router/task/index.ts": [
+			{
+				"path": "packages/trpc/src/root.ts",
+				"batchIndex": 98,
+				"symbols": ["appRouter", "createCaller"]
+			}
+		],
+		"packages/trpc/src/router/task/task.ts": [
+			{
+				"path": "packages/trpc/src/lib/integrations/sync/index.ts",
+				"batchIndex": 98,
+				"symbols": ["syncTask"]
+			},
+			{
+				"path": "packages/trpc/src/router/integration/utils.ts",
+				"batchIndex": 99,
+				"symbols": [
+					"verifyOrgMembership",
+					"verifyOrgAdmin",
+					"verifyOrgOwner",
+					"verifyOrgMembershipWithSubscription"
+				]
+			}
+		],
+		"packages/trpc/src/router/team/index.ts": [
+			{
+				"path": "packages/trpc/src/root.ts",
+				"batchIndex": 98,
+				"symbols": ["appRouter", "createCaller"]
+			}
+		],
+		"packages/trpc/src/router/team/team.ts": [
+			{
+				"path": "packages/trpc/src/router/integration/utils.ts",
+				"batchIndex": 99,
+				"symbols": [
+					"verifyOrgMembership",
+					"verifyOrgAdmin",
+					"verifyOrgOwner",
+					"verifyOrgMembershipWithSubscription"
+				]
+			}
+		],
+		"packages/trpc/src/router/user/index.ts": [
+			{
+				"path": "packages/trpc/src/root.ts",
+				"batchIndex": 98,
+				"symbols": ["appRouter", "createCaller"]
+			}
+		],
+		"packages/trpc/src/router/user/user.ts": [
+			{
+				"path": "packages/trpc/src/lib/upload.ts",
+				"batchIndex": 98,
+				"symbols": ["uploadImage", "generateImagePathname"]
+			}
+		],
+		"packages/trpc/src/router/utils/active-org.ts": [
+			{
+				"path": "packages/trpc/src/router/integration/utils.ts",
+				"batchIndex": 99,
+				"symbols": [
+					"verifyOrgMembership",
+					"verifyOrgAdmin",
+					"verifyOrgOwner",
+					"verifyOrgMembershipWithSubscription"
+				]
+			},
+			{
+				"path": "packages/trpc/src/router/automation/automation.ts",
+				"batchIndex": 98,
+				"symbols": ["automationRouter", "bucketToMinute"]
+			},
+			{
+				"path": "packages/trpc/src/router/automation/versions.ts",
+				"batchIndex": 98,
+				"symbols": ["automationVersionsRouter"]
+			},
+			{
+				"path": "packages/trpc/src/router/organization/members.ts",
+				"batchIndex": 99,
+				"symbols": ["organizationMembersRouter"]
+			}
+		],
+		"packages/trpc/src/router/utils/org-resource-access.ts": [
+			{
+				"path": "packages/trpc/src/router/integration/utils.ts",
+				"batchIndex": 99,
+				"symbols": [
+					"verifyOrgMembership",
+					"verifyOrgAdmin",
+					"verifyOrgOwner",
+					"verifyOrgMembershipWithSubscription"
+				]
+			},
+			{
+				"path": "packages/trpc/src/router/project/project.ts",
+				"batchIndex": 99,
+				"symbols": ["projectRouter"]
+			}
+		],
+		"packages/trpc/src/router/v2-host/index.ts": [
+			{
+				"path": "packages/trpc/src/root.ts",
+				"batchIndex": 98,
+				"symbols": ["appRouter", "createCaller"]
+			}
+		],
+		"packages/trpc/src/router/v2-project/index.ts": [
+			{
+				"path": "packages/trpc/src/root.ts",
+				"batchIndex": 98,
+				"symbols": ["appRouter", "createCaller"]
+			}
+		],
+		"packages/trpc/src/router/v2-project/v2-project.ts": [
+			{
+				"path": "packages/trpc/src/lib/analytics.ts",
+				"batchIndex": 98,
+				"symbols": ["posthog"]
+			},
+			{
+				"path": "packages/trpc/src/lib/github-avatar.ts",
+				"batchIndex": 98,
+				"symbols": ["fetchAndStoreGitHubAvatar"]
+			},
+			{
+				"path": "packages/trpc/src/lib/upload.ts",
+				"batchIndex": 98,
+				"symbols": ["uploadImage", "generateImagePathname"]
+			},
+			{
+				"path": "packages/trpc/src/router/integration/utils.ts",
+				"batchIndex": 99,
+				"symbols": [
+					"verifyOrgMembership",
+					"verifyOrgAdmin",
+					"verifyOrgOwner",
+					"verifyOrgMembershipWithSubscription"
+				]
+			}
+		],
+		"packages/trpc/src/router/v2-workspace/index.ts": [
+			{
+				"path": "packages/trpc/src/root.ts",
+				"batchIndex": 98,
+				"symbols": ["appRouter", "createCaller"]
+			}
+		],
+		"packages/trpc/src/router/v2-workspace/v2-workspace.ts": [
+			{
+				"path": "packages/trpc/src/lib/analytics.ts",
+				"batchIndex": 98,
+				"symbols": ["posthog"]
+			}
+		],
+		"packages/trpc/src/router/workspace/index.ts": [
+			{
+				"path": "packages/trpc/src/root.ts",
+				"batchIndex": 98,
+				"symbols": ["appRouter", "createCaller"]
+			}
+		],
+		"packages/trpc/src/router/workspace/workspace.ts": [
+			{
+				"path": "packages/trpc/src/router/integration/utils.ts",
+				"batchIndex": 99,
+				"symbols": [
+					"verifyOrgMembership",
+					"verifyOrgAdmin",
+					"verifyOrgOwner",
+					"verifyOrgMembershipWithSubscription"
+				]
+			}
+		],
+		"packages/trpc/src/trpc.ts": [
+			{
+				"path": "packages/trpc/src/root.ts",
+				"batchIndex": 98,
+				"symbols": ["appRouter", "createCaller"]
+			},
+			{
+				"path": "packages/trpc/src/router/admin/admin.ts",
+				"batchIndex": 98,
+				"symbols": ["adminRouter"]
+			},
+			{
+				"path": "packages/trpc/src/router/agent/agent.ts",
+				"batchIndex": 98,
+				"symbols": ["agentRouter"]
+			},
+			{
+				"path": "packages/trpc/src/router/analytics/analytics.ts",
+				"batchIndex": 98,
+				"symbols": ["analyticsRouter"]
+			},
+			{
+				"path": "packages/trpc/src/router/api-key/api-key.ts",
+				"batchIndex": 98,
+				"symbols": ["apiKeyRouter"]
+			},
+			{
+				"path": "packages/trpc/src/router/automation/automation.ts",
+				"batchIndex": 98,
+				"symbols": ["automationRouter", "bucketToMinute"]
+			},
+			{
+				"path": "packages/trpc/src/router/automation/versions.ts",
+				"batchIndex": 98,
+				"symbols": ["automationVersionsRouter"]
+			},
+			{
+				"path": "packages/trpc/src/router/billing/billing.ts",
+				"batchIndex": 98,
+				"symbols": ["billingRouter"]
+			},
+			{
+				"path": "packages/trpc/src/router/chat/chat.ts",
+				"batchIndex": 99,
+				"symbols": ["chatRouter"]
+			},
+			{
+				"path": "packages/trpc/src/router/device/device.ts",
+				"batchIndex": 99,
+				"symbols": ["deviceRouter"]
+			},
+			{
+				"path": "packages/trpc/src/router/host/host.ts",
+				"batchIndex": 99,
+				"symbols": ["hostRouter"]
+			},
+			{
+				"path": "packages/trpc/src/router/integration/github/github.ts",
+				"batchIndex": 99,
+				"symbols": ["githubRouter"]
+			},
+			{
+				"path": "packages/trpc/src/router/integration/integration.ts",
+				"batchIndex": 99,
+				"symbols": ["integrationRouter"]
+			},
+			{
+				"path": "packages/trpc/src/router/integration/linear/linear.ts",
+				"batchIndex": 99,
+				"symbols": ["linearRouter"]
+			},
+			{
+				"path": "packages/trpc/src/router/integration/slack/slack.ts",
+				"batchIndex": 99,
+				"symbols": ["slackRouter"]
+			},
+			{
+				"path": "packages/trpc/src/router/organization/members.ts",
+				"batchIndex": 99,
+				"symbols": ["organizationMembersRouter"]
+			},
+			{
+				"path": "packages/trpc/src/router/organization/organization.ts",
+				"batchIndex": 99,
+				"symbols": ["organizationRouter"]
+			},
+			{
+				"path": "packages/trpc/src/router/project/project.ts",
+				"batchIndex": 99,
+				"symbols": ["projectRouter"]
+			}
+		]
+	}
+}

@@ -1,0 +1,1507 @@
+{
+	"batchIndex": 95,
+	"files": [
+		{
+			"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/hooks/useWorkspaceRenameReconciliation/index.ts",
+			"language": "typescript",
+			"sizeLines": 1,
+			"fileCategory": "code"
+		},
+		{
+			"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/hooks/useWorkspaceRenameReconciliation/useWorkspaceRenameReconciliation.ts",
+			"language": "typescript",
+			"sizeLines": 51,
+			"fileCategory": "code"
+		},
+		{
+			"path": "apps/desktop/src/renderer/screens/main/hooks/useBranchSyncInvalidation/index.ts",
+			"language": "typescript",
+			"sizeLines": 1,
+			"fileCategory": "code"
+		},
+		{
+			"path": "apps/desktop/src/renderer/screens/main/hooks/useGitChangesStatus/useGitChangesStatus.ts",
+			"language": "typescript",
+			"sizeLines": 75,
+			"fileCategory": "code"
+		},
+		{
+			"path": "apps/desktop/src/renderer/stores/changes/index.ts",
+			"language": "typescript",
+			"sizeLines": 1,
+			"fileCategory": "code"
+		},
+		{
+			"path": "apps/desktop/src/renderer/stores/changes/section-order.ts",
+			"language": "typescript",
+			"sizeLines": 40,
+			"fileCategory": "code"
+		},
+		{
+			"path": "apps/desktop/src/renderer/stores/changes/store.ts",
+			"language": "typescript",
+			"sizeLines": 269,
+			"fileCategory": "code"
+		},
+		{
+			"path": "apps/desktop/src/renderer/stores/drag-pane-store.ts",
+			"language": "typescript",
+			"sizeLines": 26,
+			"fileCategory": "code"
+		},
+		{
+			"path": "apps/desktop/src/renderer/stores/editor-state/editorBufferRegistry.ts",
+			"language": "typescript",
+			"sizeLines": 98,
+			"fileCategory": "code"
+		},
+		{
+			"path": "apps/desktop/src/renderer/stores/editor-state/editorCoordinator.ts",
+			"language": "typescript",
+			"sizeLines": 731,
+			"fileCategory": "code"
+		},
+		{
+			"path": "apps/desktop/src/renderer/stores/editor-state/types.ts",
+			"language": "typescript",
+			"sizeLines": 119,
+			"fileCategory": "code"
+		},
+		{
+			"path": "apps/desktop/src/renderer/stores/editor-state/useEditorDocumentsStore.ts",
+			"language": "typescript",
+			"sizeLines": 180,
+			"fileCategory": "code"
+		},
+		{
+			"path": "apps/desktop/src/renderer/stores/editor-state/useEditorSessionsStore.ts",
+			"language": "typescript",
+			"sizeLines": 126,
+			"fileCategory": "code"
+		},
+		{
+			"path": "apps/desktop/src/renderer/stores/tabs/actions/move-pane.ts",
+			"language": "typescript",
+			"sizeLines": 254,
+			"fileCategory": "code"
+		},
+		{
+			"path": "apps/desktop/src/renderer/stores/tabs/pane-refs.ts",
+			"language": "typescript",
+			"sizeLines": 20,
+			"fileCategory": "code"
+		},
+		{
+			"path": "apps/desktop/src/renderer/stores/tabs/preset-launch.ts",
+			"language": "typescript",
+			"sizeLines": 92,
+			"fileCategory": "code"
+		},
+		{
+			"path": "apps/desktop/src/renderer/stores/tabs/store.ts",
+			"language": "typescript",
+			"sizeLines": 2369,
+			"fileCategory": "code"
+		},
+		{
+			"path": "apps/desktop/src/renderer/stores/tabs/terminal-callbacks.ts",
+			"language": "typescript",
+			"sizeLines": 118,
+			"fileCategory": "code"
+		},
+		{
+			"path": "apps/desktop/src/renderer/stores/tabs/types.ts",
+			"language": "typescript",
+			"sizeLines": 259,
+			"fileCategory": "code"
+		},
+		{
+			"path": "apps/desktop/src/renderer/stores/tabs/utils.ts",
+			"language": "typescript",
+			"sizeLines": 996,
+			"fileCategory": "code"
+		},
+		{
+			"path": "apps/desktop/src/renderer/stores/tabs/utils/terminal-cleanup.ts",
+			"language": "typescript",
+			"sizeLines": 15,
+			"fileCategory": "code"
+		},
+		{
+			"path": "apps/desktop/src/renderer/stores/tabs/workspace-run.ts",
+			"language": "typescript",
+			"sizeLines": 60,
+			"fileCategory": "code"
+		},
+		{
+			"path": "apps/desktop/src/renderer/stores/theme/store.ts",
+			"language": "typescript",
+			"sizeLines": 434,
+			"fileCategory": "code"
+		},
+		{
+			"path": "apps/desktop/src/renderer/stores/theme/utils/index.ts",
+			"language": "typescript",
+			"sizeLines": 7,
+			"fileCategory": "code"
+		},
+		{
+			"path": "apps/desktop/src/shared/changes-types.ts",
+			"language": "typescript",
+			"sizeLines": 84,
+			"fileCategory": "code"
+		},
+		{
+			"path": "apps/desktop/src/shared/detect-language.ts",
+			"language": "typescript",
+			"sizeLines": 62,
+			"fileCategory": "code"
+		},
+		{
+			"path": "apps/desktop/src/shared/tabs-types.ts",
+			"language": "typescript",
+			"sizeLines": 258,
+			"fileCategory": "code"
+		}
+	],
+	"batchImportData": {
+		"apps/desktop/src/renderer/screens/main/components/WorkspaceView/hooks/useWorkspaceRenameReconciliation/index.ts": [],
+		"apps/desktop/src/renderer/screens/main/components/WorkspaceView/hooks/useWorkspaceRenameReconciliation/useWorkspaceRenameReconciliation.ts": [
+			"apps/desktop/src/renderer/screens/main/components/WorkspaceView/hooks/useWorkspaceFileEvents/index.ts",
+			"apps/desktop/src/renderer/stores/changes/index.ts",
+			"apps/desktop/src/renderer/stores/tabs/store.ts"
+		],
+		"apps/desktop/src/renderer/screens/main/hooks/useBranchSyncInvalidation/index.ts": [],
+		"apps/desktop/src/renderer/screens/main/hooks/useGitChangesStatus/useGitChangesStatus.ts": [
+			"apps/desktop/src/renderer/lib/electron-trpc.ts",
+			"apps/desktop/src/shared/changes-types.ts"
+		],
+		"apps/desktop/src/renderer/stores/changes/index.ts": [],
+		"apps/desktop/src/renderer/stores/changes/section-order.ts": [
+			"apps/desktop/src/shared/changes-types.ts"
+		],
+		"apps/desktop/src/renderer/stores/changes/store.ts": [
+			"apps/desktop/src/renderer/stores/changes/section-order.ts",
+			"apps/desktop/src/shared/absolute-paths.ts",
+			"apps/desktop/src/shared/changes-types.ts"
+		],
+		"apps/desktop/src/renderer/stores/drag-pane-store.ts": [],
+		"apps/desktop/src/renderer/stores/editor-state/editorBufferRegistry.ts": [],
+		"apps/desktop/src/renderer/stores/editor-state/editorCoordinator.ts": [
+			"apps/desktop/src/renderer/lib/invalidate-file-save-queries.ts",
+			"apps/desktop/src/renderer/lib/trpc-client.ts",
+			"apps/desktop/src/renderer/stores/editor-state/editorBufferRegistry.ts",
+			"apps/desktop/src/renderer/stores/editor-state/types.ts",
+			"apps/desktop/src/renderer/stores/editor-state/useEditorDocumentsStore.ts",
+			"apps/desktop/src/renderer/stores/editor-state/useEditorSessionsStore.ts",
+			"apps/desktop/src/renderer/stores/tabs/store.ts",
+			"apps/desktop/src/renderer/stores/tabs/types.ts",
+			"apps/desktop/src/renderer/stores/tabs/utils.ts",
+			"apps/desktop/src/shared/absolute-paths.ts"
+		],
+		"apps/desktop/src/renderer/stores/editor-state/types.ts": [
+			"apps/desktop/src/renderer/stores/tabs/types.ts",
+			"apps/desktop/src/shared/changes-types.ts",
+			"apps/desktop/src/shared/tabs-types.ts"
+		],
+		"apps/desktop/src/renderer/stores/editor-state/useEditorDocumentsStore.ts": [
+			"apps/desktop/src/renderer/stores/editor-state/types.ts"
+		],
+		"apps/desktop/src/renderer/stores/editor-state/useEditorSessionsStore.ts": [
+			"apps/desktop/src/renderer/stores/editor-state/types.ts"
+		],
+		"apps/desktop/src/renderer/stores/tabs/actions/move-pane.ts": [
+			"apps/desktop/src/renderer/stores/tabs/types.ts",
+			"apps/desktop/src/renderer/stores/tabs/utils.ts"
+		],
+		"apps/desktop/src/renderer/stores/tabs/pane-refs.ts": [],
+		"apps/desktop/src/renderer/stores/tabs/preset-launch.ts": [
+			"apps/desktop/src/renderer/lib/terminal/launch-command.ts"
+		],
+		"apps/desktop/src/renderer/stores/tabs/store.ts": [
+			"apps/desktop/src/renderer/hooks/useFileOpenMode/index.ts",
+			"apps/desktop/src/renderer/lib/posthog.ts",
+			"apps/desktop/src/renderer/lib/trpc-storage.ts",
+			"apps/desktop/src/renderer/stores/editor-state/editorBufferRegistry.ts",
+			"apps/desktop/src/renderer/stores/editor-state/useEditorDocumentsStore.ts",
+			"apps/desktop/src/renderer/stores/editor-state/useEditorSessionsStore.ts",
+			"apps/desktop/src/renderer/stores/tabs/actions/move-pane.ts",
+			"apps/desktop/src/renderer/stores/tabs/types.ts",
+			"apps/desktop/src/renderer/stores/tabs/utils.ts",
+			"apps/desktop/src/renderer/stores/tabs/utils/terminal-cleanup.ts",
+			"apps/desktop/src/shared/absolute-paths.ts",
+			"apps/desktop/src/shared/tabs-types.ts"
+		],
+		"apps/desktop/src/renderer/stores/tabs/terminal-callbacks.ts": [],
+		"apps/desktop/src/renderer/stores/tabs/types.ts": [
+			"apps/desktop/src/shared/changes-types.ts",
+			"apps/desktop/src/shared/tabs-types.ts"
+		],
+		"apps/desktop/src/renderer/stores/tabs/utils.ts": [
+			"apps/desktop/src/renderer/stores/tabs/types.ts",
+			"apps/desktop/src/shared/absolute-paths.ts",
+			"apps/desktop/src/shared/changes-types.ts",
+			"apps/desktop/src/shared/file-types.ts",
+			"apps/desktop/src/shared/tabs-types.ts"
+		],
+		"apps/desktop/src/renderer/stores/tabs/utils/terminal-cleanup.ts": [
+			"apps/desktop/src/renderer/lib/terminal/session-readiness.ts",
+			"apps/desktop/src/renderer/lib/trpc-client.ts"
+		],
+		"apps/desktop/src/renderer/stores/tabs/workspace-run.ts": [
+			"apps/desktop/src/renderer/stores/tabs/store.ts",
+			"apps/desktop/src/shared/tabs-types.ts"
+		],
+		"apps/desktop/src/renderer/stores/theme/store.ts": [
+			"apps/desktop/src/renderer/lib/trpc-storage.ts",
+			"apps/desktop/src/renderer/stores/theme/utils/index.ts",
+			"apps/desktop/src/shared/themes/index.ts"
+		],
+		"apps/desktop/src/renderer/stores/theme/utils/index.ts": [],
+		"apps/desktop/src/shared/changes-types.ts": [],
+		"apps/desktop/src/shared/detect-language.ts": [],
+		"apps/desktop/src/shared/tabs-types.ts": [
+			"apps/desktop/src/shared/changes-types.ts"
+		]
+	},
+	"neighborMap": {
+		"apps/desktop/src/renderer/screens/main/components/WorkspaceView/hooks/useWorkspaceRenameReconciliation/index.ts": [
+			{
+				"path": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/workspace/$workspaceId/page.tsx",
+				"batchIndex": 36,
+				"symbols": ["Route"]
+			}
+		],
+		"apps/desktop/src/renderer/screens/main/components/WorkspaceView/hooks/useWorkspaceRenameReconciliation/useWorkspaceRenameReconciliation.ts": [
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/hooks/useWorkspaceFileEvents/index.ts",
+				"batchIndex": 41,
+				"symbols": ["useWorkspaceFileEventBridge", "useWorkspaceFileEvents"]
+			}
+		],
+		"apps/desktop/src/renderer/screens/main/hooks/useBranchSyncInvalidation/index.ts": [
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceSidebar/WorkspaceListItem/WorkspaceListItem.tsx",
+				"batchIndex": 61,
+				"symbols": ["WorkspaceListItem"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/RightSidebar/ChangesView/ChangesView.tsx",
+				"batchIndex": 40,
+				"symbols": ["ChangesView"]
+			}
+		],
+		"apps/desktop/src/renderer/screens/main/hooks/useGitChangesStatus/useGitChangesStatus.ts": [
+			{
+				"path": "apps/desktop/src/renderer/lib/electron-trpc.ts",
+				"batchIndex": 51,
+				"symbols": ["electronTrpc"]
+			}
+		],
+		"apps/desktop/src/renderer/stores/changes/index.ts": [
+			{
+				"path": "apps/desktop/src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/components/EditToolExpandedDiff/EditToolExpandedDiff.tsx",
+				"batchIndex": 31,
+				"symbols": ["EditToolExpandedDiff"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/ToolCallBlock.tsx",
+				"batchIndex": 32,
+				"symbols": ["ToolCallBlock"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/FileDiffSection/FileDiffSection.tsx",
+				"batchIndex": 37,
+				"symbols": ["FileDiffSection"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/hooks/useFocusMode/useFocusMode.ts",
+				"batchIndex": 37,
+				"symbols": ["useFocusMode"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/InfiniteScrollView.tsx",
+				"batchIndex": 37,
+				"symbols": ["InfiniteScrollView"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/FileViewerPane/FileViewerPane.tsx",
+				"batchIndex": 38,
+				"symbols": ["FileViewerPane"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/RightSidebar/ChangesView/ChangesView.tsx",
+				"batchIndex": 40,
+				"symbols": ["ChangesView"]
+			}
+		],
+		"apps/desktop/src/renderer/stores/changes/section-order.ts": [
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/hooks/useFocusMode/useFocusMode.ts",
+				"batchIndex": 37,
+				"symbols": ["useFocusMode"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/hooks/useOrderedSections/useOrderedSections.tsx",
+				"batchIndex": 37,
+				"symbols": ["useOrderedSections"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/RightSidebar/ChangesView/hooks/useOrderedSections/useOrderedSections.tsx",
+				"batchIndex": 41,
+				"symbols": ["useOrderedSections"]
+			}
+		],
+		"apps/desktop/src/renderer/stores/changes/store.ts": [
+			{
+				"path": "apps/desktop/src/shared/absolute-paths.ts",
+				"batchIndex": 85,
+				"symbols": [
+					"isRemotePath",
+					"isAbsoluteFilesystemPath",
+					"toAbsoluteWorkspacePath",
+					"toRelativeWorkspacePath",
+					"getPathBaseName",
+					"normalizeComparablePath",
+					"pathsMatch",
+					"retargetAbsolutePath"
+				]
+			}
+		],
+		"apps/desktop/src/renderer/stores/drag-pane-store.ts": [
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/GroupStrip/GroupItem.tsx",
+				"batchIndex": 37,
+				"symbols": ["GroupItem"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/GroupStrip/NewTabDropZone.tsx",
+				"batchIndex": 37,
+				"symbols": ["NewTabDropZone"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/components/BasePaneWindow/BasePaneWindow.tsx",
+				"batchIndex": 63,
+				"symbols": ["BasePaneWindow"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/components/MosaicSplitOverlay/MosaicSplitOverlay.tsx",
+				"batchIndex": 39,
+				"symbols": ["MosaicSplitOverlay"]
+			}
+		],
+		"apps/desktop/src/renderer/stores/editor-state/editorCoordinator.ts": [
+			{
+				"path": "apps/desktop/src/renderer/lib/invalidate-file-save-queries.ts",
+				"batchIndex": 31,
+				"symbols": ["invalidateFileSaveQueries"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/lib/trpc-client.ts",
+				"batchIndex": 35,
+				"symbols": ["electronReactClient", "electronTrpcClient"]
+			},
+			{
+				"path": "apps/desktop/src/shared/absolute-paths.ts",
+				"batchIndex": 85,
+				"symbols": [
+					"isRemotePath",
+					"isAbsoluteFilesystemPath",
+					"toAbsoluteWorkspacePath",
+					"toRelativeWorkspacePath",
+					"getPathBaseName",
+					"normalizeComparablePath",
+					"pathsMatch",
+					"retargetAbsolutePath"
+				]
+			},
+			{
+				"path": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/workspace/$workspaceId/page.tsx",
+				"batchIndex": 36,
+				"symbols": ["Route"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/GroupStrip/GroupStrip.tsx",
+				"batchIndex": 37,
+				"symbols": ["GroupStrip"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/hooks/usePersistentWebview/usePersistentWebview.ts",
+				"batchIndex": 38,
+				"symbols": ["destroyPersistentWebview", "usePersistentWebview"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/FileViewerPane/FileViewerPane.tsx",
+				"batchIndex": 38,
+				"symbols": ["FileViewerPane"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/index.tsx",
+				"batchIndex": 39,
+				"symbols": ["MOSAIC_ID", "TabView"]
+			}
+		],
+		"apps/desktop/src/renderer/stores/editor-state/types.ts": [
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/FileViewerPane/FileViewerPane.tsx",
+				"batchIndex": 38,
+				"symbols": ["FileViewerPane"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/FileViewerPane/hooks/useFileSave/useFileSave.ts",
+				"batchIndex": 39,
+				"symbols": ["useFileSave"]
+			}
+		],
+		"apps/desktop/src/renderer/stores/editor-state/useEditorDocumentsStore.ts": [
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/FileViewerPane/FileViewerPane.tsx",
+				"batchIndex": 38,
+				"symbols": ["FileViewerPane"]
+			}
+		],
+		"apps/desktop/src/renderer/stores/editor-state/useEditorSessionsStore.ts": [
+			{
+				"path": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/workspace/$workspaceId/page.tsx",
+				"batchIndex": 36,
+				"symbols": ["Route"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/FileViewerPane/FileViewerPane.tsx",
+				"batchIndex": 38,
+				"symbols": ["FileViewerPane"]
+			}
+		],
+		"apps/desktop/src/renderer/stores/tabs/pane-refs.ts": [
+			{
+				"path": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/workspace/$workspaceId/page.tsx",
+				"batchIndex": 36,
+				"symbols": ["Route"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/TabPane.tsx",
+				"batchIndex": 39,
+				"symbols": ["TabPane"]
+			}
+		],
+		"apps/desktop/src/renderer/stores/tabs/preset-launch.ts": [
+			{
+				"path": "apps/desktop/src/renderer/lib/terminal/launch-command.ts",
+				"batchIndex": 35,
+				"symbols": [
+					"normalizeTerminalCommand",
+					"buildTerminalCommand",
+					"writeCommandInPane",
+					"writeCommandsInPane",
+					"launchCommandInPane",
+					"ensureTerminalAttached"
+				]
+			},
+			{
+				"path": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/useV2PresetExecution/useV2PresetExecution.ts",
+				"batchIndex": 9,
+				"symbols": ["useV2PresetExecution"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/stores/tabs/useTabsWithPresets.ts",
+				"batchIndex": 71,
+				"symbols": ["useTabsWithPresets"]
+			}
+		],
+		"apps/desktop/src/renderer/stores/tabs/store.ts": [
+			{
+				"path": "apps/desktop/src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/ToolCallBlock.tsx",
+				"batchIndex": 32,
+				"symbols": ["ToolCallBlock"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/routes/_authenticated/layout.tsx",
+				"batchIndex": 13,
+				"symbols": ["Route"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/workspace/$workspaceId/page.tsx",
+				"batchIndex": 36,
+				"symbols": ["Route"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceSidebar/WorkspaceListItem/WorkspaceListItem.tsx",
+				"batchIndex": 61,
+				"symbols": ["WorkspaceListItem"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/FileViewerPane/FileViewerPane.tsx",
+				"batchIndex": 38,
+				"symbols": ["FileViewerPane"]
+			},
+			{
+				"path": "apps/desktop/src/shared/absolute-paths.ts",
+				"batchIndex": 85,
+				"symbols": [
+					"isRemotePath",
+					"isAbsoluteFilesystemPath",
+					"toAbsoluteWorkspacePath",
+					"toRelativeWorkspacePath",
+					"getPathBaseName",
+					"normalizeComparablePath",
+					"pathsMatch",
+					"retargetAbsolutePath"
+				]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/hooks/useTerminalLifecycle.ts",
+				"batchIndex": 40,
+				"symbols": ["useTerminalLifecycle"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/ChatPane/ChatPaneInterface/ChatPaneInterface.tsx",
+				"batchIndex": 59,
+				"symbols": ["ChatPaneInterface"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/index.tsx",
+				"batchIndex": 39,
+				"symbols": ["MOSAIC_ID", "TabView"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/lib/posthog.ts",
+				"batchIndex": 4,
+				"symbols": ["posthog", "initPostHog"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/TopBar/components/ResourceConsumption/ResourceConsumption.tsx",
+				"batchIndex": 121,
+				"symbols": ["ResourceConsumption"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/RightSidebar/FilesView/FilesView.tsx",
+				"batchIndex": 85,
+				"symbols": ["FilesView"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/Terminal.tsx",
+				"batchIndex": 39,
+				"symbols": ["Terminal"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/stores/tabs/useTabsWithPresets.ts",
+				"batchIndex": 71,
+				"symbols": ["useTabsWithPresets"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/GroupStrip/GroupStrip.tsx",
+				"batchIndex": 37,
+				"symbols": ["GroupStrip"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/ChatPane/hooks/useChatPaneController/useChatPaneController.ts",
+				"batchIndex": 17,
+				"symbols": ["useChatPaneController"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ContentView/components/PresetsBar/PresetsBar.tsx",
+				"batchIndex": 40,
+				"symbols": ["PresetsBar"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/RightSidebar/index.tsx",
+				"batchIndex": 63,
+				"symbols": ["RightSidebar"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/components/Chat/ChatInterface/components/MessagePartsRenderer/MessagePartsRenderer.tsx",
+				"batchIndex": 32,
+				"symbols": ["MessagePartsRenderer"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceInitEffects.tsx",
+				"batchIndex": 61,
+				"symbols": ["WorkspaceInitEffects"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/EmptyTabView.tsx",
+				"batchIndex": 62,
+				"symbols": ["EmptyTabView"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/ChatPane/ChatPane.tsx",
+				"batchIndex": 38,
+				"symbols": ["ChatPane"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/TabPane.tsx",
+				"batchIndex": 39,
+				"symbols": ["TabPane"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/components/ChatMessageList/components/AssistantMessage/AssistantMessage.tsx",
+				"batchIndex": 34,
+				"symbols": ["AssistantMessage"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/components/ChatMessageList/components/UserMessage/UserMessage.tsx",
+				"batchIndex": 34,
+				"symbols": ["UserMessage"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/ChatPane/ChatPaneInterface/components/ChatMessageList/components/UserMessage/UserMessage.tsx",
+				"batchIndex": 38,
+				"symbols": ["UserMessage"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/components/Chat/ChatInterface/components/MessageList/MessageList.tsx",
+				"batchIndex": 32,
+				"symbols": ["MessageList"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/GroupStrip/GroupItem.tsx",
+				"batchIndex": 37,
+				"symbols": ["GroupItem"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/BrowserPane.tsx",
+				"batchIndex": 38,
+				"symbols": ["BrowserPane"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/react-query/workspaces/useHandleOpenedWorktree.ts",
+				"batchIndex": 52,
+				"symbols": ["useHandleOpenedWorktree"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/ChatPane/ChatPaneInterface/components/ChatMessageList/components/AssistantMessage/AssistantMessage.tsx",
+				"batchIndex": 58,
+				"symbols": ["AssistantMessage"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/stores/tabs/useAgentHookListener.ts",
+				"batchIndex": 71,
+				"symbols": ["useAgentHookListener"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/workspace/$workspaceId/hooks/useWorkspaceRunCommand.ts",
+				"batchIndex": 36,
+				"symbols": ["useWorkspaceRunCommand"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceSidebar/PortsList/components/MergedPortBadge/MergedPortBadge.tsx",
+				"batchIndex": 61,
+				"symbols": ["MergedPortBadge"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/index.tsx",
+				"batchIndex": 40,
+				"symbols": ["TabsContent"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/CommentPane/CommentPane.tsx",
+				"batchIndex": 38,
+				"symbols": ["CommentPane"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/FileViewerPane/hooks/useFileSave/useFileSave.ts",
+				"batchIndex": 39,
+				"symbols": ["useFileSave"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/hooks/useFileLinkClick.ts",
+				"batchIndex": 39,
+				"symbols": ["useFileLinkClick"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/hooks/useTerminalStream.ts",
+				"batchIndex": 40,
+				"symbols": ["useTerminalStream"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/RightSidebar/ChangesView/components/ReviewPanel/ReviewPanel.tsx",
+				"batchIndex": 41,
+				"symbols": ["ReviewPanel"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/lib/trpc-storage.ts",
+				"batchIndex": 35,
+				"symbols": [
+					"trpcTabsStorage",
+					"trpcThemeStorage",
+					"trpcRingtoneStorage"
+				]
+			},
+			{
+				"path": "apps/desktop/src/renderer/routes/_authenticated/components/AgentHooks/hooks/useCommandWatcher/tools/get-workspace-details.ts",
+				"batchIndex": 123,
+				"symbols": ["getWorkspaceDetails"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserToolbar/components/BrowserOverflowMenu/BrowserOverflowMenu.tsx",
+				"batchIndex": 38,
+				"symbols": ["BrowserOverflowMenu"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/hooks/usePersistentWebview/usePersistentWebview.ts",
+				"batchIndex": 38,
+				"symbols": ["destroyPersistentWebview", "usePersistentWebview"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/components/BasePaneWindow/BasePaneWindow.tsx",
+				"batchIndex": 63,
+				"symbols": ["BasePaneWindow"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/hooks/useBrowserLifecycle/useBrowserLifecycle.ts",
+				"batchIndex": 41,
+				"symbols": ["useBrowserLifecycle"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/hooks/useFileOpenMode/index.ts",
+				"batchIndex": 31,
+				"symbols": ["getFileOpenMode", "useFileOpenMode"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/hooks/useTerminalCwd.ts",
+				"batchIndex": 40,
+				"symbols": ["useTerminalCwd"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/ChatPane/ChatPaneInterface/components/DraftSaver/DraftSaver.tsx",
+				"batchIndex": 38,
+				"symbols": ["DraftSaver"]
+			}
+		],
+		"apps/desktop/src/renderer/stores/tabs/terminal-callbacks.ts": [
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/TabPane.tsx",
+				"batchIndex": 39,
+				"symbols": ["TabPane"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/hooks/useTerminalRefs.ts",
+				"batchIndex": 40,
+				"symbols": ["useTerminalRefs"]
+			}
+		],
+		"apps/desktop/src/renderer/stores/tabs/types.ts": [
+			{
+				"path": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/workspace/$workspaceId/page.tsx",
+				"batchIndex": 36,
+				"symbols": ["Route"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ContentView/components/PaneContextMenuItems/PaneContextMenuItems.tsx",
+				"batchIndex": 40,
+				"symbols": ["PaneContextMenuItems"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/GroupStrip/GroupItem.tsx",
+				"batchIndex": 37,
+				"symbols": ["GroupItem"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/ChatPane/ChatPane.tsx",
+				"batchIndex": 38,
+				"symbols": ["ChatPane"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/FileViewerPane/components/DiffViewerContextMenu/DiffViewerContextMenu.tsx",
+				"batchIndex": 39,
+				"symbols": ["DiffViewerContextMenu"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/FileViewerPane/components/FileEditorContextMenu/FileEditorContextMenu.tsx",
+				"batchIndex": 39,
+				"symbols": ["FileEditorContextMenu"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/FileViewerPane/components/FileViewerContent/FileViewerContent.tsx",
+				"batchIndex": 39,
+				"symbols": ["FileViewerContent"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/FileViewerPane/FileViewerPane.tsx",
+				"batchIndex": 38,
+				"symbols": ["FileViewerPane"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/index.tsx",
+				"batchIndex": 39,
+				"symbols": ["MOSAIC_ID", "TabView"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/TabPane.tsx",
+				"batchIndex": 39,
+				"symbols": ["TabPane"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/stores/tabs/useTabsWithPresets.ts",
+				"batchIndex": 71,
+				"symbols": ["useTabsWithPresets"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/stores/tabs/utils/resolve-notification-target.ts",
+				"batchIndex": 70,
+				"symbols": ["resolveNotificationTarget"]
+			}
+		],
+		"apps/desktop/src/renderer/stores/tabs/utils.ts": [
+			{
+				"path": "apps/desktop/src/shared/absolute-paths.ts",
+				"batchIndex": 85,
+				"symbols": [
+					"isRemotePath",
+					"isAbsoluteFilesystemPath",
+					"toAbsoluteWorkspacePath",
+					"toRelativeWorkspacePath",
+					"getPathBaseName",
+					"normalizeComparablePath",
+					"pathsMatch",
+					"retargetAbsolutePath"
+				]
+			},
+			{
+				"path": "apps/desktop/src/shared/file-types.ts",
+				"batchIndex": 75,
+				"symbols": [
+					"getFileExtension",
+					"isVideoFile",
+					"isImageFile",
+					"getImageMimeType",
+					"isPreviewableVideoFile",
+					"getVideoMimeType",
+					"getImageExtensionFromMimeType",
+					"parseBase64DataUrl",
+					"isMarkdownFile",
+					"hasRenderedPreview"
+				]
+			},
+			{
+				"path": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/workspace/$workspaceId/page.tsx",
+				"batchIndex": 36,
+				"symbols": ["Route"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceSidebar/WorkspaceListItem/WorkspaceListItem.tsx",
+				"batchIndex": 61,
+				"symbols": ["WorkspaceListItem"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ContentView/components/PresetsBar/PresetsBar.tsx",
+				"batchIndex": 40,
+				"symbols": ["PresetsBar"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/GroupStrip/GroupItem.tsx",
+				"batchIndex": 37,
+				"symbols": ["GroupItem"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/GroupStrip/GroupStrip.tsx",
+				"batchIndex": 37,
+				"symbols": ["GroupStrip"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/index.tsx",
+				"batchIndex": 40,
+				"symbols": ["TabsContent"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/components/MosaicSplitOverlay/MosaicSplitOverlay.tsx",
+				"batchIndex": 39,
+				"symbols": ["MosaicSplitOverlay"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/index.tsx",
+				"batchIndex": 39,
+				"symbols": ["MOSAIC_ID", "TabView"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/stores/tabs/useTabsWithPresets.ts",
+				"batchIndex": 71,
+				"symbols": ["useTabsWithPresets"]
+			}
+		],
+		"apps/desktop/src/renderer/stores/tabs/utils/terminal-cleanup.ts": [
+			{
+				"path": "apps/desktop/src/renderer/lib/terminal/session-readiness.ts",
+				"batchIndex": 35,
+				"symbols": [
+					"clearTerminalSessionReady",
+					"markTerminalSessionReady",
+					"rejectTerminalSessionReady",
+					"waitForTerminalSessionReady"
+				]
+			},
+			{
+				"path": "apps/desktop/src/renderer/lib/trpc-client.ts",
+				"batchIndex": 35,
+				"symbols": ["electronReactClient", "electronTrpcClient"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/hooks/useTerminalLifecycle.ts",
+				"batchIndex": 40,
+				"symbols": ["useTerminalLifecycle"]
+			}
+		],
+		"apps/desktop/src/renderer/stores/tabs/workspace-run.ts": [
+			{
+				"path": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/workspace/$workspaceId/hooks/useWorkspaceRunCommand.ts",
+				"batchIndex": 36,
+				"symbols": ["useWorkspaceRunCommand"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/routes/_authenticated/layout.tsx",
+				"batchIndex": 13,
+				"symbols": ["Route"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/hooks/useTerminalStream.ts",
+				"batchIndex": 40,
+				"symbols": ["useTerminalStream"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/hooks/workspaceRun.ts",
+				"batchIndex": 40,
+				"symbols": [
+					"getPaneWorkspaceRun",
+					"hasPaneWorkspaceRun",
+					"setPaneWorkspaceRunState",
+					"resolveWorkspaceRunAttachMode",
+					"recoverWorkspaceRunPane"
+				]
+			}
+		],
+		"apps/desktop/src/renderer/stores/theme/store.ts": [
+			{
+				"path": "apps/desktop/src/renderer/lib/trpc-storage.ts",
+				"batchIndex": 35,
+				"symbols": [
+					"trpcTabsStorage",
+					"trpcThemeStorage",
+					"trpcRingtoneStorage"
+				]
+			},
+			{
+				"path": "apps/desktop/src/shared/themes/index.ts",
+				"batchIndex": 103,
+				"symbols": [
+					"builtInThemes",
+					"DEFAULT_THEME_ID",
+					"darkTheme",
+					"getBuiltInTheme",
+					"lightTheme",
+					"monokaiTheme",
+					"getEditorTheme",
+					"parseThemeConfigFile",
+					"ThemeConfigParseResult",
+					"EditorColors",
+					"EditorSyntaxColors",
+					"EditorTheme",
+					"TerminalColors",
+					"Theme",
+					"ThemeMetadata",
+					"UIColors",
+					"DEFAULT_TERMINAL_COLORS_DARK",
+					"DEFAULT_TERMINAL_COLORS_LIGHT",
+					"getDefaultTerminalColors",
+					"getTerminalColors",
+					"withAlpha"
+				]
+			},
+			{
+				"path": "apps/desktop/src/renderer/assets/app-icons/preset-icons/index.ts",
+				"batchIndex": 1,
+				"symbols": [
+					"PRESET_ICONS",
+					"getPresetIcon",
+					"isDataImageUri",
+					"PresetIconSet",
+					"usePresetIcon",
+					"useIsDarkTheme"
+				]
+			},
+			{
+				"path": "apps/desktop/src/renderer/commandPalette/modules/actions/commands.tsx",
+				"batchIndex": 1,
+				"symbols": ["actionsProvider"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/components/ThemedToaster/ThemedToaster.tsx",
+				"batchIndex": 31,
+				"symbols": ["ThemedToaster"]
+			}
+		],
+		"apps/desktop/src/renderer/stores/theme/utils/index.ts": [
+			{
+				"path": "apps/desktop/src/renderer/hooks/useCreateOrAttachWithTheme.ts",
+				"batchIndex": 51,
+				"symbols": ["useCreateOrAttachWithTheme"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/lib/terminal/appearance/index.ts",
+				"batchIndex": 31,
+				"symbols": [
+					"TERMINAL_FONT_FAMILY_CSS_VARIABLE",
+					"applyTerminalFontFamilyCssVariable",
+					"DEFAULT_TERMINAL_FONT_FAMILIES",
+					"DEFAULT_TERMINAL_FONT_FAMILY",
+					"DEFAULT_TERMINAL_FONT_SIZE",
+					"sanitizeTerminalFontFamily",
+					"getDefaultTerminalAppearance"
+				]
+			},
+			{
+				"path": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/TerminalPane/TerminalPane.tsx",
+				"batchIndex": 36,
+				"symbols": ["TerminalPane"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/useV2TerminalLauncher/useV2TerminalLauncher.ts",
+				"batchIndex": 36,
+				"symbols": ["useV2TerminalLauncher"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/helpers.ts",
+				"batchIndex": 39,
+				"symbols": [
+					"getDefaultTerminalTheme",
+					"getDefaultTerminalBg",
+					"createTerminalInWrapper",
+					"setupCopyHandler",
+					"setupFocusListener",
+					"setupClickToMoveCursor"
+				]
+			}
+		],
+		"apps/desktop/src/shared/changes-types.ts": [
+			{
+				"path": "apps/desktop/src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/ToolCallBlock.tsx",
+				"batchIndex": 32,
+				"symbols": ["ToolCallBlock"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/RightSidebar/ChangesView/ChangesView.tsx",
+				"batchIndex": 40,
+				"symbols": ["ChangesView"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/FileViewerPane/components/FileViewerContent/FileViewerContent.tsx",
+				"batchIndex": 39,
+				"symbols": ["FileViewerContent"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/FileDiffSection/FileDiffSection.tsx",
+				"batchIndex": 37,
+				"symbols": ["FileDiffSection"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/InfiniteScrollView.tsx",
+				"batchIndex": 37,
+				"symbols": ["InfiniteScrollView"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/RightSidebar/index.tsx",
+				"batchIndex": 63,
+				"symbols": ["RightSidebar"]
+			},
+			{
+				"path": "apps/desktop/src/lib/trpc/routers/changes/workers/git-task-handlers.ts",
+				"batchIndex": 31,
+				"symbols": ["executeGitTask"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/RightSidebar/ChangesView/components/FileItem/FileItem.tsx",
+				"batchIndex": 84,
+				"symbols": ["FileItem"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/RightSidebar/ChangesView/components/FileList/FileList.tsx",
+				"batchIndex": 41,
+				"symbols": ["FileList"]
+			},
+			{
+				"path": "apps/desktop/src/lib/trpc/routers/changes/file-contents.ts",
+				"batchIndex": 42,
+				"symbols": ["createFileContentsRouter"]
+			},
+			{
+				"path": "apps/desktop/src/lib/trpc/routers/changes/status.ts",
+				"batchIndex": 42,
+				"symbols": ["createStatusRouter"]
+			},
+			{
+				"path": "apps/desktop/src/lib/trpc/routers/changes/utils/status-cache.ts",
+				"batchIndex": 42,
+				"symbols": [
+					"STATUS_CACHE_TTL_MS",
+					"makeStatusCacheKey",
+					"getCachedStatus",
+					"setCachedStatus",
+					"getInFlightStatus",
+					"setInFlightStatus",
+					"clearInFlightStatus",
+					"clearStatusCacheForWorktree"
+				]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/RightSidebar/ChangesView/components/CommitItem/CommitItem.tsx",
+				"batchIndex": 41,
+				"symbols": ["CommitItem"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/FileViewerPane/components/FileViewerToolbar/FileViewerToolbar.tsx",
+				"batchIndex": 39,
+				"symbols": ["FileViewerToolbar"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/FileViewerPane/hooks/useFileSave/useFileSave.ts",
+				"batchIndex": 39,
+				"symbols": ["useFileSave"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/RightSidebar/ChangesView/hooks/useOrderedSections/useOrderedSections.tsx",
+				"batchIndex": 41,
+				"symbols": ["useOrderedSections"]
+			},
+			{
+				"path": "apps/desktop/src/lib/trpc/routers/changes/utils/parse-status.ts",
+				"batchIndex": 31,
+				"symbols": [
+					"parseGitStatus",
+					"parseGitLog",
+					"parseDiffNumstat",
+					"parseNameStatus"
+				]
+			},
+			{
+				"path": "apps/desktop/src/lib/trpc/routers/changes/workers/git-task-types.ts",
+				"batchIndex": 31,
+				"symbols": []
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/hooks/useFocusMode/useFocusMode.ts",
+				"batchIndex": 37,
+				"symbols": ["useFocusMode"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/hooks/useOrderedSections/useOrderedSections.tsx",
+				"batchIndex": 37,
+				"symbols": ["useOrderedSections"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/LightDiffViewer/LightDiffViewer.tsx",
+				"batchIndex": 62,
+				"symbols": ["LightDiffViewer"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/VirtualizedFileList/utils/getEstimatedFileDiffSectionHeight.ts",
+				"batchIndex": 37,
+				"symbols": ["getEstimatedFileDiffSectionHeight"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/VirtualizedFileList/VirtualizedFileList.tsx",
+				"batchIndex": 37,
+				"symbols": ["VirtualizedFileList"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/FileViewerPane/hooks/useFileContent/useFileContent.ts",
+				"batchIndex": 39,
+				"symbols": ["useFileContent"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/RightSidebar/ChangesView/components/FileList/FileListGrouped.tsx",
+				"batchIndex": 41,
+				"symbols": ["FileListGrouped"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/RightSidebar/ChangesView/components/FileList/FileListGroupedVirtualized.tsx",
+				"batchIndex": 41,
+				"symbols": ["FileListGroupedVirtualized"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/RightSidebar/ChangesView/components/FileList/FileListTree.tsx",
+				"batchIndex": 41,
+				"symbols": ["FileListTree"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/RightSidebar/ChangesView/components/FileList/FileListTreeVirtualized.tsx",
+				"batchIndex": 41,
+				"symbols": ["FileListTreeVirtualized"]
+			},
+			{
+				"path": "apps/desktop/src/lib/trpc/routers/changes/utils/apply-numstat.ts",
+				"batchIndex": 31,
+				"symbols": ["applyNumstatToFiles"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/components/EditToolExpandedDiff/EditToolExpandedDiff.tsx",
+				"batchIndex": 31,
+				"symbols": ["EditToolExpandedDiff"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/components/CommitSection/CommitSection.tsx",
+				"batchIndex": 37,
+				"symbols": ["CommitSection"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/RightSidebar/ChangesView/components/CommitListVirtualized/CommitListVirtualized.tsx",
+				"batchIndex": 41,
+				"symbols": ["CommitListVirtualized"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/FileDiffSection/hooks/useFileDiffEdit/useFileDiffEdit.ts",
+				"batchIndex": 37,
+				"symbols": ["useFileDiffEdit"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/components/CategoryHeader/CategoryHeader.tsx",
+				"batchIndex": 37,
+				"symbols": ["CategoryHeader"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/components/DiffToolbar/DiffToolbar.tsx",
+				"batchIndex": 37,
+				"symbols": ["DiffToolbar"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/InfiniteScrollView/hooks/useFileMutations/useFileMutations.ts",
+				"batchIndex": 37,
+				"symbols": ["useFileMutations"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ChangesContent/context/ScrollContext.tsx",
+				"batchIndex": 84,
+				"symbols": ["ScrollProvider", "useScrollContext", "createFileKey"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/FileViewerPane/components/FileViewerContent/utils/diff-location.ts",
+				"batchIndex": 39,
+				"symbols": [
+					"mapDiffLocationToRawPosition",
+					"getColumnFromDiffPoint",
+					"getDiffLocationFromTarget",
+					"getDiffLocationFromEvent"
+				]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/RightSidebar/ChangesView/components/CategorySection/CategorySection.tsx",
+				"batchIndex": 40,
+				"symbols": ["CategorySection"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/RightSidebar/ChangesView/components/FileList/FileListVirtualized.tsx",
+				"batchIndex": 41,
+				"symbols": ["FileListVirtualized"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/FileDiffSection/components/FileDiffHeader/FileDiffHeader.tsx",
+				"batchIndex": 37,
+				"symbols": ["FileDiffHeader"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ChangesContent/utils/sortFiles.ts",
+				"batchIndex": 37,
+				"symbols": ["sortFilesTreeOrder", "sortFilesGroupedOrder", "sortFiles"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/hooks/useChangesSectionDnd/useChangesSectionDnd.ts",
+				"batchIndex": 41,
+				"symbols": ["useChangesSectionDnd"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/RightSidebar/ChangesView/utils/status.tsx",
+				"batchIndex": 41,
+				"symbols": ["getStatusColor", "getStatusIndicator"]
+			}
+		],
+		"apps/desktop/src/shared/detect-language.ts": [
+			{
+				"path": "apps/desktop/src/lib/trpc/routers/changes/file-contents.ts",
+				"batchIndex": 42,
+				"symbols": ["createFileContentsRouter"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/components/Chat/ChatInterface/components/ReadOnlyToolCall/ReadOnlyToolCall.tsx",
+				"batchIndex": 31,
+				"symbols": ["ReadOnlyToolCall"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/components/Chat/components/SubagentInnerToolCall/SubagentInnerToolCall.tsx",
+				"batchIndex": 34,
+				"symbols": ["SubagentInnerToolCall"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/FilePane/registry/views/CodeView/CodeView.tsx",
+				"batchIndex": 10,
+				"symbols": ["CodeView"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/FileDiffSection/FileDiffSection.tsx",
+				"batchIndex": 37,
+				"symbols": ["FileDiffSection"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/components/FileSaveConflictDialog/FileSaveConflictDialog.tsx",
+				"batchIndex": 41,
+				"symbols": ["FileSaveConflictDialog"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/FileViewerPane/components/FileViewerContent/FileViewerContent.tsx",
+				"batchIndex": 39,
+				"symbols": ["FileViewerContent"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/FileViewerPane/hooks/useFileContent/useFileContent.ts",
+				"batchIndex": 39,
+				"symbols": ["useFileContent"]
+			}
+		],
+		"apps/desktop/src/shared/tabs-types.ts": [
+			{
+				"path": "apps/desktop/src/main/lib/app-state/schemas.ts",
+				"batchIndex": 47,
+				"symbols": ["TabsState", "Pane", "defaultAppState"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/hooks/host-service/useTerminalAgentStatuses/deriveTerminalAgentStatus.ts",
+				"batchIndex": 31,
+				"symbols": ["deriveTerminalAgentStatus"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/hooks/host-service/useTerminalAgentStatuses/useTerminalAgentStatuses.ts",
+				"batchIndex": 31,
+				"symbols": ["useTerminalAgentStatuses"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/hooks/host-service/useV2NotificationStatus/useV2NotificationStatus.ts",
+				"batchIndex": 2,
+				"symbols": [
+					"useV2SourcesNotificationStatus",
+					"useV2PaneNotificationStatus",
+					"useV2WorkspaceNotificationStatus",
+					"useV2WorkspaceIsUnread",
+					"useMarkWorkspaceTerminalsSeen",
+					"useV2AttentionWorkspaceCount"
+				]
+			},
+			{
+				"path": "apps/desktop/src/renderer/lib/agent-session-orchestrator/adapters/chat-adapter.ts",
+				"batchIndex": 31,
+				"symbols": ["launchChatAdapter"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/lib/agent-session-orchestrator/types.ts",
+				"batchIndex": 31,
+				"symbols": []
+			},
+			{
+				"path": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/components/DashboardSidebarCollapsedWorkspaceButton/DashboardSidebarCollapsedWorkspaceButton.tsx",
+				"batchIndex": 53,
+				"symbols": ["DashboardSidebarCollapsedWorkspaceButton"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/components/DashboardSidebarExpandedWorkspaceRow/DashboardSidebarExpandedWorkspaceRow.tsx",
+				"batchIndex": 53,
+				"symbols": ["DashboardSidebarExpandedWorkspaceRow"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/components/DashboardSidebarWorkspaceDetails/hooks/useDashboardSidebarWorkspaceRunningAgents/useDashboardSidebarWorkspaceRunningAgents.ts",
+				"batchIndex": 2,
+				"symbols": ["useDashboardSidebarWorkspaceRunningAgents"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/components/DashboardSidebarWorkspaceIcon/DashboardSidebarWorkspaceIcon.tsx",
+				"batchIndex": 35,
+				"symbols": ["DashboardSidebarWorkspaceIcon"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/BrowserPane/browserRuntimeRegistry.ts",
+				"batchIndex": 6,
+				"symbols": ["browserRuntimeRegistry"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/BrowserPane/components/BrowserErrorOverlay/BrowserErrorOverlay.tsx",
+				"batchIndex": 35,
+				"symbols": ["BrowserErrorOverlay"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/ChatPane.tsx",
+				"batchIndex": 8,
+				"symbols": ["ChatPane"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/types.ts",
+				"batchIndex": 57,
+				"symbols": []
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/StatusIndicator/StatusIndicator.tsx",
+				"batchIndex": 36,
+				"symbols": ["ActivePaneStatus", "StatusIndicator", "getStatusTooltip"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceRunIndicator/WorkspaceRunIndicator.tsx",
+				"batchIndex": 36,
+				"symbols": ["WorkspaceRunIndicator"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceSidebar/WorkspaceListItem/CollapsedWorkspaceItem.tsx",
+				"batchIndex": 61,
+				"symbols": ["CollapsedWorkspaceItem"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceSidebar/WorkspaceListItem/WorkspaceIcon.tsx",
+				"batchIndex": 37,
+				"symbols": ["WorkspaceIcon"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceSidebar/WorkspaceListItem/WorkspaceListItem.tsx",
+				"batchIndex": 61,
+				"symbols": ["WorkspaceListItem"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/GroupStrip/GroupStrip.tsx",
+				"batchIndex": 37,
+				"symbols": ["GroupStrip"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/components/BrowserErrorOverlay/BrowserErrorOverlay.tsx",
+				"batchIndex": 38,
+				"symbols": ["BrowserErrorOverlay"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/BrowserPane/constants.ts",
+				"batchIndex": 38,
+				"symbols": ["DEFAULT_BROWSER_URL", "VIEWPORT_PRESETS"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/ChatPane/ChatPaneInterface/types.ts",
+				"batchIndex": 59,
+				"symbols": []
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/ChatPane/hooks/useChatPaneController/useChatPaneController.ts",
+				"batchIndex": 17,
+				"symbols": ["useChatPaneController"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/FileViewerPane/components/FileViewerContent/FileViewerContent.tsx",
+				"batchIndex": 39,
+				"symbols": ["FileViewerContent"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/FileViewerPane/components/FileViewerToolbar/FileViewerToolbar.tsx",
+				"batchIndex": 39,
+				"symbols": ["FileViewerToolbar"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/FileViewerPane/FileViewerPane.tsx",
+				"batchIndex": 38,
+				"symbols": ["FileViewerPane"]
+			},
+			{
+				"path": "apps/desktop/src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/pane-guards.ts",
+				"batchIndex": 40,
+				"symbols": ["isPaneDestroyed"]
+			}
+		]
+	}
+}

@@ -1,0 +1,119 @@
+import {
+	createTerminalAgentDefinition,
+	type TerminalAgentDefinition,
+	type TerminalAgentDefinitionInput,
+} from "./agent-definition";
+import type { PromptTransport } from "./agent-prompt-launch";
+import { DEFAULT_TERMINAL_TASK_PROMPT_TEMPLATE } from "./agent-prompt-template";
+
+interface BuiltinTerminalAgentManifest
+	extends Omit<
+		TerminalAgentDefinitionInput,
+		"source" | "kind" | "enabled" | "taskPromptTemplate"
+	> {
+	description: string;
+	includeInDefaultTerminalPresets?: boolean;
+}
+
+export interface BuiltinTerminalAgentDefinition
+	extends TerminalAgentDefinition {
+	description: string;
+	includeInDefaultTerminalPresets?: boolean;
+}
+
+type AgentIdTuple<T extends readonly { id: string }[]> = {
+	[K in keyof T]: T[K] extends { id: infer TId } ? TId : never;
+};
+
+function mapAgentIds<const T extends readonly { id: string }[]>(
+	agents: T,
+): AgentIdTuple<T> {
+	return agents.map((agent) => agent.id) as AgentIdTuple<T>;
+}
+
+function createAgentRecord<const T extends readonly { id: string }[], TValue>(
+	agents: T,
+	getValue: (agent: T[number]) => TValue,
+): Record<T[number]["id"], TValue> {
+	return Object.fromEntries(
+		agents.map((agent) => [agent.id, getValue(agent)]),
+	) as Record<T[number]["id"], TValue>;
+}
+
+function createBuiltinTerminalAgent<
+	const T extends BuiltinTerminalAgentManifest,
+>(manifest: T): BuiltinTerminalAgentDefinition & { id: T["id"] } {
+	return {
+		...createTerminalAgentDefinition({
+			...manifest,
+			source: "builtin",
+			kind: "terminal",
+			enabled: true,
+			taskPromptTemplate: DEFAULT_TERMINAL_TASK_PROMPT_TEMPLATE,
+		}),
+		description: manifest.description,
+		includeInDefaultTerminalPresets: manifest.includeInDefaultTerminalPresets,
+	};
+}
+
+export const BUILTIN_TERMINAL_AGENTS = [
+	createBuiltinTerminalAgent({
+		id: "claude",
+		label: "Claude",
+		description:
+			"Anthropic's coding agent for reading code, editing files, and running terminal workflows.",
+		command: "claude --dangerously-skip-permissions",
+		includeInDefaultTerminalPresets: true,
+	}),
+	createBuiltinTerminalAgent({
+		id: "codex",
+		label: "Codex",
+		description:
+			"OpenAI's coding agent for reading, modifying, and running code across tasks.",
+		command: "codex --dangerously-bypass-approvals-and-sandbox",
+		promptCommand: "codex --dangerously-bypass-approvals-and-sandbox --",
+		includeInDefaultTerminalPresets: true,
+	}),
+] as const;
+
+export type BuiltinTerminalAgentType =
+	(typeof BUILTIN_TERMINAL_AGENTS)[number]["id"];
+
+export const BUILTIN_TERMINAL_AGENT_TYPES = mapAgentIds(
+	BUILTIN_TERMINAL_AGENTS,
+);
+
+export const BUILTIN_TERMINAL_AGENT_LABELS = createAgentRecord(
+	BUILTIN_TERMINAL_AGENTS,
+	(agent) => agent.label,
+);
+
+export const BUILTIN_TERMINAL_AGENT_DESCRIPTIONS = createAgentRecord(
+	BUILTIN_TERMINAL_AGENTS,
+	(agent) => agent.description,
+);
+
+export const BUILTIN_TERMINAL_AGENT_COMMANDS = createAgentRecord(
+	BUILTIN_TERMINAL_AGENTS,
+	(agent) => [agent.command],
+);
+
+export const BUILTIN_TERMINAL_AGENT_PROMPT_COMMANDS = createAgentRecord(
+	BUILTIN_TERMINAL_AGENTS,
+	(
+		agent,
+	): {
+		command: string;
+		suffix?: string;
+		transport: PromptTransport;
+	} => ({
+		command: agent.promptCommand,
+		suffix: agent.promptCommandSuffix,
+		transport: agent.promptTransport,
+	}),
+);
+
+export const DEFAULT_TERMINAL_PRESET_AGENT_TYPES =
+	BUILTIN_TERMINAL_AGENTS.filter(
+		(agent) => agent.includeInDefaultTerminalPresets,
+	).map((agent) => agent.id) satisfies BuiltinTerminalAgentType[];

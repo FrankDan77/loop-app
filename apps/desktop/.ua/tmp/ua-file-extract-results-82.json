@@ -1,0 +1,522 @@
+{
+	"scriptCompleted": true,
+	"filesAnalyzed": 11,
+	"filesSkipped": [],
+	"results": [
+		{
+			"path": "src/renderer/stores/theme/utils/css-variables.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 83,
+			"nonEmptyLines": 78,
+			"functions": [
+				{
+					"name": "applyUIColors",
+					"startLine": 50,
+					"endLine": 59,
+					"params": ["colors"]
+				},
+				{
+					"name": "updateThemeClass",
+					"startLine": 64,
+					"endLine": 73,
+					"params": ["type"]
+				},
+				{
+					"name": "clearThemeVariables",
+					"startLine": 78,
+					"endLine": 83,
+					"params": []
+				}
+			],
+			"exports": [
+				{
+					"name": "applyUIColors",
+					"line": 50,
+					"isDefault": false
+				},
+				{
+					"name": "updateThemeClass",
+					"line": 64,
+					"isDefault": false
+				},
+				{
+					"name": "clearThemeVariables",
+					"line": 78,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "applyUIColors",
+					"callee": "Object.entries",
+					"lineNumber": 53
+				},
+				{
+					"caller": "applyUIColors",
+					"callee": "root.style.setProperty",
+					"lineNumber": 56
+				},
+				{
+					"caller": "updateThemeClass",
+					"callee": "html.classList.add",
+					"lineNumber": 67
+				},
+				{
+					"caller": "updateThemeClass",
+					"callee": "html.classList.remove",
+					"lineNumber": 68
+				},
+				{
+					"caller": "updateThemeClass",
+					"callee": "html.classList.add",
+					"lineNumber": 70
+				},
+				{
+					"caller": "updateThemeClass",
+					"callee": "html.classList.remove",
+					"lineNumber": 71
+				},
+				{
+					"caller": "clearThemeVariables",
+					"callee": "Object.values",
+					"lineNumber": 80
+				},
+				{
+					"caller": "clearThemeVariables",
+					"callee": "root.style.removeProperty",
+					"lineNumber": 81
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 3,
+				"functionCount": 3,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/stores/theme/utils/terminal-theme.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 36,
+			"nonEmptyLines": 33,
+			"functions": [
+				{
+					"name": "toXtermTheme",
+					"startLine": 7,
+					"endLine": 36,
+					"params": ["colors"]
+				}
+			],
+			"exports": [
+				{
+					"name": "toXtermTheme",
+					"line": 7,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/shared/themes/built-in/ember.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 111,
+			"nonEmptyLines": 94,
+			"exports": [
+				{
+					"name": "darkTheme",
+					"line": 7,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/shared/themes/built-in/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 23,
+			"nonEmptyLines": 20,
+			"functions": [
+				{
+					"name": "getBuiltInTheme",
+					"startLine": 18,
+					"endLine": 20,
+					"params": ["id"]
+				}
+			],
+			"exports": [
+				{
+					"name": "builtInThemes",
+					"line": 8,
+					"isDefault": false
+				},
+				{
+					"name": "DEFAULT_THEME_ID",
+					"line": 13,
+					"isDefault": false
+				},
+				{
+					"name": "getBuiltInTheme",
+					"line": 18,
+					"isDefault": false
+				},
+				{
+					"name": "darkTheme",
+					"line": 23,
+					"isDefault": false
+				},
+				{
+					"name": "lightTheme",
+					"line": 23,
+					"isDefault": false
+				},
+				{
+					"name": "monokaiTheme",
+					"line": 23,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "getBuiltInTheme",
+					"callee": "builtInThemes.find",
+					"lineNumber": 19
+				}
+			],
+			"metrics": {
+				"importCount": 4,
+				"exportCount": 6,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/shared/themes/built-in/light.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 85,
+			"nonEmptyLines": 78,
+			"exports": [
+				{
+					"name": "lightTheme",
+					"line": 6,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/shared/themes/built-in/monokai.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 86,
+			"nonEmptyLines": 79,
+			"exports": [
+				{
+					"name": "monokaiTheme",
+					"line": 6,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/shared/themes/editor-theme.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 86,
+			"nonEmptyLines": 83,
+			"functions": [
+				{
+					"name": "getEditorTheme",
+					"startLine": 7,
+					"endLine": 86,
+					"params": ["theme"]
+				}
+			],
+			"exports": [
+				{
+					"name": "getEditorTheme",
+					"line": 7,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "getEditorTheme",
+					"callee": "getTerminalColors",
+					"lineNumber": 9
+				},
+				{
+					"caller": "getEditorTheme",
+					"callee": "withAlpha",
+					"lineNumber": 18
+				},
+				{
+					"caller": "getEditorTheme",
+					"callee": "withAlpha",
+					"lineNumber": 21
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/shared/themes/editor.test.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 96,
+			"nonEmptyLines": 90,
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/shared/themes/import.test.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 149,
+			"nonEmptyLines": 128,
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/shared/themes/import.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 304,
+			"nonEmptyLines": 281,
+			"functions": [
+				{
+					"name": "normalizeThemeId",
+					"startLine": 151,
+					"endLine": 157,
+					"params": ["value"]
+				},
+				{
+					"name": "isThemePack",
+					"startLine": 159,
+					"endLine": 168,
+					"params": ["value"]
+				},
+				{
+					"name": "parseThemeEntry",
+					"startLine": 170,
+					"endLine": 253,
+					"params": ["entry", "index"]
+				},
+				{
+					"name": "parseThemeConfigFile",
+					"startLine": 266,
+					"endLine": 304,
+					"params": ["content"]
+				}
+			],
+			"exports": [
+				{
+					"name": "parseThemeConfigFile",
+					"line": 266,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "normalizeThemeId",
+					"callee": "value\n\t\t.trim()\n\t\t.toLowerCase()\n\t\t.replace(/[^a-z0-9]+/g, \"-\")\n\t\t.replace",
+					"lineNumber": 152
+				},
+				{
+					"caller": "normalizeThemeId",
+					"callee": "value\n\t\t.trim()\n\t\t.toLowerCase()\n\t\t.replace",
+					"lineNumber": 152
+				},
+				{
+					"caller": "normalizeThemeId",
+					"callee": "value\n\t\t.trim()\n\t\t.toLowerCase",
+					"lineNumber": 152
+				},
+				{
+					"caller": "normalizeThemeId",
+					"callee": "value\n\t\t.trim",
+					"lineNumber": 152
+				},
+				{
+					"caller": "isThemePack",
+					"callee": "Array.isArray",
+					"lineNumber": 166
+				},
+				{
+					"caller": "parseThemeEntry",
+					"callee": "themeConfigSchema.safeParse",
+					"lineNumber": 174
+				},
+				{
+					"caller": "parseThemeEntry",
+					"callee": "config.name?.trim",
+					"lineNumber": 181
+				},
+				{
+					"caller": "parseThemeEntry",
+					"callee": "config.id?.trim",
+					"lineNumber": 182
+				},
+				{
+					"caller": "parseThemeEntry",
+					"callee": "normalizeThemeId",
+					"lineNumber": 190
+				},
+				{
+					"caller": "parseThemeEntry",
+					"callee": "RESERVED_THEME_IDS.has",
+					"lineNumber": 198
+				},
+				{
+					"caller": "parseThemeEntry",
+					"callee": "getDefaultTerminalColors",
+					"lineNumber": 222
+				},
+				{
+					"caller": "parseThemeEntry",
+					"callee": "getEditorTheme",
+					"lineNumber": 227
+				},
+				{
+					"caller": "parseThemeEntry",
+					"callee": "getDefaultTerminalColors",
+					"lineNumber": 235
+				},
+				{
+					"caller": "parseThemeConfigFile",
+					"callee": "JSON.parse",
+					"lineNumber": 269
+				},
+				{
+					"caller": "parseThemeConfigFile",
+					"callee": "Array.isArray",
+					"lineNumber": 274
+				},
+				{
+					"caller": "parseThemeConfigFile",
+					"callee": "isThemePack",
+					"lineNumber": 276
+				},
+				{
+					"caller": "parseThemeConfigFile",
+					"callee": "entries.entries",
+					"lineNumber": 287
+				},
+				{
+					"caller": "parseThemeConfigFile",
+					"callee": "parseThemeEntry",
+					"lineNumber": 288
+				},
+				{
+					"caller": "parseThemeConfigFile",
+					"callee": "issues.push",
+					"lineNumber": 290
+				},
+				{
+					"caller": "parseThemeConfigFile",
+					"callee": "themes.push",
+					"lineNumber": 293
+				}
+			],
+			"metrics": {
+				"importCount": 3,
+				"exportCount": 1,
+				"functionCount": 4,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/shared/themes/types.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 302,
+			"nonEmptyLines": 269,
+			"functions": [
+				{
+					"name": "getDefaultTerminalColors",
+					"startLine": 72,
+					"endLine": 78,
+					"params": ["type"]
+				},
+				{
+					"name": "getTerminalColors",
+					"startLine": 83,
+					"endLine": 85,
+					"params": ["theme"]
+				}
+			],
+			"exports": [
+				{
+					"name": "DEFAULT_TERMINAL_COLORS_DARK",
+					"line": 10,
+					"isDefault": false
+				},
+				{
+					"name": "DEFAULT_TERMINAL_COLORS_LIGHT",
+					"line": 41,
+					"isDefault": false
+				},
+				{
+					"name": "getDefaultTerminalColors",
+					"line": 72,
+					"isDefault": false
+				},
+				{
+					"name": "getTerminalColors",
+					"line": 83,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "getTerminalColors",
+					"callee": "getDefaultTerminalColors",
+					"lineNumber": 84
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 4,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		}
+	]
+}

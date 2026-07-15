@@ -1,0 +1,1949 @@
+{
+	"scriptCompleted": true,
+	"filesAnalyzed": 32,
+	"filesSkipped": [],
+	"results": [
+		{
+			"path": "src/renderer/routes/_authenticated/components/AgentHooks/hooks/useCommandWatcher/useCommandWatcher.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 321,
+			"nonEmptyLines": 288,
+			"functions": [
+				{
+					"name": "useCommandWatcher",
+					"startLine": 23,
+					"endLine": 321,
+					"params": []
+				}
+			],
+			"exports": [
+				{
+					"name": "useCommandWatcher",
+					"line": 23,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "useCommandWatcher",
+					"callee": "electronTrpc.auth.getDeviceInfo.useQuery",
+					"lineNumber": 24
+				},
+				{
+					"caller": "useCommandWatcher",
+					"callee": "authClient.useSession",
+					"lineNumber": 25
+				},
+				{
+					"caller": "useCommandWatcher",
+					"callee": "useCollections",
+					"lineNumber": 26
+				},
+				{
+					"caller": "useCommandWatcher",
+					"callee": "useRef",
+					"lineNumber": 27
+				},
+				{
+					"caller": "useCommandWatcher",
+					"callee": "useRef",
+					"lineNumber": 28
+				},
+				{
+					"caller": "useCommandWatcher",
+					"callee": "useRef",
+					"lineNumber": 29
+				},
+				{
+					"caller": "useCommandWatcher",
+					"callee": "useRef",
+					"lineNumber": 30
+				},
+				{
+					"caller": "useCommandWatcher",
+					"callee": "useRef",
+					"lineNumber": 31
+				},
+				{
+					"caller": "useCommandWatcher",
+					"callee": "useRef",
+					"lineNumber": 32
+				},
+				{
+					"caller": "useCommandWatcher",
+					"callee": "useFeatureFlagEnabled",
+					"lineNumber": 37
+				},
+				{
+					"caller": "useCommandWatcher",
+					"callee": "useCreateWorkspace",
+					"lineNumber": 42
+				},
+				{
+					"caller": "useCommandWatcher",
+					"callee": "electronTrpc.workspaces.setActive.useMutation",
+					"lineNumber": 43
+				},
+				{
+					"caller": "useCommandWatcher",
+					"callee": "useDeleteWorkspace",
+					"lineNumber": 44
+				},
+				{
+					"caller": "useCommandWatcher",
+					"callee": "useUpdateWorkspace",
+					"lineNumber": 45
+				},
+				{
+					"caller": "useCommandWatcher",
+					"callee": "electronTrpc.terminal.createOrAttach.useMutation",
+					"lineNumber": 47
+				},
+				{
+					"caller": "useCommandWatcher",
+					"callee": "electronTrpc.terminal.write.useMutation",
+					"lineNumber": 48
+				},
+				{
+					"caller": "useCommandWatcher",
+					"callee": "electronTrpc.workspaces.getAll.useQuery",
+					"lineNumber": 51
+				},
+				{
+					"caller": "useCommandWatcher",
+					"callee": "electronTrpc.workspaces.getAllGrouped.useQuery",
+					"lineNumber": 53
+				},
+				{
+					"caller": "useCommandWatcher",
+					"callee": "electronTrpc.projects.getRecents.useQuery",
+					"lineNumber": 54
+				},
+				{
+					"caller": "useCommandWatcher",
+					"callee": "useMemo",
+					"lineNumber": 55
+				},
+				{
+					"caller": "useCommandWatcher",
+					"callee": "pathByWorkspaceId.set",
+					"lineNumber": 60
+				},
+				{
+					"caller": "useCommandWatcher",
+					"callee": "pathByWorkspaceId.set",
+					"lineNumber": 65
+				},
+				{
+					"caller": "useCommandWatcher",
+					"callee": "useCallback",
+					"lineNumber": 73
+				},
+				{
+					"caller": "useCommandWatcher",
+					"callee": "hash.startsWith",
+					"lineNumber": 75
+				},
+				{
+					"caller": "useCommandWatcher",
+					"callee": "hash.slice",
+					"lineNumber": 75
+				},
+				{
+					"caller": "useCommandWatcher",
+					"callee": "pathname.match",
+					"lineNumber": 76
+				},
+				{
+					"caller": "useCommandWatcher",
+					"callee": "useMemo",
+					"lineNumber": 80
+				},
+				{
+					"caller": "useCommandWatcher",
+					"callee": "refetchWorkspaces",
+					"lineNumber": 88
+				},
+				{
+					"caller": "useCommandWatcher",
+					"callee": "worktreePathByWorkspaceId.get",
+					"lineNumber": 93
+				},
+				{
+					"caller": "useCommandWatcher",
+					"callee": "useLiveQuery",
+					"lineNumber": 110
+				},
+				{
+					"caller": "useCommandWatcher",
+					"callee": "q\n\t\t\t\t.from({ commands: collections.agentCommands })\n\t\t\t\t.where(({ commands }) => eq(commands.status, \"pending\"))\n\t\t\t\t.select",
+					"lineNumber": 112
+				},
+				{
+					"caller": "useCommandWatcher",
+					"callee": "q\n\t\t\t\t.from({ commands: collections.agentCommands })\n\t\t\t\t.where",
+					"lineNumber": 112
+				},
+				{
+					"caller": "useCommandWatcher",
+					"callee": "q\n\t\t\t\t.from",
+					"lineNumber": 112
+				},
+				{
+					"caller": "useCommandWatcher",
+					"callee": "eq",
+					"lineNumber": 114
+				},
+				{
+					"caller": "useCommandWatcher",
+					"callee": "useCallback",
+					"lineNumber": 119
+				},
+				{
+					"caller": "useCommandWatcher",
+					"callee": "pendingPersistenceRef.current.get",
+					"lineNumber": 123
+				},
+				{
+					"caller": "useCommandWatcher",
+					"callee": "persistingCommandsRef.current.has",
+					"lineNumber": 124
+				},
+				{
+					"caller": "useCommandWatcher",
+					"callee": "persistenceRetryTimersRef.current.get",
+					"lineNumber": 127
+				},
+				{
+					"caller": "useCommandWatcher",
+					"callee": "clearTimeout",
+					"lineNumber": 129
+				},
+				{
+					"caller": "useCommandWatcher",
+					"callee": "persistenceRetryTimersRef.current.delete",
+					"lineNumber": 130
+				},
+				{
+					"caller": "useCommandWatcher",
+					"callee": "persistingCommandsRef.current.add",
+					"lineNumber": 133
+				},
+				{
+					"caller": "useCommandWatcher",
+					"callee": "collections.agentCommands.update",
+					"lineNumber": 136
+				},
+				{
+					"caller": "useCommandWatcher",
+					"callee": "pendingPersistenceRef.current.delete",
+					"lineNumber": 143
+				},
+				{
+					"caller": "useCommandWatcher",
+					"callee": "console.error",
+					"lineNumber": 145
+				},
+				{
+					"caller": "useCommandWatcher",
+					"callee": "persistenceRetryTimersRef.current.has",
+					"lineNumber": 152
+				},
+				{
+					"caller": "useCommandWatcher",
+					"callee": "setTimeout",
+					"lineNumber": 154
+				},
+				{
+					"caller": "useCommandWatcher",
+					"callee": "persistenceRetryTimersRef.current.delete",
+					"lineNumber": 155
+				},
+				{
+					"caller": "useCommandWatcher",
+					"callee": "persistResolvedCommand",
+					"lineNumber": 156
+				},
+				{
+					"caller": "useCommandWatcher",
+					"callee": "persistenceRetryTimersRef.current.set",
+					"lineNumber": 158
+				},
+				{
+					"caller": "useCommandWatcher",
+					"callee": "persistingCommandsRef.current.delete",
+					"lineNumber": 161
+				},
+				{
+					"caller": "useCommandWatcher",
+					"callee": "useEffect",
+					"lineNumber": 167
+				},
+				{
+					"caller": "useCommandWatcher",
+					"callee": "persistenceRetryTimersRef.current.values",
+					"lineNumber": 170
+				},
+				{
+					"caller": "useCommandWatcher",
+					"callee": "clearTimeout",
+					"lineNumber": 171
+				},
+				{
+					"caller": "useCommandWatcher",
+					"callee": "persistenceRetryTimersRef.current.clear",
+					"lineNumber": 173
+				},
+				{
+					"caller": "useCommandWatcher",
+					"callee": "useCallback",
+					"lineNumber": 177
+				},
+				{
+					"caller": "useCommandWatcher",
+					"callee": "handledCommandsRef.current.has",
+					"lineNumber": 184
+				},
+				{
+					"caller": "useCommandWatcher",
+					"callee": "processingCommandsRef.current.has",
+					"lineNumber": 185
+				},
+				{
+					"caller": "useCommandWatcher",
+					"callee": "pendingPersistenceRef.current.has",
+					"lineNumber": 187
+				},
+				{
+					"caller": "useCommandWatcher",
+					"callee": "persistResolvedCommand",
+					"lineNumber": 188
+				},
+				{
+					"caller": "useCommandWatcher",
+					"callee": "processingCommandsRef.current.add",
+					"lineNumber": 193
+				},
+				{
+					"caller": "useCommandWatcher",
+					"callee": "console.log",
+					"lineNumber": 194
+				},
+				{
+					"caller": "useCommandWatcher",
+					"callee": "executeTool",
+					"lineNumber": 198
+				},
+				{
+					"caller": "useCommandWatcher",
+					"callee": "(\n\t\t\t\t\t\tresult.data?.errors as Array<{ error: string }> | undefined\n\t\t\t\t\t)\n\t\t\t\t\t\t?.map((e) => e.error)\n\t\t\t\t\t\t.join",
+					"lineNumber": 207
+				},
+				{
+					"caller": "useCommandWatcher",
+					"callee": "(\n\t\t\t\t\t\tresult.data?.errors as Array<{ error: string }> | undefined\n\t\t\t\t\t)\n\t\t\t\t\t\t?.map",
+					"lineNumber": 207
+				},
+				{
+					"caller": "useCommandWatcher",
+					"callee": "console.error",
+					"lineNumber": 221
+				},
+				{
+					"caller": "useCommandWatcher",
+					"callee": "console.error",
+					"lineNumber": 228
+				},
+				{
+					"caller": "useCommandWatcher",
+					"callee": "processingCommandsRef.current.delete",
+					"lineNumber": 237
+				},
+				{
+					"caller": "useCommandWatcher",
+					"callee": "handledCommandsRef.current.add",
+					"lineNumber": 240
+				},
+				{
+					"caller": "useCommandWatcher",
+					"callee": "pendingPersistenceRef.current.set",
+					"lineNumber": 241
+				},
+				{
+					"caller": "useCommandWatcher",
+					"callee": "persistResolvedCommand",
+					"lineNumber": 242
+				},
+				{
+					"caller": "useCommandWatcher",
+					"callee": "useEffect",
+					"lineNumber": 247
+				},
+				{
+					"caller": "useCommandWatcher",
+					"callee": "processingCommands.has",
+					"lineNumber": 265
+				},
+				{
+					"caller": "useCommandWatcher",
+					"callee": "handledCommands.has",
+					"lineNumber": 266
+				},
+				{
+					"caller": "useCommandWatcher",
+					"callee": "pendingPersistenceRef.current.has",
+					"lineNumber": 267
+				},
+				{
+					"caller": "useCommandWatcher",
+					"callee": "persistResolvedCommand",
+					"lineNumber": 268
+				},
+				{
+					"caller": "useCommandWatcher",
+					"callee": "handledCommands.add",
+					"lineNumber": 273
+				},
+				{
+					"caller": "useCommandWatcher",
+					"callee": "pendingPersistenceRef.current.set",
+					"lineNumber": 274
+				},
+				{
+					"caller": "useCommandWatcher",
+					"callee": "persistResolvedCommand",
+					"lineNumber": 278
+				},
+				{
+					"caller": "useCommandWatcher",
+					"callee": "pendingCommands.filter",
+					"lineNumber": 282
+				},
+				{
+					"caller": "useCommandWatcher",
+					"callee": "processingCommands.has",
+					"lineNumber": 284
+				},
+				{
+					"caller": "useCommandWatcher",
+					"callee": "handledCommands.has",
+					"lineNumber": 285
+				},
+				{
+					"caller": "useCommandWatcher",
+					"callee": "pendingPersistenceRef.current.has",
+					"lineNumber": 286
+				},
+				{
+					"caller": "useCommandWatcher",
+					"callee": "persistResolvedCommand",
+					"lineNumber": 287
+				},
+				{
+					"caller": "useCommandWatcher",
+					"callee": "console.warn",
+					"lineNumber": 294
+				},
+				{
+					"caller": "useCommandWatcher",
+					"callee": "processCommand",
+					"lineNumber": 302
+				},
+				{
+					"caller": "useCommandWatcher",
+					"callee": "pendingCommands?.filter",
+					"lineNumber": 317
+				}
+			],
+			"metrics": {
+				"importCount": 7,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/components/AgentHooks/hooks/useDevicePresence/useDevicePresence.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 37,
+			"nonEmptyLines": 33,
+			"functions": [
+				{
+					"name": "useDevicePresence",
+					"startLine": 10,
+					"endLine": 37,
+					"params": []
+				}
+			],
+			"exports": [
+				{
+					"name": "useDevicePresence",
+					"line": 10,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "useDevicePresence",
+					"callee": "authClient.useSession",
+					"lineNumber": 11
+				},
+				{
+					"caller": "useDevicePresence",
+					"callee": "electronTrpc.auth.getDeviceInfo.useQuery",
+					"lineNumber": 12
+				},
+				{
+					"caller": "useDevicePresence",
+					"callee": "useRef",
+					"lineNumber": 13
+				},
+				{
+					"caller": "useDevicePresence",
+					"callee": "useEffect",
+					"lineNumber": 15
+				},
+				{
+					"caller": "useDevicePresence",
+					"callee": "apiTrpcClient.device.registerDevice\n\t\t\t.mutate({\n\t\t\t\tdeviceId: deviceInfo.deviceId,\n\t\t\t\tdeviceName: deviceInfo.deviceName,\n\t\t\t\tdeviceType: \"desktop\",\n\t\t\t})\n\t\t\t.catch",
+					"lineNumber": 21
+				},
+				{
+					"caller": "useDevicePresence",
+					"callee": "apiTrpcClient.device.registerDevice\n\t\t\t.mutate",
+					"lineNumber": 21
+				}
+			],
+			"metrics": {
+				"importCount": 3,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/components/AgentHooks/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "AgentHooks",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/components/DaemonAutoUpdateFailureDialog/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "DaemonAutoUpdateFailureDialog",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/components/DashboardNewWorkspaceModal/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "DashboardNewWorkspaceModal",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/components/DiffThemeSync/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "DiffThemeSync",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/components/DockBadgeController/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "DockBadgeController",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/components/FileMenuListener/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "FileMenuListener",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/components/GlobalBrowserLifecycle/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "GlobalBrowserLifecycle",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/components/V1ImportModal/ImportPresetsPage/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "ImportPresetsPage",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/components/V1ImportModal/ImportProjectsPage/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "ImportProjectsPage",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/components/V1ImportModal/ImportWorkspacesPage/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "ImportWorkspacesPage",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/components/V1ImportModal/V1ImportModal.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 142,
+			"nonEmptyLines": 136,
+			"functions": [
+				{
+					"name": "V1ImportModal",
+					"startLine": 24,
+					"endLine": 142,
+					"params": []
+				}
+			],
+			"exports": [
+				{
+					"name": "V1ImportModal",
+					"line": 24,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "V1ImportModal",
+					"callee": "useV1ImportModalStore",
+					"lineNumber": 25
+				},
+				{
+					"caller": "V1ImportModal",
+					"callee": "useV1ImportModalStore",
+					"lineNumber": 26
+				},
+				{
+					"caller": "V1ImportModal",
+					"callee": "useV1ImportModalStore",
+					"lineNumber": 27
+				},
+				{
+					"caller": "V1ImportModal",
+					"callee": "useCloseV1ImportModal",
+					"lineNumber": 28
+				},
+				{
+					"caller": "V1ImportModal",
+					"callee": "authClient.useSession",
+					"lineNumber": 29
+				},
+				{
+					"caller": "V1ImportModal",
+					"callee": "useLocalHostService",
+					"lineNumber": 30
+				},
+				{
+					"caller": "V1ImportModal",
+					"callee": "V1_IMPORT_PAGE_ORDER.indexOf",
+					"lineNumber": 37
+				},
+				{
+					"caller": "V1ImportModal",
+					"callee": "close",
+					"lineNumber": 45
+				},
+				{
+					"caller": "V1ImportModal",
+					"callee": "event.preventDefault",
+					"lineNumber": 51
+				},
+				{
+					"caller": "V1ImportModal",
+					"callee": "event.preventDefault",
+					"lineNumber": 52
+				},
+				{
+					"caller": "V1ImportModal",
+					"callee": "event.preventDefault",
+					"lineNumber": 53
+				},
+				{
+					"caller": "V1ImportModal",
+					"callee": "setPage",
+					"lineNumber": 114
+				},
+				{
+					"caller": "V1ImportModal",
+					"callee": "setPage",
+					"lineNumber": 123
+				}
+			],
+			"metrics": {
+				"importCount": 11,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/components/V1ImportModal/components/IntroPage/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "IntroPage",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/components/V1ImportModal/components/StepProgress/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "getStepProgress",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "StepProgress",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 2,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/components/V1ImportModal/components/WelcomePage/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "WelcomePage",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/components/V1ImportModal/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "V1ImportModal",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/components/V2NotificationController/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "V2NotificationController",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/layout.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 245,
+			"nonEmptyLines": 230,
+			"functions": [
+				{
+					"name": "AuthenticatedLayout",
+					"startLine": 51,
+					"endLine": 245,
+					"params": []
+				}
+			],
+			"exports": [
+				{
+					"name": "Route",
+					"line": 47,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "AuthenticatedLayout",
+					"callee": "authClient.useSession",
+					"lineNumber": 57
+				},
+				{
+					"caller": "AuthenticatedLayout",
+					"callee": "getAuthToken",
+					"lineNumber": 58
+				},
+				{
+					"caller": "AuthenticatedLayout",
+					"callee": "useOnlineStatus",
+					"lineNumber": 59
+				},
+				{
+					"caller": "AuthenticatedLayout",
+					"callee": "useNavigate",
+					"lineNumber": 60
+				},
+				{
+					"caller": "AuthenticatedLayout",
+					"callee": "useLocation",
+					"lineNumber": 61
+				},
+				{
+					"caller": "AuthenticatedLayout",
+					"callee": "useSettingsStore",
+					"lineNumber": 62
+				},
+				{
+					"caller": "AuthenticatedLayout",
+					"callee": "electronTrpc.useUtils",
+					"lineNumber": 63
+				},
+				{
+					"caller": "AuthenticatedLayout",
+					"callee": "useRef",
+					"lineNumber": 64
+				},
+				{
+					"caller": "AuthenticatedLayout",
+					"callee": "useIsV2CloudEnabled",
+					"lineNumber": 65
+				},
+				{
+					"caller": "AuthenticatedLayout",
+					"callee": "useAgentHookListener",
+					"lineNumber": 72
+				},
+				{
+					"caller": "AuthenticatedLayout",
+					"callee": "electronTrpc.notifications.subscribe.useSubscription",
+					"lineNumber": 75
+				},
+				{
+					"caller": "AuthenticatedLayout",
+					"callee": "localStorage.setItem",
+					"lineNumber": 81
+				},
+				{
+					"caller": "AuthenticatedLayout",
+					"callee": "navigate",
+					"lineNumber": 83
+				},
+				{
+					"caller": "AuthenticatedLayout",
+					"callee": "crypto.randomUUID",
+					"lineNumber": 90
+				},
+				{
+					"caller": "AuthenticatedLayout",
+					"callee": "crypto.randomUUID",
+					"lineNumber": 94
+				},
+				{
+					"caller": "AuthenticatedLayout",
+					"callee": "useTabsStore.getState",
+					"lineNumber": 106
+				},
+				{
+					"caller": "AuthenticatedLayout",
+					"callee": "setPaneWorkspaceRunState",
+					"lineNumber": 112
+				},
+				{
+					"caller": "AuthenticatedLayout",
+					"callee": "useEffect",
+					"lineNumber": 117
+				},
+				{
+					"caller": "AuthenticatedLayout",
+					"callee": "location.pathname.startsWith",
+					"lineNumber": 118
+				},
+				{
+					"caller": "AuthenticatedLayout",
+					"callee": "setOriginRoute",
+					"lineNumber": 119
+				},
+				{
+					"caller": "AuthenticatedLayout",
+					"callee": "useWorkspaceInitStore",
+					"lineNumber": 124
+				},
+				{
+					"caller": "AuthenticatedLayout",
+					"callee": "electronTrpc.workspaces.onInitProgress.useSubscription",
+					"lineNumber": 125
+				},
+				{
+					"caller": "AuthenticatedLayout",
+					"callee": "updateInitProgress",
+					"lineNumber": 127
+				},
+				{
+					"caller": "AuthenticatedLayout",
+					"callee": "shownWorkspaceInitWarningsRef.current.has",
+					"lineNumber": 130
+				},
+				{
+					"caller": "AuthenticatedLayout",
+					"callee": "shownWorkspaceInitWarningsRef.current.add",
+					"lineNumber": 132
+				},
+				{
+					"caller": "AuthenticatedLayout",
+					"callee": "showWorkspaceAutoNameWarningToast",
+					"lineNumber": 133
+				},
+				{
+					"caller": "AuthenticatedLayout",
+					"callee": "navigate",
+					"lineNumber": 136
+				},
+				{
+					"caller": "AuthenticatedLayout",
+					"callee": "utils.workspaces.getAllGrouped.invalidate",
+					"lineNumber": 142
+				},
+				{
+					"caller": "AuthenticatedLayout",
+					"callee": "utils.workspaces.get.invalidate",
+					"lineNumber": 143
+				},
+				{
+					"caller": "AuthenticatedLayout",
+					"callee": "console.error",
+					"lineNumber": 147
+				},
+				{
+					"caller": "AuthenticatedLayout",
+					"callee": "electronTrpc.menu.subscribe.useSubscription",
+					"lineNumber": 152
+				},
+				{
+					"caller": "AuthenticatedLayout",
+					"callee": "navigate",
+					"lineNumber": 156
+				},
+				{
+					"caller": "AuthenticatedLayout",
+					"callee": "navigate",
+					"lineNumber": 158
+				},
+				{
+					"caller": "AuthenticatedLayout",
+					"callee": "refetch",
+					"lineNumber": 187
+				},
+				{
+					"caller": "AuthenticatedLayout",
+					"callee": "location.pathname.startsWith",
+					"lineNumber": 205
+				}
+			],
+			"metrics": {
+				"importCount": 32,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/lib/pierreWorker/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "createPierreWorker",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/onboarding/components/OnboardingNavigation/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "OnboardingNavigation",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/onboarding/layout.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 102,
+			"nonEmptyLines": 94,
+			"functions": [
+				{
+					"name": "OnboardingFlowLayout",
+					"startLine": 35,
+					"endLine": 102,
+					"params": []
+				}
+			],
+			"exports": [
+				{
+					"name": "Route",
+					"line": 16,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "OnboardingFlowLayout",
+					"callee": "authClient.useSession",
+					"lineNumber": 36
+				},
+				{
+					"caller": "OnboardingFlowLayout",
+					"callee": "electronTrpc.window.getPlatform.useQuery",
+					"lineNumber": 37
+				},
+				{
+					"caller": "OnboardingFlowLayout",
+					"callee": "useMemo",
+					"lineNumber": 39
+				},
+				{
+					"caller": "OnboardingFlowLayout",
+					"callee": "createChatServiceIpcClient",
+					"lineNumber": 39
+				},
+				{
+					"caller": "OnboardingFlowLayout",
+					"callee": "useLocation",
+					"lineNumber": 40
+				},
+				{
+					"caller": "OnboardingFlowLayout",
+					"callee": "useNavigate",
+					"lineNumber": 41
+				},
+				{
+					"caller": "OnboardingFlowLayout",
+					"callee": "STEPS.findIndex",
+					"lineNumber": 48
+				},
+				{
+					"caller": "OnboardingFlowLayout",
+					"callee": "s.match",
+					"lineNumber": 48
+				},
+				{
+					"caller": "handleBack",
+					"callee": "navigate",
+					"lineNumber": 57
+				},
+				{
+					"caller": "OnboardingFlowLayout",
+					"callee": "navigate",
+					"lineNumber": 63
+				}
+			],
+			"metrics": {
+				"importCount": 5,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/providers/CollectionsProvider/CollectionsProvider.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 86,
+			"nonEmptyLines": 75,
+			"functions": [
+				{
+					"name": "preloadActiveOrganizationCollections",
+					"startLine": 21,
+					"endLine": 31,
+					"params": ["activeOrganizationId"]
+				},
+				{
+					"name": "CollectionsProvider",
+					"startLine": 33,
+					"endLine": 78,
+					"params": ["{ children }"]
+				},
+				{
+					"name": "useCollections",
+					"startLine": 80,
+					"endLine": 86,
+					"params": []
+				}
+			],
+			"exports": [
+				{
+					"name": "preloadActiveOrganizationCollections",
+					"line": 21,
+					"isDefault": false
+				},
+				{
+					"name": "CollectionsProvider",
+					"line": 33,
+					"isDefault": false
+				},
+				{
+					"name": "useCollections",
+					"line": 80,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "preloadActiveOrganizationCollections",
+					"callee": "preloadCollections(activeOrganizationId).catch",
+					"lineNumber": 25
+				},
+				{
+					"caller": "preloadActiveOrganizationCollections",
+					"callee": "preloadCollections",
+					"lineNumber": 25
+				},
+				{
+					"caller": "preloadActiveOrganizationCollections",
+					"callee": "console.error",
+					"lineNumber": 26
+				},
+				{
+					"caller": "CollectionsProvider",
+					"callee": "authClient.useSession",
+					"lineNumber": 34
+				},
+				{
+					"caller": "CollectionsProvider",
+					"callee": "useState",
+					"lineNumber": 35
+				},
+				{
+					"caller": "CollectionsProvider",
+					"callee": "useCallback",
+					"lineNumber": 40
+				},
+				{
+					"caller": "CollectionsProvider",
+					"callee": "setIsSwitching",
+					"lineNumber": 43
+				},
+				{
+					"caller": "CollectionsProvider",
+					"callee": "authClient.organization.setActive",
+					"lineNumber": 45
+				},
+				{
+					"caller": "CollectionsProvider",
+					"callee": "preloadCollections",
+					"lineNumber": 46
+				},
+				{
+					"caller": "CollectionsProvider",
+					"callee": "refetchSession",
+					"lineNumber": 47
+				},
+				{
+					"caller": "CollectionsProvider",
+					"callee": "setIsSwitching",
+					"lineNumber": 49
+				},
+				{
+					"caller": "CollectionsProvider",
+					"callee": "useEffect",
+					"lineNumber": 55
+				},
+				{
+					"caller": "CollectionsProvider",
+					"callee": "preloadActiveOrganizationCollections",
+					"lineNumber": 56
+				},
+				{
+					"caller": "CollectionsProvider",
+					"callee": "useMemo",
+					"lineNumber": 59
+				},
+				{
+					"caller": "CollectionsProvider",
+					"callee": "getCollections",
+					"lineNumber": 60
+				},
+				{
+					"caller": "CollectionsProvider",
+					"callee": "useMemo",
+					"lineNumber": 64
+				},
+				{
+					"caller": "useCollections",
+					"callee": "useContext",
+					"lineNumber": 81
+				}
+			],
+			"metrics": {
+				"importCount": 4,
+				"exportCount": 3,
+				"functionCount": 3,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/account/components/AccountSettings/AccountSettings.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 197,
+			"nonEmptyLines": 173,
+			"functions": [
+				{
+					"name": "AccountSettings",
+					"startLine": 27,
+					"endLine": 177,
+					"params": ["{ visibleItems }"]
+				},
+				{
+					"name": "SettingRow",
+					"startLine": 185,
+					"endLine": 197,
+					"params": ["{ label, hint, children }"]
+				}
+			],
+			"exports": [
+				{
+					"name": "AccountSettings",
+					"line": 27,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "AccountSettings",
+					"callee": "isItemVisible",
+					"lineNumber": 28
+				},
+				{
+					"caller": "AccountSettings",
+					"callee": "isItemVisible",
+					"lineNumber": 32
+				},
+				{
+					"caller": "AccountSettings",
+					"callee": "authClient.useSession",
+					"lineNumber": 37
+				},
+				{
+					"caller": "AccountSettings",
+					"callee": "useCollections",
+					"lineNumber": 39
+				},
+				{
+					"caller": "AccountSettings",
+					"callee": "useState",
+					"lineNumber": 41
+				},
+				{
+					"caller": "AccountSettings",
+					"callee": "useState",
+					"lineNumber": 42
+				},
+				{
+					"caller": "AccountSettings",
+					"callee": "useLiveQuery",
+					"lineNumber": 44
+				},
+				{
+					"caller": "AccountSettings",
+					"callee": "q.from",
+					"lineNumber": 45
+				},
+				{
+					"caller": "AccountSettings",
+					"callee": "usersData?.find",
+					"lineNumber": 49
+				},
+				{
+					"caller": "AccountSettings",
+					"callee": "useSignOut",
+					"lineNumber": 51
+				},
+				{
+					"caller": "AccountSettings",
+					"callee": "electronTrpc.window.selectImageFile.useMutation",
+					"lineNumber": 53
+				},
+				{
+					"caller": "AccountSettings",
+					"callee": "useEffect",
+					"lineNumber": 55
+				},
+				{
+					"caller": "AccountSettings",
+					"callee": "setNameValue",
+					"lineNumber": 57
+				},
+				{
+					"caller": "AccountSettings",
+					"callee": "setAvatarPreview",
+					"lineNumber": 58
+				},
+				{
+					"caller": "handleAvatarUpload",
+					"callee": "selectImageMutation.mutateAsync",
+					"lineNumber": 65
+				},
+				{
+					"caller": "handleAvatarUpload",
+					"callee": "parseBase64DataUrl",
+					"lineNumber": 68
+				},
+				{
+					"caller": "handleAvatarUpload",
+					"callee": "getImageExtensionFromMimeType",
+					"lineNumber": 69
+				},
+				{
+					"caller": "handleAvatarUpload",
+					"callee": "apiTrpcClient.user.uploadAvatar.mutate",
+					"lineNumber": 71
+				},
+				{
+					"caller": "handleAvatarUpload",
+					"callee": "setAvatarPreview",
+					"lineNumber": 77
+				},
+				{
+					"caller": "handleAvatarUpload",
+					"callee": "toast.success",
+					"lineNumber": 78
+				},
+				{
+					"caller": "handleAvatarUpload",
+					"callee": "toast.error",
+					"lineNumber": 80
+				},
+				{
+					"caller": "handleNameBlur",
+					"callee": "setNameValue",
+					"lineNumber": 88
+				},
+				{
+					"caller": "handleNameBlur",
+					"callee": "apiTrpcClient.user.updateProfile.mutate",
+					"lineNumber": 93
+				},
+				{
+					"caller": "handleNameBlur",
+					"callee": "toast.success",
+					"lineNumber": 94
+				},
+				{
+					"caller": "handleNameBlur",
+					"callee": "toast.error",
+					"lineNumber": 96
+				},
+				{
+					"caller": "handleNameBlur",
+					"callee": "setNameValue",
+					"lineNumber": 97
+				},
+				{
+					"caller": "AccountSettings",
+					"callee": "setNameValue",
+					"lineNumber": 135
+				},
+				{
+					"caller": "AccountSettings",
+					"callee": "signOut",
+					"lineNumber": 165
+				},
+				{
+					"caller": "AccountSettings",
+					"callee": "toast.success",
+					"lineNumber": 166
+				}
+			],
+			"metrics": {
+				"importCount": 8,
+				"exportCount": 1,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/account/components/AccountSettings/components/ProfileSkeleton/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "ProfileSkeleton",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/account/components/AccountSettings/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "AccountSettings",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/account/page.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 22,
+			"nonEmptyLines": 18,
+			"functions": [
+				{
+					"name": "AccountSettingsPage",
+					"startLine": 11,
+					"endLine": 22,
+					"params": []
+				}
+			],
+			"exports": [
+				{
+					"name": "Route",
+					"line": 7,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "AccountSettingsPage",
+					"callee": "useSettingsSearchQuery",
+					"lineNumber": 12
+				},
+				{
+					"caller": "AccountSettingsPage",
+					"callee": "useMemo",
+					"lineNumber": 14
+				},
+				{
+					"caller": "AccountSettingsPage",
+					"callee": "getMatchingItemsForSection(searchQuery, \"account\").map",
+					"lineNumber": 16
+				},
+				{
+					"caller": "AccountSettingsPage",
+					"callee": "getMatchingItemsForSection",
+					"lineNumber": 16
+				}
+			],
+			"metrics": {
+				"importCount": 3,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/agents/components/AgentsSettings/AgentsSettings.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 74,
+			"nonEmptyLines": 68,
+			"functions": [
+				{
+					"name": "AgentsSettings",
+					"startLine": 17,
+					"endLine": 26,
+					"params": ["{\n\tvisibleItems,\n\tinitialAgentPresetId,\n}"]
+				},
+				{
+					"name": "V1AgentsSettings",
+					"startLine": 28,
+					"endLine": 74,
+					"params": ["{ visibleItems }"]
+				}
+			],
+			"exports": [
+				{
+					"name": "AgentsSettings",
+					"line": 17,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "AgentsSettings",
+					"callee": "useIsV2CloudEnabled",
+					"lineNumber": 21
+				},
+				{
+					"caller": "V1AgentsSettings",
+					"callee": "electronTrpc.settings.getAgentPresets.useQuery",
+					"lineNumber": 30
+				},
+				{
+					"caller": "V1AgentsSettings",
+					"callee": "isItemVisible",
+					"lineNumber": 32
+				},
+				{
+					"caller": "V1AgentsSettings",
+					"callee": "isItemVisible",
+					"lineNumber": 36
+				},
+				{
+					"caller": "V1AgentsSettings",
+					"callee": "isItemVisible",
+					"lineNumber": 40
+				},
+				{
+					"caller": "V1AgentsSettings",
+					"callee": "presets.map",
+					"lineNumber": 61
+				}
+			],
+			"metrics": {
+				"importCount": 5,
+				"exportCount": 1,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/agents/components/AgentsSettings/components/AgentCard/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "AgentCard",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/agents/components/AgentsSettings/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "AgentsSettings",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/agents/components/V2AgentsSettings/components/AgentsSettingsSidebar/AgentsSettingsSidebar.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 209,
+			"nonEmptyLines": 200,
+			"functions": [
+				{
+					"name": "AgentsSettingsSidebar",
+					"startLine": 50,
+					"endLine": 152,
+					"params": [
+						"{\n\tconfigs,\n\tpresets,\n\tselectedAgentId,\n\tonSelectAgent,\n\tonAddAgent,\n\tonCreateCustomAgent,\n\tonReorder,\n\tonResetToDefaults,\n\tisAdding,\n\tisResetting,\n}"
+					]
+				},
+				{
+					"name": "AgentSidebarRow",
+					"startLine": 160,
+					"endLine": 209,
+					"params": ["{ row, isActive, onSelect }"]
+				}
+			],
+			"exports": [
+				{
+					"name": "AgentsSettingsSidebar",
+					"line": 50,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "AgentsSettingsSidebar",
+					"callee": "useMemo",
+					"lineNumber": 62
+				},
+				{
+					"caller": "AgentsSettingsSidebar",
+					"callee": "configs.map",
+					"lineNumber": 62
+				},
+				{
+					"caller": "AgentsSettingsSidebar",
+					"callee": "useSensors",
+					"lineNumber": 64
+				},
+				{
+					"caller": "AgentsSettingsSidebar",
+					"callee": "useSensor",
+					"lineNumber": 65
+				},
+				{
+					"caller": "AgentsSettingsSidebar",
+					"callee": "useSensor",
+					"lineNumber": 66
+				},
+				{
+					"caller": "AgentsSettingsSidebar",
+					"callee": "useSensor",
+					"lineNumber": 69
+				},
+				{
+					"caller": "handleDragEnd",
+					"callee": "sortableIds.indexOf",
+					"lineNumber": 75
+				},
+				{
+					"caller": "handleDragEnd",
+					"callee": "String",
+					"lineNumber": 75
+				},
+				{
+					"caller": "handleDragEnd",
+					"callee": "sortableIds.indexOf",
+					"lineNumber": 76
+				},
+				{
+					"caller": "handleDragEnd",
+					"callee": "String",
+					"lineNumber": 76
+				},
+				{
+					"caller": "handleDragEnd",
+					"callee": "onReorder",
+					"lineNumber": 78
+				},
+				{
+					"caller": "handleDragEnd",
+					"callee": "arrayMove",
+					"lineNumber": 78
+				},
+				{
+					"caller": "AgentsSettingsSidebar",
+					"callee": "settingsListItemClass",
+					"lineNumber": 87
+				},
+				{
+					"caller": "AgentsSettingsSidebar",
+					"callee": "presets.map",
+					"lineNumber": 99
+				},
+				{
+					"caller": "AgentsSettingsSidebar",
+					"callee": "onAddAgent",
+					"lineNumber": 102
+				},
+				{
+					"caller": "AgentsSettingsSidebar",
+					"callee": "onResetToDefaults",
+					"lineNumber": 111
+				},
+				{
+					"caller": "AgentsSettingsSidebar",
+					"callee": "row.label.toLowerCase().includes",
+					"lineNumber": 136
+				},
+				{
+					"caller": "AgentsSettingsSidebar",
+					"callee": "row.label.toLowerCase",
+					"lineNumber": 136
+				},
+				{
+					"caller": "AgentsSettingsSidebar",
+					"callee": "q.toLowerCase",
+					"lineNumber": 136
+				},
+				{
+					"caller": "AgentsSettingsSidebar",
+					"callee": "onSelectAgent",
+					"lineNumber": 145
+				},
+				{
+					"caller": "AgentSidebarRow",
+					"callee": "useSortable",
+					"lineNumber": 169
+				},
+				{
+					"caller": "AgentSidebarRow",
+					"callee": "CSS.Translate.toString",
+					"lineNumber": 175
+				},
+				{
+					"caller": "AgentSidebarRow",
+					"callee": "cn",
+					"lineNumber": 179
+				},
+				{
+					"caller": "AgentSidebarRow",
+					"callee": "settingsListItemClass",
+					"lineNumber": 184
+				},
+				{
+					"caller": "AgentSidebarRow",
+					"callee": "cn",
+					"lineNumber": 198
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 1,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/agents/components/V2AgentsSettings/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "V2AgentsSettings",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		}
+	]
+}

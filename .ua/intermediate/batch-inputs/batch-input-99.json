@@ -1,0 +1,488 @@
+{
+	"batchIndex": 99,
+	"files": [
+		{
+			"path": "packages/trpc/src/router/chat/chat.ts",
+			"language": "typescript",
+			"sizeLines": 210,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/trpc/src/router/chat/index.ts",
+			"language": "typescript",
+			"sizeLines": 1,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/trpc/src/router/chat/utils/upload-chat-attachment/index.ts",
+			"language": "typescript",
+			"sizeLines": 1,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/trpc/src/router/device/device.ts",
+			"language": "typescript",
+			"sizeLines": 61,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/trpc/src/router/device/index.ts",
+			"language": "typescript",
+			"sizeLines": 1,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/trpc/src/router/host/host.ts",
+			"language": "typescript",
+			"sizeLines": 303,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/trpc/src/router/host/index.ts",
+			"language": "typescript",
+			"sizeLines": 1,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/trpc/src/router/integration/github/github.ts",
+			"language": "typescript",
+			"sizeLines": 244,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/trpc/src/router/integration/github/index.ts",
+			"language": "typescript",
+			"sizeLines": 1,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/trpc/src/router/integration/index.ts",
+			"language": "typescript",
+			"sizeLines": 1,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/trpc/src/router/integration/integration.ts",
+			"language": "typescript",
+			"sizeLines": 35,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/trpc/src/router/integration/linear/constants.ts",
+			"language": "typescript",
+			"sizeLines": 3,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/trpc/src/router/integration/linear/index.ts",
+			"language": "typescript",
+			"sizeLines": 1,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/trpc/src/router/integration/linear/linear.ts",
+			"language": "typescript",
+			"sizeLines": 165,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/trpc/src/router/integration/linear/refresh.ts",
+			"language": "typescript",
+			"sizeLines": 162,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/trpc/src/router/integration/linear/utils.ts",
+			"language": "typescript",
+			"sizeLines": 89,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/trpc/src/router/integration/slack/index.ts",
+			"language": "typescript",
+			"sizeLines": 2,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/trpc/src/router/integration/slack/slack.ts",
+			"language": "typescript",
+			"sizeLines": 57,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/trpc/src/router/integration/utils.ts",
+			"language": "typescript",
+			"sizeLines": 71,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/trpc/src/router/organization/index.ts",
+			"language": "typescript",
+			"sizeLines": 1,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/trpc/src/router/organization/members.ts",
+			"language": "typescript",
+			"sizeLines": 44,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/trpc/src/router/organization/organization.ts",
+			"language": "typescript",
+			"sizeLines": 615,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/trpc/src/router/project/index.ts",
+			"language": "typescript",
+			"sizeLines": 1,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/trpc/src/router/project/project.ts",
+			"language": "typescript",
+			"sizeLines": 180,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/trpc/src/router/project/secrets/index.ts",
+			"language": "typescript",
+			"sizeLines": 1,
+			"fileCategory": "code"
+		}
+	],
+	"batchImportData": {
+		"packages/trpc/src/router/chat/chat.ts": [
+			"packages/trpc/src/router/chat/utils/upload-chat-attachment/index.ts",
+			"packages/trpc/src/trpc.ts"
+		],
+		"packages/trpc/src/router/chat/index.ts": [],
+		"packages/trpc/src/router/chat/utils/upload-chat-attachment/index.ts": [],
+		"packages/trpc/src/router/device/device.ts": ["packages/trpc/src/trpc.ts"],
+		"packages/trpc/src/router/device/index.ts": [],
+		"packages/trpc/src/router/host/host.ts": ["packages/trpc/src/trpc.ts"],
+		"packages/trpc/src/router/host/index.ts": [],
+		"packages/trpc/src/router/integration/github/github.ts": [
+			"packages/trpc/src/env.ts",
+			"packages/trpc/src/router/integration/utils.ts",
+			"packages/trpc/src/trpc.ts"
+		],
+		"packages/trpc/src/router/integration/github/index.ts": [],
+		"packages/trpc/src/router/integration/index.ts": [],
+		"packages/trpc/src/router/integration/integration.ts": [
+			"packages/trpc/src/router/integration/github/index.ts",
+			"packages/trpc/src/router/integration/linear/index.ts",
+			"packages/trpc/src/router/integration/slack/index.ts",
+			"packages/trpc/src/router/integration/utils.ts",
+			"packages/trpc/src/trpc.ts"
+		],
+		"packages/trpc/src/router/integration/linear/constants.ts": [],
+		"packages/trpc/src/router/integration/linear/index.ts": [],
+		"packages/trpc/src/router/integration/linear/linear.ts": [
+			"packages/trpc/src/router/integration/linear/refresh.ts",
+			"packages/trpc/src/router/integration/utils.ts",
+			"packages/trpc/src/trpc.ts"
+		],
+		"packages/trpc/src/router/integration/linear/refresh.ts": [
+			"packages/trpc/src/env.ts",
+			"packages/trpc/src/router/integration/linear/constants.ts",
+			"packages/trpc/src/router/integration/linear/utils.ts"
+		],
+		"packages/trpc/src/router/integration/linear/utils.ts": [
+			"packages/trpc/src/router/integration/linear/constants.ts",
+			"packages/trpc/src/router/integration/linear/refresh.ts"
+		],
+		"packages/trpc/src/router/integration/slack/index.ts": [],
+		"packages/trpc/src/router/integration/slack/slack.ts": [
+			"packages/trpc/src/router/integration/utils.ts",
+			"packages/trpc/src/trpc.ts"
+		],
+		"packages/trpc/src/router/integration/utils.ts": [],
+		"packages/trpc/src/router/organization/index.ts": [],
+		"packages/trpc/src/router/organization/members.ts": [
+			"packages/trpc/src/router/utils/active-org.ts",
+			"packages/trpc/src/trpc.ts"
+		],
+		"packages/trpc/src/router/organization/organization.ts": [
+			"packages/trpc/src/lib/upload.ts",
+			"packages/trpc/src/router/integration/utils.ts",
+			"packages/trpc/src/router/organization/members.ts",
+			"packages/trpc/src/trpc.ts"
+		],
+		"packages/trpc/src/router/project/index.ts": [],
+		"packages/trpc/src/router/project/project.ts": [
+			"packages/trpc/src/router/integration/utils.ts",
+			"packages/trpc/src/router/project/secrets/index.ts",
+			"packages/trpc/src/router/utils/org-resource-access.ts",
+			"packages/trpc/src/trpc.ts"
+		],
+		"packages/trpc/src/router/project/secrets/index.ts": []
+	},
+	"neighborMap": {
+		"packages/trpc/src/router/chat/chat.ts": [
+			{
+				"path": "packages/trpc/src/trpc.ts",
+				"batchIndex": 105,
+				"symbols": [
+					"createTRPCContext",
+					"createTRPCRouter",
+					"createCallerFactory",
+					"publicProcedure",
+					"protectedProcedure",
+					"jwtProcedure",
+					"adminProcedure"
+				]
+			}
+		],
+		"packages/trpc/src/router/chat/index.ts": [
+			{
+				"path": "packages/trpc/src/root.ts",
+				"batchIndex": 98,
+				"symbols": ["appRouter", "createCaller"]
+			}
+		],
+		"packages/trpc/src/router/device/device.ts": [
+			{
+				"path": "packages/trpc/src/trpc.ts",
+				"batchIndex": 105,
+				"symbols": [
+					"createTRPCContext",
+					"createTRPCRouter",
+					"createCallerFactory",
+					"publicProcedure",
+					"protectedProcedure",
+					"jwtProcedure",
+					"adminProcedure"
+				]
+			}
+		],
+		"packages/trpc/src/router/device/index.ts": [
+			{
+				"path": "packages/trpc/src/root.ts",
+				"batchIndex": 98,
+				"symbols": ["appRouter", "createCaller"]
+			}
+		],
+		"packages/trpc/src/router/host/host.ts": [
+			{
+				"path": "packages/trpc/src/trpc.ts",
+				"batchIndex": 105,
+				"symbols": [
+					"createTRPCContext",
+					"createTRPCRouter",
+					"createCallerFactory",
+					"publicProcedure",
+					"protectedProcedure",
+					"jwtProcedure",
+					"adminProcedure"
+				]
+			}
+		],
+		"packages/trpc/src/router/host/index.ts": [
+			{
+				"path": "packages/trpc/src/root.ts",
+				"batchIndex": 98,
+				"symbols": ["appRouter", "createCaller"]
+			}
+		],
+		"packages/trpc/src/router/integration/github/github.ts": [
+			{
+				"path": "packages/trpc/src/env.ts",
+				"batchIndex": 98,
+				"symbols": ["env"]
+			},
+			{
+				"path": "packages/trpc/src/trpc.ts",
+				"batchIndex": 105,
+				"symbols": [
+					"createTRPCContext",
+					"createTRPCRouter",
+					"createCallerFactory",
+					"publicProcedure",
+					"protectedProcedure",
+					"jwtProcedure",
+					"adminProcedure"
+				]
+			}
+		],
+		"packages/trpc/src/router/integration/index.ts": [
+			{
+				"path": "packages/trpc/src/root.ts",
+				"batchIndex": 98,
+				"symbols": ["appRouter", "createCaller"]
+			}
+		],
+		"packages/trpc/src/router/integration/integration.ts": [
+			{
+				"path": "packages/trpc/src/trpc.ts",
+				"batchIndex": 105,
+				"symbols": [
+					"createTRPCContext",
+					"createTRPCRouter",
+					"createCallerFactory",
+					"publicProcedure",
+					"protectedProcedure",
+					"jwtProcedure",
+					"adminProcedure"
+				]
+			}
+		],
+		"packages/trpc/src/router/integration/linear/linear.ts": [
+			{
+				"path": "packages/trpc/src/trpc.ts",
+				"batchIndex": 105,
+				"symbols": [
+					"createTRPCContext",
+					"createTRPCRouter",
+					"createCallerFactory",
+					"publicProcedure",
+					"protectedProcedure",
+					"jwtProcedure",
+					"adminProcedure"
+				]
+			}
+		],
+		"packages/trpc/src/router/integration/linear/refresh.ts": [
+			{
+				"path": "packages/trpc/src/env.ts",
+				"batchIndex": 98,
+				"symbols": ["env"]
+			}
+		],
+		"packages/trpc/src/router/integration/slack/slack.ts": [
+			{
+				"path": "packages/trpc/src/trpc.ts",
+				"batchIndex": 105,
+				"symbols": [
+					"createTRPCContext",
+					"createTRPCRouter",
+					"createCallerFactory",
+					"publicProcedure",
+					"protectedProcedure",
+					"jwtProcedure",
+					"adminProcedure"
+				]
+			}
+		],
+		"packages/trpc/src/router/integration/utils.ts": [
+			{
+				"path": "packages/trpc/src/router/project/secrets/secrets.ts",
+				"batchIndex": 105,
+				"symbols": ["secretsRouter"]
+			},
+			{
+				"path": "packages/trpc/src/router/task/task.ts",
+				"batchIndex": 105,
+				"symbols": ["taskRouter"]
+			},
+			{
+				"path": "packages/trpc/src/router/team/team.ts",
+				"batchIndex": 105,
+				"symbols": ["teamRouter"]
+			},
+			{
+				"path": "packages/trpc/src/router/utils/active-org.ts",
+				"batchIndex": 105,
+				"symbols": [
+					"requireActiveOrgId",
+					"requireActiveOrgMembership",
+					"requireActiveOrgMembershipWithSubscription"
+				]
+			},
+			{
+				"path": "packages/trpc/src/router/utils/org-resource-access.ts",
+				"batchIndex": 105,
+				"symbols": ["requireOrgScopedResource", "requireOrgResourceAccess"]
+			},
+			{
+				"path": "packages/trpc/src/router/v2-project/v2-project.ts",
+				"batchIndex": 105,
+				"symbols": ["v2ProjectRouter"]
+			},
+			{
+				"path": "packages/trpc/src/router/workspace/workspace.ts",
+				"batchIndex": 105,
+				"symbols": ["workspaceRouter"]
+			}
+		],
+		"packages/trpc/src/router/organization/index.ts": [
+			{
+				"path": "packages/trpc/src/root.ts",
+				"batchIndex": 98,
+				"symbols": ["appRouter", "createCaller"]
+			}
+		],
+		"packages/trpc/src/router/organization/members.ts": [
+			{
+				"path": "packages/trpc/src/router/utils/active-org.ts",
+				"batchIndex": 105,
+				"symbols": [
+					"requireActiveOrgId",
+					"requireActiveOrgMembership",
+					"requireActiveOrgMembershipWithSubscription"
+				]
+			},
+			{
+				"path": "packages/trpc/src/trpc.ts",
+				"batchIndex": 105,
+				"symbols": [
+					"createTRPCContext",
+					"createTRPCRouter",
+					"createCallerFactory",
+					"publicProcedure",
+					"protectedProcedure",
+					"jwtProcedure",
+					"adminProcedure"
+				]
+			}
+		],
+		"packages/trpc/src/router/organization/organization.ts": [
+			{
+				"path": "packages/trpc/src/lib/upload.ts",
+				"batchIndex": 98,
+				"symbols": ["uploadImage", "generateImagePathname"]
+			},
+			{
+				"path": "packages/trpc/src/trpc.ts",
+				"batchIndex": 105,
+				"symbols": [
+					"createTRPCContext",
+					"createTRPCRouter",
+					"createCallerFactory",
+					"publicProcedure",
+					"protectedProcedure",
+					"jwtProcedure",
+					"adminProcedure"
+				]
+			}
+		],
+		"packages/trpc/src/router/project/index.ts": [
+			{
+				"path": "packages/trpc/src/root.ts",
+				"batchIndex": 98,
+				"symbols": ["appRouter", "createCaller"]
+			}
+		],
+		"packages/trpc/src/router/project/project.ts": [
+			{
+				"path": "packages/trpc/src/router/utils/org-resource-access.ts",
+				"batchIndex": 105,
+				"symbols": ["requireOrgScopedResource", "requireOrgResourceAccess"]
+			},
+			{
+				"path": "packages/trpc/src/trpc.ts",
+				"batchIndex": 105,
+				"symbols": [
+					"createTRPCContext",
+					"createTRPCRouter",
+					"createCallerFactory",
+					"publicProcedure",
+					"protectedProcedure",
+					"jwtProcedure",
+					"adminProcedure"
+				]
+			}
+		]
+	}
+}

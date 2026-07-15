@@ -1,0 +1,265 @@
+{
+	"nodes": [
+		{
+			"id": "file:src/renderer/components/Chat/ChatInterface/components/TiptapPromptEditor/SlashCommandNode.tsx",
+			"type": "file",
+			"name": "SlashCommandNode.tsx",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/TiptapPromptEditor/SlashCommandNode.tsx",
+			"summary": "Tiptap custom node for committed slash commands with inline argument editing and option selection.",
+			"tags": ["tiptap", "custom-node", "slash-command", "editor"],
+			"complexity": "complex"
+		},
+		{
+			"id": "function:src/renderer/components/Chat/ChatInterface/components/TiptapPromptEditor/SlashCommandNode.tsx:SlashCommandChip",
+			"type": "function",
+			"name": "SlashCommandChip",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/TiptapPromptEditor/SlashCommandNode.tsx",
+			"lineRange": [18, 306],
+			"summary": "Interactive chip rendering a slash command with editable arguments, keyboard handling, and a filtered options dropdown.",
+			"tags": ["component", "chip", "inline-editing", "keyboard-handler"],
+			"complexity": "complex"
+		},
+		{
+			"id": "file:src/renderer/components/Chat/ChatInterface/components/TiptapPromptEditor/SlashCommandPreviewPopover.tsx",
+			"type": "file",
+			"name": "SlashCommandPreviewPopover.tsx",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/TiptapPromptEditor/SlashCommandPreviewPopover.tsx",
+			"summary": "Popover showing a debounced preview of the resolved slash command anchored to its chip in the editor.",
+			"tags": ["component", "popover", "slash-command", "preview"],
+			"complexity": "complex"
+		},
+		{
+			"id": "function:src/renderer/components/Chat/ChatInterface/components/TiptapPromptEditor/SlashCommandPreviewPopover.tsx:SlashCommandPreviewPopover",
+			"type": "function",
+			"name": "SlashCommandPreviewPopover",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/TiptapPromptEditor/SlashCommandPreviewPopover.tsx",
+			"lineRange": [34, 158],
+			"summary": "Computes chip position, debounces the slash input, and fetches/renders the command preview.",
+			"tags": ["component", "popover", "debounce", "preview"],
+			"complexity": "complex"
+		},
+		{
+			"id": "file:src/renderer/components/Chat/ChatInterface/components/TiptapPromptEditor/TiptapPromptEditor.tsx",
+			"type": "file",
+			"name": "TiptapPromptEditor.tsx",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/TiptapPromptEditor/TiptapPromptEditor.tsx",
+			"summary": "Rich-text prompt editor built on Tiptap supporting @file mentions, /slash commands, suggestions, and file paste.",
+			"tags": ["component", "editor", "tiptap", "rich-text", "chat-input"],
+			"complexity": "complex",
+			"languageNotes": "Configures multiple Tiptap Extensions with ProseMirror Suggestion plugins for mention and slash-command autocomplete."
+		},
+		{
+			"id": "function:src/renderer/components/Chat/ChatInterface/components/TiptapPromptEditor/TiptapPromptEditor.tsx:TiptapPromptEditor",
+			"type": "function",
+			"name": "TiptapPromptEditor",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/TiptapPromptEditor/TiptapPromptEditor.tsx",
+			"lineRange": [83, 806],
+			"summary": "Main editor component wiring Tiptap extensions, mention/slash suggestion state, hotkeys, and text serialization.",
+			"tags": ["component", "editor", "event-handler", "state-management"],
+			"complexity": "complex"
+		},
+		{
+			"id": "file:src/renderer/components/Chat/ChatInterface/components/TiptapPromptEditor/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/TiptapPromptEditor/index.ts",
+			"summary": "Barrel exporting TiptapPromptEditor component and its props type.",
+			"tags": ["barrel", "export", "component"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/components/Chat/ChatInterface/components/TiptapPromptEditor/parseTextToEditorContent.ts",
+			"type": "file",
+			"name": "parseTextToEditorContent.ts",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/TiptapPromptEditor/parseTextToEditorContent.ts",
+			"summary": "Parses plain text with @mentions into Tiptap editor document nodes.",
+			"tags": ["utility", "serialization", "parser", "editor"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:src/renderer/components/Chat/ChatInterface/components/TiptapPromptEditor/parseTextToEditorContent.ts:parseTextToEditorContent",
+			"type": "function",
+			"name": "parseTextToEditorContent",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/TiptapPromptEditor/parseTextToEditorContent.ts",
+			"lineRange": [16, 53],
+			"summary": "Splits text into lines and converts @mention tokens into file-mention inline nodes.",
+			"tags": ["utility", "parser", "text-processing"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "file:src/renderer/components/Chat/ChatInterface/components/TiptapPromptEditor/serializeEditorToText.ts",
+			"type": "file",
+			"name": "serializeEditorToText.ts",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/TiptapPromptEditor/serializeEditorToText.ts",
+			"summary": "Serializes Tiptap editor document back into plain text preserving mentions and slash commands.",
+			"tags": ["utility", "serialization", "editor"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:src/renderer/components/Chat/ChatInterface/components/TiptapPromptEditor/serializeEditorToText.ts:serializeEditorToText",
+			"type": "function",
+			"name": "serializeEditorToText",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/TiptapPromptEditor/serializeEditorToText.ts",
+			"lineRange": [8, 33],
+			"summary": "Walks editor document nodes and joins their text content into a plain string.",
+			"tags": ["utility", "serialization", "text-processing"],
+			"complexity": "simple"
+		}
+	],
+	"edges": [
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/TiptapPromptEditor/SlashCommandNode.tsx",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/TiptapPromptEditor/SlashCommandNode.tsx:SlashCommandChip",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/TiptapPromptEditor/SlashCommandPreviewPopover.tsx",
+			"target": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/TiptapPromptEditor/SlashCommandPreviewPopover.tsx",
+			"target": "file:src/renderer/hooks/useDebouncedValue.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/TiptapPromptEditor/SlashCommandPreviewPopover.tsx",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/TiptapPromptEditor/SlashCommandPreviewPopover.tsx:SlashCommandPreviewPopover",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/TiptapPromptEditor/SlashCommandPreviewPopover.tsx",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/TiptapPromptEditor/SlashCommandPreviewPopover.tsx:SlashCommandPreviewPopover",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/TiptapPromptEditor/TiptapPromptEditor.tsx",
+			"target": "file:src/renderer/components/Chat/ChatInterface/components/SlashCommandMenu/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/TiptapPromptEditor/TiptapPromptEditor.tsx",
+			"target": "file:src/renderer/components/Chat/ChatInterface/components/TiptapPromptEditor/FileMentionNode.tsx",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/TiptapPromptEditor/TiptapPromptEditor.tsx",
+			"target": "file:src/renderer/components/Chat/ChatInterface/components/TiptapPromptEditor/parseTextToEditorContent.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/TiptapPromptEditor/TiptapPromptEditor.tsx",
+			"target": "file:src/renderer/components/Chat/ChatInterface/components/TiptapPromptEditor/serializeEditorToText.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/TiptapPromptEditor/TiptapPromptEditor.tsx",
+			"target": "file:src/renderer/components/Chat/ChatInterface/components/TiptapPromptEditor/SlashCommandNode.tsx",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/TiptapPromptEditor/TiptapPromptEditor.tsx",
+			"target": "file:src/renderer/components/Chat/ChatInterface/components/TiptapPromptEditor/SlashCommandPreviewPopover.tsx",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/TiptapPromptEditor/TiptapPromptEditor.tsx",
+			"target": "file:src/renderer/components/Chat/ChatInterface/hooks/useSlashCommands/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/TiptapPromptEditor/TiptapPromptEditor.tsx",
+			"target": "file:src/renderer/components/Chat/ChatInterface/types.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/TiptapPromptEditor/TiptapPromptEditor.tsx",
+			"target": "file:src/renderer/hooks/useDebouncedValue.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/TiptapPromptEditor/TiptapPromptEditor.tsx",
+			"target": "file:src/renderer/hotkeys/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/TiptapPromptEditor/TiptapPromptEditor.tsx",
+			"target": "file:src/renderer/lib/fileIcons/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/TiptapPromptEditor/TiptapPromptEditor.tsx",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/TiptapPromptEditor/TiptapPromptEditor.tsx:TiptapPromptEditor",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/TiptapPromptEditor/TiptapPromptEditor.tsx",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/TiptapPromptEditor/TiptapPromptEditor.tsx:TiptapPromptEditor",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/TiptapPromptEditor/parseTextToEditorContent.ts",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/TiptapPromptEditor/parseTextToEditorContent.ts:parseTextToEditorContent",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/TiptapPromptEditor/parseTextToEditorContent.ts",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/TiptapPromptEditor/parseTextToEditorContent.ts:parseTextToEditorContent",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/TiptapPromptEditor/serializeEditorToText.ts",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/TiptapPromptEditor/serializeEditorToText.ts:serializeEditorToText",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/TiptapPromptEditor/serializeEditorToText.ts",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/TiptapPromptEditor/serializeEditorToText.ts:serializeEditorToText",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		}
+	]
+}

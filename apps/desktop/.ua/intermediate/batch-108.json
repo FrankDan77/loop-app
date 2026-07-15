@@ -1,0 +1,852 @@
+{
+	"nodes": [
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/components/shared/StatusIcon/constants.ts",
+			"type": "file",
+			"name": "constants.ts",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/components/shared/StatusIcon/constants.ts",
+			"summary": "Defines the STATUS_COLORS lookup mapping task status types to their display colors for the status icon.",
+			"tags": ["constants", "data-model", "tasks"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/components/shared/StatusIcon/StatusIcon.tsx",
+			"type": "file",
+			"name": "StatusIcon.tsx",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/components/shared/StatusIcon/StatusIcon.tsx",
+			"summary": "Renders an SVG status icon that visually reflects a task's status type, optional progress, and hover state.",
+			"tags": ["component", "tasks", "status", "svg"],
+			"complexity": "complex"
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/components/TasksTableView/TasksTableView.test.ts",
+			"type": "file",
+			"name": "TasksTableView.test.ts",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/components/TasksTableView/TasksTableView.test.ts",
+			"summary": "Source-level test that reads the TasksTableView component file to assert structural conventions.",
+			"tags": ["test", "tasks", "static-analysis"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/components/TasksTopBar/components/CreateTaskDialog/components/CreateTaskAssigneePicker/CreateTaskAssigneePicker.tsx",
+			"type": "file",
+			"name": "CreateTaskAssigneePicker.tsx",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/components/TasksTopBar/components/CreateTaskDialog/components/CreateTaskAssigneePicker/CreateTaskAssigneePicker.tsx",
+			"summary": "Searchable popover picker for selecting a task assignee from the list of workspace users.",
+			"tags": ["component", "tasks", "picker", "search"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/hooks/useHybridSearch/useHybridSearch.ts",
+			"type": "file",
+			"name": "useHybridSearch.ts",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/hooks/useHybridSearch/useHybridSearch.ts",
+			"summary": "Hook combining exact and fuzzy Fuse.js search over tasks, merging and deduplicating the two result sets.",
+			"tags": ["hook", "search", "tasks", "fuzzy-search"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/hooks/useTasksTable/components/LabelsCell/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/hooks/useTasksTable/components/LabelsCell/index.ts",
+			"summary": "Barrel re-exporting the LabelsCell table cell component.",
+			"tags": ["barrel", "entry-point"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/hooks/useTasksTable/components/LabelsCell/LabelsCell.tsx",
+			"type": "file",
+			"name": "LabelsCell.tsx",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/hooks/useTasksTable/components/LabelsCell/LabelsCell.tsx",
+			"summary": "Table cell rendering a task's labels as chips, truncating to the first two with an overflow count.",
+			"tags": ["component", "tasks", "table-cell", "labels"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/TasksView.test.ts",
+			"type": "file",
+			"name": "TasksView.test.ts",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/TasksView.test.ts",
+			"summary": "Source-level test reading the TasksView component to assert structural expectations.",
+			"tags": ["test", "tasks", "static-analysis"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/utils/sorting/sorting.ts",
+			"type": "file",
+			"name": "sorting.ts",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/utils/sorting/sorting.ts",
+			"summary": "Comparator utilities that order tasks, statuses, and priorities for table sorting and dropdown display.",
+			"tags": ["utility", "tasks", "sorting", "comparator"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/DiscardConfirmDialog/DiscardConfirmDialog.tsx",
+			"type": "file",
+			"name": "DiscardConfirmDialog.tsx",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/DiscardConfirmDialog/DiscardConfirmDialog.tsx",
+			"summary": "Confirmation dialog prompting the user before discarding workspace changes.",
+			"tags": ["component", "dialog", "workspace", "confirmation"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/StatusIndicator/StatusIndicator.tsx",
+			"type": "file",
+			"name": "StatusIndicator.tsx",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/StatusIndicator/StatusIndicator.tsx",
+			"summary": "Renders a workspace status icon chosen from the current status value with configurable styling.",
+			"tags": ["component", "workspace", "status"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/components/FilesTab/components/FilesTabHeaderButton/FilesTabHeaderButton.tsx",
+			"type": "file",
+			"name": "FilesTabHeaderButton.tsx",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/components/FilesTab/components/FilesTabHeaderButton/FilesTabHeaderButton.tsx",
+			"summary": "Icon button for the workspace files tab header with a loading state.",
+			"tags": ["component", "workspace", "button", "files-tab"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/components/PierreRowContextMenu/PierreRowContextMenu.tsx",
+			"type": "file",
+			"name": "PierreRowContextMenu.tsx",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/components/PierreRowContextMenu/PierreRowContextMenu.tsx",
+			"summary": "Context menu anchored to a Pierre file-tree row, closing on outside interaction.",
+			"tags": ["component", "context-menu", "workspace", "file-tree"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/components/PRActionHeader/utils/getPRFlowState/getPRFlowState.test.ts",
+			"type": "file",
+			"name": "getPRFlowState.test.ts",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/components/PRActionHeader/utils/getPRFlowState/getPRFlowState.test.ts",
+			"summary": "Unit tests covering PR flow state derivation across sync and pull-request status permutations.",
+			"tags": ["test", "pull-request", "workspace"],
+			"complexity": "complex"
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/components/PRActionHeader/utils/getPRFlowState/getPRFlowState.ts",
+			"type": "file",
+			"name": "getPRFlowState.ts",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/components/PRActionHeader/utils/getPRFlowState/getPRFlowState.ts",
+			"summary": "Derives the PR action header's flow state and selects the action button, PR link, and status badge for a workspace.",
+			"tags": ["utility", "pull-request", "workspace", "state-machine"],
+			"complexity": "complex"
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/hooks/useChangesTab/components/BaseBranchSelector/BaseBranchSelector.tsx",
+			"type": "file",
+			"name": "BaseBranchSelector.tsx",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/hooks/useChangesTab/components/BaseBranchSelector/BaseBranchSelector.tsx",
+			"summary": "Searchable dropdown for choosing the base branch to diff workspace changes against.",
+			"tags": ["component", "workspace", "git", "picker"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/hooks/useChangesTab/components/ChangesFileList/components/ChangesFoldersView/components/FolderHeader/FolderHeader.tsx",
+			"type": "file",
+			"name": "FolderHeader.tsx",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/hooks/useChangesTab/components/ChangesFileList/components/ChangesFoldersView/components/FolderHeader/FolderHeader.tsx",
+			"summary": "Collapsible folder header in the changes file list showing folder name and file count.",
+			"tags": ["component", "workspace", "file-tree", "git"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/hooks/useChangesTab/components/ChangesFileList/components/ChangesTreeView/components/ShadowRowHoverActions/ShadowRowHoverActions.tsx",
+			"type": "file",
+			"name": "ShadowRowHoverActions.tsx",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/hooks/useChangesTab/components/ChangesFileList/components/ChangesTreeView/components/ShadowRowHoverActions/ShadowRowHoverActions.tsx",
+			"summary": "Overlays hover and context-menu actions on shadow-DOM file-tree rows by tracking the hovered row's rect.",
+			"tags": ["component", "workspace", "file-tree", "hover-actions"],
+			"complexity": "complex"
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/hooks/useChangesTab/components/ChangesFileList/components/ChangesTreeView/hooks/useMeasuredTreeHeight/useMeasuredTreeHeight.ts",
+			"type": "file",
+			"name": "useMeasuredTreeHeight.ts",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/hooks/useChangesTab/components/ChangesFileList/components/ChangesTreeView/hooks/useMeasuredTreeHeight/useMeasuredTreeHeight.ts",
+			"summary": "Hook measuring the rendered height of the shadow-DOM file tree, retrying until the container is ready.",
+			"tags": ["hook", "workspace", "file-tree", "measurement"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/hooks/useChangesTab/components/ChangesFileList/components/ChangesTreeView/utils/buildTreeShape/buildTreeShape.ts",
+			"type": "file",
+			"name": "buildTreeShape.ts",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/hooks/useChangesTab/components/ChangesFileList/components/ChangesTreeView/utils/buildTreeShape/buildTreeShape.ts",
+			"summary": "Builds the directory shape (unique dirs and per-directory file counts) from a flat list of file paths.",
+			"tags": ["utility", "file-tree", "workspace"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/hooks/useChangesTab/components/CommitFilterDropdown/components/CommitRow/CommitRow.tsx",
+			"type": "file",
+			"name": "CommitRow.tsx",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/hooks/useChangesTab/components/CommitFilterDropdown/components/CommitRow/CommitRow.tsx",
+			"summary": "Renders a single commit row in the commit filter dropdown with a relative timestamp.",
+			"tags": ["component", "workspace", "git", "commit"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/SessionSelector/components/SessionSelectorItem/SessionSelectorItem.tsx",
+			"type": "file",
+			"name": "SessionSelectorItem.tsx",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/SessionSelector/components/SessionSelectorItem/SessionSelectorItem.tsx",
+			"summary": "List item in the chat session selector supporting selection and deletion of a session.",
+			"tags": ["component", "chat", "workspace", "session"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/components/ChatInputFooter/components/ChatInputDropZone/ChatInputDropZone.tsx",
+			"type": "file",
+			"name": "ChatInputDropZone.tsx",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/components/ChatInputFooter/components/ChatInputDropZone/ChatInputDropZone.tsx",
+			"summary": "Drop zone wrapping the workspace chat input, inserting dragged file mentions into the prompt.",
+			"tags": ["component", "chat", "drag-and-drop", "workspace"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/components/ChatInputFooter/components/FileDropOverlay/FileDropOverlay.tsx",
+			"type": "file",
+			"name": "FileDropOverlay.tsx",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/components/ChatInputFooter/components/FileDropOverlay/FileDropOverlay.tsx",
+			"summary": "Visual overlay shown over the workspace chat input while a file is being dragged.",
+			"tags": ["component", "chat", "drag-and-drop", "overlay"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/components/ChatInputFooter/components/LinkedIssuePill/LinkedIssuePill.tsx",
+			"type": "file",
+			"name": "LinkedIssuePill.tsx",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/components/ChatInputFooter/components/LinkedIssuePill/LinkedIssuePill.tsx",
+			"summary": "Barrel/thin module exposing the LinkedIssuePill component for the workspace chat input footer.",
+			"tags": ["barrel", "chat", "workspace"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/components/shared/StatusIcon/StatusIcon.tsx:StatusIcon",
+			"type": "function",
+			"name": "StatusIcon",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/components/shared/StatusIcon/StatusIcon.tsx",
+			"lineRange": [18, 189],
+			"summary": "Renders the appropriate SVG for a task status type, drawing progress arcs and hover affordances.",
+			"tags": ["component", "svg", "status", "tasks"],
+			"complexity": "complex"
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/components/TasksTopBar/components/CreateTaskDialog/components/CreateTaskAssigneePicker/CreateTaskAssigneePicker.tsx:CreateTaskAssigneePicker",
+			"type": "function",
+			"name": "CreateTaskAssigneePicker",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/components/TasksTopBar/components/CreateTaskDialog/components/CreateTaskAssigneePicker/CreateTaskAssigneePicker.tsx",
+			"lineRange": [21, 126],
+			"summary": "Popover assignee picker filtering users by name and email and emitting the selected user.",
+			"tags": ["component", "picker", "search", "tasks"],
+			"complexity": "complex"
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/hooks/useHybridSearch/useHybridSearch.ts:useHybridSearch",
+			"type": "function",
+			"name": "useHybridSearch",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/hooks/useHybridSearch/useHybridSearch.ts",
+			"lineRange": [18, 83],
+			"summary": "Builds exact and fuzzy Fuse indices over tasks and returns a search callback merging both match sets.",
+			"tags": ["hook", "search", "fuzzy-search", "tasks"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/hooks/useTasksTable/components/LabelsCell/LabelsCell.tsx:LabelsCell",
+			"type": "function",
+			"name": "LabelsCell",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/hooks/useTasksTable/components/LabelsCell/LabelsCell.tsx",
+			"lineRange": [9, 31],
+			"summary": "Renders up to two label chips for a task row plus an overflow indicator.",
+			"tags": ["component", "table-cell", "labels"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/utils/sorting/sorting.ts:compareTasks",
+			"type": "function",
+			"name": "compareTasks",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/utils/sorting/sorting.ts",
+			"lineRange": [69, 89],
+			"summary": "Comparator ordering tasks first by status type then by priority for the tasks table.",
+			"tags": ["comparator", "sorting", "tasks"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/utils/sorting/sorting.ts:compareStatusesForDropdown",
+			"type": "function",
+			"name": "compareStatusesForDropdown",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/utils/sorting/sorting.ts",
+			"lineRange": [95, 108],
+			"summary": "Comparator ordering status options for dropdown display.",
+			"tags": ["comparator", "sorting", "tasks"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/utils/sorting/sorting.ts:comparePrioritiesForDropdown",
+			"type": "function",
+			"name": "comparePrioritiesForDropdown",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/utils/sorting/sorting.ts",
+			"lineRange": [115, 120],
+			"summary": "Comparator ordering priority options for dropdown display.",
+			"tags": ["comparator", "sorting", "tasks"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/DiscardConfirmDialog/DiscardConfirmDialog.tsx:DiscardConfirmDialog",
+			"type": "function",
+			"name": "DiscardConfirmDialog",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/DiscardConfirmDialog/DiscardConfirmDialog.tsx",
+			"lineRange": [21, 57],
+			"summary": "Renders the discard-changes confirmation dialog and invokes the confirm handler.",
+			"tags": ["component", "dialog", "confirmation"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/StatusIndicator/StatusIndicator.tsx:getStatusIcon",
+			"type": "function",
+			"name": "getStatusIcon",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/StatusIndicator/StatusIndicator.tsx",
+			"lineRange": [29, 46],
+			"summary": "Maps a workspace status value to its corresponding icon element.",
+			"tags": ["utility", "status", "workspace"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/StatusIndicator/StatusIndicator.tsx:StatusIndicator",
+			"type": "function",
+			"name": "StatusIndicator",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/StatusIndicator/StatusIndicator.tsx",
+			"lineRange": [48, 64],
+			"summary": "Renders the workspace status icon with configurable container and icon styling.",
+			"tags": ["component", "status", "workspace"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/components/FilesTab/components/FilesTabHeaderButton/FilesTabHeaderButton.tsx:FilesTabHeaderButton",
+			"type": "function",
+			"name": "FilesTabHeaderButton",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/components/FilesTab/components/FilesTabHeaderButton/FilesTabHeaderButton.tsx",
+			"lineRange": [13, 39],
+			"summary": "Icon button for the files tab header, showing a loading indicator when busy.",
+			"tags": ["component", "button", "files-tab"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/components/PierreRowContextMenu/PierreRowContextMenu.tsx:PierreRowContextMenu",
+			"type": "function",
+			"name": "PierreRowContextMenu",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/components/PierreRowContextMenu/PierreRowContextMenu.tsx",
+			"lineRange": [21, 47],
+			"summary": "Renders a context menu anchored to a file-tree row rect, closing on dismissal.",
+			"tags": ["component", "context-menu", "file-tree"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/components/PRActionHeader/utils/getPRFlowState/getPRFlowState.ts:getPRFlowState",
+			"type": "function",
+			"name": "getPRFlowState",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/components/PRActionHeader/utils/getPRFlowState/getPRFlowState.ts",
+			"lineRange": [27, 57],
+			"summary": "Computes the PR flow state from sync and pull-request inputs for the action header.",
+			"tags": ["utility", "pull-request", "state-machine"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/components/PRActionHeader/utils/getPRFlowState/getPRFlowState.ts:selectActionButton",
+			"type": "function",
+			"name": "selectActionButton",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/components/PRActionHeader/utils/getPRFlowState/getPRFlowState.ts",
+			"lineRange": [71, 88],
+			"summary": "Selects the appropriate PR action button descriptor for a given flow state.",
+			"tags": ["utility", "pull-request", "selector"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/components/PRActionHeader/utils/getPRFlowState/getPRFlowState.ts:selectPRLink",
+			"type": "function",
+			"name": "selectPRLink",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/components/PRActionHeader/utils/getPRFlowState/getPRFlowState.ts",
+			"lineRange": [99, 117],
+			"summary": "Derives the pull-request link to display from the flow state.",
+			"tags": ["utility", "pull-request", "selector"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/components/PRActionHeader/utils/getPRFlowState/getPRFlowState.ts:selectStatusBadge",
+			"type": "function",
+			"name": "selectStatusBadge",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/components/PRActionHeader/utils/getPRFlowState/getPRFlowState.ts",
+			"lineRange": [119, 138],
+			"summary": "Selects the status badge descriptor (including unavailable and sync states) for the flow state.",
+			"tags": ["utility", "pull-request", "selector"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/hooks/useChangesTab/components/BaseBranchSelector/BaseBranchSelector.tsx:BaseBranchSelector",
+			"type": "function",
+			"name": "BaseBranchSelector",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/hooks/useChangesTab/components/BaseBranchSelector/BaseBranchSelector.tsx",
+			"lineRange": [17, 83],
+			"summary": "Searchable dropdown filtering branches and emitting the chosen base branch.",
+			"tags": ["component", "git", "picker", "search"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/hooks/useChangesTab/components/ChangesFileList/components/ChangesFoldersView/components/FolderHeader/FolderHeader.tsx:FolderHeader",
+			"type": "function",
+			"name": "FolderHeader",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/hooks/useChangesTab/components/ChangesFileList/components/ChangesFoldersView/components/FolderHeader/FolderHeader.tsx",
+			"lineRange": [19, 46],
+			"summary": "Renders a collapsible folder header with name and file count in the changes list.",
+			"tags": ["component", "file-tree", "git"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/hooks/useChangesTab/components/ChangesFileList/components/ChangesTreeView/components/ShadowRowHoverActions/ShadowRowHoverActions.tsx:ShadowRowHoverActions",
+			"type": "function",
+			"name": "ShadowRowHoverActions",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/hooks/useChangesTab/components/ChangesFileList/components/ChangesTreeView/components/ShadowRowHoverActions/ShadowRowHoverActions.tsx",
+			"lineRange": [30, 131],
+			"summary": "Tracks the hovered shadow-DOM file row and overlays inline and context-menu actions positioned to it.",
+			"tags": ["component", "file-tree", "hover-actions", "shadow-dom"],
+			"complexity": "complex"
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/hooks/useChangesTab/components/ChangesFileList/components/ChangesTreeView/hooks/useMeasuredTreeHeight/useMeasuredTreeHeight.ts:useMeasuredTreeHeight",
+			"type": "function",
+			"name": "useMeasuredTreeHeight",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/hooks/useChangesTab/components/ChangesFileList/components/ChangesTreeView/hooks/useMeasuredTreeHeight/useMeasuredTreeHeight.ts",
+			"lineRange": [14, 48],
+			"summary": "Measures the file tree's rendered height via shadow DOM, retrying with rAF until ready and re-measuring on model changes.",
+			"tags": ["hook", "measurement", "file-tree", "shadow-dom"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/hooks/useChangesTab/components/ChangesFileList/components/ChangesTreeView/utils/buildTreeShape/buildTreeShape.ts:buildTreeShape",
+			"type": "function",
+			"name": "buildTreeShape",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/hooks/useChangesTab/components/ChangesFileList/components/ChangesTreeView/utils/buildTreeShape/buildTreeShape.ts",
+			"lineRange": [9, 29],
+			"summary": "Derives sorted unique directories and per-directory file counts from a flat path list.",
+			"tags": ["utility", "file-tree"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/hooks/useChangesTab/components/CommitFilterDropdown/components/CommitRow/CommitRow.tsx:CommitRow",
+			"type": "function",
+			"name": "CommitRow",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/hooks/useChangesTab/components/CommitFilterDropdown/components/CommitRow/CommitRow.tsx",
+			"lineRange": [24, 36],
+			"summary": "Renders a commit row with its message and a relative timestamp.",
+			"tags": ["component", "git", "commit"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/SessionSelector/components/SessionSelectorItem/SessionSelectorItem.tsx:SessionSelectorItem",
+			"type": "function",
+			"name": "SessionSelectorItem",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/SessionSelector/components/SessionSelectorItem/SessionSelectorItem.tsx",
+			"lineRange": [14, 64],
+			"summary": "Chat session list item that selects a session on click and deletes it with a toast confirmation.",
+			"tags": ["component", "chat", "session", "workspace"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/components/ChatInputFooter/components/ChatInputDropZone/ChatInputDropZone.tsx:ChatInputDropZone",
+			"type": "function",
+			"name": "ChatInputDropZone",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/components/ChatInputFooter/components/ChatInputDropZone/ChatInputDropZone.tsx",
+			"lineRange": [11, 53],
+			"summary": "Wraps the workspace chat input as a drop target, inserting dragged file-mention paths into the prompt.",
+			"tags": ["component", "drag-and-drop", "chat", "workspace"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/components/ChatInputFooter/components/FileDropOverlay/FileDropOverlay.tsx:FileDropOverlay",
+			"type": "function",
+			"name": "FileDropOverlay",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/components/ChatInputFooter/components/FileDropOverlay/FileDropOverlay.tsx",
+			"lineRange": [7, 21],
+			"summary": "Renders the drag overlay shown over the workspace chat input when a file drag is active.",
+			"tags": ["component", "drag-and-drop", "overlay"],
+			"complexity": "simple"
+		}
+	],
+	"edges": [
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/components/shared/StatusIcon/StatusIcon.tsx",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/components/shared/StatusIcon/StatusIcon.tsx:StatusIcon",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/components/shared/StatusIcon/StatusIcon.tsx",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/components/shared/StatusIcon/StatusIcon.tsx:StatusIcon",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/components/TasksTopBar/components/CreateTaskDialog/components/CreateTaskAssigneePicker/CreateTaskAssigneePicker.tsx",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/components/TasksTopBar/components/CreateTaskDialog/components/CreateTaskAssigneePicker/CreateTaskAssigneePicker.tsx:CreateTaskAssigneePicker",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/components/TasksTopBar/components/CreateTaskDialog/components/CreateTaskAssigneePicker/CreateTaskAssigneePicker.tsx",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/components/TasksTopBar/components/CreateTaskDialog/components/CreateTaskAssigneePicker/CreateTaskAssigneePicker.tsx:CreateTaskAssigneePicker",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/hooks/useHybridSearch/useHybridSearch.ts",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/hooks/useHybridSearch/useHybridSearch.ts:useHybridSearch",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/hooks/useHybridSearch/useHybridSearch.ts",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/hooks/useHybridSearch/useHybridSearch.ts:useHybridSearch",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/hooks/useTasksTable/components/LabelsCell/LabelsCell.tsx",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/hooks/useTasksTable/components/LabelsCell/LabelsCell.tsx:LabelsCell",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/hooks/useTasksTable/components/LabelsCell/LabelsCell.tsx",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/hooks/useTasksTable/components/LabelsCell/LabelsCell.tsx:LabelsCell",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/hooks/useTasksTable/components/LabelsCell/index.ts",
+			"target": "file:src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/hooks/useTasksTable/components/LabelsCell/LabelsCell.tsx",
+			"type": "related",
+			"direction": "forward",
+			"weight": 0.5
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/utils/sorting/sorting.ts",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/utils/sorting/sorting.ts:compareTasks",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/utils/sorting/sorting.ts",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/utils/sorting/sorting.ts:compareTasks",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/utils/sorting/sorting.ts",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/utils/sorting/sorting.ts:compareStatusesForDropdown",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/utils/sorting/sorting.ts",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/utils/sorting/sorting.ts:compareStatusesForDropdown",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/utils/sorting/sorting.ts",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/utils/sorting/sorting.ts:comparePrioritiesForDropdown",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/utils/sorting/sorting.ts",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/utils/sorting/sorting.ts:comparePrioritiesForDropdown",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/DiscardConfirmDialog/DiscardConfirmDialog.tsx",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/DiscardConfirmDialog/DiscardConfirmDialog.tsx:DiscardConfirmDialog",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/DiscardConfirmDialog/DiscardConfirmDialog.tsx",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/DiscardConfirmDialog/DiscardConfirmDialog.tsx:DiscardConfirmDialog",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/StatusIndicator/StatusIndicator.tsx",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/StatusIndicator/StatusIndicator.tsx:getStatusIcon",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/StatusIndicator/StatusIndicator.tsx",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/StatusIndicator/StatusIndicator.tsx:StatusIndicator",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/StatusIndicator/StatusIndicator.tsx",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/StatusIndicator/StatusIndicator.tsx:StatusIndicator",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/components/FilesTab/components/FilesTabHeaderButton/FilesTabHeaderButton.tsx",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/components/FilesTab/components/FilesTabHeaderButton/FilesTabHeaderButton.tsx:FilesTabHeaderButton",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/components/FilesTab/components/FilesTabHeaderButton/FilesTabHeaderButton.tsx",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/components/FilesTab/components/FilesTabHeaderButton/FilesTabHeaderButton.tsx:FilesTabHeaderButton",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/components/PierreRowContextMenu/PierreRowContextMenu.tsx",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/components/PierreRowContextMenu/PierreRowContextMenu.tsx:PierreRowContextMenu",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/components/PierreRowContextMenu/PierreRowContextMenu.tsx",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/components/PierreRowContextMenu/PierreRowContextMenu.tsx:PierreRowContextMenu",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/components/PRActionHeader/utils/getPRFlowState/getPRFlowState.ts",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/components/PRActionHeader/utils/getPRFlowState/getPRFlowState.ts:getPRFlowState",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/components/PRActionHeader/utils/getPRFlowState/getPRFlowState.ts",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/components/PRActionHeader/utils/getPRFlowState/getPRFlowState.ts:getPRFlowState",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/components/PRActionHeader/utils/getPRFlowState/getPRFlowState.ts",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/components/PRActionHeader/utils/getPRFlowState/getPRFlowState.ts:selectActionButton",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/components/PRActionHeader/utils/getPRFlowState/getPRFlowState.ts",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/components/PRActionHeader/utils/getPRFlowState/getPRFlowState.ts:selectActionButton",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/components/PRActionHeader/utils/getPRFlowState/getPRFlowState.ts",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/components/PRActionHeader/utils/getPRFlowState/getPRFlowState.ts:selectPRLink",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/components/PRActionHeader/utils/getPRFlowState/getPRFlowState.ts",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/components/PRActionHeader/utils/getPRFlowState/getPRFlowState.ts:selectPRLink",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/components/PRActionHeader/utils/getPRFlowState/getPRFlowState.ts",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/components/PRActionHeader/utils/getPRFlowState/getPRFlowState.ts:selectStatusBadge",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/components/PRActionHeader/utils/getPRFlowState/getPRFlowState.ts",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/components/PRActionHeader/utils/getPRFlowState/getPRFlowState.ts:selectStatusBadge",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/components/PRActionHeader/utils/getPRFlowState/getPRFlowState.test.ts",
+			"target": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/components/PRActionHeader/utils/getPRFlowState/getPRFlowState.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/components/PRActionHeader/utils/getPRFlowState/getPRFlowState.ts",
+			"target": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/components/PRActionHeader/utils/getPRFlowState/getPRFlowState.test.ts",
+			"type": "tested_by",
+			"direction": "forward",
+			"weight": 0.5
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/hooks/useChangesTab/components/BaseBranchSelector/BaseBranchSelector.tsx",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/hooks/useChangesTab/components/BaseBranchSelector/BaseBranchSelector.tsx:BaseBranchSelector",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/hooks/useChangesTab/components/BaseBranchSelector/BaseBranchSelector.tsx",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/hooks/useChangesTab/components/BaseBranchSelector/BaseBranchSelector.tsx:BaseBranchSelector",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/hooks/useChangesTab/components/ChangesFileList/components/ChangesFoldersView/components/FolderHeader/FolderHeader.tsx",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/hooks/useChangesTab/components/ChangesFileList/components/ChangesFoldersView/components/FolderHeader/FolderHeader.tsx:FolderHeader",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/hooks/useChangesTab/components/ChangesFileList/components/ChangesFoldersView/components/FolderHeader/FolderHeader.tsx",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/hooks/useChangesTab/components/ChangesFileList/components/ChangesFoldersView/components/FolderHeader/FolderHeader.tsx:FolderHeader",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/hooks/useChangesTab/components/ChangesFileList/components/ChangesTreeView/components/ShadowRowHoverActions/ShadowRowHoverActions.tsx",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/hooks/useChangesTab/components/ChangesFileList/components/ChangesTreeView/components/ShadowRowHoverActions/ShadowRowHoverActions.tsx:ShadowRowHoverActions",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/hooks/useChangesTab/components/ChangesFileList/components/ChangesTreeView/components/ShadowRowHoverActions/ShadowRowHoverActions.tsx",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/hooks/useChangesTab/components/ChangesFileList/components/ChangesTreeView/components/ShadowRowHoverActions/ShadowRowHoverActions.tsx:ShadowRowHoverActions",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/hooks/useChangesTab/components/ChangesFileList/components/ChangesTreeView/hooks/useMeasuredTreeHeight/useMeasuredTreeHeight.ts",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/hooks/useChangesTab/components/ChangesFileList/components/ChangesTreeView/hooks/useMeasuredTreeHeight/useMeasuredTreeHeight.ts:useMeasuredTreeHeight",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/hooks/useChangesTab/components/ChangesFileList/components/ChangesTreeView/hooks/useMeasuredTreeHeight/useMeasuredTreeHeight.ts",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/hooks/useChangesTab/components/ChangesFileList/components/ChangesTreeView/hooks/useMeasuredTreeHeight/useMeasuredTreeHeight.ts:useMeasuredTreeHeight",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/hooks/useChangesTab/components/ChangesFileList/components/ChangesTreeView/utils/buildTreeShape/buildTreeShape.ts",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/hooks/useChangesTab/components/ChangesFileList/components/ChangesTreeView/utils/buildTreeShape/buildTreeShape.ts:buildTreeShape",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/hooks/useChangesTab/components/ChangesFileList/components/ChangesTreeView/utils/buildTreeShape/buildTreeShape.ts",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/hooks/useChangesTab/components/ChangesFileList/components/ChangesTreeView/utils/buildTreeShape/buildTreeShape.ts:buildTreeShape",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/hooks/useChangesTab/components/CommitFilterDropdown/components/CommitRow/CommitRow.tsx",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/hooks/useChangesTab/components/CommitFilterDropdown/components/CommitRow/CommitRow.tsx:CommitRow",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/hooks/useChangesTab/components/CommitFilterDropdown/components/CommitRow/CommitRow.tsx",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/hooks/useChangesTab/components/CommitFilterDropdown/components/CommitRow/CommitRow.tsx:CommitRow",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/SessionSelector/components/SessionSelectorItem/SessionSelectorItem.tsx",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/SessionSelector/components/SessionSelectorItem/SessionSelectorItem.tsx:SessionSelectorItem",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/SessionSelector/components/SessionSelectorItem/SessionSelectorItem.tsx",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/SessionSelector/components/SessionSelectorItem/SessionSelectorItem.tsx:SessionSelectorItem",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/components/ChatInputFooter/components/ChatInputDropZone/ChatInputDropZone.tsx",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/components/ChatInputFooter/components/ChatInputDropZone/ChatInputDropZone.tsx:ChatInputDropZone",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/components/ChatInputFooter/components/ChatInputDropZone/ChatInputDropZone.tsx",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/components/ChatInputFooter/components/ChatInputDropZone/ChatInputDropZone.tsx:ChatInputDropZone",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/components/ChatInputFooter/components/ChatInputDropZone/ChatInputDropZone.tsx",
+			"target": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/components/ChatInputFooter/hooks/useDocumentDrag/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/components/ChatInputFooter/components/FileDropOverlay/FileDropOverlay.tsx",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/components/ChatInputFooter/components/FileDropOverlay/FileDropOverlay.tsx:FileDropOverlay",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/components/ChatInputFooter/components/FileDropOverlay/FileDropOverlay.tsx",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/components/ChatInputFooter/components/FileDropOverlay/FileDropOverlay.tsx:FileDropOverlay",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		}
+	]
+}

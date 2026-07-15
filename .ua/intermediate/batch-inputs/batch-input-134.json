@@ -1,0 +1,70 @@
+{
+	"batchIndex": 134,
+	"files": [
+		{
+			"path": "packages/chat/src/server/desktop/slash-commands/builtins.ts",
+			"language": "typescript",
+			"sizeLines": 105,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/chat/src/server/desktop/slash-commands/frontmatter.ts",
+			"language": "typescript",
+			"sizeLines": 154,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/chat/src/server/desktop/slash-commands/registry.ts",
+			"language": "typescript",
+			"sizeLines": 287,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/chat/src/server/desktop/slash-commands/resolver.ts",
+			"language": "typescript",
+			"sizeLines": 162,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/chat/src/server/desktop/slash-commands/slash-commands.ts",
+			"language": "typescript",
+			"sizeLines": 18,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/chat/src/server/desktop/slash-commands/types.ts",
+			"language": "typescript",
+			"sizeLines": 28,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/chat/src/shared/index.ts",
+			"language": "typescript",
+			"sizeLines": 11,
+			"fileCategory": "code"
+		}
+	],
+	"batchImportData": {
+		"packages/chat/src/server/desktop/slash-commands/builtins.ts": [
+			"packages/chat/src/server/desktop/slash-commands/types.ts"
+		],
+		"packages/chat/src/server/desktop/slash-commands/frontmatter.ts": [],
+		"packages/chat/src/server/desktop/slash-commands/registry.ts": [
+			"packages/chat/src/server/desktop/slash-commands/builtins.ts",
+			"packages/chat/src/server/desktop/slash-commands/frontmatter.ts",
+			"packages/chat/src/server/desktop/slash-commands/types.ts"
+		],
+		"packages/chat/src/server/desktop/slash-commands/resolver.ts": [
+			"packages/chat/src/server/desktop/slash-commands/registry.ts",
+			"packages/chat/src/server/desktop/slash-commands/types.ts",
+			"packages/chat/src/shared/index.ts"
+		],
+		"packages/chat/src/server/desktop/slash-commands/slash-commands.ts": [
+			"packages/chat/src/server/desktop/slash-commands/registry.ts",
+			"packages/chat/src/server/desktop/slash-commands/types.ts"
+		],
+		"packages/chat/src/server/desktop/slash-commands/types.ts": [],
+		"packages/chat/src/shared/index.ts": []
+	},
+	"neighborMap": {}
+}

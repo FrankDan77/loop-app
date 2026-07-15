@@ -1,0 +1,895 @@
+{
+	"nodes": [
+		{
+			"id": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/utils/providerToLogo/providerToLogo.ts",
+			"type": "file",
+			"name": "providerToLogo.ts",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ModelPicker/utils/providerToLogo/providerToLogo.ts",
+			"summary": "Maps a model provider name to its canonical logo provider identifier via case-insensitive substring matching.",
+			"tags": ["utility", "model-picker", "mapping"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/utils/providerToLogo/providerToLogo.ts:providerToLogo",
+			"type": "function",
+			"name": "providerToLogo",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ModelPicker/utils/providerToLogo/providerToLogo.ts",
+			"lineRange": [5, 23],
+			"summary": "Normalizes a provider string and returns the matching logo provider constant.",
+			"tags": ["utility", "mapping"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/components/Chat/ChatInterface/components/PlanBlock/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/PlanBlock/index.ts",
+			"summary": "Barrel re-exporting the PlanBlock component.",
+			"tags": ["barrel", "entry-point"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/components/Chat/ChatInterface/components/PlanBlock/PlanBlock.tsx",
+			"type": "file",
+			"name": "PlanBlock.tsx",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/PlanBlock/PlanBlock.tsx",
+			"summary": "Renders an agent plan as an ordered list of steps within the chat interface.",
+			"tags": ["component", "chat", "plan"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/renderer/components/Chat/ChatInterface/components/PlanBlock/PlanBlock.tsx:PlanBlock",
+			"type": "function",
+			"name": "PlanBlock",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/PlanBlock/PlanBlock.tsx",
+			"lineRange": [15, 48],
+			"summary": "Maps plan steps into a rendered list of plan items.",
+			"tags": ["component", "plan"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/components/Chat/ChatInterface/components/ReasoningBlock/ReasoningBlock.tsx",
+			"type": "file",
+			"name": "ReasoningBlock.tsx",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ReasoningBlock/ReasoningBlock.tsx",
+			"summary": "Displays an agent's reasoning text block in the chat interface.",
+			"tags": ["component", "chat", "reasoning"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/renderer/components/Chat/ChatInterface/components/ReasoningBlock/ReasoningBlock.tsx:ReasoningBlock",
+			"type": "function",
+			"name": "ReasoningBlock",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ReasoningBlock/ReasoningBlock.tsx",
+			"lineRange": [12, 25],
+			"summary": "Renders the reasoning content passed via props.",
+			"tags": ["component", "reasoning"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/components/Chat/ChatInterface/components/SlashCommandInput/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/SlashCommandInput/index.ts",
+			"summary": "Barrel re-exporting the SlashCommandInput component.",
+			"tags": ["barrel", "entry-point"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/components/SubagentToolCall/utils/parseSubagentToolResult/parseSubagentToolResult.ts",
+			"type": "file",
+			"name": "parseSubagentToolResult.ts",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/components/SubagentToolCall/utils/parseSubagentToolResult/parseSubagentToolResult.ts",
+			"summary": "Parses a subagent tool result payload into structured tool calls and metadata, handling both detailed JSON and legacy comma-separated formats.",
+			"tags": ["utility", "parsing", "serialization", "subagent"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/components/SubagentToolCall/utils/parseSubagentToolResult/parseSubagentToolResult.ts:parseDetailedToolCalls",
+			"type": "function",
+			"name": "parseDetailedToolCalls",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/components/SubagentToolCall/utils/parseSubagentToolResult/parseSubagentToolResult.ts",
+			"lineRange": [31, 67],
+			"summary": "Extracts and parses a detailed JSON tool-call block from the result content.",
+			"tags": ["utility", "parsing", "serialization"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/components/SubagentToolCall/utils/parseSubagentToolResult/parseSubagentToolResult.ts:parseLegacyTools",
+			"type": "function",
+			"name": "parseLegacyTools",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/components/SubagentToolCall/utils/parseSubagentToolResult/parseSubagentToolResult.ts",
+			"lineRange": [69, 86],
+			"summary": "Parses legacy comma-separated tool name/status entries into structured tool calls.",
+			"tags": ["utility", "parsing"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/components/SubagentToolCall/utils/parseSubagentToolResult/parseSubagentToolResult.ts:parseSubagentToolResult",
+			"type": "function",
+			"name": "parseSubagentToolResult",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/components/SubagentToolCall/utils/parseSubagentToolResult/parseSubagentToolResult.ts",
+			"lineRange": [88, 123],
+			"summary": "Top-level parser that extracts working content, meta tags, and tool calls from a subagent result value.",
+			"tags": ["utility", "parsing", "subagent"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "file:src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/components/TaskItemDisplay/TaskItemDisplay.tsx",
+			"type": "file",
+			"name": "TaskItemDisplay.tsx",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/components/TaskItemDisplay/TaskItemDisplay.tsx",
+			"summary": "Renders a task item's details, labels, and metadata within a tool call block, deduplicating detail fields.",
+			"tags": ["component", "tool-call", "task", "display"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/components/TaskItemDisplay/TaskItemDisplay.tsx:getBaseDetails",
+			"type": "function",
+			"name": "getBaseDetails",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/components/TaskItemDisplay/TaskItemDisplay.tsx",
+			"lineRange": [33, 50],
+			"summary": "Assembles the base detail rows (status, priority, assignee, dates) from task props.",
+			"tags": ["utility", "task", "display"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/components/TaskItemDisplay/TaskItemDisplay.tsx:renderContent",
+			"type": "function",
+			"name": "renderContent",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/components/TaskItemDisplay/TaskItemDisplay.tsx",
+			"lineRange": [52, 124],
+			"summary": "Builds and renders deduplicated details and labels for a task item.",
+			"tags": ["component", "task", "display"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/components/TaskItemDisplay/TaskItemDisplay.tsx:TaskItemDisplay",
+			"type": "function",
+			"name": "TaskItemDisplay",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/components/TaskItemDisplay/TaskItemDisplay.tsx",
+			"lineRange": [126, 141],
+			"summary": "Wrapper component rendering task content with optional styling.",
+			"tags": ["component", "task", "display"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/components/ToolStatusBadge/ToolStatusBadge.tsx",
+			"type": "file",
+			"name": "ToolStatusBadge.tsx",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/components/ToolStatusBadge/ToolStatusBadge.tsx",
+			"summary": "Small badge showing a tool's status with an icon, label, and variant styling.",
+			"tags": ["component", "tool-call", "badge"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/components/ToolStatusBadge/ToolStatusBadge.tsx:ToolStatusBadge",
+			"type": "function",
+			"name": "ToolStatusBadge",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/components/ToolStatusBadge/ToolStatusBadge.tsx",
+			"lineRange": [18, 34],
+			"summary": "Renders an icon-and-label status badge with variant classes.",
+			"tags": ["component", "badge"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/utils/getExecuteCommandViewModel/getExecuteCommandViewModel.test.ts",
+			"type": "file",
+			"name": "getExecuteCommandViewModel.test.ts",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/utils/getExecuteCommandViewModel/getExecuteCommandViewModel.test.ts",
+			"summary": "Unit tests for the execute-command tool view model builder.",
+			"tags": ["test", "tool-call", "view-model"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/utils/getExecuteCommandViewModel/getExecuteCommandViewModel.ts",
+			"type": "file",
+			"name": "getExecuteCommandViewModel.ts",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/utils/getExecuteCommandViewModel/getExecuteCommandViewModel.ts",
+			"summary": "Builds a normalized view model for execute-command tool calls by traversing result graphs and extracting command, output, and exit metadata.",
+			"tags": [
+				"utility",
+				"tool-call",
+				"view-model",
+				"parsing",
+				"serialization"
+			],
+			"complexity": "complex"
+		},
+		{
+			"id": "function:src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/utils/getExecuteCommandViewModel/getExecuteCommandViewModel.ts:toText",
+			"type": "function",
+			"name": "toText",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/utils/getExecuteCommandViewModel/getExecuteCommandViewModel.ts",
+			"lineRange": [76, 125],
+			"summary": "Recursively coerces an arbitrary value into displayable text, handling arrays, envelopes, and cyclic references.",
+			"tags": ["utility", "serialization", "text"],
+			"complexity": "complex"
+		},
+		{
+			"id": "function:src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/utils/getExecuteCommandViewModel/getExecuteCommandViewModel.ts:collectRecordGraph",
+			"type": "function",
+			"name": "collectRecordGraph",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/utils/getExecuteCommandViewModel/getExecuteCommandViewModel.ts",
+			"lineRange": [143, 163],
+			"summary": "Breadth-first traverses a value graph collecting all reachable record objects.",
+			"tags": ["utility", "traversal"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/utils/getExecuteCommandViewModel/getExecuteCommandViewModel.ts:collectValuesByKeys",
+			"type": "function",
+			"name": "collectValuesByKeys",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/utils/getExecuteCommandViewModel/getExecuteCommandViewModel.ts",
+			"lineRange": [165, 179],
+			"summary": "Collects values matching a set of keys across the record graph.",
+			"tags": ["utility", "extraction"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/utils/getExecuteCommandViewModel/getExecuteCommandViewModel.ts:getExecuteCommandViewModel",
+			"type": "function",
+			"name": "getExecuteCommandViewModel",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/utils/getExecuteCommandViewModel/getExecuteCommandViewModel.ts",
+			"lineRange": [181, 230],
+			"summary": "Assembles the execute-command view model from args and result by extracting command, cwd, output, and exit code.",
+			"tags": ["utility", "view-model", "tool-call"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "file:src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/utils/getWebSearchViewModel/getWebSearchViewModel.test.ts",
+			"type": "file",
+			"name": "getWebSearchViewModel.test.ts",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/utils/getWebSearchViewModel/getWebSearchViewModel.test.ts",
+			"summary": "Unit tests for the web-search tool view model builder.",
+			"tags": ["test", "tool-call", "view-model"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/utils/getWebSearchViewModel/getWebSearchViewModel.ts",
+			"type": "file",
+			"name": "getWebSearchViewModel.ts",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/utils/getWebSearchViewModel/getWebSearchViewModel.ts",
+			"summary": "Builds a web-search tool view model by parsing result arrays or transcript text into deduplicated search result entries.",
+			"tags": ["utility", "tool-call", "view-model", "parsing", "web-search"],
+			"complexity": "complex"
+		},
+		{
+			"id": "function:src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/utils/getWebSearchViewModel/getWebSearchViewModel.ts:parseResultsArray",
+			"type": "function",
+			"name": "parseResultsArray",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/utils/getWebSearchViewModel/getWebSearchViewModel.ts",
+			"lineRange": [55, 81],
+			"summary": "Parses an array of result records into normalized search results with title/url dedup.",
+			"tags": ["utility", "parsing", "web-search"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/utils/getWebSearchViewModel/getWebSearchViewModel.ts:parseResultsFromTranscript",
+			"type": "function",
+			"name": "parseResultsFromTranscript",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/utils/getWebSearchViewModel/getWebSearchViewModel.ts",
+			"lineRange": [83, 117],
+			"summary": "Extracts search results from free-form transcript text by scanning for URLs and preceding titles.",
+			"tags": ["utility", "parsing", "web-search"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/utils/getWebSearchViewModel/getWebSearchViewModel.ts:extractResults",
+			"type": "function",
+			"name": "extractResults",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/utils/getWebSearchViewModel/getWebSearchViewModel.ts",
+			"lineRange": [119, 156],
+			"summary": "Traverses a result graph to locate and extract search result data via array or transcript parsing.",
+			"tags": ["utility", "traversal", "web-search"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/utils/getWebSearchViewModel/getWebSearchViewModel.ts:getWebSearchViewModel",
+			"type": "function",
+			"name": "getWebSearchViewModel",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/utils/getWebSearchViewModel/getWebSearchViewModel.ts",
+			"lineRange": [167, 188],
+			"summary": "Assembles the web-search view model from args and result, deriving query and result list.",
+			"tags": ["utility", "view-model", "web-search"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/utils/taskToolCallHelpers/taskToolCallHelpers.ts",
+			"type": "file",
+			"name": "taskToolCallHelpers.ts",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/utils/taskToolCallHelpers/taskToolCallHelpers.ts",
+			"summary": "Helper utilities for task tool calls: record coercion, string-array normalization, and UTC date formatting.",
+			"tags": ["utility", "task", "formatting", "serialization"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/utils/taskToolCallHelpers/taskToolCallHelpers.ts:formatTaskDate",
+			"type": "function",
+			"name": "formatTaskDate",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/utils/taskToolCallHelpers/taskToolCallHelpers.ts",
+			"lineRange": [15, 28],
+			"summary": "Formats an ISO date string into a localized date, treating date-only values as UTC.",
+			"tags": ["utility", "formatting", "date"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/components/Chat/ChatInterface/hooks/useSlashCommands/useSlashCommands.test.ts",
+			"type": "file",
+			"name": "useSlashCommands.test.ts",
+			"filePath": "src/renderer/components/Chat/ChatInterface/hooks/useSlashCommands/useSlashCommands.test.ts",
+			"summary": "Unit tests for slash command matching, ranking, and suppression logic.",
+			"tags": ["test", "slash-command", "hook"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "file:src/renderer/components/Chat/ChatInterface/hooks/useSlashCommands/useSlashCommands.ts",
+			"type": "file",
+			"name": "useSlashCommands.ts",
+			"filePath": "src/renderer/components/Chat/ChatInterface/hooks/useSlashCommands/useSlashCommands.ts",
+			"summary": "Hook and utilities for filtering, ranking, and navigating slash command matches from the chat input value.",
+			"tags": ["hook", "slash-command", "filtering", "state"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:src/renderer/components/Chat/ChatInterface/hooks/useSlashCommands/useSlashCommands.ts:getCommandMatchRank",
+			"type": "function",
+			"name": "getCommandMatchRank",
+			"filePath": "src/renderer/components/Chat/ChatInterface/hooks/useSlashCommands/useSlashCommands.ts",
+			"lineRange": [25, 43],
+			"summary": "Computes a match rank for a command against a query considering name and aliases.",
+			"tags": ["utility", "slash-command", "ranking"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/renderer/components/Chat/ChatInterface/hooks/useSlashCommands/useSlashCommands.ts:shouldSuppressSlashMenuForCommittedCommand",
+			"type": "function",
+			"name": "shouldSuppressSlashMenuForCommittedCommand",
+			"filePath": "src/renderer/components/Chat/ChatInterface/hooks/useSlashCommands/useSlashCommands.ts",
+			"lineRange": [45, 53],
+			"summary": "Determines whether the slash menu should be hidden because a full command has already been committed.",
+			"tags": ["utility", "slash-command"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/renderer/components/Chat/ChatInterface/hooks/useSlashCommands/useSlashCommands.ts:sortSlashCommandMatches",
+			"type": "function",
+			"name": "sortSlashCommandMatches",
+			"filePath": "src/renderer/components/Chat/ChatInterface/hooks/useSlashCommands/useSlashCommands.ts",
+			"lineRange": [55, 67],
+			"summary": "Sorts command matches by kind, rank, then name.",
+			"tags": ["utility", "slash-command", "sorting"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/renderer/components/Chat/ChatInterface/hooks/useSlashCommands/useSlashCommands.ts:useSlashCommands",
+			"type": "function",
+			"name": "useSlashCommands",
+			"filePath": "src/renderer/components/Chat/ChatInterface/hooks/useSlashCommands/useSlashCommands.ts",
+			"lineRange": [69, 130],
+			"summary": "Hook that derives ranked slash command matches and manages keyboard selection state.",
+			"tags": ["hook", "slash-command", "state"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:src/renderer/components/Chat/ChatInterface/hooks/useSlashCommands/useSlashCommands.ts:resolveCommandAction",
+			"type": "function",
+			"name": "resolveCommandAction",
+			"filePath": "src/renderer/components/Chat/ChatInterface/hooks/useSlashCommands/useSlashCommands.ts",
+			"lineRange": [132, 140],
+			"summary": "Resolves whether a selected command should run immediately or expect arguments.",
+			"tags": ["utility", "slash-command"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/components/Chat/components/FileMentionChip/FileMentionChip.tsx",
+			"type": "file",
+			"name": "FileMentionChip.tsx",
+			"filePath": "src/renderer/components/Chat/components/FileMentionChip/FileMentionChip.tsx",
+			"summary": "Chip component displaying a file mention path with an optional click handler.",
+			"tags": ["component", "chat", "mention", "chip"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/renderer/components/Chat/components/FileMentionChip/FileMentionChip.tsx:FileMentionChip",
+			"type": "function",
+			"name": "FileMentionChip",
+			"filePath": "src/renderer/components/Chat/components/FileMentionChip/FileMentionChip.tsx",
+			"lineRange": [7, 24],
+			"summary": "Renders a clickable file-mention chip for a relative path.",
+			"tags": ["component", "mention", "chip"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/components/Chat/utils/parseUserMentions/parseUserMentions.test.ts",
+			"type": "file",
+			"name": "parseUserMentions.test.ts",
+			"filePath": "src/renderer/components/Chat/utils/parseUserMentions/parseUserMentions.test.ts",
+			"summary": "Unit tests for parsing user message text into plain and mention segments.",
+			"tags": ["test", "mention", "parsing"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "file:src/renderer/components/Chat/utils/parseUserMentions/parseUserMentions.ts",
+			"type": "file",
+			"name": "parseUserMentions.ts",
+			"filePath": "src/renderer/components/Chat/utils/parseUserMentions/parseUserMentions.ts",
+			"summary": "Parses user message text into an ordered list of text and mention segments, classifying task vs file-like mentions.",
+			"tags": ["utility", "mention", "parsing"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:src/renderer/components/Chat/utils/parseUserMentions/parseUserMentions.ts:parseUserMentions",
+			"type": "function",
+			"name": "parseUserMentions",
+			"filePath": "src/renderer/components/Chat/utils/parseUserMentions/parseUserMentions.ts",
+			"lineRange": [29, 92],
+			"summary": "Scans text for @-mentions and splits it into typed text and mention segments.",
+			"tags": ["utility", "mention", "parsing"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "file:src/renderer/components/ConfigFilePreview/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "src/renderer/components/ConfigFilePreview/index.ts",
+			"summary": "Barrel re-exporting the ConfigFilePreview component and its props type.",
+			"tags": ["barrel", "entry-point", "type-definition"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/components/icons/LinearIcon/LinearIcon.tsx",
+			"type": "file",
+			"name": "LinearIcon.tsx",
+			"filePath": "src/renderer/components/icons/LinearIcon/LinearIcon.tsx",
+			"summary": "SVG icon component for the Linear integration.",
+			"tags": ["component", "icon", "svg"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/renderer/components/icons/LinearIcon/LinearIcon.tsx:LinearIcon",
+			"type": "function",
+			"name": "LinearIcon",
+			"filePath": "src/renderer/components/icons/LinearIcon/LinearIcon.tsx",
+			"lineRange": [7, 16],
+			"summary": "Renders the Linear logo SVG with a configurable className.",
+			"tags": ["component", "icon"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/components/MarkdownEditor/components/BubbleMenuToolbar/BubbleMenuToolbar.tsx",
+			"type": "file",
+			"name": "BubbleMenuToolbar.tsx",
+			"filePath": "src/renderer/components/MarkdownEditor/components/BubbleMenuToolbar/BubbleMenuToolbar.tsx",
+			"summary": "Re-export shim exposing the shared BubbleMenuToolbar for the markdown editor.",
+			"tags": ["barrel", "entry-point"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/components/MarkdownEditor/components/BubbleMenuToolbar/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "src/renderer/components/MarkdownEditor/components/BubbleMenuToolbar/index.ts",
+			"summary": "Barrel re-exporting the BubbleMenuToolbar component.",
+			"tags": ["barrel", "entry-point"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/components/MarkdownEditor/components/EmojiSuggestion/components/EmojiSuggestionList/EmojiSuggestionList.tsx",
+			"type": "file",
+			"name": "EmojiSuggestionList.tsx",
+			"filePath": "src/renderer/components/MarkdownEditor/components/EmojiSuggestion/components/EmojiSuggestionList/EmojiSuggestionList.tsx",
+			"summary": "Keyboard-navigable list of emoji suggestions shown while typing an emoji shortcode in the markdown editor.",
+			"tags": ["component", "markdown-editor", "emoji", "suggestion"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "file:src/renderer/components/MarkdownEditor/components/EmojiSuggestion/components/EmojiSuggestionList/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "src/renderer/components/MarkdownEditor/components/EmojiSuggestion/components/EmojiSuggestionList/index.ts",
+			"summary": "Barrel re-exporting the EmojiSuggestionList component and its ref type.",
+			"tags": ["barrel", "entry-point", "type-definition"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/components/MarkdownEditor/components/EmojiSuggestion/EmojiSuggestion.ts",
+			"type": "file",
+			"name": "EmojiSuggestion.ts",
+			"filePath": "src/renderer/components/MarkdownEditor/components/EmojiSuggestion/EmojiSuggestion.ts",
+			"summary": "TipTap suggestion extension configuration providing emoji autocompletion by matching shortcodes, tags, and names.",
+			"tags": ["utility", "markdown-editor", "emoji", "tiptap", "extension"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:src/renderer/components/MarkdownEditor/components/EmojiSuggestion/EmojiSuggestion.ts:matchEmoji",
+			"type": "function",
+			"name": "matchEmoji",
+			"filePath": "src/renderer/components/MarkdownEditor/components/EmojiSuggestion/EmojiSuggestion.ts",
+			"lineRange": [15, 22],
+			"summary": "Determines whether an emoji item matches a query across shortcodes, tags, and name.",
+			"tags": ["utility", "emoji", "matching"],
+			"complexity": "simple"
+		}
+	],
+	"edges": [
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/utils/providerToLogo/providerToLogo.ts",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/utils/providerToLogo/providerToLogo.ts:providerToLogo",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/utils/providerToLogo/providerToLogo.ts",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/utils/providerToLogo/providerToLogo.ts:providerToLogo",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/PlanBlock/PlanBlock.tsx",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/PlanBlock/PlanBlock.tsx:PlanBlock",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/PlanBlock/PlanBlock.tsx",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/PlanBlock/PlanBlock.tsx:PlanBlock",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ReasoningBlock/ReasoningBlock.tsx",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ReasoningBlock/ReasoningBlock.tsx:ReasoningBlock",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ReasoningBlock/ReasoningBlock.tsx",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ReasoningBlock/ReasoningBlock.tsx:ReasoningBlock",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/components/SubagentToolCall/utils/parseSubagentToolResult/parseSubagentToolResult.ts",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/components/SubagentToolCall/utils/parseSubagentToolResult/parseSubagentToolResult.ts:parseDetailedToolCalls",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/components/SubagentToolCall/utils/parseSubagentToolResult/parseSubagentToolResult.ts",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/components/SubagentToolCall/utils/parseSubagentToolResult/parseSubagentToolResult.ts:parseLegacyTools",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/components/SubagentToolCall/utils/parseSubagentToolResult/parseSubagentToolResult.ts",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/components/SubagentToolCall/utils/parseSubagentToolResult/parseSubagentToolResult.ts:parseSubagentToolResult",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/components/SubagentToolCall/utils/parseSubagentToolResult/parseSubagentToolResult.ts",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/components/SubagentToolCall/utils/parseSubagentToolResult/parseSubagentToolResult.ts:parseSubagentToolResult",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/components/TaskItemDisplay/TaskItemDisplay.tsx",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/components/TaskItemDisplay/TaskItemDisplay.tsx:getBaseDetails",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/components/TaskItemDisplay/TaskItemDisplay.tsx",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/components/TaskItemDisplay/TaskItemDisplay.tsx:renderContent",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/components/TaskItemDisplay/TaskItemDisplay.tsx",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/components/TaskItemDisplay/TaskItemDisplay.tsx:TaskItemDisplay",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/components/TaskItemDisplay/TaskItemDisplay.tsx",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/components/TaskItemDisplay/TaskItemDisplay.tsx:TaskItemDisplay",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/components/ToolStatusBadge/ToolStatusBadge.tsx",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/components/ToolStatusBadge/ToolStatusBadge.tsx:ToolStatusBadge",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/components/ToolStatusBadge/ToolStatusBadge.tsx",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/components/ToolStatusBadge/ToolStatusBadge.tsx:ToolStatusBadge",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/utils/getExecuteCommandViewModel/getExecuteCommandViewModel.test.ts",
+			"target": "file:src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/utils/getExecuteCommandViewModel/getExecuteCommandViewModel.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/utils/getExecuteCommandViewModel/getExecuteCommandViewModel.test.ts",
+			"target": "file:src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/utils/getExecuteCommandViewModel/getExecuteCommandViewModel.ts",
+			"type": "tested_by",
+			"direction": "forward",
+			"weight": 0.5
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/utils/getExecuteCommandViewModel/getExecuteCommandViewModel.ts",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/utils/getExecuteCommandViewModel/getExecuteCommandViewModel.ts:toText",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/utils/getExecuteCommandViewModel/getExecuteCommandViewModel.ts",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/utils/getExecuteCommandViewModel/getExecuteCommandViewModel.ts:collectRecordGraph",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/utils/getExecuteCommandViewModel/getExecuteCommandViewModel.ts",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/utils/getExecuteCommandViewModel/getExecuteCommandViewModel.ts:collectValuesByKeys",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/utils/getExecuteCommandViewModel/getExecuteCommandViewModel.ts",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/utils/getExecuteCommandViewModel/getExecuteCommandViewModel.ts:getExecuteCommandViewModel",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/utils/getExecuteCommandViewModel/getExecuteCommandViewModel.ts",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/utils/getExecuteCommandViewModel/getExecuteCommandViewModel.ts:getExecuteCommandViewModel",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/utils/getWebSearchViewModel/getWebSearchViewModel.test.ts",
+			"target": "file:src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/utils/getWebSearchViewModel/getWebSearchViewModel.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/utils/getWebSearchViewModel/getWebSearchViewModel.test.ts",
+			"target": "file:src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/utils/getWebSearchViewModel/getWebSearchViewModel.ts",
+			"type": "tested_by",
+			"direction": "forward",
+			"weight": 0.5
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/utils/getWebSearchViewModel/getWebSearchViewModel.ts",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/utils/getWebSearchViewModel/getWebSearchViewModel.ts:parseResultsArray",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/utils/getWebSearchViewModel/getWebSearchViewModel.ts",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/utils/getWebSearchViewModel/getWebSearchViewModel.ts:parseResultsFromTranscript",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/utils/getWebSearchViewModel/getWebSearchViewModel.ts",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/utils/getWebSearchViewModel/getWebSearchViewModel.ts:extractResults",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/utils/getWebSearchViewModel/getWebSearchViewModel.ts",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/utils/getWebSearchViewModel/getWebSearchViewModel.ts:getWebSearchViewModel",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/utils/getWebSearchViewModel/getWebSearchViewModel.ts",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/utils/getWebSearchViewModel/getWebSearchViewModel.ts:getWebSearchViewModel",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/utils/taskToolCallHelpers/taskToolCallHelpers.ts",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/utils/taskToolCallHelpers/taskToolCallHelpers.ts:formatTaskDate",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/utils/taskToolCallHelpers/taskToolCallHelpers.ts",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/utils/taskToolCallHelpers/taskToolCallHelpers.ts:formatTaskDate",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/hooks/useSlashCommands/useSlashCommands.test.ts",
+			"target": "file:src/renderer/components/Chat/ChatInterface/hooks/useSlashCommands/useSlashCommands.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/hooks/useSlashCommands/useSlashCommands.test.ts",
+			"target": "file:src/renderer/components/Chat/ChatInterface/hooks/useSlashCommands/useSlashCommands.ts",
+			"type": "tested_by",
+			"direction": "forward",
+			"weight": 0.5
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/hooks/useSlashCommands/useSlashCommands.ts",
+			"target": "function:src/renderer/components/Chat/ChatInterface/hooks/useSlashCommands/useSlashCommands.ts:getCommandMatchRank",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/hooks/useSlashCommands/useSlashCommands.ts",
+			"target": "function:src/renderer/components/Chat/ChatInterface/hooks/useSlashCommands/useSlashCommands.ts:shouldSuppressSlashMenuForCommittedCommand",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/hooks/useSlashCommands/useSlashCommands.ts",
+			"target": "function:src/renderer/components/Chat/ChatInterface/hooks/useSlashCommands/useSlashCommands.ts:sortSlashCommandMatches",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/hooks/useSlashCommands/useSlashCommands.ts",
+			"target": "function:src/renderer/components/Chat/ChatInterface/hooks/useSlashCommands/useSlashCommands.ts:useSlashCommands",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/hooks/useSlashCommands/useSlashCommands.ts",
+			"target": "function:src/renderer/components/Chat/ChatInterface/hooks/useSlashCommands/useSlashCommands.ts:resolveCommandAction",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/hooks/useSlashCommands/useSlashCommands.ts",
+			"target": "function:src/renderer/components/Chat/ChatInterface/hooks/useSlashCommands/useSlashCommands.ts:getCommandMatchRank",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/hooks/useSlashCommands/useSlashCommands.ts",
+			"target": "function:src/renderer/components/Chat/ChatInterface/hooks/useSlashCommands/useSlashCommands.ts:shouldSuppressSlashMenuForCommittedCommand",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/hooks/useSlashCommands/useSlashCommands.ts",
+			"target": "function:src/renderer/components/Chat/ChatInterface/hooks/useSlashCommands/useSlashCommands.ts:sortSlashCommandMatches",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/hooks/useSlashCommands/useSlashCommands.ts",
+			"target": "function:src/renderer/components/Chat/ChatInterface/hooks/useSlashCommands/useSlashCommands.ts:useSlashCommands",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/hooks/useSlashCommands/useSlashCommands.ts",
+			"target": "function:src/renderer/components/Chat/ChatInterface/hooks/useSlashCommands/useSlashCommands.ts:resolveCommandAction",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/components/Chat/components/FileMentionChip/FileMentionChip.tsx",
+			"target": "function:src/renderer/components/Chat/components/FileMentionChip/FileMentionChip.tsx:FileMentionChip",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/components/Chat/components/FileMentionChip/FileMentionChip.tsx",
+			"target": "function:src/renderer/components/Chat/components/FileMentionChip/FileMentionChip.tsx:FileMentionChip",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/components/Chat/utils/parseUserMentions/parseUserMentions.test.ts",
+			"target": "file:src/renderer/components/Chat/utils/parseUserMentions/parseUserMentions.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/components/Chat/utils/parseUserMentions/parseUserMentions.test.ts",
+			"target": "file:src/renderer/components/Chat/utils/parseUserMentions/parseUserMentions.ts",
+			"type": "tested_by",
+			"direction": "forward",
+			"weight": 0.5
+		},
+		{
+			"source": "file:src/renderer/components/Chat/utils/parseUserMentions/parseUserMentions.ts",
+			"target": "function:src/renderer/components/Chat/utils/parseUserMentions/parseUserMentions.ts:parseUserMentions",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/components/Chat/utils/parseUserMentions/parseUserMentions.ts",
+			"target": "function:src/renderer/components/Chat/utils/parseUserMentions/parseUserMentions.ts:parseUserMentions",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/components/icons/LinearIcon/LinearIcon.tsx",
+			"target": "function:src/renderer/components/icons/LinearIcon/LinearIcon.tsx:LinearIcon",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/components/icons/LinearIcon/LinearIcon.tsx",
+			"target": "function:src/renderer/components/icons/LinearIcon/LinearIcon.tsx:LinearIcon",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/components/MarkdownEditor/components/EmojiSuggestion/EmojiSuggestion.ts",
+			"target": "function:src/renderer/components/MarkdownEditor/components/EmojiSuggestion/EmojiSuggestion.ts:matchEmoji",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/components/MarkdownEditor/components/EmojiSuggestion/EmojiSuggestion.ts",
+			"target": "file:src/renderer/components/MarkdownEditor/components/EmojiSuggestion/components/EmojiSuggestionList/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		}
+	]
+}

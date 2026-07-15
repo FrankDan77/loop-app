@@ -1,0 +1,707 @@
+{
+	"scriptCompleted": true,
+	"filesAnalyzed": 13,
+	"filesSkipped": [],
+	"results": [
+		{
+			"path": "src/renderer/routes/_authenticated/components/AgentHooks/hooks/useCommandWatcher/tools/create-worktree.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 100,
+			"nonEmptyLines": 91,
+			"functions": [
+				{
+					"name": "execute",
+					"startLine": 35,
+					"endLine": 94,
+					"params": ["params", "ctx"]
+				}
+			],
+			"exports": [
+				{
+					"name": "createWorkspace",
+					"line": 96,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "execute",
+					"callee": "params.workspaces.entries",
+					"lineNumber": 43
+				},
+				{
+					"caller": "execute",
+					"callee": "ctx.getWorkspaces",
+					"lineNumber": 46
+				},
+				{
+					"caller": "execute",
+					"callee": "workspaces?.find",
+					"lineNumber": 47
+				},
+				{
+					"caller": "execute",
+					"callee": "errors.push",
+					"lineNumber": 51
+				},
+				{
+					"caller": "execute",
+					"callee": "ctx.createWorktree.mutateAsync",
+					"lineNumber": 61
+				},
+				{
+					"caller": "execute",
+					"callee": "created.push",
+					"lineNumber": 69
+				},
+				{
+					"caller": "execute",
+					"callee": "errors.push",
+					"lineNumber": 77
+				},
+				{
+					"caller": "execute",
+					"callee": "buildBulkResult",
+					"lineNumber": 87
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/components/AgentHooks/hooks/useCommandWatcher/tools/delete-workspace.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 63,
+			"nonEmptyLines": 56,
+			"functions": [
+				{
+					"name": "execute",
+					"startLine": 18,
+					"endLine": 57,
+					"params": ["params", "ctx"]
+				}
+			],
+			"exports": [
+				{
+					"name": "deleteWorkspace",
+					"line": 59,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "execute",
+					"callee": "params.workspaceIds.entries",
+					"lineNumber": 25
+				},
+				{
+					"caller": "execute",
+					"callee": "ctx.deleteWorkspace.mutateAsync",
+					"lineNumber": 27
+				},
+				{
+					"caller": "execute",
+					"callee": "errors.push",
+					"lineNumber": 32
+				},
+				{
+					"caller": "execute",
+					"callee": "deleted.push",
+					"lineNumber": 38
+				},
+				{
+					"caller": "execute",
+					"callee": "errors.push",
+					"lineNumber": 41
+				},
+				{
+					"caller": "execute",
+					"callee": "buildBulkResult",
+					"lineNumber": 50
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/components/AgentHooks/hooks/useCommandWatcher/tools/get-app-context.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 40,
+			"nonEmptyLines": 34,
+			"functions": [
+				{
+					"name": "execute",
+					"startLine": 6,
+					"endLine": 34,
+					"params": ["_params", "ctx"]
+				}
+			],
+			"exports": [
+				{
+					"name": "getAppContext",
+					"line": 36,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "execute",
+					"callee": "hash.startsWith",
+					"lineNumber": 12
+				},
+				{
+					"caller": "execute",
+					"callee": "hash.slice",
+					"lineNumber": 12
+				},
+				{
+					"caller": "execute",
+					"callee": "pathname.match",
+					"lineNumber": 15
+				},
+				{
+					"caller": "execute",
+					"callee": "ctx.getWorkspaces",
+					"lineNumber": 21
+				},
+				{
+					"caller": "execute",
+					"callee": "workspaces?.find",
+					"lineNumber": 23
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/components/AgentHooks/hooks/useCommandWatcher/tools/get-workspace-details.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 69,
+			"nonEmptyLines": 61,
+			"functions": [
+				{
+					"name": "execute",
+					"startLine": 9,
+					"endLine": 63,
+					"params": ["params", "ctx"]
+				}
+			],
+			"exports": [
+				{
+					"name": "getWorkspaceDetails",
+					"line": 65,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "execute",
+					"callee": "ctx.getWorkspaces",
+					"lineNumber": 13
+				},
+				{
+					"caller": "execute",
+					"callee": "workspaces.find",
+					"lineNumber": 18
+				},
+				{
+					"caller": "execute",
+					"callee": "useTabsStore.getState",
+					"lineNumber": 26
+				},
+				{
+					"caller": "execute",
+					"callee": "tabsStore.tabs.filter",
+					"lineNumber": 28
+				},
+				{
+					"caller": "execute",
+					"callee": "workspaceTabs.map",
+					"lineNumber": 32
+				},
+				{
+					"caller": "execute",
+					"callee": "Object.entries(tabsStore.panes)\n\t\t\t.filter(([, pane]) => pane.tabId === tab.id)\n\t\t\t.map",
+					"lineNumber": 33
+				},
+				{
+					"caller": "execute",
+					"callee": "Object.entries(tabsStore.panes)\n\t\t\t.filter",
+					"lineNumber": 33
+				},
+				{
+					"caller": "execute",
+					"callee": "Object.entries",
+					"lineNumber": 33
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/components/AgentHooks/hooks/useCommandWatcher/tools/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 60,
+			"nonEmptyLines": 53,
+			"functions": [
+				{
+					"name": "executeTool",
+					"startLine": 37,
+					"endLine": 58,
+					"params": ["name", "params", "ctx"]
+				}
+			],
+			"exports": [
+				{
+					"name": "executeTool",
+					"line": 37,
+					"isDefault": false
+				},
+				{
+					"name": "CommandResult",
+					"line": 60,
+					"isDefault": false
+				},
+				{
+					"name": "ToolContext",
+					"line": 60,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "executeTool",
+					"callee": "toolsByName.get",
+					"lineNumber": 42
+				},
+				{
+					"caller": "executeTool",
+					"callee": "tool.schema.safeParse",
+					"lineNumber": 49
+				},
+				{
+					"caller": "executeTool",
+					"callee": "parsed.error.errors.map((e: { message: string }) => e.message).join",
+					"lineNumber": 53
+				},
+				{
+					"caller": "executeTool",
+					"callee": "parsed.error.errors.map",
+					"lineNumber": 53
+				},
+				{
+					"caller": "executeTool",
+					"callee": "tool.execute",
+					"lineNumber": 57
+				}
+			],
+			"metrics": {
+				"importCount": 10,
+				"exportCount": 3,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/components/AgentHooks/hooks/useCommandWatcher/tools/list-projects.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 37,
+			"nonEmptyLines": 32,
+			"functions": [
+				{
+					"name": "execute",
+					"startLine": 6,
+					"endLine": 31,
+					"params": ["_params", "ctx"]
+				}
+			],
+			"exports": [
+				{
+					"name": "listProjects",
+					"line": 33,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "execute",
+					"callee": "ctx.getProjects",
+					"lineNumber": 10
+				},
+				{
+					"caller": "execute",
+					"callee": "projects.map",
+					"lineNumber": 19
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/components/AgentHooks/hooks/useCommandWatcher/tools/list-workspaces.test.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 94,
+			"nonEmptyLines": 89,
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/components/AgentHooks/hooks/useCommandWatcher/tools/list-workspaces.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 40,
+			"nonEmptyLines": 35,
+			"functions": [
+				{
+					"name": "execute",
+					"startLine": 10,
+					"endLine": 31,
+					"params": ["_params", "ctx"]
+				}
+			],
+			"exports": [
+				{
+					"name": "listWorkspaces",
+					"line": 33,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "execute",
+					"callee": "ctx.getWorkspaces",
+					"lineNumber": 14
+				},
+				{
+					"caller": "execute",
+					"callee": "buildWorkspaceList",
+					"lineNumber": 23
+				},
+				{
+					"caller": "execute",
+					"callee": "ctx.getProjects",
+					"lineNumber": 25
+				},
+				{
+					"caller": "execute",
+					"callee": "ctx.getActiveWorkspaceId",
+					"lineNumber": 26
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/components/AgentHooks/hooks/useCommandWatcher/tools/list-workspaces.utils.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 50,
+			"nonEmptyLines": 45,
+			"functions": [
+				{
+					"name": "buildWorkspaceList",
+					"startLine": 23,
+					"endLine": 50,
+					"params": [
+						"{\n\tworkspaces,\n\tprojects,\n\tactiveWorkspaceId,\n\tgetWorktreePathByWorkspaceId,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "buildWorkspaceList",
+					"line": 23,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "buildWorkspaceList",
+					"callee": "(projects ?? []).map",
+					"lineNumber": 35
+				},
+				{
+					"caller": "buildWorkspaceList",
+					"callee": "workspaces.map",
+					"lineNumber": 38
+				},
+				{
+					"caller": "buildWorkspaceList",
+					"callee": "mainRepoPathByProjectId.get",
+					"lineNumber": 43
+				},
+				{
+					"caller": "buildWorkspaceList",
+					"callee": "getWorktreePathByWorkspaceId",
+					"lineNumber": 44
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/components/AgentHooks/hooks/useCommandWatcher/tools/start-agent-session.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 123,
+			"nonEmptyLines": 112,
+			"functions": [
+				{
+					"name": "execute",
+					"startLine": 25,
+					"endLine": 111,
+					"params": ["params", "ctx"]
+				}
+			],
+			"exports": [
+				{
+					"name": "startAgentSession",
+					"line": 113,
+					"isDefault": false
+				},
+				{
+					"name": "startAgentSessionWithPrompt",
+					"line": 119,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "execute",
+					"callee": "ctx.getWorkspaces",
+					"lineNumber": 29
+				},
+				{
+					"caller": "execute",
+					"callee": "workspaces.find",
+					"lineNumber": 34
+				},
+				{
+					"caller": "execute",
+					"callee": "normalizeAgentLaunchRequest",
+					"lineNumber": 58
+				},
+				{
+					"caller": "execute",
+					"callee": "Boolean",
+					"lineNumber": 69
+				},
+				{
+					"caller": "execute",
+					"callee": "Boolean",
+					"lineNumber": 70
+				},
+				{
+					"caller": "execute",
+					"callee": "launchAgentSession",
+					"lineNumber": 73
+				},
+				{
+					"caller": "execute",
+					"callee": "ctx.terminalCreateOrAttach.mutateAsync",
+					"lineNumber": 76
+				},
+				{
+					"caller": "execute",
+					"callee": "ctx.terminalWrite.mutateAsync",
+					"lineNumber": 77
+				},
+				{
+					"caller": "execute",
+					"callee": "queueAgentSessionLaunch",
+					"lineNumber": 79
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 2,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/components/AgentHooks/hooks/useCommandWatcher/tools/switch-workspace.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 65,
+			"nonEmptyLines": 57,
+			"functions": [
+				{
+					"name": "execute",
+					"startLine": 13,
+					"endLine": 59,
+					"params": ["params", "ctx"]
+				}
+			],
+			"exports": [
+				{
+					"name": "switchWorkspace",
+					"line": 61,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "execute",
+					"callee": "ctx.getWorkspaces",
+					"lineNumber": 21
+				},
+				{
+					"caller": "execute",
+					"callee": "params.workspaceName.toLowerCase",
+					"lineNumber": 26
+				},
+				{
+					"caller": "execute",
+					"callee": "workspaces.find",
+					"lineNumber": 27
+				},
+				{
+					"caller": "execute",
+					"callee": "ws.name.toLowerCase",
+					"lineNumber": 29
+				},
+				{
+					"caller": "execute",
+					"callee": "ws.branch.toLowerCase",
+					"lineNumber": 30
+				},
+				{
+					"caller": "execute",
+					"callee": "ctx.setActive.mutateAsync",
+					"lineNumber": 50
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/components/AgentHooks/hooks/useCommandWatcher/tools/types.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 78,
+			"nonEmptyLines": 73,
+			"functions": [
+				{
+					"name": "buildBulkResult",
+					"startLine": 19,
+					"endLine": 42,
+					"params": [
+						"{\n\titems,\n\terrors,\n\titemKey,\n\tallFailedMessage,\n\ttotal,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "buildBulkResult",
+					"line": 19,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/components/AgentHooks/hooks/useCommandWatcher/tools/update-workspace.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 65,
+			"nonEmptyLines": 57,
+			"functions": [
+				{
+					"name": "execute",
+					"startLine": 24,
+					"endLine": 59,
+					"params": ["params", "ctx"]
+				}
+			],
+			"exports": [
+				{
+					"name": "updateWorkspace",
+					"line": 61,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "execute",
+					"callee": "params.updates.entries",
+					"lineNumber": 31
+				},
+				{
+					"caller": "execute",
+					"callee": "ctx.updateWorkspace.mutateAsync",
+					"lineNumber": 33
+				},
+				{
+					"caller": "execute",
+					"callee": "updated.push",
+					"lineNumber": 38
+				},
+				{
+					"caller": "execute",
+					"callee": "errors.push",
+					"lineNumber": 43
+				},
+				{
+					"caller": "execute",
+					"callee": "buildBulkResult",
+					"lineNumber": 52
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		}
+	]
+}
