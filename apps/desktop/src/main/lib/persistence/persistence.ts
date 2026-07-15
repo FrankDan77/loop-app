@@ -5,8 +5,8 @@ import Database from "better-sqlite3";
 import { ipcMain } from "electron";
 import log from "electron-log/main";
 import {
-	ensureSupersetHomeDirExists,
-	SUPERSET_HOME_DIR,
+	ensureLoopHomeDirExists,
+	LOOP_HOME_DIR,
 } from "../app-environment";
 
 type SQLitePersistence = ReturnType<typeof createNodeSQLitePersistence>;
@@ -137,8 +137,8 @@ function suppressIdleResumeWrites(
 }
 
 export function initTanstackDbPersistence(): void {
-	ensureSupersetHomeDirExists();
-	database = new Database(join(SUPERSET_HOME_DIR, "tanstack-db.sqlite"));
+	ensureLoopHomeDirExists();
+	database = new Database(join(LOOP_HOME_DIR, "tanstack-db.sqlite"));
 	// Crash durability: WAL keeps the main DB file intact across a kill mid-commit
 	// (auto-update restart / OS crash) because writes go to a -wal file and the
 	// main file is only touched by an atomic checkpoint. Default DELETE journal
