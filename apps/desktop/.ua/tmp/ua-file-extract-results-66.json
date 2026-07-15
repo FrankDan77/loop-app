@@ -1,0 +1,1753 @@
+{
+	"scriptCompleted": true,
+	"filesAnalyzed": 28,
+	"filesSkipped": [],
+	"results": [
+		{
+			"path": "src/renderer/components/Chat/ChatInterface/components/IssueLinkCommand/IssueLinkCommand.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 254,
+			"nonEmptyLines": 243,
+			"functions": [
+				{
+					"name": "isClosedStatus",
+					"startLine": 24,
+					"endLine": 26,
+					"params": ["type"]
+				},
+				{
+					"name": "IssueLinkCommand",
+					"startLine": 39,
+					"endLine": 254,
+					"params": ["{\n\tchildren,\n\ttooltipLabel,\n\tonSelect,\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "IssueLinkCommand",
+					"line": 39,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "IssueLinkCommand",
+					"callee": "useState",
+					"lineNumber": 44
+				},
+				{
+					"caller": "IssueLinkCommand",
+					"callee": "useState",
+					"lineNumber": 45
+				},
+				{
+					"caller": "IssueLinkCommand",
+					"callee": "useState",
+					"lineNumber": 46
+				},
+				{
+					"caller": "IssueLinkCommand",
+					"callee": "useId",
+					"lineNumber": 47
+				},
+				{
+					"caller": "IssueLinkCommand",
+					"callee": "useCollections",
+					"lineNumber": 48
+				},
+				{
+					"caller": "IssueLinkCommand",
+					"callee": "useLiveQuery",
+					"lineNumber": 50
+				},
+				{
+					"caller": "IssueLinkCommand",
+					"callee": "q.from({ t: collections.tasks }).select",
+					"lineNumber": 52
+				},
+				{
+					"caller": "IssueLinkCommand",
+					"callee": "q.from",
+					"lineNumber": 52
+				},
+				{
+					"caller": "IssueLinkCommand",
+					"callee": "useLiveQuery",
+					"lineNumber": 64
+				},
+				{
+					"caller": "IssueLinkCommand",
+					"callee": "q.from({ s: collections.taskStatuses }).select",
+					"lineNumber": 66
+				},
+				{
+					"caller": "IssueLinkCommand",
+					"callee": "q.from",
+					"lineNumber": 66
+				},
+				{
+					"caller": "IssueLinkCommand",
+					"callee": "useMemo",
+					"lineNumber": 75
+				},
+				{
+					"caller": "IssueLinkCommand",
+					"callee": "map.set",
+					"lineNumber": 81
+				},
+				{
+					"caller": "IssueLinkCommand",
+					"callee": "useMemo",
+					"lineNumber": 90
+				},
+				{
+					"caller": "IssueLinkCommand",
+					"callee": "(allTasks ?? []).filter",
+					"lineNumber": 93
+				},
+				{
+					"caller": "IssueLinkCommand",
+					"callee": "statusMap.get",
+					"lineNumber": 96
+				},
+				{
+					"caller": "IssueLinkCommand",
+					"callee": "isClosedStatus",
+					"lineNumber": 98
+				},
+				{
+					"caller": "IssueLinkCommand",
+					"callee": "useMemo",
+					"lineNumber": 112
+				},
+				{
+					"caller": "IssueLinkCommand",
+					"callee": "allTasks.filter",
+					"lineNumber": 114
+				},
+				{
+					"caller": "IssueLinkCommand",
+					"callee": "statusMap.get",
+					"lineNumber": 116
+				},
+				{
+					"caller": "IssueLinkCommand",
+					"callee": "isClosedStatus",
+					"lineNumber": 117
+				},
+				{
+					"caller": "IssueLinkCommand",
+					"callee": "visibleTasks\n\t\t\t\t.sort(\n\t\t\t\t\t(a, b) =>\n\t\t\t\t\t\tnew Date(b.updatedAt).getTime() - new Date(a.updatedAt).getTime(),\n\t\t\t\t)\n\t\t\t\t.slice",
+					"lineNumber": 120
+				},
+				{
+					"caller": "IssueLinkCommand",
+					"callee": "visibleTasks\n\t\t\t\t.sort",
+					"lineNumber": 120
+				},
+				{
+					"caller": "IssueLinkCommand",
+					"callee": "new Date(b.updatedAt).getTime",
+					"lineNumber": 123
+				},
+				{
+					"caller": "IssueLinkCommand",
+					"callee": "new Date(a.updatedAt).getTime",
+					"lineNumber": 123
+				},
+				{
+					"caller": "IssueLinkCommand",
+					"callee": "taskFuse\n\t\t\t.search(searchQuery, { limit: MAX_RESULTS })\n\t\t\t.map",
+					"lineNumber": 127
+				},
+				{
+					"caller": "IssueLinkCommand",
+					"callee": "taskFuse\n\t\t\t.search",
+					"lineNumber": 127
+				},
+				{
+					"caller": "handleSelect",
+					"callee": "onSelect",
+					"lineNumber": 138
+				},
+				{
+					"caller": "handleSelect",
+					"callee": "setSearchQuery",
+					"lineNumber": 139
+				},
+				{
+					"caller": "handleSelect",
+					"callee": "setOpen",
+					"lineNumber": 140
+				},
+				{
+					"caller": "IssueLinkCommand",
+					"callee": "setSearchQuery",
+					"lineNumber": 147
+				},
+				{
+					"caller": "IssueLinkCommand",
+					"callee": "setOpen",
+					"lineNumber": 148
+				},
+				{
+					"caller": "IssueLinkCommand",
+					"callee": "event.stopPropagation",
+					"lineNumber": 161
+				},
+				{
+					"caller": "IssueLinkCommand",
+					"callee": "setShowClosed",
+					"lineNumber": 173
+				},
+				{
+					"caller": "IssueLinkCommand",
+					"callee": "filteredTasks.map",
+					"lineNumber": 198
+				},
+				{
+					"caller": "IssueLinkCommand",
+					"callee": "statusMap.get",
+					"lineNumber": 200
+				},
+				{
+					"caller": "IssueLinkCommand",
+					"callee": "handleSelect",
+					"lineNumber": 207
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 1,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/lib/slug-width.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 15,
+			"nonEmptyLines": 12,
+			"functions": [
+				{
+					"name": "getSlugColumnWidth",
+					"startLine": 5,
+					"endLine": 15,
+					"params": ["slugs"]
+				}
+			],
+			"exports": [
+				{
+					"name": "getSlugColumnWidth",
+					"line": 5,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "getSlugColumnWidth",
+					"callee": "Math.min",
+					"lineNumber": 8
+				},
+				{
+					"caller": "getSlugColumnWidth",
+					"callee": "slugs.reduce",
+					"lineNumber": 9
+				},
+				{
+					"caller": "getSlugColumnWidth",
+					"callee": "Math.max",
+					"lineNumber": 9
+				},
+				{
+					"caller": "getSlugColumnWidth",
+					"callee": "Math.ceil",
+					"lineNumber": 14
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/components/DashboardSidebarWorkspaceHoverCardContent/components/LinkedTaskSection/LinkedTaskSection.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 84,
+			"nonEmptyLines": 79,
+			"functions": [
+				{
+					"name": "LinkedTaskSection",
+					"startLine": 15,
+					"endLine": 84,
+					"params": ["{ taskId }"]
+				}
+			],
+			"exports": [
+				{
+					"name": "LinkedTaskSection",
+					"line": 15,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "LinkedTaskSection",
+					"callee": "useCollections",
+					"lineNumber": 16
+				},
+				{
+					"caller": "LinkedTaskSection",
+					"callee": "useLiveQuery",
+					"lineNumber": 18
+				},
+				{
+					"caller": "LinkedTaskSection",
+					"callee": "q\n\t\t\t\t.from({ t: collections.tasks })\n\t\t\t\t.leftJoin({ s: collections.taskStatuses }, ({ t, s }) =>\n\t\t\t\t\teq(t.statusId, s.id),\n\t\t\t\t)\n\t\t\t\t.where(({ t }) => eq(t.id, taskId))\n\t\t\t\t.select",
+					"lineNumber": 20
+				},
+				{
+					"caller": "LinkedTaskSection",
+					"callee": "q\n\t\t\t\t.from({ t: collections.tasks })\n\t\t\t\t.leftJoin({ s: collections.taskStatuses }, ({ t, s }) =>\n\t\t\t\t\teq(t.statusId, s.id),\n\t\t\t\t)\n\t\t\t\t.where",
+					"lineNumber": 20
+				},
+				{
+					"caller": "LinkedTaskSection",
+					"callee": "q\n\t\t\t\t.from({ t: collections.tasks })\n\t\t\t\t.leftJoin",
+					"lineNumber": 20
+				},
+				{
+					"caller": "LinkedTaskSection",
+					"callee": "q\n\t\t\t\t.from",
+					"lineNumber": 20
+				},
+				{
+					"caller": "LinkedTaskSection",
+					"callee": "eq",
+					"lineNumber": 23
+				},
+				{
+					"caller": "LinkedTaskSection",
+					"callee": "eq",
+					"lineNumber": 25
+				},
+				{
+					"caller": "LinkedTaskSection",
+					"callee": "e.stopPropagation",
+					"lineNumber": 76
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/tasks/$taskId/components/PropertiesSidebar/PropertiesSidebar.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 58,
+			"nonEmptyLines": 52,
+			"functions": [
+				{
+					"name": "PropertiesSidebar",
+					"startLine": 15,
+					"endLine": 58,
+					"params": ["{ task }"]
+				}
+			],
+			"exports": [
+				{
+					"name": "PropertiesSidebar",
+					"line": 15,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "PropertiesSidebar",
+					"callee": "useIsV2CloudEnabled",
+					"lineNumber": 17
+				},
+				{
+					"caller": "PropertiesSidebar",
+					"callee": "labels.map",
+					"lineNumber": 38
+				}
+			],
+			"metrics": {
+				"importCount": 7,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/tasks/$taskId/components/PropertiesSidebar/components/AssigneeProperty/AssigneeProperty.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 125,
+			"nonEmptyLines": 118,
+			"functions": [
+				{
+					"name": "AssigneeProperty",
+					"startLine": 19,
+					"endLine": 125,
+					"params": ["{ task }"]
+				}
+			],
+			"exports": [
+				{
+					"name": "AssigneeProperty",
+					"line": 19,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "AssigneeProperty",
+					"callee": "useCollections",
+					"lineNumber": 20
+				},
+				{
+					"caller": "AssigneeProperty",
+					"callee": "useOptimisticCollectionActions",
+					"lineNumber": 21
+				},
+				{
+					"caller": "AssigneeProperty",
+					"callee": "useState",
+					"lineNumber": 22
+				},
+				{
+					"caller": "AssigneeProperty",
+					"callee": "useLiveQuery",
+					"lineNumber": 24
+				},
+				{
+					"caller": "AssigneeProperty",
+					"callee": "q.from",
+					"lineNumber": 25
+				},
+				{
+					"caller": "AssigneeProperty",
+					"callee": "useMemo",
+					"lineNumber": 29
+				},
+				{
+					"caller": "handleSelectUser",
+					"callee": "setOpen",
+					"lineNumber": 33
+				},
+				{
+					"caller": "handleSelectUser",
+					"callee": "taskActions.updateAssignee",
+					"lineNumber": 37
+				},
+				{
+					"caller": "handleSelectUser",
+					"callee": "setOpen",
+					"lineNumber": 39
+				},
+				{
+					"caller": "AssigneeProperty",
+					"callee": "task.assignee.name?.charAt(0).toUpperCase",
+					"lineNumber": 60
+				},
+				{
+					"caller": "AssigneeProperty",
+					"callee": "task.assignee.name?.charAt",
+					"lineNumber": 60
+				},
+				{
+					"caller": "AssigneeProperty",
+					"callee": "task.assigneeDisplayName?.charAt(0).toUpperCase",
+					"lineNumber": 75
+				},
+				{
+					"caller": "AssigneeProperty",
+					"callee": "task.assigneeDisplayName?.charAt",
+					"lineNumber": 75
+				},
+				{
+					"caller": "AssigneeProperty",
+					"callee": "handleSelectUser",
+					"lineNumber": 94
+				},
+				{
+					"caller": "AssigneeProperty",
+					"callee": "users.map",
+					"lineNumber": 103
+				},
+				{
+					"caller": "AssigneeProperty",
+					"callee": "handleSelectUser",
+					"lineNumber": 106
+				}
+			],
+			"metrics": {
+				"importCount": 3,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/tasks/$taskId/components/PropertiesSidebar/components/AssigneeProperty/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "AssigneeProperty",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/tasks/$taskId/components/PropertiesSidebar/components/OpenInWorkspace/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "OpenInWorkspace",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/tasks/$taskId/components/PropertiesSidebar/components/OpenInWorkspaceV2/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "OpenInWorkspaceV2",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/tasks/$taskId/components/PropertiesSidebar/components/PriorityProperty/PriorityProperty.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 73,
+			"nonEmptyLines": 66,
+			"functions": [
+				{
+					"name": "PriorityProperty",
+					"startLine": 26,
+					"endLine": 73,
+					"params": ["{ task }"]
+				}
+			],
+			"exports": [
+				{
+					"name": "PriorityProperty",
+					"line": 26,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "PriorityProperty",
+					"callee": "useOptimisticCollectionActions",
+					"lineNumber": 27
+				},
+				{
+					"caller": "PriorityProperty",
+					"callee": "useState",
+					"lineNumber": 28
+				},
+				{
+					"caller": "handleSelectPriority",
+					"callee": "setOpen",
+					"lineNumber": 35
+				},
+				{
+					"caller": "handleSelectPriority",
+					"callee": "taskActions.updatePriority",
+					"lineNumber": 39
+				},
+				{
+					"caller": "handleSelectPriority",
+					"callee": "setOpen",
+					"lineNumber": 41
+				},
+				{
+					"caller": "PriorityProperty",
+					"callee": "ALL_PRIORITIES.map",
+					"lineNumber": 59
+				},
+				{
+					"caller": "PriorityProperty",
+					"callee": "handleSelectPriority",
+					"lineNumber": 62
+				}
+			],
+			"metrics": {
+				"importCount": 4,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/tasks/$taskId/components/PropertiesSidebar/components/PriorityProperty/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "PriorityProperty",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/tasks/$taskId/components/PropertiesSidebar/components/StatusProperty/StatusProperty.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 80,
+			"nonEmptyLines": 72,
+			"functions": [
+				{
+					"name": "StatusProperty",
+					"startLine": 24,
+					"endLine": 80,
+					"params": ["{ task }"]
+				}
+			],
+			"exports": [
+				{
+					"name": "StatusProperty",
+					"line": 24,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "StatusProperty",
+					"callee": "useCollections",
+					"lineNumber": 25
+				},
+				{
+					"caller": "StatusProperty",
+					"callee": "useOptimisticCollectionActions",
+					"lineNumber": 26
+				},
+				{
+					"caller": "StatusProperty",
+					"callee": "useState",
+					"lineNumber": 27
+				},
+				{
+					"caller": "StatusProperty",
+					"callee": "useLiveQuery",
+					"lineNumber": 29
+				},
+				{
+					"caller": "StatusProperty",
+					"callee": "q.from",
+					"lineNumber": 30
+				},
+				{
+					"caller": "StatusProperty",
+					"callee": "useMemo",
+					"lineNumber": 34
+				},
+				{
+					"caller": "StatusProperty",
+					"callee": "useMemo",
+					"lineNumber": 37
+				},
+				{
+					"caller": "StatusProperty",
+					"callee": "statuses.sort",
+					"lineNumber": 38
+				},
+				{
+					"caller": "handleSelectStatus",
+					"callee": "setOpen",
+					"lineNumber": 43
+				},
+				{
+					"caller": "handleSelectStatus",
+					"callee": "taskActions.updateStatus",
+					"lineNumber": 47
+				},
+				{
+					"caller": "handleSelectStatus",
+					"callee": "setOpen",
+					"lineNumber": 49
+				}
+			],
+			"metrics": {
+				"importCount": 6,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/tasks/$taskId/components/PropertiesSidebar/components/StatusProperty/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "StatusProperty",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/tasks/$taskId/components/TaskActionMenu/TaskActionMenu.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 82,
+			"nonEmptyLines": 73,
+			"functions": [
+				{
+					"name": "TaskActionMenu",
+					"startLine": 24,
+					"endLine": 82,
+					"params": ["{ task, onDelete }"]
+				}
+			],
+			"exports": [
+				{
+					"name": "TaskActionMenu",
+					"line": 24,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "TaskActionMenu",
+					"callee": "useOptimisticCollectionActions",
+					"lineNumber": 25
+				},
+				{
+					"caller": "TaskActionMenu",
+					"callee": "useState",
+					"lineNumber": 26
+				},
+				{
+					"caller": "TaskActionMenu",
+					"callee": "useCopyToClipboard",
+					"lineNumber": 28
+				},
+				{
+					"caller": "handleCopyId",
+					"callee": "copyToClipboard",
+					"lineNumber": 31
+				},
+				{
+					"caller": "handleCopyId",
+					"callee": "setOpen",
+					"lineNumber": 32
+				},
+				{
+					"caller": "handleCopyTitle",
+					"callee": "copyToClipboard",
+					"lineNumber": 36
+				},
+				{
+					"caller": "handleCopyTitle",
+					"callee": "setOpen",
+					"lineNumber": 37
+				},
+				{
+					"caller": "handleDelete",
+					"callee": "taskActions.deleteTask",
+					"lineNumber": 41
+				},
+				{
+					"caller": "handleDelete",
+					"callee": "setOpen",
+					"lineNumber": 43
+				},
+				{
+					"caller": "handleDelete",
+					"callee": "onDelete",
+					"lineNumber": 44
+				}
+			],
+			"metrics": {
+				"importCount": 3,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/tasks/$taskId/components/TaskActionMenu/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "TaskActionMenu",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/tasks/$taskId/components/TaskDetailHeader/TaskDetailHeader.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 46,
+			"nonEmptyLines": 44,
+			"functions": [
+				{
+					"name": "TaskDetailHeader",
+					"startLine": 13,
+					"endLine": 46,
+					"params": ["{\n\ttask,\n\tonBack,\n\tonDelete,\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "TaskDetailHeader",
+					"line": 13,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/TasksView.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 321,
+			"nonEmptyLines": 287,
+			"functions": [
+				{
+					"name": "TasksView",
+					"startLine": 35,
+					"endLine": 321,
+					"params": [
+						"{\n\tinitialTab,\n\tinitialAssignee,\n\tinitialSearch,\n\tinitialType,\n\tinitialProject,\n\tinitialLinearProject,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "TasksView",
+					"line": 35,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "TasksView",
+					"callee": "useNavigate",
+					"lineNumber": 43
+				},
+				{
+					"caller": "TasksView",
+					"callee": "useCollections",
+					"lineNumber": 44
+				},
+				{
+					"caller": "TasksView",
+					"callee": "useState",
+					"lineNumber": 46
+				},
+				{
+					"caller": "TasksView",
+					"callee": "useDeferredValue",
+					"lineNumber": 47
+				},
+				{
+					"caller": "TasksView",
+					"callee": "useTasksFilterStore",
+					"lineNumber": 62
+				},
+				{
+					"caller": "TasksView",
+					"callee": "useRef",
+					"lineNumber": 64
+				},
+				{
+					"caller": "TasksView",
+					"callee": "useCallback",
+					"lineNumber": 66
+				},
+				{
+					"caller": "TasksView",
+					"callee": "tasksSearchFromFilters",
+					"lineNumber": 75
+				},
+				{
+					"caller": "TasksView",
+					"callee": "useCallback",
+					"lineNumber": 100
+				},
+				{
+					"caller": "TasksView",
+					"callee": "clearTimeout",
+					"lineNumber": 102
+				},
+				{
+					"caller": "TasksView",
+					"callee": "setTimeout",
+					"lineNumber": 103
+				},
+				{
+					"caller": "TasksView",
+					"callee": "navigate",
+					"lineNumber": 104
+				},
+				{
+					"caller": "TasksView",
+					"callee": "buildSearch",
+					"lineNumber": 106
+				},
+				{
+					"caller": "TasksView",
+					"callee": "useEffect",
+					"lineNumber": 114
+				},
+				{
+					"caller": "TasksView",
+					"callee": "clearTimeout",
+					"lineNumber": 116
+				},
+				{
+					"caller": "TasksView",
+					"callee": "useCallback",
+					"lineNumber": 120
+				},
+				{
+					"caller": "TasksView",
+					"callee": "setSearchQuery",
+					"lineNumber": 122
+				},
+				{
+					"caller": "TasksView",
+					"callee": "storeSetSearch",
+					"lineNumber": 123
+				},
+				{
+					"caller": "TasksView",
+					"callee": "syncSearchToUrl",
+					"lineNumber": 124
+				},
+				{
+					"caller": "TasksView",
+					"callee": "useEffect",
+					"lineNumber": 129
+				},
+				{
+					"caller": "TasksView",
+					"callee": "storeSetTab",
+					"lineNumber": 130
+				},
+				{
+					"caller": "TasksView",
+					"callee": "useEffect",
+					"lineNumber": 133
+				},
+				{
+					"caller": "TasksView",
+					"callee": "storeSetAssignee",
+					"lineNumber": 134
+				},
+				{
+					"caller": "TasksView",
+					"callee": "useEffect",
+					"lineNumber": 137
+				},
+				{
+					"caller": "TasksView",
+					"callee": "storeSetSearch",
+					"lineNumber": 138
+				},
+				{
+					"caller": "TasksView",
+					"callee": "useEffect",
+					"lineNumber": 141
+				},
+				{
+					"caller": "TasksView",
+					"callee": "storeSetTypeTab",
+					"lineNumber": 142
+				},
+				{
+					"caller": "TasksView",
+					"callee": "useEffect",
+					"lineNumber": 145
+				},
+				{
+					"caller": "TasksView",
+					"callee": "storeSetProjectFilter",
+					"lineNumber": 146
+				},
+				{
+					"caller": "TasksView",
+					"callee": "useEffect",
+					"lineNumber": 149
+				},
+				{
+					"caller": "TasksView",
+					"callee": "storeSetLinearProjectFilter",
+					"lineNumber": 150
+				},
+				{
+					"caller": "TasksView",
+					"callee": "useLiveQuery",
+					"lineNumber": 153
+				},
+				{
+					"caller": "TasksView",
+					"callee": "q\n\t\t\t\t.from({ integrationConnections: collections.integrationConnections })\n\t\t\t\t.select",
+					"lineNumber": 155
+				},
+				{
+					"caller": "TasksView",
+					"callee": "q\n\t\t\t\t.from",
+					"lineNumber": 155
+				},
+				{
+					"caller": "TasksView",
+					"callee": "useLiveQuery",
+					"lineNumber": 163
+				},
+				{
+					"caller": "TasksView",
+					"callee": "q.from",
+					"lineNumber": 164
+				},
+				{
+					"caller": "TasksView",
+					"callee": "useEffect",
+					"lineNumber": 168
+				},
+				{
+					"caller": "TasksView",
+					"callee": "v2Projects.some",
+					"lineNumber": 170
+				},
+				{
+					"caller": "TasksView",
+					"callee": "navigate",
+					"lineNumber": 173
+				},
+				{
+					"caller": "TasksView",
+					"callee": "buildSearch",
+					"lineNumber": 175
+				},
+				{
+					"caller": "TasksView",
+					"callee": "integrations?.some",
+					"lineNumber": 181
+				},
+				{
+					"caller": "handleTabChange",
+					"callee": "navigate",
+					"lineNumber": 184
+				},
+				{
+					"caller": "handleTabChange",
+					"callee": "buildSearch",
+					"lineNumber": 184
+				},
+				{
+					"caller": "handleAssigneeFilterChange",
+					"callee": "navigate",
+					"lineNumber": 188
+				},
+				{
+					"caller": "handleAssigneeFilterChange",
+					"callee": "buildSearch",
+					"lineNumber": 190
+				},
+				{
+					"caller": "handleTypeTabChange",
+					"callee": "navigate",
+					"lineNumber": 196
+				},
+				{
+					"caller": "handleTypeTabChange",
+					"callee": "buildSearch",
+					"lineNumber": 196
+				},
+				{
+					"caller": "handleProjectFilterChange",
+					"callee": "navigate",
+					"lineNumber": 200
+				},
+				{
+					"caller": "handleProjectFilterChange",
+					"callee": "buildSearch",
+					"lineNumber": 200
+				},
+				{
+					"caller": "handleLinearProjectFilterChange",
+					"callee": "navigate",
+					"lineNumber": 204
+				},
+				{
+					"caller": "handleLinearProjectFilterChange",
+					"callee": "buildSearch",
+					"lineNumber": 206
+				},
+				{
+					"caller": "TasksView",
+					"callee": "useState",
+					"lineNumber": 211
+				},
+				{
+					"caller": "TasksView",
+					"callee": "useRef",
+					"lineNumber": 212
+				},
+				{
+					"caller": "TasksView",
+					"callee": "useCallback",
+					"lineNumber": 214
+				},
+				{
+					"caller": "TasksView",
+					"callee": "setSelectedTasks",
+					"lineNumber": 216
+				},
+				{
+					"caller": "TasksView",
+					"callee": "useCallback",
+					"lineNumber": 222
+				},
+				{
+					"caller": "TasksView",
+					"callee": "clearSelectionRef.current",
+					"lineNumber": 223
+				},
+				{
+					"caller": "TasksView",
+					"callee": "useState",
+					"lineNumber": 226
+				},
+				{
+					"caller": "TasksView",
+					"callee": "useRef",
+					"lineNumber": 227
+				},
+				{
+					"caller": "TasksView",
+					"callee": "useCallback",
+					"lineNumber": 229
+				},
+				{
+					"caller": "TasksView",
+					"callee": "setSelectedIssues",
+					"lineNumber": 231
+				},
+				{
+					"caller": "TasksView",
+					"callee": "useCallback",
+					"lineNumber": 237
+				},
+				{
+					"caller": "TasksView",
+					"callee": "clearIssueSelectionRef.current",
+					"lineNumber": 238
+				},
+				{
+					"caller": "handleTaskClick",
+					"callee": "navigate",
+					"lineNumber": 242
+				},
+				{
+					"caller": "handleTaskClick",
+					"callee": "buildSearch",
+					"lineNumber": 245
+				}
+			],
+			"metrics": {
+				"importCount": 9,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/components/BoardContent/BoardContent.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 47,
+			"nonEmptyLines": 43,
+			"functions": [
+				{
+					"name": "BoardContent",
+					"startLine": 15,
+					"endLine": 47,
+					"params": [
+						"{\n\tfilterTab,\n\tsearchQuery,\n\tassigneeFilter,\n\tlinearProjectFilter,\n\tonTaskClick,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "BoardContent",
+					"line": 15,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "BoardContent",
+					"callee": "useTasksData",
+					"lineNumber": 22
+				}
+			],
+			"metrics": {
+				"importCount": 3,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/components/BoardContent/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "BoardContent",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/components/GitHubIssuesContent/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 4,
+			"nonEmptyLines": 4,
+			"exports": [
+				{
+					"name": "GitHubIssuesContent",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "SelectedIssue",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 2,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/components/LinearCTA/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "LinearCTA",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/components/PullRequestsContent/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "PullRequestsContent",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/components/TableContent/TableContent.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 67,
+			"nonEmptyLines": 60,
+			"functions": [
+				{
+					"name": "TableContent",
+					"startLine": 21,
+					"endLine": 67,
+					"params": [
+						"{\n\tfilterTab,\n\tsearchQuery,\n\tassigneeFilter,\n\tlinearProjectFilter,\n\tonTaskClick,\n\tonSelectionChange,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "TableContent",
+					"line": 21,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "TableContent",
+					"callee": "useTasksTable",
+					"lineNumber": 30
+				},
+				{
+					"caller": "TableContent",
+					"callee": "useMemo",
+					"lineNumber": 37
+				},
+				{
+					"caller": "TableContent",
+					"callee": "getSelectedTasks",
+					"lineNumber": 38
+				},
+				{
+					"caller": "TableContent",
+					"callee": "table.getRowModel",
+					"lineNumber": 38
+				},
+				{
+					"caller": "TableContent",
+					"callee": "useCallback",
+					"lineNumber": 41
+				},
+				{
+					"caller": "TableContent",
+					"callee": "setRowSelection",
+					"lineNumber": 42
+				},
+				{
+					"caller": "TableContent",
+					"callee": "useEffect",
+					"lineNumber": 45
+				},
+				{
+					"caller": "TableContent",
+					"callee": "onSelectionChange",
+					"lineNumber": 46
+				},
+				{
+					"caller": "TableContent",
+					"callee": "table.getRowModel",
+					"lineNumber": 49
+				}
+			],
+			"metrics": {
+				"importCount": 5,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/components/TableContent/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "TableContent",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/components/TableContent/utils/getSelectedTasks/getSelectedTasks.test.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 94,
+			"nonEmptyLines": 87,
+			"functions": [
+				{
+					"name": "createTask",
+					"startLine": 5,
+					"endLine": 54,
+					"params": ["id", "title"]
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 0,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/components/TableContent/utils/getSelectedTasks/getSelectedTasks.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 24,
+			"nonEmptyLines": 19,
+			"functions": [
+				{
+					"name": "getSelectedTasks",
+					"startLine": 9,
+					"endLine": 24,
+					"params": ["rows", "rowSelection"]
+				}
+			],
+			"exports": [
+				{
+					"name": "getSelectedTasks",
+					"line": 9,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "getSelectedTasks",
+					"callee": "selectedTasks.set",
+					"lineNumber": 20
+				},
+				{
+					"caller": "getSelectedTasks",
+					"callee": "selectedTasks.values",
+					"lineNumber": 23
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/components/TableContent/utils/getSelectedTasks/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "getSelectedTasks",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/components/TasksBoardView/TasksBoardView.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 134,
+			"nonEmptyLines": 118,
+			"functions": [
+				{
+					"name": "TasksBoardView",
+					"startLine": 27,
+					"endLine": 134,
+					"params": ["{\n\tdata,\n\tallStatuses,\n\tonTaskClick,\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "TasksBoardView",
+					"line": 27,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "TasksBoardView",
+					"callee": "useOptimisticCollectionActions",
+					"lineNumber": 32
+				},
+				{
+					"caller": "TasksBoardView",
+					"callee": "useState",
+					"lineNumber": 33
+				},
+				{
+					"caller": "TasksBoardView",
+					"callee": "useSensors",
+					"lineNumber": 35
+				},
+				{
+					"caller": "TasksBoardView",
+					"callee": "useSensor",
+					"lineNumber": 36
+				},
+				{
+					"caller": "TasksBoardView",
+					"callee": "useSensor",
+					"lineNumber": 39
+				},
+				{
+					"caller": "TasksBoardView",
+					"callee": "useSensor",
+					"lineNumber": 42
+				},
+				{
+					"caller": "TasksBoardView",
+					"callee": "useMemo",
+					"lineNumber": 47
+				},
+				{
+					"caller": "TasksBoardView",
+					"callee": "[...allStatuses].sort",
+					"lineNumber": 48
+				},
+				{
+					"caller": "TasksBoardView",
+					"callee": "useMemo",
+					"lineNumber": 52
+				},
+				{
+					"caller": "TasksBoardView",
+					"callee": "map.set",
+					"lineNumber": 55
+				},
+				{
+					"caller": "TasksBoardView",
+					"callee": "map.get",
+					"lineNumber": 58
+				},
+				{
+					"caller": "TasksBoardView",
+					"callee": "existing.push",
+					"lineNumber": 60
+				},
+				{
+					"caller": "TasksBoardView",
+					"callee": "useCallback",
+					"lineNumber": 66
+				},
+				{
+					"caller": "TasksBoardView",
+					"callee": "data.find",
+					"lineNumber": 69
+				},
+				{
+					"caller": "TasksBoardView",
+					"callee": "setActiveTask",
+					"lineNumber": 70
+				},
+				{
+					"caller": "TasksBoardView",
+					"callee": "useCallback",
+					"lineNumber": 75
+				},
+				{
+					"caller": "TasksBoardView",
+					"callee": "setActiveTask",
+					"lineNumber": 77
+				},
+				{
+					"caller": "TasksBoardView",
+					"callee": "data.find",
+					"lineNumber": 95
+				},
+				{
+					"caller": "TasksBoardView",
+					"callee": "taskActions.updateStatus",
+					"lineNumber": 98
+				},
+				{
+					"caller": "TasksBoardView",
+					"callee": "useCallback",
+					"lineNumber": 103
+				},
+				{
+					"caller": "TasksBoardView",
+					"callee": "setActiveTask",
+					"lineNumber": 104
+				},
+				{
+					"caller": "TasksBoardView",
+					"callee": "sortedStatuses.map",
+					"lineNumber": 115
+				},
+				{
+					"caller": "TasksBoardView",
+					"callee": "tasksByStatus.get",
+					"lineNumber": 119
+				}
+			],
+			"metrics": {
+				"importCount": 5,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/components/TasksBoardView/components/KanbanCard/KanbanCard.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 120,
+			"nonEmptyLines": 111,
+			"functions": [
+				{
+					"name": "KanbanCard",
+					"startLine": 16,
+					"endLine": 120,
+					"params": ["{ task, onClick, overlay }"]
+				}
+			],
+			"exports": [
+				{
+					"name": "KanbanCard",
+					"line": 16,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "KanbanCard",
+					"callee": "useSortable",
+					"lineNumber": 24
+				},
+				{
+					"caller": "KanbanCard",
+					"callee": "CSS.Transform.toString",
+					"lineNumber": 31
+				},
+				{
+					"caller": "KanbanCard",
+					"callee": "format",
+					"lineNumber": 39
+				},
+				{
+					"caller": "KanbanCard",
+					"callee": "cn",
+					"lineNumber": 51
+				},
+				{
+					"caller": "KanbanCard",
+					"callee": "e.preventDefault",
+					"lineNumber": 59
+				},
+				{
+					"caller": "KanbanCard",
+					"callee": "onClick",
+					"lineNumber": 60
+				},
+				{
+					"caller": "KanbanCard",
+					"callee": "labels.slice(0, 2).map",
+					"lineNumber": 92
+				},
+				{
+					"caller": "KanbanCard",
+					"callee": "labels.slice",
+					"lineNumber": 92
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		}
+	]
+}

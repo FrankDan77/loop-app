@@ -1,0 +1,660 @@
+{
+	"batchIndex": 101,
+	"totalBatches": 117,
+	"generatedFrom": ["ua-file-extract-results-101.json", "dispatch-101.json"],
+	"stats": {
+		"files": 25,
+		"functions": 21,
+		"classes": 1,
+		"nodes": 47,
+		"edges": 46
+	},
+	"nodes": [
+		{
+			"id": "file:.github/FUNDING.yml",
+			"type": "file",
+			"path": ".github/FUNDING.yml",
+			"language": "yaml",
+			"category": "config",
+			"lines": 3
+		},
+		{
+			"id": "file:.npmrc",
+			"type": "file",
+			"path": ".npmrc",
+			"language": "unknown",
+			"category": "code",
+			"lines": 3
+		},
+		{
+			"id": "file:docs/mockups/updates-sidebar.html",
+			"type": "file",
+			"path": "docs/mockups/updates-sidebar.html",
+			"language": "html",
+			"category": "markup",
+			"lines": 923
+		},
+		{
+			"id": "file:index.d.ts",
+			"type": "file",
+			"path": "index.d.ts",
+			"language": "typescript",
+			"category": "code",
+			"lines": 31
+		},
+		{
+			"id": "file:plans/v2-workspace-init-status.md",
+			"type": "file",
+			"path": "plans/v2-workspace-init-status.md",
+			"language": "markdown",
+			"category": "docs",
+			"lines": 298
+		},
+		{
+			"id": "file:scripts/build-bundled-cli.ts",
+			"type": "file",
+			"path": "scripts/build-bundled-cli.ts",
+			"language": "typescript",
+			"category": "code",
+			"lines": 106
+		},
+		{
+			"id": "function:scripts/build-bundled-cli.ts:getBunTarget",
+			"type": "function",
+			"path": "scripts/build-bundled-cli.ts",
+			"name": "getBunTarget"
+		},
+		{
+			"id": "function:scripts/build-bundled-cli.ts:run",
+			"type": "function",
+			"path": "scripts/build-bundled-cli.ts",
+			"name": "run"
+		},
+		{
+			"id": "function:scripts/build-bundled-cli.ts:buildCliBuildEnv",
+			"type": "function",
+			"path": "scripts/build-bundled-cli.ts",
+			"name": "buildCliBuildEnv"
+		},
+		{
+			"id": "file:scripts/cdp-smoke-integrations.ts",
+			"type": "file",
+			"path": "scripts/cdp-smoke-integrations.ts",
+			"language": "typescript",
+			"category": "code",
+			"lines": 140
+		},
+		{
+			"id": "function:scripts/cdp-smoke-integrations.ts:findRendererTarget",
+			"type": "function",
+			"path": "scripts/cdp-smoke-integrations.ts",
+			"name": "findRendererTarget"
+		},
+		{
+			"id": "function:scripts/cdp-smoke-integrations.ts:main",
+			"type": "function",
+			"path": "scripts/cdp-smoke-integrations.ts",
+			"name": "main"
+		},
+		{
+			"id": "file:scripts/check-pty-daemon-bundle.ts",
+			"type": "file",
+			"path": "scripts/check-pty-daemon-bundle.ts",
+			"language": "typescript",
+			"category": "code",
+			"lines": 114
+		},
+		{
+			"id": "function:scripts/check-pty-daemon-bundle.ts:parseArgs",
+			"type": "function",
+			"path": "scripts/check-pty-daemon-bundle.ts",
+			"name": "parseArgs"
+		},
+		{
+			"id": "function:scripts/check-pty-daemon-bundle.ts:main",
+			"type": "function",
+			"path": "scripts/check-pty-daemon-bundle.ts",
+			"name": "main"
+		},
+		{
+			"id": "file:scripts/clean-launch-services.ts",
+			"type": "file",
+			"path": "scripts/clean-launch-services.ts",
+			"language": "typescript",
+			"category": "code",
+			"lines": 72
+		},
+		{
+			"id": "file:scripts/generate-file-icons.ts",
+			"type": "file",
+			"path": "scripts/generate-file-icons.ts",
+			"language": "typescript",
+			"category": "code",
+			"lines": 115
+		},
+		{
+			"id": "function:scripts/generate-file-icons.ts:run",
+			"type": "function",
+			"path": "scripts/generate-file-icons.ts",
+			"name": "run"
+		},
+		{
+			"id": "file:src/lib/electron-app/factories/app/instance.ts",
+			"type": "file",
+			"path": "src/lib/electron-app/factories/app/instance.ts",
+			"language": "typescript",
+			"category": "code",
+			"lines": 6
+		},
+		{
+			"id": "function:src/lib/electron-app/factories/app/instance.ts:makeAppWithSingleInstanceLock",
+			"type": "function",
+			"path": "src/lib/electron-app/factories/app/instance.ts",
+			"name": "makeAppWithSingleInstanceLock"
+		},
+		{
+			"id": "file:src/lib/trpc/routers/changes/utils/merge-pull-request.test.ts",
+			"type": "file",
+			"path": "src/lib/trpc/routers/changes/utils/merge-pull-request.test.ts",
+			"language": "typescript",
+			"category": "code",
+			"lines": 239
+		},
+		{
+			"id": "file:src/lib/trpc/routers/permissions/native-permissions.test.ts",
+			"type": "file",
+			"path": "src/lib/trpc/routers/permissions/native-permissions.test.ts",
+			"language": "typescript",
+			"category": "code",
+			"lines": 159
+		},
+		{
+			"id": "function:src/lib/trpc/routers/permissions/native-permissions.test.ts:createShellRecorder",
+			"type": "function",
+			"path": "src/lib/trpc/routers/permissions/native-permissions.test.ts",
+			"name": "createShellRecorder"
+		},
+		{
+			"id": "file:src/lib/trpc/routers/workspaces/utils/ai-name.test.ts",
+			"type": "file",
+			"path": "src/lib/trpc/routers/workspaces/utils/ai-name.test.ts",
+			"language": "typescript",
+			"category": "code",
+			"lines": 214
+		},
+		{
+			"id": "file:src/lib/trpc/routers/workspaces/utils/git-client.test.ts",
+			"type": "file",
+			"path": "src/lib/trpc/routers/workspaces/utils/git-client.test.ts",
+			"language": "typescript",
+			"category": "code",
+			"lines": 94
+		},
+		{
+			"id": "function:src/lib/trpc/routers/workspaces/utils/git-client.test.ts:makeBlockedGitEnv",
+			"type": "function",
+			"path": "src/lib/trpc/routers/workspaces/utils/git-client.test.ts",
+			"name": "makeBlockedGitEnv"
+		},
+		{
+			"id": "function:src/lib/trpc/routers/workspaces/utils/git-client.test.ts:expectUnsafeEnvRejected",
+			"type": "function",
+			"path": "src/lib/trpc/routers/workspaces/utils/git-client.test.ts",
+			"name": "expectUnsafeEnvRejected"
+		},
+		{
+			"id": "file:src/lib/trpc/workers/WorkerTaskRunner.test.ts",
+			"type": "file",
+			"path": "src/lib/trpc/workers/WorkerTaskRunner.test.ts",
+			"language": "typescript",
+			"category": "code",
+			"lines": 186
+		},
+		{
+			"id": "function:src/lib/trpc/workers/WorkerTaskRunner.test.ts:flushMicrotasks",
+			"type": "function",
+			"path": "src/lib/trpc/workers/WorkerTaskRunner.test.ts",
+			"name": "flushMicrotasks"
+		},
+		{
+			"id": "class:src/lib/trpc/workers/WorkerTaskRunner.test.ts:MockWorker",
+			"type": "class",
+			"path": "src/lib/trpc/workers/WorkerTaskRunner.test.ts",
+			"name": "MockWorker",
+			"methods": ["constructor", "postMessage", "terminate"]
+		},
+		{
+			"id": "file:src/main/lib/agent-setup/templates/amp-plugin.template.ts",
+			"type": "file",
+			"path": "src/main/lib/agent-setup/templates/amp-plugin.template.ts",
+			"language": "typescript",
+			"category": "code",
+			"lines": 149
+		},
+		{
+			"id": "function:src/main/lib/agent-setup/templates/amp-plugin.template.ts:getStringProperty",
+			"type": "function",
+			"path": "src/main/lib/agent-setup/templates/amp-plugin.template.ts",
+			"name": "getStringProperty"
+		},
+		{
+			"id": "function:src/main/lib/agent-setup/templates/amp-plugin.template.ts:getSessionId",
+			"type": "function",
+			"path": "src/main/lib/agent-setup/templates/amp-plugin.template.ts",
+			"name": "getSessionId"
+		},
+		{
+			"id": "function:src/main/lib/agent-setup/templates/amp-plugin.template.ts:isDebugEnabled",
+			"type": "function",
+			"path": "src/main/lib/agent-setup/templates/amp-plugin.template.ts",
+			"name": "isDebugEnabled"
+		},
+		{
+			"id": "function:src/main/lib/agent-setup/templates/amp-plugin.template.ts:debugLog",
+			"type": "function",
+			"path": "src/main/lib/agent-setup/templates/amp-plugin.template.ts",
+			"name": "debugLog"
+		},
+		{
+			"id": "function:src/main/lib/agent-setup/templates/amp-plugin.template.ts:supersetAmpLifecyclePlugin",
+			"type": "function",
+			"path": "src/main/lib/agent-setup/templates/amp-plugin.template.ts",
+			"name": "supersetAmpLifecyclePlugin"
+		},
+		{
+			"id": "file:src/main/lib/agent-setup/templates/opencode-plugin.template.js",
+			"type": "file",
+			"path": "src/main/lib/agent-setup/templates/opencode-plugin.template.js",
+			"language": "javascript",
+			"category": "code",
+			"lines": 221
+		},
+		{
+			"id": "function:src/main/lib/agent-setup/templates/opencode-plugin.template.js:SupersetNotifyPlugin",
+			"type": "function",
+			"path": "src/main/lib/agent-setup/templates/opencode-plugin.template.js",
+			"name": "SupersetNotifyPlugin"
+		},
+		{
+			"id": "file:src/main/lib/agent-setup/templates/pi-extension.template.ts",
+			"type": "file",
+			"path": "src/main/lib/agent-setup/templates/pi-extension.template.ts",
+			"language": "typescript",
+			"category": "code",
+			"lines": 105
+		},
+		{
+			"id": "file:src/main/lib/host-service-coordinator.test.ts",
+			"type": "file",
+			"path": "src/main/lib/host-service-coordinator.test.ts",
+			"language": "typescript",
+			"category": "code",
+			"lines": 244
+		},
+		{
+			"id": "function:src/main/lib/host-service-coordinator.test.ts:baseManifest",
+			"type": "function",
+			"path": "src/main/lib/host-service-coordinator.test.ts",
+			"name": "baseManifest"
+		},
+		{
+			"id": "function:src/main/lib/host-service-coordinator.test.ts:resetMocks",
+			"type": "function",
+			"path": "src/main/lib/host-service-coordinator.test.ts",
+			"name": "resetMocks"
+		},
+		{
+			"id": "file:src/main/lib/sanitize/index.ts",
+			"type": "file",
+			"path": "src/main/lib/sanitize/index.ts",
+			"language": "typescript",
+			"category": "code",
+			"lines": 1
+		},
+		{
+			"id": "file:src/main/lib/sanitize/sanitize.test.ts",
+			"type": "file",
+			"path": "src/main/lib/sanitize/sanitize.test.ts",
+			"language": "typescript",
+			"category": "code",
+			"lines": 115
+		},
+		{
+			"id": "file:src/main/lib/sanitize/sanitize.ts",
+			"type": "file",
+			"path": "src/main/lib/sanitize/sanitize.ts",
+			"language": "typescript",
+			"category": "code",
+			"lines": 36
+		},
+		{
+			"id": "function:src/main/lib/sanitize/sanitize.ts:isValidBinaryName",
+			"type": "function",
+			"path": "src/main/lib/sanitize/sanitize.ts",
+			"name": "isValidBinaryName"
+		},
+		{
+			"id": "file:src/main/lib/window-state/bounds-validation.test.ts",
+			"type": "file",
+			"path": "src/main/lib/window-state/bounds-validation.test.ts",
+			"language": "typescript",
+			"category": "code",
+			"lines": 412
+		},
+		{
+			"id": "file:src/main/pty-daemon/index.ts",
+			"type": "file",
+			"path": "src/main/pty-daemon/index.ts",
+			"language": "typescript",
+			"category": "code",
+			"lines": 202
+		},
+		{
+			"id": "function:src/main/pty-daemon/index.ts:parseFreshArgs",
+			"type": "function",
+			"path": "src/main/pty-daemon/index.ts",
+			"name": "parseFreshArgs"
+		},
+		{
+			"id": "function:src/main/pty-daemon/index.ts:main",
+			"type": "function",
+			"path": "src/main/pty-daemon/index.ts",
+			"name": "main"
+		},
+		{
+			"id": "function:src/main/pty-daemon/index.ts:runFresh",
+			"type": "function",
+			"path": "src/main/pty-daemon/index.ts",
+			"name": "runFresh"
+		},
+		{
+			"id": "function:src/main/pty-daemon/index.ts:runHandoffReceiver",
+			"type": "function",
+			"path": "src/main/pty-daemon/index.ts",
+			"name": "runHandoffReceiver"
+		},
+		{
+			"id": "function:src/main/pty-daemon/index.ts:wireShutdown",
+			"type": "function",
+			"path": "src/main/pty-daemon/index.ts",
+			"name": "wireShutdown"
+		}
+	],
+	"edges": [
+		{
+			"type": "imports",
+			"from": "file:src/main/lib/sanitize/sanitize.test.ts",
+			"to": "file:src/main/lib/sanitize/sanitize.ts",
+			"weight": 0.7
+		},
+
+		{
+			"type": "contains",
+			"from": "file:scripts/build-bundled-cli.ts",
+			"to": "function:scripts/build-bundled-cli.ts:getBunTarget",
+			"weight": 1.0
+		},
+		{
+			"type": "contains",
+			"from": "file:scripts/build-bundled-cli.ts",
+			"to": "function:scripts/build-bundled-cli.ts:run",
+			"weight": 1.0
+		},
+		{
+			"type": "contains",
+			"from": "file:scripts/build-bundled-cli.ts",
+			"to": "function:scripts/build-bundled-cli.ts:buildCliBuildEnv",
+			"weight": 1.0
+		},
+		{
+			"type": "contains",
+			"from": "file:scripts/cdp-smoke-integrations.ts",
+			"to": "function:scripts/cdp-smoke-integrations.ts:findRendererTarget",
+			"weight": 1.0
+		},
+		{
+			"type": "contains",
+			"from": "file:scripts/cdp-smoke-integrations.ts",
+			"to": "function:scripts/cdp-smoke-integrations.ts:main",
+			"weight": 1.0
+		},
+		{
+			"type": "contains",
+			"from": "file:scripts/check-pty-daemon-bundle.ts",
+			"to": "function:scripts/check-pty-daemon-bundle.ts:parseArgs",
+			"weight": 1.0
+		},
+		{
+			"type": "contains",
+			"from": "file:scripts/check-pty-daemon-bundle.ts",
+			"to": "function:scripts/check-pty-daemon-bundle.ts:main",
+			"weight": 1.0
+		},
+		{
+			"type": "contains",
+			"from": "file:scripts/generate-file-icons.ts",
+			"to": "function:scripts/generate-file-icons.ts:run",
+			"weight": 1.0
+		},
+		{
+			"type": "contains",
+			"from": "file:src/lib/electron-app/factories/app/instance.ts",
+			"to": "function:src/lib/electron-app/factories/app/instance.ts:makeAppWithSingleInstanceLock",
+			"weight": 1.0
+		},
+		{
+			"type": "contains",
+			"from": "file:src/lib/trpc/routers/permissions/native-permissions.test.ts",
+			"to": "function:src/lib/trpc/routers/permissions/native-permissions.test.ts:createShellRecorder",
+			"weight": 1.0
+		},
+		{
+			"type": "contains",
+			"from": "file:src/lib/trpc/routers/workspaces/utils/git-client.test.ts",
+			"to": "function:src/lib/trpc/routers/workspaces/utils/git-client.test.ts:makeBlockedGitEnv",
+			"weight": 1.0
+		},
+		{
+			"type": "contains",
+			"from": "file:src/lib/trpc/routers/workspaces/utils/git-client.test.ts",
+			"to": "function:src/lib/trpc/routers/workspaces/utils/git-client.test.ts:expectUnsafeEnvRejected",
+			"weight": 1.0
+		},
+		{
+			"type": "contains",
+			"from": "file:src/lib/trpc/workers/WorkerTaskRunner.test.ts",
+			"to": "function:src/lib/trpc/workers/WorkerTaskRunner.test.ts:flushMicrotasks",
+			"weight": 1.0
+		},
+		{
+			"type": "contains",
+			"from": "file:src/lib/trpc/workers/WorkerTaskRunner.test.ts",
+			"to": "class:src/lib/trpc/workers/WorkerTaskRunner.test.ts:MockWorker",
+			"weight": 1.0
+		},
+		{
+			"type": "contains",
+			"from": "file:src/main/lib/agent-setup/templates/amp-plugin.template.ts",
+			"to": "function:src/main/lib/agent-setup/templates/amp-plugin.template.ts:getStringProperty",
+			"weight": 1.0
+		},
+		{
+			"type": "contains",
+			"from": "file:src/main/lib/agent-setup/templates/amp-plugin.template.ts",
+			"to": "function:src/main/lib/agent-setup/templates/amp-plugin.template.ts:getSessionId",
+			"weight": 1.0
+		},
+		{
+			"type": "contains",
+			"from": "file:src/main/lib/agent-setup/templates/amp-plugin.template.ts",
+			"to": "function:src/main/lib/agent-setup/templates/amp-plugin.template.ts:isDebugEnabled",
+			"weight": 1.0
+		},
+		{
+			"type": "contains",
+			"from": "file:src/main/lib/agent-setup/templates/amp-plugin.template.ts",
+			"to": "function:src/main/lib/agent-setup/templates/amp-plugin.template.ts:debugLog",
+			"weight": 1.0
+		},
+		{
+			"type": "contains",
+			"from": "file:src/main/lib/agent-setup/templates/amp-plugin.template.ts",
+			"to": "function:src/main/lib/agent-setup/templates/amp-plugin.template.ts:supersetAmpLifecyclePlugin",
+			"weight": 1.0
+		},
+		{
+			"type": "contains",
+			"from": "file:src/main/lib/agent-setup/templates/opencode-plugin.template.js",
+			"to": "function:src/main/lib/agent-setup/templates/opencode-plugin.template.js:SupersetNotifyPlugin",
+			"weight": 1.0
+		},
+		{
+			"type": "contains",
+			"from": "file:src/main/lib/host-service-coordinator.test.ts",
+			"to": "function:src/main/lib/host-service-coordinator.test.ts:baseManifest",
+			"weight": 1.0
+		},
+		{
+			"type": "contains",
+			"from": "file:src/main/lib/host-service-coordinator.test.ts",
+			"to": "function:src/main/lib/host-service-coordinator.test.ts:resetMocks",
+			"weight": 1.0
+		},
+		{
+			"type": "contains",
+			"from": "file:src/main/lib/sanitize/sanitize.ts",
+			"to": "function:src/main/lib/sanitize/sanitize.ts:isValidBinaryName",
+			"weight": 1.0
+		},
+		{
+			"type": "contains",
+			"from": "file:src/main/pty-daemon/index.ts",
+			"to": "function:src/main/pty-daemon/index.ts:parseFreshArgs",
+			"weight": 1.0
+		},
+		{
+			"type": "contains",
+			"from": "file:src/main/pty-daemon/index.ts",
+			"to": "function:src/main/pty-daemon/index.ts:main",
+			"weight": 1.0
+		},
+		{
+			"type": "contains",
+			"from": "file:src/main/pty-daemon/index.ts",
+			"to": "function:src/main/pty-daemon/index.ts:runFresh",
+			"weight": 1.0
+		},
+		{
+			"type": "contains",
+			"from": "file:src/main/pty-daemon/index.ts",
+			"to": "function:src/main/pty-daemon/index.ts:runHandoffReceiver",
+			"weight": 1.0
+		},
+		{
+			"type": "contains",
+			"from": "file:src/main/pty-daemon/index.ts",
+			"to": "function:src/main/pty-daemon/index.ts:wireShutdown",
+			"weight": 1.0
+		},
+
+		{
+			"type": "exports",
+			"from": "file:src/lib/electron-app/factories/app/instance.ts",
+			"to": "function:src/lib/electron-app/factories/app/instance.ts:makeAppWithSingleInstanceLock",
+			"weight": 0.8
+		},
+		{
+			"type": "exports",
+			"from": "file:src/main/lib/agent-setup/templates/amp-plugin.template.ts",
+			"to": "function:src/main/lib/agent-setup/templates/amp-plugin.template.ts:supersetAmpLifecyclePlugin",
+			"weight": 0.8
+		},
+		{
+			"type": "exports",
+			"from": "file:src/main/lib/agent-setup/templates/opencode-plugin.template.js",
+			"to": "function:src/main/lib/agent-setup/templates/opencode-plugin.template.js:SupersetNotifyPlugin",
+			"weight": 0.8
+		},
+		{
+			"type": "exports",
+			"from": "file:src/main/lib/sanitize/sanitize.ts",
+			"to": "function:src/main/lib/sanitize/sanitize.ts:isValidBinaryName",
+			"weight": 0.8
+		},
+
+		{
+			"type": "calls",
+			"from": "function:scripts/cdp-smoke-integrations.ts:main",
+			"to": "function:scripts/cdp-smoke-integrations.ts:findRendererTarget",
+			"weight": 0.8
+		},
+		{
+			"type": "calls",
+			"from": "function:scripts/check-pty-daemon-bundle.ts:main",
+			"to": "function:scripts/check-pty-daemon-bundle.ts:parseArgs",
+			"weight": 0.8
+		},
+		{
+			"type": "calls",
+			"from": "function:src/main/lib/agent-setup/templates/amp-plugin.template.ts:getSessionId",
+			"to": "function:src/main/lib/agent-setup/templates/amp-plugin.template.ts:getStringProperty",
+			"weight": 0.8
+		},
+		{
+			"type": "calls",
+			"from": "function:src/main/lib/agent-setup/templates/amp-plugin.template.ts:debugLog",
+			"to": "function:src/main/lib/agent-setup/templates/amp-plugin.template.ts:isDebugEnabled",
+			"weight": 0.8
+		},
+		{
+			"type": "calls",
+			"from": "function:src/main/lib/agent-setup/templates/amp-plugin.template.ts:supersetAmpLifecyclePlugin",
+			"to": "function:src/main/lib/agent-setup/templates/amp-plugin.template.ts:debugLog",
+			"weight": 0.8
+		},
+		{
+			"type": "calls",
+			"from": "function:src/main/pty-daemon/index.ts:main",
+			"to": "function:src/main/pty-daemon/index.ts:runHandoffReceiver",
+			"weight": 0.8
+		},
+		{
+			"type": "calls",
+			"from": "function:src/main/pty-daemon/index.ts:main",
+			"to": "function:src/main/pty-daemon/index.ts:runFresh",
+			"weight": 0.8
+		},
+		{
+			"type": "calls",
+			"from": "function:src/main/pty-daemon/index.ts:runFresh",
+			"to": "function:src/main/pty-daemon/index.ts:parseFreshArgs",
+			"weight": 0.8
+		},
+		{
+			"type": "calls",
+			"from": "function:src/main/pty-daemon/index.ts:runFresh",
+			"to": "function:src/main/pty-daemon/index.ts:wireShutdown",
+			"weight": 0.8
+		},
+		{
+			"type": "calls",
+			"from": "function:src/main/pty-daemon/index.ts:runHandoffReceiver",
+			"to": "function:src/main/pty-daemon/index.ts:wireShutdown",
+			"weight": 0.8
+		},
+
+		{
+			"type": "tested_by",
+			"from": "file:src/main/lib/sanitize/sanitize.ts",
+			"to": "file:src/main/lib/sanitize/sanitize.test.ts",
+			"weight": 0.5
+		},
+
+		{
+			"type": "depends_on",
+			"from": "file:src/main/lib/sanitize/index.ts",
+			"to": "file:src/main/lib/sanitize/sanitize.ts",
+			"weight": 0.6
+		}
+	]
+}

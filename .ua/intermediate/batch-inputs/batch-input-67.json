@@ -1,0 +1,862 @@
+{
+	"batchIndex": 67,
+	"files": [
+		{
+			"path": "packages/host-service/src/terminal-agents/types.ts",
+			"language": "typescript",
+			"sizeLines": 22,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/host-service/src/terminal/DaemonClient/index.ts",
+			"language": "typescript",
+			"sizeLines": 8,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/host-service/src/terminal/clean-shell-env.ts",
+			"language": "typescript",
+			"sizeLines": 243,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/host-service/src/terminal/daemon-client-singleton.ts",
+			"language": "typescript",
+			"sizeLines": 115,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/host-service/src/terminal/env-strip.ts",
+			"language": "typescript",
+			"sizeLines": 73,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/host-service/src/terminal/env.ts",
+			"language": "typescript",
+			"sizeLines": 223,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/host-service/src/terminal/reaper/index.ts",
+			"language": "typescript",
+			"sizeLines": 1,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/host-service/src/terminal/reaper/reaper.ts",
+			"language": "typescript",
+			"sizeLines": 267,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/host-service/src/terminal/resource-sessions.ts",
+			"language": "typescript",
+			"sizeLines": 71,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/host-service/src/terminal/shell-launch.ts",
+			"language": "typescript",
+			"sizeLines": 124,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/host-service/src/terminal/terminal-mode-tracker.ts",
+			"language": "typescript",
+			"sizeLines": 134,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/host-service/src/terminal/terminal.adoption.node-test.ts",
+			"language": "typescript",
+			"sizeLines": 854,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/host-service/src/terminal/terminal.ts",
+			"language": "typescript",
+			"sizeLines": 1497,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/host-service/src/terminal/user-shell.ts",
+			"language": "typescript",
+			"sizeLines": 66,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/host-service/src/trpc/error-types.ts",
+			"language": "typescript",
+			"sizeLines": 65,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/host-service/src/trpc/index.ts",
+			"language": "typescript",
+			"sizeLines": 123,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/host-service/src/trpc/router/acp-sessions/acp-sessions.ts",
+			"language": "typescript",
+			"sizeLines": 171,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/host-service/src/trpc/router/acp-sessions/index.ts",
+			"language": "typescript",
+			"sizeLines": 1,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/host-service/src/trpc/router/agents/agents.ts",
+			"language": "typescript",
+			"sizeLines": 310,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/host-service/src/trpc/router/agents/index.ts",
+			"language": "typescript",
+			"sizeLines": 6,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/host-service/src/trpc/router/attachments/attachments.ts",
+			"language": "typescript",
+			"sizeLines": 102,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/host-service/src/trpc/router/attachments/constants.ts",
+			"language": "typescript",
+			"sizeLines": 6,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/host-service/src/trpc/router/attachments/index.ts",
+			"language": "typescript",
+			"sizeLines": 3,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/host-service/src/trpc/router/attachments/storage.ts",
+			"language": "typescript",
+			"sizeLines": 129,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/host-service/src/trpc/router/auth/auth.ts",
+			"language": "typescript",
+			"sizeLines": 83,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/host-service/src/trpc/router/auth/index.ts",
+			"language": "typescript",
+			"sizeLines": 1,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/host-service/src/trpc/router/chat/chat.ts",
+			"language": "typescript",
+			"sizeLines": 170,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/host-service/src/trpc/router/chat/index.ts",
+			"language": "typescript",
+			"sizeLines": 1,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/host-service/src/trpc/router/cloud/cloud.ts",
+			"language": "typescript",
+			"sizeLines": 17,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/host-service/src/trpc/router/cloud/index.ts",
+			"language": "typescript",
+			"sizeLines": 1,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/host-service/src/trpc/router/config/config.ts",
+			"language": "typescript",
+			"sizeLines": 150,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/host-service/src/trpc/router/config/index.ts",
+			"language": "typescript",
+			"sizeLines": 1,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/host-service/src/trpc/router/filesystem/filesystem.ts",
+			"language": "typescript",
+			"sizeLines": 415,
+			"fileCategory": "code"
+		}
+	],
+	"batchImportData": {
+		"packages/host-service/src/terminal-agents/types.ts": [],
+		"packages/host-service/src/terminal/DaemonClient/index.ts": [],
+		"packages/host-service/src/terminal/clean-shell-env.ts": [
+			"packages/host-service/src/terminal/user-shell.ts"
+		],
+		"packages/host-service/src/terminal/daemon-client-singleton.ts": [
+			"packages/host-service/src/daemon/index.ts",
+			"packages/host-service/src/terminal/DaemonClient/index.ts"
+		],
+		"packages/host-service/src/terminal/env-strip.ts": [],
+		"packages/host-service/src/terminal/env.ts": [
+			"packages/host-service/src/terminal/clean-shell-env.ts",
+			"packages/host-service/src/terminal/env-strip.ts",
+			"packages/host-service/src/terminal/shell-launch.ts"
+		],
+		"packages/host-service/src/terminal/reaper/index.ts": [],
+		"packages/host-service/src/terminal/reaper/reaper.ts": [
+			"packages/host-service/src/db/index.ts",
+			"packages/host-service/src/db/schema.ts",
+			"packages/host-service/src/ports/port-manager.ts",
+			"packages/host-service/src/terminal/daemon-client-singleton.ts",
+			"packages/host-service/src/terminal/terminal.ts"
+		],
+		"packages/host-service/src/terminal/resource-sessions.ts": [
+			"packages/host-service/src/db/index.ts",
+			"packages/host-service/src/db/schema.ts"
+		],
+		"packages/host-service/src/terminal/shell-launch.ts": [
+			"packages/host-service/src/terminal/user-shell.ts"
+		],
+		"packages/host-service/src/terminal/terminal-mode-tracker.ts": [],
+		"packages/host-service/src/terminal/terminal.adoption.node-test.ts": [
+			"packages/host-service/src/db/index.ts",
+			"packages/host-service/src/db/schema.ts",
+			"packages/host-service/src/terminal/daemon-client-singleton.ts",
+			"packages/host-service/src/terminal/env.ts",
+			"packages/host-service/src/terminal/terminal.ts",
+			"packages/host-service/src/terminal/user-shell.ts"
+		],
+		"packages/host-service/src/terminal/terminal.ts": [
+			"packages/host-service/src/daemon/manifest.ts",
+			"packages/host-service/src/db/index.ts",
+			"packages/host-service/src/db/schema.ts",
+			"packages/host-service/src/events/index.ts",
+			"packages/host-service/src/ports/port-manager.ts",
+			"packages/host-service/src/terminal/daemon-client-singleton.ts",
+			"packages/host-service/src/terminal/DaemonClient/index.ts",
+			"packages/host-service/src/terminal/env.ts",
+			"packages/host-service/src/terminal/resource-sessions.ts",
+			"packages/host-service/src/terminal/terminal-mode-tracker.ts"
+		],
+		"packages/host-service/src/terminal/user-shell.ts": [],
+		"packages/host-service/src/trpc/error-types.ts": [],
+		"packages/host-service/src/trpc/index.ts": [
+			"packages/host-service/src/trpc/error-types.ts",
+			"packages/host-service/src/types.ts"
+		],
+		"packages/host-service/src/trpc/router/acp-sessions/acp-sessions.ts": [
+			"packages/host-service/src/runtime/acp-sessions/index.ts",
+			"packages/host-service/src/trpc/index.ts"
+		],
+		"packages/host-service/src/trpc/router/acp-sessions/index.ts": [],
+		"packages/host-service/src/trpc/router/agents/agents.ts": [
+			"packages/host-service/src/db/index.ts",
+			"packages/host-service/src/db/schema.ts",
+			"packages/host-service/src/terminal/terminal.ts",
+			"packages/host-service/src/trpc/index.ts",
+			"packages/host-service/src/trpc/router/attachments/storage.ts",
+			"packages/host-service/src/types.ts"
+		],
+		"packages/host-service/src/trpc/router/agents/index.ts": [],
+		"packages/host-service/src/trpc/router/attachments/attachments.ts": [
+			"packages/host-service/src/trpc/index.ts",
+			"packages/host-service/src/trpc/router/attachments/constants.ts",
+			"packages/host-service/src/trpc/router/attachments/storage.ts"
+		],
+		"packages/host-service/src/trpc/router/attachments/constants.ts": [],
+		"packages/host-service/src/trpc/router/attachments/index.ts": [],
+		"packages/host-service/src/trpc/router/attachments/storage.ts": [],
+		"packages/host-service/src/trpc/router/auth/auth.ts": [
+			"packages/host-service/src/trpc/index.ts"
+		],
+		"packages/host-service/src/trpc/router/auth/index.ts": [],
+		"packages/host-service/src/trpc/router/chat/chat.ts": [
+			"packages/host-service/src/trpc/index.ts"
+		],
+		"packages/host-service/src/trpc/router/chat/index.ts": [],
+		"packages/host-service/src/trpc/router/cloud/cloud.ts": [
+			"packages/host-service/src/trpc/index.ts"
+		],
+		"packages/host-service/src/trpc/router/cloud/index.ts": [],
+		"packages/host-service/src/trpc/router/config/config.ts": [
+			"packages/host-service/src/db/schema.ts",
+			"packages/host-service/src/runtime/setup/config.ts",
+			"packages/host-service/src/trpc/index.ts",
+			"packages/host-service/src/types.ts"
+		],
+		"packages/host-service/src/trpc/router/config/index.ts": [],
+		"packages/host-service/src/trpc/router/filesystem/filesystem.ts": [
+			"packages/host-service/src/trpc/index.ts",
+			"packages/host-service/src/types.ts"
+		]
+	},
+	"neighborMap": {
+		"packages/host-service/src/terminal-agents/types.ts": [
+			{
+				"path": "packages/host-service/src/terminal-agents/persistence.ts",
+				"batchIndex": 66,
+				"symbols": ["SqliteTerminalAgentBindingPersistence"]
+			},
+			{
+				"path": "packages/host-service/src/terminal-agents/store.ts",
+				"batchIndex": 66,
+				"symbols": ["TerminalAgentStore"]
+			}
+		],
+		"packages/host-service/src/terminal/DaemonClient/index.ts": [
+			{
+				"path": "packages/host-service/src/daemon/DaemonSupervisor.ts",
+				"batchIndex": 65,
+				"symbols": [
+					"shouldKillStaleDaemonForDev",
+					"ptyDaemonSocketPath",
+					"DaemonSupervisor",
+					"listDaemonSessions",
+					"probeDaemonVersion"
+				]
+			}
+		],
+		"packages/host-service/src/terminal/clean-shell-env.ts": [
+			{
+				"path": "packages/host-service/src/trpc/router/workspace-creation/utils/exec-gh.ts",
+				"batchIndex": 90,
+				"symbols": ["execGh"]
+			}
+		],
+		"packages/host-service/src/terminal/daemon-client-singleton.ts": [
+			{
+				"path": "packages/host-service/src/daemon/index.ts",
+				"batchIndex": 65,
+				"symbols": [
+					"DaemonSupervisor",
+					"DaemonSupervisorOptions",
+					"listDaemonSessions",
+					"probeDaemonVersion",
+					"EXPECTED_DAEMON_VERSION",
+					"__resetSupervisorForTesting",
+					"getSupervisor",
+					"resolveSupervisorScriptPath",
+					"startDaemonBootstrap",
+					"waitForDaemonReady"
+				]
+			}
+		],
+		"packages/host-service/src/terminal/env.ts": [
+			{
+				"path": "packages/host-service/src/serve.ts",
+				"batchIndex": 66,
+				"symbols": []
+			}
+		],
+		"packages/host-service/src/terminal/reaper/index.ts": [
+			{
+				"path": "packages/host-service/src/serve.ts",
+				"batchIndex": 66,
+				"symbols": []
+			}
+		],
+		"packages/host-service/src/terminal/reaper/reaper.ts": [
+			{
+				"path": "packages/host-service/src/db/index.ts",
+				"batchIndex": 65,
+				"symbols": ["createDb", "HostDb"]
+			},
+			{
+				"path": "packages/host-service/src/db/schema.ts",
+				"batchIndex": 65,
+				"symbols": [
+					"terminalSessions",
+					"terminalAgentBindings",
+					"projects",
+					"hostSettings",
+					"pullRequests",
+					"hostAgentConfigs",
+					"workspaces",
+					"acpSessions",
+					"workspaceCloudDeletes"
+				]
+			},
+			{
+				"path": "packages/host-service/src/ports/port-manager.ts",
+				"batchIndex": 65,
+				"symbols": ["portManager"]
+			}
+		],
+		"packages/host-service/src/terminal/resource-sessions.ts": [
+			{
+				"path": "packages/host-service/src/db/index.ts",
+				"batchIndex": 65,
+				"symbols": ["createDb", "HostDb"]
+			},
+			{
+				"path": "packages/host-service/src/db/schema.ts",
+				"batchIndex": 65,
+				"symbols": [
+					"terminalSessions",
+					"terminalAgentBindings",
+					"projects",
+					"hostSettings",
+					"pullRequests",
+					"hostAgentConfigs",
+					"workspaces",
+					"acpSessions",
+					"workspaceCloudDeletes"
+				]
+			}
+		],
+		"packages/host-service/src/terminal/terminal.adoption.node-test.ts": [
+			{
+				"path": "packages/host-service/src/db/index.ts",
+				"batchIndex": 65,
+				"symbols": ["createDb", "HostDb"]
+			},
+			{
+				"path": "packages/host-service/src/db/schema.ts",
+				"batchIndex": 65,
+				"symbols": [
+					"terminalSessions",
+					"terminalAgentBindings",
+					"projects",
+					"hostSettings",
+					"pullRequests",
+					"hostAgentConfigs",
+					"workspaces",
+					"acpSessions",
+					"workspaceCloudDeletes"
+				]
+			}
+		],
+		"packages/host-service/src/terminal/terminal.ts": [
+			{
+				"path": "packages/host-service/src/daemon/manifest.ts",
+				"batchIndex": 65,
+				"symbols": [
+					"ptyDaemonManifestDir",
+					"writePtyDaemonManifest",
+					"readPtyDaemonManifest",
+					"listPtyDaemonManifests",
+					"removePtyDaemonManifest",
+					"isProcessAlive"
+				]
+			},
+			{
+				"path": "packages/host-service/src/db/index.ts",
+				"batchIndex": 65,
+				"symbols": ["createDb", "HostDb"]
+			},
+			{
+				"path": "packages/host-service/src/db/schema.ts",
+				"batchIndex": 65,
+				"symbols": [
+					"terminalSessions",
+					"terminalAgentBindings",
+					"projects",
+					"hostSettings",
+					"pullRequests",
+					"hostAgentConfigs",
+					"workspaces",
+					"acpSessions",
+					"workspaceCloudDeletes"
+				]
+			},
+			{
+				"path": "packages/host-service/src/events/index.ts",
+				"batchIndex": 65,
+				"symbols": [
+					"EventBus",
+					"registerEventBusRoute",
+					"GitChangedEvent",
+					"GitWatcher",
+					"AgentLifecycleEventType",
+					"mapEventType",
+					"AgentLifecycleMessage",
+					"ClientMessage",
+					"EventBusErrorMessage",
+					"FsEventsMessage",
+					"FsUnwatchCommand",
+					"FsWatchCommand",
+					"GitChangedMessage",
+					"PortChangedMessage",
+					"ServerMessage",
+					"TerminalLifecycleMessage"
+				]
+			},
+			{
+				"path": "packages/host-service/src/ports/port-manager.ts",
+				"batchIndex": 65,
+				"symbols": ["portManager"]
+			},
+			{
+				"path": "packages/host-service/src/app.ts",
+				"batchIndex": 65,
+				"symbols": ["createApp"]
+			},
+			{
+				"path": "packages/host-service/src/runtime/teardown/teardown.ts",
+				"batchIndex": 66,
+				"symbols": [
+					"TEARDOWN_TIMEOUT_MS",
+					"runTeardown",
+					"resolveTeardownCommand",
+					"buildTeardownInitialCommand",
+					"buildTeardownCommandFromShell"
+				]
+			},
+			{
+				"path": "packages/host-service/src/trpc/router/terminal-agents/terminal-agents.ts",
+				"batchIndex": 69,
+				"symbols": ["terminalAgentsRouter"]
+			},
+			{
+				"path": "packages/host-service/src/trpc/router/terminal/terminal.ts",
+				"batchIndex": 69,
+				"symbols": ["terminalRouter"]
+			},
+			{
+				"path": "packages/host-service/src/trpc/router/workspace-cleanup/workspace-cleanup.ts",
+				"batchIndex": 69,
+				"symbols": [
+					"__testDestroysInFlight",
+					"workspaceCleanupRouter",
+					"destroyWorkspace"
+				]
+			},
+			{
+				"path": "packages/host-service/src/trpc/router/workspace-creation/shared/command-terminal.ts",
+				"batchIndex": 69,
+				"symbols": ["startCommandTerminal"]
+			},
+			{
+				"path": "packages/host-service/src/trpc/router/workspace-creation/shared/setup-terminal.ts",
+				"batchIndex": 69,
+				"symbols": ["startSetupTerminalIfPresent", "resolveInitialCommand"]
+			}
+		],
+		"packages/host-service/src/trpc/error-types.ts": [
+			{
+				"path": "packages/host-service/src/trpc/router/workspace-cleanup/workspace-cleanup.ts",
+				"batchIndex": 69,
+				"symbols": [
+					"__testDestroysInFlight",
+					"workspaceCleanupRouter",
+					"destroyWorkspace"
+				]
+			},
+			{
+				"path": "packages/host-service/src/trpc/router/workspace-creation/shared/project-helpers.ts",
+				"batchIndex": 69,
+				"symbols": ["projectNotSetupError", "resolveGithubRepo"]
+			}
+		],
+		"packages/host-service/src/trpc/index.ts": [
+			{
+				"path": "packages/host-service/src/types.ts",
+				"batchIndex": 90,
+				"symbols": []
+			},
+			{
+				"path": "packages/host-service/src/trpc/router/git/git.ts",
+				"batchIndex": 68,
+				"symbols": ["gitRouter"]
+			},
+			{
+				"path": "packages/host-service/src/trpc/router/git/utils/resolve-worktree.ts",
+				"batchIndex": 68,
+				"symbols": ["resolveWorktreePath"]
+			},
+			{
+				"path": "packages/host-service/src/trpc/router/github/github.ts",
+				"batchIndex": 68,
+				"symbols": ["githubRouter"]
+			},
+			{
+				"path": "packages/host-service/src/trpc/router/health/health.ts",
+				"batchIndex": 68,
+				"symbols": ["healthRouter"]
+			},
+			{
+				"path": "packages/host-service/src/trpc/router/host/host.ts",
+				"batchIndex": 68,
+				"symbols": ["hostRouter"]
+			},
+			{
+				"path": "packages/host-service/src/trpc/router/issues/issues.ts",
+				"batchIndex": 68,
+				"symbols": ["issuesRouter"]
+			},
+			{
+				"path": "packages/host-service/src/trpc/router/issues/procedures/get-content.ts",
+				"batchIndex": 68,
+				"symbols": ["getContent"]
+			},
+			{
+				"path": "packages/host-service/src/trpc/router/notifications/notifications.ts",
+				"batchIndex": 68,
+				"symbols": ["notificationsRouter"]
+			},
+			{
+				"path": "packages/host-service/src/trpc/router/ports/ports.ts",
+				"batchIndex": 68,
+				"symbols": ["portsRouter"]
+			},
+			{
+				"path": "packages/host-service/src/trpc/router/project/project.ts",
+				"batchIndex": 68,
+				"symbols": ["projectRouter"]
+			},
+			{
+				"path": "packages/host-service/src/trpc/router/pull-requests/procedures/get-content.ts",
+				"batchIndex": 69,
+				"symbols": ["getContent"]
+			},
+			{
+				"path": "packages/host-service/src/trpc/router/pull-requests/pull-requests.ts",
+				"batchIndex": 69,
+				"symbols": ["pullRequestsRouter"]
+			},
+			{
+				"path": "packages/host-service/src/trpc/router/router.ts",
+				"batchIndex": 69,
+				"symbols": ["appRouter"]
+			},
+			{
+				"path": "packages/host-service/src/trpc/router/settings/agent-configs.ts",
+				"batchIndex": 69,
+				"symbols": ["agentConfigsRouter"]
+			},
+			{
+				"path": "packages/host-service/src/trpc/router/settings/branch-prefix.ts",
+				"batchIndex": 69,
+				"symbols": ["branchPrefixRouter"]
+			},
+			{
+				"path": "packages/host-service/src/trpc/router/settings/index.ts",
+				"batchIndex": 69,
+				"symbols": [
+					"settingsRouter",
+					"HostAgentConfig",
+					"HostWorktreeLocationSettings"
+				]
+			},
+			{
+				"path": "packages/host-service/src/trpc/router/settings/worktree-location.ts",
+				"batchIndex": 69,
+				"symbols": ["getHostWorktreeBaseDir", "worktreeLocationRouter"]
+			},
+			{
+				"path": "packages/host-service/src/trpc/router/terminal-agents/terminal-agents.ts",
+				"batchIndex": 69,
+				"symbols": ["terminalAgentsRouter"]
+			},
+			{
+				"path": "packages/host-service/src/trpc/router/terminal/terminal.ts",
+				"batchIndex": 69,
+				"symbols": ["terminalRouter"]
+			},
+			{
+				"path": "packages/host-service/src/trpc/router/workspace-cleanup/workspace-cleanup.ts",
+				"batchIndex": 69,
+				"symbols": [
+					"__testDestroysInFlight",
+					"workspaceCleanupRouter",
+					"destroyWorkspace"
+				]
+			},
+			{
+				"path": "packages/host-service/src/trpc/router/workspace-creation/procedures/adopt.ts",
+				"batchIndex": 69,
+				"symbols": ["adopt"]
+			},
+			{
+				"path": "packages/host-service/src/trpc/router/workspace-creation/procedures/list-project-worktrees.ts",
+				"batchIndex": 69,
+				"symbols": ["listProjectWorktrees"]
+			},
+			{
+				"path": "packages/host-service/src/trpc/router/workspace-creation/procedures/search-branches.ts",
+				"batchIndex": 69,
+				"symbols": ["searchBranches"]
+			},
+			{
+				"path": "packages/host-service/src/trpc/router/workspace-creation/procedures/search-github-issues.ts",
+				"batchIndex": 69,
+				"symbols": ["searchGitHubIssues"]
+			},
+			{
+				"path": "packages/host-service/src/trpc/router/workspace-creation/procedures/search-pull-requests.ts",
+				"batchIndex": 69,
+				"symbols": ["searchPullRequests"]
+			},
+			{
+				"path": "packages/host-service/src/trpc/router/workspace-creation/workspace-creation.ts",
+				"batchIndex": 90,
+				"symbols": ["workspaceCreationRouter"]
+			},
+			{
+				"path": "packages/host-service/src/trpc/router/workspace/workspace.ts",
+				"batchIndex": 90,
+				"symbols": ["workspaceRouter"]
+			},
+			{
+				"path": "packages/host-service/src/trpc/router/workspaces/workspaces.ts",
+				"batchIndex": 90,
+				"symbols": ["workspacesRouter", "_aiNamesGenerator"]
+			}
+		],
+		"packages/host-service/src/trpc/router/acp-sessions/acp-sessions.ts": [
+			{
+				"path": "packages/host-service/src/runtime/acp-sessions/index.ts",
+				"batchIndex": 66,
+				"symbols": [
+					"AcpSessionDeadError",
+					"AcpSessionManager",
+					"AcpSessionManagerOptions",
+					"AcpSessionNotFoundError",
+					"AcpWorkspaceMismatchError",
+					"JournalPage",
+					"SessionJournal",
+					"AcpSessionPersistence",
+					"AcpSessionRecord",
+					"SqliteAcpSessionPersistence",
+					"AcpSessionStreamSource",
+					"registerAcpSessionStreamRoute"
+				]
+			}
+		],
+		"packages/host-service/src/trpc/router/acp-sessions/index.ts": [
+			{
+				"path": "packages/host-service/src/trpc/router/router.ts",
+				"batchIndex": 69,
+				"symbols": ["appRouter"]
+			}
+		],
+		"packages/host-service/src/trpc/router/agents/agents.ts": [
+			{
+				"path": "packages/host-service/src/db/index.ts",
+				"batchIndex": 65,
+				"symbols": ["createDb", "HostDb"]
+			},
+			{
+				"path": "packages/host-service/src/db/schema.ts",
+				"batchIndex": 65,
+				"symbols": [
+					"terminalSessions",
+					"terminalAgentBindings",
+					"projects",
+					"hostSettings",
+					"pullRequests",
+					"hostAgentConfigs",
+					"workspaces",
+					"acpSessions",
+					"workspaceCloudDeletes"
+				]
+			},
+			{
+				"path": "packages/host-service/src/types.ts",
+				"batchIndex": 90,
+				"symbols": []
+			}
+		],
+		"packages/host-service/src/trpc/router/agents/index.ts": [
+			{
+				"path": "packages/host-service/src/trpc/router/router.ts",
+				"batchIndex": 69,
+				"symbols": ["appRouter"]
+			},
+			{
+				"path": "packages/host-service/src/trpc/router/workspaces/workspaces.ts",
+				"batchIndex": 90,
+				"symbols": ["workspacesRouter", "_aiNamesGenerator"]
+			}
+		],
+		"packages/host-service/src/trpc/router/attachments/index.ts": [
+			{
+				"path": "packages/host-service/src/trpc/router/router.ts",
+				"batchIndex": 69,
+				"symbols": ["appRouter"]
+			}
+		],
+		"packages/host-service/src/trpc/router/auth/index.ts": [
+			{
+				"path": "packages/host-service/src/trpc/router/router.ts",
+				"batchIndex": 69,
+				"symbols": ["appRouter"]
+			}
+		],
+		"packages/host-service/src/trpc/router/chat/index.ts": [
+			{
+				"path": "packages/host-service/src/trpc/router/router.ts",
+				"batchIndex": 69,
+				"symbols": ["appRouter"]
+			}
+		],
+		"packages/host-service/src/trpc/router/cloud/index.ts": [
+			{
+				"path": "packages/host-service/src/trpc/router/router.ts",
+				"batchIndex": 69,
+				"symbols": ["appRouter"]
+			}
+		],
+		"packages/host-service/src/trpc/router/config/config.ts": [
+			{
+				"path": "packages/host-service/src/db/schema.ts",
+				"batchIndex": 65,
+				"symbols": [
+					"terminalSessions",
+					"terminalAgentBindings",
+					"projects",
+					"hostSettings",
+					"pullRequests",
+					"hostAgentConfigs",
+					"workspaces",
+					"acpSessions",
+					"workspaceCloudDeletes"
+				]
+			},
+			{
+				"path": "packages/host-service/src/runtime/setup/config.ts",
+				"batchIndex": 66,
+				"symbols": [
+					"getProjectConfigPath",
+					"loadSetupConfig",
+					"hasConfiguredScripts",
+					"resolveScript",
+					"shellSingleQuote"
+				]
+			},
+			{
+				"path": "packages/host-service/src/types.ts",
+				"batchIndex": 90,
+				"symbols": []
+			}
+		],
+		"packages/host-service/src/trpc/router/config/index.ts": [
+			{
+				"path": "packages/host-service/src/trpc/router/router.ts",
+				"batchIndex": 69,
+				"symbols": ["appRouter"]
+			}
+		],
+		"packages/host-service/src/trpc/router/filesystem/filesystem.ts": [
+			{
+				"path": "packages/host-service/src/types.ts",
+				"batchIndex": 90,
+				"symbols": []
+			}
+		]
+	}
+}

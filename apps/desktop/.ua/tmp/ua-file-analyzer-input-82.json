@@ -1,0 +1,103 @@
+{
+	"projectRoot": "/Users/wushengyu/Develop/hustle/superset/apps/desktop",
+	"batchFiles": [
+		{
+			"path": "src/renderer/stores/theme/utils/css-variables.ts",
+			"language": "typescript",
+			"sizeLines": 83,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/renderer/stores/theme/utils/terminal-theme.ts",
+			"language": "typescript",
+			"sizeLines": 36,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/shared/themes/built-in/ember.ts",
+			"language": "typescript",
+			"sizeLines": 111,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/shared/themes/built-in/index.ts",
+			"language": "typescript",
+			"sizeLines": 23,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/shared/themes/built-in/light.ts",
+			"language": "typescript",
+			"sizeLines": 85,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/shared/themes/built-in/monokai.ts",
+			"language": "typescript",
+			"sizeLines": 86,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/shared/themes/editor-theme.ts",
+			"language": "typescript",
+			"sizeLines": 86,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/shared/themes/editor.test.ts",
+			"language": "typescript",
+			"sizeLines": 96,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/shared/themes/import.test.ts",
+			"language": "typescript",
+			"sizeLines": 149,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/shared/themes/import.ts",
+			"language": "typescript",
+			"sizeLines": 304,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/shared/themes/types.ts",
+			"language": "typescript",
+			"sizeLines": 302,
+			"fileCategory": "code"
+		}
+	],
+	"batchImportData": {
+		"src/renderer/stores/theme/utils/css-variables.ts": [
+			"src/shared/themes/types.ts"
+		],
+		"src/renderer/stores/theme/utils/terminal-theme.ts": [
+			"src/shared/themes/types.ts"
+		],
+		"src/shared/themes/built-in/ember.ts": ["src/shared/themes/types.ts"],
+		"src/shared/themes/built-in/index.ts": [
+			"src/shared/themes/built-in/ember.ts",
+			"src/shared/themes/built-in/light.ts",
+			"src/shared/themes/built-in/monokai.ts",
+			"src/shared/themes/types.ts"
+		],
+		"src/shared/themes/built-in/light.ts": ["src/shared/themes/types.ts"],
+		"src/shared/themes/built-in/monokai.ts": ["src/shared/themes/types.ts"],
+		"src/shared/themes/editor-theme.ts": [
+			"src/shared/themes/types.ts",
+			"src/shared/themes/utils.ts"
+		],
+		"src/shared/themes/editor.test.ts": [
+			"src/shared/themes/built-in/index.ts",
+			"src/shared/themes/editor-theme.ts"
+		],
+		"src/shared/themes/import.test.ts": ["src/shared/themes/import.ts"],
+		"src/shared/themes/import.ts": [
+			"src/shared/themes/built-in/index.ts",
+			"src/shared/themes/editor-theme.ts",
+			"src/shared/themes/types.ts"
+		],
+		"src/shared/themes/types.ts": []
+	}
+}

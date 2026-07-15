@@ -1,0 +1,114 @@
+{
+	"scriptCompleted": true,
+	"filesAnalyzed": 4,
+	"filesSkipped": [],
+	"results": [
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarDeleteDialog/DashboardSidebarDeleteDialog.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 74,
+			"nonEmptyLines": 69,
+			"functions": [
+				{
+					"name": "DashboardSidebarDeleteDialog",
+					"startLine": 20,
+					"endLine": 74,
+					"params": [
+						"{\n\tworkspaceId,\n\tworkspaceName,\n\topen,\n\tonOpenChange,\n\tonDeleted,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "DashboardSidebarDeleteDialog",
+					"line": 20,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "DashboardSidebarDeleteDialog",
+					"callee": "useDestroyDialogState",
+					"lineNumber": 37
+				},
+				{
+					"caller": "DashboardSidebarDeleteDialog",
+					"callee": "run",
+					"lineNumber": 51
+				},
+				{
+					"caller": "DashboardSidebarDeleteDialog",
+					"callee": "run",
+					"lineNumber": 70
+				}
+			],
+			"metrics": {
+				"importCount": 3,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarDeleteDialog/components/DestroyConfirmPane/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "DestroyConfirmPane",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarDeleteDialog/components/TeardownFailedPane/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "TeardownFailedPane",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarDeleteDialog/hooks/useDestroyDialogState/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "useDestroyDialogState",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		}
+	]
+}

@@ -1,0 +1,1948 @@
+{
+	"batchIndex": 54,
+	"totalBatches": 117,
+	"generatedAt": "2026-07-15T02:20:45.688Z",
+	"stats": {
+		"nodes": 67,
+		"edges": 187,
+		"byNodeType": {
+			"file": 31,
+			"function": 36
+		},
+		"byEdgeType": {
+			"contains": 36,
+			"exports": 23,
+			"calls": 26,
+			"imports": 44,
+			"tested_by": 2,
+			"depends_on": 56
+		}
+	},
+	"nodes": [
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffAnnotations/useDiffAnnotations.ts",
+			"type": "file",
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffAnnotations/useDiffAnnotations.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 135,
+			"nonEmptyLines": 121,
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffAnnotations/useDiffAnnotations.ts:parseTimestamp",
+			"type": "function",
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffAnnotations/useDiffAnnotations.ts",
+			"name": "parseTimestamp",
+			"startLine": 47,
+			"endLine": 51,
+			"params": ["value"]
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffAnnotations/useDiffAnnotations.ts:useDiffAnnotationsByPath",
+			"type": "function",
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffAnnotations/useDiffAnnotations.ts",
+			"name": "useDiffAnnotationsByPath",
+			"startLine": 53,
+			"endLine": 135,
+			"params": ["{\n\tworkspaceId,\n}"]
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewItems/index.ts",
+			"type": "file",
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewItems/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewItems/useDiffCodeViewItems.ts",
+			"type": "file",
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewItems/useDiffCodeViewItems.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 301,
+			"nonEmptyLines": 281,
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 1,
+				"functionCount": 6,
+				"classCount": 0
+			}
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewItems/useDiffCodeViewItems.ts:useDiffCodeViewItems",
+			"type": "function",
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewItems/useDiffCodeViewItems.ts",
+			"name": "useDiffCodeViewItems",
+			"startLine": 44,
+			"endLine": 205,
+			"params": [
+				"{\n\tworkspaceId,\n\tfiles,\n\tcollapsedSet,\n\tannotationsByPath,\n\textraAnnotationsByItemId,\n}"
+			]
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewItems/useDiffCodeViewItems.ts:createGetDiffInput",
+			"type": "function",
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewItems/useDiffCodeViewItems.ts",
+			"name": "createGetDiffInput",
+			"startLine": 207,
+			"endLine": 234,
+			"params": ["workspaceId", "file"]
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewItems/useDiffCodeViewItems.ts:getDiffItemId",
+			"type": "function",
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewItems/useDiffCodeViewItems.ts",
+			"name": "getDiffItemId",
+			"startLine": 236,
+			"endLine": 238,
+			"params": ["file"]
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewItems/useDiffCodeViewItems.ts:getAnnotationsForFile",
+			"type": "function",
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewItems/useDiffCodeViewItems.ts",
+			"name": "getAnnotationsForFile",
+			"startLine": 240,
+			"endLine": 254,
+			"params": ["annotationsByPath", "file"]
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewItems/useDiffCodeViewItems.ts:getAnnotationsVersion",
+			"type": "function",
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewItems/useDiffCodeViewItems.ts",
+			"name": "getAnnotationsVersion",
+			"startLine": 256,
+			"endLine": 292,
+			"params": ["annotations"]
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewItems/useDiffCodeViewItems.ts:hashString",
+			"type": "function",
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewItems/useDiffCodeViewItems.ts",
+			"name": "hashString",
+			"startLine": 294,
+			"endLine": 301,
+			"params": ["value"]
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewScroll/index.ts",
+			"type": "file",
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewScroll/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewScroll/useDiffCodeViewScroll.ts",
+			"type": "file",
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewScroll/useDiffCodeViewScroll.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 104,
+			"nonEmptyLines": 96,
+			"metrics": {
+				"importCount": 3,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewScroll/useDiffCodeViewScroll.ts:useDiffCodeViewScroll",
+			"type": "function",
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewScroll/useDiffCodeViewScroll.ts",
+			"name": "useDiffCodeViewScroll",
+			"startLine": 24,
+			"endLine": 104,
+			"params": [
+				"{\n\tcodeViewRef,\n\tdata,\n\tfileByItemId,\n\titems,\n\tcollapsedSet,\n\tsetCollapsed,\n}"
+			]
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewTheme/index.ts",
+			"type": "file",
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewTheme/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewTheme/useDiffCodeViewTheme.ts",
+			"type": "file",
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewTheme/useDiffCodeViewTheme.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 161,
+			"nonEmptyLines": 155,
+			"metrics": {
+				"importCount": 5,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewTheme/useDiffCodeViewTheme.ts:useDiffCodeViewTheme",
+			"type": "function",
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewTheme/useDiffCodeViewTheme.ts",
+			"name": "useDiffCodeViewTheme",
+			"startLine": 14,
+			"endLine": 161,
+			"params": []
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCommentComposer/index.ts",
+			"type": "file",
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCommentComposer/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCommentComposer/useDiffCommentComposer.ts",
+			"type": "file",
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCommentComposer/useDiffCommentComposer.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 213,
+			"nonEmptyLines": 195,
+			"metrics": {
+				"importCount": 4,
+				"exportCount": 1,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCommentComposer/useDiffCommentComposer.ts:rangeSide",
+			"type": "function",
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCommentComposer/useDiffCommentComposer.ts",
+			"name": "rangeSide",
+			"startLine": 23,
+			"endLine": 32,
+			"params": ["start", "end"]
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCommentComposer/useDiffCommentComposer.ts:useDiffCommentComposer",
+			"type": "function",
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCommentComposer/useDiffCommentComposer.ts",
+			"name": "useDiffCommentComposer",
+			"startLine": 83,
+			"endLine": 213,
+			"params": [
+				"{\n\tworkspaceId,\n\tcodeViewRef,\n\tgetFile,\n\tonCreateNewAgentSession,\n}"
+			]
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffPaneSearch/index.ts",
+			"type": "file",
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffPaneSearch/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffPaneSearch/useDiffPaneSearch.ts",
+			"type": "file",
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffPaneSearch/useDiffPaneSearch.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 440,
+			"nonEmptyLines": 403,
+			"metrics": {
+				"importCount": 8,
+				"exportCount": 1,
+				"functionCount": 7,
+				"classCount": 0
+			}
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffPaneSearch/useDiffPaneSearch.ts:supportsCustomHighlights",
+			"type": "function",
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffPaneSearch/useDiffPaneSearch.ts",
+			"name": "supportsCustomHighlights",
+			"startLine": 43,
+			"endLine": 49,
+			"params": []
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffPaneSearch/useDiffPaneSearch.ts:getShadowRootsWithin",
+			"type": "function",
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffPaneSearch/useDiffPaneSearch.ts",
+			"name": "getShadowRootsWithin",
+			"startLine": 51,
+			"endLine": 62,
+			"params": ["element"]
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffPaneSearch/useDiffPaneSearch.ts:resolveRowSide",
+			"type": "function",
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffPaneSearch/useDiffPaneSearch.ts",
+			"name": "resolveRowSide",
+			"startLine": 64,
+			"endLine": 72,
+			"params": ["row"]
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffPaneSearch/useDiffPaneSearch.ts:getRowForRangeBoundary",
+			"type": "function",
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffPaneSearch/useDiffPaneSearch.ts",
+			"name": "getRowForRangeBoundary",
+			"startLine": 74,
+			"endLine": 77,
+			"params": ["node"]
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffPaneSearch/useDiffPaneSearch.ts:isWithinSingleRow",
+			"type": "function",
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffPaneSearch/useDiffPaneSearch.ts",
+			"name": "isWithinSingleRow",
+			"startLine": 82,
+			"endLine": 87,
+			"params": ["range"]
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffPaneSearch/useDiffPaneSearch.ts:findMatchRowElement",
+			"type": "function",
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffPaneSearch/useDiffPaneSearch.ts",
+			"name": "findMatchRowElement",
+			"startLine": 91,
+			"endLine": 111,
+			"params": ["codeViewHandle", "match"]
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffPaneSearch/useDiffPaneSearch.ts:useDiffPaneSearch",
+			"type": "function",
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffPaneSearch/useDiffPaneSearch.ts",
+			"name": "useDiffPaneSearch",
+			"startLine": 119,
+			"endLine": 440,
+			"params": [
+				"{\n\tcontainerRef,\n\tcodeViewRef,\n\titems,\n\tfileByItemId,\n\tcollapsedSet,\n\tsetCollapsed,\n\tisActive,\n\tpaneId,\n}"
+			]
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffPaneSearch/utils/collectDiffSearchMatches/index.ts",
+			"type": "file",
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffPaneSearch/utils/collectDiffSearchMatches/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 5,
+			"nonEmptyLines": 5,
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 3,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/FilePane/components/FilePaneHeaderExtras/FilePaneHeaderExtras.tsx",
+			"type": "file",
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/FilePane/components/FilePaneHeaderExtras/FilePaneHeaderExtras.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 96,
+			"nonEmptyLines": 89,
+			"metrics": {
+				"importCount": 6,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/FilePane/components/FilePaneHeaderExtras/FilePaneHeaderExtras.tsx:FilePaneHeaderExtras",
+			"type": "function",
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/FilePane/components/FilePaneHeaderExtras/FilePaneHeaderExtras.tsx",
+			"name": "FilePaneHeaderExtras",
+			"startLine": 18,
+			"endLine": 96,
+			"params": ["{\n\tcontext,\n\tworkspaceId,\n}"]
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/FilePane/components/FileViewToggle/index.ts",
+			"type": "file",
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/FilePane/components/FileViewToggle/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/useSidebarDiffRef/index.ts",
+			"type": "file",
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/useSidebarDiffRef/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/useSidebarDiffRef/useSidebarDiffRef.ts",
+			"type": "file",
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/useSidebarDiffRef/useSidebarDiffRef.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 51,
+			"nonEmptyLines": 47,
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/useSidebarDiffRef/useSidebarDiffRef.ts:useSidebarDiffRef",
+			"type": "function",
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/useSidebarDiffRef/useSidebarDiffRef.ts",
+			"name": "useSidebarDiffRef",
+			"startLine": 8,
+			"endLine": 51,
+			"params": ["workspaceId"]
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/useViewedFiles/index.ts",
+			"type": "file",
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/useViewedFiles/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 2,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/providers/WorkspaceGitStatusProvider/index.ts",
+			"type": "file",
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/providers/WorkspaceGitStatusProvider/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 4,
+			"nonEmptyLines": 4,
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 2,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/components/AgentHooks/hooks/useDefaultV2TerminalPresets/default-v2-terminal-presets.test.ts",
+			"type": "file",
+			"path": "src/renderer/routes/_authenticated/components/AgentHooks/hooks/useDefaultV2TerminalPresets/default-v2-terminal-presets.test.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 154,
+			"nonEmptyLines": 144,
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 0,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/components/AgentHooks/hooks/useDefaultV2TerminalPresets/default-v2-terminal-presets.test.ts:createAgent",
+			"type": "function",
+			"path": "src/renderer/routes/_authenticated/components/AgentHooks/hooks/useDefaultV2TerminalPresets/default-v2-terminal-presets.test.ts",
+			"name": "createAgent",
+			"startLine": 8,
+			"endLine": 25,
+			"params": ["overrides"]
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/components/AgentHooks/hooks/useDefaultV2TerminalPresets/default-v2-terminal-presets.ts",
+			"type": "file",
+			"path": "src/renderer/routes/_authenticated/components/AgentHooks/hooks/useDefaultV2TerminalPresets/default-v2-terminal-presets.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 53,
+			"nonEmptyLines": 48,
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 2,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/components/AgentHooks/hooks/useDefaultV2TerminalPresets/default-v2-terminal-presets.ts:createDefaultV2TerminalPresetRows",
+			"type": "function",
+			"path": "src/renderer/routes/_authenticated/components/AgentHooks/hooks/useDefaultV2TerminalPresets/default-v2-terminal-presets.ts",
+			"name": "createDefaultV2TerminalPresetRows",
+			"startLine": 21,
+			"endLine": 53,
+			"params": [
+				"{\n\tagents,\n\texistingPresets,\n\tcreateId,\n\tcreatedAt,\n}"
+			]
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/components/AgentHooks/hooks/useDefaultV2TerminalPresets/useDefaultV2TerminalPresets.ts",
+			"type": "file",
+			"path": "src/renderer/routes/_authenticated/components/AgentHooks/hooks/useDefaultV2TerminalPresets/useDefaultV2TerminalPresets.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 82,
+			"nonEmptyLines": 73,
+			"metrics": {
+				"importCount": 4,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/components/AgentHooks/hooks/useDefaultV2TerminalPresets/useDefaultV2TerminalPresets.ts:useDefaultV2TerminalPresets",
+			"type": "function",
+			"path": "src/renderer/routes/_authenticated/components/AgentHooks/hooks/useDefaultV2TerminalPresets/useDefaultV2TerminalPresets.ts",
+			"name": "useDefaultV2TerminalPresets",
+			"startLine": 12,
+			"endLine": 82,
+			"params": ["hostUrl"]
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/providers/CollectionsProvider/dashboardSidebarLocal/schema.test.ts",
+			"type": "file",
+			"path": "src/renderer/routes/_authenticated/providers/CollectionsProvider/dashboardSidebarLocal/schema.test.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 281,
+			"nonEmptyLines": 258,
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/providers/CollectionsProvider/dashboardSidebarLocal/schema.ts",
+			"type": "file",
+			"path": "src/renderer/routes/_authenticated/providers/CollectionsProvider/dashboardSidebarLocal/schema.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 421,
+			"nonEmptyLines": 382,
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 12,
+				"functionCount": 5,
+				"classCount": 0
+			}
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/providers/CollectionsProvider/dashboardSidebarLocal/schema.ts:sanitizePaneLayout",
+			"type": "function",
+			"path": "src/renderer/routes/_authenticated/providers/CollectionsProvider/dashboardSidebarLocal/schema.ts",
+			"name": "sanitizePaneLayout",
+			"startLine": 69,
+			"endLine": 85,
+			"params": ["raw"]
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/providers/CollectionsProvider/dashboardSidebarLocal/schema.ts:isSameLinkTierMap",
+			"type": "function",
+			"path": "src/renderer/routes/_authenticated/providers/CollectionsProvider/dashboardSidebarLocal/schema.ts",
+			"name": "isSameLinkTierMap",
+			"startLine": 290,
+			"endLine": 297,
+			"params": ["a", "b"]
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/providers/CollectionsProvider/dashboardSidebarLocal/schema.ts:isCompleteLinkTierMap",
+			"type": "function",
+			"path": "src/renderer/routes/_authenticated/providers/CollectionsProvider/dashboardSidebarLocal/schema.ts",
+			"name": "isCompleteLinkTierMap",
+			"startLine": 299,
+			"endLine": 308,
+			"params": ["value"]
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/providers/CollectionsProvider/dashboardSidebarLocal/schema.ts:healWorkspaceLocalState",
+			"type": "function",
+			"path": "src/renderer/routes/_authenticated/providers/CollectionsProvider/dashboardSidebarLocal/schema.ts",
+			"name": "healWorkspaceLocalState",
+			"startLine": 348,
+			"endLine": 374,
+			"params": ["raw"]
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/providers/CollectionsProvider/dashboardSidebarLocal/schema.ts:healV2UserPreferences",
+			"type": "function",
+			"path": "src/renderer/routes/_authenticated/providers/CollectionsProvider/dashboardSidebarLocal/schema.ts",
+			"name": "healV2UserPreferences",
+			"startLine": 383,
+			"endLine": 406,
+			"params": ["raw"]
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/settings/links/components/LinkTierMapper/LinkTierMapper.tsx",
+			"type": "file",
+			"path": "src/renderer/routes/_authenticated/settings/links/components/LinkTierMapper/LinkTierMapper.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 92,
+			"nonEmptyLines": 85,
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 3,
+				"classCount": 0
+			}
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/settings/links/components/LinkTierMapper/LinkTierMapper.tsx:toSlot",
+			"type": "function",
+			"path": "src/renderer/routes/_authenticated/settings/links/components/LinkTierMapper/LinkTierMapper.tsx",
+			"name": "toSlot",
+			"startLine": 24,
+			"endLine": 26,
+			"params": ["action"]
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/settings/links/components/LinkTierMapper/LinkTierMapper.tsx:fromSlot",
+			"type": "function",
+			"path": "src/renderer/routes/_authenticated/settings/links/components/LinkTierMapper/LinkTierMapper.tsx",
+			"name": "fromSlot",
+			"startLine": 28,
+			"endLine": 30,
+			"params": ["slot"]
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/settings/links/components/LinkTierMapper/LinkTierMapper.tsx:LinkTierMapper",
+			"type": "function",
+			"path": "src/renderer/routes/_authenticated/settings/links/components/LinkTierMapper/LinkTierMapper.tsx",
+			"name": "LinkTierMapper",
+			"startLine": 41,
+			"endLine": 92,
+			"params": [
+				"{\n\ttitle,\n\tdescription,\n\tvalue,\n\tonChange,\n\tidPrefix,\n\tsurface,\n}"
+			]
+		},
+		{
+			"id": "file:src/renderer/screens/main/components/CommandPalette/components/FileResultItem/FileResultItem.tsx",
+			"type": "file",
+			"path": "src/renderer/screens/main/components/CommandPalette/components/FileResultItem/FileResultItem.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 33,
+			"nonEmptyLines": 31,
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"id": "function:src/renderer/screens/main/components/CommandPalette/components/FileResultItem/FileResultItem.tsx:FileResultItem",
+			"type": "function",
+			"path": "src/renderer/screens/main/components/CommandPalette/components/FileResultItem/FileResultItem.tsx",
+			"name": "FileResultItem",
+			"startLine": 11,
+			"endLine": 33,
+			"params": ["{\n\tvalue,\n\tfileName,\n\trelativePath,\n\tonSelect,\n}"]
+		},
+		{
+			"id": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/hooks/useTextSearch/useTextSearch.ts",
+			"type": "file",
+			"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/hooks/useTextSearch/useTextSearch.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 354,
+			"nonEmptyLines": 306,
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		},
+		{
+			"id": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/hooks/useTextSearch/useTextSearch.ts:supportsCustomHighlights",
+			"type": "function",
+			"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/hooks/useTextSearch/useTextSearch.ts",
+			"name": "supportsCustomHighlights",
+			"startLine": 32,
+			"endLine": 38,
+			"params": []
+		},
+		{
+			"id": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/hooks/useTextSearch/useTextSearch.ts:useTextSearch",
+			"type": "function",
+			"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/hooks/useTextSearch/useTextSearch.ts",
+			"name": "useTextSearch",
+			"startLine": 40,
+			"endLine": 354,
+			"params": ["{\n\tcontainerRef,\n\thighlightPrefix,\n\tgetSearchRoots,\n}"]
+		},
+		{
+			"id": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/hooks/useTextSearch/utils/textSearchDom/index.ts",
+			"type": "file",
+			"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/hooks/useTextSearch/utils/textSearchDom/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 10,
+			"nonEmptyLines": 10,
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 6,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"id": "file:src/renderer/screens/main/components/WorkspaceView/RightSidebar/headerTabStyles.ts",
+			"type": "file",
+			"path": "src/renderer/screens/main/components/WorkspaceView/RightSidebar/headerTabStyles.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 29,
+			"nonEmptyLines": 26,
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 2,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"id": "function:src/renderer/screens/main/components/WorkspaceView/RightSidebar/headerTabStyles.ts:getSidebarHeaderTabButtonClassName",
+			"type": "function",
+			"path": "src/renderer/screens/main/components/WorkspaceView/RightSidebar/headerTabStyles.ts",
+			"name": "getSidebarHeaderTabButtonClassName",
+			"startLine": 7,
+			"endLine": 23,
+			"params": ["{\n\tisActive,\n\tcompact = false,\n}"]
+		},
+		{
+			"id": "file:src/renderer/stores/settings.ts",
+			"type": "file",
+			"path": "src/renderer/stores/settings.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 24,
+			"nonEmptyLines": 21,
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"id": "file:src/renderer/stores/v2-changes-sections/index.ts",
+			"type": "file",
+			"path": "src/renderer/stores/v2-changes-sections/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 2,
+			"nonEmptyLines": 2,
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 2,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"id": "file:src/renderer/stores/v2-changes-sections/store.ts",
+			"type": "file",
+			"path": "src/renderer/stores/v2-changes-sections/store.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 29,
+			"nonEmptyLines": 26,
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		}
+	],
+	"edges": [
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffAnnotations/useDiffAnnotations.ts",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffAnnotations/useDiffAnnotations.ts:parseTimestamp",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffAnnotations/useDiffAnnotations.ts",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffAnnotations/useDiffAnnotations.ts:useDiffAnnotationsByPath",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffAnnotations/useDiffAnnotations.ts",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffAnnotations/useDiffAnnotations.ts:useDiffAnnotationsByPath",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffAnnotations/useDiffAnnotations.ts:useDiffAnnotationsByPath",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffAnnotations/useDiffAnnotations.ts:parseTimestamp",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewItems/index.ts",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewItems/useDiffCodeViewItems.ts:useDiffCodeViewItems",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewItems/useDiffCodeViewItems.ts",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewItems/useDiffCodeViewItems.ts:useDiffCodeViewItems",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewItems/useDiffCodeViewItems.ts",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewItems/useDiffCodeViewItems.ts:createGetDiffInput",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewItems/useDiffCodeViewItems.ts",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewItems/useDiffCodeViewItems.ts:getDiffItemId",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewItems/useDiffCodeViewItems.ts",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewItems/useDiffCodeViewItems.ts:getAnnotationsForFile",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewItems/useDiffCodeViewItems.ts",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewItems/useDiffCodeViewItems.ts:getAnnotationsVersion",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewItems/useDiffCodeViewItems.ts",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewItems/useDiffCodeViewItems.ts:hashString",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewItems/useDiffCodeViewItems.ts",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewItems/useDiffCodeViewItems.ts:useDiffCodeViewItems",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewItems/useDiffCodeViewItems.ts:useDiffCodeViewItems",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewItems/useDiffCodeViewItems.ts:createGetDiffInput",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewItems/useDiffCodeViewItems.ts:useDiffCodeViewItems",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewItems/useDiffCodeViewItems.ts:getDiffItemId",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewItems/useDiffCodeViewItems.ts:useDiffCodeViewItems",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewItems/useDiffCodeViewItems.ts:getDiffItemId",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewItems/useDiffCodeViewItems.ts:useDiffCodeViewItems",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewItems/useDiffCodeViewItems.ts:getDiffItemId",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewItems/useDiffCodeViewItems.ts:useDiffCodeViewItems",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewItems/useDiffCodeViewItems.ts:getAnnotationsForFile",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewItems/useDiffCodeViewItems.ts:useDiffCodeViewItems",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewItems/useDiffCodeViewItems.ts:hashString",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewItems/useDiffCodeViewItems.ts:useDiffCodeViewItems",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewItems/useDiffCodeViewItems.ts:getAnnotationsVersion",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewItems/useDiffCodeViewItems.ts:useDiffCodeViewItems",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewItems/useDiffCodeViewItems.ts:getAnnotationsForFile",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewItems/useDiffCodeViewItems.ts:useDiffCodeViewItems",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewItems/useDiffCodeViewItems.ts:hashString",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewItems/useDiffCodeViewItems.ts:useDiffCodeViewItems",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewItems/useDiffCodeViewItems.ts:getAnnotationsVersion",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewScroll/index.ts",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewScroll/useDiffCodeViewScroll.ts:useDiffCodeViewScroll",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewScroll/useDiffCodeViewScroll.ts",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewScroll/useDiffCodeViewScroll.ts:useDiffCodeViewScroll",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewScroll/useDiffCodeViewScroll.ts",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewScroll/useDiffCodeViewScroll.ts:useDiffCodeViewScroll",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewTheme/index.ts",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewTheme/useDiffCodeViewTheme.ts:useDiffCodeViewTheme",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewTheme/useDiffCodeViewTheme.ts",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewTheme/useDiffCodeViewTheme.ts:useDiffCodeViewTheme",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewTheme/useDiffCodeViewTheme.ts",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewTheme/useDiffCodeViewTheme.ts:useDiffCodeViewTheme",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCommentComposer/index.ts",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCommentComposer/useDiffCommentComposer.ts:useDiffCommentComposer",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCommentComposer/useDiffCommentComposer.ts",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCommentComposer/useDiffCommentComposer.ts:rangeSide",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCommentComposer/useDiffCommentComposer.ts",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCommentComposer/useDiffCommentComposer.ts:useDiffCommentComposer",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCommentComposer/useDiffCommentComposer.ts",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCommentComposer/useDiffCommentComposer.ts:useDiffCommentComposer",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCommentComposer/useDiffCommentComposer.ts:useDiffCommentComposer",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCommentComposer/useDiffCommentComposer.ts:rangeSide",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffPaneSearch/index.ts",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffPaneSearch/useDiffPaneSearch.ts:useDiffPaneSearch",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffPaneSearch/useDiffPaneSearch.ts",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffPaneSearch/useDiffPaneSearch.ts:supportsCustomHighlights",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffPaneSearch/useDiffPaneSearch.ts",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffPaneSearch/useDiffPaneSearch.ts:getShadowRootsWithin",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffPaneSearch/useDiffPaneSearch.ts",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffPaneSearch/useDiffPaneSearch.ts:resolveRowSide",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffPaneSearch/useDiffPaneSearch.ts",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffPaneSearch/useDiffPaneSearch.ts:getRowForRangeBoundary",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffPaneSearch/useDiffPaneSearch.ts",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffPaneSearch/useDiffPaneSearch.ts:isWithinSingleRow",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffPaneSearch/useDiffPaneSearch.ts",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffPaneSearch/useDiffPaneSearch.ts:findMatchRowElement",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffPaneSearch/useDiffPaneSearch.ts",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffPaneSearch/useDiffPaneSearch.ts:useDiffPaneSearch",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffPaneSearch/useDiffPaneSearch.ts",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffPaneSearch/useDiffPaneSearch.ts:useDiffPaneSearch",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffPaneSearch/useDiffPaneSearch.ts:isWithinSingleRow",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffPaneSearch/useDiffPaneSearch.ts:getRowForRangeBoundary",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffPaneSearch/useDiffPaneSearch.ts:isWithinSingleRow",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffPaneSearch/useDiffPaneSearch.ts:getRowForRangeBoundary",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffPaneSearch/useDiffPaneSearch.ts:findMatchRowElement",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffPaneSearch/useDiffPaneSearch.ts:getShadowRootsWithin",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffPaneSearch/useDiffPaneSearch.ts:findMatchRowElement",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffPaneSearch/useDiffPaneSearch.ts:resolveRowSide",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffPaneSearch/useDiffPaneSearch.ts:useDiffPaneSearch",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffPaneSearch/useDiffPaneSearch.ts:supportsCustomHighlights",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/FilePane/components/FilePaneHeaderExtras/FilePaneHeaderExtras.tsx",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/FilePane/components/FilePaneHeaderExtras/FilePaneHeaderExtras.tsx:FilePaneHeaderExtras",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/FilePane/components/FilePaneHeaderExtras/FilePaneHeaderExtras.tsx",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/FilePane/components/FilePaneHeaderExtras/FilePaneHeaderExtras.tsx:FilePaneHeaderExtras",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/useSidebarDiffRef/index.ts",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/useSidebarDiffRef/useSidebarDiffRef.ts:useSidebarDiffRef",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/useSidebarDiffRef/useSidebarDiffRef.ts",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/useSidebarDiffRef/useSidebarDiffRef.ts:useSidebarDiffRef",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/useSidebarDiffRef/useSidebarDiffRef.ts",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/useSidebarDiffRef/useSidebarDiffRef.ts:useSidebarDiffRef",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/components/AgentHooks/hooks/useDefaultV2TerminalPresets/default-v2-terminal-presets.test.ts",
+			"target": "function:src/renderer/routes/_authenticated/components/AgentHooks/hooks/useDefaultV2TerminalPresets/default-v2-terminal-presets.test.ts:createAgent",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/components/AgentHooks/hooks/useDefaultV2TerminalPresets/default-v2-terminal-presets.ts",
+			"target": "function:src/renderer/routes/_authenticated/components/AgentHooks/hooks/useDefaultV2TerminalPresets/default-v2-terminal-presets.ts:createDefaultV2TerminalPresetRows",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/components/AgentHooks/hooks/useDefaultV2TerminalPresets/default-v2-terminal-presets.ts",
+			"target": "function:src/renderer/routes/_authenticated/components/AgentHooks/hooks/useDefaultV2TerminalPresets/default-v2-terminal-presets.ts:createDefaultV2TerminalPresetRows",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/components/AgentHooks/hooks/useDefaultV2TerminalPresets/useDefaultV2TerminalPresets.ts",
+			"target": "function:src/renderer/routes/_authenticated/components/AgentHooks/hooks/useDefaultV2TerminalPresets/useDefaultV2TerminalPresets.ts:useDefaultV2TerminalPresets",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/components/AgentHooks/hooks/useDefaultV2TerminalPresets/useDefaultV2TerminalPresets.ts",
+			"target": "function:src/renderer/routes/_authenticated/components/AgentHooks/hooks/useDefaultV2TerminalPresets/useDefaultV2TerminalPresets.ts:useDefaultV2TerminalPresets",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/routes/_authenticated/components/AgentHooks/hooks/useDefaultV2TerminalPresets/useDefaultV2TerminalPresets.ts:useDefaultV2TerminalPresets",
+			"target": "function:src/renderer/routes/_authenticated/components/AgentHooks/hooks/useDefaultV2TerminalPresets/default-v2-terminal-presets.ts:createDefaultV2TerminalPresetRows",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/providers/CollectionsProvider/dashboardSidebarLocal/schema.ts",
+			"target": "function:src/renderer/routes/_authenticated/providers/CollectionsProvider/dashboardSidebarLocal/schema.ts:sanitizePaneLayout",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/providers/CollectionsProvider/dashboardSidebarLocal/schema.ts",
+			"target": "function:src/renderer/routes/_authenticated/providers/CollectionsProvider/dashboardSidebarLocal/schema.ts:isSameLinkTierMap",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/providers/CollectionsProvider/dashboardSidebarLocal/schema.ts",
+			"target": "function:src/renderer/routes/_authenticated/providers/CollectionsProvider/dashboardSidebarLocal/schema.ts:isCompleteLinkTierMap",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/providers/CollectionsProvider/dashboardSidebarLocal/schema.ts",
+			"target": "function:src/renderer/routes/_authenticated/providers/CollectionsProvider/dashboardSidebarLocal/schema.ts:healWorkspaceLocalState",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/providers/CollectionsProvider/dashboardSidebarLocal/schema.ts",
+			"target": "function:src/renderer/routes/_authenticated/providers/CollectionsProvider/dashboardSidebarLocal/schema.ts:healV2UserPreferences",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/providers/CollectionsProvider/dashboardSidebarLocal/schema.ts",
+			"target": "function:src/renderer/routes/_authenticated/providers/CollectionsProvider/dashboardSidebarLocal/schema.ts:sanitizePaneLayout",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/providers/CollectionsProvider/dashboardSidebarLocal/schema.ts",
+			"target": "function:src/renderer/routes/_authenticated/providers/CollectionsProvider/dashboardSidebarLocal/schema.ts:healWorkspaceLocalState",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/providers/CollectionsProvider/dashboardSidebarLocal/schema.ts",
+			"target": "function:src/renderer/routes/_authenticated/providers/CollectionsProvider/dashboardSidebarLocal/schema.ts:healV2UserPreferences",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/routes/_authenticated/providers/CollectionsProvider/dashboardSidebarLocal/schema.ts:healWorkspaceLocalState",
+			"target": "function:src/renderer/routes/_authenticated/providers/CollectionsProvider/dashboardSidebarLocal/schema.ts:sanitizePaneLayout",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/routes/_authenticated/providers/CollectionsProvider/dashboardSidebarLocal/schema.ts:healV2UserPreferences",
+			"target": "function:src/renderer/routes/_authenticated/providers/CollectionsProvider/dashboardSidebarLocal/schema.ts:isCompleteLinkTierMap",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/routes/_authenticated/providers/CollectionsProvider/dashboardSidebarLocal/schema.ts:healV2UserPreferences",
+			"target": "function:src/renderer/routes/_authenticated/providers/CollectionsProvider/dashboardSidebarLocal/schema.ts:isSameLinkTierMap",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/links/components/LinkTierMapper/LinkTierMapper.tsx",
+			"target": "function:src/renderer/routes/_authenticated/settings/links/components/LinkTierMapper/LinkTierMapper.tsx:toSlot",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/links/components/LinkTierMapper/LinkTierMapper.tsx",
+			"target": "function:src/renderer/routes/_authenticated/settings/links/components/LinkTierMapper/LinkTierMapper.tsx:fromSlot",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/links/components/LinkTierMapper/LinkTierMapper.tsx",
+			"target": "function:src/renderer/routes/_authenticated/settings/links/components/LinkTierMapper/LinkTierMapper.tsx:LinkTierMapper",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/links/components/LinkTierMapper/LinkTierMapper.tsx",
+			"target": "function:src/renderer/routes/_authenticated/settings/links/components/LinkTierMapper/LinkTierMapper.tsx:LinkTierMapper",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/routes/_authenticated/settings/links/components/LinkTierMapper/LinkTierMapper.tsx:LinkTierMapper",
+			"target": "function:src/renderer/routes/_authenticated/settings/links/components/LinkTierMapper/LinkTierMapper.tsx:fromSlot",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/routes/_authenticated/settings/links/components/LinkTierMapper/LinkTierMapper.tsx:LinkTierMapper",
+			"target": "function:src/renderer/routes/_authenticated/settings/links/components/LinkTierMapper/LinkTierMapper.tsx:toSlot",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/screens/main/components/CommandPalette/components/FileResultItem/FileResultItem.tsx",
+			"target": "function:src/renderer/screens/main/components/CommandPalette/components/FileResultItem/FileResultItem.tsx:FileResultItem",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/renderer/screens/main/components/CommandPalette/components/FileResultItem/FileResultItem.tsx",
+			"target": "function:src/renderer/screens/main/components/CommandPalette/components/FileResultItem/FileResultItem.tsx:FileResultItem",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/hooks/useTextSearch/useTextSearch.ts",
+			"target": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/hooks/useTextSearch/useTextSearch.ts:supportsCustomHighlights",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/hooks/useTextSearch/useTextSearch.ts",
+			"target": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/hooks/useTextSearch/useTextSearch.ts:useTextSearch",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/hooks/useTextSearch/useTextSearch.ts",
+			"target": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/hooks/useTextSearch/useTextSearch.ts:useTextSearch",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/hooks/useTextSearch/useTextSearch.ts:useTextSearch",
+			"target": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/hooks/useTextSearch/useTextSearch.ts:supportsCustomHighlights",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/hooks/useTextSearch/useTextSearch.ts:useTextSearch",
+			"target": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/hooks/useTextSearch/useTextSearch.ts:supportsCustomHighlights",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/hooks/useTextSearch/useTextSearch.ts:useTextSearch",
+			"target": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/hooks/useTextSearch/useTextSearch.ts:supportsCustomHighlights",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/screens/main/components/WorkspaceView/RightSidebar/headerTabStyles.ts",
+			"target": "function:src/renderer/screens/main/components/WorkspaceView/RightSidebar/headerTabStyles.ts:getSidebarHeaderTabButtonClassName",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/renderer/screens/main/components/WorkspaceView/RightSidebar/headerTabStyles.ts",
+			"target": "function:src/renderer/screens/main/components/WorkspaceView/RightSidebar/headerTabStyles.ts:getSidebarHeaderTabButtonClassName",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffAnnotations/useDiffAnnotations.ts",
+			"target": "file:src/renderer/stores/settings.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewItems/useDiffCodeViewItems.ts",
+			"target": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/useChangeset/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewItems/useDiffCodeViewItems.ts",
+			"target": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffAnnotations/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewScroll/useDiffCodeViewScroll.ts",
+			"target": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/useChangeset/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewScroll/useDiffCodeViewScroll.ts",
+			"target": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffAnnotations/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewScroll/useDiffCodeViewScroll.ts",
+			"target": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/types.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewTheme/useDiffCodeViewTheme.ts",
+			"target": "file:src/renderer/lib/trpc-client.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewTheme/useDiffCodeViewTheme.ts",
+			"target": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffAnnotations/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewTheme/useDiffCodeViewTheme.ts",
+			"target": "file:src/renderer/screens/main/components/WorkspaceView/utils/code-theme/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewTheme/useDiffCodeViewTheme.ts",
+			"target": "file:src/renderer/stores/settings.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewTheme/useDiffCodeViewTheme.ts",
+			"target": "file:src/renderer/stores/theme/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCommentComposer/useDiffCommentComposer.ts",
+			"target": "file:src/renderer/hooks/host-service/useSendToTerminalAgent/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCommentComposer/useDiffCommentComposer.ts",
+			"target": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/useChangeset/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCommentComposer/useDiffCommentComposer.ts",
+			"target": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/components/AgentCommentComposer/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCommentComposer/useDiffCommentComposer.ts",
+			"target": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffAnnotations/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffPaneSearch/useDiffPaneSearch.ts",
+			"target": "file:src/renderer/hotkeys/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffPaneSearch/useDiffPaneSearch.ts",
+			"target": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/useChangeset/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffPaneSearch/useDiffPaneSearch.ts",
+			"target": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffAnnotations/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffPaneSearch/useDiffPaneSearch.ts",
+			"target": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffPaneSearch/utils/collectDiffSearchMatches/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffPaneSearch/useDiffPaneSearch.ts",
+			"target": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/FileViewerPane/utils/diffRendererRoots/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffPaneSearch/useDiffPaneSearch.ts",
+			"target": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/hooks/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffPaneSearch/useDiffPaneSearch.ts",
+			"target": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/hooks/useTextSearch/utils/textSearchDom/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffPaneSearch/useDiffPaneSearch.ts",
+			"target": "file:src/renderer/stores/settings.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/FilePane/components/FilePaneHeaderExtras/FilePaneHeaderExtras.tsx",
+			"target": "file:src/renderer/hooks/useCopyToClipboard.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/FilePane/components/FilePaneHeaderExtras/FilePaneHeaderExtras.tsx",
+			"target": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/useOpenInExternalEditor/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/FilePane/components/FilePaneHeaderExtras/FilePaneHeaderExtras.tsx",
+			"target": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/FilePane/components/FileViewToggle/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/FilePane/components/FilePaneHeaderExtras/FilePaneHeaderExtras.tsx",
+			"target": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/FilePane/registry/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/FilePane/components/FilePaneHeaderExtras/FilePaneHeaderExtras.tsx",
+			"target": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/state/fileDocumentStore/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/FilePane/components/FilePaneHeaderExtras/FilePaneHeaderExtras.tsx",
+			"target": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/types.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/useSidebarDiffRef/useSidebarDiffRef.ts",
+			"target": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/useChangeset/types.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/useSidebarDiffRef/useSidebarDiffRef.ts",
+			"target": "file:src/renderer/routes/_authenticated/providers/CollectionsProvider/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/components/AgentHooks/hooks/useDefaultV2TerminalPresets/default-v2-terminal-presets.test.ts",
+			"target": "file:src/renderer/routes/_authenticated/components/AgentHooks/hooks/useDefaultV2TerminalPresets/default-v2-terminal-presets.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/components/AgentHooks/hooks/useDefaultV2TerminalPresets/default-v2-terminal-presets.test.ts",
+			"target": "file:src/renderer/routes/_authenticated/providers/CollectionsProvider/dashboardSidebarLocal/schema.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/components/AgentHooks/hooks/useDefaultV2TerminalPresets/default-v2-terminal-presets.ts",
+			"target": "file:src/renderer/lib/agent-launch-command.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/components/AgentHooks/hooks/useDefaultV2TerminalPresets/default-v2-terminal-presets.ts",
+			"target": "file:src/renderer/routes/_authenticated/providers/CollectionsProvider/dashboardSidebarLocal/schema.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/components/AgentHooks/hooks/useDefaultV2TerminalPresets/useDefaultV2TerminalPresets.ts",
+			"target": "file:src/renderer/hooks/useV2AgentConfigs/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/components/AgentHooks/hooks/useDefaultV2TerminalPresets/useDefaultV2TerminalPresets.ts",
+			"target": "file:src/renderer/routes/_authenticated/components/AgentHooks/hooks/useDefaultV2TerminalPresets/default-v2-terminal-presets.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/components/AgentHooks/hooks/useDefaultV2TerminalPresets/useDefaultV2TerminalPresets.ts",
+			"target": "file:src/renderer/routes/_authenticated/providers/CollectionsProvider/dashboardSidebarLocal/schema.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/components/AgentHooks/hooks/useDefaultV2TerminalPresets/useDefaultV2TerminalPresets.ts",
+			"target": "file:src/renderer/routes/_authenticated/providers/CollectionsProvider/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/providers/CollectionsProvider/dashboardSidebarLocal/schema.test.ts",
+			"target": "file:src/renderer/routes/_authenticated/providers/CollectionsProvider/dashboardSidebarLocal/schema.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/links/components/LinkTierMapper/LinkTierMapper.tsx",
+			"target": "file:src/renderer/lib/clickPolicy/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/screens/main/components/CommandPalette/components/FileResultItem/FileResultItem.tsx",
+			"target": "file:src/renderer/lib/fileIcons/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/hooks/useTextSearch/useTextSearch.ts",
+			"target": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/hooks/useTextSearch/utils/textSearchDom/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/stores/v2-changes-sections/store.ts",
+			"target": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/useChangeset/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/components/AgentHooks/hooks/useDefaultV2TerminalPresets/default-v2-terminal-presets.ts",
+			"target": "file:src/renderer/routes/_authenticated/components/AgentHooks/hooks/useDefaultV2TerminalPresets/default-v2-terminal-presets.test.ts",
+			"type": "tested_by",
+			"weight": 0.5
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/providers/CollectionsProvider/dashboardSidebarLocal/schema.ts",
+			"target": "file:src/renderer/routes/_authenticated/providers/CollectionsProvider/dashboardSidebarLocal/schema.test.ts",
+			"type": "tested_by",
+			"weight": 0.5
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewItems/index.ts",
+			"target": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/DiffPane.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewItems/useDiffCodeViewItems.ts",
+			"target": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/useChangeset/index.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewItems/useDiffCodeViewItems.ts",
+			"target": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffAnnotations/index.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewScroll/index.ts",
+			"target": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/DiffPane.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewScroll/useDiffCodeViewScroll.ts",
+			"target": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/useChangeset/index.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewScroll/useDiffCodeViewScroll.ts",
+			"target": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffAnnotations/index.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewScroll/useDiffCodeViewScroll.ts",
+			"target": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/types.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewTheme/index.ts",
+			"target": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/DiffPane.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewTheme/useDiffCodeViewTheme.ts",
+			"target": "file:src/renderer/lib/trpc-client.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewTheme/useDiffCodeViewTheme.ts",
+			"target": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffAnnotations/index.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewTheme/useDiffCodeViewTheme.ts",
+			"target": "file:src/renderer/screens/main/components/WorkspaceView/utils/code-theme/index.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewTheme/useDiffCodeViewTheme.ts",
+			"target": "file:src/renderer/stores/theme/index.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCommentComposer/index.ts",
+			"target": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/DiffPane.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCommentComposer/useDiffCommentComposer.ts",
+			"target": "file:src/renderer/hooks/host-service/useSendToTerminalAgent/index.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCommentComposer/useDiffCommentComposer.ts",
+			"target": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/useChangeset/index.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCommentComposer/useDiffCommentComposer.ts",
+			"target": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/components/AgentCommentComposer/index.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCommentComposer/useDiffCommentComposer.ts",
+			"target": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffAnnotations/index.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffPaneSearch/index.ts",
+			"target": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/DiffPane.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffPaneSearch/useDiffPaneSearch.ts",
+			"target": "file:src/renderer/hotkeys/index.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffPaneSearch/useDiffPaneSearch.ts",
+			"target": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/useChangeset/index.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffPaneSearch/useDiffPaneSearch.ts",
+			"target": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffAnnotations/index.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffPaneSearch/useDiffPaneSearch.ts",
+			"target": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/FileViewerPane/utils/diffRendererRoots/index.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffPaneSearch/useDiffPaneSearch.ts",
+			"target": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/hooks/index.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/FilePane/components/FilePaneHeaderExtras/FilePaneHeaderExtras.tsx",
+			"target": "file:src/renderer/hooks/useCopyToClipboard.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/FilePane/components/FilePaneHeaderExtras/FilePaneHeaderExtras.tsx",
+			"target": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/useOpenInExternalEditor/index.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/FilePane/components/FilePaneHeaderExtras/FilePaneHeaderExtras.tsx",
+			"target": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/FilePane/registry/index.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/FilePane/components/FilePaneHeaderExtras/FilePaneHeaderExtras.tsx",
+			"target": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/state/fileDocumentStore/index.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/FilePane/components/FilePaneHeaderExtras/FilePaneHeaderExtras.tsx",
+			"target": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/types.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/useSidebarDiffRef/index.ts",
+			"target": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/hooks/useChangesTab/useChangesTab.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/useSidebarDiffRef/index.ts",
+			"target": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/DiffPane.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/useSidebarDiffRef/useSidebarDiffRef.ts",
+			"target": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/useChangeset/types.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/useSidebarDiffRef/useSidebarDiffRef.ts",
+			"target": "file:src/renderer/routes/_authenticated/providers/CollectionsProvider/index.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/useViewedFiles/index.ts",
+			"target": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/DiffPane.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/providers/WorkspaceGitStatusProvider/index.ts",
+			"target": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/hooks/useChangesTab/useChangesTab.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/providers/WorkspaceGitStatusProvider/index.ts",
+			"target": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/WorkspaceSidebar.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/providers/WorkspaceGitStatusProvider/index.ts",
+			"target": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/useChangeset/useChangeset.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/providers/WorkspaceGitStatusProvider/index.ts",
+			"target": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/page.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/components/AgentHooks/hooks/useDefaultV2TerminalPresets/default-v2-terminal-presets.ts",
+			"target": "file:src/renderer/lib/agent-launch-command.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/components/AgentHooks/hooks/useDefaultV2TerminalPresets/useDefaultV2TerminalPresets.ts",
+			"target": "file:src/renderer/hooks/useV2AgentConfigs/index.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/components/AgentHooks/hooks/useDefaultV2TerminalPresets/useDefaultV2TerminalPresets.ts",
+			"target": "file:src/renderer/routes/_authenticated/providers/CollectionsProvider/index.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/providers/CollectionsProvider/dashboardSidebarLocal/schema.ts",
+			"target": "file:src/renderer/hooks/useV2UserPreferences/useV2UserPreferences.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/providers/CollectionsProvider/dashboardSidebarLocal/schema.ts",
+			"target": "file:src/renderer/lib/clickPolicy/types.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/providers/CollectionsProvider/dashboardSidebarLocal/schema.ts",
+			"target": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/hooks/useChangesTab/components/ChangesFileList/ChangesFileList.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/providers/CollectionsProvider/dashboardSidebarLocal/schema.ts",
+			"target": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/hooks/useChangesTab/components/ChangesHeader/components/ViewModeToggle/ViewModeToggle.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/providers/CollectionsProvider/dashboardSidebarLocal/schema.ts",
+			"target": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/hooks/useChangesTab/components/ChangesTabContent/ChangesTabContent.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/providers/CollectionsProvider/dashboardSidebarLocal/schema.ts",
+			"target": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/hooks/useChangesTab/components/ChangesToolbar/ChangesToolbar.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/providers/CollectionsProvider/dashboardSidebarLocal/schema.ts",
+			"target": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/hooks/useChangesTab/useChangesTab.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/links/components/LinkTierMapper/LinkTierMapper.tsx",
+			"target": "file:src/renderer/lib/clickPolicy/index.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/screens/main/components/CommandPalette/components/FileResultItem/FileResultItem.tsx",
+			"target": "file:src/renderer/lib/fileIcons/index.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/screens/main/components/WorkspaceView/RightSidebar/headerTabStyles.ts",
+			"target": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/components/SidebarHeader/SidebarHeader.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/screens/main/components/WorkspaceView/RightSidebar/headerTabStyles.ts",
+			"target": "file:src/renderer/screens/main/components/WorkspaceView/RightSidebar/ChangesView/ChangesView.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/screens/main/components/WorkspaceView/RightSidebar/headerTabStyles.ts",
+			"target": "file:src/renderer/screens/main/components/WorkspaceView/RightSidebar/index.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/stores/settings.ts",
+			"target": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/WorkspaceSidebar.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/stores/settings.ts",
+			"target": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/components/DiffPaneHeaderExtras/DiffPaneHeaderExtras.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/stores/v2-changes-sections/index.ts",
+			"target": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/hooks/useChangesTab/components/ChangesFileList/components/ChangesSection/ChangesSection.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/stores/v2-changes-sections/store.ts",
+			"target": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/useChangeset/index.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		}
+	]
+}

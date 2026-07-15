@@ -1,0 +1,3338 @@
+{
+  "batchIndex": 102,
+  "nodes": [
+    {
+      "id": "file:src/main/terminal-host/test-helpers.ts",
+      "type": "file",
+      "name": "test-helpers.ts",
+      "filePath": "src/main/terminal-host/test-helpers.ts",
+      "summary": "Utility function: supportsLocalSocketBinding",
+      "tags": [
+        "typescript"
+      ],
+      "complexity": "simple",
+      "metadata": {
+        "totalLines": 41,
+        "nonEmptyLines": 37,
+        "language": "typescript"
+      }
+    },
+    {
+      "id": "function:src/main/terminal-host/test-helpers.ts:supportsLocalSocketBinding",
+      "type": "function",
+      "name": "supportsLocalSocketBinding",
+      "filePath": "src/main/terminal-host/test-helpers.ts",
+      "summary": "Function supportsLocalSocketBinding",
+      "lineRange": [
+        6,
+        41
+      ],
+      "metadata": {
+        "params": [],
+        "isExported": true
+      }
+    },
+    {
+      "id": "file:src/preload/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "src/preload/index.ts",
+      "summary": "index module",
+      "tags": [
+        "typescript"
+      ],
+      "complexity": "moderate",
+      "metadata": {
+        "totalLines": 68,
+        "nonEmptyLines": 57,
+        "language": "typescript"
+      }
+    },
+    {
+      "id": "file:src/renderer/components/AgentModelSelect/AgentModelSelect.tsx",
+      "type": "file",
+      "name": "AgentModelSelect.tsx",
+      "filePath": "src/renderer/components/AgentModelSelect/AgentModelSelect.tsx",
+      "summary": "React component: AgentModelSelect",
+      "tags": [
+        "component",
+        "renderer",
+        "react"
+      ],
+      "complexity": "moderate",
+      "metadata": {
+        "totalLines": 58,
+        "nonEmptyLines": 53,
+        "language": "typescript"
+      }
+    },
+    {
+      "id": "function:src/renderer/components/AgentModelSelect/AgentModelSelect.tsx:AgentModelSelect",
+      "type": "function",
+      "name": "AgentModelSelect",
+      "filePath": "src/renderer/components/AgentModelSelect/AgentModelSelect.tsx",
+      "summary": "Function AgentModelSelect",
+      "lineRange": [
+        22,
+        58
+      ],
+      "metadata": {
+        "params": [
+          "{\n\tmodels,\n\tvalue,\n\tonValueChange,\n\tdisabled,\n\ttriggerClassName,\n\tcontentClassName,\n}"
+        ],
+        "isExported": true
+      }
+    },
+    {
+      "id": "file:src/renderer/components/BootErrorBoundary/BootErrorBoundary.tsx",
+      "type": "file",
+      "name": "BootErrorBoundary.tsx",
+      "filePath": "src/renderer/components/BootErrorBoundary/BootErrorBoundary.tsx",
+      "summary": "Class definition: BootErrorBoundary",
+      "tags": [
+        "component",
+        "class-based",
+        "renderer",
+        "react"
+      ],
+      "complexity": "moderate",
+      "metadata": {
+        "totalLines": 97,
+        "nonEmptyLines": 89,
+        "language": "typescript"
+      }
+    },
+    {
+      "id": "class:src/renderer/components/BootErrorBoundary/BootErrorBoundary.tsx:BootErrorBoundary",
+      "type": "class",
+      "name": "BootErrorBoundary",
+      "filePath": "src/renderer/components/BootErrorBoundary/BootErrorBoundary.tsx",
+      "summary": "Class BootErrorBoundary",
+      "lineRange": [
+        14,
+        97
+      ],
+      "metadata": {
+        "methods": [
+          "getDerivedStateFromError",
+          "componentDidCatch",
+          "render"
+        ],
+        "isExported": true
+      }
+    },
+    {
+      "id": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/ChatInputDropZone/ChatInputDropZone.tsx",
+      "type": "file",
+      "name": "ChatInputDropZone.tsx",
+      "filePath": "src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/ChatInputDropZone/ChatInputDropZone.tsx",
+      "summary": "React component: ChatInputDropZone",
+      "tags": [
+        "component",
+        "renderer",
+        "react"
+      ],
+      "complexity": "moderate",
+      "metadata": {
+        "totalLines": 53,
+        "nonEmptyLines": 48,
+        "language": "typescript"
+      }
+    },
+    {
+      "id": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/ChatInputDropZone/ChatInputDropZone.tsx:ChatInputDropZone",
+      "type": "function",
+      "name": "ChatInputDropZone",
+      "filePath": "src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/ChatInputDropZone/ChatInputDropZone.tsx",
+      "summary": "Function ChatInputDropZone",
+      "lineRange": [
+        11,
+        53
+      ],
+      "metadata": {
+        "params": [
+          "{\n\tclassName,\n\tchildren,\n}"
+        ],
+        "isExported": true
+      }
+    },
+    {
+      "id": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/FileDropOverlay/FileDropOverlay.tsx",
+      "type": "file",
+      "name": "FileDropOverlay.tsx",
+      "filePath": "src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/FileDropOverlay/FileDropOverlay.tsx",
+      "summary": "React component: FileDropOverlay",
+      "tags": [
+        "component",
+        "renderer",
+        "react"
+      ],
+      "complexity": "simple",
+      "metadata": {
+        "totalLines": 21,
+        "nonEmptyLines": 18,
+        "language": "typescript"
+      }
+    },
+    {
+      "id": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/FileDropOverlay/FileDropOverlay.tsx:FileDropOverlay",
+      "type": "function",
+      "name": "FileDropOverlay",
+      "filePath": "src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/FileDropOverlay/FileDropOverlay.tsx",
+      "summary": "Function FileDropOverlay",
+      "lineRange": [
+        7,
+        21
+      ],
+      "metadata": {
+        "params": [
+          "{ visible }"
+        ],
+        "isExported": true
+      }
+    },
+    {
+      "id": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/QuestionInputOverlay/QuestionInputOverlay.tsx",
+      "type": "file",
+      "name": "QuestionInputOverlay.tsx",
+      "filePath": "src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/QuestionInputOverlay/QuestionInputOverlay.tsx",
+      "summary": "React component: QuestionInputOverlay",
+      "tags": [
+        "component",
+        "renderer",
+        "react"
+      ],
+      "complexity": "moderate",
+      "metadata": {
+        "totalLines": 196,
+        "nonEmptyLines": 186,
+        "language": "typescript"
+      }
+    },
+    {
+      "id": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/QuestionInputOverlay/QuestionInputOverlay.tsx:QuestionInputOverlay",
+      "type": "function",
+      "name": "QuestionInputOverlay",
+      "filePath": "src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/QuestionInputOverlay/QuestionInputOverlay.tsx",
+      "summary": "Function QuestionInputOverlay",
+      "lineRange": [
+        20,
+        196
+      ],
+      "metadata": {
+        "params": [
+          "{\n\tquestion,\n\tisSubmitting,\n\tonRespond,\n\tonCancel,\n}"
+        ],
+        "isExported": true
+      }
+    },
+    {
+      "id": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/index.ts",
+      "summary": "index module",
+      "tags": [
+        "component",
+        "renderer",
+        "typescript"
+      ],
+      "complexity": "simple",
+      "metadata": {
+        "totalLines": 1,
+        "nonEmptyLines": 1,
+        "language": "typescript"
+      }
+    },
+    {
+      "id": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/hooks/useDocumentDrag/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/hooks/useDocumentDrag/index.ts",
+      "summary": "index module",
+      "tags": [
+        "component",
+        "hook",
+        "renderer",
+        "typescript"
+      ],
+      "complexity": "simple",
+      "metadata": {
+        "totalLines": 1,
+        "nonEmptyLines": 1,
+        "language": "typescript"
+      }
+    },
+    {
+      "id": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/hooks/useDocumentDrag/useDocumentDrag.ts",
+      "type": "file",
+      "name": "useDocumentDrag.ts",
+      "filePath": "src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/hooks/useDocumentDrag/useDocumentDrag.ts",
+      "summary": "Utility function: useDocumentDrag",
+      "tags": [
+        "component",
+        "hook",
+        "renderer",
+        "typescript"
+      ],
+      "complexity": "simple",
+      "metadata": {
+        "totalLines": 42,
+        "nonEmptyLines": 35,
+        "language": "typescript"
+      }
+    },
+    {
+      "id": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/hooks/useDocumentDrag/useDocumentDrag.ts:useDocumentDrag",
+      "type": "function",
+      "name": "useDocumentDrag",
+      "filePath": "src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/hooks/useDocumentDrag/useDocumentDrag.ts",
+      "summary": "Function useDocumentDrag",
+      "lineRange": [
+        5,
+        42
+      ],
+      "metadata": {
+        "params": [],
+        "isExported": true
+      }
+    },
+    {
+      "id": "file:src/renderer/components/Chat/ChatInterface/components/MentionPopover/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "src/renderer/components/Chat/ChatInterface/components/MentionPopover/index.ts",
+      "summary": "index module",
+      "tags": [
+        "component",
+        "renderer",
+        "typescript"
+      ],
+      "complexity": "simple",
+      "metadata": {
+        "totalLines": 5,
+        "nonEmptyLines": 5,
+        "language": "typescript"
+      }
+    },
+    {
+      "id": "file:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx",
+      "type": "file",
+      "name": "MessageScrollbackRail.tsx",
+      "filePath": "src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx",
+      "summary": "React component: truncatePreview",
+      "tags": [
+        "component",
+        "multi-function",
+        "renderer",
+        "react"
+      ],
+      "complexity": "complex",
+      "metadata": {
+        "totalLines": 350,
+        "nonEmptyLines": 305,
+        "language": "typescript"
+      }
+    },
+    {
+      "id": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:buildPreview",
+      "type": "function",
+      "name": "buildPreview",
+      "filePath": "src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx",
+      "summary": "Function buildPreview",
+      "lineRange": [
+        39,
+        62
+      ],
+      "metadata": {
+        "params": [
+          "message"
+        ],
+        "isExported": false
+      }
+    },
+    {
+      "id": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:findActiveMessageId",
+      "type": "function",
+      "name": "findActiveMessageId",
+      "filePath": "src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx",
+      "summary": "Function findActiveMessageId",
+      "lineRange": [
+        64,
+        84
+      ],
+      "metadata": {
+        "params": [
+          "entries",
+          "scrollTop"
+        ],
+        "isExported": false
+      }
+    },
+    {
+      "id": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:findUserMessageElement",
+      "type": "function",
+      "name": "findUserMessageElement",
+      "filePath": "src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx",
+      "summary": "Function findUserMessageElement",
+      "lineRange": [
+        86,
+        101
+      ],
+      "metadata": {
+        "params": [
+          "scrollElement",
+          "messageId"
+        ],
+        "isExported": false
+      }
+    },
+    {
+      "id": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:MessageScrollbackRail",
+      "type": "function",
+      "name": "MessageScrollbackRail",
+      "filePath": "src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx",
+      "summary": "Function MessageScrollbackRail",
+      "lineRange": [
+        103,
+        350
+      ],
+      "metadata": {
+        "params": [
+          "{\n\tmessages,\n}"
+        ],
+        "isExported": true
+      }
+    },
+    {
+      "id": "file:src/renderer/components/Chat/ChatInterface/components/MessageList/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "src/renderer/components/Chat/ChatInterface/components/MessageList/index.ts",
+      "summary": "index module",
+      "tags": [
+        "component",
+        "renderer",
+        "typescript"
+      ],
+      "complexity": "simple",
+      "metadata": {
+        "totalLines": 1,
+        "nonEmptyLines": 1,
+        "language": "typescript"
+      }
+    },
+    {
+      "id": "file:src/renderer/components/Chat/ChatInterface/components/MessagePartsRenderer/components/StreamingMessageText/StreamingMessageText.tsx",
+      "type": "file",
+      "name": "StreamingMessageText.tsx",
+      "filePath": "src/renderer/components/Chat/ChatInterface/components/MessagePartsRenderer/components/StreamingMessageText/StreamingMessageText.tsx",
+      "summary": "React component: StreamingMessageText",
+      "tags": [
+        "component",
+        "renderer",
+        "react"
+      ],
+      "complexity": "moderate",
+      "metadata": {
+        "totalLines": 57,
+        "nonEmptyLines": 49,
+        "language": "typescript"
+      }
+    },
+    {
+      "id": "function:src/renderer/components/Chat/ChatInterface/components/MessagePartsRenderer/components/StreamingMessageText/StreamingMessageText.tsx:StreamingMessageText",
+      "type": "function",
+      "name": "StreamingMessageText",
+      "filePath": "src/renderer/components/Chat/ChatInterface/components/MessagePartsRenderer/components/StreamingMessageText/StreamingMessageText.tsx",
+      "summary": "Function StreamingMessageText",
+      "lineRange": [
+        17,
+        57
+      ],
+      "metadata": {
+        "params": [
+          "{\n\ttext,\n\tisAnimating,\n\tmermaid,\n\tcomponents,\n}"
+        ],
+        "isExported": true
+      }
+    },
+    {
+      "id": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/AnthropicApiKeyDialog/AnthropicApiKeyDialog.tsx",
+      "type": "file",
+      "name": "AnthropicApiKeyDialog.tsx",
+      "filePath": "src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/AnthropicApiKeyDialog/AnthropicApiKeyDialog.tsx",
+      "summary": "React component: AnthropicApiKeyDialog",
+      "tags": [
+        "component",
+        "dialog",
+        "renderer",
+        "react"
+      ],
+      "complexity": "moderate",
+      "metadata": {
+        "totalLines": 118,
+        "nonEmptyLines": 111,
+        "language": "typescript"
+      }
+    },
+    {
+      "id": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/AnthropicApiKeyDialog/AnthropicApiKeyDialog.tsx:AnthropicApiKeyDialog",
+      "type": "function",
+      "name": "AnthropicApiKeyDialog",
+      "filePath": "src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/AnthropicApiKeyDialog/AnthropicApiKeyDialog.tsx",
+      "summary": "Function AnthropicApiKeyDialog",
+      "lineRange": [
+        24,
+        118
+      ],
+      "metadata": {
+        "params": [
+          "{\n\topen,\n\tapiKey,\n\terrorMessage,\n\tisPending,\n\tcanClearApiKey,\n\tonOpenChange,\n\tonApiKeyChange,\n\tonSubmit,\n\tonClear,\n}"
+        ],
+        "isExported": true
+      }
+    },
+    {
+      "id": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/AnthropicApiKeyDialog/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/AnthropicApiKeyDialog/index.ts",
+      "summary": "index module",
+      "tags": [
+        "component",
+        "dialog",
+        "renderer",
+        "typescript"
+      ],
+      "complexity": "simple",
+      "metadata": {
+        "totalLines": 1,
+        "nonEmptyLines": 1,
+        "language": "typescript"
+      }
+    },
+    {
+      "id": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/ModelProviderGroup/components/AnthropicProviderHeading/AnthropicProviderHeading.tsx",
+      "type": "file",
+      "name": "AnthropicProviderHeading.tsx",
+      "filePath": "src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/ModelProviderGroup/components/AnthropicProviderHeading/AnthropicProviderHeading.tsx",
+      "summary": "React component: AnthropicProviderHeading",
+      "tags": [
+        "component",
+        "renderer",
+        "react"
+      ],
+      "complexity": "moderate",
+      "metadata": {
+        "totalLines": 53,
+        "nonEmptyLines": 50,
+        "language": "typescript"
+      }
+    },
+    {
+      "id": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/ModelProviderGroup/components/AnthropicProviderHeading/AnthropicProviderHeading.tsx:AnthropicProviderHeading",
+      "type": "function",
+      "name": "AnthropicProviderHeading",
+      "filePath": "src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/ModelProviderGroup/components/AnthropicProviderHeading/AnthropicProviderHeading.tsx",
+      "summary": "Function AnthropicProviderHeading",
+      "lineRange": [
+        12,
+        53
+      ],
+      "metadata": {
+        "params": [
+          "{\n\theading,\n\tisConnected,\n\tisPending,\n\tonOpenAuthModal,\n}"
+        ],
+        "isExported": true
+      }
+    },
+    {
+      "id": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/ModelProviderGroup/components/OpenAIProviderHeading/OpenAIProviderHeading.tsx",
+      "type": "file",
+      "name": "OpenAIProviderHeading.tsx",
+      "filePath": "src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/ModelProviderGroup/components/OpenAIProviderHeading/OpenAIProviderHeading.tsx",
+      "summary": "React component: OpenAIProviderHeading",
+      "tags": [
+        "component",
+        "renderer",
+        "react"
+      ],
+      "complexity": "moderate",
+      "metadata": {
+        "totalLines": 53,
+        "nonEmptyLines": 50,
+        "language": "typescript"
+      }
+    },
+    {
+      "id": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/ModelProviderGroup/components/OpenAIProviderHeading/OpenAIProviderHeading.tsx:OpenAIProviderHeading",
+      "type": "function",
+      "name": "OpenAIProviderHeading",
+      "filePath": "src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/ModelProviderGroup/components/OpenAIProviderHeading/OpenAIProviderHeading.tsx",
+      "summary": "Function OpenAIProviderHeading",
+      "lineRange": [
+        12,
+        53
+      ],
+      "metadata": {
+        "params": [
+          "{\n\theading,\n\tisConnected,\n\tisPending,\n\tonOpenAuthModal,\n}"
+        ],
+        "isExported": true
+      }
+    },
+    {
+      "id": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OAuthDialog/OAuthDialog.tsx",
+      "type": "file",
+      "name": "OAuthDialog.tsx",
+      "filePath": "src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OAuthDialog/OAuthDialog.tsx",
+      "summary": "React component: OAuthDialog",
+      "tags": [
+        "component",
+        "dialog",
+        "renderer",
+        "react"
+      ],
+      "complexity": "moderate",
+      "metadata": {
+        "totalLines": 180,
+        "nonEmptyLines": 172,
+        "language": "typescript"
+      }
+    },
+    {
+      "id": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OAuthDialog/OAuthDialog.tsx:OAuthDialog",
+      "type": "function",
+      "name": "OAuthDialog",
+      "filePath": "src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OAuthDialog/OAuthDialog.tsx",
+      "summary": "Function OAuthDialog",
+      "lineRange": [
+        39,
+        180
+      ],
+      "metadata": {
+        "params": [
+          "{\n\tprovider,\n\topen,\n\tauthUrl,\n\tcode,\n\terrorMessage,\n\tisPreparing,\n\tisPending,\n\tcanDisconnect,\n\trequireCodeForSubmit,\n\tonOpenChange,\n\tonCodeChange,\n\tonOpenAuthUrl,\n\tonCopyAuthUrl,\n\tonDisconnect,\n\tonRetry,\n\tonSubmit,\n}"
+        ],
+        "isExported": true
+      }
+    },
+    {
+      "id": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OpenAIApiKeyDialog/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OpenAIApiKeyDialog/index.ts",
+      "summary": "index module",
+      "tags": [
+        "component",
+        "dialog",
+        "renderer",
+        "typescript"
+      ],
+      "complexity": "simple",
+      "metadata": {
+        "totalLines": 1,
+        "nonEmptyLines": 1,
+        "language": "typescript"
+      }
+    },
+    {
+      "id": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OpenAIApiKeyDialog/OpenAIApiKeyDialog.tsx",
+      "type": "file",
+      "name": "OpenAIApiKeyDialog.tsx",
+      "filePath": "src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OpenAIApiKeyDialog/OpenAIApiKeyDialog.tsx",
+      "summary": "React component: OpenAIApiKeyDialog",
+      "tags": [
+        "component",
+        "dialog",
+        "renderer",
+        "react"
+      ],
+      "complexity": "moderate",
+      "metadata": {
+        "totalLines": 119,
+        "nonEmptyLines": 112,
+        "language": "typescript"
+      }
+    },
+    {
+      "id": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OpenAIApiKeyDialog/OpenAIApiKeyDialog.tsx:OpenAIApiKeyDialog",
+      "type": "function",
+      "name": "OpenAIApiKeyDialog",
+      "filePath": "src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OpenAIApiKeyDialog/OpenAIApiKeyDialog.tsx",
+      "summary": "Function OpenAIApiKeyDialog",
+      "lineRange": [
+        24,
+        119
+      ],
+      "metadata": {
+        "params": [
+          "{\n\topen,\n\tapiKey,\n\terrorMessage,\n\tisPending,\n\tcanClearApiKey,\n\tonOpenChange,\n\tonApiKeyChange,\n\tonSubmit,\n\tonClear,\n}"
+        ],
+        "isExported": true
+      }
+    },
+    {
+      "id": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/index.ts",
+      "summary": "index module",
+      "tags": [
+        "component",
+        "hook",
+        "renderer",
+        "typescript"
+      ],
+      "complexity": "simple",
+      "metadata": {
+        "totalLines": 1,
+        "nonEmptyLines": 1,
+        "language": "typescript"
+      }
+    },
+    {
+      "id": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts",
+      "type": "file",
+      "name": "useAnthropicApiKey.ts",
+      "filePath": "src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts",
+      "summary": "Module with 2 functions",
+      "tags": [
+        "component",
+        "hook",
+        "renderer",
+        "typescript"
+      ],
+      "complexity": "moderate",
+      "metadata": {
+        "totalLines": 147,
+        "nonEmptyLines": 133,
+        "language": "typescript"
+      }
+    },
+    {
+      "id": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts:useAnthropicApiKey",
+      "type": "function",
+      "name": "useAnthropicApiKey",
+      "filePath": "src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts",
+      "summary": "Function useAnthropicApiKey",
+      "lineRange": [
+        35,
+        147
+      ],
+      "metadata": {
+        "params": [
+          "{\n\tisModelSelectorOpen,\n\tonModelSelectorOpenChange,\n}"
+        ],
+        "isExported": true
+      }
+    },
+    {
+      "id": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/index.ts",
+      "summary": "index module",
+      "tags": [
+        "component",
+        "hook",
+        "renderer",
+        "typescript"
+      ],
+      "complexity": "simple",
+      "metadata": {
+        "totalLines": 1,
+        "nonEmptyLines": 1,
+        "language": "typescript"
+      }
+    },
+    {
+      "id": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts",
+      "type": "file",
+      "name": "useOpenAIApiKey.ts",
+      "filePath": "src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts",
+      "summary": "Module with 2 functions",
+      "tags": [
+        "component",
+        "hook",
+        "renderer",
+        "typescript"
+      ],
+      "complexity": "moderate",
+      "metadata": {
+        "totalLines": 141,
+        "nonEmptyLines": 127,
+        "language": "typescript"
+      }
+    },
+    {
+      "id": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts:useOpenAIApiKey",
+      "type": "function",
+      "name": "useOpenAIApiKey",
+      "filePath": "src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts",
+      "summary": "Function useOpenAIApiKey",
+      "lineRange": [
+        35,
+        141
+      ],
+      "metadata": {
+        "params": [
+          "{\n\tisModelSelectorOpen,\n\tonModelSelectorOpenChange,\n}"
+        ],
+        "isExported": true
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/main/terminal-host/test-helpers.ts",
+      "target": "function:src/main/terminal-host/test-helpers.ts:supportsLocalSocketBinding",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/terminal-host/test-helpers.ts",
+      "target": "function:src/main/terminal-host/test-helpers.ts:supportsLocalSocketBinding",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/main/terminal-host/test-helpers.ts:supportsLocalSocketBinding",
+      "target": "function:src/main/terminal-host/test-helpers.ts:mkdtempSync",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 11
+      }
+    },
+    {
+      "source": "function:src/main/terminal-host/test-helpers.ts:supportsLocalSocketBinding",
+      "target": "function:src/main/terminal-host/test-helpers.ts:join",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 12
+      }
+    },
+    {
+      "source": "function:src/main/terminal-host/test-helpers.ts:supportsLocalSocketBinding",
+      "target": "function:src/main/terminal-host/test-helpers.ts:realpathSync",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 12
+      }
+    },
+    {
+      "source": "function:src/main/terminal-host/test-helpers.ts:supportsLocalSocketBinding",
+      "target": "function:src/main/terminal-host/test-helpers.ts:tmpdir",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 12
+      }
+    },
+    {
+      "source": "function:src/main/terminal-host/test-helpers.ts:supportsLocalSocketBinding",
+      "target": "function:src/main/terminal-host/test-helpers.ts:join",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 14
+      }
+    },
+    {
+      "source": "function:src/main/terminal-host/test-helpers.ts:supportsLocalSocketBinding",
+      "target": "function:src/main/terminal-host/test-helpers.ts:JSON.stringify",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 20
+      }
+    },
+    {
+      "source": "function:src/main/terminal-host/test-helpers.ts:supportsLocalSocketBinding",
+      "target": "function:src/main/terminal-host/test-helpers.ts:spawnSync",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 31
+      }
+    },
+    {
+      "source": "function:src/main/terminal-host/test-helpers.ts:supportsLocalSocketBinding",
+      "target": "function:src/main/terminal-host/test-helpers.ts:rmSync",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 39
+      }
+    },
+    {
+      "source": "file:src/renderer/components/AgentModelSelect/AgentModelSelect.tsx",
+      "target": "function:src/renderer/components/AgentModelSelect/AgentModelSelect.tsx:AgentModelSelect",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/renderer/components/AgentModelSelect/AgentModelSelect.tsx",
+      "target": "function:src/renderer/components/AgentModelSelect/AgentModelSelect.tsx:AgentModelSelect",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/AgentModelSelect/AgentModelSelect.tsx:AgentModelSelect",
+      "target": "function:src/renderer/components/AgentModelSelect/AgentModelSelect.tsx:models.some",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 31
+      }
+    },
+    {
+      "source": "function:src/renderer/components/AgentModelSelect/AgentModelSelect.tsx:AgentModelSelect",
+      "target": "function:src/renderer/components/AgentModelSelect/AgentModelSelect.tsx:models.map",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 50
+      }
+    },
+    {
+      "source": "file:src/renderer/components/BootErrorBoundary/BootErrorBoundary.tsx",
+      "target": "class:src/renderer/components/BootErrorBoundary/BootErrorBoundary.tsx:BootErrorBoundary",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/renderer/components/BootErrorBoundary/BootErrorBoundary.tsx",
+      "target": "class:src/renderer/components/BootErrorBoundary/BootErrorBoundary.tsx:BootErrorBoundary",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/ChatInputDropZone/ChatInputDropZone.tsx",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/ChatInputDropZone/ChatInputDropZone.tsx:ChatInputDropZone",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/ChatInputDropZone/ChatInputDropZone.tsx",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/ChatInputDropZone/ChatInputDropZone.tsx:ChatInputDropZone",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/ChatInputDropZone/ChatInputDropZone.tsx:ChatInputDropZone",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/ChatInputDropZone/ChatInputDropZone.tsx:useDocumentDrag",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 15
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/ChatInputDropZone/ChatInputDropZone.tsx:ChatInputDropZone",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/ChatInputDropZone/ChatInputDropZone.tsx:usePromptInputController",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 16
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/ChatInputDropZone/ChatInputDropZone.tsx:ChatInputDropZone",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/ChatInputDropZone/ChatInputDropZone.tsx:useCallback",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 18
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/ChatInputDropZone/ChatInputDropZone.tsx:ChatInputDropZone",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/ChatInputDropZone/ChatInputDropZone.tsx:event.dataTransfer.types.includes",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 20
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/ChatInputDropZone/ChatInputDropZone.tsx:ChatInputDropZone",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/ChatInputDropZone/ChatInputDropZone.tsx:event.dataTransfer.types.includes",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 21
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/ChatInputDropZone/ChatInputDropZone.tsx:ChatInputDropZone",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/ChatInputDropZone/ChatInputDropZone.tsx:event.preventDefault",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 23
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/ChatInputDropZone/ChatInputDropZone.tsx:ChatInputDropZone",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/ChatInputDropZone/ChatInputDropZone.tsx:useCallback",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 28
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/ChatInputDropZone/ChatInputDropZone.tsx:ChatInputDropZone",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/ChatInputDropZone/ChatInputDropZone.tsx:event.dataTransfer.types.includes",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 30
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/ChatInputDropZone/ChatInputDropZone.tsx:ChatInputDropZone",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/ChatInputDropZone/ChatInputDropZone.tsx:event.dataTransfer.getData",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 31
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/ChatInputDropZone/ChatInputDropZone.tsx:ChatInputDropZone",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/ChatInputDropZone/ChatInputDropZone.tsx:event.preventDefault",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 33
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/ChatInputDropZone/ChatInputDropZone.tsx:ChatInputDropZone",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/ChatInputDropZone/ChatInputDropZone.tsx:event.stopPropagation",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 34
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/ChatInputDropZone/ChatInputDropZone.tsx:ChatInputDropZone",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/ChatInputDropZone/ChatInputDropZone.tsx:current.endsWith",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 36
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/ChatInputDropZone/ChatInputDropZone.tsx:ChatInputDropZone",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/ChatInputDropZone/ChatInputDropZone.tsx:textInput.setInput",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 37
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/ChatInputDropZone/ChatInputDropZone.tsx:ChatInputDropZone",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/ChatInputDropZone/ChatInputDropZone.tsx:textInput.focus",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 38
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/ChatInputDropZone/ChatInputDropZone.tsx:ChatInputDropZone",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/ChatInputDropZone/ChatInputDropZone.tsx:children",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 50
+      }
+    },
+    {
+      "source": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/ChatInputDropZone/ChatInputDropZone.tsx",
+      "target": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/hooks/useDocumentDrag/index.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/ChatInputDropZone/ChatInputDropZone.tsx",
+      "target": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/hooks/useDocumentDrag/index.ts",
+      "type": "depends_on",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/FileDropOverlay/FileDropOverlay.tsx",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/FileDropOverlay/FileDropOverlay.tsx:FileDropOverlay",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/FileDropOverlay/FileDropOverlay.tsx",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/FileDropOverlay/FileDropOverlay.tsx:FileDropOverlay",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/QuestionInputOverlay/QuestionInputOverlay.tsx",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/QuestionInputOverlay/QuestionInputOverlay.tsx:QuestionInputOverlay",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/QuestionInputOverlay/QuestionInputOverlay.tsx",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/QuestionInputOverlay/QuestionInputOverlay.tsx:QuestionInputOverlay",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/QuestionInputOverlay/QuestionInputOverlay.tsx:QuestionInputOverlay",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/QuestionInputOverlay/QuestionInputOverlay.tsx:useState",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 26
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/QuestionInputOverlay/QuestionInputOverlay.tsx:QuestionInputOverlay",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/QuestionInputOverlay/QuestionInputOverlay.tsx:useState",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 29
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/QuestionInputOverlay/QuestionInputOverlay.tsx:QuestionInputOverlay",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/QuestionInputOverlay/QuestionInputOverlay.tsx:useRef",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 30
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/QuestionInputOverlay/QuestionInputOverlay.tsx:QuestionInputOverlay",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/QuestionInputOverlay/QuestionInputOverlay.tsx:useEffect",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 33
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/QuestionInputOverlay/QuestionInputOverlay.tsx:QuestionInputOverlay",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/QuestionInputOverlay/QuestionInputOverlay.tsx:setSubmittedLabel",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 34
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/QuestionInputOverlay/QuestionInputOverlay.tsx:QuestionInputOverlay",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/QuestionInputOverlay/QuestionInputOverlay.tsx:setCustomText",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 35
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/QuestionInputOverlay/QuestionInputOverlay.tsx:QuestionInputOverlay",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/QuestionInputOverlay/QuestionInputOverlay.tsx:customText.trim",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 41
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/QuestionInputOverlay/QuestionInputOverlay.tsx:QuestionInputOverlay",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/QuestionInputOverlay/QuestionInputOverlay.tsx:options.some",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 44
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/QuestionInputOverlay/QuestionInputOverlay.tsx:QuestionInputOverlay",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/QuestionInputOverlay/QuestionInputOverlay.tsx:cn",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 95
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/QuestionInputOverlay/QuestionInputOverlay.tsx:QuestionInputOverlay",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/QuestionInputOverlay/QuestionInputOverlay.tsx:options.map",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 100
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/QuestionInputOverlay/QuestionInputOverlay.tsx:QuestionInputOverlay",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/QuestionInputOverlay/QuestionInputOverlay.tsx:cn",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 106
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/QuestionInputOverlay/QuestionInputOverlay.tsx:QuestionInputOverlay",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/QuestionInputOverlay/QuestionInputOverlay.tsx:handleOption",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 112
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/QuestionInputOverlay/QuestionInputOverlay.tsx:QuestionInputOverlay",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/QuestionInputOverlay/QuestionInputOverlay.tsx:cn",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 122
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/QuestionInputOverlay/QuestionInputOverlay.tsx:QuestionInputOverlay",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/QuestionInputOverlay/QuestionInputOverlay.tsx:e.preventDefault",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 143
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/QuestionInputOverlay/QuestionInputOverlay.tsx:QuestionInputOverlay",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/QuestionInputOverlay/QuestionInputOverlay.tsx:handleCustom",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 144
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/QuestionInputOverlay/QuestionInputOverlay.tsx:QuestionInputOverlay",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/QuestionInputOverlay/QuestionInputOverlay.tsx:inputRef.current?.focus",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 146
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/QuestionInputOverlay/QuestionInputOverlay.tsx:QuestionInputOverlay",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/QuestionInputOverlay/QuestionInputOverlay.tsx:setCustomText",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 158
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/QuestionInputOverlay/QuestionInputOverlay.tsx:QuestionInputOverlay",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/QuestionInputOverlay/QuestionInputOverlay.tsx:cn",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 169
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/QuestionInputOverlay/QuestionInputOverlay.tsx:QuestionInputOverlay",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/QuestionInputOverlay/QuestionInputOverlay.tsx:e.stopPropagation",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 174
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/QuestionInputOverlay/QuestionInputOverlay.tsx:QuestionInputOverlay",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/QuestionInputOverlay/QuestionInputOverlay.tsx:handleSkip",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 175
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/QuestionInputOverlay/QuestionInputOverlay.tsx:QuestionInputOverlay",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/QuestionInputOverlay/QuestionInputOverlay.tsx:cn",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 182
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/QuestionInputOverlay/QuestionInputOverlay.tsx:QuestionInputOverlay",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/QuestionInputOverlay/QuestionInputOverlay.tsx:e.stopPropagation",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 187
+      }
+    },
+    {
+      "source": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/hooks/useDocumentDrag/useDocumentDrag.ts",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/hooks/useDocumentDrag/useDocumentDrag.ts:useDocumentDrag",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/hooks/useDocumentDrag/useDocumentDrag.ts",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/hooks/useDocumentDrag/useDocumentDrag.ts:useDocumentDrag",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/hooks/useDocumentDrag/useDocumentDrag.ts:useDocumentDrag",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/hooks/useDocumentDrag/useDocumentDrag.ts:useState",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 6
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/hooks/useDocumentDrag/useDocumentDrag.ts:useDocumentDrag",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/hooks/useDocumentDrag/useDocumentDrag.ts:useRef",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 7
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/hooks/useDocumentDrag/useDocumentDrag.ts:useDocumentDrag",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/hooks/useDocumentDrag/useDocumentDrag.ts:useCallback",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 9
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/hooks/useDocumentDrag/useDocumentDrag.ts:useDocumentDrag",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/hooks/useDocumentDrag/useDocumentDrag.ts:types?.includes",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 11
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/hooks/useDocumentDrag/useDocumentDrag.ts:useDocumentDrag",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/hooks/useDocumentDrag/useDocumentDrag.ts:setDragType",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 13
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/hooks/useDocumentDrag/useDocumentDrag.ts:useDocumentDrag",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/hooks/useDocumentDrag/useDocumentDrag.ts:types?.includes",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 14
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/hooks/useDocumentDrag/useDocumentDrag.ts:useDocumentDrag",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/hooks/useDocumentDrag/useDocumentDrag.ts:setDragType",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 16
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/hooks/useDocumentDrag/useDocumentDrag.ts:useDocumentDrag",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/hooks/useDocumentDrag/useDocumentDrag.ts:useCallback",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 20
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/hooks/useDocumentDrag/useDocumentDrag.ts:useDocumentDrag",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/hooks/useDocumentDrag/useDocumentDrag.ts:setDragType",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 22
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/hooks/useDocumentDrag/useDocumentDrag.ts:useDocumentDrag",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/hooks/useDocumentDrag/useDocumentDrag.ts:useCallback",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 25
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/hooks/useDocumentDrag/useDocumentDrag.ts:useDocumentDrag",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/hooks/useDocumentDrag/useDocumentDrag.ts:setDragType",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 27
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/hooks/useDocumentDrag/useDocumentDrag.ts:useDocumentDrag",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/hooks/useDocumentDrag/useDocumentDrag.ts:useEffect",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 30
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/hooks/useDocumentDrag/useDocumentDrag.ts:useDocumentDrag",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/hooks/useDocumentDrag/useDocumentDrag.ts:document.addEventListener",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 31
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/hooks/useDocumentDrag/useDocumentDrag.ts:useDocumentDrag",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/hooks/useDocumentDrag/useDocumentDrag.ts:document.addEventListener",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 32
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/hooks/useDocumentDrag/useDocumentDrag.ts:useDocumentDrag",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/hooks/useDocumentDrag/useDocumentDrag.ts:document.addEventListener",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 33
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/hooks/useDocumentDrag/useDocumentDrag.ts:useDocumentDrag",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/hooks/useDocumentDrag/useDocumentDrag.ts:document.removeEventListener",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 35
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/hooks/useDocumentDrag/useDocumentDrag.ts:useDocumentDrag",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/hooks/useDocumentDrag/useDocumentDrag.ts:document.removeEventListener",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 36
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/hooks/useDocumentDrag/useDocumentDrag.ts:useDocumentDrag",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/hooks/useDocumentDrag/useDocumentDrag.ts:document.removeEventListener",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 37
+      }
+    },
+    {
+      "source": "file:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:buildPreview",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:findActiveMessageId",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:findUserMessageElement",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:MessageScrollbackRail",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:MessageScrollbackRail",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:buildPreview",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:message.parts\n\t\t.filter(\n\t\t\t(part): part is { type: \"text\"; text: string } => part.type === \"text\",\n\t\t)\n\t\t.map((part) => part.text.trim())\n\t\t.filter(Boolean)\n\t\t.join(\" \")\n\t\t.replace(/\\s+/g, \" \")\n\t\t.trim",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 40
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:buildPreview",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:message.parts\n\t\t.filter(\n\t\t\t(part): part is { type: \"text\"; text: string } => part.type === \"text\",\n\t\t)\n\t\t.map((part) => part.text.trim())\n\t\t.filter(Boolean)\n\t\t.join(\" \")\n\t\t.replace",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 40
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:buildPreview",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:message.parts\n\t\t.filter(\n\t\t\t(part): part is { type: \"text\"; text: string } => part.type === \"text\",\n\t\t)\n\t\t.map((part) => part.text.trim())\n\t\t.filter(Boolean)\n\t\t.join",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 40
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:buildPreview",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:message.parts\n\t\t.filter(\n\t\t\t(part): part is { type: \"text\"; text: string } => part.type === \"text\",\n\t\t)\n\t\t.map((part) => part.text.trim())\n\t\t.filter",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 40
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:buildPreview",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:message.parts\n\t\t.filter(\n\t\t\t(part): part is { type: \"text\"; text: string } => part.type === \"text\",\n\t\t)\n\t\t.map",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 40
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:buildPreview",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:message.parts\n\t\t.filter",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 40
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:buildPreview",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:part.text.trim",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 44
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:buildPreview",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:truncatePreview",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 51
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:buildPreview",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:message.parts.filter",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 54
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:findUserMessageElement",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:scrollElement.querySelectorAll",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 90
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:MessageScrollbackRail",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:useConversationContext",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 106
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:MessageScrollbackRail",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:useState",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 107
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:MessageScrollbackRail",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:useState",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 108
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:MessageScrollbackRail",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:useState",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 109
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:MessageScrollbackRail",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:useState",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 110
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:MessageScrollbackRail",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:useState",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 111
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:MessageScrollbackRail",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:useRef",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 112
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:MessageScrollbackRail",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:useMemo",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 114
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:MessageScrollbackRail",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:messages\n\t\t\t\t.filter((message) => message.role === \"user\")\n\t\t\t\t.map",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 116
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:MessageScrollbackRail",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:messages\n\t\t\t\t.filter",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 116
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:MessageScrollbackRail",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:buildPreview",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 120
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:MessageScrollbackRail",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:useCallback",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 126
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:MessageScrollbackRail",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:setEntries",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 129
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:MessageScrollbackRail",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:setActiveMessageId",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 130
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:MessageScrollbackRail",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:setEntries",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 135
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:MessageScrollbackRail",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:setActiveMessageId",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 136
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:MessageScrollbackRail",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:scrollElement.getBoundingClientRect",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 140
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:MessageScrollbackRail",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:userMessages.map",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 142
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:MessageScrollbackRail",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:findUserMessageElement",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 143
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:MessageScrollbackRail",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:targetElement.getBoundingClientRect",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 146
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:MessageScrollbackRail",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:setEntries",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 157
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:MessageScrollbackRail",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:setActiveMessageId",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 158
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:MessageScrollbackRail",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:findActiveMessageId",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 159
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:MessageScrollbackRail",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:useEffect",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 163
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:MessageScrollbackRail",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:requestAnimationFrame",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 164
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:MessageScrollbackRail",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:cancelAnimationFrame",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 165
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:MessageScrollbackRail",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:useEffect",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 168
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:MessageScrollbackRail",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:scrollElement.addEventListener",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 178
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:MessageScrollbackRail",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:scrollElement.removeEventListener",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 180
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:MessageScrollbackRail",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:useEffect",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 184
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:MessageScrollbackRail",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:recalculateEntries",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 191
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:MessageScrollbackRail",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:resizeObserver.observe",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 193
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:MessageScrollbackRail",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:window.addEventListener",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 198
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:MessageScrollbackRail",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:resizeObserver.disconnect",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 201
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:MessageScrollbackRail",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:window.removeEventListener",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 202
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:MessageScrollbackRail",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:useEffect",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 206
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:MessageScrollbackRail",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:clearTimeout",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 209
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:MessageScrollbackRail",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:useCallback",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 215
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:MessageScrollbackRail",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:setIsCardOpen",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 220
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:MessageScrollbackRail",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:useCallback",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 225
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:MessageScrollbackRail",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:findUserMessageElement",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 232
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:MessageScrollbackRail",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:stopScroll",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 237
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:MessageScrollbackRail",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:scrollElement.getBoundingClientRect",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 238
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:MessageScrollbackRail",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:targetElement.getBoundingClientRect",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 240
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:MessageScrollbackRail",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:scrollElement.scrollTo",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 245
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:MessageScrollbackRail",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:Math.max",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 246
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:MessageScrollbackRail",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:setActiveMessageId",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 249
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:MessageScrollbackRail",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:setDismissedByClick",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 250
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:MessageScrollbackRail",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:setIsCardOpen",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 251
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:MessageScrollbackRail",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:clearTimeout",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 253
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:MessageScrollbackRail",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:setTimeout",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 255
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:MessageScrollbackRail",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:setDismissedByClick",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 256
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:MessageScrollbackRail",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:entries.map",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 279
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:MessageScrollbackRail",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:cn",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 293
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:MessageScrollbackRail",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:setHoveredMessageId",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 297
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:MessageScrollbackRail",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:setHoveredMessageId",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 298
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:MessageScrollbackRail",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:setHoveredMessageId",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 299
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:MessageScrollbackRail",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:setHoveredMessageId",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 300
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:MessageScrollbackRail",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:handleJumpToMessage",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 301
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:MessageScrollbackRail",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:entries.map",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 317
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:MessageScrollbackRail",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:cn",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 331
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:MessageScrollbackRail",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:setHoveredMessageId",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 335
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:MessageScrollbackRail",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:setHoveredMessageId",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 336
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:MessageScrollbackRail",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:setHoveredMessageId",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 337
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:MessageScrollbackRail",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:setHoveredMessageId",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 338
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:MessageScrollbackRail",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:handleJumpToMessage",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 339
+      }
+    },
+    {
+      "source": "file:src/renderer/components/Chat/ChatInterface/components/MessagePartsRenderer/components/StreamingMessageText/StreamingMessageText.tsx",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessagePartsRenderer/components/StreamingMessageText/StreamingMessageText.tsx:StreamingMessageText",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/renderer/components/Chat/ChatInterface/components/MessagePartsRenderer/components/StreamingMessageText/StreamingMessageText.tsx",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessagePartsRenderer/components/StreamingMessageText/StreamingMessageText.tsx:StreamingMessageText",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessagePartsRenderer/components/StreamingMessageText/StreamingMessageText.tsx:StreamingMessageText",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessagePartsRenderer/components/StreamingMessageText/StreamingMessageText.tsx:useState",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 23
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessagePartsRenderer/components/StreamingMessageText/StreamingMessageText.tsx:StreamingMessageText",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessagePartsRenderer/components/StreamingMessageText/StreamingMessageText.tsx:useEffect",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 25
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessagePartsRenderer/components/StreamingMessageText/StreamingMessageText.tsx:StreamingMessageText",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessagePartsRenderer/components/StreamingMessageText/StreamingMessageText.tsx:setDisplayText",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 27
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessagePartsRenderer/components/StreamingMessageText/StreamingMessageText.tsx:StreamingMessageText",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessagePartsRenderer/components/StreamingMessageText/StreamingMessageText.tsx:setDisplayText",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 31
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessagePartsRenderer/components/StreamingMessageText/StreamingMessageText.tsx:StreamingMessageText",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessagePartsRenderer/components/StreamingMessageText/StreamingMessageText.tsx:text.startsWith",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 31
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessagePartsRenderer/components/StreamingMessageText/StreamingMessageText.tsx:StreamingMessageText",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessagePartsRenderer/components/StreamingMessageText/StreamingMessageText.tsx:window.setInterval",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 33
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessagePartsRenderer/components/StreamingMessageText/StreamingMessageText.tsx:StreamingMessageText",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessagePartsRenderer/components/StreamingMessageText/StreamingMessageText.tsx:setDisplayText",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 34
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessagePartsRenderer/components/StreamingMessageText/StreamingMessageText.tsx:StreamingMessageText",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessagePartsRenderer/components/StreamingMessageText/StreamingMessageText.tsx:Math.min",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 36
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessagePartsRenderer/components/StreamingMessageText/StreamingMessageText.tsx:StreamingMessageText",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessagePartsRenderer/components/StreamingMessageText/StreamingMessageText.tsx:text.slice",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 40
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/MessagePartsRenderer/components/StreamingMessageText/StreamingMessageText.tsx:StreamingMessageText",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/MessagePartsRenderer/components/StreamingMessageText/StreamingMessageText.tsx:window.clearInterval",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 44
+      }
+    },
+    {
+      "source": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/AnthropicApiKeyDialog/AnthropicApiKeyDialog.tsx",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/AnthropicApiKeyDialog/AnthropicApiKeyDialog.tsx:AnthropicApiKeyDialog",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/AnthropicApiKeyDialog/AnthropicApiKeyDialog.tsx",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/AnthropicApiKeyDialog/AnthropicApiKeyDialog.tsx:AnthropicApiKeyDialog",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/AnthropicApiKeyDialog/AnthropicApiKeyDialog.tsx:AnthropicApiKeyDialog",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/AnthropicApiKeyDialog/AnthropicApiKeyDialog.tsx:onApiKeyChange",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 61
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/AnthropicApiKeyDialog/AnthropicApiKeyDialog.tsx:AnthropicApiKeyDialog",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/AnthropicApiKeyDialog/AnthropicApiKeyDialog.tsx:apiKey.trim",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 63
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/AnthropicApiKeyDialog/AnthropicApiKeyDialog.tsx:AnthropicApiKeyDialog",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/AnthropicApiKeyDialog/AnthropicApiKeyDialog.tsx:onSubmit",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 64
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/AnthropicApiKeyDialog/AnthropicApiKeyDialog.tsx:AnthropicApiKeyDialog",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/AnthropicApiKeyDialog/AnthropicApiKeyDialog.tsx:Boolean",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 68
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/AnthropicApiKeyDialog/AnthropicApiKeyDialog.tsx:AnthropicApiKeyDialog",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/AnthropicApiKeyDialog/AnthropicApiKeyDialog.tsx:apiKey.trim",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 89
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/AnthropicApiKeyDialog/AnthropicApiKeyDialog.tsx:AnthropicApiKeyDialog",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/AnthropicApiKeyDialog/AnthropicApiKeyDialog.tsx:onOpenChange",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 97
+      }
+    },
+    {
+      "source": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/ModelProviderGroup/components/AnthropicProviderHeading/AnthropicProviderHeading.tsx",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/ModelProviderGroup/components/AnthropicProviderHeading/AnthropicProviderHeading.tsx:AnthropicProviderHeading",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/ModelProviderGroup/components/AnthropicProviderHeading/AnthropicProviderHeading.tsx",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/ModelProviderGroup/components/AnthropicProviderHeading/AnthropicProviderHeading.tsx:AnthropicProviderHeading",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/ModelProviderGroup/components/AnthropicProviderHeading/AnthropicProviderHeading.tsx:AnthropicProviderHeading",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/ModelProviderGroup/components/AnthropicProviderHeading/AnthropicProviderHeading.tsx:event.preventDefault",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 35
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/ModelProviderGroup/components/AnthropicProviderHeading/AnthropicProviderHeading.tsx:AnthropicProviderHeading",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/ModelProviderGroup/components/AnthropicProviderHeading/AnthropicProviderHeading.tsx:event.stopPropagation",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 36
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/ModelProviderGroup/components/AnthropicProviderHeading/AnthropicProviderHeading.tsx:AnthropicProviderHeading",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/ModelProviderGroup/components/AnthropicProviderHeading/AnthropicProviderHeading.tsx:onOpenAuthModal",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 37
+      }
+    },
+    {
+      "source": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/ModelProviderGroup/components/OpenAIProviderHeading/OpenAIProviderHeading.tsx",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/ModelProviderGroup/components/OpenAIProviderHeading/OpenAIProviderHeading.tsx:OpenAIProviderHeading",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/ModelProviderGroup/components/OpenAIProviderHeading/OpenAIProviderHeading.tsx",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/ModelProviderGroup/components/OpenAIProviderHeading/OpenAIProviderHeading.tsx:OpenAIProviderHeading",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/ModelProviderGroup/components/OpenAIProviderHeading/OpenAIProviderHeading.tsx:OpenAIProviderHeading",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/ModelProviderGroup/components/OpenAIProviderHeading/OpenAIProviderHeading.tsx:event.preventDefault",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 35
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/ModelProviderGroup/components/OpenAIProviderHeading/OpenAIProviderHeading.tsx:OpenAIProviderHeading",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/ModelProviderGroup/components/OpenAIProviderHeading/OpenAIProviderHeading.tsx:event.stopPropagation",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 36
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/ModelProviderGroup/components/OpenAIProviderHeading/OpenAIProviderHeading.tsx:OpenAIProviderHeading",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/ModelProviderGroup/components/OpenAIProviderHeading/OpenAIProviderHeading.tsx:onOpenAuthModal",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 37
+      }
+    },
+    {
+      "source": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OAuthDialog/OAuthDialog.tsx",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OAuthDialog/OAuthDialog.tsx:OAuthDialog",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OAuthDialog/OAuthDialog.tsx",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OAuthDialog/OAuthDialog.tsx:OAuthDialog",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OAuthDialog/OAuthDialog.tsx:OAuthDialog",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OAuthDialog/OAuthDialog.tsx:Boolean",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 57
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OAuthDialog/OAuthDialog.tsx:OAuthDialog",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OAuthDialog/OAuthDialog.tsx:code.trim",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 62
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OAuthDialog/OAuthDialog.tsx:OAuthDialog",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OAuthDialog/OAuthDialog.tsx:useState",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 63
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OAuthDialog/OAuthDialog.tsx:OAuthDialog",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OAuthDialog/OAuthDialog.tsx:useCallback",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 64
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OAuthDialog/OAuthDialog.tsx:OAuthDialog",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OAuthDialog/OAuthDialog.tsx:onCopyAuthUrl",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 65
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OAuthDialog/OAuthDialog.tsx:OAuthDialog",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OAuthDialog/OAuthDialog.tsx:setCopied",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 66
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OAuthDialog/OAuthDialog.tsx:OAuthDialog",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OAuthDialog/OAuthDialog.tsx:setTimeout",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 67
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OAuthDialog/OAuthDialog.tsx:OAuthDialog",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OAuthDialog/OAuthDialog.tsx:setCopied",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 67
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OAuthDialog/OAuthDialog.tsx:OAuthDialog",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OAuthDialog/OAuthDialog.tsx:onCodeChange",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 113
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OAuthDialog/OAuthDialog.tsx:OAuthDialog",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OAuthDialog/OAuthDialog.tsx:onSubmit",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 120
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OAuthDialog/OAuthDialog.tsx:OAuthDialog",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OAuthDialog/OAuthDialog.tsx:onOpenChange",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 159
+      }
+    },
+    {
+      "source": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OpenAIApiKeyDialog/OpenAIApiKeyDialog.tsx",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OpenAIApiKeyDialog/OpenAIApiKeyDialog.tsx:OpenAIApiKeyDialog",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OpenAIApiKeyDialog/OpenAIApiKeyDialog.tsx",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OpenAIApiKeyDialog/OpenAIApiKeyDialog.tsx:OpenAIApiKeyDialog",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OpenAIApiKeyDialog/OpenAIApiKeyDialog.tsx:OpenAIApiKeyDialog",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OpenAIApiKeyDialog/OpenAIApiKeyDialog.tsx:onApiKeyChange",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 62
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OpenAIApiKeyDialog/OpenAIApiKeyDialog.tsx:OpenAIApiKeyDialog",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OpenAIApiKeyDialog/OpenAIApiKeyDialog.tsx:apiKey.trim",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 64
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OpenAIApiKeyDialog/OpenAIApiKeyDialog.tsx:OpenAIApiKeyDialog",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OpenAIApiKeyDialog/OpenAIApiKeyDialog.tsx:onSubmit",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 65
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OpenAIApiKeyDialog/OpenAIApiKeyDialog.tsx:OpenAIApiKeyDialog",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OpenAIApiKeyDialog/OpenAIApiKeyDialog.tsx:Boolean",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 69
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OpenAIApiKeyDialog/OpenAIApiKeyDialog.tsx:OpenAIApiKeyDialog",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OpenAIApiKeyDialog/OpenAIApiKeyDialog.tsx:apiKey.trim",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 90
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OpenAIApiKeyDialog/OpenAIApiKeyDialog.tsx:OpenAIApiKeyDialog",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OpenAIApiKeyDialog/OpenAIApiKeyDialog.tsx:onOpenChange",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 98
+      }
+    },
+    {
+      "source": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts:useAnthropicApiKey",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts:useAnthropicApiKey",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts:useAnthropicApiKey",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts:useState",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 39
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts:useAnthropicApiKey",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts:useState",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 40
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts:useAnthropicApiKey",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts:useState",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 41
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts:useAnthropicApiKey",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts:chatServiceTrpc.auth.getAnthropicStatus.useQuery",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 44
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts:useAnthropicApiKey",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts:chatServiceTrpc.auth.setAnthropicApiKey.useMutation",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 46
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts:useAnthropicApiKey",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts:chatServiceTrpc.auth.clearAnthropicApiKey.useMutation",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 48
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts:useAnthropicApiKey",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts:useEffect",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 53
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts:useAnthropicApiKey",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts:refetchAnthropicStatus",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 55
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts:useAnthropicApiKey",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts:useCallback",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 58
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts:useAnthropicApiKey",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts:setErrorMessage",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 59
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts:useAnthropicApiKey",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts:setApiKey",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 60
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts:useAnthropicApiKey",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts:setDialogOpen",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 61
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts:useAnthropicApiKey",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts:useCallback",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 64
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts:useAnthropicApiKey",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts:setDialogOpen",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 65
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts:useAnthropicApiKey",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts:setApiKey",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 66
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts:useAnthropicApiKey",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts:setErrorMessage",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 67
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts:useAnthropicApiKey",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts:onModelSelectorOpenChange",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 68
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts:useAnthropicApiKey",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts:useCallback",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 71
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts:useAnthropicApiKey",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts:apiKey.trim",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 72
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts:useAnthropicApiKey",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts:setErrorMessage",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 74
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts:useAnthropicApiKey",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts:setErrorMessage",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 78
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts:useAnthropicApiKey",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts:setAnthropicApiKeyMutation.mutateAsync",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 80
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts:useAnthropicApiKey",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts:refetchAnthropicStatus",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 81
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts:useAnthropicApiKey",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts:closeDialog",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 82
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts:useAnthropicApiKey",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts:setErrorMessage",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 84
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts:useAnthropicApiKey",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts:getErrorMessage",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 85
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts:useAnthropicApiKey",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts:useCallback",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 90
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts:useAnthropicApiKey",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts:setErrorMessage",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 91
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts:useAnthropicApiKey",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts:clearAnthropicApiKeyMutation.mutateAsync",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 93
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts:useAnthropicApiKey",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts:refetchAnthropicStatus",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 94
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts:useAnthropicApiKey",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts:closeDialog",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 95
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts:useAnthropicApiKey",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts:setErrorMessage",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 97
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts:useAnthropicApiKey",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts:getErrorMessage",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 98
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts:useAnthropicApiKey",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts:useMemo",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 103
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts:useAnthropicApiKey",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts:closeDialog",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 111
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts:useAnthropicApiKey",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts:openAnthropicApiKeyDialog",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 114
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts:useAnthropicApiKey",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts:setApiKey",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 117
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts:useAnthropicApiKey",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts:submitApiKey",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 120
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts:useAnthropicApiKey",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts:clearApiKey",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 123
+      }
+    },
+    {
+      "source": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts:useOpenAIApiKey",
+      "type": "contains",
+      "weight": 1
+    },
+    {
+      "source": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts:useOpenAIApiKey",
+      "type": "exports",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts:useOpenAIApiKey",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts:useState",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 39
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts:useOpenAIApiKey",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts:useState",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 40
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts:useOpenAIApiKey",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts:useState",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 41
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts:useOpenAIApiKey",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts:chatServiceTrpc.auth.getOpenAIStatus.useQuery",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 44
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts:useOpenAIApiKey",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts:chatServiceTrpc.auth.setOpenAIApiKey.useMutation",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 46
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts:useOpenAIApiKey",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts:chatServiceTrpc.auth.clearOpenAIApiKey.useMutation",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 48
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts:useOpenAIApiKey",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts:useEffect",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 52
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts:useOpenAIApiKey",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts:refetchOpenAIStatus",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 54
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts:useOpenAIApiKey",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts:useCallback",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 57
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts:useOpenAIApiKey",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts:setErrorMessage",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 58
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts:useOpenAIApiKey",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts:setApiKey",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 59
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts:useOpenAIApiKey",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts:setDialogOpen",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 60
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts:useOpenAIApiKey",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts:useCallback",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 63
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts:useOpenAIApiKey",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts:setDialogOpen",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 64
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts:useOpenAIApiKey",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts:setApiKey",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 65
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts:useOpenAIApiKey",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts:setErrorMessage",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 66
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts:useOpenAIApiKey",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts:onModelSelectorOpenChange",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 67
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts:useOpenAIApiKey",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts:useCallback",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 70
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts:useOpenAIApiKey",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts:apiKey.trim",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 71
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts:useOpenAIApiKey",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts:setErrorMessage",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 73
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts:useOpenAIApiKey",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts:setErrorMessage",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 77
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts:useOpenAIApiKey",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts:setOpenAIApiKeyMutation.mutateAsync",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 79
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts:useOpenAIApiKey",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts:refetchOpenAIStatus",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 80
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts:useOpenAIApiKey",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts:closeDialog",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 81
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts:useOpenAIApiKey",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts:setErrorMessage",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 83
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts:useOpenAIApiKey",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts:getErrorMessage",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 83
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts:useOpenAIApiKey",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts:useCallback",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 87
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts:useOpenAIApiKey",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts:setErrorMessage",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 88
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts:useOpenAIApiKey",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts:clearOpenAIApiKeyMutation.mutateAsync",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 90
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts:useOpenAIApiKey",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts:refetchOpenAIStatus",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 91
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts:useOpenAIApiKey",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts:closeDialog",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 92
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts:useOpenAIApiKey",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts:setErrorMessage",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 94
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts:useOpenAIApiKey",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts:getErrorMessage",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 94
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts:useOpenAIApiKey",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts:useMemo",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 98
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts:useOpenAIApiKey",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts:closeDialog",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 106
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts:useOpenAIApiKey",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts:openOpenAIApiKeyDialog",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 109
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts:useOpenAIApiKey",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts:setApiKey",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 112
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts:useOpenAIApiKey",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts:submitApiKey",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 115
+      }
+    },
+    {
+      "source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts:useOpenAIApiKey",
+      "target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts:clearApiKey",
+      "type": "calls",
+      "weight": 0.8,
+      "metadata": {
+        "lineNumber": 118
+      }
+    }
+  ],
+  "metadata": {
+    "nodeCount": 44,
+    "edgeCount": 295,
+    "filesProcessed": 25
+  }
+}

@@ -1,0 +1,237 @@
+{
+	"scriptCompleted": true,
+	"filesAnalyzed": 5,
+	"filesSkipped": [],
+	"results": [
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarDeleteDialog/components/DestroyConfirmPane/DestroyConfirmPane.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 134,
+			"nonEmptyLines": 128,
+			"functions": [
+				{
+					"name": "DestroyConfirmPane",
+					"startLine": 29,
+					"endLine": 134,
+					"params": [
+						"{\n\topen,\n\tonOpenChange,\n\tworkspaceName,\n\tdeleteBranch,\n\tonDeleteBranchChange,\n\thasChanges,\n\thasUnpushedCommits,\n\tcanConfirm,\n\tblockingReason,\n\tonConfirm,\n\tconfirmLabel,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "DestroyConfirmPane",
+					"line": 29,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "DestroyConfirmPane",
+					"callee": "useId",
+					"lineNumber": 42
+				},
+				{
+					"caller": "DestroyConfirmPane",
+					"callee": "useEffect",
+					"lineNumber": 45
+				},
+				{
+					"caller": "handleKeyDown",
+					"callee": "shouldConfirmDeleteDialogKey",
+					"lineNumber": 49
+				},
+				{
+					"caller": "handleKeyDown",
+					"callee": "event.preventDefault",
+					"lineNumber": 50
+				},
+				{
+					"caller": "handleKeyDown",
+					"callee": "onConfirm",
+					"lineNumber": 51
+				},
+				{
+					"caller": "DestroyConfirmPane",
+					"callee": "window.addEventListener",
+					"lineNumber": 54
+				},
+				{
+					"caller": "DestroyConfirmPane",
+					"callee": "window.removeEventListener",
+					"lineNumber": 55
+				},
+				{
+					"caller": "DestroyConfirmPane",
+					"callee": "onDeleteBranchChange",
+					"lineNumber": 101
+				},
+				{
+					"caller": "DestroyConfirmPane",
+					"callee": "onOpenChange",
+					"lineNumber": 117
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarDeleteDialog/components/TeardownFailedPane/TeardownFailedPane.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 83,
+			"nonEmptyLines": 77,
+			"functions": [
+				{
+					"name": "TeardownFailedPane",
+					"startLine": 25,
+					"endLine": 83,
+					"params": [
+						"{\n\topen,\n\tonOpenChange,\n\tcause,\n\tonForceDelete,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "TeardownFailedPane",
+					"line": 25,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "TeardownFailedPane",
+					"callee": "formatTeardownReason",
+					"lineNumber": 31
+				},
+				{
+					"caller": "TeardownFailedPane",
+					"callee": "stripAnsi",
+					"lineNumber": 33
+				},
+				{
+					"caller": "TeardownFailedPane",
+					"callee": "useEffect",
+					"lineNumber": 35
+				},
+				{
+					"caller": "handleKeyDown",
+					"callee": "shouldConfirmDeleteDialogKey",
+					"lineNumber": 39
+				},
+				{
+					"caller": "handleKeyDown",
+					"callee": "event.preventDefault",
+					"lineNumber": 40
+				},
+				{
+					"caller": "handleKeyDown",
+					"callee": "onForceDelete",
+					"lineNumber": 41
+				},
+				{
+					"caller": "TeardownFailedPane",
+					"callee": "window.addEventListener",
+					"lineNumber": 44
+				},
+				{
+					"caller": "TeardownFailedPane",
+					"callee": "window.removeEventListener",
+					"lineNumber": 45
+				},
+				{
+					"caller": "TeardownFailedPane",
+					"callee": "onOpenChange",
+					"lineNumber": 67
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarDeleteDialog/components/TeardownFailedPane/formatTeardownReason.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 16,
+			"nonEmptyLines": 15,
+			"functions": [
+				{
+					"name": "formatTeardownReason",
+					"startLine": 5,
+					"endLine": 16,
+					"params": ["cause"]
+				}
+			],
+			"exports": [
+				{
+					"name": "formatTeardownReason",
+					"line": 5,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "formatTeardownReason",
+					"callee": "Math.round",
+					"lineNumber": 7
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarDeleteDialog/utils/shouldConfirmDeleteDialogKey.test.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 43,
+			"nonEmptyLines": 39,
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarDeleteDialog/utils/shouldConfirmDeleteDialogKey.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 22,
+			"nonEmptyLines": 21,
+			"functions": [
+				{
+					"name": "shouldConfirmDeleteDialogKey",
+					"startLine": 11,
+					"endLine": 22,
+					"params": ["event"]
+				}
+			],
+			"exports": [
+				{
+					"name": "shouldConfirmDeleteDialogKey",
+					"line": 11,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		}
+	]
+}

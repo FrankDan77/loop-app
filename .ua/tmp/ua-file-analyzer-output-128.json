@@ -1,0 +1,1261 @@
+{
+	"scriptCompleted": true,
+	"filesAnalyzed": 11,
+	"filesSkipped": [],
+	"results": [
+		{
+			"path": "packages/session-protocol/src/acp.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 12,
+			"nonEmptyLines": 12,
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "packages/session-protocol/src/api.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 170,
+			"nonEmptyLines": 145,
+			"functions": [
+				{
+					"name": "encodeMessagesCursor",
+					"startLine": 13,
+					"endLine": 18,
+					"params": ["beforeSeq"]
+				},
+				{
+					"name": "decodeMessagesCursor",
+					"startLine": 20,
+					"endLine": 25,
+					"params": ["cursor"]
+				},
+				{
+					"name": "isRecord",
+					"startLine": 37,
+					"endLine": 39,
+					"params": ["value"]
+				}
+			],
+			"exports": [
+				{
+					"name": "encodeMessagesCursor",
+					"line": 13,
+					"isDefault": false
+				},
+				{
+					"name": "decodeMessagesCursor",
+					"line": 20,
+					"isDefault": false
+				},
+				{
+					"name": "contentBlockSchema",
+					"line": 41,
+					"isDefault": false
+				},
+				{
+					"name": "permissionOutcomeSchema",
+					"line": 46,
+					"isDefault": false
+				},
+				{
+					"name": "listSessionsInput",
+					"line": 54,
+					"isDefault": false
+				},
+				{
+					"name": "createSessionInput",
+					"line": 70,
+					"isDefault": false
+				},
+				{
+					"name": "getSessionInput",
+					"line": 75,
+					"isDefault": false
+				},
+				{
+					"name": "getMessagesInput",
+					"line": 79,
+					"isDefault": false
+				},
+				{
+					"name": "promptInput",
+					"line": 85,
+					"isDefault": false
+				},
+				{
+					"name": "respondToPermissionInput",
+					"line": 90,
+					"isDefault": false
+				},
+				{
+					"name": "cancelInput",
+					"line": 96,
+					"isDefault": false
+				},
+				{
+					"name": "setModeInput",
+					"line": 100,
+					"isDefault": false
+				},
+				{
+					"name": "setConfigOptionInput",
+					"line": 105,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "encodeMessagesCursor",
+					"callee": "Number.isInteger",
+					"lineNumber": 14
+				},
+				{
+					"caller": "decodeMessagesCursor",
+					"callee": "CURSOR_PATTERN.exec",
+					"lineNumber": 21
+				},
+				{
+					"caller": "decodeMessagesCursor",
+					"callee": "Number",
+					"lineNumber": 23
+				},
+				{
+					"caller": "decodeMessagesCursor",
+					"callee": "Number.isSafeInteger",
+					"lineNumber": 24
+				}
+			],
+			"metrics": {
+				"importCount": 3,
+				"exportCount": 13,
+				"functionCount": 3,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "packages/session-protocol/src/client/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "packages/session-protocol/src/client/subscribeToSession/subscribeToSession.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 242,
+			"nonEmptyLines": 225,
+			"functions": [
+				{
+					"name": "isEnvelope",
+					"startLine": 60,
+					"endLine": 69,
+					"params": ["value"]
+				},
+				{
+					"name": "subscribeToSession",
+					"startLine": 71,
+					"endLine": 242,
+					"params": ["options"]
+				}
+			],
+			"exports": [
+				{
+					"name": "subscribeToSession",
+					"line": 71,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "withCursor",
+					"callee": "base.includes",
+					"lineNumber": 97
+				},
+				{
+					"caller": "stop",
+					"callee": "clearTimeout",
+					"lineNumber": 104
+				},
+				{
+					"caller": "stop",
+					"callee": "current.close",
+					"lineNumber": 113
+				},
+				{
+					"caller": "stop",
+					"callee": "onStatus",
+					"lineNumber": 115
+				},
+				{
+					"caller": "scheduleReconnect",
+					"callee": "onStatus",
+					"lineNumber": 120
+				},
+				{
+					"caller": "scheduleReconnect",
+					"callee": "Math.min",
+					"lineNumber": 121
+				},
+				{
+					"caller": "scheduleReconnect",
+					"callee": "setTimeout",
+					"lineNumber": 126
+				},
+				{
+					"caller": "handleEnvelope",
+					"callee": "stop",
+					"lineNumber": 132
+				},
+				{
+					"caller": "handleEnvelope",
+					"callee": "onReset",
+					"lineNumber": 133
+				},
+				{
+					"caller": "handleEnvelope",
+					"callee": "onGap",
+					"lineNumber": 139
+				},
+				{
+					"caller": "handleEnvelope",
+					"callee": "reconnectCurrentSocket",
+					"lineNumber": 140
+				},
+				{
+					"caller": "handleEnvelope",
+					"callee": "onEnvelope",
+					"lineNumber": 146
+				},
+				{
+					"caller": "reconnectCurrentSocket",
+					"callee": "current.close",
+					"lineNumber": 157
+				},
+				{
+					"caller": "reconnectCurrentSocket",
+					"callee": "scheduleReconnect",
+					"lineNumber": 159
+				},
+				{
+					"caller": "connect",
+					"callee": "onStatus",
+					"lineNumber": 165
+				},
+				{
+					"caller": "connect",
+					"callee": "streamUrl",
+					"lineNumber": 170
+				},
+				{
+					"caller": "connect",
+					"callee": "scheduleReconnect",
+					"lineNumber": 172
+				},
+				{
+					"caller": "connect",
+					"callee": "openSocket",
+					"lineNumber": 176
+				},
+				{
+					"caller": "connect",
+					"callee": "withCursor",
+					"lineNumber": 176
+				},
+				{
+					"caller": "connect",
+					"callee": "base.then",
+					"lineNumber": 179
+				},
+				{
+					"caller": "connect",
+					"callee": "openSocket",
+					"lineNumber": 182
+				},
+				{
+					"caller": "connect",
+					"callee": "withCursor",
+					"lineNumber": 182
+				},
+				{
+					"caller": "connect",
+					"callee": "scheduleReconnect",
+					"lineNumber": 187
+				},
+				{
+					"caller": "openSocket",
+					"callee": "createWebSocket",
+					"lineNumber": 196
+				},
+				{
+					"caller": "openSocket",
+					"callee": "scheduleReconnect",
+					"lineNumber": 201
+				},
+				{
+					"caller": "openSocket",
+					"callee": "onStatus",
+					"lineNumber": 207
+				},
+				{
+					"caller": "openSocket",
+					"callee": "JSON.parse",
+					"lineNumber": 212
+				},
+				{
+					"caller": "openSocket",
+					"callee": "String",
+					"lineNumber": 212
+				},
+				{
+					"caller": "openSocket",
+					"callee": "reconnectCurrentSocket",
+					"lineNumber": 215
+				},
+				{
+					"caller": "openSocket",
+					"callee": "isEnvelope",
+					"lineNumber": 218
+				},
+				{
+					"caller": "openSocket",
+					"callee": "reconnectCurrentSocket",
+					"lineNumber": 219
+				},
+				{
+					"caller": "openSocket",
+					"callee": "handleEnvelope",
+					"lineNumber": 222
+				},
+				{
+					"caller": "openSocket",
+					"callee": "scheduleReconnect",
+					"lineNumber": 230
+				},
+				{
+					"caller": "subscribeToSession",
+					"callee": "connect",
+					"lineNumber": 234
+				},
+				{
+					"caller": "subscribeToSession",
+					"callee": "stop",
+					"lineNumber": 237
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "packages/session-protocol/src/envelope.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 30,
+			"nonEmptyLines": 28,
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "packages/session-protocol/src/fold/fold.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 607,
+			"nonEmptyLines": 580,
+			"functions": [
+				{
+					"name": "emptyTimeline",
+					"startLine": 96,
+					"endLine": 110,
+					"params": []
+				},
+				{
+					"name": "foldEnvelopes",
+					"startLine": 119,
+					"endLine": 128,
+					"params": ["timeline", "envelopes"]
+				},
+				{
+					"name": "foldEnvelope",
+					"startLine": 130,
+					"endLine": 207,
+					"params": ["timeline", "envelope"]
+				},
+				{
+					"name": "foldUpdate",
+					"startLine": 209,
+					"endLine": 310,
+					"params": ["timeline", "update", "seq"]
+				},
+				{
+					"name": "appendChunk",
+					"startLine": 312,
+					"endLine": 360,
+					"params": ["timeline", "role", "content", "seq"]
+				},
+				{
+					"name": "markPromptFailed",
+					"startLine": 367,
+					"endLine": 387,
+					"params": ["items", "promptStartSeq", "seq"]
+				},
+				{
+					"name": "mergeToolCall",
+					"startLine": 406,
+					"endLine": 419,
+					"params": ["base", "patch"]
+				},
+				{
+					"name": "claudeParentToolUseId",
+					"startLine": 427,
+					"endLine": 434,
+					"params": ["source"]
+				},
+				{
+					"name": "upsertToolCall",
+					"startLine": 442,
+					"endLine": 490,
+					"params": ["timeline", "patch", "seq", "createCall"]
+				},
+				{
+					"name": "patchToolCall",
+					"startLine": 497,
+					"endLine": 518,
+					"params": ["items", "toolCallId", "seq", "patch"]
+				},
+				{
+					"name": "insertToolCall",
+					"startLine": 521,
+					"endLine": 538,
+					"params": ["items", "item", "parentToolCallId", "seq"]
+				},
+				{
+					"name": "hasToolCall",
+					"startLine": 540,
+					"endLine": 550,
+					"params": ["items", "toolCallId"]
+				},
+				{
+					"name": "resolvePermission",
+					"startLine": 552,
+					"endLine": 578,
+					"params": ["items", "requestId", "outcome", "seq"]
+				},
+				{
+					"name": "findOpenPlan",
+					"startLine": 580,
+					"endLine": 586,
+					"params": ["items"]
+				},
+				{
+					"name": "extractPlanEntries",
+					"startLine": 588,
+					"endLine": 598,
+					"params": ["plan"]
+				},
+				{
+					"name": "replaceItem",
+					"startLine": 600,
+					"endLine": 607,
+					"params": ["items", "previous", "next"]
+				}
+			],
+			"exports": [
+				{
+					"name": "emptyTimeline",
+					"line": 96,
+					"isDefault": false
+				},
+				{
+					"name": "foldEnvelopes",
+					"line": 119,
+					"isDefault": false
+				},
+				{
+					"name": "foldEnvelope",
+					"line": 130,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "foldEnvelopes",
+					"callee": "foldEnvelope",
+					"lineNumber": 125
+				},
+				{
+					"caller": "foldEnvelope",
+					"callee": "foldUpdate",
+					"lineNumber": 143
+				},
+				{
+					"caller": "foldEnvelope",
+					"callee": "patchToolCall",
+					"lineNumber": 154
+				},
+				{
+					"caller": "foldEnvelope",
+					"callee": "mergeToolCall",
+					"lineNumber": 160
+				},
+				{
+					"caller": "foldEnvelope",
+					"callee": "insertToolCall",
+					"lineNumber": 168
+				},
+				{
+					"caller": "foldEnvelope",
+					"callee": "mergeToolCall",
+					"lineNumber": 173
+				},
+				{
+					"caller": "foldEnvelope",
+					"callee": "claudeParentToolUseId",
+					"lineNumber": 182
+				},
+				{
+					"caller": "foldEnvelope",
+					"callee": "resolvePermission",
+					"lineNumber": 189
+				},
+				{
+					"caller": "foldEnvelope",
+					"callee": "markPromptFailed",
+					"lineNumber": 197
+				},
+				{
+					"caller": "foldUpdate",
+					"callee": "appendChunk",
+					"lineNumber": 216
+				},
+				{
+					"caller": "foldUpdate",
+					"callee": "appendChunk",
+					"lineNumber": 219
+				},
+				{
+					"caller": "foldUpdate",
+					"callee": "appendChunk",
+					"lineNumber": 222
+				},
+				{
+					"caller": "foldUpdate",
+					"callee": "upsertToolCall",
+					"lineNumber": 225
+				},
+				{
+					"caller": "foldUpdate",
+					"callee": "upsertToolCall",
+					"lineNumber": 228
+				},
+				{
+					"caller": "foldUpdate",
+					"callee": "mergeToolCall",
+					"lineNumber": 229
+				},
+				{
+					"caller": "foldUpdate",
+					"callee": "findOpenPlan",
+					"lineNumber": 233
+				},
+				{
+					"caller": "foldUpdate",
+					"callee": "replaceItem",
+					"lineNumber": 235
+				},
+				{
+					"caller": "foldUpdate",
+					"callee": "timeline.items.push",
+					"lineNumber": 241
+				},
+				{
+					"caller": "foldUpdate",
+					"callee": "findOpenPlan",
+					"lineNumber": 253
+				},
+				{
+					"caller": "foldUpdate",
+					"callee": "extractPlanEntries",
+					"lineNumber": 254
+				},
+				{
+					"caller": "foldUpdate",
+					"callee": "replaceItem",
+					"lineNumber": 256
+				},
+				{
+					"caller": "foldUpdate",
+					"callee": "timeline.items.push",
+					"lineNumber": 262
+				},
+				{
+					"caller": "foldUpdate",
+					"callee": "findOpenPlan",
+					"lineNumber": 274
+				},
+				{
+					"caller": "foldUpdate",
+					"callee": "replaceItem",
+					"lineNumber": 276
+				},
+				{
+					"caller": "appendChunk",
+					"callee": "blocks.push",
+					"lineNumber": 342
+				},
+				{
+					"caller": "appendChunk",
+					"callee": "timeline.items.push",
+					"lineNumber": 351
+				},
+				{
+					"caller": "upsertToolCall",
+					"callee": "claudeParentToolUseId",
+					"lineNumber": 448
+				},
+				{
+					"caller": "upsertToolCall",
+					"callee": "hasToolCall",
+					"lineNumber": 449
+				},
+				{
+					"caller": "upsertToolCall",
+					"callee": "timeline.items.findIndex",
+					"lineNumber": 450
+				},
+				{
+					"caller": "upsertToolCall",
+					"callee": "timeline.items.splice",
+					"lineNumber": 455
+				},
+				{
+					"caller": "upsertToolCall",
+					"callee": "insertToolCall",
+					"lineNumber": 456
+				},
+				{
+					"caller": "upsertToolCall",
+					"callee": "mergeToolCall",
+					"lineNumber": 458
+				},
+				{
+					"caller": "upsertToolCall",
+					"callee": "patchToolCall",
+					"lineNumber": 465
+				},
+				{
+					"caller": "upsertToolCall",
+					"callee": "mergeToolCall",
+					"lineNumber": 471
+				},
+				{
+					"caller": "upsertToolCall",
+					"callee": "insertToolCall",
+					"lineNumber": 476
+				},
+				{
+					"caller": "upsertToolCall",
+					"callee": "createCall",
+					"lineNumber": 481
+				},
+				{
+					"caller": "patchToolCall",
+					"callee": "patch",
+					"lineNumber": 507
+				},
+				{
+					"caller": "patchToolCall",
+					"callee": "patchToolCall",
+					"lineNumber": 512
+				},
+				{
+					"caller": "insertToolCall",
+					"callee": "patchToolCall",
+					"lineNumber": 529
+				},
+				{
+					"caller": "insertToolCall",
+					"callee": "items.push",
+					"lineNumber": 537
+				},
+				{
+					"caller": "hasToolCall",
+					"callee": "hasToolCall",
+					"lineNumber": 545
+				},
+				{
+					"caller": "resolvePermission",
+					"callee": "item.permissions.findIndex",
+					"lineNumber": 561
+				},
+				{
+					"caller": "resolvePermission",
+					"callee": "resolvePermission",
+					"lineNumber": 572
+				},
+				{
+					"caller": "extractPlanEntries",
+					"callee": "Array.isArray",
+					"lineNumber": 593
+				},
+				{
+					"caller": "replaceItem",
+					"callee": "items.indexOf",
+					"lineNumber": 605
+				}
+			],
+			"metrics": {
+				"importCount": 3,
+				"exportCount": 3,
+				"functionCount": 16,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "packages/session-protocol/src/fold/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "packages/session-protocol/src/react/useAcpPermissions/useAcpPermissions.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 57,
+			"nonEmptyLines": 55,
+			"functions": [
+				{
+					"name": "useAcpPermissions",
+					"startLine": 25,
+					"endLine": 57,
+					"params": ["session"]
+				}
+			],
+			"exports": [
+				{
+					"name": "useAcpPermissions",
+					"line": 25,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "useAcpPermissions",
+					"callee": "useMemo",
+					"lineNumber": 30
+				},
+				{
+					"caller": "respond",
+					"callee": "respondToPermission",
+					"lineNumber": 33
+				},
+				{
+					"caller": "respondByKind",
+					"callee": "requests.find",
+					"lineNumber": 38
+				},
+				{
+					"caller": "respondByKind",
+					"callee": "request?.options.find",
+					"lineNumber": 39
+				},
+				{
+					"caller": "respondByKind",
+					"callee": "Promise.reject",
+					"lineNumber": 41
+				},
+				{
+					"caller": "respondByKind",
+					"callee": "respond",
+					"lineNumber": 45
+				},
+				{
+					"caller": "useAcpPermissions",
+					"callee": "respondByKind",
+					"lineNumber": 53
+				},
+				{
+					"caller": "useAcpPermissions",
+					"callee": "respondByKind",
+					"lineNumber": 54
+				}
+			],
+			"metrics": {
+				"importCount": 4,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "packages/session-protocol/src/react/useAcpSession/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "packages/session-protocol/src/react/useAcpSession/useAcpSession.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 273,
+			"nonEmptyLines": 258,
+			"functions": [
+				{
+					"name": "useAcpSession",
+					"startLine": 76,
+					"endLine": 273,
+					"params": ["options"]
+				}
+			],
+			"exports": [
+				{
+					"name": "useAcpSession",
+					"line": 76,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "useAcpSession",
+					"callee": "useRef",
+					"lineNumber": 84
+				},
+				{
+					"caller": "useAcpSession",
+					"callee": "useRef",
+					"lineNumber": 86
+				},
+				{
+					"caller": "useAcpSession",
+					"callee": "useRef",
+					"lineNumber": 88
+				},
+				{
+					"caller": "useAcpSession",
+					"callee": "useState",
+					"lineNumber": 91
+				},
+				{
+					"caller": "useAcpSession",
+					"callee": "useState",
+					"lineNumber": 94
+				},
+				{
+					"caller": "useAcpSession",
+					"callee": "useState",
+					"lineNumber": 95
+				},
+				{
+					"caller": "useAcpSession",
+					"callee": "useState",
+					"lineNumber": 96
+				},
+				{
+					"caller": "useAcpSession",
+					"callee": "useState",
+					"lineNumber": 97
+				},
+				{
+					"caller": "useAcpSession",
+					"callee": "useState",
+					"lineNumber": 98
+				},
+				{
+					"caller": "useAcpSession",
+					"callee": "useState",
+					"lineNumber": 99
+				},
+				{
+					"caller": "useAcpSession",
+					"callee": "useRef",
+					"lineNumber": 103
+				},
+				{
+					"caller": "useAcpSession",
+					"callee": "useRef",
+					"lineNumber": 106
+				},
+				{
+					"caller": "useAcpSession",
+					"callee": "useRef",
+					"lineNumber": 108
+				},
+				{
+					"caller": "useAcpSession",
+					"callee": "useRef",
+					"lineNumber": 109
+				},
+				{
+					"caller": "useAcpSession",
+					"callee": "useRef",
+					"lineNumber": 110
+				},
+				{
+					"caller": "useAcpSession",
+					"callee": "useRef",
+					"lineNumber": 111
+				},
+				{
+					"caller": "useAcpSession",
+					"callee": "useCallback",
+					"lineNumber": 113
+				},
+				{
+					"caller": "useAcpSession",
+					"callee": "subscriptionRef.current?.close",
+					"lineNumber": 115
+				},
+				{
+					"caller": "useAcpSession",
+					"callee": "setIsLoadingOlder",
+					"lineNumber": 121
+				},
+				{
+					"caller": "useAcpSession",
+					"callee": "setIsLoading",
+					"lineNumber": 122
+				},
+				{
+					"caller": "useAcpSession",
+					"callee": "setError",
+					"lineNumber": 123
+				},
+				{
+					"caller": "useAcpSession",
+					"callee": "api.get",
+					"lineNumber": 126
+				},
+				{
+					"caller": "useAcpSession",
+					"callee": "setFetchedState",
+					"lineNumber": 132
+				},
+				{
+					"caller": "useAcpSession",
+					"callee": "api.getMessages",
+					"lineNumber": 133
+				},
+				{
+					"caller": "useAcpSession",
+					"callee": "foldEnvelopes",
+					"lineNumber": 139
+				},
+				{
+					"caller": "useAcpSession",
+					"callee": "emptyTimeline",
+					"lineNumber": 139
+				},
+				{
+					"caller": "useAcpSession",
+					"callee": "setTimeline",
+					"lineNumber": 141
+				},
+				{
+					"caller": "useAcpSession",
+					"callee": "setHasOlder",
+					"lineNumber": 142
+				},
+				{
+					"caller": "useAcpSession",
+					"callee": "setIsLoadingOlder",
+					"lineNumber": 143
+				},
+				{
+					"caller": "useAcpSession",
+					"callee": "setIsLoading",
+					"lineNumber": 144
+				},
+				{
+					"caller": "useAcpSession",
+					"callee": "subscribeToSession",
+					"lineNumber": 149
+				},
+				{
+					"caller": "useAcpSession",
+					"callee": "current",
+					"lineNumber": 152
+				},
+				{
+					"caller": "useAcpSession",
+					"callee": "envelopesRef.current.filter",
+					"lineNumber": 163
+				},
+				{
+					"caller": "useAcpSession",
+					"callee": "envelopesRef.current.push",
+					"lineNumber": 167
+				},
+				{
+					"caller": "useAcpSession",
+					"callee": "foldEnvelope",
+					"lineNumber": 168
+				},
+				{
+					"caller": "useAcpSession",
+					"callee": "setTimeline",
+					"lineNumber": 169
+				},
+				{
+					"caller": "useAcpSession",
+					"callee": "setStreamStatus",
+					"lineNumber": 173
+				},
+				{
+					"caller": "useAcpSession",
+					"callee": "resync",
+					"lineNumber": 177
+				},
+				{
+					"caller": "useAcpSession",
+					"callee": "setIsLoading",
+					"lineNumber": 182
+				},
+				{
+					"caller": "useAcpSession",
+					"callee": "setError",
+					"lineNumber": 183
+				},
+				{
+					"caller": "useAcpSession",
+					"callee": "String",
+					"lineNumber": 183
+				},
+				{
+					"caller": "useAcpSession",
+					"callee": "useCallback",
+					"lineNumber": 187
+				},
+				{
+					"caller": "useAcpSession",
+					"callee": "setIsLoadingOlder",
+					"lineNumber": 192
+				},
+				{
+					"caller": "useAcpSession",
+					"callee": "apiRef.current\n\t\t\t.getMessages({ sessionId, cursor, limit: pageSize })\n\t\t\t.then((page) => {\n\t\t\t\tif (epoch !== epochRef.current) return;\n\t\t\t\tenvelopesRef.current = [...page.items, ...envelopesRef.current];\n\t\t\t\tolderCursorRef.current = page.nextCursor;\n\t\t\t\ttimelineRef.current = foldEnvelopes(\n\t\t\t\t\temptyTimeline(),\n\t\t\t\t\tenvelopesRef.current,\n\t\t\t\t);\n\t\t\t\tsetTimeline(timelineRef.current);\n\t\t\t\tsetHasOlder(page.nextCursor !== null);\n\t\t\t})\n\t\t\t.catch((cause) => {\n\t\t\t\t// Older history stays available for the next scroll attempt; the\n\t\t\t\t// live thread is unaffected, so don't surface a blocking error —\n\t\t\t\t// but leave a trace so a dead scrollback is diagnosable.\n\t\t\t\tconsole.warn(`[acp-session] loadOlder failed (${sessionId})`, cause);\n\t\t\t})\n\t\t\t.finally",
+					"lineNumber": 193
+				},
+				{
+					"caller": "useAcpSession",
+					"callee": "apiRef.current\n\t\t\t.getMessages({ sessionId, cursor, limit: pageSize })\n\t\t\t.then((page) => {\n\t\t\t\tif (epoch !== epochRef.current) return;\n\t\t\t\tenvelopesRef.current = [...page.items, ...envelopesRef.current];\n\t\t\t\tolderCursorRef.current = page.nextCursor;\n\t\t\t\ttimelineRef.current = foldEnvelopes(\n\t\t\t\t\temptyTimeline(),\n\t\t\t\t\tenvelopesRef.current,\n\t\t\t\t);\n\t\t\t\tsetTimeline(timelineRef.current);\n\t\t\t\tsetHasOlder(page.nextCursor !== null);\n\t\t\t})\n\t\t\t.catch",
+					"lineNumber": 193
+				},
+				{
+					"caller": "useAcpSession",
+					"callee": "apiRef.current\n\t\t\t.getMessages({ sessionId, cursor, limit: pageSize })\n\t\t\t.then",
+					"lineNumber": 193
+				},
+				{
+					"caller": "useAcpSession",
+					"callee": "apiRef.current\n\t\t\t.getMessages",
+					"lineNumber": 193
+				},
+				{
+					"caller": "useAcpSession",
+					"callee": "foldEnvelopes",
+					"lineNumber": 199
+				},
+				{
+					"caller": "useAcpSession",
+					"callee": "emptyTimeline",
+					"lineNumber": 200
+				},
+				{
+					"caller": "useAcpSession",
+					"callee": "setTimeline",
+					"lineNumber": 203
+				},
+				{
+					"caller": "useAcpSession",
+					"callee": "setHasOlder",
+					"lineNumber": 204
+				},
+				{
+					"caller": "useAcpSession",
+					"callee": "console.warn",
+					"lineNumber": 210
+				},
+				{
+					"caller": "useAcpSession",
+					"callee": "setIsLoadingOlder",
+					"lineNumber": 215
+				},
+				{
+					"caller": "useAcpSession",
+					"callee": "useRef",
+					"lineNumber": 224
+				},
+				{
+					"caller": "useAcpSession",
+					"callee": "useEffect",
+					"lineNumber": 226
+				},
+				{
+					"caller": "useAcpSession",
+					"callee": "emptyTimeline",
+					"lineNumber": 232
+				},
+				{
+					"caller": "useAcpSession",
+					"callee": "setFetchedState",
+					"lineNumber": 233
+				},
+				{
+					"caller": "useAcpSession",
+					"callee": "setTimeline",
+					"lineNumber": 234
+				},
+				{
+					"caller": "useAcpSession",
+					"callee": "setHasOlder",
+					"lineNumber": 235
+				},
+				{
+					"caller": "useAcpSession",
+					"callee": "setIsLoadingOlder",
+					"lineNumber": 236
+				},
+				{
+					"caller": "useAcpSession",
+					"callee": "setStreamStatus",
+					"lineNumber": 237
+				},
+				{
+					"caller": "useAcpSession",
+					"callee": "resync",
+					"lineNumber": 239
+				},
+				{
+					"caller": "useAcpSession",
+					"callee": "subscriptionRef.current?.close",
+					"lineNumber": 242
+				},
+				{
+					"caller": "useAcpSession",
+					"callee": "useMemo",
+					"lineNumber": 247
+				},
+				{
+					"caller": "useAcpSession",
+					"callee": "apiRef.current.prompt",
+					"lineNumber": 249
+				},
+				{
+					"caller": "useAcpSession",
+					"callee": "apiRef.current.cancel",
+					"lineNumber": 250
+				},
+				{
+					"caller": "useAcpSession",
+					"callee": "apiRef.current.respondToPermission",
+					"lineNumber": 252
+				},
+				{
+					"caller": "useAcpSession",
+					"callee": "apiRef.current.setMode",
+					"lineNumber": 253
+				},
+				{
+					"caller": "useAcpSession",
+					"callee": "apiRef.current.setConfigOption",
+					"lineNumber": 255
+				},
+				{
+					"caller": "useAcpSession",
+					"callee": "resync",
+					"lineNumber": 256
+				}
+			],
+			"metrics": {
+				"importCount": 6,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "packages/session-protocol/src/state.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 100,
+			"nonEmptyLines": 93,
+			"functions": [
+				{
+					"name": "makeSelectedOutcome",
+					"startLine": 50,
+					"endLine": 63,
+					"params": ["optionIds"]
+				},
+				{
+					"name": "selectedOptionIds",
+					"startLine": 66,
+					"endLine": 74,
+					"params": ["outcome"]
+				}
+			],
+			"exports": [
+				{
+					"name": "makeSelectedOutcome",
+					"line": 50,
+					"isDefault": false
+				},
+				{
+					"name": "selectedOptionIds",
+					"line": 66,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "selectedOptionIds",
+					"callee": "Array.isArray",
+					"lineNumber": 69
+				},
+				{
+					"caller": "selectedOptionIds",
+					"callee": "carried.filter",
+					"lineNumber": 70
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 2,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		}
+	]
+}

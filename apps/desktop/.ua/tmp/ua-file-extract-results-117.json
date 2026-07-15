@@ -1,0 +1,217 @@
+{
+	"scriptCompleted": true,
+	"filesAnalyzed": 8,
+	"filesSkipped": [],
+	"results": [
+		{
+			"path": "src/resources/browser-extension/manifest.json",
+			"language": "json",
+			"fileCategory": "config",
+			"totalLines": 17,
+			"nonEmptyLines": 17,
+			"sections": [
+				{
+					"heading": "manifest_version",
+					"level": 1,
+					"line": 2
+				},
+				{
+					"heading": "name",
+					"level": 1,
+					"line": 3
+				},
+				{
+					"heading": "version",
+					"level": 1,
+					"line": 4
+				},
+				{
+					"heading": "description",
+					"level": 1,
+					"line": 5
+				},
+				{
+					"heading": "permissions",
+					"level": 1,
+					"line": 6
+				},
+				{
+					"heading": "background",
+					"level": 1,
+					"line": 7
+				},
+				{
+					"heading": "content_scripts",
+					"level": 1,
+					"line": 10
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0,
+				"sectionCount": 7
+			}
+		},
+		{
+			"path": "src/resources/public/theme-boot.js",
+			"language": "javascript",
+			"fileCategory": "code",
+			"totalLines": 13,
+			"nonEmptyLines": 13,
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/shared/types/database.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 5,
+			"nonEmptyLines": 5,
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/shared/types/mosaic.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 8,
+			"nonEmptyLines": 8,
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/shared/types/ports.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 22,
+			"nonEmptyLines": 18,
+			"exports": [
+				{
+					"name": "DetectedPort",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/types/friendly-words.d.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 9,
+			"nonEmptyLines": 9,
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/types/stripe-gradient.d.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 18,
+			"nonEmptyLines": 17,
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "test-setup.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 331,
+			"nonEmptyLines": 306,
+			"functions": [
+				{
+					"name": "mockTable",
+					"startLine": 221,
+					"endLine": 221,
+					"params": ["name"]
+				},
+				{
+					"name": "localDbMock",
+					"startLine": 257,
+					"endLine": 281,
+					"params": []
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "localDbMock",
+					"callee": "mockTable",
+					"lineNumber": 258
+				},
+				{
+					"caller": "localDbMock",
+					"callee": "mockTable",
+					"lineNumber": 259
+				},
+				{
+					"caller": "localDbMock",
+					"callee": "mockTable",
+					"lineNumber": 260
+				},
+				{
+					"caller": "localDbMock",
+					"callee": "mockTable",
+					"lineNumber": 261
+				},
+				{
+					"caller": "localDbMock",
+					"callee": "mockTable",
+					"lineNumber": 262
+				},
+				{
+					"caller": "localDbMock",
+					"callee": "mockTable",
+					"lineNumber": 263
+				},
+				{
+					"caller": "localDbMock",
+					"callee": "mockTable",
+					"lineNumber": 264
+				},
+				{
+					"caller": "localDbMock",
+					"callee": "mockTable",
+					"lineNumber": 265
+				},
+				{
+					"caller": "localDbMock",
+					"callee": "mockTable",
+					"lineNumber": 266
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 0,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		}
+	]
+}

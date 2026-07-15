@@ -1,0 +1,4449 @@
+{
+	"scriptCompleted": true,
+	"filesAnalyzed": 35,
+	"filesSkipped": [],
+	"results": [
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/RightSidebar/ChangesView/ChangesView.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 862,
+			"nonEmptyLines": 797,
+			"functions": [
+				{
+					"name": "eventTargetsSelectedFile",
+					"startLine": 54,
+					"endLine": 78,
+					"params": ["event", "selectedAbsolutePath"]
+				},
+				{
+					"name": "ChangesView",
+					"startLine": 80,
+					"endLine": 862,
+					"params": [
+						"{\n\tonFileOpen,\n\tisExpandedView,\n\tisActive = true,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "ChangesView",
+					"line": 80,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "eventTargetsSelectedFile",
+					"callee": "retargetAbsolutePath",
+					"lineNumber": 68
+				},
+				{
+					"caller": "eventTargetsSelectedFile",
+					"callee": "Boolean",
+					"lineNumber": 72
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "useParams",
+					"lineNumber": 85
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "electronTrpc.useUtils",
+					"lineNumber": 86
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "electronTrpc.workspaces.get.useQuery",
+					"lineNumber": 87
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "useChangesStore",
+					"lineNumber": 93
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "getGitHubStatusQueryPolicy",
+					"lineNumber": 94
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "useGitChangesStatus",
+					"lineNumber": 103
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "electronTrpc.workspaces.getGitHubStatus.useQuery",
+					"lineNumber": 117
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "electronTrpc.changes.stageAll.useMutation",
+					"lineNumber": 122
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "refetch",
+					"lineNumber": 123
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "console.error",
+					"lineNumber": 125
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "toast.error",
+					"lineNumber": 126
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "electronTrpc.changes.unstageAll.useMutation",
+					"lineNumber": 130
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "refetch",
+					"lineNumber": 131
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "console.error",
+					"lineNumber": 133
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "toast.error",
+					"lineNumber": 134
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "electronTrpc.changes.stageFile.useMutation",
+					"lineNumber": 138
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "refetch",
+					"lineNumber": 139
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "console.error",
+					"lineNumber": 141
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "toast.error",
+					"lineNumber": 142
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "electronTrpc.changes.unstageFile.useMutation",
+					"lineNumber": 146
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "refetch",
+					"lineNumber": 147
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "console.error",
+					"lineNumber": 149
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "toast.error",
+					"lineNumber": 150
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "electronTrpc.changes.stageFiles.useMutation",
+					"lineNumber": 154
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "refetch",
+					"lineNumber": 155
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "console.error",
+					"lineNumber": 157
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "variables.filePaths.join",
+					"lineNumber": 158
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "toast.error",
+					"lineNumber": 161
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "electronTrpc.changes.unstageFiles.useMutation",
+					"lineNumber": 165
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "refetch",
+					"lineNumber": 166
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "console.error",
+					"lineNumber": 168
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "variables.filePaths.join",
+					"lineNumber": 169
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "toast.error",
+					"lineNumber": 172
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "electronTrpc.changes.discardFiles.useMutation",
+					"lineNumber": 176
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "refetch",
+					"lineNumber": 177
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "console.error",
+					"lineNumber": 179
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "variables.filePaths.join",
+					"lineNumber": 180
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "toast.error",
+					"lineNumber": 183
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "electronTrpc.changes.deleteUntracked.useMutation",
+					"lineNumber": 188
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "refetch",
+					"lineNumber": 189
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "console.error",
+					"lineNumber": 191
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "toast.error",
+					"lineNumber": 192
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "electronTrpc.changes.discardAllUnstaged.useMutation",
+					"lineNumber": 197
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "toast.success",
+					"lineNumber": 199
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "refetch",
+					"lineNumber": 200
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "console.error",
+					"lineNumber": 203
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "toast.error",
+					"lineNumber": 204
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "electronTrpc.changes.discardAllStaged.useMutation",
+					"lineNumber": 209
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "toast.success",
+					"lineNumber": 211
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "refetch",
+					"lineNumber": 212
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "console.error",
+					"lineNumber": 215
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "toast.error",
+					"lineNumber": 216
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "electronTrpc.changes.stash.useMutation",
+					"lineNumber": 220
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "toast.success",
+					"lineNumber": 222
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "refetch",
+					"lineNumber": 223
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "console.error",
+					"lineNumber": 226
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "toast.error",
+					"lineNumber": 227
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "electronTrpc.changes.stashIncludeUntracked.useMutation",
+					"lineNumber": 232
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "toast.success",
+					"lineNumber": 234
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "refetch",
+					"lineNumber": 235
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "console.error",
+					"lineNumber": 238
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "toast.error",
+					"lineNumber": 239
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "electronTrpc.changes.stashPop.useMutation",
+					"lineNumber": 243
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "toast.success",
+					"lineNumber": 245
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "refetch",
+					"lineNumber": 246
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "console.error",
+					"lineNumber": 249
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "toast.error",
+					"lineNumber": 250
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "useState",
+					"lineNumber": 255
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "useState",
+					"lineNumber": 256
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "getGitHubPRCommentsQueryPolicy",
+					"lineNumber": 258
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "useRef",
+					"lineNumber": 263
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "useRef",
+					"lineNumber": 264
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "electronTrpc.workspaces.getGitHubPRComments.useQuery",
+					"lineNumber": 272
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "useBranchSyncInvalidation",
+					"lineNumber": 287
+				},
+				{
+					"caller": "handleRefresh",
+					"callee": "refetch",
+					"lineNumber": 294
+				},
+				{
+					"caller": "handleRefresh",
+					"callee": "refetchGithubStatus",
+					"lineNumber": 295
+				},
+				{
+					"caller": "handleRefresh",
+					"callee": "refetchGitHubComments",
+					"lineNumber": 297
+				},
+				{
+					"caller": "handleDiscardFiles",
+					"callee": "files.filter",
+					"lineNumber": 307
+				},
+				{
+					"caller": "handleDiscardFiles",
+					"callee": "deleteUntrackedMutation.mutate",
+					"lineNumber": 308
+				},
+				{
+					"caller": "handleDiscardFiles",
+					"callee": "files\n\t\t\t.filter((file) => !isUntracked(file))\n\t\t\t.map",
+					"lineNumber": 313
+				},
+				{
+					"caller": "handleDiscardFiles",
+					"callee": "files\n\t\t\t.filter",
+					"lineNumber": 313
+				},
+				{
+					"caller": "handleDiscardFiles",
+					"callee": "isUntracked",
+					"lineNumber": 314
+				},
+				{
+					"caller": "handleDiscardFiles",
+					"callee": "discardFilesMutation.mutate",
+					"lineNumber": 317
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "useChangesStore",
+					"lineNumber": 334
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "getSelectedFile",
+					"lineNumber": 336
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "useState",
+					"lineNumber": 340
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "useEffect",
+					"lineNumber": 345
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "setExpandedCommits",
+					"lineNumber": 346
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "useEffect",
+					"lineNumber": 349
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "clearTimeout",
+					"lineNumber": 352
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "useWorkspaceFileEvents",
+					"lineNumber": 358
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "eventTargetsSelectedFile",
+					"lineNumber": 369
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "clearTimeout",
+					"lineNumber": 372
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "setTimeout",
+					"lineNumber": 375
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "trpcUtils.changes.getStatus.invalidate",
+					"lineNumber": 384
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "invalidations.push",
+					"lineNumber": 391
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "trpcUtils.changes.getBranches.invalidate",
+					"lineNumber": 392
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "toAbsoluteWorkspacePath",
+					"lineNumber": 398
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "invalidations.push",
+					"lineNumber": 403
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "trpcUtils.changes.getGitFileContents.invalidate",
+					"lineNumber": 404
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "trpcUtils.changes.getGitOriginalContent.invalidate",
+					"lineNumber": 409
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "invalidations.push",
+					"lineNumber": 416
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "trpcUtils.filesystem.readFile.invalidate",
+					"lineNumber": 417
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "Promise.all(invalidations).catch",
+					"lineNumber": 425
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "Promise.all",
+					"lineNumber": 425
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "console.error",
+					"lineNumber": 426
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "Boolean",
+					"lineNumber": 433
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "useMemo",
+					"lineNumber": 436
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "Array.from",
+					"lineNumber": 439
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "electronTrpc.useQueries",
+					"lineNumber": 444
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "expandedCommitHashes.map",
+					"lineNumber": 445
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "t.changes.getCommitFiles",
+					"lineNumber": 446
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "useMemo",
+					"lineNumber": 453
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "expandedCommitHashes.forEach",
+					"lineNumber": 455
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "map.set",
+					"lineNumber": 458
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "useMemo",
+					"lineNumber": 464
+				},
+				{
+					"caller": "handleFileSelect",
+					"callee": "selectFile",
+					"lineNumber": 474
+				},
+				{
+					"caller": "handleFileSelect",
+					"callee": "toAbsoluteWorkspacePath",
+					"lineNumber": 476
+				},
+				{
+					"caller": "handleFileSelect",
+					"callee": "onFileOpen",
+					"lineNumber": 481
+				},
+				{
+					"caller": "handleCommitFileSelect",
+					"callee": "selectFile",
+					"lineNumber": 486
+				},
+				{
+					"caller": "handleCommitFileSelect",
+					"callee": "toAbsoluteWorkspacePath",
+					"lineNumber": 488
+				},
+				{
+					"caller": "handleCommitFileSelect",
+					"callee": "onFileOpen",
+					"lineNumber": 493
+				},
+				{
+					"caller": "handleCommitToggle",
+					"callee": "setExpandedCommits",
+					"lineNumber": 497
+				},
+				{
+					"caller": "handleCommitToggle",
+					"callee": "next.has",
+					"lineNumber": 499
+				},
+				{
+					"caller": "handleCommitToggle",
+					"callee": "next.delete",
+					"lineNumber": 500
+				},
+				{
+					"caller": "handleCommitToggle",
+					"callee": "next.add",
+					"lineNumber": 502
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "commits.map",
+					"lineNumber": 521
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "commitFilesMap.get",
+					"lineNumber": 523
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "useEffect",
+					"lineNumber": 526
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "againstBaseFiles.some",
+					"lineNumber": 533
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "pathsMatch",
+					"lineNumber": 534
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "toAbsoluteWorkspacePath",
+					"lineNumber": 535
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "stagedFiles.some",
+					"lineNumber": 540
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "pathsMatch",
+					"lineNumber": 541
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "toAbsoluteWorkspacePath",
+					"lineNumber": 542
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "combinedUnstaged.some",
+					"lineNumber": 547
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "pathsMatch",
+					"lineNumber": 548
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "toAbsoluteWorkspacePath",
+					"lineNumber": 549
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "selectFile",
+					"lineNumber": 556
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "getPRActionState",
+					"lineNumber": 574
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "shouldAutoCreatePRAfterPublish",
+					"lineNumber": 584
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "useOrderedSections",
+					"lineNumber": 588
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "handleFileSelect",
+					"lineNumber": 600
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "handleFileSelect",
+					"lineNumber": 606
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "unstageFileMutation.mutate",
+					"lineNumber": 608
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "unstageFilesMutation.mutate",
+					"lineNumber": 613
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "files.map",
+					"lineNumber": 615
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "setShowDiscardStagedDialog",
+					"lineNumber": 617
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "unstageAllMutation.mutate",
+					"lineNumber": 619
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "handleFileSelect",
+					"lineNumber": 630
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "stageFileMutation.mutate",
+					"lineNumber": 632
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "stageFilesMutation.mutate",
+					"lineNumber": 637
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "files.map",
+					"lineNumber": 639
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "setShowDiscardUnstagedDialog",
+					"lineNumber": 642
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "stageAllMutation.mutate",
+					"lineNumber": 644
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "countOpenPullRequestComments",
+					"lineNumber": 691
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "activePullRequest?.checks.filter",
+					"lineNumber": 694
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "setActiveTab",
+					"lineNumber": 709
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "cn",
+					"lineNumber": 716
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "cn",
+					"lineNumber": 728
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "cn",
+					"lineNumber": 739
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "stashMutation.mutate",
+					"lineNumber": 765
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "stashIncludeUntrackedMutation.mutate",
+					"lineNumber": 767
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "stashPopMutation.mutate",
+					"lineNumber": 769
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "orderedSections\n\t\t\t\t\t\t\t\t.filter((section) => section.count > 0)\n\t\t\t\t\t\t\t\t.map",
+					"lineNumber": 800
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "orderedSections\n\t\t\t\t\t\t\t\t.filter",
+					"lineNumber": 800
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "discardAllUnstagedMutation.mutate",
+					"lineNumber": 841
+				},
+				{
+					"caller": "ChangesView",
+					"callee": "discardAllStagedMutation.mutate",
+					"lineNumber": 854
+				}
+			],
+			"metrics": {
+				"importCount": 18,
+				"exportCount": 1,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/RightSidebar/ChangesView/components/CategorySection/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "CategorySection",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/RightSidebar/ChangesView/components/ChangesHeader/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "ChangesHeader",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/RightSidebar/ChangesView/components/CollapsibleRow/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "CollapsibleRow",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/RightSidebar/ChangesView/components/CommitInput/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "CommitInput",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/RightSidebar/ChangesView/components/CommitItem/CommitItem.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 124,
+			"nonEmptyLines": 117,
+			"functions": [
+				{
+					"name": "CommitHeader",
+					"startLine": 29,
+					"endLine": 71,
+					"params": ["{\n\thash,\n\tshortHash,\n\tmessage,\n\tdate,\n}"]
+				},
+				{
+					"name": "CommitItem",
+					"startLine": 73,
+					"endLine": 124,
+					"params": [
+						"{\n\tcommit,\n\tisExpanded,\n\tonToggle,\n\tselectedFile,\n\tselectedCommitHash,\n\tonFileSelect,\n\tviewMode,\n\tworktreePath,\n\tisExpandedView,\n\tprojectId,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "CommitItem",
+					"line": 73,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "CommitHeader",
+					"callee": "useCopyToClipboard",
+					"lineNumber": 40
+				},
+				{
+					"caller": "handleCopyCommitHash",
+					"callee": "copyToClipboard",
+					"lineNumber": 42
+				},
+				{
+					"caller": "CommitHeader",
+					"callee": "formatRelativeDate",
+					"lineNumber": 56
+				},
+				{
+					"caller": "handleFileSelect",
+					"callee": "onFileSelect",
+					"lineNumber": 88
+				},
+				{
+					"caller": "CommitItem",
+					"callee": "onToggle",
+					"lineNumber": 96
+				}
+			],
+			"metrics": {
+				"importCount": 6,
+				"exportCount": 1,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/RightSidebar/ChangesView/components/DiscardConfirmDialog/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "DiscardConfirmDialog",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/RightSidebar/ChangesView/components/FileItem/FileItem.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 340,
+			"nonEmptyLines": 312,
+			"functions": [
+				{
+					"name": "LevelIndicators",
+					"startLine": 49,
+					"endLine": 60,
+					"params": ["{ level }"]
+				},
+				{
+					"name": "getFileName",
+					"startLine": 62,
+					"endLine": 64,
+					"params": ["path"]
+				},
+				{
+					"name": "FileItem",
+					"startLine": 66,
+					"endLine": 340,
+					"params": [
+						"{\n\tfile,\n\tisSelected,\n\tonClick,\n\tshowStats = true,\n\tlevel = 0,\n\tonStage,\n\tonUnstage,\n\tisActioning = false,\n\tworktreePath,\n\tonDiscard,\n\tcategory,\n\tcommitHash,\n\tisExpandedView = false,\n\tprojectId,\n\tdefaultApp,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "FileItem",
+					"line": 66,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "LevelIndicators",
+					"callee": "Array.from({ length: level }).map",
+					"lineNumber": 54
+				},
+				{
+					"caller": "LevelIndicators",
+					"callee": "Array.from",
+					"lineNumber": 54
+				},
+				{
+					"caller": "getFileName",
+					"callee": "path.split(\"/\").pop",
+					"lineNumber": 63
+				},
+				{
+					"caller": "getFileName",
+					"callee": "path.split",
+					"lineNumber": 63
+				},
+				{
+					"caller": "FileItem",
+					"callee": "useState",
+					"lineNumber": 83
+				},
+				{
+					"caller": "FileItem",
+					"callee": "useScrollContext",
+					"lineNumber": 84
+				},
+				{
+					"caller": "FileItem",
+					"callee": "useRef",
+					"lineNumber": 85
+				},
+				{
+					"caller": "FileItem",
+					"callee": "getFileName",
+					"lineNumber": 87
+				},
+				{
+					"caller": "FileItem",
+					"callee": "getStatusColor",
+					"lineNumber": 88
+				},
+				{
+					"caller": "FileItem",
+					"callee": "getStatusIndicator",
+					"lineNumber": 89
+				},
+				{
+					"caller": "FileItem",
+					"callee": "toAbsoluteWorkspacePath",
+					"lineNumber": 95
+				},
+				{
+					"caller": "FileItem",
+					"callee": "createFileKey",
+					"lineNumber": 100
+				},
+				{
+					"caller": "FileItem",
+					"callee": "usePathActions",
+					"lineNumber": 104
+				},
+				{
+					"caller": "FileItem",
+					"callee": "useFileDrag",
+					"lineNumber": 112
+				},
+				{
+					"caller": "FileItem",
+					"callee": "useCallback",
+					"lineNumber": 114
+				},
+				{
+					"caller": "FileItem",
+					"callee": "openInEditor",
+					"lineNumber": 117
+				},
+				{
+					"caller": "FileItem",
+					"callee": "clearTimeout",
+					"lineNumber": 122
+				},
+				{
+					"caller": "FileItem",
+					"callee": "setTimeout",
+					"lineNumber": 126
+				},
+				{
+					"caller": "FileItem",
+					"callee": "onClick",
+					"lineNumber": 128
+				},
+				{
+					"caller": "FileItem",
+					"callee": "useCallback",
+					"lineNumber": 134
+				},
+				{
+					"caller": "FileItem",
+					"callee": "e.preventDefault",
+					"lineNumber": 136
+				},
+				{
+					"caller": "FileItem",
+					"callee": "e.stopPropagation",
+					"lineNumber": 137
+				},
+				{
+					"caller": "FileItem",
+					"callee": "clearTimeout",
+					"lineNumber": 140
+				},
+				{
+					"caller": "FileItem",
+					"callee": "openInEditor",
+					"lineNumber": 144
+				},
+				{
+					"caller": "FileItem",
+					"callee": "useEffect",
+					"lineNumber": 149
+				},
+				{
+					"caller": "FileItem",
+					"callee": "clearTimeout",
+					"lineNumber": 152
+				},
+				{
+					"caller": "handleDiscardClick",
+					"callee": "setShowDiscardDialog",
+					"lineNumber": 158
+				},
+				{
+					"caller": "handleConfirmDiscard",
+					"callee": "setShowDiscardDialog",
+					"lineNumber": 162
+				},
+				{
+					"caller": "handleConfirmDiscard",
+					"callee": "onDiscard",
+					"lineNumber": 163
+				},
+				{
+					"caller": "FileItem",
+					"callee": "cn",
+					"lineNumber": 218
+				},
+				{
+					"caller": "FileItem",
+					"callee": "cn",
+					"lineNumber": 229
+				},
+				{
+					"caller": "FileItem",
+					"callee": "cn",
+					"lineNumber": 235
+				}
+			],
+			"metrics": {
+				"importCount": 7,
+				"exportCount": 1,
+				"functionCount": 3,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/RightSidebar/ChangesView/components/FolderRow/FolderRow.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 291,
+			"nonEmptyLines": 276,
+			"functions": [
+				{
+					"name": "LevelIndicators",
+					"startLine": 49,
+					"endLine": 60,
+					"params": ["{ level }"]
+				},
+				{
+					"name": "FolderRowHeader",
+					"startLine": 62,
+					"endLine": 106,
+					"params": [
+						"{\n\tname,\n\tlevel,\n\tfileCount,\n\tisGrouped,\n\tisExpanded,\n}"
+					]
+				},
+				{
+					"name": "FolderRow",
+					"startLine": 108,
+					"endLine": 291,
+					"params": [
+						"{\n\tname,\n\tisExpanded,\n\tonToggle,\n\tchildren,\n\tlevel = 0,\n\tfileCount,\n\tvariant = \"tree\",\n\tfolderPath,\n\tworktreePath,\n\tonStageAll,\n\tonUnstageAll,\n\tonDiscardAll,\n\tisActioning = false,\n\tprojectId,\n\tdefaultApp,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "FolderRow",
+					"line": 108,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "LevelIndicators",
+					"callee": "Array.from({ length: level }).map",
+					"lineNumber": 54
+				},
+				{
+					"caller": "LevelIndicators",
+					"callee": "Array.from",
+					"lineNumber": 54
+				},
+				{
+					"caller": "FolderRowHeader",
+					"callee": "cn",
+					"lineNumber": 79
+				},
+				{
+					"caller": "FolderRowHeader",
+					"callee": "cn",
+					"lineNumber": 88
+				},
+				{
+					"caller": "FolderRow",
+					"callee": "useState",
+					"lineNumber": 125
+				},
+				{
+					"caller": "FolderRow",
+					"callee": "toAbsoluteWorkspacePath",
+					"lineNumber": 130
+				},
+				{
+					"caller": "FolderRow",
+					"callee": "usePathActions",
+					"lineNumber": 136
+				},
+				{
+					"caller": "openDiscardDialog",
+					"callee": "setShowDiscardDialog",
+					"lineNumber": 143
+				},
+				{
+					"caller": "FolderRow",
+					"callee": "cn",
+					"lineNumber": 183
+				},
+				{
+					"caller": "FolderRow",
+					"callee": "cn",
+					"lineNumber": 255
+				},
+				{
+					"caller": "FolderRow",
+					"callee": "cn",
+					"lineNumber": 260
+				},
+				{
+					"caller": "FolderRow",
+					"callee": "cn",
+					"lineNumber": 272
+				},
+				{
+					"caller": "FolderRow",
+					"callee": "onDiscardAll",
+					"lineNumber": 286
+				}
+			],
+			"metrics": {
+				"importCount": 4,
+				"exportCount": 1,
+				"functionCount": 3,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/RightSidebar/ChangesView/components/ReviewPanel/ReviewPanel.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 598,
+			"nonEmptyLines": 571,
+			"functions": [
+				{
+					"name": "ReviewPanel",
+					"startLine": 49,
+					"endLine": 598,
+					"params": [
+						"{\n\tpr,\n\tcomments = [],\n\tisLoading = false,\n\tisCommentsLoading = false,\n\tworkspaceId,\n\tonCommentsChange,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "ReviewPanel",
+					"line": 49,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "ReviewPanel",
+					"callee": "useState",
+					"lineNumber": 57
+				},
+				{
+					"caller": "ReviewPanel",
+					"callee": "useState",
+					"lineNumber": 58
+				},
+				{
+					"caller": "ReviewPanel",
+					"callee": "useState",
+					"lineNumber": 60
+				},
+				{
+					"caller": "ReviewPanel",
+					"callee": "useState",
+					"lineNumber": 61
+				},
+				{
+					"caller": "ReviewPanel",
+					"callee": "useState",
+					"lineNumber": 62
+				},
+				{
+					"caller": "ReviewPanel",
+					"callee": "useState",
+					"lineNumber": 65
+				},
+				{
+					"caller": "ReviewPanel",
+					"callee": "useRef",
+					"lineNumber": 66
+				},
+				{
+					"caller": "ReviewPanel",
+					"callee": "electronTrpc.external.copyText.useMutation",
+					"lineNumber": 69
+				},
+				{
+					"caller": "ReviewPanel",
+					"callee": "electronTrpc.workspaces.resolveReviewThread.useMutation",
+					"lineNumber": 71
+				},
+				{
+					"caller": "ReviewPanel",
+					"callee": "useTabsStore",
+					"lineNumber": 72
+				},
+				{
+					"caller": "handleOpenComment",
+					"callee": "openCommentPane",
+					"lineNumber": 76
+				},
+				{
+					"caller": "ReviewPanel",
+					"callee": "useEffect",
+					"lineNumber": 87
+				},
+				{
+					"caller": "ReviewPanel",
+					"callee": "clearTimeout",
+					"lineNumber": 90
+				},
+				{
+					"caller": "markCopiedAction",
+					"callee": "clearTimeout",
+					"lineNumber": 97
+				},
+				{
+					"caller": "markCopiedAction",
+					"callee": "setCopiedActionKey",
+					"lineNumber": 100
+				},
+				{
+					"caller": "markCopiedAction",
+					"callee": "setTimeout",
+					"lineNumber": 101
+				},
+				{
+					"caller": "markCopiedAction",
+					"callee": "setCopiedActionKey",
+					"lineNumber": 102
+				},
+				{
+					"caller": "copyTextToClipboard",
+					"callee": "copyToClipboardMutation.mutateAsync",
+					"lineNumber": 117
+				},
+				{
+					"caller": "copyTextToClipboard",
+					"callee": "markCopiedAction",
+					"lineNumber": 118
+				},
+				{
+					"caller": "copyTextToClipboard",
+					"callee": "toast.error",
+					"lineNumber": 121
+				},
+				{
+					"caller": "handleCopySingleComment",
+					"callee": "copyTextToClipboard",
+					"lineNumber": 126
+				},
+				{
+					"caller": "handleCopySingleComment",
+					"callee": "buildCommentClipboardText",
+					"lineNumber": 127
+				},
+				{
+					"caller": "handleCopySingleComment",
+					"callee": "getCommentCopyActionKey",
+					"lineNumber": 128
+				},
+				{
+					"caller": "handleToggleResolve",
+					"callee": "setResolvingThreadIds",
+					"lineNumber": 137
+				},
+				{
+					"caller": "handleToggleResolve",
+					"callee": "new Set(prev).add",
+					"lineNumber": 137
+				},
+				{
+					"caller": "handleToggleResolve",
+					"callee": "resolveThreadMutation.mutate",
+					"lineNumber": 138
+				},
+				{
+					"caller": "handleToggleResolve",
+					"callee": "onCommentsChange",
+					"lineNumber": 146
+				},
+				{
+					"caller": "handleToggleResolve",
+					"callee": "toast.error",
+					"lineNumber": 151
+				},
+				{
+					"caller": "handleToggleResolve",
+					"callee": "setResolvingThreadIds",
+					"lineNumber": 156
+				},
+				{
+					"caller": "handleToggleResolve",
+					"callee": "next.delete",
+					"lineNumber": 158
+				},
+				{
+					"caller": "ReviewPanel",
+					"callee": "pr.checks.filter",
+					"lineNumber": 184
+				},
+				{
+					"caller": "ReviewPanel",
+					"callee": "relevantChecks.filter",
+					"lineNumber": 187
+				},
+				{
+					"caller": "ReviewPanel",
+					"callee": "splitPullRequestComments",
+					"lineNumber": 198
+				},
+				{
+					"caller": "handleCopyCommentsList",
+					"callee": "copyTextToClipboard",
+					"lineNumber": 204
+				},
+				{
+					"caller": "handleCopyCommentsList",
+					"callee": "buildAllCommentsClipboardText",
+					"lineNumber": 205
+				},
+				{
+					"caller": "ReviewPanel",
+					"callee": "activeComments.map((c) => c.threadId).filter",
+					"lineNumber": 213
+				},
+				{
+					"caller": "ReviewPanel",
+					"callee": "activeComments.map",
+					"lineNumber": 213
+				},
+				{
+					"caller": "handleResolveAll",
+					"callee": "setIsResolvingAll",
+					"lineNumber": 220
+				},
+				{
+					"caller": "handleResolveAll",
+					"callee": "setResolvingThreadIds",
+					"lineNumber": 221
+				},
+				{
+					"caller": "handleResolveAll",
+					"callee": "Promise.allSettled",
+					"lineNumber": 224
+				},
+				{
+					"caller": "handleResolveAll",
+					"callee": "batchIds.map",
+					"lineNumber": 225
+				},
+				{
+					"caller": "handleResolveAll",
+					"callee": "resolveThreadMutation.mutateAsync",
+					"lineNumber": 226
+				},
+				{
+					"caller": "handleResolveAll",
+					"callee": "results.filter",
+					"lineNumber": 233
+				},
+				{
+					"caller": "handleResolveAll",
+					"callee": "results.some",
+					"lineNumber": 234
+				},
+				{
+					"caller": "handleResolveAll",
+					"callee": "onCommentsChange",
+					"lineNumber": 235
+				},
+				{
+					"caller": "handleResolveAll",
+					"callee": "toast.error",
+					"lineNumber": 238
+				},
+				{
+					"caller": "handleResolveAll",
+					"callee": "setIsResolvingAll",
+					"lineNumber": 243
+				},
+				{
+					"caller": "handleResolveAll",
+					"callee": "setResolvingThreadIds",
+					"lineNumber": 244
+				},
+				{
+					"caller": "handleResolveAll",
+					"callee": "next.delete",
+					"lineNumber": 247
+				},
+				{
+					"caller": "renderCommentList",
+					"callee": "list.map",
+					"lineNumber": 255
+				},
+				{
+					"caller": "renderCommentList",
+					"callee": "formatShortAge",
+					"lineNumber": 256
+				},
+				{
+					"caller": "renderCommentList",
+					"callee": "getCommentCopyActionKey",
+					"lineNumber": 257
+				},
+				{
+					"caller": "renderCommentList",
+					"callee": "getCommentAvatarFallback",
+					"lineNumber": 266
+				},
+				{
+					"caller": "renderCommentList",
+					"callee": "getCommentKindText",
+					"lineNumber": 275
+				},
+				{
+					"caller": "renderCommentList",
+					"callee": "getCommentPreviewText",
+					"lineNumber": 285
+				},
+				{
+					"caller": "renderCommentList",
+					"callee": "handleOpenComment",
+					"lineNumber": 298
+				},
+				{
+					"caller": "renderCommentList",
+					"callee": "event.preventDefault",
+					"lineNumber": 310
+				},
+				{
+					"caller": "renderCommentList",
+					"callee": "event.stopPropagation",
+					"lineNumber": 311
+				},
+				{
+					"caller": "renderCommentList",
+					"callee": "handleToggleResolve",
+					"lineNumber": 312
+				},
+				{
+					"caller": "renderCommentList",
+					"callee": "resolvingThreadIds.has",
+					"lineNumber": 314
+				},
+				{
+					"caller": "renderCommentList",
+					"callee": "resolvingThreadIds.has",
+					"lineNumber": 317
+				},
+				{
+					"caller": "renderCommentList",
+					"callee": "event.preventDefault",
+					"lineNumber": 330
+				},
+				{
+					"caller": "renderCommentList",
+					"callee": "event.stopPropagation",
+					"lineNumber": 331
+				},
+				{
+					"caller": "renderCommentList",
+					"callee": "handleCopySingleComment",
+					"lineNumber": 332
+				},
+				{
+					"caller": "ReviewPanel",
+					"callee": "cn",
+					"lineNumber": 378
+				},
+				{
+					"caller": "ReviewPanel",
+					"callee": "requestedReviewers.join",
+					"lineNumber": 387
+				},
+				{
+					"caller": "ReviewPanel",
+					"callee": "cn",
+					"lineNumber": 397
+				},
+				{
+					"caller": "ReviewPanel",
+					"callee": "cn",
+					"lineNumber": 404
+				},
+				{
+					"caller": "ReviewPanel",
+					"callee": "cn",
+					"lineNumber": 415
+				},
+				{
+					"caller": "ReviewPanel",
+					"callee": "cn",
+					"lineNumber": 421
+				},
+				{
+					"caller": "ReviewPanel",
+					"callee": "relevantChecks.map",
+					"lineNumber": 437
+				},
+				{
+					"caller": "ReviewPanel",
+					"callee": "resolveCheckDestinationUrl",
+					"lineNumber": 440
+				},
+				{
+					"caller": "ReviewPanel",
+					"callee": "cn",
+					"lineNumber": 452
+				},
+				{
+					"caller": "ReviewPanel",
+					"callee": "cn",
+					"lineNumber": 475
+				},
+				{
+					"caller": "ReviewPanel",
+					"callee": "cn",
+					"lineNumber": 503
+				},
+				{
+					"caller": "ReviewPanel",
+					"callee": "cn",
+					"lineNumber": 509
+				},
+				{
+					"caller": "ReviewPanel",
+					"callee": "handleResolveAll",
+					"lineNumber": 525
+				},
+				{
+					"caller": "ReviewPanel",
+					"callee": "renderCommentList",
+					"lineNumber": 563
+				},
+				{
+					"caller": "ReviewPanel",
+					"callee": "cn",
+					"lineNumber": 575
+				},
+				{
+					"caller": "ReviewPanel",
+					"callee": "cn",
+					"lineNumber": 581
+				},
+				{
+					"caller": "ReviewPanel",
+					"callee": "renderCommentList",
+					"lineNumber": 592
+				}
+			],
+			"metrics": {
+				"importCount": 4,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/RightSidebar/ChangesView/components/ReviewPanel/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "ReviewPanel",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/RightSidebar/ChangesView/components/ReviewPanel/utils.test.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 68,
+			"nonEmptyLines": 64,
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/RightSidebar/ChangesView/components/ReviewPanel/utils.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 196,
+			"nonEmptyLines": 168,
+			"functions": [
+				{
+					"name": "resolveCheckDestinationUrl",
+					"startLine": 74,
+					"endLine": 91,
+					"params": ["check", "prUrl"]
+				},
+				{
+					"name": "getCommentPreviewText",
+					"startLine": 93,
+					"endLine": 103,
+					"params": ["body"]
+				},
+				{
+					"name": "getCommentAvatarFallback",
+					"startLine": 105,
+					"endLine": 107,
+					"params": ["authorLogin"]
+				},
+				{
+					"name": "formatShortAge",
+					"startLine": 109,
+					"endLine": 132,
+					"params": ["timestamp"]
+				},
+				{
+					"name": "getCommentClipboardLocation",
+					"startLine": 134,
+					"endLine": 142,
+					"params": ["comment"]
+				},
+				{
+					"name": "getCommentKindText",
+					"startLine": 144,
+					"endLine": 146,
+					"params": ["comment"]
+				},
+				{
+					"name": "buildCommentClipboardText",
+					"startLine": 148,
+					"endLine": 166,
+					"params": ["comment", "includeMetadata"]
+				},
+				{
+					"name": "buildAllCommentsClipboardText",
+					"startLine": 168,
+					"endLine": 174,
+					"params": ["comments"]
+				},
+				{
+					"name": "splitPullRequestComments",
+					"startLine": 176,
+					"endLine": 184,
+					"params": ["comments"]
+				},
+				{
+					"name": "countOpenPullRequestComments",
+					"startLine": 186,
+					"endLine": 190,
+					"params": ["comments"]
+				},
+				{
+					"name": "getCommentCopyActionKey",
+					"startLine": 192,
+					"endLine": 196,
+					"params": ["commentId"]
+				}
+			],
+			"exports": [
+				{
+					"name": "ALL_COMMENTS_COPY_ACTION_KEY",
+					"line": 8,
+					"isDefault": false
+				},
+				{
+					"name": "reviewDecisionConfig",
+					"line": 10,
+					"isDefault": false
+				},
+				{
+					"name": "checkIconConfig",
+					"line": 28,
+					"isDefault": false
+				},
+				{
+					"name": "checkSummaryIconConfig",
+					"line": 56,
+					"isDefault": false
+				},
+				{
+					"name": "prStateLabel",
+					"line": 67,
+					"isDefault": false
+				},
+				{
+					"name": "resolveCheckDestinationUrl",
+					"line": 74,
+					"isDefault": false
+				},
+				{
+					"name": "getCommentPreviewText",
+					"line": 93,
+					"isDefault": false
+				},
+				{
+					"name": "getCommentAvatarFallback",
+					"line": 105,
+					"isDefault": false
+				},
+				{
+					"name": "formatShortAge",
+					"line": 109,
+					"isDefault": false
+				},
+				{
+					"name": "getCommentKindText",
+					"line": 144,
+					"isDefault": false
+				},
+				{
+					"name": "buildCommentClipboardText",
+					"line": 148,
+					"isDefault": false
+				},
+				{
+					"name": "buildAllCommentsClipboardText",
+					"line": 168,
+					"isDefault": false
+				},
+				{
+					"name": "splitPullRequestComments",
+					"line": 176,
+					"isDefault": false
+				},
+				{
+					"name": "countOpenPullRequestComments",
+					"line": 186,
+					"isDefault": false
+				},
+				{
+					"name": "getCommentCopyActionKey",
+					"line": 192,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "resolveCheckDestinationUrl",
+					"callee": "check.name.trim().toLowerCase",
+					"lineNumber": 82
+				},
+				{
+					"caller": "resolveCheckDestinationUrl",
+					"callee": "check.name.trim",
+					"lineNumber": 82
+				},
+				{
+					"caller": "resolveCheckDestinationUrl",
+					"callee": "normalizedName.includes",
+					"lineNumber": 84
+				},
+				{
+					"caller": "resolveCheckDestinationUrl",
+					"callee": "normalizedName.includes",
+					"lineNumber": 85
+				},
+				{
+					"caller": "getCommentPreviewText",
+					"callee": "body\n\t\t\t.replace(/<!--[\\s\\S]*?-->/g, \"\\n\")\n\t\t\t.split(/\\r?\\n/)\n\t\t\t.map((line) => line.trim())\n\t\t\t.find(Boolean)\n\t\t\t?.replace(/^[-*+>]\\s*/, \"\")\n\t\t\t?.replace",
+					"lineNumber": 95
+				},
+				{
+					"caller": "getCommentPreviewText",
+					"callee": "body\n\t\t\t.replace(/<!--[\\s\\S]*?-->/g, \"\\n\")\n\t\t\t.split(/\\r?\\n/)\n\t\t\t.map((line) => line.trim())\n\t\t\t.find(Boolean)\n\t\t\t?.replace",
+					"lineNumber": 95
+				},
+				{
+					"caller": "getCommentPreviewText",
+					"callee": "body\n\t\t\t.replace(/<!--[\\s\\S]*?-->/g, \"\\n\")\n\t\t\t.split(/\\r?\\n/)\n\t\t\t.map((line) => line.trim())\n\t\t\t.find",
+					"lineNumber": 95
+				},
+				{
+					"caller": "getCommentPreviewText",
+					"callee": "body\n\t\t\t.replace(/<!--[\\s\\S]*?-->/g, \"\\n\")\n\t\t\t.split(/\\r?\\n/)\n\t\t\t.map",
+					"lineNumber": 95
+				},
+				{
+					"caller": "getCommentPreviewText",
+					"callee": "body\n\t\t\t.replace(/<!--[\\s\\S]*?-->/g, \"\\n\")\n\t\t\t.split",
+					"lineNumber": 95
+				},
+				{
+					"caller": "getCommentPreviewText",
+					"callee": "body\n\t\t\t.replace",
+					"lineNumber": 95
+				},
+				{
+					"caller": "getCommentPreviewText",
+					"callee": "line.trim",
+					"lineNumber": 98
+				},
+				{
+					"caller": "getCommentAvatarFallback",
+					"callee": "authorLogin.slice(0, 2).toUpperCase",
+					"lineNumber": 106
+				},
+				{
+					"caller": "getCommentAvatarFallback",
+					"callee": "authorLogin.slice",
+					"lineNumber": 106
+				},
+				{
+					"caller": "formatShortAge",
+					"callee": "Number.isNaN",
+					"lineNumber": 110
+				},
+				{
+					"caller": "formatShortAge",
+					"callee": "Math.max",
+					"lineNumber": 114
+				},
+				{
+					"caller": "formatShortAge",
+					"callee": "Date.now",
+					"lineNumber": 114
+				},
+				{
+					"caller": "formatShortAge",
+					"callee": "Math.round",
+					"lineNumber": 115
+				},
+				{
+					"caller": "formatShortAge",
+					"callee": "Math.max",
+					"lineNumber": 118
+				},
+				{
+					"caller": "formatShortAge",
+					"callee": "Math.round",
+					"lineNumber": 121
+				},
+				{
+					"caller": "formatShortAge",
+					"callee": "Math.round",
+					"lineNumber": 126
+				},
+				{
+					"caller": "formatShortAge",
+					"callee": "Math.round",
+					"lineNumber": 131
+				},
+				{
+					"caller": "buildCommentClipboardText",
+					"callee": "comment.body.trim",
+					"lineNumber": 152
+				},
+				{
+					"caller": "buildCommentClipboardText",
+					"callee": "getCommentClipboardLocation",
+					"lineNumber": 158
+				},
+				{
+					"caller": "buildCommentClipboardText",
+					"callee": "[\n\t\tcomment.authorLogin,\n\t\tgetCommentKindText(comment),\n\t\tlocation,\n\t].filter",
+					"lineNumber": 159
+				},
+				{
+					"caller": "buildCommentClipboardText",
+					"callee": "getCommentKindText",
+					"lineNumber": 161
+				},
+				{
+					"caller": "buildCommentClipboardText",
+					"callee": "[metadata.join(\" • \"), body].filter(Boolean).join",
+					"lineNumber": 165
+				},
+				{
+					"caller": "buildCommentClipboardText",
+					"callee": "[metadata.join(\" • \"), body].filter",
+					"lineNumber": 165
+				},
+				{
+					"caller": "buildCommentClipboardText",
+					"callee": "metadata.join",
+					"lineNumber": 165
+				},
+				{
+					"caller": "buildAllCommentsClipboardText",
+					"callee": "comments\n\t\t.map((comment) => buildCommentClipboardText(comment, true))\n\t\t.join",
+					"lineNumber": 171
+				},
+				{
+					"caller": "buildAllCommentsClipboardText",
+					"callee": "comments\n\t\t.map",
+					"lineNumber": 171
+				},
+				{
+					"caller": "buildAllCommentsClipboardText",
+					"callee": "buildCommentClipboardText",
+					"lineNumber": 172
+				},
+				{
+					"caller": "splitPullRequestComments",
+					"callee": "comments.filter",
+					"lineNumber": 181
+				},
+				{
+					"caller": "splitPullRequestComments",
+					"callee": "comments.filter",
+					"lineNumber": 182
+				},
+				{
+					"caller": "countOpenPullRequestComments",
+					"callee": "comments.filter",
+					"lineNumber": 189
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 15,
+				"functionCount": 11,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/RightSidebar/ChangesView/components/RowHoverActions/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 2,
+			"nonEmptyLines": 2,
+			"exports": [
+				{
+					"name": "RowHoverAction",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "RowHoverActions",
+					"line": 2,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 2,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/RightSidebar/ChangesView/hooks/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 3,
+			"nonEmptyLines": 3,
+			"exports": [
+				{
+					"name": "useFileDrag",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "useOrderedSections",
+					"line": 2,
+					"isDefault": false
+				},
+				{
+					"name": "usePathActions",
+					"line": 3,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 3,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/RightSidebar/ChangesView/hooks/usePathActions.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 108,
+			"nonEmptyLines": 97,
+			"functions": [
+				{
+					"name": "usePathActions",
+					"startLine": 18,
+					"endLine": 108,
+					"params": [
+						"{\n\tabsolutePath,\n\trelativePath,\n\tworktreePath,\n\tdefaultApp,\n\tprojectId,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "usePathActions",
+					"line": 18,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "usePathActions",
+					"callee": "electronTrpc.external.openInFinder.useMutation",
+					"lineNumber": 25
+				},
+				{
+					"caller": "usePathActions",
+					"callee": "electronTrpc.external.openInApp.useMutation",
+					"lineNumber": 26
+				},
+				{
+					"caller": "usePathActions",
+					"callee": "toast.error",
+					"lineNumber": 28
+				},
+				{
+					"caller": "usePathActions",
+					"callee": "electronTrpc.external.openFileInEditor.useMutation",
+					"lineNumber": 33
+				},
+				{
+					"caller": "usePathActions",
+					"callee": "toast.error",
+					"lineNumber": 35
+				},
+				{
+					"caller": "usePathActions",
+					"callee": "useCopyToClipboard",
+					"lineNumber": 40
+				},
+				{
+					"caller": "usePathActions",
+					"callee": "useCallback",
+					"lineNumber": 42
+				},
+				{
+					"caller": "usePathActions",
+					"callee": "copyToClipboard",
+					"lineNumber": 44
+				},
+				{
+					"caller": "usePathActions",
+					"callee": "useCallback",
+					"lineNumber": 48
+				},
+				{
+					"caller": "usePathActions",
+					"callee": "copyToClipboard",
+					"lineNumber": 50
+				},
+				{
+					"caller": "usePathActions",
+					"callee": "useCallback",
+					"lineNumber": 54
+				},
+				{
+					"caller": "usePathActions",
+					"callee": "openInFinderMutation.mutate",
+					"lineNumber": 56
+				},
+				{
+					"caller": "usePathActions",
+					"callee": "useCallback",
+					"lineNumber": 60
+				},
+				{
+					"caller": "usePathActions",
+					"callee": "openFileInEditorMutation.mutate",
+					"lineNumber": 64
+				},
+				{
+					"caller": "usePathActions",
+					"callee": "toast.error",
+					"lineNumber": 72
+				},
+				{
+					"caller": "usePathActions",
+					"callee": "toast.error",
+					"lineNumber": 79
+				},
+				{
+					"caller": "usePathActions",
+					"callee": "openInAppMutation.mutate",
+					"lineNumber": 86
+				},
+				{
+					"caller": "usePathActions",
+					"callee": "Boolean",
+					"lineNumber": 106
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/RightSidebar/ChangesView/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "ChangesView",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/RightSidebar/ChangesView/utils/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 4,
+			"nonEmptyLines": 4,
+			"exports": [
+				{
+					"name": "shouldAutoCreatePRAfterPublish",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "formatRelativeDate",
+					"line": 2,
+					"isDefault": false
+				},
+				{
+					"name": "getPRActionState",
+					"line": 3,
+					"isDefault": false
+				},
+				{
+					"name": "getStatusColor",
+					"line": 4,
+					"isDefault": false
+				},
+				{
+					"name": "getStatusIndicator",
+					"line": 4,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 5,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/RightSidebar/FilesView/components/DeleteConfirmDialog/DeleteConfirmDialog.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 65,
+			"nonEmptyLines": 61,
+			"functions": [
+				{
+					"name": "DeleteConfirmDialog",
+					"startLine": 20,
+					"endLine": 65,
+					"params": [
+						"{\n\tentry,\n\topen,\n\tonOpenChange,\n\tonConfirm,\n\tisDeleting = false,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "DeleteConfirmDialog",
+					"line": 20,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "DeleteConfirmDialog",
+					"callee": "onOpenChange",
+					"lineNumber": 47
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/RightSidebar/FilesView/components/FileSearchResultItem/FileSearchResultItem.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 196,
+			"nonEmptyLines": 177,
+			"functions": [
+				{
+					"name": "getFolderLabel",
+					"startLine": 38,
+					"endLine": 45,
+					"params": ["relativePath"]
+				},
+				{
+					"name": "truncatePathStart",
+					"startLine": 47,
+					"endLine": 53,
+					"params": ["value", "maxLength"]
+				},
+				{
+					"name": "FileSearchResultItem",
+					"startLine": 55,
+					"endLine": 196,
+					"params": [
+						"{\n\tentry,\n\tworktreePath,\n\tprojectId,\n\tonActivate,\n\tonOpenInEditor,\n\tonNewFile,\n\tonNewFolder,\n\tonRename,\n\tonDelete,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "FileSearchResultItem",
+					"line": 55,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "getFolderLabel",
+					"callee": "relativePath.replace",
+					"lineNumber": 39
+				},
+				{
+					"caller": "getFolderLabel",
+					"callee": "normalized.lastIndexOf",
+					"lineNumber": 40
+				},
+				{
+					"caller": "getFolderLabel",
+					"callee": "normalized.slice",
+					"lineNumber": 44
+				},
+				{
+					"caller": "truncatePathStart",
+					"callee": "Math.max",
+					"lineNumber": 51
+				},
+				{
+					"caller": "truncatePathStart",
+					"callee": "value.slice",
+					"lineNumber": 52
+				},
+				{
+					"caller": "FileSearchResultItem",
+					"callee": "getFolderLabel",
+					"lineNumber": 66
+				},
+				{
+					"caller": "FileSearchResultItem",
+					"callee": "truncatePathStart",
+					"lineNumber": 67
+				},
+				{
+					"caller": "FileSearchResultItem",
+					"callee": "entry.path.split(\"/\").slice(0, -1).join",
+					"lineNumber": 74
+				},
+				{
+					"caller": "FileSearchResultItem",
+					"callee": "entry.path.split(\"/\").slice",
+					"lineNumber": 74
+				},
+				{
+					"caller": "FileSearchResultItem",
+					"callee": "entry.path.split",
+					"lineNumber": 74
+				},
+				{
+					"caller": "FileSearchResultItem",
+					"callee": "usePathActions",
+					"lineNumber": 77
+				},
+				{
+					"caller": "FileSearchResultItem",
+					"callee": "useFileDrag",
+					"lineNumber": 84
+				},
+				{
+					"caller": "handleClick",
+					"callee": "onActivate",
+					"lineNumber": 89
+				},
+				{
+					"caller": "handleClick",
+					"callee": "onOpenInEditor",
+					"lineNumber": 91
+				},
+				{
+					"caller": "handleClick",
+					"callee": "onActivate",
+					"lineNumber": 93
+				},
+				{
+					"caller": "handleDoubleClick",
+					"callee": "onOpenInEditor",
+					"lineNumber": 99
+				},
+				{
+					"caller": "handleKeyDown",
+					"callee": "e.preventDefault",
+					"lineNumber": 104
+				},
+				{
+					"caller": "handleKeyDown",
+					"callee": "onActivate",
+					"lineNumber": 106
+				},
+				{
+					"caller": "FileSearchResultItem",
+					"callee": "cn",
+					"lineNumber": 117
+				},
+				{
+					"caller": "FileSearchResultItem",
+					"callee": "onNewFile",
+					"lineNumber": 149
+				},
+				{
+					"caller": "FileSearchResultItem",
+					"callee": "onNewFolder",
+					"lineNumber": 153
+				},
+				{
+					"caller": "FileSearchResultItem",
+					"callee": "onRename",
+					"lineNumber": 182
+				},
+				{
+					"caller": "FileSearchResultItem",
+					"callee": "onDelete",
+					"lineNumber": 187
+				}
+			],
+			"metrics": {
+				"importCount": 4,
+				"exportCount": 1,
+				"functionCount": 3,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/RightSidebar/FilesView/components/FileTreeItem/FileTreeItem.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 203,
+			"nonEmptyLines": 185,
+			"functions": [
+				{
+					"name": "FileTreeItem",
+					"startLine": 41,
+					"endLine": 203,
+					"params": [
+						"{\n\titem,\n\tentry,\n\trowHeight,\n\tindent,\n\tworktreePath,\n\tprojectId,\n\tonActivate,\n\tonOpenInEditor,\n\tonNewFile,\n\tonNewFolder,\n\tonRename,\n\tonDelete,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "FileTreeItem",
+					"line": 41,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "FileTreeItem",
+					"callee": "item.isExpanded",
+					"lineNumber": 56
+				},
+				{
+					"caller": "FileTreeItem",
+					"callee": "item.getItemMeta",
+					"lineNumber": 57
+				},
+				{
+					"caller": "FileTreeItem",
+					"callee": "entry.path.split(\"/\").slice(0, -1).join",
+					"lineNumber": 61
+				},
+				{
+					"caller": "FileTreeItem",
+					"callee": "entry.path.split(\"/\").slice",
+					"lineNumber": 61
+				},
+				{
+					"caller": "FileTreeItem",
+					"callee": "entry.path.split",
+					"lineNumber": 61
+				},
+				{
+					"caller": "FileTreeItem",
+					"callee": "usePathActions",
+					"lineNumber": 64
+				},
+				{
+					"caller": "FileTreeItem",
+					"callee": "useFileDrag",
+					"lineNumber": 71
+				},
+				{
+					"caller": "handleClick",
+					"callee": "e.stopPropagation",
+					"lineNumber": 74
+				},
+				{
+					"caller": "handleClick",
+					"callee": "onOpenInEditor",
+					"lineNumber": 76
+				},
+				{
+					"caller": "handleClick",
+					"callee": "item.collapse",
+					"lineNumber": 79
+				},
+				{
+					"caller": "handleClick",
+					"callee": "item.expand",
+					"lineNumber": 81
+				},
+				{
+					"caller": "handleClick",
+					"callee": "onActivate",
+					"lineNumber": 84
+				},
+				{
+					"caller": "handleClick",
+					"callee": "onActivate",
+					"lineNumber": 86
+				},
+				{
+					"caller": "handleDoubleClick",
+					"callee": "e.stopPropagation",
+					"lineNumber": 91
+				},
+				{
+					"caller": "handleDoubleClick",
+					"callee": "onOpenInEditor",
+					"lineNumber": 92
+				},
+				{
+					"caller": "handleKeyDown",
+					"callee": "e.preventDefault",
+					"lineNumber": 97
+				},
+				{
+					"caller": "handleKeyDown",
+					"callee": "item.collapse",
+					"lineNumber": 100
+				},
+				{
+					"caller": "handleKeyDown",
+					"callee": "item.expand",
+					"lineNumber": 102
+				},
+				{
+					"caller": "handleKeyDown",
+					"callee": "onActivate",
+					"lineNumber": 105
+				},
+				{
+					"caller": "FileTreeItem",
+					"callee": "item.getProps",
+					"lineNumber": 112
+				},
+				{
+					"caller": "FileTreeItem",
+					"callee": "item.getId",
+					"lineNumber": 114
+				},
+				{
+					"caller": "FileTreeItem",
+					"callee": "cn",
+					"lineNumber": 122
+				},
+				{
+					"caller": "FileTreeItem",
+					"callee": "item.isSelected",
+					"lineNumber": 125
+				},
+				{
+					"caller": "FileTreeItem",
+					"callee": "onNewFile",
+					"lineNumber": 156
+				},
+				{
+					"caller": "FileTreeItem",
+					"callee": "onNewFolder",
+					"lineNumber": 160
+				},
+				{
+					"caller": "FileTreeItem",
+					"callee": "onRename",
+					"lineNumber": 189
+				},
+				{
+					"caller": "FileTreeItem",
+					"callee": "onDelete",
+					"lineNumber": 194
+				}
+			],
+			"metrics": {
+				"importCount": 3,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/RightSidebar/FilesView/components/RenameInput/RenameInput.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 101,
+			"nonEmptyLines": 95,
+			"functions": [
+				{
+					"name": "RenameInput",
+					"startLine": 14,
+					"endLine": 101,
+					"params": ["{\n\tentry,\n\tonSubmit,\n\tonCancel,\n\tlevel = 0,\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "RenameInput",
+					"line": 14,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "RenameInput",
+					"callee": "useState",
+					"lineNumber": 20
+				},
+				{
+					"caller": "RenameInput",
+					"callee": "useRef",
+					"lineNumber": 21
+				},
+				{
+					"caller": "RenameInput",
+					"callee": "useEffect",
+					"lineNumber": 23
+				},
+				{
+					"caller": "RenameInput",
+					"callee": "setTimeout",
+					"lineNumber": 24
+				},
+				{
+					"caller": "RenameInput",
+					"callee": "inputRef.current.focus",
+					"lineNumber": 26
+				},
+				{
+					"caller": "RenameInput",
+					"callee": "entry.name.lastIndexOf",
+					"lineNumber": 27
+				},
+				{
+					"caller": "RenameInput",
+					"callee": "inputRef.current.setSelectionRange",
+					"lineNumber": 29
+				},
+				{
+					"caller": "RenameInput",
+					"callee": "inputRef.current.select",
+					"lineNumber": 31
+				},
+				{
+					"caller": "RenameInput",
+					"callee": "clearTimeout",
+					"lineNumber": 35
+				},
+				{
+					"caller": "handleSubmit",
+					"callee": "value.trim",
+					"lineNumber": 39
+				},
+				{
+					"caller": "handleSubmit",
+					"callee": "onSubmit",
+					"lineNumber": 41
+				},
+				{
+					"caller": "handleSubmit",
+					"callee": "onCancel",
+					"lineNumber": 43
+				},
+				{
+					"caller": "handleKeyDown",
+					"callee": "e.stopPropagation",
+					"lineNumber": 48
+				},
+				{
+					"caller": "handleKeyDown",
+					"callee": "e.preventDefault",
+					"lineNumber": 50
+				},
+				{
+					"caller": "handleKeyDown",
+					"callee": "handleSubmit",
+					"lineNumber": 51
+				},
+				{
+					"caller": "handleKeyDown",
+					"callee": "e.preventDefault",
+					"lineNumber": 54
+				},
+				{
+					"caller": "handleKeyDown",
+					"callee": "onCancel",
+					"lineNumber": 55
+				},
+				{
+					"caller": "RenameInput",
+					"callee": "cn",
+					"lineNumber": 61
+				},
+				{
+					"caller": "RenameInput",
+					"callee": "setValue",
+					"lineNumber": 74
+				},
+				{
+					"caller": "RenameInput",
+					"callee": "cn",
+					"lineNumber": 77
+				},
+				{
+					"caller": "RenameInput",
+					"callee": "e.preventDefault",
+					"lineNumber": 92
+				},
+				{
+					"caller": "RenameInput",
+					"callee": "onCancel",
+					"lineNumber": 93
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/RightSidebar/FilesView/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "FilesView",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/RightSidebar/FilesView/utils/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 7,
+			"nonEmptyLines": 7,
+			"exports": [
+				{
+					"name": "FileIcon",
+					"line": 3,
+					"isDefault": false
+				},
+				{
+					"name": "getFileIcon",
+					"line": 3,
+					"isDefault": false
+				},
+				{
+					"name": "resolveFileIconAssetUrl",
+					"line": 3,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 3,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/RightSidebar/index.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 248,
+			"nonEmptyLines": 238,
+			"functions": [
+				{
+					"name": "TabButton",
+					"startLine": 27,
+					"endLine": 72,
+					"params": [
+						"{\n\tisActive,\n\tonClick,\n\ticon,\n\tlabel,\n\tcompact,\n}"
+					]
+				},
+				{
+					"name": "RightSidebar",
+					"startLine": 74,
+					"endLine": 248,
+					"params": []
+				}
+			],
+			"exports": [
+				{
+					"name": "RightSidebar",
+					"line": 74,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "TabButton",
+					"callee": "getSidebarHeaderTabButtonClassName",
+					"lineNumber": 47
+				},
+				{
+					"caller": "TabButton",
+					"callee": "getSidebarHeaderTabButtonClassName",
+					"lineNumber": 66
+				},
+				{
+					"caller": "RightSidebar",
+					"callee": "useParams",
+					"lineNumber": 75
+				},
+				{
+					"caller": "RightSidebar",
+					"callee": "electronTrpc.workspaces.get.useQuery",
+					"lineNumber": 76
+				},
+				{
+					"caller": "RightSidebar",
+					"callee": "useSidebarStore",
+					"lineNumber": 81
+				},
+				{
+					"caller": "RightSidebar",
+					"callee": "useSidebarStore",
+					"lineNumber": 82
+				},
+				{
+					"caller": "RightSidebar",
+					"callee": "useSidebarStore",
+					"lineNumber": 83
+				},
+				{
+					"caller": "RightSidebar",
+					"callee": "useSidebarStore",
+					"lineNumber": 84
+				},
+				{
+					"caller": "RightSidebar",
+					"callee": "useSidebarStore",
+					"lineNumber": 85
+				},
+				{
+					"caller": "RightSidebar",
+					"callee": "useSidebarStore",
+					"lineNumber": 86
+				},
+				{
+					"caller": "handleExpandToggle",
+					"callee": "setMode",
+					"lineNumber": 92
+				},
+				{
+					"caller": "RightSidebar",
+					"callee": "useTabsStore",
+					"lineNumber": 95
+				},
+				{
+					"caller": "RightSidebar",
+					"callee": "electronTrpc.useUtils",
+					"lineNumber": 96
+				},
+				{
+					"caller": "RightSidebar",
+					"callee": "useScrollContext",
+					"lineNumber": 97
+				},
+				{
+					"caller": "RightSidebar",
+					"callee": "useCallback",
+					"lineNumber": 99
+				},
+				{
+					"caller": "RightSidebar",
+					"callee": "invalidations.push",
+					"lineNumber": 103
+				},
+				{
+					"caller": "RightSidebar",
+					"callee": "trpcUtils.filesystem.readFile.invalidate",
+					"lineNumber": 104
+				},
+				{
+					"caller": "RightSidebar",
+					"callee": "invalidations.push",
+					"lineNumber": 111
+				},
+				{
+					"caller": "RightSidebar",
+					"callee": "trpcUtils.changes.getGitFileContents.invalidate",
+					"lineNumber": 112
+				},
+				{
+					"caller": "RightSidebar",
+					"callee": "Promise.all(invalidations).catch",
+					"lineNumber": 118
+				},
+				{
+					"caller": "RightSidebar",
+					"callee": "Promise.all",
+					"lineNumber": 118
+				},
+				{
+					"caller": "RightSidebar",
+					"callee": "console.error",
+					"lineNumber": 119
+				},
+				{
+					"caller": "RightSidebar",
+					"callee": "useCallback",
+					"lineNumber": 128
+				},
+				{
+					"caller": "RightSidebar",
+					"callee": "toAbsoluteWorkspacePath",
+					"lineNumber": 131
+				},
+				{
+					"caller": "RightSidebar",
+					"callee": "addFileViewerPane",
+					"lineNumber": 132
+				},
+				{
+					"caller": "RightSidebar",
+					"callee": "toAbsoluteWorkspacePath",
+					"lineNumber": 138
+				},
+				{
+					"caller": "RightSidebar",
+					"callee": "invalidateFileContent",
+					"lineNumber": 141
+				},
+				{
+					"caller": "RightSidebar",
+					"callee": "useCallback",
+					"lineNumber": 146
+				},
+				{
+					"caller": "RightSidebar",
+					"callee": "scrollToFile",
+					"lineNumber": 148
+				},
+				{
+					"caller": "RightSidebar",
+					"callee": "setRightSidebarTab",
+					"lineNumber": 167
+				},
+				{
+					"caller": "RightSidebar",
+					"callee": "setRightSidebarTab",
+					"lineNumber": 175
+				}
+			],
+			"metrics": {
+				"importCount": 10,
+				"exportCount": 1,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/WorkspaceInitializingView/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "WorkspaceInitializingView",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/WorkspaceLayout/WorkspaceLayout.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 66,
+			"nonEmptyLines": 62,
+			"functions": [
+				{
+					"name": "WorkspaceLayout",
+					"startLine": 21,
+					"endLine": 66,
+					"params": [
+						"{\n\tdefaultExternalApp,\n\tonOpenInApp,\n\tonOpenQuickOpen,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "WorkspaceLayout",
+					"line": 21,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "WorkspaceLayout",
+					"callee": "useBrowserLifecycle",
+					"lineNumber": 26
+				},
+				{
+					"caller": "WorkspaceLayout",
+					"callee": "useSidebarStore",
+					"lineNumber": 27
+				},
+				{
+					"caller": "WorkspaceLayout",
+					"callee": "useSidebarStore",
+					"lineNumber": 28
+				},
+				{
+					"caller": "WorkspaceLayout",
+					"callee": "useSidebarStore",
+					"lineNumber": 29
+				},
+				{
+					"caller": "WorkspaceLayout",
+					"callee": "useSidebarStore",
+					"lineNumber": 30
+				},
+				{
+					"caller": "WorkspaceLayout",
+					"callee": "useSidebarStore",
+					"lineNumber": 31
+				},
+				{
+					"caller": "WorkspaceLayout",
+					"callee": "useSidebarStore",
+					"lineNumber": 32
+				},
+				{
+					"caller": "WorkspaceLayout",
+					"callee": "setSidebarWidth",
+					"lineNumber": 59
+				}
+			],
+			"metrics": {
+				"importCount": 6,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/WorkspaceLayout/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "WorkspaceLayout",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/components/CodeEditor/CodeEditor.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 382,
+			"nonEmptyLines": 349,
+			"functions": [
+				{
+					"name": "createCodeMirrorAdapter",
+					"startLine": 46,
+					"endLine": 162,
+					"params": ["view"]
+				},
+				{
+					"name": "CodeEditor",
+					"startLine": 164,
+					"endLine": 382,
+					"params": [
+						"{\n\tvalue,\n\tlanguage,\n\treadOnly = false,\n\tfillHeight = true,\n\tclassName,\n\teditorRef,\n\tonChange,\n\tonSave,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "CodeEditor",
+					"line": 164,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "focus",
+					"callee": "view.focus",
+					"lineNumber": 51
+				},
+				{
+					"caller": "getValue",
+					"callee": "view.state.doc.toString",
+					"lineNumber": 54
+				},
+				{
+					"caller": "setValue",
+					"callee": "view.dispatch",
+					"lineNumber": 57
+				},
+				{
+					"caller": "revealPosition",
+					"callee": "Math.max",
+					"lineNumber": 66
+				},
+				{
+					"caller": "revealPosition",
+					"callee": "Math.min",
+					"lineNumber": 66
+				},
+				{
+					"caller": "revealPosition",
+					"callee": "view.state.doc.line",
+					"lineNumber": 67
+				},
+				{
+					"caller": "revealPosition",
+					"callee": "Math.min",
+					"lineNumber": 68
+				},
+				{
+					"caller": "revealPosition",
+					"callee": "Math.max",
+					"lineNumber": 69
+				},
+				{
+					"caller": "revealPosition",
+					"callee": "view.dispatch",
+					"lineNumber": 71
+				},
+				{
+					"caller": "revealPosition",
+					"callee": "EditorSelection.cursor",
+					"lineNumber": 72
+				},
+				{
+					"caller": "revealPosition",
+					"callee": "view.focus",
+					"lineNumber": 75
+				},
+				{
+					"caller": "getSelectionLines",
+					"callee": "view.state.doc.lineAt",
+					"lineNumber": 79
+				},
+				{
+					"caller": "getSelectionLines",
+					"callee": "view.state.doc.lineAt",
+					"lineNumber": 80
+				},
+				{
+					"caller": "selectAll",
+					"callee": "selectAll",
+					"lineNumber": 84
+				},
+				{
+					"caller": "cut",
+					"callee": "view.state.sliceDoc",
+					"lineNumber": 94
+				},
+				{
+					"caller": "cut",
+					"callee": "clipboard\n\t\t\t\t.writeText(text)\n\t\t\t\t.then(() => {\n\t\t\t\t\tconst currentSelection = view.state.selection.main;\n\t\t\t\t\tif (\n\t\t\t\t\t\tcurrentSelection.from !== selection.from ||\n\t\t\t\t\t\tcurrentSelection.to !== selection.to\n\t\t\t\t\t) {\n\t\t\t\t\t\treturn;\n\t\t\t\t\t}\n\n\t\t\t\t\tif (view.state.sliceDoc(selection.from, selection.to) !== text) {\n\t\t\t\t\t\treturn;\n\t\t\t\t\t}\n\n\t\t\t\t\tview.dispatch({\n\t\t\t\t\t\tchanges: { from: selection.from, to: selection.to, insert: \"\" },\n\t\t\t\t\t});\n\t\t\t\t})\n\t\t\t\t.catch",
+					"lineNumber": 95
+				},
+				{
+					"caller": "cut",
+					"callee": "clipboard\n\t\t\t\t.writeText(text)\n\t\t\t\t.then",
+					"lineNumber": 95
+				},
+				{
+					"caller": "cut",
+					"callee": "clipboard\n\t\t\t\t.writeText",
+					"lineNumber": 95
+				},
+				{
+					"caller": "cut",
+					"callee": "view.state.sliceDoc",
+					"lineNumber": 106
+				},
+				{
+					"caller": "cut",
+					"callee": "view.dispatch",
+					"lineNumber": 110
+				},
+				{
+					"caller": "cut",
+					"callee": "console.error",
+					"lineNumber": 115
+				},
+				{
+					"caller": "copy",
+					"callee": "clipboard\n\t\t\t\t.writeText(view.state.sliceDoc(selection.from, selection.to))\n\t\t\t\t.catch",
+					"lineNumber": 125
+				},
+				{
+					"caller": "copy",
+					"callee": "clipboard\n\t\t\t\t.writeText",
+					"lineNumber": 125
+				},
+				{
+					"caller": "copy",
+					"callee": "view.state.sliceDoc",
+					"lineNumber": 126
+				},
+				{
+					"caller": "copy",
+					"callee": "console.error",
+					"lineNumber": 128
+				},
+				{
+					"caller": "paste",
+					"callee": "clipboard\n\t\t\t\t.readText()\n\t\t\t\t.then((text) => {\n\t\t\t\t\tconst selection = view.state.selection.main;\n\t\t\t\t\tview.dispatch({\n\t\t\t\t\t\tchanges: {\n\t\t\t\t\t\t\tfrom: selection.from,\n\t\t\t\t\t\t\tto: selection.to,\n\t\t\t\t\t\t\tinsert: text,\n\t\t\t\t\t\t},\n\t\t\t\t\t\tselection: EditorSelection.cursor(selection.from + text.length),\n\t\t\t\t\t});\n\t\t\t\t})\n\t\t\t\t.catch",
+					"lineNumber": 136
+				},
+				{
+					"caller": "paste",
+					"callee": "clipboard\n\t\t\t\t.readText()\n\t\t\t\t.then",
+					"lineNumber": 136
+				},
+				{
+					"caller": "paste",
+					"callee": "clipboard\n\t\t\t\t.readText",
+					"lineNumber": 136
+				},
+				{
+					"caller": "paste",
+					"callee": "view.dispatch",
+					"lineNumber": 140
+				},
+				{
+					"caller": "paste",
+					"callee": "EditorSelection.cursor",
+					"lineNumber": 146
+				},
+				{
+					"caller": "paste",
+					"callee": "console.error",
+					"lineNumber": 150
+				},
+				{
+					"caller": "openFind",
+					"callee": "openSearchPanel",
+					"lineNumber": 154
+				},
+				{
+					"caller": "dispose",
+					"callee": "view.destroy",
+					"lineNumber": 159
+				},
+				{
+					"caller": "CodeEditor",
+					"callee": "useRef",
+					"lineNumber": 174
+				},
+				{
+					"caller": "CodeEditor",
+					"callee": "useRef",
+					"lineNumber": 175
+				},
+				{
+					"caller": "CodeEditor",
+					"callee": "useRef",
+					"lineNumber": 176
+				},
+				{
+					"caller": "CodeEditor",
+					"callee": "useRef",
+					"lineNumber": 177
+				},
+				{
+					"caller": "CodeEditor",
+					"callee": "useRef",
+					"lineNumber": 178
+				},
+				{
+					"caller": "CodeEditor",
+					"callee": "useRef",
+					"lineNumber": 179
+				},
+				{
+					"caller": "CodeEditor",
+					"callee": "useRef",
+					"lineNumber": 180
+				},
+				{
+					"caller": "CodeEditor",
+					"callee": "useRef",
+					"lineNumber": 182
+				},
+				{
+					"caller": "CodeEditor",
+					"callee": "useQuery",
+					"lineNumber": 183
+				},
+				{
+					"caller": "CodeEditor",
+					"callee": "electronTrpcClient.settings.getFontSettings.query",
+					"lineNumber": 185
+				},
+				{
+					"caller": "CodeEditor",
+					"callee": "useResolvedTheme",
+					"lineNumber": 190
+				},
+				{
+					"caller": "CodeEditor",
+					"callee": "useEffect",
+					"lineNumber": 196
+				},
+				{
+					"caller": "CodeEditor",
+					"callee": "EditorView.updateListener.of",
+					"lineNumber": 199
+				},
+				{
+					"caller": "CodeEditor",
+					"callee": "onChangeRef.current",
+					"lineNumber": 202
+				},
+				{
+					"caller": "CodeEditor",
+					"callee": "update.state.doc.toString",
+					"lineNumber": 202
+				},
+				{
+					"caller": "CodeEditor",
+					"callee": "keymap.of",
+					"lineNumber": 205
+				},
+				{
+					"caller": "CodeEditor",
+					"callee": "onSaveRef.current",
+					"lineNumber": 209
+				},
+				{
+					"caller": "CodeEditor",
+					"callee": "EditorState.create",
+					"lineNumber": 215
+				},
+				{
+					"caller": "CodeEditor",
+					"callee": "lineNumbers",
+					"lineNumber": 218
+				},
+				{
+					"caller": "CodeEditor",
+					"callee": "highlightActiveLineGutter",
+					"lineNumber": 219
+				},
+				{
+					"caller": "CodeEditor",
+					"callee": "highlightSpecialChars",
+					"lineNumber": 220
+				},
+				{
+					"caller": "CodeEditor",
+					"callee": "history",
+					"lineNumber": 221
+				},
+				{
+					"caller": "CodeEditor",
+					"callee": "drawSelection",
+					"lineNumber": 222
+				},
+				{
+					"caller": "CodeEditor",
+					"callee": "dropCursor",
+					"lineNumber": 223
+				},
+				{
+					"caller": "CodeEditor",
+					"callee": "EditorState.allowMultipleSelections.of",
+					"lineNumber": 224
+				},
+				{
+					"caller": "CodeEditor",
+					"callee": "indentOnInput",
+					"lineNumber": 225
+				},
+				{
+					"caller": "CodeEditor",
+					"callee": "bracketMatching",
+					"lineNumber": 226
+				},
+				{
+					"caller": "CodeEditor",
+					"callee": "highlightActiveLine",
+					"lineNumber": 227
+				},
+				{
+					"caller": "CodeEditor",
+					"callee": "highlightSelectionMatches",
+					"lineNumber": 228
+				},
+				{
+					"caller": "CodeEditor",
+					"callee": "editableCompartment.of",
+					"lineNumber": 230
+				},
+				{
+					"caller": "CodeEditor",
+					"callee": "EditorState.readOnly.of",
+					"lineNumber": 231
+				},
+				{
+					"caller": "CodeEditor",
+					"callee": "EditorView.editable.of",
+					"lineNumber": 232
+				},
+				{
+					"caller": "CodeEditor",
+					"callee": "EditorView.contentAttributes.of",
+					"lineNumber": 234
+				},
+				{
+					"caller": "CodeEditor",
+					"callee": "keymap.of",
+					"lineNumber": 238
+				},
+				{
+					"caller": "CodeEditor",
+					"callee": "themeCompartment.of",
+					"lineNumber": 245
+				},
+				{
+					"caller": "CodeEditor",
+					"callee": "getCodeSyntaxHighlighting",
+					"lineNumber": 246
+				},
+				{
+					"caller": "CodeEditor",
+					"callee": "createCodeMirrorTheme",
+					"lineNumber": 247
+				},
+				{
+					"caller": "CodeEditor",
+					"callee": "languageCompartment.of",
+					"lineNumber": 256
+				},
+				{
+					"caller": "CodeEditor",
+					"callee": "createCodeMirrorAdapter",
+					"lineNumber": 265
+				},
+				{
+					"caller": "CodeEditor",
+					"callee": "adapter.dispose",
+					"lineNumber": 276
+				},
+				{
+					"caller": "CodeEditor",
+					"callee": "useEffect",
+					"lineNumber": 281
+				},
+				{
+					"caller": "CodeEditor",
+					"callee": "view.state.doc.toString",
+					"lineNumber": 285
+				},
+				{
+					"caller": "CodeEditor",
+					"callee": "view.dispatch",
+					"lineNumber": 291
+				},
+				{
+					"caller": "CodeEditor",
+					"callee": "useEffect",
+					"lineNumber": 303
+				},
+				{
+					"caller": "CodeEditor",
+					"callee": "view.dispatch",
+					"lineNumber": 307
+				},
+				{
+					"caller": "CodeEditor",
+					"callee": "themeCompartment.reconfigure",
+					"lineNumber": 308
+				},
+				{
+					"caller": "CodeEditor",
+					"callee": "getCodeSyntaxHighlighting",
+					"lineNumber": 309
+				},
+				{
+					"caller": "CodeEditor",
+					"callee": "createCodeMirrorTheme",
+					"lineNumber": 310
+				},
+				{
+					"caller": "CodeEditor",
+					"callee": "useEffect",
+					"lineNumber": 328
+				},
+				{
+					"caller": "CodeEditor",
+					"callee": "view.dispatch",
+					"lineNumber": 332
+				},
+				{
+					"caller": "CodeEditor",
+					"callee": "editableCompartment.reconfigure",
+					"lineNumber": 333
+				},
+				{
+					"caller": "CodeEditor",
+					"callee": "EditorState.readOnly.of",
+					"lineNumber": 334
+				},
+				{
+					"caller": "CodeEditor",
+					"callee": "EditorView.editable.of",
+					"lineNumber": 335
+				},
+				{
+					"caller": "CodeEditor",
+					"callee": "useEffect",
+					"lineNumber": 340
+				},
+				{
+					"caller": "CodeEditor",
+					"callee": "loadLanguageSupport(language)\n\t\t\t.then((extension) => {\n\t\t\t\tif (cancelled) return;\n\t\t\t\tconst view = viewRef.current;\n\t\t\t\tif (!view) return;\n\n\t\t\t\tview.dispatch({\n\t\t\t\t\teffects: languageCompartment.reconfigure(extension ?? []),\n\t\t\t\t});\n\t\t\t})\n\t\t\t.catch",
+					"lineNumber": 343
+				},
+				{
+					"caller": "CodeEditor",
+					"callee": "loadLanguageSupport(language)\n\t\t\t.then",
+					"lineNumber": 343
+				},
+				{
+					"caller": "CodeEditor",
+					"callee": "loadLanguageSupport",
+					"lineNumber": 343
+				},
+				{
+					"caller": "CodeEditor",
+					"callee": "view.dispatch",
+					"lineNumber": 349
+				},
+				{
+					"caller": "CodeEditor",
+					"callee": "languageCompartment.reconfigure",
+					"lineNumber": 350
+				},
+				{
+					"caller": "CodeEditor",
+					"callee": "console.error",
+					"lineNumber": 358
+				},
+				{
+					"caller": "CodeEditor",
+					"callee": "view.dispatch",
+					"lineNumber": 362
+				},
+				{
+					"caller": "CodeEditor",
+					"callee": "languageCompartment.reconfigure",
+					"lineNumber": 363
+				},
+				{
+					"caller": "CodeEditor",
+					"callee": "cn",
+					"lineNumber": 375
+				}
+			],
+			"metrics": {
+				"importCount": 6,
+				"exportCount": 1,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/components/CodeEditor/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "CodeEditor",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/components/CodeEditor/loadLanguageSupport.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 127,
+			"nonEmptyLines": 125,
+			"functions": [
+				{
+					"name": "loadLegacyLanguage",
+					"startLine": 8,
+					"endLine": 14,
+					"params": ["loader", "key"]
+				},
+				{
+					"name": "loadLanguageSupport",
+					"startLine": 16,
+					"endLine": 127,
+					"params": ["language"]
+				}
+			],
+			"exports": [
+				{
+					"name": "loadLanguageSupport",
+					"line": 16,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "loadLegacyLanguage",
+					"callee": "loader",
+					"lineNumber": 12
+				},
+				{
+					"caller": "loadLegacyLanguage",
+					"callee": "StreamLanguage.define",
+					"lineNumber": 13
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "import",
+					"lineNumber": 22
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "javascript",
+					"lineNumber": 23
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "import",
+					"lineNumber": 29
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "json",
+					"lineNumber": 30
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "import",
+					"lineNumber": 33
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "html",
+					"lineNumber": 34
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "import",
+					"lineNumber": 39
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "css",
+					"lineNumber": 40
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "import",
+					"lineNumber": 43
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "markdown",
+					"lineNumber": 44
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "StreamLanguage.define",
+					"lineNumber": 47
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "import",
+					"lineNumber": 51
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "yaml",
+					"lineNumber": 52
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "import",
+					"lineNumber": 55
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "xml",
+					"lineNumber": 56
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "import",
+					"lineNumber": 59
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "python",
+					"lineNumber": 60
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "import",
+					"lineNumber": 63
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "rust",
+					"lineNumber": 64
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "import",
+					"lineNumber": 67
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "sql",
+					"lineNumber": 68
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "import",
+					"lineNumber": 71
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "php",
+					"lineNumber": 72
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "import",
+					"lineNumber": 75
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "java",
+					"lineNumber": 76
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "import",
+					"lineNumber": 80
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "cpp",
+					"lineNumber": 81
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "import",
+					"lineNumber": 84
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "go",
+					"lineNumber": 85
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "loadLegacyLanguage",
+					"lineNumber": 88
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "import",
+					"lineNumber": 89
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "loadLegacyLanguage",
+					"lineNumber": 93
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "import",
+					"lineNumber": 94
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "StreamLanguage.define",
+					"lineNumber": 98
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "loadLegacyLanguage",
+					"lineNumber": 100
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "import",
+					"lineNumber": 101
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "loadLegacyLanguage",
+					"lineNumber": 105
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "import",
+					"lineNumber": 106
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "loadLegacyLanguage",
+					"lineNumber": 110
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "import",
+					"lineNumber": 111
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "loadLegacyLanguage",
+					"lineNumber": 115
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "import",
+					"lineNumber": 116
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "loadLegacyLanguage",
+					"lineNumber": 120
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "import",
+					"lineNumber": 121
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/components/CodeEditor/streamLanguages.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 232,
+			"nonEmptyLines": 193,
+			"functions": [
+				{
+					"name": "escapeRegex",
+					"startLine": 164,
+					"endLine": 166,
+					"params": ["value"]
+				}
+			],
+			"exports": [
+				{
+					"name": "graphqlStreamLanguage",
+					"line": 29,
+					"isDefault": false
+				},
+				{
+					"name": "makefileStreamLanguage",
+					"line": 172,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "token",
+					"callee": "stream.eol",
+					"lineNumber": 37
+				},
+				{
+					"caller": "token",
+					"callee": "stream.match",
+					"lineNumber": 38
+				},
+				{
+					"caller": "token",
+					"callee": "stream.next",
+					"lineNumber": 42
+				},
+				{
+					"caller": "token",
+					"callee": "stream.eol",
+					"lineNumber": 51
+				},
+				{
+					"caller": "token",
+					"callee": "stream.next",
+					"lineNumber": 52
+				},
+				{
+					"caller": "token",
+					"callee": "stream.eatSpace",
+					"lineNumber": 63
+				},
+				{
+					"caller": "token",
+					"callee": "stream.match",
+					"lineNumber": 65
+				},
+				{
+					"caller": "token",
+					"callee": "stream.eol",
+					"lineNumber": 66
+				},
+				{
+					"caller": "token",
+					"callee": "stream.match",
+					"lineNumber": 67
+				},
+				{
+					"caller": "token",
+					"callee": "stream.next",
+					"lineNumber": 70
+				},
+				{
+					"caller": "token",
+					"callee": "stream.next",
+					"lineNumber": 77
+				},
+				{
+					"caller": "token",
+					"callee": "stream.skipToEnd",
+					"lineNumber": 81
+				},
+				{
+					"caller": "token",
+					"callee": "stream.eol",
+					"lineNumber": 88
+				},
+				{
+					"caller": "token",
+					"callee": "stream.next",
+					"lineNumber": 89
+				},
+				{
+					"caller": "token",
+					"callee": "stream.eatWhile",
+					"lineNumber": 101
+				},
+				{
+					"caller": "token",
+					"callee": "stream.eatWhile",
+					"lineNumber": 106
+				},
+				{
+					"caller": "token",
+					"callee": "/\\d/.test",
+					"lineNumber": 110
+				},
+				{
+					"caller": "token",
+					"callee": "stream.peek",
+					"lineNumber": 110
+				},
+				{
+					"caller": "token",
+					"callee": "stream.eatWhile",
+					"lineNumber": 111
+				},
+				{
+					"caller": "token",
+					"callee": "stream.peek",
+					"lineNumber": 112
+				},
+				{
+					"caller": "token",
+					"callee": "stream.next",
+					"lineNumber": 113
+				},
+				{
+					"caller": "token",
+					"callee": "stream.eatWhile",
+					"lineNumber": 114
+				},
+				{
+					"caller": "token",
+					"callee": "/\\d/.test",
+					"lineNumber": 119
+				},
+				{
+					"caller": "token",
+					"callee": "stream.eatWhile",
+					"lineNumber": 120
+				},
+				{
+					"caller": "token",
+					"callee": "stream.peek",
+					"lineNumber": 121
+				},
+				{
+					"caller": "token",
+					"callee": "stream.next",
+					"lineNumber": 122
+				},
+				{
+					"caller": "token",
+					"callee": "stream.eatWhile",
+					"lineNumber": 123
+				},
+				{
+					"caller": "token",
+					"callee": "/[A-Za-z_]/.test",
+					"lineNumber": 128
+				},
+				{
+					"caller": "token",
+					"callee": "stream.eatWhile",
+					"lineNumber": 129
+				},
+				{
+					"caller": "token",
+					"callee": "stream.current",
+					"lineNumber": 130
+				},
+				{
+					"caller": "token",
+					"callee": "GRAPHQL_KEYWORDS.has",
+					"lineNumber": 132
+				},
+				{
+					"caller": "token",
+					"callee": "GRAPHQL_ATOMS.has",
+					"lineNumber": 133
+				},
+				{
+					"caller": "token",
+					"callee": "/^[A-Z]/.test",
+					"lineNumber": 134
+				},
+				{
+					"caller": "escapeRegex",
+					"callee": "value.replace",
+					"lineNumber": 165
+				},
+				{
+					"caller": "token",
+					"callee": "stream.sol",
+					"lineNumber": 175
+				},
+				{
+					"caller": "token",
+					"callee": "stream.peek",
+					"lineNumber": 176
+				},
+				{
+					"caller": "token",
+					"callee": "stream.skipToEnd",
+					"lineNumber": 177
+				},
+				{
+					"caller": "token",
+					"callee": "stream.match",
+					"lineNumber": 181
+				},
+				{
+					"caller": "token",
+					"callee": "stream.match",
+					"lineNumber": 185
+				},
+				{
+					"caller": "token",
+					"callee": "stream.match",
+					"lineNumber": 189
+				},
+				{
+					"caller": "token",
+					"callee": "stream.eatSpace",
+					"lineNumber": 194
+				},
+				{
+					"caller": "token",
+					"callee": "stream.match",
+					"lineNumber": 196
+				},
+				{
+					"caller": "token",
+					"callee": "stream.match",
+					"lineNumber": 196
+				},
+				{
+					"caller": "token",
+					"callee": "stream.next",
+					"lineNumber": 200
+				},
+				{
+					"caller": "token",
+					"callee": "stream.skipToEnd",
+					"lineNumber": 204
+				},
+				{
+					"caller": "token",
+					"callee": "stream.peek",
+					"lineNumber": 208
+				},
+				{
+					"caller": "token",
+					"callee": "stream.next",
+					"lineNumber": 209
+				},
+				{
+					"caller": "token",
+					"callee": "stream.peek",
+					"lineNumber": 213
+				},
+				{
+					"caller": "token",
+					"callee": "stream.next",
+					"lineNumber": 214
+				},
+				{
+					"caller": "token",
+					"callee": "/[A-Za-z_.-]/.test",
+					"lineNumber": 222
+				},
+				{
+					"caller": "token",
+					"callee": "stream.eatWhile",
+					"lineNumber": 223
+				},
+				{
+					"caller": "token",
+					"callee": "MAKEFILE_DIRECTIVES.has",
+					"lineNumber": 224
+				},
+				{
+					"caller": "token",
+					"callee": "stream.current",
+					"lineNumber": 224
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 2,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/components/FileSaveConflictDialog/FileSaveConflictDialog.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 90,
+			"nonEmptyLines": 87,
+			"functions": [
+				{
+					"name": "FileSaveConflictDialog",
+					"startLine": 25,
+					"endLine": 90,
+					"params": [
+						"{\n\topen,\n\tfilePath,\n\tlocalContent,\n\tdiskContent,\n\tisSaving = false,\n\tonOpenChange,\n\tonKeepEditing,\n\tonReloadFromDisk,\n\tonOverwrite,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "FileSaveConflictDialog",
+					"line": 25,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "FileSaveConflictDialog",
+					"callee": "detectLanguage",
+					"lineNumber": 59
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/components/FileSaveConflictDialog/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "FileSaveConflictDialog",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/hooks/useBrowserLifecycle/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "useBrowserLifecycle",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		}
+	]
+}

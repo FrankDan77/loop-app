@@ -1,0 +1,210 @@
+{
+	"batchIndex": 114,
+	"files": [
+		{
+			"path": "apps/desktop/src/lib/trpc/routers/keyboardLayout.ts",
+			"language": "typescript",
+			"sizeLines": 25,
+			"fileCategory": "code"
+		},
+		{
+			"path": "apps/desktop/src/main/lib/keyboardLayout.ts",
+			"language": "typescript",
+			"sizeLines": 101,
+			"fileCategory": "code"
+		},
+		{
+			"path": "apps/desktop/src/renderer/hotkeys/components/HotkeyLabel/HotkeyLabel.tsx",
+			"language": "typescript",
+			"sizeLines": 18,
+			"fileCategory": "code"
+		},
+		{
+			"path": "apps/desktop/src/renderer/hotkeys/display.ts",
+			"language": "typescript",
+			"sizeLines": 129,
+			"fileCategory": "code"
+		},
+		{
+			"path": "apps/desktop/src/renderer/hotkeys/hooks/useBinding/index.ts",
+			"language": "typescript",
+			"sizeLines": 1,
+			"fileCategory": "code"
+		},
+		{
+			"path": "apps/desktop/src/renderer/hotkeys/hooks/useBinding/useBinding.ts",
+			"language": "typescript",
+			"sizeLines": 37,
+			"fileCategory": "code"
+		},
+		{
+			"path": "apps/desktop/src/renderer/hotkeys/hooks/useHotkey/useHotkey.ts",
+			"language": "typescript",
+			"sizeLines": 51,
+			"fileCategory": "code"
+		},
+		{
+			"path": "apps/desktop/src/renderer/hotkeys/hooks/useHotkeyDisplay/index.ts",
+			"language": "typescript",
+			"sizeLines": 1,
+			"fileCategory": "code"
+		},
+		{
+			"path": "apps/desktop/src/renderer/hotkeys/hooks/useHotkeyDisplay/useHotkeyDisplay.ts",
+			"language": "typescript",
+			"sizeLines": 34,
+			"fileCategory": "code"
+		},
+		{
+			"path": "apps/desktop/src/renderer/hotkeys/hooks/useRecordHotkeys/useRecordHotkeys.ts",
+			"language": "typescript",
+			"sizeLines": 247,
+			"fileCategory": "code"
+		},
+		{
+			"path": "apps/desktop/src/renderer/hotkeys/registry.ts",
+			"language": "typescript",
+			"sizeLines": 744,
+			"fileCategory": "code"
+		},
+		{
+			"path": "apps/desktop/src/renderer/hotkeys/stores/hotkeyOverridesStore.ts",
+			"language": "typescript",
+			"sizeLines": 37,
+			"fileCategory": "code"
+		},
+		{
+			"path": "apps/desktop/src/renderer/hotkeys/stores/keyboardLayoutStore.ts",
+			"language": "typescript",
+			"sizeLines": 62,
+			"fileCategory": "code"
+		},
+		{
+			"path": "apps/desktop/src/renderer/hotkeys/stores/keyboardPreferencesStore.ts",
+			"language": "typescript",
+			"sizeLines": 52,
+			"fileCategory": "code"
+		},
+		{
+			"path": "apps/desktop/src/renderer/hotkeys/types.ts",
+			"language": "typescript",
+			"sizeLines": 65,
+			"fileCategory": "code"
+		},
+		{
+			"path": "apps/desktop/src/renderer/hotkeys/utils/binding.ts",
+			"language": "typescript",
+			"sizeLines": 133,
+			"fileCategory": "code"
+		},
+		{
+			"path": "apps/desktop/src/renderer/hotkeys/utils/resolveHotkeyFromEvent.ts",
+			"language": "typescript",
+			"sizeLines": 157,
+			"fileCategory": "code"
+		}
+	],
+	"batchImportData": {
+		"apps/desktop/src/lib/trpc/routers/keyboardLayout.ts": [
+			"apps/desktop/src/main/lib/keyboardLayout.ts"
+		],
+		"apps/desktop/src/main/lib/keyboardLayout.ts": [],
+		"apps/desktop/src/renderer/hotkeys/components/HotkeyLabel/HotkeyLabel.tsx": [
+			"apps/desktop/src/renderer/hotkeys/hooks/useHotkeyDisplay/index.ts",
+			"apps/desktop/src/renderer/hotkeys/registry.ts"
+		],
+		"apps/desktop/src/renderer/hotkeys/display.ts": [
+			"apps/desktop/src/renderer/hotkeys/types.ts",
+			"apps/desktop/src/renderer/hotkeys/utils/resolveHotkeyFromEvent.ts"
+		],
+		"apps/desktop/src/renderer/hotkeys/hooks/useBinding/index.ts": [],
+		"apps/desktop/src/renderer/hotkeys/hooks/useBinding/useBinding.ts": [
+			"apps/desktop/src/renderer/hotkeys/registry.ts",
+			"apps/desktop/src/renderer/hotkeys/stores/hotkeyOverridesStore.ts",
+			"apps/desktop/src/renderer/hotkeys/stores/keyboardPreferencesStore.ts",
+			"apps/desktop/src/renderer/hotkeys/types.ts",
+			"apps/desktop/src/renderer/hotkeys/utils/binding.ts"
+		],
+		"apps/desktop/src/renderer/hotkeys/hooks/useHotkey/useHotkey.ts": [
+			"apps/desktop/src/renderer/hotkeys/display.ts",
+			"apps/desktop/src/renderer/hotkeys/hooks/useBinding/index.ts",
+			"apps/desktop/src/renderer/hotkeys/registry.ts",
+			"apps/desktop/src/renderer/hotkeys/stores/keyboardPreferencesStore.ts",
+			"apps/desktop/src/renderer/hotkeys/types.ts",
+			"apps/desktop/src/renderer/hotkeys/utils/binding.ts"
+		],
+		"apps/desktop/src/renderer/hotkeys/hooks/useHotkeyDisplay/index.ts": [],
+		"apps/desktop/src/renderer/hotkeys/hooks/useHotkeyDisplay/useHotkeyDisplay.ts": [
+			"apps/desktop/src/renderer/hotkeys/display.ts",
+			"apps/desktop/src/renderer/hotkeys/hooks/useBinding/index.ts",
+			"apps/desktop/src/renderer/hotkeys/registry.ts",
+			"apps/desktop/src/renderer/hotkeys/stores/keyboardPreferencesStore.ts",
+			"apps/desktop/src/renderer/hotkeys/types.ts",
+			"apps/desktop/src/renderer/hotkeys/utils/binding.ts"
+		],
+		"apps/desktop/src/renderer/hotkeys/hooks/useRecordHotkeys/useRecordHotkeys.ts": [
+			"apps/desktop/src/renderer/hotkeys/registry.ts",
+			"apps/desktop/src/renderer/hotkeys/stores/hotkeyOverridesStore.ts",
+			"apps/desktop/src/renderer/hotkeys/stores/keyboardPreferencesStore.ts",
+			"apps/desktop/src/renderer/hotkeys/types.ts",
+			"apps/desktop/src/renderer/hotkeys/utils/binding.ts",
+			"apps/desktop/src/renderer/hotkeys/utils/resolveHotkeyFromEvent.ts"
+		],
+		"apps/desktop/src/renderer/hotkeys/registry.ts": [
+			"apps/desktop/src/renderer/hotkeys/types.ts"
+		],
+		"apps/desktop/src/renderer/hotkeys/stores/hotkeyOverridesStore.ts": [
+			"apps/desktop/src/renderer/hotkeys/types.ts"
+		],
+		"apps/desktop/src/renderer/hotkeys/stores/keyboardLayoutStore.ts": [
+			"apps/desktop/src/main/lib/keyboardLayout.ts",
+			"apps/desktop/src/renderer/lib/trpc-client.ts"
+		],
+		"apps/desktop/src/renderer/hotkeys/stores/keyboardPreferencesStore.ts": [
+			"apps/desktop/src/renderer/hotkeys/stores/keyboardLayoutStore.ts"
+		],
+		"apps/desktop/src/renderer/hotkeys/types.ts": [],
+		"apps/desktop/src/renderer/hotkeys/utils/binding.ts": [
+			"apps/desktop/src/renderer/hotkeys/types.ts",
+			"apps/desktop/src/renderer/hotkeys/utils/resolveHotkeyFromEvent.ts"
+		],
+		"apps/desktop/src/renderer/hotkeys/utils/resolveHotkeyFromEvent.ts": [
+			"apps/desktop/src/renderer/hotkeys/registry.ts",
+			"apps/desktop/src/renderer/hotkeys/stores/hotkeyOverridesStore.ts",
+			"apps/desktop/src/renderer/hotkeys/stores/keyboardLayoutStore.ts",
+			"apps/desktop/src/renderer/hotkeys/stores/keyboardPreferencesStore.ts",
+			"apps/desktop/src/renderer/hotkeys/types.ts",
+			"apps/desktop/src/renderer/hotkeys/utils/binding.ts"
+		]
+	},
+	"neighborMap": {
+		"apps/desktop/src/lib/trpc/routers/keyboardLayout.ts": [
+			{
+				"path": "apps/desktop/src/lib/trpc/routers/index.ts",
+				"batchIndex": 43,
+				"symbols": ["createAppRouter"]
+			}
+		],
+		"apps/desktop/src/renderer/hotkeys/hooks/useHotkeyDisplay/index.ts": [
+			{
+				"path": "apps/desktop/src/renderer/commandPalette/ui/CommandItemRow/CommandItemRow.tsx",
+				"batchIndex": 1,
+				"symbols": ["CommandItemRow"]
+			}
+		],
+		"apps/desktop/src/renderer/hotkeys/registry.ts": [
+			{
+				"path": "apps/desktop/src/renderer/commandPalette/core/types.ts",
+				"batchIndex": 1,
+				"symbols": []
+			}
+		],
+		"apps/desktop/src/renderer/hotkeys/stores/keyboardLayoutStore.ts": [
+			{
+				"path": "apps/desktop/src/renderer/lib/trpc-client.ts",
+				"batchIndex": 35,
+				"symbols": ["electronReactClient", "electronTrpcClient"]
+			}
+		]
+	}
+}

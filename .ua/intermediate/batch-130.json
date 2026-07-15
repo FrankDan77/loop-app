@@ -1,0 +1,859 @@
+{
+	"nodes": [
+		{
+			"id": "file:packages/chat/src/client/provider/chat-service-provider.tsx",
+			"type": "file",
+			"name": "chat-service-provider.tsx",
+			"filePath": "packages/chat/src/client/provider/chat-service-provider.tsx",
+			"summary": "React provider component that wires a typed tRPC React client (chatServiceTrpc) for the desktop chat service into the component tree.",
+			"tags": ["provider", "react-context", "trpc-client", "component"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:packages/chat/src/server/desktop/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "packages/chat/src/server/desktop/index.ts",
+			"summary": "Barrel file re-exporting the desktop chat service's public API — auth credential helpers, the chat service class, its tRPC router, slash commands, and title generation.",
+			"tags": ["barrel", "entry-point", "exports"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:packages/chat/src/server/trpc/service.ts",
+			"type": "file",
+			"name": "service.ts",
+			"filePath": "packages/chat/src/server/trpc/service.ts",
+			"summary": "Defines ChatRuntimeService, the tRPC service that lazily creates and caches per-session Mastra runtimes and exposes workspace, session, approval, question, and plan procedures to the desktop chat client.",
+			"tags": ["service", "trpc", "api-handler", "state-management"],
+			"complexity": "complex"
+		},
+		{
+			"id": "file:packages/chat/src/server/trpc/utils/file-search/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "packages/chat/src/server/trpc/utils/file-search/index.ts",
+			"summary": "Barrel re-exporting the file search types and searchFiles function used by the workspace.searchFiles tRPC procedure.",
+			"tags": ["barrel", "utility"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:packages/chat/src/server/trpc/utils/runtime/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "packages/chat/src/server/trpc/utils/runtime/index.ts",
+			"summary": "Barrel re-exporting runtime lifecycle helpers from runtime.ts and MCP overview utilities used by the chat tRPC service.",
+			"tags": ["barrel", "entry-point"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:packages/chat/src/server/trpc/utils/runtime/runtime.ts",
+			"type": "file",
+			"name": "runtime.ts",
+			"filePath": "packages/chat/src/server/trpc/utils/runtime/runtime.ts",
+			"summary": "Implements the Mastra runtime session lifecycle for chat: session typing, hook lifecycle (start/reload/destroy), harness event subscription with error normalization, message-restart-from-edit, and background chat title generation.",
+			"tags": ["service", "state-management", "event-handler", "lifecycle"],
+			"complexity": "complex",
+			"languageNotes": "Uses discriminated-union type guards to safely narrow untyped harness event payloads before dispatching lifecycle callbacks."
+		},
+		{
+			"id": "file:packages/chat/src/server/trpc/utils/runtime/superset-mcp.ts",
+			"type": "file",
+			"name": "superset-mcp.ts",
+			"filePath": "packages/chat/src/server/trpc/utils/runtime/superset-mcp.ts",
+			"summary": "Loads extra Mastra tools by connecting to the Superset MCP endpoint, forwarding the caller's auth headers on every underlying HTTP request.",
+			"tags": ["mcp", "integration", "async"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:packages/chat/src/server/trpc/utils/runtime/utils/mcp-overview/mcp-overview.ts",
+			"type": "file",
+			"name": "mcp-overview.ts",
+			"filePath": "packages/chat/src/server/trpc/utils/runtime/utils/mcp-overview/mcp-overview.ts",
+			"summary": "Builds a normalized overview of configured MCP servers (transport, target, connection state) and supports on-demand authentication probes against a single server.",
+			"tags": ["mcp", "service", "validation", "integration"],
+			"complexity": "complex"
+		},
+		{
+			"id": "file:packages/chat/src/server/trpc/zod.ts",
+			"type": "file",
+			"name": "zod.ts",
+			"filePath": "packages/chat/src/server/trpc/zod.ts",
+			"summary": "Zod input schemas for every chat tRPC procedure — search, MCP overview/auth, message send/restart, and approval/question/plan responses.",
+			"tags": ["validation", "type-definition", "trpc", "schema-definition"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:packages/chat/src/client/provider/chat-service-provider.tsx:ChatServiceProvider",
+			"type": "function",
+			"name": "ChatServiceProvider",
+			"filePath": "packages/chat/src/client/provider/chat-service-provider.tsx",
+			"lineRange": [20, 30],
+			"summary": "Wraps children in the tRPC React provider bound to the injected client and query client.",
+			"tags": ["component", "provider"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:packages/chat/src/server/trpc/service.ts:respondToQuestionWithOptimisticState",
+			"type": "function",
+			"name": "respondToQuestionWithOptimisticState",
+			"filePath": "packages/chat/src/server/trpc/service.ts",
+			"lineRange": [44, 87],
+			"summary": "Answers a pending harness question exactly once, optimistically marking it answered and rolling back state if the underlying respond call fails.",
+			"tags": ["state-management", "async", "idempotency"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "class:packages/chat/src/server/trpc/service.ts:ChatRuntimeService",
+			"type": "class",
+			"name": "ChatRuntimeService",
+			"filePath": "packages/chat/src/server/trpc/service.ts",
+			"lineRange": [95, 404],
+			"summary": "Manages a map of per-session Mastra runtimes (creating them on demand) and builds the tRPC router exposing workspace search, MCP overview/auth, and full session messaging/approval/question/plan procedures.",
+			"tags": ["service", "trpc", "state-management", "api-handler"],
+			"complexity": "complex"
+		},
+		{
+			"id": "function:packages/chat/src/server/trpc/utils/runtime/runtime.ts:syncRuntimeHookSessionId",
+			"type": "function",
+			"name": "syncRuntimeHookSessionId",
+			"filePath": "packages/chat/src/server/trpc/utils/runtime/runtime.ts",
+			"lineRange": [43, 45],
+			"summary": "Propagates the runtime's session ID into its hook manager.",
+			"tags": ["utility", "lifecycle"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:packages/chat/src/server/trpc/utils/runtime/runtime.ts:getRuntimeMemoryStore",
+			"type": "function",
+			"name": "getRuntimeMemoryStore",
+			"filePath": "packages/chat/src/server/trpc/utils/runtime/runtime.ts",
+			"lineRange": [114, 129],
+			"summary": "Resolves the Mastra memory storage backend for a runtime, throwing if storage isn't configured or unavailable.",
+			"tags": ["utility", "storage"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:packages/chat/src/server/trpc/utils/runtime/runtime.ts:onUserPromptSubmit",
+			"type": "function",
+			"name": "onUserPromptSubmit",
+			"filePath": "packages/chat/src/server/trpc/utils/runtime/runtime.ts",
+			"lineRange": [135, 144],
+			"summary": "Gate that validates a user prompt against the UserPromptSubmit hook before the message is sent, throwing if blocked.",
+			"tags": ["hook", "validation", "middleware"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:packages/chat/src/server/trpc/utils/runtime/runtime.ts:runSessionStartHook",
+			"type": "function",
+			"name": "runSessionStartHook",
+			"filePath": "packages/chat/src/server/trpc/utils/runtime/runtime.ts",
+			"lineRange": [149, 154],
+			"summary": "Fires the SessionStart hook the first time a runtime is created.",
+			"tags": ["hook", "lifecycle"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:packages/chat/src/server/trpc/utils/runtime/runtime.ts:reloadHookConfig",
+			"type": "function",
+			"name": "reloadHookConfig",
+			"filePath": "packages/chat/src/server/trpc/utils/runtime/runtime.ts",
+			"lineRange": [159, 166],
+			"summary": "Reloads hook configuration on an existing runtime so user edits take effect without a restart, swallowing reload errors.",
+			"tags": ["hook", "lifecycle"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:packages/chat/src/server/trpc/utils/runtime/runtime.ts:destroyRuntime",
+			"type": "function",
+			"name": "destroyRuntime",
+			"filePath": "packages/chat/src/server/trpc/utils/runtime/runtime.ts",
+			"lineRange": [171, 179],
+			"summary": "Tears down a runtime: fires the SessionEnd hook then destroys the underlying harness, best-effort.",
+			"tags": ["lifecycle", "cleanup"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:packages/chat/src/server/trpc/utils/runtime/runtime.ts:subscribeToSessionEvents",
+			"type": "function",
+			"name": "subscribeToSessionEvents",
+			"filePath": "packages/chat/src/server/trpc/utils/runtime/runtime.ts",
+			"lineRange": [194, 255],
+			"summary": "Subscribes to harness lifecycle events once per runtime, updating session error/question state and forwarding start/stop/permission-request/question events to an optional host callback.",
+			"tags": ["event-handler", "lifecycle", "state-management"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:packages/chat/src/server/trpc/utils/runtime/runtime.ts:isHarnessSandboxAccessRequestEvent",
+			"type": "function",
+			"name": "isHarnessSandboxAccessRequestEvent",
+			"filePath": "packages/chat/src/server/trpc/utils/runtime/runtime.ts",
+			"lineRange": [289, 302],
+			"summary": "Type guard identifying a harness sandbox-access-request event and narrowing its questionId/path/reason fields.",
+			"tags": ["type-guard", "validation"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:packages/chat/src/server/trpc/utils/runtime/runtime.ts:isHarnessThreadCreatedEvent",
+			"type": "function",
+			"name": "isHarnessThreadCreatedEvent",
+			"filePath": "packages/chat/src/server/trpc/utils/runtime/runtime.ts",
+			"lineRange": [324, 333],
+			"summary": "Type guard identifying a harness thread-created event.",
+			"tags": ["type-guard", "validation"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:packages/chat/src/server/trpc/utils/runtime/runtime.ts:toRuntimeErrorMessage",
+			"type": "function",
+			"name": "toRuntimeErrorMessage",
+			"filePath": "packages/chat/src/server/trpc/utils/runtime/runtime.ts",
+			"lineRange": [335, 348],
+			"summary": "Normalizes a harness error of unknown shape (provider error, Error, string, or record) into a user-facing message string.",
+			"tags": ["error-handling", "utility"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:packages/chat/src/server/trpc/utils/runtime/runtime.ts:extractProviderMessage",
+			"type": "function",
+			"name": "extractProviderMessage",
+			"filePath": "packages/chat/src/server/trpc/utils/runtime/runtime.ts",
+			"lineRange": [354, 389],
+			"summary": "Digs through nested error/data/responseBody shapes to extract an upstream AI provider's error message, if present.",
+			"tags": ["error-handling", "utility"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:packages/chat/src/server/trpc/utils/runtime/runtime.ts:restartRuntimeFromUserMessage",
+			"type": "function",
+			"name": "restartRuntimeFromUserMessage",
+			"filePath": "packages/chat/src/server/trpc/utils/runtime/runtime.ts",
+			"lineRange": [391, 454],
+			"summary": "Clones the current Mastra thread up to a chosen user message, switches the runtime to the clone, and resends the edited message — implementing edit-and-resend.",
+			"tags": ["state-management", "async", "thread-management"],
+			"complexity": "complex"
+		},
+		{
+			"id": "function:packages/chat/src/server/trpc/utils/runtime/runtime.ts:generateAndSetTitle",
+			"type": "function",
+			"name": "generateAndSetTitle",
+			"filePath": "packages/chat/src/server/trpc/utils/runtime/runtime.ts",
+			"lineRange": [466, 537],
+			"summary": "Generates a chat session title from the first or every-10th user message via the harness's model and persists it through the tRPC API client, logging failures without throwing.",
+			"tags": ["async", "title-generation", "api-handler"],
+			"complexity": "complex"
+		},
+		{
+			"id": "function:packages/chat/src/server/trpc/utils/runtime/superset-mcp.ts:getSupersetMcpTools",
+			"type": "function",
+			"name": "getSupersetMcpTools",
+			"filePath": "packages/chat/src/server/trpc/utils/runtime/superset-mcp.ts",
+			"lineRange": [8, 43],
+			"summary": "Connects an MCPClient to the Superset MCP endpoint using bearer auth headers refreshed on every request, returning the discovered tools or an empty set on failure/missing auth.",
+			"tags": ["mcp", "integration", "async"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:packages/chat/src/server/trpc/utils/runtime/utils/mcp-overview/mcp-overview.ts:toStringRecord",
+			"type": "function",
+			"name": "toStringRecord",
+			"filePath": "packages/chat/src/server/trpc/utils/runtime/utils/mcp-overview/mcp-overview.ts",
+			"lineRange": [51, 64],
+			"summary": "Converts an unknown value into a string-to-string record, filtering out non-string entries, or undefined if empty/invalid.",
+			"tags": ["utility", "validation"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:packages/chat/src/server/trpc/utils/runtime/utils/mcp-overview/mcp-overview.ts:parseMcpConfig",
+			"type": "function",
+			"name": "parseMcpConfig",
+			"filePath": "packages/chat/src/server/trpc/utils/runtime/utils/mcp-overview/mcp-overview.ts",
+			"lineRange": [73, 93],
+			"summary": "Parses a raw MCP server config object into a typed structure capturing type, url, command, args, and disabled state.",
+			"tags": ["parsing", "validation"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:packages/chat/src/server/trpc/utils/runtime/utils/mcp-overview/mcp-overview.ts:isMcpRemote",
+			"type": "function",
+			"name": "isMcpRemote",
+			"filePath": "packages/chat/src/server/trpc/utils/runtime/utils/mcp-overview/mcp-overview.ts",
+			"lineRange": [99, 110],
+			"summary": "Detects whether an MCP server config launches via the mcp-remote bridge command.",
+			"tags": ["utility", "validation"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:packages/chat/src/server/trpc/utils/runtime/utils/mcp-overview/mcp-overview.ts:resolveTransport",
+			"type": "function",
+			"name": "resolveTransport",
+			"filePath": "packages/chat/src/server/trpc/utils/runtime/utils/mcp-overview/mcp-overview.ts",
+			"lineRange": [112, 136],
+			"summary": "Determines whether an MCP server's transport is remote, local, or unknown based on its parsed config.",
+			"tags": ["utility", "validation"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:packages/chat/src/server/trpc/utils/runtime/utils/mcp-overview/mcp-overview.ts:resolveTarget",
+			"type": "function",
+			"name": "resolveTarget",
+			"filePath": "packages/chat/src/server/trpc/utils/runtime/utils/mcp-overview/mcp-overview.ts",
+			"lineRange": [138, 160],
+			"summary": "Derives a human-readable target string (URL or command line) for an MCP server based on its transport.",
+			"tags": ["utility"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:packages/chat/src/server/trpc/utils/runtime/utils/mcp-overview/mcp-overview.ts:resolveState",
+			"type": "function",
+			"name": "resolveState",
+			"filePath": "packages/chat/src/server/trpc/utils/runtime/utils/mcp-overview/mcp-overview.ts",
+			"lineRange": [162, 180],
+			"summary": "Computes an MCP server's overview state (enabled/disabled/invalid) from its config, transport, and live connection status.",
+			"tags": ["utility", "validation"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:packages/chat/src/server/trpc/utils/runtime/utils/mcp-overview/mcp-overview.ts:toErrorMessage",
+			"type": "function",
+			"name": "toErrorMessage",
+			"filePath": "packages/chat/src/server/trpc/utils/runtime/utils/mcp-overview/mcp-overview.ts",
+			"lineRange": [182, 194],
+			"summary": "Extracts a readable message string from an unknown error value.",
+			"tags": ["error-handling", "utility"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:packages/chat/src/server/trpc/utils/runtime/utils/mcp-overview/mcp-overview.ts:withTimeout",
+			"type": "function",
+			"name": "withTimeout",
+			"filePath": "packages/chat/src/server/trpc/utils/runtime/utils/mcp-overview/mcp-overview.ts",
+			"lineRange": [196, 213],
+			"summary": "Races a promise against a timeout, rejecting with a custom message if the promise doesn't settle in time.",
+			"tags": ["utility", "async"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:packages/chat/src/server/trpc/utils/runtime/utils/mcp-overview/mcp-overview.ts:toRuntimeStatusMap",
+			"type": "function",
+			"name": "toRuntimeStatusMap",
+			"filePath": "packages/chat/src/server/trpc/utils/runtime/utils/mcp-overview/mcp-overview.ts",
+			"lineRange": [215, 253],
+			"summary": "Merges live MCP manager connection statuses with manually-probed statuses into a single name-keyed status map.",
+			"tags": ["state-management", "utility"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:packages/chat/src/server/trpc/utils/runtime/utils/mcp-overview/mcp-overview.ts:toOverviewServer",
+			"type": "function",
+			"name": "toOverviewServer",
+			"filePath": "packages/chat/src/server/trpc/utils/runtime/utils/mcp-overview/mcp-overview.ts",
+			"lineRange": [255, 277],
+			"summary": "Builds a single server's overview entry (state, transport, target, live status) from its raw config and status map.",
+			"tags": ["utility"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:packages/chat/src/server/trpc/utils/runtime/utils/mcp-overview/mcp-overview.ts:buildOverview",
+			"type": "function",
+			"name": "buildOverview",
+			"filePath": "packages/chat/src/server/trpc/utils/runtime/utils/mcp-overview/mcp-overview.ts",
+			"lineRange": [279, 294],
+			"summary": "Builds the full sorted MCP server overview from the raw server config map and status map.",
+			"tags": ["utility"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:packages/chat/src/server/trpc/utils/runtime/utils/mcp-overview/mcp-overview.ts:buildProbeServerDefinition",
+			"type": "function",
+			"name": "buildProbeServerDefinition",
+			"filePath": "packages/chat/src/server/trpc/utils/runtime/utils/mcp-overview/mcp-overview.ts",
+			"lineRange": [296, 333],
+			"summary": "Converts a raw MCP server config into an MCPClient-compatible server definition (URL or command+args+env) for probing.",
+			"tags": ["mcp", "parsing"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:packages/chat/src/server/trpc/utils/runtime/utils/mcp-overview/mcp-overview.ts:probeMcpServer",
+			"type": "function",
+			"name": "probeMcpServer",
+			"filePath": "packages/chat/src/server/trpc/utils/runtime/utils/mcp-overview/mcp-overview.ts",
+			"lineRange": [335, 374],
+			"summary": "Connects a short-lived MCPClient to a single MCP server to verify connectivity and count its tools, with a timeout and cleanup.",
+			"tags": ["mcp", "async", "integration"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:packages/chat/src/server/trpc/utils/runtime/utils/mcp-overview/mcp-overview.ts:getRuntimeMcpOverview",
+			"type": "function",
+			"name": "getRuntimeMcpOverview",
+			"filePath": "packages/chat/src/server/trpc/utils/runtime/utils/mcp-overview/mcp-overview.ts",
+			"lineRange": [376, 391],
+			"summary": "Returns the current MCP server overview for a runtime, or an empty overview if no MCP servers are configured.",
+			"tags": ["mcp", "api-handler"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:packages/chat/src/server/trpc/utils/runtime/utils/mcp-overview/mcp-overview.ts:authenticateRuntimeMcpServer",
+			"type": "function",
+			"name": "authenticateRuntimeMcpServer",
+			"filePath": "packages/chat/src/server/trpc/utils/runtime/utils/mcp-overview/mcp-overview.ts",
+			"lineRange": [393, 429],
+			"summary": "Probes a single named MCP server on demand, records its manual status on the runtime, and returns the refreshed overview.",
+			"tags": ["mcp", "api-handler", "async"],
+			"complexity": "moderate"
+		}
+	],
+	"edges": [
+		{
+			"source": "file:packages/chat/src/client/provider/chat-service-provider.tsx",
+			"target": "file:packages/chat/src/server/desktop/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:packages/chat/src/server/trpc/service.ts",
+			"target": "file:packages/chat/src/server/trpc/utils/file-search/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:packages/chat/src/server/trpc/service.ts",
+			"target": "file:packages/chat/src/server/trpc/utils/runtime/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:packages/chat/src/server/trpc/service.ts",
+			"target": "file:packages/chat/src/server/trpc/utils/runtime/superset-mcp.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:packages/chat/src/server/trpc/service.ts",
+			"target": "file:packages/chat/src/server/trpc/zod.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:packages/chat/src/server/trpc/utils/runtime/runtime.ts",
+			"target": "file:packages/chat/src/server/desktop/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:packages/chat/src/server/trpc/utils/runtime/runtime.ts",
+			"target": "file:packages/chat/src/server/trpc/zod.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:packages/chat/src/server/trpc/utils/runtime/utils/mcp-overview/mcp-overview.ts",
+			"target": "file:packages/chat/src/server/trpc/utils/runtime/runtime.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+
+		{
+			"source": "file:packages/chat/src/client/provider/chat-service-provider.tsx",
+			"target": "function:packages/chat/src/client/provider/chat-service-provider.tsx:ChatServiceProvider",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/chat/src/server/trpc/service.ts",
+			"target": "function:packages/chat/src/server/trpc/service.ts:respondToQuestionWithOptimisticState",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/chat/src/server/trpc/service.ts",
+			"target": "class:packages/chat/src/server/trpc/service.ts:ChatRuntimeService",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/chat/src/server/trpc/utils/runtime/runtime.ts",
+			"target": "function:packages/chat/src/server/trpc/utils/runtime/runtime.ts:syncRuntimeHookSessionId",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/chat/src/server/trpc/utils/runtime/runtime.ts",
+			"target": "function:packages/chat/src/server/trpc/utils/runtime/runtime.ts:getRuntimeMemoryStore",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/chat/src/server/trpc/utils/runtime/runtime.ts",
+			"target": "function:packages/chat/src/server/trpc/utils/runtime/runtime.ts:onUserPromptSubmit",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/chat/src/server/trpc/utils/runtime/runtime.ts",
+			"target": "function:packages/chat/src/server/trpc/utils/runtime/runtime.ts:runSessionStartHook",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/chat/src/server/trpc/utils/runtime/runtime.ts",
+			"target": "function:packages/chat/src/server/trpc/utils/runtime/runtime.ts:reloadHookConfig",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/chat/src/server/trpc/utils/runtime/runtime.ts",
+			"target": "function:packages/chat/src/server/trpc/utils/runtime/runtime.ts:destroyRuntime",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/chat/src/server/trpc/utils/runtime/runtime.ts",
+			"target": "function:packages/chat/src/server/trpc/utils/runtime/runtime.ts:subscribeToSessionEvents",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/chat/src/server/trpc/utils/runtime/runtime.ts",
+			"target": "function:packages/chat/src/server/trpc/utils/runtime/runtime.ts:isHarnessSandboxAccessRequestEvent",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/chat/src/server/trpc/utils/runtime/runtime.ts",
+			"target": "function:packages/chat/src/server/trpc/utils/runtime/runtime.ts:isHarnessThreadCreatedEvent",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/chat/src/server/trpc/utils/runtime/runtime.ts",
+			"target": "function:packages/chat/src/server/trpc/utils/runtime/runtime.ts:toRuntimeErrorMessage",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/chat/src/server/trpc/utils/runtime/runtime.ts",
+			"target": "function:packages/chat/src/server/trpc/utils/runtime/runtime.ts:extractProviderMessage",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/chat/src/server/trpc/utils/runtime/runtime.ts",
+			"target": "function:packages/chat/src/server/trpc/utils/runtime/runtime.ts:restartRuntimeFromUserMessage",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/chat/src/server/trpc/utils/runtime/runtime.ts",
+			"target": "function:packages/chat/src/server/trpc/utils/runtime/runtime.ts:generateAndSetTitle",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/chat/src/server/trpc/utils/runtime/superset-mcp.ts",
+			"target": "function:packages/chat/src/server/trpc/utils/runtime/superset-mcp.ts:getSupersetMcpTools",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/chat/src/server/trpc/utils/runtime/utils/mcp-overview/mcp-overview.ts",
+			"target": "function:packages/chat/src/server/trpc/utils/runtime/utils/mcp-overview/mcp-overview.ts:toStringRecord",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/chat/src/server/trpc/utils/runtime/utils/mcp-overview/mcp-overview.ts",
+			"target": "function:packages/chat/src/server/trpc/utils/runtime/utils/mcp-overview/mcp-overview.ts:parseMcpConfig",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/chat/src/server/trpc/utils/runtime/utils/mcp-overview/mcp-overview.ts",
+			"target": "function:packages/chat/src/server/trpc/utils/runtime/utils/mcp-overview/mcp-overview.ts:isMcpRemote",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/chat/src/server/trpc/utils/runtime/utils/mcp-overview/mcp-overview.ts",
+			"target": "function:packages/chat/src/server/trpc/utils/runtime/utils/mcp-overview/mcp-overview.ts:resolveTransport",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/chat/src/server/trpc/utils/runtime/utils/mcp-overview/mcp-overview.ts",
+			"target": "function:packages/chat/src/server/trpc/utils/runtime/utils/mcp-overview/mcp-overview.ts:resolveTarget",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/chat/src/server/trpc/utils/runtime/utils/mcp-overview/mcp-overview.ts",
+			"target": "function:packages/chat/src/server/trpc/utils/runtime/utils/mcp-overview/mcp-overview.ts:resolveState",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/chat/src/server/trpc/utils/runtime/utils/mcp-overview/mcp-overview.ts",
+			"target": "function:packages/chat/src/server/trpc/utils/runtime/utils/mcp-overview/mcp-overview.ts:toErrorMessage",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/chat/src/server/trpc/utils/runtime/utils/mcp-overview/mcp-overview.ts",
+			"target": "function:packages/chat/src/server/trpc/utils/runtime/utils/mcp-overview/mcp-overview.ts:withTimeout",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/chat/src/server/trpc/utils/runtime/utils/mcp-overview/mcp-overview.ts",
+			"target": "function:packages/chat/src/server/trpc/utils/runtime/utils/mcp-overview/mcp-overview.ts:toRuntimeStatusMap",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/chat/src/server/trpc/utils/runtime/utils/mcp-overview/mcp-overview.ts",
+			"target": "function:packages/chat/src/server/trpc/utils/runtime/utils/mcp-overview/mcp-overview.ts:toOverviewServer",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/chat/src/server/trpc/utils/runtime/utils/mcp-overview/mcp-overview.ts",
+			"target": "function:packages/chat/src/server/trpc/utils/runtime/utils/mcp-overview/mcp-overview.ts:buildOverview",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/chat/src/server/trpc/utils/runtime/utils/mcp-overview/mcp-overview.ts",
+			"target": "function:packages/chat/src/server/trpc/utils/runtime/utils/mcp-overview/mcp-overview.ts:buildProbeServerDefinition",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/chat/src/server/trpc/utils/runtime/utils/mcp-overview/mcp-overview.ts",
+			"target": "function:packages/chat/src/server/trpc/utils/runtime/utils/mcp-overview/mcp-overview.ts:probeMcpServer",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/chat/src/server/trpc/utils/runtime/utils/mcp-overview/mcp-overview.ts",
+			"target": "function:packages/chat/src/server/trpc/utils/runtime/utils/mcp-overview/mcp-overview.ts:getRuntimeMcpOverview",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/chat/src/server/trpc/utils/runtime/utils/mcp-overview/mcp-overview.ts",
+			"target": "function:packages/chat/src/server/trpc/utils/runtime/utils/mcp-overview/mcp-overview.ts:authenticateRuntimeMcpServer",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+
+		{
+			"source": "file:packages/chat/src/client/provider/chat-service-provider.tsx",
+			"target": "function:packages/chat/src/client/provider/chat-service-provider.tsx:ChatServiceProvider",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:packages/chat/src/server/trpc/service.ts",
+			"target": "class:packages/chat/src/server/trpc/service.ts:ChatRuntimeService",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:packages/chat/src/server/trpc/utils/runtime/runtime.ts",
+			"target": "function:packages/chat/src/server/trpc/utils/runtime/runtime.ts:syncRuntimeHookSessionId",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:packages/chat/src/server/trpc/utils/runtime/runtime.ts",
+			"target": "function:packages/chat/src/server/trpc/utils/runtime/runtime.ts:onUserPromptSubmit",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:packages/chat/src/server/trpc/utils/runtime/runtime.ts",
+			"target": "function:packages/chat/src/server/trpc/utils/runtime/runtime.ts:runSessionStartHook",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:packages/chat/src/server/trpc/utils/runtime/runtime.ts",
+			"target": "function:packages/chat/src/server/trpc/utils/runtime/runtime.ts:reloadHookConfig",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:packages/chat/src/server/trpc/utils/runtime/runtime.ts",
+			"target": "function:packages/chat/src/server/trpc/utils/runtime/runtime.ts:destroyRuntime",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:packages/chat/src/server/trpc/utils/runtime/runtime.ts",
+			"target": "function:packages/chat/src/server/trpc/utils/runtime/runtime.ts:subscribeToSessionEvents",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:packages/chat/src/server/trpc/utils/runtime/runtime.ts",
+			"target": "function:packages/chat/src/server/trpc/utils/runtime/runtime.ts:restartRuntimeFromUserMessage",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:packages/chat/src/server/trpc/utils/runtime/runtime.ts",
+			"target": "function:packages/chat/src/server/trpc/utils/runtime/runtime.ts:generateAndSetTitle",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:packages/chat/src/server/trpc/utils/runtime/superset-mcp.ts",
+			"target": "function:packages/chat/src/server/trpc/utils/runtime/superset-mcp.ts:getSupersetMcpTools",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:packages/chat/src/server/trpc/utils/runtime/utils/mcp-overview/mcp-overview.ts",
+			"target": "function:packages/chat/src/server/trpc/utils/runtime/utils/mcp-overview/mcp-overview.ts:getRuntimeMcpOverview",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:packages/chat/src/server/trpc/utils/runtime/utils/mcp-overview/mcp-overview.ts",
+			"target": "function:packages/chat/src/server/trpc/utils/runtime/utils/mcp-overview/mcp-overview.ts:authenticateRuntimeMcpServer",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+
+		{
+			"source": "class:packages/chat/src/server/trpc/service.ts:ChatRuntimeService",
+			"target": "function:packages/chat/src/server/trpc/utils/runtime/runtime.ts:destroyRuntime",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "class:packages/chat/src/server/trpc/service.ts:ChatRuntimeService",
+			"target": "function:packages/chat/src/server/trpc/utils/runtime/runtime.ts:reloadHookConfig",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "class:packages/chat/src/server/trpc/service.ts:ChatRuntimeService",
+			"target": "function:packages/chat/src/server/trpc/utils/runtime/runtime.ts:syncRuntimeHookSessionId",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "class:packages/chat/src/server/trpc/service.ts:ChatRuntimeService",
+			"target": "function:packages/chat/src/server/trpc/utils/runtime/runtime.ts:runSessionStartHook",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "class:packages/chat/src/server/trpc/service.ts:ChatRuntimeService",
+			"target": "function:packages/chat/src/server/trpc/utils/runtime/runtime.ts:subscribeToSessionEvents",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "class:packages/chat/src/server/trpc/service.ts:ChatRuntimeService",
+			"target": "function:packages/chat/src/server/trpc/utils/runtime/runtime.ts:onUserPromptSubmit",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "class:packages/chat/src/server/trpc/service.ts:ChatRuntimeService",
+			"target": "function:packages/chat/src/server/trpc/utils/runtime/runtime.ts:generateAndSetTitle",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "class:packages/chat/src/server/trpc/service.ts:ChatRuntimeService",
+			"target": "function:packages/chat/src/server/trpc/utils/runtime/runtime.ts:restartRuntimeFromUserMessage",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "class:packages/chat/src/server/trpc/service.ts:ChatRuntimeService",
+			"target": "function:packages/chat/src/server/trpc/utils/runtime/utils/mcp-overview/mcp-overview.ts:getRuntimeMcpOverview",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "class:packages/chat/src/server/trpc/service.ts:ChatRuntimeService",
+			"target": "function:packages/chat/src/server/trpc/utils/runtime/utils/mcp-overview/mcp-overview.ts:authenticateRuntimeMcpServer",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "class:packages/chat/src/server/trpc/service.ts:ChatRuntimeService",
+			"target": "function:packages/chat/src/server/trpc/utils/runtime/superset-mcp.ts:getSupersetMcpTools",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		}
+	]
+}

@@ -1,0 +1,702 @@
+{
+	"nodes": [
+		{
+			"id": "file:packages/session-protocol/src/acp.ts",
+			"type": "file",
+			"name": "acp.ts",
+			"filePath": "packages/session-protocol/src/acp.ts",
+			"summary": "Type-only re-export of the entire generated ACP SDK surface — the single sanctioned entry point both host-service and clients must import ACP types through, per Decision D7.",
+			"tags": ["barrel", "type-definition", "protocol", "acp"],
+			"complexity": "simple",
+			"languageNotes": "Uses `export type *` so the re-export is erased at build time and carries zero runtime cost."
+		},
+		{
+			"id": "file:packages/session-protocol/src/api.ts",
+			"type": "file",
+			"name": "api.ts",
+			"filePath": "packages/session-protocol/src/api.ts",
+			"summary": "Defines the client-facing ACP session API contract: zod input schemas for the session router, a pagination cursor codec for getMessages, and the structural `AcpSessionsApi` interface consumed by the React hooks.",
+			"tags": [
+				"validation",
+				"type-definition",
+				"api-contract",
+				"serialization"
+			],
+			"complexity": "moderate",
+			"languageNotes": "Uses `z.custom` to lightly re-validate ACP payload shapes without duplicating the sdk's own schema-checked types, since the sdk's zod schemas aren't part of its public export map."
+		},
+		{
+			"id": "file:packages/session-protocol/src/client/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "packages/session-protocol/src/client/index.ts",
+			"summary": "Barrel that re-exports the `subscribeToSession` WebSocket client from its own subdirectory module.",
+			"tags": ["barrel", "entry-point"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:packages/session-protocol/src/client/subscribeToSession/subscribeToSession.ts",
+			"type": "file",
+			"name": "subscribeToSession.ts",
+			"filePath": "packages/session-protocol/src/client/subscribeToSession/subscribeToSession.ts",
+			"summary": "WebSocket client that subscribes to a session's live update stream, replaying from a seq cursor, detecting gaps/corrupt frames, and auto-reconnecting with exponential backoff until told to reset or stop.",
+			"tags": ["websocket-client", "reconnection", "event-handler", "service"],
+			"complexity": "complex",
+			"languageNotes": "Models the WebSocket dependency behind a small structural `WebSocketLike` interface so browser, React Native, bun, and test-fake sockets all satisfy it without an adapter layer."
+		},
+		{
+			"id": "file:packages/session-protocol/src/envelope.ts",
+			"type": "file",
+			"name": "envelope.ts",
+			"filePath": "packages/session-protocol/src/envelope.ts",
+			"summary": "Declares the `SessionUpdateEnvelope` wire type and its discriminated `SessionUpdateFrame` union (update, permission, prompt-rejected, state, reset) that every journaled or streamed session event is wrapped in.",
+			"tags": ["type-definition", "protocol", "data-model"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:packages/session-protocol/src/fold/fold.ts",
+			"type": "file",
+			"name": "fold.ts",
+			"filePath": "packages/session-protocol/src/fold/fold.ts",
+			"summary": "Pure reducer that folds a sequence of `SessionUpdateEnvelope`s into a renderable `FoldedTimeline` — merging tool-call updates, nesting subagent calls, tracking plans, and resolving permission outcomes.",
+			"tags": ["state-management", "reducer", "timeline-fold", "data-model"],
+			"complexity": "complex",
+			"languageNotes": "Modeled on use-acp's groupNotifications/mergeToolCalls pattern, adapted to interleave this project's own permission and state frames with verbatim ACP session/update notifications."
+		},
+		{
+			"id": "file:packages/session-protocol/src/fold/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "packages/session-protocol/src/fold/index.ts",
+			"summary": "Barrel that re-exports the timeline-folding logic from `fold.ts`.",
+			"tags": ["barrel", "entry-point"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:packages/session-protocol/src/react/useAcpPermissions/useAcpPermissions.ts",
+			"type": "file",
+			"name": "useAcpPermissions.ts",
+			"filePath": "packages/session-protocol/src/react/useAcpPermissions/useAcpPermissions.ts",
+			"summary": "React hook that projects a `useAcpSession` result into pending permission requests plus `allowOnce`/`rejectOnce`/`respond` helpers for building permission UI.",
+			"tags": ["hook", "react", "permission-handling", "selector"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "file:packages/session-protocol/src/react/useAcpSession/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "packages/session-protocol/src/react/useAcpSession/index.ts",
+			"summary": "Barrel that re-exports the `useAcpSession` hook from its sibling module.",
+			"tags": ["barrel", "entry-point"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:packages/session-protocol/src/react/useAcpSession/useAcpSession.ts",
+			"type": "file",
+			"name": "useAcpSession.ts",
+			"filePath": "packages/session-protocol/src/react/useAcpSession/useAcpSession.ts",
+			"summary": "Core React hook that attaches to a host-service ACP session: seeds state via get/getMessages, folds the live WebSocket stream on top, exposes prompt/cancel/permission/mode actions, and auto-resyncs on reset or session-id change.",
+			"tags": [
+				"hook",
+				"react",
+				"state-management",
+				"websocket",
+				"orchestration"
+			],
+			"complexity": "complex",
+			"languageNotes": "Uses an epoch counter (`epochRef`) to invalidate in-flight async resync/loadOlder callbacks after a newer resync starts, guarding against race conditions from rapid session-id swaps or resets."
+		},
+		{
+			"id": "file:packages/session-protocol/src/state.ts",
+			"type": "file",
+			"name": "state.ts",
+			"filePath": "packages/session-protocol/src/state.ts",
+			"summary": "Defines session-scoped state types (`SessionScopedState`, `SessionStatus`, `PendingPermission`) and helpers for encoding/decoding multi-select permission outcomes over ACP's single-option `_meta` extension point.",
+			"tags": ["type-definition", "data-model", "state"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:packages/session-protocol/src/api.ts:encodeMessagesCursor",
+			"type": "function",
+			"name": "encodeMessagesCursor",
+			"filePath": "packages/session-protocol/src/api.ts",
+			"lineRange": [13, 18],
+			"summary": "Encodes a `beforeSeq` integer into the `s<seq>` pagination cursor string used by `getMessages`, throwing on non-positive or non-integer input.",
+			"tags": ["serialization", "utility", "validation"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:packages/session-protocol/src/api.ts:decodeMessagesCursor",
+			"type": "function",
+			"name": "decodeMessagesCursor",
+			"filePath": "packages/session-protocol/src/api.ts",
+			"lineRange": [20, 25],
+			"summary": "Parses a `getMessages` pagination cursor back into a seq number, returning null for any string that doesn't match the expected `s<seq>` pattern or safe-integer range.",
+			"tags": ["serialization", "utility", "validation"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:packages/session-protocol/src/client/subscribeToSession/subscribeToSession.ts:subscribeToSession",
+			"type": "function",
+			"name": "subscribeToSession",
+			"filePath": "packages/session-protocol/src/client/subscribeToSession/subscribeToSession.ts",
+			"lineRange": [71, 242],
+			"summary": "Opens and manages a session's WebSocket subscription: connects with cursor replay, dedups/detects seq gaps, reconnects with exponential backoff, and surfaces status/reset/gap callbacks to the caller.",
+			"tags": ["websocket-client", "reconnection", "event-handler"],
+			"complexity": "complex"
+		},
+		{
+			"id": "function:packages/session-protocol/src/fold/fold.ts:emptyTimeline",
+			"type": "function",
+			"name": "emptyTimeline",
+			"filePath": "packages/session-protocol/src/fold/fold.ts",
+			"lineRange": [96, 110],
+			"summary": "Constructs an empty `FoldedTimeline` with default meta fields and no folded items — the seed value for `foldEnvelopes`.",
+			"tags": ["factory", "data-model"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:packages/session-protocol/src/fold/fold.ts:foldEnvelopes",
+			"type": "function",
+			"name": "foldEnvelopes",
+			"filePath": "packages/session-protocol/src/fold/fold.ts",
+			"lineRange": [119, 128],
+			"summary": "Folds an array of envelopes into a timeline by repeatedly applying `foldEnvelope`, used to seed or refold the full history from a fetched page.",
+			"tags": ["reducer", "utility"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:packages/session-protocol/src/fold/fold.ts:foldEnvelope",
+			"type": "function",
+			"name": "foldEnvelope",
+			"filePath": "packages/session-protocol/src/fold/fold.ts",
+			"lineRange": [130, 207],
+			"summary": "Applies a single envelope's frame (update, permission, prompt-rejected, state, or reset) to a timeline, dispatching to the specialized per-frame-kind mutation helpers.",
+			"tags": ["reducer", "state-management"],
+			"complexity": "complex"
+		},
+		{
+			"id": "function:packages/session-protocol/src/fold/fold.ts:foldUpdate",
+			"type": "function",
+			"name": "foldUpdate",
+			"filePath": "packages/session-protocol/src/fold/fold.ts",
+			"lineRange": [209, 310],
+			"summary": "Handles the `update` frame variant, routing each ACP `SessionUpdate` subtype (message chunks, tool calls, plans, mode/config changes) into the appropriate timeline mutation.",
+			"tags": ["reducer", "state-management"],
+			"complexity": "complex"
+		},
+		{
+			"id": "function:packages/session-protocol/src/fold/fold.ts:appendChunk",
+			"type": "function",
+			"name": "appendChunk",
+			"filePath": "packages/session-protocol/src/fold/fold.ts",
+			"lineRange": [312, 360],
+			"summary": "Appends or merges a streamed content chunk into the timeline's trailing message item for the given role, creating a new message item when the role changes.",
+			"tags": ["reducer", "data-model"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:packages/session-protocol/src/fold/fold.ts:markPromptFailed",
+			"type": "function",
+			"name": "markPromptFailed",
+			"filePath": "packages/session-protocol/src/fold/fold.ts",
+			"lineRange": [367, 387],
+			"summary": "Marks the message item that started at `promptStartSeq` as failed when the corresponding prompt request was rejected after being journaled.",
+			"tags": ["reducer", "error-handling"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:packages/session-protocol/src/fold/fold.ts:mergeToolCall",
+			"type": "function",
+			"name": "mergeToolCall",
+			"filePath": "packages/session-protocol/src/fold/fold.ts",
+			"lineRange": [406, 419],
+			"summary": "Shallow-merges a partial tool-call patch onto an existing `ToolCall`, used whenever a follow-up update frame refines an in-flight tool call.",
+			"tags": ["utility", "data-model"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:packages/session-protocol/src/fold/fold.ts:upsertToolCall",
+			"type": "function",
+			"name": "upsertToolCall",
+			"filePath": "packages/session-protocol/src/fold/fold.ts",
+			"lineRange": [442, 490],
+			"summary": "Inserts a new tool-call item or patches an existing one in the timeline tree (including nested subagent children), creating the call via the supplied factory on first sight.",
+			"tags": ["reducer", "data-model"],
+			"complexity": "complex"
+		},
+		{
+			"id": "function:packages/session-protocol/src/fold/fold.ts:patchToolCall",
+			"type": "function",
+			"name": "patchToolCall",
+			"filePath": "packages/session-protocol/src/fold/fold.ts",
+			"lineRange": [497, 518],
+			"summary": "Recursively locates a tool call by id anywhere in the timeline's item tree and applies a patch function to it in place.",
+			"tags": ["utility", "reducer"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:packages/session-protocol/src/fold/fold.ts:insertToolCall",
+			"type": "function",
+			"name": "insertToolCall",
+			"filePath": "packages/session-protocol/src/fold/fold.ts",
+			"lineRange": [521, 538],
+			"summary": "Inserts a new tool-call item either at the timeline root or nested under its parent tool call's `children`, based on `_meta.claudeCode.parentToolUseId` tagging.",
+			"tags": ["utility", "data-model"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:packages/session-protocol/src/fold/fold.ts:hasToolCall",
+			"type": "function",
+			"name": "hasToolCall",
+			"filePath": "packages/session-protocol/src/fold/fold.ts",
+			"lineRange": [540, 550],
+			"summary": "Recursively checks whether a tool call with the given id already exists anywhere in the timeline's item tree.",
+			"tags": ["utility"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:packages/session-protocol/src/fold/fold.ts:resolvePermission",
+			"type": "function",
+			"name": "resolvePermission",
+			"filePath": "packages/session-protocol/src/fold/fold.ts",
+			"lineRange": [552, 578],
+			"summary": "Finds the `PermissionView` matching a requestId in the timeline tree and sets its resolution to the given outcome.",
+			"tags": ["reducer", "permission-handling"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:packages/session-protocol/src/fold/fold.ts:extractPlanEntries",
+			"type": "function",
+			"name": "extractPlanEntries",
+			"filePath": "packages/session-protocol/src/fold/fold.ts",
+			"lineRange": [588, 598],
+			"summary": "Normalizes a plan update's raw entries array into a validated `PlanEntry[]`, defaulting to empty when the input isn't an array.",
+			"tags": ["utility", "validation"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:packages/session-protocol/src/react/useAcpPermissions/useAcpPermissions.ts:useAcpPermissions",
+			"type": "function",
+			"name": "useAcpPermissions",
+			"filePath": "packages/session-protocol/src/react/useAcpPermissions/useAcpPermissions.ts",
+			"lineRange": [25, 57],
+			"summary": "Derives the pending permission list and memoized `respond`/`allowOnce`/`rejectOnce` helpers from a `useAcpSession` result, for building permission-prompt UI.",
+			"tags": ["hook", "react", "permission-handling"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:packages/session-protocol/src/react/useAcpSession/useAcpSession.ts:useAcpSession",
+			"type": "function",
+			"name": "useAcpSession",
+			"filePath": "packages/session-protocol/src/react/useAcpSession/useAcpSession.ts",
+			"lineRange": [76, 273],
+			"summary": "Attaches to a host-service ACP session end-to-end: fetches initial state and messages, subscribes to the live stream, exposes prompt/cancel/mode/permission actions and a `loadOlder` pager, and resyncs on session-id change or server reset.",
+			"tags": ["hook", "react", "orchestration", "websocket"],
+			"complexity": "complex"
+		},
+		{
+			"id": "function:packages/session-protocol/src/state.ts:makeSelectedOutcome",
+			"type": "function",
+			"name": "makeSelectedOutcome",
+			"filePath": "packages/session-protocol/src/state.ts",
+			"lineRange": [50, 63],
+			"summary": "Builds a `selected` `RequestPermissionOutcome` from one or more option ids, stashing extra picks in the ACP `_meta` extension point for multi-select permission questions.",
+			"tags": ["factory", "serialization"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:packages/session-protocol/src/state.ts:selectedOptionIds",
+			"type": "function",
+			"name": "selectedOptionIds",
+			"filePath": "packages/session-protocol/src/state.ts",
+			"lineRange": [66, 74],
+			"summary": "Extracts every option id carried by a `selected` permission outcome, reading the multi-select `_meta` payload when present and falling back to the single `optionId`.",
+			"tags": ["utility", "serialization"],
+			"complexity": "simple"
+		}
+	],
+	"edges": [
+		{
+			"source": "file:packages/session-protocol/src/api.ts",
+			"target": "file:packages/session-protocol/src/acp.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:packages/session-protocol/src/api.ts",
+			"target": "file:packages/session-protocol/src/envelope.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:packages/session-protocol/src/api.ts",
+			"target": "file:packages/session-protocol/src/state.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:packages/session-protocol/src/client/subscribeToSession/subscribeToSession.ts",
+			"target": "file:packages/session-protocol/src/envelope.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:packages/session-protocol/src/envelope.ts",
+			"target": "file:packages/session-protocol/src/acp.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:packages/session-protocol/src/envelope.ts",
+			"target": "file:packages/session-protocol/src/state.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:packages/session-protocol/src/fold/fold.ts",
+			"target": "file:packages/session-protocol/src/acp.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:packages/session-protocol/src/fold/fold.ts",
+			"target": "file:packages/session-protocol/src/envelope.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:packages/session-protocol/src/fold/fold.ts",
+			"target": "file:packages/session-protocol/src/state.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:packages/session-protocol/src/react/useAcpPermissions/useAcpPermissions.ts",
+			"target": "file:packages/session-protocol/src/acp.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:packages/session-protocol/src/react/useAcpPermissions/useAcpPermissions.ts",
+			"target": "file:packages/session-protocol/src/api.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:packages/session-protocol/src/react/useAcpPermissions/useAcpPermissions.ts",
+			"target": "file:packages/session-protocol/src/react/useAcpSession/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:packages/session-protocol/src/react/useAcpPermissions/useAcpPermissions.ts",
+			"target": "file:packages/session-protocol/src/state.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:packages/session-protocol/src/react/useAcpSession/useAcpSession.ts",
+			"target": "file:packages/session-protocol/src/acp.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:packages/session-protocol/src/react/useAcpSession/useAcpSession.ts",
+			"target": "file:packages/session-protocol/src/api.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:packages/session-protocol/src/react/useAcpSession/useAcpSession.ts",
+			"target": "file:packages/session-protocol/src/client/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:packages/session-protocol/src/react/useAcpSession/useAcpSession.ts",
+			"target": "file:packages/session-protocol/src/envelope.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:packages/session-protocol/src/react/useAcpSession/useAcpSession.ts",
+			"target": "file:packages/session-protocol/src/fold/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:packages/session-protocol/src/react/useAcpSession/useAcpSession.ts",
+			"target": "file:packages/session-protocol/src/state.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:packages/session-protocol/src/state.ts",
+			"target": "file:packages/session-protocol/src/acp.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+
+		{
+			"source": "file:packages/session-protocol/src/api.ts",
+			"target": "function:packages/session-protocol/src/api.ts:encodeMessagesCursor",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/session-protocol/src/api.ts",
+			"target": "function:packages/session-protocol/src/api.ts:decodeMessagesCursor",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/session-protocol/src/client/subscribeToSession/subscribeToSession.ts",
+			"target": "function:packages/session-protocol/src/client/subscribeToSession/subscribeToSession.ts:subscribeToSession",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/session-protocol/src/fold/fold.ts",
+			"target": "function:packages/session-protocol/src/fold/fold.ts:emptyTimeline",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/session-protocol/src/fold/fold.ts",
+			"target": "function:packages/session-protocol/src/fold/fold.ts:foldEnvelopes",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/session-protocol/src/fold/fold.ts",
+			"target": "function:packages/session-protocol/src/fold/fold.ts:foldEnvelope",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/session-protocol/src/fold/fold.ts",
+			"target": "function:packages/session-protocol/src/fold/fold.ts:foldUpdate",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/session-protocol/src/fold/fold.ts",
+			"target": "function:packages/session-protocol/src/fold/fold.ts:appendChunk",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/session-protocol/src/fold/fold.ts",
+			"target": "function:packages/session-protocol/src/fold/fold.ts:markPromptFailed",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/session-protocol/src/fold/fold.ts",
+			"target": "function:packages/session-protocol/src/fold/fold.ts:mergeToolCall",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/session-protocol/src/fold/fold.ts",
+			"target": "function:packages/session-protocol/src/fold/fold.ts:upsertToolCall",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/session-protocol/src/fold/fold.ts",
+			"target": "function:packages/session-protocol/src/fold/fold.ts:patchToolCall",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/session-protocol/src/fold/fold.ts",
+			"target": "function:packages/session-protocol/src/fold/fold.ts:insertToolCall",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/session-protocol/src/fold/fold.ts",
+			"target": "function:packages/session-protocol/src/fold/fold.ts:hasToolCall",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/session-protocol/src/fold/fold.ts",
+			"target": "function:packages/session-protocol/src/fold/fold.ts:resolvePermission",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/session-protocol/src/fold/fold.ts",
+			"target": "function:packages/session-protocol/src/fold/fold.ts:extractPlanEntries",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/session-protocol/src/react/useAcpPermissions/useAcpPermissions.ts",
+			"target": "function:packages/session-protocol/src/react/useAcpPermissions/useAcpPermissions.ts:useAcpPermissions",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/session-protocol/src/react/useAcpSession/useAcpSession.ts",
+			"target": "function:packages/session-protocol/src/react/useAcpSession/useAcpSession.ts:useAcpSession",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/session-protocol/src/state.ts",
+			"target": "function:packages/session-protocol/src/state.ts:makeSelectedOutcome",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/session-protocol/src/state.ts",
+			"target": "function:packages/session-protocol/src/state.ts:selectedOptionIds",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+
+		{
+			"source": "file:packages/session-protocol/src/api.ts",
+			"target": "function:packages/session-protocol/src/api.ts:encodeMessagesCursor",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:packages/session-protocol/src/api.ts",
+			"target": "function:packages/session-protocol/src/api.ts:decodeMessagesCursor",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:packages/session-protocol/src/client/subscribeToSession/subscribeToSession.ts",
+			"target": "function:packages/session-protocol/src/client/subscribeToSession/subscribeToSession.ts:subscribeToSession",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:packages/session-protocol/src/fold/fold.ts",
+			"target": "function:packages/session-protocol/src/fold/fold.ts:emptyTimeline",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:packages/session-protocol/src/fold/fold.ts",
+			"target": "function:packages/session-protocol/src/fold/fold.ts:foldEnvelopes",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:packages/session-protocol/src/fold/fold.ts",
+			"target": "function:packages/session-protocol/src/fold/fold.ts:foldEnvelope",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:packages/session-protocol/src/react/useAcpPermissions/useAcpPermissions.ts",
+			"target": "function:packages/session-protocol/src/react/useAcpPermissions/useAcpPermissions.ts:useAcpPermissions",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:packages/session-protocol/src/react/useAcpSession/useAcpSession.ts",
+			"target": "function:packages/session-protocol/src/react/useAcpSession/useAcpSession.ts:useAcpSession",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:packages/session-protocol/src/state.ts",
+			"target": "function:packages/session-protocol/src/state.ts:makeSelectedOutcome",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:packages/session-protocol/src/state.ts",
+			"target": "function:packages/session-protocol/src/state.ts:selectedOptionIds",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+
+		{
+			"source": "function:packages/session-protocol/src/react/useAcpSession/useAcpSession.ts:useAcpSession",
+			"target": "function:packages/session-protocol/src/client/subscribeToSession/subscribeToSession.ts:subscribeToSession",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "function:packages/session-protocol/src/react/useAcpSession/useAcpSession.ts:useAcpSession",
+			"target": "function:packages/session-protocol/src/fold/fold.ts:foldEnvelopes",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "function:packages/session-protocol/src/react/useAcpSession/useAcpSession.ts:useAcpSession",
+			"target": "function:packages/session-protocol/src/fold/fold.ts:foldEnvelope",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "function:packages/session-protocol/src/react/useAcpSession/useAcpSession.ts:useAcpSession",
+			"target": "function:packages/session-protocol/src/fold/fold.ts:emptyTimeline",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		}
+	]
+}

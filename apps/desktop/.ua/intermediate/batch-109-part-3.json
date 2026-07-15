@@ -1,0 +1,359 @@
+{
+	"nodes": [
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/utils/sendMessage/sendMessage.ts:toNumericStatus",
+			"type": "function",
+			"name": "toNumericStatus",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/utils/sendMessage/sendMessage.ts",
+			"lineRange": [26, 31],
+			"summary": "Helper function converting string or number values to numeric HTTP status codes with validation.",
+			"tags": [
+				"utility-function",
+				"type-conversion",
+				"status-code",
+				"validation",
+				"typescript"
+			],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/utils/sendMessage/sendMessage.ts:getErrorStatusCode",
+			"type": "function",
+			"name": "getErrorStatusCode",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/utils/sendMessage/sendMessage.ts",
+			"lineRange": [33, 60],
+			"summary": "Function extracting HTTP status code from various error object structures and properties.",
+			"tags": [
+				"error-handling",
+				"status-code",
+				"object-traversal",
+				"type-checking",
+				"typescript"
+			],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/utils/sendMessage/sendMessage.ts:toSendFailureMessage",
+			"type": "function",
+			"name": "toSendFailureMessage",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/utils/sendMessage/sendMessage.ts",
+			"lineRange": [62, 67],
+			"summary": "Exported function converting error objects to structured failure messages with status codes.",
+			"tags": [
+				"error-handling",
+				"message-formatting",
+				"public-api",
+				"status-code",
+				"typescript"
+			],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/utils/toRuntimeImages/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/utils/toRuntimeImages/index.ts",
+			"summary": "Barrel export file re-exporting toRuntimeImages utility function for image conversion.",
+			"tags": [
+				"barrel-export",
+				"utility-function",
+				"image-processing",
+				"chat-interface",
+				"typescript"
+			],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/utils/toRuntimeImages/toRuntimeImages.ts",
+			"type": "file",
+			"name": "toRuntimeImages.ts",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/utils/toRuntimeImages/toRuntimeImages.ts",
+			"summary": "Utility function converting file objects with data URLs to runtime image format for chat messages.",
+			"tags": [
+				"utility-function",
+				"image-processing",
+				"data-url",
+				"base64",
+				"typescript"
+			],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/utils/toRuntimeImages/toRuntimeImages.ts:toRuntimeImages",
+			"type": "function",
+			"name": "toRuntimeImages",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/utils/toRuntimeImages/toRuntimeImages.ts",
+			"lineRange": [1, 22],
+			"summary": "Function parsing data URL files and extracting base64 image data with media type for runtime usage.",
+			"tags": [
+				"image-processing",
+				"data-url-parser",
+				"base64-extraction",
+				"media-type",
+				"typescript"
+			],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/CommentPane/comment-pane.css",
+			"type": "file",
+			"name": "comment-pane.css",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/CommentPane/comment-pane.css",
+			"summary": "CSS stylesheet defining styles for the CommentPane component including layout, colors, and interactions.",
+			"tags": ["stylesheet", "css", "comment-pane", "ui-styling", "layout"],
+			"complexity": "complex"
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/components/CommentThread/comment-thread.css",
+			"type": "file",
+			"name": "comment-thread.css",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/components/CommentThread/comment-thread.css",
+			"summary": "CSS stylesheet defining styles for the CommentThread component within diff view including threading and replies.",
+			"tags": [
+				"stylesheet",
+				"css",
+				"comment-thread",
+				"diff-view",
+				"ui-styling"
+			],
+			"complexity": "complex"
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffPaneSearch/utils/collectDiffSearchMatches/collectDiffSearchMatches.test.ts",
+			"type": "file",
+			"name": "collectDiffSearchMatches.test.ts",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffPaneSearch/utils/collectDiffSearchMatches/collectDiffSearchMatches.test.ts",
+			"summary": "Test file for collectDiffSearchMatches utility validating search functionality across diff entries.",
+			"tags": [
+				"test-file",
+				"unit-test",
+				"search-algorithm",
+				"diff-search",
+				"typescript"
+			],
+			"complexity": "complex"
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffPaneSearch/utils/collectDiffSearchMatches/collectDiffSearchMatches.test.ts:makeEntry",
+			"type": "function",
+			"name": "makeEntry",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffPaneSearch/utils/collectDiffSearchMatches/collectDiffSearchMatches.test.ts",
+			"lineRange": [8, 21],
+			"summary": "Test helper function creating mock diff entry objects for search testing.",
+			"tags": [
+				"test-helper",
+				"mock-data",
+				"diff-entry",
+				"utility",
+				"typescript"
+			],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffPaneSearch/utils/collectDiffSearchMatches/collectDiffSearchMatches.ts",
+			"type": "file",
+			"name": "collectDiffSearchMatches.ts",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffPaneSearch/utils/collectDiffSearchMatches/collectDiffSearchMatches.ts",
+			"summary": "Core search algorithm collecting all text matches across diff entries with line number tracking.",
+			"tags": [
+				"search-algorithm",
+				"diff-search",
+				"text-matching",
+				"line-tracking",
+				"typescript"
+			],
+			"complexity": "complex"
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffPaneSearch/utils/collectDiffSearchMatches/collectDiffSearchMatches.ts:collectDiffSearchMatches",
+			"type": "function",
+			"name": "collectDiffSearchMatches",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffPaneSearch/utils/collectDiffSearchMatches/collectDiffSearchMatches.ts",
+			"lineRange": [33, 134],
+			"summary": "Function searching through diff entries for query matches with case sensitivity support, tracking line positions across original and modified content.",
+			"tags": [
+				"search-algorithm",
+				"diff-traversal",
+				"case-sensitivity",
+				"match-collection",
+				"typescript"
+			],
+			"complexity": "complex"
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/utils/gitDecorationColors/gitDecorationColors.ts",
+			"type": "file",
+			"name": "gitDecorationColors.ts",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/utils/gitDecorationColors/gitDecorationColors.ts",
+			"summary": "Constants defining CSS class mappings for git status decoration colors.",
+			"tags": [
+				"constants",
+				"git-status",
+				"css-classes",
+				"color-mapping",
+				"typescript"
+			],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/utils/gitDecorationColors/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/utils/gitDecorationColors/index.ts",
+			"summary": "Barrel export file re-exporting git decoration color constants.",
+			"tags": [
+				"barrel-export",
+				"constants",
+				"git-decorations",
+				"color-mapping",
+				"typescript"
+			],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/FilePane/components/ErrorState/ErrorState.tsx",
+			"type": "file",
+			"name": "ErrorState.tsx",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/FilePane/components/ErrorState/ErrorState.tsx",
+			"summary": "React component displaying error states in file pane with retry and open-anyway actions.",
+			"tags": [
+				"react-component",
+				"error-state",
+				"file-pane",
+				"error-handling",
+				"typescript"
+			],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/FilePane/components/ErrorState/ErrorState.tsx:ErrorState",
+			"type": "function",
+			"name": "ErrorState",
+			"filePath": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/FilePane/components/ErrorState/ErrorState.tsx",
+			"lineRange": [25, 48],
+			"summary": "React component rendering error UI with message, reason, and action buttons for file loading failures.",
+			"tags": [
+				"react-component",
+				"error-ui",
+				"action-buttons",
+				"file-error",
+				"typescript"
+			],
+			"complexity": "moderate"
+		}
+	],
+	"edges": [
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/utils/sendMessage/sendMessage.ts",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/utils/sendMessage/sendMessage.ts:toNumericStatus",
+			"type": "contains",
+			"weight": 1.0,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/utils/sendMessage/sendMessage.ts",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/utils/sendMessage/sendMessage.ts:getErrorStatusCode",
+			"type": "contains",
+			"weight": 1.0,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/utils/sendMessage/sendMessage.ts",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/utils/sendMessage/sendMessage.ts:toSendFailureMessage",
+			"type": "contains",
+			"weight": 1.0,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/utils/sendMessage/sendMessage.ts",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/utils/sendMessage/sendMessage.ts:toSendFailureMessage",
+			"type": "exports",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/utils/sendMessage/sendMessage.ts:getErrorStatusCode",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/utils/sendMessage/sendMessage.ts:toNumericStatus",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/utils/sendMessage/sendMessage.ts:toSendFailureMessage",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/utils/sendMessage/sendMessage.ts:toBaseErrorMessage",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/utils/sendMessage/sendMessage.ts:toSendFailureMessage",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/utils/sendMessage/sendMessage.ts:getErrorStatusCode",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/utils/toRuntimeImages/toRuntimeImages.ts",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/utils/toRuntimeImages/toRuntimeImages.ts:toRuntimeImages",
+			"type": "contains",
+			"weight": 1.0,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/utils/toRuntimeImages/toRuntimeImages.ts",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/utils/toRuntimeImages/toRuntimeImages.ts:toRuntimeImages",
+			"type": "exports",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffPaneSearch/utils/collectDiffSearchMatches/collectDiffSearchMatches.test.ts",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/utils/sendMessage/sendMessage.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffPaneSearch/utils/collectDiffSearchMatches/collectDiffSearchMatches.test.ts",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffPaneSearch/utils/collectDiffSearchMatches/collectDiffSearchMatches.test.ts:makeEntry",
+			"type": "contains",
+			"weight": 1.0,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffPaneSearch/utils/collectDiffSearchMatches/collectDiffSearchMatches.ts",
+			"to": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffPaneSearch/utils/collectDiffSearchMatches/collectDiffSearchMatches.test.ts",
+			"type": "tested_by",
+			"weight": 0.5,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffPaneSearch/utils/collectDiffSearchMatches/collectDiffSearchMatches.ts",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffPaneSearch/utils/collectDiffSearchMatches/collectDiffSearchMatches.ts:collectDiffSearchMatches",
+			"type": "contains",
+			"weight": 1.0,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffPaneSearch/utils/collectDiffSearchMatches/collectDiffSearchMatches.ts",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffPaneSearch/utils/collectDiffSearchMatches/collectDiffSearchMatches.ts:collectDiffSearchMatches",
+			"type": "exports",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/FilePane/components/ErrorState/ErrorState.tsx",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/FilePane/components/ErrorState/ErrorState.tsx:ErrorState",
+			"type": "contains",
+			"weight": 1.0,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/FilePane/components/ErrorState/ErrorState.tsx",
+			"to": "function:src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/FilePane/components/ErrorState/ErrorState.tsx:ErrorState",
+			"type": "exports",
+			"weight": 0.8,
+			"direction": "forward"
+		}
+	]
+}

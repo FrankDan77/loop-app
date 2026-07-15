@@ -1,0 +1,415 @@
+{
+	"nodes": [
+		{
+			"id": "file:packages/email/src/components/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "packages/email/src/components/index.ts",
+			"summary": "Barrel file re-exporting the shared React Email building blocks (layout, button, logo) used by every transactional email template.",
+			"tags": ["barrel", "entry-point", "component", "email"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:packages/email/src/emails/integration-disconnected.tsx",
+			"type": "file",
+			"name": "integration-disconnected.tsx",
+			"filePath": "packages/email/src/emails/integration-disconnected.tsx",
+			"summary": "React Email template notifying a user that one or more third-party integrations have been disconnected, listing the affected connections.",
+			"tags": ["email", "component", "notification", "integration"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:packages/email/src/emails/integration-disconnected.tsx:IntegrationDisconnectedEmail",
+			"type": "function",
+			"name": "IntegrationDisconnectedEmail",
+			"filePath": "packages/email/src/emails/integration-disconnected.tsx",
+			"lineRange": [25, 86],
+			"summary": "Renders the integration-disconnected email body, mapping over the disconnected connections list to render each one.",
+			"tags": ["component", "email", "notification"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "file:packages/email/src/emails/member-added-billing.tsx",
+			"type": "file",
+			"name": "member-added-billing.tsx",
+			"filePath": "packages/email/src/emails/member-added-billing.tsx",
+			"summary": "React Email template sent to an organization owner when a new member is added, summarizing the resulting seat count and billing impact.",
+			"tags": ["email", "component", "billing", "notification"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:packages/email/src/emails/member-added-billing.tsx:MemberAddedBillingEmail",
+			"type": "function",
+			"name": "MemberAddedBillingEmail",
+			"filePath": "packages/email/src/emails/member-added-billing.tsx",
+			"lineRange": [14, 70],
+			"summary": "Renders the member-added billing notification, showing the new member, who added them, and the updated seat count and monthly total.",
+			"tags": ["component", "email", "billing"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "file:packages/email/src/emails/member-added.tsx",
+			"type": "file",
+			"name": "member-added.tsx",
+			"filePath": "packages/email/src/emails/member-added.tsx",
+			"summary": "React Email template welcoming a new member added to an organization, including their assigned role and a dashboard link.",
+			"tags": ["email", "component", "notification", "onboarding"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:packages/email/src/emails/member-added.tsx:MemberAddedEmail",
+			"type": "function",
+			"name": "MemberAddedEmail",
+			"filePath": "packages/email/src/emails/member-added.tsx",
+			"lineRange": [12, 52],
+			"summary": "Renders the new-member welcome email with the member's role and a link to the dashboard.",
+			"tags": ["component", "email", "onboarding"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:packages/email/src/emails/member-removed-billing.tsx",
+			"type": "file",
+			"name": "member-removed-billing.tsx",
+			"filePath": "packages/email/src/emails/member-removed-billing.tsx",
+			"summary": "React Email template sent to an organization owner when a member is removed, summarizing the reduced seat count and billing impact.",
+			"tags": ["email", "component", "billing", "notification"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:packages/email/src/emails/member-removed-billing.tsx:MemberRemovedBillingEmail",
+			"type": "function",
+			"name": "MemberRemovedBillingEmail",
+			"filePath": "packages/email/src/emails/member-removed-billing.tsx",
+			"lineRange": [14, 71],
+			"summary": "Renders the member-removed billing notification, showing the removed member, who removed them, and the updated seat count and monthly total.",
+			"tags": ["component", "email", "billing"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "file:packages/email/src/emails/member-removed.tsx",
+			"type": "file",
+			"name": "member-removed.tsx",
+			"filePath": "packages/email/src/emails/member-removed.tsx",
+			"summary": "React Email template notifying a member's organization contacts that they have been removed from the organization.",
+			"tags": ["email", "component", "notification"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:packages/email/src/emails/member-removed.tsx:MemberRemovedEmail",
+			"type": "function",
+			"name": "MemberRemovedEmail",
+			"filePath": "packages/email/src/emails/member-removed.tsx",
+			"lineRange": [10, 41],
+			"summary": "Renders the member-removed notification email, naming who removed the member.",
+			"tags": ["component", "email", "notification"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:packages/email/src/emails/organization-invitation.tsx",
+			"type": "file",
+			"name": "organization-invitation.tsx",
+			"filePath": "packages/email/src/emails/organization-invitation.tsx",
+			"summary": "React Email template inviting a user to join an organization, including inviter details, assigned role, and an expiring invite link.",
+			"tags": ["email", "component", "invitation", "onboarding"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:packages/email/src/emails/organization-invitation.tsx:OrganizationInvitationEmail",
+			"type": "function",
+			"name": "OrganizationInvitationEmail",
+			"filePath": "packages/email/src/emails/organization-invitation.tsx",
+			"lineRange": [15, 76],
+			"summary": "Renders the organization invitation email and computes days remaining until the invite link expires.",
+			"tags": ["component", "email", "invitation"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "file:packages/email/src/emails/payment-failed.tsx",
+			"type": "file",
+			"name": "payment-failed.tsx",
+			"filePath": "packages/email/src/emails/payment-failed.tsx",
+			"summary": "React Email template alerting an organization owner that a subscription payment failed, with plan/amount details and a billing portal link.",
+			"tags": ["email", "component", "billing", "notification"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:packages/email/src/emails/payment-failed.tsx:PaymentFailedEmail",
+			"type": "function",
+			"name": "PaymentFailedEmail",
+			"filePath": "packages/email/src/emails/payment-failed.tsx",
+			"lineRange": [13, 86],
+			"summary": "Renders the payment-failed notification with plan name, amount due, next retry date, and a link to the billing portal.",
+			"tags": ["component", "email", "billing"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "file:packages/email/src/emails/subscription-cancelled.tsx",
+			"type": "file",
+			"name": "subscription-cancelled.tsx",
+			"filePath": "packages/email/src/emails/subscription-cancelled.tsx",
+			"summary": "React Email template confirming subscription cancellation, showing the plan, when access ends, and a billing portal link.",
+			"tags": ["email", "component", "billing", "notification"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:packages/email/src/emails/subscription-cancelled.tsx:SubscriptionCancelledEmail",
+			"type": "function",
+			"name": "SubscriptionCancelledEmail",
+			"filePath": "packages/email/src/emails/subscription-cancelled.tsx",
+			"lineRange": [13, 73],
+			"summary": "Renders the subscription-cancelled email, formatting the access-end date and linking to the billing portal.",
+			"tags": ["component", "email", "billing"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "file:packages/email/src/emails/subscription-started.tsx",
+			"type": "file",
+			"name": "subscription-started.tsx",
+			"filePath": "packages/email/src/emails/subscription-started.tsx",
+			"summary": "React Email template confirming a new subscription has started, summarizing plan, billing interval, amount, and seat count.",
+			"tags": ["email", "component", "billing", "notification"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:packages/email/src/emails/subscription-started.tsx:SubscriptionStartedEmail",
+			"type": "function",
+			"name": "SubscriptionStartedEmail",
+			"filePath": "packages/email/src/emails/subscription-started.tsx",
+			"lineRange": [13, 72],
+			"summary": "Renders the subscription-started confirmation email with plan, billing interval, amount, and seat count details.",
+			"tags": ["component", "email", "billing"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "file:packages/email/src/emails/welcome.tsx",
+			"type": "file",
+			"name": "welcome.tsx",
+			"filePath": "packages/email/src/emails/welcome.tsx",
+			"summary": "React Email onboarding template welcoming a new user to Superset with next-step suggestions and links to docs and support.",
+			"tags": ["email", "component", "onboarding", "notification"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:packages/email/src/emails/welcome.tsx:WelcomeEmail",
+			"type": "function",
+			"name": "WelcomeEmail",
+			"filePath": "packages/email/src/emails/welcome.tsx",
+			"lineRange": [8, 43],
+			"summary": "Renders the welcome email body with onboarding checklist items and a call-to-action button linking to the onboarding flow.",
+			"tags": ["component", "email", "onboarding"],
+			"complexity": "simple"
+		}
+	],
+	"edges": [
+		{
+			"source": "file:packages/email/src/emails/integration-disconnected.tsx",
+			"target": "function:packages/email/src/emails/integration-disconnected.tsx:IntegrationDisconnectedEmail",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/email/src/emails/integration-disconnected.tsx",
+			"target": "function:packages/email/src/emails/integration-disconnected.tsx:IntegrationDisconnectedEmail",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:packages/email/src/emails/integration-disconnected.tsx",
+			"target": "file:packages/email/src/components/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:packages/email/src/emails/member-added-billing.tsx",
+			"target": "function:packages/email/src/emails/member-added-billing.tsx:MemberAddedBillingEmail",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/email/src/emails/member-added-billing.tsx",
+			"target": "function:packages/email/src/emails/member-added-billing.tsx:MemberAddedBillingEmail",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:packages/email/src/emails/member-added-billing.tsx",
+			"target": "file:packages/email/src/components/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:packages/email/src/emails/member-added.tsx",
+			"target": "function:packages/email/src/emails/member-added.tsx:MemberAddedEmail",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/email/src/emails/member-added.tsx",
+			"target": "function:packages/email/src/emails/member-added.tsx:MemberAddedEmail",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:packages/email/src/emails/member-added.tsx",
+			"target": "file:packages/email/src/components/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:packages/email/src/emails/member-removed-billing.tsx",
+			"target": "function:packages/email/src/emails/member-removed-billing.tsx:MemberRemovedBillingEmail",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/email/src/emails/member-removed-billing.tsx",
+			"target": "function:packages/email/src/emails/member-removed-billing.tsx:MemberRemovedBillingEmail",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:packages/email/src/emails/member-removed-billing.tsx",
+			"target": "file:packages/email/src/components/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:packages/email/src/emails/member-removed.tsx",
+			"target": "function:packages/email/src/emails/member-removed.tsx:MemberRemovedEmail",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/email/src/emails/member-removed.tsx",
+			"target": "function:packages/email/src/emails/member-removed.tsx:MemberRemovedEmail",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:packages/email/src/emails/member-removed.tsx",
+			"target": "file:packages/email/src/components/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:packages/email/src/emails/organization-invitation.tsx",
+			"target": "function:packages/email/src/emails/organization-invitation.tsx:OrganizationInvitationEmail",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/email/src/emails/organization-invitation.tsx",
+			"target": "function:packages/email/src/emails/organization-invitation.tsx:OrganizationInvitationEmail",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:packages/email/src/emails/organization-invitation.tsx",
+			"target": "file:packages/email/src/components/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:packages/email/src/emails/payment-failed.tsx",
+			"target": "function:packages/email/src/emails/payment-failed.tsx:PaymentFailedEmail",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/email/src/emails/payment-failed.tsx",
+			"target": "function:packages/email/src/emails/payment-failed.tsx:PaymentFailedEmail",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:packages/email/src/emails/payment-failed.tsx",
+			"target": "file:packages/email/src/components/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:packages/email/src/emails/subscription-cancelled.tsx",
+			"target": "function:packages/email/src/emails/subscription-cancelled.tsx:SubscriptionCancelledEmail",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/email/src/emails/subscription-cancelled.tsx",
+			"target": "function:packages/email/src/emails/subscription-cancelled.tsx:SubscriptionCancelledEmail",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:packages/email/src/emails/subscription-cancelled.tsx",
+			"target": "file:packages/email/src/components/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:packages/email/src/emails/subscription-started.tsx",
+			"target": "function:packages/email/src/emails/subscription-started.tsx:SubscriptionStartedEmail",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/email/src/emails/subscription-started.tsx",
+			"target": "function:packages/email/src/emails/subscription-started.tsx:SubscriptionStartedEmail",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:packages/email/src/emails/subscription-started.tsx",
+			"target": "file:packages/email/src/components/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:packages/email/src/emails/welcome.tsx",
+			"target": "function:packages/email/src/emails/welcome.tsx:WelcomeEmail",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/email/src/emails/welcome.tsx",
+			"target": "function:packages/email/src/emails/welcome.tsx:WelcomeEmail",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:packages/email/src/emails/welcome.tsx",
+			"target": "file:packages/email/src/components/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		}
+	]
+}

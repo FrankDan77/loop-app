@@ -1,0 +1,2145 @@
+{
+	"scriptCompleted": true,
+	"filesAnalyzed": 28,
+	"filesSkipped": [],
+	"results": [
+		{
+			"path": "src/renderer/hotkeys/display.test.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 152,
+			"nonEmptyLines": 131,
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/hotkeys/display.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 129,
+			"nonEmptyLines": 117,
+			"functions": [
+				{
+					"name": "canonicalToScanCode",
+					"startLine": 61,
+					"endLine": 65,
+					"params": ["canonical"]
+				},
+				{
+					"name": "glyphForCode",
+					"startLine": 68,
+					"endLine": 81,
+					"params": ["canonical", "layoutMap"]
+				},
+				{
+					"name": "isModifier",
+					"startLine": 86,
+					"endLine": 87,
+					"params": ["p"]
+				},
+				{
+					"name": "formatHotkeyDisplay",
+					"startLine": 100,
+					"endLine": 129,
+					"params": ["keys", "platform", "layoutMap"]
+				}
+			],
+			"exports": [
+				{
+					"name": "glyphForCode",
+					"line": 68,
+					"isDefault": false
+				},
+				{
+					"name": "formatHotkeyDisplay",
+					"line": 100,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "canonicalToScanCode",
+					"callee": "/^[a-z]$/.test",
+					"lineNumber": 62
+				},
+				{
+					"caller": "canonicalToScanCode",
+					"callee": "canonical.toUpperCase",
+					"lineNumber": 62
+				},
+				{
+					"caller": "canonicalToScanCode",
+					"callee": "/^[0-9]$/.test",
+					"lineNumber": 63
+				},
+				{
+					"caller": "glyphForCode",
+					"callee": "canonicalToScanCode",
+					"lineNumber": 73
+				},
+				{
+					"caller": "glyphForCode",
+					"callee": "layoutMap.get",
+					"lineNumber": 75
+				},
+				{
+					"caller": "glyphForCode",
+					"callee": "/^[a-z]$/.test",
+					"lineNumber": 80
+				},
+				{
+					"caller": "glyphForCode",
+					"callee": "v.toUpperCase",
+					"lineNumber": 80
+				},
+				{
+					"caller": "isModifier",
+					"callee": "(MODIFIER_ORDER as readonly string[]).includes",
+					"lineNumber": 87
+				},
+				{
+					"caller": "formatHotkeyDisplay",
+					"callee": "keys\n\t\t.toLowerCase()\n\t\t.split(\"+\")\n\t\t.map(normalizeToken)\n\t\t.map",
+					"lineNumber": 107
+				},
+				{
+					"caller": "formatHotkeyDisplay",
+					"callee": "keys\n\t\t.toLowerCase()\n\t\t.split(\"+\")\n\t\t.map",
+					"lineNumber": 107
+				},
+				{
+					"caller": "formatHotkeyDisplay",
+					"callee": "keys\n\t\t.toLowerCase()\n\t\t.split",
+					"lineNumber": 107
+				},
+				{
+					"caller": "formatHotkeyDisplay",
+					"callee": "keys\n\t\t.toLowerCase",
+					"lineNumber": 107
+				},
+				{
+					"caller": "formatHotkeyDisplay",
+					"callee": "parts.filter",
+					"lineNumber": 113
+				},
+				{
+					"caller": "formatHotkeyDisplay",
+					"callee": "parts.find",
+					"lineNumber": 114
+				},
+				{
+					"caller": "formatHotkeyDisplay",
+					"callee": "isModifier",
+					"lineNumber": 114
+				},
+				{
+					"caller": "formatHotkeyDisplay",
+					"callee": "MODIFIER_ORDER.filter((m) => modifiers.includes(m)).map",
+					"lineNumber": 117
+				},
+				{
+					"caller": "formatHotkeyDisplay",
+					"callee": "MODIFIER_ORDER.filter",
+					"lineNumber": 117
+				},
+				{
+					"caller": "formatHotkeyDisplay",
+					"callee": "modifiers.includes",
+					"lineNumber": 117
+				},
+				{
+					"caller": "formatHotkeyDisplay",
+					"callee": "glyphForCode",
+					"lineNumber": 125
+				},
+				{
+					"caller": "formatHotkeyDisplay",
+					"callee": "key.toUpperCase",
+					"lineNumber": 125
+				},
+				{
+					"caller": "formatHotkeyDisplay",
+					"callee": "displayKeys.join",
+					"lineNumber": 128
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 2,
+				"functionCount": 4,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/hotkeys/hooks/useBinding/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "getBinding",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "getDispatchChord",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "useBinding",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 3,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/hotkeys/hooks/useBinding/useBinding.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 37,
+			"nonEmptyLines": 34,
+			"functions": [
+				{
+					"name": "useBinding",
+					"startLine": 13,
+					"endLine": 19,
+					"params": ["id"]
+				},
+				{
+					"name": "getBinding",
+					"startLine": 22,
+					"endLine": 27,
+					"params": ["id"]
+				},
+				{
+					"name": "getDispatchChord",
+					"startLine": 35,
+					"endLine": 37,
+					"params": ["id"]
+				}
+			],
+			"exports": [
+				{
+					"name": "useBinding",
+					"line": 13,
+					"isDefault": false
+				},
+				{
+					"name": "getBinding",
+					"line": 22,
+					"isDefault": false
+				},
+				{
+					"name": "getDispatchChord",
+					"line": 35,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "useBinding",
+					"callee": "useHotkeyOverridesStore",
+					"lineNumber": 14
+				},
+				{
+					"caller": "getBinding",
+					"callee": "useHotkeyOverridesStore.getState",
+					"lineNumber": 23
+				},
+				{
+					"caller": "getDispatchChord",
+					"callee": "bindingToDispatchChord",
+					"lineNumber": 36
+				},
+				{
+					"caller": "getDispatchChord",
+					"callee": "getBinding",
+					"lineNumber": 36
+				},
+				{
+					"caller": "getDispatchChord",
+					"callee": "getEffectiveLayoutMap",
+					"lineNumber": 36
+				}
+			],
+			"metrics": {
+				"importCount": 5,
+				"exportCount": 3,
+				"functionCount": 3,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/hotkeys/hooks/useHotkey/useHotkey.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 51,
+			"nonEmptyLines": 49,
+			"functions": [
+				{
+					"name": "shouldIgnoreEvent",
+					"startLine": 15,
+					"endLine": 19,
+					"params": ["e"]
+				},
+				{
+					"name": "useHotkey",
+					"startLine": 21,
+					"endLine": 51,
+					"params": ["id", "callback", "options"]
+				}
+			],
+			"exports": [
+				{
+					"name": "useHotkey",
+					"line": 21,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "shouldIgnoreEvent",
+					"callee": "e.getModifierState",
+					"lineNumber": 17
+				},
+				{
+					"caller": "useHotkey",
+					"callee": "useBinding",
+					"lineNumber": 26
+				},
+				{
+					"caller": "useHotkey",
+					"callee": "useEffectiveLayoutMap",
+					"lineNumber": 27
+				},
+				{
+					"caller": "useHotkey",
+					"callee": "bindingToDispatchChord",
+					"lineNumber": 28
+				},
+				{
+					"caller": "useHotkey",
+					"callee": "useRef",
+					"lineNumber": 29
+				},
+				{
+					"caller": "useHotkey",
+					"callee": "useHotkeys",
+					"lineNumber": 32
+				},
+				{
+					"caller": "useHotkey",
+					"callee": "e.preventDefault",
+					"lineNumber": 36
+				},
+				{
+					"caller": "useHotkey",
+					"callee": "callbackRef.current",
+					"lineNumber": 38
+				},
+				{
+					"caller": "useHotkey",
+					"callee": "shouldIgnoreEvent",
+					"lineNumber": 45
+				},
+				{
+					"caller": "useHotkey",
+					"callee": "callerIgnore",
+					"lineNumber": 45
+				},
+				{
+					"caller": "useHotkey",
+					"callee": "formatHotkeyDisplay",
+					"lineNumber": 50
+				}
+			],
+			"metrics": {
+				"importCount": 6,
+				"exportCount": 1,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/hotkeys/hooks/useHotkeyDisplay/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "useFormatBinding",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "useHotkeyDisplay",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 2,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/hotkeys/hooks/useHotkeyDisplay/useHotkeyDisplay.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 34,
+			"nonEmptyLines": 32,
+			"functions": [
+				{
+					"name": "useHotkeyDisplay",
+					"startLine": 9,
+					"endLine": 17,
+					"params": ["id"]
+				},
+				{
+					"name": "useFormatBinding",
+					"startLine": 25,
+					"endLine": 34,
+					"params": ["binding"]
+				}
+			],
+			"exports": [
+				{
+					"name": "useHotkeyDisplay",
+					"line": 9,
+					"isDefault": false
+				},
+				{
+					"name": "useFormatBinding",
+					"line": 25,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "useHotkeyDisplay",
+					"callee": "useBinding",
+					"lineNumber": 10
+				},
+				{
+					"caller": "useHotkeyDisplay",
+					"callee": "useEffectiveLayoutMap",
+					"lineNumber": 11
+				},
+				{
+					"caller": "useHotkeyDisplay",
+					"callee": "bindingToDispatchChord",
+					"lineNumber": 12
+				},
+				{
+					"caller": "useHotkeyDisplay",
+					"callee": "useMemo",
+					"lineNumber": 13
+				},
+				{
+					"caller": "useHotkeyDisplay",
+					"callee": "formatHotkeyDisplay",
+					"lineNumber": 14
+				},
+				{
+					"caller": "useFormatBinding",
+					"callee": "useEffectiveLayoutMap",
+					"lineNumber": 28
+				},
+				{
+					"caller": "useFormatBinding",
+					"callee": "bindingToDispatchChord",
+					"lineNumber": 29
+				},
+				{
+					"caller": "useFormatBinding",
+					"callee": "useMemo",
+					"lineNumber": 30
+				},
+				{
+					"caller": "useFormatBinding",
+					"callee": "formatHotkeyDisplay",
+					"lineNumber": 31
+				}
+			],
+			"metrics": {
+				"importCount": 6,
+				"exportCount": 2,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/hotkeys/hooks/useRecordHotkeys/useRecordHotkeys.test.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 245,
+			"nonEmptyLines": 219,
+			"functions": [
+				{
+					"name": "ev",
+					"startLine": 25,
+					"endLine": 37,
+					"params": ["init"]
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "capture",
+					"callee": "captureHotkeyFromEvent",
+					"lineNumber": 213
+				},
+				{
+					"caller": "capture",
+					"callee": "ev",
+					"lineNumber": 213
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 0,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/hotkeys/hooks/useRecordHotkeys/useRecordHotkeys.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 247,
+			"nonEmptyLines": 219,
+			"functions": [
+				{
+					"name": "captureHotkeyFromEvent",
+					"startLine": 39,
+					"endLine": 80,
+					"params": ["event"]
+				},
+				{
+					"name": "resolveCapturedBinding",
+					"startLine": 86,
+					"endLine": 95,
+					"params": ["captured", "preferredMode"]
+				},
+				{
+					"name": "isMacAltOnlyChord",
+					"startLine": 118,
+					"endLine": 121,
+					"params": ["canonical"]
+				},
+				{
+					"name": "checkReserved",
+					"startLine": 123,
+					"endLine": 137,
+					"params": ["keys"]
+				},
+				{
+					"name": "getHotkeyConflict",
+					"startLine": 139,
+					"endLine": 156,
+					"params": ["candidate", "excludeId"]
+				},
+				{
+					"name": "useRecordHotkeys",
+					"startLine": 179,
+					"endLine": 247,
+					"params": ["recordingId", "options"]
+				}
+			],
+			"exports": [
+				{
+					"name": "captureHotkeyFromEvent",
+					"line": 39,
+					"isDefault": false
+				},
+				{
+					"name": "resolveCapturedBinding",
+					"line": 86,
+					"isDefault": false
+				},
+				{
+					"name": "useRecordHotkeys",
+					"line": 179,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "captureHotkeyFromEvent",
+					"callee": "normalizeToken",
+					"lineNumber": 43
+				},
+				{
+					"caller": "captureHotkeyFromEvent",
+					"callee": "isIgnorableKey",
+					"lineNumber": 44
+				},
+				{
+					"caller": "captureHotkeyFromEvent",
+					"callee": "isFunctionKey",
+					"lineNumber": 46
+				},
+				{
+					"caller": "captureHotkeyFromEvent",
+					"callee": "NAMED_KEYS.has",
+					"lineNumber": 47
+				},
+				{
+					"caller": "captureHotkeyFromEvent",
+					"callee": "modifiers.add",
+					"lineNumber": 57
+				},
+				{
+					"caller": "captureHotkeyFromEvent",
+					"callee": "modifiers.add",
+					"lineNumber": 58
+				},
+				{
+					"caller": "captureHotkeyFromEvent",
+					"callee": "modifiers.add",
+					"lineNumber": 59
+				},
+				{
+					"caller": "captureHotkeyFromEvent",
+					"callee": "modifiers.add",
+					"lineNumber": 60
+				},
+				{
+					"caller": "captureHotkeyFromEvent",
+					"callee": "MODIFIER_ORDER.filter",
+					"lineNumber": 61
+				},
+				{
+					"caller": "captureHotkeyFromEvent",
+					"callee": "modifiers.has",
+					"lineNumber": 61
+				},
+				{
+					"caller": "captureHotkeyFromEvent",
+					"callee": "[...ordered, codeKey].join",
+					"lineNumber": 63
+				},
+				{
+					"caller": "captureHotkeyFromEvent",
+					"callee": "(event.key ?? \"\").toLowerCase",
+					"lineNumber": 71
+				},
+				{
+					"caller": "captureHotkeyFromEvent",
+					"callee": "/\\S/.test",
+					"lineNumber": 75
+				},
+				{
+					"caller": "captureHotkeyFromEvent",
+					"callee": "[...ordered, produced].join",
+					"lineNumber": 76
+				},
+				{
+					"caller": "isMacAltOnlyChord",
+					"callee": "canonical.split(\"+\").slice",
+					"lineNumber": 119
+				},
+				{
+					"caller": "isMacAltOnlyChord",
+					"callee": "canonical.split",
+					"lineNumber": 119
+				},
+				{
+					"caller": "isMacAltOnlyChord",
+					"callee": "mods.has",
+					"lineNumber": 120
+				},
+				{
+					"caller": "isMacAltOnlyChord",
+					"callee": "mods.has",
+					"lineNumber": 120
+				},
+				{
+					"caller": "isMacAltOnlyChord",
+					"callee": "mods.has",
+					"lineNumber": 120
+				},
+				{
+					"caller": "checkReserved",
+					"callee": "canonicalizeChord",
+					"lineNumber": 126
+				},
+				{
+					"caller": "checkReserved",
+					"callee": "TERMINAL_RESERVED_CHORDS.has",
+					"lineNumber": 127
+				},
+				{
+					"caller": "checkReserved",
+					"callee": "OS_RESERVED[PLATFORM].has",
+					"lineNumber": 129
+				},
+				{
+					"caller": "checkReserved",
+					"callee": "isMacAltOnlyChord",
+					"lineNumber": 131
+				},
+				{
+					"caller": "getHotkeyConflict",
+					"callee": "useHotkeyOverridesStore.getState",
+					"lineNumber": 143
+				},
+				{
+					"caller": "getHotkeyConflict",
+					"callee": "getEffectiveLayoutMap",
+					"lineNumber": 144
+				},
+				{
+					"caller": "getHotkeyConflict",
+					"callee": "bindingToDispatchChord",
+					"lineNumber": 145
+				},
+				{
+					"caller": "getHotkeyConflict",
+					"callee": "canonicalizeChord",
+					"lineNumber": 147
+				},
+				{
+					"caller": "getHotkeyConflict",
+					"callee": "Object.keys",
+					"lineNumber": 148
+				},
+				{
+					"caller": "getHotkeyConflict",
+					"callee": "bindingToDispatchChord",
+					"lineNumber": 152
+				},
+				{
+					"caller": "getHotkeyConflict",
+					"callee": "canonicalizeChord",
+					"lineNumber": 153
+				},
+				{
+					"caller": "useRecordHotkeys",
+					"callee": "useRef",
+					"lineNumber": 183
+				},
+				{
+					"caller": "useRecordHotkeys",
+					"callee": "useHotkeyOverridesStore",
+					"lineNumber": 186
+				},
+				{
+					"caller": "useRecordHotkeys",
+					"callee": "useHotkeyOverridesStore",
+					"lineNumber": 187
+				},
+				{
+					"caller": "useRecordHotkeys",
+					"callee": "useEffect",
+					"lineNumber": 189
+				},
+				{
+					"caller": "handler",
+					"callee": "event.preventDefault",
+					"lineNumber": 193
+				},
+				{
+					"caller": "handler",
+					"callee": "event.stopPropagation",
+					"lineNumber": 194
+				},
+				{
+					"caller": "handler",
+					"callee": "optionsRef.current?.onCancel",
+					"lineNumber": 197
+				},
+				{
+					"caller": "handler",
+					"callee": "setOverride",
+					"lineNumber": 202
+				},
+				{
+					"caller": "handler",
+					"callee": "optionsRef.current?.onUnassign",
+					"lineNumber": 203
+				},
+				{
+					"caller": "handler",
+					"callee": "captureHotkeyFromEvent",
+					"lineNumber": 207
+				},
+				{
+					"caller": "handler",
+					"callee": "resolveCapturedBinding",
+					"lineNumber": 211
+				},
+				{
+					"caller": "handler",
+					"callee": "serializeBinding",
+					"lineNumber": 212
+				},
+				{
+					"caller": "handler",
+					"callee": "checkReserved",
+					"lineNumber": 216
+				},
+				{
+					"caller": "handler",
+					"callee": "optionsRef.current?.onReserved",
+					"lineNumber": 218
+				},
+				{
+					"caller": "handler",
+					"callee": "getHotkeyConflict",
+					"lineNumber": 222
+				},
+				{
+					"caller": "handler",
+					"callee": "optionsRef.current?.onConflict",
+					"lineNumber": 224
+				},
+				{
+					"caller": "handler",
+					"callee": "optionsRef.current?.onReserved",
+					"lineNumber": 229
+				},
+				{
+					"caller": "handler",
+					"callee": "bindingsEqual",
+					"lineNumber": 233
+				},
+				{
+					"caller": "handler",
+					"callee": "resetOverride",
+					"lineNumber": 234
+				},
+				{
+					"caller": "handler",
+					"callee": "setOverride",
+					"lineNumber": 236
+				},
+				{
+					"caller": "handler",
+					"callee": "optionsRef.current?.onSave",
+					"lineNumber": 238
+				},
+				{
+					"caller": "useRecordHotkeys",
+					"callee": "window.addEventListener",
+					"lineNumber": 241
+				},
+				{
+					"caller": "useRecordHotkeys",
+					"callee": "window.removeEventListener",
+					"lineNumber": 243
+				}
+			],
+			"metrics": {
+				"importCount": 6,
+				"exportCount": 3,
+				"functionCount": 6,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/hotkeys/registry.test.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 117,
+			"nonEmptyLines": 107,
+			"functions": [
+				{
+					"name": "isFunctionKey",
+					"startLine": 33,
+					"endLine": 35,
+					"params": ["token"]
+				},
+				{
+					"name": "terminalToken",
+					"startLine": 37,
+					"endLine": 40,
+					"params": ["chord"]
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "isFunctionKey",
+					"callee": "/^f([1-9]|1[0-2])$/.test",
+					"lineNumber": 34
+				},
+				{
+					"caller": "terminalToken",
+					"callee": "chord.split",
+					"lineNumber": 38
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 0,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/hotkeys/registry.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 744,
+			"nonEmptyLines": 730,
+			"functions": [
+				{
+					"name": "detectPlatform",
+					"startLine": 16,
+					"endLine": 22,
+					"params": []
+				},
+				{
+					"name": "L",
+					"startLine": 35,
+					"endLine": 39,
+					"params": ["chord"]
+				}
+			],
+			"exports": [
+				{
+					"name": "PLATFORM",
+					"line": 24,
+					"isDefault": false
+				},
+				{
+					"name": "HOTKEYS_REGISTRY",
+					"line": 45,
+					"isDefault": false
+				},
+				{
+					"name": "HOTKEYS",
+					"line": 739,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "detectPlatform",
+					"callee": "navigator.platform.toLowerCase",
+					"lineNumber": 18
+				},
+				{
+					"caller": "detectPlatform",
+					"callee": "p.includes",
+					"lineNumber": 19
+				},
+				{
+					"caller": "detectPlatform",
+					"callee": "p.includes",
+					"lineNumber": 20
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 3,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/hotkeys/stores/hotkeyOverridesStore.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 37,
+			"nonEmptyLines": 35,
+			"exports": [
+				{
+					"name": "useHotkeyOverridesStore",
+					"line": 15,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/hotkeys/stores/keyboardLayoutStore.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 62,
+			"nonEmptyLines": 55,
+			"functions": [
+				{
+					"name": "applySnapshot",
+					"startLine": 33,
+					"endLine": 38,
+					"params": ["data"]
+				},
+				{
+					"name": "startKeyboardLayoutSync",
+					"startLine": 46,
+					"endLine": 60,
+					"params": []
+				}
+			],
+			"exports": [
+				{
+					"name": "useKeyboardLayoutStore",
+					"line": 28,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "applySnapshot",
+					"callee": "useKeyboardLayoutStore.setState",
+					"lineNumber": 34
+				},
+				{
+					"caller": "applySnapshot",
+					"callee": "Object.entries",
+					"lineNumber": 35
+				},
+				{
+					"caller": "startKeyboardLayoutSync",
+					"callee": "electronTrpcClient.keyboardLayout.changes.subscribe",
+					"lineNumber": 47
+				},
+				{
+					"caller": "startKeyboardLayoutSync",
+					"callee": "applySnapshot",
+					"lineNumber": 50
+				},
+				{
+					"caller": "startKeyboardLayoutSync",
+					"callee": "console.error",
+					"lineNumber": 53
+				},
+				{
+					"caller": "startKeyboardLayoutSync",
+					"callee": "Math.min",
+					"lineNumber": 54
+				},
+				{
+					"caller": "startKeyboardLayoutSync",
+					"callee": "setTimeout",
+					"lineNumber": 57
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 1,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/hotkeys/stores/keyboardPreferencesStore.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 52,
+			"nonEmptyLines": 48,
+			"functions": [
+				{
+					"name": "useEffectiveLayoutMap",
+					"startLine": 42,
+					"endLine": 46,
+					"params": []
+				},
+				{
+					"name": "getEffectiveLayoutMap",
+					"startLine": 49,
+					"endLine": 52,
+					"params": []
+				}
+			],
+			"exports": [
+				{
+					"name": "useKeyboardPreferencesStore",
+					"line": 15,
+					"isDefault": false
+				},
+				{
+					"name": "useEffectiveLayoutMap",
+					"line": 42,
+					"isDefault": false
+				},
+				{
+					"name": "getEffectiveLayoutMap",
+					"line": 49,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "useEffectiveLayoutMap",
+					"callee": "useKeyboardLayoutStore",
+					"lineNumber": 43
+				},
+				{
+					"caller": "useEffectiveLayoutMap",
+					"callee": "useKeyboardPreferencesStore",
+					"lineNumber": 44
+				},
+				{
+					"caller": "getEffectiveLayoutMap",
+					"callee": "useKeyboardPreferencesStore.getState",
+					"lineNumber": 50
+				},
+				{
+					"caller": "getEffectiveLayoutMap",
+					"callee": "useKeyboardLayoutStore.getState",
+					"lineNumber": 51
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 3,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/hotkeys/types.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 65,
+			"nonEmptyLines": 58,
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/hotkeys/utils/binding.test.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 292,
+			"nonEmptyLines": 257,
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/hotkeys/utils/binding.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 133,
+			"nonEmptyLines": 123,
+			"functions": [
+				{
+					"name": "isFunctionKey",
+					"startLine": 29,
+					"endLine": 31,
+					"params": ["token"]
+				},
+				{
+					"name": "defaultModeForChord",
+					"startLine": 34,
+					"endLine": 40,
+					"params": ["chord"]
+				},
+				{
+					"name": "parseBinding",
+					"startLine": 43,
+					"endLine": 48,
+					"params": ["binding"]
+				},
+				{
+					"name": "serializeBinding",
+					"startLine": 54,
+					"endLine": 58,
+					"params": ["parsed"]
+				},
+				{
+					"name": "bindingToDispatchChord",
+					"startLine": 68,
+					"endLine": 76,
+					"params": ["binding", "layoutMap"]
+				},
+				{
+					"name": "bindingsEqual",
+					"startLine": 79,
+					"endLine": 90,
+					"params": ["a", "b"]
+				},
+				{
+					"name": "translateLogicalChord",
+					"startLine": 114,
+					"endLine": 133,
+					"params": ["chord", "layoutMap"]
+				}
+			],
+			"exports": [
+				{
+					"name": "NAMED_KEYS",
+					"line": 11,
+					"isDefault": false
+				},
+				{
+					"name": "isFunctionKey",
+					"line": 29,
+					"isDefault": false
+				},
+				{
+					"name": "defaultModeForChord",
+					"line": 34,
+					"isDefault": false
+				},
+				{
+					"name": "parseBinding",
+					"line": 43,
+					"isDefault": false
+				},
+				{
+					"name": "serializeBinding",
+					"line": 54,
+					"isDefault": false
+				},
+				{
+					"name": "bindingToDispatchChord",
+					"line": 68,
+					"isDefault": false
+				},
+				{
+					"name": "bindingsEqual",
+					"line": 79,
+					"isDefault": false
+				},
+				{
+					"name": "translateLogicalChord",
+					"line": 114,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "isFunctionKey",
+					"callee": "/^f([1-9]|1[0-2])$/.test",
+					"lineNumber": 30
+				},
+				{
+					"caller": "defaultModeForChord",
+					"callee": "canonicalizeChord(chord).split",
+					"lineNumber": 35
+				},
+				{
+					"caller": "defaultModeForChord",
+					"callee": "canonicalizeChord",
+					"lineNumber": 35
+				},
+				{
+					"caller": "defaultModeForChord",
+					"callee": "NAMED_KEYS.has",
+					"lineNumber": 38
+				},
+				{
+					"caller": "defaultModeForChord",
+					"callee": "isFunctionKey",
+					"lineNumber": 38
+				},
+				{
+					"caller": "parseBinding",
+					"callee": "defaultModeForChord",
+					"lineNumber": 45
+				},
+				{
+					"caller": "serializeBinding",
+					"callee": "canonicalizeChord",
+					"lineNumber": 55
+				},
+				{
+					"caller": "bindingToDispatchChord",
+					"callee": "parseBinding",
+					"lineNumber": 73
+				},
+				{
+					"caller": "bindingToDispatchChord",
+					"callee": "translateLogicalChord",
+					"lineNumber": 75
+				},
+				{
+					"caller": "bindingsEqual",
+					"callee": "parseBinding",
+					"lineNumber": 84
+				},
+				{
+					"caller": "bindingsEqual",
+					"callee": "parseBinding",
+					"lineNumber": 85
+				},
+				{
+					"caller": "bindingsEqual",
+					"callee": "canonicalizeChord",
+					"lineNumber": 88
+				},
+				{
+					"caller": "bindingsEqual",
+					"callee": "canonicalizeChord",
+					"lineNumber": 88
+				},
+				{
+					"caller": "translateLogicalChord",
+					"callee": "canonicalizeChord",
+					"lineNumber": 119
+				},
+				{
+					"caller": "translateLogicalChord",
+					"callee": "canonical.split",
+					"lineNumber": 120
+				},
+				{
+					"caller": "translateLogicalChord",
+					"callee": "NAMED_KEYS.has",
+					"lineNumber": 123
+				},
+				{
+					"caller": "translateLogicalChord",
+					"callee": "isFunctionKey",
+					"lineNumber": 123
+				},
+				{
+					"caller": "translateLogicalChord",
+					"callee": "glyph.toLowerCase",
+					"lineNumber": 127
+				},
+				{
+					"caller": "translateLogicalChord",
+					"callee": "targetGlyph.toLowerCase",
+					"lineNumber": 127
+				},
+				{
+					"caller": "translateLogicalChord",
+					"callee": "normalizeToken",
+					"lineNumber": 128
+				},
+				{
+					"caller": "translateLogicalChord",
+					"callee": "parts.join",
+					"lineNumber": 129
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 8,
+				"functionCount": 7,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/hotkeys/utils/resolveHotkeyFromEvent.test.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 447,
+			"nonEmptyLines": 403,
+			"functions": [
+				{
+					"name": "ev",
+					"startLine": 134,
+					"endLine": 148,
+					"params": ["init"]
+				},
+				{
+					"name": "buildEventFromChord",
+					"startLine": 205,
+					"endLine": 223,
+					"params": ["chord"]
+				},
+				{
+					"name": "chordKeyToCode",
+					"startLine": 227,
+					"endLine": 263,
+					"params": ["key"]
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "buildEventFromChord",
+					"callee": "chord.toLowerCase().split",
+					"lineNumber": 206
+				},
+				{
+					"caller": "buildEventFromChord",
+					"callee": "chord.toLowerCase",
+					"lineNumber": 206
+				},
+				{
+					"caller": "buildEventFromChord",
+					"callee": "parts.includes",
+					"lineNumber": 208
+				},
+				{
+					"caller": "buildEventFromChord",
+					"callee": "parts.includes",
+					"lineNumber": 209
+				},
+				{
+					"caller": "buildEventFromChord",
+					"callee": "parts.includes",
+					"lineNumber": 209
+				},
+				{
+					"caller": "buildEventFromChord",
+					"callee": "parts.includes",
+					"lineNumber": 210
+				},
+				{
+					"caller": "buildEventFromChord",
+					"callee": "parts.includes",
+					"lineNumber": 211
+				},
+				{
+					"caller": "buildEventFromChord",
+					"callee": "parts.find",
+					"lineNumber": 213
+				},
+				{
+					"caller": "buildEventFromChord",
+					"callee": "[\"meta\", \"ctrl\", \"control\", \"alt\", \"shift\"].includes",
+					"lineNumber": 214
+				},
+				{
+					"caller": "buildEventFromChord",
+					"callee": "chordKeyToCode",
+					"lineNumber": 216
+				},
+				{
+					"caller": "chordKeyToCode",
+					"callee": "/^[a-z]$/.test",
+					"lineNumber": 228
+				},
+				{
+					"caller": "chordKeyToCode",
+					"callee": "key.toUpperCase",
+					"lineNumber": 228
+				},
+				{
+					"caller": "chordKeyToCode",
+					"callee": "/^[0-9]$/.test",
+					"lineNumber": 229
+				},
+				{
+					"caller": "chordKeyToCode",
+					"callee": "/^f([1-9]|1[0-2])$/.test",
+					"lineNumber": 230
+				},
+				{
+					"caller": "chordKeyToCode",
+					"callee": "key.toUpperCase",
+					"lineNumber": 230
+				}
+			],
+			"metrics": {
+				"importCount": 5,
+				"exportCount": 0,
+				"functionCount": 3,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/hotkeys/utils/resolveHotkeyFromEvent.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 157,
+			"nonEmptyLines": 144,
+			"functions": [
+				{
+					"name": "resolveHotkeyFromEvent",
+					"startLine": 17,
+					"endLine": 22,
+					"params": ["event"]
+				},
+				{
+					"name": "normalizeToken",
+					"startLine": 49,
+					"endLine": 52,
+					"params": ["token"]
+				},
+				{
+					"name": "isIgnorableKey",
+					"startLine": 54,
+					"endLine": 56,
+					"params": ["normalized"]
+				},
+				{
+					"name": "canonicalizeChord",
+					"startLine": 62,
+					"endLine": 75,
+					"params": ["chord"]
+				},
+				{
+					"name": "eventToChord",
+					"startLine": 78,
+					"endLine": 98,
+					"params": ["event"]
+				},
+				{
+					"name": "matchesChord",
+					"startLine": 101,
+					"endLine": 105,
+					"params": ["event", "chord"]
+				},
+				{
+					"name": "isTerminalReservedEvent",
+					"startLine": 115,
+					"endLine": 119,
+					"params": ["event"]
+				},
+				{
+					"name": "buildRegisteredAppChords",
+					"startLine": 121,
+					"endLine": 139,
+					"params": ["overrides", "layoutMap"]
+				},
+				{
+					"name": "rebuild",
+					"startLine": 149,
+					"endLine": 154,
+					"params": []
+				}
+			],
+			"exports": [
+				{
+					"name": "resolveHotkeyFromEvent",
+					"line": 17,
+					"isDefault": false
+				},
+				{
+					"name": "MODIFIERS",
+					"line": 44,
+					"isDefault": false
+				},
+				{
+					"name": "normalizeToken",
+					"line": 49,
+					"isDefault": false
+				},
+				{
+					"name": "isIgnorableKey",
+					"line": 54,
+					"isDefault": false
+				},
+				{
+					"name": "canonicalizeChord",
+					"line": 62,
+					"isDefault": false
+				},
+				{
+					"name": "eventToChord",
+					"line": 78,
+					"isDefault": false
+				},
+				{
+					"name": "matchesChord",
+					"line": 101,
+					"isDefault": false
+				},
+				{
+					"name": "TERMINAL_RESERVED_CHORDS",
+					"line": 108,
+					"isDefault": false
+				},
+				{
+					"name": "isTerminalReservedEvent",
+					"line": 115,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "resolveHotkeyFromEvent",
+					"callee": "eventToChord",
+					"lineNumber": 19
+				},
+				{
+					"caller": "resolveHotkeyFromEvent",
+					"callee": "registeredAppChords.get",
+					"lineNumber": 21
+				},
+				{
+					"caller": "normalizeToken",
+					"callee": "token.trim",
+					"lineNumber": 50
+				},
+				{
+					"caller": "normalizeToken",
+					"callee": "token.trim",
+					"lineNumber": 50
+				},
+				{
+					"caller": "normalizeToken",
+					"callee": "aliased.toLowerCase().replace",
+					"lineNumber": 51
+				},
+				{
+					"caller": "normalizeToken",
+					"callee": "aliased.toLowerCase",
+					"lineNumber": 51
+				},
+				{
+					"caller": "isIgnorableKey",
+					"callee": "MODIFIERS.has",
+					"lineNumber": 55
+				},
+				{
+					"caller": "isIgnorableKey",
+					"callee": "LOCK_KEYS.has",
+					"lineNumber": 55
+				},
+				{
+					"caller": "canonicalizeChord",
+					"callee": "chord.toLowerCase().split(\"+\").map",
+					"lineNumber": 63
+				},
+				{
+					"caller": "canonicalizeChord",
+					"callee": "chord.toLowerCase().split",
+					"lineNumber": 63
+				},
+				{
+					"caller": "canonicalizeChord",
+					"callee": "chord.toLowerCase",
+					"lineNumber": 63
+				},
+				{
+					"caller": "canonicalizeChord",
+					"callee": "MODIFIERS.has",
+					"lineNumber": 67
+				},
+				{
+					"caller": "canonicalizeChord",
+					"callee": "mods.push",
+					"lineNumber": 68
+				},
+				{
+					"caller": "canonicalizeChord",
+					"callee": "keys.push",
+					"lineNumber": 70
+				},
+				{
+					"caller": "canonicalizeChord",
+					"callee": "mods.sort",
+					"lineNumber": 73
+				},
+				{
+					"caller": "canonicalizeChord",
+					"callee": "[...mods, ...keys].join",
+					"lineNumber": 74
+				},
+				{
+					"caller": "eventToChord",
+					"callee": "normalizeToken",
+					"lineNumber": 83
+				},
+				{
+					"caller": "eventToChord",
+					"callee": "isIgnorableKey",
+					"lineNumber": 84
+				},
+				{
+					"caller": "eventToChord",
+					"callee": "event.getModifierState",
+					"lineNumber": 90
+				},
+				{
+					"caller": "eventToChord",
+					"callee": "mods.push",
+					"lineNumber": 92
+				},
+				{
+					"caller": "eventToChord",
+					"callee": "mods.push",
+					"lineNumber": 93
+				},
+				{
+					"caller": "eventToChord",
+					"callee": "mods.push",
+					"lineNumber": 94
+				},
+				{
+					"caller": "eventToChord",
+					"callee": "mods.push",
+					"lineNumber": 95
+				},
+				{
+					"caller": "eventToChord",
+					"callee": "mods.sort",
+					"lineNumber": 96
+				},
+				{
+					"caller": "eventToChord",
+					"callee": "[...mods, key].join",
+					"lineNumber": 97
+				},
+				{
+					"caller": "matchesChord",
+					"callee": "eventToChord",
+					"lineNumber": 102
+				},
+				{
+					"caller": "matchesChord",
+					"callee": "canonicalizeChord",
+					"lineNumber": 104
+				},
+				{
+					"caller": "isTerminalReservedEvent",
+					"callee": "eventToChord",
+					"lineNumber": 116
+				},
+				{
+					"caller": "isTerminalReservedEvent",
+					"callee": "TERMINAL_RESERVED_CHORDS.has",
+					"lineNumber": 118
+				},
+				{
+					"caller": "buildRegisteredAppChords",
+					"callee": "Object.keys",
+					"lineNumber": 126
+				},
+				{
+					"caller": "buildRegisteredAppChords",
+					"callee": "bindingToDispatchChord",
+					"lineNumber": 134
+				},
+				{
+					"caller": "buildRegisteredAppChords",
+					"callee": "map.set",
+					"lineNumber": 136
+				},
+				{
+					"caller": "buildRegisteredAppChords",
+					"callee": "canonicalizeChord",
+					"lineNumber": 136
+				},
+				{
+					"caller": "rebuild",
+					"callee": "buildRegisteredAppChords",
+					"lineNumber": 150
+				},
+				{
+					"caller": "rebuild",
+					"callee": "useHotkeyOverridesStore.getState",
+					"lineNumber": 151
+				},
+				{
+					"caller": "rebuild",
+					"callee": "getEffectiveLayoutMap",
+					"lineNumber": 152
+				}
+			],
+			"metrics": {
+				"importCount": 6,
+				"exportCount": 9,
+				"functionCount": 9,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarData/buildDashboardSidebarProjects.test.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 170,
+			"nonEmptyLines": 156,
+			"functions": [
+				{
+					"name": "makeProject",
+					"startLine": 12,
+					"endLine": 28,
+					"params": ["overrides"]
+				},
+				{
+					"name": "makeSection",
+					"startLine": 30,
+					"endLine": 43,
+					"params": ["overrides"]
+				},
+				{
+					"name": "makeWorkspace",
+					"startLine": 45,
+					"endLine": 64,
+					"params": ["overrides"]
+				},
+				{
+					"name": "build",
+					"startLine": 66,
+					"endLine": 78,
+					"params": ["params"]
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "build",
+					"callee": "buildDashboardSidebarProjects",
+					"lineNumber": 71
+				},
+				{
+					"caller": "build",
+					"callee": "makeProject",
+					"lineNumber": 72
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 0,
+				"functionCount": 4,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarData/buildDashboardSidebarProjects.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 251,
+			"nonEmptyLines": 229,
+			"functions": [
+				{
+					"name": "buildDashboardSidebarProjects",
+					"startLine": 60,
+					"endLine": 251,
+					"params": [
+						"{\n\tsidebarProjects,\n\tsidebarSections,\n\tvisibleSidebarWorkspaces,\n\tmachineId,\n\tpullRequestsByWorkspaceId,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "buildDashboardSidebarProjects",
+					"line": 60,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "buildDashboardSidebarProjects",
+					"callee": "projectsById.set",
+					"lineNumber": 83
+				},
+				{
+					"caller": "buildDashboardSidebarProjects",
+					"callee": "projectsById.get",
+					"lineNumber": 93
+				},
+				{
+					"caller": "buildDashboardSidebarProjects",
+					"callee": "project.sectionMap.set",
+					"lineNumber": 101
+				},
+				{
+					"caller": "buildDashboardSidebarProjects",
+					"callee": "project.childEntries.push",
+					"lineNumber": 102
+				},
+				{
+					"caller": "buildDashboardSidebarProjects",
+					"callee": "projectsById.get",
+					"lineNumber": 112
+				},
+				{
+					"caller": "buildDashboardSidebarProjects",
+					"callee": "getV2WorkspaceDisplayName",
+					"lineNumber": 127
+				},
+				{
+					"caller": "buildDashboardSidebarProjects",
+					"callee": "pullRequestsByWorkspaceId.get",
+					"lineNumber": 129
+				},
+				{
+					"caller": "buildDashboardSidebarProjects",
+					"callee": "project.sectionMap.get",
+					"lineNumber": 146
+				},
+				{
+					"caller": "buildDashboardSidebarProjects",
+					"callee": "section.workspaces.push",
+					"lineNumber": 148
+				},
+				{
+					"caller": "buildDashboardSidebarProjects",
+					"callee": "project.orphanedWorkspaces.push",
+					"lineNumber": 154
+				},
+				{
+					"caller": "buildDashboardSidebarProjects",
+					"callee": "project.childEntries.push",
+					"lineNumber": 161
+				},
+				{
+					"caller": "buildDashboardSidebarProjects",
+					"callee": "sidebarProjects.flatMap",
+					"lineNumber": 170
+				},
+				{
+					"caller": "buildDashboardSidebarProjects",
+					"callee": "projectsById.get",
+					"lineNumber": 171
+				},
+				{
+					"caller": "compareByLocalMainThenTabOrder",
+					"callee": "isLocalMainWorkspace",
+					"lineNumber": 187
+				},
+				{
+					"caller": "compareByLocalMainThenTabOrder",
+					"callee": "isLocalMainWorkspace",
+					"lineNumber": 188
+				},
+				{
+					"caller": "buildDashboardSidebarProjects",
+					"callee": "childEntries\n\t\t\t.sort((left, right) => {\n\t\t\t\tconst leftLocalMain =\n\t\t\t\t\tleft.child.type === \"workspace\" &&\n\t\t\t\t\tisLocalMainWorkspace(left.child.workspace);\n\t\t\t\tconst rightLocalMain =\n\t\t\t\t\tright.child.type === \"workspace\" &&\n\t\t\t\t\tisLocalMainWorkspace(right.child.workspace);\n\t\t\t\tif (leftLocalMain !== rightLocalMain) {\n\t\t\t\t\treturn leftLocalMain ? -1 : 1;\n\t\t\t\t}\n\t\t\t\treturn left.tabOrder - right.tabOrder;\n\t\t\t})\n\t\t\t.map",
+					"lineNumber": 195
+				},
+				{
+					"caller": "buildDashboardSidebarProjects",
+					"callee": "childEntries\n\t\t\t.sort",
+					"lineNumber": 195
+				},
+				{
+					"caller": "buildDashboardSidebarProjects",
+					"callee": "isLocalMainWorkspace",
+					"lineNumber": 199
+				},
+				{
+					"caller": "buildDashboardSidebarProjects",
+					"callee": "isLocalMainWorkspace",
+					"lineNumber": 202
+				},
+				{
+					"caller": "buildDashboardSidebarProjects",
+					"callee": "children.push",
+					"lineNumber": 219
+				},
+				{
+					"caller": "buildDashboardSidebarProjects",
+					"callee": "currentSection.workspaces.push",
+					"lineNumber": 221
+				},
+				{
+					"caller": "buildDashboardSidebarProjects",
+					"callee": "children.push",
+					"lineNumber": 226
+				},
+				{
+					"caller": "buildDashboardSidebarProjects",
+					"callee": "children.findIndex",
+					"lineNumber": 231
+				},
+				{
+					"caller": "buildDashboardSidebarProjects",
+					"callee": "children.splice",
+					"lineNumber": 236
+				},
+				{
+					"caller": "buildDashboardSidebarProjects",
+					"callee": "orphanedWorkspaces\n\t\t\t\t\t.sort(compareByLocalMainThenTabOrder)\n\t\t\t\t\t.map",
+					"lineNumber": 239
+				},
+				{
+					"caller": "buildDashboardSidebarProjects",
+					"callee": "orphanedWorkspaces\n\t\t\t\t\t.sort",
+					"lineNumber": 239
+				}
+			],
+			"metrics": {
+				"importCount": 3,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useNavigateAwayFromWorkspace/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "useNavigateAwayFromWorkspace",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/TopBar/components/V2WorkspaceTitle/V2WorkspaceTitle.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 52,
+			"nonEmptyLines": 48,
+			"functions": [
+				{
+					"name": "V2WorkspaceTitle",
+					"startLine": 10,
+					"endLine": 52,
+					"params": ["{ workspaceId }"]
+				}
+			],
+			"exports": [
+				{
+					"name": "V2WorkspaceTitle",
+					"line": 10,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "V2WorkspaceTitle",
+					"callee": "useHostWorkspaces",
+					"lineNumber": 11
+				},
+				{
+					"caller": "V2WorkspaceTitle",
+					"callee": "workspaces.find",
+					"lineNumber": 12
+				},
+				{
+					"caller": "V2WorkspaceTitle",
+					"callee": "getV2WorkspaceDisplayName",
+					"lineNumber": 13
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/stores/delete-workspace-intent.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 20,
+			"nonEmptyLines": 17,
+			"exports": [
+				{
+					"name": "useDeleteWorkspaceIntent",
+					"line": 14,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/stores/remove-workspace-from-sidebar-intent.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 26,
+			"nonEmptyLines": 23,
+			"exports": [
+				{
+					"name": "useRemoveFromSidebarIntent",
+					"line": 17,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/stores/set-preferred-open-in-app-intent.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 24,
+			"nonEmptyLines": 21,
+			"exports": [
+				{
+					"name": "useSetPreferredOpenInAppIntent",
+					"line": 16,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/stores/workspace-sidebar-state.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 130,
+			"nonEmptyLines": 114,
+			"exports": [
+				{
+					"name": "DEFAULT_WORKSPACE_SIDEBAR_WIDTH",
+					"line": 4,
+					"isDefault": false
+				},
+				{
+					"name": "COLLAPSED_WORKSPACE_SIDEBAR_WIDTH",
+					"line": 5,
+					"isDefault": false
+				},
+				{
+					"name": "MAX_WORKSPACE_SIDEBAR_WIDTH",
+					"line": 7,
+					"isDefault": false
+				},
+				{
+					"name": "useWorkspaceSidebarStore",
+					"line": 30,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 4,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/utils/getV2WorkspaceDisplayName/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "getV2WorkspaceDisplayName",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		}
+	]
+}

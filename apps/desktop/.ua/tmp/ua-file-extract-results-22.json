@@ -1,0 +1,2012 @@
+{
+	"scriptCompleted": true,
+	"filesAnalyzed": 34,
+	"filesSkipped": [],
+	"results": [
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/hooks/useChangesTab/components/ChangesToolbar/ChangesToolbar.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 92,
+			"nonEmptyLines": 90,
+			"functions": [
+				{
+					"name": "ChangesToolbar",
+					"startLine": 34,
+					"endLine": 92,
+					"params": [
+						"{\n\tfilter,\n\tonFilterChange,\n\tcommits,\n\tuncommittedCount,\n\ttotalFiles,\n\ttotalAdditions,\n\ttotalDeletions,\n\tviewMode,\n\tonViewModeChange,\n\tcollapsed,\n\tonToggleFold,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "ChangesToolbar",
+					"line": 34,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 4,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/hooks/useChangesTab/components/ChangesToolbar/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "ChangesToolbar",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/hooks/useChangesTab/components/CommitFilterDropdown/CommitFilterDropdown.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 130,
+			"nonEmptyLines": 121,
+			"functions": [
+				{
+					"name": "getFilterLabel",
+					"startLine": 19,
+					"endLine": 29,
+					"params": ["filter", "commits"]
+				},
+				{
+					"name": "CommitFilterDropdown",
+					"startLine": 38,
+					"endLine": 130,
+					"params": [
+						"{\n\tfilter,\n\tonFilterChange,\n\tcommits,\n\tuncommittedCount,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "CommitFilterDropdown",
+					"line": 38,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "getFilterLabel",
+					"callee": "commits.find",
+					"lineNumber": 23
+				},
+				{
+					"caller": "getFilterLabel",
+					"callee": "commits.find",
+					"lineNumber": 24
+				},
+				{
+					"caller": "getFilterLabel",
+					"callee": "filter.fromHash.slice",
+					"lineNumber": 25
+				},
+				{
+					"caller": "getFilterLabel",
+					"callee": "filter.toHash.slice",
+					"lineNumber": 25
+				},
+				{
+					"caller": "getFilterLabel",
+					"callee": "commits.find",
+					"lineNumber": 27
+				},
+				{
+					"caller": "getFilterLabel",
+					"callee": "filter.hash.slice",
+					"lineNumber": 28
+				},
+				{
+					"caller": "CommitFilterDropdown",
+					"callee": "useState",
+					"lineNumber": 44
+				},
+				{
+					"caller": "CommitFilterDropdown",
+					"callee": "getFilterLabel",
+					"lineNumber": 54
+				},
+				{
+					"caller": "CommitFilterDropdown",
+					"callee": "onFilterChange",
+					"lineNumber": 59
+				},
+				{
+					"caller": "CommitFilterDropdown",
+					"callee": "onFilterChange",
+					"lineNumber": 67
+				},
+				{
+					"caller": "CommitFilterDropdown",
+					"callee": "setRangeModalOpen",
+					"lineNumber": 83
+				},
+				{
+					"caller": "CommitFilterDropdown",
+					"callee": "commits.map",
+					"lineNumber": 97
+				},
+				{
+					"caller": "CommitFilterDropdown",
+					"callee": "onFilterChange",
+					"lineNumber": 101
+				},
+				{
+					"caller": "CommitFilterDropdown",
+					"callee": "onFilterChange",
+					"lineNumber": 125
+				}
+			],
+			"metrics": {
+				"importCount": 3,
+				"exportCount": 1,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/hooks/useChangesTab/components/CommitFilterDropdown/components/CommitRow/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "CommitRow",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/hooks/useChangesTab/components/CommitFilterDropdown/components/RangeModal/RangeModal.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 116,
+			"nonEmptyLines": 106,
+			"functions": [
+				{
+					"name": "RangeModal",
+					"startLine": 26,
+					"endLine": 116,
+					"params": ["{\n\topen,\n\tonOpenChange,\n\tcommits,\n\tonSelect,\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "RangeModal",
+					"line": 26,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "RangeModal",
+					"callee": "useState",
+					"lineNumber": 32
+				},
+				{
+					"caller": "RangeModal",
+					"callee": "useState",
+					"lineNumber": 33
+				},
+				{
+					"caller": "RangeModal",
+					"callee": "useEffect",
+					"lineNumber": 36
+				},
+				{
+					"caller": "RangeModal",
+					"callee": "setFromIdx",
+					"lineNumber": 38
+				},
+				{
+					"caller": "RangeModal",
+					"callee": "setToIdx",
+					"lineNumber": 39
+				},
+				{
+					"caller": "handleClick",
+					"callee": "setFromIdx",
+					"lineNumber": 45
+				},
+				{
+					"caller": "handleClick",
+					"callee": "setToIdx",
+					"lineNumber": 46
+				},
+				{
+					"caller": "handleClick",
+					"callee": "setToIdx",
+					"lineNumber": 48
+				},
+				{
+					"caller": "handleClick",
+					"callee": "setFromIdx",
+					"lineNumber": 50
+				},
+				{
+					"caller": "handleClick",
+					"callee": "setToIdx",
+					"lineNumber": 51
+				},
+				{
+					"caller": "RangeModal",
+					"callee": "Math.min",
+					"lineNumber": 56
+				},
+				{
+					"caller": "RangeModal",
+					"callee": "Math.max",
+					"lineNumber": 58
+				},
+				{
+					"caller": "handleApply",
+					"callee": "onSelect",
+					"lineNumber": 66
+				},
+				{
+					"caller": "handleApply",
+					"callee": "onOpenChange",
+					"lineNumber": 67
+				},
+				{
+					"caller": "handleApply",
+					"callee": "setFromIdx",
+					"lineNumber": 68
+				},
+				{
+					"caller": "handleApply",
+					"callee": "setToIdx",
+					"lineNumber": 69
+				},
+				{
+					"caller": "RangeModal",
+					"callee": "commits.map",
+					"lineNumber": 85
+				},
+				{
+					"caller": "RangeModal",
+					"callee": "handleClick",
+					"lineNumber": 91
+				},
+				{
+					"caller": "RangeModal",
+					"callee": "onOpenChange",
+					"lineNumber": 106
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/hooks/useChangesTab/components/CommitFilterDropdown/components/RangeModal/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "RangeModal",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/hooks/useChangesTab/components/CommitFilterDropdown/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "CommitFilterDropdown",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/hooks/useChangesTab/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "ChangesFilter",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "useChangesTab",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 2,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/hooks/useChangesTab/types.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 9,
+			"nonEmptyLines": 7,
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/hooks/useChangesTab/useChangesTab.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 227,
+			"nonEmptyLines": 206,
+			"functions": [
+				{
+					"name": "useChangesTab",
+					"startLine": 35,
+					"endLine": 227,
+					"params": [
+						"{\n\tworkspaceId,\n\tselectedFilePath,\n\tonSelectFile,\n\tonOpenFile,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "ChangesFilter",
+					"line": 21,
+					"isDefault": false
+				},
+				{
+					"name": "ChangesViewMode",
+					"line": 21,
+					"isDefault": false
+				},
+				{
+					"name": "useChangesTab",
+					"line": 35,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "useChangesTab",
+					"callee": "useWorkspaceGitStatus",
+					"lineNumber": 41
+				},
+				{
+					"caller": "useChangesTab",
+					"callee": "useCollections",
+					"lineNumber": 42
+				},
+				{
+					"caller": "useChangesTab",
+					"callee": "workspaceTrpc.useUtils",
+					"lineNumber": 43
+				},
+				{
+					"caller": "useChangesTab",
+					"callee": "collections.v2WorkspaceLocalState.get",
+					"lineNumber": 44
+				},
+				{
+					"caller": "useChangesTab",
+					"callee": "workspaceTrpc.git.getBaseBranch.useQuery",
+					"lineNumber": 51
+				},
+				{
+					"caller": "useChangesTab",
+					"callee": "useSidebarDiffRef",
+					"lineNumber": 57
+				},
+				{
+					"caller": "useChangesTab",
+					"callee": "useChangeset",
+					"lineNumber": 58
+				},
+				{
+					"caller": "useChangesTab",
+					"callee": "workspaceTrpc.workspace.get.useQuery",
+					"lineNumber": 63
+				},
+				{
+					"caller": "useChangesTab",
+					"callee": "useOpenInExternalEditor",
+					"lineNumber": 67
+				},
+				{
+					"caller": "useChangesTab",
+					"callee": "useCallback",
+					"lineNumber": 69
+				},
+				{
+					"caller": "useChangesTab",
+					"callee": "openInExternalEditor",
+					"lineNumber": 72
+				},
+				{
+					"caller": "useChangesTab",
+					"callee": "toAbsoluteWorkspacePath",
+					"lineNumber": 72
+				},
+				{
+					"caller": "useChangesTab",
+					"callee": "useCallback",
+					"lineNumber": 77
+				},
+				{
+					"caller": "useChangesTab",
+					"callee": "collections.v2WorkspaceLocalState.get",
+					"lineNumber": 79
+				},
+				{
+					"caller": "useChangesTab",
+					"callee": "collections.v2WorkspaceLocalState.update",
+					"lineNumber": 80
+				},
+				{
+					"caller": "useChangesTab",
+					"callee": "useCallback",
+					"lineNumber": 87
+				},
+				{
+					"caller": "useChangesTab",
+					"callee": "collections.v2WorkspaceLocalState.get",
+					"lineNumber": 89
+				},
+				{
+					"caller": "useChangesTab",
+					"callee": "collections.v2WorkspaceLocalState.update",
+					"lineNumber": 90
+				},
+				{
+					"caller": "useChangesTab",
+					"callee": "workspaceTrpc.git.setBaseBranch.useMutation",
+					"lineNumber": 97
+				},
+				{
+					"caller": "useChangesTab",
+					"callee": "utils.git.getBaseBranch.invalidate",
+					"lineNumber": 99
+				},
+				{
+					"caller": "useChangesTab",
+					"callee": "utils.git.getStatus.invalidate",
+					"lineNumber": 100
+				},
+				{
+					"caller": "useChangesTab",
+					"callee": "utils.git.listCommits.invalidate",
+					"lineNumber": 101
+				},
+				{
+					"caller": "useChangesTab",
+					"callee": "utils.git.getDiff.invalidate",
+					"lineNumber": 102
+				},
+				{
+					"caller": "useChangesTab",
+					"callee": "useCallback",
+					"lineNumber": 106
+				},
+				{
+					"caller": "useChangesTab",
+					"callee": "setBaseBranchMutation.mutate",
+					"lineNumber": 108
+				},
+				{
+					"caller": "useChangesTab",
+					"callee": "workspaceTrpc.git.listCommits.useQuery",
+					"lineNumber": 113
+				},
+				{
+					"caller": "useChangesTab",
+					"callee": "workspaceTrpc.git.listBranches.useQuery",
+					"lineNumber": 118
+				},
+				{
+					"caller": "useChangesTab",
+					"callee": "workspaceTrpc.git.renameBranch.useMutation",
+					"lineNumber": 123
+				},
+				{
+					"caller": "useChangesTab",
+					"callee": "useCallback",
+					"lineNumber": 125
+				},
+				{
+					"caller": "useChangesTab",
+					"callee": "toast.promise",
+					"lineNumber": 129
+				},
+				{
+					"caller": "useChangesTab",
+					"callee": "renameBranchMutation.mutateAsync",
+					"lineNumber": 130
+				},
+				{
+					"caller": "useChangesTab",
+					"callee": "files.reduce",
+					"lineNumber": 149
+				},
+				{
+					"caller": "useChangesTab",
+					"callee": "files.reduce",
+					"lineNumber": 150
+				},
+				{
+					"caller": "useChangesTab",
+					"callee": "useState",
+					"lineNumber": 152
+				},
+				{
+					"caller": "useChangesTab",
+					"callee": "useCallback",
+					"lineNumber": 153
+				},
+				{
+					"caller": "useChangesTab",
+					"callee": "setIsRefreshing",
+					"lineNumber": 155
+				},
+				{
+					"caller": "useChangesTab",
+					"callee": "Promise.all",
+					"lineNumber": 157
+				},
+				{
+					"caller": "useChangesTab",
+					"callee": "utils.git.getStatus.invalidate",
+					"lineNumber": 158
+				},
+				{
+					"caller": "useChangesTab",
+					"callee": "utils.git.getDiff.invalidate",
+					"lineNumber": 159
+				},
+				{
+					"caller": "useChangesTab",
+					"callee": "utils.git.listCommits.invalidate",
+					"lineNumber": 160
+				},
+				{
+					"caller": "useChangesTab",
+					"callee": "utils.git.listBranches.invalidate",
+					"lineNumber": 161
+				},
+				{
+					"caller": "useChangesTab",
+					"callee": "utils.git.getBaseBranch.invalidate",
+					"lineNumber": 162
+				},
+				{
+					"caller": "useChangesTab",
+					"callee": "console.warn",
+					"lineNumber": 165
+				},
+				{
+					"caller": "useChangesTab",
+					"callee": "toast.error",
+					"lineNumber": 166
+				},
+				{
+					"caller": "useChangesTab",
+					"callee": "setIsRefreshing",
+					"lineNumber": 170
+				},
+				{
+					"caller": "useChangesTab",
+					"callee": "handleRefresh",
+					"lineNumber": 181
+				},
+				{
+					"caller": "useChangesTab",
+					"callee": "cn",
+					"lineNumber": 185
+				}
+			],
+			"metrics": {
+				"importCount": 9,
+				"exportCount": 3,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/hooks/usePRFlowState/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "usePRFlowState",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/hooks/useReviewTab/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "useReviewTab",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/components/WorkspaceSidebar/types.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 10,
+			"nonEmptyLines": 9,
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/useChangeset/buildChangesetFiles.test.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 88,
+			"nonEmptyLines": 84,
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/useChangeset/buildChangesetFiles.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 69,
+			"nonEmptyLines": 63,
+			"functions": [
+				{
+					"name": "toChangesetFile",
+					"startLine": 19,
+					"endLine": 32,
+					"params": ["file", "source"]
+				},
+				{
+					"name": "buildChangesetFiles",
+					"startLine": 38,
+					"endLine": 69,
+					"params": ["status", "ref"]
+				}
+			],
+			"exports": [
+				{
+					"name": "buildChangesetFiles",
+					"line": 38,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "buildChangesetFiles",
+					"callee": "status.unstaged.map",
+					"lineNumber": 43
+				},
+				{
+					"caller": "buildChangesetFiles",
+					"callee": "toChangesetFile",
+					"lineNumber": 44
+				},
+				{
+					"caller": "buildChangesetFiles",
+					"callee": "status.staged.map",
+					"lineNumber": 46
+				},
+				{
+					"caller": "buildChangesetFiles",
+					"callee": "toChangesetFile",
+					"lineNumber": 46
+				},
+				{
+					"caller": "buildChangesetFiles",
+					"callee": "status.againstBase.map",
+					"lineNumber": 55
+				},
+				{
+					"caller": "buildChangesetFiles",
+					"callee": "toChangesetFile",
+					"lineNumber": 56
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 1,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/useChangeset/changesetFileKey.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 12,
+			"nonEmptyLines": 11,
+			"functions": [
+				{
+					"name": "getChangesetFileKey",
+					"startLine": 3,
+					"endLine": 12,
+					"params": ["file"]
+				}
+			],
+			"exports": [
+				{
+					"name": "getChangesetFileKey",
+					"line": 3,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/useChangeset/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 3,
+			"nonEmptyLines": 3,
+			"exports": [
+				{
+					"name": "getChangesetFileKey",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "ChangesetFile",
+					"line": 2,
+					"isDefault": false
+				},
+				{
+					"name": "DiffFileSource",
+					"line": 2,
+					"isDefault": false
+				},
+				{
+					"name": "DiffRef",
+					"line": 2,
+					"isDefault": false
+				},
+				{
+					"name": "useChangeset",
+					"line": 3,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 5,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/useChangeset/types.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 22,
+			"nonEmptyLines": 19,
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/useChangeset/useChangeset.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 70,
+			"nonEmptyLines": 62,
+			"functions": [
+				{
+					"name": "useChangeset",
+					"startLine": 20,
+					"endLine": 70,
+					"params": ["{\n\tworkspaceId,\n\tref,\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "useChangeset",
+					"line": 20,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "useChangeset",
+					"callee": "useWorkspaceGitStatus",
+					"lineNumber": 24
+				},
+				{
+					"caller": "useChangeset",
+					"callee": "workspaceTrpc.git.getCommitFiles.useQuery",
+					"lineNumber": 25
+				},
+				{
+					"caller": "useChangeset",
+					"callee": "useMemo",
+					"lineNumber": 39
+				},
+				{
+					"caller": "useChangeset",
+					"callee": "(commitQuery.data?.files ?? []).map",
+					"lineNumber": 41
+				},
+				{
+					"caller": "useChangeset",
+					"callee": "buildChangesetFiles",
+					"lineNumber": 59
+				}
+			],
+			"metrics": {
+				"importCount": 4,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/useOpenInExternalEditor/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 4,
+			"nonEmptyLines": 4,
+			"exports": [
+				{
+					"name": "OpenInExternalEditorOptions",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "useOpenInExternalEditor",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 2,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/components/MentionPopover/MentionPopover.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 181,
+			"nonEmptyLines": 170,
+			"functions": [
+				{
+					"name": "findAtTriggerIndex",
+					"startLine": 31,
+					"endLine": 48,
+					"params": ["value", "prevValue"]
+				},
+				{
+					"name": "getDirectoryPath",
+					"startLine": 50,
+					"endLine": 54,
+					"params": ["relativePath"]
+				},
+				{
+					"name": "MentionProvider",
+					"startLine": 63,
+					"endLine": 166,
+					"params": ["{\n\tcwd,\n\tchildren,\n}"]
+				},
+				{
+					"name": "MentionAnchor",
+					"startLine": 168,
+					"endLine": 170,
+					"params": ["{ children }"]
+				},
+				{
+					"name": "MentionTrigger",
+					"startLine": 172,
+					"endLine": 181,
+					"params": []
+				}
+			],
+			"exports": [
+				{
+					"name": "MentionProvider",
+					"line": 63,
+					"isDefault": false
+				},
+				{
+					"name": "MentionAnchor",
+					"line": 168,
+					"isDefault": false
+				},
+				{
+					"name": "MentionTrigger",
+					"line": 172,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "getDirectoryPath",
+					"callee": "relativePath.lastIndexOf",
+					"lineNumber": 51
+				},
+				{
+					"caller": "getDirectoryPath",
+					"callee": "relativePath.slice",
+					"lineNumber": 53
+				},
+				{
+					"caller": "MentionProvider",
+					"callee": "useState",
+					"lineNumber": 70
+				},
+				{
+					"caller": "MentionProvider",
+					"callee": "useState",
+					"lineNumber": 71
+				},
+				{
+					"caller": "MentionProvider",
+					"callee": "useState",
+					"lineNumber": 72
+				},
+				{
+					"caller": "MentionProvider",
+					"callee": "usePromptInputController",
+					"lineNumber": 73
+				},
+				{
+					"caller": "MentionProvider",
+					"callee": "useRef",
+					"lineNumber": 74
+				},
+				{
+					"caller": "MentionProvider",
+					"callee": "useEffect",
+					"lineNumber": 76
+				},
+				{
+					"caller": "MentionProvider",
+					"callee": "findAtTriggerIndex",
+					"lineNumber": 79
+				},
+				{
+					"caller": "MentionProvider",
+					"callee": "setTriggerIndex",
+					"lineNumber": 81
+				},
+				{
+					"caller": "MentionProvider",
+					"callee": "setSearchQuery",
+					"lineNumber": 82
+				},
+				{
+					"caller": "MentionProvider",
+					"callee": "setOpen",
+					"lineNumber": 83
+				},
+				{
+					"caller": "MentionProvider",
+					"callee": "searchQuery.trim",
+					"lineNumber": 86
+				},
+				{
+					"caller": "MentionProvider",
+					"callee": "useDebouncedValue",
+					"lineNumber": 87
+				},
+				{
+					"caller": "handleSelectFile",
+					"callee": "current.slice",
+					"lineNumber": 96
+				},
+				{
+					"caller": "handleSelectFile",
+					"callee": "current.slice",
+					"lineNumber": 97
+				},
+				{
+					"caller": "handleSelectFile",
+					"callee": "textInput.setInput",
+					"lineNumber": 98
+				},
+				{
+					"caller": "handleSelectFile",
+					"callee": "setTriggerIndex",
+					"lineNumber": 99
+				},
+				{
+					"caller": "handleSelectFile",
+					"callee": "setOpen",
+					"lineNumber": 100
+				},
+				{
+					"caller": "handleSelectFile",
+					"callee": "requestAnimationFrame",
+					"lineNumber": 101
+				},
+				{
+					"caller": "handleSelectFile",
+					"callee": "textInput.focus",
+					"lineNumber": 101
+				},
+				{
+					"caller": "handleOpenChange",
+					"callee": "setSearchQuery",
+					"lineNumber": 105
+				},
+				{
+					"caller": "handleOpenChange",
+					"callee": "setOpen",
+					"lineNumber": 106
+				},
+				{
+					"caller": "MentionProvider",
+					"callee": "files.map",
+					"lineNumber": 137
+				},
+				{
+					"caller": "MentionProvider",
+					"callee": "getDirectoryPath",
+					"lineNumber": 138
+				},
+				{
+					"caller": "MentionProvider",
+					"callee": "handleSelectFile",
+					"lineNumber": 143
+				},
+				{
+					"caller": "MentionTrigger",
+					"callee": "useContext",
+					"lineNumber": 173
+				},
+				{
+					"caller": "MentionTrigger",
+					"callee": "ctx?.setOpen",
+					"lineNumber": 176
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 3,
+				"functionCount": 5,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/DiffPane.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 351,
+			"nonEmptyLines": 328,
+			"functions": [
+				{
+					"name": "DiffPane",
+					"startLine": 52,
+					"endLine": 325,
+					"params": [
+						"{\n\tcontext,\n\tworkspaceId,\n\tonOpenFile,\n\tonCreateNewAgentSession,\n}"
+					]
+				},
+				{
+					"name": "BinaryDiffPlaceholder",
+					"startLine": 327,
+					"endLine": 351,
+					"params": ["{\n\tfile,\n\tonOpenFile,\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "DiffPane",
+					"line": 52,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "DiffPane",
+					"callee": "useRef",
+					"lineNumber": 59
+				},
+				{
+					"caller": "DiffPane",
+					"callee": "useRef",
+					"lineNumber": 60
+				},
+				{
+					"caller": "DiffPane",
+					"callee": "useSidebarDiffRef",
+					"lineNumber": 62
+				},
+				{
+					"caller": "DiffPane",
+					"callee": "useChangeset",
+					"lineNumber": 63
+				},
+				{
+					"caller": "DiffPane",
+					"callee": "useViewedFiles",
+					"lineNumber": 64
+				},
+				{
+					"caller": "DiffPane",
+					"callee": "useOpenInExternalEditor",
+					"lineNumber": 65
+				},
+				{
+					"caller": "DiffPane",
+					"callee": "useDiffAnnotationsByPath",
+					"lineNumber": 66
+				},
+				{
+					"caller": "DiffPane",
+					"callee": "useMemo",
+					"lineNumber": 68
+				},
+				{
+					"caller": "DiffPane",
+					"callee": "useRef",
+					"lineNumber": 73
+				},
+				{
+					"caller": "DiffPane",
+					"callee": "useCallback",
+					"lineNumber": 76
+				},
+				{
+					"caller": "DiffPane",
+					"callee": "collapsed.includes",
+					"lineNumber": 80
+				},
+				{
+					"caller": "DiffPane",
+					"callee": "collapsed.filter",
+					"lineNumber": 84
+				},
+				{
+					"caller": "DiffPane",
+					"callee": "updateData",
+					"lineNumber": 85
+				},
+				{
+					"caller": "DiffPane",
+					"callee": "useRef",
+					"lineNumber": 94
+				},
+				{
+					"caller": "DiffPane",
+					"callee": "useCallback",
+					"lineNumber": 95
+				},
+				{
+					"caller": "DiffPane",
+					"callee": "fileByItemIdRef.current.get",
+					"lineNumber": 96
+				},
+				{
+					"caller": "DiffPane",
+					"callee": "useDiffCommentComposer",
+					"lineNumber": 106
+				},
+				{
+					"caller": "DiffPane",
+					"callee": "useDiffCodeViewItems",
+					"lineNumber": 114
+				},
+				{
+					"caller": "DiffPane",
+					"callee": "useDiffPaneSearch",
+					"lineNumber": 123
+				},
+				{
+					"caller": "DiffPane",
+					"callee": "useDiffCodeViewScroll",
+					"lineNumber": 134
+				},
+				{
+					"caller": "DiffPane",
+					"callee": "useDiffActiveSection",
+					"lineNumber": 146
+				},
+				{
+					"caller": "DiffPane",
+					"callee": "useDiffCodeViewTheme",
+					"lineNumber": 153
+				},
+				{
+					"caller": "DiffPane",
+					"callee": "useMemo",
+					"lineNumber": 155
+				},
+				{
+					"caller": "DiffPane",
+					"callee": "useCallback",
+					"lineNumber": 166
+				},
+				{
+					"caller": "DiffPane",
+					"callee": "fileByItemId.get",
+					"lineNumber": 168
+				},
+				{
+					"caller": "DiffPane",
+					"callee": "getChangesetFileKey",
+					"lineNumber": 170
+				},
+				{
+					"caller": "DiffPane",
+					"callee": "collapsedSet.has",
+					"lineNumber": 174
+				},
+				{
+					"caller": "DiffPane",
+					"callee": "setCollapsed",
+					"lineNumber": 175
+				},
+				{
+					"caller": "DiffPane",
+					"callee": "useCallback",
+					"lineNumber": 182
+				},
+				{
+					"caller": "DiffPane",
+					"callee": "fileByItemId.get",
+					"lineNumber": 184
+				},
+				{
+					"caller": "DiffPane",
+					"callee": "getChangesetFileKey",
+					"lineNumber": 186
+				},
+				{
+					"caller": "DiffPane",
+					"callee": "setCollapsed",
+					"lineNumber": 191
+				},
+				{
+					"caller": "DiffPane",
+					"callee": "viewedSet.has",
+					"lineNumber": 192
+				},
+				{
+					"caller": "DiffPane",
+					"callee": "useCallback",
+					"lineNumber": 210
+				},
+				{
+					"caller": "DiffPane",
+					"callee": "fileByItemId.get",
+					"lineNumber": 220
+				},
+				{
+					"caller": "BinaryDiffPlaceholder",
+					"callee": "onOpenFile",
+					"lineNumber": 344
+				}
+			],
+			"metrics": {
+				"importCount": 18,
+				"exportCount": 1,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/components/AgentCommentComposer/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 5,
+			"nonEmptyLines": 5,
+			"exports": [
+				{
+					"name": "AgentSessionPlacement",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "AgentTarget",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "AgentCommentComposer",
+					"line": 5,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 3,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/components/CommentThread/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "CommentThread",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/components/DiffHeaderMetadata/DiffHeaderMetadata.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 183,
+			"nonEmptyLines": 176,
+			"functions": [
+				{
+					"name": "DiffHeaderMetadata",
+					"startLine": 23,
+					"endLine": 183,
+					"params": [
+						"{\n\tfile,\n\tworkspaceId,\n\tonSetCollapsed,\n\tviewed,\n\tonSetViewed,\n\tonOpenFile,\n\tonOpenInExternalEditor,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "DiffHeaderMetadata",
+					"line": 23,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "DiffHeaderMetadata",
+					"callee": "useId",
+					"lineNumber": 32
+				},
+				{
+					"caller": "DiffHeaderMetadata",
+					"callee": "useCopyToClipboard",
+					"lineNumber": 33
+				},
+				{
+					"caller": "DiffHeaderMetadata",
+					"callee": "useSidebarFilePolicy",
+					"lineNumber": 34
+				},
+				{
+					"caller": "DiffHeaderMetadata",
+					"callee": "useCallback",
+					"lineNumber": 36
+				},
+				{
+					"caller": "DiffHeaderMetadata",
+					"callee": "onSetViewed",
+					"lineNumber": 38
+				},
+				{
+					"caller": "DiffHeaderMetadata",
+					"callee": "onSetCollapsed",
+					"lineNumber": 39
+				},
+				{
+					"caller": "DiffHeaderMetadata",
+					"callee": "useCallback",
+					"lineNumber": 42
+				},
+				{
+					"caller": "DiffHeaderMetadata",
+					"callee": "toast.error",
+					"lineNumber": 43
+				},
+				{
+					"caller": "DiffHeaderMetadata",
+					"callee": "useCallback",
+					"lineNumber": 48
+				},
+				{
+					"caller": "DiffHeaderMetadata",
+					"callee": "showDeletedFileToast",
+					"lineNumber": 51
+				},
+				{
+					"caller": "DiffHeaderMetadata",
+					"callee": "policy.getAction",
+					"lineNumber": 54
+				},
+				{
+					"caller": "DiffHeaderMetadata",
+					"callee": "onOpenInExternalEditor",
+					"lineNumber": 55
+				},
+				{
+					"caller": "DiffHeaderMetadata",
+					"callee": "onOpenFile",
+					"lineNumber": 56
+				},
+				{
+					"caller": "DiffHeaderMetadata",
+					"callee": "onOpenFile",
+					"lineNumber": 57
+				},
+				{
+					"caller": "DiffHeaderMetadata",
+					"callee": "workspaceTrpc.useUtils",
+					"lineNumber": 69
+				},
+				{
+					"caller": "DiffHeaderMetadata",
+					"callee": "workspaceTrpc.git.discardChanges.useMutation",
+					"lineNumber": 70
+				},
+				{
+					"caller": "DiffHeaderMetadata",
+					"callee": "utils.git.getStatus.invalidate",
+					"lineNumber": 72
+				},
+				{
+					"caller": "DiffHeaderMetadata",
+					"callee": "utils.git.getDiff.invalidate",
+					"lineNumber": 73
+				},
+				{
+					"caller": "DiffHeaderMetadata",
+					"callee": "toast.error",
+					"lineNumber": 76
+				},
+				{
+					"caller": "DiffHeaderMetadata",
+					"callee": "useState",
+					"lineNumber": 79
+				},
+				{
+					"caller": "DiffHeaderMetadata",
+					"callee": "useMemo",
+					"lineNumber": 81
+				},
+				{
+					"caller": "DiffHeaderMetadata",
+					"callee": "setShowDiscardConfirm",
+					"lineNumber": 83
+				},
+				{
+					"caller": "DiffHeaderMetadata",
+					"callee": "useCallback",
+					"lineNumber": 85
+				},
+				{
+					"caller": "DiffHeaderMetadata",
+					"callee": "setShowDiscardConfirm",
+					"lineNumber": 86
+				},
+				{
+					"caller": "DiffHeaderMetadata",
+					"callee": "discardMutation.mutate",
+					"lineNumber": 87
+				},
+				{
+					"caller": "DiffHeaderMetadata",
+					"callee": "file.path.split(\"/\").pop",
+					"lineNumber": 90
+				},
+				{
+					"caller": "DiffHeaderMetadata",
+					"callee": "file.path.split",
+					"lineNumber": 90
+				},
+				{
+					"caller": "DiffHeaderMetadata",
+					"callee": "copyToClipboard",
+					"lineNumber": 114
+				},
+				{
+					"caller": "DiffHeaderMetadata",
+					"callee": "handleToggleViewed",
+					"lineNumber": 134
+				}
+			],
+			"metrics": {
+				"importCount": 5,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/components/DiffHeaderMetadata/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "DiffHeaderMetadata",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/components/DiffHeaderPrefix/DiffHeaderPrefix.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 41,
+			"nonEmptyLines": 38,
+			"functions": [
+				{
+					"name": "DiffHeaderPrefix",
+					"startLine": 12,
+					"endLine": 41,
+					"params": ["{\n\tfile,\n\tcollapsed,\n\tonSetCollapsed,\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "DiffHeaderPrefix",
+					"line": 12,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "DiffHeaderPrefix",
+					"callee": "useCallback",
+					"lineNumber": 17
+				},
+				{
+					"caller": "DiffHeaderPrefix",
+					"callee": "onSetCollapsed",
+					"lineNumber": 18
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/components/DiffHeaderPrefix/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "DiffHeaderPrefix",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/components/DiffPaneHeaderExtras/DiffPaneHeaderExtras.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 117,
+			"nonEmptyLines": 114,
+			"functions": [
+				{
+					"name": "DiffPaneHeaderExtras",
+					"startLine": 13,
+					"endLine": 117,
+					"params": []
+				}
+			],
+			"exports": [
+				{
+					"name": "DiffPaneHeaderExtras",
+					"line": 13,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "DiffPaneHeaderExtras",
+					"callee": "useSettings",
+					"lineNumber": 14
+				},
+				{
+					"caller": "DiffPaneHeaderExtras",
+					"callee": "useSettings",
+					"lineNumber": 15
+				},
+				{
+					"caller": "DiffPaneHeaderExtras",
+					"callee": "useSettings",
+					"lineNumber": 16
+				},
+				{
+					"caller": "DiffPaneHeaderExtras",
+					"callee": "useSettings",
+					"lineNumber": 17
+				},
+				{
+					"caller": "buttonClass",
+					"callee": "cn",
+					"lineNumber": 20
+				},
+				{
+					"caller": "DiffPaneHeaderExtras",
+					"callee": "updateSetting",
+					"lineNumber": 33
+				},
+				{
+					"caller": "DiffPaneHeaderExtras",
+					"callee": "buttonClass",
+					"lineNumber": 36
+				},
+				{
+					"caller": "DiffPaneHeaderExtras",
+					"callee": "updateSetting",
+					"lineNumber": 49
+				},
+				{
+					"caller": "DiffPaneHeaderExtras",
+					"callee": "buttonClass",
+					"lineNumber": 52
+				},
+				{
+					"caller": "DiffPaneHeaderExtras",
+					"callee": "updateSetting",
+					"lineNumber": 69
+				},
+				{
+					"caller": "DiffPaneHeaderExtras",
+					"callee": "buttonClass",
+					"lineNumber": 76
+				},
+				{
+					"caller": "DiffPaneHeaderExtras",
+					"callee": "updateSetting",
+					"lineNumber": 93
+				},
+				{
+					"caller": "DiffPaneHeaderExtras",
+					"callee": "buttonClass",
+					"lineNumber": 98
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/components/DiffSectionBar/DiffSectionBar.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 37,
+			"nonEmptyLines": 33,
+			"functions": [
+				{
+					"name": "DiffSectionBar",
+					"startLine": 22,
+					"endLine": 37,
+					"params": ["{ kind, count }"]
+				}
+			],
+			"exports": [
+				{
+					"name": "DiffSectionBar",
+					"line": 22,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/components/DiffSectionBar/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "DiffSectionBar",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffActiveSection/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "useDiffActiveSection",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffActiveSection/useDiffActiveSection.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 107,
+			"nonEmptyLines": 97,
+			"functions": [
+				{
+					"name": "useDiffActiveSection",
+					"startLine": 40,
+					"endLine": 107,
+					"params": [
+						"{\n\tcodeViewRef,\n\titems,\n\tfileByItemId,\n\tfiles,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "useDiffActiveSection",
+					"line": 40,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "useDiffActiveSection",
+					"callee": "useMemo",
+					"lineNumber": 46
+				},
+				{
+					"caller": "useDiffActiveSection",
+					"callee": "counts.set",
+					"lineNumber": 49
+				},
+				{
+					"caller": "useDiffActiveSection",
+					"callee": "counts.get",
+					"lineNumber": 49
+				},
+				{
+					"caller": "useDiffActiveSection",
+					"callee": "fileByItemId.get",
+					"lineNumber": 54
+				},
+				{
+					"caller": "useDiffActiveSection",
+					"callee": "counts.get",
+					"lineNumber": 56
+				},
+				{
+					"caller": "useDiffActiveSection",
+					"callee": "byItemId.set",
+					"lineNumber": 57
+				},
+				{
+					"caller": "useDiffActiveSection",
+					"callee": "useState",
+					"lineNumber": 63
+				},
+				{
+					"caller": "useDiffActiveSection",
+					"callee": "sectionByItemId.get",
+					"lineNumber": 65
+				},
+				{
+					"caller": "useDiffActiveSection",
+					"callee": "useRef",
+					"lineNumber": 74
+				},
+				{
+					"caller": "useDiffActiveSection",
+					"callee": "useCallback",
+					"lineNumber": 75
+				},
+				{
+					"caller": "useDiffActiveSection",
+					"callee": "codeViewRef.current?.getInstance",
+					"lineNumber": 77
+				},
+				{
+					"caller": "useDiffActiveSection",
+					"callee": "instance.getScrollTop",
+					"lineNumber": 79
+				},
+				{
+					"caller": "useDiffActiveSection",
+					"callee": "instance.getTopForItem",
+					"lineNumber": 82
+				},
+				{
+					"caller": "useDiffActiveSection",
+					"callee": "setTopItemId",
+					"lineNumber": 87
+				},
+				{
+					"caller": "useDiffActiveSection",
+					"callee": "useCallback",
+					"lineNumber": 91
+				},
+				{
+					"caller": "useDiffActiveSection",
+					"callee": "requestAnimationFrame",
+					"lineNumber": 93
+				},
+				{
+					"caller": "useDiffActiveSection",
+					"callee": "useEffect",
+					"lineNumber": 99
+				},
+				{
+					"caller": "useDiffActiveSection",
+					"callee": "updateActiveSection",
+					"lineNumber": 100
+				},
+				{
+					"caller": "useDiffActiveSection",
+					"callee": "cancelAnimationFrame",
+					"lineNumber": 102
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffAnnotations/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 6,
+			"nonEmptyLines": 6,
+			"exports": [
+				{
+					"name": "DiffAgentComposer",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "DiffAnnotationMetadata",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "DiffCommentThread",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "useDiffAnnotationsByPath",
+					"line": 6,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 4,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		}
+	]
+}

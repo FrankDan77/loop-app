@@ -1,0 +1,2037 @@
+{
+	"batch": 37,
+	"totalBatches": 117,
+	"filesProcessed": 33,
+	"nodes": [
+		{
+			"id": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetRow/PresetRow.tsx",
+			"type": "file",
+			"path": "src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetRow/PresetRow.tsx",
+			"language": "typescript",
+			"category": "code",
+			"totalLines": 219,
+			"nonEmptyLines": 205,
+			"metrics": {
+				"importCount": 6,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetRow/PresetRow.tsx:PresetRow",
+			"type": "function",
+			"name": "PresetRow",
+			"startLine": 43,
+			"endLine": 219,
+			"params": [
+				"{\n\tpreset,\n\trowIndex,\n\tprojectOptionsById,\n\tagents,\n\tonEdit,\n\tonLocalReorder,\n\tonPersistReorder,\n\tonToggleVisibility,\n}"
+			]
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetRow/PresetRow.utils.test.ts",
+			"type": "file",
+			"path": "src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetRow/PresetRow.utils.test.ts",
+			"language": "typescript",
+			"category": "code",
+			"totalLines": 14,
+			"nonEmptyLines": 12,
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetRow/PresetRow.utils.ts",
+			"type": "file",
+			"path": "src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetRow/PresetRow.utils.ts",
+			"language": "typescript",
+			"category": "code",
+			"totalLines": 22,
+			"nonEmptyLines": 17,
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetRow/PresetRow.utils.ts:getPresetModeLabel",
+			"type": "function",
+			"name": "getPresetModeLabel",
+			"startLine": 3,
+			"endLine": 22,
+			"params": ["modeValue", "commandCount"]
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetRow/components/CommandsEditor/index.ts",
+			"type": "file",
+			"path": "src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetRow/components/CommandsEditor/index.ts",
+			"language": "typescript",
+			"category": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetRow/index.ts",
+			"type": "file",
+			"path": "src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetRow/index.ts",
+			"language": "typescript",
+			"category": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/PresetsSection.tsx",
+			"type": "file",
+			"path": "src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/PresetsSection.tsx",
+			"language": "typescript",
+			"category": "code",
+			"totalLines": 553,
+			"nonEmptyLines": 495,
+			"metrics": {
+				"importCount": 9,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/PresetsSection.tsx:PresetsSection",
+			"type": "function",
+			"name": "PresetsSection",
+			"startLine": 32,
+			"endLine": 553,
+			"params": [
+				"{\n\tshowPresets,\n\tshowQuickAdd,\n\teditingPresetId: editingPresetIdFromRoute,\n\tonEditingPresetIdChange,\n\tpendingCreateProjectId,\n\tonPendingCreateProjectIdChange,\n}"
+			]
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetEditorDialog/PresetEditorDialog.tsx",
+			"type": "file",
+			"path": "src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetEditorDialog/PresetEditorDialog.tsx",
+			"language": "typescript",
+			"category": "code",
+			"totalLines": 624,
+			"nonEmptyLines": 595,
+			"metrics": {
+				"importCount": 13,
+				"exportCount": 1,
+				"functionCount": 5,
+				"classCount": 0
+			}
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetEditorDialog/PresetEditorDialog.tsx:getWorkspaceIdFromRoute",
+			"type": "function",
+			"name": "getWorkspaceIdFromRoute",
+			"startLine": 86,
+			"endLine": 89,
+			"params": ["route"]
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetEditorDialog/PresetEditorDialog.tsx:toPresetDirectoryValue",
+			"type": "function",
+			"name": "toPresetDirectoryValue",
+			"startLine": 91,
+			"endLine": 100,
+			"params": ["workspacePath", "selectedPath"]
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetEditorDialog/PresetEditorDialog.tsx:DialogRow",
+			"type": "function",
+			"name": "DialogRow",
+			"startLine": 110,
+			"endLine": 141,
+			"params": ["{\n\tlabel,\n\thint,\n\thtmlFor,\n\tstacked,\n\tchildren,\n}"]
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetEditorDialog/PresetEditorDialog.tsx:Segmented",
+			"type": "function",
+			"name": "Segmented",
+			"startLine": 155,
+			"endLine": 183,
+			"params": ["{\n\tvalue,\n\tonChange,\n\toptions,\n\tclassName,\n}"]
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetEditorDialog/PresetEditorDialog.tsx:PresetEditorDialog",
+			"type": "function",
+			"name": "PresetEditorDialog",
+			"startLine": 185,
+			"endLine": 624,
+			"params": [
+				"{\n\tpreset,\n\tprojects,\n\tagents,\n\topen,\n\tonOpenChange,\n\tonDeletePreset,\n\tonFieldChange,\n\tonFieldBlur,\n\tonProjectIdsChange,\n\tonDirectorySelect,\n\tonCommandsChange,\n\tonCommandsBlur,\n\tonModeChange,\n\tonToggleAutoApply,\n\tonToggleWorkspaceRun,\n\tmodeValue,\n\thasMultipleCommands,\n\tisWorkspaceRun,\n\tisWorkspaceCreation,\n\tisNewTab,\n}"
+			]
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetEditorDialog/components/ProjectTargetingField/ProjectTargetingField.tsx",
+			"type": "file",
+			"path": "src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetEditorDialog/components/ProjectTargetingField/ProjectTargetingField.tsx",
+			"language": "typescript",
+			"category": "code",
+			"totalLines": 178,
+			"nonEmptyLines": 169,
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetEditorDialog/components/ProjectTargetingField/ProjectTargetingField.tsx:ProjectTargetingField",
+			"type": "function",
+			"name": "ProjectTargetingField",
+			"startLine": 30,
+			"endLine": 178,
+			"params": [
+				"{\n\tprojectIds,\n\tprojects,\n\tpreferredProjectId,\n\tonChange,\n}"
+			]
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetEditorDialog/components/ProjectTargetingField/index.ts",
+			"type": "file",
+			"path": "src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetEditorDialog/components/ProjectTargetingField/index.ts",
+			"language": "typescript",
+			"category": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetEditorDialog/index.ts",
+			"type": "file",
+			"path": "src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetEditorDialog/index.ts",
+			"language": "typescript",
+			"category": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetsTable/PresetsTable.tsx",
+			"type": "file",
+			"path": "src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetsTable/PresetsTable.tsx",
+			"language": "typescript",
+			"category": "code",
+			"totalLines": 68,
+			"nonEmptyLines": 66,
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetsTable/PresetsTable.tsx:PresetsTable",
+			"type": "function",
+			"name": "PresetsTable",
+			"startLine": 23,
+			"endLine": 68,
+			"params": [
+				"{\n\tpresets,\n\tisLoading,\n\tprojectOptionsById,\n\tagents,\n\tpresetsContainerRef,\n\tonEdit,\n\tonLocalReorder,\n\tonPersistReorder,\n\tonToggleVisibility,\n\tbordered = true,\n}"
+			]
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetsTable/index.ts",
+			"type": "file",
+			"path": "src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetsTable/index.ts",
+			"language": "typescript",
+			"category": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/QuickAddPresets/QuickAddPresets.tsx",
+			"type": "file",
+			"path": "src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/QuickAddPresets/QuickAddPresets.tsx",
+			"language": "typescript",
+			"category": "code",
+			"totalLines": 100,
+			"nonEmptyLines": 97,
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/QuickAddPresets/QuickAddPresets.tsx:QuickAddPresets",
+			"type": "function",
+			"name": "QuickAddPresets",
+			"startLine": 30,
+			"endLine": 100,
+			"params": [
+				"{\n\tpills,\n\tisDark,\n\tisAddDisabled,\n\tkeepOpenOnAdd,\n\tisPillAdded,\n\tonAddPill,\n}"
+			]
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/QuickAddPresets/index.ts",
+			"type": "file",
+			"path": "src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/QuickAddPresets/index.ts",
+			"language": "typescript",
+			"category": "code",
+			"totalLines": 4,
+			"nonEmptyLines": 4,
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 2,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/constants.ts",
+			"type": "file",
+			"path": "src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/constants.ts",
+			"language": "typescript",
+			"category": "code",
+			"totalLines": 27,
+			"nonEmptyLines": 24,
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/preset-project-options.test.ts",
+			"type": "file",
+			"path": "src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/preset-project-options.test.ts",
+			"language": "typescript",
+			"category": "code",
+			"totalLines": 40,
+			"nonEmptyLines": 37,
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/preset-project-options.ts",
+			"type": "file",
+			"path": "src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/preset-project-options.ts",
+			"language": "typescript",
+			"category": "code",
+			"totalLines": 43,
+			"nonEmptyLines": 37,
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 2,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/preset-project-options.ts:resolveSelectedPresetProjects",
+			"type": "function",
+			"name": "resolveSelectedPresetProjects",
+			"startLine": 10,
+			"endLine": 23,
+			"params": ["projectIds", "projectOptionsById"]
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/preset-project-options.ts:getPresetProjectTargetLabel",
+			"type": "function",
+			"name": "getPresetProjectTargetLabel",
+			"startLine": 25,
+			"endLine": 43,
+			"params": ["projectIds", "projectOptionsById"]
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/V2PresetsSection/V2PresetsSection.tsx",
+			"type": "file",
+			"path": "src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/V2PresetsSection/V2PresetsSection.tsx",
+			"language": "typescript",
+			"category": "code",
+			"totalLines": 669,
+			"nonEmptyLines": 596,
+			"metrics": {
+				"importCount": 12,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/V2PresetsSection/V2PresetsSection.tsx:V2PresetsSection",
+			"type": "function",
+			"name": "V2PresetsSection",
+			"startLine": 47,
+			"endLine": 669,
+			"params": [
+				"{\n\tshowPresets,\n\tshowQuickAdd,\n\teditingPresetId: editingPresetIdFromRoute,\n\tonEditingPresetIdChange,\n\tpendingCreateProjectId,\n\tonPendingCreateProjectIdChange,\n}"
+			]
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/V2SessionsSection/V2SessionsSection.tsx",
+			"type": "file",
+			"path": "src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/V2SessionsSection/V2SessionsSection.tsx",
+			"language": "typescript",
+			"category": "code",
+			"totalLines": 405,
+			"nonEmptyLines": 389,
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 1,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/V2SessionsSection/V2SessionsSection.tsx:V2SessionsSection",
+			"type": "function",
+			"name": "V2SessionsSection",
+			"startLine": 42,
+			"endLine": 65,
+			"params": []
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/V2SessionsSection/V2SessionsSection.tsx:V2SessionsSectionInner",
+			"type": "function",
+			"name": "V2SessionsSectionInner",
+			"startLine": 67,
+			"endLine": 405,
+			"params": []
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/V2ProjectSettings.tsx",
+			"type": "file",
+			"path": "src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/V2ProjectSettings.tsx",
+			"language": "typescript",
+			"category": "code",
+			"totalLines": 219,
+			"nonEmptyLines": 208,
+			"metrics": {
+				"importCount": 15,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/V2ProjectSettings.tsx:V2ProjectSettings",
+			"type": "function",
+			"name": "V2ProjectSettings",
+			"startLine": 30,
+			"endLine": 219,
+			"params": ["{\n\tprojectId,\n\thostId,\n}"]
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/BranchPrefixSection/BranchPrefixSection.tsx",
+			"type": "file",
+			"path": "src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/BranchPrefixSection/BranchPrefixSection.tsx",
+			"language": "typescript",
+			"category": "code",
+			"totalLines": 48,
+			"nonEmptyLines": 45,
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/BranchPrefixSection/BranchPrefixSection.tsx:BranchPrefixSection",
+			"type": "function",
+			"name": "BranchPrefixSection",
+			"startLine": 16,
+			"endLine": 48,
+			"params": [
+				"{\n\tprojectId,\n\thostUrl,\n\tmode,\n\tcustomPrefix,\n\tonChanged,\n}"
+			]
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/BranchPrefixSection/index.ts",
+			"type": "file",
+			"path": "src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/BranchPrefixSection/index.ts",
+			"language": "typescript",
+			"category": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/DeleteProjectSection/DeleteProjectSection.tsx",
+			"type": "file",
+			"path": "src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/DeleteProjectSection/DeleteProjectSection.tsx",
+			"language": "typescript",
+			"category": "code",
+			"totalLines": 131,
+			"nonEmptyLines": 127,
+			"metrics": {
+				"importCount": 4,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/DeleteProjectSection/DeleteProjectSection.tsx:DeleteProjectSection",
+			"type": "function",
+			"name": "DeleteProjectSection",
+			"startLine": 27,
+			"endLine": 131,
+			"params": ["{\n\tprojectId,\n\tprojectName,\n}"]
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/DeleteProjectSection/index.ts",
+			"type": "file",
+			"path": "src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/DeleteProjectSection/index.ts",
+			"language": "typescript",
+			"category": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/IconUploadField/index.ts",
+			"type": "file",
+			"path": "src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/IconUploadField/index.ts",
+			"language": "typescript",
+			"category": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/NameSection/index.ts",
+			"type": "file",
+			"path": "src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/NameSection/index.ts",
+			"language": "typescript",
+			"category": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/ProjectLocationSection/index.ts",
+			"type": "file",
+			"path": "src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/ProjectLocationSection/index.ts",
+			"language": "typescript",
+			"category": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/RepositorySection/index.ts",
+			"type": "file",
+			"path": "src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/RepositorySection/index.ts",
+			"language": "typescript",
+			"category": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/V2ScriptsEditor/V2ScriptsEditor.tsx",
+			"type": "file",
+			"path": "src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/V2ScriptsEditor/V2ScriptsEditor.tsx",
+			"language": "typescript",
+			"category": "code",
+			"totalLines": 362,
+			"nonEmptyLines": 323,
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 1,
+				"functionCount": 7,
+				"classCount": 0
+			}
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/V2ScriptsEditor/V2ScriptsEditor.tsx:parseConfigContent",
+			"type": "function",
+			"name": "parseConfigContent",
+			"startLine": 30,
+			"endLine": 53,
+			"params": ["content"]
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/V2ScriptsEditor/V2ScriptsEditor.tsx:toCommandsArray",
+			"type": "function",
+			"name": "toCommandsArray",
+			"startLine": 55,
+			"endLine": 60,
+			"params": ["value"]
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/V2ScriptsEditor/V2ScriptsEditor.tsx:arraysEqual",
+			"type": "function",
+			"name": "arraysEqual",
+			"startLine": 62,
+			"endLine": 64,
+			"params": ["a", "b"]
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/V2ScriptsEditor/V2ScriptsEditor.tsx:buildPayload",
+			"type": "function",
+			"name": "buildPayload",
+			"startLine": 66,
+			"endLine": 72,
+			"params": ["values"]
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/V2ScriptsEditor/V2ScriptsEditor.tsx:payloadsEqual",
+			"type": "function",
+			"name": "payloadsEqual",
+			"startLine": 74,
+			"endLine": 80,
+			"params": ["a", "b"]
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/V2ScriptsEditor/V2ScriptsEditor.tsx:trimScriptValue",
+			"type": "function",
+			"name": "trimScriptValue",
+			"startLine": 82,
+			"endLine": 88,
+			"params": ["value"]
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/V2ScriptsEditor/V2ScriptsEditor.tsx:V2ScriptsEditor",
+			"type": "function",
+			"name": "V2ScriptsEditor",
+			"startLine": 92,
+			"endLine": 362,
+			"params": ["{\n\thostUrl,\n\tprojectId,\n\tclassName,\n}"]
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/V2ScriptsEditor/components/ScriptField/index.ts",
+			"type": "file",
+			"path": "src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/V2ScriptsEditor/components/ScriptField/index.ts",
+			"language": "typescript",
+			"category": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/V2ScriptsEditor/index.ts",
+			"type": "file",
+			"path": "src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/V2ScriptsEditor/index.ts",
+			"language": "typescript",
+			"category": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/WorktreeLocationSection/WorktreeLocationSection.tsx",
+			"type": "file",
+			"path": "src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/WorktreeLocationSection/WorktreeLocationSection.tsx",
+			"language": "typescript",
+			"category": "code",
+			"totalLines": 78,
+			"nonEmptyLines": 74,
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/WorktreeLocationSection/WorktreeLocationSection.tsx:WorktreeLocationSection",
+			"type": "function",
+			"name": "WorktreeLocationSection",
+			"startLine": 20,
+			"endLine": 78,
+			"params": [
+				"{\n\tprojectId,\n\tcurrentPath,\n\thostUrl,\n\thostName,\n\tisRemoteTarget,\n\tisHostOnline,\n\tisProjectSetup,\n\tonChanged,\n}"
+			]
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/WorktreeLocationSection/index.ts",
+			"type": "file",
+			"path": "src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/WorktreeLocationSection/index.ts",
+			"language": "typescript",
+			"category": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		}
+	],
+	"edges": [
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetRow/PresetRow.tsx",
+			"target": "function:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetRow/PresetRow.tsx:PresetRow",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetRow/PresetRow.tsx",
+			"target": "function:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetRow/PresetRow.tsx:PresetRow",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetRow/PresetRow.utils.ts",
+			"target": "function:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetRow/PresetRow.utils.ts:getPresetModeLabel",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetRow/PresetRow.utils.ts",
+			"target": "function:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetRow/PresetRow.utils.ts:getPresetModeLabel",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/PresetsSection.tsx",
+			"target": "function:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/PresetsSection.tsx:PresetsSection",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/PresetsSection.tsx",
+			"target": "function:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/PresetsSection.tsx:PresetsSection",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetEditorDialog/PresetEditorDialog.tsx",
+			"target": "function:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetEditorDialog/PresetEditorDialog.tsx:getWorkspaceIdFromRoute",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetEditorDialog/PresetEditorDialog.tsx",
+			"target": "function:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetEditorDialog/PresetEditorDialog.tsx:toPresetDirectoryValue",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetEditorDialog/PresetEditorDialog.tsx",
+			"target": "function:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetEditorDialog/PresetEditorDialog.tsx:DialogRow",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetEditorDialog/PresetEditorDialog.tsx",
+			"target": "function:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetEditorDialog/PresetEditorDialog.tsx:Segmented",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetEditorDialog/PresetEditorDialog.tsx",
+			"target": "function:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetEditorDialog/PresetEditorDialog.tsx:PresetEditorDialog",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetEditorDialog/PresetEditorDialog.tsx",
+			"target": "function:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetEditorDialog/PresetEditorDialog.tsx:PresetEditorDialog",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetEditorDialog/PresetEditorDialog.tsx:PresetEditorDialog",
+			"target": "function:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetEditorDialog/PresetEditorDialog.tsx:getWorkspaceIdFromRoute",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetEditorDialog/components/ProjectTargetingField/ProjectTargetingField.tsx",
+			"target": "function:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetEditorDialog/components/ProjectTargetingField/ProjectTargetingField.tsx:ProjectTargetingField",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetEditorDialog/components/ProjectTargetingField/ProjectTargetingField.tsx",
+			"target": "function:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetEditorDialog/components/ProjectTargetingField/ProjectTargetingField.tsx:ProjectTargetingField",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetsTable/PresetsTable.tsx",
+			"target": "function:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetsTable/PresetsTable.tsx:PresetsTable",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetsTable/PresetsTable.tsx",
+			"target": "function:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetsTable/PresetsTable.tsx:PresetsTable",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/QuickAddPresets/QuickAddPresets.tsx",
+			"target": "function:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/QuickAddPresets/QuickAddPresets.tsx:QuickAddPresets",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/QuickAddPresets/QuickAddPresets.tsx",
+			"target": "function:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/QuickAddPresets/QuickAddPresets.tsx:QuickAddPresets",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/preset-project-options.ts",
+			"target": "function:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/preset-project-options.ts:resolveSelectedPresetProjects",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/preset-project-options.ts",
+			"target": "function:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/preset-project-options.ts:getPresetProjectTargetLabel",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/preset-project-options.ts",
+			"target": "function:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/preset-project-options.ts:resolveSelectedPresetProjects",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/preset-project-options.ts",
+			"target": "function:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/preset-project-options.ts:getPresetProjectTargetLabel",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/preset-project-options.ts:getPresetProjectTargetLabel",
+			"target": "function:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/preset-project-options.ts:resolveSelectedPresetProjects",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/V2PresetsSection/V2PresetsSection.tsx",
+			"target": "function:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/V2PresetsSection/V2PresetsSection.tsx:V2PresetsSection",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/V2PresetsSection/V2PresetsSection.tsx",
+			"target": "function:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/V2PresetsSection/V2PresetsSection.tsx:V2PresetsSection",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/V2SessionsSection/V2SessionsSection.tsx",
+			"target": "function:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/V2SessionsSection/V2SessionsSection.tsx:V2SessionsSection",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/V2SessionsSection/V2SessionsSection.tsx",
+			"target": "function:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/V2SessionsSection/V2SessionsSection.tsx:V2SessionsSectionInner",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/V2SessionsSection/V2SessionsSection.tsx",
+			"target": "function:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/V2SessionsSection/V2SessionsSection.tsx:V2SessionsSection",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/V2ProjectSettings.tsx",
+			"target": "function:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/V2ProjectSettings.tsx:V2ProjectSettings",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/V2ProjectSettings.tsx",
+			"target": "function:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/V2ProjectSettings.tsx:V2ProjectSettings",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/BranchPrefixSection/BranchPrefixSection.tsx",
+			"target": "function:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/BranchPrefixSection/BranchPrefixSection.tsx:BranchPrefixSection",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/BranchPrefixSection/BranchPrefixSection.tsx",
+			"target": "function:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/BranchPrefixSection/BranchPrefixSection.tsx:BranchPrefixSection",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/DeleteProjectSection/DeleteProjectSection.tsx",
+			"target": "function:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/DeleteProjectSection/DeleteProjectSection.tsx:DeleteProjectSection",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/DeleteProjectSection/DeleteProjectSection.tsx",
+			"target": "function:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/DeleteProjectSection/DeleteProjectSection.tsx:DeleteProjectSection",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/V2ScriptsEditor/V2ScriptsEditor.tsx",
+			"target": "function:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/V2ScriptsEditor/V2ScriptsEditor.tsx:parseConfigContent",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/V2ScriptsEditor/V2ScriptsEditor.tsx",
+			"target": "function:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/V2ScriptsEditor/V2ScriptsEditor.tsx:toCommandsArray",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/V2ScriptsEditor/V2ScriptsEditor.tsx",
+			"target": "function:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/V2ScriptsEditor/V2ScriptsEditor.tsx:arraysEqual",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/V2ScriptsEditor/V2ScriptsEditor.tsx",
+			"target": "function:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/V2ScriptsEditor/V2ScriptsEditor.tsx:buildPayload",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/V2ScriptsEditor/V2ScriptsEditor.tsx",
+			"target": "function:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/V2ScriptsEditor/V2ScriptsEditor.tsx:payloadsEqual",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/V2ScriptsEditor/V2ScriptsEditor.tsx",
+			"target": "function:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/V2ScriptsEditor/V2ScriptsEditor.tsx:trimScriptValue",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/V2ScriptsEditor/V2ScriptsEditor.tsx",
+			"target": "function:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/V2ScriptsEditor/V2ScriptsEditor.tsx:V2ScriptsEditor",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/V2ScriptsEditor/V2ScriptsEditor.tsx",
+			"target": "function:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/V2ScriptsEditor/V2ScriptsEditor.tsx:V2ScriptsEditor",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/V2ScriptsEditor/V2ScriptsEditor.tsx:buildPayload",
+			"target": "function:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/V2ScriptsEditor/V2ScriptsEditor.tsx:toCommandsArray",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/V2ScriptsEditor/V2ScriptsEditor.tsx:buildPayload",
+			"target": "function:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/V2ScriptsEditor/V2ScriptsEditor.tsx:toCommandsArray",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/V2ScriptsEditor/V2ScriptsEditor.tsx:buildPayload",
+			"target": "function:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/V2ScriptsEditor/V2ScriptsEditor.tsx:toCommandsArray",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/V2ScriptsEditor/V2ScriptsEditor.tsx:payloadsEqual",
+			"target": "function:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/V2ScriptsEditor/V2ScriptsEditor.tsx:arraysEqual",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/V2ScriptsEditor/V2ScriptsEditor.tsx:payloadsEqual",
+			"target": "function:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/V2ScriptsEditor/V2ScriptsEditor.tsx:arraysEqual",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/V2ScriptsEditor/V2ScriptsEditor.tsx:payloadsEqual",
+			"target": "function:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/V2ScriptsEditor/V2ScriptsEditor.tsx:arraysEqual",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/V2ScriptsEditor/V2ScriptsEditor.tsx:V2ScriptsEditor",
+			"target": "function:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/V2ScriptsEditor/V2ScriptsEditor.tsx:parseConfigContent",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/V2ScriptsEditor/V2ScriptsEditor.tsx:V2ScriptsEditor",
+			"target": "function:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/V2ScriptsEditor/V2ScriptsEditor.tsx:buildPayload",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/V2ScriptsEditor/V2ScriptsEditor.tsx:V2ScriptsEditor",
+			"target": "function:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/V2ScriptsEditor/V2ScriptsEditor.tsx:buildPayload",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/V2ScriptsEditor/V2ScriptsEditor.tsx:V2ScriptsEditor",
+			"target": "function:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/V2ScriptsEditor/V2ScriptsEditor.tsx:payloadsEqual",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/V2ScriptsEditor/V2ScriptsEditor.tsx:V2ScriptsEditor",
+			"target": "function:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/V2ScriptsEditor/V2ScriptsEditor.tsx:payloadsEqual",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/V2ScriptsEditor/V2ScriptsEditor.tsx:V2ScriptsEditor",
+			"target": "function:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/V2ScriptsEditor/V2ScriptsEditor.tsx:buildPayload",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/V2ScriptsEditor/V2ScriptsEditor.tsx:V2ScriptsEditor",
+			"target": "function:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/V2ScriptsEditor/V2ScriptsEditor.tsx:buildPayload",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/V2ScriptsEditor/V2ScriptsEditor.tsx:V2ScriptsEditor",
+			"target": "function:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/V2ScriptsEditor/V2ScriptsEditor.tsx:trimScriptValue",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/V2ScriptsEditor/V2ScriptsEditor.tsx:V2ScriptsEditor",
+			"target": "function:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/V2ScriptsEditor/V2ScriptsEditor.tsx:trimScriptValue",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/V2ScriptsEditor/V2ScriptsEditor.tsx:V2ScriptsEditor",
+			"target": "function:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/V2ScriptsEditor/V2ScriptsEditor.tsx:trimScriptValue",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/V2ScriptsEditor/V2ScriptsEditor.tsx:V2ScriptsEditor",
+			"target": "function:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/V2ScriptsEditor/V2ScriptsEditor.tsx:buildPayload",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/WorktreeLocationSection/WorktreeLocationSection.tsx",
+			"target": "function:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/WorktreeLocationSection/WorktreeLocationSection.tsx:WorktreeLocationSection",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/WorktreeLocationSection/WorktreeLocationSection.tsx",
+			"target": "function:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/WorktreeLocationSection/WorktreeLocationSection.tsx:WorktreeLocationSection",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetRow/PresetRow.tsx",
+			"target": "file:src/renderer/assets/app-icons/preset-icons/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetRow/PresetRow.tsx",
+			"target": "file:src/renderer/lib/agent-launch-command.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetRow/PresetRow.tsx",
+			"target": "file:src/renderer/lib/preset-icon.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetRow/PresetRow.tsx",
+			"target": "file:src/renderer/routes/_authenticated/settings/presets/types.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetRow/PresetRow.tsx",
+			"target": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetRow/PresetRow.utils.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetRow/PresetRow.tsx",
+			"target": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/preset-project-options.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetRow/PresetRow.utils.test.ts",
+			"target": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetRow/PresetRow.utils.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/PresetsSection.tsx",
+			"target": "file:src/renderer/assets/app-icons/preset-icons/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/PresetsSection.tsx",
+			"target": "file:src/renderer/lib/electron-trpc.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/PresetsSection.tsx",
+			"target": "file:src/renderer/react-query/presets/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/PresetsSection.tsx",
+			"target": "file:src/renderer/routes/_authenticated/settings/presets/types.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/PresetsSection.tsx",
+			"target": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetEditorDialog/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/PresetsSection.tsx",
+			"target": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetsTable/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/PresetsSection.tsx",
+			"target": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/QuickAddPresets/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/PresetsSection.tsx",
+			"target": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/constants.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/PresetsSection.tsx",
+			"target": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/preset-project-options.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetEditorDialog/PresetEditorDialog.tsx",
+			"target": "file:src/renderer/hooks/useV2AgentConfigs/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetEditorDialog/PresetEditorDialog.tsx",
+			"target": "file:src/renderer/lib/agent-launch-command.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetEditorDialog/PresetEditorDialog.tsx",
+			"target": "file:src/renderer/lib/electron-trpc.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetEditorDialog/PresetEditorDialog.tsx",
+			"target": "file:src/renderer/lib/host-service-client.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetEditorDialog/PresetEditorDialog.tsx",
+			"target": "file:src/renderer/lib/host-service-unavailable.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetEditorDialog/PresetEditorDialog.tsx",
+			"target": "file:src/renderer/routes/_authenticated/providers/LocalHostServiceProvider/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetEditorDialog/PresetEditorDialog.tsx",
+			"target": "file:src/renderer/routes/_authenticated/settings/presets/types.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetEditorDialog/PresetEditorDialog.tsx",
+			"target": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetRow/components/CommandsEditor/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetEditorDialog/PresetEditorDialog.tsx",
+			"target": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetEditorDialog/components/ProjectTargetingField/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetEditorDialog/PresetEditorDialog.tsx",
+			"target": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/constants.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetEditorDialog/PresetEditorDialog.tsx",
+			"target": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/preset-project-options.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetEditorDialog/PresetEditorDialog.tsx",
+			"target": "file:src/renderer/stores/settings-state.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetEditorDialog/PresetEditorDialog.tsx",
+			"target": "file:src/shared/absolute-paths.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetEditorDialog/components/ProjectTargetingField/ProjectTargetingField.tsx",
+			"target": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/preset-project-options.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetEditorDialog/components/ProjectTargetingField/ProjectTargetingField.tsx",
+			"target": "file:src/shared/preset-project-targeting.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetsTable/PresetsTable.tsx",
+			"target": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetRow/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetsTable/PresetsTable.tsx",
+			"target": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/preset-project-options.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/QuickAddPresets/QuickAddPresets.tsx",
+			"target": "file:src/renderer/assets/app-icons/preset-icons/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/preset-project-options.test.ts",
+			"target": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/preset-project-options.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/preset-project-options.ts",
+			"target": "file:src/shared/preset-project-targeting.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/V2PresetsSection/V2PresetsSection.tsx",
+			"target": "file:src/renderer/assets/app-icons/preset-icons/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/V2PresetsSection/V2PresetsSection.tsx",
+			"target": "file:src/renderer/hooks/useV2AgentConfigs/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/V2PresetsSection/V2PresetsSection.tsx",
+			"target": "file:src/renderer/lib/agent-launch-command.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/V2PresetsSection/V2PresetsSection.tsx",
+			"target": "file:src/renderer/routes/_authenticated/providers/CollectionsProvider/dashboardSidebarLocal/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/V2PresetsSection/V2PresetsSection.tsx",
+			"target": "file:src/renderer/routes/_authenticated/providers/CollectionsProvider/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/V2PresetsSection/V2PresetsSection.tsx",
+			"target": "file:src/renderer/routes/_authenticated/providers/LocalHostServiceProvider/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/V2PresetsSection/V2PresetsSection.tsx",
+			"target": "file:src/renderer/routes/_authenticated/settings/presets/types.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/V2PresetsSection/V2PresetsSection.tsx",
+			"target": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetEditorDialog/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/V2PresetsSection/V2PresetsSection.tsx",
+			"target": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetsTable/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/V2PresetsSection/V2PresetsSection.tsx",
+			"target": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/QuickAddPresets/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/V2PresetsSection/V2PresetsSection.tsx",
+			"target": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/constants.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/V2PresetsSection/V2PresetsSection.tsx",
+			"target": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/preset-project-options.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/V2SessionsSection/V2SessionsSection.tsx",
+			"target": "file:src/renderer/lib/host-service-auth.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/V2SessionsSection/V2SessionsSection.tsx",
+			"target": "file:src/renderer/routes/_authenticated/providers/LocalHostServiceProvider/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/V2ProjectSettings.tsx",
+			"target": "file:src/renderer/hooks/host-service/useHostTargetUrl/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/V2ProjectSettings.tsx",
+			"target": "file:src/renderer/lib/host-service-client.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/V2ProjectSettings.tsx",
+			"target": "file:src/renderer/routes/_authenticated/components/DashboardNewWorkspaceModal/components/DashboardNewWorkspaceForm/components/DevicePicker/hooks/useWorkspaceHostOptions/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/V2ProjectSettings.tsx",
+			"target": "file:src/renderer/routes/_authenticated/providers/CollectionsProvider/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/V2ProjectSettings.tsx",
+			"target": "file:src/renderer/routes/_authenticated/providers/LocalHostServiceProvider/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/V2ProjectSettings.tsx",
+			"target": "file:src/renderer/routes/_authenticated/settings/components/HostSelect/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/V2ProjectSettings.tsx",
+			"target": "file:src/renderer/routes/_authenticated/settings/components/SettingsRow/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/V2ProjectSettings.tsx",
+			"target": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/BranchPrefixSection/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/V2ProjectSettings.tsx",
+			"target": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/DeleteProjectSection/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/V2ProjectSettings.tsx",
+			"target": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/IconUploadField/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/V2ProjectSettings.tsx",
+			"target": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/NameSection/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/V2ProjectSettings.tsx",
+			"target": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/ProjectLocationSection/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/V2ProjectSettings.tsx",
+			"target": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/RepositorySection/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/V2ProjectSettings.tsx",
+			"target": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/V2ScriptsEditor/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/V2ProjectSettings.tsx",
+			"target": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/WorktreeLocationSection/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/BranchPrefixSection/BranchPrefixSection.tsx",
+			"target": "file:src/renderer/lib/host-service-client.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/BranchPrefixSection/BranchPrefixSection.tsx",
+			"target": "file:src/renderer/routes/_authenticated/settings/components/BranchPrefixControl/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/DeleteProjectSection/DeleteProjectSection.tsx",
+			"target": "file:src/renderer/lib/auth-client.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/DeleteProjectSection/DeleteProjectSection.tsx",
+			"target": "file:src/renderer/lib/host-service-client.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/DeleteProjectSection/DeleteProjectSection.tsx",
+			"target": "file:src/renderer/lib/host-service-unavailable.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/DeleteProjectSection/DeleteProjectSection.tsx",
+			"target": "file:src/renderer/routes/_authenticated/providers/LocalHostServiceProvider/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/V2ScriptsEditor/V2ScriptsEditor.tsx",
+			"target": "file:src/renderer/lib/host-service-client.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/V2ScriptsEditor/V2ScriptsEditor.tsx",
+			"target": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/V2ScriptsEditor/components/ScriptField/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/WorktreeLocationSection/WorktreeLocationSection.tsx",
+			"target": "file:src/renderer/lib/host-service-client.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/WorktreeLocationSection/WorktreeLocationSection.tsx",
+			"target": "file:src/renderer/routes/_authenticated/settings/components/V2WorktreeLocationPicker/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetRow/PresetRow.utils.test.ts",
+			"target": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetRow/PresetRow.utils.ts",
+			"type": "tested_by",
+			"weight": 0.5
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/preset-project-options.test.ts",
+			"target": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/preset-project-options.ts",
+			"type": "tested_by",
+			"weight": 0.5
+		},
+		{
+			"source": "file:src/renderer/assets/app-icons/preset-icons/index.ts",
+			"target": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetRow/PresetRow.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/lib/agent-launch-command.ts",
+			"target": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetRow/PresetRow.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/lib/preset-icon.ts",
+			"target": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetRow/PresetRow.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/presets/types.ts",
+			"target": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetRow/PresetRow.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetRow/PresetRow.utils.ts",
+			"target": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetRow/PresetRow.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/preset-project-options.ts",
+			"target": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetRow/PresetRow.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetRow/PresetRow.utils.ts",
+			"target": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetRow/PresetRow.utils.test.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/assets/app-icons/preset-icons/index.ts",
+			"target": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/PresetsSection.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/lib/electron-trpc.ts",
+			"target": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/PresetsSection.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/react-query/presets/index.ts",
+			"target": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/PresetsSection.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/presets/types.ts",
+			"target": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/PresetsSection.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetEditorDialog/index.ts",
+			"target": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/PresetsSection.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetsTable/index.ts",
+			"target": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/PresetsSection.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/QuickAddPresets/index.ts",
+			"target": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/PresetsSection.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/constants.ts",
+			"target": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/PresetsSection.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/preset-project-options.ts",
+			"target": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/PresetsSection.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/hooks/useV2AgentConfigs/index.ts",
+			"target": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetEditorDialog/PresetEditorDialog.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/lib/agent-launch-command.ts",
+			"target": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetEditorDialog/PresetEditorDialog.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/lib/electron-trpc.ts",
+			"target": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetEditorDialog/PresetEditorDialog.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/lib/host-service-client.ts",
+			"target": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetEditorDialog/PresetEditorDialog.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/lib/host-service-unavailable.ts",
+			"target": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetEditorDialog/PresetEditorDialog.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/providers/LocalHostServiceProvider/index.ts",
+			"target": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetEditorDialog/PresetEditorDialog.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/presets/types.ts",
+			"target": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetEditorDialog/PresetEditorDialog.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetRow/components/CommandsEditor/index.ts",
+			"target": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetEditorDialog/PresetEditorDialog.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetEditorDialog/components/ProjectTargetingField/index.ts",
+			"target": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetEditorDialog/PresetEditorDialog.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/constants.ts",
+			"target": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetEditorDialog/PresetEditorDialog.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/preset-project-options.ts",
+			"target": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetEditorDialog/PresetEditorDialog.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/stores/settings-state.ts",
+			"target": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetEditorDialog/PresetEditorDialog.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/shared/absolute-paths.ts",
+			"target": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetEditorDialog/PresetEditorDialog.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/preset-project-options.ts",
+			"target": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetEditorDialog/components/ProjectTargetingField/ProjectTargetingField.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/shared/preset-project-targeting.ts",
+			"target": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetEditorDialog/components/ProjectTargetingField/ProjectTargetingField.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetRow/index.ts",
+			"target": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetsTable/PresetsTable.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/preset-project-options.ts",
+			"target": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetsTable/PresetsTable.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/assets/app-icons/preset-icons/index.ts",
+			"target": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/QuickAddPresets/QuickAddPresets.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/preset-project-options.ts",
+			"target": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/preset-project-options.test.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/shared/preset-project-targeting.ts",
+			"target": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/preset-project-options.ts",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/assets/app-icons/preset-icons/index.ts",
+			"target": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/V2PresetsSection/V2PresetsSection.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/hooks/useV2AgentConfigs/index.ts",
+			"target": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/V2PresetsSection/V2PresetsSection.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/lib/agent-launch-command.ts",
+			"target": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/V2PresetsSection/V2PresetsSection.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/providers/CollectionsProvider/dashboardSidebarLocal/index.ts",
+			"target": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/V2PresetsSection/V2PresetsSection.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/providers/CollectionsProvider/index.ts",
+			"target": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/V2PresetsSection/V2PresetsSection.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/providers/LocalHostServiceProvider/index.ts",
+			"target": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/V2PresetsSection/V2PresetsSection.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/presets/types.ts",
+			"target": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/V2PresetsSection/V2PresetsSection.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetEditorDialog/index.ts",
+			"target": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/V2PresetsSection/V2PresetsSection.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/PresetsTable/index.ts",
+			"target": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/V2PresetsSection/V2PresetsSection.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/components/QuickAddPresets/index.ts",
+			"target": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/V2PresetsSection/V2PresetsSection.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/constants.ts",
+			"target": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/V2PresetsSection/V2PresetsSection.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/preset-project-options.ts",
+			"target": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/V2PresetsSection/V2PresetsSection.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/lib/host-service-auth.ts",
+			"target": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/V2SessionsSection/V2SessionsSection.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/providers/LocalHostServiceProvider/index.ts",
+			"target": "file:src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/V2SessionsSection/V2SessionsSection.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/hooks/host-service/useHostTargetUrl/index.ts",
+			"target": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/V2ProjectSettings.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/lib/host-service-client.ts",
+			"target": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/V2ProjectSettings.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/components/DashboardNewWorkspaceModal/components/DashboardNewWorkspaceForm/components/DevicePicker/hooks/useWorkspaceHostOptions/index.ts",
+			"target": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/V2ProjectSettings.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/providers/CollectionsProvider/index.ts",
+			"target": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/V2ProjectSettings.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/providers/LocalHostServiceProvider/index.ts",
+			"target": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/V2ProjectSettings.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/components/HostSelect/index.ts",
+			"target": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/V2ProjectSettings.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/components/SettingsRow/index.ts",
+			"target": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/V2ProjectSettings.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/BranchPrefixSection/index.ts",
+			"target": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/V2ProjectSettings.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/DeleteProjectSection/index.ts",
+			"target": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/V2ProjectSettings.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/IconUploadField/index.ts",
+			"target": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/V2ProjectSettings.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/NameSection/index.ts",
+			"target": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/V2ProjectSettings.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/ProjectLocationSection/index.ts",
+			"target": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/V2ProjectSettings.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/RepositorySection/index.ts",
+			"target": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/V2ProjectSettings.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/V2ScriptsEditor/index.ts",
+			"target": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/V2ProjectSettings.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/WorktreeLocationSection/index.ts",
+			"target": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/V2ProjectSettings.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/lib/host-service-client.ts",
+			"target": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/BranchPrefixSection/BranchPrefixSection.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/components/BranchPrefixControl/index.ts",
+			"target": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/BranchPrefixSection/BranchPrefixSection.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/lib/auth-client.ts",
+			"target": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/DeleteProjectSection/DeleteProjectSection.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/lib/host-service-client.ts",
+			"target": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/DeleteProjectSection/DeleteProjectSection.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/lib/host-service-unavailable.ts",
+			"target": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/DeleteProjectSection/DeleteProjectSection.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/providers/LocalHostServiceProvider/index.ts",
+			"target": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/DeleteProjectSection/DeleteProjectSection.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/lib/host-service-client.ts",
+			"target": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/V2ScriptsEditor/V2ScriptsEditor.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/V2ScriptsEditor/components/ScriptField/index.ts",
+			"target": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/V2ScriptsEditor/V2ScriptsEditor.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/lib/host-service-client.ts",
+			"target": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/WorktreeLocationSection/WorktreeLocationSection.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/components/V2WorktreeLocationPicker/index.ts",
+			"target": "file:src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/WorktreeLocationSection/WorktreeLocationSection.tsx",
+			"type": "depends_on",
+			"weight": 0.6
+		}
+	],
+	"summary": {
+		"nodeCount": 60,
+		"edgeCount": 214,
+		"fileNodes": 33,
+		"functionNodes": 27,
+		"classNodes": 0,
+		"edgesByType": {
+			"imports": 75,
+			"contains": 27,
+			"exports": 16,
+			"calls": 19,
+			"tested_by": 2,
+			"depends_on": 75
+		}
+	}
+}

@@ -1,0 +1,1871 @@
+{
+	"scriptCompleted": true,
+	"filesAnalyzed": 25,
+	"filesSkipped": [],
+	"results": [
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/FilePane/components/LoadingState/LoadingState.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 7,
+			"nonEmptyLines": 7,
+			"functions": [
+				{
+					"name": "LoadingState",
+					"startLine": 1,
+					"endLine": 7,
+					"params": []
+				}
+			],
+			"exports": [
+				{
+					"name": "LoadingState",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/FilePane/components/OrphanedBanner/OrphanedBanner.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 25,
+			"nonEmptyLines": 24,
+			"functions": [
+				{
+					"name": "OrphanedBanner",
+					"startLine": 6,
+					"endLine": 25,
+					"params": ["{ dirty, onDiscard }"]
+				}
+			],
+			"exports": [
+				{
+					"name": "OrphanedBanner",
+					"line": 6,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/FilePane/components/SaveErrorBanner/SaveErrorBanner.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 37,
+			"nonEmptyLines": 36,
+			"functions": [
+				{
+					"name": "SaveErrorBanner",
+					"startLine": 7,
+					"endLine": 37,
+					"params": ["{\n\tmessage,\n\tonRetry,\n\tonDismiss,\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "SaveErrorBanner",
+					"line": 7,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/FilePane/registry/utils/resolveActivePaneView/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 4,
+			"nonEmptyLines": 4,
+			"exports": [
+				{
+					"name": "ActivePaneView",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "resolveActivePaneView",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 2,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/FilePane/registry/views/CodeView/components/CodeEditor/CodeEditorAdapter/CodeEditorAdapter.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 143,
+			"nonEmptyLines": 131,
+			"functions": [
+				{
+					"name": "createCodeMirrorAdapter",
+					"startLine": 25,
+					"endLine": 143,
+					"params": ["view"]
+				}
+			],
+			"exports": [
+				{
+					"name": "createCodeMirrorAdapter",
+					"line": 25,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "focus",
+					"callee": "view.focus",
+					"lineNumber": 30
+				},
+				{
+					"caller": "getValue",
+					"callee": "view.state.doc.toString",
+					"lineNumber": 33
+				},
+				{
+					"caller": "setValue",
+					"callee": "view.dispatch",
+					"lineNumber": 36
+				},
+				{
+					"caller": "revealPosition",
+					"callee": "Math.max",
+					"lineNumber": 45
+				},
+				{
+					"caller": "revealPosition",
+					"callee": "Math.min",
+					"lineNumber": 45
+				},
+				{
+					"caller": "revealPosition",
+					"callee": "view.state.doc.line",
+					"lineNumber": 46
+				},
+				{
+					"caller": "revealPosition",
+					"callee": "Math.min",
+					"lineNumber": 47
+				},
+				{
+					"caller": "revealPosition",
+					"callee": "Math.max",
+					"lineNumber": 48
+				},
+				{
+					"caller": "revealPosition",
+					"callee": "view.dispatch",
+					"lineNumber": 50
+				},
+				{
+					"caller": "revealPosition",
+					"callee": "EditorSelection.cursor",
+					"lineNumber": 51
+				},
+				{
+					"caller": "revealPosition",
+					"callee": "view.focus",
+					"lineNumber": 54
+				},
+				{
+					"caller": "getSelectionLines",
+					"callee": "view.state.doc.lineAt",
+					"lineNumber": 58
+				},
+				{
+					"caller": "getSelectionLines",
+					"callee": "view.state.doc.lineAt",
+					"lineNumber": 59
+				},
+				{
+					"caller": "selectAll",
+					"callee": "selectAll",
+					"lineNumber": 63
+				},
+				{
+					"caller": "cut",
+					"callee": "view.state.sliceDoc",
+					"lineNumber": 73
+				},
+				{
+					"caller": "cut",
+					"callee": "clipboard\n\t\t\t\t.writeText(text)\n\t\t\t\t.then(() => {\n\t\t\t\t\tif (disposed) return;\n\t\t\t\t\tconst currentSelection = view.state.selection.main;\n\t\t\t\t\tif (\n\t\t\t\t\t\tcurrentSelection.from !== selection.from ||\n\t\t\t\t\t\tcurrentSelection.to !== selection.to\n\t\t\t\t\t) {\n\t\t\t\t\t\treturn;\n\t\t\t\t\t}\n\n\t\t\t\t\tif (view.state.sliceDoc(selection.from, selection.to) !== text) {\n\t\t\t\t\t\treturn;\n\t\t\t\t\t}\n\n\t\t\t\t\tview.dispatch({\n\t\t\t\t\t\tchanges: { from: selection.from, to: selection.to, insert: \"\" },\n\t\t\t\t\t});\n\t\t\t\t})\n\t\t\t\t.catch",
+					"lineNumber": 74
+				},
+				{
+					"caller": "cut",
+					"callee": "clipboard\n\t\t\t\t.writeText(text)\n\t\t\t\t.then",
+					"lineNumber": 74
+				},
+				{
+					"caller": "cut",
+					"callee": "clipboard\n\t\t\t\t.writeText",
+					"lineNumber": 74
+				},
+				{
+					"caller": "cut",
+					"callee": "view.state.sliceDoc",
+					"lineNumber": 86
+				},
+				{
+					"caller": "cut",
+					"callee": "view.dispatch",
+					"lineNumber": 90
+				},
+				{
+					"caller": "cut",
+					"callee": "console.error",
+					"lineNumber": 95
+				},
+				{
+					"caller": "copy",
+					"callee": "clipboard\n\t\t\t\t.writeText(view.state.sliceDoc(selection.from, selection.to))\n\t\t\t\t.catch",
+					"lineNumber": 105
+				},
+				{
+					"caller": "copy",
+					"callee": "clipboard\n\t\t\t\t.writeText",
+					"lineNumber": 105
+				},
+				{
+					"caller": "copy",
+					"callee": "view.state.sliceDoc",
+					"lineNumber": 106
+				},
+				{
+					"caller": "copy",
+					"callee": "console.error",
+					"lineNumber": 108
+				},
+				{
+					"caller": "paste",
+					"callee": "clipboard\n\t\t\t\t.readText()\n\t\t\t\t.then((text) => {\n\t\t\t\t\tif (disposed) return;\n\t\t\t\t\tconst selection = view.state.selection.main;\n\t\t\t\t\tview.dispatch({\n\t\t\t\t\t\tchanges: {\n\t\t\t\t\t\t\tfrom: selection.from,\n\t\t\t\t\t\t\tto: selection.to,\n\t\t\t\t\t\t\tinsert: text,\n\t\t\t\t\t\t},\n\t\t\t\t\t\tselection: EditorSelection.cursor(selection.from + text.length),\n\t\t\t\t\t});\n\t\t\t\t})\n\t\t\t\t.catch",
+					"lineNumber": 116
+				},
+				{
+					"caller": "paste",
+					"callee": "clipboard\n\t\t\t\t.readText()\n\t\t\t\t.then",
+					"lineNumber": 116
+				},
+				{
+					"caller": "paste",
+					"callee": "clipboard\n\t\t\t\t.readText",
+					"lineNumber": 116
+				},
+				{
+					"caller": "paste",
+					"callee": "view.dispatch",
+					"lineNumber": 121
+				},
+				{
+					"caller": "paste",
+					"callee": "EditorSelection.cursor",
+					"lineNumber": 127
+				},
+				{
+					"caller": "paste",
+					"callee": "console.error",
+					"lineNumber": 131
+				},
+				{
+					"caller": "openFind",
+					"callee": "openSearchPanel",
+					"lineNumber": 135
+				},
+				{
+					"caller": "dispose",
+					"callee": "view.destroy",
+					"lineNumber": 140
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/FilePane/registry/views/CodeView/components/CodeEditor/extensions/contourSelectionLayer/contourSelectionLayer.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 80,
+			"nonEmptyLines": 77,
+			"exports": [
+				{
+					"name": "contourSelectionLayer",
+					"line": 19,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "markers",
+					"callee": "Math.round",
+					"lineNumber": 33
+				},
+				{
+					"caller": "markers",
+					"callee": "view.state.doc.lineAt",
+					"lineNumber": 36
+				},
+				{
+					"caller": "markers",
+					"callee": "view.state.doc.lineAt",
+					"lineNumber": 37
+				},
+				{
+					"caller": "markers",
+					"callee": "view.state.doc.line",
+					"lineNumber": 39
+				},
+				{
+					"caller": "markers",
+					"callee": "Math.max",
+					"lineNumber": 40
+				},
+				{
+					"caller": "markers",
+					"callee": "Math.min",
+					"lineNumber": 44
+				},
+				{
+					"caller": "markers",
+					"callee": "EditorSelection.cursor",
+					"lineNumber": 52
+				},
+				{
+					"caller": "markers",
+					"callee": "EditorSelection.range",
+					"lineNumber": 53
+				},
+				{
+					"caller": "markers",
+					"callee": "RectangleMarker.forRange",
+					"lineNumber": 54
+				},
+				{
+					"caller": "markers",
+					"callee": "Math.max",
+					"lineNumber": 62
+				},
+				{
+					"caller": "markers",
+					"callee": "markers.push",
+					"lineNumber": 66
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/FilePane/registry/views/CodeView/components/CodeEditor/extensions/foldChevron/foldChevron.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 21,
+			"nonEmptyLines": 20,
+			"functions": [
+				{
+					"name": "buildFoldChevron",
+					"startLine": 7,
+					"endLine": 21,
+					"params": ["open"]
+				}
+			],
+			"exports": [
+				{
+					"name": "buildFoldChevron",
+					"line": 7,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "buildFoldChevron",
+					"callee": "document.createElementNS",
+					"lineNumber": 8
+				},
+				{
+					"caller": "buildFoldChevron",
+					"callee": "el.setAttribute",
+					"lineNumber": 9
+				},
+				{
+					"caller": "buildFoldChevron",
+					"callee": "el.setAttribute",
+					"lineNumber": 10
+				},
+				{
+					"caller": "buildFoldChevron",
+					"callee": "el.setAttribute",
+					"lineNumber": 11
+				},
+				{
+					"caller": "buildFoldChevron",
+					"callee": "el.setAttribute",
+					"lineNumber": 12
+				},
+				{
+					"caller": "buildFoldChevron",
+					"callee": "el.setAttribute",
+					"lineNumber": 13
+				},
+				{
+					"caller": "buildFoldChevron",
+					"callee": "el.setAttribute",
+					"lineNumber": 14
+				},
+				{
+					"caller": "buildFoldChevron",
+					"callee": "el.setAttribute",
+					"lineNumber": 15
+				},
+				{
+					"caller": "buildFoldChevron",
+					"callee": "el.setAttribute",
+					"lineNumber": 16
+				},
+				{
+					"caller": "buildFoldChevron",
+					"callee": "document.createElementNS",
+					"lineNumber": 17
+				},
+				{
+					"caller": "buildFoldChevron",
+					"callee": "path.setAttribute",
+					"lineNumber": 18
+				},
+				{
+					"caller": "buildFoldChevron",
+					"callee": "el.appendChild",
+					"lineNumber": 19
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/FilePane/registry/views/CodeView/components/CodeEditor/extensions/foldPlaceholder/foldPlaceholder.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 33,
+			"nonEmptyLines": 31,
+			"functions": [
+				{
+					"name": "buildFoldPlaceholder",
+					"startLine": 5,
+					"endLine": 33,
+					"params": ["_view", "onclick"]
+				}
+			],
+			"exports": [
+				{
+					"name": "buildFoldPlaceholder",
+					"line": 5,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "buildFoldPlaceholder",
+					"callee": "document.createElement",
+					"lineNumber": 9
+				},
+				{
+					"caller": "buildFoldPlaceholder",
+					"callee": "button.setAttribute",
+					"lineNumber": 12
+				},
+				{
+					"caller": "buildFoldPlaceholder",
+					"callee": "button.addEventListener",
+					"lineNumber": 13
+				},
+				{
+					"caller": "buildFoldPlaceholder",
+					"callee": "document.createElementNS",
+					"lineNumber": 15
+				},
+				{
+					"caller": "buildFoldPlaceholder",
+					"callee": "svg.setAttribute",
+					"lineNumber": 16
+				},
+				{
+					"caller": "buildFoldPlaceholder",
+					"callee": "svg.setAttribute",
+					"lineNumber": 17
+				},
+				{
+					"caller": "buildFoldPlaceholder",
+					"callee": "svg.setAttribute",
+					"lineNumber": 18
+				},
+				{
+					"caller": "buildFoldPlaceholder",
+					"callee": "svg.setAttribute",
+					"lineNumber": 19
+				},
+				{
+					"caller": "buildFoldPlaceholder",
+					"callee": "svg.setAttribute",
+					"lineNumber": 20
+				},
+				{
+					"caller": "buildFoldPlaceholder",
+					"callee": "svg.setAttribute",
+					"lineNumber": 21
+				},
+				{
+					"caller": "buildFoldPlaceholder",
+					"callee": "svg.setAttribute",
+					"lineNumber": 22
+				},
+				{
+					"caller": "buildFoldPlaceholder",
+					"callee": "svg.setAttribute",
+					"lineNumber": 23
+				},
+				{
+					"caller": "buildFoldPlaceholder",
+					"callee": "document.createElementNS",
+					"lineNumber": 25
+				},
+				{
+					"caller": "buildFoldPlaceholder",
+					"callee": "c.setAttribute",
+					"lineNumber": 26
+				},
+				{
+					"caller": "buildFoldPlaceholder",
+					"callee": "c.setAttribute",
+					"lineNumber": 27
+				},
+				{
+					"caller": "buildFoldPlaceholder",
+					"callee": "c.setAttribute",
+					"lineNumber": 28
+				},
+				{
+					"caller": "buildFoldPlaceholder",
+					"callee": "svg.appendChild",
+					"lineNumber": 29
+				},
+				{
+					"caller": "buildFoldPlaceholder",
+					"callee": "button.appendChild",
+					"lineNumber": 31
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/FilePane/registry/views/CodeView/components/CodeEditor/extensions/selectionClassTogglePlugin/selectionClassTogglePlugin.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 20,
+			"nonEmptyLines": 19,
+			"exports": [
+				{
+					"name": "selectionClassTogglePlugin",
+					"line": 5,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "constructor",
+					"callee": "this.sync",
+					"lineNumber": 8
+				},
+				{
+					"caller": "update",
+					"callee": "this.sync",
+					"lineNumber": 12
+				},
+				{
+					"caller": "sync",
+					"callee": "view.state.selection.ranges.some",
+					"lineNumber": 16
+				},
+				{
+					"caller": "sync",
+					"callee": "view.dom.classList.toggle",
+					"lineNumber": 17
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/FilePane/registry/views/CodeView/components/CodeEditor/loadLanguageSupport/loadLanguageSupport.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 127,
+			"nonEmptyLines": 125,
+			"functions": [
+				{
+					"name": "loadLegacyLanguage",
+					"startLine": 8,
+					"endLine": 14,
+					"params": ["loader", "key"]
+				},
+				{
+					"name": "loadLanguageSupport",
+					"startLine": 16,
+					"endLine": 127,
+					"params": ["language"]
+				}
+			],
+			"exports": [
+				{
+					"name": "loadLanguageSupport",
+					"line": 16,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "loadLegacyLanguage",
+					"callee": "loader",
+					"lineNumber": 12
+				},
+				{
+					"caller": "loadLegacyLanguage",
+					"callee": "StreamLanguage.define",
+					"lineNumber": 13
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "import",
+					"lineNumber": 22
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "javascript",
+					"lineNumber": 23
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "import",
+					"lineNumber": 29
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "json",
+					"lineNumber": 30
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "import",
+					"lineNumber": 33
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "html",
+					"lineNumber": 34
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "import",
+					"lineNumber": 39
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "css",
+					"lineNumber": 40
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "import",
+					"lineNumber": 43
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "markdown",
+					"lineNumber": 44
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "StreamLanguage.define",
+					"lineNumber": 47
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "import",
+					"lineNumber": 51
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "yaml",
+					"lineNumber": 52
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "import",
+					"lineNumber": 55
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "xml",
+					"lineNumber": 56
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "import",
+					"lineNumber": 59
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "python",
+					"lineNumber": 60
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "import",
+					"lineNumber": 63
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "rust",
+					"lineNumber": 64
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "import",
+					"lineNumber": 67
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "sql",
+					"lineNumber": 68
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "import",
+					"lineNumber": 71
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "php",
+					"lineNumber": 72
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "import",
+					"lineNumber": 75
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "java",
+					"lineNumber": 76
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "import",
+					"lineNumber": 80
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "cpp",
+					"lineNumber": 81
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "import",
+					"lineNumber": 84
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "go",
+					"lineNumber": 85
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "loadLegacyLanguage",
+					"lineNumber": 88
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "import",
+					"lineNumber": 89
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "loadLegacyLanguage",
+					"lineNumber": 93
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "import",
+					"lineNumber": 94
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "StreamLanguage.define",
+					"lineNumber": 98
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "loadLegacyLanguage",
+					"lineNumber": 100
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "import",
+					"lineNumber": 101
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "loadLegacyLanguage",
+					"lineNumber": 105
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "import",
+					"lineNumber": 106
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "loadLegacyLanguage",
+					"lineNumber": 110
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "import",
+					"lineNumber": 111
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "loadLegacyLanguage",
+					"lineNumber": 115
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "import",
+					"lineNumber": 116
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "loadLegacyLanguage",
+					"lineNumber": 120
+				},
+				{
+					"caller": "loadLanguageSupport",
+					"callee": "import",
+					"lineNumber": 121
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/FilePane/registry/views/CodeView/components/CodeEditor/loadLanguageSupport/streamLanguages.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 232,
+			"nonEmptyLines": 193,
+			"functions": [
+				{
+					"name": "escapeRegex",
+					"startLine": 164,
+					"endLine": 166,
+					"params": ["value"]
+				}
+			],
+			"exports": [
+				{
+					"name": "graphqlStreamLanguage",
+					"line": 29,
+					"isDefault": false
+				},
+				{
+					"name": "makefileStreamLanguage",
+					"line": 172,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "token",
+					"callee": "stream.eol",
+					"lineNumber": 37
+				},
+				{
+					"caller": "token",
+					"callee": "stream.match",
+					"lineNumber": 38
+				},
+				{
+					"caller": "token",
+					"callee": "stream.next",
+					"lineNumber": 42
+				},
+				{
+					"caller": "token",
+					"callee": "stream.eol",
+					"lineNumber": 51
+				},
+				{
+					"caller": "token",
+					"callee": "stream.next",
+					"lineNumber": 52
+				},
+				{
+					"caller": "token",
+					"callee": "stream.eatSpace",
+					"lineNumber": 63
+				},
+				{
+					"caller": "token",
+					"callee": "stream.match",
+					"lineNumber": 65
+				},
+				{
+					"caller": "token",
+					"callee": "stream.eol",
+					"lineNumber": 66
+				},
+				{
+					"caller": "token",
+					"callee": "stream.match",
+					"lineNumber": 67
+				},
+				{
+					"caller": "token",
+					"callee": "stream.next",
+					"lineNumber": 70
+				},
+				{
+					"caller": "token",
+					"callee": "stream.next",
+					"lineNumber": 77
+				},
+				{
+					"caller": "token",
+					"callee": "stream.skipToEnd",
+					"lineNumber": 81
+				},
+				{
+					"caller": "token",
+					"callee": "stream.eol",
+					"lineNumber": 88
+				},
+				{
+					"caller": "token",
+					"callee": "stream.next",
+					"lineNumber": 89
+				},
+				{
+					"caller": "token",
+					"callee": "stream.eatWhile",
+					"lineNumber": 101
+				},
+				{
+					"caller": "token",
+					"callee": "stream.eatWhile",
+					"lineNumber": 106
+				},
+				{
+					"caller": "token",
+					"callee": "/\\d/.test",
+					"lineNumber": 110
+				},
+				{
+					"caller": "token",
+					"callee": "stream.peek",
+					"lineNumber": 110
+				},
+				{
+					"caller": "token",
+					"callee": "stream.eatWhile",
+					"lineNumber": 111
+				},
+				{
+					"caller": "token",
+					"callee": "stream.peek",
+					"lineNumber": 112
+				},
+				{
+					"caller": "token",
+					"callee": "stream.next",
+					"lineNumber": 113
+				},
+				{
+					"caller": "token",
+					"callee": "stream.eatWhile",
+					"lineNumber": 114
+				},
+				{
+					"caller": "token",
+					"callee": "/\\d/.test",
+					"lineNumber": 119
+				},
+				{
+					"caller": "token",
+					"callee": "stream.eatWhile",
+					"lineNumber": 120
+				},
+				{
+					"caller": "token",
+					"callee": "stream.peek",
+					"lineNumber": 121
+				},
+				{
+					"caller": "token",
+					"callee": "stream.next",
+					"lineNumber": 122
+				},
+				{
+					"caller": "token",
+					"callee": "stream.eatWhile",
+					"lineNumber": 123
+				},
+				{
+					"caller": "token",
+					"callee": "/[A-Za-z_]/.test",
+					"lineNumber": 128
+				},
+				{
+					"caller": "token",
+					"callee": "stream.eatWhile",
+					"lineNumber": 129
+				},
+				{
+					"caller": "token",
+					"callee": "stream.current",
+					"lineNumber": 130
+				},
+				{
+					"caller": "token",
+					"callee": "GRAPHQL_KEYWORDS.has",
+					"lineNumber": 132
+				},
+				{
+					"caller": "token",
+					"callee": "GRAPHQL_ATOMS.has",
+					"lineNumber": 133
+				},
+				{
+					"caller": "token",
+					"callee": "/^[A-Z]/.test",
+					"lineNumber": 134
+				},
+				{
+					"caller": "escapeRegex",
+					"callee": "value.replace",
+					"lineNumber": 165
+				},
+				{
+					"caller": "token",
+					"callee": "stream.sol",
+					"lineNumber": 175
+				},
+				{
+					"caller": "token",
+					"callee": "stream.peek",
+					"lineNumber": 176
+				},
+				{
+					"caller": "token",
+					"callee": "stream.skipToEnd",
+					"lineNumber": 177
+				},
+				{
+					"caller": "token",
+					"callee": "stream.match",
+					"lineNumber": 181
+				},
+				{
+					"caller": "token",
+					"callee": "stream.match",
+					"lineNumber": 185
+				},
+				{
+					"caller": "token",
+					"callee": "stream.match",
+					"lineNumber": 189
+				},
+				{
+					"caller": "token",
+					"callee": "stream.eatSpace",
+					"lineNumber": 194
+				},
+				{
+					"caller": "token",
+					"callee": "stream.match",
+					"lineNumber": 196
+				},
+				{
+					"caller": "token",
+					"callee": "stream.match",
+					"lineNumber": 196
+				},
+				{
+					"caller": "token",
+					"callee": "stream.next",
+					"lineNumber": 200
+				},
+				{
+					"caller": "token",
+					"callee": "stream.skipToEnd",
+					"lineNumber": 204
+				},
+				{
+					"caller": "token",
+					"callee": "stream.peek",
+					"lineNumber": 208
+				},
+				{
+					"caller": "token",
+					"callee": "stream.next",
+					"lineNumber": 209
+				},
+				{
+					"caller": "token",
+					"callee": "stream.peek",
+					"lineNumber": 213
+				},
+				{
+					"caller": "token",
+					"callee": "stream.next",
+					"lineNumber": 214
+				},
+				{
+					"caller": "token",
+					"callee": "/[A-Za-z_.-]/.test",
+					"lineNumber": 222
+				},
+				{
+					"caller": "token",
+					"callee": "stream.eatWhile",
+					"lineNumber": 223
+				},
+				{
+					"caller": "token",
+					"callee": "MAKEFILE_DIRECTIVES.has",
+					"lineNumber": 224
+				},
+				{
+					"caller": "token",
+					"callee": "stream.current",
+					"lineNumber": 224
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 2,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/TerminalPane/hooks/useLinkClickHint/useLinkClickHint.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 35,
+			"nonEmptyLines": 28,
+			"functions": [
+				{
+					"name": "useLinkClickHint",
+					"startLine": 13,
+					"endLine": 35,
+					"params": []
+				}
+			],
+			"exports": [
+				{
+					"name": "useLinkClickHint",
+					"line": 13,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "useLinkClickHint",
+					"callee": "useState",
+					"lineNumber": 14
+				},
+				{
+					"caller": "useLinkClickHint",
+					"callee": "useRef",
+					"lineNumber": 15
+				},
+				{
+					"caller": "useLinkClickHint",
+					"callee": "useCallback",
+					"lineNumber": 17
+				},
+				{
+					"caller": "useLinkClickHint",
+					"callee": "clearTimeout",
+					"lineNumber": 20
+				},
+				{
+					"caller": "useLinkClickHint",
+					"callee": "setHint",
+					"lineNumber": 21
+				},
+				{
+					"caller": "useLinkClickHint",
+					"callee": "setTimeout",
+					"lineNumber": 22
+				},
+				{
+					"caller": "useLinkClickHint",
+					"callee": "setHint",
+					"lineNumber": 23
+				},
+				{
+					"caller": "useLinkClickHint",
+					"callee": "useEffect",
+					"lineNumber": 28
+				},
+				{
+					"caller": "useLinkClickHint",
+					"callee": "clearTimeout",
+					"lineNumber": 30
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/useSlotElement/useSlotElement.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 18,
+			"nonEmptyLines": 17,
+			"functions": [
+				{
+					"name": "useSlotElement",
+					"startLine": 9,
+					"endLine": 18,
+					"params": ["id"]
+				}
+			],
+			"exports": [
+				{
+					"name": "useSlotElement",
+					"line": 9,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "useSlotElement",
+					"callee": "useState",
+					"lineNumber": 10
+				},
+				{
+					"caller": "useSlotElement",
+					"callee": "document.getElementById",
+					"lineNumber": 11
+				},
+				{
+					"caller": "useSlotElement",
+					"callee": "useEffect",
+					"lineNumber": 13
+				},
+				{
+					"caller": "useSlotElement",
+					"callee": "setSlotEl",
+					"lineNumber": 15
+				},
+				{
+					"caller": "useSlotElement",
+					"callee": "document.getElementById",
+					"lineNumber": 15
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/components/WorkspaceCreatingState/WorkspaceCreatingState.css",
+			"language": "css",
+			"fileCategory": "markup",
+			"totalLines": 60,
+			"nonEmptyLines": 54,
+			"metrics": {}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/components/WorkspaceCreatingState/WorkspaceCreatingState.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 200,
+			"nonEmptyLines": 183,
+			"functions": [
+				{
+					"name": "WorkspaceCreatingState",
+					"startLine": 41,
+					"endLine": 134,
+					"params": ["{\n\tname,\n\tbranch,\n\tstartedAt,\n}"]
+				},
+				{
+					"name": "StepRow",
+					"startLine": 138,
+					"endLine": 152,
+					"params": ["{ label, state }"]
+				},
+				{
+					"name": "StepIcon",
+					"startLine": 154,
+					"endLine": 175,
+					"params": ["{ state }"]
+				},
+				{
+					"name": "getActiveIndex",
+					"startLine": 177,
+					"endLine": 183,
+					"params": ["elapsed"]
+				},
+				{
+					"name": "formatElapsed",
+					"startLine": 185,
+					"endLine": 190,
+					"params": ["seconds"]
+				},
+				{
+					"name": "useElapsedSeconds",
+					"startLine": 192,
+					"endLine": 200,
+					"params": ["startedAt"]
+				}
+			],
+			"exports": [
+				{
+					"name": "WorkspaceCreatingState",
+					"line": 41,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "WorkspaceCreatingState",
+					"callee": "useElapsedSeconds",
+					"lineNumber": 46
+				},
+				{
+					"caller": "WorkspaceCreatingState",
+					"callee": "getActiveIndex",
+					"lineNumber": 47
+				},
+				{
+					"caller": "WorkspaceCreatingState",
+					"callee": "Math.min",
+					"lineNumber": 48
+				},
+				{
+					"caller": "WorkspaceCreatingState",
+					"callee": "STEPS.map",
+					"lineNumber": 83
+				},
+				{
+					"caller": "WorkspaceCreatingState",
+					"callee": "formatElapsed",
+					"lineNumber": 104
+				},
+				{
+					"caller": "WorkspaceCreatingState",
+					"callee": "window.location.reload",
+					"lineNumber": 120
+				},
+				{
+					"caller": "StepRow",
+					"callee": "cn",
+					"lineNumber": 141
+				},
+				{
+					"caller": "formatElapsed",
+					"callee": "Math.max",
+					"lineNumber": 186
+				},
+				{
+					"caller": "formatElapsed",
+					"callee": "Math.floor",
+					"lineNumber": 186
+				},
+				{
+					"caller": "formatElapsed",
+					"callee": "Math.floor",
+					"lineNumber": 187
+				},
+				{
+					"caller": "formatElapsed",
+					"callee": "s.toString().padStart",
+					"lineNumber": 189
+				},
+				{
+					"caller": "formatElapsed",
+					"callee": "s.toString",
+					"lineNumber": 189
+				},
+				{
+					"caller": "useElapsedSeconds",
+					"callee": "useState",
+					"lineNumber": 193
+				},
+				{
+					"caller": "useElapsedSeconds",
+					"callee": "Date.now",
+					"lineNumber": 193
+				},
+				{
+					"caller": "useElapsedSeconds",
+					"callee": "useEffect",
+					"lineNumber": 194
+				},
+				{
+					"caller": "useElapsedSeconds",
+					"callee": "window.setInterval",
+					"lineNumber": 195
+				},
+				{
+					"caller": "useElapsedSeconds",
+					"callee": "setNow",
+					"lineNumber": 195
+				},
+				{
+					"caller": "useElapsedSeconds",
+					"callee": "Date.now",
+					"lineNumber": 195
+				},
+				{
+					"caller": "useElapsedSeconds",
+					"callee": "window.clearInterval",
+					"lineNumber": 196
+				},
+				{
+					"caller": "useElapsedSeconds",
+					"callee": "Math.max",
+					"lineNumber": 199
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 6,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/components/WorkspaceHostIncompatibleState/WorkspaceHostIncompatibleState.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 97,
+			"nonEmptyLines": 92,
+			"functions": [
+				{
+					"name": "WorkspaceHostIncompatibleState",
+					"startLine": 11,
+					"endLine": 97,
+					"params": ["{\n\thostName,\n\thostVersion,\n\tminVersion,\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "WorkspaceHostIncompatibleState",
+					"line": 11,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/components/WorkspaceHostOfflineState/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "WorkspaceHostOfflineState",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/components/WorkspaceHostOfflineState/WorkspaceHostOfflineState.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 109,
+			"nonEmptyLines": 104,
+			"functions": [
+				{
+					"name": "WorkspaceHostOfflineState",
+					"startLine": 10,
+					"endLine": 109,
+					"params": ["{\n\thostId,\n\thostName,\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "WorkspaceHostOfflineState",
+					"line": 10,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/components/WorkspaceNotFoundState/WorkspaceNotFoundState.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 55,
+			"nonEmptyLines": 53,
+			"functions": [
+				{
+					"name": "WorkspaceNotFoundState",
+					"startLine": 9,
+					"endLine": 55,
+					"params": ["{\n\tworkspaceId,\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "WorkspaceNotFoundState",
+					"line": 9,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspaces/components/V2WorkspaceProjectIcon/V2WorkspaceProjectIcon.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 66,
+			"nonEmptyLines": 60,
+			"functions": [
+				{
+					"name": "githubAvatarUrl",
+					"startLine": 19,
+					"endLine": 21,
+					"params": ["owner"]
+				},
+				{
+					"name": "V2WorkspaceProjectIcon",
+					"startLine": 23,
+					"endLine": 66,
+					"params": [
+						"{\n\tprojectName,\n\tgithubOwner,\n\tsize = \"md\",\n\tclassName,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "V2WorkspaceProjectIcon",
+					"line": 23,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "V2WorkspaceProjectIcon",
+					"callee": "useState",
+					"lineNumber": 29
+				},
+				{
+					"caller": "V2WorkspaceProjectIcon",
+					"callee": "cn",
+					"lineNumber": 37
+				},
+				{
+					"caller": "V2WorkspaceProjectIcon",
+					"callee": "githubAvatarUrl",
+					"lineNumber": 44
+				},
+				{
+					"caller": "V2WorkspaceProjectIcon",
+					"callee": "setFailedOwner",
+					"lineNumber": 48
+				},
+				{
+					"caller": "V2WorkspaceProjectIcon",
+					"callee": "cn",
+					"lineNumber": 56
+				},
+				{
+					"caller": "V2WorkspaceProjectIcon",
+					"callee": "projectName.charAt(0).toUpperCase",
+					"lineNumber": 63
+				},
+				{
+					"caller": "V2WorkspaceProjectIcon",
+					"callee": "projectName.charAt",
+					"lineNumber": 63
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspaces/components/V2WorkspacesHeader/components/DeviceOptionLabel/DeviceOptionLabel.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 34,
+			"nonEmptyLines": 32,
+			"functions": [
+				{
+					"name": "DeviceOptionLabel",
+					"startLine": 10,
+					"endLine": 34,
+					"params": ["{\n\ticon,\n\tlabel,\n\tcount,\n\tisOnline,\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "DeviceOptionLabel",
+					"line": 10,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "DeviceOptionLabel",
+					"callee": "cn",
+					"lineNumber": 23
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspaces/stores/v2WorkspacesFilterStore/v2WorkspacesFilterStore.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 35,
+			"nonEmptyLines": 31,
+			"exports": [
+				{
+					"name": "DEVICE_FILTER_ALL",
+					"line": 3,
+					"isDefault": false
+				},
+				{
+					"name": "DEVICE_FILTER_THIS_DEVICE",
+					"line": 4,
+					"isDefault": false
+				},
+				{
+					"name": "PROJECT_FILTER_ALL",
+					"line": 5,
+					"isDefault": false
+				},
+				{
+					"name": "useV2WorkspacesFilterStore",
+					"line": 20,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 4,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/workspaces/page.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 10,
+			"nonEmptyLines": 8,
+			"functions": [
+				{
+					"name": "WorkspacesPage",
+					"startLine": 8,
+					"endLine": 10,
+					"params": []
+				}
+			],
+			"exports": [
+				{
+					"name": "Route",
+					"line": 4,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/components/DashboardNewWorkspaceModal/components/DashboardNewWorkspaceForm/PromptGroup/components/FormPickerTrigger/FormPickerTrigger.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 22,
+			"nonEmptyLines": 21,
+			"functions": [
+				{
+					"name": "FormPickerTrigger",
+					"startLine": 7,
+					"endLine": 22,
+					"params": ["{\n\tclassName,\n\ttype = \"button\",\n\t...props\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "FormPickerTrigger",
+					"line": 7,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "FormPickerTrigger",
+					"callee": "cn",
+					"lineNumber": 15
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/components/ExposeViaRelayConfirmDialog/ExposeViaRelayConfirmDialog.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 104,
+			"nonEmptyLines": 96,
+			"functions": [
+				{
+					"name": "ExposeViaRelayConfirmDialog",
+					"startLine": 23,
+					"endLine": 104,
+					"params": [
+						"{\n\topen,\n\ttargetEnabled,\n\tonOpenChange,\n\tonConfirm,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "ExposeViaRelayConfirmDialog",
+					"line": 23,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "ExposeViaRelayConfirmDialog",
+					"callee": "useState",
+					"lineNumber": 29
+				},
+				{
+					"caller": "ExposeViaRelayConfirmDialog",
+					"callee": "useEffect",
+					"lineNumber": 33
+				},
+				{
+					"caller": "ExposeViaRelayConfirmDialog",
+					"callee": "setTyped",
+					"lineNumber": 34
+				},
+				{
+					"caller": "ExposeViaRelayConfirmDialog",
+					"callee": "setTyped",
+					"lineNumber": 80
+				},
+				{
+					"caller": "ExposeViaRelayConfirmDialog",
+					"callee": "onOpenChange",
+					"lineNumber": 89
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		}
+	]
+}

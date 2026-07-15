@@ -1,0 +1,2345 @@
+{
+	"scriptCompleted": true,
+	"filesAnalyzed": 19,
+	"filesSkipped": [],
+	"results": [
+		{
+			"path": "src/renderer/screens/main/components/CommandPalette/CommandPalette.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 228,
+			"nonEmptyLines": 205,
+			"functions": [
+				{
+					"name": "getFileName",
+					"startLine": 26,
+					"endLine": 29,
+					"params": ["relativePath"]
+				},
+				{
+					"name": "CommandPalette",
+					"startLine": 31,
+					"endLine": 228,
+					"params": [
+						"{\n\tworkspaceId,\n\topen,\n\tonOpenChange,\n\tonSelectFile,\n\tvariant = \"v1\",\n\trecentlyViewedFiles,\n\topenFilePaths,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "CommandPalette",
+					"line": 31,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "getFileName",
+					"callee": "relativePath.split",
+					"lineNumber": 27
+				},
+				{
+					"caller": "CommandPalette",
+					"callee": "useState",
+					"lineNumber": 40
+				},
+				{
+					"caller": "CommandPalette",
+					"callee": "useState",
+					"lineNumber": 41
+				},
+				{
+					"caller": "CommandPalette",
+					"callee": "useState",
+					"lineNumber": 42
+				},
+				{
+					"caller": "CommandPalette",
+					"callee": "useState",
+					"lineNumber": 43
+				},
+				{
+					"caller": "CommandPalette",
+					"callee": "useRef",
+					"lineNumber": 44
+				},
+				{
+					"caller": "CommandPalette",
+					"callee": "useFileSearch",
+					"lineNumber": 46
+				},
+				{
+					"caller": "CommandPalette",
+					"callee": "useV2FileSearch",
+					"lineNumber": 54
+				},
+				{
+					"caller": "CommandPalette",
+					"callee": "query.trim",
+					"lineNumber": 61
+				},
+				{
+					"caller": "CommandPalette",
+					"callee": "Boolean",
+					"lineNumber": 63
+				},
+				{
+					"caller": "CommandPalette",
+					"callee": "useMemo",
+					"lineNumber": 65
+				},
+				{
+					"caller": "CommandPalette",
+					"callee": "openSet.has",
+					"lineNumber": 71
+				},
+				{
+					"caller": "CommandPalette",
+					"callee": "openFiles.push",
+					"lineNumber": 72
+				},
+				{
+					"caller": "CommandPalette",
+					"callee": "rest.push",
+					"lineNumber": 74
+				},
+				{
+					"caller": "CommandPalette",
+					"callee": "[...openFiles, ...rest].slice",
+					"lineNumber": 77
+				},
+				{
+					"caller": "CommandPalette",
+					"callee": "useMemo",
+					"lineNumber": 80
+				},
+				{
+					"caller": "CommandPalette",
+					"callee": "trimmedQuery.toLowerCase",
+					"lineNumber": 83
+				},
+				{
+					"caller": "CommandPalette",
+					"callee": "orderedRecent.filter",
+					"lineNumber": 84
+				},
+				{
+					"caller": "CommandPalette",
+					"callee": "file.relativePath.toLowerCase().includes",
+					"lineNumber": 85
+				},
+				{
+					"caller": "CommandPalette",
+					"callee": "file.relativePath.toLowerCase",
+					"lineNumber": 85
+				},
+				{
+					"caller": "CommandPalette",
+					"callee": "useMemo",
+					"lineNumber": 89
+				},
+				{
+					"caller": "CommandPalette",
+					"callee": "filteredRecent.map",
+					"lineNumber": 90
+				},
+				{
+					"caller": "CommandPalette",
+					"callee": "useMemo",
+					"lineNumber": 94
+				},
+				{
+					"caller": "CommandPalette",
+					"callee": "rawResults.filter",
+					"lineNumber": 96
+				},
+				{
+					"caller": "CommandPalette",
+					"callee": "recentAbsSet.has",
+					"lineNumber": 96
+				},
+				{
+					"caller": "CommandPalette",
+					"callee": "useCallback",
+					"lineNumber": 99
+				},
+				{
+					"caller": "CommandPalette",
+					"callee": "onOpenChange",
+					"lineNumber": 101
+				},
+				{
+					"caller": "CommandPalette",
+					"callee": "setQuery",
+					"lineNumber": 102
+				},
+				{
+					"caller": "CommandPalette",
+					"callee": "useCallback",
+					"lineNumber": 107
+				},
+				{
+					"caller": "CommandPalette",
+					"callee": "onSelectFile",
+					"lineNumber": 109
+				},
+				{
+					"caller": "CommandPalette",
+					"callee": "handleOpenChange",
+					"lineNumber": 110
+				},
+				{
+					"caller": "CommandPalette",
+					"callee": "useEffect",
+					"lineNumber": 115
+				},
+				{
+					"caller": "CommandPalette",
+					"callee": "requestAnimationFrame",
+					"lineNumber": 116
+				},
+				{
+					"caller": "CommandPalette",
+					"callee": "inputRef.current?.focus",
+					"lineNumber": 116
+				},
+				{
+					"caller": "CommandPalette",
+					"callee": "setFiltersOpen",
+					"lineNumber": 157
+				},
+				{
+					"caller": "CommandPalette",
+					"callee": "setIncludePattern",
+					"lineNumber": 173
+				},
+				{
+					"caller": "CommandPalette",
+					"callee": "setExcludePattern",
+					"lineNumber": 179
+				},
+				{
+					"caller": "CommandPalette",
+					"callee": "filteredRecent.map",
+					"lineNumber": 199
+				},
+				{
+					"caller": "CommandPalette",
+					"callee": "getFileName",
+					"lineNumber": 203
+				},
+				{
+					"caller": "CommandPalette",
+					"callee": "handleSelectFile",
+					"lineNumber": 205
+				},
+				{
+					"caller": "CommandPalette",
+					"callee": "dedupedResults.map",
+					"lineNumber": 213
+				},
+				{
+					"caller": "CommandPalette",
+					"callee": "handleSelectFile",
+					"lineNumber": 219
+				}
+			],
+			"metrics": {
+				"importCount": 4,
+				"exportCount": 1,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/CommandPalette/components/FileResultItem/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "FileResultItem",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/CommandPalette/hooks/useV2FileSearch/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "useV2FileSearch",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/RightSidebar/FilesView/FilesView.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 685,
+			"nonEmptyLines": 621,
+			"functions": [
+				{
+					"name": "getEntryRelativePath",
+					"startLine": 53,
+					"endLine": 56,
+					"params": ["rootPath", "absolutePath"]
+				},
+				{
+					"name": "getPathSegmentSeparator",
+					"startLine": 58,
+					"endLine": 60,
+					"params": ["absolutePath"]
+				},
+				{
+					"name": "getParentPath",
+					"startLine": 62,
+					"endLine": 79,
+					"params": ["absolutePath"]
+				},
+				{
+					"name": "deleteCachedEntryPath",
+					"startLine": 81,
+					"endLine": 94,
+					"params": ["cache", "absolutePath"]
+				},
+				{
+					"name": "getExpandedRenameTargets",
+					"startLine": 96,
+					"endLine": 118,
+					"params": [
+						"tree",
+						"oldAbsolutePath",
+						"newAbsolutePath",
+						"isDirectory"
+					]
+				},
+				{
+					"name": "restoreExpandedDirectories",
+					"startLine": 120,
+					"endLine": 141,
+					"params": ["tree", "paths"]
+				},
+				{
+					"name": "FilesView",
+					"startLine": 143,
+					"endLine": 685,
+					"params": []
+				}
+			],
+			"exports": [
+				{
+					"name": "FilesView",
+					"line": 143,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "getEntryRelativePath",
+					"callee": "toRelativeWorkspacePath",
+					"lineNumber": 54
+				},
+				{
+					"caller": "getPathSegmentSeparator",
+					"callee": "absolutePath.includes",
+					"lineNumber": 59
+				},
+				{
+					"caller": "getParentPath",
+					"callee": "absolutePath.replace",
+					"lineNumber": 63
+				},
+				{
+					"caller": "getParentPath",
+					"callee": "Math.max",
+					"lineNumber": 64
+				},
+				{
+					"caller": "getParentPath",
+					"callee": "trimmedPath.lastIndexOf",
+					"lineNumber": 65
+				},
+				{
+					"caller": "getParentPath",
+					"callee": "trimmedPath.lastIndexOf",
+					"lineNumber": 66
+				},
+				{
+					"caller": "getParentPath",
+					"callee": "/^[A-Za-z]:$/.test",
+					"lineNumber": 74
+				},
+				{
+					"caller": "getParentPath",
+					"callee": "trimmedPath.slice",
+					"lineNumber": 74
+				},
+				{
+					"caller": "getParentPath",
+					"callee": "trimmedPath.slice",
+					"lineNumber": 75
+				},
+				{
+					"caller": "getParentPath",
+					"callee": "trimmedPath.slice",
+					"lineNumber": 78
+				},
+				{
+					"caller": "deleteCachedEntryPath",
+					"callee": "getPathSegmentSeparator",
+					"lineNumber": 85
+				},
+				{
+					"caller": "deleteCachedEntryPath",
+					"callee": "cache.keys",
+					"lineNumber": 86
+				},
+				{
+					"caller": "deleteCachedEntryPath",
+					"callee": "cachedPath.startsWith",
+					"lineNumber": 89
+				},
+				{
+					"caller": "deleteCachedEntryPath",
+					"callee": "cache.delete",
+					"lineNumber": 91
+				},
+				{
+					"caller": "getExpandedRenameTargets",
+					"callee": "tree\n\t\t.getItems()\n\t\t.filter(\n\t\t\t(item: ItemInstance<DirectoryEntry>) =>\n\t\t\t\titem.getItemData()?.isDirectory && item.isExpanded(),\n\t\t)\n\t\t.map((item: ItemInstance<DirectoryEntry>) => item.getItemData()?.path ?? \"\")\n\t\t.filter((path) => path.length > 0)\n\t\t.map((path) =>\n\t\t\tretargetAbsolutePath(path, oldAbsolutePath, newAbsolutePath, true),\n\t\t)\n\t\t.filter",
+					"lineNumber": 106
+				},
+				{
+					"caller": "getExpandedRenameTargets",
+					"callee": "tree\n\t\t.getItems()\n\t\t.filter(\n\t\t\t(item: ItemInstance<DirectoryEntry>) =>\n\t\t\t\titem.getItemData()?.isDirectory && item.isExpanded(),\n\t\t)\n\t\t.map((item: ItemInstance<DirectoryEntry>) => item.getItemData()?.path ?? \"\")\n\t\t.filter((path) => path.length > 0)\n\t\t.map",
+					"lineNumber": 106
+				},
+				{
+					"caller": "getExpandedRenameTargets",
+					"callee": "tree\n\t\t.getItems()\n\t\t.filter(\n\t\t\t(item: ItemInstance<DirectoryEntry>) =>\n\t\t\t\titem.getItemData()?.isDirectory && item.isExpanded(),\n\t\t)\n\t\t.map((item: ItemInstance<DirectoryEntry>) => item.getItemData()?.path ?? \"\")\n\t\t.filter",
+					"lineNumber": 106
+				},
+				{
+					"caller": "getExpandedRenameTargets",
+					"callee": "tree\n\t\t.getItems()\n\t\t.filter(\n\t\t\t(item: ItemInstance<DirectoryEntry>) =>\n\t\t\t\titem.getItemData()?.isDirectory && item.isExpanded(),\n\t\t)\n\t\t.map",
+					"lineNumber": 106
+				},
+				{
+					"caller": "getExpandedRenameTargets",
+					"callee": "tree\n\t\t.getItems()\n\t\t.filter",
+					"lineNumber": 106
+				},
+				{
+					"caller": "getExpandedRenameTargets",
+					"callee": "tree\n\t\t.getItems",
+					"lineNumber": 106
+				},
+				{
+					"caller": "getExpandedRenameTargets",
+					"callee": "item.getItemData",
+					"lineNumber": 110
+				},
+				{
+					"caller": "getExpandedRenameTargets",
+					"callee": "item.isExpanded",
+					"lineNumber": 110
+				},
+				{
+					"caller": "getExpandedRenameTargets",
+					"callee": "item.getItemData",
+					"lineNumber": 112
+				},
+				{
+					"caller": "getExpandedRenameTargets",
+					"callee": "retargetAbsolutePath",
+					"lineNumber": 115
+				},
+				{
+					"caller": "getExpandedRenameTargets",
+					"callee": "Boolean",
+					"lineNumber": 117
+				},
+				{
+					"caller": "restoreExpandedDirectories",
+					"callee": "Array.from(new Set(paths)).sort",
+					"lineNumber": 124
+				},
+				{
+					"caller": "restoreExpandedDirectories",
+					"callee": "Array.from",
+					"lineNumber": 124
+				},
+				{
+					"caller": "restoreExpandedDirectories",
+					"callee": "left.split",
+					"lineNumber": 125
+				},
+				{
+					"caller": "restoreExpandedDirectories",
+					"callee": "right.split",
+					"lineNumber": 125
+				},
+				{
+					"caller": "restoreExpandedDirectories",
+					"callee": "tree.getItemInstance",
+					"lineNumber": 130
+				},
+				{
+					"caller": "restoreExpandedDirectories",
+					"callee": "item.isExpanded",
+					"lineNumber": 132
+				},
+				{
+					"caller": "restoreExpandedDirectories",
+					"callee": "item.expand",
+					"lineNumber": 133
+				},
+				{
+					"caller": "restoreExpandedDirectories",
+					"callee": "setTimeout",
+					"lineNumber": 138
+				},
+				{
+					"caller": "FilesView",
+					"callee": "useParams",
+					"lineNumber": 144
+				},
+				{
+					"caller": "FilesView",
+					"callee": "electronTrpc.workspaces.get.useQuery",
+					"lineNumber": 145
+				},
+				{
+					"caller": "FilesView",
+					"callee": "useState",
+					"lineNumber": 151
+				},
+				{
+					"caller": "FilesView",
+					"callee": "useRef",
+					"lineNumber": 155
+				},
+				{
+					"caller": "FilesView",
+					"callee": "useRef",
+					"lineNumber": 157
+				},
+				{
+					"caller": "FilesView",
+					"callee": "useRef",
+					"lineNumber": 158
+				},
+				{
+					"caller": "FilesView",
+					"callee": "useRef",
+					"lineNumber": 159
+				},
+				{
+					"caller": "FilesView",
+					"callee": "electronTrpc.useUtils",
+					"lineNumber": 166
+				},
+				{
+					"caller": "FilesView",
+					"callee": "useTree",
+					"lineNumber": 168
+				},
+				{
+					"caller": "FilesView",
+					"callee": "item.getItemData",
+					"lineNumber": 171
+				},
+				{
+					"caller": "FilesView",
+					"callee": "item.getItemData",
+					"lineNumber": 173
+				},
+				{
+					"caller": "FilesView",
+					"callee": "entryCacheRef.current.get",
+					"lineNumber": 186
+				},
+				{
+					"caller": "FilesView",
+					"callee": "itemId.split(/[/\\\\]/).pop",
+					"lineNumber": 192
+				},
+				{
+					"caller": "FilesView",
+					"callee": "itemId.split",
+					"lineNumber": 192
+				},
+				{
+					"caller": "FilesView",
+					"callee": "itemId.startsWith",
+					"lineNumber": 194
+				},
+				{
+					"caller": "FilesView",
+					"callee": "itemId.slice(currentPath.length).replace",
+					"lineNumber": 195
+				},
+				{
+					"caller": "FilesView",
+					"callee": "itemId.slice",
+					"lineNumber": 195
+				},
+				{
+					"caller": "FilesView",
+					"callee": "trpcUtils.filesystem.listDirectory.fetch",
+					"lineNumber": 214
+				},
+				{
+					"caller": "FilesView",
+					"callee": "entries.map",
+					"lineNumber": 218
+				},
+				{
+					"caller": "FilesView",
+					"callee": "getEntryRelativePath",
+					"lineNumber": 222
+				},
+				{
+					"caller": "FilesView",
+					"callee": "entryCacheRef.current.set",
+					"lineNumber": 226
+				},
+				{
+					"caller": "FilesView",
+					"callee": "nextEntries.map",
+					"lineNumber": 228
+				},
+				{
+					"caller": "FilesView",
+					"callee": "console.error",
+					"lineNumber": 230
+				},
+				{
+					"caller": "FilesView",
+					"callee": "useRef",
+					"lineNumber": 238
+				},
+				{
+					"caller": "FilesView",
+					"callee": "useEffect",
+					"lineNumber": 239
+				},
+				{
+					"caller": "FilesView",
+					"callee": "entryCacheRef.current.clear",
+					"lineNumber": 245
+				},
+				{
+					"caller": "FilesView",
+					"callee": "tree.getItemInstance(\"root\")?.invalidateChildrenIds",
+					"lineNumber": 246
+				},
+				{
+					"caller": "FilesView",
+					"callee": "tree.getItemInstance",
+					"lineNumber": 246
+				},
+				{
+					"caller": "FilesView",
+					"callee": "useCallback",
+					"lineNumber": 251
+				},
+				{
+					"caller": "FilesView",
+					"callee": "entryCacheRef.current.clear",
+					"lineNumber": 252
+				},
+				{
+					"caller": "FilesView",
+					"callee": "tree.getItemInstance(\"root\")?.invalidateChildrenIds",
+					"lineNumber": 253
+				},
+				{
+					"caller": "FilesView",
+					"callee": "tree.getItemInstance",
+					"lineNumber": 253
+				},
+				{
+					"caller": "FilesView",
+					"callee": "tree.getItems",
+					"lineNumber": 254
+				},
+				{
+					"caller": "FilesView",
+					"callee": "item.getItemData",
+					"lineNumber": 255
+				},
+				{
+					"caller": "FilesView",
+					"callee": "item.invalidateChildrenIds",
+					"lineNumber": 256
+				},
+				{
+					"caller": "FilesView",
+					"callee": "trpcUtils.filesystem.searchFiles.invalidate",
+					"lineNumber": 259
+				},
+				{
+					"caller": "FilesView",
+					"callee": "useCallback",
+					"lineNumber": 262
+				},
+				{
+					"caller": "FilesView",
+					"callee": "tree.getItemInstance(\"root\")?.invalidateChildrenIds",
+					"lineNumber": 270
+				},
+				{
+					"caller": "FilesView",
+					"callee": "tree.getItemInstance",
+					"lineNumber": 270
+				},
+				{
+					"caller": "FilesView",
+					"callee": "tree\n\t\t\t\t.getItems()\n\t\t\t\t.find",
+					"lineNumber": 274
+				},
+				{
+					"caller": "FilesView",
+					"callee": "tree\n\t\t\t\t.getItems",
+					"lineNumber": 274
+				},
+				{
+					"caller": "FilesView",
+					"callee": "item.getItemData",
+					"lineNumber": 278
+				},
+				{
+					"caller": "FilesView",
+					"callee": "item.getItemData",
+					"lineNumber": 279
+				},
+				{
+					"caller": "FilesView",
+					"callee": "directoryItem?.invalidateChildrenIds",
+					"lineNumber": 281
+				},
+				{
+					"caller": "FilesView",
+					"callee": "useCallback",
+					"lineNumber": 286
+				},
+				{
+					"caller": "FilesView",
+					"callee": "deleteCachedEntryPath",
+					"lineNumber": 299
+				},
+				{
+					"caller": "FilesView",
+					"callee": "deleteCachedEntryPath",
+					"lineNumber": 300
+				},
+				{
+					"caller": "FilesView",
+					"callee": "pendingRefreshRef.current.directoryPaths.add",
+					"lineNumber": 302
+				},
+				{
+					"caller": "FilesView",
+					"callee": "getParentPath",
+					"lineNumber": 303
+				},
+				{
+					"caller": "FilesView",
+					"callee": "pendingRefreshRef.current.directoryPaths.add",
+					"lineNumber": 305
+				},
+				{
+					"caller": "FilesView",
+					"callee": "getParentPath",
+					"lineNumber": 306
+				},
+				{
+					"caller": "FilesView",
+					"callee": "getExpandedRenameTargets",
+					"lineNumber": 309
+				},
+				{
+					"caller": "FilesView",
+					"callee": "Boolean",
+					"lineNumber": 313
+				},
+				{
+					"caller": "FilesView",
+					"callee": "pendingRefreshRef.current.expandedPathsToRestore.add",
+					"lineNumber": 315
+				},
+				{
+					"caller": "FilesView",
+					"callee": "deleteCachedEntryPath",
+					"lineNumber": 318
+				},
+				{
+					"caller": "FilesView",
+					"callee": "getParentPath",
+					"lineNumber": 324
+				},
+				{
+					"caller": "FilesView",
+					"callee": "pendingRefreshRef.current.directoryPaths.add",
+					"lineNumber": 325
+				},
+				{
+					"caller": "FilesView",
+					"callee": "clearTimeout",
+					"lineNumber": 331
+				},
+				{
+					"caller": "FilesView",
+					"callee": "setTimeout",
+					"lineNumber": 333
+				},
+				{
+					"caller": "FilesView",
+					"callee": "refreshVisibleDirectories",
+					"lineNumber": 344
+				},
+				{
+					"caller": "FilesView",
+					"callee": "invalidateDirectoryByPath",
+					"lineNumber": 349
+				},
+				{
+					"caller": "FilesView",
+					"callee": "trpcUtils.filesystem.searchFiles.invalidate",
+					"lineNumber": 353
+				},
+				{
+					"caller": "FilesView",
+					"callee": "restoreExpandedDirectories",
+					"lineNumber": 356
+				},
+				{
+					"caller": "FilesView",
+					"callee": "useEffect",
+					"lineNumber": 362
+				},
+				{
+					"caller": "FilesView",
+					"callee": "clearTimeout",
+					"lineNumber": 365
+				},
+				{
+					"caller": "FilesView",
+					"callee": "useWorkspaceFileEvents",
+					"lineNumber": 370
+				},
+				{
+					"caller": "FilesView",
+					"callee": "scheduleRefresh",
+					"lineNumber": 373
+				},
+				{
+					"caller": "FilesView",
+					"callee": "Boolean",
+					"lineNumber": 375
+				},
+				{
+					"caller": "FilesView",
+					"callee": "useFileTreeActions",
+					"lineNumber": 379
+				},
+				{
+					"caller": "FilesView",
+					"callee": "tree\n\t\t\t\t\t\t\t.getItems()\n\t\t\t\t\t\t\t.find(\n\t\t\t\t\t\t\t\t(item: ItemInstance<DirectoryEntry>) =>\n\t\t\t\t\t\t\t\t\titem.getItemData()?.path === parentPath,\n\t\t\t\t\t\t\t)\n\t\t\t\t\t\t\t?.getId",
+					"lineNumber": 386
+				},
+				{
+					"caller": "FilesView",
+					"callee": "tree\n\t\t\t\t\t\t\t.getItems()\n\t\t\t\t\t\t\t.find",
+					"lineNumber": 386
+				},
+				{
+					"caller": "FilesView",
+					"callee": "tree\n\t\t\t\t\t\t\t.getItems",
+					"lineNumber": 386
+				},
+				{
+					"caller": "FilesView",
+					"callee": "item.getItemData",
+					"lineNumber": 390
+				},
+				{
+					"caller": "FilesView",
+					"callee": "tree.getItemInstance(itemId)?.invalidateChildrenIds",
+					"lineNumber": 394
+				},
+				{
+					"caller": "FilesView",
+					"callee": "tree.getItemInstance",
+					"lineNumber": 394
+				},
+				{
+					"caller": "FilesView",
+					"callee": "useFileSearch",
+					"lineNumber": 403
+				},
+				{
+					"caller": "FilesView",
+					"callee": "useTabsStore",
+					"lineNumber": 408
+				},
+				{
+					"caller": "FilesView",
+					"callee": "electronTrpc.external.openFileInEditor.useMutation",
+					"lineNumber": 410
+				},
+				{
+					"caller": "FilesView",
+					"callee": "useState",
+					"lineNumber": 412
+				},
+				{
+					"caller": "FilesView",
+					"callee": "useState",
+					"lineNumber": 413
+				},
+				{
+					"caller": "FilesView",
+					"callee": "useState",
+					"lineNumber": 414
+				},
+				{
+					"caller": "FilesView",
+					"callee": "useState",
+					"lineNumber": 415
+				},
+				{
+					"caller": "FilesView",
+					"callee": "useState",
+					"lineNumber": 416
+				},
+				{
+					"caller": "FilesView",
+					"callee": "useCallback",
+					"lineNumber": 418
+				},
+				{
+					"caller": "FilesView",
+					"callee": "addFileViewerPane",
+					"lineNumber": 421
+				},
+				{
+					"caller": "FilesView",
+					"callee": "useCallback",
+					"lineNumber": 429
+				},
+				{
+					"caller": "FilesView",
+					"callee": "openFileInEditorMutation.mutate",
+					"lineNumber": 432
+				},
+				{
+					"caller": "FilesView",
+					"callee": "useCallback",
+					"lineNumber": 441
+				},
+				{
+					"caller": "FilesView",
+					"callee": "tree\n\t\t\t\t\t.getItems()\n\t\t\t\t\t.find",
+					"lineNumber": 444
+				},
+				{
+					"caller": "FilesView",
+					"callee": "tree\n\t\t\t\t\t.getItems",
+					"lineNumber": 444
+				},
+				{
+					"caller": "FilesView",
+					"callee": "i.getItemData",
+					"lineNumber": 448
+				},
+				{
+					"caller": "FilesView",
+					"callee": "item.isExpanded",
+					"lineNumber": 450
+				},
+				{
+					"caller": "FilesView",
+					"callee": "item.expand",
+					"lineNumber": 451
+				},
+				{
+					"caller": "FilesView",
+					"callee": "setNewItemMode",
+					"lineNumber": 454
+				},
+				{
+					"caller": "FilesView",
+					"callee": "setNewItemParentPath",
+					"lineNumber": 455
+				},
+				{
+					"caller": "FilesView",
+					"callee": "useCallback",
+					"lineNumber": 460
+				},
+				{
+					"caller": "FilesView",
+					"callee": "tree\n\t\t\t\t\t.getItems()\n\t\t\t\t\t.find",
+					"lineNumber": 463
+				},
+				{
+					"caller": "FilesView",
+					"callee": "tree\n\t\t\t\t\t.getItems",
+					"lineNumber": 463
+				},
+				{
+					"caller": "FilesView",
+					"callee": "i.getItemData",
+					"lineNumber": 467
+				},
+				{
+					"caller": "FilesView",
+					"callee": "item.isExpanded",
+					"lineNumber": 469
+				},
+				{
+					"caller": "FilesView",
+					"callee": "item.expand",
+					"lineNumber": 470
+				},
+				{
+					"caller": "FilesView",
+					"callee": "setNewItemMode",
+					"lineNumber": 473
+				},
+				{
+					"caller": "FilesView",
+					"callee": "setNewItemParentPath",
+					"lineNumber": 474
+				},
+				{
+					"caller": "FilesView",
+					"callee": "useCallback",
+					"lineNumber": 479
+				},
+				{
+					"caller": "FilesView",
+					"callee": "createFile",
+					"lineNumber": 482
+				},
+				{
+					"caller": "FilesView",
+					"callee": "createDirectory",
+					"lineNumber": 484
+				},
+				{
+					"caller": "FilesView",
+					"callee": "setNewItemMode",
+					"lineNumber": 486
+				},
+				{
+					"caller": "FilesView",
+					"callee": "setNewItemParentPath",
+					"lineNumber": 487
+				},
+				{
+					"caller": "FilesView",
+					"callee": "useCallback",
+					"lineNumber": 492
+				},
+				{
+					"caller": "FilesView",
+					"callee": "setNewItemMode",
+					"lineNumber": 493
+				},
+				{
+					"caller": "FilesView",
+					"callee": "setNewItemParentPath",
+					"lineNumber": 494
+				},
+				{
+					"caller": "FilesView",
+					"callee": "useCallback",
+					"lineNumber": 497
+				},
+				{
+					"caller": "FilesView",
+					"callee": "setDeleteEntry",
+					"lineNumber": 498
+				},
+				{
+					"caller": "FilesView",
+					"callee": "setShowDeleteDialog",
+					"lineNumber": 499
+				},
+				{
+					"caller": "FilesView",
+					"callee": "useCallback",
+					"lineNumber": 502
+				},
+				{
+					"caller": "FilesView",
+					"callee": "deleteItems",
+					"lineNumber": 504
+				},
+				{
+					"caller": "FilesView",
+					"callee": "setShowDeleteDialog",
+					"lineNumber": 506
+				},
+				{
+					"caller": "FilesView",
+					"callee": "setDeleteEntry",
+					"lineNumber": 507
+				},
+				{
+					"caller": "FilesView",
+					"callee": "useCallback",
+					"lineNumber": 510
+				},
+				{
+					"caller": "FilesView",
+					"callee": "setRenameEntry",
+					"lineNumber": 511
+				},
+				{
+					"caller": "FilesView",
+					"callee": "useCallback",
+					"lineNumber": 514
+				},
+				{
+					"caller": "FilesView",
+					"callee": "rename",
+					"lineNumber": 517
+				},
+				{
+					"caller": "FilesView",
+					"callee": "setRenameEntry",
+					"lineNumber": 519
+				},
+				{
+					"caller": "FilesView",
+					"callee": "useCallback",
+					"lineNumber": 524
+				},
+				{
+					"caller": "FilesView",
+					"callee": "setRenameEntry",
+					"lineNumber": 525
+				},
+				{
+					"caller": "FilesView",
+					"callee": "useCallback",
+					"lineNumber": 528
+				},
+				{
+					"caller": "FilesView",
+					"callee": "tree.collapseAll",
+					"lineNumber": 529
+				},
+				{
+					"caller": "FilesView",
+					"callee": "useCallback",
+					"lineNumber": 532
+				},
+				{
+					"caller": "FilesView",
+					"callee": "refreshVisibleDirectories",
+					"lineNumber": 533
+				},
+				{
+					"caller": "FilesView",
+					"callee": "useMemo",
+					"lineNumber": 536
+				},
+				{
+					"caller": "FilesView",
+					"callee": "searchResults.map",
+					"lineNumber": 537
+				},
+				{
+					"caller": "FilesView",
+					"callee": "handleNewFile",
+					"lineNumber": 559
+				},
+				{
+					"caller": "FilesView",
+					"callee": "handleNewFolder",
+					"lineNumber": 560
+				},
+				{
+					"caller": "FilesView",
+					"callee": "searchResultEntries.map",
+					"lineNumber": 581
+				},
+				{
+					"caller": "FilesView",
+					"callee": "tree.getContainerProps",
+					"lineNumber": 613
+				},
+				{
+					"caller": "FilesView",
+					"callee": "tree.getItems().map",
+					"lineNumber": 614
+				},
+				{
+					"caller": "FilesView",
+					"callee": "tree.getItems",
+					"lineNumber": 614
+				},
+				{
+					"caller": "FilesView",
+					"callee": "item.getItemData",
+					"lineNumber": 615
+				},
+				{
+					"caller": "FilesView",
+					"callee": "item.getId",
+					"lineNumber": 616
+				},
+				{
+					"caller": "FilesView",
+					"callee": "item.getId",
+					"lineNumber": 623
+				},
+				{
+					"caller": "FilesView",
+					"callee": "item.getItemMeta",
+					"lineNumber": 629
+				},
+				{
+					"caller": "FilesView",
+					"callee": "item.getItemMeta",
+					"lineNumber": 653
+				},
+				{
+					"caller": "FilesView",
+					"callee": "handleNewFile",
+					"lineNumber": 664
+				},
+				{
+					"caller": "FilesView",
+					"callee": "handleNewFolder",
+					"lineNumber": 668
+				}
+			],
+			"metrics": {
+				"importCount": 15,
+				"exportCount": 1,
+				"functionCount": 7,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/RightSidebar/FilesView/components/DeleteConfirmDialog/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "DeleteConfirmDialog",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/RightSidebar/FilesView/components/FileSearchResultItem/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "FileSearchResultItem",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/RightSidebar/FilesView/components/FileTreeItem/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "FileTreeItem",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/RightSidebar/FilesView/components/FileTreeToolbar/FileTreeToolbar.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 163,
+			"nonEmptyLines": 149,
+			"functions": [
+				{
+					"name": "FileTreeToolbar",
+					"startLine": 24,
+					"endLine": 163,
+					"params": [
+						"{\n\tsearchTerm,\n\tonSearchChange,\n\tonNewFile,\n\tonNewFolder,\n\tonCollapseAll,\n\tonRefresh,\n\tisRefreshing = false,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "FileTreeToolbar",
+					"line": 24,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "FileTreeToolbar",
+					"callee": "useState",
+					"lineNumber": 33
+				},
+				{
+					"caller": "FileTreeToolbar",
+					"callee": "useRef",
+					"lineNumber": 34
+				},
+				{
+					"caller": "FileTreeToolbar",
+					"callee": "useEffect",
+					"lineNumber": 36
+				},
+				{
+					"caller": "FileTreeToolbar",
+					"callee": "clearTimeout",
+					"lineNumber": 38
+				},
+				{
+					"caller": "FileTreeToolbar",
+					"callee": "setLocalSearchTerm",
+					"lineNumber": 41
+				},
+				{
+					"caller": "FileTreeToolbar",
+					"callee": "useEffect",
+					"lineNumber": 44
+				},
+				{
+					"caller": "FileTreeToolbar",
+					"callee": "clearTimeout",
+					"lineNumber": 47
+				},
+				{
+					"caller": "FileTreeToolbar",
+					"callee": "useCallback",
+					"lineNumber": 52
+				},
+				{
+					"caller": "FileTreeToolbar",
+					"callee": "setLocalSearchTerm",
+					"lineNumber": 55
+				},
+				{
+					"caller": "FileTreeToolbar",
+					"callee": "clearTimeout",
+					"lineNumber": 58
+				},
+				{
+					"caller": "FileTreeToolbar",
+					"callee": "setTimeout",
+					"lineNumber": 61
+				},
+				{
+					"caller": "FileTreeToolbar",
+					"callee": "onSearchChange",
+					"lineNumber": 62
+				},
+				{
+					"caller": "FileTreeToolbar",
+					"callee": "useCallback",
+					"lineNumber": 69
+				},
+				{
+					"caller": "FileTreeToolbar",
+					"callee": "setLocalSearchTerm",
+					"lineNumber": 70
+				},
+				{
+					"caller": "FileTreeToolbar",
+					"callee": "clearTimeout",
+					"lineNumber": 72
+				},
+				{
+					"caller": "FileTreeToolbar",
+					"callee": "onSearchChange",
+					"lineNumber": 75
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/RightSidebar/FilesView/components/FileTreeToolbar/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "FileTreeToolbar",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/RightSidebar/FilesView/components/NewItemInput/NewItemInput.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 85,
+			"nonEmptyLines": 79,
+			"functions": [
+				{
+					"name": "NewItemInput",
+					"startLine": 15,
+					"endLine": 85,
+					"params": [
+						"{\n\tmode,\n\tparentPath: _parentPath,\n\tonSubmit,\n\tonCancel,\n\tlevel = 0,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "NewItemInput",
+					"line": 15,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "NewItemInput",
+					"callee": "useState",
+					"lineNumber": 22
+				},
+				{
+					"caller": "handleSubmit",
+					"callee": "value.trim",
+					"lineNumber": 25
+				},
+				{
+					"caller": "handleSubmit",
+					"callee": "onSubmit",
+					"lineNumber": 27
+				},
+				{
+					"caller": "handleSubmit",
+					"callee": "onCancel",
+					"lineNumber": 29
+				},
+				{
+					"caller": "handleKeyDown",
+					"callee": "e.stopPropagation",
+					"lineNumber": 34
+				},
+				{
+					"caller": "handleKeyDown",
+					"callee": "e.preventDefault",
+					"lineNumber": 36
+				},
+				{
+					"caller": "handleKeyDown",
+					"callee": "handleSubmit",
+					"lineNumber": 37
+				},
+				{
+					"caller": "handleKeyDown",
+					"callee": "e.preventDefault",
+					"lineNumber": 40
+				},
+				{
+					"caller": "handleKeyDown",
+					"callee": "onCancel",
+					"lineNumber": 41
+				},
+				{
+					"caller": "NewItemInput",
+					"callee": "cn",
+					"lineNumber": 50
+				},
+				{
+					"caller": "NewItemInput",
+					"callee": "setValue",
+					"lineNumber": 58
+				},
+				{
+					"caller": "NewItemInput",
+					"callee": "cn",
+					"lineNumber": 61
+				},
+				{
+					"caller": "NewItemInput",
+					"callee": "e.preventDefault",
+					"lineNumber": 76
+				},
+				{
+					"caller": "NewItemInput",
+					"callee": "onCancel",
+					"lineNumber": 77
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/RightSidebar/FilesView/components/NewItemInput/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "NewItemInput",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/RightSidebar/FilesView/components/RenameInput/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "RenameInput",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/RightSidebar/FilesView/constants.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 32,
+			"nonEmptyLines": 30,
+			"exports": [
+				{
+					"name": "ROW_HEIGHT",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "SEARCH_RESULT_ROW_HEIGHT",
+					"line": 2,
+					"isDefault": false
+				},
+				{
+					"name": "TREE_INDENT",
+					"line": 3,
+					"isDefault": false
+				},
+				{
+					"name": "OVERSCAN_COUNT",
+					"line": 4,
+					"isDefault": false
+				},
+				{
+					"name": "SEARCH_DEBOUNCE_MS",
+					"line": 5,
+					"isDefault": false
+				},
+				{
+					"name": "SEARCH_RESULT_LIMIT",
+					"line": 6,
+					"isDefault": false
+				},
+				{
+					"name": "DEFAULT_IGNORE_PATTERNS",
+					"line": 8,
+					"isDefault": false
+				},
+				{
+					"name": "SPECIAL_FOLDERS",
+					"line": 18,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 8,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/RightSidebar/FilesView/hooks/useFileSearch/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "useFileSearch",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/RightSidebar/FilesView/hooks/useFileSearch/useFileSearch.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 51,
+			"nonEmptyLines": 46,
+			"functions": [
+				{
+					"name": "useFileSearch",
+					"startLine": 12,
+					"endLine": 51,
+					"params": [
+						"{\n\tworkspaceId,\n\tsearchTerm,\n\tincludePattern = \"\",\n\texcludePattern = \"\",\n\tlimit = SEARCH_RESULT_LIMIT,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "useFileSearch",
+					"line": 12,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "useFileSearch",
+					"callee": "searchTerm.trim",
+					"lineNumber": 19
+				},
+				{
+					"caller": "useFileSearch",
+					"callee": "electronTrpc.filesystem.searchFiles.useQuery",
+					"lineNumber": 22
+				},
+				{
+					"caller": "useFileSearch",
+					"callee": "Boolean",
+					"lineNumber": 31
+				},
+				{
+					"caller": "useFileSearch",
+					"callee": "searchResults?.matches.map",
+					"lineNumber": 37
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/RightSidebar/FilesView/hooks/useFileTreeActions.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 277,
+			"nonEmptyLines": 251,
+			"functions": [
+				{
+					"name": "useFileTreeActions",
+					"startLine": 18,
+					"endLine": 277,
+					"params": ["{\n\tworkspaceId,\n\tworktreePath,\n\tonRefresh,\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "useFileTreeActions",
+					"line": 18,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "useFileTreeActions",
+					"callee": "electronTrpc.filesystem.writeFile.useMutation",
+					"lineNumber": 23
+				},
+				{
+					"caller": "useFileTreeActions",
+					"callee": "electronTrpc.filesystem.createDirectory.useMutation",
+					"lineNumber": 25
+				},
+				{
+					"caller": "useFileTreeActions",
+					"callee": "electronTrpc.filesystem.movePath.useMutation",
+					"lineNumber": 26
+				},
+				{
+					"caller": "useFileTreeActions",
+					"callee": "electronTrpc.filesystem.deletePath.useMutation",
+					"lineNumber": 27
+				},
+				{
+					"caller": "useFileTreeActions",
+					"callee": "electronTrpc.filesystem.copyPath.useMutation",
+					"lineNumber": 28
+				},
+				{
+					"caller": "useFileTreeActions",
+					"callee": "useCallback",
+					"lineNumber": 30
+				},
+				{
+					"caller": "useFileTreeActions",
+					"callee": "resolveNewFileTarget",
+					"lineNumber": 36
+				},
+				{
+					"caller": "useFileTreeActions",
+					"callee": "toast.error",
+					"lineNumber": 38
+				},
+				{
+					"caller": "useFileTreeActions",
+					"callee": "(\n\t\t\t\tfileTarget.targetParentPath !== parentAbsolutePath\n\t\t\t\t\t? createDirectoryMutation.mutateAsync({\n\t\t\t\t\t\t\tworkspaceId,\n\t\t\t\t\t\t\tabsolutePath: fileTarget.targetParentPath,\n\t\t\t\t\t\t\trecursive: true,\n\t\t\t\t\t\t})\n\t\t\t\t\t: Promise.resolve()\n\t\t\t)\n\t\t\t\t.then(() =>\n\t\t\t\t\twriteFileMutation.mutateAsync({\n\t\t\t\t\t\tworkspaceId,\n\t\t\t\t\t\tabsolutePath: fileTarget.absolutePath,\n\t\t\t\t\t\tcontent,\n\t\t\t\t\t\tencoding: \"utf-8\",\n\t\t\t\t\t\toptions: { create: true, overwrite: false },\n\t\t\t\t\t}),\n\t\t\t\t)\n\t\t\t\t.then((result) => {\n\t\t\t\t\tif (!result.ok) {\n\t\t\t\t\t\tif (result.reason === \"exists\") {\n\t\t\t\t\t\t\ttoast.error(`Failed to create file: ${name} already exists`);\n\t\t\t\t\t\t\treturn;\n\t\t\t\t\t\t}\n\t\t\t\t\t\ttoast.error(`Failed to create file: ${result.reason}`);\n\t\t\t\t\t\treturn;\n\t\t\t\t\t}\n\n\t\t\t\t\ttoast.success(`Created ${name}`);\n\t\t\t\t\tvoid onRefresh(parentAbsolutePath);\n\t\t\t\t})\n\t\t\t\t.catch",
+					"lineNumber": 44
+				},
+				{
+					"caller": "useFileTreeActions",
+					"callee": "(\n\t\t\t\tfileTarget.targetParentPath !== parentAbsolutePath\n\t\t\t\t\t? createDirectoryMutation.mutateAsync({\n\t\t\t\t\t\t\tworkspaceId,\n\t\t\t\t\t\t\tabsolutePath: fileTarget.targetParentPath,\n\t\t\t\t\t\t\trecursive: true,\n\t\t\t\t\t\t})\n\t\t\t\t\t: Promise.resolve()\n\t\t\t)\n\t\t\t\t.then(() =>\n\t\t\t\t\twriteFileMutation.mutateAsync({\n\t\t\t\t\t\tworkspaceId,\n\t\t\t\t\t\tabsolutePath: fileTarget.absolutePath,\n\t\t\t\t\t\tcontent,\n\t\t\t\t\t\tencoding: \"utf-8\",\n\t\t\t\t\t\toptions: { create: true, overwrite: false },\n\t\t\t\t\t}),\n\t\t\t\t)\n\t\t\t\t.then",
+					"lineNumber": 44
+				},
+				{
+					"caller": "useFileTreeActions",
+					"callee": "(\n\t\t\t\tfileTarget.targetParentPath !== parentAbsolutePath\n\t\t\t\t\t? createDirectoryMutation.mutateAsync({\n\t\t\t\t\t\t\tworkspaceId,\n\t\t\t\t\t\t\tabsolutePath: fileTarget.targetParentPath,\n\t\t\t\t\t\t\trecursive: true,\n\t\t\t\t\t\t})\n\t\t\t\t\t: Promise.resolve()\n\t\t\t)\n\t\t\t\t.then",
+					"lineNumber": 44
+				},
+				{
+					"caller": "useFileTreeActions",
+					"callee": "createDirectoryMutation.mutateAsync",
+					"lineNumber": 46
+				},
+				{
+					"caller": "useFileTreeActions",
+					"callee": "Promise.resolve",
+					"lineNumber": 51
+				},
+				{
+					"caller": "useFileTreeActions",
+					"callee": "writeFileMutation.mutateAsync",
+					"lineNumber": 54
+				},
+				{
+					"caller": "useFileTreeActions",
+					"callee": "toast.error",
+					"lineNumber": 65
+				},
+				{
+					"caller": "useFileTreeActions",
+					"callee": "toast.error",
+					"lineNumber": 68
+				},
+				{
+					"caller": "useFileTreeActions",
+					"callee": "toast.success",
+					"lineNumber": 72
+				},
+				{
+					"caller": "useFileTreeActions",
+					"callee": "onRefresh",
+					"lineNumber": 73
+				},
+				{
+					"caller": "useFileTreeActions",
+					"callee": "toast.error",
+					"lineNumber": 76
+				},
+				{
+					"caller": "useFileTreeActions",
+					"callee": "useCallback",
+					"lineNumber": 82
+				},
+				{
+					"caller": "useFileTreeActions",
+					"callee": "resolveNewDirectoryTarget",
+					"lineNumber": 88
+				},
+				{
+					"caller": "useFileTreeActions",
+					"callee": "toast.error",
+					"lineNumber": 93
+				},
+				{
+					"caller": "useFileTreeActions",
+					"callee": "createDirectoryMutation\n\t\t\t\t.mutateAsync({\n\t\t\t\t\tworkspaceId,\n\t\t\t\t\tabsolutePath: directoryTarget.absolutePath,\n\t\t\t\t\trecursive: true,\n\t\t\t\t})\n\t\t\t\t.then(() => {\n\t\t\t\t\ttoast.success(`Created ${name}`);\n\t\t\t\t\tvoid onRefresh(parentAbsolutePath);\n\t\t\t\t})\n\t\t\t\t.catch",
+					"lineNumber": 98
+				},
+				{
+					"caller": "useFileTreeActions",
+					"callee": "createDirectoryMutation\n\t\t\t\t.mutateAsync({\n\t\t\t\t\tworkspaceId,\n\t\t\t\t\tabsolutePath: directoryTarget.absolutePath,\n\t\t\t\t\trecursive: true,\n\t\t\t\t})\n\t\t\t\t.then",
+					"lineNumber": 98
+				},
+				{
+					"caller": "useFileTreeActions",
+					"callee": "createDirectoryMutation\n\t\t\t\t.mutateAsync",
+					"lineNumber": 98
+				},
+				{
+					"caller": "useFileTreeActions",
+					"callee": "toast.success",
+					"lineNumber": 105
+				},
+				{
+					"caller": "useFileTreeActions",
+					"callee": "onRefresh",
+					"lineNumber": 106
+				},
+				{
+					"caller": "useFileTreeActions",
+					"callee": "toast.error",
+					"lineNumber": 109
+				},
+				{
+					"caller": "useFileTreeActions",
+					"callee": "useCallback",
+					"lineNumber": 115
+				},
+				{
+					"caller": "useFileTreeActions",
+					"callee": "joinAbsolutePath",
+					"lineNumber": 121
+				},
+				{
+					"caller": "useFileTreeActions",
+					"callee": "getParentPath",
+					"lineNumber": 122
+				},
+				{
+					"caller": "useFileTreeActions",
+					"callee": "movePathMutation\n\t\t\t\t.mutateAsync({\n\t\t\t\t\tworkspaceId,\n\t\t\t\t\tsourceAbsolutePath: absolutePath,\n\t\t\t\t\tdestinationAbsolutePath,\n\t\t\t\t})\n\t\t\t\t.then(() => {\n\t\t\t\t\ttoast.success(`Renamed to ${newName}`);\n\t\t\t\t\tvoid onRefresh(getParentPath(absolutePath) || worktreePath || \"\");\n\t\t\t\t})\n\t\t\t\t.catch",
+					"lineNumber": 125
+				},
+				{
+					"caller": "useFileTreeActions",
+					"callee": "movePathMutation\n\t\t\t\t.mutateAsync({\n\t\t\t\t\tworkspaceId,\n\t\t\t\t\tsourceAbsolutePath: absolutePath,\n\t\t\t\t\tdestinationAbsolutePath,\n\t\t\t\t})\n\t\t\t\t.then",
+					"lineNumber": 125
+				},
+				{
+					"caller": "useFileTreeActions",
+					"callee": "movePathMutation\n\t\t\t\t.mutateAsync",
+					"lineNumber": 125
+				},
+				{
+					"caller": "useFileTreeActions",
+					"callee": "toast.success",
+					"lineNumber": 132
+				},
+				{
+					"caller": "useFileTreeActions",
+					"callee": "onRefresh",
+					"lineNumber": 133
+				},
+				{
+					"caller": "useFileTreeActions",
+					"callee": "getParentPath",
+					"lineNumber": 133
+				},
+				{
+					"caller": "useFileTreeActions",
+					"callee": "toast.error",
+					"lineNumber": 136
+				},
+				{
+					"caller": "useFileTreeActions",
+					"callee": "useCallback",
+					"lineNumber": 142
+				},
+				{
+					"caller": "useFileTreeActions",
+					"callee": "Promise.allSettled(\n\t\t\t\tabsolutePaths.map((absolutePath) =>\n\t\t\t\t\tdeletePathMutation.mutateAsync({\n\t\t\t\t\t\tworkspaceId,\n\t\t\t\t\t\tabsolutePath,\n\t\t\t\t\t\tpermanent,\n\t\t\t\t\t}),\n\t\t\t\t),\n\t\t\t).then",
+					"lineNumber": 148
+				},
+				{
+					"caller": "useFileTreeActions",
+					"callee": "Promise.allSettled",
+					"lineNumber": 148
+				},
+				{
+					"caller": "useFileTreeActions",
+					"callee": "absolutePaths.map",
+					"lineNumber": 149
+				},
+				{
+					"caller": "useFileTreeActions",
+					"callee": "deletePathMutation.mutateAsync",
+					"lineNumber": 150
+				},
+				{
+					"caller": "useFileTreeActions",
+					"callee": "results.filter",
+					"lineNumber": 157
+				},
+				{
+					"caller": "useFileTreeActions",
+					"callee": "toast.success",
+					"lineNumber": 163
+				},
+				{
+					"caller": "useFileTreeActions",
+					"callee": "toast.error",
+					"lineNumber": 175
+				},
+				{
+					"caller": "useFileTreeActions",
+					"callee": "getParentPath",
+					"lineNumber": 178
+				},
+				{
+					"caller": "useFileTreeActions",
+					"callee": "onRefresh",
+					"lineNumber": 179
+				},
+				{
+					"caller": "useFileTreeActions",
+					"callee": "useCallback",
+					"lineNumber": 185
+				},
+				{
+					"caller": "useFileTreeActions",
+					"callee": "Promise.allSettled(\n\t\t\t\tsourceAbsolutePaths.map((sourceAbsolutePath) =>\n\t\t\t\t\tmovePathMutation.mutateAsync({\n\t\t\t\t\t\tworkspaceId,\n\t\t\t\t\t\tsourceAbsolutePath,\n\t\t\t\t\t\tdestinationAbsolutePath: joinAbsolutePath(\n\t\t\t\t\t\t\tdestinationAbsolutePath,\n\t\t\t\t\t\t\tgetBaseName(sourceAbsolutePath),\n\t\t\t\t\t\t),\n\t\t\t\t\t}),\n\t\t\t\t),\n\t\t\t).then",
+					"lineNumber": 191
+				},
+				{
+					"caller": "useFileTreeActions",
+					"callee": "Promise.allSettled",
+					"lineNumber": 191
+				},
+				{
+					"caller": "useFileTreeActions",
+					"callee": "sourceAbsolutePaths.map",
+					"lineNumber": 192
+				},
+				{
+					"caller": "useFileTreeActions",
+					"callee": "movePathMutation.mutateAsync",
+					"lineNumber": 193
+				},
+				{
+					"caller": "useFileTreeActions",
+					"callee": "joinAbsolutePath",
+					"lineNumber": 196
+				},
+				{
+					"caller": "useFileTreeActions",
+					"callee": "getBaseName",
+					"lineNumber": 198
+				},
+				{
+					"caller": "useFileTreeActions",
+					"callee": "results.filter",
+					"lineNumber": 203
+				},
+				{
+					"caller": "useFileTreeActions",
+					"callee": "toast.success",
+					"lineNumber": 209
+				},
+				{
+					"caller": "useFileTreeActions",
+					"callee": "toast.error",
+					"lineNumber": 215
+				},
+				{
+					"caller": "useFileTreeActions",
+					"callee": "onRefresh",
+					"lineNumber": 218
+				},
+				{
+					"caller": "useFileTreeActions",
+					"callee": "useCallback",
+					"lineNumber": 224
+				},
+				{
+					"caller": "useFileTreeActions",
+					"callee": "Promise.allSettled(\n\t\t\t\tsourceAbsolutePaths.map((sourceAbsolutePath) =>\n\t\t\t\t\tcopyPathMutation.mutateAsync({\n\t\t\t\t\t\tworkspaceId,\n\t\t\t\t\t\tsourceAbsolutePath,\n\t\t\t\t\t\tdestinationAbsolutePath: joinAbsolutePath(\n\t\t\t\t\t\t\tdestinationAbsolutePath,\n\t\t\t\t\t\t\tgetBaseName(sourceAbsolutePath),\n\t\t\t\t\t\t),\n\t\t\t\t\t}),\n\t\t\t\t),\n\t\t\t).then",
+					"lineNumber": 230
+				},
+				{
+					"caller": "useFileTreeActions",
+					"callee": "Promise.allSettled",
+					"lineNumber": 230
+				},
+				{
+					"caller": "useFileTreeActions",
+					"callee": "sourceAbsolutePaths.map",
+					"lineNumber": 231
+				},
+				{
+					"caller": "useFileTreeActions",
+					"callee": "copyPathMutation.mutateAsync",
+					"lineNumber": 232
+				},
+				{
+					"caller": "useFileTreeActions",
+					"callee": "joinAbsolutePath",
+					"lineNumber": 235
+				},
+				{
+					"caller": "useFileTreeActions",
+					"callee": "getBaseName",
+					"lineNumber": 237
+				},
+				{
+					"caller": "useFileTreeActions",
+					"callee": "results.filter",
+					"lineNumber": 242
+				},
+				{
+					"caller": "useFileTreeActions",
+					"callee": "toast.success",
+					"lineNumber": 248
+				},
+				{
+					"caller": "useFileTreeActions",
+					"callee": "toast.error",
+					"lineNumber": 254
+				},
+				{
+					"caller": "useFileTreeActions",
+					"callee": "onRefresh",
+					"lineNumber": 257
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/RightSidebar/FilesView/types.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/RightSidebar/FilesView/utils/new-item-paths.test.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 47,
+			"nonEmptyLines": 42,
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/RightSidebar/FilesView/utils/new-item-paths.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 99,
+			"nonEmptyLines": 82,
+			"functions": [
+				{
+					"name": "getPathSeparator",
+					"startLine": 5,
+					"endLine": 7,
+					"params": ["absolutePath"]
+				},
+				{
+					"name": "joinAbsolutePath",
+					"startLine": 9,
+					"endLine": 15,
+					"params": ["parentAbsolutePath", "name"]
+				},
+				{
+					"name": "getParentPath",
+					"startLine": 17,
+					"endLine": 33,
+					"params": ["absolutePath"]
+				},
+				{
+					"name": "splitRelativeInputPath",
+					"startLine": 35,
+					"endLine": 37,
+					"params": ["input"]
+				},
+				{
+					"name": "hasTraversalSegment",
+					"startLine": 39,
+					"endLine": 41,
+					"params": ["pathSegments"]
+				},
+				{
+					"name": "joinPathSegments",
+					"startLine": 43,
+					"endLine": 52,
+					"params": ["parentAbsolutePath", "pathSegments"]
+				},
+				{
+					"name": "resolveNewFileTarget",
+					"startLine": 60,
+					"endLine": 85,
+					"params": ["parentAbsolutePath", "input"]
+				},
+				{
+					"name": "resolveNewDirectoryTarget",
+					"startLine": 87,
+					"endLine": 99,
+					"params": ["parentAbsolutePath", "input"]
+				}
+			],
+			"exports": [
+				{
+					"name": "getBaseName",
+					"line": 3,
+					"isDefault": false
+				},
+				{
+					"name": "getPathSeparator",
+					"line": 5,
+					"isDefault": false
+				},
+				{
+					"name": "joinAbsolutePath",
+					"line": 9,
+					"isDefault": false
+				},
+				{
+					"name": "getParentPath",
+					"line": 17,
+					"isDefault": false
+				},
+				{
+					"name": "resolveNewFileTarget",
+					"line": 60,
+					"isDefault": false
+				},
+				{
+					"name": "resolveNewDirectoryTarget",
+					"line": 87,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "getPathSeparator",
+					"callee": "absolutePath.includes",
+					"lineNumber": 6
+				},
+				{
+					"caller": "joinAbsolutePath",
+					"callee": "getPathSeparator",
+					"lineNumber": 13
+				},
+				{
+					"caller": "joinAbsolutePath",
+					"callee": "parentAbsolutePath.replace",
+					"lineNumber": 14
+				},
+				{
+					"caller": "getParentPath",
+					"callee": "absolutePath.replace",
+					"lineNumber": 18
+				},
+				{
+					"caller": "getParentPath",
+					"callee": "Math.max",
+					"lineNumber": 19
+				},
+				{
+					"caller": "getParentPath",
+					"callee": "trimmedPath.lastIndexOf",
+					"lineNumber": 20
+				},
+				{
+					"caller": "getParentPath",
+					"callee": "trimmedPath.lastIndexOf",
+					"lineNumber": 21
+				},
+				{
+					"caller": "getParentPath",
+					"callee": "/^[A-Za-z]:$/.test",
+					"lineNumber": 28
+				},
+				{
+					"caller": "getParentPath",
+					"callee": "trimmedPath.slice",
+					"lineNumber": 28
+				},
+				{
+					"caller": "getParentPath",
+					"callee": "trimmedPath.slice",
+					"lineNumber": 29
+				},
+				{
+					"caller": "getParentPath",
+					"callee": "trimmedPath.slice",
+					"lineNumber": 32
+				},
+				{
+					"caller": "splitRelativeInputPath",
+					"callee": "input.split(/[\\\\/]+/).filter",
+					"lineNumber": 36
+				},
+				{
+					"caller": "splitRelativeInputPath",
+					"callee": "input.split",
+					"lineNumber": 36
+				},
+				{
+					"caller": "hasTraversalSegment",
+					"callee": "pathSegments.some",
+					"lineNumber": 40
+				},
+				{
+					"caller": "joinPathSegments",
+					"callee": "pathSegments.reduce",
+					"lineNumber": 47
+				},
+				{
+					"caller": "joinPathSegments",
+					"callee": "joinAbsolutePath",
+					"lineNumber": 49
+				},
+				{
+					"caller": "resolveNewFileTarget",
+					"callee": "splitRelativeInputPath",
+					"lineNumber": 64
+				},
+				{
+					"caller": "resolveNewFileTarget",
+					"callee": "input.trim",
+					"lineNumber": 64
+				},
+				{
+					"caller": "resolveNewFileTarget",
+					"callee": "hasTraversalSegment",
+					"lineNumber": 65
+				},
+				{
+					"caller": "resolveNewFileTarget",
+					"callee": "pathSegments.slice",
+					"lineNumber": 69
+				},
+				{
+					"caller": "resolveNewFileTarget",
+					"callee": "joinPathSegments",
+					"lineNumber": 77
+				},
+				{
+					"caller": "resolveNewFileTarget",
+					"callee": "joinAbsolutePath",
+					"lineNumber": 82
+				},
+				{
+					"caller": "resolveNewDirectoryTarget",
+					"callee": "splitRelativeInputPath",
+					"lineNumber": 91
+				},
+				{
+					"caller": "resolveNewDirectoryTarget",
+					"callee": "input.trim",
+					"lineNumber": 91
+				},
+				{
+					"caller": "resolveNewDirectoryTarget",
+					"callee": "hasTraversalSegment",
+					"lineNumber": 92
+				},
+				{
+					"caller": "resolveNewDirectoryTarget",
+					"callee": "joinPathSegments",
+					"lineNumber": 97
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 6,
+				"functionCount": 8,
+				"classCount": 0
+			}
+		}
+	]
+}

@@ -1,0 +1,2481 @@
+{
+	"scriptCompleted": true,
+	"filesAnalyzed": 27,
+	"filesSkipped": [],
+	"results": [
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/utils/optimisticUserMessage/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 5,
+			"nonEmptyLines": 5,
+			"exports": [
+				{
+					"name": "ChatHistoryMessage",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "hasMatchingUserMessage",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "toOptimisticUserMessage",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 3,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/utils/optimisticUserMessage/optimisticUserMessage.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 62,
+			"nonEmptyLines": 57,
+			"functions": [
+				{
+					"name": "toOptimisticUserMessage",
+					"startLine": 8,
+					"endLine": 29,
+					"params": ["input"]
+				},
+				{
+					"name": "toUserMessageSignature",
+					"startLine": 31,
+					"endLine": 48,
+					"params": ["message"]
+				},
+				{
+					"name": "hasMatchingUserMessage",
+					"startLine": 50,
+					"endLine": 62,
+					"params": ["{\n\tmessages,\n\tcandidate,\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "toOptimisticUserMessage",
+					"line": 8,
+					"isDefault": false
+				},
+				{
+					"name": "hasMatchingUserMessage",
+					"line": 50,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "toOptimisticUserMessage",
+					"callee": "input.payload.content.trim",
+					"lineNumber": 11
+				},
+				{
+					"caller": "toOptimisticUserMessage",
+					"callee": "crypto.randomUUID",
+					"lineNumber": 16
+				},
+				{
+					"caller": "toOptimisticUserMessage",
+					"callee": "files.map",
+					"lineNumber": 20
+				},
+				{
+					"caller": "toUserMessageSignature",
+					"callee": "message.content\n\t\t.map((part) => {\n\t\t\tif (part.type === \"text\") return `text:${part.text}`;\n\t\t\tif (part.type === \"image\") return `image:${part.mimeType}:${part.data}`;\n\t\t\tif ((part as { type?: string }).type === \"file\") {\n\t\t\t\tconst filePart = part as {\n\t\t\t\t\tdata?: string;\n\t\t\t\t\tfilename?: string;\n\t\t\t\t\tmediaType?: string;\n\t\t\t\t};\n\t\t\t\treturn `file:${filePart.mediaType ?? \"\"}:${filePart.filename ?? \"\"}:${filePart.data ?? \"\"}`;\n\t\t\t}\n\t\t\treturn `${part.type}:${JSON.stringify(part)}`;\n\t\t})\n\t\t.join",
+					"lineNumber": 33
+				},
+				{
+					"caller": "toUserMessageSignature",
+					"callee": "message.content\n\t\t.map",
+					"lineNumber": 33
+				},
+				{
+					"caller": "toUserMessageSignature",
+					"callee": "JSON.stringify",
+					"lineNumber": 45
+				},
+				{
+					"caller": "hasMatchingUserMessage",
+					"callee": "toUserMessageSignature",
+					"lineNumber": 57
+				},
+				{
+					"caller": "hasMatchingUserMessage",
+					"callee": "messages.some",
+					"lineNumber": 59
+				},
+				{
+					"caller": "hasMatchingUserMessage",
+					"callee": "toUserMessageSignature",
+					"lineNumber": 60
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 2,
+				"functionCount": 3,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/utils/sendMessage/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "ChatSendMessageInput",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "toSendFailureMessage",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 2,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/utils/transientUserTurn/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 5,
+			"nonEmptyLines": 5,
+			"exports": [
+				{
+					"name": "getVisibleMessagesWithPendingUserTurn",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "PendingUserTurn",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "shouldClearPendingUserTurn",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 3,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/utils/transientUserTurn/transientUserTurn.test.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 106,
+			"nonEmptyLines": 96,
+			"functions": [
+				{
+					"name": "message",
+					"startLine": 15,
+					"endLine": 27,
+					"params": ["id", "role", "text", "createdAt"]
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 0,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/utils/transientUserTurn/transientUserTurn.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 71,
+			"nonEmptyLines": 62,
+			"functions": [
+				{
+					"name": "shouldClearPendingUserTurn",
+					"startLine": 17,
+					"endLine": 41,
+					"params": [
+						"{\n\tmessages,\n\tpendingUserTurn,\n\tisAwaitingAssistant,\n}"
+					]
+				},
+				{
+					"name": "getVisibleMessagesWithPendingUserTurn",
+					"startLine": 43,
+					"endLine": 71,
+					"params": [
+						"{\n\tmessages,\n\tpendingUserTurn,\n\tisAwaitingAssistant,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "shouldClearPendingUserTurn",
+					"line": 17,
+					"isDefault": false
+				},
+				{
+					"name": "getVisibleMessagesWithPendingUserTurn",
+					"line": 43,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "shouldClearPendingUserTurn",
+					"callee": "hasMatchingUserMessage",
+					"lineNumber": 28
+				},
+				{
+					"caller": "getVisibleMessagesWithPendingUserTurn",
+					"callee": "hasMatchingUserMessage",
+					"lineNumber": 54
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 2,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/ChatPane/components/WorkspaceChatInterface/utils/uploadFiles/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "uploadFiles",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/ChatPane/ChatPaneInterface/ChatPaneInterface.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1057,
+			"nonEmptyLines": 989,
+			"functions": [
+				{
+					"name": "ChatUploadFooter",
+					"startLine": 58,
+					"endLine": 128,
+					"params": [
+						"{\n\tsessionId,\n\tonError,\n\tonSend,\n\t...footerProps\n}"
+					]
+				},
+				{
+					"name": "useAvailableModels",
+					"startLine": 130,
+					"endLine": 143,
+					"params": []
+				},
+				{
+					"name": "toErrorMessage",
+					"startLine": 145,
+					"endLine": 150,
+					"params": ["error"]
+				},
+				{
+					"name": "cloneMessageContent",
+					"startLine": 165,
+					"endLine": 176,
+					"params": ["content"]
+				},
+				{
+					"name": "getLaunchConfigKey",
+					"startLine": 178,
+					"endLine": 187,
+					"params": ["config"]
+				},
+				{
+					"name": "ChatPaneInterface",
+					"startLine": 189,
+					"endLine": 1057,
+					"params": [
+						"{\n\tpaneId,\n\tsessionId,\n\tinitialLaunchConfig,\n\tworkspaceId,\n\torganizationId,\n\tcwd,\n\tisFocused,\n\tisSessionReady,\n\tensureSessionReady,\n\tonStartFreshSession,\n\tonConsumeLaunchConfig,\n\tonUserMessageSubmitted,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "ChatPaneInterface",
+					"line": 189,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "ChatUploadFooter",
+					"callee": "useProviderAttachments",
+					"lineNumber": 71
+				},
+				{
+					"caller": "ChatUploadFooter",
+					"callee": "useOptimisticUpload",
+					"lineNumber": 72
+				},
+				{
+					"caller": "ChatUploadFooter",
+					"callee": "useCallback",
+					"lineNumber": 79
+				},
+				{
+					"caller": "ChatUploadFooter",
+					"callee": "(() => {\n\t\t\t\t\t\tconst { files: uploadedFiles, ready } = getUploadedFiles();\n\t\t\t\t\t\tif (!ready) return null;\n\t\t\t\t\t\treturn uploadedFiles.map((file) => ({\n\t\t\t\t\t\t\tdata: file.url,\n\t\t\t\t\t\t\tmediaType: file.mediaType,\n\t\t\t\t\t\t\tfilename: file.filename,\n\t\t\t\t\t\t\tuploaded: true,\n\t\t\t\t\t\t}));\n\t\t\t\t\t})",
+					"lineNumber": 82
+				},
+				{
+					"caller": "ChatUploadFooter",
+					"callee": "getUploadedFiles",
+					"lineNumber": 83
+				},
+				{
+					"caller": "ChatUploadFooter",
+					"callee": "uploadedFiles.map",
+					"lineNumber": 85
+				},
+				{
+					"caller": "ChatUploadFooter",
+					"callee": "(message.files ?? []).map",
+					"lineNumber": 92
+				},
+				{
+					"caller": "ChatUploadFooter",
+					"callee": "onSend",
+					"lineNumber": 100
+				},
+				{
+					"caller": "ChatUploadFooter",
+					"callee": "useCallback",
+					"lineNumber": 108
+				},
+				{
+					"caller": "ChatUploadFooter",
+					"callee": "entries.get",
+					"lineNumber": 113
+				},
+				{
+					"caller": "ChatUploadFooter",
+					"callee": "entries.has",
+					"lineNumber": 114
+				},
+				{
+					"caller": "useAvailableModels",
+					"callee": "getDesktopChatModelOptions",
+					"lineNumber": 134
+				},
+				{
+					"caller": "useAvailableModels",
+					"callee": "useQuery",
+					"lineNumber": 135
+				},
+				{
+					"caller": "useAvailableModels",
+					"callee": "apiTrpcClient.chat.getModels.query",
+					"lineNumber": 137
+				},
+				{
+					"caller": "useAvailableModels",
+					"callee": "isDesktopChatDevMode",
+					"lineNumber": 138
+				},
+				{
+					"caller": "cloneMessageContent",
+					"callee": "structuredClone",
+					"lineNumber": 169
+				},
+				{
+					"caller": "cloneMessageContent",
+					"callee": "JSON.parse",
+					"lineNumber": 172
+				},
+				{
+					"caller": "cloneMessageContent",
+					"callee": "JSON.stringify",
+					"lineNumber": 172
+				},
+				{
+					"caller": "cloneMessageContent",
+					"callee": "content.map",
+					"lineNumber": 174
+				},
+				{
+					"caller": "getLaunchConfigKey",
+					"callee": "JSON.stringify",
+					"lineNumber": 181
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "useAvailableModels",
+					"lineNumber": 203
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "useChatPreferencesStore",
+					"lineNumber": 204
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "useChatPreferencesStore",
+					"lineNumber": 207
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "availableModels.find",
+					"lineNumber": 211
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "useState",
+					"lineNumber": 213
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "useChatPreferencesStore",
+					"lineNumber": 214
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "useChatPreferencesStore",
+					"lineNumber": 215
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "useState",
+					"lineNumber": 219
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "useState",
+					"lineNumber": 220
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "useState",
+					"lineNumber": 223
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "useState",
+					"lineNumber": 225
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "useState",
+					"lineNumber": 226
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "useState",
+					"lineNumber": 227
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "useState",
+					"lineNumber": 228
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "useState",
+					"lineNumber": 229
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "useState",
+					"lineNumber": 232
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "useState",
+					"lineNumber": 236
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "useRef",
+					"lineNumber": 237
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "useRef",
+					"lineNumber": 238
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "useRef",
+					"lineNumber": 239
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "useRef",
+					"lineNumber": 240
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "useRef",
+					"lineNumber": 241
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "useRef",
+					"lineNumber": 242
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "useRef",
+					"lineNumber": 243
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "useRef",
+					"lineNumber": 244
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "useRef",
+					"lineNumber": 245
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "chatRuntimeServiceTrpc.useUtils",
+					"lineNumber": 248
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "chatRuntimeServiceTrpc.workspace.authenticateMcpServer.useMutation",
+					"lineNumber": 250
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "useCallback",
+					"lineNumber": 251
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "posthog.capture",
+					"lineNumber": 253
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "chatServiceTrpc.workspace.getSlashCommands.useQuery",
+					"lineNumber": 264
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "Boolean",
+					"lineNumber": 266
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "useChatDisplay",
+					"lineNumber": 269
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "Boolean",
+					"lineNumber": 272
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "useCallback",
+					"lineNumber": 292
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "setRuntimeError",
+					"lineNumber": 293
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "useCallback",
+					"lineNumber": 296
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "setRuntimeError",
+					"lineNumber": 297
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "useCallback",
+					"lineNumber": 300
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "model",
+					"lineNumber": 303
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "setSelectedModelId",
+					"lineNumber": 305
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "captureChatEvent",
+					"lineNumber": 308
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "setSelectedModelId",
+					"lineNumber": 313
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "useCallback",
+					"lineNumber": 318
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "toOptimisticUserMessage",
+					"lineNumber": 324
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "chatRuntimeServiceTrpcUtils.session.listMessages.setData",
+					"lineNumber": 326
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "chatRuntimeServiceTrpcUtils.client.session.sendMessage.mutate",
+					"lineNumber": 333
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "chatRuntimeServiceTrpcUtils.session.listMessages.setData",
+					"lineNumber": 340
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "existingMessages.filter",
+					"lineNumber": 343
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "Boolean",
+					"lineNumber": 354
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "useCallback",
+					"lineNumber": 355
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "chatRuntimeServiceTrpcUtils.workspace.getMcpOverview.fetch",
+					"lineNumber": 361
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "useCallback",
+					"lineNumber": 368
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "authenticateMcpServerMutation.mutateAsync",
+					"lineNumber": 374
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "useMcpUi",
+					"lineNumber": 382
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "useCallback",
+					"lineNumber": 394
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "cloneMessageContent",
+					"lineNumber": 401
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "useCallback",
+					"lineNumber": 405
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "clearRuntimeError",
+					"lineNumber": 406
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "captureInterruptedMessage",
+					"lineNumber": 407
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "commands.stop",
+					"lineNumber": 409
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "setInterruptedMessage",
+					"lineNumber": 411
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "setRuntimeErrorMessage",
+					"lineNumber": 412
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "toErrorMessage",
+					"lineNumber": 413
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "setInterruptedMessage",
+					"lineNumber": 418
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "captureChatEvent",
+					"lineNumber": 420
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "useSlashCommandExecutor",
+					"lineNumber": 432
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "stopActiveResponse",
+					"lineNumber": 438
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "setModelSelectorOpen",
+					"lineNumber": 441
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "useEffect",
+					"lineNumber": 449
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "setSubmitStatus",
+					"lineNumber": 453
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "setRuntimeError",
+					"lineNumber": 454
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "setInterruptedMessage",
+					"lineNumber": 455
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "setPendingUserTurn",
+					"lineNumber": 456
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "setEditingUserMessageId",
+					"lineNumber": 457
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "resetMcpUi",
+					"lineNumber": 458
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "refreshMcpOverview",
+					"lineNumber": 460
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "useCallback",
+					"lineNumber": 464
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "useTabsStore.getState",
+					"lineNumber": 465
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "setChatLaunchConfig",
+					"lineNumber": 466
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "useEffect",
+					"lineNumber": 472
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "clearDraftInStore",
+					"lineNumber": 475
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "useEffect",
+					"lineNumber": 479
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "setAnsweredQuestionId",
+					"lineNumber": 481
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "useEffect",
+					"lineNumber": 485
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "shouldClearPendingUserTurn",
+					"lineNumber": 487
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "setPendingUserTurn",
+					"lineNumber": 493
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "useEffect",
+					"lineNumber": 497
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "messages.some",
+					"lineNumber": 499
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "setEditingUserMessageId",
+					"lineNumber": 500
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "useMemo",
+					"lineNumber": 503
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "getVisibleMessagesWithPendingUserTurn",
+					"lineNumber": 504
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "useEffect",
+					"lineNumber": 511
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "setSubmitStatus",
+					"lineNumber": 513
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "setSubmitStatus",
+					"lineNumber": 520
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "useEffect",
+					"lineNumber": 523
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "useCallback",
+					"lineNumber": 527
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "payload.content.trim",
+					"lineNumber": 529
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "content.startsWith",
+					"lineNumber": 531
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "resolveSlashCommandInput",
+					"lineNumber": 532
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "setSubmitStatus",
+					"lineNumber": 534
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "slashCommandResult.nextText.trim",
+					"lineNumber": 537
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "setSubmitStatus",
+					"lineNumber": 540
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "setInterruptedMessage",
+					"lineNumber": 543
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "setSubmitStatus",
+					"lineNumber": 544
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "clearRuntimeError",
+					"lineNumber": 545
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "preparedFiles?.some",
+					"lineNumber": 554
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "onStartFreshSession",
+					"lineNumber": 556
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "uploadFiles",
+					"lineNumber": 566
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "preparedFiles.map",
+					"lineNumber": 568
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "uploadedFiles.map",
+					"lineNumber": 575
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "preparedFiles.map",
+					"lineNumber": 588
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "toOptimisticUserMessage",
+					"lineNumber": 603
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "setPendingUserTurn",
+					"lineNumber": 606
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "sendMessageToSession",
+					"lineNumber": 617
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "sendMessageForSession",
+					"lineNumber": 622
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "commands.sendMessage",
+					"lineNumber": 627
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "sendMessageToSession",
+					"lineNumber": 629
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "onUserMessageSubmitted",
+					"lineNumber": 633
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "toSendFailureMessage",
+					"lineNumber": 637
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "setSubmitStatus",
+					"lineNumber": 638
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "setRuntimeErrorMessage",
+					"lineNumber": 639
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "setPendingUserTurn",
+					"lineNumber": 642
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "captureChatEvent",
+					"lineNumber": 653
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "clearDraftInStore",
+					"lineNumber": 663
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "useEffect",
+					"lineNumber": 684
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "getLaunchConfigKey",
+					"lineNumber": 687
+				},
+				{
+					"caller": "attemptAutoLaunch",
+					"callee": "initialLaunchConfig.initialPrompt?.trim",
+					"lineNumber": 692
+				},
+				{
+					"caller": "attemptAutoLaunch",
+					"callee": "onConsumeLaunchConfig",
+					"lineNumber": 698
+				},
+				{
+					"caller": "attemptAutoLaunch",
+					"callee": "clearTimeout",
+					"lineNumber": 720
+				},
+				{
+					"caller": "attemptAutoLaunch",
+					"callee": "clearRuntimeError",
+					"lineNumber": 724
+				},
+				{
+					"caller": "attemptAutoLaunch",
+					"callee": "setSubmitStatus",
+					"lineNumber": 725
+				},
+				{
+					"caller": "attemptAutoLaunch",
+					"callee": "sendMessageForSession",
+					"lineNumber": 740
+				},
+				{
+					"caller": "attemptAutoLaunch",
+					"callee": "commands.sendMessage",
+					"lineNumber": 745
+				},
+				{
+					"caller": "attemptAutoLaunch",
+					"callee": "sendMessageToSession",
+					"lineNumber": 747
+				},
+				{
+					"caller": "attemptAutoLaunch",
+					"callee": "onUserMessageSubmitted",
+					"lineNumber": 750
+				},
+				{
+					"caller": "attemptAutoLaunch",
+					"callee": "onConsumeLaunchConfig",
+					"lineNumber": 757
+				},
+				{
+					"caller": "attemptAutoLaunch",
+					"callee": "captureChatEvent",
+					"lineNumber": 759
+				},
+				{
+					"caller": "attemptAutoLaunch",
+					"callee": "toSendFailureMessage",
+					"lineNumber": 772
+				},
+				{
+					"caller": "attemptAutoLaunch",
+					"callee": "setSubmitStatus",
+					"lineNumber": 773
+				},
+				{
+					"caller": "attemptAutoLaunch",
+					"callee": "setRuntimeErrorMessage",
+					"lineNumber": 774
+				},
+				{
+					"caller": "attemptAutoLaunch",
+					"callee": "console.debug",
+					"lineNumber": 775
+				},
+				{
+					"caller": "attemptAutoLaunch",
+					"callee": "setTimeout",
+					"lineNumber": 781
+				},
+				{
+					"caller": "attemptAutoLaunch",
+					"callee": "attemptAutoLaunch",
+					"lineNumber": 782
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "attemptAutoLaunch",
+					"lineNumber": 787
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "clearTimeout",
+					"lineNumber": 791
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "useCallback",
+					"lineNumber": 812
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "event.preventDefault",
+					"lineNumber": 814
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "stopActiveResponse",
+					"lineNumber": 815
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "useCallback",
+					"lineNumber": 820
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "setInterruptedMessage",
+					"lineNumber": 829
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "setPendingUserTurn",
+					"lineNumber": 830
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "setSubmitStatus",
+					"lineNumber": 831
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "clearRuntimeError",
+					"lineNumber": 832
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "toOptimisticUserMessage",
+					"lineNumber": 834
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "setPendingUserTurn",
+					"lineNumber": 842
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "chatRuntimeServiceTrpcUtils.client.session.restartFromMessage.mutate",
+					"lineNumber": 850
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "setEditingUserMessageId",
+					"lineNumber": 862
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "onUserMessageSubmitted",
+					"lineNumber": 864
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "captureChatEvent",
+					"lineNumber": 866
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "clearDraftInStore",
+					"lineNumber": 878
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "setPendingUserTurn",
+					"lineNumber": 880
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "toSendFailureMessage",
+					"lineNumber": 881
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "setSubmitStatus",
+					"lineNumber": 882
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "setRuntimeErrorMessage",
+					"lineNumber": 883
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "useCallback",
+					"lineNumber": 902
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "restartFromUserMessage",
+					"lineNumber": 904
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "useCallback",
+					"lineNumber": 908
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "restartFromUserMessage",
+					"lineNumber": 910
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "useCallback",
+					"lineNumber": 914
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "clearRuntimeError",
+					"lineNumber": 917
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "setApprovalResponsePending",
+					"lineNumber": 918
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "commands.respondToApproval",
+					"lineNumber": 920
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "setApprovalResponsePending",
+					"lineNumber": 924
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "useCallback",
+					"lineNumber": 929
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "clearRuntimeError",
+					"lineNumber": 935
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "setPlanResponsePending",
+					"lineNumber": 936
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "response.feedback?.trim",
+					"lineNumber": 938
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "commands.respondToPlan",
+					"lineNumber": 939
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "setPlanResponsePending",
+					"lineNumber": 949
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "useCallback",
+					"lineNumber": 954
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "questionId.trim",
+					"lineNumber": 956
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "answer.trim",
+					"lineNumber": 957
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "clearRuntimeError",
+					"lineNumber": 959
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "setAnsweredQuestionId",
+					"lineNumber": 960
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "setQuestionResponsePending",
+					"lineNumber": 961
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "useTabsStore.getState().setPaneStatus",
+					"lineNumber": 963
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "useTabsStore.getState",
+					"lineNumber": 963
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "commands.respondToQuestion",
+					"lineNumber": 965
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "setAnsweredQuestionId",
+					"lineNumber": 973
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "useTabsStore.getState().setPaneStatus",
+					"lineNumber": 974
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "useTabsStore.getState",
+					"lineNumber": 974
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "setQuestionResponsePending",
+					"lineNumber": 977
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "toErrorMessage",
+					"lineNumber": 983
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "setEditingUserMessageId",
+					"lineNumber": 1017
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "setSubmitStatus",
+					"lineNumber": 1043
+				},
+				{
+					"caller": "ChatPaneInterface",
+					"callee": "stopActiveResponse",
+					"lineNumber": 1052
+				}
+			],
+			"metrics": {
+				"importCount": 19,
+				"exportCount": 1,
+				"functionCount": 6,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/ChatPane/ChatPaneInterface/components/ChatMessageList/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "ChatMessageList",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/ChatPane/ChatPaneInterface/components/DraftSaver/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "DraftSaver",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/ChatPane/ChatPaneInterface/components/McpControls/McpControls.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 18,
+			"nonEmptyLines": 16,
+			"functions": [
+				{
+					"name": "McpControls",
+					"startLine": 8,
+					"endLine": 18,
+					"params": ["{ mcpUi }"]
+				}
+			],
+			"exports": [
+				{
+					"name": "McpControls",
+					"line": 8,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/ChatPane/ChatPaneInterface/components/McpControls/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "McpControls",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/ChatPane/ChatPaneInterface/hooks/useMcpUi/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 2,
+			"nonEmptyLines": 2,
+			"exports": [
+				{
+					"name": "UseMcpUiReturn",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "useMcpUi",
+					"line": 2,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 2,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/ChatPane/ChatPaneInterface/hooks/useMcpUi/useMcpUi.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 146,
+			"nonEmptyLines": 135,
+			"functions": [
+				{
+					"name": "useMcpUi",
+					"startLine": 30,
+					"endLine": 146,
+					"params": [
+						"{\n\tcwd,\n\tloadOverview,\n\tauthenticateServer,\n\tonSetErrorMessage,\n\tonClearError,\n\tonTrackEvent,\n\tpollIntervalMs = 5_000,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "useMcpUi",
+					"line": 30,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "useMcpUi",
+					"callee": "useState",
+					"lineNumber": 39
+				},
+				{
+					"caller": "useMcpUi",
+					"callee": "useState",
+					"lineNumber": 40
+				},
+				{
+					"caller": "useMcpUi",
+					"callee": "useState",
+					"lineNumber": 41
+				},
+				{
+					"caller": "useMcpUi",
+					"callee": "useState",
+					"lineNumber": 42
+				},
+				{
+					"caller": "useMcpUi",
+					"callee": "useCallback",
+					"lineNumber": 46
+				},
+				{
+					"caller": "useMcpUi",
+					"callee": "setOverview",
+					"lineNumber": 47
+				},
+				{
+					"caller": "useMcpUi",
+					"callee": "setOverviewOpen",
+					"lineNumber": 48
+				},
+				{
+					"caller": "useMcpUi",
+					"callee": "setAuthenticatingServerName",
+					"lineNumber": 49
+				},
+				{
+					"caller": "useMcpUi",
+					"callee": "useCallback",
+					"lineNumber": 52
+				},
+				{
+					"caller": "useMcpUi",
+					"callee": "setOverview",
+					"lineNumber": 54
+				},
+				{
+					"caller": "useMcpUi",
+					"callee": "setOverviewOpen",
+					"lineNumber": 55
+				},
+				{
+					"caller": "useMcpUi",
+					"callee": "onTrackEvent",
+					"lineNumber": 57
+				},
+				{
+					"caller": "useMcpUi",
+					"callee": "servers.filter",
+					"lineNumber": 59
+				},
+				{
+					"caller": "useMcpUi",
+					"callee": "useCallback",
+					"lineNumber": 65
+				},
+				{
+					"caller": "useMcpUi",
+					"callee": "onSetErrorMessage",
+					"lineNumber": 67
+				},
+				{
+					"caller": "useMcpUi",
+					"callee": "setIsOverviewLoading",
+					"lineNumber": 70
+				},
+				{
+					"caller": "useMcpUi",
+					"callee": "loadOverview",
+					"lineNumber": 72
+				},
+				{
+					"caller": "useMcpUi",
+					"callee": "onClearError",
+					"lineNumber": 73
+				},
+				{
+					"caller": "useMcpUi",
+					"callee": "setOverview",
+					"lineNumber": 74
+				},
+				{
+					"caller": "useMcpUi",
+					"callee": "setOverviewOpen",
+					"lineNumber": 75
+				},
+				{
+					"caller": "useMcpUi",
+					"callee": "onSetErrorMessage",
+					"lineNumber": 77
+				},
+				{
+					"caller": "useMcpUi",
+					"callee": "setIsOverviewLoading",
+					"lineNumber": 79
+				},
+				{
+					"caller": "useMcpUi",
+					"callee": "useCallback",
+					"lineNumber": 83
+				},
+				{
+					"caller": "useMcpUi",
+					"callee": "loadOverview",
+					"lineNumber": 86
+				},
+				{
+					"caller": "useMcpUi",
+					"callee": "setOverview",
+					"lineNumber": 87
+				},
+				{
+					"caller": "useMcpUi",
+					"callee": "useCallback",
+					"lineNumber": 93
+				},
+				{
+					"caller": "useMcpUi",
+					"callee": "onSetErrorMessage",
+					"lineNumber": 96
+				},
+				{
+					"caller": "useMcpUi",
+					"callee": "setAuthenticatingServerName",
+					"lineNumber": 100
+				},
+				{
+					"caller": "useMcpUi",
+					"callee": "authenticateServer",
+					"lineNumber": 103
+				},
+				{
+					"caller": "useMcpUi",
+					"callee": "loadOverview",
+					"lineNumber": 104
+				},
+				{
+					"caller": "useMcpUi",
+					"callee": "onClearError",
+					"lineNumber": 105
+				},
+				{
+					"caller": "useMcpUi",
+					"callee": "setOverview",
+					"lineNumber": 106
+				},
+				{
+					"caller": "useMcpUi",
+					"callee": "onTrackEvent",
+					"lineNumber": 107
+				},
+				{
+					"caller": "useMcpUi",
+					"callee": "onSetErrorMessage",
+					"lineNumber": 111
+				},
+				{
+					"caller": "useMcpUi",
+					"callee": "setAuthenticatingServerName",
+					"lineNumber": 113
+				},
+				{
+					"caller": "useMcpUi",
+					"callee": "useEffect",
+					"lineNumber": 126
+				},
+				{
+					"caller": "useMcpUi",
+					"callee": "setInterval",
+					"lineNumber": 128
+				},
+				{
+					"caller": "useMcpUi",
+					"callee": "refreshOverview",
+					"lineNumber": 129
+				},
+				{
+					"caller": "useMcpUi",
+					"callee": "clearInterval",
+					"lineNumber": 131
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/ChatPane/ChatPaneInterface/hooks/useOptimisticUpload/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "useOptimisticUpload",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/ChatPane/ChatPaneInterface/hooks/useOptimisticUpload/useOptimisticUpload.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 157,
+			"nonEmptyLines": 140,
+			"functions": [
+				{
+					"name": "useOptimisticUpload",
+					"startLine": 19,
+					"endLine": 157,
+					"params": [
+						"{\n\tsessionId,\n\tattachmentFiles,\n\tremoveAttachment,\n\tonError,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "useOptimisticUpload",
+					"line": 19,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "useOptimisticUpload",
+					"callee": "useState",
+					"lineNumber": 30
+				},
+				{
+					"caller": "useOptimisticUpload",
+					"callee": "useRef",
+					"lineNumber": 33
+				},
+				{
+					"caller": "useOptimisticUpload",
+					"callee": "useRef",
+					"lineNumber": 34
+				},
+				{
+					"caller": "useOptimisticUpload",
+					"callee": "useRef",
+					"lineNumber": 35
+				},
+				{
+					"caller": "useOptimisticUpload",
+					"callee": "useRef",
+					"lineNumber": 36
+				},
+				{
+					"caller": "useOptimisticUpload",
+					"callee": "useRef",
+					"lineNumber": 37
+				},
+				{
+					"caller": "useOptimisticUpload",
+					"callee": "attachmentFiles.map",
+					"lineNumber": 39
+				},
+				{
+					"caller": "useOptimisticUpload",
+					"callee": "useEffect",
+					"lineNumber": 41
+				},
+				{
+					"caller": "useOptimisticUpload",
+					"callee": "useLayoutEffect",
+					"lineNumber": 45
+				},
+				{
+					"caller": "useOptimisticUpload",
+					"callee": "inflightRef.current.clear",
+					"lineNumber": 48
+				},
+				{
+					"caller": "useOptimisticUpload",
+					"callee": "setEntries",
+					"lineNumber": 50
+				},
+				{
+					"caller": "useOptimisticUpload",
+					"callee": "useEffect",
+					"lineNumber": 53
+				},
+				{
+					"caller": "isCurrentUpload",
+					"callee": "attachmentIdsRef.current.has",
+					"lineNumber": 60
+				},
+				{
+					"caller": "useOptimisticUpload",
+					"callee": "entriesRef.current.has",
+					"lineNumber": 63
+				},
+				{
+					"caller": "useOptimisticUpload",
+					"callee": "inflightRef.current.has",
+					"lineNumber": 63
+				},
+				{
+					"caller": "useOptimisticUpload",
+					"callee": "inflightRef.current.add",
+					"lineNumber": 67
+				},
+				{
+					"caller": "useOptimisticUpload",
+					"callee": "setEntries",
+					"lineNumber": 68
+				},
+				{
+					"caller": "useOptimisticUpload",
+					"callee": "nextEntries.set",
+					"lineNumber": 70
+				},
+				{
+					"caller": "useOptimisticUpload",
+					"callee": "uploadFiles(sessionId, [file])\n\t\t\t\t.then(([uploaded]) => {\n\t\t\t\t\tif (!uploaded) {\n\t\t\t\t\t\tthrow new Error(\"Upload failed\");\n\t\t\t\t\t}\n\t\t\t\t\tif (!isCurrentUpload(file.id)) return;\n\n\t\t\t\t\tinflightRef.current.delete(file.id);\n\t\t\t\t\tsetEntries((previousEntries) => {\n\t\t\t\t\t\tconst nextEntries = new Map(previousEntries);\n\t\t\t\t\t\tnextEntries.set(file.id, {\n\t\t\t\t\t\t\tuploaded,\n\t\t\t\t\t\t\terror: null,\n\t\t\t\t\t\t\tuploading: false,\n\t\t\t\t\t\t});\n\t\t\t\t\t\treturn nextEntries;\n\t\t\t\t\t});\n\t\t\t\t})\n\t\t\t\t.catch",
+					"lineNumber": 78
+				},
+				{
+					"caller": "useOptimisticUpload",
+					"callee": "uploadFiles(sessionId, [file])\n\t\t\t\t.then",
+					"lineNumber": 78
+				},
+				{
+					"caller": "useOptimisticUpload",
+					"callee": "uploadFiles",
+					"lineNumber": 78
+				},
+				{
+					"caller": "useOptimisticUpload",
+					"callee": "isCurrentUpload",
+					"lineNumber": 83
+				},
+				{
+					"caller": "useOptimisticUpload",
+					"callee": "inflightRef.current.delete",
+					"lineNumber": 85
+				},
+				{
+					"caller": "useOptimisticUpload",
+					"callee": "setEntries",
+					"lineNumber": 86
+				},
+				{
+					"caller": "useOptimisticUpload",
+					"callee": "nextEntries.set",
+					"lineNumber": 88
+				},
+				{
+					"caller": "useOptimisticUpload",
+					"callee": "isCurrentUpload",
+					"lineNumber": 97
+				},
+				{
+					"caller": "useOptimisticUpload",
+					"callee": "inflightRef.current.delete",
+					"lineNumber": 99
+				},
+				{
+					"caller": "useOptimisticUpload",
+					"callee": "setEntries",
+					"lineNumber": 102
+				},
+				{
+					"caller": "useOptimisticUpload",
+					"callee": "nextEntries.set",
+					"lineNumber": 104
+				},
+				{
+					"caller": "useOptimisticUpload",
+					"callee": "removeAttachment",
+					"lineNumber": 111
+				},
+				{
+					"caller": "useOptimisticUpload",
+					"callee": "onError",
+					"lineNumber": 112
+				},
+				{
+					"caller": "useOptimisticUpload",
+					"callee": "attachmentFiles.map",
+					"lineNumber": 116
+				},
+				{
+					"caller": "useOptimisticUpload",
+					"callee": "setEntries",
+					"lineNumber": 117
+				},
+				{
+					"caller": "useOptimisticUpload",
+					"callee": "nextEntries.keys",
+					"lineNumber": 120
+				},
+				{
+					"caller": "useOptimisticUpload",
+					"callee": "currentIds.has",
+					"lineNumber": 121
+				},
+				{
+					"caller": "useOptimisticUpload",
+					"callee": "nextEntries.delete",
+					"lineNumber": 122
+				},
+				{
+					"caller": "useOptimisticUpload",
+					"callee": "inflightRef.current.delete",
+					"lineNumber": 123
+				},
+				{
+					"caller": "useOptimisticUpload",
+					"callee": "useCallback",
+					"lineNumber": 131
+				},
+				{
+					"caller": "useOptimisticUpload",
+					"callee": "entries.get",
+					"lineNumber": 137
+				},
+				{
+					"caller": "useOptimisticUpload",
+					"callee": "files.push",
+					"lineNumber": 145
+				},
+				{
+					"caller": "useOptimisticUpload",
+					"callee": "attachmentFiles.some",
+					"lineNumber": 151
+				},
+				{
+					"caller": "useOptimisticUpload",
+					"callee": "entries.get",
+					"lineNumber": 152
+				},
+				{
+					"caller": "useOptimisticUpload",
+					"callee": "entries.has",
+					"lineNumber": 153
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/ChatPane/ChatPaneInterface/types.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 17,
+			"nonEmptyLines": 16,
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/ChatPane/ChatPaneInterface/utils/optimisticUserMessage/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 5,
+			"nonEmptyLines": 5,
+			"exports": [
+				{
+					"name": "ChatHistoryMessage",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "hasMatchingUserMessage",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "toOptimisticUserMessage",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 3,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/ChatPane/ChatPaneInterface/utils/optimisticUserMessage/optimisticUserMessage.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 62,
+			"nonEmptyLines": 57,
+			"functions": [
+				{
+					"name": "toOptimisticUserMessage",
+					"startLine": 8,
+					"endLine": 29,
+					"params": ["input"]
+				},
+				{
+					"name": "toUserMessageSignature",
+					"startLine": 31,
+					"endLine": 48,
+					"params": ["message"]
+				},
+				{
+					"name": "hasMatchingUserMessage",
+					"startLine": 50,
+					"endLine": 62,
+					"params": ["{\n\tmessages,\n\tcandidate,\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "toOptimisticUserMessage",
+					"line": 8,
+					"isDefault": false
+				},
+				{
+					"name": "hasMatchingUserMessage",
+					"line": 50,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "toOptimisticUserMessage",
+					"callee": "input.payload.content.trim",
+					"lineNumber": 11
+				},
+				{
+					"caller": "toOptimisticUserMessage",
+					"callee": "crypto.randomUUID",
+					"lineNumber": 16
+				},
+				{
+					"caller": "toOptimisticUserMessage",
+					"callee": "files.map",
+					"lineNumber": 20
+				},
+				{
+					"caller": "toUserMessageSignature",
+					"callee": "message.content\n\t\t.map((part) => {\n\t\t\tif (part.type === \"text\") return `text:${part.text}`;\n\t\t\tif (part.type === \"image\") return `image:${part.mimeType}:${part.data}`;\n\t\t\tif ((part as { type?: string }).type === \"file\") {\n\t\t\t\tconst filePart = part as {\n\t\t\t\t\tdata?: string;\n\t\t\t\t\tfilename?: string;\n\t\t\t\t\tmediaType?: string;\n\t\t\t\t};\n\t\t\t\treturn `file:${filePart.mediaType ?? \"\"}:${filePart.filename ?? \"\"}:${filePart.data ?? \"\"}`;\n\t\t\t}\n\t\t\treturn `${part.type}:${JSON.stringify(part)}`;\n\t\t})\n\t\t.join",
+					"lineNumber": 33
+				},
+				{
+					"caller": "toUserMessageSignature",
+					"callee": "message.content\n\t\t.map",
+					"lineNumber": 33
+				},
+				{
+					"caller": "toUserMessageSignature",
+					"callee": "JSON.stringify",
+					"lineNumber": 45
+				},
+				{
+					"caller": "hasMatchingUserMessage",
+					"callee": "toUserMessageSignature",
+					"lineNumber": 57
+				},
+				{
+					"caller": "hasMatchingUserMessage",
+					"callee": "messages.some",
+					"lineNumber": 59
+				},
+				{
+					"caller": "hasMatchingUserMessage",
+					"callee": "toUserMessageSignature",
+					"lineNumber": 60
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 2,
+				"functionCount": 3,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/ChatPane/ChatPaneInterface/utils/sendMessage/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 5,
+			"nonEmptyLines": 5,
+			"exports": [
+				{
+					"name": "ChatSendMessageInput",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "sendMessageForSession",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "toSendFailureMessage",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 3,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/ChatPane/ChatPaneInterface/utils/sendMessage/sendMessage.test.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 108,
+			"nonEmptyLines": 97,
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/ChatPane/ChatPaneInterface/utils/sendMessage/sendMessage.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 115,
+			"nonEmptyLines": 104,
+			"functions": [
+				{
+					"name": "toBaseErrorMessage",
+					"startLine": 24,
+					"endLine": 30,
+					"params": ["error"]
+				},
+				{
+					"name": "toNumericStatus",
+					"startLine": 32,
+					"endLine": 37,
+					"params": ["value"]
+				},
+				{
+					"name": "getErrorStatusCode",
+					"startLine": 39,
+					"endLine": 66,
+					"params": ["error"]
+				},
+				{
+					"name": "toSendFailureMessage",
+					"startLine": 68,
+					"endLine": 73,
+					"params": ["error"]
+				},
+				{
+					"name": "sendMessageForSession",
+					"startLine": 75,
+					"endLine": 115,
+					"params": [
+						"{\n\tcurrentSessionId,\n\tisSessionReady,\n\tensureSessionReady,\n\tonStartFreshSession,\n\tsendToCurrentSession,\n\tsendToSession,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "toSendFailureMessage",
+					"line": 68,
+					"isDefault": false
+				},
+				{
+					"name": "sendMessageForSession",
+					"line": 75,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "toBaseErrorMessage",
+					"callee": "error.trim",
+					"lineNumber": 25
+				},
+				{
+					"caller": "toBaseErrorMessage",
+					"callee": "error.message.trim",
+					"lineNumber": 26
+				},
+				{
+					"caller": "toNumericStatus",
+					"callee": "Number.isFinite",
+					"lineNumber": 33
+				},
+				{
+					"caller": "toNumericStatus",
+					"callee": "Number.parseInt",
+					"lineNumber": 35
+				},
+				{
+					"caller": "toNumericStatus",
+					"callee": "Number.isNaN",
+					"lineNumber": 36
+				},
+				{
+					"caller": "getErrorStatusCode",
+					"callee": "toNumericStatus",
+					"lineNumber": 62
+				},
+				{
+					"caller": "toSendFailureMessage",
+					"callee": "toBaseErrorMessage",
+					"lineNumber": 69
+				},
+				{
+					"caller": "toSendFailureMessage",
+					"callee": "getErrorStatusCode",
+					"lineNumber": 70
+				},
+				{
+					"caller": "sendMessageForSession",
+					"callee": "onStartFreshSession",
+					"lineNumber": 93
+				},
+				{
+					"caller": "sendMessageForSession",
+					"callee": "ensureSessionReady",
+					"lineNumber": 105
+				},
+				{
+					"caller": "sendMessageForSession",
+					"callee": "sendToCurrentSession",
+					"lineNumber": 111
+				},
+				{
+					"caller": "sendMessageForSession",
+					"callee": "sendToSession",
+					"lineNumber": 112
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 2,
+				"functionCount": 5,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/ChatPane/ChatPaneInterface/utils/transientUserTurn/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 5,
+			"nonEmptyLines": 5,
+			"exports": [
+				{
+					"name": "getVisibleMessagesWithPendingUserTurn",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "PendingUserTurn",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "shouldClearPendingUserTurn",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 3,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/ChatPane/ChatPaneInterface/utils/transientUserTurn/transientUserTurn.test.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 106,
+			"nonEmptyLines": 96,
+			"functions": [
+				{
+					"name": "message",
+					"startLine": 15,
+					"endLine": 27,
+					"params": ["id", "role", "text", "createdAt"]
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 0,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/ChatPane/ChatPaneInterface/utils/transientUserTurn/transientUserTurn.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 71,
+			"nonEmptyLines": 62,
+			"functions": [
+				{
+					"name": "shouldClearPendingUserTurn",
+					"startLine": 17,
+					"endLine": 41,
+					"params": [
+						"{\n\tmessages,\n\tpendingUserTurn,\n\tisAwaitingAssistant,\n}"
+					]
+				},
+				{
+					"name": "getVisibleMessagesWithPendingUserTurn",
+					"startLine": 43,
+					"endLine": 71,
+					"params": [
+						"{\n\tmessages,\n\tpendingUserTurn,\n\tisAwaitingAssistant,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "shouldClearPendingUserTurn",
+					"line": 17,
+					"isDefault": false
+				},
+				{
+					"name": "getVisibleMessagesWithPendingUserTurn",
+					"line": 43,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "shouldClearPendingUserTurn",
+					"callee": "hasMatchingUserMessage",
+					"lineNumber": 28
+				},
+				{
+					"caller": "getVisibleMessagesWithPendingUserTurn",
+					"callee": "hasMatchingUserMessage",
+					"lineNumber": 54
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 2,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/ChatPane/ChatPaneInterface/utils/uploadFiles/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "uploadFiles",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/stores/chat-preferences/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "useChatPreferencesStore",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		}
+	]
+}

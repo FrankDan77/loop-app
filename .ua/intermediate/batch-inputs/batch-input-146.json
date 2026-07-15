@@ -1,0 +1,47 @@
+{
+	"batchIndex": 146,
+	"files": [
+		{
+			"path": "scripts/release/check-versions.ts",
+			"language": "typescript",
+			"sizeLines": 38,
+			"fileCategory": "code"
+		},
+		{
+			"path": "scripts/release/cli.ts",
+			"language": "typescript",
+			"sizeLines": 182,
+			"fileCategory": "code"
+		},
+		{
+			"path": "scripts/release/desktop.ts",
+			"language": "typescript",
+			"sizeLines": 407,
+			"fileCategory": "code"
+		},
+		{
+			"path": "scripts/release/lib.ts",
+			"language": "typescript",
+			"sizeLines": 344,
+			"fileCategory": "code"
+		},
+		{
+			"path": "scripts/release/release.ts",
+			"language": "typescript",
+			"sizeLines": 71,
+			"fileCategory": "code"
+		}
+	],
+	"batchImportData": {
+		"scripts/release/check-versions.ts": ["scripts/release/lib.ts"],
+		"scripts/release/cli.ts": ["scripts/release/lib.ts"],
+		"scripts/release/desktop.ts": ["scripts/release/lib.ts"],
+		"scripts/release/lib.ts": [],
+		"scripts/release/release.ts": [
+			"scripts/release/check-versions.ts",
+			"scripts/release/cli.ts",
+			"scripts/release/desktop.ts"
+		]
+	},
+	"neighborMap": {}
+}

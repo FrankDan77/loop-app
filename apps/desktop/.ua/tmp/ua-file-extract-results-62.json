@@ -1,0 +1,1209 @@
+{
+	"scriptCompleted": true,
+	"filesAnalyzed": 29,
+	"filesSkipped": [],
+	"results": [
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarProjectSection/components/DashboardSidebarExpandedProjectContent/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "DashboardSidebarExpandedProjectContent",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarProjectSection/components/DashboardSidebarProjectContextMenu/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "DashboardSidebarProjectContextMenu",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarProjectSection/components/DashboardSidebarProjectRow/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "DashboardSidebarProjectRow",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarProjectSection/hooks/useDashboardSidebarProjectSectionActions/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "useDashboardSidebarProjectSectionActions",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarProjectSection/hooks/useDashboardSidebarProjectSectionActions/useDashboardSidebarProjectSectionActions.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 106,
+			"nonEmptyLines": 94,
+			"functions": [
+				{
+					"name": "useDashboardSidebarProjectSectionActions",
+					"startLine": 15,
+					"endLine": 106,
+					"params": ["{\n\tproject,\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "useDashboardSidebarProjectSectionActions",
+					"line": 15,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "useDashboardSidebarProjectSectionActions",
+					"callee": "useOpenNewWorkspaceModal",
+					"lineNumber": 18
+				},
+				{
+					"caller": "useDashboardSidebarProjectSectionActions",
+					"callee": "useNavigate",
+					"lineNumber": 19
+				},
+				{
+					"caller": "useDashboardSidebarProjectSectionActions",
+					"callee": "useOptimisticCollectionActions",
+					"lineNumber": 20
+				},
+				{
+					"caller": "useDashboardSidebarProjectSectionActions",
+					"callee": "useDashboardSidebarSectionRename",
+					"lineNumber": 21
+				},
+				{
+					"caller": "useDashboardSidebarProjectSectionActions",
+					"callee": "useDashboardSidebarState",
+					"lineNumber": 29
+				},
+				{
+					"caller": "useDashboardSidebarProjectSectionActions",
+					"callee": "useState",
+					"lineNumber": 31
+				},
+				{
+					"caller": "useDashboardSidebarProjectSectionActions",
+					"callee": "useState",
+					"lineNumber": 32
+				},
+				{
+					"caller": "startRename",
+					"callee": "setRenameValue",
+					"lineNumber": 35
+				},
+				{
+					"caller": "startRename",
+					"callee": "setIsRenaming",
+					"lineNumber": 36
+				},
+				{
+					"caller": "cancelRename",
+					"callee": "setIsRenaming",
+					"lineNumber": 40
+				},
+				{
+					"caller": "cancelRename",
+					"callee": "setRenameValue",
+					"lineNumber": 41
+				},
+				{
+					"caller": "submitRename",
+					"callee": "setIsRenaming",
+					"lineNumber": 45
+				},
+				{
+					"caller": "submitRename",
+					"callee": "renameValue.trim",
+					"lineNumber": 46
+				},
+				{
+					"caller": "submitRename",
+					"callee": "projectActions.renameProject",
+					"lineNumber": 48
+				},
+				{
+					"caller": "handleOpenInFinder",
+					"callee": "toast.info",
+					"lineNumber": 52
+				},
+				{
+					"caller": "handleOpenSettings",
+					"callee": "navigate",
+					"lineNumber": 56
+				},
+				{
+					"caller": "confirmRemoveFromSidebar",
+					"callee": "alert",
+					"lineNumber": 63
+				},
+				{
+					"caller": "confirmRemoveFromSidebar",
+					"callee": "removeProjectFromSidebar",
+					"lineNumber": 72
+				},
+				{
+					"caller": "handleNewWorkspace",
+					"callee": "openModal",
+					"lineNumber": 79
+				},
+				{
+					"caller": "handleNewSection",
+					"callee": "createSection",
+					"lineNumber": 83
+				},
+				{
+					"caller": "handleNewSection",
+					"callee": "requestSectionRename",
+					"lineNumber": 84
+				},
+				{
+					"caller": "handleNewSection",
+					"callee": "toggleProjectCollapsed",
+					"lineNumber": 86
+				}
+			],
+			"metrics": {
+				"importCount": 5,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarProjectSection/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "DashboardSidebarProjectSection",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarSection/components/DashboardSidebarSectionContextMenu/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 2,
+			"nonEmptyLines": 2,
+			"exports": [
+				{
+					"name": "DashboardSidebarSectionActionsDropdown",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "DashboardSidebarSectionContextMenu",
+					"line": 2,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 2,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarSection/components/DashboardSidebarSectionHeader/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "DashboardSidebarSectionHeader",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarSectionRenameContext/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 4,
+			"nonEmptyLines": 4,
+			"exports": [
+				{
+					"name": "DashboardSidebarSectionRenameProvider",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "useDashboardSidebarSectionRename",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 2,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/DashboardSidebarWorkspaceItem.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 300,
+			"nonEmptyLines": 288,
+			"functions": [
+				{
+					"name": "DashboardSidebarWorkspaceItem",
+					"startLine": 24,
+					"endLine": 300,
+					"params": [
+						"{\n\tworkspace,\n\tonHoverCardOpen,\n\tshortcutLabel,\n\tisCollapsed = false,\n\tisInSection = false,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "DashboardSidebarWorkspaceItem",
+					"line": 24,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "DashboardSidebarWorkspaceItem",
+					"callee": "useDiffStats",
+					"lineNumber": 43
+				},
+				{
+					"caller": "DashboardSidebarWorkspaceItem",
+					"callee": "useV2WorkspaceNotificationStatus",
+					"lineNumber": 44
+				},
+				{
+					"caller": "DashboardSidebarWorkspaceItem",
+					"callee": "useDashboardSidebarWorkspaceItemActions",
+					"lineNumber": 66
+				},
+				{
+					"caller": "DashboardSidebarWorkspaceItem",
+					"callee": "useOptimisticCollectionActions",
+					"lineNumber": 74
+				},
+				{
+					"caller": "DashboardSidebarWorkspaceItem",
+					"callee": "useState",
+					"lineNumber": 75
+				},
+				{
+					"caller": "handleAfterBranchRename",
+					"callee": "v2WorkspaceActions.updateWorkspace",
+					"lineNumber": 79
+				},
+				{
+					"caller": "DashboardSidebarWorkspaceItem",
+					"callee": "useDeletingWorkspaces().isDeleting",
+					"lineNumber": 84
+				},
+				{
+					"caller": "DashboardSidebarWorkspaceItem",
+					"callee": "useDeletingWorkspaces",
+					"lineNumber": 84
+				},
+				{
+					"caller": "DashboardSidebarWorkspaceItem",
+					"callee": "useDashboardSidebarHover",
+					"lineNumber": 91
+				},
+				{
+					"caller": "DashboardSidebarWorkspaceItem",
+					"callee": "useRef",
+					"lineNumber": 92
+				},
+				{
+					"caller": "DashboardSidebarWorkspaceItem",
+					"callee": "useMemo",
+					"lineNumber": 94
+				},
+				{
+					"caller": "DashboardSidebarWorkspaceItem",
+					"callee": "useCallback",
+					"lineNumber": 99
+				},
+				{
+					"caller": "DashboardSidebarWorkspaceItem",
+					"callee": "hoverRequestOpen",
+					"lineNumber": 101
+				},
+				{
+					"caller": "DashboardSidebarWorkspaceItem",
+					"callee": "useCallback",
+					"lineNumber": 103
+				},
+				{
+					"caller": "DashboardSidebarWorkspaceItem",
+					"callee": "hoverRequestClose",
+					"lineNumber": 105
+				},
+				{
+					"caller": "DashboardSidebarWorkspaceItem",
+					"callee": "useEffect",
+					"lineNumber": 109
+				},
+				{
+					"caller": "DashboardSidebarWorkspaceItem",
+					"callee": "onHoverCardOpen",
+					"lineNumber": 110
+				},
+				{
+					"caller": "DashboardSidebarWorkspaceItem",
+					"callee": "useEffect",
+					"lineNumber": 112
+				},
+				{
+					"caller": "DashboardSidebarWorkspaceItem",
+					"callee": "hoverSyncIfHovered",
+					"lineNumber": 114
+				},
+				{
+					"caller": "DashboardSidebarWorkspaceItem",
+					"callee": "moveWorkspaceToSection",
+					"lineNumber": 164
+				},
+				{
+					"caller": "DashboardSidebarWorkspaceItem",
+					"callee": "setIsDeleteDialogOpen",
+					"lineNumber": 172
+				},
+				{
+					"caller": "DashboardSidebarWorkspaceItem",
+					"callee": "setRenameBranchTarget",
+					"lineNumber": 197
+				},
+				{
+					"caller": "DashboardSidebarWorkspaceItem",
+					"callee": "setIsDeleteDialogOpen",
+					"lineNumber": 228
+				},
+				{
+					"caller": "DashboardSidebarWorkspaceItem",
+					"callee": "moveWorkspaceToSection",
+					"lineNumber": 257
+				},
+				{
+					"caller": "DashboardSidebarWorkspaceItem",
+					"callee": "setIsDeleteDialogOpen",
+					"lineNumber": 268
+				},
+				{
+					"caller": "DashboardSidebarWorkspaceItem",
+					"callee": "setRenameBranchTarget",
+					"lineNumber": 293
+				}
+			],
+			"metrics": {
+				"importCount": 13,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/components/DashboardSidebarCollapsedWorkspaceButton/DashboardSidebarCollapsedWorkspaceButton.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 65,
+			"nonEmptyLines": 63,
+			"exports": [
+				{
+					"name": "DashboardSidebarCollapsedWorkspaceButton",
+					"line": 22,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 3,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/components/DashboardSidebarCollapsedWorkspaceButton/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "DashboardSidebarCollapsedWorkspaceButton",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/components/DashboardSidebarExpandedWorkspaceRow/DashboardSidebarExpandedWorkspaceRow.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 348,
+			"nonEmptyLines": 339,
+			"exports": [
+				{
+					"name": "DashboardSidebarExpandedWorkspaceRow",
+					"line": 52,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 8,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/components/DashboardSidebarExpandedWorkspaceRow/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "DashboardSidebarExpandedWorkspaceRow",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/components/DashboardSidebarWorkspaceContextMenu/DashboardSidebarWorkspaceContextMenu.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 205,
+			"nonEmptyLines": 202,
+			"functions": [
+				{
+					"name": "DashboardSidebarWorkspaceContextMenu",
+					"startLine": 53,
+					"endLine": 205,
+					"params": [
+						"{\n\tprojectId,\n\tisInSection,\n\tisLocalWorkspace,\n\tisPinned = false,\n\tisUnread,\n\thasStatus,\n\tshowDeleteHotkey = false,\n\tonCreateSection,\n\tonMoveToSection,\n\tonOpenInFinder,\n\tonCopyPath,\n\tonCopyBranchName,\n\tonRemoveFromSidebar,\n\tonRename,\n\tonDelete,\n\tonToggleUnread,\n\tonClearStatus,\n\tchildren,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "DashboardSidebarWorkspaceContextMenu",
+					"line": 53,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "DashboardSidebarWorkspaceContextMenu",
+					"callee": "useCollections",
+					"lineNumber": 73
+				},
+				{
+					"caller": "DashboardSidebarWorkspaceContextMenu",
+					"callee": "useDashboardSidebarHover",
+					"lineNumber": 74
+				},
+				{
+					"caller": "DashboardSidebarWorkspaceContextMenu",
+					"callee": "useHotkeyDisplay",
+					"lineNumber": 75
+				},
+				{
+					"caller": "DashboardSidebarWorkspaceContextMenu",
+					"callee": "useLiveQuery",
+					"lineNumber": 78
+				},
+				{
+					"caller": "DashboardSidebarWorkspaceContextMenu",
+					"callee": "q\n\t\t\t\t.from({ sidebarSections: collections.v2SidebarSections })\n\t\t\t\t.where(({ sidebarSections }) =>\n\t\t\t\t\teq(sidebarSections.projectId, projectId),\n\t\t\t\t)\n\t\t\t\t.orderBy(({ sidebarSections }) => sidebarSections.tabOrder, \"asc\")\n\t\t\t\t.select",
+					"lineNumber": 80
+				},
+				{
+					"caller": "DashboardSidebarWorkspaceContextMenu",
+					"callee": "q\n\t\t\t\t.from({ sidebarSections: collections.v2SidebarSections })\n\t\t\t\t.where(({ sidebarSections }) =>\n\t\t\t\t\teq(sidebarSections.projectId, projectId),\n\t\t\t\t)\n\t\t\t\t.orderBy",
+					"lineNumber": 80
+				},
+				{
+					"caller": "DashboardSidebarWorkspaceContextMenu",
+					"callee": "q\n\t\t\t\t.from({ sidebarSections: collections.v2SidebarSections })\n\t\t\t\t.where",
+					"lineNumber": 80
+				},
+				{
+					"caller": "DashboardSidebarWorkspaceContextMenu",
+					"callee": "q\n\t\t\t\t.from",
+					"lineNumber": 80
+				},
+				{
+					"caller": "DashboardSidebarWorkspaceContextMenu",
+					"callee": "eq",
+					"lineNumber": 83
+				},
+				{
+					"caller": "DashboardSidebarWorkspaceContextMenu",
+					"callee": "event.preventDefault",
+					"lineNumber": 97
+				},
+				{
+					"caller": "DashboardSidebarWorkspaceContextMenu",
+					"callee": "sections.map",
+					"lineNumber": 157
+				},
+				{
+					"caller": "DashboardSidebarWorkspaceContextMenu",
+					"callee": "onMoveToSection",
+					"lineNumber": 160
+				},
+				{
+					"caller": "DashboardSidebarWorkspaceContextMenu",
+					"callee": "onMoveToSection",
+					"lineNumber": 175
+				}
+			],
+			"metrics": {
+				"importCount": 3,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/components/DashboardSidebarWorkspaceDetails/DashboardSidebarWorkspaceDetails.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 160,
+			"nonEmptyLines": 150,
+			"functions": [
+				{
+					"name": "DashboardSidebarWorkspaceDetails",
+					"startLine": 51,
+					"endLine": 160,
+					"params": ["{\n\tworkspaceId,\n\tisInSection = false,\n\tonClick,\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "DashboardSidebarWorkspaceDetails",
+					"line": 51,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "DashboardSidebarWorkspaceDetails",
+					"callee": "useInlineWorkspacePortsEnabled",
+					"lineNumber": 56
+				},
+				{
+					"caller": "DashboardSidebarWorkspaceDetails",
+					"callee": "useWorkspaceAgentsRowEnabled",
+					"lineNumber": 57
+				},
+				{
+					"caller": "DashboardSidebarWorkspaceDetails",
+					"callee": "useDashboardSidebarPortKill",
+					"lineNumber": 59
+				},
+				{
+					"caller": "DashboardSidebarWorkspaceDetails",
+					"callee": "useDashboardSidebarWorkspacePorts",
+					"lineNumber": 61
+				},
+				{
+					"caller": "DashboardSidebarWorkspaceDetails",
+					"callee": "useDashboardSidebarWorkspaceRunningAgents",
+					"lineNumber": 63
+				},
+				{
+					"caller": "DashboardSidebarWorkspaceDetails",
+					"callee": "cn",
+					"lineNumber": 81
+				},
+				{
+					"caller": "DashboardSidebarWorkspaceDetails",
+					"callee": "event.stopPropagation",
+					"lineNumber": 87
+				},
+				{
+					"caller": "DashboardSidebarWorkspaceDetails",
+					"callee": "event.stopPropagation",
+					"lineNumber": 88
+				},
+				{
+					"caller": "DashboardSidebarWorkspaceDetails",
+					"callee": "event.currentTarget.contains",
+					"lineNumber": 94
+				},
+				{
+					"caller": "DashboardSidebarWorkspaceDetails",
+					"callee": "target.closest",
+					"lineNumber": 97
+				},
+				{
+					"caller": "DashboardSidebarWorkspaceDetails",
+					"callee": "onClick",
+					"lineNumber": 99
+				},
+				{
+					"caller": "DashboardSidebarWorkspaceDetails",
+					"callee": "agents.map",
+					"lineNumber": 102
+				},
+				{
+					"caller": "DashboardSidebarWorkspaceDetails",
+					"callee": "cn",
+					"lineNumber": 112
+				},
+				{
+					"caller": "DashboardSidebarWorkspaceDetails",
+					"callee": "ports.map",
+					"lineNumber": 129
+				},
+				{
+					"caller": "DashboardSidebarWorkspaceDetails",
+					"callee": "cn",
+					"lineNumber": 134
+				},
+				{
+					"caller": "DashboardSidebarWorkspaceDetails",
+					"callee": "Math.min",
+					"lineNumber": 140
+				},
+				{
+					"caller": "DashboardSidebarWorkspaceDetails",
+					"callee": "cn",
+					"lineNumber": 149
+				},
+				{
+					"caller": "DashboardSidebarWorkspaceDetails",
+					"callee": "killPorts",
+					"lineNumber": 154
+				}
+			],
+			"metrics": {
+				"importCount": 9,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/components/DashboardSidebarWorkspaceDetails/components/DashboardSidebarWorkspaceAgentBadge/DashboardSidebarWorkspaceAgentBadge.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 96,
+			"nonEmptyLines": 91,
+			"functions": [
+				{
+					"name": "DashboardSidebarWorkspaceAgentBadge",
+					"startLine": 26,
+					"endLine": 96,
+					"params": ["{\n\tworkspaceId,\n\tagent,\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "DashboardSidebarWorkspaceAgentBadge",
+					"line": 26,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "DashboardSidebarWorkspaceAgentBadge",
+					"callee": "useNavigate",
+					"lineNumber": 30
+				},
+				{
+					"caller": "DashboardSidebarWorkspaceAgentBadge",
+					"callee": "usePresetIcon",
+					"lineNumber": 31
+				},
+				{
+					"caller": "handleClick",
+					"callee": "navigateToV2Workspace",
+					"lineNumber": 34
+				},
+				{
+					"caller": "handleClick",
+					"callee": "crypto.randomUUID",
+					"lineNumber": 37
+				},
+				{
+					"caller": "DashboardSidebarWorkspaceAgentBadge",
+					"callee": "getStatusTooltip",
+					"lineNumber": 43
+				},
+				{
+					"caller": "DashboardSidebarWorkspaceAgentBadge",
+					"callee": "cn",
+					"lineNumber": 51
+				},
+				{
+					"caller": "DashboardSidebarWorkspaceAgentBadge",
+					"callee": "cn",
+					"lineNumber": 75
+				}
+			],
+			"metrics": {
+				"importCount": 5,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/components/DashboardSidebarWorkspaceDetails/components/DashboardSidebarWorkspaceAgentBadge/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "DashboardSidebarWorkspaceAgentBadge",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/components/DashboardSidebarWorkspaceDetails/components/DashboardSidebarWorkspaceDetailsAction/DashboardSidebarWorkspaceDetailsAction.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 57,
+			"nonEmptyLines": 55,
+			"functions": [
+				{
+					"name": "DashboardSidebarWorkspaceDetailsAction",
+					"startLine": 18,
+					"endLine": 57,
+					"params": ["{\n\tlabel,\n\ticon,\n\tbusy = false,\n\tonClick,\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "DashboardSidebarWorkspaceDetailsAction",
+					"line": 18,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "DashboardSidebarWorkspaceDetailsAction",
+					"callee": "event.stopPropagation",
+					"lineNumber": 33
+				},
+				{
+					"caller": "DashboardSidebarWorkspaceDetailsAction",
+					"callee": "onClick",
+					"lineNumber": 35
+				},
+				{
+					"caller": "DashboardSidebarWorkspaceDetailsAction",
+					"callee": "cn",
+					"lineNumber": 37
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/components/DashboardSidebarWorkspaceDetails/components/DashboardSidebarWorkspaceDetailsAction/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "DashboardSidebarWorkspaceDetailsAction",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/components/DashboardSidebarWorkspaceDetails/hooks/useDashboardSidebarWorkspaceRunningAgents/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 5,
+			"nonEmptyLines": 5,
+			"exports": [
+				{
+					"name": "DashboardSidebarRunningAgent",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "RunningAgentStatus",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "useDashboardSidebarWorkspaceRunningAgents",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 3,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/components/DashboardSidebarWorkspaceDetails/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "DashboardSidebarWorkspaceDetails",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/components/DashboardSidebarWorkspaceDiffStats/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "DashboardSidebarWorkspaceDiffStats",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/components/DashboardSidebarWorkspaceHoverCardContent/DashboardSidebarWorkspaceHoverCardContent.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 215,
+			"nonEmptyLines": 205,
+			"functions": [
+				{
+					"name": "DashboardSidebarWorkspaceHoverCardContent",
+					"startLine": 26,
+					"endLine": 215,
+					"params": ["{\n\tworkspace,\n\tdiffStats,\n\tonEditBranchClick,\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "DashboardSidebarWorkspaceHoverCardContent",
+					"line": 26,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "DashboardSidebarWorkspaceHoverCardContent",
+					"callee": "useHotkeyDisplay",
+					"lineNumber": 43
+				},
+				{
+					"caller": "DashboardSidebarWorkspaceHoverCardContent",
+					"callee": "onEditBranchClick",
+					"lineNumber": 75
+				},
+				{
+					"caller": "DashboardSidebarWorkspaceHoverCardContent",
+					"callee": "e.stopPropagation",
+					"lineNumber": 96
+				},
+				{
+					"caller": "DashboardSidebarWorkspaceHoverCardContent",
+					"callee": "formatDistanceToNow",
+					"lineNumber": 104
+				},
+				{
+					"caller": "DashboardSidebarWorkspaceHoverCardContent",
+					"callee": "openPRDisplay.map",
+					"lineNumber": 176
+				}
+			],
+			"metrics": {
+				"importCount": 8,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/components/DashboardSidebarWorkspaceHoverCardContent/components/ChecksList/ChecksList.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 44,
+			"nonEmptyLines": 38,
+			"functions": [
+				{
+					"name": "ChecksList",
+					"startLine": 11,
+					"endLine": 44,
+					"params": ["{ checks }"]
+				}
+			],
+			"exports": [
+				{
+					"name": "ChecksList",
+					"line": 11,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "ChecksList",
+					"callee": "useState",
+					"lineNumber": 12
+				},
+				{
+					"caller": "ChecksList",
+					"callee": "checks.filter",
+					"lineNumber": 14
+				},
+				{
+					"caller": "ChecksList",
+					"callee": "setExpanded",
+					"lineNumber": 24
+				},
+				{
+					"caller": "ChecksList",
+					"callee": "relevantChecks.map",
+					"lineNumber": 37
+				}
+			],
+			"metrics": {
+				"importCount": 3,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/components/DashboardSidebarWorkspaceHoverCardContent/components/ChecksList/components/CheckItemRow/CheckItemRow.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 44,
+			"nonEmptyLines": 38,
+			"functions": [
+				{
+					"name": "CheckItemRow",
+					"startLine": 9,
+					"endLine": 44,
+					"params": ["{ check }"]
+				}
+			],
+			"exports": [
+				{
+					"name": "CheckItemRow",
+					"line": 9,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/components/DashboardSidebarWorkspaceHoverCardContent/components/ChecksList/components/CheckItemRow/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "CheckItemRow",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/components/DashboardSidebarWorkspaceHoverCardContent/components/ChecksList/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "ChecksList",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/components/DashboardSidebarWorkspaceHoverCardContent/components/ChecksSummary/ChecksSummary.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 45,
+			"nonEmptyLines": 39,
+			"functions": [
+				{
+					"name": "ChecksSummary",
+					"startLine": 10,
+					"endLine": 45,
+					"params": ["{ checks, status }"]
+				}
+			],
+			"exports": [
+				{
+					"name": "ChecksSummary",
+					"line": 10,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "ChecksSummary",
+					"callee": "checks.filter",
+					"lineNumber": 13
+				},
+				{
+					"caller": "ChecksSummary",
+					"callee": "checks.filter",
+					"lineNumber": 14
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		}
+	]
+}

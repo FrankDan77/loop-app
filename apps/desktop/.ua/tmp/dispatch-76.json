@@ -1,0 +1,854 @@
+{
+	"batchIndex": 76,
+	"totalBatches": 117,
+	"files": [
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/hooks/useTerminalHotkeys.ts",
+			"language": "typescript",
+			"sizeLines": 60,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/hooks/useTerminalLifecycle.ts",
+			"language": "typescript",
+			"sizeLines": 855,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/hooks/useTerminalRefs.ts",
+			"language": "typescript",
+			"sizeLines": 126,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/hooks/useTerminalRestore.ts",
+			"language": "typescript",
+			"sizeLines": 254,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/hooks/workspaceRun.ts",
+			"language": "typescript",
+			"sizeLines": 141,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/link-providers/index.ts",
+			"language": "typescript",
+			"sizeLines": 5,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/state.ts",
+			"language": "typescript",
+			"sizeLines": 17,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/suppressQueryResponses.ts",
+			"language": "typescript",
+			"sizeLines": 52,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/types.ts",
+			"language": "typescript",
+			"sizeLines": 138,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/utils.ts",
+			"language": "typescript",
+			"sizeLines": 10,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/v1-terminal-cache.ts",
+			"language": "typescript",
+			"sizeLines": 390,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/components/CodeEditor/constants.ts",
+			"language": "typescript",
+			"sizeLines": 3,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/components/CodeEditor/createCodeMirrorTheme.ts",
+			"language": "typescript",
+			"sizeLines": 92,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/utils/code-theme/diff-theme.ts",
+			"language": "typescript",
+			"sizeLines": 147,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/utils/code-theme/diff-viewer-style.ts",
+			"language": "typescript",
+			"sizeLines": 38,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/utils/code-theme/index.ts",
+			"language": "typescript",
+			"sizeLines": 4,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/utils/code-theme/syntax-highlighting.ts",
+			"language": "typescript",
+			"sizeLines": 70,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/renderer/stores/tabs/preset-launch.test.ts",
+			"language": "typescript",
+			"sizeLines": 178,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/renderer/stores/tabs/preset-launch.ts",
+			"language": "typescript",
+			"sizeLines": 92,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/renderer/stores/tabs/terminal-callbacks.ts",
+			"language": "typescript",
+			"sizeLines": 118,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/renderer/stores/tabs/utils/terminal-cleanup.ts",
+			"language": "typescript",
+			"sizeLines": 15,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/renderer/stores/theme/utils/index.ts",
+			"language": "typescript",
+			"sizeLines": 7,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/shared/themes/index.ts",
+			"language": "typescript",
+			"sizeLines": 29,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/shared/themes/utils.test.ts",
+			"language": "typescript",
+			"sizeLines": 79,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/shared/themes/utils.ts",
+			"language": "typescript",
+			"sizeLines": 56,
+			"fileCategory": "code"
+		}
+	],
+	"batchImportData": {
+		"src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/hooks/useTerminalHotkeys.ts": [
+			"src/renderer/hotkeys/index.ts",
+			"src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/utils.ts"
+		],
+		"src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/hooks/useTerminalLifecycle.ts": [
+			"src/renderer/lib/terminal/launch-command.ts",
+			"src/renderer/lib/terminal/links/index.ts",
+			"src/renderer/lib/terminal/parser-idle-gate.ts",
+			"src/renderer/lib/terminal/session-readiness.ts",
+			"src/renderer/lib/terminal/terminal-key-event-handler.ts",
+			"src/renderer/lib/trpc-client.ts",
+			"src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/attach-cancel.ts",
+			"src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/attach-scheduler.ts",
+			"src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/commandBuffer.ts",
+			"src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/config.ts",
+			"src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/helpers.ts",
+			"src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/hooks/attach-request-id.ts",
+			"src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/hooks/workspaceRun.ts",
+			"src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/pane-guards.ts",
+			"src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/state.ts",
+			"src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/types.ts",
+			"src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/utils.ts",
+			"src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/v1-terminal-cache.ts",
+			"src/renderer/stores/tabs/store.ts",
+			"src/renderer/stores/tabs/utils/terminal-cleanup.ts"
+		],
+		"src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/hooks/useTerminalRefs.ts": [
+			"src/renderer/lib/terminal/links/index.ts",
+			"src/renderer/stores/tabs/terminal-callbacks.ts"
+		],
+		"src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/hooks/useTerminalRestore.ts": [
+			"src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/config.ts",
+			"src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/types.ts",
+			"src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/utils.ts"
+		],
+		"src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/hooks/workspaceRun.ts": [
+			"src/renderer/lib/trpc-client.ts",
+			"src/renderer/stores/tabs/workspace-run.ts"
+		],
+		"src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/link-providers/index.ts": [],
+		"src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/state.ts": [
+			"src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/types.ts"
+		],
+		"src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/suppressQueryResponses.ts": [],
+		"src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/types.ts": [],
+		"src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/utils.ts": [],
+		"src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/v1-terminal-cache.ts": [
+			"src/renderer/lib/terminal/appearance/index.ts",
+			"src/renderer/lib/terminal/font-settle.ts",
+			"src/renderer/lib/terminal/parser-idle-gate.ts",
+			"src/renderer/lib/terminal/terminal-parking.ts",
+			"src/renderer/lib/trpc-client.ts",
+			"src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/config.ts",
+			"src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/helpers.ts",
+			"src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/types.ts"
+		],
+		"src/renderer/screens/main/components/WorkspaceView/components/CodeEditor/constants.ts": [],
+		"src/renderer/screens/main/components/WorkspaceView/components/CodeEditor/createCodeMirrorTheme.ts": [
+			"src/renderer/screens/main/components/WorkspaceView/components/CodeEditor/constants.ts",
+			"src/shared/themes/index.ts"
+		],
+		"src/renderer/screens/main/components/WorkspaceView/utils/code-theme/diff-theme.ts": [
+			"src/shared/themes/index.ts",
+			"src/shared/themes/utils.ts"
+		],
+		"src/renderer/screens/main/components/WorkspaceView/utils/code-theme/diff-viewer-style.ts": [
+			"src/renderer/screens/main/components/WorkspaceView/components/CodeEditor/constants.ts",
+			"src/shared/themes/index.ts"
+		],
+		"src/renderer/screens/main/components/WorkspaceView/utils/code-theme/index.ts": [],
+		"src/renderer/screens/main/components/WorkspaceView/utils/code-theme/syntax-highlighting.ts": [
+			"src/shared/themes/index.ts"
+		],
+		"src/renderer/stores/tabs/preset-launch.test.ts": [
+			"src/renderer/stores/tabs/preset-launch.ts"
+		],
+		"src/renderer/stores/tabs/preset-launch.ts": [
+			"src/renderer/lib/terminal/launch-command.ts"
+		],
+		"src/renderer/stores/tabs/terminal-callbacks.ts": [],
+		"src/renderer/stores/tabs/utils/terminal-cleanup.ts": [
+			"src/renderer/lib/terminal/session-readiness.ts",
+			"src/renderer/lib/trpc-client.ts"
+		],
+		"src/renderer/stores/theme/utils/index.ts": [],
+		"src/shared/themes/index.ts": [],
+		"src/shared/themes/utils.test.ts": ["src/shared/themes/utils.ts"],
+		"src/shared/themes/utils.ts": []
+	},
+	"neighborMap": {
+		"src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/hooks/useTerminalHotkeys.ts": [
+			{
+				"path": "src/renderer/hotkeys/index.ts",
+				"batchIndex": 25,
+				"symbols": [
+					"HotkeyLabel",
+					"formatHotkeyDisplay",
+					"getBinding",
+					"getDispatchChord",
+					"useBinding",
+					"useFormatBinding",
+					"useHotkey",
+					"useHotkeyDisplay",
+					"useRecordHotkeys",
+					"HOTKEYS",
+					"HotkeyId",
+					"PLATFORM",
+					"useHotkeyOverridesStore",
+					"useKeyboardPreferencesStore",
+					"BindingMode",
+					"HotkeyCategory",
+					"HotkeyDefinition",
+					"HotkeyDisplay",
+					"ParsedBinding",
+					"Platform",
+					"ShortcutBinding",
+					"bindingsEqual",
+					"defaultModeForChord",
+					"isTerminalReservedEvent",
+					"matchesChord",
+					"parseBinding",
+					"resolveHotkeyFromEvent",
+					"serializeBinding"
+				]
+			}
+		],
+		"src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/hooks/useTerminalLifecycle.ts": [
+			{
+				"path": "src/renderer/lib/terminal/launch-command.ts",
+				"batchIndex": 67,
+				"symbols": [
+					"normalizeTerminalCommand",
+					"buildTerminalCommand",
+					"writeCommandInPane",
+					"writeCommandsInPane",
+					"launchCommandInPane",
+					"ensureTerminalAttached"
+				]
+			},
+			{
+				"path": "src/renderer/lib/terminal/links/index.ts",
+				"batchIndex": 67,
+				"symbols": [
+					"IRange",
+					"convertLinkRangeToBuffer",
+					"getXtermLineContent",
+					"LinkDetectorAdapter",
+					"ResolvedLink",
+					"StatCallback",
+					"TerminalLinkResolver",
+					"DetectedLink",
+					"LocalLinkDetector",
+					"WordLinkDetector"
+				]
+			},
+			{
+				"path": "src/renderer/lib/terminal/parser-idle-gate.ts",
+				"batchIndex": 67,
+				"symbols": [
+					"createParserIdleGate",
+					"cancelParserIdleWork",
+					"wrapWrite",
+					"runWhenParserIdle"
+				]
+			},
+			{
+				"path": "src/renderer/lib/terminal/session-readiness.ts",
+				"batchIndex": 67,
+				"symbols": [
+					"clearTerminalSessionReady",
+					"markTerminalSessionReady",
+					"rejectTerminalSessionReady",
+					"waitForTerminalSessionReady"
+				]
+			},
+			{
+				"path": "src/renderer/lib/terminal/terminal-key-event-handler.ts",
+				"batchIndex": 67,
+				"symbols": [
+					"createTerminalKeyEventHandler",
+					"installTerminalKeyEventHandler"
+				]
+			},
+			{
+				"path": "src/renderer/lib/trpc-client.ts",
+				"batchIndex": 9,
+				"symbols": ["electronReactClient", "electronTrpcClient"]
+			},
+			{
+				"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/attach-cancel.ts",
+				"batchIndex": 71,
+				"symbols": [
+					"TERMINAL_ATTACH_CANCELED_MESSAGE",
+					"isTerminalAttachCanceledMessage"
+				]
+			},
+			{
+				"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/attach-scheduler.ts",
+				"batchIndex": 71,
+				"symbols": ["scheduleTerminalAttach"]
+			},
+			{
+				"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/commandBuffer.ts",
+				"batchIndex": 71,
+				"symbols": ["sanitizeForTitle", "isCommandEchoed"]
+			},
+			{
+				"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/config.ts",
+				"batchIndex": 71,
+				"symbols": [
+					"TERMINAL_THEME",
+					"FIRST_RENDER_RESTORE_FALLBACK_MS",
+					"DEBUG_TERMINAL",
+					"DEFAULT_TERMINAL_FONT_FAMILY",
+					"DEFAULT_TERMINAL_FONT_SIZE",
+					"TERMINAL_OPTIONS"
+				]
+			},
+			{
+				"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/helpers.ts",
+				"batchIndex": 71,
+				"symbols": [
+					"getDefaultTerminalTheme",
+					"getDefaultTerminalBg",
+					"createTerminalInWrapper",
+					"setupCopyHandler",
+					"setupFocusListener",
+					"setupClickToMoveCursor"
+				]
+			},
+			{
+				"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/hooks/attach-request-id.ts",
+				"batchIndex": 71,
+				"symbols": ["createAttachRequestId"]
+			},
+			{
+				"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/pane-guards.ts",
+				"batchIndex": 16,
+				"symbols": ["isPaneDestroyed"]
+			},
+			{
+				"path": "src/renderer/stores/tabs/store.ts",
+				"batchIndex": 17,
+				"symbols": ["useTabsStore"]
+			}
+		],
+		"src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/hooks/useTerminalRefs.ts": [
+			{
+				"path": "src/renderer/lib/terminal/links/index.ts",
+				"batchIndex": 67,
+				"symbols": [
+					"IRange",
+					"convertLinkRangeToBuffer",
+					"getXtermLineContent",
+					"LinkDetectorAdapter",
+					"ResolvedLink",
+					"StatCallback",
+					"TerminalLinkResolver",
+					"DetectedLink",
+					"LocalLinkDetector",
+					"WordLinkDetector"
+				]
+			}
+		],
+		"src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/hooks/useTerminalRestore.ts": [
+			{
+				"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/config.ts",
+				"batchIndex": 71,
+				"symbols": [
+					"TERMINAL_THEME",
+					"FIRST_RENDER_RESTORE_FALLBACK_MS",
+					"DEBUG_TERMINAL",
+					"DEFAULT_TERMINAL_FONT_FAMILY",
+					"DEFAULT_TERMINAL_FONT_SIZE",
+					"TERMINAL_OPTIONS"
+				]
+			}
+		],
+		"src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/hooks/workspaceRun.ts": [
+			{
+				"path": "src/renderer/lib/trpc-client.ts",
+				"batchIndex": 9,
+				"symbols": ["electronReactClient", "electronTrpcClient"]
+			},
+			{
+				"path": "src/renderer/stores/tabs/workspace-run.ts",
+				"batchIndex": 17,
+				"symbols": [
+					"createWorkspaceRun",
+					"getPaneWorkspaceRun",
+					"hasPaneWorkspaceRun",
+					"markPaneWorkspaceRunLaunchPending",
+					"clearPaneWorkspaceRunLaunchPending",
+					"isPaneWorkspaceRunLaunchPending",
+					"setPaneWorkspaceRunState"
+				]
+			}
+		],
+		"src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/link-providers/index.ts": [
+			{
+				"path": "src/renderer/lib/terminal/terminal-link-manager.ts",
+				"batchIndex": 69,
+				"symbols": ["TerminalLinkManager"]
+			}
+		],
+		"src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/state.ts": [
+			{
+				"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/hooks/useTerminalColdRestore.ts",
+				"batchIndex": 71,
+				"symbols": ["useTerminalColdRestore"]
+			}
+		],
+		"src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/suppressQueryResponses.ts": [
+			{
+				"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/helpers.ts",
+				"batchIndex": 71,
+				"symbols": [
+					"getDefaultTerminalTheme",
+					"getDefaultTerminalBg",
+					"createTerminalInWrapper",
+					"setupCopyHandler",
+					"setupFocusListener",
+					"setupClickToMoveCursor"
+				]
+			}
+		],
+		"src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/types.ts": [
+			{
+				"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/hooks/useTerminalColdRestore.ts",
+				"batchIndex": 71,
+				"symbols": ["useTerminalColdRestore"]
+			},
+			{
+				"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/hooks/useTerminalConnection.ts",
+				"batchIndex": 71,
+				"symbols": ["useTerminalConnection"]
+			},
+			{
+				"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/hooks/useTerminalStream.ts",
+				"batchIndex": 16,
+				"symbols": ["useTerminalStream"]
+			},
+			{
+				"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/Terminal.tsx",
+				"batchIndex": 71,
+				"symbols": ["Terminal"]
+			}
+		],
+		"src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/utils.ts": [
+			{
+				"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/hooks/useTerminalColdRestore.ts",
+				"batchIndex": 71,
+				"symbols": ["useTerminalColdRestore"]
+			},
+			{
+				"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/ScrollToBottomButton/ScrollToBottomButton.tsx",
+				"batchIndex": 71,
+				"symbols": ["ScrollToBottomButton"]
+			},
+			{
+				"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/Terminal.tsx",
+				"batchIndex": 71,
+				"symbols": ["Terminal"]
+			}
+		],
+		"src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/v1-terminal-cache.ts": [
+			{
+				"path": "src/renderer/lib/terminal/appearance/index.ts",
+				"batchIndex": 67,
+				"symbols": [
+					"TERMINAL_FONT_FAMILY_CSS_VARIABLE",
+					"applyTerminalFontFamilyCssVariable",
+					"DEFAULT_TERMINAL_FONT_FAMILIES",
+					"DEFAULT_TERMINAL_FONT_FAMILY",
+					"DEFAULT_TERMINAL_FONT_SIZE",
+					"sanitizeTerminalFontFamily",
+					"getDefaultTerminalAppearance"
+				]
+			},
+			{
+				"path": "src/renderer/lib/terminal/font-settle.ts",
+				"batchIndex": 67,
+				"symbols": ["waitForFontReady", "scheduleFontSettleRefit"]
+			},
+			{
+				"path": "src/renderer/lib/terminal/parser-idle-gate.ts",
+				"batchIndex": 67,
+				"symbols": [
+					"createParserIdleGate",
+					"cancelParserIdleWork",
+					"wrapWrite",
+					"runWhenParserIdle"
+				]
+			},
+			{
+				"path": "src/renderer/lib/terminal/terminal-parking.ts",
+				"batchIndex": 69,
+				"symbols": ["getTerminalParkingContainer"]
+			},
+			{
+				"path": "src/renderer/lib/trpc-client.ts",
+				"batchIndex": 9,
+				"symbols": ["electronReactClient", "electronTrpcClient"]
+			},
+			{
+				"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/config.ts",
+				"batchIndex": 71,
+				"symbols": [
+					"TERMINAL_THEME",
+					"FIRST_RENDER_RESTORE_FALLBACK_MS",
+					"DEBUG_TERMINAL",
+					"DEFAULT_TERMINAL_FONT_FAMILY",
+					"DEFAULT_TERMINAL_FONT_SIZE",
+					"TERMINAL_OPTIONS"
+				]
+			},
+			{
+				"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/helpers.ts",
+				"batchIndex": 71,
+				"symbols": [
+					"getDefaultTerminalTheme",
+					"getDefaultTerminalBg",
+					"createTerminalInWrapper",
+					"setupCopyHandler",
+					"setupFocusListener",
+					"setupClickToMoveCursor"
+				]
+			},
+			{
+				"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/Terminal.tsx",
+				"batchIndex": 71,
+				"symbols": ["Terminal"]
+			}
+		],
+		"src/renderer/screens/main/components/WorkspaceView/components/CodeEditor/constants.ts": [
+			{
+				"path": "src/renderer/routes/_authenticated/settings/appearance/components/AppearanceSettings/components/FontSettingSection/FontSettingSection.tsx",
+				"batchIndex": 71,
+				"symbols": ["FontSettingSection"]
+			}
+		],
+		"src/renderer/screens/main/components/WorkspaceView/components/CodeEditor/createCodeMirrorTheme.ts": [
+			{
+				"path": "src/renderer/screens/main/components/WorkspaceView/components/CodeEditor/CodeEditor.tsx",
+				"batchIndex": 18,
+				"symbols": ["CodeEditor"]
+			}
+		],
+		"src/renderer/screens/main/components/WorkspaceView/utils/code-theme/index.ts": [
+			{
+				"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewTheme/useDiffCodeViewTheme.ts",
+				"batchIndex": 54,
+				"symbols": ["useDiffCodeViewTheme"]
+			},
+			{
+				"path": "src/renderer/routes/_authenticated/components/DiffThemeSync/buildDiffPoolRenderOptions.test.ts",
+				"batchIndex": 69,
+				"symbols": []
+			},
+			{
+				"path": "src/renderer/routes/_authenticated/components/DiffThemeSync/buildDiffPoolRenderOptions.ts",
+				"batchIndex": 69,
+				"symbols": ["buildDiffPoolRenderOptions"]
+			},
+			{
+				"path": "src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/LightDiffViewer/LightDiffViewer.tsx",
+				"batchIndex": 71,
+				"symbols": ["LightDiffViewer"]
+			},
+			{
+				"path": "src/renderer/screens/main/components/WorkspaceView/components/CodeEditor/CodeEditor.tsx",
+				"batchIndex": 18,
+				"symbols": ["CodeEditor"]
+			}
+		],
+		"src/renderer/stores/tabs/preset-launch.ts": [
+			{
+				"path": "src/renderer/lib/terminal/launch-command.ts",
+				"batchIndex": 67,
+				"symbols": [
+					"normalizeTerminalCommand",
+					"buildTerminalCommand",
+					"writeCommandInPane",
+					"writeCommandsInPane",
+					"launchCommandInPane",
+					"ensureTerminalAttached"
+				]
+			},
+			{
+				"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/useV2PresetExecution/useV2PresetExecution.ts",
+				"batchIndex": 32,
+				"symbols": ["useV2PresetExecution"]
+			},
+			{
+				"path": "src/renderer/stores/tabs/useTabsWithPresets.ts",
+				"batchIndex": 17,
+				"symbols": ["useTabsWithPresets"]
+			}
+		],
+		"src/renderer/stores/tabs/terminal-callbacks.ts": [
+			{
+				"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/TabPane.tsx",
+				"batchIndex": 16,
+				"symbols": ["TabPane"]
+			}
+		],
+		"src/renderer/stores/tabs/utils/terminal-cleanup.ts": [
+			{
+				"path": "src/renderer/lib/terminal/session-readiness.ts",
+				"batchIndex": 67,
+				"symbols": [
+					"clearTerminalSessionReady",
+					"markTerminalSessionReady",
+					"rejectTerminalSessionReady",
+					"waitForTerminalSessionReady"
+				]
+			},
+			{
+				"path": "src/renderer/lib/trpc-client.ts",
+				"batchIndex": 9,
+				"symbols": ["electronReactClient", "electronTrpcClient"]
+			},
+			{
+				"path": "src/renderer/stores/tabs/store.ts",
+				"batchIndex": 17,
+				"symbols": ["useTabsStore"]
+			}
+		],
+		"src/renderer/stores/theme/utils/index.ts": [
+			{
+				"path": "src/renderer/hooks/useCreateOrAttachWithTheme.ts",
+				"batchIndex": 9,
+				"symbols": ["useCreateOrAttachWithTheme"]
+			},
+			{
+				"path": "src/renderer/lib/terminal/appearance/index.ts",
+				"batchIndex": 67,
+				"symbols": [
+					"TERMINAL_FONT_FAMILY_CSS_VARIABLE",
+					"applyTerminalFontFamilyCssVariable",
+					"DEFAULT_TERMINAL_FONT_FAMILIES",
+					"DEFAULT_TERMINAL_FONT_FAMILY",
+					"DEFAULT_TERMINAL_FONT_SIZE",
+					"sanitizeTerminalFontFamily",
+					"getDefaultTerminalAppearance"
+				]
+			},
+			{
+				"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/TerminalPane/TerminalPane.tsx",
+				"batchIndex": 69,
+				"symbols": ["TerminalPane"]
+			},
+			{
+				"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/useV2TerminalLauncher/useV2TerminalLauncher.ts",
+				"batchIndex": 69,
+				"symbols": ["useV2TerminalLauncher"]
+			},
+			{
+				"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/helpers.ts",
+				"batchIndex": 71,
+				"symbols": [
+					"getDefaultTerminalTheme",
+					"getDefaultTerminalBg",
+					"createTerminalInWrapper",
+					"setupCopyHandler",
+					"setupFocusListener",
+					"setupClickToMoveCursor"
+				]
+			},
+			{
+				"path": "src/renderer/stores/theme/store.ts",
+				"batchIndex": 17,
+				"symbols": [
+					"SYSTEM_THEME_ID",
+					"useThemeStore",
+					"useTheme",
+					"useResolvedTheme",
+					"useTerminalTheme",
+					"useSetTheme",
+					"useThemeId",
+					"useSystemLightThemeId",
+					"useSystemDarkThemeId",
+					"useSetSystemThemePreference"
+				]
+			}
+		],
+		"src/shared/themes/index.ts": [
+			{
+				"path": "src/lib/trpc/routers/terminal/theme-type.test.ts",
+				"batchIndex": 3,
+				"symbols": []
+			},
+			{
+				"path": "src/lib/trpc/routers/terminal/theme-type.ts",
+				"batchIndex": 3,
+				"symbols": ["resolveTerminalThemeType"]
+			},
+			{
+				"path": "src/main/lib/app-state/schemas.ts",
+				"batchIndex": 6,
+				"symbols": ["TabsState", "Pane", "defaultAppState"]
+			},
+			{
+				"path": "src/renderer/commandPalette/ui/ThemeFrame/ThemeFrame.tsx",
+				"batchIndex": 60,
+				"symbols": ["ThemeFrame"]
+			},
+			{
+				"path": "src/renderer/components/ThemeSwatch/ThemeSwatch.tsx",
+				"batchIndex": 67,
+				"symbols": ["ThemeSwatch"]
+			},
+			{
+				"path": "src/renderer/lib/terminal/appearance/index.ts",
+				"batchIndex": 67,
+				"symbols": [
+					"TERMINAL_FONT_FAMILY_CSS_VARIABLE",
+					"applyTerminalFontFamilyCssVariable",
+					"DEFAULT_TERMINAL_FONT_FAMILIES",
+					"DEFAULT_TERMINAL_FONT_FAMILY",
+					"DEFAULT_TERMINAL_FONT_SIZE",
+					"sanitizeTerminalFontFamily",
+					"getDefaultTerminalAppearance"
+				]
+			},
+			{
+				"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/FilePane/registry/views/CodeView/components/CodeEditor/createCodeMirrorTheme/createCodeMirrorTheme.ts",
+				"batchIndex": 69,
+				"symbols": ["createCodeMirrorTheme"]
+			},
+			{
+				"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/FilePane/registry/views/CodeView/components/CodeEditor/syntax-highlighting/syntax-highlighting.ts",
+				"batchIndex": 69,
+				"symbols": ["getCodeSyntaxHighlighting"]
+			},
+			{
+				"path": "src/renderer/routes/_authenticated/components/DiffThemeSync/buildDiffPoolRenderOptions.test.ts",
+				"batchIndex": 69,
+				"symbols": []
+			},
+			{
+				"path": "src/renderer/routes/_authenticated/components/DiffThemeSync/buildDiffPoolRenderOptions.ts",
+				"batchIndex": 69,
+				"symbols": ["buildDiffPoolRenderOptions"]
+			},
+			{
+				"path": "src/renderer/routes/_authenticated/settings/appearance/components/AppearanceSettings/components/ThemeSection/ThemeSection.tsx",
+				"batchIndex": 42,
+				"symbols": ["ThemeSection"]
+			},
+			{
+				"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/FileViewerPane/components/DiffScrollbarDecorations/DiffScrollbarDecorations.tsx",
+				"batchIndex": 71,
+				"symbols": ["DiffScrollbarDecorations"]
+			},
+			{
+				"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/helpers.ts",
+				"batchIndex": 71,
+				"symbols": [
+					"getDefaultTerminalTheme",
+					"getDefaultTerminalBg",
+					"createTerminalInWrapper",
+					"setupCopyHandler",
+					"setupFocusListener",
+					"setupClickToMoveCursor"
+				]
+			},
+			{
+				"path": "src/renderer/stores/theme/store.ts",
+				"batchIndex": 17,
+				"symbols": [
+					"SYSTEM_THEME_ID",
+					"useThemeStore",
+					"useTheme",
+					"useResolvedTheme",
+					"useTerminalTheme",
+					"useSetTheme",
+					"useThemeId",
+					"useSystemLightThemeId",
+					"useSystemDarkThemeId",
+					"useSetSystemThemePreference"
+				]
+			}
+		],
+		"src/shared/themes/utils.ts": [
+			{
+				"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/FileViewerPane/components/DiffScrollbarDecorations/DiffScrollbarDecorations.tsx",
+				"batchIndex": 71,
+				"symbols": ["DiffScrollbarDecorations"]
+			},
+			{
+				"path": "src/shared/themes/editor-theme.ts",
+				"batchIndex": 82,
+				"symbols": ["getEditorTheme"]
+			}
+		]
+	}
+}

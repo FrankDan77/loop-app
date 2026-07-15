@@ -1,0 +1,60 @@
+{
+	"batchIndex": 136,
+	"files": [
+		{
+			"path": "packages/chat/src/client/hooks/use-chat-display/use-chat-display.ts",
+			"language": "typescript",
+			"sizeLines": 390,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/chat/src/client/provider/client.ts",
+			"language": "typescript",
+			"sizeLines": 42,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/chat/src/client/provider/index.ts",
+			"language": "typescript",
+			"sizeLines": 16,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/chat/src/client/provider/provider.tsx",
+			"language": "typescript",
+			"sizeLines": 34,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/chat/src/server/hono/hono.ts",
+			"language": "typescript",
+			"sizeLines": 31,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/chat/src/server/trpc/index.ts",
+			"language": "typescript",
+			"sizeLines": 6,
+			"fileCategory": "code"
+		}
+	],
+	"batchImportData": {
+		"packages/chat/src/client/hooks/use-chat-display/use-chat-display.ts": [
+			"packages/chat/src/client/provider/index.ts",
+			"packages/chat/src/server/trpc/index.ts"
+		],
+		"packages/chat/src/client/provider/client.ts": [
+			"packages/chat/src/client/provider/provider.tsx",
+			"packages/chat/src/server/trpc/index.ts"
+		],
+		"packages/chat/src/client/provider/index.ts": [],
+		"packages/chat/src/client/provider/provider.tsx": [
+			"packages/chat/src/server/trpc/index.ts"
+		],
+		"packages/chat/src/server/hono/hono.ts": [
+			"packages/chat/src/server/trpc/index.ts"
+		],
+		"packages/chat/src/server/trpc/index.ts": []
+	},
+	"neighborMap": {}
+}

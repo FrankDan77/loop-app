@@ -1,0 +1,1218 @@
+{
+	"scriptCompleted": true,
+	"filesAnalyzed": 25,
+	"filesSkipped": [],
+	"results": [
+		{
+			"path": "src/renderer/routes/_authenticated/settings/teams/$teamId/page.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 13,
+			"nonEmptyLines": 11,
+			"functions": [
+				{
+					"name": "TeamDetailPage",
+					"startLine": 10,
+					"endLine": 13,
+					"params": []
+				}
+			],
+			"exports": [
+				{
+					"name": "Route",
+					"line": 4,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "TeamDetailPage",
+					"callee": "Route.useParams",
+					"lineNumber": 11
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/teams/components/TeamsSettings/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/teams/page.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 10,
+			"nonEmptyLines": 8,
+			"functions": [
+				{
+					"name": "TeamsPage",
+					"startLine": 8,
+					"endLine": 10,
+					"params": []
+				}
+			],
+			"exports": [
+				{
+					"name": "Route",
+					"line": 4,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetRow/components/CommandsEditor/CommandsEditor.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 120,
+			"nonEmptyLines": 109,
+			"functions": [
+				{
+					"name": "CommandsEditor",
+					"startLine": 13,
+					"endLine": 120,
+					"params": [
+						"{\n\tcommands,\n\tonChange,\n\tonBlur,\n\tplaceholder = \"Command...\",\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "CommandsEditor",
+					"line": 13,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "CommandsEditor",
+					"callee": "useRef",
+					"lineNumber": 19
+				},
+				{
+					"caller": "CommandsEditor",
+					"callee": "useRef",
+					"lineNumber": 20
+				},
+				{
+					"caller": "CommandsEditor",
+					"callee": "commands.map",
+					"lineNumber": 21
+				},
+				{
+					"caller": "CommandsEditor",
+					"callee": "Math.random().toString(36).slice",
+					"lineNumber": 21
+				},
+				{
+					"caller": "CommandsEditor",
+					"callee": "Math.random().toString",
+					"lineNumber": 21
+				},
+				{
+					"caller": "CommandsEditor",
+					"callee": "Math.random",
+					"lineNumber": 21
+				},
+				{
+					"caller": "CommandsEditor",
+					"callee": "useState",
+					"lineNumber": 23
+				},
+				{
+					"caller": "CommandsEditor",
+					"callee": "useEffect",
+					"lineNumber": 25
+				},
+				{
+					"caller": "CommandsEditor",
+					"callee": "inputRefs.current[focusIndex]?.focus",
+					"lineNumber": 27
+				},
+				{
+					"caller": "CommandsEditor",
+					"callee": "setFocusIndex",
+					"lineNumber": 28
+				},
+				{
+					"caller": "CommandsEditor",
+					"callee": "useEffect",
+					"lineNumber": 32
+				},
+				{
+					"caller": "CommandsEditor",
+					"callee": "ids.push",
+					"lineNumber": 35
+				},
+				{
+					"caller": "CommandsEditor",
+					"callee": "Array.from",
+					"lineNumber": 36
+				},
+				{
+					"caller": "CommandsEditor",
+					"callee": "Math.random().toString(36).slice",
+					"lineNumber": 37
+				},
+				{
+					"caller": "CommandsEditor",
+					"callee": "Math.random().toString",
+					"lineNumber": 37
+				},
+				{
+					"caller": "CommandsEditor",
+					"callee": "Math.random",
+					"lineNumber": 37
+				},
+				{
+					"caller": "CommandsEditor",
+					"callee": "ids.splice",
+					"lineNumber": 44
+				},
+				{
+					"caller": "CommandsEditor",
+					"callee": "useCallback",
+					"lineNumber": 48
+				},
+				{
+					"caller": "handleCommandChange",
+					"callee": "onChange",
+					"lineNumber": 58
+				},
+				{
+					"caller": "handleAddCommand",
+					"callee": "commandIdsRef.current.push",
+					"lineNumber": 62
+				},
+				{
+					"caller": "handleAddCommand",
+					"callee": "Math.random().toString(36).slice",
+					"lineNumber": 62
+				},
+				{
+					"caller": "handleAddCommand",
+					"callee": "Math.random().toString",
+					"lineNumber": 62
+				},
+				{
+					"caller": "handleAddCommand",
+					"callee": "Math.random",
+					"lineNumber": 62
+				},
+				{
+					"caller": "handleAddCommand",
+					"callee": "onChange",
+					"lineNumber": 63
+				},
+				{
+					"caller": "handleAddCommand",
+					"callee": "setFocusIndex",
+					"lineNumber": 64
+				},
+				{
+					"caller": "handleDeleteCommand",
+					"callee": "commandIdsRef.current.filter",
+					"lineNumber": 69
+				},
+				{
+					"caller": "handleDeleteCommand",
+					"callee": "commands.filter",
+					"lineNumber": 72
+				},
+				{
+					"caller": "handleDeleteCommand",
+					"callee": "onChange",
+					"lineNumber": 73
+				},
+				{
+					"caller": "handleDeleteCommand",
+					"callee": "setFocusIndex",
+					"lineNumber": 74
+				},
+				{
+					"caller": "handleDeleteCommand",
+					"callee": "Math.max",
+					"lineNumber": 74
+				},
+				{
+					"caller": "CommandsEditor",
+					"callee": "commands.map",
+					"lineNumber": 83
+				},
+				{
+					"caller": "CommandsEditor",
+					"callee": "setInputRef",
+					"lineNumber": 89
+				},
+				{
+					"caller": "CommandsEditor",
+					"callee": "handleCommandChange",
+					"lineNumber": 91
+				},
+				{
+					"caller": "CommandsEditor",
+					"callee": "handleDeleteCommand",
+					"lineNumber": 101
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/utils/branch-prefix/branch-prefix.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 16,
+			"nonEmptyLines": 14,
+			"exports": [
+				{
+					"name": "BRANCH_PREFIX_MODE_LABELS",
+					"line": 3,
+					"isDefault": false
+				},
+				{
+					"name": "BRANCH_PREFIX_MODE_LABELS_WITH_DEFAULT",
+					"line": 10,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 2,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/V2ScriptsEditor/components/ScriptField/ScriptField.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 108,
+			"nonEmptyLines": 104,
+			"functions": [
+				{
+					"name": "ScriptField",
+					"startLine": 14,
+					"endLine": 108,
+					"params": [
+						"{\n\tplaceholder,\n\tvalue,\n\tonChange,\n\tonFocus,\n\tonBlur,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "ScriptField",
+					"line": 14,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "ScriptField",
+					"callee": "useState",
+					"lineNumber": 21
+				},
+				{
+					"caller": "ScriptField",
+					"callee": "useRef",
+					"lineNumber": 22
+				},
+				{
+					"caller": "ScriptField",
+					"callee": "useCallback",
+					"lineNumber": 24
+				},
+				{
+					"caller": "ScriptField",
+					"callee": "files.find",
+					"lineNumber": 26
+				},
+				{
+					"caller": "ScriptField",
+					"callee": "file.name.match",
+					"lineNumber": 27
+				},
+				{
+					"caller": "ScriptField",
+					"callee": "onChange",
+					"lineNumber": 31
+				},
+				{
+					"caller": "ScriptField",
+					"callee": "scriptFile.text",
+					"lineNumber": 31
+				},
+				{
+					"caller": "ScriptField",
+					"callee": "console.error",
+					"lineNumber": 33
+				},
+				{
+					"caller": "ScriptField",
+					"callee": "cn",
+					"lineNumber": 45
+				},
+				{
+					"caller": "ScriptField",
+					"callee": "e.preventDefault",
+					"lineNumber": 52
+				},
+				{
+					"caller": "ScriptField",
+					"callee": "e.stopPropagation",
+					"lineNumber": 53
+				},
+				{
+					"caller": "ScriptField",
+					"callee": "setIsDragOver",
+					"lineNumber": 54
+				},
+				{
+					"caller": "ScriptField",
+					"callee": "e.preventDefault",
+					"lineNumber": 57
+				},
+				{
+					"caller": "ScriptField",
+					"callee": "e.stopPropagation",
+					"lineNumber": 58
+				},
+				{
+					"caller": "ScriptField",
+					"callee": "setIsDragOver",
+					"lineNumber": 59
+				},
+				{
+					"caller": "ScriptField",
+					"callee": "e.preventDefault",
+					"lineNumber": 62
+				},
+				{
+					"caller": "ScriptField",
+					"callee": "e.stopPropagation",
+					"lineNumber": 63
+				},
+				{
+					"caller": "ScriptField",
+					"callee": "setIsDragOver",
+					"lineNumber": 64
+				},
+				{
+					"caller": "ScriptField",
+					"callee": "importFirstFile",
+					"lineNumber": 65
+				},
+				{
+					"caller": "ScriptField",
+					"callee": "Array.from",
+					"lineNumber": 65
+				},
+				{
+					"caller": "ScriptField",
+					"callee": "onChange",
+					"lineNumber": 70
+				},
+				{
+					"caller": "ScriptField",
+					"callee": "fileInputRef.current?.click",
+					"lineNumber": 79
+				},
+				{
+					"caller": "ScriptField",
+					"callee": "Array.from",
+					"lineNumber": 101
+				},
+				{
+					"caller": "ScriptField",
+					"callee": "importFirstFile",
+					"lineNumber": 102
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/create-organization/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "CreateOrganization",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/page.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 9,
+			"nonEmptyLines": 7,
+			"functions": [
+				{
+					"name": "RootIndexPage",
+					"startLine": 7,
+					"endLine": 9,
+					"params": []
+				}
+			],
+			"exports": [
+				{
+					"name": "Route",
+					"line": 3,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/AsciiSpinner/AsciiSpinner.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 37,
+			"nonEmptyLines": 30,
+			"functions": [
+				{
+					"name": "AsciiSpinner",
+					"startLine": 18,
+					"endLine": 37,
+					"params": ["{ className }"]
+				}
+			],
+			"exports": [
+				{
+					"name": "AsciiSpinner",
+					"line": 18,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "AsciiSpinner",
+					"callee": "useState",
+					"lineNumber": 19
+				},
+				{
+					"caller": "AsciiSpinner",
+					"callee": "useEffect",
+					"lineNumber": 21
+				},
+				{
+					"caller": "AsciiSpinner",
+					"callee": "setInterval",
+					"lineNumber": 22
+				},
+				{
+					"caller": "AsciiSpinner",
+					"callee": "setFrameIndex",
+					"lineNumber": 23
+				},
+				{
+					"caller": "AsciiSpinner",
+					"callee": "clearInterval",
+					"lineNumber": 26
+				},
+				{
+					"caller": "AsciiSpinner",
+					"callee": "cn",
+					"lineNumber": 31
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/CommandPalette/hooks/useV2FileSearch/useV2FileSearch.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 32,
+			"nonEmptyLines": 27,
+			"functions": [
+				{
+					"name": "useV2FileSearch",
+					"startLine": 5,
+					"endLine": 32,
+					"params": ["workspaceId", "query"]
+				}
+			],
+			"exports": [
+				{
+					"name": "useV2FileSearch",
+					"line": 5,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "useV2FileSearch",
+					"callee": "query.trim",
+					"lineNumber": 9
+				},
+				{
+					"caller": "useV2FileSearch",
+					"callee": "workspaceTrpc.filesystem.searchFiles.useQuery",
+					"lineNumber": 11
+				},
+				{
+					"caller": "useV2FileSearch",
+					"callee": "Boolean",
+					"lineNumber": 18
+				},
+				{
+					"caller": "useV2FileSearch",
+					"callee": "data?.matches.map",
+					"lineNumber": 24
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/IssueIcon/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "IssueIcon",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "IssueState",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 2,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/ResizablePanel/ResizablePanel.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 156,
+			"nonEmptyLines": 144,
+			"functions": [
+				{
+					"name": "ResizablePanel",
+					"startLine": 34,
+					"endLine": 156,
+					"params": [
+						"{\n\tchildren,\n\twidth,\n\tonWidthChange,\n\tisResizing,\n\tonResizingChange,\n\tminWidth,\n\tmaxWidth,\n\thandleSide,\n\tclassName,\n\tclampWidth = true,\n\tonDoubleClickHandle,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "ResizablePanel",
+					"line": 34,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "ResizablePanel",
+					"callee": "useRef",
+					"lineNumber": 47
+				},
+				{
+					"caller": "ResizablePanel",
+					"callee": "useRef",
+					"lineNumber": 48
+				},
+				{
+					"caller": "ResizablePanel",
+					"callee": "useRef",
+					"lineNumber": 49
+				},
+				{
+					"caller": "ResizablePanel",
+					"callee": "useRef",
+					"lineNumber": 50
+				},
+				{
+					"caller": "ResizablePanel",
+					"callee": "useCallback",
+					"lineNumber": 52
+				},
+				{
+					"caller": "ResizablePanel",
+					"callee": "onWidthChange",
+					"lineNumber": 56
+				},
+				{
+					"caller": "ResizablePanel",
+					"callee": "useCallback",
+					"lineNumber": 59
+				},
+				{
+					"caller": "ResizablePanel",
+					"callee": "e.preventDefault",
+					"lineNumber": 61
+				},
+				{
+					"caller": "ResizablePanel",
+					"callee": "onResizingChange",
+					"lineNumber": 64
+				},
+				{
+					"caller": "ResizablePanel",
+					"callee": "useCallback",
+					"lineNumber": 69
+				},
+				{
+					"caller": "ResizablePanel",
+					"callee": "Math.max",
+					"lineNumber": 79
+				},
+				{
+					"caller": "ResizablePanel",
+					"callee": "Math.min",
+					"lineNumber": 79
+				},
+				{
+					"caller": "ResizablePanel",
+					"callee": "requestAnimationFrame",
+					"lineNumber": 84
+				},
+				{
+					"caller": "ResizablePanel",
+					"callee": "flushPendingWidth",
+					"lineNumber": 86
+				},
+				{
+					"caller": "ResizablePanel",
+					"callee": "useCallback",
+					"lineNumber": 92
+				},
+				{
+					"caller": "ResizablePanel",
+					"callee": "cancelAnimationFrame",
+					"lineNumber": 96
+				},
+				{
+					"caller": "ResizablePanel",
+					"callee": "flushPendingWidth",
+					"lineNumber": 99
+				},
+				{
+					"caller": "ResizablePanel",
+					"callee": "onResizingChange",
+					"lineNumber": 100
+				},
+				{
+					"caller": "ResizablePanel",
+					"callee": "useEffect",
+					"lineNumber": 103
+				},
+				{
+					"caller": "ResizablePanel",
+					"callee": "document.addEventListener",
+					"lineNumber": 105
+				},
+				{
+					"caller": "ResizablePanel",
+					"callee": "document.addEventListener",
+					"lineNumber": 106
+				},
+				{
+					"caller": "ResizablePanel",
+					"callee": "document.removeEventListener",
+					"lineNumber": 112
+				},
+				{
+					"caller": "ResizablePanel",
+					"callee": "document.removeEventListener",
+					"lineNumber": 113
+				},
+				{
+					"caller": "ResizablePanel",
+					"callee": "cancelAnimationFrame",
+					"lineNumber": 117
+				},
+				{
+					"caller": "ResizablePanel",
+					"callee": "cn",
+					"lineNumber": 126
+				},
+				{
+					"caller": "ResizablePanel",
+					"callee": "cn",
+					"lineNumber": 144
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/SettingsButton/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "SettingsButton",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceSidebar/MultiDragPreview/MultiDragPreview.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 28,
+			"nonEmptyLines": 25,
+			"functions": [
+				{
+					"name": "MultiDragPreview",
+					"startLine": 3,
+					"endLine": 28,
+					"params": []
+				}
+			],
+			"exports": [
+				{
+					"name": "MultiDragPreview",
+					"line": 3,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "MultiDragPreview",
+					"callee": "useDragLayer",
+					"lineNumber": 4
+				},
+				{
+					"caller": "MultiDragPreview",
+					"callee": "monitor.isDragging",
+					"lineNumber": 5
+				},
+				{
+					"caller": "MultiDragPreview",
+					"callee": "monitor.getItem",
+					"lineNumber": 6
+				},
+				{
+					"caller": "MultiDragPreview",
+					"callee": "monitor.getClientOffset",
+					"lineNumber": 8
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceSidebar/RenameInput/RenameInput.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 58,
+			"nonEmptyLines": 53,
+			"functions": [
+				{
+					"name": "RenameInput",
+					"startLine": 12,
+					"endLine": 58,
+					"params": [
+						"{\n\tvalue,\n\tonChange,\n\tonSubmit,\n\tonCancel,\n\tclassName,\n\tmaxLength,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "RenameInput",
+					"line": 12,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "RenameInput",
+					"callee": "useRef",
+					"lineNumber": 20
+				},
+				{
+					"caller": "RenameInput",
+					"callee": "useEffect",
+					"lineNumber": 22
+				},
+				{
+					"caller": "RenameInput",
+					"callee": "setTimeout",
+					"lineNumber": 24
+				},
+				{
+					"caller": "RenameInput",
+					"callee": "inputRef.current.focus",
+					"lineNumber": 26
+				},
+				{
+					"caller": "RenameInput",
+					"callee": "inputRef.current.select",
+					"lineNumber": 27
+				},
+				{
+					"caller": "RenameInput",
+					"callee": "clearTimeout",
+					"lineNumber": 30
+				},
+				{
+					"caller": "handleKeyDown",
+					"callee": "e.stopPropagation",
+					"lineNumber": 34
+				},
+				{
+					"caller": "handleKeyDown",
+					"callee": "e.preventDefault",
+					"lineNumber": 36
+				},
+				{
+					"caller": "handleKeyDown",
+					"callee": "onSubmit",
+					"lineNumber": 37
+				},
+				{
+					"caller": "handleKeyDown",
+					"callee": "e.preventDefault",
+					"lineNumber": 39
+				},
+				{
+					"caller": "handleKeyDown",
+					"callee": "onCancel",
+					"lineNumber": 40
+				},
+				{
+					"caller": "RenameInput",
+					"callee": "onChange",
+					"lineNumber": 49
+				},
+				{
+					"caller": "RenameInput",
+					"callee": "e.stopPropagation",
+					"lineNumber": 52
+				},
+				{
+					"caller": "RenameInput",
+					"callee": "e.stopPropagation",
+					"lineNumber": 53
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceSidebar/WorkspaceListItem/components/DeleteWorkspaceDialog/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "DeleteWorkspaceDialog",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceSidebar/WorkspaceListItem/components/RenameBranchDialog/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "RenameBranchDialog",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceSidebar/WorkspaceListItem/components/WorkspaceHoverCard/components/PRStatusBadge/PRStatusBadge.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 27,
+			"nonEmptyLines": 24,
+			"functions": [
+				{
+					"name": "PRStatusBadge",
+					"startLine": 5,
+					"endLine": 27,
+					"params": ["{ state }"]
+				}
+			],
+			"exports": [
+				{
+					"name": "PRStatusBadge",
+					"line": 5,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceSidebar/WorkspaceListItem/components/WorkspaceHoverCard/components/ReviewStatus/ReviewStatus.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 38,
+			"nonEmptyLines": 35,
+			"functions": [
+				{
+					"name": "ReviewStatus",
+					"startLine": 6,
+					"endLine": 38,
+					"params": ["{\n\tstatus,\n\trequestedReviewers,\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "ReviewStatus",
+					"line": 6,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "ReviewStatus",
+					"callee": "requestedReviewers.join",
+					"lineNumber": 22
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceSidebar/WorkspaceListItem/components/WorkspaceHoverCard/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "WorkspaceHoverCardContent",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspacesListView/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "WorkspacesListView",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/DiffViewer/utils/getLineNumbersMinChars.test.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 51,
+			"nonEmptyLines": 41,
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/DiffViewer/utils/getLineNumbersMinChars.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 9,
+			"nonEmptyLines": 9,
+			"functions": [
+				{
+					"name": "getLineNumbersMinChars",
+					"startLine": 1,
+					"endLine": 9,
+					"params": ["original", "modified"]
+				}
+			],
+			"exports": [
+				{
+					"name": "getLineNumbersMinChars",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "getLineNumbersMinChars",
+					"callee": "original.split",
+					"lineNumber": 5
+				},
+				{
+					"caller": "getLineNumbersMinChars",
+					"callee": "modified.split",
+					"lineNumber": 6
+				},
+				{
+					"caller": "getLineNumbersMinChars",
+					"callee": "Math.max",
+					"lineNumber": 7
+				},
+				{
+					"caller": "getLineNumbersMinChars",
+					"callee": "String",
+					"lineNumber": 8
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/ChangesContent/components/DiffViewer/utils/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "getLineNumbersMinChars",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/components/CodeEditorAdapter/CodeEditorAdapter.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 18,
+			"nonEmptyLines": 17,
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		}
+	]
+}

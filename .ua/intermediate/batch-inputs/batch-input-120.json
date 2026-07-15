@@ -1,0 +1,140 @@
+{
+	"batchIndex": 120,
+	"files": [
+		{
+			"path": "packages/pty-daemon/src/Pty/Pty.ts",
+			"language": "typescript",
+			"sizeLines": 383,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/pty-daemon/src/Pty/index.ts",
+			"language": "typescript",
+			"sizeLines": 8,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/pty-daemon/src/Server/Server.ts",
+			"language": "typescript",
+			"sizeLines": 603,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/pty-daemon/src/Server/index.ts",
+			"language": "typescript",
+			"sizeLines": 1,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/pty-daemon/src/SessionStore/SessionStore.ts",
+			"language": "typescript",
+			"sizeLines": 104,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/pty-daemon/src/SessionStore/index.ts",
+			"language": "typescript",
+			"sizeLines": 14,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/pty-daemon/src/SessionStore/snapshot.ts",
+			"language": "typescript",
+			"sizeLines": 200,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/pty-daemon/src/handlers/handlers.ts",
+			"language": "typescript",
+			"sizeLines": 172,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/pty-daemon/src/handlers/index.ts",
+			"language": "typescript",
+			"sizeLines": 10,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/pty-daemon/src/main.ts",
+			"language": "typescript",
+			"sizeLines": 219,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/pty-daemon/src/process-tree.ts",
+			"language": "typescript",
+			"sizeLines": 178,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/pty-daemon/src/protocol/framing.ts",
+			"language": "typescript",
+			"sizeLines": 131,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/pty-daemon/src/protocol/index.ts",
+			"language": "typescript",
+			"sizeLines": 33,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/pty-daemon/test/helpers/client.ts",
+			"language": "typescript",
+			"sizeLines": 231,
+			"fileCategory": "code"
+		}
+	],
+	"batchImportData": {
+		"packages/pty-daemon/src/Pty/Pty.ts": [
+			"packages/pty-daemon/src/process-tree.ts",
+			"packages/pty-daemon/src/protocol/index.ts"
+		],
+		"packages/pty-daemon/src/Pty/index.ts": [],
+		"packages/pty-daemon/src/Server/Server.ts": [
+			"packages/pty-daemon/src/handlers/index.ts",
+			"packages/pty-daemon/src/protocol/index.ts",
+			"packages/pty-daemon/src/Pty/index.ts",
+			"packages/pty-daemon/src/SessionStore/index.ts"
+		],
+		"packages/pty-daemon/src/Server/index.ts": [],
+		"packages/pty-daemon/src/SessionStore/SessionStore.ts": [
+			"packages/pty-daemon/src/protocol/index.ts",
+			"packages/pty-daemon/src/Pty/index.ts"
+		],
+		"packages/pty-daemon/src/SessionStore/index.ts": [],
+		"packages/pty-daemon/src/SessionStore/snapshot.ts": [
+			"packages/pty-daemon/src/protocol/framing.ts",
+			"packages/pty-daemon/src/protocol/index.ts",
+			"packages/pty-daemon/src/SessionStore/SessionStore.ts"
+		],
+		"packages/pty-daemon/src/handlers/handlers.ts": [
+			"packages/pty-daemon/src/protocol/index.ts",
+			"packages/pty-daemon/src/Pty/index.ts",
+			"packages/pty-daemon/src/SessionStore/index.ts"
+		],
+		"packages/pty-daemon/src/handlers/index.ts": [],
+		"packages/pty-daemon/src/main.ts": [
+			"packages/pty-daemon/package.json",
+			"packages/pty-daemon/src/protocol/index.ts",
+			"packages/pty-daemon/src/Server/index.ts",
+			"packages/pty-daemon/src/SessionStore/index.ts"
+		],
+		"packages/pty-daemon/src/process-tree.ts": [],
+		"packages/pty-daemon/src/protocol/framing.ts": [],
+		"packages/pty-daemon/src/protocol/index.ts": [],
+		"packages/pty-daemon/test/helpers/client.ts": [
+			"packages/pty-daemon/src/protocol/index.ts"
+		]
+	},
+	"neighborMap": {
+		"packages/pty-daemon/src/main.ts": [
+			{
+				"path": "packages/pty-daemon/package.json",
+				"batchIndex": 221,
+				"symbols": []
+			}
+		]
+	}
+}

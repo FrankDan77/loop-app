@@ -1,0 +1,1474 @@
+{
+	"nodes": [
+		{
+			"id": "file:src/lib/trpc/routers/browser/browser.ts",
+			"type": "file",
+			"name": "browser.ts",
+			"filePath": "src/lib/trpc/routers/browser/browser.ts",
+			"summary": "TypeScript module for browser",
+			"tags": ["trpc-router", "browser-integration", "typescript"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:src/lib/trpc/routers/browser/browser.ts:createBrowserRouter",
+			"type": "function",
+			"name": "createBrowserRouter",
+			"filePath": "src/lib/trpc/routers/browser/browser.ts",
+			"lineRange": [7, 209],
+			"summary": "Function createBrowserRouter (203 lines)",
+			"tags": [
+				"function",
+				"exported",
+				"trpc-router",
+				"browser-integration",
+				"typescript"
+			],
+			"complexity": "complex"
+		},
+		{
+			"id": "file:src/lib/trpc/routers/cache/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "src/lib/trpc/routers/cache/index.ts",
+			"summary": "TypeScript module for index",
+			"tags": ["trpc-router", "typescript"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/lib/trpc/routers/cache/index.ts:createCacheRouter",
+			"type": "function",
+			"name": "createCacheRouter",
+			"filePath": "src/lib/trpc/routers/cache/index.ts",
+			"lineRange": [5, 31],
+			"summary": "Function createCacheRouter (27 lines)",
+			"tags": ["function", "exported", "trpc-router", "typescript"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "file:src/lib/trpc/routers/changes/branches.ts",
+			"type": "file",
+			"name": "branches.ts",
+			"filePath": "src/lib/trpc/routers/changes/branches.ts",
+			"summary": "TypeScript module for branches",
+			"tags": ["trpc-router", "git-operations", "typescript"],
+			"complexity": "complex"
+		},
+		{
+			"id": "function:src/lib/trpc/routers/changes/branches.ts:createBranchesRouter",
+			"type": "function",
+			"name": "createBranchesRouter",
+			"filePath": "src/lib/trpc/routers/changes/branches.ts",
+			"lineRange": [21, 163],
+			"summary": "Function createBranchesRouter (143 lines)",
+			"tags": [
+				"function",
+				"exported",
+				"trpc-router",
+				"git-operations",
+				"typescript"
+			],
+			"complexity": "complex"
+		},
+		{
+			"id": "function:src/lib/trpc/routers/changes/branches.ts:getLocalBranchesWithDates",
+			"type": "function",
+			"name": "getLocalBranchesWithDates",
+			"filePath": "src/lib/trpc/routers/changes/branches.ts",
+			"lineRange": [165, 194],
+			"summary": "Function getLocalBranchesWithDates (30 lines)",
+			"tags": [
+				"function",
+				"internal",
+				"trpc-router",
+				"git-operations",
+				"typescript"
+			],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:src/lib/trpc/routers/changes/branches.ts:getDefaultBranch",
+			"type": "function",
+			"name": "getDefaultBranch",
+			"filePath": "src/lib/trpc/routers/changes/branches.ts",
+			"lineRange": [196, 212],
+			"summary": "Function getDefaultBranch (17 lines)",
+			"tags": [
+				"function",
+				"internal",
+				"trpc-router",
+				"git-operations",
+				"typescript"
+			],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/lib/trpc/routers/changes/branches.ts:getCheckedOutBranches",
+			"type": "function",
+			"name": "getCheckedOutBranches",
+			"filePath": "src/lib/trpc/routers/changes/branches.ts",
+			"lineRange": [214, 238],
+			"summary": "Function getCheckedOutBranches (25 lines)",
+			"tags": [
+				"function",
+				"internal",
+				"trpc-router",
+				"git-operations",
+				"typescript"
+			],
+			"complexity": "moderate"
+		},
+		{
+			"id": "file:src/lib/trpc/routers/changes/file-contents.ts",
+			"type": "file",
+			"name": "file-contents.ts",
+			"filePath": "src/lib/trpc/routers/changes/file-contents.ts",
+			"summary": "TypeScript module for file contents",
+			"tags": ["trpc-router", "git-operations", "typescript"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:src/lib/trpc/routers/changes/file-contents.ts:createFileContentsRouter",
+			"type": "function",
+			"name": "createFileContentsRouter",
+			"filePath": "src/lib/trpc/routers/changes/file-contents.ts",
+			"lineRange": [11, 80],
+			"summary": "Function createFileContentsRouter (70 lines)",
+			"tags": [
+				"function",
+				"exported",
+				"trpc-router",
+				"git-operations",
+				"typescript"
+			],
+			"complexity": "complex"
+		},
+		{
+			"id": "function:src/lib/trpc/routers/changes/file-contents.ts:getGitOnlyVersions",
+			"type": "function",
+			"name": "getGitOnlyVersions",
+			"filePath": "src/lib/trpc/routers/changes/file-contents.ts",
+			"lineRange": [87, 108],
+			"summary": "Function getGitOnlyVersions (22 lines)",
+			"tags": [
+				"function",
+				"internal",
+				"trpc-router",
+				"git-operations",
+				"typescript"
+			],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:src/lib/trpc/routers/changes/file-contents.ts:safeGitShow",
+			"type": "function",
+			"name": "safeGitShow",
+			"filePath": "src/lib/trpc/routers/changes/file-contents.ts",
+			"lineRange": [110, 129],
+			"summary": "Function safeGitShow (20 lines)",
+			"tags": [
+				"function",
+				"internal",
+				"trpc-router",
+				"git-operations",
+				"typescript"
+			],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:src/lib/trpc/routers/changes/file-contents.ts:getAgainstBaseVersions",
+			"type": "function",
+			"name": "getAgainstBaseVersions",
+			"filePath": "src/lib/trpc/routers/changes/file-contents.ts",
+			"lineRange": [131, 143],
+			"summary": "Function getAgainstBaseVersions (13 lines)",
+			"tags": [
+				"function",
+				"internal",
+				"trpc-router",
+				"git-operations",
+				"typescript"
+			],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/lib/trpc/routers/changes/file-contents.ts:getCommittedVersions",
+			"type": "function",
+			"name": "getCommittedVersions",
+			"filePath": "src/lib/trpc/routers/changes/file-contents.ts",
+			"lineRange": [145, 157],
+			"summary": "Function getCommittedVersions (13 lines)",
+			"tags": [
+				"function",
+				"internal",
+				"trpc-router",
+				"git-operations",
+				"typescript"
+			],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/lib/trpc/routers/changes/file-contents.ts:getStagedVersions",
+			"type": "function",
+			"name": "getStagedVersions",
+			"filePath": "src/lib/trpc/routers/changes/file-contents.ts",
+			"lineRange": [159, 170],
+			"summary": "Function getStagedVersions (12 lines)",
+			"tags": [
+				"function",
+				"internal",
+				"trpc-router",
+				"git-operations",
+				"typescript"
+			],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/lib/trpc/routers/changes/git-operations.test.ts",
+			"type": "file",
+			"name": "git-operations.test.ts",
+			"filePath": "src/lib/trpc/routers/changes/git-operations.test.ts",
+			"summary": "TypeScript test for git operations.test",
+			"tags": ["trpc-router", "git-operations", "test", "typescript"],
+			"complexity": "complex"
+		},
+		{
+			"id": "file:src/lib/trpc/routers/changes/git-operations.ts",
+			"type": "file",
+			"name": "git-operations.ts",
+			"filePath": "src/lib/trpc/routers/changes/git-operations.ts",
+			"summary": "TypeScript module for git operations",
+			"tags": ["trpc-router", "git-operations", "typescript"],
+			"complexity": "complex"
+		},
+		{
+			"id": "function:src/lib/trpc/routers/changes/git-operations.ts:getLocalBranchOrThrow",
+			"type": "function",
+			"name": "getLocalBranchOrThrow",
+			"filePath": "src/lib/trpc/routers/changes/git-operations.ts",
+			"lineRange": [33, 48],
+			"summary": "Function getLocalBranchOrThrow (16 lines)",
+			"tags": [
+				"function",
+				"internal",
+				"trpc-router",
+				"git-operations",
+				"typescript"
+			],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/lib/trpc/routers/changes/git-operations.ts:createGitOperationsRouter",
+			"type": "function",
+			"name": "createGitOperationsRouter",
+			"filePath": "src/lib/trpc/routers/changes/git-operations.ts",
+			"lineRange": [50, 341],
+			"summary": "Function createGitOperationsRouter (292 lines)",
+			"tags": [
+				"function",
+				"exported",
+				"trpc-router",
+				"git-operations",
+				"typescript"
+			],
+			"complexity": "complex"
+		},
+		{
+			"id": "file:src/lib/trpc/routers/changes/git-utils.ts",
+			"type": "file",
+			"name": "git-utils.ts",
+			"filePath": "src/lib/trpc/routers/changes/git-utils.ts",
+			"summary": "TypeScript module for git utils",
+			"tags": ["trpc-router", "git-operations", "typescript"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/lib/trpc/routers/changes/git-utils.ts:isUpstreamMissingError",
+			"type": "function",
+			"name": "isUpstreamMissingError",
+			"filePath": "src/lib/trpc/routers/changes/git-utils.ts",
+			"lineRange": [4, 11],
+			"summary": "Function isUpstreamMissingError (8 lines)",
+			"tags": [
+				"function",
+				"exported",
+				"trpc-router",
+				"git-operations",
+				"typescript"
+			],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/lib/trpc/routers/changes/git-utils.ts:isNoPullRequestFoundMessage",
+			"type": "function",
+			"name": "isNoPullRequestFoundMessage",
+			"filePath": "src/lib/trpc/routers/changes/git-utils.ts",
+			"lineRange": [13, 15],
+			"summary": "Function isNoPullRequestFoundMessage (3 lines)",
+			"tags": [
+				"function",
+				"exported",
+				"trpc-router",
+				"git-operations",
+				"typescript"
+			],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/lib/trpc/routers/changes/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "src/lib/trpc/routers/changes/index.ts",
+			"summary": "TypeScript module for index",
+			"tags": ["trpc-router", "git-operations", "typescript"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/lib/trpc/routers/changes/index.ts:createChangesRouter",
+			"type": "function",
+			"name": "createChangesRouter",
+			"filePath": "src/lib/trpc/routers/changes/index.ts",
+			"lineRange": [8, 31],
+			"summary": "Function createChangesRouter (24 lines)",
+			"tags": [
+				"function",
+				"exported",
+				"trpc-router",
+				"git-operations",
+				"typescript"
+			],
+			"complexity": "moderate"
+		},
+		{
+			"id": "file:src/lib/trpc/routers/changes/security/git-commands.ts",
+			"type": "file",
+			"name": "git-commands.ts",
+			"filePath": "src/lib/trpc/routers/changes/security/git-commands.ts",
+			"summary": "TypeScript module for git commands",
+			"tags": ["trpc-router", "git-operations", "typescript"],
+			"complexity": "complex"
+		},
+		{
+			"id": "function:src/lib/trpc/routers/changes/security/git-commands.ts:isCurrentBranch",
+			"type": "function",
+			"name": "isCurrentBranch",
+			"filePath": "src/lib/trpc/routers/changes/security/git-commands.ts",
+			"lineRange": [25, 38],
+			"summary": "Function isCurrentBranch (14 lines)",
+			"tags": [
+				"function",
+				"internal",
+				"trpc-router",
+				"git-operations",
+				"typescript"
+			],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/lib/trpc/routers/changes/security/git-commands.ts:gitSwitchBranch",
+			"type": "function",
+			"name": "gitSwitchBranch",
+			"filePath": "src/lib/trpc/routers/changes/security/git-commands.ts",
+			"lineRange": [48, 88],
+			"summary": "Function gitSwitchBranch (41 lines)",
+			"tags": [
+				"function",
+				"exported",
+				"trpc-router",
+				"git-operations",
+				"typescript"
+			],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:src/lib/trpc/routers/changes/security/git-commands.ts:gitCheckoutFiles",
+			"type": "function",
+			"name": "gitCheckoutFiles",
+			"filePath": "src/lib/trpc/routers/changes/security/git-commands.ts",
+			"lineRange": [98, 112],
+			"summary": "Function gitCheckoutFiles (15 lines)",
+			"tags": [
+				"function",
+				"exported",
+				"trpc-router",
+				"git-operations",
+				"typescript"
+			],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/lib/trpc/routers/changes/security/git-commands.ts:gitStageFile",
+			"type": "function",
+			"name": "gitStageFile",
+			"filePath": "src/lib/trpc/routers/changes/security/git-commands.ts",
+			"lineRange": [120, 129],
+			"summary": "Function gitStageFile (10 lines)",
+			"tags": [
+				"function",
+				"exported",
+				"trpc-router",
+				"git-operations",
+				"typescript"
+			],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/lib/trpc/routers/changes/security/git-commands.ts:gitStageFiles",
+			"type": "function",
+			"name": "gitStageFiles",
+			"filePath": "src/lib/trpc/routers/changes/security/git-commands.ts",
+			"lineRange": [137, 151],
+			"summary": "Function gitStageFiles (15 lines)",
+			"tags": [
+				"function",
+				"exported",
+				"trpc-router",
+				"git-operations",
+				"typescript"
+			],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/lib/trpc/routers/changes/security/git-commands.ts:gitUnstageFiles",
+			"type": "function",
+			"name": "gitUnstageFiles",
+			"filePath": "src/lib/trpc/routers/changes/security/git-commands.ts",
+			"lineRange": [159, 173],
+			"summary": "Function gitUnstageFiles (15 lines)",
+			"tags": [
+				"function",
+				"exported",
+				"trpc-router",
+				"git-operations",
+				"typescript"
+			],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/lib/trpc/routers/changes/security/git-commands.ts:gitStageAll",
+			"type": "function",
+			"name": "gitStageAll",
+			"filePath": "src/lib/trpc/routers/changes/security/git-commands.ts",
+			"lineRange": [180, 185],
+			"summary": "Function gitStageAll (6 lines)",
+			"tags": [
+				"function",
+				"exported",
+				"trpc-router",
+				"git-operations",
+				"typescript"
+			],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/lib/trpc/routers/changes/security/git-commands.ts:gitUnstageFile",
+			"type": "function",
+			"name": "gitUnstageFile",
+			"filePath": "src/lib/trpc/routers/changes/security/git-commands.ts",
+			"lineRange": [193, 202],
+			"summary": "Function gitUnstageFile (10 lines)",
+			"tags": [
+				"function",
+				"exported",
+				"trpc-router",
+				"git-operations",
+				"typescript"
+			],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/lib/trpc/routers/changes/security/git-commands.ts:gitUnstageAll",
+			"type": "function",
+			"name": "gitUnstageAll",
+			"filePath": "src/lib/trpc/routers/changes/security/git-commands.ts",
+			"lineRange": [210, 215],
+			"summary": "Function gitUnstageAll (6 lines)",
+			"tags": [
+				"function",
+				"exported",
+				"trpc-router",
+				"git-operations",
+				"typescript"
+			],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/lib/trpc/routers/changes/security/git-commands.ts:gitDiscardAllUnstaged",
+			"type": "function",
+			"name": "gitDiscardAllUnstaged",
+			"filePath": "src/lib/trpc/routers/changes/security/git-commands.ts",
+			"lineRange": [223, 230],
+			"summary": "Function gitDiscardAllUnstaged (8 lines)",
+			"tags": [
+				"function",
+				"exported",
+				"trpc-router",
+				"git-operations",
+				"typescript"
+			],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/lib/trpc/routers/changes/security/git-commands.ts:gitDiscardAllStaged",
+			"type": "function",
+			"name": "gitDiscardAllStaged",
+			"filePath": "src/lib/trpc/routers/changes/security/git-commands.ts",
+			"lineRange": [238, 244],
+			"summary": "Function gitDiscardAllStaged (7 lines)",
+			"tags": [
+				"function",
+				"exported",
+				"trpc-router",
+				"git-operations",
+				"typescript"
+			],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/lib/trpc/routers/changes/security/git-commands.ts:gitStash",
+			"type": "function",
+			"name": "gitStash",
+			"filePath": "src/lib/trpc/routers/changes/security/git-commands.ts",
+			"lineRange": [251, 256],
+			"summary": "Function gitStash (6 lines)",
+			"tags": [
+				"function",
+				"exported",
+				"trpc-router",
+				"git-operations",
+				"typescript"
+			],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/lib/trpc/routers/changes/security/git-commands.ts:gitStashIncludeUntracked",
+			"type": "function",
+			"name": "gitStashIncludeUntracked",
+			"filePath": "src/lib/trpc/routers/changes/security/git-commands.ts",
+			"lineRange": [263, 270],
+			"summary": "Function gitStashIncludeUntracked (8 lines)",
+			"tags": [
+				"function",
+				"exported",
+				"trpc-router",
+				"git-operations",
+				"typescript"
+			],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/lib/trpc/routers/changes/security/git-commands.ts:gitStashPop",
+			"type": "function",
+			"name": "gitStashPop",
+			"filePath": "src/lib/trpc/routers/changes/security/git-commands.ts",
+			"lineRange": [278, 283],
+			"summary": "Function gitStashPop (6 lines)",
+			"tags": [
+				"function",
+				"exported",
+				"trpc-router",
+				"git-operations",
+				"typescript"
+			],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/lib/trpc/routers/changes/security/path-validation.ts",
+			"type": "file",
+			"name": "path-validation.ts",
+			"filePath": "src/lib/trpc/routers/changes/security/path-validation.ts",
+			"summary": "TypeScript module for path validation",
+			"tags": ["trpc-router", "git-operations", "typescript"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:src/lib/trpc/routers/changes/security/path-validation.ts:assertRegisteredWorktree",
+			"type": "function",
+			"name": "assertRegisteredWorktree",
+			"filePath": "src/lib/trpc/routers/changes/security/path-validation.ts",
+			"lineRange": [69, 96],
+			"summary": "Function assertRegisteredWorktree (28 lines)",
+			"tags": [
+				"function",
+				"exported",
+				"trpc-router",
+				"git-operations",
+				"typescript"
+			],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:src/lib/trpc/routers/changes/security/path-validation.ts:getRegisteredWorktree",
+			"type": "function",
+			"name": "getRegisteredWorktree",
+			"filePath": "src/lib/trpc/routers/changes/security/path-validation.ts",
+			"lineRange": [104, 121],
+			"summary": "Function getRegisteredWorktree (18 lines)",
+			"tags": [
+				"function",
+				"exported",
+				"trpc-router",
+				"git-operations",
+				"typescript"
+			],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/lib/trpc/routers/changes/security/path-validation.ts:validateRelativePath",
+			"type": "function",
+			"name": "validateRelativePath",
+			"filePath": "src/lib/trpc/routers/changes/security/path-validation.ts",
+			"lineRange": [140, 172],
+			"summary": "Function validateRelativePath (33 lines)",
+			"tags": [
+				"function",
+				"exported",
+				"trpc-router",
+				"git-operations",
+				"typescript"
+			],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:src/lib/trpc/routers/changes/security/path-validation.ts:resolvePathInWorktree",
+			"type": "function",
+			"name": "resolvePathInWorktree",
+			"filePath": "src/lib/trpc/routers/changes/security/path-validation.ts",
+			"lineRange": [183, 191],
+			"summary": "Function resolvePathInWorktree (9 lines)",
+			"tags": [
+				"function",
+				"exported",
+				"trpc-router",
+				"git-operations",
+				"typescript"
+			],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/lib/trpc/routers/changes/security/path-validation.ts:assertValidGitPath",
+			"type": "function",
+			"name": "assertValidGitPath",
+			"filePath": "src/lib/trpc/routers/changes/security/path-validation.ts",
+			"lineRange": [198, 200],
+			"summary": "Function assertValidGitPath (3 lines)",
+			"tags": [
+				"function",
+				"exported",
+				"trpc-router",
+				"git-operations",
+				"typescript"
+			],
+			"complexity": "simple"
+		},
+		{
+			"id": "class:src/lib/trpc/routers/changes/security/path-validation.ts:PathValidationError",
+			"type": "class",
+			"name": "PathValidationError",
+			"filePath": "src/lib/trpc/routers/changes/security/path-validation.ts",
+			"lineRange": [49, 57],
+			"summary": "Class PathValidationError with 1 methods",
+			"tags": [
+				"class",
+				"exported",
+				"trpc-router",
+				"git-operations",
+				"typescript"
+			],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/lib/trpc/routers/changes/staging.ts",
+			"type": "file",
+			"name": "staging.ts",
+			"filePath": "src/lib/trpc/routers/changes/staging.ts",
+			"summary": "TypeScript module for staging",
+			"tags": ["trpc-router", "git-operations", "typescript"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:src/lib/trpc/routers/changes/staging.ts:deleteFiles",
+			"type": "function",
+			"name": "deleteFiles",
+			"filePath": "src/lib/trpc/routers/changes/staging.ts",
+			"lineRange": [40, 53],
+			"summary": "Function deleteFiles (14 lines)",
+			"tags": [
+				"function",
+				"internal",
+				"trpc-router",
+				"git-operations",
+				"typescript"
+			],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/lib/trpc/routers/changes/staging.ts:createStagingRouter",
+			"type": "function",
+			"name": "createStagingRouter",
+			"filePath": "src/lib/trpc/routers/changes/staging.ts",
+			"lineRange": [55, 214],
+			"summary": "Function createStagingRouter (160 lines)",
+			"tags": [
+				"function",
+				"exported",
+				"trpc-router",
+				"git-operations",
+				"typescript"
+			],
+			"complexity": "complex"
+		},
+		{
+			"id": "file:src/lib/trpc/routers/changes/status.ts",
+			"type": "file",
+			"name": "status.ts",
+			"filePath": "src/lib/trpc/routers/changes/status.ts",
+			"summary": "TypeScript module for status",
+			"tags": ["trpc-router", "git-operations", "typescript"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:src/lib/trpc/routers/changes/status.ts:createStatusRouter",
+			"type": "function",
+			"name": "createStatusRouter",
+			"filePath": "src/lib/trpc/routers/changes/status.ts",
+			"lineRange": [16, 116],
+			"summary": "Function createStatusRouter (101 lines)",
+			"tags": [
+				"function",
+				"exported",
+				"trpc-router",
+				"git-operations",
+				"typescript"
+			],
+			"complexity": "complex"
+		}
+	],
+	"edges": [
+		{
+			"source": "file:src/lib/trpc/routers/browser/browser.ts",
+			"target": "function:src/lib/trpc/routers/browser/browser.ts:createBrowserRouter",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/lib/trpc/routers/browser/browser.ts",
+			"target": "function:src/lib/trpc/routers/browser/browser.ts:createBrowserRouter",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/lib/trpc/routers/cache/index.ts",
+			"target": "function:src/lib/trpc/routers/cache/index.ts:createCacheRouter",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/lib/trpc/routers/cache/index.ts",
+			"target": "function:src/lib/trpc/routers/cache/index.ts:createCacheRouter",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/branches.ts",
+			"target": "function:src/lib/trpc/routers/changes/branches.ts:createBranchesRouter",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/branches.ts",
+			"target": "function:src/lib/trpc/routers/changes/branches.ts:createBranchesRouter",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/branches.ts",
+			"target": "function:src/lib/trpc/routers/changes/branches.ts:getLocalBranchesWithDates",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/branches.ts",
+			"target": "function:src/lib/trpc/routers/changes/branches.ts:getDefaultBranch",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/branches.ts",
+			"target": "function:src/lib/trpc/routers/changes/branches.ts:getCheckedOutBranches",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/file-contents.ts",
+			"target": "function:src/lib/trpc/routers/changes/file-contents.ts:createFileContentsRouter",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/file-contents.ts",
+			"target": "function:src/lib/trpc/routers/changes/file-contents.ts:createFileContentsRouter",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/file-contents.ts",
+			"target": "function:src/lib/trpc/routers/changes/file-contents.ts:getGitOnlyVersions",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/file-contents.ts",
+			"target": "function:src/lib/trpc/routers/changes/file-contents.ts:safeGitShow",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/file-contents.ts",
+			"target": "function:src/lib/trpc/routers/changes/file-contents.ts:getAgainstBaseVersions",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/file-contents.ts",
+			"target": "function:src/lib/trpc/routers/changes/file-contents.ts:getCommittedVersions",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/file-contents.ts",
+			"target": "function:src/lib/trpc/routers/changes/file-contents.ts:getStagedVersions",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/git-operations.ts",
+			"target": "function:src/lib/trpc/routers/changes/git-operations.ts:getLocalBranchOrThrow",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/git-operations.ts",
+			"target": "function:src/lib/trpc/routers/changes/git-operations.ts:createGitOperationsRouter",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/git-operations.ts",
+			"target": "function:src/lib/trpc/routers/changes/git-operations.ts:createGitOperationsRouter",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/git-utils.ts",
+			"target": "function:src/lib/trpc/routers/changes/git-utils.ts:isUpstreamMissingError",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/git-utils.ts",
+			"target": "function:src/lib/trpc/routers/changes/git-utils.ts:isUpstreamMissingError",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/git-utils.ts",
+			"target": "function:src/lib/trpc/routers/changes/git-utils.ts:isNoPullRequestFoundMessage",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/git-utils.ts",
+			"target": "function:src/lib/trpc/routers/changes/git-utils.ts:isNoPullRequestFoundMessage",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/index.ts",
+			"target": "function:src/lib/trpc/routers/changes/index.ts:createChangesRouter",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/index.ts",
+			"target": "function:src/lib/trpc/routers/changes/index.ts:createChangesRouter",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/security/git-commands.ts",
+			"target": "function:src/lib/trpc/routers/changes/security/git-commands.ts:isCurrentBranch",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/security/git-commands.ts",
+			"target": "function:src/lib/trpc/routers/changes/security/git-commands.ts:gitSwitchBranch",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/security/git-commands.ts",
+			"target": "function:src/lib/trpc/routers/changes/security/git-commands.ts:gitSwitchBranch",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/security/git-commands.ts",
+			"target": "function:src/lib/trpc/routers/changes/security/git-commands.ts:gitCheckoutFiles",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/security/git-commands.ts",
+			"target": "function:src/lib/trpc/routers/changes/security/git-commands.ts:gitCheckoutFiles",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/security/git-commands.ts",
+			"target": "function:src/lib/trpc/routers/changes/security/git-commands.ts:gitStageFile",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/security/git-commands.ts",
+			"target": "function:src/lib/trpc/routers/changes/security/git-commands.ts:gitStageFile",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/security/git-commands.ts",
+			"target": "function:src/lib/trpc/routers/changes/security/git-commands.ts:gitStageFiles",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/security/git-commands.ts",
+			"target": "function:src/lib/trpc/routers/changes/security/git-commands.ts:gitStageFiles",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/security/git-commands.ts",
+			"target": "function:src/lib/trpc/routers/changes/security/git-commands.ts:gitUnstageFiles",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/security/git-commands.ts",
+			"target": "function:src/lib/trpc/routers/changes/security/git-commands.ts:gitUnstageFiles",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/security/git-commands.ts",
+			"target": "function:src/lib/trpc/routers/changes/security/git-commands.ts:gitStageAll",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/security/git-commands.ts",
+			"target": "function:src/lib/trpc/routers/changes/security/git-commands.ts:gitStageAll",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/security/git-commands.ts",
+			"target": "function:src/lib/trpc/routers/changes/security/git-commands.ts:gitUnstageFile",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/security/git-commands.ts",
+			"target": "function:src/lib/trpc/routers/changes/security/git-commands.ts:gitUnstageFile",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/security/git-commands.ts",
+			"target": "function:src/lib/trpc/routers/changes/security/git-commands.ts:gitUnstageAll",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/security/git-commands.ts",
+			"target": "function:src/lib/trpc/routers/changes/security/git-commands.ts:gitUnstageAll",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/security/git-commands.ts",
+			"target": "function:src/lib/trpc/routers/changes/security/git-commands.ts:gitDiscardAllUnstaged",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/security/git-commands.ts",
+			"target": "function:src/lib/trpc/routers/changes/security/git-commands.ts:gitDiscardAllUnstaged",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/security/git-commands.ts",
+			"target": "function:src/lib/trpc/routers/changes/security/git-commands.ts:gitDiscardAllStaged",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/security/git-commands.ts",
+			"target": "function:src/lib/trpc/routers/changes/security/git-commands.ts:gitDiscardAllStaged",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/security/git-commands.ts",
+			"target": "function:src/lib/trpc/routers/changes/security/git-commands.ts:gitStash",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/security/git-commands.ts",
+			"target": "function:src/lib/trpc/routers/changes/security/git-commands.ts:gitStash",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/security/git-commands.ts",
+			"target": "function:src/lib/trpc/routers/changes/security/git-commands.ts:gitStashIncludeUntracked",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/security/git-commands.ts",
+			"target": "function:src/lib/trpc/routers/changes/security/git-commands.ts:gitStashIncludeUntracked",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/security/git-commands.ts",
+			"target": "function:src/lib/trpc/routers/changes/security/git-commands.ts:gitStashPop",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/security/git-commands.ts",
+			"target": "function:src/lib/trpc/routers/changes/security/git-commands.ts:gitStashPop",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/security/path-validation.ts",
+			"target": "function:src/lib/trpc/routers/changes/security/path-validation.ts:assertRegisteredWorktree",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/security/path-validation.ts",
+			"target": "function:src/lib/trpc/routers/changes/security/path-validation.ts:assertRegisteredWorktree",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/security/path-validation.ts",
+			"target": "function:src/lib/trpc/routers/changes/security/path-validation.ts:getRegisteredWorktree",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/security/path-validation.ts",
+			"target": "function:src/lib/trpc/routers/changes/security/path-validation.ts:getRegisteredWorktree",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/security/path-validation.ts",
+			"target": "function:src/lib/trpc/routers/changes/security/path-validation.ts:validateRelativePath",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/security/path-validation.ts",
+			"target": "function:src/lib/trpc/routers/changes/security/path-validation.ts:validateRelativePath",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/security/path-validation.ts",
+			"target": "function:src/lib/trpc/routers/changes/security/path-validation.ts:resolvePathInWorktree",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/security/path-validation.ts",
+			"target": "function:src/lib/trpc/routers/changes/security/path-validation.ts:resolvePathInWorktree",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/security/path-validation.ts",
+			"target": "function:src/lib/trpc/routers/changes/security/path-validation.ts:assertValidGitPath",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/security/path-validation.ts",
+			"target": "function:src/lib/trpc/routers/changes/security/path-validation.ts:assertValidGitPath",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/security/path-validation.ts",
+			"target": "class:src/lib/trpc/routers/changes/security/path-validation.ts:PathValidationError",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/security/path-validation.ts",
+			"target": "class:src/lib/trpc/routers/changes/security/path-validation.ts:PathValidationError",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/staging.ts",
+			"target": "function:src/lib/trpc/routers/changes/staging.ts:deleteFiles",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/staging.ts",
+			"target": "function:src/lib/trpc/routers/changes/staging.ts:createStagingRouter",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/staging.ts",
+			"target": "function:src/lib/trpc/routers/changes/staging.ts:createStagingRouter",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/status.ts",
+			"target": "function:src/lib/trpc/routers/changes/status.ts:createStatusRouter",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/status.ts",
+			"target": "function:src/lib/trpc/routers/changes/status.ts:createStatusRouter",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/lib/trpc/routers/browser/browser.ts",
+			"target": "file:src/lib/trpc/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/lib/trpc/routers/browser/browser.ts",
+			"target": "file:src/main/lib/browser/browser-manager.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/lib/trpc/routers/cache/index.ts",
+			"target": "file:src/lib/trpc/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/lib/trpc/routers/cache/index.ts",
+			"target": "file:src/main/env.main.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/branches.ts",
+			"target": "file:src/lib/trpc/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/branches.ts",
+			"target": "file:src/lib/trpc/routers/changes/security/git-commands.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/branches.ts",
+			"target": "file:src/lib/trpc/routers/changes/security/path-validation.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/branches.ts",
+			"target": "file:src/lib/trpc/routers/changes/utils/status-cache.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/branches.ts",
+			"target": "file:src/lib/trpc/routers/workspaces/utils/base-branch-config.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/branches.ts",
+			"target": "file:src/lib/trpc/routers/workspaces/utils/git-client.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/branches.ts",
+			"target": "file:src/lib/trpc/routers/workspaces/utils/git.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/branches.ts",
+			"target": "file:src/main/lib/local-db/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/file-contents.ts",
+			"target": "file:src/lib/trpc/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/file-contents.ts",
+			"target": "file:src/lib/trpc/routers/workspace-fs-service.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/file-contents.ts",
+			"target": "file:src/lib/trpc/routers/workspaces/utils/git-client.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/file-contents.ts",
+			"target": "file:src/shared/changes-types.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/file-contents.ts",
+			"target": "file:src/shared/detect-language.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/git-operations.test.ts",
+			"target": "file:src/lib/trpc/routers/changes/git-utils.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/git-operations.test.ts",
+			"target": "file:src/lib/trpc/routers/changes/utils/existing-pr-push-target.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/git-operations.ts",
+			"target": "file:src/lib/trpc/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/git-operations.ts",
+			"target": "file:src/lib/trpc/routers/changes/git-utils.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/git-operations.ts",
+			"target": "file:src/lib/trpc/routers/changes/security/path-validation.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/git-operations.ts",
+			"target": "file:src/lib/trpc/routers/changes/utils/git-push.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/git-operations.ts",
+			"target": "file:src/lib/trpc/routers/changes/utils/merge-pull-request.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/git-operations.ts",
+			"target": "file:src/lib/trpc/routers/changes/utils/pull-request-discovery.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/git-operations.ts",
+			"target": "file:src/lib/trpc/routers/changes/utils/status-cache.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/git-operations.ts",
+			"target": "file:src/lib/trpc/routers/changes/utils/worktree-status-caches.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/git-operations.ts",
+			"target": "file:src/lib/trpc/routers/workspaces/utils/git-client.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/git-operations.ts",
+			"target": "file:src/lib/trpc/routers/workspaces/utils/git.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/index.ts",
+			"target": "file:src/lib/trpc/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/index.ts",
+			"target": "file:src/lib/trpc/routers/changes/branches.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/index.ts",
+			"target": "file:src/lib/trpc/routers/changes/file-contents.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/index.ts",
+			"target": "file:src/lib/trpc/routers/changes/git-operations.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/index.ts",
+			"target": "file:src/lib/trpc/routers/changes/staging.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/index.ts",
+			"target": "file:src/lib/trpc/routers/changes/status.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/security/git-commands.ts",
+			"target": "file:src/lib/trpc/routers/changes/security/path-validation.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/security/git-commands.ts",
+			"target": "file:src/lib/trpc/routers/utils/git-hook-tolerance.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/security/git-commands.ts",
+			"target": "file:src/lib/trpc/routers/workspaces/utils/git-client.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/security/git-commands.ts",
+			"target": "file:src/lib/trpc/routers/workspaces/utils/git.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/security/path-validation.ts",
+			"target": "file:src/main/lib/local-db/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/staging.ts",
+			"target": "file:src/lib/trpc/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/staging.ts",
+			"target": "file:src/lib/trpc/routers/changes/security/git-commands.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/staging.ts",
+			"target": "file:src/lib/trpc/routers/changes/security/path-validation.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/staging.ts",
+			"target": "file:src/lib/trpc/routers/changes/utils/parse-status.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/staging.ts",
+			"target": "file:src/lib/trpc/routers/changes/utils/status-cache.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/staging.ts",
+			"target": "file:src/lib/trpc/routers/workspace-fs-service.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/staging.ts",
+			"target": "file:src/lib/trpc/routers/workspaces/utils/git-client.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/status.ts",
+			"target": "file:src/lib/trpc/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/status.ts",
+			"target": "file:src/lib/trpc/routers/changes/security/path-validation.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/status.ts",
+			"target": "file:src/lib/trpc/routers/changes/utils/status-cache.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/status.ts",
+			"target": "file:src/lib/trpc/routers/changes/workers/git-task-runner.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/lib/trpc/routers/changes/status.ts",
+			"target": "file:src/shared/changes-types.ts",
+			"type": "imports",
+			"weight": 0.7
+		}
+	]
+}

@@ -1,0 +1,1280 @@
+{
+	"nodes": [
+		{
+			"id": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/ChatInputFooter.tsx",
+			"type": "file",
+			"name": "ChatInputFooter.tsx",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/ChatInputFooter.tsx",
+			"summary": "Coordinates the chat composer footer, combining prompt input focus, slash-command and file search previewing, linked issues, question overlays, errors, and send/stop behavior.",
+			"tags": ["component", "chat-input", "event-handler", "slash-commands"],
+			"complexity": "complex"
+		},
+		{
+			"id": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/ChatComposerControls/ChatComposerControls.tsx",
+			"type": "file",
+			"name": "ChatComposerControls.tsx",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/ChatComposerControls/ChatComposerControls.tsx",
+			"summary": "Renders the footer control strip for model selection, permission mode, plus-menu actions, thinking-level selection, and stop/send affordances.",
+			"tags": [
+				"component",
+				"chat-controls",
+				"model-selection",
+				"permission-mode"
+			],
+			"complexity": "moderate"
+		},
+		{
+			"id": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/ChatComposerControls/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/ChatComposerControls/index.ts",
+			"summary": "Barrel export exposing ChatComposerControls from its component folder.",
+			"tags": ["barrel", "exports", "component-entry"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/ChatInputDropZone/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/ChatInputDropZone/index.ts",
+			"summary": "Barrel export exposing the chat input drop-zone component used by the composer footer.",
+			"tags": ["barrel", "exports", "file-upload"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/ChatShortcuts/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/ChatShortcuts/index.ts",
+			"summary": "Barrel export exposing the shortcut hint component for chat input controls.",
+			"tags": ["barrel", "exports", "keyboard-shortcuts"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/FileDropOverlay/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/FileDropOverlay/index.ts",
+			"summary": "Barrel export exposing the file drop overlay displayed during drag-and-drop attachment flows.",
+			"tags": ["barrel", "exports", "file-upload"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/LinkedIssuePill/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/LinkedIssuePill/index.ts",
+			"summary": "Barrel export exposing the linked issue pill component reused by chat and prompt issue-link displays.",
+			"tags": ["barrel", "exports", "linked-issues"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/LinkedIssues/LinkedIssues.tsx",
+			"type": "file",
+			"name": "LinkedIssues.tsx",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/LinkedIssues/LinkedIssues.tsx",
+			"summary": "Renders the selected task or issue links above the chat input and wires each pill's remove action back to the footer state.",
+			"tags": ["component", "linked-issues", "list-rendering", "event-handler"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/LinkedIssues/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/LinkedIssues/index.ts",
+			"summary": "Barrel export exposing the LinkedIssues list component from its folder.",
+			"tags": ["barrel", "exports", "linked-issues"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/QuestionInputOverlay/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/QuestionInputOverlay/index.ts",
+			"summary": "Barrel export exposing the question-answer overlay used when an agent asks for user input.",
+			"tags": ["barrel", "exports", "question-input"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/SlashCommandPreview.tsx",
+			"type": "file",
+			"name": "SlashCommandPreview.tsx",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/SlashCommandPreview.tsx",
+			"summary": "Displays a live slash-command preview panel, resolving command definitions, extracted parameters, unresolved placeholders, and editable parameter fields for the current prompt.",
+			"tags": ["component", "slash-commands", "preview", "form-controls"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/components/SlashCommandParamField/SlashCommandParamField.tsx",
+			"type": "file",
+			"name": "SlashCommandParamField.tsx",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/components/SlashCommandParamField/SlashCommandParamField.tsx",
+			"summary": "Renders a labeled text input for a single slash-command parameter and reports edits through a field-aware callback.",
+			"tags": ["component", "form-field", "slash-commands", "event-handler"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/components/SlashCommandParamField/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/components/SlashCommandParamField/index.ts",
+			"summary": "Barrel export exposing the SlashCommandParamField component.",
+			"tags": ["barrel", "exports", "form-field"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.test.ts",
+			"type": "file",
+			"name": "slash-command-preview.model.test.ts",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.test.ts",
+			"summary": "Unit tests for slash-command preview parsing and input rebuilding behavior, covering the model helpers used by the preview UI.",
+			"tags": ["test", "slash-commands", "model-logic", "validation"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts",
+			"type": "file",
+			"name": "slash-command-preview.model.ts",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts",
+			"summary": "Implements the slash-command preview model: input normalization, argument parsing, parameter field extraction, placeholder detection, and reconstruction after field edits.",
+			"tags": ["utility", "slash-commands", "parsing", "state-model"],
+			"complexity": "complex"
+		},
+		{
+			"id": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/index.ts",
+			"summary": "Barrel export exposing ChatInputFooter to chat pane consumers.",
+			"tags": ["barrel", "exports", "component-entry"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/types.ts",
+			"type": "file",
+			"name": "types.ts",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/types.ts",
+			"summary": "Defines shared chat input footer data shapes, including linked issue/task references used by footer subcomponents.",
+			"tags": ["type-definition", "chat-input", "linked-issues"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/utils/getErrorMessage.ts",
+			"type": "file",
+			"name": "getErrorMessage.ts",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/utils/getErrorMessage.ts",
+			"summary": "Normalizes unknown error values into a displayable message for the chat input footer error area.",
+			"tags": ["utility", "error-handling", "serialization"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/components/Chat/ChatInterface/components/McpOverviewPicker/McpOverviewPicker.tsx",
+			"type": "file",
+			"name": "McpOverviewPicker.tsx",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/McpOverviewPicker/McpOverviewPicker.tsx",
+			"summary": "Renders an MCP server overview popover with connection state, transport metadata, status badges, and authentication actions.",
+			"tags": ["component", "mcp", "popover", "authentication"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "file:src/renderer/components/Chat/ChatInterface/components/McpOverviewPicker/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/McpOverviewPicker/index.ts",
+			"summary": "Barrel export exposing the MCP overview picker component.",
+			"tags": ["barrel", "exports", "mcp"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/ModelPicker.tsx",
+			"type": "file",
+			"name": "ModelPicker.tsx",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ModelPicker/ModelPicker.tsx",
+			"summary": "Renders the model picker popover, groups available models by provider, checks provider authentication status, and links users to model settings.",
+			"tags": ["component", "model-selection", "authentication", "popover"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/ModelProviderGroup/ModelProviderGroup.tsx",
+			"type": "file",
+			"name": "ModelProviderGroup.tsx",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/ModelProviderGroup/ModelProviderGroup.tsx",
+			"summary": "Renders one provider section in the model picker, including provider-specific auth headings and selectable models for that provider.",
+			"tags": [
+				"component",
+				"model-selection",
+				"provider-group",
+				"authentication"
+			],
+			"complexity": "moderate"
+		},
+		{
+			"id": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/ModelProviderGroup/components/AnthropicProviderHeading/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/ModelProviderGroup/components/AnthropicProviderHeading/index.ts",
+			"summary": "Barrel export exposing the Anthropic provider heading used in model provider groups.",
+			"tags": ["barrel", "exports", "provider-heading"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/ModelProviderGroup/components/OpenAIProviderHeading/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/ModelProviderGroup/components/OpenAIProviderHeading/index.ts",
+			"summary": "Barrel export exposing the OpenAI provider heading used in model provider groups.",
+			"tags": ["barrel", "exports", "provider-heading"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/ModelProviderGroup/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/ModelProviderGroup/index.ts",
+			"summary": "Barrel export exposing ModelProviderGroup from its folder.",
+			"tags": ["barrel", "exports", "model-selection"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ModelPicker/index.ts",
+			"summary": "Barrel export exposing the ModelPicker component.",
+			"tags": ["barrel", "exports", "model-selection"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/utils/groupModelsByProvider/groupModelsByProvider.ts",
+			"type": "file",
+			"name": "groupModelsByProvider.ts",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ModelPicker/utils/groupModelsByProvider/groupModelsByProvider.ts",
+			"summary": "Groups chat model options by provider while preserving provider order for rendering in the model picker.",
+			"tags": ["utility", "model-selection", "grouping", "data-transform"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/utils/groupModelsByProvider/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ModelPicker/utils/groupModelsByProvider/index.ts",
+			"summary": "Barrel export exposing the groupModelsByProvider utility.",
+			"tags": ["barrel", "exports", "utility"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/utils/providerToLogo/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ModelPicker/utils/providerToLogo/index.ts",
+			"summary": "Defines provider logo labels and a provider-to-logo lookup used by the model picker UI.",
+			"tags": ["utility", "model-selection", "display-mapping", "constants"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/components/Chat/ChatInterface/components/PermissionModePicker/PermissionModePicker.tsx",
+			"type": "file",
+			"name": "PermissionModePicker.tsx",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/PermissionModePicker/PermissionModePicker.tsx",
+			"summary": "Renders the permission mode picker menu with selectable modes, labels, descriptions, and active-mode styling for chat execution permissions.",
+			"tags": ["component", "permission-mode", "menu", "event-handler"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/ChatInputFooter.tsx:ChatInputFooter",
+			"type": "function",
+			"name": "ChatInputFooter",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/ChatInputFooter.tsx",
+			"lineRange": [61, 241],
+			"summary": "Coordinates all chat input footer state and handlers, including prompt focus, slash-command previews, linked issues, file search, question responses, and send/stop actions.",
+			"tags": ["component", "chat-input", "event-handler", "state-management"],
+			"complexity": "complex"
+		},
+		{
+			"id": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/ChatComposerControls/ChatComposerControls.tsx:ChatComposerControls",
+			"type": "function",
+			"name": "ChatComposerControls",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/ChatComposerControls/ChatComposerControls.tsx",
+			"lineRange": [35, 89],
+			"summary": "Composes model, permission, plus-menu, thinking-level, and stop controls into the chat composer footer control strip.",
+			"tags": [
+				"component",
+				"chat-controls",
+				"model-selection",
+				"permission-mode"
+			],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/LinkedIssues/LinkedIssues.tsx:LinkedIssues",
+			"type": "function",
+			"name": "LinkedIssues",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/LinkedIssues/LinkedIssues.tsx",
+			"lineRange": [10, 38],
+			"summary": "Maps linked issue references into removable pill controls shown above the chat input.",
+			"tags": ["component", "linked-issues", "list-rendering", "event-handler"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/SlashCommandPreview.tsx:resolveFieldValue",
+			"type": "function",
+			"name": "resolveFieldValue",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/SlashCommandPreview.tsx",
+			"lineRange": [27, 36],
+			"summary": "Resolves a slash-command parameter's displayed value from named or positional parsed argument maps.",
+			"tags": ["utility", "slash-commands", "form-state"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/SlashCommandPreview.tsx:SlashCommandPreview",
+			"type": "function",
+			"name": "SlashCommandPreview",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/SlashCommandPreview.tsx",
+			"lineRange": [46, 188],
+			"summary": "Builds the live slash-command preview UI by querying command preview data, deriving parameter fields, and applying field edits back into the prompt input.",
+			"tags": ["component", "slash-commands", "preview", "form-controls"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/components/SlashCommandParamField/SlashCommandParamField.tsx:SlashCommandParamField",
+			"type": "function",
+			"name": "SlashCommandParamField",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/components/SlashCommandParamField/SlashCommandParamField.tsx",
+			"lineRange": [15, 47],
+			"summary": "Renders one slash-command parameter input with a generated id, required indicator, and change callback.",
+			"tags": ["component", "form-field", "slash-commands", "event-handler"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts:mergeParamField",
+			"type": "function",
+			"name": "mergeParamField",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts",
+			"lineRange": [49, 62],
+			"summary": "Merges a discovered parameter field into the field map while preserving named and positional metadata.",
+			"tags": ["utility", "slash-commands", "data-merge"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts:extractParamFieldsFromHint",
+			"type": "function",
+			"name": "extractParamFieldsFromHint",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts",
+			"lineRange": [64, 107],
+			"summary": "Extracts named and positional parameter field definitions from slash-command argument hints.",
+			"tags": ["utility", "slash-commands", "parsing", "metadata-extraction"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts:mergeUnresolvedNamedFields",
+			"type": "function",
+			"name": "mergeUnresolvedNamedFields",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts",
+			"lineRange": [109, 133],
+			"summary": "Adds fields for unresolved named placeholders that appear in the preview prompt but are missing from the parsed command metadata.",
+			"tags": ["utility", "slash-commands", "placeholder-resolution"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts:mergeParsedNamedFields",
+			"type": "function",
+			"name": "mergeParsedNamedFields",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts",
+			"lineRange": [135, 153],
+			"summary": "Merges named arguments already present in parsed input into the preview field list.",
+			"tags": ["utility", "slash-commands", "argument-parsing"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts:normalizeSlashPreviewInput",
+			"type": "function",
+			"name": "normalizeSlashPreviewInput",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts",
+			"lineRange": [155, 158],
+			"summary": "Normalizes raw prompt text into the slash-command input form expected by preview parsing.",
+			"tags": ["utility", "slash-commands", "normalization"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts:parseSlashInput",
+			"type": "function",
+			"name": "parseSlashInput",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts",
+			"lineRange": [160, 190],
+			"summary": "Parses normalized slash-command input into the command token, command name, named entries, and positional tokens.",
+			"tags": ["utility", "slash-commands", "parsing"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts:buildNextSlashInput",
+			"type": "function",
+			"name": "buildNextSlashInput",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts",
+			"lineRange": [192, 259],
+			"summary": "Rebuilds slash-command input after a parameter value change while preserving argument ordering and quoting.",
+			"tags": ["utility", "slash-commands", "state-update", "serialization"],
+			"complexity": "complex"
+		},
+		{
+			"id": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts:extractUnresolvedNamedPlaceholders",
+			"type": "function",
+			"name": "extractUnresolvedNamedPlaceholders",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts",
+			"lineRange": [261, 278],
+			"summary": "Finds unique unresolved named placeholders in a slash-command preview prompt.",
+			"tags": ["utility", "slash-commands", "placeholder-resolution"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts:buildParamFields",
+			"type": "function",
+			"name": "buildParamFields",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts",
+			"lineRange": [280, 292],
+			"summary": "Combines command hint fields, unresolved placeholders, and parsed arguments into the ordered parameter fields displayed by the preview UI.",
+			"tags": ["utility", "slash-commands", "field-model"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts:resolveSlashCommandDefinition",
+			"type": "function",
+			"name": "resolveSlashCommandDefinition",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts",
+			"lineRange": [294, 299],
+			"summary": "Finds the slash-command definition that matches a preview command name or alias.",
+			"tags": ["utility", "slash-commands", "lookup"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts:getNamedValueMap",
+			"type": "function",
+			"name": "getNamedValueMap",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts",
+			"lineRange": [301, 310],
+			"summary": "Builds a lookup map from named slash-command argument keys to their parsed values.",
+			"tags": ["utility", "slash-commands", "data-transform"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts:getPositionalValueMap",
+			"type": "function",
+			"name": "getPositionalValueMap",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts",
+			"lineRange": [312, 320],
+			"summary": "Builds an index-to-value lookup map for parsed positional slash-command arguments.",
+			"tags": ["utility", "slash-commands", "data-transform"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/utils/getErrorMessage.ts:getErrorMessage",
+			"type": "function",
+			"name": "getErrorMessage",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/utils/getErrorMessage.ts",
+			"lineRange": [1, 6],
+			"summary": "Converts unknown error values into a user-facing string, falling back to a generic message when needed.",
+			"tags": ["utility", "error-handling", "serialization"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/renderer/components/Chat/ChatInterface/components/McpOverviewPicker/McpOverviewPicker.tsx:getStateClassName",
+			"type": "function",
+			"name": "getStateClassName",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/McpOverviewPicker/McpOverviewPicker.tsx",
+			"lineRange": [20, 29],
+			"summary": "Maps MCP server connection state values to badge class names for visual status display.",
+			"tags": ["utility", "mcp", "styling"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/renderer/components/Chat/ChatInterface/components/McpOverviewPicker/McpOverviewPicker.tsx:formatStateLabel",
+			"type": "function",
+			"name": "formatStateLabel",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/McpOverviewPicker/McpOverviewPicker.tsx",
+			"lineRange": [31, 40],
+			"summary": "Formats MCP server state values into human-readable status labels.",
+			"tags": ["utility", "mcp", "formatting"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/renderer/components/Chat/ChatInterface/components/McpOverviewPicker/McpOverviewPicker.tsx:formatTransportLabel",
+			"type": "function",
+			"name": "formatTransportLabel",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/McpOverviewPicker/McpOverviewPicker.tsx",
+			"lineRange": [42, 53],
+			"summary": "Formats MCP transport identifiers into labels shown in the server overview list.",
+			"tags": ["utility", "mcp", "formatting"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/renderer/components/Chat/ChatInterface/components/McpOverviewPicker/McpOverviewPicker.tsx:McpOverviewPicker",
+			"type": "function",
+			"name": "McpOverviewPicker",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/McpOverviewPicker/McpOverviewPicker.tsx",
+			"lineRange": [55, 146],
+			"summary": "Renders the MCP overview popover, grouping server rows with transport details, state labels, and authentication controls.",
+			"tags": ["component", "mcp", "popover", "authentication"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/ModelPicker.tsx:ModelPicker",
+			"type": "function",
+			"name": "ModelPicker",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ModelPicker/ModelPicker.tsx",
+			"lineRange": [33, 102],
+			"summary": "Builds the model picker popover by grouping models, checking provider auth status, and rendering provider groups with settings navigation.",
+			"tags": ["component", "model-selection", "authentication", "popover"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/ModelProviderGroup/ModelProviderGroup.tsx:ModelProviderGroup",
+			"type": "function",
+			"name": "ModelProviderGroup",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/ModelProviderGroup/ModelProviderGroup.tsx",
+			"lineRange": [32, 118],
+			"summary": "Renders a provider-specific model list with auth prompts and per-model selection behavior.",
+			"tags": [
+				"component",
+				"model-selection",
+				"provider-group",
+				"authentication"
+			],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/utils/groupModelsByProvider/groupModelsByProvider.ts:groupModelsByProvider",
+			"type": "function",
+			"name": "groupModelsByProvider",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ModelPicker/utils/groupModelsByProvider/groupModelsByProvider.ts",
+			"lineRange": [3, 18],
+			"summary": "Transforms a flat model list into provider groups for the model picker.",
+			"tags": ["utility", "model-selection", "grouping", "data-transform"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/renderer/components/Chat/ChatInterface/components/PermissionModePicker/PermissionModePicker.tsx:PermissionModePicker",
+			"type": "function",
+			"name": "PermissionModePicker",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/PermissionModePicker/PermissionModePicker.tsx",
+			"lineRange": [47, 94],
+			"summary": "Renders a dropdown menu for selecting chat permission mode and displays the active mode in the trigger button.",
+			"tags": ["component", "permission-mode", "menu", "event-handler"],
+			"complexity": "moderate"
+		}
+	],
+	"edges": [
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/ChatInputFooter.tsx",
+			"target": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/ChatComposerControls/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/ChatInputFooter.tsx",
+			"target": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/ChatInputDropZone/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/ChatInputFooter.tsx",
+			"target": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/ChatShortcuts/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/ChatInputFooter.tsx",
+			"target": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/FileDropOverlay/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/ChatInputFooter.tsx",
+			"target": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/LinkedIssues/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/ChatInputFooter.tsx",
+			"target": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/QuestionInputOverlay/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/ChatInputFooter.tsx",
+			"target": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/types.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/ChatInputFooter.tsx",
+			"target": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/utils/getErrorMessage.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/ChatInputFooter.tsx",
+			"target": "file:src/renderer/components/Chat/ChatInterface/components/TiptapPromptEditor/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/ChatInputFooter.tsx",
+			"target": "file:src/renderer/components/Chat/ChatInterface/hooks/useFocusPromptOnPane.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/ChatInputFooter.tsx",
+			"target": "file:src/renderer/components/Chat/ChatInterface/hooks/useSlashCommands/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/ChatInputFooter.tsx",
+			"target": "file:src/renderer/components/Chat/ChatInterface/types.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/ChatInputFooter.tsx",
+			"target": "file:src/renderer/hotkeys/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/ChatComposerControls/ChatComposerControls.tsx",
+			"target": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/ChatComposerControls/ChatComposerControls.tsx",
+			"target": "file:src/renderer/components/Chat/ChatInterface/components/PermissionModePicker/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/ChatComposerControls/ChatComposerControls.tsx",
+			"target": "file:src/renderer/components/Chat/ChatInterface/components/PlusMenu/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/ChatComposerControls/ChatComposerControls.tsx",
+			"target": "file:src/renderer/components/Chat/ChatInterface/styles.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/ChatComposerControls/ChatComposerControls.tsx",
+			"target": "file:src/renderer/components/Chat/ChatInterface/types.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/LinkedIssues/LinkedIssues.tsx",
+			"target": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/LinkedIssuePill/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/LinkedIssues/LinkedIssues.tsx",
+			"target": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/types.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/SlashCommandPreview.tsx",
+			"target": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/components/SlashCommandParamField/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/SlashCommandPreview.tsx",
+			"target": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/components/SlashCommandParamField/SlashCommandParamField.tsx",
+			"target": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.test.ts",
+			"target": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/McpOverviewPicker/McpOverviewPicker.tsx",
+			"target": "file:src/renderer/components/Chat/ChatInterface/types.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/ModelPicker.tsx",
+			"target": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/ModelProviderGroup/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/ModelPicker.tsx",
+			"target": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/utils/groupModelsByProvider/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/ModelPicker.tsx",
+			"target": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/utils/providerToLogo/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/ModelPicker.tsx",
+			"target": "file:src/renderer/components/Chat/ChatInterface/styles.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/ModelPicker.tsx",
+			"target": "file:src/renderer/components/Chat/ChatInterface/types.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/ModelProviderGroup/ModelProviderGroup.tsx",
+			"target": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/ModelProviderGroup/components/AnthropicProviderHeading/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/ModelProviderGroup/ModelProviderGroup.tsx",
+			"target": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/ModelProviderGroup/components/OpenAIProviderHeading/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/ModelProviderGroup/ModelProviderGroup.tsx",
+			"target": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/utils/providerToLogo/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/ModelProviderGroup/ModelProviderGroup.tsx",
+			"target": "file:src/renderer/components/Chat/ChatInterface/types.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/utils/groupModelsByProvider/groupModelsByProvider.ts",
+			"target": "file:src/renderer/components/Chat/ChatInterface/types.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/PermissionModePicker/PermissionModePicker.tsx",
+			"target": "file:src/renderer/components/Chat/ChatInterface/styles.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/PermissionModePicker/PermissionModePicker.tsx",
+			"target": "file:src/renderer/components/Chat/ChatInterface/types.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/ChatInputFooter.tsx",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/ChatInputFooter.tsx:ChatInputFooter",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/ChatInputFooter.tsx",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/ChatInputFooter.tsx:ChatInputFooter",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/ChatComposerControls/ChatComposerControls.tsx",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/ChatComposerControls/ChatComposerControls.tsx:ChatComposerControls",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/ChatComposerControls/ChatComposerControls.tsx",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/ChatComposerControls/ChatComposerControls.tsx:ChatComposerControls",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/LinkedIssues/LinkedIssues.tsx",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/LinkedIssues/LinkedIssues.tsx:LinkedIssues",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/LinkedIssues/LinkedIssues.tsx",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/LinkedIssues/LinkedIssues.tsx:LinkedIssues",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/SlashCommandPreview.tsx",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/SlashCommandPreview.tsx:resolveFieldValue",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/SlashCommandPreview.tsx",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/SlashCommandPreview.tsx:SlashCommandPreview",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/SlashCommandPreview.tsx",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/SlashCommandPreview.tsx:SlashCommandPreview",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/components/SlashCommandParamField/SlashCommandParamField.tsx",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/components/SlashCommandParamField/SlashCommandParamField.tsx:SlashCommandParamField",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/components/SlashCommandParamField/SlashCommandParamField.tsx",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/components/SlashCommandParamField/SlashCommandParamField.tsx:SlashCommandParamField",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts:mergeParamField",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts:extractParamFieldsFromHint",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts:mergeUnresolvedNamedFields",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts:mergeParsedNamedFields",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts:normalizeSlashPreviewInput",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts:normalizeSlashPreviewInput",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts:parseSlashInput",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts:parseSlashInput",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts:buildNextSlashInput",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts:buildNextSlashInput",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts:extractUnresolvedNamedPlaceholders",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts:extractUnresolvedNamedPlaceholders",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts:buildParamFields",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts:buildParamFields",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts:resolveSlashCommandDefinition",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts:resolveSlashCommandDefinition",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts:getNamedValueMap",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts:getNamedValueMap",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts:getPositionalValueMap",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts:getPositionalValueMap",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/utils/getErrorMessage.ts",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/utils/getErrorMessage.ts:getErrorMessage",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/utils/getErrorMessage.ts",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/utils/getErrorMessage.ts:getErrorMessage",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/McpOverviewPicker/McpOverviewPicker.tsx",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/McpOverviewPicker/McpOverviewPicker.tsx:getStateClassName",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/McpOverviewPicker/McpOverviewPicker.tsx",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/McpOverviewPicker/McpOverviewPicker.tsx:formatStateLabel",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/McpOverviewPicker/McpOverviewPicker.tsx",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/McpOverviewPicker/McpOverviewPicker.tsx:formatTransportLabel",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/McpOverviewPicker/McpOverviewPicker.tsx",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/McpOverviewPicker/McpOverviewPicker.tsx:McpOverviewPicker",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/McpOverviewPicker/McpOverviewPicker.tsx",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/McpOverviewPicker/McpOverviewPicker.tsx:McpOverviewPicker",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/ModelPicker.tsx",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/ModelPicker.tsx:ModelPicker",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/ModelPicker.tsx",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/ModelPicker.tsx:ModelPicker",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/ModelProviderGroup/ModelProviderGroup.tsx",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/ModelProviderGroup/ModelProviderGroup.tsx:ModelProviderGroup",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/ModelProviderGroup/ModelProviderGroup.tsx",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/ModelProviderGroup/ModelProviderGroup.tsx:ModelProviderGroup",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/utils/groupModelsByProvider/groupModelsByProvider.ts",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/utils/groupModelsByProvider/groupModelsByProvider.ts:groupModelsByProvider",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/utils/groupModelsByProvider/groupModelsByProvider.ts",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/utils/groupModelsByProvider/groupModelsByProvider.ts:groupModelsByProvider",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/PermissionModePicker/PermissionModePicker.tsx",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/PermissionModePicker/PermissionModePicker.tsx:PermissionModePicker",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/PermissionModePicker/PermissionModePicker.tsx",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/PermissionModePicker/PermissionModePicker.tsx:PermissionModePicker",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/ChatInputFooter.tsx:ChatInputFooter",
+			"target": "function:src/renderer/components/Chat/ChatInterface/hooks/useFocusPromptOnPane.ts:useFocusPromptOnPane",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/ChatInputFooter.tsx:ChatInputFooter",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/utils/getErrorMessage.ts:getErrorMessage",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/SlashCommandPreview.tsx:SlashCommandPreview",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts:normalizeSlashPreviewInput",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/SlashCommandPreview.tsx:SlashCommandPreview",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts:parseSlashInput",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/SlashCommandPreview.tsx:SlashCommandPreview",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts:resolveSlashCommandDefinition",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/SlashCommandPreview.tsx:SlashCommandPreview",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts:extractUnresolvedNamedPlaceholders",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/SlashCommandPreview.tsx:SlashCommandPreview",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts:buildParamFields",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/SlashCommandPreview.tsx:SlashCommandPreview",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts:getNamedValueMap",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/SlashCommandPreview.tsx:SlashCommandPreview",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts:getPositionalValueMap",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/SlashCommandPreview.tsx:SlashCommandPreview",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts:buildNextSlashInput",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts:parseSlashInput",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts:normalizeSlashPreviewInput",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts:buildParamFields",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts:extractParamFieldsFromHint",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts:buildParamFields",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts:mergeUnresolvedNamedFields",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts:buildParamFields",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts:mergeParsedNamedFields",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/ModelPicker.tsx:ModelPicker",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/utils/groupModelsByProvider/groupModelsByProvider.ts:groupModelsByProvider",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/components/Chat/ChatInterface/components/McpOverviewPicker/McpOverviewPicker.tsx:McpOverviewPicker",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/McpOverviewPicker/McpOverviewPicker.tsx:getStateClassName",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/components/Chat/ChatInterface/components/McpOverviewPicker/McpOverviewPicker.tsx:McpOverviewPicker",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/McpOverviewPicker/McpOverviewPicker.tsx:formatStateLabel",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/components/Chat/ChatInterface/components/McpOverviewPicker/McpOverviewPicker.tsx:McpOverviewPicker",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/McpOverviewPicker/McpOverviewPicker.tsx:formatTransportLabel",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.ts",
+			"target": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/slash-command-preview.model.test.ts",
+			"type": "tested_by",
+			"direction": "forward",
+			"weight": 0.5
+		}
+	]
+}

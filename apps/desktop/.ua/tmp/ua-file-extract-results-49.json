@@ -1,0 +1,2237 @@
+{
+	"scriptCompleted": true,
+	"filesAnalyzed": 31,
+	"filesSkipped": [],
+	"results": [
+		{
+			"path": "src/lib/trpc/routers/changes/utils/parse-status.test.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 368,
+			"nonEmptyLines": 295,
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/components/Chat/ChatInterface/components/MessageList/MessageList.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 285,
+			"nonEmptyLines": 272,
+			"functions": [
+				{
+					"name": "hasRenderableParts",
+					"startLine": 23,
+					"endLine": 31,
+					"params": ["parts"]
+				},
+				{
+					"name": "FileChip",
+					"startLine": 46,
+					"endLine": 67,
+					"params": ["{\n\tfilename,\n\tmediaType,\n}"]
+				},
+				{
+					"name": "MessageList",
+					"startLine": 69,
+					"endLine": 285,
+					"params": [
+						"{\n\tmessages,\n\tinterruptedMessage,\n\tisStreaming,\n\tsubmitStatus,\n\tworkspaceId,\n\tworkspaceCwd,\n\tonAnswer,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "MessageList",
+					"line": 69,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "hasRenderableParts",
+					"callee": "parts.some",
+					"lineNumber": 24
+				},
+				{
+					"caller": "hasRenderableParts",
+					"callee": "isToolUIPart",
+					"lineNumber": 29
+				},
+				{
+					"caller": "FileChip",
+					"callee": "mediaType.startsWith",
+					"lineNumber": 53
+				},
+				{
+					"caller": "MessageList",
+					"callee": "useTabsStore",
+					"lineNumber": 78
+				},
+				{
+					"caller": "MessageList",
+					"callee": "useCallback",
+					"lineNumber": 82
+				},
+				{
+					"caller": "MessageList",
+					"callee": "addFileViewerPane",
+					"lineNumber": 85
+				},
+				{
+					"caller": "MessageList",
+					"callee": "messages.map",
+					"lineNumber": 100
+				},
+				{
+					"caller": "MessageList",
+					"callee": "msg.parts\n\t\t\t\t\t\t\t\t.filter((p) => p.type === \"text\")\n\t\t\t\t\t\t\t\t.map((p) => p.text)\n\t\t\t\t\t\t\t\t.join",
+					"lineNumber": 107
+				},
+				{
+					"caller": "MessageList",
+					"callee": "msg.parts\n\t\t\t\t\t\t\t\t.filter((p) => p.type === \"text\")\n\t\t\t\t\t\t\t\t.map",
+					"lineNumber": 107
+				},
+				{
+					"caller": "MessageList",
+					"callee": "msg.parts\n\t\t\t\t\t\t\t\t.filter",
+					"lineNumber": 107
+				},
+				{
+					"caller": "MessageList",
+					"callee": "msg.parts.filter",
+					"lineNumber": 111
+				},
+				{
+					"caller": "MessageList",
+					"callee": "fileParts.filter",
+					"lineNumber": 112
+				},
+				{
+					"caller": "MessageList",
+					"callee": "p.mediaType.startsWith",
+					"lineNumber": 113
+				},
+				{
+					"caller": "MessageList",
+					"callee": "fileParts.filter",
+					"lineNumber": 115
+				},
+				{
+					"caller": "MessageList",
+					"callee": "p.mediaType.startsWith",
+					"lineNumber": 116
+				},
+				{
+					"caller": "MessageList",
+					"callee": "parseUserMentions",
+					"lineNumber": 120
+				},
+				{
+					"caller": "MessageList",
+					"callee": "mentionSegments.filter",
+					"lineNumber": 122
+				},
+				{
+					"caller": "MessageList",
+					"callee": "mentionSegments.filter",
+					"lineNumber": 125
+				},
+				{
+					"caller": "MessageList",
+					"callee": "otherSegments.some",
+					"lineNumber": 128
+				},
+				{
+					"caller": "MessageList",
+					"callee": "s.value.trim",
+					"lineNumber": 130
+				},
+				{
+					"caller": "MessageList",
+					"callee": "imageParts.map",
+					"lineNumber": 143
+				},
+				{
+					"caller": "MessageList",
+					"callee": "handleImageClick",
+					"lineNumber": 148
+				},
+				{
+					"caller": "MessageList",
+					"callee": "nonImageParts.map",
+					"lineNumber": 161
+				},
+				{
+					"caller": "MessageList",
+					"callee": "taskMentions.map",
+					"lineNumber": 172
+				},
+				{
+					"caller": "MessageList",
+					"callee": "otherSegments.map",
+					"lineNumber": 182
+				},
+				{
+					"caller": "MessageList",
+					"callee": "normalizeWorkspaceFilePath",
+					"lineNumber": 194
+				},
+				{
+					"caller": "MessageList",
+					"callee": "Boolean",
+					"lineNumber": 199
+				},
+				{
+					"caller": "MessageList",
+					"callee": "Boolean",
+					"lineNumber": 199
+				},
+				{
+					"caller": "MessageList",
+					"callee": "addFileViewerPane",
+					"lineNumber": 208
+				},
+				{
+					"caller": "MessageList",
+					"callee": "hasRenderableParts",
+					"lineNumber": 226
+				}
+			],
+			"metrics": {
+				"importCount": 8,
+				"exportCount": 1,
+				"functionCount": 3,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "MessageScrollbackRail",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/components/Chat/ChatInterface/components/MessagePartsRenderer/MessagePartsRenderer.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 335,
+			"nonEmptyLines": 316,
+			"functions": [
+				{
+					"name": "MessagePartsRenderer",
+					"startLine": 41,
+					"endLine": 335,
+					"params": [
+						"{\n\tparts,\n\tisLastAssistant,\n\tisStreaming,\n\tisInterrupted,\n\tworkspaceId,\n\tworkspaceCwd,\n\tonAnswer,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "MessagePartsRenderer",
+					"line": 41,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "MessagePartsRenderer",
+					"callee": "useTheme",
+					"lineNumber": 50
+				},
+				{
+					"caller": "MessagePartsRenderer",
+					"callee": "electronTrpc.settings.getOpenLinksInApp.useQuery",
+					"lineNumber": 52
+				},
+				{
+					"caller": "MessagePartsRenderer",
+					"callee": "useTabsStore",
+					"lineNumber": 53
+				},
+				{
+					"caller": "MessagePartsRenderer",
+					"callee": "useTabsStore",
+					"lineNumber": 54
+				},
+				{
+					"caller": "MessagePartsRenderer",
+					"callee": "useCallback",
+					"lineNumber": 56
+				},
+				{
+					"caller": "MessagePartsRenderer",
+					"callee": "e.preventDefault",
+					"lineNumber": 59
+				},
+				{
+					"caller": "MessagePartsRenderer",
+					"callee": "openInBrowserPane",
+					"lineNumber": 60
+				},
+				{
+					"caller": "MessagePartsRenderer",
+					"callee": "useCallback",
+					"lineNumber": 65
+				},
+				{
+					"caller": "MessagePartsRenderer",
+					"callee": "normalizeWorkspaceFilePath",
+					"lineNumber": 68
+				},
+				{
+					"caller": "MessagePartsRenderer",
+					"callee": "addFileViewerPane",
+					"lineNumber": 73
+				},
+				{
+					"caller": "MessagePartsRenderer",
+					"callee": "useMemo",
+					"lineNumber": 78
+				},
+				{
+					"caller": "MessagePartsRenderer",
+					"callee": "handleLinkClick",
+					"lineNumber": 90
+				},
+				{
+					"caller": "MessagePartsRenderer",
+					"callee": "useMemo",
+					"lineNumber": 98
+				},
+				{
+					"caller": "renderParts",
+					"callee": "nodes.push",
+					"lineNumber": 122
+				},
+				{
+					"caller": "renderParts",
+					"callee": "nodes.push",
+					"lineNumber": 137
+				},
+				{
+					"caller": "renderParts",
+					"callee": "nodes.push",
+					"lineNumber": 151
+				},
+				{
+					"caller": "renderParts",
+					"callee": "isToolUIPart",
+					"lineNumber": 156
+				},
+				{
+					"caller": "renderParts",
+					"callee": "normalizeToolName",
+					"lineNumber": 157
+				},
+				{
+					"caller": "renderParts",
+					"callee": "getToolName",
+					"lineNumber": 157
+				},
+				{
+					"caller": "renderParts",
+					"callee": "READ_ONLY_TOOLS.has",
+					"lineNumber": 160
+				},
+				{
+					"caller": "renderParts",
+					"callee": "nodes.push",
+					"lineNumber": 163
+				},
+				{
+					"caller": "renderParts",
+					"callee": "isToolUIPart",
+					"lineNumber": 180
+				},
+				{
+					"caller": "renderParts",
+					"callee": "READ_ONLY_TOOLS.has",
+					"lineNumber": 181
+				},
+				{
+					"caller": "renderParts",
+					"callee": "normalizeToolName",
+					"lineNumber": 182
+				},
+				{
+					"caller": "renderParts",
+					"callee": "getToolName",
+					"lineNumber": 182
+				},
+				{
+					"caller": "renderParts",
+					"callee": "normalizeToolName",
+					"lineNumber": 184
+				},
+				{
+					"caller": "renderParts",
+					"callee": "getToolName",
+					"lineNumber": 184
+				},
+				{
+					"caller": "renderParts",
+					"callee": "groupParts.push",
+					"lineNumber": 187
+				},
+				{
+					"caller": "renderParts",
+					"callee": "nodes.push",
+					"lineNumber": 193
+				},
+				{
+					"caller": "renderParts",
+					"callee": "groupParts.some",
+					"lineNumber": 206
+				},
+				{
+					"caller": "renderParts",
+					"callee": "groupParts.map",
+					"lineNumber": 209
+				},
+				{
+					"caller": "renderParts",
+					"callee": "getArgs",
+					"lineNumber": 210
+				},
+				{
+					"caller": "renderParts",
+					"callee": "normalizeToolName",
+					"lineNumber": 211
+				},
+				{
+					"caller": "renderParts",
+					"callee": "getToolName",
+					"lineNumber": 211
+				},
+				{
+					"caller": "renderParts",
+					"callee": "getWorkspaceToolFilePath",
+					"lineNumber": 212
+				},
+				{
+					"caller": "renderParts",
+					"callee": "String",
+					"lineNumber": 225
+				},
+				{
+					"caller": "renderParts",
+					"callee": "String",
+					"lineNumber": 239
+				},
+				{
+					"caller": "renderParts",
+					"callee": "String",
+					"lineNumber": 255
+				},
+				{
+					"caller": "renderParts",
+					"callee": "String",
+					"lineNumber": 265
+				},
+				{
+					"caller": "renderParts",
+					"callee": "name.replace",
+					"lineNumber": 283
+				},
+				{
+					"caller": "renderParts",
+					"callee": "subtitle.includes",
+					"lineNumber": 288
+				},
+				{
+					"caller": "renderParts",
+					"callee": "subtitle.split(\"/\").pop",
+					"lineNumber": 289
+				},
+				{
+					"caller": "renderParts",
+					"callee": "subtitle.split",
+					"lineNumber": 289
+				},
+				{
+					"caller": "renderParts",
+					"callee": "openFileInPane",
+					"lineNumber": 298
+				},
+				{
+					"caller": "renderParts",
+					"callee": "nodes.push",
+					"lineNumber": 302
+				},
+				{
+					"caller": "renderParts",
+					"callee": "nodes.push",
+					"lineNumber": 313
+				},
+				{
+					"caller": "MessagePartsRenderer",
+					"callee": "renderParts",
+					"lineNumber": 334
+				}
+			],
+			"metrics": {
+				"importCount": 10,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/components/Chat/ChatInterface/components/MessagePartsRenderer/components/StreamingMessageText/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "StreamingMessageText",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/components/Chat/ChatInterface/components/MessagePartsRenderer/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "MessagePartsRenderer",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/components/Chat/ChatInterface/components/ReadOnlyToolCall/ReadOnlyToolCall.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 227,
+			"nonEmptyLines": 212,
+			"functions": [
+				{
+					"name": "stringify",
+					"startLine": 26,
+					"endLine": 33,
+					"params": ["value"]
+				},
+				{
+					"name": "ReadOnlyToolCall",
+					"startLine": 42,
+					"endLine": 227,
+					"params": [
+						"{\n\tpart,\n\tworkspaceId,\n\tworkspaceCwd,\n\tonOpenFileInPane,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "ReadOnlyToolCall",
+					"line": 42,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "stringify",
+					"callee": "JSON.stringify",
+					"lineNumber": 29
+				},
+				{
+					"caller": "stringify",
+					"callee": "String",
+					"lineNumber": 31
+				},
+				{
+					"caller": "ReadOnlyToolCall",
+					"callee": "getArgs",
+					"lineNumber": 48
+				},
+				{
+					"caller": "ReadOnlyToolCall",
+					"callee": "normalizeToolName",
+					"lineNumber": 49
+				},
+				{
+					"caller": "ReadOnlyToolCall",
+					"callee": "getToolName",
+					"lineNumber": 49
+				},
+				{
+					"caller": "ReadOnlyToolCall",
+					"callee": "toToolDisplayState",
+					"lineNumber": 59
+				},
+				{
+					"caller": "ReadOnlyToolCall",
+					"callee": "String",
+					"lineNumber": 64
+				},
+				{
+					"caller": "ReadOnlyToolCall",
+					"callee": "normalizeWorkspaceFilePath",
+					"lineNumber": 67
+				},
+				{
+					"caller": "ReadOnlyToolCall",
+					"callee": "electronTrpc.filesystem.readFile.useQuery",
+					"lineNumber": 73
+				},
+				{
+					"caller": "ReadOnlyToolCall",
+					"callee": "(() => {\n\t\t\t\t// The disk read always returns the whole file, so report 1–N\n\t\t\t\tconst lineCount = fileContent.trimEnd().split(\"\\n\").length;\n\t\t\t\treturn `1–${lineCount}`;\n\t\t\t})",
+					"lineNumber": 92
+				},
+				{
+					"caller": "ReadOnlyToolCall",
+					"callee": "fileContent.trimEnd().split",
+					"lineNumber": 94
+				},
+				{
+					"caller": "ReadOnlyToolCall",
+					"callee": "fileContent.trimEnd",
+					"lineNumber": 94
+				},
+				{
+					"caller": "ReadOnlyToolCall",
+					"callee": "String",
+					"lineNumber": 100
+				},
+				{
+					"caller": "ReadOnlyToolCall",
+					"callee": "String",
+					"lineNumber": 106
+				},
+				{
+					"caller": "ReadOnlyToolCall",
+					"callee": "String",
+					"lineNumber": 113
+				},
+				{
+					"caller": "ReadOnlyToolCall",
+					"callee": "String",
+					"lineNumber": 126
+				},
+				{
+					"caller": "ReadOnlyToolCall",
+					"callee": "String",
+					"lineNumber": 131
+				},
+				{
+					"caller": "ReadOnlyToolCall",
+					"callee": "subtitle.includes",
+					"lineNumber": 148
+				},
+				{
+					"caller": "ReadOnlyToolCall",
+					"callee": "subtitle.split(\"/\").pop",
+					"lineNumber": 149
+				},
+				{
+					"caller": "ReadOnlyToolCall",
+					"callee": "subtitle.split",
+					"lineNumber": 149
+				},
+				{
+					"caller": "ReadOnlyToolCall",
+					"callee": "getWorkspaceToolFilePath",
+					"lineNumber": 152
+				},
+				{
+					"caller": "ReadOnlyToolCall",
+					"callee": "Boolean",
+					"lineNumber": 153
+				},
+				{
+					"caller": "ReadOnlyToolCall",
+					"callee": "displayPath.split(\"/\").pop",
+					"lineNumber": 175
+				},
+				{
+					"caller": "ReadOnlyToolCall",
+					"callee": "displayPath.split",
+					"lineNumber": 175
+				},
+				{
+					"caller": "ReadOnlyToolCall",
+					"callee": "detectLanguage",
+					"lineNumber": 181
+				},
+				{
+					"caller": "ReadOnlyToolCall",
+					"callee": "onOpenFileInPane",
+					"lineNumber": 186
+				},
+				{
+					"caller": "ReadOnlyToolCall",
+					"callee": "onOpenFileInPane",
+					"lineNumber": 200
+				},
+				{
+					"caller": "ReadOnlyToolCall",
+					"callee": "stringify",
+					"lineNumber": 220
+				}
+			],
+			"metrics": {
+				"importCount": 4,
+				"exportCount": 1,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/components/Chat/ChatInterface/components/ReadOnlyToolCall/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "ReadOnlyToolCall",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/components/Chat/ChatInterface/components/ReasoningBlock/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "ReasoningBlock",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/ToolCallBlock.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 670,
+			"nonEmptyLines": 611,
+			"functions": [
+				{
+					"name": "ToolCallBlock",
+					"startLine": 71,
+					"endLine": 670,
+					"params": [
+						"{\n\tpart,\n\tworkspaceId,\n\tworkspaceCwd,\n\tsessionId,\n\torganizationId,\n\tisStreaming,\n\tisInterrupted,\n\tonAnswer,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "ToolCallBlock",
+					"line": 71,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "ToolCallBlock",
+					"callee": "getArgs",
+					"lineNumber": 81
+				},
+				{
+					"caller": "ToolCallBlock",
+					"callee": "getResult",
+					"lineNumber": 82
+				},
+				{
+					"caller": "ToolCallBlock",
+					"callee": "toWsToolState",
+					"lineNumber": 83
+				},
+				{
+					"caller": "ToolCallBlock",
+					"callee": "normalizeToolName",
+					"lineNumber": 84
+				},
+				{
+					"caller": "ToolCallBlock",
+					"callee": "getToolName",
+					"lineNumber": 84
+				},
+				{
+					"caller": "ToolCallBlock",
+					"callee": "useChangesStore",
+					"lineNumber": 85
+				},
+				{
+					"caller": "ToolCallBlock",
+					"callee": "useTabsStore",
+					"lineNumber": 88
+				},
+				{
+					"caller": "ToolCallBlock",
+					"callee": "useTabsStore",
+					"lineNumber": 89
+				},
+				{
+					"caller": "ToolCallBlock",
+					"callee": "useTabsStore",
+					"lineNumber": 90
+				},
+				{
+					"caller": "ToolCallBlock",
+					"callee": "toolName\n\t\t.replace(\"mastra_workspace_\", \"\")\n\t\t.replaceAll",
+					"lineNumber": 91
+				},
+				{
+					"caller": "ToolCallBlock",
+					"callee": "toolName\n\t\t.replace",
+					"lineNumber": 91
+				},
+				{
+					"caller": "ToolCallBlock",
+					"callee": "useCallback",
+					"lineNumber": 94
+				},
+				{
+					"caller": "ToolCallBlock",
+					"callee": "normalizeWorkspaceFilePath",
+					"lineNumber": 96
+				},
+				{
+					"caller": "ToolCallBlock",
+					"callee": "useCallback",
+					"lineNumber": 104
+				},
+				{
+					"caller": "ToolCallBlock",
+					"callee": "normalizeFilePath",
+					"lineNumber": 107
+				},
+				{
+					"caller": "ToolCallBlock",
+					"callee": "addFileViewerPane",
+					"lineNumber": 109
+				},
+				{
+					"caller": "ToolCallBlock",
+					"callee": "posthog.capture",
+					"lineNumber": 110
+				},
+				{
+					"caller": "ToolCallBlock",
+					"callee": "useMemo",
+					"lineNumber": 127
+				},
+				{
+					"caller": "ToolCallBlock",
+					"callee": "tabs\n\t\t\t\t.filter((tab) => tab.workspaceId === workspaceId)\n\t\t\t\t.map",
+					"lineNumber": 131
+				},
+				{
+					"caller": "ToolCallBlock",
+					"callee": "tabs\n\t\t\t\t.filter",
+					"lineNumber": 131
+				},
+				{
+					"caller": "ToolCallBlock",
+					"callee": "Object.values",
+					"lineNumber": 137
+				},
+				{
+					"caller": "ToolCallBlock",
+					"callee": "workspaceTabIds.has",
+					"lineNumber": 139
+				},
+				{
+					"caller": "ToolCallBlock",
+					"callee": "diffPaneByFilePath.has",
+					"lineNumber": 143
+				},
+				{
+					"caller": "ToolCallBlock",
+					"callee": "diffPaneByFilePath.set",
+					"lineNumber": 145
+				},
+				{
+					"caller": "ToolCallBlock",
+					"callee": "useCallback",
+					"lineNumber": 154
+				},
+				{
+					"caller": "ToolCallBlock",
+					"callee": "normalizeFilePath",
+					"lineNumber": 156
+				},
+				{
+					"caller": "ToolCallBlock",
+					"callee": "workspaceDiffPaneByFilePath.get",
+					"lineNumber": 158
+				},
+				{
+					"caller": "ToolCallBlock",
+					"callee": "useCallback",
+					"lineNumber": 162
+				},
+				{
+					"caller": "ToolCallBlock",
+					"callee": "normalizeFilePath",
+					"lineNumber": 165
+				},
+				{
+					"caller": "ToolCallBlock",
+					"callee": "getDiffPaneTargetForFile",
+					"lineNumber": 166
+				},
+				{
+					"caller": "ToolCallBlock",
+					"callee": "addFileViewerPane",
+					"lineNumber": 169
+				},
+				{
+					"caller": "ToolCallBlock",
+					"callee": "posthog.capture",
+					"lineNumber": 176
+				},
+				{
+					"caller": "toText",
+					"callee": "String",
+					"lineNumber": 207
+				},
+				{
+					"caller": "toText",
+					"callee": "Array.isArray",
+					"lineNumber": 209
+				},
+				{
+					"caller": "toText",
+					"callee": "value\n\t\t\t\t.map((item) => toText(item))\n\t\t\t\t.filter",
+					"lineNumber": 210
+				},
+				{
+					"caller": "toText",
+					"callee": "value\n\t\t\t\t.map",
+					"lineNumber": 210
+				},
+				{
+					"caller": "toText",
+					"callee": "toText",
+					"lineNumber": 211
+				},
+				{
+					"caller": "toText",
+					"callee": "Boolean",
+					"lineNumber": 213
+				},
+				{
+					"caller": "toText",
+					"callee": "item.trim",
+					"lineNumber": 213
+				},
+				{
+					"caller": "toText",
+					"callee": "parts.join",
+					"lineNumber": 215
+				},
+				{
+					"caller": "firstText",
+					"callee": "toText",
+					"lineNumber": 222
+				},
+				{
+					"caller": "firstText",
+					"callee": "text.trim",
+					"lineNumber": 223
+				},
+				{
+					"caller": "toRecord",
+					"callee": "Array.isArray",
+					"lineNumber": 229
+				},
+				{
+					"caller": "getFilePath",
+					"callee": "firstText",
+					"lineNumber": 236
+				},
+				{
+					"caller": "deriveStringsFromStructuredPatch",
+					"callee": "rawLine.startsWith",
+					"lineNumber": 250
+				},
+				{
+					"caller": "deriveStringsFromStructuredPatch",
+					"callee": "rawLine.startsWith",
+					"lineNumber": 251
+				},
+				{
+					"caller": "deriveStringsFromStructuredPatch",
+					"callee": "rawLine.startsWith",
+					"lineNumber": 256
+				},
+				{
+					"caller": "deriveStringsFromStructuredPatch",
+					"callee": "newLines.push",
+					"lineNumber": 257
+				},
+				{
+					"caller": "deriveStringsFromStructuredPatch",
+					"callee": "rawLine.slice",
+					"lineNumber": 257
+				},
+				{
+					"caller": "deriveStringsFromStructuredPatch",
+					"callee": "rawLine.startsWith",
+					"lineNumber": 261
+				},
+				{
+					"caller": "deriveStringsFromStructuredPatch",
+					"callee": "oldLines.push",
+					"lineNumber": 262
+				},
+				{
+					"caller": "deriveStringsFromStructuredPatch",
+					"callee": "rawLine.slice",
+					"lineNumber": 262
+				},
+				{
+					"caller": "deriveStringsFromStructuredPatch",
+					"callee": "rawLine.startsWith",
+					"lineNumber": 266
+				},
+				{
+					"caller": "deriveStringsFromStructuredPatch",
+					"callee": "rawLine.slice",
+					"lineNumber": 266
+				},
+				{
+					"caller": "deriveStringsFromStructuredPatch",
+					"callee": "oldLines.push",
+					"lineNumber": 267
+				},
+				{
+					"caller": "deriveStringsFromStructuredPatch",
+					"callee": "newLines.push",
+					"lineNumber": 268
+				},
+				{
+					"caller": "deriveStringsFromStructuredPatch",
+					"callee": "oldLines.join",
+					"lineNumber": 275
+				},
+				{
+					"caller": "deriveStringsFromStructuredPatch",
+					"callee": "newLines.join",
+					"lineNumber": 276
+				},
+				{
+					"caller": "ToolCallBlock",
+					"callee": "getExecuteCommandViewModel",
+					"lineNumber": 282
+				},
+				{
+					"caller": "ToolCallBlock",
+					"callee": "getFilePath",
+					"lineNumber": 299
+				},
+				{
+					"caller": "ToolCallBlock",
+					"callee": "toRecord",
+					"lineNumber": 307
+				},
+				{
+					"caller": "ToolCallBlock",
+					"callee": "String",
+					"lineNumber": 309
+				},
+				{
+					"caller": "ToolCallBlock",
+					"callee": "toRecord",
+					"lineNumber": 338
+				},
+				{
+					"caller": "ToolCallBlock",
+					"callee": "getFilePath",
+					"lineNumber": 339
+				},
+				{
+					"caller": "ToolCallBlock",
+					"callee": "toRecord",
+					"lineNumber": 354
+				},
+				{
+					"caller": "ToolCallBlock",
+					"callee": "firstText",
+					"lineNumber": 357
+				},
+				{
+					"caller": "ToolCallBlock",
+					"callee": "firstText",
+					"lineNumber": 381
+				},
+				{
+					"caller": "ToolCallBlock",
+					"callee": "Array.isArray",
+					"lineNumber": 405
+				},
+				{
+					"caller": "ToolCallBlock",
+					"callee": "Array.isArray",
+					"lineNumber": 407
+				},
+				{
+					"caller": "ToolCallBlock",
+					"callee": "Array.isArray",
+					"lineNumber": 409
+				},
+				{
+					"caller": "ToolCallBlock",
+					"callee": "Array.isArray",
+					"lineNumber": 412
+				},
+				{
+					"caller": "ToolCallBlock",
+					"callee": "Array.isArray",
+					"lineNumber": 414
+				},
+				{
+					"caller": "ToolCallBlock",
+					"callee": "Array.isArray",
+					"lineNumber": 416
+				},
+				{
+					"caller": "ToolCallBlock",
+					"callee": "structuredPatchValue?.filter",
+					"lineNumber": 419
+				},
+				{
+					"caller": "ToolCallBlock",
+					"callee": "Boolean",
+					"lineNumber": 421
+				},
+				{
+					"caller": "ToolCallBlock",
+					"callee": "Array.isArray",
+					"lineNumber": 424
+				},
+				{
+					"caller": "ToolCallBlock",
+					"callee": "deriveStringsFromStructuredPatch",
+					"lineNumber": 428
+				},
+				{
+					"caller": "ToolCallBlock",
+					"callee": "toolName.includes",
+					"lineNumber": 457
+				},
+				{
+					"caller": "ToolCallBlock",
+					"callee": "getWebSearchViewModel",
+					"lineNumber": 458
+				},
+				{
+					"caller": "ToolCallBlock",
+					"callee": "String",
+					"lineNumber": 474
+				},
+				{
+					"caller": "ToolCallBlock",
+					"callee": "READ_ONLY_TOOLS.has",
+					"lineNumber": 590
+				}
+			],
+			"metrics": {
+				"importCount": 36,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/components/AskUserQuestionToolCall/AskUserQuestionToolCall.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 280,
+			"nonEmptyLines": 251,
+			"functions": [
+				{
+					"name": "toRecord",
+					"startLine": 39,
+					"endLine": 44,
+					"params": ["value"]
+				},
+				{
+					"name": "toQuestionToolQuestions",
+					"startLine": 46,
+					"endLine": 91,
+					"params": ["value"]
+				},
+				{
+					"name": "toQuestionToolAnswers",
+					"startLine": 93,
+					"endLine": 108,
+					"params": ["value"]
+				},
+				{
+					"name": "findAnswerForQuestion",
+					"startLine": 110,
+					"endLine": 126,
+					"params": ["{\n\tanswers,\n\tquestionText,\n}"]
+				},
+				{
+					"name": "toSingleQuestion",
+					"startLine": 128,
+					"endLine": 150,
+					"params": ["args"]
+				},
+				{
+					"name": "AskUserQuestionToolCall",
+					"startLine": 152,
+					"endLine": 280,
+					"params": [
+						"{\n\tpart,\n\targs,\n\tresult,\n\toutputObject,\n\tnestedResultObject,\n\tisInterrupted,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "AskUserQuestionToolCall",
+					"line": 152,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "toRecord",
+					"callee": "Array.isArray",
+					"lineNumber": 40
+				},
+				{
+					"caller": "toQuestionToolQuestions",
+					"callee": "Array.isArray",
+					"lineNumber": 47
+				},
+				{
+					"caller": "toQuestionToolQuestions",
+					"callee": "value\n\t\t.map((item): QuestionToolQuestion | null => {\n\t\t\tif (typeof item !== \"object\" || item === null) return null;\n\t\t\tconst record = item as Record<string, unknown>;\n\t\t\tconst question =\n\t\t\t\ttypeof record.question === \"string\" ? record.question.trim() : \"\";\n\t\t\tif (!question) return null;\n\n\t\t\tconst options = Array.isArray(record.options)\n\t\t\t\t? record.options\n\t\t\t\t\t\t.map((option): QuestionToolOption | null => {\n\t\t\t\t\t\t\tif (typeof option !== \"object\" || option === null) return null;\n\t\t\t\t\t\t\tconst optionRecord = option as Record<string, unknown>;\n\t\t\t\t\t\t\tconst label =\n\t\t\t\t\t\t\t\ttypeof optionRecord.label === \"string\"\n\t\t\t\t\t\t\t\t\t? optionRecord.label.trim()\n\t\t\t\t\t\t\t\t\t: \"\";\n\t\t\t\t\t\t\tif (!label) return null;\n\t\t\t\t\t\t\tconst description =\n\t\t\t\t\t\t\t\ttypeof optionRecord.description === \"string\"\n\t\t\t\t\t\t\t\t\t? optionRecord.description.trim()\n\t\t\t\t\t\t\t\t\t: \"\";\n\t\t\t\t\t\t\treturn description ? { label, description } : { label };\n\t\t\t\t\t\t})\n\t\t\t\t\t\t.filter((option): option is QuestionToolOption => option !== null)\n\t\t\t\t: [];\n\n\t\t\tconst header =\n\t\t\t\ttypeof record.header === \"string\" ? record.header.trim() : \"\";\n\t\t\tconst multiSelect =\n\t\t\t\ttypeof record.multiSelect === \"boolean\"\n\t\t\t\t\t? record.multiSelect\n\t\t\t\t\t: undefined;\n\n\t\t\treturn {\n\t\t\t\tquestion,\n\t\t\t\t...(header ? { header } : {}),\n\t\t\t\toptions,\n\t\t\t\t...(multiSelect === undefined ? {} : { multiSelect }),\n\t\t\t};\n\t\t})\n\t\t.filter",
+					"lineNumber": 49
+				},
+				{
+					"caller": "toQuestionToolQuestions",
+					"callee": "value\n\t\t.map",
+					"lineNumber": 49
+				},
+				{
+					"caller": "toQuestionToolQuestions",
+					"callee": "record.question.trim",
+					"lineNumber": 54
+				},
+				{
+					"caller": "toQuestionToolQuestions",
+					"callee": "Array.isArray",
+					"lineNumber": 57
+				},
+				{
+					"caller": "toQuestionToolQuestions",
+					"callee": "record.options\n\t\t\t\t\t\t.map((option): QuestionToolOption | null => {\n\t\t\t\t\t\t\tif (typeof option !== \"object\" || option === null) return null;\n\t\t\t\t\t\t\tconst optionRecord = option as Record<string, unknown>;\n\t\t\t\t\t\t\tconst label =\n\t\t\t\t\t\t\t\ttypeof optionRecord.label === \"string\"\n\t\t\t\t\t\t\t\t\t? optionRecord.label.trim()\n\t\t\t\t\t\t\t\t\t: \"\";\n\t\t\t\t\t\t\tif (!label) return null;\n\t\t\t\t\t\t\tconst description =\n\t\t\t\t\t\t\t\ttypeof optionRecord.description === \"string\"\n\t\t\t\t\t\t\t\t\t? optionRecord.description.trim()\n\t\t\t\t\t\t\t\t\t: \"\";\n\t\t\t\t\t\t\treturn description ? { label, description } : { label };\n\t\t\t\t\t\t})\n\t\t\t\t\t\t.filter",
+					"lineNumber": 58
+				},
+				{
+					"caller": "toQuestionToolQuestions",
+					"callee": "record.options\n\t\t\t\t\t\t.map",
+					"lineNumber": 58
+				},
+				{
+					"caller": "toQuestionToolQuestions",
+					"callee": "optionRecord.label.trim",
+					"lineNumber": 64
+				},
+				{
+					"caller": "toQuestionToolQuestions",
+					"callee": "optionRecord.description.trim",
+					"lineNumber": 69
+				},
+				{
+					"caller": "toQuestionToolQuestions",
+					"callee": "record.header.trim",
+					"lineNumber": 77
+				},
+				{
+					"caller": "toQuestionToolAnswers",
+					"callee": "Array.isArray",
+					"lineNumber": 94
+				},
+				{
+					"caller": "toQuestionToolAnswers",
+					"callee": "Object.entries",
+					"lineNumber": 99
+				},
+				{
+					"caller": "toQuestionToolAnswers",
+					"callee": "key.trim",
+					"lineNumber": 101
+				},
+				{
+					"caller": "toQuestionToolAnswers",
+					"callee": "answer.trim",
+					"lineNumber": 102
+				},
+				{
+					"caller": "findAnswerForQuestion",
+					"callee": "questionText.trim",
+					"lineNumber": 120
+				},
+				{
+					"caller": "findAnswerForQuestion",
+					"callee": "Object.entries",
+					"lineNumber": 121
+				},
+				{
+					"caller": "findAnswerForQuestion",
+					"callee": "answerKey.trim",
+					"lineNumber": 122
+				},
+				{
+					"caller": "toSingleQuestion",
+					"callee": "args.question.trim",
+					"lineNumber": 132
+				},
+				{
+					"caller": "toSingleQuestion",
+					"callee": "Array.isArray",
+					"lineNumber": 135
+				},
+				{
+					"caller": "toSingleQuestion",
+					"callee": "args.options\n\t\t\t\t.map((opt): QuestionToolOption | null => {\n\t\t\t\t\tif (typeof opt !== \"object\" || opt === null) return null;\n\t\t\t\t\tconst o = opt as Record<string, unknown>;\n\t\t\t\t\tconst label = typeof o.label === \"string\" ? o.label.trim() : \"\";\n\t\t\t\t\tif (!label) return null;\n\t\t\t\t\tconst description =\n\t\t\t\t\t\ttypeof o.description === \"string\" ? o.description.trim() : \"\";\n\t\t\t\t\treturn description ? { label, description } : { label };\n\t\t\t\t})\n\t\t\t\t.filter",
+					"lineNumber": 136
+				},
+				{
+					"caller": "toSingleQuestion",
+					"callee": "args.options\n\t\t\t\t.map",
+					"lineNumber": 136
+				},
+				{
+					"caller": "toSingleQuestion",
+					"callee": "o.label.trim",
+					"lineNumber": 140
+				},
+				{
+					"caller": "toSingleQuestion",
+					"callee": "o.description.trim",
+					"lineNumber": 143
+				},
+				{
+					"caller": "AskUserQuestionToolCall",
+					"callee": "useMemo",
+					"lineNumber": 160
+				},
+				{
+					"caller": "AskUserQuestionToolCall",
+					"callee": "Array.isArray",
+					"lineNumber": 162
+				},
+				{
+					"caller": "AskUserQuestionToolCall",
+					"callee": "toQuestionToolQuestions",
+					"lineNumber": 163
+				},
+				{
+					"caller": "AskUserQuestionToolCall",
+					"callee": "toSingleQuestion",
+					"lineNumber": 164
+				},
+				{
+					"caller": "AskUserQuestionToolCall",
+					"callee": "useMemo",
+					"lineNumber": 168
+				},
+				{
+					"caller": "AskUserQuestionToolCall",
+					"callee": "toQuestionToolAnswers",
+					"lineNumber": 170
+				},
+				{
+					"caller": "AskUserQuestionToolCall",
+					"callee": "toRecord",
+					"lineNumber": 171
+				},
+				{
+					"caller": "AskUserQuestionToolCall",
+					"callee": "toRecord",
+					"lineNumber": 172
+				},
+				{
+					"caller": "AskUserQuestionToolCall",
+					"callee": "toRecord",
+					"lineNumber": 173
+				},
+				{
+					"caller": "AskUserQuestionToolCall",
+					"callee": "useMemo",
+					"lineNumber": 182
+				},
+				{
+					"caller": "AskUserQuestionToolCall",
+					"callee": "result.text.trim",
+					"lineNumber": 185
+				},
+				{
+					"caller": "AskUserQuestionToolCall",
+					"callee": "result.text.trim",
+					"lineNumber": 186
+				},
+				{
+					"caller": "AskUserQuestionToolCall",
+					"callee": "result.answer.trim",
+					"lineNumber": 187
+				},
+				{
+					"caller": "AskUserQuestionToolCall",
+					"callee": "result.answer.trim",
+					"lineNumber": 188
+				},
+				{
+					"caller": "AskUserQuestionToolCall",
+					"callee": "result.content.trim",
+					"lineNumber": 190
+				},
+				{
+					"caller": "AskUserQuestionToolCall",
+					"callee": "result.content.trim",
+					"lineNumber": 191
+				},
+				{
+					"caller": "AskUserQuestionToolCall",
+					"callee": "raw.startsWith",
+					"lineNumber": 193
+				},
+				{
+					"caller": "AskUserQuestionToolCall",
+					"callee": "raw.slice(prefix.length).trim",
+					"lineNumber": 193
+				},
+				{
+					"caller": "AskUserQuestionToolCall",
+					"callee": "raw.slice",
+					"lineNumber": 193
+				},
+				{
+					"caller": "AskUserQuestionToolCall",
+					"callee": "Object.keys",
+					"lineNumber": 208
+				},
+				{
+					"caller": "AskUserQuestionToolCall",
+					"callee": "useMemo",
+					"lineNumber": 210
+				},
+				{
+					"caller": "AskUserQuestionToolCall",
+					"callee": "questions\n\t\t\t\t.map((q) => ({\n\t\t\t\t\tquestion: q.question,\n\t\t\t\t\tanswer: findAnswerForQuestion({ answers, questionText: q.question }),\n\t\t\t\t}))\n\t\t\t\t.filter",
+					"lineNumber": 212
+				},
+				{
+					"caller": "AskUserQuestionToolCall",
+					"callee": "questions\n\t\t\t\t.map",
+					"lineNumber": 212
+				},
+				{
+					"caller": "AskUserQuestionToolCall",
+					"callee": "findAnswerForQuestion",
+					"lineNumber": 215
+				},
+				{
+					"caller": "AskUserQuestionToolCall",
+					"callee": "qasToShow.map",
+					"lineNumber": 259
+				},
+				{
+					"caller": "AskUserQuestionToolCall",
+					"callee": "questions.map",
+					"lineNumber": 266
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 1,
+				"functionCount": 6,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/components/AskUserQuestionToolCall/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "AskUserQuestionToolCall",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/components/CreateTaskToolCall/CreateTaskToolCall.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 133,
+			"nonEmptyLines": 129,
+			"functions": [
+				{
+					"name": "CreateTaskToolCall",
+					"startLine": 17,
+					"endLine": 133,
+					"params": ["{ part }"]
+				}
+			],
+			"exports": [
+				{
+					"name": "CreateTaskToolCall",
+					"line": 17,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "CreateTaskToolCall",
+					"callee": "useNavigate",
+					"lineNumber": 18
+				},
+				{
+					"caller": "CreateTaskToolCall",
+					"callee": "getArgs",
+					"lineNumber": 19
+				},
+				{
+					"caller": "CreateTaskToolCall",
+					"callee": "getResult",
+					"lineNumber": 20
+				},
+				{
+					"caller": "CreateTaskToolCall",
+					"callee": "Array.isArray",
+					"lineNumber": 25
+				},
+				{
+					"caller": "CreateTaskToolCall",
+					"callee": "resultData.created.filter",
+					"lineNumber": 26
+				},
+				{
+					"caller": "CreateTaskToolCall",
+					"callee": "Array.isArray",
+					"lineNumber": 31
+				},
+				{
+					"caller": "CreateTaskToolCall",
+					"callee": "args.tasks\n\t\t\t\t.map((task) => toRecord(task))\n\t\t\t\t.filter",
+					"lineNumber": 32
+				},
+				{
+					"caller": "CreateTaskToolCall",
+					"callee": "args.tasks\n\t\t\t\t.map",
+					"lineNumber": 32
+				},
+				{
+					"caller": "CreateTaskToolCall",
+					"callee": "toRecord",
+					"lineNumber": 33
+				},
+				{
+					"caller": "CreateTaskToolCall",
+					"callee": "Object.keys",
+					"lineNumber": 35
+				},
+				{
+					"caller": "CreateTaskToolCall",
+					"callee": "[toRecord(args)].filter",
+					"lineNumber": 36
+				},
+				{
+					"caller": "CreateTaskToolCall",
+					"callee": "toRecord",
+					"lineNumber": 36
+				},
+				{
+					"caller": "CreateTaskToolCall",
+					"callee": "created.map",
+					"lineNumber": 54
+				},
+				{
+					"caller": "CreateTaskToolCall",
+					"callee": "requestedTasks.find",
+					"lineNumber": 58
+				},
+				{
+					"caller": "CreateTaskToolCall",
+					"callee": "formatTaskDate",
+					"lineNumber": 92
+				},
+				{
+					"caller": "CreateTaskToolCall",
+					"callee": "toStringArray",
+					"lineNumber": 93
+				},
+				{
+					"caller": "CreateTaskToolCall",
+					"callee": "navigate",
+					"lineNumber": 113
+				}
+			],
+			"metrics": {
+				"importCount": 4,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/components/CreateTaskToolCall/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "CreateTaskToolCall",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/components/CreateWorkspaceToolCall/CreateWorkspaceToolCall.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 19,
+			"nonEmptyLines": 17,
+			"functions": [
+				{
+					"name": "CreateWorkspaceToolCall",
+					"startLine": 9,
+					"endLine": 19,
+					"params": ["{\n\tpart,\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "CreateWorkspaceToolCall",
+					"line": 9,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/components/CreateWorkspaceToolCall/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "CreateWorkspaceToolCall",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/components/DeleteTaskToolCall/DeleteTaskToolCall.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 61,
+			"nonEmptyLines": 58,
+			"functions": [
+				{
+					"name": "DeleteTaskToolCall",
+					"startLine": 12,
+					"endLine": 61,
+					"params": ["{ part }"]
+				}
+			],
+			"exports": [
+				{
+					"name": "DeleteTaskToolCall",
+					"line": 12,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "DeleteTaskToolCall",
+					"callee": "useNavigate",
+					"lineNumber": 13
+				},
+				{
+					"caller": "DeleteTaskToolCall",
+					"callee": "getResult",
+					"lineNumber": 14
+				},
+				{
+					"caller": "DeleteTaskToolCall",
+					"callee": "Array.isArray",
+					"lineNumber": 19
+				},
+				{
+					"caller": "DeleteTaskToolCall",
+					"callee": "resultData.deleted.map",
+					"lineNumber": 20
+				},
+				{
+					"caller": "DeleteTaskToolCall",
+					"callee": "String",
+					"lineNumber": 20
+				},
+				{
+					"caller": "DeleteTaskToolCall",
+					"callee": "deleted.map",
+					"lineNumber": 36
+				},
+				{
+					"caller": "DeleteTaskToolCall",
+					"callee": "navigate",
+					"lineNumber": 43
+				}
+			],
+			"metrics": {
+				"importCount": 3,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/components/DeleteTaskToolCall/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "DeleteTaskToolCall",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/components/DeleteWorkspaceToolCall/DeleteWorkspaceToolCall.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 19,
+			"nonEmptyLines": 17,
+			"functions": [
+				{
+					"name": "DeleteWorkspaceToolCall",
+					"startLine": 9,
+					"endLine": 19,
+					"params": ["{\n\tpart,\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "DeleteWorkspaceToolCall",
+					"line": 9,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/components/DeleteWorkspaceToolCall/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "DeleteWorkspaceToolCall",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/components/EditToolExpandedDiff/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "EditToolExpandedDiff",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/components/GenericToolCall/GenericToolCall.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 68,
+			"nonEmptyLines": 64,
+			"functions": [
+				{
+					"name": "getQueryFromInput",
+					"startLine": 15,
+					"endLine": 21,
+					"params": ["input"]
+				},
+				{
+					"name": "GenericToolCall",
+					"startLine": 23,
+					"endLine": 68,
+					"params": [
+						"{\n\tpart,\n\ttoolName,\n\tsubtitle,\n\ticon: Icon = WrenchIcon,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "GenericToolCall",
+					"line": 23,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "getQueryFromInput",
+					"callee": "Array.isArray",
+					"lineNumber": 16
+				},
+				{
+					"caller": "getQueryFromInput",
+					"callee": "query.trim",
+					"lineNumber": 18
+				},
+				{
+					"caller": "GenericToolCall",
+					"callee": "getGenericToolCallState",
+					"lineNumber": 30
+				},
+				{
+					"caller": "GenericToolCall",
+					"callee": "getQueryFromInput",
+					"lineNumber": 34
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 1,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/components/GenericToolCall/getGenericToolCallState.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 64,
+			"nonEmptyLines": 57,
+			"functions": [
+				{
+					"name": "stringifyValue",
+					"startLine": 13,
+					"endLine": 19,
+					"params": ["value"]
+				},
+				{
+					"name": "getGenericToolCallState",
+					"startLine": 21,
+					"endLine": 64,
+					"params": ["part"]
+				}
+			],
+			"exports": [
+				{
+					"name": "getGenericToolCallState",
+					"line": 21,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "stringifyValue",
+					"callee": "JSON.stringify",
+					"lineNumber": 15
+				},
+				{
+					"caller": "stringifyValue",
+					"callee": "String",
+					"lineNumber": 17
+				},
+				{
+					"caller": "getGenericToolCallState",
+					"callee": "Boolean",
+					"lineNumber": 30
+				},
+				{
+					"caller": "getGenericToolCallState",
+					"callee": "toToolDisplayState",
+					"lineNumber": 33
+				},
+				{
+					"caller": "getGenericToolCallState",
+					"callee": "stringifyValue",
+					"lineNumber": 48
+				},
+				{
+					"caller": "getGenericToolCallState",
+					"callee": "errorText.toLowerCase().includes",
+					"lineNumber": 55
+				},
+				{
+					"caller": "getGenericToolCallState",
+					"callee": "errorText.toLowerCase",
+					"lineNumber": 55
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/components/GenericToolCall/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 2,
+			"nonEmptyLines": 2,
+			"exports": [
+				{
+					"name": "GenericToolCall",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "getGenericToolCallState",
+					"line": 2,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 2,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/components/GetAppContextToolCall/GetAppContextToolCall.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 17,
+			"nonEmptyLines": 15,
+			"functions": [
+				{
+					"name": "GetAppContextToolCall",
+					"startLine": 9,
+					"endLine": 17,
+					"params": ["{ part }"]
+				}
+			],
+			"exports": [
+				{
+					"name": "GetAppContextToolCall",
+					"line": 9,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/components/GetAppContextToolCall/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "GetAppContextToolCall",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/components/GetTaskToolCall/GetTaskToolCall.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 130,
+			"nonEmptyLines": 127,
+			"functions": [
+				{
+					"name": "GetTaskToolCall",
+					"startLine": 13,
+					"endLine": 130,
+					"params": ["{ part }"]
+				}
+			],
+			"exports": [
+				{
+					"name": "GetTaskToolCall",
+					"line": 13,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "GetTaskToolCall",
+					"callee": "useNavigate",
+					"lineNumber": 14
+				},
+				{
+					"caller": "GetTaskToolCall",
+					"callee": "getArgs",
+					"lineNumber": 15
+				},
+				{
+					"caller": "GetTaskToolCall",
+					"callee": "getResult",
+					"lineNumber": 16
+				},
+				{
+					"caller": "GetTaskToolCall",
+					"callee": "toStringArray",
+					"lineNumber": 35
+				},
+				{
+					"caller": "GetTaskToolCall",
+					"callee": "formatTaskDate",
+					"lineNumber": 38
+				},
+				{
+					"caller": "GetTaskToolCall",
+					"callee": "String",
+					"lineNumber": 59
+				},
+				{
+					"caller": "GetTaskToolCall",
+					"callee": "[\n\t\tcreator ? { label: \"Creator\", value: creator } : null,\n\t\tassigneeEmail ? { label: \"Assignee Email\", value: assigneeEmail } : null,\n\t\tbranch ? { label: \"Branch\", value: branch } : null,\n\t\tprUrl ? { label: \"PR\", value: prUrl } : null,\n\t\texternalUrl ? { label: \"External\", value: externalUrl } : null,\n\t].filter",
+					"lineNumber": 75
+				},
+				{
+					"caller": "GetTaskToolCall",
+					"callee": "Boolean",
+					"lineNumber": 82
+				},
+				{
+					"caller": "GetTaskToolCall",
+					"callee": "navigate",
+					"lineNumber": 114
+				}
+			],
+			"metrics": {
+				"importCount": 4,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/components/GetTaskToolCall/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "GetTaskToolCall",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/components/GetWorkspaceDetailsToolCall/GetWorkspaceDetailsToolCall.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 19,
+			"nonEmptyLines": 17,
+			"functions": [
+				{
+					"name": "GetWorkspaceDetailsToolCall",
+					"startLine": 9,
+					"endLine": 19,
+					"params": ["{\n\tpart,\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "GetWorkspaceDetailsToolCall",
+					"line": 9,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/components/GetWorkspaceDetailsToolCall/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "GetWorkspaceDetailsToolCall",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/components/Chat/ChatInterface/components/ToolCallBlock/components/ListDevicesToolCall/ListDevicesToolCall.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 17,
+			"nonEmptyLines": 15,
+			"functions": [
+				{
+					"name": "ListDevicesToolCall",
+					"startLine": 9,
+					"endLine": 17,
+					"params": ["{ part }"]
+				}
+			],
+			"exports": [
+				{
+					"name": "ListDevicesToolCall",
+					"line": 9,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		}
+	]
+}

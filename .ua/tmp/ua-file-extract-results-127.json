@@ -1,0 +1,373 @@
+{
+	"scriptCompleted": true,
+	"filesAnalyzed": 11,
+	"filesSkipped": [],
+	"results": [
+		{
+			"path": "packages/email/src/components/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 3,
+			"nonEmptyLines": 3,
+			"exports": [
+				{
+					"name": "StandardLayout",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "Button",
+					"line": 2,
+					"isDefault": false
+				},
+				{
+					"name": "Logo",
+					"line": 3,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 3,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "packages/email/src/emails/integration-disconnected.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 88,
+			"nonEmptyLines": 75,
+			"functions": [
+				{
+					"name": "IntegrationDisconnectedEmail",
+					"startLine": 25,
+					"endLine": 86,
+					"params": [
+						"{\n\trecipientName,\n\tconnections = PLACEHOLDER_CONNECTIONS,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "IntegrationDisconnectedEmail",
+					"line": 25,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "IntegrationDisconnectedEmail",
+					"callee": "connections.map",
+					"lineNumber": 57
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "packages/email/src/emails/member-added-billing.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 72,
+			"nonEmptyLines": 62,
+			"functions": [
+				{
+					"name": "MemberAddedBillingEmail",
+					"startLine": 14,
+					"endLine": 70,
+					"params": [
+						"{\n\townerName = \"there\",\n\torganizationName = \"Acme Inc\",\n\tnewMemberName = \"Jane Doe\",\n\tnewMemberEmail = \"jane@example.com\",\n\taddedByName = \"John Smith\",\n\tnewSeatCount = 5,\n\tnewMonthlyTotal = \"$50.00\",\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "MemberAddedBillingEmail",
+					"line": 14,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "packages/email/src/emails/member-added.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 54,
+			"nonEmptyLines": 45,
+			"functions": [
+				{
+					"name": "MemberAddedEmail",
+					"startLine": 12,
+					"endLine": 52,
+					"params": [
+						"{\n\tmemberName = \"there\",\n\torganizationName = \"Acme Inc\",\n\trole = \"member\",\n\taddedByName = \"John Smith\",\n\tdashboardLink = \"https://app.superset.sh\",\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "MemberAddedEmail",
+					"line": 12,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "packages/email/src/emails/member-removed-billing.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 73,
+			"nonEmptyLines": 63,
+			"functions": [
+				{
+					"name": "MemberRemovedBillingEmail",
+					"startLine": 14,
+					"endLine": 71,
+					"params": [
+						"{\n\townerName = \"there\",\n\torganizationName = \"Acme Inc\",\n\tremovedMemberName = \"Jane Doe\",\n\tremovedMemberEmail = \"jane@example.com\",\n\tremovedByName = \"John Smith\",\n\tnewSeatCount = 4,\n\tnewMonthlyTotal = \"$40.00\",\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "MemberRemovedBillingEmail",
+					"line": 14,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "packages/email/src/emails/member-removed.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 43,
+			"nonEmptyLines": 36,
+			"functions": [
+				{
+					"name": "MemberRemovedEmail",
+					"startLine": 10,
+					"endLine": 41,
+					"params": [
+						"{\n\tmemberName = \"there\",\n\torganizationName = \"Acme Inc\",\n\tremovedByName = \"John Smith\",\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "MemberRemovedEmail",
+					"line": 10,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "packages/email/src/emails/organization-invitation.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 78,
+			"nonEmptyLines": 67,
+			"functions": [
+				{
+					"name": "OrganizationInvitationEmail",
+					"startLine": 15,
+					"endLine": 76,
+					"params": [
+						"{\n\torganizationName = \"Acme Inc\",\n\tinviterName = \"John Smith\",\n\tinviteLink = \"https://app.superset.sh/accept-invitation/123?token=abc\",\n\trole = \"member\",\n\tinviteeName = \"Satya Patel\",\n\tinviterEmail = \"john@acme.com\",\n\texpiresAt = new Date(Date.now() + 7 * 24 * 60 * 60 * 1000), // 7 days from now\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "OrganizationInvitationEmail",
+					"line": 15,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "OrganizationInvitationEmail",
+					"callee": "Date.now",
+					"lineNumber": 22
+				},
+				{
+					"caller": "OrganizationInvitationEmail",
+					"callee": "differenceInDays",
+					"lineNumber": 27
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "packages/email/src/emails/payment-failed.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 88,
+			"nonEmptyLines": 77,
+			"functions": [
+				{
+					"name": "PaymentFailedEmail",
+					"startLine": 13,
+					"endLine": 86,
+					"params": [
+						"{\n\townerName = \"there\",\n\torganizationName = \"Acme Inc\",\n\tplanName = \"Pro\",\n\tamount = \"$50.00\",\n\tnextRetryDate = new Date(Date.now() + 3 * 24 * 60 * 60 * 1000),\n\tbillingPortalUrl,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "PaymentFailedEmail",
+					"line": 13,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "PaymentFailedEmail",
+					"callee": "Date.now",
+					"lineNumber": 18
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "packages/email/src/emails/subscription-cancelled.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 75,
+			"nonEmptyLines": 64,
+			"functions": [
+				{
+					"name": "SubscriptionCancelledEmail",
+					"startLine": 13,
+					"endLine": 73,
+					"params": [
+						"{\n\townerName = \"there\",\n\torganizationName = \"Acme Inc\",\n\tplanName = \"Pro\",\n\taccessEndsAt = new Date(Date.now() + 30 * 24 * 60 * 60 * 1000),\n\tbillingPortalUrl,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "SubscriptionCancelledEmail",
+					"line": 13,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "SubscriptionCancelledEmail",
+					"callee": "Date.now",
+					"lineNumber": 17
+				},
+				{
+					"caller": "SubscriptionCancelledEmail",
+					"callee": "format",
+					"lineNumber": 20
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "packages/email/src/emails/subscription-started.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 74,
+			"nonEmptyLines": 64,
+			"functions": [
+				{
+					"name": "SubscriptionStartedEmail",
+					"startLine": 13,
+					"endLine": 72,
+					"params": [
+						"{\n\townerName = \"there\",\n\torganizationName = \"Acme Inc\",\n\tplanName = \"Pro\",\n\tbillingInterval = \"monthly\",\n\tamount = \"$10.00\",\n\tseatCount = 1,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "SubscriptionStartedEmail",
+					"line": 13,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "packages/email/src/emails/welcome.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 80,
+			"nonEmptyLines": 67,
+			"functions": [
+				{
+					"name": "WelcomeEmail",
+					"startLine": 8,
+					"endLine": 43,
+					"params": ["{ userName = \"there\" }"]
+				}
+			],
+			"exports": [
+				{
+					"name": "WelcomeEmail",
+					"line": 8,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		}
+	]
+}

@@ -1,0 +1,3226 @@
+{
+	"scriptCompleted": true,
+	"filesAnalyzed": 32,
+	"filesSkipped": [],
+	"results": [
+		{
+			"path": "src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/PresetsSection/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "PresetsSection",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/SessionsSection.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 440,
+			"nonEmptyLines": 425,
+			"functions": [
+				{
+					"name": "SessionsSection",
+					"startLine": 15,
+					"endLine": 440,
+					"params": []
+				}
+			],
+			"exports": [
+				{
+					"name": "SessionsSection",
+					"line": 15,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "SessionsSection",
+					"callee": "electronTrpc.useUtils",
+					"lineNumber": 16
+				},
+				{
+					"caller": "SessionsSection",
+					"callee": "electronTrpc.terminal.listDaemonSessions.useQuery",
+					"lineNumber": 19
+				},
+				{
+					"caller": "SessionsSection",
+					"callee": "useMemo",
+					"lineNumber": 21
+				},
+				{
+					"caller": "SessionsSection",
+					"callee": "sessions.filter",
+					"lineNumber": 22
+				},
+				{
+					"caller": "SessionsSection",
+					"callee": "useMemo",
+					"lineNumber": 25
+				},
+				{
+					"caller": "SessionsSection",
+					"callee": "[...aliveSessions].sort",
+					"lineNumber": 26
+				},
+				{
+					"caller": "SessionsSection",
+					"callee": "Date.parse",
+					"lineNumber": 30
+				},
+				{
+					"caller": "SessionsSection",
+					"callee": "Date.parse",
+					"lineNumber": 31
+				},
+				{
+					"caller": "SessionsSection",
+					"callee": "useState",
+					"lineNumber": 36
+				},
+				{
+					"caller": "SessionsSection",
+					"callee": "useState",
+					"lineNumber": 37
+				},
+				{
+					"caller": "SessionsSection",
+					"callee": "useState",
+					"lineNumber": 39
+				},
+				{
+					"caller": "SessionsSection",
+					"callee": "useState",
+					"lineNumber": 40
+				},
+				{
+					"caller": "SessionsSection",
+					"callee": "useState",
+					"lineNumber": 41
+				},
+				{
+					"caller": "SessionsSection",
+					"callee": "electronTrpc.terminal.killAllDaemonSessions.useMutation",
+					"lineNumber": 47
+				},
+				{
+					"caller": "SessionsSection",
+					"callee": "utils.terminal.listDaemonSessions.cancel",
+					"lineNumber": 49
+				},
+				{
+					"caller": "SessionsSection",
+					"callee": "utils.terminal.listDaemonSessions.getData",
+					"lineNumber": 50
+				},
+				{
+					"caller": "SessionsSection",
+					"callee": "utils.terminal.listDaemonSessions.setData",
+					"lineNumber": 51
+				},
+				{
+					"caller": "SessionsSection",
+					"callee": "toast.warning",
+					"lineNumber": 58
+				},
+				{
+					"caller": "SessionsSection",
+					"callee": "toast.success",
+					"lineNumber": 62
+				},
+				{
+					"caller": "SessionsSection",
+					"callee": "utils.terminal.listDaemonSessions.setData",
+					"lineNumber": 69
+				},
+				{
+					"caller": "SessionsSection",
+					"callee": "toast.error",
+					"lineNumber": 74
+				},
+				{
+					"caller": "SessionsSection",
+					"callee": "setTimeout",
+					"lineNumber": 79
+				},
+				{
+					"caller": "SessionsSection",
+					"callee": "utils.terminal.listDaemonSessions.invalidate",
+					"lineNumber": 80
+				},
+				{
+					"caller": "SessionsSection",
+					"callee": "electronTrpc.terminal.clearTerminalHistory.useMutation",
+					"lineNumber": 86
+				},
+				{
+					"caller": "SessionsSection",
+					"callee": "toast.success",
+					"lineNumber": 88
+				},
+				{
+					"caller": "SessionsSection",
+					"callee": "utils.terminal.listDaemonSessions.invalidate",
+					"lineNumber": 89
+				},
+				{
+					"caller": "SessionsSection",
+					"callee": "toast.error",
+					"lineNumber": 92
+				},
+				{
+					"caller": "SessionsSection",
+					"callee": "electronTrpc.terminal.kill.useMutation",
+					"lineNumber": 98
+				},
+				{
+					"caller": "SessionsSection",
+					"callee": "toast.success",
+					"lineNumber": 100
+				},
+				{
+					"caller": "SessionsSection",
+					"callee": "utils.terminal.listDaemonSessions.invalidate",
+					"lineNumber": 101
+				},
+				{
+					"caller": "SessionsSection",
+					"callee": "toast.error",
+					"lineNumber": 104
+				},
+				{
+					"caller": "SessionsSection",
+					"callee": "electronTrpc.terminal.restartDaemon.useMutation",
+					"lineNumber": 110
+				},
+				{
+					"caller": "SessionsSection",
+					"callee": "toast.success",
+					"lineNumber": 112
+				},
+				{
+					"caller": "SessionsSection",
+					"callee": "utils.terminal.listDaemonSessions.invalidate",
+					"lineNumber": 116
+				},
+				{
+					"caller": "SessionsSection",
+					"callee": "toast.error",
+					"lineNumber": 119
+				},
+				{
+					"caller": "formatTimestamp",
+					"callee": "value.replace(\"T\", \" \").replace",
+					"lineNumber": 127
+				},
+				{
+					"caller": "formatTimestamp",
+					"callee": "value.replace",
+					"lineNumber": 127
+				},
+				{
+					"caller": "SessionsSection",
+					"callee": "utils.terminal.listDaemonSessions.invalidate",
+					"lineNumber": 139
+				},
+				{
+					"caller": "SessionsSection",
+					"callee": "setConfirmKillAllOpen",
+					"lineNumber": 162
+				},
+				{
+					"caller": "SessionsSection",
+					"callee": "setConfirmClearHistoryOpen",
+					"lineNumber": 172
+				},
+				{
+					"caller": "SessionsSection",
+					"callee": "setConfirmRestartDaemonOpen",
+					"lineNumber": 180
+				},
+				{
+					"caller": "SessionsSection",
+					"callee": "setShowSessionList",
+					"lineNumber": 188
+				},
+				{
+					"caller": "SessionsSection",
+					"callee": "sessionsSorted.map",
+					"lineNumber": 215
+				},
+				{
+					"caller": "SessionsSection",
+					"callee": "formatTimestamp",
+					"lineNumber": 230
+				},
+				{
+					"caller": "SessionsSection",
+					"callee": "setPendingKillSession",
+					"lineNumber": 237
+				},
+				{
+					"caller": "SessionsSection",
+					"callee": "setConfirmKillAllOpen",
+					"lineNumber": 281
+				},
+				{
+					"caller": "SessionsSection",
+					"callee": "setConfirmKillAllOpen",
+					"lineNumber": 290
+				},
+				{
+					"caller": "SessionsSection",
+					"callee": "killAllDaemonSessions.mutate",
+					"lineNumber": 291
+				},
+				{
+					"caller": "SessionsSection",
+					"callee": "setConfirmClearHistoryOpen",
+					"lineNumber": 326
+				},
+				{
+					"caller": "SessionsSection",
+					"callee": "setConfirmClearHistoryOpen",
+					"lineNumber": 335
+				},
+				{
+					"caller": "SessionsSection",
+					"callee": "clearTerminalHistory.mutate",
+					"lineNumber": 336
+				},
+				{
+					"caller": "SessionsSection",
+					"callee": "setPendingKillSession",
+					"lineNumber": 348
+				},
+				{
+					"caller": "SessionsSection",
+					"callee": "setPendingKillSession",
+					"lineNumber": 374
+				},
+				{
+					"caller": "SessionsSection",
+					"callee": "setPendingKillSession",
+					"lineNumber": 384
+				},
+				{
+					"caller": "SessionsSection",
+					"callee": "killDaemonSession.mutate",
+					"lineNumber": 386
+				},
+				{
+					"caller": "SessionsSection",
+					"callee": "setConfirmRestartDaemonOpen",
+					"lineNumber": 420
+				},
+				{
+					"caller": "SessionsSection",
+					"callee": "setConfirmRestartDaemonOpen",
+					"lineNumber": 429
+				},
+				{
+					"caller": "SessionsSection",
+					"callee": "restartDaemon.mutate",
+					"lineNumber": 430
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/V2PresetsSection/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "V2PresetsSection",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/components/V2SessionsSection/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "V2SessionsSection",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/terminal/components/TerminalSettings/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "TerminalSettings",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/terminal/page.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 68,
+			"nonEmptyLines": 63,
+			"functions": [
+				{
+					"name": "TerminalSettingsPage",
+					"startLine": 27,
+					"endLine": 68,
+					"params": []
+				}
+			],
+			"exports": [
+				{
+					"name": "Route",
+					"line": 13,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "TerminalSettingsPage",
+					"callee": "Route.useNavigate",
+					"lineNumber": 28
+				},
+				{
+					"caller": "TerminalSettingsPage",
+					"callee": "Route.useSearch",
+					"lineNumber": 29
+				},
+				{
+					"caller": "TerminalSettingsPage",
+					"callee": "useSettingsSearchQuery",
+					"lineNumber": 30
+				},
+				{
+					"caller": "TerminalSettingsPage",
+					"callee": "useIsV2CloudEnabled",
+					"lineNumber": 31
+				},
+				{
+					"caller": "TerminalSettingsPage",
+					"callee": "useMemo",
+					"lineNumber": 33
+				},
+				{
+					"caller": "TerminalSettingsPage",
+					"callee": "getVisibleItemsForSection",
+					"lineNumber": 35
+				},
+				{
+					"caller": "TerminalSettingsPage",
+					"callee": "navigate",
+					"lineNumber": 49
+				},
+				{
+					"caller": "TerminalSettingsPage",
+					"callee": "navigate",
+					"lineNumber": 58
+				}
+			],
+			"metrics": {
+				"importCount": 4,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/utils/settings-search/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/utils/settings-search/settings-search.test.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 73,
+			"nonEmptyLines": 62,
+			"functions": [
+				{
+					"name": "getIds",
+					"startLine": 8,
+					"endLine": 10,
+					"params": ["items"]
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "getIds",
+					"callee": "items.map",
+					"lineNumber": 9
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 0,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/utils/settings-search/settings-search.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1517,
+			"nonEmptyLines": 1463,
+			"functions": [
+				{
+					"name": "isItemAllowedForVariant",
+					"startLine": 205,
+					"endLine": 212,
+					"params": ["itemId", "isV2"]
+				},
+				{
+					"name": "searchSettings",
+					"startLine": 1426,
+					"endLine": 1436,
+					"params": ["query"]
+				},
+				{
+					"name": "getMatchCountBySection",
+					"startLine": 1438,
+					"endLine": 1449,
+					"params": ["query"]
+				},
+				{
+					"name": "getMatchingItemsForSection",
+					"startLine": 1451,
+					"endLine": 1456,
+					"params": ["query", "section"]
+				},
+				{
+					"name": "isItemVisible",
+					"startLine": 1458,
+					"endLine": 1463,
+					"params": ["itemId", "visibleItems"]
+				},
+				{
+					"name": "getVisibleItemsForSection",
+					"startLine": 1471,
+					"endLine": 1483,
+					"params": ["params"]
+				},
+				{
+					"name": "getVisibleMatchCountBySection",
+					"startLine": 1490,
+					"endLine": 1502,
+					"params": ["query", "isV2"]
+				},
+				{
+					"name": "getAllowedSectionsForVariant",
+					"startLine": 1509,
+					"endLine": 1517,
+					"params": ["isV2"]
+				}
+			],
+			"exports": [
+				{
+					"name": "SETTING_ITEM_ID",
+					"line": 3,
+					"isDefault": false
+				},
+				{
+					"name": "SETTING_ITEM_VARIANT",
+					"line": 115,
+					"isDefault": false
+				},
+				{
+					"name": "isItemAllowedForVariant",
+					"line": 205,
+					"isDefault": false
+				},
+				{
+					"name": "SETTINGS_ITEMS",
+					"line": 214,
+					"isDefault": false
+				},
+				{
+					"name": "searchSettings",
+					"line": 1426,
+					"isDefault": false
+				},
+				{
+					"name": "getMatchCountBySection",
+					"line": 1438,
+					"isDefault": false
+				},
+				{
+					"name": "getMatchingItemsForSection",
+					"line": 1451,
+					"isDefault": false
+				},
+				{
+					"name": "isItemVisible",
+					"line": 1458,
+					"isDefault": false
+				},
+				{
+					"name": "getVisibleItemsForSection",
+					"line": 1471,
+					"isDefault": false
+				},
+				{
+					"name": "getVisibleMatchCountBySection",
+					"line": 1490,
+					"isDefault": false
+				},
+				{
+					"name": "getAllowedSectionsForVariant",
+					"line": 1509,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "searchSettings",
+					"callee": "query.trim",
+					"lineNumber": 1427
+				},
+				{
+					"caller": "searchSettings",
+					"callee": "query.toLowerCase",
+					"lineNumber": 1429
+				},
+				{
+					"caller": "searchSettings",
+					"callee": "SETTINGS_ITEMS.filter",
+					"lineNumber": 1430
+				},
+				{
+					"caller": "searchSettings",
+					"callee": "item.title.toLowerCase().includes",
+					"lineNumber": 1432
+				},
+				{
+					"caller": "searchSettings",
+					"callee": "item.title.toLowerCase",
+					"lineNumber": 1432
+				},
+				{
+					"caller": "searchSettings",
+					"callee": "item.description.toLowerCase().includes",
+					"lineNumber": 1433
+				},
+				{
+					"caller": "searchSettings",
+					"callee": "item.description.toLowerCase",
+					"lineNumber": 1433
+				},
+				{
+					"caller": "searchSettings",
+					"callee": "item.keywords.some",
+					"lineNumber": 1434
+				},
+				{
+					"caller": "searchSettings",
+					"callee": "kw.toLowerCase().includes",
+					"lineNumber": 1434
+				},
+				{
+					"caller": "searchSettings",
+					"callee": "kw.toLowerCase",
+					"lineNumber": 1434
+				},
+				{
+					"caller": "getMatchCountBySection",
+					"callee": "searchSettings",
+					"lineNumber": 1441
+				},
+				{
+					"caller": "getMatchingItemsForSection",
+					"callee": "searchSettings(query).filter",
+					"lineNumber": 1455
+				},
+				{
+					"caller": "getMatchingItemsForSection",
+					"callee": "searchSettings",
+					"lineNumber": 1455
+				},
+				{
+					"caller": "isItemVisible",
+					"callee": "visibleItems.includes",
+					"lineNumber": 1462
+				},
+				{
+					"caller": "getVisibleItemsForSection",
+					"callee": "searchQuery.trim",
+					"lineNumber": 1477
+				},
+				{
+					"caller": "getVisibleItemsForSection",
+					"callee": "getMatchingItemsForSection",
+					"lineNumber": 1478
+				},
+				{
+					"caller": "getVisibleItemsForSection",
+					"callee": "SETTINGS_ITEMS.filter",
+					"lineNumber": 1479
+				},
+				{
+					"caller": "getVisibleItemsForSection",
+					"callee": "matched\n\t\t.filter((item) => isItemAllowedForVariant(item.id, isV2))\n\t\t.map",
+					"lineNumber": 1480
+				},
+				{
+					"caller": "getVisibleItemsForSection",
+					"callee": "matched\n\t\t.filter",
+					"lineNumber": 1480
+				},
+				{
+					"caller": "getVisibleItemsForSection",
+					"callee": "isItemAllowedForVariant",
+					"lineNumber": 1481
+				},
+				{
+					"caller": "getVisibleMatchCountBySection",
+					"callee": "searchSettings(query).filter",
+					"lineNumber": 1494
+				},
+				{
+					"caller": "getVisibleMatchCountBySection",
+					"callee": "searchSettings",
+					"lineNumber": 1494
+				},
+				{
+					"caller": "getVisibleMatchCountBySection",
+					"callee": "isItemAllowedForVariant",
+					"lineNumber": 1495
+				},
+				{
+					"caller": "getAllowedSectionsForVariant",
+					"callee": "isItemAllowedForVariant",
+					"lineNumber": 1514
+				},
+				{
+					"caller": "getAllowedSectionsForVariant",
+					"callee": "sections.add",
+					"lineNumber": 1514
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 11,
+				"functionCount": 8,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/components/IconUploadField/IconUploadField.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 181,
+			"nonEmptyLines": 169,
+			"functions": [
+				{
+					"name": "IconUploadField",
+					"startLine": 24,
+					"endLine": 181,
+					"params": ["{\n\tprojectId,\n\ticonUrl,\n\thasGitHubRepo,\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "IconUploadField",
+					"line": 24,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "IconUploadField",
+					"callee": "useRef",
+					"lineNumber": 29
+				},
+				{
+					"caller": "IconUploadField",
+					"callee": "useState",
+					"lineNumber": 30
+				},
+				{
+					"caller": "IconUploadField",
+					"callee": "useCallback",
+					"lineNumber": 32
+				},
+				{
+					"caller": "IconUploadField",
+					"callee": "fileInputRef.current.click",
+					"lineNumber": 35
+				},
+				{
+					"caller": "IconUploadField",
+					"callee": "useCallback",
+					"lineNumber": 38
+				},
+				{
+					"caller": "IconUploadField",
+					"callee": "(file.size / (1024 * 1024)).toFixed",
+					"lineNumber": 45
+				},
+				{
+					"caller": "IconUploadField",
+					"callee": "toast.error",
+					"lineNumber": 46
+				},
+				{
+					"caller": "IconUploadField",
+					"callee": "setIsPending",
+					"lineNumber": 52
+				},
+				{
+					"caller": "IconUploadField",
+					"callee": "toast.error",
+					"lineNumber": 55
+				},
+				{
+					"caller": "IconUploadField",
+					"callee": "setIsPending",
+					"lineNumber": 56
+				},
+				{
+					"caller": "IconUploadField",
+					"callee": "setIsPending",
+					"lineNumber": 59
+				},
+				{
+					"caller": "IconUploadField",
+					"callee": "toast.error",
+					"lineNumber": 64
+				},
+				{
+					"caller": "IconUploadField",
+					"callee": "setIsPending",
+					"lineNumber": 65
+				},
+				{
+					"caller": "IconUploadField",
+					"callee": "apiTrpcClient.v2Project.uploadIcon.mutate",
+					"lineNumber": 69
+				},
+				{
+					"caller": "IconUploadField",
+					"callee": "toast.error",
+					"lineNumber": 78
+				},
+				{
+					"caller": "IconUploadField",
+					"callee": "setIsPending",
+					"lineNumber": 80
+				},
+				{
+					"caller": "IconUploadField",
+					"callee": "reader.readAsDataURL",
+					"lineNumber": 83
+				},
+				{
+					"caller": "IconUploadField",
+					"callee": "useCallback",
+					"lineNumber": 88
+				},
+				{
+					"caller": "IconUploadField",
+					"callee": "setIsPending",
+					"lineNumber": 89
+				},
+				{
+					"caller": "IconUploadField",
+					"callee": "apiTrpcClient.v2Project.resetIconToGitHub.mutate",
+					"lineNumber": 91
+				},
+				{
+					"caller": "IconUploadField",
+					"callee": "toast.error",
+					"lineNumber": 95
+				},
+				{
+					"caller": "IconUploadField",
+					"callee": "setIsPending",
+					"lineNumber": 97
+				},
+				{
+					"caller": "IconUploadField",
+					"callee": "useCallback",
+					"lineNumber": 101
+				},
+				{
+					"caller": "IconUploadField",
+					"callee": "setIsPending",
+					"lineNumber": 102
+				},
+				{
+					"caller": "IconUploadField",
+					"callee": "apiTrpcClient.v2Project.removeIcon.mutate",
+					"lineNumber": 104
+				},
+				{
+					"caller": "IconUploadField",
+					"callee": "toast.error",
+					"lineNumber": 108
+				},
+				{
+					"caller": "IconUploadField",
+					"callee": "setIsPending",
+					"lineNumber": 110
+				},
+				{
+					"caller": "IconUploadField",
+					"callee": "Boolean",
+					"lineNumber": 114
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/v2-project/$projectId/components/V2ProjectSettings/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "V2ProjectSettings",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/create-organization/page.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 251,
+			"nonEmptyLines": 228,
+			"functions": [
+				{
+					"name": "CreateOrganization",
+					"startLine": 44,
+					"endLine": 251,
+					"params": []
+				}
+			],
+			"exports": [
+				{
+					"name": "Route",
+					"line": 24,
+					"isDefault": false
+				},
+				{
+					"name": "CreateOrganization",
+					"line": 44,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "CreateOrganization",
+					"callee": "authClient.useSession",
+					"lineNumber": 45
+				},
+				{
+					"caller": "CreateOrganization",
+					"callee": "useSignOut",
+					"lineNumber": 48
+				},
+				{
+					"caller": "CreateOrganization",
+					"callee": "useNavigate",
+					"lineNumber": 49
+				},
+				{
+					"caller": "CreateOrganization",
+					"callee": "useState",
+					"lineNumber": 51
+				},
+				{
+					"caller": "CreateOrganization",
+					"callee": "useState",
+					"lineNumber": 52
+				},
+				{
+					"caller": "CreateOrganization",
+					"callee": "useState",
+					"lineNumber": 53
+				},
+				{
+					"caller": "CreateOrganization",
+					"callee": "useForm",
+					"lineNumber": 55
+				},
+				{
+					"caller": "CreateOrganization",
+					"callee": "zodResolver",
+					"lineNumber": 56
+				},
+				{
+					"caller": "CreateOrganization",
+					"callee": "form.watch",
+					"lineNumber": 63
+				},
+				{
+					"caller": "CreateOrganization",
+					"callee": "useEffect",
+					"lineNumber": 64
+				},
+				{
+					"caller": "CreateOrganization",
+					"callee": "nameValue\n\t\t\t.toLowerCase()\n\t\t\t.replace(/[^a-z0-9]+/g, \"-\")\n\t\t\t.replace",
+					"lineNumber": 65
+				},
+				{
+					"caller": "CreateOrganization",
+					"callee": "nameValue\n\t\t\t.toLowerCase()\n\t\t\t.replace",
+					"lineNumber": 65
+				},
+				{
+					"caller": "CreateOrganization",
+					"callee": "nameValue\n\t\t\t.toLowerCase",
+					"lineNumber": 65
+				},
+				{
+					"caller": "CreateOrganization",
+					"callee": "form.getValues",
+					"lineNumber": 70
+				},
+				{
+					"caller": "CreateOrganization",
+					"callee": "form.setValue",
+					"lineNumber": 71
+				},
+				{
+					"caller": "CreateOrganization",
+					"callee": "form.watch",
+					"lineNumber": 75
+				},
+				{
+					"caller": "CreateOrganization",
+					"callee": "useEffect",
+					"lineNumber": 76
+				},
+				{
+					"caller": "CreateOrganization",
+					"callee": "setTimeout",
+					"lineNumber": 77
+				},
+				{
+					"caller": "CreateOrganization",
+					"callee": "setSlugAvailable",
+					"lineNumber": 79
+				},
+				{
+					"caller": "CreateOrganization",
+					"callee": "setIsCheckingSlug",
+					"lineNumber": 83
+				},
+				{
+					"caller": "CreateOrganization",
+					"callee": "authClient.organization.checkSlug",
+					"lineNumber": 85
+				},
+				{
+					"caller": "CreateOrganization",
+					"callee": "setSlugAvailable",
+					"lineNumber": 89
+				},
+				{
+					"caller": "CreateOrganization",
+					"callee": "console.error",
+					"lineNumber": 91
+				},
+				{
+					"caller": "CreateOrganization",
+					"callee": "setSlugAvailable",
+					"lineNumber": 92
+				},
+				{
+					"caller": "CreateOrganization",
+					"callee": "setIsCheckingSlug",
+					"lineNumber": 94
+				},
+				{
+					"caller": "CreateOrganization",
+					"callee": "clearTimeout",
+					"lineNumber": 98
+				},
+				{
+					"caller": "handleSignOut",
+					"callee": "signOut",
+					"lineNumber": 102
+				},
+				{
+					"caller": "onSubmit",
+					"callee": "setIsSubmitting",
+					"lineNumber": 131
+				},
+				{
+					"caller": "onSubmit",
+					"callee": "apiTrpcClient.organization.create.mutate",
+					"lineNumber": 133
+				},
+				{
+					"caller": "onSubmit",
+					"callee": "authClient.organization.setActive",
+					"lineNumber": 138
+				},
+				{
+					"caller": "onSubmit",
+					"callee": "toast.success",
+					"lineNumber": 142
+				},
+				{
+					"caller": "onSubmit",
+					"callee": "navigate",
+					"lineNumber": 143
+				},
+				{
+					"caller": "onSubmit",
+					"callee": "toast.error",
+					"lineNumber": 145
+				},
+				{
+					"caller": "onSubmit",
+					"callee": "setIsSubmitting",
+					"lineNumber": 151
+				},
+				{
+					"caller": "CreateOrganization",
+					"callee": "navigate",
+					"lineNumber": 167
+				},
+				{
+					"caller": "CreateOrganization",
+					"callee": "form.handleSubmit",
+					"lineNumber": 188
+				},
+				{
+					"caller": "CreateOrganization",
+					"callee": "renderSlugStatus",
+					"lineNumber": 224
+				}
+			],
+			"metrics": {
+				"importCount": 3,
+				"exportCount": 2,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/error.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 95,
+			"nonEmptyLines": 85,
+			"functions": [
+				{
+					"name": "ErrorPage",
+					"startLine": 15,
+					"endLine": 95,
+					"params": ["{ error, info }"]
+				}
+			],
+			"exports": [
+				{
+					"name": "ErrorPage",
+					"line": 15,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "ErrorPage",
+					"callee": "String",
+					"lineNumber": 17
+				},
+				{
+					"caller": "ErrorPage",
+					"callee": "useState",
+					"lineNumber": 22
+				},
+				{
+					"caller": "ErrorPage",
+					"callee": "useCopyToClipboard",
+					"lineNumber": 23
+				},
+				{
+					"caller": "ErrorPage",
+					"callee": "useEffect",
+					"lineNumber": 25
+				},
+				{
+					"caller": "ErrorPage",
+					"callee": "console.error",
+					"lineNumber": 26
+				},
+				{
+					"caller": "ErrorPage",
+					"callee": "import(\"@sentry/electron/renderer\")\n\t\t\t.then((Sentry) =>\n\t\t\t\tSentry.captureException(error, {\n\t\t\t\t\textra: componentStack ? { componentStack } : undefined,\n\t\t\t\t}),\n\t\t\t)\n\t\t\t.catch",
+					"lineNumber": 27
+				},
+				{
+					"caller": "ErrorPage",
+					"callee": "import(\"@sentry/electron/renderer\")\n\t\t\t.then",
+					"lineNumber": 27
+				},
+				{
+					"caller": "ErrorPage",
+					"callee": "import",
+					"lineNumber": 27
+				},
+				{
+					"caller": "ErrorPage",
+					"callee": "Sentry.captureException",
+					"lineNumber": 29
+				},
+				{
+					"caller": "ErrorPage",
+					"callee": "window.location.reload",
+					"lineNumber": 54
+				},
+				{
+					"caller": "ErrorPage",
+					"callee": "setShowDetails",
+					"lineNumber": 62
+				},
+				{
+					"caller": "ErrorPage",
+					"callee": "copyToClipboard(details).catch",
+					"lineNumber": 75
+				},
+				{
+					"caller": "ErrorPage",
+					"callee": "copyToClipboard",
+					"lineNumber": 75
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/not-found.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 29,
+			"nonEmptyLines": 27,
+			"functions": [
+				{
+					"name": "NotFound",
+					"startLine": 3,
+					"endLine": 29,
+					"params": []
+				}
+			],
+			"exports": [
+				{
+					"name": "NotFound",
+					"line": 3,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/sign-in/components/SupersetLogo/SupersetLogo.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 58,
+			"nonEmptyLines": 55,
+			"functions": [
+				{
+					"name": "SupersetLogo",
+					"startLine": 9,
+					"endLine": 58,
+					"params": ["{\n\tclassName,\n\tgradient = false,\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "SupersetLogo",
+					"line": 9,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "SupersetLogo",
+					"callee": "useId",
+					"lineNumber": 13
+				},
+				{
+					"caller": "SupersetLogo",
+					"callee": "cn",
+					"lineNumber": 23
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/sign-in/components/SupersetLogo/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "SupersetLogo",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/sign-in/hooks/useSessionRecovery/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "useSessionRecovery",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/sign-in/hooks/useSessionRecovery/useSessionRecovery.test.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 76,
+			"nonEmptyLines": 68,
+			"functions": [
+				{
+					"name": "factor",
+					"startLine": 12,
+					"endLine": 12,
+					"params": ["random"]
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 0,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/sign-in/hooks/useSessionRecovery/useSessionRecovery.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 141,
+			"nonEmptyLines": 123,
+			"functions": [
+				{
+					"name": "nextRecoveryDelayMs",
+					"startLine": 18,
+					"endLine": 36,
+					"params": ["attemptsMade", "random"]
+				},
+				{
+					"name": "useSessionRecovery",
+					"startLine": 38,
+					"endLine": 141,
+					"params": []
+				}
+			],
+			"exports": [
+				{
+					"name": "SESSION_RECOVERY_BASE_DELAY_MS",
+					"line": 5,
+					"isDefault": false
+				},
+				{
+					"name": "SESSION_RECOVERY_MAX_DELAY_MS",
+					"line": 6,
+					"isDefault": false
+				},
+				{
+					"name": "SESSION_RECOVERY_MAX_ATTEMPTS",
+					"line": 7,
+					"isDefault": false
+				},
+				{
+					"name": "nextRecoveryDelayMs",
+					"line": 18,
+					"isDefault": false
+				},
+				{
+					"name": "useSessionRecovery",
+					"line": 38,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "nextRecoveryDelayMs",
+					"callee": "Math.random",
+					"lineNumber": 20
+				},
+				{
+					"caller": "nextRecoveryDelayMs",
+					"callee": "Math.max",
+					"lineNumber": 28
+				},
+				{
+					"caller": "nextRecoveryDelayMs",
+					"callee": "Math.min",
+					"lineNumber": 29
+				},
+				{
+					"caller": "nextRecoveryDelayMs",
+					"callee": "Math.min",
+					"lineNumber": 35
+				},
+				{
+					"caller": "useSessionRecovery",
+					"callee": "authClient.useSession",
+					"lineNumber": 39
+				},
+				{
+					"caller": "useSessionRecovery",
+					"callee": "useOnlineStatus",
+					"lineNumber": 40
+				},
+				{
+					"caller": "useSessionRecovery",
+					"callee": "getAuthToken",
+					"lineNumber": 41
+				},
+				{
+					"caller": "useSessionRecovery",
+					"callee": "useRef",
+					"lineNumber": 43
+				},
+				{
+					"caller": "useSessionRecovery",
+					"callee": "useRef",
+					"lineNumber": 44
+				},
+				{
+					"caller": "useSessionRecovery",
+					"callee": "useRef",
+					"lineNumber": 45
+				},
+				{
+					"caller": "useSessionRecovery",
+					"callee": "useRef",
+					"lineNumber": 46
+				},
+				{
+					"caller": "useSessionRecovery",
+					"callee": "useEffect",
+					"lineNumber": 51
+				},
+				{
+					"caller": "useSessionRecovery",
+					"callee": "useCallback",
+					"lineNumber": 58
+				},
+				{
+					"caller": "useSessionRecovery",
+					"callee": "window.clearTimeout",
+					"lineNumber": 60
+				},
+				{
+					"caller": "useSessionRecovery",
+					"callee": "useEffectEvent",
+					"lineNumber": 65
+				},
+				{
+					"caller": "useSessionRecovery",
+					"callee": "refetch",
+					"lineNumber": 79
+				},
+				{
+					"caller": "useSessionRecovery",
+					"callee": "console.warn",
+					"lineNumber": 81
+				},
+				{
+					"caller": "useSessionRecovery",
+					"callee": "clearTimer",
+					"lineNumber": 89
+				},
+				{
+					"caller": "useSessionRecovery",
+					"callee": "nextRecoveryDelayMs",
+					"lineNumber": 90
+				},
+				{
+					"caller": "useSessionRecovery",
+					"callee": "window.setTimeout",
+					"lineNumber": 92
+				},
+				{
+					"caller": "useSessionRecovery",
+					"callee": "retrySessionRecovery",
+					"lineNumber": 93
+				},
+				{
+					"caller": "useSessionRecovery",
+					"callee": "useEffectEvent",
+					"lineNumber": 101
+				},
+				{
+					"caller": "useSessionRecovery",
+					"callee": "clearTimer",
+					"lineNumber": 103
+				},
+				{
+					"caller": "useSessionRecovery",
+					"callee": "retrySessionRecovery",
+					"lineNumber": 104
+				},
+				{
+					"caller": "useSessionRecovery",
+					"callee": "useEffect",
+					"lineNumber": 107
+				},
+				{
+					"caller": "useSessionRecovery",
+					"callee": "clearTimer",
+					"lineNumber": 109
+				},
+				{
+					"caller": "useSessionRecovery",
+					"callee": "retrySessionRecovery",
+					"lineNumber": 114
+				},
+				{
+					"caller": "handleWindowFocus",
+					"callee": "resetAndRetry",
+					"lineNumber": 117
+				},
+				{
+					"caller": "handleVisibilityChange",
+					"callee": "resetAndRetry",
+					"lineNumber": 122
+				},
+				{
+					"caller": "useSessionRecovery",
+					"callee": "window.addEventListener",
+					"lineNumber": 126
+				},
+				{
+					"caller": "useSessionRecovery",
+					"callee": "document.addEventListener",
+					"lineNumber": 127
+				},
+				{
+					"caller": "useSessionRecovery",
+					"callee": "clearTimer",
+					"lineNumber": 130
+				},
+				{
+					"caller": "useSessionRecovery",
+					"callee": "window.removeEventListener",
+					"lineNumber": 131
+				},
+				{
+					"caller": "useSessionRecovery",
+					"callee": "document.removeEventListener",
+					"lineNumber": 132
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 5,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/sign-in/page.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 229,
+			"nonEmptyLines": 209,
+			"functions": [
+				{
+					"name": "readLastUsedMethod",
+					"startLine": 29,
+					"endLine": 34,
+					"params": []
+				},
+				{
+					"name": "SignInPage",
+					"startLine": 36,
+					"endLine": 229,
+					"params": []
+				}
+			],
+			"exports": [
+				{
+					"name": "Route",
+					"line": 21,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "readLastUsedMethod",
+					"callee": "window.localStorage.getItem",
+					"lineNumber": 30
+				},
+				{
+					"caller": "SignInPage",
+					"callee": "electronTrpc.auth.signIn.useMutation",
+					"lineNumber": 37
+				},
+				{
+					"caller": "SignInPage",
+					"callee": "electronTrpc.auth.persistToken.useMutation",
+					"lineNumber": 38
+				},
+				{
+					"caller": "SignInPage",
+					"callee": "useNavigate",
+					"lineNumber": 39
+				},
+				{
+					"caller": "SignInPage",
+					"callee": "useState",
+					"lineNumber": 40
+				},
+				{
+					"caller": "SignInPage",
+					"callee": "useState",
+					"lineNumber": 41
+				},
+				{
+					"caller": "SignInPage",
+					"callee": "useState",
+					"lineNumber": 42
+				},
+				{
+					"caller": "SignInPage",
+					"callee": "useSessionRecovery",
+					"lineNumber": 43
+				},
+				{
+					"caller": "rememberLastUsedMethod",
+					"callee": "window.localStorage.setItem",
+					"lineNumber": 65
+				},
+				{
+					"caller": "rememberLastUsedMethod",
+					"callee": "setLastUsedMethod",
+					"lineNumber": 66
+				},
+				{
+					"caller": "signIn",
+					"callee": "track",
+					"lineNumber": 70
+				},
+				{
+					"caller": "signIn",
+					"callee": "rememberLastUsedMethod",
+					"lineNumber": 71
+				},
+				{
+					"caller": "signIn",
+					"callee": "signInMutation.mutate",
+					"lineNumber": 72
+				},
+				{
+					"caller": "signInAsDev",
+					"callee": "setIsLoadingDev",
+					"lineNumber": 76
+				},
+				{
+					"caller": "signInAsDev",
+					"callee": "setDevError",
+					"lineNumber": 77
+				},
+				{
+					"caller": "signInAsDev",
+					"callee": "rememberLastUsedMethod",
+					"lineNumber": 78
+				},
+				{
+					"caller": "postAuth",
+					"callee": "fetch",
+					"lineNumber": 81
+				},
+				{
+					"caller": "postAuth",
+					"callee": "JSON.stringify",
+					"lineNumber": 85
+				},
+				{
+					"caller": "postAuth",
+					"callee": "response.json().catch",
+					"lineNumber": 87
+				},
+				{
+					"caller": "postAuth",
+					"callee": "response.json",
+					"lineNumber": 87
+				},
+				{
+					"caller": "signInAsDev",
+					"callee": "postAuth",
+					"lineNumber": 96
+				},
+				{
+					"caller": "signInAsDev",
+					"callee": "postAuth",
+					"lineNumber": 101
+				},
+				{
+					"caller": "signInAsDev",
+					"callee": "postAuth",
+					"lineNumber": 111
+				},
+				{
+					"caller": "signInAsDev",
+					"callee": "new Date(\n\t\t\t\tDate.now() + 1000 * 60 * 60 * 24 * 30,\n\t\t\t).toISOString",
+					"lineNumber": 123
+				},
+				{
+					"caller": "signInAsDev",
+					"callee": "Date.now",
+					"lineNumber": 124
+				},
+				{
+					"caller": "signInAsDev",
+					"callee": "persistToken.mutateAsync",
+					"lineNumber": 126
+				},
+				{
+					"caller": "signInAsDev",
+					"callee": "setAuthToken",
+					"lineNumber": 127
+				},
+				{
+					"caller": "signInAsDev",
+					"callee": "navigate",
+					"lineNumber": 128
+				},
+				{
+					"caller": "signInAsDev",
+					"callee": "setDevError",
+					"lineNumber": 130
+				},
+				{
+					"caller": "signInAsDev",
+					"callee": "setIsLoadingDev",
+					"lineNumber": 133
+				},
+				{
+					"caller": "SignInPage",
+					"callee": "signIn",
+					"lineNumber": 183
+				},
+				{
+					"caller": "SignInPage",
+					"callee": "signIn",
+					"lineNumber": 195
+				}
+			],
+			"metrics": {
+				"importCount": 6,
+				"exportCount": 1,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/ChatPane/ChatPaneInterface/utils/uploadFiles/uploadFiles.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 81,
+			"nonEmptyLines": 73,
+			"functions": [
+				{
+					"name": "getHttpErrorDetail",
+					"startLine": 5,
+					"endLine": 13,
+					"params": ["response"]
+				},
+				{
+					"name": "blobToDataUrl",
+					"startLine": 15,
+					"endLine": 31,
+					"params": ["blob"]
+				},
+				{
+					"name": "uploadFile",
+					"startLine": 33,
+					"endLine": 72,
+					"params": ["sessionId", "file", "signal"]
+				},
+				{
+					"name": "uploadFiles",
+					"startLine": 74,
+					"endLine": 81,
+					"params": ["sessionId", "files", "signal"]
+				}
+			],
+			"exports": [
+				{
+					"name": "uploadFiles",
+					"line": 74,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "getHttpErrorDetail",
+					"callee": "response\n\t\t.text()\n\t\t.then((text) => text.trim())\n\t\t.catch",
+					"lineNumber": 6
+				},
+				{
+					"caller": "getHttpErrorDetail",
+					"callee": "response\n\t\t.text()\n\t\t.then",
+					"lineNumber": 6
+				},
+				{
+					"caller": "getHttpErrorDetail",
+					"callee": "response\n\t\t.text",
+					"lineNumber": 6
+				},
+				{
+					"caller": "getHttpErrorDetail",
+					"callee": "text.trim",
+					"lineNumber": 8
+				},
+				{
+					"caller": "getHttpErrorDetail",
+					"callee": "errorBody.slice",
+					"lineNumber": 11
+				},
+				{
+					"caller": "blobToDataUrl",
+					"callee": "reject",
+					"lineNumber": 19
+				},
+				{
+					"caller": "blobToDataUrl",
+					"callee": "reject",
+					"lineNumber": 23
+				},
+				{
+					"caller": "blobToDataUrl",
+					"callee": "resolve",
+					"lineNumber": 27
+				},
+				{
+					"caller": "blobToDataUrl",
+					"callee": "reader.readAsDataURL",
+					"lineNumber": 29
+				},
+				{
+					"caller": "uploadFile",
+					"callee": "fetch",
+					"lineNumber": 38
+				},
+				{
+					"caller": "uploadFile",
+					"callee": "getHttpErrorDetail",
+					"lineNumber": 40
+				},
+				{
+					"caller": "uploadFile",
+					"callee": "response.blob",
+					"lineNumber": 44
+				},
+				{
+					"caller": "uploadFile",
+					"callee": "blobToDataUrl",
+					"lineNumber": 49
+				},
+				{
+					"caller": "uploadFile",
+					"callee": "isDesktopChatDevMode",
+					"lineNumber": 51
+				},
+				{
+					"caller": "uploadFile",
+					"callee": "apiTrpcClient.chat.uploadAttachment.mutate",
+					"lineNumber": 60
+				},
+				{
+					"caller": "uploadFiles",
+					"callee": "Promise.all",
+					"lineNumber": 80
+				},
+				{
+					"caller": "uploadFiles",
+					"callee": "files.map",
+					"lineNumber": 80
+				},
+				{
+					"caller": "uploadFiles",
+					"callee": "uploadFile",
+					"lineNumber": 80
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 1,
+				"functionCount": 4,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/ChatPane/hooks/useChatPaneController/useChatPaneController.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 483,
+			"nonEmptyLines": 446,
+			"functions": [
+				{
+					"name": "toSessionSelectorItem",
+					"startLine": 53,
+					"endLine": 71,
+					"params": ["session"]
+				},
+				{
+					"name": "getHttpErrorDetail",
+					"startLine": 73,
+					"endLine": 81,
+					"params": ["response"]
+				},
+				{
+					"name": "createSessionRecord",
+					"startLine": 83,
+					"endLine": 112,
+					"params": ["input"]
+				},
+				{
+					"name": "deleteSessionRecord",
+					"startLine": 114,
+					"endLine": 126,
+					"params": ["sessionId"]
+				},
+				{
+					"name": "useChatPaneController",
+					"startLine": 128,
+					"endLine": 483,
+					"params": ["{\n\tpaneId,\n\tworkspaceId,\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "useChatPaneController",
+					"line": 128,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "getHttpErrorDetail",
+					"callee": "response\n\t\t.text()\n\t\t.then((text) => text.trim())\n\t\t.catch",
+					"lineNumber": 74
+				},
+				{
+					"caller": "getHttpErrorDetail",
+					"callee": "response\n\t\t.text()\n\t\t.then",
+					"lineNumber": 74
+				},
+				{
+					"caller": "getHttpErrorDetail",
+					"callee": "response\n\t\t.text",
+					"lineNumber": 74
+				},
+				{
+					"caller": "getHttpErrorDetail",
+					"callee": "text.trim",
+					"lineNumber": 76
+				},
+				{
+					"caller": "getHttpErrorDetail",
+					"callee": "errorBody.slice",
+					"lineNumber": 79
+				},
+				{
+					"caller": "createSessionRecord",
+					"callee": "isDesktopChatDevMode",
+					"lineNumber": 88
+				},
+				{
+					"caller": "createSessionRecord",
+					"callee": "getAuthToken",
+					"lineNumber": 89
+				},
+				{
+					"caller": "createSessionRecord",
+					"callee": "fetch",
+					"lineNumber": 90
+				},
+				{
+					"caller": "createSessionRecord",
+					"callee": "JSON.stringify",
+					"lineNumber": 96
+				},
+				{
+					"caller": "createSessionRecord",
+					"callee": "getHttpErrorDetail",
+					"lineNumber": 103
+				},
+				{
+					"caller": "createSessionRecord",
+					"callee": "console.warn",
+					"lineNumber": 104
+				},
+				{
+					"caller": "deleteSessionRecord",
+					"callee": "isDesktopChatDevMode",
+					"lineNumber": 115
+				},
+				{
+					"caller": "deleteSessionRecord",
+					"callee": "getAuthToken",
+					"lineNumber": 116
+				},
+				{
+					"caller": "deleteSessionRecord",
+					"callee": "fetch",
+					"lineNumber": 117
+				},
+				{
+					"caller": "deleteSessionRecord",
+					"callee": "getHttpErrorDetail",
+					"lineNumber": 123
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "useTabsStore",
+					"lineNumber": 132
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "useTabsStore",
+					"lineNumber": 133
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "useTabsStore",
+					"lineNumber": 134
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "authClient.useSession",
+					"lineNumber": 140
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "resolveDesktopChatOrganizationId",
+					"lineNumber": 141
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "useCollections",
+					"lineNumber": 144
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "useRef",
+					"lineNumber": 145
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "useRef",
+					"lineNumber": 146
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "electronTrpc.workspaces.get.useQuery",
+					"lineNumber": 148
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "Boolean",
+					"lineNumber": 150
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "useLiveQuery",
+					"lineNumber": 153
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "q\n\t\t\t\t.from({ ws: collections.workspaces })\n\t\t\t\t.where(({ ws }) => eq(ws.id, workspaceId))\n\t\t\t\t.select",
+					"lineNumber": 155
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "q\n\t\t\t\t.from({ ws: collections.workspaces })\n\t\t\t\t.where",
+					"lineNumber": 155
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "q\n\t\t\t\t.from",
+					"lineNumber": 155
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "eq",
+					"lineNumber": 157
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "Boolean",
+					"lineNumber": 161
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "useEffect",
+					"lineNumber": 165
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "isDesktopChatDevMode",
+					"lineNumber": 166
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "project.mainRepoPath.split(\"/\").pop",
+					"lineNumber": 172
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "project.mainRepoPath.split",
+					"lineNumber": 172
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "apiTrpcClient.workspace.ensure\n\t\t\t.mutate({\n\t\t\t\torganizationId,\n\t\t\t\tproject: {\n\t\t\t\t\tname: project.name,\n\t\t\t\t\tslug: repoName.toLowerCase(),\n\t\t\t\t\trepoOwner: project.githubOwner,\n\t\t\t\t\trepoName,\n\t\t\t\t\trepoUrl: `https://github.com/${project.githubOwner}/${repoName}`,\n\t\t\t\t\tdefaultBranch: project.defaultBranch ?? \"main\",\n\t\t\t\t},\n\t\t\t\tworkspace: {\n\t\t\t\t\tid: workspaceId,\n\t\t\t\t\tname: workspace.name,\n\t\t\t\t\ttype: \"local\",\n\t\t\t\t\tconfig: {\n\t\t\t\t\t\tpath: workspace.worktreePath,\n\t\t\t\t\t\tbranch:\n\t\t\t\t\t\t\tworkspace.worktree?.branch ?? project.defaultBranch ?? \"main\",\n\t\t\t\t\t},\n\t\t\t\t},\n\t\t\t})\n\t\t\t.catch",
+					"lineNumber": 177
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "apiTrpcClient.workspace.ensure\n\t\t\t.mutate",
+					"lineNumber": 177
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "repoName.toLowerCase",
+					"lineNumber": 182
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "reportChatError",
+					"lineNumber": 200
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "useLiveQuery",
+					"lineNumber": 211
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "q\n\t\t\t\t.from({ chatSessions: collections.chatSessions })\n\t\t\t\t.orderBy(({ chatSessions }) => chatSessions.lastActiveAt, \"desc\")\n\t\t\t\t.select",
+					"lineNumber": 213
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "q\n\t\t\t\t.from({ chatSessions: collections.chatSessions })\n\t\t\t\t.orderBy",
+					"lineNumber": 213
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "q\n\t\t\t\t.from",
+					"lineNumber": 213
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "useMemo",
+					"lineNumber": 220
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "allSessions.filter",
+					"lineNumber": 221
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "isDesktopChatSessionReady",
+					"lineNumber": 226
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "Boolean",
+					"lineNumber": 228
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "sessions.some",
+					"lineNumber": 229
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "useState",
+					"lineNumber": 232
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "useRef",
+					"lineNumber": 233
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "useRef",
+					"lineNumber": 234
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "useRef",
+					"lineNumber": 235
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "useEffect",
+					"lineNumber": 239
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "createSessionInitRunner",
+					"lineNumber": 244
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "createSessionRecord",
+					"lineNumber": 251
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "reportChatError",
+					"lineNumber": 258
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "toast.error",
+					"lineNumber": 268
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "useEffect",
+					"lineNumber": 273
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "sessionInitRunnerRef.current?.dispose",
+					"lineNumber": 275
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "useEffect",
+					"lineNumber": 279
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "sessionInitRunnerRef.current?.resetScope",
+					"lineNumber": 283
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "useMemo",
+					"lineNumber": 286
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "useCallback",
+					"lineNumber": 296
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "switchChatSession",
+					"lineNumber": 298
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "posthog.capture",
+					"lineNumber": 299
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "useCallback",
+					"lineNumber": 308
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "createSessionRecord",
+					"lineNumber": 317
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "switchChatSession",
+					"lineNumber": 322
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "posthog.capture",
+					"lineNumber": 323
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "reportChatError",
+					"lineNumber": 330
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "useCallback",
+					"lineNumber": 350
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "createAndActivateSession",
+					"lineNumber": 352
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "crypto.randomUUID",
+					"lineNumber": 354
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "toast.error",
+					"lineNumber": 357
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "useCallback",
+					"lineNumber": 361
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "createAndActivateSession",
+					"lineNumber": 368
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "crypto.randomUUID",
+					"lineNumber": 370
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "useCallback",
+					"lineNumber": 374
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "deleteSessionRecord",
+					"lineNumber": 377
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "posthog.capture",
+					"lineNumber": 378
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "switchChatSession",
+					"lineNumber": 384
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "reportChatError",
+					"lineNumber": 387
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "useCallback",
+					"lineNumber": 401
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "runner.run",
+					"lineNumber": 410
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "useCallback",
+					"lineNumber": 415
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "runSessionInit",
+					"lineNumber": 416
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "useEffect",
+					"lineNumber": 419
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "sessionInitRunnerRef.current?.markReady",
+					"lineNumber": 422
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "useEffect",
+					"lineNumber": 425
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "runSessionInit",
+					"lineNumber": 428
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "useEffect",
+					"lineNumber": 431
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "handleNewChat()\n\t\t\t.catch(() => {})\n\t\t\t.finally",
+					"lineNumber": 438
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "handleNewChat()\n\t\t\t.catch",
+					"lineNumber": 438
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "handleNewChat",
+					"lineNumber": 438
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "useMemo",
+					"lineNumber": 445
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "sessions.map",
+					"lineNumber": 446
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "toSessionSelectorItem",
+					"lineNumber": 446
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "isDesktopChatDevMode",
+					"lineNumber": 448
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "nextItems.some",
+					"lineNumber": 450
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "useCallback",
+					"lineNumber": 464
+				},
+				{
+					"caller": "useChatPaneController",
+					"callee": "setChatLaunchConfig",
+					"lineNumber": 465
+				}
+			],
+			"metrics": {
+				"importCount": 12,
+				"exportCount": 1,
+				"functionCount": 5,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/ChatPane/utils/reportChatError.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 36,
+			"nonEmptyLines": 33,
+			"functions": [
+				{
+					"name": "errorDetails",
+					"startLine": 13,
+					"endLine": 21,
+					"params": ["error"]
+				},
+				{
+					"name": "reportChatError",
+					"startLine": 23,
+					"endLine": 36,
+					"params": ["input"]
+				}
+			],
+			"exports": [
+				{
+					"name": "reportChatError",
+					"line": 23,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "reportChatError",
+					"callee": "errorDetails",
+					"lineNumber": 24
+				},
+				{
+					"caller": "reportChatError",
+					"callee": "console.error",
+					"lineNumber": 25
+				},
+				{
+					"caller": "reportChatError",
+					"callee": "posthog.capture",
+					"lineNumber": 26
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/ChatPane/utils/session-init-runner.test.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 157,
+			"nonEmptyLines": 141,
+			"functions": [
+				{
+					"name": "createDeferred",
+					"startLine": 7,
+					"endLine": 15,
+					"params": []
+				},
+				{
+					"name": "flushMicrotasks",
+					"startLine": 17,
+					"endLine": 20,
+					"params": []
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "flushMicrotasks",
+					"callee": "Promise.resolve",
+					"lineNumber": 18
+				},
+				{
+					"caller": "flushMicrotasks",
+					"callee": "Promise.resolve",
+					"lineNumber": 19
+				},
+				{
+					"caller": "scheduleRetryTimeout",
+					"callee": "scheduledCallbacks.push",
+					"lineNumber": 87
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 0,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/ChatPane/utils/session-init-runner.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 133,
+			"nonEmptyLines": 118,
+			"functions": [
+				{
+					"name": "createSessionInitRunner",
+					"startLine": 33,
+					"endLine": 133,
+					"params": ["options"]
+				}
+			],
+			"exports": [
+				{
+					"name": "createSessionInitRunner",
+					"line": 33,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "createSessionInitRunner",
+					"callee": "setTimeout",
+					"lineNumber": 42
+				},
+				{
+					"caller": "createSessionInitRunner",
+					"callee": "clearTimeout",
+					"lineNumber": 46
+				},
+				{
+					"caller": "clearPendingRetry",
+					"callee": "clearRetryTimeout",
+					"lineNumber": 50
+				},
+				{
+					"caller": "resetScope",
+					"callee": "clearPendingRetry",
+					"lineNumber": 59
+				},
+				{
+					"caller": "resetScope",
+					"callee": "options.setIsSessionInitializing",
+					"lineNumber": 60
+				},
+				{
+					"caller": "markReady",
+					"callee": "clearPendingRetry",
+					"lineNumber": 67
+				},
+				{
+					"caller": "markReady",
+					"callee": "options.setIsSessionInitializing",
+					"lineNumber": 68
+				},
+				{
+					"caller": "run",
+					"callee": "resetScope",
+					"lineNumber": 75
+				},
+				{
+					"caller": "run",
+					"callee": "options.hasCurrentSessionRecord",
+					"lineNumber": 76
+				},
+				{
+					"caller": "run",
+					"callee": "markReady",
+					"lineNumber": 77
+				},
+				{
+					"caller": "run",
+					"callee": "options.setIsSessionInitializing",
+					"lineNumber": 82
+				},
+				{
+					"caller": "run",
+					"callee": "options\n\t\t\t.createSessionRecord(scope)\n\t\t\t.then(() => {\n\t\t\t\tif (!options.isScopeCurrent(scope.scopeKey)) return false;\n\t\t\t\tmarkReady(scope.scopeKey);\n\t\t\t\treturn true;\n\t\t\t})\n\t\t\t.catch((error) => {\n\t\t\t\toptions.reportCreateSessionError(error, scope);\n\t\t\t\tif (!options.isScopeCurrent(scope.scopeKey)) return false;\n\n\t\t\t\tif (retryOnFailure) {\n\t\t\t\t\tconst nextRetryCount = retryCount + 1;\n\t\t\t\t\tretryCount = nextRetryCount;\n\t\t\t\t\tif (nextRetryCount <= options.maxRetries) {\n\t\t\t\t\t\tclearPendingRetry();\n\t\t\t\t\t\tretryTimeoutHandle = scheduleRetryTimeout(() => {\n\t\t\t\t\t\t\tretryTimeoutHandle = null;\n\t\t\t\t\t\t\tif (!options.isScopeCurrent(scope.scopeKey)) return;\n\t\t\t\t\t\t\tvoid run({ scope, retryOnFailure: true });\n\t\t\t\t\t\t}, options.retryDelayMs);\n\t\t\t\t\t\treturn false;\n\t\t\t\t\t}\n\t\t\t\t\toptions.onRetryExhausted(scope);\n\t\t\t\t}\n\n\t\t\t\toptions.setIsSessionInitializing(false);\n\t\t\t\treturn false;\n\t\t\t})\n\t\t\t.finally",
+					"lineNumber": 84
+				},
+				{
+					"caller": "run",
+					"callee": "options\n\t\t\t.createSessionRecord(scope)\n\t\t\t.then(() => {\n\t\t\t\tif (!options.isScopeCurrent(scope.scopeKey)) return false;\n\t\t\t\tmarkReady(scope.scopeKey);\n\t\t\t\treturn true;\n\t\t\t})\n\t\t\t.catch",
+					"lineNumber": 84
+				},
+				{
+					"caller": "run",
+					"callee": "options\n\t\t\t.createSessionRecord(scope)\n\t\t\t.then",
+					"lineNumber": 84
+				},
+				{
+					"caller": "run",
+					"callee": "options\n\t\t\t.createSessionRecord",
+					"lineNumber": 84
+				},
+				{
+					"caller": "run",
+					"callee": "options.isScopeCurrent",
+					"lineNumber": 87
+				},
+				{
+					"caller": "run",
+					"callee": "markReady",
+					"lineNumber": 88
+				},
+				{
+					"caller": "run",
+					"callee": "options.reportCreateSessionError",
+					"lineNumber": 92
+				},
+				{
+					"caller": "run",
+					"callee": "options.isScopeCurrent",
+					"lineNumber": 93
+				},
+				{
+					"caller": "run",
+					"callee": "clearPendingRetry",
+					"lineNumber": 99
+				},
+				{
+					"caller": "run",
+					"callee": "scheduleRetryTimeout",
+					"lineNumber": 100
+				},
+				{
+					"caller": "run",
+					"callee": "options.isScopeCurrent",
+					"lineNumber": 102
+				},
+				{
+					"caller": "run",
+					"callee": "run",
+					"lineNumber": 103
+				},
+				{
+					"caller": "run",
+					"callee": "options.onRetryExhausted",
+					"lineNumber": 107
+				},
+				{
+					"caller": "run",
+					"callee": "options.setIsSessionInitializing",
+					"lineNumber": 110
+				},
+				{
+					"caller": "run",
+					"callee": "options.isScopeCurrent",
+					"lineNumber": 114
+				},
+				{
+					"caller": "dispose",
+					"callee": "clearPendingRetry",
+					"lineNumber": 124
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/hooks/useWorkspaceRename/useWorkspaceRename.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 74,
+			"nonEmptyLines": 65,
+			"functions": [
+				{
+					"name": "useWorkspaceRename",
+					"startLine": 4,
+					"endLine": 74,
+					"params": ["workspaceId", "workspaceName", "branch"]
+				}
+			],
+			"exports": [
+				{
+					"name": "useWorkspaceRename",
+					"line": 4,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "useWorkspaceRename",
+					"callee": "useState",
+					"lineNumber": 9
+				},
+				{
+					"caller": "useWorkspaceRename",
+					"callee": "useState",
+					"lineNumber": 10
+				},
+				{
+					"caller": "useWorkspaceRename",
+					"callee": "useRef",
+					"lineNumber": 11
+				},
+				{
+					"caller": "useWorkspaceRename",
+					"callee": "useUpdateWorkspace",
+					"lineNumber": 12
+				},
+				{
+					"caller": "useWorkspaceRename",
+					"callee": "useEffect",
+					"lineNumber": 14
+				},
+				{
+					"caller": "useWorkspaceRename",
+					"callee": "inputRef.current.select",
+					"lineNumber": 16
+				},
+				{
+					"caller": "useWorkspaceRename",
+					"callee": "useEffect",
+					"lineNumber": 20
+				},
+				{
+					"caller": "useWorkspaceRename",
+					"callee": "setRenameValue",
+					"lineNumber": 21
+				},
+				{
+					"caller": "startRename",
+					"callee": "setIsRenaming",
+					"lineNumber": 25
+				},
+				{
+					"caller": "submitRename",
+					"callee": "renameValue.trim",
+					"lineNumber": 29
+				},
+				{
+					"caller": "submitRename",
+					"callee": "updateWorkspace.mutate",
+					"lineNumber": 33
+				},
+				{
+					"caller": "submitRename",
+					"callee": "setRenameValue",
+					"lineNumber": 37
+				},
+				{
+					"caller": "submitRename",
+					"callee": "updateWorkspace.mutate",
+					"lineNumber": 39
+				},
+				{
+					"caller": "submitRename",
+					"callee": "setRenameValue",
+					"lineNumber": 44
+				},
+				{
+					"caller": "submitRename",
+					"callee": "setIsRenaming",
+					"lineNumber": 46
+				},
+				{
+					"caller": "cancelRename",
+					"callee": "setRenameValue",
+					"lineNumber": 50
+				},
+				{
+					"caller": "cancelRename",
+					"callee": "setIsRenaming",
+					"lineNumber": 51
+				},
+				{
+					"caller": "handleKeyDown",
+					"callee": "e.preventDefault",
+					"lineNumber": 56
+				},
+				{
+					"caller": "handleKeyDown",
+					"callee": "submitRename",
+					"lineNumber": 57
+				},
+				{
+					"caller": "handleKeyDown",
+					"callee": "e.preventDefault",
+					"lineNumber": 59
+				},
+				{
+					"caller": "handleKeyDown",
+					"callee": "cancelRename",
+					"lineNumber": 60
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/stores/git-init-dialog.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 48,
+			"nonEmptyLines": 43,
+			"exports": [
+				{
+					"name": "useGitInitDialogStore",
+					"line": 19,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/stores/inline-workspace-ports.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 48,
+			"nonEmptyLines": 45,
+			"functions": [
+				{
+					"name": "useInlineWorkspacePortsEnabled",
+					"startLine": 46,
+					"endLine": 48,
+					"params": []
+				}
+			],
+			"exports": [
+				{
+					"name": "useInlineWorkspacePortsStore",
+					"line": 32,
+					"isDefault": false
+				},
+				{
+					"name": "useInlineWorkspacePortsEnabled",
+					"line": 46,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "useInlineWorkspacePortsEnabled",
+					"callee": "useInlineWorkspacePortsStore",
+					"lineNumber": 47
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 2,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/stores/settings-state.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 91,
+			"nonEmptyLines": 80,
+			"functions": [
+				{
+					"name": "useSettingsSection",
+					"startLine": 78,
+					"endLine": 79,
+					"params": []
+				},
+				{
+					"name": "useSetSettingsSection",
+					"startLine": 80,
+					"endLine": 81,
+					"params": []
+				},
+				{
+					"name": "useSettingsSearchQuery",
+					"startLine": 82,
+					"endLine": 83,
+					"params": []
+				},
+				{
+					"name": "useSetSettingsSearchQuery",
+					"startLine": 84,
+					"endLine": 85,
+					"params": []
+				},
+				{
+					"name": "useActiveProjectId",
+					"startLine": 86,
+					"endLine": 87,
+					"params": []
+				},
+				{
+					"name": "useCloseSettings",
+					"startLine": 88,
+					"endLine": 89,
+					"params": []
+				},
+				{
+					"name": "useSettingsOriginRoute",
+					"startLine": 90,
+					"endLine": 91,
+					"params": []
+				}
+			],
+			"exports": [
+				{
+					"name": "useSettingsStore",
+					"line": 41,
+					"isDefault": false
+				},
+				{
+					"name": "useSettingsSection",
+					"line": 78,
+					"isDefault": false
+				},
+				{
+					"name": "useSetSettingsSection",
+					"line": 80,
+					"isDefault": false
+				},
+				{
+					"name": "useSettingsSearchQuery",
+					"line": 82,
+					"isDefault": false
+				},
+				{
+					"name": "useSetSettingsSearchQuery",
+					"line": 84,
+					"isDefault": false
+				},
+				{
+					"name": "useActiveProjectId",
+					"line": 86,
+					"isDefault": false
+				},
+				{
+					"name": "useCloseSettings",
+					"line": 88,
+					"isDefault": false
+				},
+				{
+					"name": "useSettingsOriginRoute",
+					"line": 90,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "useSettingsSection",
+					"callee": "useSettingsStore",
+					"lineNumber": 79
+				},
+				{
+					"caller": "useSetSettingsSection",
+					"callee": "useSettingsStore",
+					"lineNumber": 81
+				},
+				{
+					"caller": "useSettingsSearchQuery",
+					"callee": "useSettingsStore",
+					"lineNumber": 83
+				},
+				{
+					"caller": "useSetSettingsSearchQuery",
+					"callee": "useSettingsStore",
+					"lineNumber": 85
+				},
+				{
+					"caller": "useActiveProjectId",
+					"callee": "useSettingsStore",
+					"lineNumber": 87
+				},
+				{
+					"caller": "useCloseSettings",
+					"callee": "useSettingsStore",
+					"lineNumber": 89
+				},
+				{
+					"caller": "useSettingsOriginRoute",
+					"callee": "useSettingsStore",
+					"lineNumber": 91
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 8,
+				"functionCount": 7,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/stores/v1-import-modal.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 51,
+			"nonEmptyLines": 46,
+			"functions": [
+				{
+					"name": "useV1ImportModalOpen",
+					"startLine": 46,
+					"endLine": 47,
+					"params": []
+				},
+				{
+					"name": "useOpenV1ImportModal",
+					"startLine": 48,
+					"endLine": 49,
+					"params": []
+				},
+				{
+					"name": "useCloseV1ImportModal",
+					"startLine": 50,
+					"endLine": 51,
+					"params": []
+				}
+			],
+			"exports": [
+				{
+					"name": "V1_IMPORT_PAGE_ORDER",
+					"line": 11,
+					"isDefault": false
+				},
+				{
+					"name": "useV1ImportModalStore",
+					"line": 27,
+					"isDefault": false
+				},
+				{
+					"name": "useV1ImportModalOpen",
+					"line": 46,
+					"isDefault": false
+				},
+				{
+					"name": "useOpenV1ImportModal",
+					"line": 48,
+					"isDefault": false
+				},
+				{
+					"name": "useCloseV1ImportModal",
+					"line": 50,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "useV1ImportModalOpen",
+					"callee": "useV1ImportModalStore",
+					"lineNumber": 47
+				},
+				{
+					"caller": "useOpenV1ImportModal",
+					"callee": "useV1ImportModalStore",
+					"lineNumber": 49
+				},
+				{
+					"caller": "useCloseV1ImportModal",
+					"callee": "useV1ImportModalStore",
+					"lineNumber": 51
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 5,
+				"functionCount": 3,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/stores/v2-available-banner/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "useV2AvailableBannerStore",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/stores/v2-local-override.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 20,
+			"nonEmptyLines": 18,
+			"exports": [
+				{
+					"name": "useV2LocalOverrideStore",
+					"line": 9,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		}
+	]
+}

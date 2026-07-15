@@ -1,0 +1,151 @@
+{
+	"batchIndex": 117,
+	"files": [
+		{
+			"path": "packages/db/drizzle.config.ts",
+			"language": "typescript",
+			"sizeLines": 11,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/db/src/client.ts",
+			"language": "typescript",
+			"sizeLines": 28,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/db/src/env.ts",
+			"language": "typescript",
+			"sizeLines": 28,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/db/src/local-proxy.ts",
+			"language": "typescript",
+			"sizeLines": 17,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/db/src/schema/auth.ts",
+			"language": "typescript",
+			"sizeLines": 390,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/db/src/schema/enums.ts",
+			"language": "typescript",
+			"sizeLines": 94,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/db/src/schema/github.ts",
+			"language": "typescript",
+			"sizeLines": 186,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/db/src/schema/index.ts",
+			"language": "typescript",
+			"sizeLines": 8,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/db/src/schema/ingest.ts",
+			"language": "typescript",
+			"sizeLines": 50,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/db/src/schema/relations.ts",
+			"language": "typescript",
+			"sizeLines": 408,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/db/src/schema/schema.ts",
+			"language": "typescript",
+			"sizeLines": 920,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/db/src/schema/types.ts",
+			"language": "typescript",
+			"sizeLines": 10,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/db/src/schema/zod.ts",
+			"language": "typescript",
+			"sizeLines": 34,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/db/src/seed-default-statuses.ts",
+			"language": "typescript",
+			"sizeLines": 56,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/db/src/task-list-query.ts",
+			"language": "typescript",
+			"sizeLines": 199,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/db/src/utils/membership.ts",
+			"language": "typescript",
+			"sizeLines": 64,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/db/src/utils/sql.ts",
+			"language": "typescript",
+			"sizeLines": 48,
+			"fileCategory": "code"
+		}
+	],
+	"batchImportData": {
+		"packages/db/drizzle.config.ts": ["packages/db/src/env.ts"],
+		"packages/db/src/client.ts": [
+			"packages/db/src/env.ts",
+			"packages/db/src/local-proxy.ts",
+			"packages/db/src/schema/index.ts"
+		],
+		"packages/db/src/env.ts": [],
+		"packages/db/src/local-proxy.ts": [],
+		"packages/db/src/schema/auth.ts": [],
+		"packages/db/src/schema/enums.ts": [],
+		"packages/db/src/schema/github.ts": ["packages/db/src/schema/auth.ts"],
+		"packages/db/src/schema/index.ts": [],
+		"packages/db/src/schema/ingest.ts": ["packages/db/src/schema/schema.ts"],
+		"packages/db/src/schema/relations.ts": [
+			"packages/db/src/schema/auth.ts",
+			"packages/db/src/schema/github.ts",
+			"packages/db/src/schema/schema.ts"
+		],
+		"packages/db/src/schema/schema.ts": [
+			"packages/db/src/schema/auth.ts",
+			"packages/db/src/schema/enums.ts",
+			"packages/db/src/schema/github.ts",
+			"packages/db/src/schema/types.ts",
+			"packages/db/src/schema/zod.ts"
+		],
+		"packages/db/src/schema/types.ts": [],
+		"packages/db/src/schema/zod.ts": ["packages/db/src/schema/enums.ts"],
+		"packages/db/src/seed-default-statuses.ts": [
+			"packages/db/src/client.ts",
+			"packages/db/src/schema/index.ts"
+		],
+		"packages/db/src/task-list-query.ts": [
+			"packages/db/src/schema/enums.ts",
+			"packages/db/src/schema/index.ts"
+		],
+		"packages/db/src/utils/membership.ts": [
+			"packages/db/src/client.ts",
+			"packages/db/src/schema/auth.ts",
+			"packages/db/src/schema/schema.ts"
+		],
+		"packages/db/src/utils/sql.ts": ["packages/db/src/client.ts"]
+	},
+	"neighborMap": {}
+}

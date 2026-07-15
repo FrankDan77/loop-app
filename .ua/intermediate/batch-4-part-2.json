@@ -1,0 +1,1256 @@
+{
+	"nodes": [
+		{
+			"id": "file:apps/desktop/src/renderer/hooks/useVersionCheck/useVersionCheck.ts",
+			"type": "file",
+			"name": "useVersionCheck.ts",
+			"filePath": "apps/desktop/src/renderer/hooks/useVersionCheck/useVersionCheck.ts",
+			"summary": "Hook that periodically polls a version endpoint, compares it against the running app version, and reports whether an update is required or optional.",
+			"tags": ["hook", "utility", "event-handler"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "file:apps/desktop/src/renderer/lib/agent-launch-command.ts",
+			"type": "file",
+			"name": "agent-launch-command.ts",
+			"filePath": "apps/desktop/src/renderer/lib/agent-launch-command.ts",
+			"summary": "Utilities for converting between an agent's structured launch command (command/args/env) and its editable text form, detecting shell syntax, diffing patches, and resolving linked-agent launch commands for presets.",
+			"tags": ["utility", "data-model", "serialization"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "file:apps/desktop/src/renderer/lib/analytics/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "apps/desktop/src/renderer/lib/analytics/index.ts",
+			"summary": "Thin analytics tracking helper that forwards named events and properties to PostHog.",
+			"tags": ["utility", "entry-point"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:apps/desktop/src/renderer/lib/api-trpc-client.ts",
+			"type": "file",
+			"name": "api-trpc-client.ts",
+			"filePath": "apps/desktop/src/renderer/lib/api-trpc-client.ts",
+			"summary": "HTTP tRPC client for calling the API server with bearer-token auth, used for mutations (data fetching goes through Electric instead).",
+			"tags": ["service", "api-handler", "singleton"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:apps/desktop/src/renderer/lib/argv.ts",
+			"type": "file",
+			"name": "argv.ts",
+			"filePath": "apps/desktop/src/renderer/lib/argv.ts",
+			"summary": "Shell-token parsing and joining utilities for launch commands, including leading env-assignment splitting and safe requoting of command/argument/env strings.",
+			"tags": ["utility", "serialization"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "file:apps/desktop/src/renderer/lib/auth-client.ts",
+			"type": "file",
+			"name": "auth-client.ts",
+			"filePath": "apps/desktop/src/renderer/lib/auth-client.ts",
+			"summary": "Auth client wrapper managing an in-memory JWT (set/get/freshness) with automatic refresh via the auth server's /token endpoint, plus the underlying better-auth client instance.",
+			"tags": ["auth", "service", "singleton"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "file:apps/desktop/src/renderer/lib/dev-chat.ts",
+			"type": "file",
+			"name": "dev-chat.ts",
+			"filePath": "apps/desktop/src/renderer/lib/dev-chat.ts",
+			"summary": "Development-mode chat helpers gating a local dev chat session behind env checks, resolving a dev organization id, and listing available dev chat model options.",
+			"tags": ["utility", "config", "development"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:apps/desktop/src/renderer/lib/host-service-auth.ts",
+			"type": "file",
+			"name": "host-service-auth.ts",
+			"filePath": "apps/desktop/src/renderer/lib/host-service-auth.ts",
+			"summary": "Manages per-host secrets and machine id used to authenticate with the local host service, exposing helpers to build request headers and WebSocket tokens.",
+			"tags": ["auth", "utility", "service"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:apps/desktop/src/renderer/lib/host-service-client.ts",
+			"type": "file",
+			"name": "host-service-client.ts",
+			"filePath": "apps/desktop/src/renderer/lib/host-service-client.ts",
+			"summary": "Factory and cache for tRPC clients targeting a local host service instance, keyed by host URL and attaching host-service auth headers.",
+			"tags": ["service", "factory", "singleton"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:apps/desktop/src/renderer/lib/host-service-unavailable.ts",
+			"type": "file",
+			"name": "host-service-unavailable.ts",
+			"filePath": "apps/desktop/src/renderer/lib/host-service-unavailable.ts",
+			"summary": "Formats user-facing messages and toasts explaining why the local host service is unavailable, incorporating organization/device context and recovery guidance.",
+			"tags": ["utility", "error-handler"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "file:apps/desktop/src/renderer/lib/jwt-expiry.ts",
+			"type": "file",
+			"name": "jwt-expiry.ts",
+			"filePath": "apps/desktop/src/renderer/lib/jwt-expiry.ts",
+			"summary": "Decodes a JWT's payload to extract its expiration timestamp in milliseconds without validating the signature.",
+			"tags": ["utility", "auth"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:apps/desktop/src/renderer/lib/jwt-refresh/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "apps/desktop/src/renderer/lib/jwt-refresh/index.ts",
+			"summary": "Barrel re-exporting the JWT refresh state machine's functions, type, and backoff/circuit-breaker constants.",
+			"tags": ["barrel", "entry-point"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:apps/desktop/src/renderer/lib/jwt-refresh/jwt-refresh.ts",
+			"type": "file",
+			"name": "jwt-refresh.ts",
+			"filePath": "apps/desktop/src/renderer/lib/jwt-refresh/jwt-refresh.ts",
+			"summary": "State machine governing when to retry refreshing a JWT after a 401, applying backoff and a failure-count circuit breaker, and performing the refresh call itself.",
+			"tags": ["auth", "utility", "state-management"],
+			"complexity": "moderate",
+			"languageNotes": "Implements a simple exponential-backoff/circuit-breaker pattern using min-interval, max-backoff, and max-failure thresholds rather than a library."
+		},
+		{
+			"id": "file:apps/desktop/src/renderer/lib/posthog.ts",
+			"type": "file",
+			"name": "posthog.ts",
+			"filePath": "apps/desktop/src/renderer/lib/posthog.ts",
+			"summary": "Initializes the PostHog analytics client with app configuration, registers global properties, and wires relay socket telemetry.",
+			"tags": ["service", "singleton", "config"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:apps/desktop/src/renderer/lib/preset-icon-key.ts",
+			"type": "file",
+			"name": "preset-icon-key.ts",
+			"filePath": "apps/desktop/src/renderer/lib/preset-icon-key.ts",
+			"summary": "Resolves the icon key for a V2 agent preset by inspecting its linked agent or matching its command's executable name against known built-in agent presets.",
+			"tags": ["utility", "data-model"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "file:apps/desktop/src/renderer/lib/preset-icon.ts",
+			"type": "file",
+			"name": "preset-icon.ts",
+			"filePath": "apps/desktop/src/renderer/lib/preset-icon.ts",
+			"summary": "Resolves the actual icon asset for a V2 preset by combining the resolved icon key with the current theme (dark/light).",
+			"tags": ["utility", "data-model"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:apps/desktop/src/renderer/lib/workspaces/showWorkspaceAutoNameWarningToast.ts",
+			"type": "file",
+			"name": "showWorkspaceAutoNameWarningToast.ts",
+			"filePath": "apps/desktop/src/renderer/lib/workspaces/showWorkspaceAutoNameWarningToast.ts",
+			"summary": "Shows a warning toast when a workspace's auto-generated name could not be created, offering a callback to open model-auth settings.",
+			"tags": ["utility", "event-handler"],
+			"complexity": "simple"
+		},
+
+		{
+			"id": "function:apps/desktop/src/renderer/hooks/useVersionCheck/useVersionCheck.ts:useVersionCheck",
+			"type": "function",
+			"name": "useVersionCheck",
+			"filePath": "apps/desktop/src/renderer/hooks/useVersionCheck/useVersionCheck.ts",
+			"lineRange": [17, 88],
+			"summary": "Hook that fetches the latest published version, compares semver against the current app version, and re-checks on network reconnect.",
+			"tags": ["hook", "utility", "event-handler"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:apps/desktop/src/renderer/lib/agent-launch-command.ts:areEnvMapsEqual",
+			"type": "function",
+			"name": "areEnvMapsEqual",
+			"filePath": "apps/desktop/src/renderer/lib/agent-launch-command.ts",
+			"lineRange": [23, 31],
+			"summary": "Compares two environment-variable maps for shallow equality.",
+			"tags": ["utility"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:apps/desktop/src/renderer/lib/agent-launch-command.ts:getAgentCommandText",
+			"type": "function",
+			"name": "getAgentCommandText",
+			"filePath": "apps/desktop/src/renderer/lib/agent-launch-command.ts",
+			"lineRange": [37, 43],
+			"summary": "Serializes an agent's structured launch config (command, args, env) into a single editable command-line string.",
+			"tags": ["utility", "serialization"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:apps/desktop/src/renderer/lib/agent-launch-command.ts:parseAgentCommandText",
+			"type": "function",
+			"name": "parseAgentCommandText",
+			"filePath": "apps/desktop/src/renderer/lib/agent-launch-command.ts",
+			"lineRange": [45, 51],
+			"summary": "Parses an edited launch-command string back into structured command/args/env, treating shell-syntax text as an opaque command.",
+			"tags": ["utility", "serialization"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:apps/desktop/src/renderer/lib/agent-launch-command.ts:isAgentCommandPatchChanged",
+			"type": "function",
+			"name": "isAgentCommandPatchChanged",
+			"filePath": "apps/desktop/src/renderer/lib/agent-launch-command.ts",
+			"lineRange": [53, 63],
+			"summary": "Determines whether a parsed command patch differs from an agent's current command, args, or env.",
+			"tags": ["utility"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:apps/desktop/src/renderer/lib/agent-launch-command.ts:findLinkedAgent",
+			"type": "function",
+			"name": "findLinkedAgent",
+			"filePath": "apps/desktop/src/renderer/lib/agent-launch-command.ts",
+			"lineRange": [65, 75],
+			"summary": "Looks up an agent by id, falling back to matching by preset id, within a list of candidate agents.",
+			"tags": ["utility"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:apps/desktop/src/renderer/lib/agent-launch-command.ts:resolvePresetLaunchCommands",
+			"type": "function",
+			"name": "resolvePresetLaunchCommands",
+			"filePath": "apps/desktop/src/renderer/lib/agent-launch-command.ts",
+			"lineRange": [77, 86],
+			"summary": "Resolves the effective launch commands for a preset, preferring its linked agent's current command text over the preset's stored commands.",
+			"tags": ["utility"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:apps/desktop/src/renderer/lib/analytics/index.ts:track",
+			"type": "function",
+			"name": "track",
+			"filePath": "apps/desktop/src/renderer/lib/analytics/index.ts",
+			"lineRange": [3, 8],
+			"summary": "Forwards a named analytics event with optional properties to PostHog's capture API.",
+			"tags": ["utility"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:apps/desktop/src/renderer/lib/argv.ts:joinCommandArgs",
+			"type": "function",
+			"name": "joinCommandArgs",
+			"filePath": "apps/desktop/src/renderer/lib/argv.ts",
+			"lineRange": [43, 47],
+			"summary": "Quotes and joins a command with its argument tokens into a single shell-safe string.",
+			"tags": ["utility", "serialization"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:apps/desktop/src/renderer/lib/argv.ts:parseCommandString",
+			"type": "function",
+			"name": "parseCommandString",
+			"filePath": "apps/desktop/src/renderer/lib/argv.ts",
+			"lineRange": [55, 63],
+			"summary": "Parses a raw command-line string into command and argument tokens.",
+			"tags": ["utility", "serialization"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:apps/desktop/src/renderer/lib/argv.ts:parseLaunchCommandString",
+			"type": "function",
+			"name": "parseLaunchCommandString",
+			"filePath": "apps/desktop/src/renderer/lib/argv.ts",
+			"lineRange": [79, 89],
+			"summary": "Parses a full launch-command string (including leading env assignments) into separate command, args, and env fields.",
+			"tags": ["utility", "serialization"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:apps/desktop/src/renderer/lib/argv.ts:joinCommandArgsWithEnv",
+			"type": "function",
+			"name": "joinCommandArgsWithEnv",
+			"filePath": "apps/desktop/src/renderer/lib/argv.ts",
+			"lineRange": [98, 112],
+			"summary": "Joins env assignments, a command, and its arguments into a single shell-safe launch-command string.",
+			"tags": ["utility", "serialization"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:apps/desktop/src/renderer/lib/auth-client.ts:getJwt",
+			"type": "function",
+			"name": "getJwt",
+			"filePath": "apps/desktop/src/renderer/lib/auth-client.ts",
+			"lineRange": [44, 51],
+			"summary": "Returns the cached JWT if still fresh, otherwise triggers a refresh before returning it.",
+			"tags": ["auth", "utility"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:apps/desktop/src/renderer/lib/auth-client.ts:ensureFreshJwt",
+			"type": "function",
+			"name": "ensureFreshJwt",
+			"filePath": "apps/desktop/src/renderer/lib/auth-client.ts",
+			"lineRange": [58, 86],
+			"summary": "Fetches a fresh JWT from the /token endpoint and applies it only if no concurrent logout or refresh has superseded it.",
+			"tags": ["auth", "utility", "error-handler"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:apps/desktop/src/renderer/lib/dev-chat.ts:isDesktopChatDevMode",
+			"type": "function",
+			"name": "isDesktopChatDevMode",
+			"filePath": "apps/desktop/src/renderer/lib/dev-chat.ts",
+			"lineRange": [48, 52],
+			"summary": "Checks whether the desktop dev chat mode env flag is enabled.",
+			"tags": ["config", "utility"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:apps/desktop/src/renderer/lib/dev-chat.ts:resolveDesktopChatOrganizationId",
+			"type": "function",
+			"name": "resolveDesktopChatOrganizationId",
+			"filePath": "apps/desktop/src/renderer/lib/dev-chat.ts",
+			"lineRange": [54, 60],
+			"summary": "Resolves the organization id to use for a dev chat session, falling back to a dev override when configured.",
+			"tags": ["config", "utility"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:apps/desktop/src/renderer/lib/dev-chat.ts:isDesktopChatSessionReady",
+			"type": "function",
+			"name": "isDesktopChatSessionReady",
+			"filePath": "apps/desktop/src/renderer/lib/dev-chat.ts",
+			"lineRange": [62, 73],
+			"summary": "Determines whether a desktop dev chat session is ready to use, given session id and persisted-session state.",
+			"tags": ["config", "utility"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:apps/desktop/src/renderer/lib/dev-chat.ts:getDesktopChatModelOptions",
+			"type": "function",
+			"name": "getDesktopChatModelOptions",
+			"filePath": "apps/desktop/src/renderer/lib/dev-chat.ts",
+			"lineRange": [75, 79],
+			"summary": "Returns the list of dev chat model options available when dev chat mode is enabled.",
+			"tags": ["config", "utility"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:apps/desktop/src/renderer/lib/host-service-auth.ts:getHostServiceHeaders",
+			"type": "function",
+			"name": "getHostServiceHeaders",
+			"filePath": "apps/desktop/src/renderer/lib/host-service-auth.ts",
+			"lineRange": [19, 32],
+			"summary": "Builds the HTTP headers needed to authenticate a request to a specific host service, combining a stored secret and the current JWT.",
+			"tags": ["auth", "utility"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:apps/desktop/src/renderer/lib/host-service-auth.ts:getHostServiceWsToken",
+			"type": "function",
+			"name": "getHostServiceWsToken",
+			"filePath": "apps/desktop/src/renderer/lib/host-service-auth.ts",
+			"lineRange": [34, 37],
+			"summary": "Builds the WebSocket auth token for a host service connection from its stored secret and the current JWT.",
+			"tags": ["auth", "utility"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:apps/desktop/src/renderer/lib/host-service-client.ts:getHostServiceClientByUrl",
+			"type": "function",
+			"name": "getHostServiceClientByUrl",
+			"filePath": "apps/desktop/src/renderer/lib/host-service-client.ts",
+			"lineRange": [17, 33],
+			"summary": "Returns a cached tRPC client for a given host URL, creating and caching a new one (with auth headers) if none exists yet.",
+			"tags": ["service", "factory"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:apps/desktop/src/renderer/lib/host-service-unavailable.ts:getHostServiceUnavailableMessage",
+			"type": "function",
+			"name": "getHostServiceUnavailableMessage",
+			"filePath": "apps/desktop/src/renderer/lib/host-service-unavailable.ts",
+			"lineRange": [53, 68],
+			"summary": "Builds a human-readable message explaining why the host service is unavailable, using organization/device context and status-specific recovery text.",
+			"tags": ["utility", "error-handler"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:apps/desktop/src/renderer/lib/host-service-unavailable.ts:showHostServiceUnavailableToast",
+			"type": "function",
+			"name": "showHostServiceUnavailableToast",
+			"filePath": "apps/desktop/src/renderer/lib/host-service-unavailable.ts",
+			"lineRange": [70, 77],
+			"summary": "Displays an error toast with the host-service-unavailable message for the given context.",
+			"tags": ["error-handler", "event-handler"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:apps/desktop/src/renderer/lib/jwt-expiry.ts:decodeJwtExpiresAtMs",
+			"type": "function",
+			"name": "decodeJwtExpiresAtMs",
+			"filePath": "apps/desktop/src/renderer/lib/jwt-expiry.ts",
+			"lineRange": [2, 13],
+			"summary": "Decodes a JWT's base64url payload and extracts its expiration time in milliseconds since epoch.",
+			"tags": ["auth", "utility"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:apps/desktop/src/renderer/lib/jwt-refresh/jwt-refresh.ts:shouldAttemptJwtRefresh",
+			"type": "function",
+			"name": "shouldAttemptJwtRefresh",
+			"filePath": "apps/desktop/src/renderer/lib/jwt-refresh/jwt-refresh.ts",
+			"lineRange": [37, 54],
+			"summary": "Decides whether a JWT refresh attempt should proceed given the current refresh state's timing, backoff, and failure-count circuit breaker.",
+			"tags": ["auth", "state-management"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:apps/desktop/src/renderer/lib/jwt-refresh/jwt-refresh.ts:applyJwtRefreshResult",
+			"type": "function",
+			"name": "applyJwtRefreshResult",
+			"filePath": "apps/desktop/src/renderer/lib/jwt-refresh/jwt-refresh.ts",
+			"lineRange": [57, 66],
+			"summary": "Updates the JWT refresh state after an attempt, resetting or incrementing the failure count and recording the attempt timestamp.",
+			"tags": ["auth", "state-management"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:apps/desktop/src/renderer/lib/jwt-refresh/jwt-refresh.ts:refreshJwtAfterUnauthorized",
+			"type": "function",
+			"name": "refreshJwtAfterUnauthorized",
+			"filePath": "apps/desktop/src/renderer/lib/jwt-refresh/jwt-refresh.ts",
+			"lineRange": [85, 111],
+			"summary": "Attempts to refresh the JWT after receiving a 401, gated by shouldAttemptJwtRefresh, and updates the circuit-breaker state based on the outcome.",
+			"tags": ["auth", "error-handler"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:apps/desktop/src/renderer/lib/posthog.ts:initPostHog",
+			"type": "function",
+			"name": "initPostHog",
+			"filePath": "apps/desktop/src/renderer/lib/posthog.ts",
+			"lineRange": [9, 49],
+			"summary": "Initializes the PostHog SDK with app configuration, registers global event properties, and sets up relay socket telemetry hooks.",
+			"tags": ["service", "config"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:apps/desktop/src/renderer/lib/preset-icon-key.ts:getExecutableName",
+			"type": "function",
+			"name": "getExecutableName",
+			"filePath": "apps/desktop/src/renderer/lib/preset-icon-key.ts",
+			"lineRange": [14, 26],
+			"summary": "Extracts and normalizes the executable name from a shell command string, parsing it into tokens and taking the final path segment.",
+			"tags": ["utility"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:apps/desktop/src/renderer/lib/preset-icon-key.ts:getLinkedIconKey",
+			"type": "function",
+			"name": "getLinkedIconKey",
+			"filePath": "apps/desktop/src/renderer/lib/preset-icon-key.ts",
+			"lineRange": [37, 51],
+			"summary": "Looks up the icon key for a preset's linked agent, checking against known built-in preset ids.",
+			"tags": ["utility", "data-model"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:apps/desktop/src/renderer/lib/preset-icon-key.ts:getIconKeyFromExecutable",
+			"type": "function",
+			"name": "getIconKeyFromExecutable",
+			"filePath": "apps/desktop/src/renderer/lib/preset-icon-key.ts",
+			"lineRange": [53, 75],
+			"summary": "Derives an icon key by matching a preset's executable name against other agents' executables or known host agent presets.",
+			"tags": ["utility", "data-model"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:apps/desktop/src/renderer/lib/preset-icon-key.ts:getCommandIconKey",
+			"type": "function",
+			"name": "getCommandIconKey",
+			"filePath": "apps/desktop/src/renderer/lib/preset-icon-key.ts",
+			"lineRange": [77, 89],
+			"summary": "Resolves a single icon key from a preset's command by delegating to getIconKeyFromExecutable and deduplicating candidate keys.",
+			"tags": ["utility", "data-model"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:apps/desktop/src/renderer/lib/preset-icon-key.ts:resolveV2PresetIconKey",
+			"type": "function",
+			"name": "resolveV2PresetIconKey",
+			"filePath": "apps/desktop/src/renderer/lib/preset-icon-key.ts",
+			"lineRange": [91, 96],
+			"summary": "Top-level resolver returning the icon key for a V2 preset, preferring a linked-agent match over a command-based match.",
+			"tags": ["utility", "data-model"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:apps/desktop/src/renderer/lib/preset-icon.ts:resolveV2PresetIcon",
+			"type": "function",
+			"name": "resolveV2PresetIcon",
+			"filePath": "apps/desktop/src/renderer/lib/preset-icon.ts",
+			"lineRange": [25, 32],
+			"summary": "Resolves the final icon asset for a V2 preset by combining its resolved icon key with the current theme.",
+			"tags": ["utility", "data-model"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:apps/desktop/src/renderer/lib/workspaces/showWorkspaceAutoNameWarningToast.ts:showWorkspaceAutoNameWarningToast",
+			"type": "function",
+			"name": "showWorkspaceAutoNameWarningToast",
+			"filePath": "apps/desktop/src/renderer/lib/workspaces/showWorkspaceAutoNameWarningToast.ts",
+			"lineRange": [3, 19],
+			"summary": "Displays a warning toast when workspace auto-naming fails, with an action to open model auth settings.",
+			"tags": ["event-handler", "utility"],
+			"complexity": "simple"
+		}
+	],
+	"edges": [
+		{
+			"source": "file:apps/desktop/src/renderer/hooks/useVersionCheck/useVersionCheck.ts",
+			"target": "function:apps/desktop/src/renderer/hooks/useVersionCheck/useVersionCheck.ts:useVersionCheck",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/lib/agent-launch-command.ts",
+			"target": "function:apps/desktop/src/renderer/lib/agent-launch-command.ts:areEnvMapsEqual",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/lib/agent-launch-command.ts",
+			"target": "function:apps/desktop/src/renderer/lib/agent-launch-command.ts:getAgentCommandText",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/lib/agent-launch-command.ts",
+			"target": "function:apps/desktop/src/renderer/lib/agent-launch-command.ts:parseAgentCommandText",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/lib/agent-launch-command.ts",
+			"target": "function:apps/desktop/src/renderer/lib/agent-launch-command.ts:isAgentCommandPatchChanged",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/lib/agent-launch-command.ts",
+			"target": "function:apps/desktop/src/renderer/lib/agent-launch-command.ts:findLinkedAgent",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/lib/agent-launch-command.ts",
+			"target": "function:apps/desktop/src/renderer/lib/agent-launch-command.ts:resolvePresetLaunchCommands",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/lib/analytics/index.ts",
+			"target": "function:apps/desktop/src/renderer/lib/analytics/index.ts:track",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/lib/argv.ts",
+			"target": "function:apps/desktop/src/renderer/lib/argv.ts:joinCommandArgs",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/lib/argv.ts",
+			"target": "function:apps/desktop/src/renderer/lib/argv.ts:parseCommandString",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/lib/argv.ts",
+			"target": "function:apps/desktop/src/renderer/lib/argv.ts:parseLaunchCommandString",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/lib/argv.ts",
+			"target": "function:apps/desktop/src/renderer/lib/argv.ts:joinCommandArgsWithEnv",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/lib/auth-client.ts",
+			"target": "function:apps/desktop/src/renderer/lib/auth-client.ts:getJwt",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/lib/auth-client.ts",
+			"target": "function:apps/desktop/src/renderer/lib/auth-client.ts:ensureFreshJwt",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/lib/dev-chat.ts",
+			"target": "function:apps/desktop/src/renderer/lib/dev-chat.ts:isDesktopChatDevMode",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/lib/dev-chat.ts",
+			"target": "function:apps/desktop/src/renderer/lib/dev-chat.ts:resolveDesktopChatOrganizationId",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/lib/dev-chat.ts",
+			"target": "function:apps/desktop/src/renderer/lib/dev-chat.ts:isDesktopChatSessionReady",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/lib/dev-chat.ts",
+			"target": "function:apps/desktop/src/renderer/lib/dev-chat.ts:getDesktopChatModelOptions",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/lib/host-service-auth.ts",
+			"target": "function:apps/desktop/src/renderer/lib/host-service-auth.ts:getHostServiceHeaders",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/lib/host-service-auth.ts",
+			"target": "function:apps/desktop/src/renderer/lib/host-service-auth.ts:getHostServiceWsToken",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/lib/host-service-client.ts",
+			"target": "function:apps/desktop/src/renderer/lib/host-service-client.ts:getHostServiceClientByUrl",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/lib/host-service-unavailable.ts",
+			"target": "function:apps/desktop/src/renderer/lib/host-service-unavailable.ts:getHostServiceUnavailableMessage",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/lib/host-service-unavailable.ts",
+			"target": "function:apps/desktop/src/renderer/lib/host-service-unavailable.ts:showHostServiceUnavailableToast",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/lib/jwt-expiry.ts",
+			"target": "function:apps/desktop/src/renderer/lib/jwt-expiry.ts:decodeJwtExpiresAtMs",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/lib/jwt-refresh/jwt-refresh.ts",
+			"target": "function:apps/desktop/src/renderer/lib/jwt-refresh/jwt-refresh.ts:shouldAttemptJwtRefresh",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/lib/jwt-refresh/jwt-refresh.ts",
+			"target": "function:apps/desktop/src/renderer/lib/jwt-refresh/jwt-refresh.ts:applyJwtRefreshResult",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/lib/jwt-refresh/jwt-refresh.ts",
+			"target": "function:apps/desktop/src/renderer/lib/jwt-refresh/jwt-refresh.ts:refreshJwtAfterUnauthorized",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/lib/posthog.ts",
+			"target": "function:apps/desktop/src/renderer/lib/posthog.ts:initPostHog",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/lib/preset-icon-key.ts",
+			"target": "function:apps/desktop/src/renderer/lib/preset-icon-key.ts:getExecutableName",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/lib/preset-icon-key.ts",
+			"target": "function:apps/desktop/src/renderer/lib/preset-icon-key.ts:getLinkedIconKey",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/lib/preset-icon-key.ts",
+			"target": "function:apps/desktop/src/renderer/lib/preset-icon-key.ts:getIconKeyFromExecutable",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/lib/preset-icon-key.ts",
+			"target": "function:apps/desktop/src/renderer/lib/preset-icon-key.ts:getCommandIconKey",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/lib/preset-icon-key.ts",
+			"target": "function:apps/desktop/src/renderer/lib/preset-icon-key.ts:resolveV2PresetIconKey",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/lib/preset-icon.ts",
+			"target": "function:apps/desktop/src/renderer/lib/preset-icon.ts:resolveV2PresetIcon",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/lib/workspaces/showWorkspaceAutoNameWarningToast.ts",
+			"target": "function:apps/desktop/src/renderer/lib/workspaces/showWorkspaceAutoNameWarningToast.ts:showWorkspaceAutoNameWarningToast",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+
+		{
+			"source": "file:apps/desktop/src/renderer/lib/agent-launch-command.ts",
+			"target": "function:apps/desktop/src/renderer/lib/agent-launch-command.ts:getAgentCommandText",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/lib/agent-launch-command.ts",
+			"target": "function:apps/desktop/src/renderer/lib/agent-launch-command.ts:parseAgentCommandText",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/lib/agent-launch-command.ts",
+			"target": "function:apps/desktop/src/renderer/lib/agent-launch-command.ts:isAgentCommandPatchChanged",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/lib/agent-launch-command.ts",
+			"target": "function:apps/desktop/src/renderer/lib/agent-launch-command.ts:findLinkedAgent",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/lib/agent-launch-command.ts",
+			"target": "function:apps/desktop/src/renderer/lib/agent-launch-command.ts:resolvePresetLaunchCommands",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/lib/analytics/index.ts",
+			"target": "function:apps/desktop/src/renderer/lib/analytics/index.ts:track",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/lib/argv.ts",
+			"target": "function:apps/desktop/src/renderer/lib/argv.ts:joinCommandArgs",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/lib/argv.ts",
+			"target": "function:apps/desktop/src/renderer/lib/argv.ts:parseCommandString",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/lib/argv.ts",
+			"target": "function:apps/desktop/src/renderer/lib/argv.ts:parseLaunchCommandString",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/lib/argv.ts",
+			"target": "function:apps/desktop/src/renderer/lib/argv.ts:joinCommandArgsWithEnv",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/lib/auth-client.ts",
+			"target": "function:apps/desktop/src/renderer/lib/auth-client.ts:getJwt",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/lib/auth-client.ts",
+			"target": "function:apps/desktop/src/renderer/lib/auth-client.ts:ensureFreshJwt",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/lib/dev-chat.ts",
+			"target": "function:apps/desktop/src/renderer/lib/dev-chat.ts:isDesktopChatDevMode",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/lib/dev-chat.ts",
+			"target": "function:apps/desktop/src/renderer/lib/dev-chat.ts:resolveDesktopChatOrganizationId",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/lib/dev-chat.ts",
+			"target": "function:apps/desktop/src/renderer/lib/dev-chat.ts:isDesktopChatSessionReady",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/lib/dev-chat.ts",
+			"target": "function:apps/desktop/src/renderer/lib/dev-chat.ts:getDesktopChatModelOptions",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/lib/host-service-auth.ts",
+			"target": "function:apps/desktop/src/renderer/lib/host-service-auth.ts:getHostServiceHeaders",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/lib/host-service-auth.ts",
+			"target": "function:apps/desktop/src/renderer/lib/host-service-auth.ts:getHostServiceWsToken",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/lib/host-service-client.ts",
+			"target": "function:apps/desktop/src/renderer/lib/host-service-client.ts:getHostServiceClientByUrl",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/lib/host-service-unavailable.ts",
+			"target": "function:apps/desktop/src/renderer/lib/host-service-unavailable.ts:getHostServiceUnavailableMessage",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/lib/host-service-unavailable.ts",
+			"target": "function:apps/desktop/src/renderer/lib/host-service-unavailable.ts:showHostServiceUnavailableToast",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/lib/jwt-expiry.ts",
+			"target": "function:apps/desktop/src/renderer/lib/jwt-expiry.ts:decodeJwtExpiresAtMs",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/lib/jwt-refresh/jwt-refresh.ts",
+			"target": "function:apps/desktop/src/renderer/lib/jwt-refresh/jwt-refresh.ts:shouldAttemptJwtRefresh",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/lib/jwt-refresh/jwt-refresh.ts",
+			"target": "function:apps/desktop/src/renderer/lib/jwt-refresh/jwt-refresh.ts:applyJwtRefreshResult",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/lib/jwt-refresh/jwt-refresh.ts",
+			"target": "function:apps/desktop/src/renderer/lib/jwt-refresh/jwt-refresh.ts:refreshJwtAfterUnauthorized",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/lib/posthog.ts",
+			"target": "function:apps/desktop/src/renderer/lib/posthog.ts:initPostHog",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/lib/preset-icon-key.ts",
+			"target": "function:apps/desktop/src/renderer/lib/preset-icon-key.ts:resolveV2PresetIconKey",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/lib/preset-icon.ts",
+			"target": "function:apps/desktop/src/renderer/lib/preset-icon.ts:resolveV2PresetIcon",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/lib/workspaces/showWorkspaceAutoNameWarningToast.ts",
+			"target": "function:apps/desktop/src/renderer/lib/workspaces/showWorkspaceAutoNameWarningToast.ts:showWorkspaceAutoNameWarningToast",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+
+		{
+			"source": "file:apps/desktop/src/renderer/hooks/useVersionCheck/useVersionCheck.ts",
+			"target": "file:apps/desktop/src/renderer/env.renderer.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/lib/agent-launch-command.ts",
+			"target": "file:apps/desktop/src/renderer/lib/argv.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/lib/analytics/index.ts",
+			"target": "file:apps/desktop/src/renderer/lib/posthog.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/lib/api-trpc-client.ts",
+			"target": "file:apps/desktop/src/renderer/env.renderer.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/lib/api-trpc-client.ts",
+			"target": "file:apps/desktop/src/renderer/lib/auth-client.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/lib/auth-client.ts",
+			"target": "file:apps/desktop/src/renderer/env.renderer.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/lib/auth-client.ts",
+			"target": "file:apps/desktop/src/renderer/lib/jwt-expiry.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/lib/dev-chat.ts",
+			"target": "file:apps/desktop/src/renderer/components/Chat/ChatInterface/types.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/lib/dev-chat.ts",
+			"target": "file:apps/desktop/src/renderer/env.renderer.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/lib/dev-chat.ts",
+			"target": "file:apps/desktop/src/shared/constants.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/lib/host-service-auth.ts",
+			"target": "file:apps/desktop/src/renderer/lib/auth-client.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/lib/host-service-client.ts",
+			"target": "file:apps/desktop/src/renderer/lib/host-service-auth.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/lib/jwt-refresh/jwt-refresh.ts",
+			"target": "file:apps/desktop/src/renderer/lib/auth-client.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/lib/posthog.ts",
+			"target": "file:apps/desktop/src/renderer/env.renderer.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/lib/preset-icon-key.ts",
+			"target": "file:apps/desktop/src/renderer/lib/argv.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/lib/preset-icon.ts",
+			"target": "file:apps/desktop/src/renderer/assets/app-icons/preset-icons/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/lib/preset-icon.ts",
+			"target": "file:apps/desktop/src/renderer/lib/preset-icon-key.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+
+		{
+			"source": "function:apps/desktop/src/renderer/lib/agent-launch-command.ts:hasShellSyntax",
+			"target": "function:apps/desktop/src/renderer/lib/agent-launch-command.ts:areEnvMapsEqual",
+			"type": "related",
+			"direction": "forward",
+			"weight": 0.5
+		},
+		{
+			"source": "function:apps/desktop/src/renderer/lib/agent-launch-command.ts:getAgentCommandText",
+			"target": "function:apps/desktop/src/renderer/lib/argv.ts:joinCommandArgsWithEnv",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "function:apps/desktop/src/renderer/lib/agent-launch-command.ts:parseAgentCommandText",
+			"target": "function:apps/desktop/src/renderer/lib/argv.ts:parseLaunchCommandString",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "function:apps/desktop/src/renderer/lib/agent-launch-command.ts:isAgentCommandPatchChanged",
+			"target": "function:apps/desktop/src/renderer/lib/agent-launch-command.ts:areEnvMapsEqual",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "function:apps/desktop/src/renderer/lib/agent-launch-command.ts:resolvePresetLaunchCommands",
+			"target": "function:apps/desktop/src/renderer/lib/agent-launch-command.ts:findLinkedAgent",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "function:apps/desktop/src/renderer/lib/agent-launch-command.ts:resolvePresetLaunchCommands",
+			"target": "function:apps/desktop/src/renderer/lib/agent-launch-command.ts:getAgentCommandText",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "function:apps/desktop/src/renderer/lib/analytics/index.ts:track",
+			"target": "file:apps/desktop/src/renderer/lib/posthog.ts",
+			"type": "depends_on",
+			"direction": "forward",
+			"weight": 0.6
+		},
+		{
+			"source": "function:apps/desktop/src/renderer/lib/argv.ts:parseCommandString",
+			"target": "function:apps/desktop/src/renderer/lib/argv.ts:joinCommandArgs",
+			"type": "related",
+			"direction": "forward",
+			"weight": 0.5
+		},
+		{
+			"source": "function:apps/desktop/src/renderer/lib/argv.ts:joinCommandArgsWithEnv",
+			"target": "function:apps/desktop/src/renderer/lib/argv.ts:joinCommandArgs",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "function:apps/desktop/src/renderer/lib/auth-client.ts:getJwt",
+			"target": "function:apps/desktop/src/renderer/lib/auth-client.ts:ensureFreshJwt",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "function:apps/desktop/src/renderer/lib/auth-client.ts:ensureFreshJwt",
+			"target": "function:apps/desktop/src/renderer/lib/jwt-expiry.ts:decodeJwtExpiresAtMs",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "function:apps/desktop/src/renderer/lib/host-service-auth.ts:getHostServiceHeaders",
+			"target": "function:apps/desktop/src/renderer/lib/auth-client.ts:getJwt",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "function:apps/desktop/src/renderer/lib/host-service-auth.ts:getHostServiceWsToken",
+			"target": "function:apps/desktop/src/renderer/lib/auth-client.ts:getJwt",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "function:apps/desktop/src/renderer/lib/host-service-client.ts:getHostServiceClientByUrl",
+			"target": "function:apps/desktop/src/renderer/lib/host-service-auth.ts:getHostServiceHeaders",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "function:apps/desktop/src/renderer/lib/host-service-unavailable.ts:showHostServiceUnavailableToast",
+			"target": "function:apps/desktop/src/renderer/lib/host-service-unavailable.ts:getHostServiceUnavailableMessage",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "function:apps/desktop/src/renderer/lib/jwt-refresh/jwt-refresh.ts:refreshJwtAfterUnauthorized",
+			"target": "function:apps/desktop/src/renderer/lib/jwt-refresh/jwt-refresh.ts:shouldAttemptJwtRefresh",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "function:apps/desktop/src/renderer/lib/jwt-refresh/jwt-refresh.ts:refreshJwtAfterUnauthorized",
+			"target": "function:apps/desktop/src/renderer/lib/jwt-refresh/jwt-refresh.ts:applyJwtRefreshResult",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "function:apps/desktop/src/renderer/lib/jwt-refresh/jwt-refresh.ts:refreshJwtAfterUnauthorized",
+			"target": "function:apps/desktop/src/renderer/lib/auth-client.ts:getJwt",
+			"type": "depends_on",
+			"direction": "forward",
+			"weight": 0.6
+		},
+		{
+			"source": "function:apps/desktop/src/renderer/lib/preset-icon-key.ts:getIconKeyFromExecutable",
+			"target": "function:apps/desktop/src/renderer/lib/preset-icon-key.ts:getExecutableName",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "function:apps/desktop/src/renderer/lib/preset-icon-key.ts:getCommandIconKey",
+			"target": "function:apps/desktop/src/renderer/lib/preset-icon-key.ts:getExecutableName",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "function:apps/desktop/src/renderer/lib/preset-icon-key.ts:getCommandIconKey",
+			"target": "function:apps/desktop/src/renderer/lib/preset-icon-key.ts:getIconKeyFromExecutable",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "function:apps/desktop/src/renderer/lib/preset-icon-key.ts:resolveV2PresetIconKey",
+			"target": "function:apps/desktop/src/renderer/lib/preset-icon-key.ts:getLinkedIconKey",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "function:apps/desktop/src/renderer/lib/preset-icon-key.ts:resolveV2PresetIconKey",
+			"target": "function:apps/desktop/src/renderer/lib/preset-icon-key.ts:getCommandIconKey",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "function:apps/desktop/src/renderer/lib/preset-icon.ts:resolveV2PresetIcon",
+			"target": "function:apps/desktop/src/renderer/lib/preset-icon-key.ts:resolveV2PresetIconKey",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "function:apps/desktop/src/renderer/lib/preset-icon-key.ts:getExecutableName",
+			"target": "function:apps/desktop/src/renderer/lib/argv.ts:parseCommandString",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		}
+	]
+}

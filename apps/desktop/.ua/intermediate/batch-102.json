@@ -1,0 +1,675 @@
+{
+	"nodes": [
+		{
+			"id": "file:src/main/terminal-host/test-helpers.ts",
+			"type": "file",
+			"name": "test-helpers.ts",
+			"filePath": "src/main/terminal-host/test-helpers.ts",
+			"summary": "Test helper that probes whether the current platform supports binding a Unix domain socket in a temp directory, used to gate terminal-host socket tests.",
+			"tags": ["utility", "test", "platform-detection", "socket"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/main/terminal-host/test-helpers.ts:supportsLocalSocketBinding",
+			"type": "function",
+			"name": "supportsLocalSocketBinding",
+			"filePath": "src/main/terminal-host/test-helpers.ts",
+			"lineRange": [6, 41],
+			"summary": "Spawns a probe process to detect whether local Unix socket binding works, cleaning up the temp directory afterward.",
+			"tags": ["utility", "platform-detection", "socket"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/preload/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "src/preload/index.ts",
+			"summary": "Electron preload script that exposes a curated, sandboxed IPC bridge to the renderer via contextBridge, wrapping IPC listeners for safety.",
+			"tags": ["entry-point", "preload", "ipc", "electron", "security"],
+			"complexity": "simple",
+			"languageNotes": "Uses Electron contextBridge to isolate renderer from Node privileges."
+		},
+		{
+			"id": "file:src/renderer/components/AgentModelSelect/AgentModelSelect.tsx",
+			"type": "file",
+			"name": "AgentModelSelect.tsx",
+			"filePath": "src/renderer/components/AgentModelSelect/AgentModelSelect.tsx",
+			"summary": "Dropdown component for choosing an agent model from a provided list of available models.",
+			"tags": ["component", "select", "agent-model"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/renderer/components/AgentModelSelect/AgentModelSelect.tsx:AgentModelSelect",
+			"type": "function",
+			"name": "AgentModelSelect",
+			"filePath": "src/renderer/components/AgentModelSelect/AgentModelSelect.tsx",
+			"lineRange": [22, 58],
+			"summary": "Renders a model select control, guarding against missing values and mapping models into options.",
+			"tags": ["component", "select", "event-handler"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/components/BootErrorBoundary/BootErrorBoundary.tsx",
+			"type": "file",
+			"name": "BootErrorBoundary.tsx",
+			"filePath": "src/renderer/components/BootErrorBoundary/BootErrorBoundary.tsx",
+			"summary": "React error boundary that catches fatal boot-time errors and renders a recovery UI offering an app reload.",
+			"tags": ["component", "error-boundary", "resilience"],
+			"complexity": "moderate",
+			"languageNotes": "Class component implementing getDerivedStateFromError/componentDidCatch lifecycle."
+		},
+		{
+			"id": "class:src/renderer/components/BootErrorBoundary/BootErrorBoundary.tsx:BootErrorBoundary",
+			"type": "class",
+			"name": "BootErrorBoundary",
+			"filePath": "src/renderer/components/BootErrorBoundary/BootErrorBoundary.tsx",
+			"lineRange": [14, 97],
+			"summary": "Error boundary class capturing render errors, logging them, invoking an onError callback, and offering a window reload.",
+			"tags": ["component", "error-boundary", "event-handler"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/ChatInputDropZone/ChatInputDropZone.tsx",
+			"type": "file",
+			"name": "ChatInputDropZone.tsx",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/ChatInputDropZone/ChatInputDropZone.tsx",
+			"summary": "Drop-zone wrapper for the chat input that accepts dragged file mentions and injects their paths into the prompt input.",
+			"tags": ["component", "drag-and-drop", "chat", "event-handler"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/ChatInputDropZone/ChatInputDropZone.tsx:ChatInputDropZone",
+			"type": "function",
+			"name": "ChatInputDropZone",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/ChatInputDropZone/ChatInputDropZone.tsx",
+			"lineRange": [11, 53],
+			"summary": "Handles drag-over and drop events to insert file mention paths into the prompt input controller.",
+			"tags": ["component", "drag-and-drop", "event-handler"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/FileDropOverlay/FileDropOverlay.tsx",
+			"type": "file",
+			"name": "FileDropOverlay.tsx",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/FileDropOverlay/FileDropOverlay.tsx",
+			"summary": "Visual overlay shown over the chat input while a file is being dragged onto the drop zone.",
+			"tags": ["component", "drag-and-drop", "overlay"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/FileDropOverlay/FileDropOverlay.tsx:FileDropOverlay",
+			"type": "function",
+			"name": "FileDropOverlay",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/FileDropOverlay/FileDropOverlay.tsx",
+			"lineRange": [7, 21],
+			"summary": "Renders a visibility-gated drop overlay indicator.",
+			"tags": ["component", "overlay"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/QuestionInputOverlay/QuestionInputOverlay.tsx",
+			"type": "file",
+			"name": "QuestionInputOverlay.tsx",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/QuestionInputOverlay/QuestionInputOverlay.tsx",
+			"summary": "Interactive overlay that renders agent ask_user questions with clickable options and a custom free-text answer field.",
+			"tags": ["component", "chat", "overlay", "event-handler", "form"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/QuestionInputOverlay/QuestionInputOverlay.tsx:QuestionInputOverlay",
+			"type": "function",
+			"name": "QuestionInputOverlay",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/QuestionInputOverlay/QuestionInputOverlay.tsx",
+			"lineRange": [20, 196],
+			"summary": "Manages answer submission state and renders question options, custom input, and skip/submit controls.",
+			"tags": ["component", "form", "event-handler"],
+			"complexity": "complex"
+		},
+		{
+			"id": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/SlashCommandPreview/index.ts",
+			"summary": "Barrel re-exporting the SlashCommandPreview component.",
+			"tags": ["barrel", "entry-point"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/hooks/useDocumentDrag/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/hooks/useDocumentDrag/index.ts",
+			"summary": "Barrel re-exporting the useDocumentDrag hook and DragType type.",
+			"tags": ["barrel", "entry-point", "hook"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/hooks/useDocumentDrag/useDocumentDrag.ts",
+			"type": "file",
+			"name": "useDocumentDrag.ts",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/hooks/useDocumentDrag/useDocumentDrag.ts",
+			"summary": "Hook tracking document-level drag state to classify whether a file or mention is being dragged.",
+			"tags": ["hook", "drag-and-drop", "event-handler"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/hooks/useDocumentDrag/useDocumentDrag.ts:useDocumentDrag",
+			"type": "function",
+			"name": "useDocumentDrag",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/hooks/useDocumentDrag/useDocumentDrag.ts",
+			"lineRange": [5, 42],
+			"summary": "Attaches document drag listeners and exposes the current drag type state.",
+			"tags": ["hook", "drag-and-drop", "event-handler"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/components/Chat/ChatInterface/components/MentionPopover/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/MentionPopover/index.ts",
+			"summary": "Barrel re-exporting mention popover primitives (Anchor, Provider, Trigger).",
+			"tags": ["barrel", "entry-point", "mention"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx",
+			"type": "file",
+			"name": "MessageScrollbackRail.tsx",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx",
+			"summary": "Scrollback navigation rail that renders per-user-message markers, tracks the active message on scroll, and supports jumping to messages.",
+			"tags": ["component", "chat", "scroll", "navigation"],
+			"complexity": "complex"
+		},
+		{
+			"id": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:buildPreview",
+			"type": "function",
+			"name": "buildPreview",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx",
+			"lineRange": [39, 62],
+			"summary": "Builds a truncated text preview from a message's text parts.",
+			"tags": ["utility", "text", "serialization"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:findActiveMessageId",
+			"type": "function",
+			"name": "findActiveMessageId",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx",
+			"lineRange": [64, 84],
+			"summary": "Determines which message marker is active based on the current scroll offset.",
+			"tags": ["utility", "scroll", "navigation"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:findUserMessageElement",
+			"type": "function",
+			"name": "findUserMessageElement",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx",
+			"lineRange": [86, 101],
+			"summary": "Locates the DOM element for a given user message id within the scroll container.",
+			"tags": ["utility", "dom", "scroll"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:MessageScrollbackRail",
+			"type": "function",
+			"name": "MessageScrollbackRail",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx",
+			"lineRange": [103, 350],
+			"summary": "Renders the scrollback rail, wiring scroll/resize observers and hover/jump interactions to message markers.",
+			"tags": ["component", "scroll", "navigation", "event-handler"],
+			"complexity": "complex"
+		},
+		{
+			"id": "file:src/renderer/components/Chat/ChatInterface/components/MessageList/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/MessageList/index.ts",
+			"summary": "Barrel re-exporting the MessageList component.",
+			"tags": ["barrel", "entry-point"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/components/Chat/ChatInterface/components/MessagePartsRenderer/components/StreamingMessageText/StreamingMessageText.tsx",
+			"type": "file",
+			"name": "StreamingMessageText.tsx",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/MessagePartsRenderer/components/StreamingMessageText/StreamingMessageText.tsx",
+			"summary": "Renders assistant message text with a typewriter-style streaming animation, deferring to a markdown renderer.",
+			"tags": ["component", "chat", "streaming", "animation"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/renderer/components/Chat/ChatInterface/components/MessagePartsRenderer/components/StreamingMessageText/StreamingMessageText.tsx:StreamingMessageText",
+			"type": "function",
+			"name": "StreamingMessageText",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/MessagePartsRenderer/components/StreamingMessageText/StreamingMessageText.tsx",
+			"lineRange": [17, 57],
+			"summary": "Animates progressive reveal of streaming text via an interval, then renders the full text.",
+			"tags": ["component", "streaming", "animation"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/AnthropicApiKeyDialog/AnthropicApiKeyDialog.tsx",
+			"type": "file",
+			"name": "AnthropicApiKeyDialog.tsx",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/AnthropicApiKeyDialog/AnthropicApiKeyDialog.tsx",
+			"summary": "Dialog for entering, submitting, or clearing the Anthropic API key with validation and error display.",
+			"tags": ["component", "dialog", "auth", "form", "api-key"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/AnthropicApiKeyDialog/AnthropicApiKeyDialog.tsx:AnthropicApiKeyDialog",
+			"type": "function",
+			"name": "AnthropicApiKeyDialog",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/AnthropicApiKeyDialog/AnthropicApiKeyDialog.tsx",
+			"lineRange": [24, 118],
+			"summary": "Renders the Anthropic API key entry form, handling submit, clear, and open-state changes.",
+			"tags": ["component", "form", "auth", "event-handler"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/AnthropicApiKeyDialog/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/AnthropicApiKeyDialog/index.ts",
+			"summary": "Barrel re-exporting the AnthropicApiKeyDialog component.",
+			"tags": ["barrel", "entry-point"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/ModelProviderGroup/components/AnthropicProviderHeading/AnthropicProviderHeading.tsx",
+			"type": "file",
+			"name": "AnthropicProviderHeading.tsx",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/ModelProviderGroup/components/AnthropicProviderHeading/AnthropicProviderHeading.tsx",
+			"summary": "Provider group heading for Anthropic models showing connection status and an auth-modal trigger.",
+			"tags": ["component", "model-picker", "auth", "header"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/ModelProviderGroup/components/AnthropicProviderHeading/AnthropicProviderHeading.tsx:AnthropicProviderHeading",
+			"type": "function",
+			"name": "AnthropicProviderHeading",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/ModelProviderGroup/components/AnthropicProviderHeading/AnthropicProviderHeading.tsx",
+			"lineRange": [12, 53],
+			"summary": "Renders the Anthropic provider heading with connect/auth action.",
+			"tags": ["component", "header", "event-handler"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/ModelProviderGroup/components/OpenAIProviderHeading/OpenAIProviderHeading.tsx",
+			"type": "file",
+			"name": "OpenAIProviderHeading.tsx",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/ModelProviderGroup/components/OpenAIProviderHeading/OpenAIProviderHeading.tsx",
+			"summary": "Provider group heading for OpenAI models showing connection status and an auth-modal trigger.",
+			"tags": ["component", "model-picker", "auth", "header"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/ModelProviderGroup/components/OpenAIProviderHeading/OpenAIProviderHeading.tsx:OpenAIProviderHeading",
+			"type": "function",
+			"name": "OpenAIProviderHeading",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/ModelProviderGroup/components/OpenAIProviderHeading/OpenAIProviderHeading.tsx",
+			"lineRange": [12, 53],
+			"summary": "Renders the OpenAI provider heading with connect/auth action.",
+			"tags": ["component", "header", "event-handler"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OAuthDialog/OAuthDialog.tsx",
+			"type": "file",
+			"name": "OAuthDialog.tsx",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OAuthDialog/OAuthDialog.tsx",
+			"summary": "OAuth authorization dialog guiding the user through opening an auth URL, pasting a code, and connecting or disconnecting a provider.",
+			"tags": ["component", "dialog", "auth", "oauth", "form"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OAuthDialog/OAuthDialog.tsx:OAuthDialog",
+			"type": "function",
+			"name": "OAuthDialog",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OAuthDialog/OAuthDialog.tsx",
+			"lineRange": [39, 180],
+			"summary": "Renders the OAuth flow UI handling copy, code entry, submit, retry, and disconnect actions.",
+			"tags": ["component", "oauth", "form", "event-handler"],
+			"complexity": "complex"
+		},
+		{
+			"id": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OpenAIApiKeyDialog/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OpenAIApiKeyDialog/index.ts",
+			"summary": "Barrel re-exporting the OpenAIApiKeyDialog component.",
+			"tags": ["barrel", "entry-point"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OpenAIApiKeyDialog/OpenAIApiKeyDialog.tsx",
+			"type": "file",
+			"name": "OpenAIApiKeyDialog.tsx",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OpenAIApiKeyDialog/OpenAIApiKeyDialog.tsx",
+			"summary": "Dialog for entering, submitting, or clearing the OpenAI API key with validation and error display.",
+			"tags": ["component", "dialog", "auth", "form", "api-key"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OpenAIApiKeyDialog/OpenAIApiKeyDialog.tsx:OpenAIApiKeyDialog",
+			"type": "function",
+			"name": "OpenAIApiKeyDialog",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OpenAIApiKeyDialog/OpenAIApiKeyDialog.tsx",
+			"lineRange": [24, 119],
+			"summary": "Renders the OpenAI API key entry form, handling submit, clear, and open-state changes.",
+			"tags": ["component", "form", "auth", "event-handler"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/index.ts",
+			"summary": "Barrel re-exporting the useAnthropicApiKey hook.",
+			"tags": ["barrel", "entry-point", "hook"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts",
+			"type": "file",
+			"name": "useAnthropicApiKey.ts",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts",
+			"summary": "Hook managing Anthropic API key dialog state and tRPC queries/mutations for reading, setting, and clearing the key.",
+			"tags": ["hook", "auth", "api-key", "trpc", "state"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts:useAnthropicApiKey",
+			"type": "function",
+			"name": "useAnthropicApiKey",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts",
+			"lineRange": [35, 147],
+			"summary": "Coordinates Anthropic API key status query and set/clear mutations with dialog open/close and error state.",
+			"tags": ["hook", "auth", "trpc", "state"],
+			"complexity": "complex"
+		},
+		{
+			"id": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/index.ts",
+			"summary": "Barrel re-exporting the useOpenAIApiKey hook.",
+			"tags": ["barrel", "entry-point", "hook"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts",
+			"type": "file",
+			"name": "useOpenAIApiKey.ts",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts",
+			"summary": "Hook managing OpenAI API key dialog state and tRPC queries/mutations for reading, setting, and clearing the key.",
+			"tags": ["hook", "auth", "api-key", "trpc", "state"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts:useOpenAIApiKey",
+			"type": "function",
+			"name": "useOpenAIApiKey",
+			"filePath": "src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts",
+			"lineRange": [35, 141],
+			"summary": "Coordinates OpenAI API key status query and set/clear mutations with dialog open/close and error state.",
+			"tags": ["hook", "auth", "trpc", "state"],
+			"complexity": "complex"
+		}
+	],
+	"edges": [
+		{
+			"source": "file:src/main/terminal-host/test-helpers.ts",
+			"target": "function:src/main/terminal-host/test-helpers.ts:supportsLocalSocketBinding",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/main/terminal-host/test-helpers.ts",
+			"target": "function:src/main/terminal-host/test-helpers.ts:supportsLocalSocketBinding",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/components/AgentModelSelect/AgentModelSelect.tsx",
+			"target": "function:src/renderer/components/AgentModelSelect/AgentModelSelect.tsx:AgentModelSelect",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/components/AgentModelSelect/AgentModelSelect.tsx",
+			"target": "function:src/renderer/components/AgentModelSelect/AgentModelSelect.tsx:AgentModelSelect",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/components/BootErrorBoundary/BootErrorBoundary.tsx",
+			"target": "class:src/renderer/components/BootErrorBoundary/BootErrorBoundary.tsx:BootErrorBoundary",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/components/BootErrorBoundary/BootErrorBoundary.tsx",
+			"target": "class:src/renderer/components/BootErrorBoundary/BootErrorBoundary.tsx:BootErrorBoundary",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/ChatInputDropZone/ChatInputDropZone.tsx",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/ChatInputDropZone/ChatInputDropZone.tsx:ChatInputDropZone",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/ChatInputDropZone/ChatInputDropZone.tsx",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/ChatInputDropZone/ChatInputDropZone.tsx:ChatInputDropZone",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/ChatInputDropZone/ChatInputDropZone.tsx",
+			"target": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/hooks/useDocumentDrag/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/FileDropOverlay/FileDropOverlay.tsx",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/FileDropOverlay/FileDropOverlay.tsx:FileDropOverlay",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/FileDropOverlay/FileDropOverlay.tsx",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/FileDropOverlay/FileDropOverlay.tsx:FileDropOverlay",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/QuestionInputOverlay/QuestionInputOverlay.tsx",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/QuestionInputOverlay/QuestionInputOverlay.tsx:QuestionInputOverlay",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/QuestionInputOverlay/QuestionInputOverlay.tsx",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/components/QuestionInputOverlay/QuestionInputOverlay.tsx:QuestionInputOverlay",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/hooks/useDocumentDrag/useDocumentDrag.ts",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/hooks/useDocumentDrag/useDocumentDrag.ts:useDocumentDrag",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/hooks/useDocumentDrag/useDocumentDrag.ts",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ChatInputFooter/hooks/useDocumentDrag/useDocumentDrag.ts:useDocumentDrag",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:buildPreview",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:findActiveMessageId",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:findUserMessageElement",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:MessageScrollbackRail",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/MessageList/components/MessageScrollbackRail/MessageScrollbackRail.tsx:MessageScrollbackRail",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/MessagePartsRenderer/components/StreamingMessageText/StreamingMessageText.tsx",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/MessagePartsRenderer/components/StreamingMessageText/StreamingMessageText.tsx:StreamingMessageText",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/MessagePartsRenderer/components/StreamingMessageText/StreamingMessageText.tsx",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/MessagePartsRenderer/components/StreamingMessageText/StreamingMessageText.tsx:StreamingMessageText",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/AnthropicApiKeyDialog/AnthropicApiKeyDialog.tsx",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/AnthropicApiKeyDialog/AnthropicApiKeyDialog.tsx:AnthropicApiKeyDialog",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/AnthropicApiKeyDialog/AnthropicApiKeyDialog.tsx",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/AnthropicApiKeyDialog/AnthropicApiKeyDialog.tsx:AnthropicApiKeyDialog",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/ModelProviderGroup/components/AnthropicProviderHeading/AnthropicProviderHeading.tsx",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/ModelProviderGroup/components/AnthropicProviderHeading/AnthropicProviderHeading.tsx:AnthropicProviderHeading",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/ModelProviderGroup/components/AnthropicProviderHeading/AnthropicProviderHeading.tsx",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/ModelProviderGroup/components/AnthropicProviderHeading/AnthropicProviderHeading.tsx:AnthropicProviderHeading",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/ModelProviderGroup/components/OpenAIProviderHeading/OpenAIProviderHeading.tsx",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/ModelProviderGroup/components/OpenAIProviderHeading/OpenAIProviderHeading.tsx:OpenAIProviderHeading",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/ModelProviderGroup/components/OpenAIProviderHeading/OpenAIProviderHeading.tsx",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/ModelProviderGroup/components/OpenAIProviderHeading/OpenAIProviderHeading.tsx:OpenAIProviderHeading",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OAuthDialog/OAuthDialog.tsx",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OAuthDialog/OAuthDialog.tsx:OAuthDialog",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OAuthDialog/OAuthDialog.tsx",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OAuthDialog/OAuthDialog.tsx:OAuthDialog",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OpenAIApiKeyDialog/OpenAIApiKeyDialog.tsx",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OpenAIApiKeyDialog/OpenAIApiKeyDialog.tsx:OpenAIApiKeyDialog",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OpenAIApiKeyDialog/OpenAIApiKeyDialog.tsx",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OpenAIApiKeyDialog/OpenAIApiKeyDialog.tsx:OpenAIApiKeyDialog",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts:useAnthropicApiKey",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useAnthropicApiKey/useAnthropicApiKey.ts:useAnthropicApiKey",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts:useOpenAIApiKey",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts",
+			"target": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/hooks/useOpenAIApiKey/useOpenAIApiKey.ts:useOpenAIApiKey",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		}
+	]
+}

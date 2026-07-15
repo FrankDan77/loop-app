@@ -1,0 +1,1118 @@
+{
+	"nodes": [
+		{
+			"id": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarData/useDashboardSidebarData.ts",
+			"type": "file",
+			"name": "useDashboardSidebarData.ts",
+			"filePath": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarData/useDashboardSidebarData.ts",
+			"summary": "Aggregates dashboard sidebar data (hosts, projects, sections, workspaces, pull requests) into stable, deduplicated collections consumed by the sidebar UI.",
+			"tags": [
+				"hook",
+				"data-aggregation",
+				"live-query",
+				"memoization",
+				"sidebar"
+			],
+			"complexity": "complex",
+			"languageNotes": "Uses fingerprint-based memoization helpers to preserve referential stability across live-query re-renders, avoiding unnecessary downstream re-renders."
+		},
+		{
+			"id": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarShortcuts/useDashboardSidebarShortcuts.ts",
+			"type": "file",
+			"name": "useDashboardSidebarShortcuts.ts",
+			"filePath": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarShortcuts/useDashboardSidebarShortcuts.ts",
+			"summary": "Registers keyboard shortcuts (hotkeys) for switching between and revealing workspaces within the dashboard sidebar.",
+			"tags": [
+				"hook",
+				"hotkeys",
+				"keyboard-shortcuts",
+				"sidebar",
+				"navigation"
+			],
+			"complexity": "moderate"
+		},
+		{
+			"id": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useNavigateAwayFromWorkspace/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useNavigateAwayFromWorkspace/index.ts",
+			"summary": "Barrel file re-exporting the useNavigateAwayFromWorkspace hook.",
+			"tags": ["barrel", "entry-point", "re-export"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useNavigateAwayFromWorkspace/navigationTarget.ts",
+			"type": "file",
+			"name": "navigationTarget.ts",
+			"filePath": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useNavigateAwayFromWorkspace/navigationTarget.ts",
+			"summary": "Pure function computing which workspace (if any) to navigate to after a workspace is removed from the sidebar.",
+			"tags": ["utility", "navigation", "pure-function"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useNavigateAwayFromWorkspace/useNavigateAwayFromWorkspace.ts",
+			"type": "file",
+			"name": "useNavigateAwayFromWorkspace.ts",
+			"filePath": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useNavigateAwayFromWorkspace/useNavigateAwayFromWorkspace.ts",
+			"summary": "Hook that automatically redirects the user away from a workspace route when the active workspace is deleted or becomes invalid.",
+			"tags": ["hook", "navigation", "workspace-lifecycle", "side-effect"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/utils/getFlattenedV2WorkspaceIds/getFlattenedV2WorkspaceIds.ts",
+			"type": "file",
+			"name": "getFlattenedV2WorkspaceIds.ts",
+			"filePath": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/utils/getFlattenedV2WorkspaceIds/getFlattenedV2WorkspaceIds.ts",
+			"summary": "Flattens the hierarchical sidebar structure (projects, sections, workspaces) into an ordered, linear list of visible workspace IDs for keyboard navigation.",
+			"tags": ["utility", "sidebar", "data-transformation", "ordering"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/utils/getFlattenedV2WorkspaceIds/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/utils/getFlattenedV2WorkspaceIds/index.ts",
+			"summary": "Barrel file re-exporting getFlattenedV2WorkspaceIds.",
+			"tags": ["barrel", "entry-point", "re-export"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/utils/projectChildren/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/utils/projectChildren/index.ts",
+			"summary": "Barrel re-exporting helpers for accessing a sidebar project's child sections and workspaces.",
+			"tags": ["barrel", "entry-point", "re-export"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/NavigationControls/NavigationControls.tsx",
+			"type": "file",
+			"name": "NavigationControls.tsx",
+			"filePath": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/NavigationControls/NavigationControls.tsx",
+			"summary": "Back/forward navigation buttons wired to router history and mouse back/forward buttons, with a keyboard shortcut for the command palette.",
+			"tags": ["component", "navigation", "hotkeys", "router", "toolbar"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/NavigationControls/components/HistoryDropdown/HistoryDropdown.tsx",
+			"type": "file",
+			"name": "HistoryDropdown.tsx",
+			"filePath": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/NavigationControls/components/HistoryDropdown/HistoryDropdown.tsx",
+			"summary": "Dropdown listing recently viewed workspaces, automations, tasks, and pull requests for quick re-navigation.",
+			"tags": ["component", "dropdown", "history", "navigation", "live-query"],
+			"complexity": "complex"
+		},
+		{
+			"id": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/NavigationControls/components/HistoryDropdown/hooks/useRecentlyViewed/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/NavigationControls/components/HistoryDropdown/hooks/useRecentlyViewed/index.ts",
+			"summary": "Barrel re-exporting the useRecentlyViewed hook and its entry type.",
+			"tags": ["barrel", "entry-point", "re-export"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/NavigationControls/components/HistoryDropdown/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/NavigationControls/components/HistoryDropdown/index.ts",
+			"summary": "Barrel file re-exporting the HistoryDropdown component.",
+			"tags": ["barrel", "entry-point", "re-export"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/TopBar/components/OrganizationDropdown/OrganizationDropdown.tsx",
+			"type": "file",
+			"name": "OrganizationDropdown.tsx",
+			"filePath": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/TopBar/components/OrganizationDropdown/OrganizationDropdown.tsx",
+			"summary": "Dropdown for switching between organizations, showing the current plan, and signing out.",
+			"tags": ["component", "dropdown", "organization", "auth", "topbar"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/TopBar/components/V2OpenInMenuButton/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/TopBar/components/V2OpenInMenuButton/index.ts",
+			"summary": "Barrel re-exporting the V2OpenInMenuButton component.",
+			"tags": ["barrel", "entry-point", "re-export"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/TopBar/components/V2WorkspaceOpenInButton/V2WorkspaceOpenInButton.tsx",
+			"type": "file",
+			"name": "V2WorkspaceOpenInButton.tsx",
+			"filePath": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/TopBar/components/V2WorkspaceOpenInButton/V2WorkspaceOpenInButton.tsx",
+			"summary": "Button that opens the current V2 workspace in an external editor/tool by querying the host service.",
+			"tags": ["component", "workspace", "host-service", "button"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/TopBar/components/V2WorkspaceTitle/V2WorkspaceTitle.tsx",
+			"type": "file",
+			"name": "V2WorkspaceTitle.tsx",
+			"filePath": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/TopBar/components/V2WorkspaceTitle/V2WorkspaceTitle.tsx",
+			"summary": "Displays the display name of the active V2 workspace in the top bar.",
+			"tags": ["component", "workspace", "title", "topbar"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/hooks/useFailedAutomations/useFailedAutomations.ts",
+			"type": "file",
+			"name": "useFailedAutomations.ts",
+			"filePath": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/hooks/useFailedAutomations/useFailedAutomations.ts",
+			"summary": "Hook computing the set of automations whose most recent run failed, for surfacing failure indicators in the dashboard.",
+			"tags": ["hook", "automation", "live-query", "status"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/tasks/$taskId/components/PropertiesSidebar/components/OpenInWorkspaceV2/OpenInWorkspaceV2.tsx",
+			"type": "file",
+			"name": "OpenInWorkspaceV2.tsx",
+			"filePath": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/tasks/$taskId/components/PropertiesSidebar/components/OpenInWorkspaceV2/OpenInWorkspaceV2.tsx",
+			"summary": "Panel for launching a task in a new V2 workspace, letting the user pick host, project, and agent before submitting the workspace creation.",
+			"tags": [
+				"component",
+				"workspace-creation",
+				"task",
+				"agent-select",
+				"form"
+			],
+			"complexity": "complex"
+		},
+		{
+			"id": "function:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarData/useDashboardSidebarData.ts:getPullRequestRowsFingerprint",
+			"type": "function",
+			"name": "getPullRequestRowsFingerprint",
+			"filePath": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarData/useDashboardSidebarData.ts",
+			"lineRange": [45, 55],
+			"summary": "Computes a stable string fingerprint of pull-request rows keyed by workspace, used to detect meaningful changes.",
+			"tags": ["utility", "memoization", "fingerprint"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarData/useDashboardSidebarData.ts:useStablePullRequestsByWorkspaceId",
+			"type": "function",
+			"name": "useStablePullRequestsByWorkspaceId",
+			"filePath": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarData/useDashboardSidebarData.ts",
+			"lineRange": [63, 88],
+			"summary": "Returns a referentially-stable map of pull requests by workspace ID, only updating when the underlying data actually changes.",
+			"tags": ["hook", "memoization", "stability"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarData/useDashboardSidebarData.ts:useStableDashboardSidebarProjects",
+			"type": "function",
+			"name": "useStableDashboardSidebarProjects",
+			"filePath": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarData/useDashboardSidebarData.ts",
+			"lineRange": [90, 127],
+			"summary": "Returns a referentially-stable list of dashboard sidebar projects, preserving object identity for unchanged projects across renders.",
+			"tags": ["hook", "memoization", "stability", "sidebar"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarData/useDashboardSidebarData.ts:useDashboardSidebarData",
+			"type": "function",
+			"name": "useDashboardSidebarData",
+			"filePath": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarData/useDashboardSidebarData.ts",
+			"lineRange": [129, 415],
+			"summary": "Main hook assembling all data needed to render the dashboard sidebar, including hosts, projects, sections, workspaces, and pull requests.",
+			"tags": ["hook", "entry-point", "data-aggregation", "sidebar"],
+			"complexity": "complex"
+		},
+		{
+			"id": "function:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarShortcuts/useDashboardSidebarShortcuts.ts:useStableWorkspaceShortcutLabels",
+			"type": "function",
+			"name": "useStableWorkspaceShortcutLabels",
+			"filePath": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarShortcuts/useDashboardSidebarShortcuts.ts",
+			"lineRange": [26, 49],
+			"summary": "Computes stable numeric shortcut labels (1-9) for the first N workspaces so hotkey assignments don't flicker across renders.",
+			"tags": ["hook", "memoization", "hotkeys"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarShortcuts/useDashboardSidebarShortcuts.ts:useDashboardSidebarShortcuts",
+			"type": "function",
+			"name": "useDashboardSidebarShortcuts",
+			"filePath": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarShortcuts/useDashboardSidebarShortcuts.ts",
+			"lineRange": [51, 166],
+			"summary": "Registers number-key hotkeys to switch to specific workspaces and arrow-key hotkeys to move focus through the sidebar tree.",
+			"tags": ["hook", "hotkeys", "sidebar", "entry-point"],
+			"complexity": "complex"
+		},
+		{
+			"id": "function:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useNavigateAwayFromWorkspace/navigationTarget.ts:resolveWorkspaceRemovalNavigationTarget",
+			"type": "function",
+			"name": "resolveWorkspaceRemovalNavigationTarget",
+			"filePath": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useNavigateAwayFromWorkspace/navigationTarget.ts",
+			"lineRange": [15, 38],
+			"summary": "Determines the next workspace to navigate to (or none) after a given workspace is removed, skipping invalid or deleting workspaces.",
+			"tags": ["utility", "navigation", "pure-function"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useNavigateAwayFromWorkspace/useNavigateAwayFromWorkspace.ts:useNavigateAwayFromWorkspace",
+			"type": "function",
+			"name": "useNavigateAwayFromWorkspace",
+			"filePath": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useNavigateAwayFromWorkspace/useNavigateAwayFromWorkspace.ts",
+			"lineRange": [20, 62],
+			"summary": "Watches the active workspace route and automatically redirects the user to a sibling workspace or the dashboard root if the current workspace becomes invalid.",
+			"tags": ["hook", "navigation", "side-effect", "entry-point"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/utils/getFlattenedV2WorkspaceIds/getFlattenedV2WorkspaceIds.ts:getFlattenedV2WorkspaceIds",
+			"type": "function",
+			"name": "getFlattenedV2WorkspaceIds",
+			"filePath": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/utils/getFlattenedV2WorkspaceIds/getFlattenedV2WorkspaceIds.ts",
+			"lineRange": [8, 78],
+			"summary": "Builds a flat, ordered array of visible workspace IDs by walking sidebar projects, sections, and top-level workspace entries.",
+			"tags": ["utility", "sidebar", "ordering", "entry-point"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/NavigationControls/NavigationControls.tsx:NavigationControls",
+			"type": "function",
+			"name": "NavigationControls",
+			"filePath": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/NavigationControls/NavigationControls.tsx",
+			"lineRange": [9, 87],
+			"summary": "Renders back/forward buttons bound to router history, mouse navigation buttons, and the history dropdown trigger.",
+			"tags": ["component", "navigation", "router", "entry-point"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/NavigationControls/components/HistoryDropdown/HistoryDropdown.tsx:WorkspaceRow",
+			"type": "function",
+			"name": "WorkspaceRow",
+			"filePath": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/NavigationControls/components/HistoryDropdown/HistoryDropdown.tsx",
+			"lineRange": [30, 80],
+			"summary": "Renders a single legacy workspace entry row within the history dropdown.",
+			"tags": ["component", "row", "history"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/NavigationControls/components/HistoryDropdown/HistoryDropdown.tsx:V2WorkspaceRow",
+			"type": "function",
+			"name": "V2WorkspaceRow",
+			"filePath": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/NavigationControls/components/HistoryDropdown/HistoryDropdown.tsx",
+			"lineRange": [82, 123],
+			"summary": "Renders a single V2 workspace entry row within the history dropdown.",
+			"tags": ["component", "row", "history", "workspace"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/NavigationControls/components/HistoryDropdown/HistoryDropdown.tsx:AutomationRow",
+			"type": "function",
+			"name": "AutomationRow",
+			"filePath": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/NavigationControls/components/HistoryDropdown/HistoryDropdown.tsx",
+			"lineRange": [125, 168],
+			"summary": "Renders a single automation entry row within the history dropdown, including its preset icon.",
+			"tags": ["component", "row", "history", "automation"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/NavigationControls/components/HistoryDropdown/HistoryDropdown.tsx:TaskRow",
+			"type": "function",
+			"name": "TaskRow",
+			"filePath": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/NavigationControls/components/HistoryDropdown/HistoryDropdown.tsx",
+			"lineRange": [170, 226],
+			"summary": "Renders a single task entry row within the history dropdown, showing its status.",
+			"tags": ["component", "row", "history", "task"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/NavigationControls/components/HistoryDropdown/HistoryDropdown.tsx:HistoryDropdown",
+			"type": "function",
+			"name": "HistoryDropdown",
+			"filePath": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/NavigationControls/components/HistoryDropdown/HistoryDropdown.tsx",
+			"lineRange": [228, 396],
+			"summary": "Combines recently-viewed entries from workspaces, automations, and tasks into a filterable dropdown menu with quick navigation.",
+			"tags": ["component", "dropdown", "history", "entry-point"],
+			"complexity": "complex"
+		},
+		{
+			"id": "function:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/TopBar/components/OrganizationDropdown/OrganizationDropdown.tsx:OrganizationDropdown",
+			"type": "function",
+			"name": "OrganizationDropdown",
+			"filePath": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/TopBar/components/OrganizationDropdown/OrganizationDropdown.tsx",
+			"lineRange": [30, 202],
+			"summary": "Renders the organization switcher dropdown showing the current org, plan badge, and sign-out action.",
+			"tags": ["component", "dropdown", "organization", "entry-point"],
+			"complexity": "complex"
+		},
+		{
+			"id": "function:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/TopBar/components/V2WorkspaceOpenInButton/V2WorkspaceOpenInButton.tsx:V2WorkspaceOpenInButton",
+			"type": "function",
+			"name": "V2WorkspaceOpenInButton",
+			"filePath": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/TopBar/components/V2WorkspaceOpenInButton/V2WorkspaceOpenInButton.tsx",
+			"lineRange": [11, 44],
+			"summary": "Renders a button that opens the given V2 workspace using the local host service.",
+			"tags": ["component", "button", "workspace", "entry-point"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/TopBar/components/V2WorkspaceTitle/V2WorkspaceTitle.tsx:V2WorkspaceTitle",
+			"type": "function",
+			"name": "V2WorkspaceTitle",
+			"filePath": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/TopBar/components/V2WorkspaceTitle/V2WorkspaceTitle.tsx",
+			"lineRange": [10, 52],
+			"summary": "Renders the display name for a given V2 workspace ID.",
+			"tags": ["component", "title", "workspace", "entry-point"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:apps/desktop/src/renderer/routes/_authenticated/_dashboard/hooks/useFailedAutomations/useFailedAutomations.ts:useFailedAutomations",
+			"type": "function",
+			"name": "useFailedAutomations",
+			"filePath": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/hooks/useFailedAutomations/useFailedAutomations.ts",
+			"lineRange": [21, 71],
+			"summary": "Computes the set of automation IDs whose latest run has a failed status.",
+			"tags": ["hook", "automation", "status", "entry-point"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:apps/desktop/src/renderer/routes/_authenticated/_dashboard/tasks/$taskId/components/PropertiesSidebar/components/OpenInWorkspaceV2/OpenInWorkspaceV2.tsx:OpenInWorkspaceV2",
+			"type": "function",
+			"name": "OpenInWorkspaceV2",
+			"filePath": "apps/desktop/src/renderer/routes/_authenticated/_dashboard/tasks/$taskId/components/PropertiesSidebar/components/OpenInWorkspaceV2/OpenInWorkspaceV2.tsx",
+			"lineRange": [52, 361],
+			"summary": "Renders the \"open task in workspace\" form, letting the user choose a host, project, and agent, then submits a new V2 workspace creation prefilled with the task's branch name and prompt.",
+			"tags": ["component", "workspace-creation", "form", "entry-point"],
+			"complexity": "complex"
+		}
+	],
+	"edges": [
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarData/useDashboardSidebarData.ts",
+			"target": "file:apps/desktop/src/renderer/hooks/useRelayUrl/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarData/useDashboardSidebarData.ts",
+			"target": "file:apps/desktop/src/renderer/lib/host-service-client.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarData/useDashboardSidebarData.ts",
+			"target": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarData/buildDashboardSidebarProjects.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarData/useDashboardSidebarData.ts",
+			"target": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarData/derivePullRequestQueryTargets.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarData/useDashboardSidebarData.ts",
+			"target": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/types.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarData/useDashboardSidebarData.ts",
+			"target": "file:apps/desktop/src/renderer/routes/_authenticated/hooks/useDashboardSidebarState/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarData/useDashboardSidebarData.ts",
+			"target": "file:apps/desktop/src/renderer/routes/_authenticated/providers/CollectionsProvider/dashboardSidebarLocal/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarData/useDashboardSidebarData.ts",
+			"target": "file:apps/desktop/src/renderer/routes/_authenticated/providers/CollectionsProvider/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarData/useDashboardSidebarData.ts",
+			"target": "file:apps/desktop/src/renderer/routes/_authenticated/providers/HostWorkspacesProvider/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarData/useDashboardSidebarData.ts",
+			"target": "file:apps/desktop/src/renderer/routes/_authenticated/providers/LocalHostServiceProvider/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarData/useDashboardSidebarData.ts",
+			"target": "file:apps/desktop/src/renderer/stores/workspace-creates/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarShortcuts/useDashboardSidebarShortcuts.ts",
+			"target": "file:apps/desktop/src/renderer/hotkeys/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarShortcuts/useDashboardSidebarShortcuts.ts",
+			"target": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/types.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarShortcuts/useDashboardSidebarShortcuts.ts",
+			"target": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/utils/projectChildren/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarShortcuts/useDashboardSidebarShortcuts.ts",
+			"target": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/utils/workspace-navigation.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarShortcuts/useDashboardSidebarShortcuts.ts",
+			"target": "file:apps/desktop/src/renderer/routes/_authenticated/hooks/useDashboardSidebarState/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarShortcuts/useDashboardSidebarShortcuts.ts",
+			"target": "file:apps/desktop/src/renderer/routes/_authenticated/providers/DeletingWorkspacesProvider/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useNavigateAwayFromWorkspace/useNavigateAwayFromWorkspace.ts",
+			"target": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useNavigateAwayFromWorkspace/navigationTarget.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useNavigateAwayFromWorkspace/useNavigateAwayFromWorkspace.ts",
+			"target": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/utils/getFlattenedV2WorkspaceIds/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useNavigateAwayFromWorkspace/useNavigateAwayFromWorkspace.ts",
+			"target": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/utils/workspace-navigation.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useNavigateAwayFromWorkspace/useNavigateAwayFromWorkspace.ts",
+			"target": "file:apps/desktop/src/renderer/routes/_authenticated/providers/CollectionsProvider/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useNavigateAwayFromWorkspace/useNavigateAwayFromWorkspace.ts",
+			"target": "file:apps/desktop/src/renderer/routes/_authenticated/providers/DeletingWorkspacesProvider/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useNavigateAwayFromWorkspace/useNavigateAwayFromWorkspace.ts",
+			"target": "file:apps/desktop/src/renderer/routes/_authenticated/providers/HostWorkspacesProvider/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/utils/getFlattenedV2WorkspaceIds/getFlattenedV2WorkspaceIds.ts",
+			"target": "file:apps/desktop/src/renderer/routes/_authenticated/providers/CollectionsProvider/collections.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/utils/getFlattenedV2WorkspaceIds/getFlattenedV2WorkspaceIds.ts",
+			"target": "file:apps/desktop/src/renderer/routes/_authenticated/providers/CollectionsProvider/dashboardSidebarLocal/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/NavigationControls/NavigationControls.tsx",
+			"target": "file:apps/desktop/src/renderer/commandPalette/core/frames.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/NavigationControls/NavigationControls.tsx",
+			"target": "file:apps/desktop/src/renderer/hotkeys/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/NavigationControls/NavigationControls.tsx",
+			"target": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/NavigationControls/components/HistoryDropdown/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/NavigationControls/components/HistoryDropdown/HistoryDropdown.tsx",
+			"target": "file:apps/desktop/src/renderer/assets/app-icons/preset-icons/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/NavigationControls/components/HistoryDropdown/HistoryDropdown.tsx",
+			"target": "file:apps/desktop/src/renderer/hooks/useIsV2CloudEnabled.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/NavigationControls/components/HistoryDropdown/HistoryDropdown.tsx",
+			"target": "file:apps/desktop/src/renderer/lib/electron-trpc.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/NavigationControls/components/HistoryDropdown/HistoryDropdown.tsx",
+			"target": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/NavigationControls/components/HistoryDropdown/hooks/useRecentlyViewed/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/NavigationControls/components/HistoryDropdown/HistoryDropdown.tsx",
+			"target": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/components/shared/StatusIcon/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/NavigationControls/components/HistoryDropdown/HistoryDropdown.tsx",
+			"target": "file:apps/desktop/src/renderer/routes/_authenticated/providers/CollectionsProvider/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/NavigationControls/components/HistoryDropdown/HistoryDropdown.tsx",
+			"target": "file:apps/desktop/src/renderer/routes/_authenticated/providers/HostWorkspacesProvider/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/TopBar/components/OrganizationDropdown/OrganizationDropdown.tsx",
+			"target": "file:apps/desktop/src/renderer/components/HotkeyMenuShortcut/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/TopBar/components/OrganizationDropdown/OrganizationDropdown.tsx",
+			"target": "file:apps/desktop/src/renderer/hooks/useCurrentPlan.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/TopBar/components/OrganizationDropdown/OrganizationDropdown.tsx",
+			"target": "file:apps/desktop/src/renderer/hooks/useSignOut/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/TopBar/components/OrganizationDropdown/OrganizationDropdown.tsx",
+			"target": "file:apps/desktop/src/renderer/lib/auth-client.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/TopBar/components/OrganizationDropdown/OrganizationDropdown.tsx",
+			"target": "file:apps/desktop/src/renderer/routes/_authenticated/providers/CollectionsProvider/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/TopBar/components/V2WorkspaceOpenInButton/V2WorkspaceOpenInButton.tsx",
+			"target": "file:apps/desktop/src/renderer/lib/host-service-client.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/TopBar/components/V2WorkspaceOpenInButton/V2WorkspaceOpenInButton.tsx",
+			"target": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/TopBar/components/V2OpenInMenuButton/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/TopBar/components/V2WorkspaceOpenInButton/V2WorkspaceOpenInButton.tsx",
+			"target": "file:apps/desktop/src/renderer/routes/_authenticated/providers/HostWorkspacesProvider/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/TopBar/components/V2WorkspaceOpenInButton/V2WorkspaceOpenInButton.tsx",
+			"target": "file:apps/desktop/src/renderer/routes/_authenticated/providers/LocalHostServiceProvider/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/TopBar/components/V2WorkspaceTitle/V2WorkspaceTitle.tsx",
+			"target": "file:apps/desktop/src/renderer/routes/_authenticated/providers/HostWorkspacesProvider/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/TopBar/components/V2WorkspaceTitle/V2WorkspaceTitle.tsx",
+			"target": "file:apps/desktop/src/renderer/utils/getV2WorkspaceDisplayName/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/hooks/useFailedAutomations/useFailedAutomations.ts",
+			"target": "file:apps/desktop/src/renderer/lib/auth-client.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/hooks/useFailedAutomations/useFailedAutomations.ts",
+			"target": "file:apps/desktop/src/renderer/routes/_authenticated/providers/CollectionsProvider/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/tasks/$taskId/components/PropertiesSidebar/components/OpenInWorkspaceV2/OpenInWorkspaceV2.tsx",
+			"target": "file:apps/desktop/src/renderer/components/AgentSelect/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/tasks/$taskId/components/PropertiesSidebar/components/OpenInWorkspaceV2/OpenInWorkspaceV2.tsx",
+			"target": "file:apps/desktop/src/renderer/env.renderer.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/tasks/$taskId/components/PropertiesSidebar/components/OpenInWorkspaceV2/OpenInWorkspaceV2.tsx",
+			"target": "file:apps/desktop/src/renderer/hooks/host-service/useHostTargetUrl/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/tasks/$taskId/components/PropertiesSidebar/components/OpenInWorkspaceV2/OpenInWorkspaceV2.tsx",
+			"target": "file:apps/desktop/src/renderer/hooks/useV2AgentChoices/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/tasks/$taskId/components/PropertiesSidebar/components/OpenInWorkspaceV2/OpenInWorkspaceV2.tsx",
+			"target": "file:apps/desktop/src/renderer/lib/auth-client.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/tasks/$taskId/components/PropertiesSidebar/components/OpenInWorkspaceV2/OpenInWorkspaceV2.tsx",
+			"target": "file:apps/desktop/src/renderer/lib/host-service-unavailable.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/tasks/$taskId/components/PropertiesSidebar/components/OpenInWorkspaceV2/OpenInWorkspaceV2.tsx",
+			"target": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/tasks/$taskId/utils/deriveBranchName.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/tasks/$taskId/components/PropertiesSidebar/components/OpenInWorkspaceV2/OpenInWorkspaceV2.tsx",
+			"target": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/hooks/useTasksTable/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/tasks/$taskId/components/PropertiesSidebar/components/OpenInWorkspaceV2/OpenInWorkspaceV2.tsx",
+			"target": "file:apps/desktop/src/renderer/routes/_authenticated/components/DashboardNewWorkspaceModal/components/DashboardNewWorkspaceForm/components/DevicePicker/hooks/useWorkspaceHostOptions/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/tasks/$taskId/components/PropertiesSidebar/components/OpenInWorkspaceV2/OpenInWorkspaceV2.tsx",
+			"target": "file:apps/desktop/src/renderer/routes/_authenticated/components/DashboardNewWorkspaceModal/components/DashboardNewWorkspaceForm/components/DevicePicker/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/tasks/$taskId/components/PropertiesSidebar/components/OpenInWorkspaceV2/OpenInWorkspaceV2.tsx",
+			"target": "file:apps/desktop/src/renderer/routes/_authenticated/components/DashboardNewWorkspaceModal/components/DashboardNewWorkspaceModalContent/hooks/useSelectedHostProjectIds/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/tasks/$taskId/components/PropertiesSidebar/components/OpenInWorkspaceV2/OpenInWorkspaceV2.tsx",
+			"target": "file:apps/desktop/src/renderer/routes/_authenticated/components/ProjectThumbnail/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/tasks/$taskId/components/PropertiesSidebar/components/OpenInWorkspaceV2/OpenInWorkspaceV2.tsx",
+			"target": "file:apps/desktop/src/renderer/routes/_authenticated/providers/CollectionsProvider/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/tasks/$taskId/components/PropertiesSidebar/components/OpenInWorkspaceV2/OpenInWorkspaceV2.tsx",
+			"target": "file:apps/desktop/src/renderer/routes/_authenticated/providers/LocalHostServiceProvider/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/tasks/$taskId/components/PropertiesSidebar/components/OpenInWorkspaceV2/OpenInWorkspaceV2.tsx",
+			"target": "file:apps/desktop/src/renderer/stores/v2-workspace-create-defaults.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/tasks/$taskId/components/PropertiesSidebar/components/OpenInWorkspaceV2/OpenInWorkspaceV2.tsx",
+			"target": "file:apps/desktop/src/renderer/stores/workspace-creates/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/tasks/$taskId/components/PropertiesSidebar/components/OpenInWorkspaceV2/OpenInWorkspaceV2.tsx",
+			"target": "file:apps/desktop/src/shared/constants.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarData/useDashboardSidebarData.ts",
+			"target": "function:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarData/useDashboardSidebarData.ts:getPullRequestRowsFingerprint",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarData/useDashboardSidebarData.ts",
+			"target": "function:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarData/useDashboardSidebarData.ts:useStablePullRequestsByWorkspaceId",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarData/useDashboardSidebarData.ts",
+			"target": "function:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarData/useDashboardSidebarData.ts:useStableDashboardSidebarProjects",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarData/useDashboardSidebarData.ts",
+			"target": "function:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarData/useDashboardSidebarData.ts:useDashboardSidebarData",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarData/useDashboardSidebarData.ts",
+			"target": "function:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarData/useDashboardSidebarData.ts:useDashboardSidebarData",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarShortcuts/useDashboardSidebarShortcuts.ts",
+			"target": "function:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarShortcuts/useDashboardSidebarShortcuts.ts:useStableWorkspaceShortcutLabels",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarShortcuts/useDashboardSidebarShortcuts.ts",
+			"target": "function:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarShortcuts/useDashboardSidebarShortcuts.ts:useDashboardSidebarShortcuts",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarShortcuts/useDashboardSidebarShortcuts.ts",
+			"target": "function:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarShortcuts/useDashboardSidebarShortcuts.ts:useDashboardSidebarShortcuts",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useNavigateAwayFromWorkspace/navigationTarget.ts",
+			"target": "function:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useNavigateAwayFromWorkspace/navigationTarget.ts:resolveWorkspaceRemovalNavigationTarget",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useNavigateAwayFromWorkspace/navigationTarget.ts",
+			"target": "function:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useNavigateAwayFromWorkspace/navigationTarget.ts:resolveWorkspaceRemovalNavigationTarget",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useNavigateAwayFromWorkspace/useNavigateAwayFromWorkspace.ts",
+			"target": "function:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useNavigateAwayFromWorkspace/useNavigateAwayFromWorkspace.ts:useNavigateAwayFromWorkspace",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useNavigateAwayFromWorkspace/useNavigateAwayFromWorkspace.ts",
+			"target": "function:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useNavigateAwayFromWorkspace/useNavigateAwayFromWorkspace.ts:useNavigateAwayFromWorkspace",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/utils/getFlattenedV2WorkspaceIds/getFlattenedV2WorkspaceIds.ts",
+			"target": "function:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/utils/getFlattenedV2WorkspaceIds/getFlattenedV2WorkspaceIds.ts:getFlattenedV2WorkspaceIds",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/utils/getFlattenedV2WorkspaceIds/getFlattenedV2WorkspaceIds.ts",
+			"target": "function:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/utils/getFlattenedV2WorkspaceIds/getFlattenedV2WorkspaceIds.ts:getFlattenedV2WorkspaceIds",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/NavigationControls/NavigationControls.tsx",
+			"target": "function:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/NavigationControls/NavigationControls.tsx:NavigationControls",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/NavigationControls/NavigationControls.tsx",
+			"target": "function:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/NavigationControls/NavigationControls.tsx:NavigationControls",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/NavigationControls/components/HistoryDropdown/HistoryDropdown.tsx",
+			"target": "function:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/NavigationControls/components/HistoryDropdown/HistoryDropdown.tsx:WorkspaceRow",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/NavigationControls/components/HistoryDropdown/HistoryDropdown.tsx",
+			"target": "function:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/NavigationControls/components/HistoryDropdown/HistoryDropdown.tsx:V2WorkspaceRow",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/NavigationControls/components/HistoryDropdown/HistoryDropdown.tsx",
+			"target": "function:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/NavigationControls/components/HistoryDropdown/HistoryDropdown.tsx:AutomationRow",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/NavigationControls/components/HistoryDropdown/HistoryDropdown.tsx",
+			"target": "function:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/NavigationControls/components/HistoryDropdown/HistoryDropdown.tsx:TaskRow",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/NavigationControls/components/HistoryDropdown/HistoryDropdown.tsx",
+			"target": "function:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/NavigationControls/components/HistoryDropdown/HistoryDropdown.tsx:HistoryDropdown",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/NavigationControls/components/HistoryDropdown/HistoryDropdown.tsx",
+			"target": "function:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/NavigationControls/components/HistoryDropdown/HistoryDropdown.tsx:HistoryDropdown",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/TopBar/components/OrganizationDropdown/OrganizationDropdown.tsx",
+			"target": "function:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/TopBar/components/OrganizationDropdown/OrganizationDropdown.tsx:OrganizationDropdown",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/TopBar/components/OrganizationDropdown/OrganizationDropdown.tsx",
+			"target": "function:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/TopBar/components/OrganizationDropdown/OrganizationDropdown.tsx:OrganizationDropdown",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/TopBar/components/V2WorkspaceOpenInButton/V2WorkspaceOpenInButton.tsx",
+			"target": "function:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/TopBar/components/V2WorkspaceOpenInButton/V2WorkspaceOpenInButton.tsx:V2WorkspaceOpenInButton",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/TopBar/components/V2WorkspaceOpenInButton/V2WorkspaceOpenInButton.tsx",
+			"target": "function:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/TopBar/components/V2WorkspaceOpenInButton/V2WorkspaceOpenInButton.tsx:V2WorkspaceOpenInButton",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/TopBar/components/V2WorkspaceTitle/V2WorkspaceTitle.tsx",
+			"target": "function:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/TopBar/components/V2WorkspaceTitle/V2WorkspaceTitle.tsx:V2WorkspaceTitle",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/TopBar/components/V2WorkspaceTitle/V2WorkspaceTitle.tsx",
+			"target": "function:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/TopBar/components/V2WorkspaceTitle/V2WorkspaceTitle.tsx:V2WorkspaceTitle",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/hooks/useFailedAutomations/useFailedAutomations.ts",
+			"target": "function:apps/desktop/src/renderer/routes/_authenticated/_dashboard/hooks/useFailedAutomations/useFailedAutomations.ts:useFailedAutomations",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/hooks/useFailedAutomations/useFailedAutomations.ts",
+			"target": "function:apps/desktop/src/renderer/routes/_authenticated/_dashboard/hooks/useFailedAutomations/useFailedAutomations.ts:useFailedAutomations",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/tasks/$taskId/components/PropertiesSidebar/components/OpenInWorkspaceV2/OpenInWorkspaceV2.tsx",
+			"target": "function:apps/desktop/src/renderer/routes/_authenticated/_dashboard/tasks/$taskId/components/PropertiesSidebar/components/OpenInWorkspaceV2/OpenInWorkspaceV2.tsx:OpenInWorkspaceV2",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:apps/desktop/src/renderer/routes/_authenticated/_dashboard/tasks/$taskId/components/PropertiesSidebar/components/OpenInWorkspaceV2/OpenInWorkspaceV2.tsx",
+			"target": "function:apps/desktop/src/renderer/routes/_authenticated/_dashboard/tasks/$taskId/components/PropertiesSidebar/components/OpenInWorkspaceV2/OpenInWorkspaceV2.tsx:OpenInWorkspaceV2",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+
+		{
+			"source": "function:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useNavigateAwayFromWorkspace/useNavigateAwayFromWorkspace.ts:useNavigateAwayFromWorkspace",
+			"target": "function:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useNavigateAwayFromWorkspace/navigationTarget.ts:resolveWorkspaceRemovalNavigationTarget",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "function:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useNavigateAwayFromWorkspace/useNavigateAwayFromWorkspace.ts:useNavigateAwayFromWorkspace",
+			"target": "function:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/utils/getFlattenedV2WorkspaceIds/getFlattenedV2WorkspaceIds.ts:getFlattenedV2WorkspaceIds",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "function:apps/desktop/src/renderer/routes/_authenticated/_dashboard/tasks/$taskId/components/PropertiesSidebar/components/OpenInWorkspaceV2/OpenInWorkspaceV2.tsx:OpenInWorkspaceV2",
+			"target": "function:apps/desktop/src/renderer/routes/_authenticated/_dashboard/tasks/$taskId/utils/deriveBranchName.ts:deriveBranchName",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+
+		{
+			"source": "function:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/NavigationControls/NavigationControls.tsx:NavigationControls",
+			"target": "function:apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/NavigationControls/components/HistoryDropdown/HistoryDropdown.tsx:HistoryDropdown",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		}
+	]
+}

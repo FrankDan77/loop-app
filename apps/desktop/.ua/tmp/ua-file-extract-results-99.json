@@ -1,0 +1,2108 @@
+{
+	"scriptCompleted": true,
+	"filesAnalyzed": 16,
+	"filesSkipped": [],
+	"results": [
+		{
+			"path": "plans/done/20260106-1800-terminal-host-control-stream-sockets.md",
+			"language": "markdown",
+			"fileCategory": "docs",
+			"totalLines": 331,
+			"nonEmptyLines": 206,
+			"sections": [
+				{
+					"heading": "Terminal Host Freeze Fix: Split Control vs Stream Sockets",
+					"level": 1,
+					"line": 1
+				},
+				{
+					"heading": "Purpose",
+					"level": 2,
+					"line": 4
+				},
+				{
+					"heading": "Context",
+					"level": 2,
+					"line": 11
+				},
+				{
+					"heading": "Why Protocol Negotiation Matters",
+					"level": 3,
+					"line": 27
+				},
+				{
+					"heading": "Scope",
+					"level": 2,
+					"line": 41
+				},
+				{
+					"heading": "Assumptions",
+					"level": 2,
+					"line": 59
+				},
+				{
+					"heading": "Open Questions",
+					"level": 2,
+					"line": 66
+				},
+				{
+					"heading": "Decision Log",
+					"level": 2,
+					"line": 71
+				},
+				{
+					"heading": "Plan Of Work",
+					"level": 2,
+					"line": 86
+				},
+				{
+					"heading": "Milestone 1: Define protocol v2 (types + invariants)",
+					"level": 3,
+					"line": 88
+				},
+				{
+					"heading": "Milestone 2: Daemon server supports dual sockets",
+					"level": 3,
+					"line": 111
+				},
+				{
+					"heading": "Milestone 3: Electron main daemon client uses two connections",
+					"level": 3,
+					"line": 147
+				},
+				{
+					"heading": "Milestone 3.1: Establish two authenticated connections with shared clientId",
+					"level": 4,
+					"line": 155
+				},
+				{
+					"heading": "Milestone 3.2: Route responses vs events to the correct socket",
+					"level": 4,
+					"line": 168
+				},
+				{
+					"heading": "Milestone 3.3: Define mismatch + restart behavior and mid-session failure semantics",
+					"level": 4,
+					"line": 177
+				},
+				{
+					"heading": "Milestone 4: Prove the fix under backpressure (tests)",
+					"level": 3,
+					"line": 199
+				},
+				{
+					"heading": "Milestone 5: Rollout safety + observability",
+					"level": 3,
+					"line": 222
+				},
+				{
+					"heading": "Validation",
+					"level": 2,
+					"line": 240
+				},
+				{
+					"heading": "Idempotence And Rollback",
+					"level": 2,
+					"line": 263
+				},
+				{
+					"heading": "Risks And Mitigations",
+					"level": 2,
+					"line": 276
+				},
+				{
+					"heading": "Progress",
+					"level": 2,
+					"line": 291
+				},
+				{
+					"heading": "Surprises And Discoveries",
+					"level": 2,
+					"line": 302
+				},
+				{
+					"heading": "Outcomes And Retrospective",
+					"level": 2,
+					"line": 308
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0,
+				"sectionCount": 23
+			}
+		},
+		{
+			"path": "plans/done/20260114-1739-fix-file-pane-cross-workspace.md",
+			"language": "markdown",
+			"fileCategory": "docs",
+			"totalLines": 243,
+			"nonEmptyLines": 155,
+			"sections": [
+				{
+					"heading": "Fix blank file viewer pane when switching workspaces",
+					"level": 1,
+					"line": 1
+				},
+				{
+					"heading": "Purpose / Big Picture",
+					"level": 2,
+					"line": 7
+				},
+				{
+					"heading": "Assumptions",
+					"level": 2,
+					"line": 13
+				},
+				{
+					"heading": "Open Questions",
+					"level": 2,
+					"line": 19
+				},
+				{
+					"heading": "Progress",
+					"level": 2,
+					"line": 23
+				},
+				{
+					"heading": "Surprises & Discoveries",
+					"level": 2,
+					"line": 33
+				},
+				{
+					"heading": "Decision Log",
+					"level": 2,
+					"line": 41
+				},
+				{
+					"heading": "Outcomes & Retrospective",
+					"level": 2,
+					"line": 55
+				},
+				{
+					"heading": "Context and Orientation",
+					"level": 2,
+					"line": 81
+				},
+				{
+					"heading": "Plan of Work",
+					"level": 2,
+					"line": 103
+				},
+				{
+					"heading": "Milestone 1: Add a workspace-scoped active tab resolver (pure utility)",
+					"level": 3,
+					"line": 105
+				},
+				{
+					"heading": "Milestone 2: Sanitize and self-heal invalid workspace tab pointers in the store",
+					"level": 3,
+					"line": 134
+				},
+				{
+					"heading": "Milestone 3: Make tab rendering explicitly workspace-scoped",
+					"level": 3,
+					"line": 159
+				},
+				{
+					"heading": "Milestone 4: Decouple TabView worktreePath from route params",
+					"level": 3,
+					"line": 171
+				},
+				{
+					"heading": "Milestone 5: Add regression tests",
+					"level": 3,
+					"line": 182
+				},
+				{
+					"heading": "Concrete Steps",
+					"level": 2,
+					"line": 196
+				},
+				{
+					"heading": "Validation and Acceptance",
+					"level": 2,
+					"line": 211
+				},
+				{
+					"heading": "Idempotence and Recovery",
+					"level": 2,
+					"line": 232
+				},
+				{
+					"heading": "Artifacts and Notes",
+					"level": 2,
+					"line": 238
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0,
+				"sectionCount": 19
+			}
+		},
+		{
+			"path": "plans/done/20260412-keyboard-recorder-ctrl-binding-fix.md",
+			"language": "markdown",
+			"fileCategory": "docs",
+			"totalLines": 189,
+			"nonEmptyLines": 149,
+			"sections": [
+				{
+					"heading": "Keyboard Recorder — Ctrl Binding & event.code Unification",
+					"level": 1,
+					"line": 1
+				},
+				{
+					"heading": "TL;DR",
+					"level": 2,
+					"line": 5
+				},
+				{
+					"heading": "What was broken",
+					"level": 2,
+					"line": 14
+				},
+				{
+					"heading": "Key code changes",
+					"level": 2,
+					"line": 25
+				},
+				{
+					"heading": "Shared helpers (`utils/resolveHotkeyFromEvent.ts`)",
+					"level": 3,
+					"line": 27
+				},
+				{
+					"heading": "Recorder (`hooks/useRecordHotkeys/useRecordHotkeys.ts`)",
+					"level": 3,
+					"line": 52
+				},
+				{
+					"heading": "Migration (`migrate.ts`)",
+					"level": 3,
+					"line": 69
+				},
+				{
+					"heading": "Terminal helpers",
+					"level": 3,
+					"line": 83
+				},
+				{
+					"heading": "Display (`display.ts`)",
+					"level": 3,
+					"line": 99
+				},
+				{
+					"heading": "Library audit — nothing else missed",
+					"level": 2,
+					"line": 105
+				},
+				{
+					"heading": "Decisions taken",
+					"level": 2,
+					"line": 124
+				},
+				{
+					"heading": "Testability",
+					"level": 2,
+					"line": 136
+				},
+				{
+					"heading": "Files changed",
+					"level": 2,
+					"line": 151
+				},
+				{
+					"heading": "Test plan (manual QA)",
+					"level": 2,
+					"line": 170
+				},
+				{
+					"heading": "Sources",
+					"level": 2,
+					"line": 182
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0,
+				"sectionCount": 15
+			}
+		},
+		{
+			"path": "plans/done/20260415-v2-host-service-ai-branch-naming-test-plan.md",
+			"language": "markdown",
+			"fileCategory": "docs",
+			"totalLines": 86,
+			"nonEmptyLines": 64,
+			"sections": [
+				{
+					"heading": "Manual Testing Plan — PR #3517",
+					"level": 1,
+					"line": 1
+				},
+				{
+					"heading": "Prerequisites",
+					"level": 2,
+					"line": 3
+				},
+				{
+					"heading": "1. v1 AI Branch Naming (API key path)",
+					"level": 2,
+					"line": 7
+				},
+				{
+					"heading": "2. v1 AI Branch Naming (no credentials)",
+					"level": 2,
+					"line": 19
+				},
+				{
+					"heading": "3. v1 Workspace Auto-Rename",
+					"level": 2,
+					"line": 28
+				},
+				{
+					"heading": "4. Anthropic OAuth Auto-Refresh (from #3510)",
+					"level": 2,
+					"line": 37
+				},
+				{
+					"heading": "5. Settings > Models Page",
+					"level": 2,
+					"line": 49
+				},
+				{
+					"heading": "6. Production Build",
+					"level": 2,
+					"line": 64
+				},
+				{
+					"heading": "7. Host-Service Procedure (dormant — future v2)",
+					"level": 2,
+					"line": 73
+				},
+				{
+					"heading": "Known Regressions (documented, accepted)",
+					"level": 2,
+					"line": 83
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0,
+				"sectionCount": 10
+			}
+		},
+		{
+			"path": "plans/done/20260415-v2-host-service-ai-branch-naming.md",
+			"language": "markdown",
+			"fileCategory": "docs",
+			"totalLines": 168,
+			"nonEmptyLines": 134,
+			"sections": [
+				{
+					"heading": "V2 Workspace Modal — Host-Service AI Branch Naming",
+					"level": 1,
+					"line": 1
+				},
+				{
+					"heading": "Completed",
+					"level": 2,
+					"line": 5
+				},
+				{
+					"heading": "Target architecture",
+					"level": 2,
+					"line": 9
+				},
+				{
+					"heading": "Shared helper",
+					"level": 2,
+					"line": 22
+				},
+				{
+					"heading": "Code-removal budget",
+					"level": 2,
+					"line": 62
+				},
+				{
+					"heading": "Step 1 — Shared helper + migrate v1 branch naming",
+					"level": 2,
+					"line": 81
+				},
+				{
+					"heading": "Actionable tasks",
+					"level": 3,
+					"line": 83
+				},
+				{
+					"heading": "Risks (step 1)",
+					"level": 3,
+					"line": 100
+				},
+				{
+					"heading": "Step 2 — Host-service procedure",
+					"level": 2,
+					"line": 107
+				},
+				{
+					"heading": "Actionable tasks",
+					"level": 3,
+					"line": 109
+				},
+				{
+					"heading": "Step 3 — Wire v2",
+					"level": 2,
+					"line": 131
+				},
+				{
+					"heading": "Actionable tasks",
+					"level": 3,
+					"line": 133
+				},
+				{
+					"heading": "Effort",
+					"level": 2,
+					"line": 149
+				},
+				{
+					"heading": "Risks",
+					"level": 2,
+					"line": 159
+				},
+				{
+					"heading": "Out of scope",
+					"level": 2,
+					"line": 166
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0,
+				"sectionCount": 15
+			}
+		},
+		{
+			"path": "plans/done/20260417-fix-api-key-storage-slot.md",
+			"language": "markdown",
+			"fileCategory": "docs",
+			"totalLines": 57,
+			"nonEmptyLines": 35,
+			"sections": [
+				{
+					"heading": "Fix: API keys overwritten by OAuth connect/disconnect cycle",
+					"level": 1,
+					"line": 1
+				},
+				{
+					"heading": "Problem",
+					"level": 2,
+					"line": 3
+				},
+				{
+					"heading": "Root cause",
+					"level": 2,
+					"line": 14
+				},
+				{
+					"heading": "Fix",
+					"level": 2,
+					"line": 24
+				},
+				{
+					"heading": "`auth-storage-utils.ts`",
+					"level": 3,
+					"line": 26
+				},
+				{
+					"heading": "`chat-service.ts`",
+					"level": 3,
+					"line": 34
+				},
+				{
+					"heading": "Behavior after fix",
+					"level": 2,
+					"line": 40
+				},
+				{
+					"heading": "Side effect: small-model tasks",
+					"level": 2,
+					"line": 49
+				},
+				{
+					"heading": "Scope",
+					"level": 2,
+					"line": 53
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0,
+				"sectionCount": 9
+			}
+		},
+		{
+			"path": "plans/done/20260425-1430-sidebar-remove-and-rerender.md",
+			"language": "markdown",
+			"fileCategory": "docs",
+			"totalLines": 342,
+			"nonEmptyLines": 264,
+			"sections": [
+				{
+					"heading": "Sidebar \"Remove from Sidebar\" fix + sidebar re-render review",
+					"level": 1,
+					"line": 1
+				},
+				{
+					"heading": "Review verdict",
+					"level": 2,
+					"line": 10
+				},
+				{
+					"heading": "Part 1 - bug: \"Remove from Sidebar\" does nothing for remote workspaces",
+					"level": 2,
+					"line": 20
+				},
+				{
+					"heading": "Repro",
+					"level": 3,
+					"line": 22
+				},
+				{
+					"heading": "Remove call chain",
+					"level": 3,
+					"line": 37
+				},
+				{
+					"heading": "Re-add paths",
+					"level": 3,
+					"line": 60
+				},
+				{
+					"heading": "1. Unstable provider value re-runs the mount ensure effect",
+					"level": 4,
+					"line": 65
+				},
+				{
+					"heading": "2. Pane-layout persistence re-adds before checking row existence",
+					"level": 4,
+					"line": 88
+				},
+				{
+					"heading": "Why the previous provider-only fix was incomplete",
+					"level": 3,
+					"line": 105
+				},
+				{
+					"heading": "Implemented targeted fixes",
+					"level": 3,
+					"line": 132
+				},
+				{
+					"heading": "Fix A - stabilize the provider value for real",
+					"level": 4,
+					"line": 134
+				},
+				{
+					"heading": "Fix B - do not auto-ensure from pane-layout persistence",
+					"level": 4,
+					"line": 153
+				},
+				{
+					"heading": "Regression considerations for Part 1",
+					"level": 3,
+					"line": 177
+				},
+				{
+					"heading": "Verification run after code fixes",
+					"level": 3,
+					"line": 189
+				},
+				{
+					"heading": "Part 2 - sidebar re-render hardening",
+					"level": 2,
+					"line": 203
+				},
+				{
+					"heading": "Valid re-render sources",
+					"level": 3,
+					"line": 228
+				},
+				{
+					"heading": "Implemented low-risk hardening",
+					"level": 3,
+					"line": 245
+				},
+				{
+					"heading": "Verification run after re-render hardening",
+					"level": 3,
+					"line": 264
+				},
+				{
+					"heading": "Collection split recommendation",
+					"level": 3,
+					"line": 276
+				},
+				{
+					"heading": "If a split is revisited, missed callsites",
+					"level": 3,
+					"line": 286
+				},
+				{
+					"heading": "Lower-risk hardening work",
+					"level": 3,
+					"line": 310
+				},
+				{
+					"heading": "Feedback summary",
+					"level": 2,
+					"line": 324
+				},
+				{
+					"heading": "Files currently involved",
+					"level": 2,
+					"line": 337
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0,
+				"sectionCount": 23
+			}
+		},
+		{
+			"path": "plans/done/20260427-keyboard-layout-plan.md",
+			"language": "markdown",
+			"fileCategory": "docs",
+			"totalLines": 478,
+			"nonEmptyLines": 361,
+			"sections": [
+				{
+					"heading": "Keyboard Layout & Shortcut Plan",
+					"level": 1,
+					"line": 1
+				},
+				{
+					"heading": "Objective",
+					"level": 2,
+					"line": 9
+				},
+				{
+					"heading": "TL;DR",
+					"level": 2,
+					"line": 13
+				},
+				{
+					"heading": "Decision history: browser API → native-keymap",
+					"level": 2,
+					"line": 23
+				},
+				{
+					"heading": "Design principle: physical vs logical key identity",
+					"level": 2,
+					"line": 38
+				},
+				{
+					"heading": "Current state (brief)",
+					"level": 2,
+					"line": 53
+				},
+				{
+					"heading": "Library decision: `native-keymap`",
+					"level": 2,
+					"line": 79
+				},
+				{
+					"heading": "Considered alternatives (rejected)",
+					"level": 2,
+					"line": 98
+				},
+				{
+					"heading": "Cross-cutting requirements (checklist for every phase)",
+					"level": 2,
+					"line": 107
+				},
+				{
+					"heading": "Phase 0 — Correctness fixes",
+					"level": 2,
+					"line": 119
+				},
+				{
+					"heading": "Implementation",
+					"level": 3,
+					"line": 125
+				},
+				{
+					"heading": "0.1 AltGr guard in `eventToChord`",
+					"level": 4,
+					"line": 127
+				},
+				{
+					"heading": "0.2 IME composition guard",
+					"level": 4,
+					"line": 154
+				},
+				{
+					"heading": "0.3 Fail-closed dead-key sanitizer",
+					"level": 4,
+					"line": 158
+				},
+				{
+					"heading": "0.4 `event.key` discipline in `line-edit-translations.ts`",
+					"level": 4,
+					"line": 179
+				},
+				{
+					"heading": "Tests",
+					"level": 3,
+					"line": 194
+				},
+				{
+					"heading": "Manual QA",
+					"level": 3,
+					"line": 204
+				},
+				{
+					"heading": "Acceptance",
+					"level": 3,
+					"line": 210
+				},
+				{
+					"heading": "Phase 1 — Layout service via `native-keymap`",
+					"level": 2,
+					"line": 218
+				},
+				{
+					"heading": "Architecture (mirrors VSCode)",
+					"level": 3,
+					"line": 225
+				},
+				{
+					"heading": "Implementation",
+					"level": 3,
+					"line": 254
+				},
+				{
+					"heading": "1.1 Add the dependency",
+					"level": 4,
+					"line": 256
+				},
+				{
+					"heading": "1.2 Main-process wrapper",
+					"level": 4,
+					"line": 264
+				},
+				{
+					"heading": "1.3 tRPC router",
+					"level": 4,
+					"line": 272
+				},
+				{
+					"heading": "1.4 Renderer store",
+					"level": 4,
+					"line": 280
+				},
+				{
+					"heading": "1.5 Deletions (sweep)",
+					"level": 4,
+					"line": 288
+				},
+				{
+					"heading": "1.6 No change",
+					"level": 4,
+					"line": 295
+				},
+				{
+					"heading": "Tests",
+					"level": 3,
+					"line": 301
+				},
+				{
+					"heading": "Manual QA",
+					"level": 3,
+					"line": 313
+				},
+				{
+					"heading": "Acceptance",
+					"level": 3,
+					"line": 321
+				},
+				{
+					"heading": "Phase 2 — Versioned dual-mode bindings",
+					"level": 2,
+					"line": 329
+				},
+				{
+					"heading": "Binding shape",
+					"level": 3,
+					"line": 336
+				},
+				{
+					"heading": "Match algorithm",
+					"level": 3,
+					"line": 363
+				},
+				{
+					"heading": "Migration",
+					"level": 3,
+					"line": 384
+				},
+				{
+					"heading": "Recorder & UI",
+					"level": 3,
+					"line": 390
+				},
+				{
+					"heading": "Tests",
+					"level": 3,
+					"line": 402
+				},
+				{
+					"heading": "Unit",
+					"level": 4,
+					"line": 404
+				},
+				{
+					"heading": "Integration",
+					"level": 4,
+					"line": 418
+				},
+				{
+					"heading": "Manual QA matrix (Phase 2)",
+					"level": 4,
+					"line": 427
+				},
+				{
+					"heading": "Acceptance",
+					"level": 3,
+					"line": 441
+				},
+				{
+					"heading": "Phase 3 — Menu sync & advanced (demand-driven)",
+					"level": 2,
+					"line": 450
+				},
+				{
+					"heading": "Out of scope",
+					"level": 2,
+					"line": 462
+				},
+				{
+					"heading": "References",
+					"level": 2,
+					"line": 469
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0,
+				"sectionCount": 43
+			}
+		},
+		{
+			"path": "plans/done/20260428-keyboard-qa-plan.md",
+			"language": "markdown",
+			"fileCategory": "docs",
+			"totalLines": 213,
+			"nonEmptyLines": 146,
+			"sections": [
+				{
+					"heading": "Keyboard Shortcut System — Manual QA Plan",
+					"level": 1,
+					"line": 1
+				},
+				{
+					"heading": "Setup",
+					"level": 2,
+					"line": 11
+				},
+				{
+					"heading": "Required",
+					"level": 3,
+					"line": 13
+				},
+				{
+					"heading": "Optional but valuable",
+					"level": 3,
+					"line": 18
+				},
+				{
+					"heading": "Quick switching",
+					"level": 3,
+					"line": 23
+				},
+				{
+					"heading": "1. Smoke regression (US baseline)",
+					"level": 2,
+					"line": 28
+				},
+				{
+					"heading": "2. Layout-aware display (Phase 1)",
+					"level": 2,
+					"line": 42
+				},
+				{
+					"heading": "2.1 Display swap on input-source change",
+					"level": 3,
+					"line": 46
+				},
+				{
+					"heading": "2.2 Layout-stable keys don't change",
+					"level": 3,
+					"line": 55
+				},
+				{
+					"heading": "2.3 Live-data sanity (DevTools, optional)",
+					"level": 3,
+					"line": 60
+				},
+				{
+					"heading": "3. Logical bindings (Phase 2 — the feature)",
+					"level": 2,
+					"line": 73
+				},
+				{
+					"heading": "3.1 Record a logical binding",
+					"level": 3,
+					"line": 77
+				},
+				{
+					"heading": "3.2 The cross-layout payoff",
+					"level": 3,
+					"line": 86
+				},
+				{
+					"heading": "3.3 Default registry bindings stay physical",
+					"level": 3,
+					"line": 100
+				},
+				{
+					"heading": "3.4 Named keys are layout-immune",
+					"level": 3,
+					"line": 108
+				},
+				{
+					"heading": "3.5 Conflict detection across modes",
+					"level": 3,
+					"line": 115
+				},
+				{
+					"heading": "4. Edge cases & defensive guards (Phase 0)",
+					"level": 2,
+					"line": 123
+				},
+				{
+					"heading": "4.1 IME composition guard",
+					"level": 3,
+					"line": 125
+				},
+				{
+					"heading": "4.2 AltGr guard (Linux/Windows w/ German, optional)",
+					"level": 3,
+					"line": 136
+				},
+				{
+					"heading": "4.3 Migration is fail-closed (Mac with v1 overrides, optional)",
+					"level": 3,
+					"line": 145
+				},
+				{
+					"heading": "4.4 Terminal forwarding still works",
+					"level": 3,
+					"line": 155
+				},
+				{
+					"heading": "4.5 Shifted glyphs",
+					"level": 3,
+					"line": 162
+				},
+				{
+					"heading": "5. Storage shape (sanity check)",
+					"level": 2,
+					"line": 168
+				},
+				{
+					"heading": "6. Performance / no-regression",
+					"level": 2,
+					"line": 182
+				},
+				{
+					"heading": "What to do if something fails",
+					"level": 2,
+					"line": 191
+				},
+				{
+					"heading": "Sign-off criteria",
+					"level": 2,
+					"line": 204
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0,
+				"sectionCount": 26
+			}
+		},
+		{
+			"path": "plans/done/20260504-1200-v2-onboarding-flow.md",
+			"language": "markdown",
+			"fileCategory": "docs",
+			"totalLines": 606,
+			"nonEmptyLines": 403,
+			"sections": [
+				{
+					"heading": "V2 Onboarding Flow — Default-to-V2 with Conditional Steps for New and Migrating Users",
+					"level": 1,
+					"line": 1
+				},
+				{
+					"heading": "Purpose / Big Picture",
+					"level": 2,
+					"line": 8
+				},
+				{
+					"heading": "Assumptions",
+					"level": 2,
+					"line": 26
+				},
+				{
+					"heading": "Open Questions",
+					"level": 2,
+					"line": 43
+				},
+				{
+					"heading": "Progress",
+					"level": 2,
+					"line": 49
+				},
+				{
+					"heading": "Surprises & Discoveries",
+					"level": 2,
+					"line": 78
+				},
+				{
+					"heading": "Decision Log",
+					"level": 2,
+					"line": 98
+				},
+				{
+					"heading": "Context and Orientation",
+					"level": 2,
+					"line": 119
+				},
+				{
+					"heading": "Affected app",
+					"level": 3,
+					"line": 122
+				},
+				{
+					"heading": "Related packages",
+					"level": 3,
+					"line": 126
+				},
+				{
+					"heading": "Key files (full paths)",
+					"level": 3,
+					"line": 132
+				},
+				{
+					"heading": "Terms of art (defined inline)",
+					"level": 3,
+					"line": 148
+				},
+				{
+					"heading": "New vs Existing User Matrix",
+					"level": 2,
+					"line": 159
+				},
+				{
+					"heading": "Plan of Work",
+					"level": 2,
+					"line": 177
+				},
+				{
+					"heading": "Milestone 0 — Spike: GitHub CLI detection in main process",
+					"level": 3,
+					"line": 183
+				},
+				{
+					"heading": "Milestone 1 — Onboarding state machine + route shell",
+					"level": 3,
+					"line": 202
+				},
+				{
+					"heading": "Milestone 2 — Step 1 (Auth) + Step 2 (Providers)",
+					"level": 3,
+					"line": 242
+				},
+				{
+					"heading": "Milestone 3 — Step 3 (gh CLI detection)",
+					"level": 3,
+					"line": 260
+				},
+				{
+					"heading": "Milestone 4 — Step 4 (macOS permissions)",
+					"level": 3,
+					"line": 281
+				},
+				{
+					"heading": "Milestone 5 — Step 5 (Project selection) and Step 5a (Worktree adoption)",
+					"level": 3,
+					"line": 302
+				},
+				{
+					"heading": "Milestone 6 — Default-flip + dashboard gate",
+					"level": 3,
+					"line": 342
+				},
+				{
+					"heading": "Milestone 7 — Phased rollout under V2_DEFAULT flag",
+					"level": 3,
+					"line": 370
+				},
+				{
+					"heading": "Concrete Steps",
+					"level": 2,
+					"line": 386
+				},
+				{
+					"heading": "Validation and Acceptance",
+					"level": 2,
+					"line": 421
+				},
+				{
+					"heading": "Idempotence and Recovery",
+					"level": 2,
+					"line": 478
+				},
+				{
+					"heading": "Artifacts and Notes",
+					"level": 2,
+					"line": 498
+				},
+				{
+					"heading": "Interfaces and Dependencies",
+					"level": 2,
+					"line": 556
+				},
+				{
+					"heading": "Risks",
+					"level": 2,
+					"line": 568
+				},
+				{
+					"heading": "Phased Rollout Summary",
+					"level": 2,
+					"line": 578
+				},
+				{
+					"heading": "Outcomes & Retrospective",
+					"level": 2,
+					"line": 590
+				},
+				{
+					"heading": "Revision Log",
+					"level": 3,
+					"line": 599
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0,
+				"sectionCount": 31
+			}
+		},
+		{
+			"path": "plans/done/20260507-host-service-bundled-version-pin.md",
+			"language": "markdown",
+			"fileCategory": "docs",
+			"totalLines": 71,
+			"nonEmptyLines": 48,
+			"sections": [
+				{
+					"heading": "Pin host-service adoption to bundled version",
+					"level": 1,
+					"line": 1
+				},
+				{
+					"heading": "Problem",
+					"level": 2,
+					"line": 3
+				},
+				{
+					"heading": "Why respawn is safe",
+					"level": 2,
+					"line": 9
+				},
+				{
+					"heading": "Change",
+					"level": 2,
+					"line": 19
+				},
+				{
+					"heading": "Behavior after change",
+					"level": 2,
+					"line": 39
+				},
+				{
+					"heading": "Open questions",
+					"level": 2,
+					"line": 46
+				},
+				{
+					"heading": "Out of scope",
+					"level": 2,
+					"line": 50
+				},
+				{
+					"heading": "Outcomes & Retrospective",
+					"level": 2,
+					"line": 56
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0,
+				"sectionCount": 8
+			}
+		},
+		{
+			"path": "plans/done/20260510-host-service-recovery.md",
+			"language": "markdown",
+			"fileCategory": "docs",
+			"totalLines": 19,
+			"nonEmptyLines": 13,
+			"sections": [
+				{
+					"heading": "Host-service recovery (#4299) — shipped",
+					"level": 1,
+					"line": 1
+				},
+				{
+					"heading": "What shipped (PR #4395)",
+					"level": 2,
+					"line": 7
+				},
+				{
+					"heading": "Considered, not shipped",
+					"level": 2,
+					"line": 14
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0,
+				"sectionCount": 3
+			}
+		},
+		{
+			"path": "plans/done/20260703-1507-derive-terminal-agent-status-from-host-binding.md",
+			"language": "markdown",
+			"fileCategory": "docs",
+			"totalLines": 58,
+			"nonEmptyLines": 40,
+			"sections": [
+				{
+					"heading": "Derive terminal agent status from the host binding",
+					"level": 1,
+					"line": 1
+				},
+				{
+					"heading": "Problem",
+					"level": 2,
+					"line": 5
+				},
+				{
+					"heading": "Design",
+					"level": 2,
+					"line": 14
+				},
+				{
+					"heading": "Key files",
+					"level": 2,
+					"line": 27
+				},
+				{
+					"heading": "Decisions",
+					"level": 2,
+					"line": 35
+				},
+				{
+					"heading": "Validation",
+					"level": 2,
+					"line": 43
+				},
+				{
+					"heading": "Follow-ups",
+					"level": 2,
+					"line": 51
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0,
+				"sectionCount": 7
+			}
+		},
+		{
+			"path": "plans/done/CODE_EDITOR_MIGRATION_PLAN.md",
+			"language": "markdown",
+			"fileCategory": "docs",
+			"totalLines": 334,
+			"nonEmptyLines": 229,
+			"sections": [
+				{
+					"heading": "Code Editor Migration Plan",
+					"level": 1,
+					"line": 1
+				},
+				{
+					"heading": "Overview",
+					"level": 2,
+					"line": 3
+				},
+				{
+					"heading": "Why Migrate",
+					"level": 2,
+					"line": 15
+				},
+				{
+					"heading": "Current Monaco Touchpoints",
+					"level": 2,
+					"line": 25
+				},
+				{
+					"heading": "Goals",
+					"level": 2,
+					"line": 37
+				},
+				{
+					"heading": "Non-Goals",
+					"level": 2,
+					"line": 45
+				},
+				{
+					"heading": "Target Architecture",
+					"level": 2,
+					"line": 52
+				},
+				{
+					"heading": "Raw Editor",
+					"level": 3,
+					"line": 54
+				},
+				{
+					"heading": "Diff",
+					"level": 3,
+					"line": 66
+				},
+				{
+					"heading": "Adapter Layer",
+					"level": 3,
+					"line": 76
+				},
+				{
+					"heading": "Migration Phases",
+					"level": 2,
+					"line": 100
+				},
+				{
+					"heading": "Phase 0: Measure Before Changing Behavior",
+					"level": 3,
+					"line": 102
+				},
+				{
+					"heading": "Phase 1: Decouple File Pane Logic from Monaco",
+					"level": 3,
+					"line": 130
+				},
+				{
+					"heading": "Phase 2: Migrate Raw File Editing to CodeMirror 6",
+					"level": 3,
+					"line": 148
+				},
+				{
+					"heading": "Phase 3: Replace Diff Viewer with `diffs.com`",
+					"level": 3,
+					"line": 176
+				},
+				{
+					"heading": "Phase 4: Remove Monaco from the Root Layout",
+					"level": 3,
+					"line": 206
+				},
+				{
+					"heading": "Phase 5: Rollout, Compare, and Delete",
+					"level": 3,
+					"line": 214
+				},
+				{
+					"heading": "Acceptance Criteria",
+					"level": 2,
+					"line": 235
+				},
+				{
+					"heading": "Risks",
+					"level": 2,
+					"line": 247
+				},
+				{
+					"heading": "Diff Product Fit",
+					"level": 3,
+					"line": 249
+				},
+				{
+					"heading": "Context Menu and Shortcut Parity",
+					"level": 3,
+					"line": 259
+				},
+				{
+					"heading": "Theme Parity",
+					"level": 3,
+					"line": 268
+				},
+				{
+					"heading": "Rollout Complexity",
+					"level": 3,
+					"line": 277
+				},
+				{
+					"heading": "Recommended Sequence",
+					"level": 2,
+					"line": 287
+				},
+				{
+					"heading": "Week 1",
+					"level": 3,
+					"line": 289
+				},
+				{
+					"heading": "Week 2",
+					"level": 3,
+					"line": 296
+				},
+				{
+					"heading": "Week 3",
+					"level": 3,
+					"line": 301
+				},
+				{
+					"heading": "Week 4",
+					"level": 3,
+					"line": 307
+				},
+				{
+					"heading": "Implementation Checklist",
+					"level": 2,
+					"line": 313
+				},
+				{
+					"heading": "Open Questions",
+					"level": 2,
+					"line": 330
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0,
+				"sectionCount": 30
+			}
+		},
+		{
+			"path": "plans/done/ROUTING_REFACTOR_PLAN.md",
+			"language": "markdown",
+			"fileCategory": "docs",
+			"totalLines": 927,
+			"nonEmptyLines": 781,
+			"sections": [
+				{
+					"heading": "Desktop App Routing Refactor",
+					"level": 1,
+					"line": 1
+				},
+				{
+					"heading": "Reference Point",
+					"level": 2,
+					"line": 8
+				},
+				{
+					"heading": "Acceptance Criteria",
+					"level": 2,
+					"line": 18
+				},
+				{
+					"heading": "Problem Statement",
+					"level": 2,
+					"line": 27
+				},
+				{
+					"heading": "Solution: TanStack Router with Next.js App Router Conventions",
+					"level": 2,
+					"line": 42
+				},
+				{
+					"heading": "Proposed Folder Structure (Following Strict Co-location)",
+					"level": 2,
+					"line": 52
+				},
+				{
+					"heading": "Key Co-location Changes",
+					"level": 3,
+					"line": 279
+				},
+				{
+					"heading": "Route Groups & File-Based Routing",
+					"level": 2,
+					"line": 303
+				},
+				{
+					"heading": "Layout Hierarchy",
+					"level": 2,
+					"line": 319
+				},
+				{
+					"heading": "Example Implementation",
+					"level": 2,
+					"line": 359
+				},
+				{
+					"heading": "index.tsx (Root Entry)",
+					"level": 3,
+					"line": 361
+				},
+				{
+					"heading": "routes/__root.tsx (Required Root Layout)",
+					"level": 3,
+					"line": 409
+				},
+				{
+					"heading": "routes/_authenticated/layout.tsx",
+					"level": 3,
+					"line": 419
+				},
+				{
+					"heading": "routes/_authenticated/workspace/page.tsx (Selector)",
+					"level": 3,
+					"line": 460
+				},
+				{
+					"heading": "routes/_authenticated/workspace/$id/page.tsx",
+					"level": 3,
+					"line": 486
+				},
+				{
+					"heading": "routes/_authenticated/settings/layout.tsx",
+					"level": 3,
+					"line": 518
+				},
+				{
+					"heading": "Route Tree Generation",
+					"level": 2,
+					"line": 540
+				},
+				{
+					"heading": "Workspace Routing Behavior",
+					"level": 2,
+					"line": 583
+				},
+				{
+					"heading": "Routes",
+					"level": 3,
+					"line": 585
+				},
+				{
+					"heading": "Workspace Switching",
+					"level": 3,
+					"line": 598
+				},
+				{
+					"heading": "Navigation Changes",
+					"level": 2,
+					"line": 611
+				},
+				{
+					"heading": "Before (View Switching)",
+					"level": 3,
+					"line": 613
+				},
+				{
+					"heading": "After (TanStack Router - Type-Safe!)",
+					"level": 3,
+					"line": 625
+				},
+				{
+					"heading": "State Changes",
+					"level": 2,
+					"line": 643
+				},
+				{
+					"heading": "stores/app-state.ts",
+					"level": 3,
+					"line": 645
+				},
+				{
+					"heading": "What Gets Co-located (No Longer Global)",
+					"level": 3,
+					"line": 662
+				},
+				{
+					"heading": "What Actually Stays Global",
+					"level": 3,
+					"line": 683
+				},
+				{
+					"heading": "Important: Store Lifecycle",
+					"level": 3,
+					"line": 693
+				},
+				{
+					"heading": "Critical Migration Items",
+					"level": 2,
+					"line": 711
+				},
+				{
+					"heading": "1. Agent Hook Listener Navigation",
+					"level": 3,
+					"line": 713
+				},
+				{
+					"heading": "2. Workspace Hotkeys",
+					"level": 3,
+					"line": 739
+				},
+				{
+					"heading": "Migration Steps",
+					"level": 2,
+					"line": 778
+				},
+				{
+					"heading": "Phase 0: Install Dependencies (15 min)",
+					"level": 3,
+					"line": 780
+				},
+				{
+					"heading": "Phase 1: Create Route Structure (1-2 hours)",
+					"level": 3,
+					"line": 802
+				},
+				{
+					"heading": "Phase 2: Extract Components (3-4 hours)",
+					"level": 3,
+					"line": 809
+				},
+				{
+					"heading": "Phase 3: Update Route Files (1-2 hours)",
+					"level": 3,
+					"line": 818
+				},
+				{
+					"heading": "Phase 4: Replace Navigation (2-3 hours)",
+					"level": 3,
+					"line": 823
+				},
+				{
+					"heading": "Phase 5: Update Root Entry (30 min)",
+					"level": 3,
+					"line": 829
+				},
+				{
+					"heading": "Phase 6: Cleanup (1 hour)",
+					"level": 3,
+					"line": 835
+				},
+				{
+					"heading": "Phase 7: Testing (1-2 hours)",
+					"level": 3,
+					"line": 841
+				},
+				{
+					"heading": "Benefits",
+					"level": 2,
+					"line": 851
+				},
+				{
+					"heading": "Risks & Mitigations",
+					"level": 2,
+					"line": 867
+				},
+				{
+					"heading": "Configuration Reference",
+					"level": 2,
+					"line": 878
+				},
+				{
+					"heading": "Vite Plugin Config",
+					"level": 3,
+					"line": 880
+				},
+				{
+					"heading": "Route File Patterns",
+					"level": 3,
+					"line": 902
+				},
+				{
+					"heading": ".gitignore",
+					"level": 3,
+					"line": 915
+				},
+				{
+					"heading": "Decision: Approved / Needs Discussion",
+					"level": 2,
+					"line": 922
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0,
+				"sectionCount": 47
+			}
+		},
+		{
+			"path": "plans/done/SEMANTIC_SEARCH_PLAN.md",
+			"language": "markdown",
+			"fileCategory": "docs",
+			"totalLines": 932,
+			"nonEmptyLines": 739,
+			"sections": [
+				{
+					"heading": "Semantic Search with Embeddings - Local-First Architecture",
+					"level": 1,
+					"line": 1
+				},
+				{
+					"heading": "Overview",
+					"level": 2,
+					"line": 3
+				},
+				{
+					"heading": "Architecture",
+					"level": 2,
+					"line": 7
+				},
+				{
+					"heading": "High-Level Flow",
+					"level": 3,
+					"line": 9
+				},
+				{
+					"heading": "Key Design Decisions",
+					"level": 3,
+					"line": 38
+				},
+				{
+					"heading": "Current State",
+					"level": 2,
+					"line": 48
+				},
+				{
+					"heading": "Database Schema",
+					"level": 3,
+					"line": 50
+				},
+				{
+					"heading": "API Sync",
+					"level": 3,
+					"line": 55
+				},
+				{
+					"heading": "Desktop App",
+					"level": 3,
+					"line": 60
+				},
+				{
+					"heading": "Current Search",
+					"level": 3,
+					"line": 67
+				},
+				{
+					"heading": "Implementation Plan",
+					"level": 2,
+					"line": 75
+				},
+				{
+					"heading": "Phase 1: Database Schema Update",
+					"level": 3,
+					"line": 77
+				},
+				{
+					"heading": "Step 1.1: Update Schema",
+					"level": 4,
+					"line": 81
+				},
+				{
+					"heading": "Step 1.2: Generate and Push Migration",
+					"level": 4,
+					"line": 100
+				},
+				{
+					"heading": "Phase 2: API - Embedding Generation During Sync",
+					"level": 3,
+					"line": 119
+				},
+				{
+					"heading": "Step 2.1: Install Dependencies",
+					"level": 4,
+					"line": 123
+				},
+				{
+					"heading": "Step 2.2: Create Embedding Utility",
+					"level": 4,
+					"line": 129
+				},
+				{
+					"heading": "Step 2.3: Update mapIssueToTask",
+					"level": 4,
+					"line": 175
+				},
+				{
+					"heading": "Step 2.4: Update performInitialSync",
+					"level": 4,
+					"line": 196
+				},
+				{
+					"heading": "Phase 3: Desktop Main Process - Embedding Model & tRPC Endpoint",
+					"level": 3,
+					"line": 263
+				},
+				{
+					"heading": "Step 3.1: Install Dependencies",
+					"level": 4,
+					"line": 267
+				},
+				{
+					"heading": "Step 3.2: Create Embedding Service",
+					"level": 4,
+					"line": 273
+				},
+				{
+					"heading": "Step 3.3: Load Model on Startup",
+					"level": 4,
+					"line": 312
+				},
+				{
+					"heading": "Step 3.4: Create tRPC Router for Embeddings",
+					"level": 4,
+					"line": 332
+				},
+				{
+					"heading": "Step 3.5: Register Router",
+					"level": 4,
+					"line": 357
+				},
+				{
+					"heading": "Phase 4: Desktop Renderer - Fire-and-Forget Embedding Updates",
+					"level": 3,
+					"line": 374
+				},
+				{
+					"heading": "Step 4.1: Create Embedding Helper",
+					"level": 4,
+					"line": 378
+				},
+				{
+					"heading": "Step 4.2: Update Task Creation Pattern",
+					"level": 4,
+					"line": 423
+				},
+				{
+					"heading": "Phase 5: Desktop Renderer - Semantic Search",
+					"level": 3,
+					"line": 458
+				},
+				{
+					"heading": "Step 5.1: Create Cosine Similarity Utility",
+					"level": 4,
+					"line": 462
+				},
+				{
+					"heading": "Step 5.2: Create Semantic Search Hook with Caching & Hybrid Search",
+					"level": 4,
+					"line": 496
+				},
+				{
+					"heading": "Step 5.3: Update useTasksTable to Use Semantic Search",
+					"level": 4,
+					"line": 607
+				},
+				{
+					"heading": "Step 5.4: Add Search Feedback UI",
+					"level": 4,
+					"line": 670
+				},
+				{
+					"heading": "Critical Files Summary",
+					"level": 2,
+					"line": 713
+				},
+				{
+					"heading": "New Files to Create:",
+					"level": 3,
+					"line": 715
+				},
+				{
+					"heading": "Files to Modify:",
+					"level": 3,
+					"line": 730
+				},
+				{
+					"heading": "Testing & Verification Plan",
+					"level": 2,
+					"line": 750
+				},
+				{
+					"heading": "1. Schema Verification",
+					"level": 3,
+					"line": 752
+				},
+				{
+					"heading": "2. API Embedding Generation",
+					"level": 3,
+					"line": 762
+				},
+				{
+					"heading": "3. Desktop Model Loading",
+					"level": 3,
+					"line": 778
+				},
+				{
+					"heading": "4. Task Creation with Embeddings",
+					"level": 3,
+					"line": 788
+				},
+				{
+					"heading": "5. Semantic Search Testing",
+					"level": 3,
+					"line": 797
+				},
+				{
+					"heading": "6. Edge Cases",
+					"level": 3,
+					"line": 810
+				},
+				{
+					"heading": "Performance Considerations",
+					"level": 2,
+					"line": 832
+				},
+				{
+					"heading": "Model Size",
+					"level": 3,
+					"line": 834
+				},
+				{
+					"heading": "Embedding Generation",
+					"level": 3,
+					"line": 839
+				},
+				{
+					"heading": "Cosine Similarity",
+					"level": 3,
+					"line": 844
+				},
+				{
+					"heading": "Network Impact",
+					"level": 3,
+					"line": 849
+				},
+				{
+					"heading": "Dependencies",
+					"level": 2,
+					"line": 856
+				},
+				{
+					"heading": "New Dependencies",
+					"level": 3,
+					"line": 858
+				},
+				{
+					"heading": "Rollout Strategy",
+					"level": 2,
+					"line": 881
+				},
+				{
+					"heading": "Phase 1: Server-Side Only (Low Risk)",
+					"level": 3,
+					"line": 883
+				},
+				{
+					"heading": "Phase 2: Desktop Read-Only (Testing)",
+					"level": 3,
+					"line": 889
+				},
+				{
+					"heading": "Phase 3: Full Rollout",
+					"level": 3,
+					"line": 895
+				},
+				{
+					"heading": "Rollback Plan",
+					"level": 3,
+					"line": 901
+				},
+				{
+					"heading": "Future Enhancements",
+					"level": 2,
+					"line": 908
+				},
+				{
+					"heading": "Short Term",
+					"level": 3,
+					"line": 910
+				},
+				{
+					"heading": "Medium Term",
+					"level": 3,
+					"line": 916
+				},
+				{
+					"heading": "Long Term",
+					"level": 3,
+					"line": 922
+				},
+				{
+					"heading": "Open Questions",
+					"level": 2,
+					"line": 930
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0,
+				"sectionCount": 60
+			}
+		}
+	]
+}

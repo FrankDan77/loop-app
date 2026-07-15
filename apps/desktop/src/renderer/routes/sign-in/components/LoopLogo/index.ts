@@ -1,0 +1,1 @@
+export { LoopLogo } from "./LoopLogo";

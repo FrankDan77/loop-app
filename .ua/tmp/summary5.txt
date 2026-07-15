@@ -1,0 +1,245 @@
+=== apps/desktop/src/renderer/providers/PostHogProvider/PostHogProvider.tsx ===
+lines: 30 25
+functions: [{"name":"PostHogProvider","start":11,"end":30,"params":["{ children }"]}]
+classes: []
+exports: ["PostHogProvider"]
+metrics: {"importCount":2,"exportCount":1,"functionCount":1,"classCount":0}
+
+=== apps/desktop/src/renderer/react-query/projects/index.ts ===
+lines: 15 15
+functions: []
+classes: []
+exports: ["processOpenNewResults","useCreateV1Project","ProjectSetupResult","useFinalizeProjectSetup","hostProjectListQueryKey","useHostProjectIds","useOpenFromPath","useOpenNew","useOpenProject","useReorderProjects","useUpdateProject"]
+metrics: {"importCount":0,"exportCount":11,"functionCount":0,"classCount":0}
+
+=== apps/desktop/src/renderer/react-query/projects/useFinalizeProjectSetup/useFinalizeProjectSetup.ts ===
+lines: 35 32
+functions: [{"name":"useFinalizeProjectSetup","start":17,"end":35,"params":[]}]
+classes: []
+exports: ["useFinalizeProjectSetup"]
+metrics: {"importCount":2,"exportCount":1,"functionCount":1,"classCount":0}
+
+=== apps/desktop/src/renderer/react-query/projects/useHostProjectIds/index.ts ===
+lines: 4 4
+functions: []
+classes: []
+exports: ["hostProjectListQueryKey","useHostProjectIds"]
+metrics: {"importCount":0,"exportCount":2,"functionCount":0,"classCount":0}
+
+=== apps/desktop/src/renderer/react-query/projects/useHostProjectIds/useHostProjectIds.ts ===
+lines: 32 29
+functions: [{"name":"hostProjectListQueryKey","start":4,"end":5,"params":["hostUrl"]},{"name":"useHostProjectIds","start":11,"end":32,"params":["hostUrl"]}]
+classes: []
+exports: ["hostProjectListQueryKey","useHostProjectIds"]
+metrics: {"importCount":1,"exportCount":2,"functionCount":2,"classCount":0}
+
+=== apps/desktop/src/renderer/react-query/workspaces/useUpdateWorkspace.ts ===
+lines: 22 19
+functions: [{"name":"useUpdateWorkspace","start":7,"end":22,"params":["options"]}]
+classes: []
+exports: ["useUpdateWorkspace"]
+metrics: {"importCount":1,"exportCount":1,"functionCount":1,"classCount":0}
+
+=== apps/desktop/src/renderer/routes/_authenticated/_dashboard/automations/$automationId/components/VersionHistorySheet/VersionHistorySheet.tsx ===
+lines: 181 167
+functions: [{"name":"VersionHistorySheet","start":30,"end":181,"params":["{\n\tautomationId,\n\tautomationName,\n\tcurrentPrompt,\n\topen,\n\tonOpenChange,\n}"]}]
+classes: []
+exports: ["VersionHistorySheet"]
+metrics: {"importCount":3,"exportCount":1,"functionCount":1,"classCount":0}
+
+=== apps/desktop/src/renderer/routes/_authenticated/_dashboard/automations/$automationId/components/VersionHistorySheet/components/VersionRow/index.ts ===
+lines: 1 1
+functions: []
+classes: []
+exports: ["VersionRow"]
+metrics: {"importCount":0,"exportCount":1,"functionCount":0,"classCount":0}
+
+=== apps/desktop/src/renderer/routes/_authenticated/_dashboard/automations/components/AgentCell/AgentCell.tsx ===
+lines: 32 30
+functions: [{"name":"AgentCell","start":7,"end":32,"params":["{\n\tagentId,\n\thostId,\n}"]}]
+classes: []
+exports: ["AgentCell"]
+metrics: {"importCount":3,"exportCount":1,"functionCount":1,"classCount":0}
+
+=== apps/desktop/src/renderer/routes/_authenticated/_dashboard/automations/components/AgentCell/index.ts ===
+lines: 1 1
+functions: []
+classes: []
+exports: ["AgentCell"]
+metrics: {"importCount":0,"exportCount":1,"functionCount":0,"classCount":0}
+
+=== apps/desktop/src/renderer/routes/_authenticated/_dashboard/automations/components/AgentPicker/AgentPicker.tsx ===
+lines: 93 90
+functions: [{"name":"AgentPicker","start":25,"end":93,"params":["{\n\thostId,\n\tvalue,\n\tonChange,\n\tclassName,\n}"]}]
+classes: []
+exports: ["AgentPicker"]
+metrics: {"importCount":4,"exportCount":1,"functionCount":1,"classCount":0}
+
+=== apps/desktop/src/renderer/routes/_authenticated/_dashboard/automations/components/AutomationRow/AutomationRow.tsx ===
+lines: 259 245
+functions: [{"name":"AutomationRow","start":55,"end":259,"params":["{\n\tautomation,\n\towner,\n\tshowOwner,\n\tproject,\n\tworkspaceLabel,\n\thostLabel,\n\tlastRunStatus,\n\tisOwner,\n\tonRunNow,\n\tonDelete,\n}"]}]
+classes: []
+exports: ["AutomationRow"]
+metrics: {"importCount":5,"exportCount":1,"functionCount":1,"classCount":0}
+
+=== apps/desktop/src/renderer/routes/_authenticated/_dashboard/automations/components/AutomationRow/components/AutomationActionsMenuItems/index.ts ===
+lines: 1 1
+functions: []
+classes: []
+exports: ["AutomationActionsMenuItems"]
+metrics: {"importCount":0,"exportCount":1,"functionCount":0,"classCount":0}
+
+=== apps/desktop/src/renderer/routes/_authenticated/_dashboard/automations/components/CellWithIcon/index.ts ===
+lines: 1 1
+functions: []
+classes: []
+exports: ["CellWithIcon"]
+metrics: {"importCount":0,"exportCount":1,"functionCount":0,"classCount":0}
+
+=== apps/desktop/src/renderer/routes/_authenticated/_dashboard/automations/components/ProjectPicker/ProjectPicker.tsx ===
+lines: 82 79
+functions: [{"name":"ProjectPicker","start":24,"end":82,"params":["{\n\tselectedProject,\n\trecentProjects,\n\tonSelectProject,\n\tclassName,\n}"]}]
+classes: []
+exports: ["ProjectPicker"]
+metrics: {"importCount":3,"exportCount":1,"functionCount":1,"classCount":0}
+
+=== apps/desktop/src/renderer/routes/_authenticated/_dashboard/automations/components/SchedulePicker/SchedulePicker.tsx ===
+lines: 222 205
+functions: [{"name":"stateFromRrule","start":56,"end":81,"params":["rrule"]},{"name":"rruleFromState","start":84,"end":110,"params":["state"]},{"name":"formatTimeInputValue","start":112,"end":114,"params":["hour","minute"]},{"name":"parseTimeInputValue","start":116,"end":124,"params":["value"]},{"name":"SchedulePicker","start":126,"end":222,"params":["{\n\trrule,\n\tonRruleChange,\n\tclassName,\n}"]}]
+classes: []
+exports: ["SchedulePicker"]
+metrics: {"importCount":1,"exportCount":1,"functionCount":5,"classCount":0}
+
+=== apps/desktop/src/renderer/routes/_authenticated/_dashboard/automations/components/TimezonePicker/TimezonePicker.tsx ===
+lines: 76 72
+functions: [{"name":"listTimezones","start":21,"end":27,"params":[]},{"name":"TimezonePicker","start":29,"end":76,"params":["{\n\tvalue,\n\tonChange,\n\tclassName,\n}"]}]
+classes: []
+exports: ["TimezonePicker"]
+metrics: {"importCount":1,"exportCount":1,"functionCount":2,"classCount":0}
+
+=== apps/desktop/src/renderer/routes/_authenticated/_dashboard/automations/components/WorkspacePicker/WorkspacePicker.tsx ===
+lines: 166 158
+functions: [{"name":"WorkspacePicker","start":27,"end":166,"params":["{\n\thostId,\n\tprojectId,\n\tvalue,\n\tonChange,\n\tclassName,\n}"]}]
+classes: []
+exports: ["WorkspacePicker"]
+metrics: {"importCount":3,"exportCount":1,"functionCount":1,"classCount":0}
+
+=== apps/desktop/src/renderer/routes/_authenticated/_dashboard/automations/hooks/useProjectFileSearch/useProjectFileSearch.ts ===
+lines: 35 32
+functions: [{"name":"useProjectFileSearch","start":8,"end":35,"params":["{\n\thostId,\n\tprojectId,\n}"]}]
+classes: []
+exports: ["useProjectFileSearch"]
+metrics: {"importCount":3,"exportCount":1,"functionCount":1,"classCount":0}
+
+=== apps/desktop/src/renderer/routes/_authenticated/_dashboard/automations/hooks/useRecentProjects/useRecentProjects.ts ===
+lines: 45 41
+functions: [{"name":"useRecentProjects","start":6,"end":45,"params":[]}]
+classes: []
+exports: ["useRecentProjects"]
+metrics: {"importCount":2,"exportCount":1,"functionCount":1,"classCount":0}
+
+=== apps/desktop/src/renderer/routes/_authenticated/_dashboard/automations/hooks/useRelayHostTarget/useRelayHostTarget.ts ===
+lines: 20 17
+functions: [{"name":"useRelayHostTarget","start":8,"end":20,"params":["hostId"]}]
+classes: []
+exports: ["useRelayHostTarget"]
+metrics: {"importCount":2,"exportCount":1,"functionCount":1,"classCount":0}
+
+=== apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/AddRepositoryModals/components/NewProjectModal/NewProjectModal.tsx ===
+lines: 259 243
+functions: [{"name":"deriveProjectNameFromUrl","start":32,"end":40,"params":["url"]},{"name":"NewProjectModal","start":42,"end":259,"params":["{\n\topen,\n\tonOpenChange,\n\tonSuccess,\n\tonError,\n}"]}]
+classes: []
+exports: ["NewProjectModal"]
+metrics: {"importCount":6,"exportCount":1,"functionCount":2,"classCount":0}
+
+=== apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/AddRepositoryModals/hooks/useFolderFirstImport/index.ts ===
+lines: 4 4
+functions: []
+classes: []
+exports: ["UseFolderFirstImportResult","useFolderFirstImport"]
+metrics: {"importCount":0,"exportCount":2,"functionCount":0,"classCount":0}
+
+=== apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/AddRepositoryModals/hooks/useFolderFirstImport/useFolderFirstImport.ts ===
+lines: 131 120
+functions: [{"name":"useFolderFirstImport","start":22,"end":131,"params":["options"]}]
+classes: []
+exports: ["useFolderFirstImport"]
+metrics: {"importCount":7,"exportCount":1,"functionCount":1,"classCount":0}
+
+=== apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarDeleteDialog/hooks/useDestroyDialogState/useDestroyDialogState.ts ===
+lines: 185 171
+functions: [{"name":"useDestroyDialogState","start":30,"end":185,"params":["{\n\tworkspaceId,\n\tworkspaceName,\n\topen,\n\tonOpenChange,\n\tonDeleted,\n}"]}]
+classes: []
+exports: ["useDestroyDialogState"]
+metrics: {"importCount":5,"exportCount":1,"functionCount":1,"classCount":0}
+
+=== apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarHelpMenu/components/SubmitPromptDialog/SubmitPromptDialog.tsx ===
+lines: 119 111
+functions: [{"name":"SubmitPromptDialog","start":22,"end":119,"params":["{\n\topen,\n\tonOpenChange,\n}"]}]
+classes: []
+exports: ["SubmitPromptDialog"]
+metrics: {"importCount":1,"exportCount":1,"functionCount":1,"classCount":0}
+
+=== apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarPortsList/hooks/useDashboardSidebarPortsData/useDashboardSidebarPortsData.ts ===
+lines: 192 178
+functions: [{"name":"useDashboardSidebarPortsData","start":33,"end":192,"params":[]}]
+classes: []
+exports: ["DashboardSidebarPort","DashboardSidebarPortGroup","useDashboardSidebarPortsData"]
+metrics: {"importCount":8,"exportCount":3,"functionCount":1,"classCount":0}
+
+=== apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarProjectSection/hooks/useDashboardSidebarProjectSectionActions/useDashboardSidebarProjectSectionActions.ts ===
+lines: 106 94
+functions: [{"name":"useDashboardSidebarProjectSectionActions","start":15,"end":106,"params":["{\n\tproject,\n}"]}]
+classes: []
+exports: ["useDashboardSidebarProjectSectionActions"]
+metrics: {"importCount":5,"exportCount":1,"functionCount":1,"classCount":0}
+
+=== apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarSection/components/DashboardSidebarSectionContextMenu/index.ts ===
+lines: 2 2
+functions: []
+classes: []
+exports: ["DashboardSidebarSectionActionsDropdown","DashboardSidebarSectionContextMenu"]
+metrics: {"importCount":0,"exportCount":2,"functionCount":0,"classCount":0}
+
+=== apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarSection/components/DashboardSidebarSectionHeader/index.ts ===
+lines: 1 1
+functions: []
+classes: []
+exports: ["DashboardSidebarSectionHeader"]
+metrics: {"importCount":0,"exportCount":1,"functionCount":0,"classCount":0}
+
+=== apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarSectionRenameContext/index.ts ===
+lines: 4 4
+functions: []
+classes: []
+exports: ["DashboardSidebarSectionRenameProvider","useDashboardSidebarSectionRename"]
+metrics: {"importCount":0,"exportCount":2,"functionCount":0,"classCount":0}
+
+=== apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/hooks/useDashboardSidebarWorkspaceItemActions/useDashboardSidebarWorkspaceItemActions.ts ===
+lines: 201 182
+functions: [{"name":"useDashboardSidebarWorkspaceItemActions","start":27,"end":201,"params":["{\n\tworkspaceId,\n\tprojectId,\n\tworkspaceName,\n\tbranch,\n\tisMainWorkspace = false,\n}"]}]
+classes: []
+exports: ["useDashboardSidebarWorkspaceItemActions"]
+metrics: {"importCount":11,"exportCount":1,"functionCount":1,"classCount":0}
+
+=== apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/SortableSectionHeader/SortableSectionHeader.tsx ===
+lines: 111 104
+functions: [{"name":"SortableSectionHeader","start":22,"end":111,"params":["{\n\tsortableId,\n\tsection,\n\tonDelete,\n\tonRename,\n\tonToggleCollapse,\n}"]}]
+classes: []
+exports: ["SortableSectionHeader"]
+metrics: {"importCount":6,"exportCount":1,"functionCount":1,"classCount":0}
+
+=== apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/V2SetupScriptCard/V2SetupScriptCard.tsx ===
+lines: 71 65
+functions: [{"name":"V2SetupScriptCard","start":17,"end":71,"params":["{\n\thostUrl,\n\tprojectId,\n\tprojectName,\n\tisCollapsed,\n}"]}]
+classes: []
+exports: ["V2SetupScriptCard"]
+metrics: {"importCount":4,"exportCount":1,"functionCount":1,"classCount":0}
+
+=== apps/desktop/src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/hooks/useDashboardSidebarData/buildDashboardSidebarProjects.ts ===
+lines: 251 229
+functions: [{"name":"buildDashboardSidebarProjects","start":60,"end":251,"params":["{\n\tsidebarProjects,\n\tsidebarSections,\n\tvisibleSidebarWorkspaces,\n\tmachineId,\n\tpullRequestsByWorkspaceId,\n}"]}]
+classes: []
+exports: ["buildDashboardSidebarProjects"]
+metrics: {"importCount":3,"exportCount":1,"functionCount":1,"classCount":0}
+

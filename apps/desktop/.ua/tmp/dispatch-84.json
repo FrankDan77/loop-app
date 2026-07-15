@@ -1,0 +1,75 @@
+{
+	"batchIndex": 84,
+	"totalBatches": 117,
+	"files": [
+		{
+			"path": "electron-builder.canary.ts",
+			"language": "typescript",
+			"sizeLines": 58,
+			"fileCategory": "code"
+		},
+		{
+			"path": "electron-builder.ts",
+			"language": "typescript",
+			"sizeLines": 171,
+			"fileCategory": "code"
+		},
+		{
+			"path": "electron.vite.config.ts",
+			"language": "typescript",
+			"sizeLines": 271,
+			"fileCategory": "code"
+		},
+		{
+			"path": "runtime-dependencies.ts",
+			"language": "typescript",
+			"sizeLines": 137,
+			"fileCategory": "code"
+		},
+		{
+			"path": "scripts/copy-native-modules.ts",
+			"language": "typescript",
+			"sizeLines": 540,
+			"fileCategory": "code"
+		},
+		{
+			"path": "scripts/validate-native-runtime.ts",
+			"language": "typescript",
+			"sizeLines": 539,
+			"fileCategory": "code"
+		},
+		{
+			"path": "vite/helpers.ts",
+			"language": "typescript",
+			"sizeLines": 98,
+			"fileCategory": "code"
+		}
+	],
+	"batchImportData": {
+		"electron-builder.canary.ts": ["electron-builder.ts", "package.json"],
+		"electron-builder.ts": ["package.json", "runtime-dependencies.ts"],
+		"electron.vite.config.ts": [
+			"package.json",
+			"runtime-dependencies.ts",
+			"vite/helpers.ts"
+		],
+		"runtime-dependencies.ts": [],
+		"scripts/copy-native-modules.ts": ["runtime-dependencies.ts"],
+		"scripts/validate-native-runtime.ts": ["runtime-dependencies.ts"],
+		"vite/helpers.ts": ["package.json"]
+	},
+	"neighborMap": {
+		"electron-builder.canary.ts": [
+			{ "path": "package.json", "batchIndex": 95, "symbols": [] }
+		],
+		"electron-builder.ts": [
+			{ "path": "package.json", "batchIndex": 95, "symbols": [] }
+		],
+		"electron.vite.config.ts": [
+			{ "path": "package.json", "batchIndex": 95, "symbols": [] }
+		],
+		"vite/helpers.ts": [
+			{ "path": "package.json", "batchIndex": 95, "symbols": [] }
+		]
+	}
+}

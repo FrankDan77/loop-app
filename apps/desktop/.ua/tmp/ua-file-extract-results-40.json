@@ -1,0 +1,1591 @@
+{
+	"scriptCompleted": true,
+	"filesAnalyzed": 32,
+	"filesSkipped": [],
+	"results": [
+		{
+			"path": "src/renderer/components/Paywall/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 4,
+			"nonEmptyLines": 4,
+			"exports": [
+				{
+					"name": "GatedFeature",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "GATED_FEATURES",
+					"line": 2,
+					"isDefault": false
+				},
+				{
+					"name": "Paywall",
+					"line": 3,
+					"isDefault": false
+				},
+				{
+					"name": "paywall",
+					"line": 3,
+					"isDefault": false
+				},
+				{
+					"name": "usePaywall",
+					"line": 4,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 5,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/components/ZoomStable/ZoomStable.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 36,
+			"nonEmptyLines": 34,
+			"functions": [
+				{
+					"name": "ZoomStable",
+					"startLine": 26,
+					"endLine": 36,
+					"params": ["{ enabled, className, children }"]
+				}
+			],
+			"exports": [
+				{
+					"name": "ZoomStable",
+					"line": 26,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "ZoomStable",
+					"callee": "useZoomFactor",
+					"lineNumber": 27
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/components/ZoomStable/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "ZoomStable",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/hooks/useZoomFactor.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 45,
+			"nonEmptyLines": 37,
+			"functions": [
+				{
+					"name": "useZoomFactor",
+					"startLine": 9,
+					"endLine": 45,
+					"params": []
+				}
+			],
+			"exports": [
+				{
+					"name": "useZoomFactor",
+					"line": 9,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "useZoomFactor",
+					"callee": "electronTrpc.useUtils",
+					"lineNumber": 10
+				},
+				{
+					"caller": "useZoomFactor",
+					"callee": "useState",
+					"lineNumber": 11
+				},
+				{
+					"caller": "useZoomFactor",
+					"callee": "useEffect",
+					"lineNumber": 13
+				},
+				{
+					"caller": "refresh",
+					"callee": "utils.window.getZoomFactor.fetch",
+					"lineNumber": 18
+				},
+				{
+					"caller": "refresh",
+					"callee": "setZoomFactor",
+					"lineNumber": 19
+				},
+				{
+					"caller": "handleChange",
+					"callee": "refresh",
+					"lineNumber": 23
+				},
+				{
+					"caller": "handleChange",
+					"callee": "arm",
+					"lineNumber": 24
+				},
+				{
+					"caller": "arm",
+					"callee": "media?.removeEventListener",
+					"lineNumber": 30
+				},
+				{
+					"caller": "arm",
+					"callee": "window.matchMedia",
+					"lineNumber": 31
+				},
+				{
+					"caller": "arm",
+					"callee": "media.addEventListener",
+					"lineNumber": 32
+				},
+				{
+					"caller": "useZoomFactor",
+					"callee": "refresh",
+					"lineNumber": 35
+				},
+				{
+					"caller": "useZoomFactor",
+					"callee": "arm",
+					"lineNumber": 36
+				},
+				{
+					"caller": "useZoomFactor",
+					"callee": "media?.removeEventListener",
+					"lineNumber": 40
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/automations/components/HostOfflineRunDialog/HostOfflineRunDialog.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 120,
+			"nonEmptyLines": 114,
+			"functions": [
+				{
+					"name": "HostOfflineRunDialog",
+					"startLine": 30,
+					"endLine": 120,
+					"params": ["{\n\thostId,\n\topen,\n\tonOpenChange,\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "HostOfflineRunDialog",
+					"line": 30,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "HostOfflineRunDialog",
+					"callee": "useRelayHostTarget",
+					"lineNumber": 35
+				},
+				{
+					"caller": "HostOfflineRunDialog",
+					"callee": "usePaywall",
+					"lineNumber": 36
+				},
+				{
+					"caller": "HostOfflineRunDialog",
+					"callee": "useState",
+					"lineNumber": 37
+				},
+				{
+					"caller": "HostOfflineRunDialog",
+					"callee": "useEnableRelayAccess",
+					"lineNumber": 38
+				},
+				{
+					"caller": "handleConfirm",
+					"callee": "setConfirmOpen",
+					"lineNumber": 41
+				},
+				{
+					"caller": "handleConfirm",
+					"callee": "onOpenChange",
+					"lineNumber": 42
+				},
+				{
+					"caller": "handleConfirm",
+					"callee": "enableRelay",
+					"lineNumber": 43
+				},
+				{
+					"caller": "HostOfflineRunDialog",
+					"callee": "gateFeature",
+					"lineNumber": 89
+				},
+				{
+					"caller": "HostOfflineRunDialog",
+					"callee": "setConfirmOpen",
+					"lineNumber": 90
+				},
+				{
+					"caller": "HostOfflineRunDialog",
+					"callee": "onOpenChange",
+					"lineNumber": 102
+				}
+			],
+			"metrics": {
+				"importCount": 4,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/automations/components/RelayOfflineNotice/RelayOfflineNotice.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 98,
+			"nonEmptyLines": 92,
+			"functions": [
+				{
+					"name": "RelayOfflineNotice",
+					"startLine": 31,
+					"endLine": 98,
+					"params": ["{\n\thostId,\n\tclassName,\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "RelayOfflineNotice",
+					"line": 31,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "RelayOfflineNotice",
+					"callee": "useRelayHostTarget",
+					"lineNumber": 35
+				},
+				{
+					"caller": "RelayOfflineNotice",
+					"callee": "usePaywall",
+					"lineNumber": 36
+				},
+				{
+					"caller": "RelayOfflineNotice",
+					"callee": "useState",
+					"lineNumber": 37
+				},
+				{
+					"caller": "RelayOfflineNotice",
+					"callee": "useEnableRelayAccess",
+					"lineNumber": 38
+				},
+				{
+					"caller": "RelayOfflineNotice",
+					"callee": "cn",
+					"lineNumber": 43
+				},
+				{
+					"caller": "RelayOfflineNotice",
+					"callee": "gateFeature",
+					"lineNumber": 57
+				},
+				{
+					"caller": "RelayOfflineNotice",
+					"callee": "setConfirmOpen",
+					"lineNumber": 58
+				},
+				{
+					"caller": "RelayOfflineNotice",
+					"callee": "setConfirmOpen",
+					"lineNumber": 69
+				},
+				{
+					"caller": "RelayOfflineNotice",
+					"callee": "enableRelay",
+					"lineNumber": 70
+				},
+				{
+					"caller": "RelayOfflineNotice",
+					"callee": "cn",
+					"lineNumber": 79
+				}
+			],
+			"metrics": {
+				"importCount": 4,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/automations/hooks/useEnableRelayAccess/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "useEnableRelayAccess",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/automations/hooks/useRelayHostTarget/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "useRelayHostTarget",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarHeader/DashboardSidebarHeader.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 390,
+			"nonEmptyLines": 371,
+			"functions": [
+				{
+					"name": "DashboardSidebarHeader",
+					"startLine": 46,
+					"endLine": 390,
+					"params": ["{\n\tisCollapsed = false,\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "DashboardSidebarHeader",
+					"line": 46,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "DashboardSidebarHeader",
+					"callee": "useOpenNewWorkspaceModal",
+					"lineNumber": 49
+				},
+				{
+					"caller": "DashboardSidebarHeader",
+					"callee": "useOpenNewProjectModal",
+					"lineNumber": 50
+				},
+				{
+					"caller": "DashboardSidebarHeader",
+					"callee": "useOpenTemplateGalleryModal",
+					"lineNumber": 51
+				},
+				{
+					"caller": "DashboardSidebarHeader",
+					"callee": "useNavigate",
+					"lineNumber": 52
+				},
+				{
+					"caller": "DashboardSidebarHeader",
+					"callee": "useFolderFirstImport",
+					"lineNumber": 53
+				},
+				{
+					"caller": "DashboardSidebarHeader",
+					"callee": "toast.error",
+					"lineNumber": 55
+				},
+				{
+					"caller": "DashboardSidebarHeader",
+					"callee": "toast.error",
+					"lineNumber": 58
+				},
+				{
+					"caller": "DashboardSidebarHeader",
+					"callee": "navigate",
+					"lineNumber": 62
+				},
+				{
+					"caller": "handleImportFolder",
+					"callee": "folderImport.start",
+					"lineNumber": 69
+				},
+				{
+					"caller": "handleImportFolder",
+					"callee": "toast.success",
+					"lineNumber": 71
+				},
+				{
+					"caller": "DashboardSidebarHeader",
+					"callee": "useHotkeyDisplay",
+					"lineNumber": 75
+				},
+				{
+					"caller": "DashboardSidebarHeader",
+					"callee": "electronTrpc.window.getPlatform.useQuery",
+					"lineNumber": 76
+				},
+				{
+					"caller": "DashboardSidebarHeader",
+					"callee": "useZoomFactor",
+					"lineNumber": 79
+				},
+				{
+					"caller": "DashboardSidebarHeader",
+					"callee": "useMatchRoute",
+					"lineNumber": 80
+				},
+				{
+					"caller": "DashboardSidebarHeader",
+					"callee": "usePaywall",
+					"lineNumber": 81
+				},
+				{
+					"caller": "DashboardSidebarHeader",
+					"callee": "matchRoute",
+					"lineNumber": 82
+				},
+				{
+					"caller": "DashboardSidebarHeader",
+					"callee": "matchRoute",
+					"lineNumber": 83
+				},
+				{
+					"caller": "DashboardSidebarHeader",
+					"callee": "matchRoute",
+					"lineNumber": 84
+				},
+				{
+					"caller": "DashboardSidebarHeader",
+					"callee": "useFailedAutomations",
+					"lineNumber": 85
+				},
+				{
+					"caller": "DashboardSidebarHeader",
+					"callee": "useTasksFilterStore",
+					"lineNumber": 94
+				},
+				{
+					"caller": "handleWorkspacesClick",
+					"callee": "navigate",
+					"lineNumber": 97
+				},
+				{
+					"caller": "handleAutomationsClick",
+					"callee": "navigate",
+					"lineNumber": 101
+				},
+				{
+					"caller": "handleTasksClick",
+					"callee": "gateFeature",
+					"lineNumber": 105
+				},
+				{
+					"caller": "handleTasksClick",
+					"callee": "navigate",
+					"lineNumber": 106
+				},
+				{
+					"caller": "handleTasksClick",
+					"callee": "tasksSearchFromFilters",
+					"lineNumber": 108
+				},
+				{
+					"caller": "DashboardSidebarHeader",
+					"callee": "cn",
+					"lineNumber": 130
+				},
+				{
+					"caller": "DashboardSidebarHeader",
+					"callee": "cn",
+					"lineNumber": 153
+				},
+				{
+					"caller": "DashboardSidebarHeader",
+					"callee": "cn",
+					"lineNumber": 181
+				},
+				{
+					"caller": "DashboardSidebarHeader",
+					"callee": "openModal",
+					"lineNumber": 198
+				},
+				{
+					"caller": "DashboardSidebarHeader",
+					"callee": "event.preventDefault",
+					"lineNumber": 226
+				},
+				{
+					"caller": "DashboardSidebarHeader",
+					"callee": "openNewProject",
+					"lineNumber": 228
+				},
+				{
+					"caller": "DashboardSidebarHeader",
+					"callee": "openTemplateGallery",
+					"lineNumber": 236
+				},
+				{
+					"caller": "DashboardSidebarHeader",
+					"callee": "cn",
+					"lineNumber": 285
+				},
+				{
+					"caller": "DashboardSidebarHeader",
+					"callee": "cn",
+					"lineNumber": 299
+				},
+				{
+					"caller": "DashboardSidebarHeader",
+					"callee": "cn",
+					"lineNumber": 321
+				},
+				{
+					"caller": "DashboardSidebarHeader",
+					"callee": "openModal",
+					"lineNumber": 335
+				},
+				{
+					"caller": "DashboardSidebarHeader",
+					"callee": "cn",
+					"lineNumber": 346
+				},
+				{
+					"caller": "DashboardSidebarHeader",
+					"callee": "event.preventDefault",
+					"lineNumber": 371
+				},
+				{
+					"caller": "DashboardSidebarHeader",
+					"callee": "openNewProject",
+					"lineNumber": 373
+				},
+				{
+					"caller": "DashboardSidebarHeader",
+					"callee": "openTemplateGallery",
+					"lineNumber": 381
+				}
+			],
+			"metrics": {
+				"importCount": 15,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/NavigationControls/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "NavigationControls",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/SidebarToggle/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "SidebarToggle",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/TopBar/TopBar.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 111,
+			"nonEmptyLines": 106,
+			"functions": [
+				{
+					"name": "TopBar",
+					"startLine": 19,
+					"endLine": 111,
+					"params": []
+				}
+			],
+			"exports": [
+				{
+					"name": "TopBar",
+					"line": 19,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "TopBar",
+					"callee": "useMatchRoute",
+					"lineNumber": 20
+				},
+				{
+					"caller": "TopBar",
+					"callee": "electronTrpc.window.getPlatform.useQuery",
+					"lineNumber": 21
+				},
+				{
+					"caller": "TopBar",
+					"callee": "useParams",
+					"lineNumber": 22
+				},
+				{
+					"caller": "TopBar",
+					"callee": "matchRoute",
+					"lineNumber": 23
+				},
+				{
+					"caller": "TopBar",
+					"callee": "electronTrpc.workspaces.get.useQuery",
+					"lineNumber": 29
+				},
+				{
+					"caller": "TopBar",
+					"callee": "useOnlineStatus",
+					"lineNumber": 33
+				},
+				{
+					"caller": "TopBar",
+					"callee": "useZoomFactor",
+					"lineNumber": 34
+				},
+				{
+					"caller": "TopBar",
+					"callee": "useIsV2CloudEnabled",
+					"lineNumber": 35
+				},
+				{
+					"caller": "TopBar",
+					"callee": "useWorkspaceSidebarStore",
+					"lineNumber": 36
+				},
+				{
+					"caller": "TopBar",
+					"callee": "useWorkspaceSidebarStore",
+					"lineNumber": 37
+				},
+				{
+					"caller": "TopBar",
+					"callee": "s.isCollapsed",
+					"lineNumber": 37
+				}
+			],
+			"metrics": {
+				"importCount": 15,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/TopBar/components/OpenInMenuButton/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "OpenInMenuButton",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/TopBar/components/OrganizationDropdown/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "OrganizationDropdown",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/TopBar/components/ResourceConsumption/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "ResourceConsumption",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/TopBar/components/RightSidebarToggle/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "RightSidebarToggle",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/TopBar/components/V2WorkspaceOpenInButton/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "V2WorkspaceOpenInButton",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/TopBar/components/V2WorkspaceTitle/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "V2WorkspaceTitle",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/TopBar/components/WindowControls/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "WindowControls",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/hooks/useFailedAutomations/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "useFailedAutomations",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/components/ExposeViaRelayConfirmDialog/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "ExposeViaRelayConfirmDialog",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/components/SearchResultsBanner/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "SearchResultsBanner",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/components/SettingsSidebar/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "SettingsSidebar",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/hooks/useScrollReset/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "useScrollReset",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/hosts/components/HostsSettingsSidebar/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "HostsSettingsSidebar",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/hosts/layout.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 20,
+			"nonEmptyLines": 18,
+			"functions": [
+				{
+					"name": "HostsSettingsLayout",
+					"startLine": 9,
+					"endLine": 20,
+					"params": []
+				}
+			],
+			"exports": [
+				{
+					"name": "Route",
+					"line": 5,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "HostsSettingsLayout",
+					"callee": "useParams",
+					"lineNumber": 10
+				},
+				{
+					"caller": "HostsSettingsLayout",
+					"callee": "useScrollReset",
+					"lineNumber": 11
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/layout.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 202,
+			"nonEmptyLines": 187,
+			"functions": [
+				{
+					"name": "getSectionFromPath",
+					"startLine": 50,
+					"endLine": 68,
+					"params": ["pathname"]
+				},
+				{
+					"name": "getPathFromSection",
+					"startLine": 70,
+					"endLine": 107,
+					"params": ["section"]
+				},
+				{
+					"name": "SettingsLayout",
+					"startLine": 109,
+					"endLine": 202,
+					"params": []
+				}
+			],
+			"exports": [
+				{
+					"name": "Route",
+					"line": 25,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "getSectionFromPath",
+					"callee": "pathname.includes",
+					"lineNumber": 51
+				},
+				{
+					"caller": "getSectionFromPath",
+					"callee": "pathname.includes",
+					"lineNumber": 52
+				},
+				{
+					"caller": "getSectionFromPath",
+					"callee": "pathname.includes",
+					"lineNumber": 53
+				},
+				{
+					"caller": "getSectionFromPath",
+					"callee": "pathname.includes",
+					"lineNumber": 54
+				},
+				{
+					"caller": "getSectionFromPath",
+					"callee": "pathname.includes",
+					"lineNumber": 55
+				},
+				{
+					"caller": "getSectionFromPath",
+					"callee": "pathname.includes",
+					"lineNumber": 56
+				},
+				{
+					"caller": "getSectionFromPath",
+					"callee": "pathname.includes",
+					"lineNumber": 57
+				},
+				{
+					"caller": "getSectionFromPath",
+					"callee": "pathname.includes",
+					"lineNumber": 58
+				},
+				{
+					"caller": "getSectionFromPath",
+					"callee": "pathname.includes",
+					"lineNumber": 59
+				},
+				{
+					"caller": "getSectionFromPath",
+					"callee": "pathname.includes",
+					"lineNumber": 60
+				},
+				{
+					"caller": "getSectionFromPath",
+					"callee": "pathname.includes",
+					"lineNumber": 61
+				},
+				{
+					"caller": "getSectionFromPath",
+					"callee": "pathname.includes",
+					"lineNumber": 62
+				},
+				{
+					"caller": "getSectionFromPath",
+					"callee": "pathname.includes",
+					"lineNumber": 63
+				},
+				{
+					"caller": "getSectionFromPath",
+					"callee": "pathname.includes",
+					"lineNumber": 64
+				},
+				{
+					"caller": "getSectionFromPath",
+					"callee": "pathname.includes",
+					"lineNumber": 65
+				},
+				{
+					"caller": "getSectionFromPath",
+					"callee": "pathname.includes",
+					"lineNumber": 66
+				},
+				{
+					"caller": "SettingsLayout",
+					"callee": "electronTrpc.window.getPlatform.useQuery",
+					"lineNumber": 110
+				},
+				{
+					"caller": "SettingsLayout",
+					"callee": "useSettingsSearchQuery",
+					"lineNumber": 112
+				},
+				{
+					"caller": "SettingsLayout",
+					"callee": "useSetSettingsSearchQuery",
+					"lineNumber": 113
+				},
+				{
+					"caller": "SettingsLayout",
+					"callee": "useSettingsOriginRoute",
+					"lineNumber": 114
+				},
+				{
+					"caller": "SettingsLayout",
+					"callee": "useLocation",
+					"lineNumber": 115
+				},
+				{
+					"caller": "SettingsLayout",
+					"callee": "useNavigate",
+					"lineNumber": 116
+				},
+				{
+					"caller": "SettingsLayout",
+					"callee": "useScrollReset",
+					"lineNumber": 118
+				},
+				{
+					"caller": "SettingsLayout",
+					"callee": "searchQuery.trim",
+					"lineNumber": 119
+				},
+				{
+					"caller": "SettingsLayout",
+					"callee": "searchSettings",
+					"lineNumber": 122
+				},
+				{
+					"caller": "SettingsLayout",
+					"callee": "useEffect",
+					"lineNumber": 125
+				},
+				{
+					"caller": "SettingsLayout",
+					"callee": "getSectionFromPath",
+					"lineNumber": 128
+				},
+				{
+					"caller": "SettingsLayout",
+					"callee": "getMatchCountBySection",
+					"lineNumber": 134
+				},
+				{
+					"caller": "SettingsLayout",
+					"callee": "SECTION_ORDER.find",
+					"lineNumber": 138
+				},
+				{
+					"caller": "SettingsLayout",
+					"callee": "navigate",
+					"lineNumber": 142
+				},
+				{
+					"caller": "SettingsLayout",
+					"callee": "getPathFromSection",
+					"lineNumber": 142
+				},
+				{
+					"caller": "SettingsLayout",
+					"callee": "useHotkeys",
+					"lineNumber": 147
+				},
+				{
+					"caller": "SettingsLayout",
+					"callee": "document.querySelector",
+					"lineNumber": 150
+				},
+				{
+					"caller": "SettingsLayout",
+					"callee": "location.pathname.split(\"/\").filter",
+					"lineNumber": 151
+				},
+				{
+					"caller": "SettingsLayout",
+					"callee": "location.pathname.split",
+					"lineNumber": 151
+				},
+				{
+					"caller": "SettingsLayout",
+					"callee": "event.preventDefault",
+					"lineNumber": 152
+				},
+				{
+					"caller": "SettingsLayout",
+					"callee": "navigate",
+					"lineNumber": 154
+				},
+				{
+					"caller": "SettingsLayout",
+					"callee": "segments.slice(0, -1).join",
+					"lineNumber": 158
+				},
+				{
+					"caller": "SettingsLayout",
+					"callee": "segments.slice",
+					"lineNumber": 158
+				},
+				{
+					"caller": "SettingsLayout",
+					"callee": "navigate",
+					"lineNumber": 159
+				},
+				{
+					"caller": "SettingsLayout",
+					"callee": "location.pathname.startsWith",
+					"lineNumber": 166
+				},
+				{
+					"caller": "SettingsLayout",
+					"callee": "location.pathname.startsWith",
+					"lineNumber": 167
+				},
+				{
+					"caller": "SettingsLayout",
+					"callee": "location.pathname.startsWith",
+					"lineNumber": 168
+				},
+				{
+					"caller": "SettingsLayout",
+					"callee": "setSearchQuery",
+					"lineNumber": 188
+				}
+			],
+			"metrics": {
+				"importCount": 7,
+				"exportCount": 1,
+				"functionCount": 3,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/members/components/MembersSettings/components/InviteMemberButton/InviteMemberButton.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 64,
+			"nonEmptyLines": 57,
+			"functions": [
+				{
+					"name": "InviteMemberButton",
+					"startLine": 18,
+					"endLine": 64,
+					"params": [
+						"{\n\tcurrentUserRole,\n\torganizationId,\n\torganizationName,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "InviteMemberButton",
+					"line": 18,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "InviteMemberButton",
+					"callee": "useState",
+					"lineNumber": 23
+				},
+				{
+					"caller": "InviteMemberButton",
+					"callee": "usePaywall",
+					"lineNumber": 24
+				},
+				{
+					"caller": "InviteMemberButton",
+					"callee": "getInvitableRoles",
+					"lineNumber": 26
+				},
+				{
+					"caller": "handleClick",
+					"callee": "gateFeature",
+					"lineNumber": 34
+				},
+				{
+					"caller": "handleClick",
+					"callee": "alert",
+					"lineNumber": 35
+				},
+				{
+					"caller": "handleClick",
+					"callee": "setOpen",
+					"lineNumber": 41
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/members/components/MembersSettings/components/InviteMemberButton/components/InviteMemberDialog/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "InviteMemberDialog",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/projects/components/ProjectsSettingsSidebar/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "ProjectsSettingsSidebar",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/projects/layout.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 20,
+			"nonEmptyLines": 18,
+			"functions": [
+				{
+					"name": "ProjectsSettingsLayout",
+					"startLine": 9,
+					"endLine": 20,
+					"params": []
+				}
+			],
+			"exports": [
+				{
+					"name": "Route",
+					"line": 5,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "ProjectsSettingsLayout",
+					"callee": "useParams",
+					"lineNumber": 10
+				},
+				{
+					"caller": "ProjectsSettingsLayout",
+					"callee": "useScrollReset",
+					"lineNumber": 11
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/security/components/SecuritySettings/SecuritySettings.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 122,
+			"nonEmptyLines": 111,
+			"functions": [
+				{
+					"name": "SecuritySettings",
+					"startLine": 18,
+					"endLine": 122,
+					"params": ["{ visibleItems }"]
+				}
+			],
+			"exports": [
+				{
+					"name": "SecuritySettings",
+					"line": 18,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "SecuritySettings",
+					"callee": "isItemVisible",
+					"lineNumber": 19
+				},
+				{
+					"caller": "SecuritySettings",
+					"callee": "electronTrpc.useUtils",
+					"lineNumber": 24
+				},
+				{
+					"caller": "SecuritySettings",
+					"callee": "electronTrpc.settings.getExposeHostServiceViaRelay.useQuery",
+					"lineNumber": 26
+				},
+				{
+					"caller": "SecuritySettings",
+					"callee": "electronTrpc.settings.setExposeHostServiceViaRelay.useMutation",
+					"lineNumber": 29
+				},
+				{
+					"caller": "SecuritySettings",
+					"callee": "utils.settings.getExposeHostServiceViaRelay.cancel",
+					"lineNumber": 31
+				},
+				{
+					"caller": "SecuritySettings",
+					"callee": "utils.settings.getExposeHostServiceViaRelay.getData",
+					"lineNumber": 32
+				},
+				{
+					"caller": "SecuritySettings",
+					"callee": "utils.settings.getExposeHostServiceViaRelay.setData",
+					"lineNumber": 33
+				},
+				{
+					"caller": "SecuritySettings",
+					"callee": "utils.settings.getExposeHostServiceViaRelay.setData",
+					"lineNumber": 38
+				},
+				{
+					"caller": "SecuritySettings",
+					"callee": "utils.settings.getExposeHostServiceViaRelay.invalidate",
+					"lineNumber": 45
+				},
+				{
+					"caller": "SecuritySettings",
+					"callee": "useState",
+					"lineNumber": 49
+				},
+				{
+					"caller": "SecuritySettings",
+					"callee": "useState",
+					"lineNumber": 50
+				},
+				{
+					"caller": "SecuritySettings",
+					"callee": "usePaywall",
+					"lineNumber": 51
+				},
+				{
+					"caller": "runToggle",
+					"callee": "toast.promise",
+					"lineNumber": 54
+				},
+				{
+					"caller": "runToggle",
+					"callee": "setExpose.mutateAsync",
+					"lineNumber": 54
+				},
+				{
+					"caller": "openConfirm",
+					"callee": "setConfirmTargetEnabled",
+					"lineNumber": 65
+				},
+				{
+					"caller": "openConfirm",
+					"callee": "setConfirmOpen",
+					"lineNumber": 66
+				},
+				{
+					"caller": "handleChange",
+					"callee": "gateFeature",
+					"lineNumber": 71
+				},
+				{
+					"caller": "handleChange",
+					"callee": "openConfirm",
+					"lineNumber": 71
+				},
+				{
+					"caller": "handleChange",
+					"callee": "openConfirm",
+					"lineNumber": 73
+				},
+				{
+					"caller": "SecuritySettings",
+					"callee": "setConfirmOpen",
+					"lineNumber": 116
+				},
+				{
+					"caller": "SecuritySettings",
+					"callee": "runToggle",
+					"lineNumber": 117
+				}
+			],
+			"metrics": {
+				"importCount": 4,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		}
+	]
+}

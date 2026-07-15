@@ -1,0 +1,1142 @@
+{
+	"nodes": [
+		{
+			"id": "file:src/lib/trpc/routers/resource-metrics.schema.ts",
+			"type": "file",
+			"name": "resource-metrics.schema.ts",
+			"filePath": "src/lib/trpc/routers/resource-metrics.schema.ts",
+			"summary": "tRPC router for resource-metrics.schema operations",
+			"tags": ["trpc", "router", "schema", "backend", "typescript"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:src/lib/trpc/routers/resource-metrics.schema.ts:createFallbackResourceMetricsSnapshot",
+			"type": "function",
+			"name": "createFallbackResourceMetricsSnapshot",
+			"filePath": "src/lib/trpc/routers/resource-metrics.schema.ts",
+			"summary": "Function implementing createFallbackResourceMetricsSnapshot logic",
+			"tags": ["trpc", "router", "schema", "function"],
+			"complexity": "moderate",
+			"lineRange": {
+				"start": 75,
+				"end": 102
+			}
+		},
+		{
+			"id": "function:src/lib/trpc/routers/resource-metrics.schema.ts:validateResourceMetricsSnapshot",
+			"type": "function",
+			"name": "validateResourceMetricsSnapshot",
+			"filePath": "src/lib/trpc/routers/resource-metrics.schema.ts",
+			"summary": "Function implementing validateResourceMetricsSnapshot logic",
+			"tags": ["trpc", "router", "schema", "function"],
+			"complexity": "simple",
+			"lineRange": {
+				"start": 110,
+				"end": 123
+			}
+		},
+		{
+			"id": "file:src/lib/trpc/routers/resource-metrics.ts",
+			"type": "file",
+			"name": "resource-metrics.ts",
+			"filePath": "src/lib/trpc/routers/resource-metrics.ts",
+			"summary": "tRPC router for resource-metrics operations",
+			"tags": ["trpc", "router", "backend", "typescript", "api"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/lib/trpc/routers/resource-metrics.ts:createResourceMetricsRouter",
+			"type": "function",
+			"name": "createResourceMetricsRouter",
+			"filePath": "src/lib/trpc/routers/resource-metrics.ts",
+			"summary": "Function implementing createResourceMetricsRouter logic",
+			"tags": ["trpc", "router", "backend", "function"],
+			"complexity": "moderate",
+			"lineRange": {
+				"start": 18,
+				"end": 40
+			}
+		},
+		{
+			"id": "file:src/lib/trpc/routers/ringtone/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "src/lib/trpc/routers/ringtone/index.ts",
+			"summary": "Router entry point for ringtone functionality",
+			"tags": ["trpc", "router", "backend", "typescript", "api"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:src/lib/trpc/routers/ringtone/index.ts:playWithTracking",
+			"type": "function",
+			"name": "playWithTracking",
+			"filePath": "src/lib/trpc/routers/ringtone/index.ts",
+			"summary": "Function implementing playWithTracking logic",
+			"tags": ["trpc", "router", "backend", "function"],
+			"complexity": "moderate",
+			"lineRange": {
+				"start": 48,
+				"end": 73
+			}
+		},
+		{
+			"id": "function:src/lib/trpc/routers/ringtone/index.ts:getRingtoneSoundPath",
+			"type": "function",
+			"name": "getRingtoneSoundPath",
+			"filePath": "src/lib/trpc/routers/ringtone/index.ts",
+			"summary": "Function implementing getRingtoneSoundPath logic",
+			"tags": ["trpc", "router", "backend", "function"],
+			"complexity": "moderate",
+			"lineRange": {
+				"start": 75,
+				"end": 94
+			}
+		},
+		{
+			"id": "function:src/lib/trpc/routers/ringtone/index.ts:createRingtoneRouter",
+			"type": "function",
+			"name": "createRingtoneRouter",
+			"filePath": "src/lib/trpc/routers/ringtone/index.ts",
+			"summary": "Function implementing createRingtoneRouter logic",
+			"tags": ["trpc", "router", "backend", "function"],
+			"complexity": "complex",
+			"lineRange": {
+				"start": 108,
+				"end": 205
+			}
+		},
+		{
+			"id": "function:src/lib/trpc/routers/ringtone/index.ts:playNotificationRingtone",
+			"type": "function",
+			"name": "playNotificationRingtone",
+			"filePath": "src/lib/trpc/routers/ringtone/index.ts",
+			"summary": "Function implementing playNotificationRingtone logic",
+			"tags": ["trpc", "router", "backend", "function"],
+			"complexity": "simple",
+			"lineRange": {
+				"start": 211,
+				"end": 218
+			}
+		},
+		{
+			"id": "file:src/lib/trpc/routers/settings/agent-preset-router.utils.ts",
+			"type": "file",
+			"name": "agent-preset-router.utils.ts",
+			"filePath": "src/lib/trpc/routers/settings/agent-preset-router.utils.ts",
+			"summary": "tRPC router for agent-preset-router.utils operations",
+			"tags": ["trpc", "router", "utility", "settings", "backend"],
+			"complexity": "complex"
+		},
+		{
+			"id": "function:src/lib/trpc/routers/settings/agent-preset-router.utils.ts:toTrimmedRequiredValue",
+			"type": "function",
+			"name": "toTrimmedRequiredValue",
+			"filePath": "src/lib/trpc/routers/settings/agent-preset-router.utils.ts",
+			"summary": "Function implementing toTrimmedRequiredValue logic",
+			"tags": ["trpc", "router", "utility", "function"],
+			"complexity": "simple",
+			"lineRange": {
+				"start": 58,
+				"end": 67
+			}
+		},
+		{
+			"id": "function:src/lib/trpc/routers/settings/agent-preset-router.utils.ts:normalizeAgentPresetPatch",
+			"type": "function",
+			"name": "normalizeAgentPresetPatch",
+			"filePath": "src/lib/trpc/routers/settings/agent-preset-router.utils.ts",
+			"summary": "Function implementing normalizeAgentPresetPatch logic",
+			"tags": ["trpc", "router", "utility", "function"],
+			"complexity": "complex",
+			"lineRange": {
+				"start": 69,
+				"end": 130
+			}
+		},
+		{
+			"id": "function:src/lib/trpc/routers/settings/agent-preset-router.utils.ts:normalizeCreateCustomAgentInput",
+			"type": "function",
+			"name": "normalizeCreateCustomAgentInput",
+			"filePath": "src/lib/trpc/routers/settings/agent-preset-router.utils.ts",
+			"summary": "Function implementing normalizeCreateCustomAgentInput logic",
+			"tags": ["trpc", "router", "utility", "function"],
+			"complexity": "moderate",
+			"lineRange": {
+				"start": 139,
+				"end": 171
+			}
+		},
+		{
+			"id": "function:src/lib/trpc/routers/settings/agent-preset-router.utils.ts:normalizeCustomAgentPatch",
+			"type": "function",
+			"name": "normalizeCustomAgentPatch",
+			"filePath": "src/lib/trpc/routers/settings/agent-preset-router.utils.ts",
+			"summary": "Function implementing normalizeCustomAgentPatch logic",
+			"tags": ["trpc", "router", "utility", "function"],
+			"complexity": "complex",
+			"lineRange": {
+				"start": 173,
+				"end": 227
+			}
+		},
+		{
+			"id": "file:src/lib/trpc/routers/settings/font-settings.test.ts",
+			"type": "file",
+			"name": "font-settings.test.ts",
+			"filePath": "src/lib/trpc/routers/settings/font-settings.test.ts",
+			"summary": "Test suite for font-settings functionality",
+			"tags": ["trpc", "router", "test", "settings", "backend"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "file:src/lib/trpc/routers/settings/font-settings.utils.ts",
+			"type": "file",
+			"name": "font-settings.utils.ts",
+			"filePath": "src/lib/trpc/routers/settings/font-settings.utils.ts",
+			"summary": "tRPC router for font-settings.utils operations",
+			"tags": ["trpc", "router", "utility", "settings", "backend"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/lib/trpc/routers/settings/font-settings.utils.ts:transformFontSettings",
+			"type": "function",
+			"name": "transformFontSettings",
+			"filePath": "src/lib/trpc/routers/settings/font-settings.utils.ts",
+			"summary": "Function implementing transformFontSettings logic",
+			"tags": ["trpc", "router", "utility", "function"],
+			"complexity": "moderate",
+			"lineRange": {
+				"start": 12,
+				"end": 31
+			}
+		},
+		{
+			"id": "file:src/lib/trpc/routers/settings/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "src/lib/trpc/routers/settings/index.ts",
+			"summary": "Router entry point for settings functionality",
+			"tags": ["trpc", "router", "settings", "backend", "typescript"],
+			"complexity": "complex"
+		},
+		{
+			"id": "function:src/lib/trpc/routers/settings/index.ts:isValidRingtoneId",
+			"type": "function",
+			"name": "isValidRingtoneId",
+			"filePath": "src/lib/trpc/routers/settings/index.ts",
+			"summary": "Function implementing isValidRingtoneId logic",
+			"tags": ["trpc", "router", "settings", "function"],
+			"complexity": "simple",
+			"lineRange": {
+				"start": 83,
+				"end": 93
+			}
+		},
+		{
+			"id": "function:src/lib/trpc/routers/settings/index.ts:getNormalizedTerminalPresets",
+			"type": "function",
+			"name": "getNormalizedTerminalPresets",
+			"filePath": "src/lib/trpc/routers/settings/index.ts",
+			"summary": "Function implementing getNormalizedTerminalPresets logic",
+			"tags": ["trpc", "router", "settings", "function"],
+			"complexity": "simple",
+			"lineRange": {
+				"start": 108,
+				"end": 117
+			}
+		},
+		{
+			"id": "function:src/lib/trpc/routers/settings/index.ts:saveTerminalPresets",
+			"type": "function",
+			"name": "saveTerminalPresets",
+			"filePath": "src/lib/trpc/routers/settings/index.ts",
+			"summary": "Function implementing saveTerminalPresets logic",
+			"tags": ["trpc", "router", "settings", "function"],
+			"complexity": "simple",
+			"lineRange": {
+				"start": 119,
+				"end": 132
+			}
+		},
+		{
+			"id": "function:src/lib/trpc/routers/settings/index.ts:runAgentPresetPermissionsMigration",
+			"type": "function",
+			"name": "runAgentPresetPermissionsMigration",
+			"filePath": "src/lib/trpc/routers/settings/index.ts",
+			"summary": "Function implementing runAgentPresetPermissionsMigration logic",
+			"tags": ["trpc", "router", "settings", "function"],
+			"complexity": "moderate",
+			"lineRange": {
+				"start": 136,
+				"end": 166
+			}
+		},
+		{
+			"id": "function:src/lib/trpc/routers/settings/index.ts:saveAgentPresetOverrides",
+			"type": "function",
+			"name": "saveAgentPresetOverrides",
+			"filePath": "src/lib/trpc/routers/settings/index.ts",
+			"summary": "Function implementing saveAgentPresetOverrides logic",
+			"tags": ["trpc", "router", "settings", "function"],
+			"complexity": "simple",
+			"lineRange": {
+				"start": 179,
+				"end": 191
+			}
+		},
+		{
+			"id": "function:src/lib/trpc/routers/settings/index.ts:saveAgentCustomDefinitions",
+			"type": "function",
+			"name": "saveAgentCustomDefinitions",
+			"filePath": "src/lib/trpc/routers/settings/index.ts",
+			"summary": "Function implementing saveAgentCustomDefinitions logic",
+			"tags": ["trpc", "router", "settings", "function"],
+			"complexity": "simple",
+			"lineRange": {
+				"start": 193,
+				"end": 205
+			}
+		},
+		{
+			"id": "function:src/lib/trpc/routers/settings/index.ts:initializeDefaultPresets",
+			"type": "function",
+			"name": "initializeDefaultPresets",
+			"filePath": "src/lib/trpc/routers/settings/index.ts",
+			"summary": "Function implementing initializeDefaultPresets logic",
+			"tags": ["trpc", "router", "settings", "function"],
+			"complexity": "simple",
+			"lineRange": {
+				"start": 231,
+				"end": 249
+			}
+		},
+		{
+			"id": "function:src/lib/trpc/routers/settings/index.ts:getPresetsForTrigger",
+			"type": "function",
+			"name": "getPresetsForTrigger",
+			"filePath": "src/lib/trpc/routers/settings/index.ts",
+			"summary": "Function implementing getPresetsForTrigger logic",
+			"tags": ["trpc", "router", "settings", "function"],
+			"complexity": "simple",
+			"lineRange": {
+				"start": 252,
+				"end": 261
+			}
+		},
+		{
+			"id": "function:src/lib/trpc/routers/settings/index.ts:createSettingsRouter",
+			"type": "function",
+			"name": "createSettingsRouter",
+			"filePath": "src/lib/trpc/routers/settings/index.ts",
+			"summary": "Function implementing createSettingsRouter logic",
+			"tags": ["trpc", "router", "settings", "function"],
+			"complexity": "complex",
+			"lineRange": {
+				"start": 263,
+				"end": 1034
+			}
+		},
+		{
+			"id": "file:src/lib/trpc/routers/settings/preset-execution-mode.test.ts",
+			"type": "file",
+			"name": "preset-execution-mode.test.ts",
+			"filePath": "src/lib/trpc/routers/settings/preset-execution-mode.test.ts",
+			"summary": "Test suite for preset-execution-mode functionality",
+			"tags": ["trpc", "router", "test", "settings", "backend"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:src/lib/trpc/routers/settings/preset-execution-mode.test.ts:createPreset",
+			"type": "function",
+			"name": "createPreset",
+			"filePath": "src/lib/trpc/routers/settings/preset-execution-mode.test.ts",
+			"summary": "Function implementing createPreset logic",
+			"tags": ["trpc", "router", "test", "function"],
+			"complexity": "simple",
+			"lineRange": {
+				"start": 12,
+				"end": 21
+			}
+		},
+		{
+			"id": "file:src/lib/trpc/routers/settings/preset-execution-mode.ts",
+			"type": "file",
+			"name": "preset-execution-mode.ts",
+			"filePath": "src/lib/trpc/routers/settings/preset-execution-mode.ts",
+			"summary": "tRPC router for preset-execution-mode operations",
+			"tags": ["trpc", "router", "settings", "backend", "typescript"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:src/lib/trpc/routers/settings/preset-execution-mode.ts:normalizeTerminalPreset",
+			"type": "function",
+			"name": "normalizeTerminalPreset",
+			"filePath": "src/lib/trpc/routers/settings/preset-execution-mode.ts",
+			"summary": "Function implementing normalizeTerminalPreset logic",
+			"tags": ["trpc", "router", "settings", "function"],
+			"complexity": "moderate",
+			"lineRange": {
+				"start": 16,
+				"end": 41
+			}
+		},
+		{
+			"id": "function:src/lib/trpc/routers/settings/preset-execution-mode.ts:normalizeTerminalPresets",
+			"type": "function",
+			"name": "normalizeTerminalPresets",
+			"filePath": "src/lib/trpc/routers/settings/preset-execution-mode.ts",
+			"summary": "Function implementing normalizeTerminalPresets logic",
+			"tags": ["trpc", "router", "settings", "function"],
+			"complexity": "simple",
+			"lineRange": {
+				"start": 43,
+				"end": 47
+			}
+		},
+		{
+			"id": "function:src/lib/trpc/routers/settings/preset-execution-mode.ts:shouldPersistNormalizedTerminalPresets",
+			"type": "function",
+			"name": "shouldPersistNormalizedTerminalPresets",
+			"filePath": "src/lib/trpc/routers/settings/preset-execution-mode.ts",
+			"summary": "Function implementing shouldPersistNormalizedTerminalPresets logic",
+			"tags": ["trpc", "router", "settings", "function"],
+			"complexity": "simple",
+			"lineRange": {
+				"start": 49,
+				"end": 59
+			}
+		},
+		{
+			"id": "file:src/lib/trpc/routers/system.ts",
+			"type": "file",
+			"name": "system.ts",
+			"filePath": "src/lib/trpc/routers/system.ts",
+			"summary": "tRPC router for system operations",
+			"tags": ["trpc", "router", "backend", "typescript", "api"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/lib/trpc/routers/system.ts:detectGhCli",
+			"type": "function",
+			"name": "detectGhCli",
+			"filePath": "src/lib/trpc/routers/system.ts",
+			"summary": "Function implementing detectGhCli logic",
+			"tags": ["trpc", "router", "backend", "function"],
+			"complexity": "moderate",
+			"lineRange": {
+				"start": 11,
+				"end": 44
+			}
+		},
+		{
+			"id": "function:src/lib/trpc/routers/system.ts:createSystemRouter",
+			"type": "function",
+			"name": "createSystemRouter",
+			"filePath": "src/lib/trpc/routers/system.ts",
+			"summary": "Function implementing createSystemRouter logic",
+			"tags": ["trpc", "router", "backend", "function"],
+			"complexity": "simple",
+			"lineRange": {
+				"start": 46,
+				"end": 50
+			}
+		},
+		{
+			"id": "file:src/lib/trpc/routers/terminal/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "src/lib/trpc/routers/terminal/index.ts",
+			"summary": "Router entry point for terminal functionality",
+			"tags": ["trpc", "router", "backend", "typescript", "api"],
+			"complexity": "simple"
+		}
+	],
+	"edges": [
+		{
+			"from": "file:src/lib/trpc/routers/resource-metrics.schema.ts",
+			"to": "file:src/lib/trpc/routers/resource-metrics.schema.test.ts",
+			"type": "tested_by",
+			"weight": 0.5,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/resource-metrics.schema.ts",
+			"to": "function:src/lib/trpc/routers/resource-metrics.schema.ts:createFallbackResourceMetricsSnapshot",
+			"type": "contains",
+			"weight": 1.0,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/resource-metrics.schema.ts",
+			"to": "function:src/lib/trpc/routers/resource-metrics.schema.ts:createFallbackResourceMetricsSnapshot",
+			"type": "exports",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/resource-metrics.schema.ts",
+			"to": "function:src/lib/trpc/routers/resource-metrics.schema.ts:validateResourceMetricsSnapshot",
+			"type": "contains",
+			"weight": 1.0,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/resource-metrics.schema.ts",
+			"to": "function:src/lib/trpc/routers/resource-metrics.schema.ts:validateResourceMetricsSnapshot",
+			"type": "exports",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/resource-metrics.ts",
+			"to": "function:src/lib/trpc/routers/resource-metrics.ts:createResourceMetricsRouter",
+			"type": "contains",
+			"weight": 1.0,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/resource-metrics.ts",
+			"to": "function:src/lib/trpc/routers/resource-metrics.ts:createResourceMetricsRouter",
+			"type": "exports",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/resource-metrics.ts",
+			"to": "file:src/lib/trpc/routers/resource-metrics.schema.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/resource-metrics.ts",
+			"to": "file:src/main/lib/resource-metrics/index.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/resource-metrics.ts:createResourceMetricsRouter",
+			"to": "file:src/main/lib/resource-metrics/index.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/ringtone/index.ts",
+			"to": "function:src/lib/trpc/routers/ringtone/index.ts:playWithTracking",
+			"type": "contains",
+			"weight": 1.0,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/ringtone/index.ts",
+			"to": "function:src/lib/trpc/routers/ringtone/index.ts:getRingtoneSoundPath",
+			"type": "contains",
+			"weight": 1.0,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/ringtone/index.ts",
+			"to": "function:src/lib/trpc/routers/ringtone/index.ts:createRingtoneRouter",
+			"type": "contains",
+			"weight": 1.0,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/ringtone/index.ts",
+			"to": "function:src/lib/trpc/routers/ringtone/index.ts:createRingtoneRouter",
+			"type": "exports",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/ringtone/index.ts",
+			"to": "function:src/lib/trpc/routers/ringtone/index.ts:playNotificationRingtone",
+			"type": "contains",
+			"weight": 1.0,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/ringtone/index.ts",
+			"to": "function:src/lib/trpc/routers/ringtone/index.ts:playNotificationRingtone",
+			"type": "exports",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/ringtone/index.ts",
+			"to": "file:src/lib/trpc/index.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/ringtone/index.ts",
+			"to": "file:src/main/lib/custom-ringtones.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/ringtone/index.ts",
+			"to": "file:src/main/lib/play-sound.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/ringtone/index.ts",
+			"to": "file:src/main/lib/sound-paths.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/ringtone/index.ts",
+			"to": "file:src/shared/ringtones.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/ringtone/index.ts:playWithTracking",
+			"to": "file:src/main/lib/play-sound.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/ringtone/index.ts:getRingtoneSoundPath",
+			"to": "file:src/main/lib/custom-ringtones.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/ringtone/index.ts:getRingtoneSoundPath",
+			"to": "file:src/shared/ringtones.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/ringtone/index.ts:getRingtoneSoundPath",
+			"to": "file:src/shared/ringtones.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/ringtone/index.ts:getRingtoneSoundPath",
+			"to": "file:src/main/lib/sound-paths.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/ringtone/index.ts:createRingtoneRouter",
+			"to": "file:src/lib/trpc/index.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/ringtone/index.ts:createRingtoneRouter",
+			"to": "file:src/main/lib/play-sound.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/ringtone/index.ts:createRingtoneRouter",
+			"to": "file:src/main/lib/custom-ringtones.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/ringtone/index.ts:createRingtoneRouter",
+			"to": "file:src/main/lib/custom-ringtones.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/ringtone/index.ts:playNotificationRingtone",
+			"to": "file:src/main/lib/play-sound.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/settings/agent-preset-router.utils.ts",
+			"to": "function:src/lib/trpc/routers/settings/agent-preset-router.utils.ts:toTrimmedRequiredValue",
+			"type": "contains",
+			"weight": 1.0,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/settings/agent-preset-router.utils.ts",
+			"to": "function:src/lib/trpc/routers/settings/agent-preset-router.utils.ts:normalizeAgentPresetPatch",
+			"type": "contains",
+			"weight": 1.0,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/settings/agent-preset-router.utils.ts",
+			"to": "function:src/lib/trpc/routers/settings/agent-preset-router.utils.ts:normalizeAgentPresetPatch",
+			"type": "exports",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/settings/agent-preset-router.utils.ts",
+			"to": "function:src/lib/trpc/routers/settings/agent-preset-router.utils.ts:normalizeCreateCustomAgentInput",
+			"type": "contains",
+			"weight": 1.0,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/settings/agent-preset-router.utils.ts",
+			"to": "function:src/lib/trpc/routers/settings/agent-preset-router.utils.ts:normalizeCreateCustomAgentInput",
+			"type": "exports",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/settings/agent-preset-router.utils.ts",
+			"to": "function:src/lib/trpc/routers/settings/agent-preset-router.utils.ts:normalizeCustomAgentPatch",
+			"type": "contains",
+			"weight": 1.0,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/settings/agent-preset-router.utils.ts",
+			"to": "function:src/lib/trpc/routers/settings/agent-preset-router.utils.ts:normalizeCustomAgentPatch",
+			"type": "exports",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/settings/font-settings.test.ts",
+			"to": "file:src/lib/trpc/routers/settings/font-settings.utils.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/settings/font-settings.utils.ts",
+			"to": "function:src/lib/trpc/routers/settings/font-settings.utils.ts:transformFontSettings",
+			"type": "contains",
+			"weight": 1.0,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/settings/font-settings.utils.ts",
+			"to": "function:src/lib/trpc/routers/settings/font-settings.utils.ts:transformFontSettings",
+			"type": "exports",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/settings/index.ts",
+			"to": "function:src/lib/trpc/routers/settings/index.ts:isValidRingtoneId",
+			"type": "contains",
+			"weight": 1.0,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/settings/index.ts",
+			"to": "function:src/lib/trpc/routers/settings/index.ts:getNormalizedTerminalPresets",
+			"type": "contains",
+			"weight": 1.0,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/settings/index.ts",
+			"to": "function:src/lib/trpc/routers/settings/index.ts:saveTerminalPresets",
+			"type": "contains",
+			"weight": 1.0,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/settings/index.ts",
+			"to": "function:src/lib/trpc/routers/settings/index.ts:runAgentPresetPermissionsMigration",
+			"type": "contains",
+			"weight": 1.0,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/settings/index.ts",
+			"to": "function:src/lib/trpc/routers/settings/index.ts:saveAgentPresetOverrides",
+			"type": "contains",
+			"weight": 1.0,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/settings/index.ts",
+			"to": "function:src/lib/trpc/routers/settings/index.ts:saveAgentCustomDefinitions",
+			"type": "contains",
+			"weight": 1.0,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/settings/index.ts",
+			"to": "function:src/lib/trpc/routers/settings/index.ts:initializeDefaultPresets",
+			"type": "contains",
+			"weight": 1.0,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/settings/index.ts",
+			"to": "function:src/lib/trpc/routers/settings/index.ts:getPresetsForTrigger",
+			"type": "contains",
+			"weight": 1.0,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/settings/index.ts",
+			"to": "function:src/lib/trpc/routers/settings/index.ts:getPresetsForTrigger",
+			"type": "exports",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/settings/index.ts",
+			"to": "function:src/lib/trpc/routers/settings/index.ts:createSettingsRouter",
+			"type": "contains",
+			"weight": 1.0,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/settings/index.ts",
+			"to": "function:src/lib/trpc/routers/settings/index.ts:createSettingsRouter",
+			"type": "exports",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/settings/index.ts",
+			"to": "file:src/lib/trpc/index.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/settings/index.ts",
+			"to": "file:src/lib/trpc/routers/auth/utils/auth-functions.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/settings/index.ts",
+			"to": "file:src/lib/trpc/routers/settings/agent-preset-router.utils.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/settings/index.ts",
+			"to": "file:src/lib/trpc/routers/settings/font-settings.utils.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/settings/index.ts",
+			"to": "file:src/lib/trpc/routers/settings/preset-execution-mode.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/settings/index.ts",
+			"to": "file:src/lib/trpc/routers/settings/preset-trigger-selection.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/settings/index.ts",
+			"to": "file:src/lib/trpc/routers/workspaces/utils/git.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/settings/index.ts",
+			"to": "file:src/main/env.main.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/settings/index.ts",
+			"to": "file:src/main/index.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/settings/index.ts",
+			"to": "file:src/main/lib/agent-setup/index.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/settings/index.ts",
+			"to": "file:src/main/lib/custom-ringtones.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/settings/index.ts",
+			"to": "file:src/main/lib/host-service-coordinator.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/settings/index.ts",
+			"to": "file:src/main/lib/local-db/index.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/settings/index.ts",
+			"to": "file:src/shared/constants.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/settings/index.ts",
+			"to": "file:src/shared/preset-project-targeting.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/settings/index.ts",
+			"to": "file:src/shared/ringtones.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/settings/index.ts:isValidRingtoneId",
+			"to": "file:src/shared/ringtones.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/settings/index.ts:isValidRingtoneId",
+			"to": "file:src/main/lib/custom-ringtones.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/settings/index.ts:getPresetsForTrigger",
+			"to": "file:src/lib/trpc/routers/settings/preset-trigger-selection.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/settings/index.ts:createSettingsRouter",
+			"to": "file:src/lib/trpc/index.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/settings/index.ts:createSettingsRouter",
+			"to": "file:src/shared/preset-project-targeting.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/settings/index.ts:createSettingsRouter",
+			"to": "file:src/shared/preset-project-targeting.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/settings/index.ts:createSettingsRouter",
+			"to": "file:src/lib/trpc/routers/auth/utils/auth-functions.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/settings/index.ts:createSettingsRouter",
+			"to": "file:src/main/lib/host-service-coordinator.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/settings/index.ts:createSettingsRouter",
+			"to": "file:src/main/index.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/settings/index.ts:createSettingsRouter",
+			"to": "file:src/lib/trpc/routers/workspaces/utils/git.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/settings/index.ts:createSettingsRouter",
+			"to": "file:src/lib/trpc/routers/workspaces/utils/git.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/settings/index.ts:createSettingsRouter",
+			"to": "file:src/main/lib/agent-setup/index.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/settings/preset-execution-mode.test.ts",
+			"to": "function:src/lib/trpc/routers/settings/preset-execution-mode.test.ts:createPreset",
+			"type": "contains",
+			"weight": 1.0,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/settings/preset-execution-mode.test.ts",
+			"to": "file:src/lib/trpc/routers/settings/preset-execution-mode.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/settings/preset-execution-mode.ts",
+			"to": "file:src/lib/trpc/routers/settings/preset-execution-mode.test.ts",
+			"type": "tested_by",
+			"weight": 0.5,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/settings/preset-execution-mode.ts",
+			"to": "function:src/lib/trpc/routers/settings/preset-execution-mode.ts:normalizeTerminalPreset",
+			"type": "contains",
+			"weight": 1.0,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/settings/preset-execution-mode.ts",
+			"to": "function:src/lib/trpc/routers/settings/preset-execution-mode.ts:normalizeTerminalPreset",
+			"type": "exports",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/settings/preset-execution-mode.ts",
+			"to": "function:src/lib/trpc/routers/settings/preset-execution-mode.ts:normalizeTerminalPresets",
+			"type": "contains",
+			"weight": 1.0,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/settings/preset-execution-mode.ts",
+			"to": "function:src/lib/trpc/routers/settings/preset-execution-mode.ts:normalizeTerminalPresets",
+			"type": "exports",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/settings/preset-execution-mode.ts",
+			"to": "function:src/lib/trpc/routers/settings/preset-execution-mode.ts:shouldPersistNormalizedTerminalPresets",
+			"type": "contains",
+			"weight": 1.0,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/settings/preset-execution-mode.ts",
+			"to": "function:src/lib/trpc/routers/settings/preset-execution-mode.ts:shouldPersistNormalizedTerminalPresets",
+			"type": "exports",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/settings/preset-execution-mode.ts",
+			"to": "file:src/shared/preset-project-targeting.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/settings/preset-execution-mode.ts:normalizeTerminalPreset",
+			"to": "file:src/shared/preset-project-targeting.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/settings/preset-execution-mode.ts:shouldPersistNormalizedTerminalPresets",
+			"to": "file:src/shared/preset-project-targeting.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/system.ts",
+			"to": "function:src/lib/trpc/routers/system.ts:detectGhCli",
+			"type": "contains",
+			"weight": 1.0,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/system.ts",
+			"to": "function:src/lib/trpc/routers/system.ts:createSystemRouter",
+			"type": "contains",
+			"weight": 1.0,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/system.ts",
+			"to": "function:src/lib/trpc/routers/system.ts:createSystemRouter",
+			"type": "exports",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/system.ts",
+			"to": "file:src/lib/trpc/routers/workspaces/utils/shell-env.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/system.ts:detectGhCli",
+			"to": "file:src/lib/trpc/routers/workspaces/utils/shell-env.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/system.ts:detectGhCli",
+			"to": "file:src/lib/trpc/routers/workspaces/utils/shell-env.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		}
+	]
+}

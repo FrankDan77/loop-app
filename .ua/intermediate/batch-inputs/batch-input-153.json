@@ -1,0 +1,36 @@
+{
+	"batchIndex": 153,
+	"files": [
+		{
+			"path": "apps/docs/sentry.edge.config.ts",
+			"language": "typescript",
+			"sizeLines": 13,
+			"fileCategory": "code"
+		},
+		{
+			"path": "apps/docs/sentry.server.config.ts",
+			"language": "typescript",
+			"sizeLines": 13,
+			"fileCategory": "code"
+		},
+		{
+			"path": "apps/docs/src/env.ts",
+			"language": "typescript",
+			"sizeLines": 38,
+			"fileCategory": "code"
+		},
+		{
+			"path": "apps/docs/src/instrumentation-client.ts",
+			"language": "typescript",
+			"sizeLines": 40,
+			"fileCategory": "code"
+		}
+	],
+	"batchImportData": {
+		"apps/docs/sentry.edge.config.ts": ["apps/docs/src/env.ts"],
+		"apps/docs/sentry.server.config.ts": ["apps/docs/src/env.ts"],
+		"apps/docs/src/env.ts": [],
+		"apps/docs/src/instrumentation-client.ts": ["apps/docs/src/env.ts"]
+	},
+	"neighborMap": {}
+}

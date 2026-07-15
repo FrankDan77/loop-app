@@ -1,0 +1,2669 @@
+{
+	"scriptCompleted": true,
+	"filesAnalyzed": 11,
+	"filesSkipped": [],
+	"results": [
+		{
+			"path": "packages/chat/src/server/desktop/auth/anthropic/anthropic.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 234,
+			"nonEmptyLines": 206,
+			"functions": [
+				{
+					"name": "getAnthropicProviderOptions",
+					"startLine": 34,
+					"endLine": 51,
+					"params": ["credentials"]
+				},
+				{
+					"name": "isClaudeCredentialExpired",
+					"startLine": 65,
+					"endLine": 73,
+					"params": ["credential"]
+				},
+				{
+					"name": "getCredentialsFromConfig",
+					"startLine": 75,
+					"endLine": 131,
+					"params": []
+				},
+				{
+					"name": "getCredentialsFromKeychain",
+					"startLine": 133,
+					"endLine": 169,
+					"params": []
+				},
+				{
+					"name": "getCredentialsFromAuthStorage",
+					"startLine": 171,
+					"endLine": 214,
+					"params": []
+				},
+				{
+					"name": "getCredentialsFromAnySource",
+					"startLine": 216,
+					"endLine": 234,
+					"params": []
+				}
+			],
+			"exports": [
+				{
+					"name": "getAnthropicProviderOptions",
+					"line": 34,
+					"isDefault": false
+				},
+				{
+					"name": "isClaudeCredentialExpired",
+					"line": 65,
+					"isDefault": false
+				},
+				{
+					"name": "getCredentialsFromConfig",
+					"line": 75,
+					"isDefault": false
+				},
+				{
+					"name": "getCredentialsFromKeychain",
+					"line": 133,
+					"isDefault": false
+				},
+				{
+					"name": "getCredentialsFromAuthStorage",
+					"line": 171,
+					"isDefault": false
+				},
+				{
+					"name": "getCredentialsFromAnySource",
+					"line": 216,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "isClaudeCredentialExpired",
+					"callee": "Date.now",
+					"lineNumber": 71
+				},
+				{
+					"caller": "getCredentialsFromConfig",
+					"callee": "homedir",
+					"lineNumber": 76
+				},
+				{
+					"caller": "getCredentialsFromConfig",
+					"callee": "join",
+					"lineNumber": 78
+				},
+				{
+					"caller": "getCredentialsFromConfig",
+					"callee": "join",
+					"lineNumber": 79
+				},
+				{
+					"caller": "getCredentialsFromConfig",
+					"callee": "join",
+					"lineNumber": 80
+				},
+				{
+					"caller": "getCredentialsFromConfig",
+					"callee": "join",
+					"lineNumber": 81
+				},
+				{
+					"caller": "getCredentialsFromConfig",
+					"callee": "existsSync",
+					"lineNumber": 85
+				},
+				{
+					"caller": "getCredentialsFromConfig",
+					"callee": "readFileSync",
+					"lineNumber": 87
+				},
+				{
+					"caller": "getCredentialsFromConfig",
+					"callee": "JSON.parse",
+					"lineNumber": 88
+				},
+				{
+					"caller": "getCredentialsFromConfig",
+					"callee": "console.log",
+					"lineNumber": 91
+				},
+				{
+					"caller": "getCredentialsFromConfig",
+					"callee": "console.log",
+					"lineNumber": 107
+				},
+				{
+					"caller": "getCredentialsFromConfig",
+					"callee": "console.log",
+					"lineNumber": 112
+				},
+				{
+					"caller": "getCredentialsFromConfig",
+					"callee": "console.warn",
+					"lineNumber": 122
+				},
+				{
+					"caller": "getCredentialsFromKeychain",
+					"callee": "platform",
+					"lineNumber": 134
+				},
+				{
+					"caller": "getCredentialsFromKeychain",
+					"callee": "execSync(\n\t\t\t'security find-generic-password -s \"claude-cli\" -a \"api-key\" -w 2>/dev/null',\n\t\t\t{ encoding: \"utf-8\" },\n\t\t).trim",
+					"lineNumber": 139
+				},
+				{
+					"caller": "getCredentialsFromKeychain",
+					"callee": "execSync",
+					"lineNumber": 139
+				},
+				{
+					"caller": "getCredentialsFromKeychain",
+					"callee": "console.log",
+					"lineNumber": 145
+				},
+				{
+					"caller": "getCredentialsFromKeychain",
+					"callee": "execSync(\n\t\t\t'security find-generic-password -s \"anthropic-api-key\" -w 2>/dev/null',\n\t\t\t{ encoding: \"utf-8\" },\n\t\t).trim",
+					"lineNumber": 153
+				},
+				{
+					"caller": "getCredentialsFromKeychain",
+					"callee": "execSync",
+					"lineNumber": 153
+				},
+				{
+					"caller": "getCredentialsFromKeychain",
+					"callee": "console.log",
+					"lineNumber": 159
+				},
+				{
+					"caller": "getCredentialsFromAuthStorage",
+					"callee": "createAuthStorage",
+					"lineNumber": 173
+				},
+				{
+					"caller": "getCredentialsFromAuthStorage",
+					"callee": "authStorage.reload",
+					"lineNumber": 174
+				},
+				{
+					"caller": "getCredentialsFromAuthStorage",
+					"callee": "authStorage.get",
+					"lineNumber": 175
+				},
+				{
+					"caller": "getCredentialsFromAuthStorage",
+					"callee": "credential.key.trim",
+					"lineNumber": 181
+				},
+				{
+					"caller": "getCredentialsFromAuthStorage",
+					"callee": "credential.key.trim",
+					"lineNumber": 184
+				},
+				{
+					"caller": "getCredentialsFromAuthStorage",
+					"callee": "authStorage.getApiKey",
+					"lineNumber": 193
+				},
+				{
+					"caller": "getCredentialsFromAuthStorage",
+					"callee": "accessToken.trim",
+					"lineNumber": 196
+				},
+				{
+					"caller": "getCredentialsFromAuthStorage",
+					"callee": "authStorage.reload",
+					"lineNumber": 197
+				},
+				{
+					"caller": "getCredentialsFromAuthStorage",
+					"callee": "authStorage.get",
+					"lineNumber": 198
+				},
+				{
+					"caller": "getCredentialsFromAuthStorage",
+					"callee": "accessToken.trim",
+					"lineNumber": 200
+				},
+				{
+					"caller": "getCredentialsFromAuthStorage",
+					"callee": "console.warn",
+					"lineNumber": 210
+				},
+				{
+					"caller": "getCredentialsFromAnySource",
+					"callee": "resolve",
+					"lineNumber": 221
+				},
+				{
+					"caller": "getCredentialsFromAnySource",
+					"callee": "isClaudeCredentialExpired",
+					"lineNumber": 223
+				},
+				{
+					"caller": "getCredentialsFromAnySource",
+					"callee": "getCredentialsFromAuthStorage",
+					"lineNumber": 227
+				},
+				{
+					"caller": "getCredentialsFromAnySource",
+					"callee": "isClaudeCredentialExpired",
+					"lineNumber": 228
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 6,
+				"functionCount": 6,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "packages/chat/src/server/desktop/auth/anthropic/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 13,
+			"nonEmptyLines": 13,
+			"exports": [
+				{
+					"name": "AnthropicProviderOptions",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "ClaudeCredentials",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "getAnthropicProviderOptions",
+					"line": 2,
+					"isDefault": false
+				},
+				{
+					"name": "getCredentialsFromAnySource",
+					"line": 2,
+					"isDefault": false
+				},
+				{
+					"name": "getCredentialsFromAuthStorage",
+					"line": 2,
+					"isDefault": false
+				},
+				{
+					"name": "getCredentialsFromConfig",
+					"line": 2,
+					"isDefault": false
+				},
+				{
+					"name": "getCredentialsFromKeychain",
+					"line": 2,
+					"isDefault": false
+				},
+				{
+					"name": "isClaudeCredentialExpired",
+					"line": 2,
+					"isDefault": false
+				},
+				{
+					"name": "createAnthropicOAuthSession",
+					"line": 10,
+					"isDefault": false
+				},
+				{
+					"name": "exchangeAnthropicAuthorizationCode",
+					"line": 10,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 10,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "packages/chat/src/server/desktop/auth/openai/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 6,
+			"nonEmptyLines": 6,
+			"exports": [
+				{
+					"name": "OpenAICredentials",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "getOpenAICredentialsFromAnySource",
+					"line": 2,
+					"isDefault": false
+				},
+				{
+					"name": "getOpenAICredentialsFromAuthStorage",
+					"line": 2,
+					"isDefault": false
+				},
+				{
+					"name": "isOpenAICredentialExpired",
+					"line": 2,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 4,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "packages/chat/src/server/desktop/auth/openai/openai.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 99,
+			"nonEmptyLines": 88,
+			"functions": [
+				{
+					"name": "isObjectRecord",
+					"startLine": 9,
+					"endLine": 11,
+					"params": ["value"]
+				},
+				{
+					"name": "isOpenAICredentialExpired",
+					"startLine": 22,
+					"endLine": 30,
+					"params": ["credential"]
+				},
+				{
+					"name": "getOpenAICredentialsFromAuthStorage",
+					"startLine": 32,
+					"endLine": 95,
+					"params": ["authStorage"]
+				},
+				{
+					"name": "getOpenAICredentialsFromAnySource",
+					"startLine": 97,
+					"endLine": 99,
+					"params": []
+				}
+			],
+			"exports": [
+				{
+					"name": "isOpenAICredentialExpired",
+					"line": 22,
+					"isDefault": false
+				},
+				{
+					"name": "getOpenAICredentialsFromAuthStorage",
+					"line": 32,
+					"isDefault": false
+				},
+				{
+					"name": "getOpenAICredentialsFromAnySource",
+					"line": 97,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "isOpenAICredentialExpired",
+					"callee": "Date.now",
+					"lineNumber": 28
+				},
+				{
+					"caller": "getOpenAICredentialsFromAuthStorage",
+					"callee": "createAuthStorage",
+					"lineNumber": 33
+				},
+				{
+					"caller": "getOpenAICredentialsFromAuthStorage",
+					"callee": "authStorage.reload",
+					"lineNumber": 36
+				},
+				{
+					"caller": "getOpenAICredentialsFromAuthStorage",
+					"callee": "authStorage.get",
+					"lineNumber": 40
+				},
+				{
+					"caller": "getOpenAICredentialsFromAuthStorage",
+					"callee": "isObjectRecord",
+					"lineNumber": 41
+				},
+				{
+					"caller": "getOpenAICredentialsFromAuthStorage",
+					"callee": "credential.key.trim",
+					"lineNumber": 48
+				},
+				{
+					"caller": "getOpenAICredentialsFromAuthStorage",
+					"callee": "credentials.push",
+					"lineNumber": 50
+				},
+				{
+					"caller": "getOpenAICredentialsFromAuthStorage",
+					"callee": "credential.key.trim",
+					"lineNumber": 51
+				},
+				{
+					"caller": "getOpenAICredentialsFromAuthStorage",
+					"callee": "credential.access.trim",
+					"lineNumber": 62
+				},
+				{
+					"caller": "getOpenAICredentialsFromAuthStorage",
+					"callee": "credential.accountId.trim",
+					"lineNumber": 66
+				},
+				{
+					"caller": "getOpenAICredentialsFromAuthStorage",
+					"callee": "credential.accountId.trim",
+					"lineNumber": 67
+				},
+				{
+					"caller": "getOpenAICredentialsFromAuthStorage",
+					"callee": "credentials.push",
+					"lineNumber": 69
+				},
+				{
+					"caller": "getOpenAICredentialsFromAuthStorage",
+					"callee": "credential.access.trim",
+					"lineNumber": 70
+				},
+				{
+					"caller": "getOpenAICredentialsFromAuthStorage",
+					"callee": "credentials.find",
+					"lineNumber": 84
+				},
+				{
+					"caller": "getOpenAICredentialsFromAuthStorage",
+					"callee": "isOpenAICredentialExpired",
+					"lineNumber": 85
+				},
+				{
+					"caller": "getOpenAICredentialsFromAuthStorage",
+					"callee": "console.warn",
+					"lineNumber": 91
+				},
+				{
+					"caller": "getOpenAICredentialsFromAnySource",
+					"callee": "getOpenAICredentialsFromAuthStorage",
+					"lineNumber": 98
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 3,
+				"functionCount": 4,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "packages/chat/src/server/desktop/auth/provider-ids.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 5,
+			"nonEmptyLines": 5,
+			"exports": [
+				{
+					"name": "ANTHROPIC_AUTH_PROVIDER_ID",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "OPENAI_AUTH_PROVIDER_ID",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "OPENAI_AUTH_PROVIDER_IDS",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 3,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "packages/chat/src/server/desktop/chat-service/anthropic-env-config.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 243,
+			"nonEmptyLines": 214,
+			"functions": [
+				{
+					"name": "trimToUndefined",
+					"startLine": 35,
+					"endLine": 39,
+					"params": ["value"]
+				},
+				{
+					"name": "normalizeAnthropicBaseUrl",
+					"startLine": 41,
+					"endLine": 62,
+					"params": ["rawBaseUrl"]
+				},
+				{
+					"name": "parseLineValue",
+					"startLine": 64,
+					"endLine": 73,
+					"params": ["rawValue"]
+				},
+				{
+					"name": "toNormalizedEnvEntries",
+					"startLine": 75,
+					"endLine": 81,
+					"params": ["variables"]
+				},
+				{
+					"name": "getAnthropicEnvConfigPath",
+					"startLine": 83,
+					"endLine": 90,
+					"params": ["options"]
+				},
+				{
+					"name": "parseAnthropicEnvText",
+					"startLine": 92,
+					"endLine": 124,
+					"params": ["envText"]
+				},
+				{
+					"name": "readPersistedAnthropicEnvConfig",
+					"startLine": 126,
+					"endLine": 153,
+					"params": ["options"]
+				},
+				{
+					"name": "getAnthropicEnvConfig",
+					"startLine": 155,
+					"endLine": 187,
+					"params": ["options"]
+				},
+				{
+					"name": "setAnthropicEnvConfig",
+					"startLine": 189,
+					"endLine": 205,
+					"params": ["input", "options"]
+				},
+				{
+					"name": "clearAnthropicEnvConfig",
+					"startLine": 207,
+					"endLine": 212,
+					"params": ["options"]
+				},
+				{
+					"name": "buildAnthropicRuntimeEnv",
+					"startLine": 214,
+					"endLine": 223,
+					"params": ["variables"]
+				},
+				{
+					"name": "applyAnthropicRuntimeEnv",
+					"startLine": 225,
+					"endLine": 243,
+					"params": ["runtimeEnv", "options"]
+				}
+			],
+			"exports": [
+				{
+					"name": "getAnthropicEnvConfigPath",
+					"line": 83,
+					"isDefault": false
+				},
+				{
+					"name": "parseAnthropicEnvText",
+					"line": 92,
+					"isDefault": false
+				},
+				{
+					"name": "getAnthropicEnvConfig",
+					"line": 155,
+					"isDefault": false
+				},
+				{
+					"name": "setAnthropicEnvConfig",
+					"line": 189,
+					"isDefault": false
+				},
+				{
+					"name": "clearAnthropicEnvConfig",
+					"line": 207,
+					"isDefault": false
+				},
+				{
+					"name": "buildAnthropicRuntimeEnv",
+					"line": 214,
+					"isDefault": false
+				},
+				{
+					"name": "applyAnthropicRuntimeEnv",
+					"line": 225,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "trimToUndefined",
+					"callee": "value?.trim",
+					"lineNumber": 36
+				},
+				{
+					"caller": "normalizeAnthropicBaseUrl",
+					"callee": "trimToUndefined",
+					"lineNumber": 44
+				},
+				{
+					"caller": "normalizeAnthropicBaseUrl",
+					"callee": "parsed.hostname.toLowerCase",
+					"lineNumber": 49
+				},
+				{
+					"caller": "normalizeAnthropicBaseUrl",
+					"callee": "parsed.pathname.replace",
+					"lineNumber": 50
+				},
+				{
+					"caller": "normalizeAnthropicBaseUrl",
+					"callee": "parsed.toString().replace",
+					"lineNumber": 54
+				},
+				{
+					"caller": "normalizeAnthropicBaseUrl",
+					"callee": "parsed.toString",
+					"lineNumber": 54
+				},
+				{
+					"caller": "normalizeAnthropicBaseUrl",
+					"callee": "console.warn",
+					"lineNumber": 56
+				},
+				{
+					"caller": "normalizeAnthropicBaseUrl",
+					"callee": "String",
+					"lineNumber": 58
+				},
+				{
+					"caller": "parseLineValue",
+					"callee": "rawValue.trim",
+					"lineNumber": 65
+				},
+				{
+					"caller": "parseLineValue",
+					"callee": "value.startsWith",
+					"lineNumber": 67
+				},
+				{
+					"caller": "parseLineValue",
+					"callee": "value.endsWith",
+					"lineNumber": 67
+				},
+				{
+					"caller": "parseLineValue",
+					"callee": "value.startsWith",
+					"lineNumber": 68
+				},
+				{
+					"caller": "parseLineValue",
+					"callee": "value.endsWith",
+					"lineNumber": 68
+				},
+				{
+					"caller": "parseLineValue",
+					"callee": "value.slice",
+					"lineNumber": 70
+				},
+				{
+					"caller": "toNormalizedEnvEntries",
+					"callee": "Object.entries(variables)\n\t\t.map(([key, value]) => [key.trim(), value] as [string, string])\n\t\t.filter",
+					"lineNumber": 78
+				},
+				{
+					"caller": "toNormalizedEnvEntries",
+					"callee": "Object.entries(variables)\n\t\t.map",
+					"lineNumber": 78
+				},
+				{
+					"caller": "toNormalizedEnvEntries",
+					"callee": "Object.entries",
+					"lineNumber": 78
+				},
+				{
+					"caller": "toNormalizedEnvEntries",
+					"callee": "key.trim",
+					"lineNumber": 79
+				},
+				{
+					"caller": "toNormalizedEnvEntries",
+					"callee": "ENV_KEY.test",
+					"lineNumber": 80
+				},
+				{
+					"caller": "getAnthropicEnvConfigPath",
+					"callee": "process.env.SUPERSET_HOME_DIR?.trim",
+					"lineNumber": 88
+				},
+				{
+					"caller": "getAnthropicEnvConfigPath",
+					"callee": "join",
+					"lineNumber": 88
+				},
+				{
+					"caller": "getAnthropicEnvConfigPath",
+					"callee": "homedir",
+					"lineNumber": 88
+				},
+				{
+					"caller": "getAnthropicEnvConfigPath",
+					"callee": "join",
+					"lineNumber": 89
+				},
+				{
+					"caller": "parseAnthropicEnvText",
+					"callee": "envText.includes",
+					"lineNumber": 93
+				},
+				{
+					"caller": "parseAnthropicEnvText",
+					"callee": "envText.split",
+					"lineNumber": 98
+				},
+				{
+					"caller": "parseAnthropicEnvText",
+					"callee": "lines.entries",
+					"lineNumber": 99
+				},
+				{
+					"caller": "parseAnthropicEnvText",
+					"callee": "rawLine.trim",
+					"lineNumber": 100
+				},
+				{
+					"caller": "parseAnthropicEnvText",
+					"callee": "line.startsWith",
+					"lineNumber": 101
+				},
+				{
+					"caller": "parseAnthropicEnvText",
+					"callee": "ENV_LINE.test",
+					"lineNumber": 102
+				},
+				{
+					"caller": "parseAnthropicEnvText",
+					"callee": "line.indexOf",
+					"lineNumber": 106
+				},
+				{
+					"caller": "parseAnthropicEnvText",
+					"callee": "line\n\t\t\t.slice(0, eqIndex)\n\t\t\t.trim()\n\t\t\t.replace",
+					"lineNumber": 111
+				},
+				{
+					"caller": "parseAnthropicEnvText",
+					"callee": "line\n\t\t\t.slice(0, eqIndex)\n\t\t\t.trim",
+					"lineNumber": 111
+				},
+				{
+					"caller": "parseAnthropicEnvText",
+					"callee": "line\n\t\t\t.slice",
+					"lineNumber": 111
+				},
+				{
+					"caller": "parseAnthropicEnvText",
+					"callee": "ENV_KEY.test",
+					"lineNumber": 115
+				},
+				{
+					"caller": "parseAnthropicEnvText",
+					"callee": "parseLineValue",
+					"lineNumber": 119
+				},
+				{
+					"caller": "parseAnthropicEnvText",
+					"callee": "line.slice",
+					"lineNumber": 119
+				},
+				{
+					"caller": "readPersistedAnthropicEnvConfig",
+					"callee": "getAnthropicEnvConfigPath",
+					"lineNumber": 129
+				},
+				{
+					"caller": "readPersistedAnthropicEnvConfig",
+					"callee": "existsSync",
+					"lineNumber": 130
+				},
+				{
+					"caller": "readPersistedAnthropicEnvConfig",
+					"callee": "JSON.parse",
+					"lineNumber": 133
+				},
+				{
+					"caller": "readPersistedAnthropicEnvConfig",
+					"callee": "readFileSync",
+					"lineNumber": 134
+				},
+				{
+					"caller": "readPersistedAnthropicEnvConfig",
+					"callee": "console.warn",
+					"lineNumber": 144
+				},
+				{
+					"caller": "readPersistedAnthropicEnvConfig",
+					"callee": "String",
+					"lineNumber": 148
+				},
+				{
+					"caller": "getAnthropicEnvConfig",
+					"callee": "readPersistedAnthropicEnvConfig",
+					"lineNumber": 161
+				},
+				{
+					"caller": "getAnthropicEnvConfig",
+					"callee": "parseAnthropicEnvText",
+					"lineNumber": 172
+				},
+				{
+					"caller": "getAnthropicEnvConfig",
+					"callee": "console.warn",
+					"lineNumber": 175
+				},
+				{
+					"caller": "getAnthropicEnvConfig",
+					"callee": "getAnthropicEnvConfigPath",
+					"lineNumber": 178
+				},
+				{
+					"caller": "getAnthropicEnvConfig",
+					"callee": "String",
+					"lineNumber": 179
+				},
+				{
+					"caller": "setAnthropicEnvConfig",
+					"callee": "parseAnthropicEnvText",
+					"lineNumber": 193
+				},
+				{
+					"caller": "setAnthropicEnvConfig",
+					"callee": "getAnthropicEnvConfigPath",
+					"lineNumber": 194
+				},
+				{
+					"caller": "setAnthropicEnvConfig",
+					"callee": "dirname",
+					"lineNumber": 195
+				},
+				{
+					"caller": "setAnthropicEnvConfig",
+					"callee": "mkdirSync",
+					"lineNumber": 196
+				},
+				{
+					"caller": "setAnthropicEnvConfig",
+					"callee": "input.envText.trim",
+					"lineNumber": 200
+				},
+				{
+					"caller": "setAnthropicEnvConfig",
+					"callee": "writeFileSync",
+					"lineNumber": 202
+				},
+				{
+					"caller": "setAnthropicEnvConfig",
+					"callee": "JSON.stringify",
+					"lineNumber": 202
+				},
+				{
+					"caller": "setAnthropicEnvConfig",
+					"callee": "chmodSync",
+					"lineNumber": 203
+				},
+				{
+					"caller": "clearAnthropicEnvConfig",
+					"callee": "getAnthropicEnvConfigPath",
+					"lineNumber": 210
+				},
+				{
+					"caller": "clearAnthropicEnvConfig",
+					"callee": "rmSync",
+					"lineNumber": 211
+				},
+				{
+					"caller": "buildAnthropicRuntimeEnv",
+					"callee": "Object.fromEntries",
+					"lineNumber": 217
+				},
+				{
+					"caller": "buildAnthropicRuntimeEnv",
+					"callee": "toNormalizedEnvEntries",
+					"lineNumber": 217
+				},
+				{
+					"caller": "buildAnthropicRuntimeEnv",
+					"callee": "normalizeAnthropicBaseUrl",
+					"lineNumber": 218
+				},
+				{
+					"caller": "applyAnthropicRuntimeEnv",
+					"callee": "toNormalizedEnvEntries",
+					"lineNumber": 229
+				},
+				{
+					"caller": "applyAnthropicRuntimeEnv",
+					"callee": "toNormalizedEnvEntries",
+					"lineNumber": 230
+				},
+				{
+					"caller": "applyAnthropicRuntimeEnv",
+					"callee": "nextEntries.map",
+					"lineNumber": 233
+				},
+				{
+					"caller": "applyAnthropicRuntimeEnv",
+					"callee": "nextKeys.has",
+					"lineNumber": 236
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 7,
+				"functionCount": 12,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "packages/chat/src/server/desktop/chat-service/auth-storage-types.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 28,
+			"nonEmptyLines": 21,
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "packages/chat/src/server/desktop/chat-service/auth-storage-utils.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 119,
+			"nonEmptyLines": 109,
+			"functions": [
+				{
+					"name": "setApiKeyForProvider",
+					"startLine": 12,
+					"endLine": 32,
+					"params": [
+						"authStorage",
+						"providerId",
+						"rawApiKey",
+						"requiredMessage"
+					]
+				},
+				{
+					"name": "clearApiKeyForProvider",
+					"startLine": 34,
+					"endLine": 50,
+					"params": ["authStorage", "providerId"]
+				},
+				{
+					"name": "backupApiKeyBeforeOAuth",
+					"startLine": 56,
+					"endLine": 69,
+					"params": ["authStorage", "providerId"]
+				},
+				{
+					"name": "restoreApiKeyAfterOAuthDisconnect",
+					"startLine": 75,
+					"endLine": 87,
+					"params": ["authStorage", "providerId"]
+				},
+				{
+					"name": "clearCredentialForProvider",
+					"startLine": 89,
+					"endLine": 99,
+					"params": ["authStorage", "providerId"]
+				},
+				{
+					"name": "resolveAuthMethodForProvider",
+					"startLine": 101,
+					"endLine": 119,
+					"params": ["authStorage", "providerId", "isOAuthValid"]
+				}
+			],
+			"exports": [
+				{
+					"name": "setApiKeyForProvider",
+					"line": 12,
+					"isDefault": false
+				},
+				{
+					"name": "clearApiKeyForProvider",
+					"line": 34,
+					"isDefault": false
+				},
+				{
+					"name": "backupApiKeyBeforeOAuth",
+					"line": 56,
+					"isDefault": false
+				},
+				{
+					"name": "restoreApiKeyAfterOAuthDisconnect",
+					"line": 75,
+					"isDefault": false
+				},
+				{
+					"name": "clearCredentialForProvider",
+					"line": 89,
+					"isDefault": false
+				},
+				{
+					"name": "resolveAuthMethodForProvider",
+					"line": 101,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "setApiKeyForProvider",
+					"callee": "rawApiKey.trim",
+					"lineNumber": 18
+				},
+				{
+					"caller": "setApiKeyForProvider",
+					"callee": "authStorage.reload",
+					"lineNumber": 23
+				},
+				{
+					"caller": "setApiKeyForProvider",
+					"callee": "authStorage.set",
+					"lineNumber": 25
+				},
+				{
+					"caller": "setApiKeyForProvider",
+					"callee": "authStorage.setStoredApiKey",
+					"lineNumber": 31
+				},
+				{
+					"caller": "clearApiKeyForProvider",
+					"callee": "authStorage.reload",
+					"lineNumber": 38
+				},
+				{
+					"caller": "clearApiKeyForProvider",
+					"callee": "authStorage.hasStoredApiKey",
+					"lineNumber": 41
+				},
+				{
+					"caller": "clearApiKeyForProvider",
+					"callee": "authStorage.remove",
+					"lineNumber": 42
+				},
+				{
+					"caller": "clearApiKeyForProvider",
+					"callee": "authStorage.get",
+					"lineNumber": 46
+				},
+				{
+					"caller": "clearApiKeyForProvider",
+					"callee": "authStorage.remove",
+					"lineNumber": 48
+				},
+				{
+					"caller": "backupApiKeyBeforeOAuth",
+					"callee": "authStorage.reload",
+					"lineNumber": 60
+				},
+				{
+					"caller": "backupApiKeyBeforeOAuth",
+					"callee": "authStorage.get",
+					"lineNumber": 61
+				},
+				{
+					"caller": "backupApiKeyBeforeOAuth",
+					"callee": "credential.key.trim",
+					"lineNumber": 64
+				},
+				{
+					"caller": "backupApiKeyBeforeOAuth",
+					"callee": "authStorage.hasStoredApiKey",
+					"lineNumber": 65
+				},
+				{
+					"caller": "backupApiKeyBeforeOAuth",
+					"callee": "authStorage.setStoredApiKey",
+					"lineNumber": 67
+				},
+				{
+					"caller": "backupApiKeyBeforeOAuth",
+					"callee": "credential.key.trim",
+					"lineNumber": 67
+				},
+				{
+					"caller": "restoreApiKeyAfterOAuthDisconnect",
+					"callee": "authStorage.reload",
+					"lineNumber": 79
+				},
+				{
+					"caller": "restoreApiKeyAfterOAuthDisconnect",
+					"callee": "authStorage.getStoredApiKey",
+					"lineNumber": 80
+				},
+				{
+					"caller": "restoreApiKeyAfterOAuthDisconnect",
+					"callee": "storedApiKey.trim",
+					"lineNumber": 81
+				},
+				{
+					"caller": "restoreApiKeyAfterOAuthDisconnect",
+					"callee": "authStorage.set",
+					"lineNumber": 82
+				},
+				{
+					"caller": "restoreApiKeyAfterOAuthDisconnect",
+					"callee": "storedApiKey.trim",
+					"lineNumber": 84
+				},
+				{
+					"caller": "clearCredentialForProvider",
+					"callee": "authStorage.reload",
+					"lineNumber": 93
+				},
+				{
+					"caller": "clearCredentialForProvider",
+					"callee": "authStorage.get",
+					"lineNumber": 94
+				},
+				{
+					"caller": "clearCredentialForProvider",
+					"callee": "authStorage.remove",
+					"lineNumber": 98
+				},
+				{
+					"caller": "resolveAuthMethodForProvider",
+					"callee": "authStorage.reload",
+					"lineNumber": 106
+				},
+				{
+					"caller": "resolveAuthMethodForProvider",
+					"callee": "authStorage.get",
+					"lineNumber": 107
+				},
+				{
+					"caller": "resolveAuthMethodForProvider",
+					"callee": "isOAuthValid",
+					"lineNumber": 108
+				},
+				{
+					"caller": "resolveAuthMethodForProvider",
+					"callee": "credential.key.trim",
+					"lineNumber": 111
+				},
+				{
+					"caller": "resolveAuthMethodForProvider",
+					"callee": "authStorage.hasStoredApiKey",
+					"lineNumber": 115
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 6,
+				"functionCount": 6,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "packages/chat/src/server/desktop/chat-service/chat-service.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 667,
+			"nonEmptyLines": 627,
+			"functions": [
+				{
+					"name": "hasAnthropicEnvCredential",
+					"startLine": 46,
+					"endLine": 51,
+					"params": ["variables"]
+				},
+				{
+					"name": "stripAnthropicCredentialEnvVariables",
+					"startLine": 53,
+					"endLine": 60,
+					"params": ["variables"]
+				}
+			],
+			"classes": [
+				{
+					"name": "ChatService",
+					"startLine": 66,
+					"endLine": 667,
+					"methods": [
+						"constructor",
+						"getAnthropicAuthStatus",
+						"getOpenAIAuthStatus",
+						"setOpenAIApiKey",
+						"clearOpenAIApiKey",
+						"startOpenAIOAuth",
+						"consumeOpenAIOAuthCallback",
+						"cancelOpenAIOAuth",
+						"stopOpenAIOAuthLoopback",
+						"disconnectOpenAIOAuth",
+						"completeOpenAIOAuth",
+						"setAnthropicApiKey",
+						"clearAnthropicApiKey",
+						"getAnthropicEnvConfig",
+						"setAnthropicEnvConfig",
+						"clearAnthropicEnvConfig",
+						"startAnthropicOAuth",
+						"cancelAnthropicOAuth",
+						"disconnectAnthropicOAuth",
+						"completeAnthropicOAuth",
+						"getOpenAIOAuthFlowOptions",
+						"getAnthropicOAuthFlowOptions",
+						"getAuthStorage",
+						"clearStoredAnthropicOAuthCredential",
+						"setStoredAnthropicApiKeyFromEnvVariables",
+						"applyAnthropicRuntimeEnv",
+						"logAuthResolution"
+					],
+					"properties": [
+						"authStorage",
+						"oauthFlowController",
+						"openAIOAuthLoopback",
+						"pendingOpenAIOAuthCallbackUrl",
+						"anthropicEnvConfigPath",
+						"currentAnthropicRuntimeEnv",
+						"ANTHROPIC_AUTH_SESSION_TTL_MS",
+						"OPENAI_AUTH_SESSION_TTL_MS",
+						"OAUTH_URL_TIMEOUT_MS"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "ChatService",
+					"line": 66,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "hasAnthropicEnvCredential",
+					"callee": "Boolean",
+					"lineNumber": 47
+				},
+				{
+					"caller": "hasAnthropicEnvCredential",
+					"callee": "variables.ANTHROPIC_API_KEY?.trim",
+					"lineNumber": 48
+				},
+				{
+					"caller": "hasAnthropicEnvCredential",
+					"callee": "variables.ANTHROPIC_AUTH_TOKEN?.trim",
+					"lineNumber": 49
+				},
+				{
+					"caller": "constructor",
+					"callee": "getAnthropicEnvConfigFromDisk",
+					"lineNumber": 81
+				},
+				{
+					"caller": "constructor",
+					"callee": "this.applyAnthropicRuntimeEnv",
+					"lineNumber": 84
+				},
+				{
+					"caller": "constructor",
+					"callee": "stripAnthropicCredentialEnvVariables",
+					"lineNumber": 85
+				},
+				{
+					"caller": "getAnthropicAuthStatus",
+					"callee": "this.getAuthStorage",
+					"lineNumber": 90
+				},
+				{
+					"caller": "getAnthropicAuthStatus",
+					"callee": "authStorage.reload",
+					"lineNumber": 91
+				},
+				{
+					"caller": "getAnthropicAuthStatus",
+					"callee": "authStorage.get",
+					"lineNumber": 92
+				},
+				{
+					"caller": "getAnthropicAuthStatus",
+					"callee": "Date.now",
+					"lineNumber": 101
+				},
+				{
+					"caller": "getAnthropicAuthStatus",
+					"callee": "authStorage.getApiKey",
+					"lineNumber": 104
+				},
+				{
+					"caller": "getAnthropicAuthStatus",
+					"callee": "authStorage.reload",
+					"lineNumber": 105
+				},
+				{
+					"caller": "getAnthropicAuthStatus",
+					"callee": "authStorage.get",
+					"lineNumber": 106
+				},
+				{
+					"caller": "getAnthropicAuthStatus",
+					"callee": "console.warn",
+					"lineNumber": 109
+				},
+				{
+					"caller": "getAnthropicAuthStatus",
+					"callee": "getAnthropicCredentialsFromConfig",
+					"lineNumber": 115
+				},
+				{
+					"caller": "getAnthropicAuthStatus",
+					"callee": "getAnthropicCredentialsFromKeychain",
+					"lineNumber": 116
+				},
+				{
+					"caller": "getAnthropicAuthStatus",
+					"callee": "[configCredential, keychainCredential].filter",
+					"lineNumber": 117
+				},
+				{
+					"caller": "getAnthropicAuthStatus",
+					"callee": "externalCandidates.find",
+					"lineNumber": 121
+				},
+				{
+					"caller": "getAnthropicAuthStatus",
+					"callee": "isClaudeCredentialExpired",
+					"lineNumber": 122
+				},
+				{
+					"caller": "getAnthropicAuthStatus",
+					"callee": "externalCandidates.find",
+					"lineNumber": 124
+				},
+				{
+					"caller": "getAnthropicAuthStatus",
+					"callee": "isClaudeCredentialExpired",
+					"lineNumber": 125
+				},
+				{
+					"caller": "getAnthropicAuthStatus",
+					"callee": "this.logAuthResolution",
+					"lineNumber": 135
+				},
+				{
+					"caller": "getAnthropicAuthStatus",
+					"callee": "Boolean",
+					"lineNumber": 138
+				},
+				{
+					"caller": "getAnthropicAuthStatus",
+					"callee": "Boolean",
+					"lineNumber": 140
+				},
+				{
+					"caller": "getAnthropicAuthStatus",
+					"callee": "Boolean",
+					"lineNumber": 143
+				},
+				{
+					"caller": "getAnthropicAuthStatus",
+					"callee": "process.env.ANTHROPIC_API_KEY?.trim",
+					"lineNumber": 143
+				},
+				{
+					"caller": "getAnthropicAuthStatus",
+					"callee": "Boolean",
+					"lineNumber": 144
+				},
+				{
+					"caller": "getAnthropicAuthStatus",
+					"callee": "process.env.ANTHROPIC_AUTH_TOKEN?.trim",
+					"lineNumber": 145
+				},
+				{
+					"caller": "getAnthropicAuthStatus",
+					"callee": "Object.keys(\n\t\t\t\t\tthis.currentAnthropicRuntimeEnv,\n\t\t\t\t).sort",
+					"lineNumber": 149
+				},
+				{
+					"caller": "getAnthropicAuthStatus",
+					"callee": "Object.keys",
+					"lineNumber": 149
+				},
+				{
+					"caller": "getAnthropicAuthStatus",
+					"callee": "resolveAuthMethodForProvider",
+					"lineNumber": 156
+				},
+				{
+					"caller": "getAnthropicAuthStatus",
+					"callee": "credential.access.trim",
+					"lineNumber": 160
+				},
+				{
+					"caller": "getAnthropicAuthStatus",
+					"callee": "Date.now",
+					"lineNumber": 162
+				},
+				{
+					"caller": "getAnthropicAuthStatus",
+					"callee": "Date.now",
+					"lineNumber": 167
+				},
+				{
+					"caller": "getAnthropicAuthStatus",
+					"callee": "this.getAnthropicEnvConfig",
+					"lineNumber": 168
+				},
+				{
+					"caller": "getAnthropicAuthStatus",
+					"callee": "Object.keys",
+					"lineNumber": 169
+				},
+				{
+					"caller": "getAnthropicAuthStatus",
+					"callee": "hasAnthropicEnvCredential",
+					"lineNumber": 171
+				},
+				{
+					"caller": "getAnthropicAuthStatus",
+					"callee": "this.logAuthResolution",
+					"lineNumber": 180
+				},
+				{
+					"caller": "getAnthropicAuthStatus",
+					"callee": "Boolean",
+					"lineNumber": 186
+				},
+				{
+					"caller": "getAnthropicAuthStatus",
+					"callee": "process.env.ANTHROPIC_API_KEY?.trim",
+					"lineNumber": 186
+				},
+				{
+					"caller": "getAnthropicAuthStatus",
+					"callee": "Boolean",
+					"lineNumber": 187
+				},
+				{
+					"caller": "getAnthropicAuthStatus",
+					"callee": "process.env.ANTHROPIC_AUTH_TOKEN?.trim",
+					"lineNumber": 188
+				},
+				{
+					"caller": "getAnthropicAuthStatus",
+					"callee": "Object.keys(\n\t\t\t\t\tthis.currentAnthropicRuntimeEnv,\n\t\t\t\t).sort",
+					"lineNumber": 192
+				},
+				{
+					"caller": "getAnthropicAuthStatus",
+					"callee": "Object.keys",
+					"lineNumber": 192
+				},
+				{
+					"caller": "getAnthropicAuthStatus",
+					"callee": "this.logAuthResolution",
+					"lineNumber": 206
+				},
+				{
+					"caller": "getAnthropicAuthStatus",
+					"callee": "Boolean",
+					"lineNumber": 212
+				},
+				{
+					"caller": "getAnthropicAuthStatus",
+					"callee": "process.env.ANTHROPIC_API_KEY?.trim",
+					"lineNumber": 212
+				},
+				{
+					"caller": "getAnthropicAuthStatus",
+					"callee": "Boolean",
+					"lineNumber": 213
+				},
+				{
+					"caller": "getAnthropicAuthStatus",
+					"callee": "process.env.ANTHROPIC_AUTH_TOKEN?.trim",
+					"lineNumber": 214
+				},
+				{
+					"caller": "getAnthropicAuthStatus",
+					"callee": "Object.keys(\n\t\t\t\t\tthis.currentAnthropicRuntimeEnv,\n\t\t\t\t).sort",
+					"lineNumber": 218
+				},
+				{
+					"caller": "getAnthropicAuthStatus",
+					"callee": "Object.keys",
+					"lineNumber": 218
+				},
+				{
+					"caller": "getAnthropicAuthStatus",
+					"callee": "this.logAuthResolution",
+					"lineNumber": 232
+				},
+				{
+					"caller": "getAnthropicAuthStatus",
+					"callee": "Boolean",
+					"lineNumber": 238
+				},
+				{
+					"caller": "getAnthropicAuthStatus",
+					"callee": "process.env.ANTHROPIC_API_KEY?.trim",
+					"lineNumber": 238
+				},
+				{
+					"caller": "getAnthropicAuthStatus",
+					"callee": "Boolean",
+					"lineNumber": 239
+				},
+				{
+					"caller": "getAnthropicAuthStatus",
+					"callee": "process.env.ANTHROPIC_AUTH_TOKEN?.trim",
+					"lineNumber": 240
+				},
+				{
+					"caller": "getAnthropicAuthStatus",
+					"callee": "Object.keys(\n\t\t\t\t\tthis.currentAnthropicRuntimeEnv,\n\t\t\t\t).sort",
+					"lineNumber": 244
+				},
+				{
+					"caller": "getAnthropicAuthStatus",
+					"callee": "Object.keys",
+					"lineNumber": 244
+				},
+				{
+					"caller": "getAnthropicAuthStatus",
+					"callee": "this.logAuthResolution",
+					"lineNumber": 258
+				},
+				{
+					"caller": "getAnthropicAuthStatus",
+					"callee": "Boolean",
+					"lineNumber": 262
+				},
+				{
+					"caller": "getAnthropicAuthStatus",
+					"callee": "Boolean",
+					"lineNumber": 264
+				},
+				{
+					"caller": "getAnthropicAuthStatus",
+					"callee": "Boolean",
+					"lineNumber": 267
+				},
+				{
+					"caller": "getAnthropicAuthStatus",
+					"callee": "process.env.ANTHROPIC_API_KEY?.trim",
+					"lineNumber": 267
+				},
+				{
+					"caller": "getAnthropicAuthStatus",
+					"callee": "Boolean",
+					"lineNumber": 268
+				},
+				{
+					"caller": "getAnthropicAuthStatus",
+					"callee": "process.env.ANTHROPIC_AUTH_TOKEN?.trim",
+					"lineNumber": 269
+				},
+				{
+					"caller": "getAnthropicAuthStatus",
+					"callee": "Object.keys(\n\t\t\t\t\tthis.currentAnthropicRuntimeEnv,\n\t\t\t\t).sort",
+					"lineNumber": 273
+				},
+				{
+					"caller": "getAnthropicAuthStatus",
+					"callee": "Object.keys",
+					"lineNumber": 273
+				},
+				{
+					"caller": "getAnthropicAuthStatus",
+					"callee": "this.logAuthResolution",
+					"lineNumber": 287
+				},
+				{
+					"caller": "getAnthropicAuthStatus",
+					"callee": "Boolean",
+					"lineNumber": 294
+				},
+				{
+					"caller": "getAnthropicAuthStatus",
+					"callee": "process.env.ANTHROPIC_API_KEY?.trim",
+					"lineNumber": 294
+				},
+				{
+					"caller": "getAnthropicAuthStatus",
+					"callee": "Boolean",
+					"lineNumber": 295
+				},
+				{
+					"caller": "getAnthropicAuthStatus",
+					"callee": "process.env.ANTHROPIC_AUTH_TOKEN?.trim",
+					"lineNumber": 296
+				},
+				{
+					"caller": "getAnthropicAuthStatus",
+					"callee": "Object.keys(\n\t\t\t\t\tthis.currentAnthropicRuntimeEnv,\n\t\t\t\t).sort",
+					"lineNumber": 300
+				},
+				{
+					"caller": "getAnthropicAuthStatus",
+					"callee": "Object.keys",
+					"lineNumber": 300
+				},
+				{
+					"caller": "getAnthropicAuthStatus",
+					"callee": "this.logAuthResolution",
+					"lineNumber": 313
+				},
+				{
+					"caller": "getAnthropicAuthStatus",
+					"callee": "Boolean",
+					"lineNumber": 319
+				},
+				{
+					"caller": "getAnthropicAuthStatus",
+					"callee": "process.env.ANTHROPIC_API_KEY?.trim",
+					"lineNumber": 319
+				},
+				{
+					"caller": "getAnthropicAuthStatus",
+					"callee": "Boolean",
+					"lineNumber": 320
+				},
+				{
+					"caller": "getAnthropicAuthStatus",
+					"callee": "process.env.ANTHROPIC_AUTH_TOKEN?.trim",
+					"lineNumber": 321
+				},
+				{
+					"caller": "getAnthropicAuthStatus",
+					"callee": "Object.keys(\n\t\t\t\tthis.currentAnthropicRuntimeEnv,\n\t\t\t).sort",
+					"lineNumber": 325
+				},
+				{
+					"caller": "getAnthropicAuthStatus",
+					"callee": "Object.keys",
+					"lineNumber": 325
+				},
+				{
+					"caller": "getOpenAIAuthStatus",
+					"callee": "this.getAuthStorage",
+					"lineNumber": 333
+				},
+				{
+					"caller": "getOpenAIAuthStatus",
+					"callee": "authStorage.reload",
+					"lineNumber": 334
+				},
+				{
+					"caller": "getOpenAIAuthStatus",
+					"callee": "getOpenAICredentialsFromAuthStorage",
+					"lineNumber": 335
+				},
+				{
+					"caller": "getOpenAIAuthStatus",
+					"callee": "isOpenAICredentialExpired",
+					"lineNumber": 337
+				},
+				{
+					"caller": "getOpenAIAuthStatus",
+					"callee": "this.logAuthResolution",
+					"lineNumber": 349
+				},
+				{
+					"caller": "getOpenAIAuthStatus",
+					"callee": "Boolean",
+					"lineNumber": 355
+				},
+				{
+					"caller": "getOpenAIAuthStatus",
+					"callee": "process.env.OPENAI_API_KEY?.trim",
+					"lineNumber": 355
+				},
+				{
+					"caller": "getOpenAIAuthStatus",
+					"callee": "Boolean",
+					"lineNumber": 356
+				},
+				{
+					"caller": "getOpenAIAuthStatus",
+					"callee": "process.env.OPENAI_AUTH_TOKEN?.trim",
+					"lineNumber": 356
+				},
+				{
+					"caller": "setOpenAIApiKey",
+					"callee": "setApiKeyForProvider",
+					"lineNumber": 362
+				},
+				{
+					"caller": "setOpenAIApiKey",
+					"callee": "this.getAuthStorage",
+					"lineNumber": 363
+				},
+				{
+					"caller": "clearOpenAIApiKey",
+					"callee": "this.getAuthStorage",
+					"lineNumber": 372
+				},
+				{
+					"caller": "clearOpenAIApiKey",
+					"callee": "clearApiKeyForProvider",
+					"lineNumber": 374
+				},
+				{
+					"caller": "startOpenAIOAuth",
+					"callee": "this.stopOpenAIOAuthLoopback",
+					"lineNumber": 380
+				},
+				{
+					"caller": "startOpenAIOAuth",
+					"callee": "this.oauthFlowController.start",
+					"lineNumber": 382
+				},
+				{
+					"caller": "startOpenAIOAuth",
+					"callee": "this.getOpenAIOAuthFlowOptions",
+					"lineNumber": 383
+				},
+				{
+					"caller": "startOpenAIOAuth",
+					"callee": "parseLoopbackTargetFromAuthUrl",
+					"lineNumber": 386
+				},
+				{
+					"caller": "startOpenAIOAuth",
+					"callee": "loopback.start",
+					"lineNumber": 390
+				},
+				{
+					"caller": "startOpenAIOAuth",
+					"callee": "loopback.stop",
+					"lineNumber": 405
+				},
+				{
+					"caller": "cancelOpenAIOAuth",
+					"callee": "this.stopOpenAIOAuthLoopback",
+					"lineNumber": 419
+				},
+				{
+					"caller": "cancelOpenAIOAuth",
+					"callee": "this.oauthFlowController.cancel",
+					"lineNumber": 421
+				},
+				{
+					"caller": "cancelOpenAIOAuth",
+					"callee": "this.getOpenAIOAuthFlowOptions",
+					"lineNumber": 421
+				},
+				{
+					"caller": "stopOpenAIOAuthLoopback",
+					"callee": "this.openAIOAuthLoopback.stop",
+					"lineNumber": 426
+				},
+				{
+					"caller": "disconnectOpenAIOAuth",
+					"callee": "this.getAuthStorage",
+					"lineNumber": 432
+				},
+				{
+					"caller": "disconnectOpenAIOAuth",
+					"callee": "authStorage.reload",
+					"lineNumber": 433
+				},
+				{
+					"caller": "disconnectOpenAIOAuth",
+					"callee": "authStorage.get",
+					"lineNumber": 436
+				},
+				{
+					"caller": "disconnectOpenAIOAuth",
+					"callee": "clearCredentialForProvider",
+					"lineNumber": 441
+				},
+				{
+					"caller": "disconnectOpenAIOAuth",
+					"callee": "restoreApiKeyAfterOAuthDisconnect",
+					"lineNumber": 442
+				},
+				{
+					"caller": "disconnectOpenAIOAuth",
+					"callee": "removedProviderIds.push",
+					"lineNumber": 443
+				},
+				{
+					"caller": "disconnectOpenAIOAuth",
+					"callee": "this.logAuthResolution",
+					"lineNumber": 445
+				},
+				{
+					"caller": "completeOpenAIOAuth",
+					"callee": "backupApiKeyBeforeOAuth",
+					"lineNumber": 457
+				},
+				{
+					"caller": "completeOpenAIOAuth",
+					"callee": "this.getAuthStorage",
+					"lineNumber": 457
+				},
+				{
+					"caller": "completeOpenAIOAuth",
+					"callee": "this.oauthFlowController.complete",
+					"lineNumber": 460
+				},
+				{
+					"caller": "completeOpenAIOAuth",
+					"callee": "this.getOpenAIOAuthFlowOptions",
+					"lineNumber": 461
+				},
+				{
+					"caller": "completeOpenAIOAuth",
+					"callee": "this.stopOpenAIOAuthLoopback",
+					"lineNumber": 465
+				},
+				{
+					"caller": "setAnthropicApiKey",
+					"callee": "setApiKeyForProvider",
+					"lineNumber": 474
+				},
+				{
+					"caller": "setAnthropicApiKey",
+					"callee": "this.getAuthStorage",
+					"lineNumber": 475
+				},
+				{
+					"caller": "setAnthropicApiKey",
+					"callee": "getAnthropicEnvConfigFromDisk",
+					"lineNumber": 480
+				},
+				{
+					"caller": "setAnthropicApiKey",
+					"callee": "this.applyAnthropicRuntimeEnv",
+					"lineNumber": 483
+				},
+				{
+					"caller": "setAnthropicApiKey",
+					"callee": "stripAnthropicCredentialEnvVariables",
+					"lineNumber": 484
+				},
+				{
+					"caller": "clearAnthropicApiKey",
+					"callee": "clearApiKeyForProvider",
+					"lineNumber": 490
+				},
+				{
+					"caller": "clearAnthropicApiKey",
+					"callee": "this.getAuthStorage",
+					"lineNumber": 490
+				},
+				{
+					"caller": "clearAnthropicApiKey",
+					"callee": "getAnthropicEnvConfigFromDisk",
+					"lineNumber": 491
+				},
+				{
+					"caller": "clearAnthropicApiKey",
+					"callee": "this.applyAnthropicRuntimeEnv",
+					"lineNumber": 494
+				},
+				{
+					"caller": "clearAnthropicApiKey",
+					"callee": "stripAnthropicCredentialEnvVariables",
+					"lineNumber": 495
+				},
+				{
+					"caller": "getAnthropicEnvConfig",
+					"callee": "getAnthropicEnvConfigFromDisk",
+					"lineNumber": 504
+				},
+				{
+					"caller": "setAnthropicEnvConfig",
+					"callee": "parseAnthropicEnvText",
+					"lineNumber": 512
+				},
+				{
+					"caller": "setAnthropicEnvConfig",
+					"callee": "setAnthropicEnvConfigOnDisk",
+					"lineNumber": 514
+				},
+				{
+					"caller": "setAnthropicEnvConfig",
+					"callee": "this.clearStoredAnthropicOAuthCredential",
+					"lineNumber": 522
+				},
+				{
+					"caller": "setAnthropicEnvConfig",
+					"callee": "this.setStoredAnthropicApiKeyFromEnvVariables",
+					"lineNumber": 523
+				},
+				{
+					"caller": "setAnthropicEnvConfig",
+					"callee": "this.applyAnthropicRuntimeEnv",
+					"lineNumber": 524
+				},
+				{
+					"caller": "setAnthropicEnvConfig",
+					"callee": "stripAnthropicCredentialEnvVariables",
+					"lineNumber": 525
+				},
+				{
+					"caller": "clearAnthropicEnvConfig",
+					"callee": "clearAnthropicEnvConfigOnDisk",
+					"lineNumber": 531
+				},
+				{
+					"caller": "clearAnthropicEnvConfig",
+					"callee": "clearApiKeyForProvider",
+					"lineNumber": 534
+				},
+				{
+					"caller": "clearAnthropicEnvConfig",
+					"callee": "this.getAuthStorage",
+					"lineNumber": 534
+				},
+				{
+					"caller": "clearAnthropicEnvConfig",
+					"callee": "this.applyAnthropicRuntimeEnv",
+					"lineNumber": 535
+				},
+				{
+					"caller": "startAnthropicOAuth",
+					"callee": "this.oauthFlowController.start",
+					"lineNumber": 540
+				},
+				{
+					"caller": "startAnthropicOAuth",
+					"callee": "this.getAnthropicOAuthFlowOptions",
+					"lineNumber": 540
+				},
+				{
+					"caller": "cancelAnthropicOAuth",
+					"callee": "this.oauthFlowController.cancel",
+					"lineNumber": 544
+				},
+				{
+					"caller": "cancelAnthropicOAuth",
+					"callee": "this.getAnthropicOAuthFlowOptions",
+					"lineNumber": 544
+				},
+				{
+					"caller": "disconnectAnthropicOAuth",
+					"callee": "this.getAuthStorage",
+					"lineNumber": 548
+				},
+				{
+					"caller": "disconnectAnthropicOAuth",
+					"callee": "authStorage.reload",
+					"lineNumber": 549
+				},
+				{
+					"caller": "disconnectAnthropicOAuth",
+					"callee": "authStorage.get",
+					"lineNumber": 550
+				},
+				{
+					"caller": "disconnectAnthropicOAuth",
+					"callee": "clearCredentialForProvider",
+					"lineNumber": 552
+				},
+				{
+					"caller": "disconnectAnthropicOAuth",
+					"callee": "restoreApiKeyAfterOAuthDisconnect",
+					"lineNumber": 554
+				},
+				{
+					"caller": "disconnectAnthropicOAuth",
+					"callee": "getAnthropicEnvConfigFromDisk",
+					"lineNumber": 558
+				},
+				{
+					"caller": "disconnectAnthropicOAuth",
+					"callee": "this.setStoredAnthropicApiKeyFromEnvVariables",
+					"lineNumber": 561
+				},
+				{
+					"caller": "disconnectAnthropicOAuth",
+					"callee": "this.applyAnthropicRuntimeEnv",
+					"lineNumber": 562
+				},
+				{
+					"caller": "disconnectAnthropicOAuth",
+					"callee": "stripAnthropicCredentialEnvVariables",
+					"lineNumber": 563
+				},
+				{
+					"caller": "disconnectAnthropicOAuth",
+					"callee": "this.logAuthResolution",
+					"lineNumber": 566
+				},
+				{
+					"caller": "completeAnthropicOAuth",
+					"callee": "backupApiKeyBeforeOAuth",
+					"lineNumber": 578
+				},
+				{
+					"caller": "completeAnthropicOAuth",
+					"callee": "this.getAuthStorage",
+					"lineNumber": 578
+				},
+				{
+					"caller": "completeAnthropicOAuth",
+					"callee": "this.oauthFlowController.complete",
+					"lineNumber": 579
+				},
+				{
+					"caller": "completeAnthropicOAuth",
+					"callee": "this.getAnthropicOAuthFlowOptions",
+					"lineNumber": 580
+				},
+				{
+					"caller": "getAuthStorage",
+					"callee": "createAuthStorage",
+					"lineNumber": 620
+				},
+				{
+					"caller": "clearStoredAnthropicOAuthCredential",
+					"callee": "this.getAuthStorage",
+					"lineNumber": 626
+				},
+				{
+					"caller": "clearStoredAnthropicOAuthCredential",
+					"callee": "authStorage.reload",
+					"lineNumber": 627
+				},
+				{
+					"caller": "clearStoredAnthropicOAuthCredential",
+					"callee": "authStorage.get",
+					"lineNumber": 628
+				},
+				{
+					"caller": "clearStoredAnthropicOAuthCredential",
+					"callee": "authStorage.remove",
+					"lineNumber": 630
+				},
+				{
+					"caller": "setStoredAnthropicApiKeyFromEnvVariables",
+					"callee": "rawApiKey?.trim",
+					"lineNumber": 638
+				},
+				{
+					"caller": "setStoredAnthropicApiKeyFromEnvVariables",
+					"callee": "this.getAuthStorage",
+					"lineNumber": 641
+				},
+				{
+					"caller": "setStoredAnthropicApiKeyFromEnvVariables",
+					"callee": "authStorage.reload",
+					"lineNumber": 642
+				},
+				{
+					"caller": "setStoredAnthropicApiKeyFromEnvVariables",
+					"callee": "authStorage.setStoredApiKey",
+					"lineNumber": 643
+				},
+				{
+					"caller": "applyAnthropicRuntimeEnv",
+					"callee": "buildAnthropicRuntimeEnv",
+					"lineNumber": 647
+				},
+				{
+					"caller": "applyAnthropicRuntimeEnv",
+					"callee": "applyAnthropicRuntimeEnvToProcess",
+					"lineNumber": 648
+				},
+				{
+					"caller": "logAuthResolution",
+					"callee": "console.info",
+					"lineNumber": 662
+				}
+			],
+			"metrics": {
+				"importCount": 8,
+				"exportCount": 1,
+				"functionCount": 2,
+				"classCount": 1
+			}
+		},
+		{
+			"path": "packages/chat/src/server/desktop/chat-service/oauth-flow-controller.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 238,
+			"nonEmptyLines": 217,
+			"classes": [
+				{
+					"name": "OAuthFlowController",
+					"startLine": 46,
+					"endLine": 238,
+					"methods": ["constructor", "start", "complete", "cancel", "clear"],
+					"properties": ["sessions"]
+				}
+			],
+			"exports": [
+				{
+					"name": "OAuthFlowController",
+					"line": 46,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "start",
+					"callee": "options.onStartRequested",
+					"lineNumber": 54
+				},
+				{
+					"caller": "start",
+					"callee": "this.clear",
+					"lineNumber": 55
+				},
+				{
+					"caller": "start",
+					"callee": "this.getAuthStorage",
+					"lineNumber": 57
+				},
+				{
+					"caller": "start",
+					"callee": "authStorage.reload",
+					"lineNumber": 58
+				},
+				{
+					"caller": "start",
+					"callee": "Date.now",
+					"lineNumber": 77
+				},
+				{
+					"caller": "start",
+					"callee": "resolveManualCode",
+					"lineNumber": 80
+				},
+				{
+					"caller": "start",
+					"callee": "rejectManualCode",
+					"lineNumber": 90
+				},
+				{
+					"caller": "start",
+					"callee": "Promise.resolve",
+					"lineNumber": 94
+				},
+				{
+					"caller": "start",
+					"callee": "this.sessions.set",
+					"lineNumber": 97
+				},
+				{
+					"caller": "start",
+					"callee": "options.onAuthInfo",
+					"lineNumber": 101
+				},
+				{
+					"caller": "start",
+					"callee": "resolveAuthInfo",
+					"lineNumber": 102
+				},
+				{
+					"caller": "start",
+					"callee": "options.onPromptRequested",
+					"lineNumber": 108
+				},
+				{
+					"caller": "start",
+					"callee": "options.onManualCodeInputRequested",
+					"lineNumber": 116
+				},
+				{
+					"caller": "start",
+					"callee": "authStorage\n\t\t\t.login(options.providerId, callbacks)\n\t\t\t.catch",
+					"lineNumber": 121
+				},
+				{
+					"caller": "start",
+					"callee": "authStorage\n\t\t\t.login",
+					"lineNumber": 121
+				},
+				{
+					"caller": "start",
+					"callee": "error.message.trim",
+					"lineNumber": 125
+				},
+				{
+					"caller": "start",
+					"callee": "options.onLoginFailed",
+					"lineNumber": 130
+				},
+				{
+					"caller": "start",
+					"callee": "rejectAuthInfo",
+					"lineNumber": 131
+				},
+				{
+					"caller": "start",
+					"callee": "Promise.race",
+					"lineNumber": 139
+				},
+				{
+					"caller": "start",
+					"callee": "setTimeout",
+					"lineNumber": 142
+				},
+				{
+					"caller": "start",
+					"callee": "reject",
+					"lineNumber": 143
+				},
+				{
+					"caller": "start",
+					"callee": "options.onAuthUrlTimeoutOrError",
+					"lineNumber": 152
+				},
+				{
+					"caller": "start",
+					"callee": "String",
+					"lineNumber": 153
+				},
+				{
+					"caller": "start",
+					"callee": "this.clear",
+					"lineNumber": 155
+				},
+				{
+					"caller": "start",
+					"callee": "options.onAuthUrlReturned",
+					"lineNumber": 159
+				},
+				{
+					"caller": "complete",
+					"callee": "this.sessions.get",
+					"lineNumber": 170
+				},
+				{
+					"caller": "complete",
+					"callee": "Date.now",
+					"lineNumber": 177
+				},
+				{
+					"caller": "complete",
+					"callee": "this.clear",
+					"lineNumber": 179
+				},
+				{
+					"caller": "complete",
+					"callee": "rawCode?.trim",
+					"lineNumber": 183
+				},
+				{
+					"caller": "complete",
+					"callee": "options.onCompleteWithManualInput",
+					"lineNumber": 185
+				},
+				{
+					"caller": "complete",
+					"callee": "session.resolveManualCode",
+					"lineNumber": 186
+				},
+				{
+					"caller": "complete",
+					"callee": "options.onCompleteWithoutManualInput",
+					"lineNumber": 188
+				},
+				{
+					"caller": "complete",
+					"callee": "options.onLoginSettled",
+					"lineNumber": 193
+				},
+				{
+					"caller": "complete",
+					"callee": "Boolean",
+					"lineNumber": 193
+				},
+				{
+					"caller": "complete",
+					"callee": "this.clear",
+					"lineNumber": 194
+				},
+				{
+					"caller": "complete",
+					"callee": "this.getAuthStorage",
+					"lineNumber": 199
+				},
+				{
+					"caller": "complete",
+					"callee": "authStorage.reload",
+					"lineNumber": 200
+				},
+				{
+					"caller": "complete",
+					"callee": "authStorage.get",
+					"lineNumber": 201
+				},
+				{
+					"caller": "complete",
+					"callee": "options.onMissingOAuthCredential",
+					"lineNumber": 203
+				},
+				{
+					"caller": "complete",
+					"callee": "options.onCompleteSuccess",
+					"lineNumber": 208
+				},
+				{
+					"caller": "cancel",
+					"callee": "this.sessions.get",
+					"lineNumber": 213
+				},
+				{
+					"caller": "cancel",
+					"callee": "options.onCancelWithActiveSession",
+					"lineNumber": 215
+				},
+				{
+					"caller": "cancel",
+					"callee": "session.abortController.abort",
+					"lineNumber": 216
+				},
+				{
+					"caller": "cancel",
+					"callee": "session.rejectManualCode",
+					"lineNumber": 217
+				},
+				{
+					"caller": "cancel",
+					"callee": "options.onCancelWithoutSession",
+					"lineNumber": 221
+				},
+				{
+					"caller": "cancel",
+					"callee": "this.sessions.delete",
+					"lineNumber": 223
+				},
+				{
+					"caller": "clear",
+					"callee": "this.sessions.get",
+					"lineNumber": 228
+				},
+				{
+					"caller": "clear",
+					"callee": "options.onSessionCleared",
+					"lineNumber": 231
+				},
+				{
+					"caller": "clear",
+					"callee": "session.abortController.abort",
+					"lineNumber": 232
+				},
+				{
+					"caller": "clear",
+					"callee": "session.rejectManualCode",
+					"lineNumber": 233
+				},
+				{
+					"caller": "clear",
+					"callee": "this.sessions.delete",
+					"lineNumber": 236
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 1
+			}
+		},
+		{
+			"path": "packages/chat/src/server/desktop/chat-service/openai-oauth-loopback.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 162,
+			"nonEmptyLines": 149,
+			"functions": [
+				{
+					"name": "parseLoopbackTargetFromAuthUrl",
+					"startLine": 17,
+					"endLine": 41,
+					"params": ["authUrl"]
+				},
+				{
+					"name": "escapeHtml",
+					"startLine": 108,
+					"endLine": 115,
+					"params": ["input"]
+				},
+				{
+					"name": "renderErrorPage",
+					"startLine": 147,
+					"endLine": 162,
+					"params": ["message"]
+				}
+			],
+			"classes": [
+				{
+					"name": "OpenAIOAuthLoopback",
+					"startLine": 43,
+					"endLine": 106,
+					"methods": ["start", "stop"],
+					"properties": ["server"]
+				}
+			],
+			"exports": [
+				{
+					"name": "parseLoopbackTargetFromAuthUrl",
+					"line": 17,
+					"isDefault": false
+				},
+				{
+					"name": "OpenAIOAuthLoopback",
+					"line": 43,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "parseLoopbackTargetFromAuthUrl",
+					"callee": "parsed.searchParams.get",
+					"lineNumber": 22
+				},
+				{
+					"caller": "parseLoopbackTargetFromAuthUrl",
+					"callee": "rawHostname.startsWith",
+					"lineNumber": 29
+				},
+				{
+					"caller": "parseLoopbackTargetFromAuthUrl",
+					"callee": "rawHostname.endsWith",
+					"lineNumber": 29
+				},
+				{
+					"caller": "parseLoopbackTargetFromAuthUrl",
+					"callee": "rawHostname.slice",
+					"lineNumber": 30
+				},
+				{
+					"caller": "parseLoopbackTargetFromAuthUrl",
+					"callee": "Number",
+					"lineNumber": 35
+				},
+				{
+					"caller": "parseLoopbackTargetFromAuthUrl",
+					"callee": "Number.isFinite",
+					"lineNumber": 36
+				},
+				{
+					"caller": "start",
+					"callee": "options.host.includes",
+					"lineNumber": 50
+				},
+				{
+					"caller": "start",
+					"callee": "createServer",
+					"lineNumber": 53
+				},
+				{
+					"caller": "start",
+					"callee": "res.writeHead",
+					"lineNumber": 60
+				},
+				{
+					"caller": "start",
+					"callee": "res.end",
+					"lineNumber": 61
+				},
+				{
+					"caller": "start",
+					"callee": "requestUrl.searchParams.get",
+					"lineNumber": 65
+				},
+				{
+					"caller": "start",
+					"callee": "requestUrl.searchParams.get",
+					"lineNumber": 66
+				},
+				{
+					"caller": "start",
+					"callee": "res.writeHead",
+					"lineNumber": 69
+				},
+				{
+					"caller": "start",
+					"callee": "res.end",
+					"lineNumber": 70
+				},
+				{
+					"caller": "start",
+					"callee": "renderErrorPage",
+					"lineNumber": 70
+				},
+				{
+					"caller": "start",
+					"callee": "options.onError",
+					"lineNumber": 71
+				},
+				{
+					"caller": "start",
+					"callee": "res.writeHead",
+					"lineNumber": 75
+				},
+				{
+					"caller": "start",
+					"callee": "res.end",
+					"lineNumber": 76
+				},
+				{
+					"caller": "start",
+					"callee": "options.onCallback",
+					"lineNumber": 77
+				},
+				{
+					"caller": "start",
+					"callee": "requestUrl.toString",
+					"lineNumber": 77
+				},
+				{
+					"caller": "start",
+					"callee": "String",
+					"lineNumber": 79
+				},
+				{
+					"caller": "start",
+					"callee": "res.writeHead",
+					"lineNumber": 81
+				},
+				{
+					"caller": "start",
+					"callee": "res.end",
+					"lineNumber": 82
+				},
+				{
+					"caller": "start",
+					"callee": "options.onError",
+					"lineNumber": 86
+				},
+				{
+					"caller": "onListenError",
+					"callee": "reject",
+					"lineNumber": 90
+				},
+				{
+					"caller": "start",
+					"callee": "server.once",
+					"lineNumber": 91
+				},
+				{
+					"caller": "start",
+					"callee": "server.listen",
+					"lineNumber": 92
+				},
+				{
+					"caller": "start",
+					"callee": "server.off",
+					"lineNumber": 93
+				},
+				{
+					"caller": "start",
+					"callee": "resolve",
+					"lineNumber": 95
+				},
+				{
+					"caller": "stop",
+					"callee": "this.server.close",
+					"lineNumber": 102
+				},
+				{
+					"caller": "escapeHtml",
+					"callee": "input\n\t\t.replace(/&/g, \"&amp;\")\n\t\t.replace(/</g, \"&lt;\")\n\t\t.replace(/>/g, \"&gt;\")\n\t\t.replace(/\"/g, \"&quot;\")\n\t\t.replace",
+					"lineNumber": 109
+				},
+				{
+					"caller": "escapeHtml",
+					"callee": "input\n\t\t.replace(/&/g, \"&amp;\")\n\t\t.replace(/</g, \"&lt;\")\n\t\t.replace(/>/g, \"&gt;\")\n\t\t.replace",
+					"lineNumber": 109
+				},
+				{
+					"caller": "escapeHtml",
+					"callee": "input\n\t\t.replace(/&/g, \"&amp;\")\n\t\t.replace(/</g, \"&lt;\")\n\t\t.replace",
+					"lineNumber": 109
+				},
+				{
+					"caller": "escapeHtml",
+					"callee": "input\n\t\t.replace(/&/g, \"&amp;\")\n\t\t.replace",
+					"lineNumber": 109
+				},
+				{
+					"caller": "escapeHtml",
+					"callee": "input\n\t\t.replace",
+					"lineNumber": 109
+				},
+				{
+					"caller": "renderErrorPage",
+					"callee": "escapeHtml",
+					"lineNumber": 158
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 2,
+				"functionCount": 3,
+				"classCount": 1
+			}
+		}
+	]
+}

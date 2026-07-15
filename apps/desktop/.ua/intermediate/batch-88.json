@@ -1,0 +1,152 @@
+{
+	"nodes": [
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarDeleteDialog/DashboardSidebarDeleteDialog.tsx",
+			"type": "file",
+			"name": "DashboardSidebarDeleteDialog.tsx",
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarDeleteDialog/DashboardSidebarDeleteDialog.tsx",
+			"language": "typescript",
+			"summary": "Dialog component for confirming workspace deletion with state management for destroy operations",
+			"tags": ["component", "dialog", "delete", "workspace"],
+			"metrics": {
+				"totalLines": 74,
+				"nonEmptyLines": 69,
+				"importCount": 3,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarDeleteDialog/DashboardSidebarDeleteDialog.tsx:DashboardSidebarDeleteDialog",
+			"type": "function",
+			"name": "DashboardSidebarDeleteDialog",
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarDeleteDialog/DashboardSidebarDeleteDialog.tsx",
+			"summary": "React component rendering workspace deletion dialog with confirm and failed panes, managing state via useDestroyDialogState hook",
+			"tags": ["react-component", "dialog", "workspace-deletion"],
+			"signature": "DashboardSidebarDeleteDialog({\n\tworkspaceId,\n\tworkspaceName,\n\topen,\n\tonOpenChange,\n\tonDeleted,\n})",
+			"startLine": 20,
+			"endLine": 74
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarDeleteDialog/components/DestroyConfirmPane/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarDeleteDialog/components/DestroyConfirmPane/index.ts",
+			"language": "typescript",
+			"summary": "Barrel export for DestroyConfirmPane component",
+			"tags": ["barrel-export", "component"],
+			"metrics": {
+				"totalLines": 1,
+				"nonEmptyLines": 1,
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarDeleteDialog/components/TeardownFailedPane/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarDeleteDialog/components/TeardownFailedPane/index.ts",
+			"language": "typescript",
+			"summary": "Barrel export for TeardownFailedPane component",
+			"tags": ["barrel-export", "component"],
+			"metrics": {
+				"totalLines": 1,
+				"nonEmptyLines": 1,
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarDeleteDialog/hooks/useDestroyDialogState/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarDeleteDialog/hooks/useDestroyDialogState/index.ts",
+			"language": "typescript",
+			"summary": "Barrel export for useDestroyDialogState hook managing dialog state",
+			"tags": ["barrel-export", "hook"],
+			"metrics": {
+				"totalLines": 1,
+				"nonEmptyLines": 1,
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		}
+	],
+	"edges": [
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarDeleteDialog/DashboardSidebarDeleteDialog.tsx",
+			"target": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarDeleteDialog/components/DestroyConfirmPane/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarDeleteDialog/DashboardSidebarDeleteDialog.tsx",
+			"target": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarDeleteDialog/components/TeardownFailedPane/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarDeleteDialog/DashboardSidebarDeleteDialog.tsx",
+			"target": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarDeleteDialog/hooks/useDestroyDialogState/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarDeleteDialog/DashboardSidebarDeleteDialog.tsx",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarDeleteDialog/DashboardSidebarDeleteDialog.tsx:DashboardSidebarDeleteDialog",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"source": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarDeleteDialog/DashboardSidebarDeleteDialog.tsx:DashboardSidebarDeleteDialog",
+			"target": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarDeleteDialog/hooks/useDestroyDialogState/index.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"metadata": {
+				"callee": "useDestroyDialogState",
+				"lineNumber": 37
+			}
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarDeleteDialog/DashboardSidebarDeleteDialog.tsx",
+			"target": "function:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarDeleteDialog/DashboardSidebarDeleteDialog.tsx:DashboardSidebarDeleteDialog",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarDeleteDialog/components/DestroyConfirmPane/index.ts",
+			"target": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarDeleteDialog/components/DestroyConfirmPane/index.ts",
+			"type": "exports",
+			"weight": 0.8,
+			"metadata": {
+				"exportName": "DestroyConfirmPane"
+			}
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarDeleteDialog/components/TeardownFailedPane/index.ts",
+			"target": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarDeleteDialog/components/TeardownFailedPane/index.ts",
+			"type": "exports",
+			"weight": 0.8,
+			"metadata": {
+				"exportName": "TeardownFailedPane"
+			}
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarDeleteDialog/hooks/useDestroyDialogState/index.ts",
+			"target": "file:src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarDeleteDialog/hooks/useDestroyDialogState/index.ts",
+			"type": "exports",
+			"weight": 0.8,
+			"metadata": {
+				"exportName": "useDestroyDialogState"
+			}
+		}
+	]
+}

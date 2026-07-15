@@ -1,0 +1,2815 @@
+{
+	"scriptCompleted": true,
+	"filesAnalyzed": 31,
+	"filesSkipped": [],
+	"results": [
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffAnnotations/useDiffAnnotations.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 135,
+			"nonEmptyLines": 121,
+			"functions": [
+				{
+					"name": "parseTimestamp",
+					"startLine": 47,
+					"endLine": 51,
+					"params": ["value"]
+				},
+				{
+					"name": "useDiffAnnotationsByPath",
+					"startLine": 53,
+					"endLine": 135,
+					"params": ["{\n\tworkspaceId,\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "useDiffAnnotationsByPath",
+					"line": 53,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "parseTimestamp",
+					"callee": "new Date(value).getTime",
+					"lineNumber": 49
+				},
+				{
+					"caller": "parseTimestamp",
+					"callee": "Number.isNaN",
+					"lineNumber": 50
+				},
+				{
+					"caller": "useDiffAnnotationsByPath",
+					"callee": "useSettings",
+					"lineNumber": 59
+				},
+				{
+					"caller": "useDiffAnnotationsByPath",
+					"callee": "workspaceTrpc.git.getPullRequest.useQuery",
+					"lineNumber": 60
+				},
+				{
+					"caller": "useDiffAnnotationsByPath",
+					"callee": "workspaceTrpc.git.getPullRequestThreads.useQuery",
+					"lineNumber": 70
+				},
+				{
+					"caller": "useDiffAnnotationsByPath",
+					"callee": "useMemo",
+					"lineNumber": 81
+				},
+				{
+					"caller": "useDiffAnnotationsByPath",
+					"callee": "annotationsByPath.get",
+					"lineNumber": 108
+				},
+				{
+					"caller": "useDiffAnnotationsByPath",
+					"callee": "annotations.push",
+					"lineNumber": 109
+				},
+				{
+					"caller": "useDiffAnnotationsByPath",
+					"callee": "thread.comments.map",
+					"lineNumber": 118
+				},
+				{
+					"caller": "useDiffAnnotationsByPath",
+					"callee": "parseTimestamp",
+					"lineNumber": 119
+				},
+				{
+					"caller": "useDiffAnnotationsByPath",
+					"callee": "annotationsByPath.set",
+					"lineNumber": 130
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewItems/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "useDiffCodeViewItems",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewItems/useDiffCodeViewItems.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 301,
+			"nonEmptyLines": 281,
+			"functions": [
+				{
+					"name": "useDiffCodeViewItems",
+					"startLine": 44,
+					"endLine": 205,
+					"params": [
+						"{\n\tworkspaceId,\n\tfiles,\n\tcollapsedSet,\n\tannotationsByPath,\n\textraAnnotationsByItemId,\n}"
+					]
+				},
+				{
+					"name": "createGetDiffInput",
+					"startLine": 207,
+					"endLine": 234,
+					"params": ["workspaceId", "file"]
+				},
+				{
+					"name": "getDiffItemId",
+					"startLine": 236,
+					"endLine": 238,
+					"params": ["file"]
+				},
+				{
+					"name": "getAnnotationsForFile",
+					"startLine": 240,
+					"endLine": 254,
+					"params": ["annotationsByPath", "file"]
+				},
+				{
+					"name": "getAnnotationsVersion",
+					"startLine": 256,
+					"endLine": 292,
+					"params": ["annotations"]
+				},
+				{
+					"name": "hashString",
+					"startLine": 294,
+					"endLine": 301,
+					"params": ["value"]
+				}
+			],
+			"exports": [
+				{
+					"name": "useDiffCodeViewItems",
+					"line": 44,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "useDiffCodeViewItems",
+					"callee": "useWorkspaceClient",
+					"lineNumber": 51
+				},
+				{
+					"caller": "useDiffCodeViewItems",
+					"callee": "useMemo",
+					"lineNumber": 53
+				},
+				{
+					"caller": "useDiffCodeViewItems",
+					"callee": "files\n\t\t\t\t.filter((file) => !file.isBinary)\n\t\t\t\t.map",
+					"lineNumber": 55
+				},
+				{
+					"caller": "useDiffCodeViewItems",
+					"callee": "files\n\t\t\t\t.filter",
+					"lineNumber": 55
+				},
+				{
+					"caller": "useDiffCodeViewItems",
+					"callee": "createGetDiffInput",
+					"lineNumber": 59
+				},
+				{
+					"caller": "useDiffCodeViewItems",
+					"callee": "useQueries",
+					"lineNumber": 64
+				},
+				{
+					"caller": "useDiffCodeViewItems",
+					"callee": "diffRequests.map",
+					"lineNumber": 65
+				},
+				{
+					"caller": "useDiffCodeViewItems",
+					"callee": "getQueryKey",
+					"lineNumber": 66
+				},
+				{
+					"caller": "useDiffCodeViewItems",
+					"callee": "trpcClient.git.getDiff.query",
+					"lineNumber": 67
+				},
+				{
+					"caller": "useDiffCodeViewItems",
+					"callee": "useMemo",
+					"lineNumber": 72
+				},
+				{
+					"caller": "useDiffCodeViewItems",
+					"callee": "map.set",
+					"lineNumber": 75
+				},
+				{
+					"caller": "useDiffCodeViewItems",
+					"callee": "getDiffItemId",
+					"lineNumber": 75
+				},
+				{
+					"caller": "useDiffCodeViewItems",
+					"callee": "useMemo",
+					"lineNumber": 80
+				},
+				{
+					"caller": "useDiffCodeViewItems",
+					"callee": "diffRequests.map",
+					"lineNumber": 83
+				},
+				{
+					"caller": "useDiffCodeViewItems",
+					"callee": "getDiffItemId",
+					"lineNumber": 84
+				},
+				{
+					"caller": "useDiffCodeViewItems",
+					"callee": "getDiffItemId",
+					"lineNumber": 90
+				},
+				{
+					"caller": "useDiffCodeViewItems",
+					"callee": "collapsedSet.has",
+					"lineNumber": 91
+				},
+				{
+					"caller": "useDiffCodeViewItems",
+					"callee": "getChangesetFileKey",
+					"lineNumber": 91
+				},
+				{
+					"caller": "useDiffCodeViewItems",
+					"callee": "(\n\t\t\t\t\tgetAnnotationsForFile(annotationsByPath, file) ?? []\n\t\t\t\t).map",
+					"lineNumber": 97
+				},
+				{
+					"caller": "useDiffCodeViewItems",
+					"callee": "getAnnotationsForFile",
+					"lineNumber": 98
+				},
+				{
+					"caller": "useDiffCodeViewItems",
+					"callee": "nextItems.push",
+					"lineNumber": 122
+				},
+				{
+					"caller": "useDiffCodeViewItems",
+					"callee": "hashString",
+					"lineNumber": 131
+				},
+				{
+					"caller": "useDiffCodeViewItems",
+					"callee": "[\n\t\t\t\t\t\t\tfile.path,\n\t\t\t\t\t\t\tfile.oldPath ?? \"\",\n\t\t\t\t\t\t\tfile.status,\n\t\t\t\t\t\t\tfile.additions,\n\t\t\t\t\t\t\tfile.deletions,\n\t\t\t\t\t\t\t\"binary\",\n\t\t\t\t\t\t\tcollapsed ? \"1\" : \"0\",\n\t\t\t\t\t\t\tgetAnnotationsVersion(annotations),\n\t\t\t\t\t\t].join",
+					"lineNumber": 132
+				},
+				{
+					"caller": "useDiffCodeViewItems",
+					"callee": "getAnnotationsVersion",
+					"lineNumber": 140
+				},
+				{
+					"caller": "useDiffCodeViewItems",
+					"callee": "queryByItemId.get",
+					"lineNumber": 147
+				},
+				{
+					"caller": "useDiffCodeViewItems",
+					"callee": "getAnnotationsForFile",
+					"lineNumber": 150
+				},
+				{
+					"caller": "useDiffCodeViewItems",
+					"callee": "extraAnnotationsByItemId?.get",
+					"lineNumber": 151
+				},
+				{
+					"caller": "useDiffCodeViewItems",
+					"callee": "parseDiffFromFile",
+					"lineNumber": 156
+				},
+				{
+					"caller": "useDiffCodeViewItems",
+					"callee": "hashString",
+					"lineNumber": 166
+				},
+				{
+					"caller": "useDiffCodeViewItems",
+					"callee": "[\n\t\t\t\t\tquery.dataUpdatedAt,\n\t\t\t\t\tfile.path,\n\t\t\t\t\tfile.oldPath ?? \"\",\n\t\t\t\t\tfile.status,\n\t\t\t\t\tfile.additions,\n\t\t\t\t\tfile.deletions,\n\t\t\t\t\tcollapsed ? \"1\" : \"0\",\n\t\t\t\t\tgetAnnotationsVersion(annotations),\n\t\t\t\t].join",
+					"lineNumber": 167
+				},
+				{
+					"caller": "useDiffCodeViewItems",
+					"callee": "getAnnotationsVersion",
+					"lineNumber": 175
+				},
+				{
+					"caller": "useDiffCodeViewItems",
+					"callee": "nextItems.push",
+					"lineNumber": 179
+				},
+				{
+					"caller": "useDiffCodeViewItems",
+					"callee": "diffQueries.some",
+					"lineNumber": 202
+				},
+				{
+					"caller": "useDiffCodeViewItems",
+					"callee": "diffQueries.some",
+					"lineNumber": 203
+				},
+				{
+					"caller": "getDiffItemId",
+					"callee": "getChangesetFileKey",
+					"lineNumber": 237
+				},
+				{
+					"caller": "getAnnotationsForFile",
+					"callee": "annotationsByPath.get",
+					"lineNumber": 247
+				},
+				{
+					"caller": "getAnnotationsForFile",
+					"callee": "annotationsByPath.get",
+					"lineNumber": 250
+				},
+				{
+					"caller": "getAnnotationsVersion",
+					"callee": "annotations\n\t\t.map((annotation) => {\n\t\t\tconst m = annotation.metadata;\n\t\t\tconst side = \"side\" in annotation ? annotation.side : \"file\";\n\t\t\tif (m.kind === \"composer\") {\n\t\t\t\treturn [\n\t\t\t\t\t\"c\",\n\t\t\t\t\tside,\n\t\t\t\t\tannotation.lineNumber,\n\t\t\t\t\tm.startLine,\n\t\t\t\t\tm.endLine,\n\t\t\t\t\tm.startSide,\n\t\t\t\t\tm.endSide,\n\t\t\t\t].join(\",\");\n\t\t\t}\n\t\t\tif (m.kind !== \"thread\") return \"local\";\n\t\t\treturn [\n\t\t\t\t\"t\",\n\t\t\t\tside,\n\t\t\t\tannotation.lineNumber,\n\t\t\t\tm.threadId,\n\t\t\t\tm.isResolved ? \"1\" : \"0\",\n\t\t\t\tm.isOutdated ? \"1\" : \"0\",\n\t\t\t\tm.comments.length,\n\t\t\t].join(\",\");\n\t\t})\n\t\t.join",
+					"lineNumber": 265
+				},
+				{
+					"caller": "getAnnotationsVersion",
+					"callee": "annotations\n\t\t.map",
+					"lineNumber": 265
+				},
+				{
+					"caller": "getAnnotationsVersion",
+					"callee": "[\n\t\t\t\t\t\"c\",\n\t\t\t\t\tside,\n\t\t\t\t\tannotation.lineNumber,\n\t\t\t\t\tm.startLine,\n\t\t\t\t\tm.endLine,\n\t\t\t\t\tm.startSide,\n\t\t\t\t\tm.endSide,\n\t\t\t\t].join",
+					"lineNumber": 270
+				},
+				{
+					"caller": "getAnnotationsVersion",
+					"callee": "[\n\t\t\t\t\"t\",\n\t\t\t\tside,\n\t\t\t\tannotation.lineNumber,\n\t\t\t\tm.threadId,\n\t\t\t\tm.isResolved ? \"1\" : \"0\",\n\t\t\t\tm.isOutdated ? \"1\" : \"0\",\n\t\t\t\tm.comments.length,\n\t\t\t].join",
+					"lineNumber": 281
+				},
+				{
+					"caller": "hashString",
+					"callee": "value.charCodeAt",
+					"lineNumber": 297
+				},
+				{
+					"caller": "hashString",
+					"callee": "Math.imul",
+					"lineNumber": 298
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 1,
+				"functionCount": 6,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewScroll/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "useDiffCodeViewScroll",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewScroll/useDiffCodeViewScroll.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 104,
+			"nonEmptyLines": 96,
+			"functions": [
+				{
+					"name": "useDiffCodeViewScroll",
+					"startLine": 24,
+					"endLine": 104,
+					"params": [
+						"{\n\tcodeViewRef,\n\tdata,\n\tfileByItemId,\n\titems,\n\tcollapsedSet,\n\tsetCollapsed,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "useDiffCodeViewScroll",
+					"line": 24,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "useDiffCodeViewScroll",
+					"callee": "useRef",
+					"lineNumber": 32
+				},
+				{
+					"caller": "useDiffCodeViewScroll",
+					"callee": "useMemo",
+					"lineNumber": 33
+				},
+				{
+					"caller": "useDiffCodeViewScroll",
+					"callee": "map.set",
+					"lineNumber": 36
+				},
+				{
+					"caller": "useDiffCodeViewScroll",
+					"callee": "useMemo",
+					"lineNumber": 43
+				},
+				{
+					"caller": "useDiffCodeViewScroll",
+					"callee": "fileByItemId.get",
+					"lineNumber": 47
+				},
+				{
+					"caller": "useDiffCodeViewScroll",
+					"callee": "useEffect",
+					"lineNumber": 52
+				},
+				{
+					"caller": "useDiffCodeViewScroll",
+					"callee": "fileByItemId.get",
+					"lineNumber": 54
+				},
+				{
+					"caller": "useDiffCodeViewScroll",
+					"callee": "itemById.has",
+					"lineNumber": 56
+				},
+				{
+					"caller": "useDiffCodeViewScroll",
+					"callee": "getChangesetFileKey",
+					"lineNumber": 57
+				},
+				{
+					"caller": "useDiffCodeViewScroll",
+					"callee": "collapsedSet.has",
+					"lineNumber": 58
+				},
+				{
+					"caller": "useDiffCodeViewScroll",
+					"callee": "setCollapsed",
+					"lineNumber": 59
+				},
+				{
+					"caller": "useDiffCodeViewScroll",
+					"callee": "[\n\t\t\ttargetItemId,\n\t\t\tdata.focusLine ?? \"\",\n\t\t\tdata.focusSide ?? \"\",\n\t\t\tdata.focusTick ?? \"\",\n\t\t].join",
+					"lineNumber": 63
+				},
+				{
+					"caller": "useDiffCodeViewScroll",
+					"callee": "itemById.get",
+					"lineNumber": 71
+				},
+				{
+					"caller": "useDiffCodeViewScroll",
+					"callee": "codeViewRef.current?.scrollTo",
+					"lineNumber": 89
+				}
+			],
+			"metrics": {
+				"importCount": 3,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewTheme/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "useDiffCodeViewTheme",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCodeViewTheme/useDiffCodeViewTheme.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 161,
+			"nonEmptyLines": 155,
+			"functions": [
+				{
+					"name": "useDiffCodeViewTheme",
+					"startLine": 14,
+					"endLine": 161,
+					"params": []
+				}
+			],
+			"exports": [
+				{
+					"name": "useDiffCodeViewTheme",
+					"line": 14,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "useDiffCodeViewTheme",
+					"callee": "useSettings",
+					"lineNumber": 15
+				},
+				{
+					"caller": "useDiffCodeViewTheme",
+					"callee": "useSettings",
+					"lineNumber": 16
+				},
+				{
+					"caller": "useDiffCodeViewTheme",
+					"callee": "useResolvedTheme",
+					"lineNumber": 17
+				},
+				{
+					"caller": "useDiffCodeViewTheme",
+					"callee": "useTerminalTheme",
+					"lineNumber": 18
+				},
+				{
+					"caller": "useDiffCodeViewTheme",
+					"callee": "useQuery",
+					"lineNumber": 19
+				},
+				{
+					"caller": "useDiffCodeViewTheme",
+					"callee": "electronTrpcClient.settings.getFontSettings.query",
+					"lineNumber": 21
+				},
+				{
+					"caller": "useDiffCodeViewTheme",
+					"callee": "Number.parseFloat",
+					"lineNumber": 29
+				},
+				{
+					"caller": "useDiffCodeViewTheme",
+					"callee": "useMemo",
+					"lineNumber": 33
+				},
+				{
+					"caller": "useDiffCodeViewTheme",
+					"callee": "getDiffViewerStyle",
+					"lineNumber": 35
+				},
+				{
+					"caller": "useDiffCodeViewTheme",
+					"callee": "Number.isFinite",
+					"lineNumber": 37
+				},
+				{
+					"caller": "useDiffCodeViewTheme",
+					"callee": "useMemo",
+					"lineNumber": 60
+				},
+				{
+					"caller": "useDiffCodeViewTheme",
+					"callee": "getDiffsTheme",
+					"lineNumber": 66
+				}
+			],
+			"metrics": {
+				"importCount": 5,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCommentComposer/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "useDiffCommentComposer",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffCommentComposer/useDiffCommentComposer.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 213,
+			"nonEmptyLines": 195,
+			"functions": [
+				{
+					"name": "rangeSide",
+					"startLine": 23,
+					"endLine": 32,
+					"params": ["start", "end"]
+				},
+				{
+					"name": "useDiffCommentComposer",
+					"startLine": 83,
+					"endLine": 213,
+					"params": [
+						"{\n\tworkspaceId,\n\tcodeViewRef,\n\tgetFile,\n\tonCreateNewAgentSession,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "useDiffCommentComposer",
+					"line": 83,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "useDiffCommentComposer",
+					"callee": "useState",
+					"lineNumber": 89
+				},
+				{
+					"caller": "useDiffCommentComposer",
+					"callee": "useRef",
+					"lineNumber": 90
+				},
+				{
+					"caller": "useDiffCommentComposer",
+					"callee": "useSendToTerminalAgent",
+					"lineNumber": 92
+				},
+				{
+					"caller": "useDiffCommentComposer",
+					"callee": "useCallback",
+					"lineNumber": 94
+				},
+				{
+					"caller": "useDiffCommentComposer",
+					"callee": "setComposer",
+					"lineNumber": 95
+				},
+				{
+					"caller": "useDiffCommentComposer",
+					"callee": "codeViewRef.current?.clearSelectedLines",
+					"lineNumber": 96
+				},
+				{
+					"caller": "useDiffCommentComposer",
+					"callee": "useCallback",
+					"lineNumber": 102
+				},
+				{
+					"caller": "useDiffCommentComposer",
+					"callee": "clear",
+					"lineNumber": 104
+				},
+				{
+					"caller": "useDiffCommentComposer",
+					"callee": "useCallback",
+					"lineNumber": 109
+				},
+				{
+					"caller": "useDiffCommentComposer",
+					"callee": "setComposer",
+					"lineNumber": 113
+				},
+				{
+					"caller": "useDiffCommentComposer",
+					"callee": "setComposer",
+					"lineNumber": 116
+				},
+				{
+					"caller": "useDiffCommentComposer",
+					"callee": "useCallback",
+					"lineNumber": 126
+				},
+				{
+					"caller": "useDiffCommentComposer",
+					"callee": "useMemo",
+					"lineNumber": 128
+				},
+				{
+					"caller": "useDiffCommentComposer",
+					"callee": "map.set",
+					"lineNumber": 134
+				},
+				{
+					"caller": "useDiffCommentComposer",
+					"callee": "useCallback",
+					"lineNumber": 151
+				},
+				{
+					"caller": "useDiffCommentComposer",
+					"callee": "getFile",
+					"lineNumber": 155
+				},
+				{
+					"caller": "useDiffCommentComposer",
+					"callee": "formatAgentPromptWithFileContext",
+					"lineNumber": 158
+				},
+				{
+					"caller": "useDiffCommentComposer",
+					"callee": "rangeSide",
+					"lineNumber": 164
+				},
+				{
+					"caller": "useDiffCommentComposer",
+					"callee": "toast.error",
+					"lineNumber": 170
+				},
+				{
+					"caller": "useDiffCommentComposer",
+					"callee": "onCreateNewAgentSession",
+					"lineNumber": 175
+				},
+				{
+					"caller": "useDiffCommentComposer",
+					"callee": "clearIfStillCurrent",
+					"lineNumber": 180
+				},
+				{
+					"caller": "useDiffCommentComposer",
+					"callee": "sendToTerminalAgent",
+					"lineNumber": 185
+				},
+				{
+					"caller": "useDiffCommentComposer",
+					"callee": "clearIfStillCurrent",
+					"lineNumber": 190
+				}
+			],
+			"metrics": {
+				"importCount": 4,
+				"exportCount": 1,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffPaneSearch/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "useDiffPaneSearch",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffPaneSearch/useDiffPaneSearch.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 440,
+			"nonEmptyLines": 403,
+			"functions": [
+				{
+					"name": "supportsCustomHighlights",
+					"startLine": 43,
+					"endLine": 49,
+					"params": []
+				},
+				{
+					"name": "getShadowRootsWithin",
+					"startLine": 51,
+					"endLine": 62,
+					"params": ["element"]
+				},
+				{
+					"name": "resolveRowSide",
+					"startLine": 64,
+					"endLine": 72,
+					"params": ["row"]
+				},
+				{
+					"name": "getRowForRangeBoundary",
+					"startLine": 74,
+					"endLine": 77,
+					"params": ["node"]
+				},
+				{
+					"name": "isWithinSingleRow",
+					"startLine": 82,
+					"endLine": 87,
+					"params": ["range"]
+				},
+				{
+					"name": "findMatchRowElement",
+					"startLine": 91,
+					"endLine": 111,
+					"params": ["codeViewHandle", "match"]
+				},
+				{
+					"name": "useDiffPaneSearch",
+					"startLine": 119,
+					"endLine": 440,
+					"params": [
+						"{\n\tcontainerRef,\n\tcodeViewRef,\n\titems,\n\tfileByItemId,\n\tcollapsedSet,\n\tsetCollapsed,\n\tisActive,\n\tpaneId,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "useDiffPaneSearch",
+					"line": 119,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "supportsCustomHighlights",
+					"callee": "Boolean",
+					"lineNumber": 47
+				},
+				{
+					"caller": "getShadowRootsWithin",
+					"callee": "element.matches",
+					"lineNumber": 53
+				},
+				{
+					"caller": "getShadowRootsWithin",
+					"callee": "roots.push",
+					"lineNumber": 54
+				},
+				{
+					"caller": "getShadowRootsWithin",
+					"callee": "element.querySelectorAll",
+					"lineNumber": 56
+				},
+				{
+					"caller": "getShadowRootsWithin",
+					"callee": "roots.push",
+					"lineNumber": 58
+				},
+				{
+					"caller": "resolveRowSide",
+					"callee": "row.closest",
+					"lineNumber": 68
+				},
+				{
+					"caller": "getRowForRangeBoundary",
+					"callee": "element?.closest",
+					"lineNumber": 76
+				},
+				{
+					"caller": "isWithinSingleRow",
+					"callee": "getRowForRangeBoundary",
+					"lineNumber": 84
+				},
+				{
+					"caller": "isWithinSingleRow",
+					"callee": "getRowForRangeBoundary",
+					"lineNumber": 85
+				},
+				{
+					"caller": "findMatchRowElement",
+					"callee": "codeViewHandle?.getInstance",
+					"lineNumber": 95
+				},
+				{
+					"caller": "findMatchRowElement",
+					"callee": "instance\n\t\t.getRenderedItems()\n\t\t.find",
+					"lineNumber": 97
+				},
+				{
+					"caller": "findMatchRowElement",
+					"callee": "instance\n\t\t.getRenderedItems",
+					"lineNumber": 97
+				},
+				{
+					"caller": "findMatchRowElement",
+					"callee": "getShadowRootsWithin",
+					"lineNumber": 102
+				},
+				{
+					"caller": "findMatchRowElement",
+					"callee": "shadowRoot.querySelectorAll",
+					"lineNumber": 103
+				},
+				{
+					"caller": "findMatchRowElement",
+					"callee": "resolveRowSide",
+					"lineNumber": 107
+				},
+				{
+					"caller": "useDiffPaneSearch",
+					"callee": "useSettings",
+					"lineNumber": 129
+				},
+				{
+					"caller": "useDiffPaneSearch",
+					"callee": "useState",
+					"lineNumber": 131
+				},
+				{
+					"caller": "useDiffPaneSearch",
+					"callee": "useState",
+					"lineNumber": 132
+				},
+				{
+					"caller": "useDiffPaneSearch",
+					"callee": "useState",
+					"lineNumber": 133
+				},
+				{
+					"caller": "useDiffPaneSearch",
+					"callee": "useState",
+					"lineNumber": 134
+				},
+				{
+					"caller": "useDiffPaneSearch",
+					"callee": "useState",
+					"lineNumber": 135
+				},
+				{
+					"caller": "useDiffPaneSearch",
+					"callee": "useMemo",
+					"lineNumber": 137
+				},
+				{
+					"caller": "useDiffPaneSearch",
+					"callee": "items.flatMap",
+					"lineNumber": 138
+				},
+				{
+					"caller": "useDiffPaneSearch",
+					"callee": "fileByItemId.get",
+					"lineNumber": 140
+				},
+				{
+					"caller": "useDiffPaneSearch",
+					"callee": "getChangesetFileKey",
+					"lineNumber": 145
+				},
+				{
+					"caller": "useDiffPaneSearch",
+					"callee": "useMemo",
+					"lineNumber": 152
+				},
+				{
+					"caller": "useDiffPaneSearch",
+					"callee": "collectDiffSearchMatches",
+					"lineNumber": 154
+				},
+				{
+					"caller": "useDiffPaneSearch",
+					"callee": "useRef",
+					"lineNumber": 167
+				},
+				{
+					"caller": "useDiffPaneSearch",
+					"callee": "useRef",
+					"lineNumber": 169
+				},
+				{
+					"caller": "useDiffPaneSearch",
+					"callee": "useRef",
+					"lineNumber": 171
+				},
+				{
+					"caller": "useDiffPaneSearch",
+					"callee": "useRef",
+					"lineNumber": 173
+				},
+				{
+					"caller": "useDiffPaneSearch",
+					"callee": "useMemo",
+					"lineNumber": 178
+				},
+				{
+					"caller": "useDiffPaneSearch",
+					"callee": "useMemo",
+					"lineNumber": 185
+				},
+				{
+					"caller": "useDiffPaneSearch",
+					"callee": "useRef",
+					"lineNumber": 196
+				},
+				{
+					"caller": "useDiffPaneSearch",
+					"callee": "useRef",
+					"lineNumber": 197
+				},
+				{
+					"caller": "useDiffPaneSearch",
+					"callee": "useCallback",
+					"lineNumber": 199
+				},
+				{
+					"caller": "useDiffPaneSearch",
+					"callee": "codeViewRef.current?.scrollTo",
+					"lineNumber": 201
+				},
+				{
+					"caller": "useDiffPaneSearch",
+					"callee": "useCallback",
+					"lineNumber": 213
+				},
+				{
+					"caller": "useDiffPaneSearch",
+					"callee": "setActiveMatchIndex",
+					"lineNumber": 217
+				},
+				{
+					"caller": "useDiffPaneSearch",
+					"callee": "collapsedSet.has",
+					"lineNumber": 218
+				},
+				{
+					"caller": "useDiffPaneSearch",
+					"callee": "setCollapsed",
+					"lineNumber": 220
+				},
+				{
+					"caller": "useDiffPaneSearch",
+					"callee": "scrollToMatch",
+					"lineNumber": 224
+				},
+				{
+					"caller": "useDiffPaneSearch",
+					"callee": "useEffect",
+					"lineNumber": 231
+				},
+				{
+					"caller": "useDiffPaneSearch",
+					"callee": "collapsedSet.has",
+					"lineNumber": 239
+				},
+				{
+					"caller": "useDiffPaneSearch",
+					"callee": "scrollToMatch",
+					"lineNumber": 241
+				},
+				{
+					"caller": "useDiffPaneSearch",
+					"callee": "useCallback",
+					"lineNumber": 244
+				},
+				{
+					"caller": "useDiffPaneSearch",
+					"callee": "goToMatch",
+					"lineNumber": 247
+				},
+				{
+					"caller": "useDiffPaneSearch",
+					"callee": "useCallback",
+					"lineNumber": 250
+				},
+				{
+					"caller": "useDiffPaneSearch",
+					"callee": "goToMatch",
+					"lineNumber": 253
+				},
+				{
+					"caller": "useDiffPaneSearch",
+					"callee": "useCallback",
+					"lineNumber": 256
+				},
+				{
+					"caller": "useDiffPaneSearch",
+					"callee": "setIsSearchOpen",
+					"lineNumber": 257
+				},
+				{
+					"caller": "useDiffPaneSearch",
+					"callee": "setQuery",
+					"lineNumber": 258
+				},
+				{
+					"caller": "useDiffPaneSearch",
+					"callee": "setDebouncedQuery",
+					"lineNumber": 259
+				},
+				{
+					"caller": "useDiffPaneSearch",
+					"callee": "setActiveMatchIndex",
+					"lineNumber": 260
+				},
+				{
+					"caller": "useDiffPaneSearch",
+					"callee": "useEffect",
+					"lineNumber": 264
+				},
+				{
+					"caller": "useDiffPaneSearch",
+					"callee": "setTimeout",
+					"lineNumber": 265
+				},
+				{
+					"caller": "useDiffPaneSearch",
+					"callee": "setDebouncedQuery",
+					"lineNumber": 266
+				},
+				{
+					"caller": "useDiffPaneSearch",
+					"callee": "clearTimeout",
+					"lineNumber": 268
+				},
+				{
+					"caller": "useDiffPaneSearch",
+					"callee": "useEffect",
+					"lineNumber": 275
+				},
+				{
+					"caller": "useDiffPaneSearch",
+					"callee": "setActiveMatchIndex",
+					"lineNumber": 276
+				},
+				{
+					"caller": "useDiffPaneSearch",
+					"callee": "goToMatch",
+					"lineNumber": 280
+				},
+				{
+					"caller": "useDiffPaneSearch",
+					"callee": "useEffect",
+					"lineNumber": 284
+				},
+				{
+					"caller": "useDiffPaneSearch",
+					"callee": "setActiveMatchIndex",
+					"lineNumber": 286
+				},
+				{
+					"caller": "useDiffPaneSearch",
+					"callee": "useEffect",
+					"lineNumber": 292
+				},
+				{
+					"caller": "useDiffPaneSearch",
+					"callee": "supportsCustomHighlights",
+					"lineNumber": 293
+				},
+				{
+					"caller": "paint",
+					"callee": "getDiffSearchRoots",
+					"lineNumber": 300
+				},
+				{
+					"caller": "paint",
+					"callee": "CSS.highlights.delete",
+					"lineNumber": 301
+				},
+				{
+					"caller": "paint",
+					"callee": "CSS.highlights.delete",
+					"lineNumber": 302
+				},
+				{
+					"caller": "paint",
+					"callee": "syncHighlightStyles",
+					"lineNumber": 305
+				},
+				{
+					"caller": "paint",
+					"callee": "findTextRanges",
+					"lineNumber": 312
+				},
+				{
+					"caller": "paint",
+					"callee": "isWithinSingleRow",
+					"lineNumber": 320
+				},
+				{
+					"caller": "paint",
+					"callee": "allHighlight.add",
+					"lineNumber": 321
+				},
+				{
+					"caller": "paint",
+					"callee": "CSS.highlights.set",
+					"lineNumber": 323
+				},
+				{
+					"caller": "paint",
+					"callee": "findMatchRowElement",
+					"lineNumber": 327
+				},
+				{
+					"caller": "paint",
+					"callee": "row.querySelector",
+					"lineNumber": 329
+				},
+				{
+					"caller": "paint",
+					"callee": "findTextRanges",
+					"lineNumber": 330
+				},
+				{
+					"caller": "paint",
+					"callee": "CSS.highlights.set",
+					"lineNumber": 338
+				},
+				{
+					"caller": "useDiffPaneSearch",
+					"callee": "paint",
+					"lineNumber": 342
+				},
+				{
+					"caller": "useDiffPaneSearch",
+					"callee": "cancelAnimationFrame",
+					"lineNumber": 347
+				},
+				{
+					"caller": "useDiffPaneSearch",
+					"callee": "requestAnimationFrame",
+					"lineNumber": 348
+				},
+				{
+					"caller": "useDiffPaneSearch",
+					"callee": "observeTargets",
+					"lineNumber": 350
+				},
+				{
+					"caller": "useDiffPaneSearch",
+					"callee": "paint",
+					"lineNumber": 351
+				},
+				{
+					"caller": "observeTargets",
+					"callee": "getDiffSearchRoots",
+					"lineNumber": 356
+				},
+				{
+					"caller": "observeTargets",
+					"callee": "searchRoot.getRootNode",
+					"lineNumber": 357
+				},
+				{
+					"caller": "observeTargets",
+					"callee": "targets.add",
+					"lineNumber": 358
+				},
+				{
+					"caller": "observeTargets",
+					"callee": "observedTargets.has",
+					"lineNumber": 361
+				},
+				{
+					"caller": "observeTargets",
+					"callee": "observer.observe",
+					"lineNumber": 362
+				},
+				{
+					"caller": "observeTargets",
+					"callee": "observedTargets.add",
+					"lineNumber": 367
+				},
+				{
+					"caller": "useDiffPaneSearch",
+					"callee": "observeTargets",
+					"lineNumber": 370
+				},
+				{
+					"caller": "useDiffPaneSearch",
+					"callee": "cancelAnimationFrame",
+					"lineNumber": 373
+				},
+				{
+					"caller": "useDiffPaneSearch",
+					"callee": "observer.disconnect",
+					"lineNumber": 374
+				},
+				{
+					"caller": "useDiffPaneSearch",
+					"callee": "CSS.highlights.delete",
+					"lineNumber": 375
+				},
+				{
+					"caller": "useDiffPaneSearch",
+					"callee": "CSS.highlights.delete",
+					"lineNumber": 376
+				},
+				{
+					"caller": "useDiffPaneSearch",
+					"callee": "useEffect",
+					"lineNumber": 391
+				},
+				{
+					"caller": "useDiffPaneSearch",
+					"callee": "highlightStyleElementsRef.current.values",
+					"lineNumber": 393
+				},
+				{
+					"caller": "useDiffPaneSearch",
+					"callee": "styleElement.remove",
+					"lineNumber": 394
+				},
+				{
+					"caller": "useDiffPaneSearch",
+					"callee": "highlightStyleElementsRef.current.clear",
+					"lineNumber": 396
+				},
+				{
+					"caller": "useDiffPaneSearch",
+					"callee": "useEffect",
+					"lineNumber": 400
+				},
+				{
+					"caller": "useDiffPaneSearch",
+					"callee": "closeSearch",
+					"lineNumber": 402
+				},
+				{
+					"caller": "useDiffPaneSearch",
+					"callee": "useEffect",
+					"lineNumber": 409
+				},
+				{
+					"caller": "useDiffPaneSearch",
+					"callee": "closeSearch",
+					"lineNumber": 411
+				},
+				{
+					"caller": "useDiffPaneSearch",
+					"callee": "useHotkey",
+					"lineNumber": 415
+				},
+				{
+					"caller": "useDiffPaneSearch",
+					"callee": "closeSearch",
+					"lineNumber": 419
+				},
+				{
+					"caller": "useDiffPaneSearch",
+					"callee": "setIsSearchOpen",
+					"lineNumber": 422
+				}
+			],
+			"metrics": {
+				"importCount": 8,
+				"exportCount": 1,
+				"functionCount": 7,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/DiffPane/hooks/useDiffPaneSearch/utils/collectDiffSearchMatches/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 5,
+			"nonEmptyLines": 5,
+			"exports": [
+				{
+					"name": "DiffSearchEntry",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "DiffSearchMatch",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "collectDiffSearchMatches",
+					"line": 5,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 3,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/FilePane/components/FilePaneHeaderExtras/FilePaneHeaderExtras.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 96,
+			"nonEmptyLines": 89,
+			"functions": [
+				{
+					"name": "FilePaneHeaderExtras",
+					"startLine": 18,
+					"endLine": 96,
+					"params": ["{\n\tcontext,\n\tworkspaceId,\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "FilePaneHeaderExtras",
+					"line": 18,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "FilePaneHeaderExtras",
+					"callee": "useOpenInExternalEditor",
+					"lineNumber": 24
+				},
+				{
+					"caller": "FilePaneHeaderExtras",
+					"callee": "useCopyToClipboard",
+					"lineNumber": 25
+				},
+				{
+					"caller": "FilePaneHeaderExtras",
+					"callee": "useSharedFileDocument",
+					"lineNumber": 27
+				},
+				{
+					"caller": "FilePaneHeaderExtras",
+					"callee": "useCallback",
+					"lineNumber": 32
+				},
+				{
+					"caller": "FilePaneHeaderExtras",
+					"callee": "context.actions.updateData",
+					"lineNumber": 34
+				},
+				{
+					"caller": "FilePaneHeaderExtras",
+					"callee": "resolveActivePaneView",
+					"lineNumber": 42
+				},
+				{
+					"caller": "FilePaneHeaderExtras",
+					"callee": "useCallback",
+					"lineNumber": 46
+				},
+				{
+					"caller": "FilePaneHeaderExtras",
+					"callee": "openInExternalEditor",
+					"lineNumber": 47
+				},
+				{
+					"caller": "FilePaneHeaderExtras",
+					"callee": "orderForToggle",
+					"lineNumber": 54
+				},
+				{
+					"caller": "FilePaneHeaderExtras",
+					"callee": "copyToClipboard",
+					"lineNumber": 65
+				}
+			],
+			"metrics": {
+				"importCount": 6,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/FilePane/components/FileViewToggle/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "FileViewToggle",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/useSidebarDiffRef/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "useSidebarDiffRef",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/useSidebarDiffRef/useSidebarDiffRef.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 51,
+			"nonEmptyLines": 47,
+			"functions": [
+				{
+					"name": "useSidebarDiffRef",
+					"startLine": 8,
+					"endLine": 51,
+					"params": ["workspaceId"]
+				}
+			],
+			"exports": [
+				{
+					"name": "useSidebarDiffRef",
+					"line": 8,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "useSidebarDiffRef",
+					"callee": "useCollections",
+					"lineNumber": 9
+				},
+				{
+					"caller": "useSidebarDiffRef",
+					"callee": "useLiveQuery",
+					"lineNumber": 10
+				},
+				{
+					"caller": "useSidebarDiffRef",
+					"callee": "query\n\t\t\t\t.from({ state: collections.v2WorkspaceLocalState })\n\t\t\t\t.where",
+					"lineNumber": 12
+				},
+				{
+					"caller": "useSidebarDiffRef",
+					"callee": "query\n\t\t\t\t.from",
+					"lineNumber": 12
+				},
+				{
+					"caller": "useSidebarDiffRef",
+					"callee": "eq",
+					"lineNumber": 14
+				},
+				{
+					"caller": "useSidebarDiffRef",
+					"callee": "workspaceTrpc.git.getBaseBranch.useQuery",
+					"lineNumber": 20
+				},
+				{
+					"caller": "useSidebarDiffRef",
+					"callee": "useMemo",
+					"lineNumber": 35
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/useViewedFiles/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "useViewedFiles",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "ViewedFilesApi",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 2,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/providers/WorkspaceGitStatusProvider/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 4,
+			"nonEmptyLines": 4,
+			"exports": [
+				{
+					"name": "useWorkspaceGitStatus",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "WorkspaceGitStatusProvider",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 2,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/components/AgentHooks/hooks/useDefaultV2TerminalPresets/default-v2-terminal-presets.test.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 154,
+			"nonEmptyLines": 144,
+			"functions": [
+				{
+					"name": "createAgent",
+					"startLine": 8,
+					"endLine": 25,
+					"params": ["overrides"]
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 0,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/components/AgentHooks/hooks/useDefaultV2TerminalPresets/default-v2-terminal-presets.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 53,
+			"nonEmptyLines": 48,
+			"functions": [
+				{
+					"name": "createDefaultV2TerminalPresetRows",
+					"startLine": 21,
+					"endLine": 53,
+					"params": [
+						"{\n\tagents,\n\texistingPresets,\n\tcreateId,\n\tcreatedAt,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "DEFAULT_V2_TERMINAL_PRESET_IDS",
+					"line": 6,
+					"isDefault": false
+				},
+				{
+					"name": "createDefaultV2TerminalPresetRows",
+					"line": 21,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "createDefaultV2TerminalPresetRows",
+					"callee": "DEFAULT_V2_TERMINAL_PRESET_IDS.flatMap",
+					"lineNumber": 30
+				},
+				{
+					"caller": "createDefaultV2TerminalPresetRows",
+					"callee": "agents.find",
+					"lineNumber": 31
+				},
+				{
+					"caller": "createDefaultV2TerminalPresetRows",
+					"callee": "candidate.command.trim",
+					"lineNumber": 33
+				},
+				{
+					"caller": "createDefaultV2TerminalPresetRows",
+					"callee": "getPresetById",
+					"lineNumber": 35
+				},
+				{
+					"caller": "createDefaultV2TerminalPresetRows",
+					"callee": "createId",
+					"lineNumber": 39
+				},
+				{
+					"caller": "createDefaultV2TerminalPresetRows",
+					"callee": "getAgentCommandText",
+					"lineNumber": 43
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 2,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/components/AgentHooks/hooks/useDefaultV2TerminalPresets/useDefaultV2TerminalPresets.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 82,
+			"nonEmptyLines": 73,
+			"functions": [
+				{
+					"name": "useDefaultV2TerminalPresets",
+					"startLine": 12,
+					"endLine": 82,
+					"params": ["hostUrl"]
+				}
+			],
+			"exports": [
+				{
+					"name": "useDefaultV2TerminalPresets",
+					"line": 12,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "useDefaultV2TerminalPresets",
+					"callee": "useCollections",
+					"lineNumber": 13
+				},
+				{
+					"caller": "useDefaultV2TerminalPresets",
+					"callee": "useV2AgentConfigs",
+					"lineNumber": 15
+				},
+				{
+					"caller": "useDefaultV2TerminalPresets",
+					"callee": "useLiveQuery",
+					"lineNumber": 17
+				},
+				{
+					"caller": "useDefaultV2TerminalPresets",
+					"callee": "query.from",
+					"lineNumber": 18
+				},
+				{
+					"caller": "useDefaultV2TerminalPresets",
+					"callee": "useLiveQuery",
+					"lineNumber": 21
+				},
+				{
+					"caller": "useDefaultV2TerminalPresets",
+					"callee": "query\n\t\t\t\t.from({ prefs: collections.v2UserPreferences })\n\t\t\t\t.where",
+					"lineNumber": 23
+				},
+				{
+					"caller": "useDefaultV2TerminalPresets",
+					"callee": "query\n\t\t\t\t.from",
+					"lineNumber": 23
+				},
+				{
+					"caller": "useDefaultV2TerminalPresets",
+					"callee": "eq",
+					"lineNumber": 25
+				},
+				{
+					"caller": "useDefaultV2TerminalPresets",
+					"callee": "useEffect",
+					"lineNumber": 31
+				},
+				{
+					"caller": "useDefaultV2TerminalPresets",
+					"callee": "createDefaultV2TerminalPresetRows",
+					"lineNumber": 43
+				},
+				{
+					"caller": "useDefaultV2TerminalPresets",
+					"callee": "crypto.randomUUID",
+					"lineNumber": 46
+				},
+				{
+					"caller": "useDefaultV2TerminalPresets",
+					"callee": "collections.v2TerminalPresets.insert",
+					"lineNumber": 51
+				},
+				{
+					"caller": "useDefaultV2TerminalPresets",
+					"callee": "collections.v2UserPreferences.get",
+					"lineNumber": 57
+				},
+				{
+					"caller": "useDefaultV2TerminalPresets",
+					"callee": "collections.v2UserPreferences.insert",
+					"lineNumber": 61
+				},
+				{
+					"caller": "useDefaultV2TerminalPresets",
+					"callee": "collections.v2UserPreferences.update",
+					"lineNumber": 68
+				}
+			],
+			"metrics": {
+				"importCount": 4,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/providers/CollectionsProvider/dashboardSidebarLocal/schema.test.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 281,
+			"nonEmptyLines": 258,
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/providers/CollectionsProvider/dashboardSidebarLocal/schema.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 421,
+			"nonEmptyLines": 382,
+			"functions": [
+				{
+					"name": "sanitizePaneLayout",
+					"startLine": 69,
+					"endLine": 85,
+					"params": ["raw"]
+				},
+				{
+					"name": "isSameLinkTierMap",
+					"startLine": 290,
+					"endLine": 297,
+					"params": ["a", "b"]
+				},
+				{
+					"name": "isCompleteLinkTierMap",
+					"startLine": 299,
+					"endLine": 308,
+					"params": ["value"]
+				},
+				{
+					"name": "healWorkspaceLocalState",
+					"startLine": 348,
+					"endLine": 374,
+					"params": ["raw"]
+				},
+				{
+					"name": "healV2UserPreferences",
+					"startLine": 383,
+					"endLine": 406,
+					"params": ["raw"]
+				}
+			],
+			"exports": [
+				{
+					"name": "dashboardSidebarProjectSchema",
+					"line": 10,
+					"isDefault": false
+				},
+				{
+					"name": "sanitizePaneLayout",
+					"line": 69,
+					"isDefault": false
+				},
+				{
+					"name": "workspaceRunTerminalStateSchema",
+					"line": 108,
+					"isDefault": false
+				},
+				{
+					"name": "workspaceLocalStateSchema",
+					"line": 122,
+					"isDefault": false
+				},
+				{
+					"name": "dashboardSidebarSectionSchema",
+					"line": 175,
+					"isDefault": false
+				},
+				{
+					"name": "v2TerminalPresetSchema",
+					"line": 194,
+					"isDefault": false
+				},
+				{
+					"name": "v2UserPreferencesSchema",
+					"line": 310,
+					"isDefault": false
+				},
+				{
+					"name": "V2_USER_PREFERENCES_ID",
+					"line": 326,
+					"isDefault": false
+				},
+				{
+					"name": "DEFAULT_V2_USER_PREFERENCES",
+					"line": 328,
+					"isDefault": false
+				},
+				{
+					"name": "healWorkspaceLocalState",
+					"line": 348,
+					"isDefault": false
+				},
+				{
+					"name": "healV2UserPreferences",
+					"line": 383,
+					"isDefault": false
+				},
+				{
+					"name": "failedWorkspaceCreateSchema",
+					"line": 411,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "sanitizePaneLayout",
+					"callee": "Array.isArray",
+					"lineNumber": 72
+				},
+				{
+					"caller": "sanitizePaneLayout",
+					"callee": "value.tabs.flatMap",
+					"lineNumber": 75
+				},
+				{
+					"caller": "sanitizePaneLayout",
+					"callee": "tabNodeSchema.safeParse",
+					"lineNumber": 76
+				},
+				{
+					"caller": "sanitizePaneLayout",
+					"callee": "tabs.some",
+					"lineNumber": 81
+				},
+				{
+					"caller": "healWorkspaceLocalState",
+					"callee": "sanitizePaneLayout",
+					"lineNumber": 360
+				},
+				{
+					"caller": "healV2UserPreferences",
+					"callee": "isCompleteLinkTierMap",
+					"lineNumber": 395
+				},
+				{
+					"caller": "healV2UserPreferences",
+					"callee": "isSameLinkTierMap",
+					"lineNumber": 396
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 12,
+				"functionCount": 5,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/settings/links/components/LinkTierMapper/LinkTierMapper.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 92,
+			"nonEmptyLines": 85,
+			"functions": [
+				{
+					"name": "toSlot",
+					"startLine": 24,
+					"endLine": 26,
+					"params": ["action"]
+				},
+				{
+					"name": "fromSlot",
+					"startLine": 28,
+					"endLine": 30,
+					"params": ["slot"]
+				},
+				{
+					"name": "LinkTierMapper",
+					"startLine": 41,
+					"endLine": 92,
+					"params": [
+						"{\n\ttitle,\n\tdescription,\n\tvalue,\n\tonChange,\n\tidPrefix,\n\tsurface,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "LinkTierMapper",
+					"line": 41,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "LinkTierMapper",
+					"callee": "useCallback",
+					"lineNumber": 49
+				},
+				{
+					"caller": "LinkTierMapper",
+					"callee": "fromSlot",
+					"lineNumber": 51
+				},
+				{
+					"caller": "LinkTierMapper",
+					"callee": "onChange",
+					"lineNumber": 53
+				},
+				{
+					"caller": "LinkTierMapper",
+					"callee": "TIERS.map",
+					"lineNumber": 63
+				},
+				{
+					"caller": "LinkTierMapper",
+					"callee": "modifierLabel",
+					"lineNumber": 68
+				},
+				{
+					"caller": "LinkTierMapper",
+					"callee": "toSlot",
+					"lineNumber": 71
+				},
+				{
+					"caller": "LinkTierMapper",
+					"callee": "pick",
+					"lineNumber": 72
+				},
+				{
+					"caller": "LinkTierMapper",
+					"callee": "ACTIONS.map",
+					"lineNumber": 79
+				},
+				{
+					"caller": "LinkTierMapper",
+					"callee": "actionLabel",
+					"lineNumber": 81
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 3,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/CommandPalette/components/FileResultItem/FileResultItem.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 33,
+			"nonEmptyLines": 31,
+			"functions": [
+				{
+					"name": "FileResultItem",
+					"startLine": 11,
+					"endLine": 33,
+					"params": [
+						"{\n\tvalue,\n\tfileName,\n\trelativePath,\n\tonSelect,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "FileResultItem",
+					"line": 11,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/hooks/useTextSearch/useTextSearch.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 354,
+			"nonEmptyLines": 306,
+			"functions": [
+				{
+					"name": "supportsCustomHighlights",
+					"startLine": 32,
+					"endLine": 38,
+					"params": []
+				},
+				{
+					"name": "useTextSearch",
+					"startLine": 40,
+					"endLine": 354,
+					"params": [
+						"{\n\tcontainerRef,\n\thighlightPrefix,\n\tgetSearchRoots,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "useTextSearch",
+					"line": 40,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "supportsCustomHighlights",
+					"callee": "Boolean",
+					"lineNumber": 36
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "useState",
+					"lineNumber": 45
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "useState",
+					"lineNumber": 46
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "useState",
+					"lineNumber": 47
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "useState",
+					"lineNumber": 48
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "useState",
+					"lineNumber": 49
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "useRef",
+					"lineNumber": 51
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "useRef",
+					"lineNumber": 52
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "useRef",
+					"lineNumber": 54
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "useRef",
+					"lineNumber": 56
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "useRef",
+					"lineNumber": 58
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "useRef",
+					"lineNumber": 59
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "useRef",
+					"lineNumber": 60
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "useRef",
+					"lineNumber": 61
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "useRef",
+					"lineNumber": 64
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "useMemo",
+					"lineNumber": 71
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "useMemo",
+					"lineNumber": 79
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "useCallback",
+					"lineNumber": 91
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "getSearchRoots",
+					"lineNumber": 97
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "useCallback",
+					"lineNumber": 100
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "syncHighlightStyles",
+					"lineNumber": 104
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "useCallback",
+					"lineNumber": 114
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "supportsCustomHighlights",
+					"lineNumber": 115
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "CSS.highlights.delete",
+					"lineNumber": 116
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "CSS.highlights.delete",
+					"lineNumber": 117
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "useCallback",
+					"lineNumber": 122
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "useCallback",
+					"lineNumber": 126
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "range.startContainer.parentElement?.scrollIntoView",
+					"lineNumber": 127
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "useCallback",
+					"lineNumber": 133
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "clearHighlights",
+					"lineNumber": 135
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "getResolvedSearchRoots",
+					"lineNumber": 137
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "setMatchCount",
+					"lineNumber": 139
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "setActiveMatchIndex",
+					"lineNumber": 140
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "ensureHighlightStyles",
+					"lineNumber": 144
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "findTextRanges",
+					"lineNumber": 146
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "setMatchCount",
+					"lineNumber": 154
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "supportsCustomHighlights",
+					"lineNumber": 156
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "allHighlight.add",
+					"lineNumber": 159
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "CSS.highlights.set",
+					"lineNumber": 161
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "setActiveMatchIndex",
+					"lineNumber": 163
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "CSS.highlights.set",
+					"lineNumber": 165
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "scrollRangeIntoView",
+					"lineNumber": 166
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "setActiveMatchIndex",
+					"lineNumber": 168
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "useCallback",
+					"lineNumber": 181
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "clearTimeout",
+					"lineNumber": 187
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "setTimeout",
+					"lineNumber": 190
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "performSearch",
+					"lineNumber": 191
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "useCallback",
+					"lineNumber": 197
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "setActiveMatchIndex",
+					"lineNumber": 202
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "supportsCustomHighlights",
+					"lineNumber": 204
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "CSS.highlights.delete",
+					"lineNumber": 205
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "CSS.highlights.set",
+					"lineNumber": 207
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "scrollRangeIntoView",
+					"lineNumber": 210
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "useCallback",
+					"lineNumber": 215
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "setActiveMatch",
+					"lineNumber": 219
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "useCallback",
+					"lineNumber": 222
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "setActiveMatch",
+					"lineNumber": 227
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "useCallback",
+					"lineNumber": 230
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "clearTimeout",
+					"lineNumber": 232
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "setIsSearchOpen",
+					"lineNumber": 235
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "setQuery",
+					"lineNumber": 236
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "setMatchCount",
+					"lineNumber": 237
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "setActiveMatchIndex",
+					"lineNumber": 238
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "clearHighlights",
+					"lineNumber": 239
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "clearSearchIndexCache",
+					"lineNumber": 240
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "useEffect",
+					"lineNumber": 243
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "scheduleSearch",
+					"lineNumber": 246
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "clearTimeout",
+					"lineNumber": 250
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "useEffect",
+					"lineNumber": 255
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "cancelAnimationFrame",
+					"lineNumber": 264
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "requestAnimationFrame",
+					"lineNumber": 265
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "clearSearchIndexCache",
+					"lineNumber": 266
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "observeTargets",
+					"lineNumber": 267
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "scheduleSearch",
+					"lineNumber": 268
+				},
+				{
+					"caller": "observeTargets",
+					"callee": "getResolvedSearchRoots",
+					"lineNumber": 274
+				},
+				{
+					"caller": "observeTargets",
+					"callee": "searchRoot.getRootNode",
+					"lineNumber": 275
+				},
+				{
+					"caller": "observeTargets",
+					"callee": "targets.add",
+					"lineNumber": 276
+				},
+				{
+					"caller": "observeTargets",
+					"callee": "observedTargets.has",
+					"lineNumber": 280
+				},
+				{
+					"caller": "observeTargets",
+					"callee": "observer.observe",
+					"lineNumber": 284
+				},
+				{
+					"caller": "observeTargets",
+					"callee": "observedTargets.add",
+					"lineNumber": 289
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "observeTargets",
+					"lineNumber": 293
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "cancelAnimationFrame",
+					"lineNumber": 296
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "observer.disconnect",
+					"lineNumber": 297
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "useEffect",
+					"lineNumber": 307
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "clearTimeout",
+					"lineNumber": 317
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "setQuery",
+					"lineNumber": 320
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "setMatchCount",
+					"lineNumber": 321
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "setActiveMatchIndex",
+					"lineNumber": 322
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "clearHighlights",
+					"lineNumber": 323
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "clearSearchIndexCache",
+					"lineNumber": 324
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "useEffect",
+					"lineNumber": 327
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "clearHighlights",
+					"lineNumber": 329
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "clearSearchIndexCache",
+					"lineNumber": 330
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "clearTimeout",
+					"lineNumber": 332
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "highlightStyleElementsRef.current.values",
+					"lineNumber": 334
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "styleElement.remove",
+					"lineNumber": 335
+				},
+				{
+					"caller": "useTextSearch",
+					"callee": "highlightStyleElementsRef.current.clear",
+					"lineNumber": 337
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/hooks/useTextSearch/utils/textSearchDom/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 10,
+			"nonEmptyLines": 10,
+			"exports": [
+				{
+					"name": "HighlightStyleElementMap",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "SearchRootIndex",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "SearchRootIndexCache",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "findTextRanges",
+					"line": 6,
+					"isDefault": false
+				},
+				{
+					"name": "getHighlightStyleContainers",
+					"line": 6,
+					"isDefault": false
+				},
+				{
+					"name": "syncHighlightStyles",
+					"line": 6,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 6,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/screens/main/components/WorkspaceView/RightSidebar/headerTabStyles.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 29,
+			"nonEmptyLines": 26,
+			"functions": [
+				{
+					"name": "getSidebarHeaderTabButtonClassName",
+					"startLine": 7,
+					"endLine": 23,
+					"params": ["{\n\tisActive,\n\tcompact = false,\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "getSidebarHeaderTabButtonClassName",
+					"line": 7,
+					"isDefault": false
+				},
+				{
+					"name": "sidebarHeaderTabTriggerClassName",
+					"line": 25,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "getSidebarHeaderTabButtonClassName",
+					"callee": "cn",
+					"lineNumber": 14
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 2,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/stores/settings.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 24,
+			"nonEmptyLines": 21,
+			"exports": [
+				{
+					"name": "useSettings",
+					"line": 14,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/stores/v2-changes-sections/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 2,
+			"nonEmptyLines": 2,
+			"exports": [
+				{
+					"name": "V2ChangesSectionKey",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "useV2ChangesSectionsStore",
+					"line": 2,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 2,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/stores/v2-changes-sections/store.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 29,
+			"nonEmptyLines": 26,
+			"exports": [
+				{
+					"name": "useV2ChangesSectionsStore",
+					"line": 12,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		}
+	]
+}

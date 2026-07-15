@@ -1,0 +1,922 @@
+{
+	"nodes": [
+		{
+			"id": "file:src/renderer/routes/_authenticated/components/V1ImportModal/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "src/renderer/routes/_authenticated/components/V1ImportModal/index.ts",
+			"summary": "Barrel file re-exporting the V1ImportModal component for the V1 data import flow.",
+			"tags": ["barrel", "entry-point", "component"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/components/V2NotificationController/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "src/renderer/routes/_authenticated/components/V2NotificationController/index.ts",
+			"summary": "Barrel file re-exporting the V2NotificationController component that manages V2 cloud notifications.",
+			"tags": ["barrel", "entry-point", "component"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/layout.tsx",
+			"type": "file",
+			"name": "layout.tsx",
+			"filePath": "src/renderer/routes/_authenticated/layout.tsx",
+			"summary": "Authenticated route layout that wires up global providers, notification/menu subscriptions, workspace init progress handling, and agent-hook listeners for the main app shell.",
+			"tags": [
+				"entry-point",
+				"layout",
+				"component",
+				"provider",
+				"event-handler"
+			],
+			"complexity": "complex",
+			"languageNotes": "TanStack Router route layout combining many provider wrappers with tRPC subscriptions."
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/lib/pierreWorker/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "src/renderer/routes/_authenticated/lib/pierreWorker/index.ts",
+			"summary": "Barrel file re-exporting the createPierreWorker factory used to spin up the Pierre background worker.",
+			"tags": ["barrel", "entry-point", "factory"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/onboarding/components/OnboardingNavigation/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "src/renderer/routes/_authenticated/onboarding/components/OnboardingNavigation/index.ts",
+			"summary": "Barrel file re-exporting the OnboardingNavigation component used during the onboarding flow.",
+			"tags": ["barrel", "entry-point", "component"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/onboarding/layout.tsx",
+			"type": "file",
+			"name": "layout.tsx",
+			"filePath": "src/renderer/routes/_authenticated/onboarding/layout.tsx",
+			"summary": "Onboarding flow route layout that tracks step progress, provides a chat service client, and handles back/forward navigation between onboarding steps.",
+			"tags": ["layout", "component", "onboarding", "event-handler"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/providers/CollectionsProvider/CollectionsProvider.tsx",
+			"type": "file",
+			"name": "CollectionsProvider.tsx",
+			"filePath": "src/renderer/routes/_authenticated/providers/CollectionsProvider/CollectionsProvider.tsx",
+			"summary": "React context provider that preloads and exposes Electric/TanStack DB collections for the active organization, with organization-switching support.",
+			"tags": ["provider", "component", "hook", "data-model"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/settings/account/components/AccountSettings/AccountSettings.tsx",
+			"type": "file",
+			"name": "AccountSettings.tsx",
+			"filePath": "src/renderer/routes/_authenticated/settings/account/components/AccountSettings/AccountSettings.tsx",
+			"summary": "Account settings panel that renders the user profile, supports avatar upload and name editing via tRPC mutations, and provides sign-out.",
+			"tags": ["component", "settings", "api-handler", "event-handler"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/settings/account/components/AccountSettings/components/ProfileSkeleton/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "src/renderer/routes/_authenticated/settings/account/components/AccountSettings/components/ProfileSkeleton/index.ts",
+			"summary": "Barrel file re-exporting the ProfileSkeleton loading placeholder for the account profile.",
+			"tags": ["barrel", "entry-point", "component"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/settings/account/components/AccountSettings/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "src/renderer/routes/_authenticated/settings/account/components/AccountSettings/index.ts",
+			"summary": "Barrel file re-exporting the AccountSettings component.",
+			"tags": ["barrel", "entry-point", "component"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/settings/account/page.tsx",
+			"type": "file",
+			"name": "page.tsx",
+			"filePath": "src/renderer/routes/_authenticated/settings/account/page.tsx",
+			"summary": "Account settings route page that filters visible items by the settings search query and renders the AccountSettings panel.",
+			"tags": ["entry-point", "component", "settings", "page"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/settings/agents/components/AgentsSettings/AgentsSettings.tsx",
+			"type": "file",
+			"name": "AgentsSettings.tsx",
+			"filePath": "src/renderer/routes/_authenticated/settings/agents/components/AgentsSettings/AgentsSettings.tsx",
+			"summary": "Agents settings entry that switches between the V1 preset-based settings and the V2 cloud agents settings based on a feature flag.",
+			"tags": ["component", "settings", "feature-flag"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/settings/agents/components/AgentsSettings/components/AgentCard/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "src/renderer/routes/_authenticated/settings/agents/components/AgentsSettings/components/AgentCard/index.ts",
+			"summary": "Barrel file re-exporting the AgentCard component used in the V1 agents settings list.",
+			"tags": ["barrel", "entry-point", "component"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/settings/agents/components/AgentsSettings/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "src/renderer/routes/_authenticated/settings/agents/components/AgentsSettings/index.ts",
+			"summary": "Barrel file re-exporting the AgentsSettings component.",
+			"tags": ["barrel", "entry-point", "component"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/settings/agents/components/V2AgentsSettings/components/AgentsSettingsSidebar/AgentsSettingsSidebar.tsx",
+			"type": "file",
+			"name": "AgentsSettingsSidebar.tsx",
+			"filePath": "src/renderer/routes/_authenticated/settings/agents/components/V2AgentsSettings/components/AgentsSettingsSidebar/AgentsSettingsSidebar.tsx",
+			"summary": "Sidebar for the V2 agents settings that lists agent configs with drag-and-drop reordering, search filtering, and add/reset controls.",
+			"tags": ["component", "settings", "drag-and-drop", "sidebar"],
+			"complexity": "complex",
+			"languageNotes": "Uses dnd-kit sensors and sortable helpers for reorderable agent rows."
+		},
+		{
+			"id": "file:src/renderer/routes/_authenticated/settings/agents/components/V2AgentsSettings/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "src/renderer/routes/_authenticated/settings/agents/components/V2AgentsSettings/index.ts",
+			"summary": "Barrel file re-exporting the V2AgentsSettings component.",
+			"tags": ["barrel", "entry-point", "component"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/layout.tsx:AuthenticatedLayout",
+			"type": "function",
+			"name": "AuthenticatedLayout",
+			"filePath": "src/renderer/routes/_authenticated/layout.tsx",
+			"lineRange": [51, 245],
+			"summary": "Root authenticated layout component that subscribes to notifications, menu events, and workspace init progress while mounting global providers and dialogs.",
+			"tags": ["component", "layout", "event-handler", "entry-point"],
+			"complexity": "complex"
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/onboarding/layout.tsx:OnboardingFlowLayout",
+			"type": "function",
+			"name": "OnboardingFlowLayout",
+			"filePath": "src/renderer/routes/_authenticated/onboarding/layout.tsx",
+			"lineRange": [35, 102],
+			"summary": "Onboarding layout component that computes the current step index and handles navigation between onboarding steps.",
+			"tags": ["component", "layout", "onboarding", "event-handler"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/providers/CollectionsProvider/CollectionsProvider.tsx:preloadActiveOrganizationCollections",
+			"type": "function",
+			"name": "preloadActiveOrganizationCollections",
+			"filePath": "src/renderer/routes/_authenticated/providers/CollectionsProvider/CollectionsProvider.tsx",
+			"lineRange": [21, 31],
+			"summary": "Preloads the collections for the active organization, logging any errors on failure.",
+			"tags": ["data-model", "utility", "async"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/providers/CollectionsProvider/CollectionsProvider.tsx:CollectionsProvider",
+			"type": "function",
+			"name": "CollectionsProvider",
+			"filePath": "src/renderer/routes/_authenticated/providers/CollectionsProvider/CollectionsProvider.tsx",
+			"lineRange": [33, 78],
+			"summary": "Context provider that manages organization switching and exposes preloaded collections to descendants.",
+			"tags": ["provider", "component", "data-model"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/providers/CollectionsProvider/CollectionsProvider.tsx:useCollections",
+			"type": "function",
+			"name": "useCollections",
+			"filePath": "src/renderer/routes/_authenticated/providers/CollectionsProvider/CollectionsProvider.tsx",
+			"lineRange": [80, 86],
+			"summary": "Hook that reads the collections context, throwing if used outside a CollectionsProvider.",
+			"tags": ["hook", "context", "data-model"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/settings/account/components/AccountSettings/AccountSettings.tsx:AccountSettings",
+			"type": "function",
+			"name": "AccountSettings",
+			"filePath": "src/renderer/routes/_authenticated/settings/account/components/AccountSettings/AccountSettings.tsx",
+			"lineRange": [27, 177],
+			"summary": "Renders the account profile with editable name and avatar, wiring uploads and profile updates through tRPC mutations.",
+			"tags": ["component", "settings", "api-handler", "event-handler"],
+			"complexity": "complex"
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/settings/account/components/AccountSettings/AccountSettings.tsx:SettingRow",
+			"type": "function",
+			"name": "SettingRow",
+			"filePath": "src/renderer/routes/_authenticated/settings/account/components/AccountSettings/AccountSettings.tsx",
+			"lineRange": [185, 197],
+			"summary": "Presentational row that renders a labeled setting with an optional hint and child control.",
+			"tags": ["component", "presentational", "layout"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/settings/account/page.tsx:AccountSettingsPage",
+			"type": "function",
+			"name": "AccountSettingsPage",
+			"filePath": "src/renderer/routes/_authenticated/settings/account/page.tsx",
+			"lineRange": [11, 22],
+			"summary": "Route page component that computes search-matched items and renders the AccountSettings panel.",
+			"tags": ["component", "page", "settings"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/settings/agents/components/AgentsSettings/AgentsSettings.tsx:AgentsSettings",
+			"type": "function",
+			"name": "AgentsSettings",
+			"filePath": "src/renderer/routes/_authenticated/settings/agents/components/AgentsSettings/AgentsSettings.tsx",
+			"lineRange": [17, 26],
+			"summary": "Feature-flag switch that renders either the V2 cloud agents settings or the V1 preset-based settings.",
+			"tags": ["component", "settings", "feature-flag"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/settings/agents/components/AgentsSettings/AgentsSettings.tsx:V1AgentsSettings",
+			"type": "function",
+			"name": "V1AgentsSettings",
+			"filePath": "src/renderer/routes/_authenticated/settings/agents/components/AgentsSettings/AgentsSettings.tsx",
+			"lineRange": [28, 74],
+			"summary": "Renders the legacy V1 agents settings, listing agent presets fetched via tRPC and filtered by visibility.",
+			"tags": ["component", "settings", "api-handler"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/settings/agents/components/V2AgentsSettings/components/AgentsSettingsSidebar/AgentsSettingsSidebar.tsx:AgentsSettingsSidebar",
+			"type": "function",
+			"name": "AgentsSettingsSidebar",
+			"filePath": "src/renderer/routes/_authenticated/settings/agents/components/V2AgentsSettings/components/AgentsSettingsSidebar/AgentsSettingsSidebar.tsx",
+			"lineRange": [50, 152],
+			"summary": "Sidebar listing agent configs with drag-and-drop reordering, add/reset controls, and search-based filtering.",
+			"tags": ["component", "settings", "drag-and-drop", "event-handler"],
+			"complexity": "complex"
+		},
+		{
+			"id": "function:src/renderer/routes/_authenticated/settings/agents/components/V2AgentsSettings/components/AgentsSettingsSidebar/AgentsSettingsSidebar.tsx:AgentSidebarRow",
+			"type": "function",
+			"name": "AgentSidebarRow",
+			"filePath": "src/renderer/routes/_authenticated/settings/agents/components/V2AgentsSettings/components/AgentsSettingsSidebar/AgentsSettingsSidebar.tsx",
+			"lineRange": [160, 209],
+			"summary": "Sortable sidebar row for a single agent, using dnd-kit's useSortable for drag interactions.",
+			"tags": ["component", "drag-and-drop", "presentational"],
+			"complexity": "moderate"
+		}
+	],
+	"edges": [
+		{
+			"source": "file:src/renderer/routes/_authenticated/layout.tsx",
+			"target": "file:src/renderer/components/NewWorkspaceModal/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/layout.tsx",
+			"target": "file:src/renderer/components/Paywall/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/layout.tsx",
+			"target": "file:src/renderer/env.renderer.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/layout.tsx",
+			"target": "file:src/renderer/hooks/useIsV2CloudEnabled.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/layout.tsx",
+			"target": "file:src/renderer/hooks/useOnlineStatus.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/layout.tsx",
+			"target": "file:src/renderer/lib/auth-client.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/layout.tsx",
+			"target": "file:src/renderer/lib/dnd.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/layout.tsx",
+			"target": "file:src/renderer/lib/electron-trpc.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/layout.tsx",
+			"target": "file:src/renderer/lib/workspaces/showWorkspaceAutoNameWarningToast.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/layout.tsx",
+			"target": "file:src/renderer/react-query/projects/InitGitDialog.tsx",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/layout.tsx",
+			"target": "file:src/renderer/routes/_authenticated/components/AgentHooks/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/layout.tsx",
+			"target": "file:src/renderer/routes/_authenticated/components/DaemonAutoUpdateFailureDialog/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/layout.tsx",
+			"target": "file:src/renderer/routes/_authenticated/components/DashboardNewWorkspaceModal/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/layout.tsx",
+			"target": "file:src/renderer/routes/_authenticated/components/DiffThemeSync/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/layout.tsx",
+			"target": "file:src/renderer/routes/_authenticated/components/DockBadgeController/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/layout.tsx",
+			"target": "file:src/renderer/routes/_authenticated/components/FileMenuListener/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/layout.tsx",
+			"target": "file:src/renderer/routes/_authenticated/components/GlobalBrowserLifecycle/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/layout.tsx",
+			"target": "file:src/renderer/routes/_authenticated/components/TeardownLogsDialog/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/layout.tsx",
+			"target": "file:src/renderer/routes/_authenticated/components/V1ImportModal/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/layout.tsx",
+			"target": "file:src/renderer/routes/_authenticated/components/V2NotificationController/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/layout.tsx",
+			"target": "file:src/renderer/routes/_authenticated/lib/pierreWorker/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/layout.tsx",
+			"target": "file:src/renderer/routes/_authenticated/providers/CollectionsProvider/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/layout.tsx",
+			"target": "file:src/renderer/routes/_authenticated/providers/DeletingWorkspacesProvider/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/layout.tsx",
+			"target": "file:src/renderer/routes/_authenticated/providers/HostWorkspacesProvider/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/layout.tsx",
+			"target": "file:src/renderer/routes/_authenticated/providers/LocalHostServiceProvider/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/layout.tsx",
+			"target": "file:src/renderer/screens/main/components/WorkspaceInitEffects.tsx",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/layout.tsx",
+			"target": "file:src/renderer/stores/settings-state.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/layout.tsx",
+			"target": "file:src/renderer/stores/tabs/store.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/layout.tsx",
+			"target": "file:src/renderer/stores/tabs/useAgentHookListener.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/layout.tsx",
+			"target": "file:src/renderer/stores/tabs/workspace-run.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/layout.tsx",
+			"target": "file:src/renderer/stores/workspace-init.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/layout.tsx",
+			"target": "file:src/shared/constants.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/onboarding/layout.tsx",
+			"target": "file:src/renderer/components/Chat/utils/chat-service-client.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/onboarding/layout.tsx",
+			"target": "file:src/renderer/lib/auth-client.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/onboarding/layout.tsx",
+			"target": "file:src/renderer/lib/electron-trpc.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/onboarding/layout.tsx",
+			"target": "file:src/renderer/providers/ElectronTRPCProvider/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/onboarding/layout.tsx",
+			"target": "file:src/renderer/routes/_authenticated/onboarding/components/OnboardingNavigation/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/providers/CollectionsProvider/CollectionsProvider.tsx",
+			"target": "file:src/renderer/env.renderer.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/providers/CollectionsProvider/CollectionsProvider.tsx",
+			"target": "file:src/renderer/lib/auth-client.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/providers/CollectionsProvider/CollectionsProvider.tsx",
+			"target": "file:src/renderer/routes/_authenticated/providers/CollectionsProvider/collections.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/providers/CollectionsProvider/CollectionsProvider.tsx",
+			"target": "file:src/shared/constants.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/account/components/AccountSettings/AccountSettings.tsx",
+			"target": "file:src/renderer/hooks/useSignOut/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/account/components/AccountSettings/AccountSettings.tsx",
+			"target": "file:src/renderer/lib/api-trpc-client.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/account/components/AccountSettings/AccountSettings.tsx",
+			"target": "file:src/renderer/lib/auth-client.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/account/components/AccountSettings/AccountSettings.tsx",
+			"target": "file:src/renderer/lib/electron-trpc.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/account/components/AccountSettings/AccountSettings.tsx",
+			"target": "file:src/renderer/routes/_authenticated/providers/CollectionsProvider/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/account/components/AccountSettings/AccountSettings.tsx",
+			"target": "file:src/renderer/routes/_authenticated/settings/account/components/AccountSettings/components/ProfileSkeleton/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/account/components/AccountSettings/AccountSettings.tsx",
+			"target": "file:src/renderer/routes/_authenticated/settings/utils/settings-search/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/account/components/AccountSettings/AccountSettings.tsx",
+			"target": "file:src/shared/file-types.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/account/page.tsx",
+			"target": "file:src/renderer/routes/_authenticated/settings/account/components/AccountSettings/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/account/page.tsx",
+			"target": "file:src/renderer/routes/_authenticated/settings/utils/settings-search/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/account/page.tsx",
+			"target": "file:src/renderer/stores/settings-state.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/agents/components/AgentsSettings/AgentsSettings.tsx",
+			"target": "file:src/renderer/hooks/useIsV2CloudEnabled.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/agents/components/AgentsSettings/AgentsSettings.tsx",
+			"target": "file:src/renderer/lib/electron-trpc.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/agents/components/AgentsSettings/AgentsSettings.tsx",
+			"target": "file:src/renderer/routes/_authenticated/settings/agents/components/AgentsSettings/components/AgentCard/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/agents/components/AgentsSettings/AgentsSettings.tsx",
+			"target": "file:src/renderer/routes/_authenticated/settings/agents/components/V2AgentsSettings/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/agents/components/AgentsSettings/AgentsSettings.tsx",
+			"target": "file:src/renderer/routes/_authenticated/settings/utils/settings-search/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/agents/components/V2AgentsSettings/components/AgentsSettingsSidebar/AgentsSettingsSidebar.tsx",
+			"target": "file:src/renderer/routes/_authenticated/settings/agents/components/V2AgentsSettings/components/AgentIcon/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/agents/components/V2AgentsSettings/components/AgentsSettingsSidebar/AgentsSettingsSidebar.tsx",
+			"target": "file:src/renderer/routes/_authenticated/settings/components/SettingsListSidebar/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/layout.tsx",
+			"target": "function:src/renderer/routes/_authenticated/layout.tsx:AuthenticatedLayout",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/onboarding/layout.tsx",
+			"target": "function:src/renderer/routes/_authenticated/onboarding/layout.tsx:OnboardingFlowLayout",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/providers/CollectionsProvider/CollectionsProvider.tsx",
+			"target": "function:src/renderer/routes/_authenticated/providers/CollectionsProvider/CollectionsProvider.tsx:preloadActiveOrganizationCollections",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/providers/CollectionsProvider/CollectionsProvider.tsx",
+			"target": "function:src/renderer/routes/_authenticated/providers/CollectionsProvider/CollectionsProvider.tsx:CollectionsProvider",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/providers/CollectionsProvider/CollectionsProvider.tsx",
+			"target": "function:src/renderer/routes/_authenticated/providers/CollectionsProvider/CollectionsProvider.tsx:useCollections",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/account/components/AccountSettings/AccountSettings.tsx",
+			"target": "function:src/renderer/routes/_authenticated/settings/account/components/AccountSettings/AccountSettings.tsx:AccountSettings",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/account/components/AccountSettings/AccountSettings.tsx",
+			"target": "function:src/renderer/routes/_authenticated/settings/account/components/AccountSettings/AccountSettings.tsx:SettingRow",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/account/page.tsx",
+			"target": "function:src/renderer/routes/_authenticated/settings/account/page.tsx:AccountSettingsPage",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/agents/components/AgentsSettings/AgentsSettings.tsx",
+			"target": "function:src/renderer/routes/_authenticated/settings/agents/components/AgentsSettings/AgentsSettings.tsx:AgentsSettings",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/agents/components/AgentsSettings/AgentsSettings.tsx",
+			"target": "function:src/renderer/routes/_authenticated/settings/agents/components/AgentsSettings/AgentsSettings.tsx:V1AgentsSettings",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/agents/components/V2AgentsSettings/components/AgentsSettingsSidebar/AgentsSettingsSidebar.tsx",
+			"target": "function:src/renderer/routes/_authenticated/settings/agents/components/V2AgentsSettings/components/AgentsSettingsSidebar/AgentsSettingsSidebar.tsx:AgentsSettingsSidebar",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/agents/components/V2AgentsSettings/components/AgentsSettingsSidebar/AgentsSettingsSidebar.tsx",
+			"target": "function:src/renderer/routes/_authenticated/settings/agents/components/V2AgentsSettings/components/AgentsSettingsSidebar/AgentsSettingsSidebar.tsx:AgentSidebarRow",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/providers/CollectionsProvider/CollectionsProvider.tsx",
+			"target": "function:src/renderer/routes/_authenticated/providers/CollectionsProvider/CollectionsProvider.tsx:preloadActiveOrganizationCollections",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/providers/CollectionsProvider/CollectionsProvider.tsx",
+			"target": "function:src/renderer/routes/_authenticated/providers/CollectionsProvider/CollectionsProvider.tsx:CollectionsProvider",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/providers/CollectionsProvider/CollectionsProvider.tsx",
+			"target": "function:src/renderer/routes/_authenticated/providers/CollectionsProvider/CollectionsProvider.tsx:useCollections",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/account/components/AccountSettings/AccountSettings.tsx",
+			"target": "function:src/renderer/routes/_authenticated/settings/account/components/AccountSettings/AccountSettings.tsx:AccountSettings",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/agents/components/AgentsSettings/AgentsSettings.tsx",
+			"target": "function:src/renderer/routes/_authenticated/settings/agents/components/AgentsSettings/AgentsSettings.tsx:AgentsSettings",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/routes/_authenticated/settings/agents/components/V2AgentsSettings/components/AgentsSettingsSidebar/AgentsSettingsSidebar.tsx",
+			"target": "function:src/renderer/routes/_authenticated/settings/agents/components/V2AgentsSettings/components/AgentsSettingsSidebar/AgentsSettingsSidebar.tsx:AgentsSettingsSidebar",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/routes/_authenticated/layout.tsx:AuthenticatedLayout",
+			"target": "function:src/renderer/stores/tabs/useAgentHookListener.ts:useAgentHookListener",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/routes/_authenticated/layout.tsx:AuthenticatedLayout",
+			"target": "function:src/renderer/hooks/useOnlineStatus.ts:useOnlineStatus",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/routes/_authenticated/layout.tsx:AuthenticatedLayout",
+			"target": "function:src/renderer/hooks/useIsV2CloudEnabled.ts:useIsV2CloudEnabled",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/routes/_authenticated/layout.tsx:AuthenticatedLayout",
+			"target": "function:src/renderer/lib/auth-client.ts:getAuthToken",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/routes/_authenticated/layout.tsx:AuthenticatedLayout",
+			"target": "function:src/renderer/lib/workspaces/showWorkspaceAutoNameWarningToast.ts:showWorkspaceAutoNameWarningToast",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/routes/_authenticated/layout.tsx:AuthenticatedLayout",
+			"target": "function:src/renderer/stores/tabs/workspace-run.ts:setPaneWorkspaceRunState",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/routes/_authenticated/onboarding/layout.tsx:OnboardingFlowLayout",
+			"target": "function:src/renderer/components/Chat/utils/chat-service-client.ts:createChatServiceIpcClient",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/routes/_authenticated/providers/CollectionsProvider/CollectionsProvider.tsx:preloadActiveOrganizationCollections",
+			"target": "function:src/renderer/routes/_authenticated/providers/CollectionsProvider/collections.ts:preloadCollections",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/routes/_authenticated/providers/CollectionsProvider/CollectionsProvider.tsx:CollectionsProvider",
+			"target": "function:src/renderer/routes/_authenticated/providers/CollectionsProvider/collections.ts:getCollections",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/routes/_authenticated/providers/CollectionsProvider/CollectionsProvider.tsx:CollectionsProvider",
+			"target": "function:src/renderer/routes/_authenticated/providers/CollectionsProvider/collections.ts:preloadCollections",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/routes/_authenticated/settings/account/components/AccountSettings/AccountSettings.tsx:AccountSettings",
+			"target": "function:src/renderer/hooks/useSignOut/index.ts:useSignOut",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/routes/_authenticated/settings/account/components/AccountSettings/AccountSettings.tsx:AccountSettings",
+			"target": "function:src/shared/file-types.ts:parseBase64DataUrl",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/routes/_authenticated/settings/account/components/AccountSettings/AccountSettings.tsx:AccountSettings",
+			"target": "function:src/shared/file-types.ts:getImageExtensionFromMimeType",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/routes/_authenticated/settings/account/components/AccountSettings/AccountSettings.tsx:AccountSettings",
+			"target": "function:src/renderer/routes/_authenticated/providers/CollectionsProvider/CollectionsProvider.tsx:useCollections",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/routes/_authenticated/settings/agents/components/AgentsSettings/AgentsSettings.tsx:AgentsSettings",
+			"target": "function:src/renderer/hooks/useIsV2CloudEnabled.ts:useIsV2CloudEnabled",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		}
+	]
+}

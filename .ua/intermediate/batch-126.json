@@ -1,0 +1,1051 @@
+{
+	"nodes": [
+		{
+			"id": "file:packages/chat/src/server/desktop/auth/anthropic/anthropic.ts",
+			"type": "file",
+			"name": "anthropic.ts",
+			"filePath": "packages/chat/src/server/desktop/auth/anthropic/anthropic.ts",
+			"summary": "Resolves Claude/Anthropic credentials from local config file, macOS Keychain, or the shared auth-storage vault, and builds AI SDK provider options for API-key or OAuth-based access.",
+			"tags": [
+				"authentication",
+				"credentials",
+				"api-handler",
+				"macos",
+				"keychain"
+			],
+			"complexity": "moderate"
+		},
+		{
+			"id": "file:packages/chat/src/server/desktop/auth/anthropic/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "packages/chat/src/server/desktop/auth/anthropic/index.ts",
+			"summary": "Barrel re-exporting Anthropic credential resolution helpers and OAuth session functions for consumers of the desktop auth module.",
+			"tags": ["entry-point", "barrel", "authentication"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:packages/chat/src/server/desktop/auth/openai/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "packages/chat/src/server/desktop/auth/openai/index.ts",
+			"summary": "Barrel re-exporting OpenAI credential types and resolution helpers for the desktop auth module.",
+			"tags": ["entry-point", "barrel", "authentication"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:packages/chat/src/server/desktop/auth/openai/openai.ts",
+			"type": "file",
+			"name": "openai.ts",
+			"filePath": "packages/chat/src/server/desktop/auth/openai/openai.ts",
+			"summary": "Resolves OpenAI credentials (API key or OAuth) from the shared auth-storage vault, checking all configured OpenAI provider IDs and preferring non-expired credentials.",
+			"tags": ["authentication", "credentials", "api-handler", "oauth"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "file:packages/chat/src/server/desktop/auth/provider-ids.ts",
+			"type": "file",
+			"name": "provider-ids.ts",
+			"filePath": "packages/chat/src/server/desktop/auth/provider-ids.ts",
+			"summary": "Re-exports the canonical Anthropic and OpenAI auth-provider ID constants from the shared package for use across the desktop auth module.",
+			"tags": ["constants", "authentication", "barrel"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:packages/chat/src/server/desktop/chat-service/anthropic-env-config.ts",
+			"type": "file",
+			"name": "anthropic-env-config.ts",
+			"filePath": "packages/chat/src/server/desktop/chat-service/anthropic-env-config.ts",
+			"summary": "Persists and applies a user-editable `.env`-style block of Anthropic environment variables (API key, base URL, etc.) to disk and to the running process, with parsing and normalization utilities.",
+			"tags": [
+				"configuration",
+				"environment-variables",
+				"persistence",
+				"validation"
+			],
+			"complexity": "complex"
+		},
+		{
+			"id": "file:packages/chat/src/server/desktop/chat-service/auth-storage-types.ts",
+			"type": "file",
+			"name": "auth-storage-types.ts",
+			"filePath": "packages/chat/src/server/desktop/chat-service/auth-storage-types.ts",
+			"summary": "Shared TypeScript type definitions describing auth status, auth-storage credential shapes, and OAuth login callback types used across the chat-service auth layer.",
+			"tags": ["type-definition", "authentication"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:packages/chat/src/server/desktop/chat-service/auth-storage-utils.ts",
+			"type": "file",
+			"name": "auth-storage-utils.ts",
+			"filePath": "packages/chat/src/server/desktop/chat-service/auth-storage-utils.ts",
+			"summary": "Workaround utilities that back up and restore provider API keys across OAuth connect/disconnect cycles, and resolve the active auth method for a given provider.",
+			"tags": ["authentication", "utility", "oauth", "workaround"],
+			"complexity": "moderate",
+			"languageNotes": "Explicitly documented as a temporary workaround for a mastracode limitation (mastra-ai/mastra#15483), to be removed once the upstream fix lands."
+		},
+		{
+			"id": "file:packages/chat/src/server/desktop/chat-service/chat-service.ts",
+			"type": "file",
+			"name": "chat-service.ts",
+			"filePath": "packages/chat/src/server/desktop/chat-service/chat-service.ts",
+			"summary": "Central desktop chat service class that resolves and manages Anthropic and OpenAI authentication state (API keys, OAuth, env config) and exposes status/connect/disconnect operations to the app.",
+			"tags": [
+				"service",
+				"authentication",
+				"oauth",
+				"api-handler",
+				"orchestration"
+			],
+			"complexity": "complex"
+		},
+		{
+			"id": "file:packages/chat/src/server/desktop/chat-service/oauth-flow-controller.ts",
+			"type": "file",
+			"name": "oauth-flow-controller.ts",
+			"filePath": "packages/chat/src/server/desktop/chat-service/oauth-flow-controller.ts",
+			"summary": "Generic OAuth flow state machine that starts, completes, and cancels provider OAuth sessions, coordinating auth-URL delivery, manual code input, and session TTLs.",
+			"tags": ["oauth", "state-machine", "authentication", "service"],
+			"complexity": "complex"
+		},
+		{
+			"id": "file:packages/chat/src/server/desktop/chat-service/openai-oauth-loopback.ts",
+			"type": "file",
+			"name": "openai-oauth-loopback.ts",
+			"filePath": "packages/chat/src/server/desktop/chat-service/openai-oauth-loopback.ts",
+			"summary": "Local HTTP loopback server that captures the OpenAI OAuth redirect callback and renders success/error pages, plus a helper to derive the loopback target from an authorization URL.",
+			"tags": ["oauth", "http-server", "callback-handler", "authentication"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:packages/chat/src/server/desktop/auth/anthropic/anthropic.ts:getAnthropicProviderOptions",
+			"type": "function",
+			"name": "getAnthropicProviderOptions",
+			"filePath": "packages/chat/src/server/desktop/auth/anthropic/anthropic.ts",
+			"lineRange": [34, 51],
+			"summary": "Converts resolved Claude credentials into AI SDK provider options, using OAuth-specific headers when the credential is an OAuth token.",
+			"tags": ["authentication", "adapter", "oauth"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:packages/chat/src/server/desktop/auth/anthropic/anthropic.ts:isClaudeCredentialExpired",
+			"type": "function",
+			"name": "isClaudeCredentialExpired",
+			"filePath": "packages/chat/src/server/desktop/auth/anthropic/anthropic.ts",
+			"lineRange": [65, 73],
+			"summary": "Checks whether an OAuth Claude credential's expiry timestamp has passed.",
+			"tags": ["authentication", "validation", "oauth"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:packages/chat/src/server/desktop/auth/anthropic/anthropic.ts:getCredentialsFromConfig",
+			"type": "function",
+			"name": "getCredentialsFromConfig",
+			"filePath": "packages/chat/src/server/desktop/auth/anthropic/anthropic.ts",
+			"lineRange": [75, 131],
+			"summary": "Reads Claude API key or OAuth credentials from known local config file locations (~/.claude.json etc).",
+			"tags": ["authentication", "config", "credentials"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:packages/chat/src/server/desktop/auth/anthropic/anthropic.ts:getCredentialsFromKeychain",
+			"type": "function",
+			"name": "getCredentialsFromKeychain",
+			"filePath": "packages/chat/src/server/desktop/auth/anthropic/anthropic.ts",
+			"lineRange": [133, 169],
+			"summary": "Looks up a Claude/Anthropic API key from the macOS Keychain via the `security` CLI.",
+			"tags": ["authentication", "macos", "keychain"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:packages/chat/src/server/desktop/auth/anthropic/anthropic.ts:getCredentialsFromAuthStorage",
+			"type": "function",
+			"name": "getCredentialsFromAuthStorage",
+			"filePath": "packages/chat/src/server/desktop/auth/anthropic/anthropic.ts",
+			"lineRange": [171, 214],
+			"summary": "Reads Claude credentials from the shared mastracode auth-storage vault, refreshing OAuth tokens as needed.",
+			"tags": ["authentication", "oauth", "credentials"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:packages/chat/src/server/desktop/auth/anthropic/anthropic.ts:getCredentialsFromAnySource",
+			"type": "function",
+			"name": "getCredentialsFromAnySource",
+			"filePath": "packages/chat/src/server/desktop/auth/anthropic/anthropic.ts",
+			"lineRange": [216, 234],
+			"summary": "Tries config, keychain, then auth-storage in order, preferring a non-expired credential and falling back to the first expired one found.",
+			"tags": ["authentication", "fallback", "credentials"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:packages/chat/src/server/desktop/auth/openai/openai.ts:isOpenAICredentialExpired",
+			"type": "function",
+			"name": "isOpenAICredentialExpired",
+			"filePath": "packages/chat/src/server/desktop/auth/openai/openai.ts",
+			"lineRange": [22, 30],
+			"summary": "Checks whether an OpenAI OAuth credential's expiry timestamp has passed.",
+			"tags": ["authentication", "validation", "oauth"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:packages/chat/src/server/desktop/auth/openai/openai.ts:getOpenAICredentialsFromAuthStorage",
+			"type": "function",
+			"name": "getOpenAICredentialsFromAuthStorage",
+			"filePath": "packages/chat/src/server/desktop/auth/openai/openai.ts",
+			"lineRange": [32, 95],
+			"summary": "Reads OpenAI credentials for all configured provider IDs from auth storage, preferring a non-expired credential.",
+			"tags": ["authentication", "credentials", "oauth"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:packages/chat/src/server/desktop/auth/openai/openai.ts:getOpenAICredentialsFromAnySource",
+			"type": "function",
+			"name": "getOpenAICredentialsFromAnySource",
+			"filePath": "packages/chat/src/server/desktop/auth/openai/openai.ts",
+			"lineRange": [97, 99],
+			"summary": "Thin wrapper around getOpenAICredentialsFromAuthStorage for the default auth storage instance.",
+			"tags": ["authentication", "credentials", "utility"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:packages/chat/src/server/desktop/chat-service/anthropic-env-config.ts:normalizeAnthropicBaseUrl",
+			"type": "function",
+			"name": "normalizeAnthropicBaseUrl",
+			"filePath": "packages/chat/src/server/desktop/chat-service/anthropic-env-config.ts",
+			"lineRange": [41, 62],
+			"summary": "Normalizes a user-provided Anthropic base URL, defaulting to the Vercel AI Gateway `/v1` path and stripping trailing slashes.",
+			"tags": ["validation", "url-parsing", "configuration"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:packages/chat/src/server/desktop/chat-service/anthropic-env-config.ts:parseLineValue",
+			"type": "function",
+			"name": "parseLineValue",
+			"filePath": "packages/chat/src/server/desktop/chat-service/anthropic-env-config.ts",
+			"lineRange": [64, 73],
+			"summary": "Strips matching surrounding quotes from a single `.env` line's value.",
+			"tags": ["parsing", "utility"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:packages/chat/src/server/desktop/chat-service/anthropic-env-config.ts:getAnthropicEnvConfigPath",
+			"type": "function",
+			"name": "getAnthropicEnvConfigPath",
+			"filePath": "packages/chat/src/server/desktop/chat-service/anthropic-env-config.ts",
+			"lineRange": [83, 90],
+			"summary": "Resolves the on-disk path for the persisted Anthropic env config file, honoring SUPERSET_HOME_DIR.",
+			"tags": ["configuration", "filesystem"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:packages/chat/src/server/desktop/chat-service/anthropic-env-config.ts:parseAnthropicEnvText",
+			"type": "function",
+			"name": "parseAnthropicEnvText",
+			"filePath": "packages/chat/src/server/desktop/chat-service/anthropic-env-config.ts",
+			"lineRange": [92, 124],
+			"summary": "Parses a `.env`-style text block into a key/value map, validating line format and rejecting malformed entries.",
+			"tags": ["parsing", "validation", "configuration"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:packages/chat/src/server/desktop/chat-service/anthropic-env-config.ts:readPersistedAnthropicEnvConfig",
+			"type": "function",
+			"name": "readPersistedAnthropicEnvConfig",
+			"filePath": "packages/chat/src/server/desktop/chat-service/anthropic-env-config.ts",
+			"lineRange": [126, 153],
+			"summary": "Reads and validates the persisted Anthropic env config JSON file from disk.",
+			"tags": ["persistence", "configuration", "filesystem"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:packages/chat/src/server/desktop/chat-service/anthropic-env-config.ts:getAnthropicEnvConfig",
+			"type": "function",
+			"name": "getAnthropicEnvConfig",
+			"filePath": "packages/chat/src/server/desktop/chat-service/anthropic-env-config.ts",
+			"lineRange": [155, 187],
+			"summary": "Loads the persisted Anthropic env config and parses its variables, returning empty defaults on any failure.",
+			"tags": ["configuration", "persistence"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:packages/chat/src/server/desktop/chat-service/anthropic-env-config.ts:setAnthropicEnvConfig",
+			"type": "function",
+			"name": "setAnthropicEnvConfig",
+			"filePath": "packages/chat/src/server/desktop/chat-service/anthropic-env-config.ts",
+			"lineRange": [189, 205],
+			"summary": "Validates and writes a new Anthropic env config block to disk with restrictive file permissions.",
+			"tags": ["configuration", "persistence", "security"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:packages/chat/src/server/desktop/chat-service/anthropic-env-config.ts:clearAnthropicEnvConfig",
+			"type": "function",
+			"name": "clearAnthropicEnvConfig",
+			"filePath": "packages/chat/src/server/desktop/chat-service/anthropic-env-config.ts",
+			"lineRange": [207, 212],
+			"summary": "Deletes the persisted Anthropic env config file from disk.",
+			"tags": ["configuration", "persistence"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:packages/chat/src/server/desktop/chat-service/anthropic-env-config.ts:buildAnthropicRuntimeEnv",
+			"type": "function",
+			"name": "buildAnthropicRuntimeEnv",
+			"filePath": "packages/chat/src/server/desktop/chat-service/anthropic-env-config.ts",
+			"lineRange": [214, 223],
+			"summary": "Builds a normalized runtime environment map from parsed variables, including base-URL normalization.",
+			"tags": ["configuration", "environment-variables"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:packages/chat/src/server/desktop/chat-service/anthropic-env-config.ts:applyAnthropicRuntimeEnv",
+			"type": "function",
+			"name": "applyAnthropicRuntimeEnv",
+			"filePath": "packages/chat/src/server/desktop/chat-service/anthropic-env-config.ts",
+			"lineRange": [225, 243],
+			"summary": "Applies a runtime environment map to `process.env`, clearing keys that were present in the previous env but absent from the next.",
+			"tags": ["environment-variables", "side-effect"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:packages/chat/src/server/desktop/chat-service/auth-storage-utils.ts:setApiKeyForProvider",
+			"type": "function",
+			"name": "setApiKeyForProvider",
+			"filePath": "packages/chat/src/server/desktop/chat-service/auth-storage-utils.ts",
+			"lineRange": [12, 32],
+			"summary": "Stores a trimmed API key for a provider in both the main auth-storage slot and a dedicated backup slot.",
+			"tags": ["authentication", "credentials", "persistence"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:packages/chat/src/server/desktop/chat-service/auth-storage-utils.ts:clearApiKeyForProvider",
+			"type": "function",
+			"name": "clearApiKeyForProvider",
+			"filePath": "packages/chat/src/server/desktop/chat-service/auth-storage-utils.ts",
+			"lineRange": [34, 50],
+			"summary": "Clears both the backup API-key slot and the main slot (if it holds an API key) for a provider.",
+			"tags": ["authentication", "credentials", "cleanup"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:packages/chat/src/server/desktop/chat-service/auth-storage-utils.ts:backupApiKeyBeforeOAuth",
+			"type": "function",
+			"name": "backupApiKeyBeforeOAuth",
+			"filePath": "packages/chat/src/server/desktop/chat-service/auth-storage-utils.ts",
+			"lineRange": [56, 69],
+			"summary": "Saves the current API key to a backup slot before an OAuth login overwrites the main credential slot.",
+			"tags": ["authentication", "oauth", "backup"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:packages/chat/src/server/desktop/chat-service/auth-storage-utils.ts:restoreApiKeyAfterOAuthDisconnect",
+			"type": "function",
+			"name": "restoreApiKeyAfterOAuthDisconnect",
+			"filePath": "packages/chat/src/server/desktop/chat-service/auth-storage-utils.ts",
+			"lineRange": [75, 87],
+			"summary": "Restores a previously backed-up API key into the main slot after OAuth is disconnected.",
+			"tags": ["authentication", "oauth", "restore"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:packages/chat/src/server/desktop/chat-service/auth-storage-utils.ts:clearCredentialForProvider",
+			"type": "function",
+			"name": "clearCredentialForProvider",
+			"filePath": "packages/chat/src/server/desktop/chat-service/auth-storage-utils.ts",
+			"lineRange": [89, 99],
+			"summary": "Removes any stored credential (API key or OAuth) for a given provider.",
+			"tags": ["authentication", "credentials", "cleanup"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:packages/chat/src/server/desktop/chat-service/auth-storage-utils.ts:resolveAuthMethodForProvider",
+			"type": "function",
+			"name": "resolveAuthMethodForProvider",
+			"filePath": "packages/chat/src/server/desktop/chat-service/auth-storage-utils.ts",
+			"lineRange": [101, 119],
+			"summary": "Determines whether a provider's active auth method is OAuth, API key, or none, checking both main and backup slots.",
+			"tags": ["authentication", "resolution", "oauth"],
+			"complexity": "simple"
+		},
+		{
+			"id": "class:packages/chat/src/server/desktop/chat-service/chat-service.ts:ChatService",
+			"type": "class",
+			"name": "ChatService",
+			"filePath": "packages/chat/src/server/desktop/chat-service/chat-service.ts",
+			"lineRange": [66, 667],
+			"summary": "Central service exposing auth status, API-key, and OAuth management operations for both Anthropic and OpenAI providers, and manages the Anthropic env-config runtime environment lifecycle.",
+			"tags": [
+				"service",
+				"authentication",
+				"oauth",
+				"orchestration",
+				"api-handler"
+			],
+			"complexity": "complex"
+		},
+		{
+			"id": "class:packages/chat/src/server/desktop/chat-service/oauth-flow-controller.ts:OAuthFlowController",
+			"type": "class",
+			"name": "OAuthFlowController",
+			"filePath": "packages/chat/src/server/desktop/chat-service/oauth-flow-controller.ts",
+			"lineRange": [46, 238],
+			"summary": "Generic per-provider OAuth session manager that starts a login flow, waits for the auth URL, accepts manual code completion, and supports cancellation with TTL-based session expiry.",
+			"tags": ["oauth", "state-machine", "service", "session-management"],
+			"complexity": "complex"
+		},
+		{
+			"id": "function:packages/chat/src/server/desktop/chat-service/openai-oauth-loopback.ts:parseLoopbackTargetFromAuthUrl",
+			"type": "function",
+			"name": "parseLoopbackTargetFromAuthUrl",
+			"filePath": "packages/chat/src/server/desktop/chat-service/openai-oauth-loopback.ts",
+			"lineRange": [17, 41],
+			"summary": "Extracts the loopback host/port/path from an OAuth authorization URL's `redirect_uri` query parameter, validating it targets localhost/127.0.0.1/::1.",
+			"tags": ["oauth", "url-parsing", "validation"],
+			"complexity": "simple"
+		},
+		{
+			"id": "class:packages/chat/src/server/desktop/chat-service/openai-oauth-loopback.ts:OpenAIOAuthLoopback",
+			"type": "class",
+			"name": "OpenAIOAuthLoopback",
+			"filePath": "packages/chat/src/server/desktop/chat-service/openai-oauth-loopback.ts",
+			"lineRange": [43, 106],
+			"summary": "Local HTTP server that listens for the OAuth redirect callback, extracts the authorization code, and renders a success or error page to the browser.",
+			"tags": ["oauth", "http-server", "callback-handler"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:packages/chat/src/server/desktop/chat-service/openai-oauth-loopback.ts:renderErrorPage",
+			"type": "function",
+			"name": "renderErrorPage",
+			"filePath": "packages/chat/src/server/desktop/chat-service/openai-oauth-loopback.ts",
+			"lineRange": [147, 162],
+			"summary": "Renders an HTML error page shown to the user when the OAuth loopback callback fails or is missing a code.",
+			"tags": ["html", "error-handling", "ui"],
+			"complexity": "simple"
+		}
+	],
+	"edges": [
+		{
+			"source": "file:packages/chat/src/server/desktop/auth/anthropic/anthropic.ts",
+			"target": "function:packages/chat/src/server/desktop/auth/anthropic/anthropic.ts:getAnthropicProviderOptions",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/chat/src/server/desktop/auth/anthropic/anthropic.ts",
+			"target": "function:packages/chat/src/server/desktop/auth/anthropic/anthropic.ts:isClaudeCredentialExpired",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/chat/src/server/desktop/auth/anthropic/anthropic.ts",
+			"target": "function:packages/chat/src/server/desktop/auth/anthropic/anthropic.ts:getCredentialsFromConfig",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/chat/src/server/desktop/auth/anthropic/anthropic.ts",
+			"target": "function:packages/chat/src/server/desktop/auth/anthropic/anthropic.ts:getCredentialsFromKeychain",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/chat/src/server/desktop/auth/anthropic/anthropic.ts",
+			"target": "function:packages/chat/src/server/desktop/auth/anthropic/anthropic.ts:getCredentialsFromAuthStorage",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/chat/src/server/desktop/auth/anthropic/anthropic.ts",
+			"target": "function:packages/chat/src/server/desktop/auth/anthropic/anthropic.ts:getCredentialsFromAnySource",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/chat/src/server/desktop/auth/anthropic/anthropic.ts",
+			"target": "function:packages/chat/src/server/desktop/auth/anthropic/anthropic.ts:getAnthropicProviderOptions",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:packages/chat/src/server/desktop/auth/anthropic/anthropic.ts",
+			"target": "function:packages/chat/src/server/desktop/auth/anthropic/anthropic.ts:isClaudeCredentialExpired",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:packages/chat/src/server/desktop/auth/anthropic/anthropic.ts",
+			"target": "function:packages/chat/src/server/desktop/auth/anthropic/anthropic.ts:getCredentialsFromConfig",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:packages/chat/src/server/desktop/auth/anthropic/anthropic.ts",
+			"target": "function:packages/chat/src/server/desktop/auth/anthropic/anthropic.ts:getCredentialsFromKeychain",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:packages/chat/src/server/desktop/auth/anthropic/anthropic.ts",
+			"target": "function:packages/chat/src/server/desktop/auth/anthropic/anthropic.ts:getCredentialsFromAuthStorage",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:packages/chat/src/server/desktop/auth/anthropic/anthropic.ts",
+			"target": "function:packages/chat/src/server/desktop/auth/anthropic/anthropic.ts:getCredentialsFromAnySource",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:packages/chat/src/server/desktop/auth/anthropic/anthropic.ts",
+			"target": "file:packages/chat/src/server/desktop/auth/provider-ids.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+
+		{
+			"source": "file:packages/chat/src/server/desktop/auth/openai/openai.ts",
+			"target": "function:packages/chat/src/server/desktop/auth/openai/openai.ts:isOpenAICredentialExpired",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/chat/src/server/desktop/auth/openai/openai.ts",
+			"target": "function:packages/chat/src/server/desktop/auth/openai/openai.ts:getOpenAICredentialsFromAuthStorage",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/chat/src/server/desktop/auth/openai/openai.ts",
+			"target": "function:packages/chat/src/server/desktop/auth/openai/openai.ts:getOpenAICredentialsFromAnySource",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/chat/src/server/desktop/auth/openai/openai.ts",
+			"target": "function:packages/chat/src/server/desktop/auth/openai/openai.ts:isOpenAICredentialExpired",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:packages/chat/src/server/desktop/auth/openai/openai.ts",
+			"target": "function:packages/chat/src/server/desktop/auth/openai/openai.ts:getOpenAICredentialsFromAuthStorage",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:packages/chat/src/server/desktop/auth/openai/openai.ts",
+			"target": "function:packages/chat/src/server/desktop/auth/openai/openai.ts:getOpenAICredentialsFromAnySource",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:packages/chat/src/server/desktop/auth/openai/openai.ts",
+			"target": "file:packages/chat/src/server/desktop/auth/provider-ids.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+
+		{
+			"source": "file:packages/chat/src/server/desktop/chat-service/anthropic-env-config.ts",
+			"target": "function:packages/chat/src/server/desktop/chat-service/anthropic-env-config.ts:normalizeAnthropicBaseUrl",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/chat/src/server/desktop/chat-service/anthropic-env-config.ts",
+			"target": "function:packages/chat/src/server/desktop/chat-service/anthropic-env-config.ts:parseLineValue",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/chat/src/server/desktop/chat-service/anthropic-env-config.ts",
+			"target": "function:packages/chat/src/server/desktop/chat-service/anthropic-env-config.ts:getAnthropicEnvConfigPath",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/chat/src/server/desktop/chat-service/anthropic-env-config.ts",
+			"target": "function:packages/chat/src/server/desktop/chat-service/anthropic-env-config.ts:parseAnthropicEnvText",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/chat/src/server/desktop/chat-service/anthropic-env-config.ts",
+			"target": "function:packages/chat/src/server/desktop/chat-service/anthropic-env-config.ts:readPersistedAnthropicEnvConfig",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/chat/src/server/desktop/chat-service/anthropic-env-config.ts",
+			"target": "function:packages/chat/src/server/desktop/chat-service/anthropic-env-config.ts:getAnthropicEnvConfig",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/chat/src/server/desktop/chat-service/anthropic-env-config.ts",
+			"target": "function:packages/chat/src/server/desktop/chat-service/anthropic-env-config.ts:setAnthropicEnvConfig",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/chat/src/server/desktop/chat-service/anthropic-env-config.ts",
+			"target": "function:packages/chat/src/server/desktop/chat-service/anthropic-env-config.ts:clearAnthropicEnvConfig",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/chat/src/server/desktop/chat-service/anthropic-env-config.ts",
+			"target": "function:packages/chat/src/server/desktop/chat-service/anthropic-env-config.ts:buildAnthropicRuntimeEnv",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/chat/src/server/desktop/chat-service/anthropic-env-config.ts",
+			"target": "function:packages/chat/src/server/desktop/chat-service/anthropic-env-config.ts:applyAnthropicRuntimeEnv",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/chat/src/server/desktop/chat-service/anthropic-env-config.ts",
+			"target": "function:packages/chat/src/server/desktop/chat-service/anthropic-env-config.ts:getAnthropicEnvConfigPath",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:packages/chat/src/server/desktop/chat-service/anthropic-env-config.ts",
+			"target": "function:packages/chat/src/server/desktop/chat-service/anthropic-env-config.ts:parseAnthropicEnvText",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:packages/chat/src/server/desktop/chat-service/anthropic-env-config.ts",
+			"target": "function:packages/chat/src/server/desktop/chat-service/anthropic-env-config.ts:getAnthropicEnvConfig",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:packages/chat/src/server/desktop/chat-service/anthropic-env-config.ts",
+			"target": "function:packages/chat/src/server/desktop/chat-service/anthropic-env-config.ts:setAnthropicEnvConfig",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:packages/chat/src/server/desktop/chat-service/anthropic-env-config.ts",
+			"target": "function:packages/chat/src/server/desktop/chat-service/anthropic-env-config.ts:clearAnthropicEnvConfig",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:packages/chat/src/server/desktop/chat-service/anthropic-env-config.ts",
+			"target": "function:packages/chat/src/server/desktop/chat-service/anthropic-env-config.ts:buildAnthropicRuntimeEnv",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:packages/chat/src/server/desktop/chat-service/anthropic-env-config.ts",
+			"target": "function:packages/chat/src/server/desktop/chat-service/anthropic-env-config.ts:applyAnthropicRuntimeEnv",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+
+		{
+			"source": "file:packages/chat/src/server/desktop/chat-service/auth-storage-utils.ts",
+			"target": "function:packages/chat/src/server/desktop/chat-service/auth-storage-utils.ts:setApiKeyForProvider",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/chat/src/server/desktop/chat-service/auth-storage-utils.ts",
+			"target": "function:packages/chat/src/server/desktop/chat-service/auth-storage-utils.ts:clearApiKeyForProvider",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/chat/src/server/desktop/chat-service/auth-storage-utils.ts",
+			"target": "function:packages/chat/src/server/desktop/chat-service/auth-storage-utils.ts:backupApiKeyBeforeOAuth",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/chat/src/server/desktop/chat-service/auth-storage-utils.ts",
+			"target": "function:packages/chat/src/server/desktop/chat-service/auth-storage-utils.ts:restoreApiKeyAfterOAuthDisconnect",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/chat/src/server/desktop/chat-service/auth-storage-utils.ts",
+			"target": "function:packages/chat/src/server/desktop/chat-service/auth-storage-utils.ts:clearCredentialForProvider",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/chat/src/server/desktop/chat-service/auth-storage-utils.ts",
+			"target": "function:packages/chat/src/server/desktop/chat-service/auth-storage-utils.ts:resolveAuthMethodForProvider",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/chat/src/server/desktop/chat-service/auth-storage-utils.ts",
+			"target": "function:packages/chat/src/server/desktop/chat-service/auth-storage-utils.ts:setApiKeyForProvider",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:packages/chat/src/server/desktop/chat-service/auth-storage-utils.ts",
+			"target": "function:packages/chat/src/server/desktop/chat-service/auth-storage-utils.ts:clearApiKeyForProvider",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:packages/chat/src/server/desktop/chat-service/auth-storage-utils.ts",
+			"target": "function:packages/chat/src/server/desktop/chat-service/auth-storage-utils.ts:backupApiKeyBeforeOAuth",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:packages/chat/src/server/desktop/chat-service/auth-storage-utils.ts",
+			"target": "function:packages/chat/src/server/desktop/chat-service/auth-storage-utils.ts:restoreApiKeyAfterOAuthDisconnect",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:packages/chat/src/server/desktop/chat-service/auth-storage-utils.ts",
+			"target": "function:packages/chat/src/server/desktop/chat-service/auth-storage-utils.ts:clearCredentialForProvider",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:packages/chat/src/server/desktop/chat-service/auth-storage-utils.ts",
+			"target": "function:packages/chat/src/server/desktop/chat-service/auth-storage-utils.ts:resolveAuthMethodForProvider",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:packages/chat/src/server/desktop/chat-service/auth-storage-utils.ts",
+			"target": "file:packages/chat/src/server/desktop/chat-service/auth-storage-types.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+
+		{
+			"source": "file:packages/chat/src/server/desktop/chat-service/chat-service.ts",
+			"target": "class:packages/chat/src/server/desktop/chat-service/chat-service.ts:ChatService",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/chat/src/server/desktop/chat-service/chat-service.ts",
+			"target": "class:packages/chat/src/server/desktop/chat-service/chat-service.ts:ChatService",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:packages/chat/src/server/desktop/chat-service/chat-service.ts",
+			"target": "file:packages/chat/src/server/desktop/auth/anthropic/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:packages/chat/src/server/desktop/chat-service/chat-service.ts",
+			"target": "file:packages/chat/src/server/desktop/auth/openai/index.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:packages/chat/src/server/desktop/chat-service/chat-service.ts",
+			"target": "file:packages/chat/src/server/desktop/auth/provider-ids.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:packages/chat/src/server/desktop/chat-service/chat-service.ts",
+			"target": "file:packages/chat/src/server/desktop/chat-service/anthropic-env-config.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:packages/chat/src/server/desktop/chat-service/chat-service.ts",
+			"target": "file:packages/chat/src/server/desktop/chat-service/auth-storage-types.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:packages/chat/src/server/desktop/chat-service/chat-service.ts",
+			"target": "file:packages/chat/src/server/desktop/chat-service/auth-storage-utils.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:packages/chat/src/server/desktop/chat-service/chat-service.ts",
+			"target": "file:packages/chat/src/server/desktop/chat-service/oauth-flow-controller.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "file:packages/chat/src/server/desktop/chat-service/chat-service.ts",
+			"target": "file:packages/chat/src/server/desktop/chat-service/openai-oauth-loopback.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+		{
+			"source": "class:packages/chat/src/server/desktop/chat-service/chat-service.ts:ChatService",
+			"target": "function:packages/chat/src/server/desktop/auth/anthropic/anthropic.ts:getCredentialsFromConfig",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "class:packages/chat/src/server/desktop/chat-service/chat-service.ts:ChatService",
+			"target": "function:packages/chat/src/server/desktop/auth/anthropic/anthropic.ts:getCredentialsFromKeychain",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "class:packages/chat/src/server/desktop/chat-service/chat-service.ts:ChatService",
+			"target": "function:packages/chat/src/server/desktop/auth/anthropic/anthropic.ts:isClaudeCredentialExpired",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "class:packages/chat/src/server/desktop/chat-service/chat-service.ts:ChatService",
+			"target": "function:packages/chat/src/server/desktop/auth/openai/openai.ts:getOpenAICredentialsFromAuthStorage",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "class:packages/chat/src/server/desktop/chat-service/chat-service.ts:ChatService",
+			"target": "function:packages/chat/src/server/desktop/auth/openai/openai.ts:isOpenAICredentialExpired",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "class:packages/chat/src/server/desktop/chat-service/chat-service.ts:ChatService",
+			"target": "function:packages/chat/src/server/desktop/chat-service/auth-storage-utils.ts:resolveAuthMethodForProvider",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "class:packages/chat/src/server/desktop/chat-service/chat-service.ts:ChatService",
+			"target": "function:packages/chat/src/server/desktop/chat-service/auth-storage-utils.ts:setApiKeyForProvider",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "class:packages/chat/src/server/desktop/chat-service/chat-service.ts:ChatService",
+			"target": "function:packages/chat/src/server/desktop/chat-service/auth-storage-utils.ts:clearApiKeyForProvider",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "class:packages/chat/src/server/desktop/chat-service/chat-service.ts:ChatService",
+			"target": "function:packages/chat/src/server/desktop/chat-service/auth-storage-utils.ts:backupApiKeyBeforeOAuth",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "class:packages/chat/src/server/desktop/chat-service/chat-service.ts:ChatService",
+			"target": "function:packages/chat/src/server/desktop/chat-service/auth-storage-utils.ts:restoreApiKeyAfterOAuthDisconnect",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "class:packages/chat/src/server/desktop/chat-service/chat-service.ts:ChatService",
+			"target": "function:packages/chat/src/server/desktop/chat-service/auth-storage-utils.ts:clearCredentialForProvider",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "class:packages/chat/src/server/desktop/chat-service/chat-service.ts:ChatService",
+			"target": "function:packages/chat/src/server/desktop/chat-service/anthropic-env-config.ts:getAnthropicEnvConfig",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "class:packages/chat/src/server/desktop/chat-service/chat-service.ts:ChatService",
+			"target": "function:packages/chat/src/server/desktop/chat-service/anthropic-env-config.ts:parseAnthropicEnvText",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "class:packages/chat/src/server/desktop/chat-service/chat-service.ts:ChatService",
+			"target": "function:packages/chat/src/server/desktop/chat-service/anthropic-env-config.ts:setAnthropicEnvConfig",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "class:packages/chat/src/server/desktop/chat-service/chat-service.ts:ChatService",
+			"target": "function:packages/chat/src/server/desktop/chat-service/anthropic-env-config.ts:clearAnthropicEnvConfig",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "class:packages/chat/src/server/desktop/chat-service/chat-service.ts:ChatService",
+			"target": "function:packages/chat/src/server/desktop/chat-service/anthropic-env-config.ts:buildAnthropicRuntimeEnv",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "class:packages/chat/src/server/desktop/chat-service/chat-service.ts:ChatService",
+			"target": "function:packages/chat/src/server/desktop/chat-service/anthropic-env-config.ts:applyAnthropicRuntimeEnv",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "class:packages/chat/src/server/desktop/chat-service/chat-service.ts:ChatService",
+			"target": "function:packages/chat/src/server/desktop/chat-service/openai-oauth-loopback.ts:parseLoopbackTargetFromAuthUrl",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "class:packages/chat/src/server/desktop/chat-service/chat-service.ts:ChatService",
+			"target": "class:packages/chat/src/server/desktop/chat-service/oauth-flow-controller.ts:OAuthFlowController",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "class:packages/chat/src/server/desktop/chat-service/chat-service.ts:ChatService",
+			"target": "class:packages/chat/src/server/desktop/chat-service/openai-oauth-loopback.ts:OpenAIOAuthLoopback",
+			"type": "calls",
+			"direction": "forward",
+			"weight": 0.8
+		},
+
+		{
+			"source": "file:packages/chat/src/server/desktop/chat-service/oauth-flow-controller.ts",
+			"target": "class:packages/chat/src/server/desktop/chat-service/oauth-flow-controller.ts:OAuthFlowController",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/chat/src/server/desktop/chat-service/oauth-flow-controller.ts",
+			"target": "class:packages/chat/src/server/desktop/chat-service/oauth-flow-controller.ts:OAuthFlowController",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:packages/chat/src/server/desktop/chat-service/oauth-flow-controller.ts",
+			"target": "file:packages/chat/src/server/desktop/chat-service/auth-storage-types.ts",
+			"type": "imports",
+			"direction": "forward",
+			"weight": 0.7
+		},
+
+		{
+			"source": "file:packages/chat/src/server/desktop/chat-service/openai-oauth-loopback.ts",
+			"target": "function:packages/chat/src/server/desktop/chat-service/openai-oauth-loopback.ts:parseLoopbackTargetFromAuthUrl",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/chat/src/server/desktop/chat-service/openai-oauth-loopback.ts",
+			"target": "class:packages/chat/src/server/desktop/chat-service/openai-oauth-loopback.ts:OpenAIOAuthLoopback",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/chat/src/server/desktop/chat-service/openai-oauth-loopback.ts",
+			"target": "function:packages/chat/src/server/desktop/chat-service/openai-oauth-loopback.ts:renderErrorPage",
+			"type": "contains",
+			"direction": "forward",
+			"weight": 1.0
+		},
+		{
+			"source": "file:packages/chat/src/server/desktop/chat-service/openai-oauth-loopback.ts",
+			"target": "function:packages/chat/src/server/desktop/chat-service/openai-oauth-loopback.ts:parseLoopbackTargetFromAuthUrl",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		},
+		{
+			"source": "file:packages/chat/src/server/desktop/chat-service/openai-oauth-loopback.ts",
+			"target": "class:packages/chat/src/server/desktop/chat-service/openai-oauth-loopback.ts:OpenAIOAuthLoopback",
+			"type": "exports",
+			"direction": "forward",
+			"weight": 0.8
+		}
+	]
+}

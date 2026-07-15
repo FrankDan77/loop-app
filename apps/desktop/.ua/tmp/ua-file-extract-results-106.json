@@ -1,0 +1,1095 @@
+{
+	"scriptCompleted": true,
+	"filesAnalyzed": 25,
+	"filesSkipped": [],
+	"results": [
+		{
+			"path": "src/renderer/lib/formatRelativeTime/formatRelativeTime.test.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 82,
+			"nonEmptyLines": 73,
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/lib/formatRelativeTime/formatRelativeTime.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 16,
+			"nonEmptyLines": 15,
+			"functions": [
+				{
+					"name": "formatRelativeTime",
+					"startLine": 1,
+					"endLine": 16,
+					"params": ["timestamp"]
+				}
+			],
+			"exports": [
+				{
+					"name": "formatRelativeTime",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "formatRelativeTime",
+					"callee": "Date.now",
+					"lineNumber": 2
+				},
+				{
+					"caller": "formatRelativeTime",
+					"callee": "Math.floor",
+					"lineNumber": 4
+				},
+				{
+					"caller": "formatRelativeTime",
+					"callee": "Math.floor",
+					"lineNumber": 5
+				},
+				{
+					"caller": "formatRelativeTime",
+					"callee": "Math.floor",
+					"lineNumber": 6
+				},
+				{
+					"caller": "formatRelativeTime",
+					"callee": "Math.floor",
+					"lineNumber": 7
+				},
+				{
+					"caller": "formatRelativeTime",
+					"callee": "Math.floor",
+					"lineNumber": 8
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/lib/getWorkspaceDisplayName/getWorkspaceDisplayName.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 9,
+			"nonEmptyLines": 9,
+			"functions": [
+				{
+					"name": "getWorkspaceDisplayName",
+					"startLine": 1,
+					"endLine": 9,
+					"params": ["workspaceName", "workspaceType", "projectName"]
+				}
+			],
+			"exports": [
+				{
+					"name": "getWorkspaceDisplayName",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "getWorkspaceDisplayName",
+					"callee": "[projectName, workspaceType === \"branch\" ? \"local\" : workspaceName]\n\t\t.filter(Boolean)\n\t\t.join",
+					"lineNumber": 6
+				},
+				{
+					"caller": "getWorkspaceDisplayName",
+					"callee": "[projectName, workspaceType === \"branch\" ? \"local\" : workspaceName]\n\t\t.filter",
+					"lineNumber": 6
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/lib/getWorkspaceDisplayName/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "getWorkspaceDisplayName",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/lib/pathBasename/pathBasename.test.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 126,
+			"nonEmptyLines": 99,
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/lib/pathBasename/pathBasename.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 3,
+			"nonEmptyLines": 3,
+			"functions": [
+				{
+					"name": "getBaseName",
+					"startLine": 1,
+					"endLine": 3,
+					"params": ["absolutePath"]
+				}
+			],
+			"exports": [
+				{
+					"name": "getBaseName",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "getBaseName",
+					"callee": "absolutePath.split(/[/\\\\]/).filter(Boolean).pop",
+					"lineNumber": 2
+				},
+				{
+					"caller": "getBaseName",
+					"callee": "absolutePath.split(/[/\\\\]/).filter",
+					"lineNumber": 2
+				},
+				{
+					"caller": "getBaseName",
+					"callee": "absolutePath.split",
+					"lineNumber": 2
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/lib/persistent-hash-history/persistent-hash-history.test.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 382,
+			"nonEmptyLines": 323,
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/lib/persistent-hash-history/persistent-hash-history.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 184,
+			"nonEmptyLines": 165,
+			"functions": [
+				{
+					"name": "loadPersistedState",
+					"startLine": 22,
+					"endLine": 42,
+					"params": []
+				},
+				{
+					"name": "persistState",
+					"startLine": 44,
+					"endLine": 59,
+					"params": ["entries", "index"]
+				},
+				{
+					"name": "syncHash",
+					"startLine": 61,
+					"endLine": 63,
+					"params": ["path"]
+				},
+				{
+					"name": "createRandomKey",
+					"startLine": 65,
+					"endLine": 67,
+					"params": []
+				},
+				{
+					"name": "assignKeyAndIndex",
+					"startLine": 69,
+					"endLine": 80,
+					"params": ["index", "state"]
+				},
+				{
+					"name": "parseHref",
+					"startLine": 82,
+					"endLine": 104,
+					"params": ["href", "state"]
+				},
+				{
+					"name": "createPersistentHashHistory",
+					"startLine": 110,
+					"endLine": 182,
+					"params": []
+				}
+			],
+			"exports": [
+				{
+					"name": "createPersistentHashHistory",
+					"line": 110,
+					"isDefault": false
+				},
+				{
+					"name": "persistentHistory",
+					"line": 184,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "loadPersistedState",
+					"callee": "localStorage.getItem",
+					"lineNumber": 24
+				},
+				{
+					"caller": "loadPersistedState",
+					"callee": "JSON.parse",
+					"lineNumber": 26
+				},
+				{
+					"caller": "loadPersistedState",
+					"callee": "Array.isArray",
+					"lineNumber": 28
+				},
+				{
+					"caller": "loadPersistedState",
+					"callee": "parsed.entries.every",
+					"lineNumber": 30
+				},
+				{
+					"caller": "loadPersistedState",
+					"callee": "Math.min",
+					"lineNumber": 33
+				},
+				{
+					"caller": "loadPersistedState",
+					"callee": "Math.max",
+					"lineNumber": 34
+				},
+				{
+					"caller": "persistState",
+					"callee": "entries.slice",
+					"lineNumber": 48
+				},
+				{
+					"caller": "persistState",
+					"callee": "Math.max",
+					"lineNumber": 52
+				},
+				{
+					"caller": "persistState",
+					"callee": "localStorage.setItem",
+					"lineNumber": 54
+				},
+				{
+					"caller": "persistState",
+					"callee": "JSON.stringify",
+					"lineNumber": 56
+				},
+				{
+					"caller": "syncHash",
+					"callee": "window.history.replaceState",
+					"lineNumber": 62
+				},
+				{
+					"caller": "createRandomKey",
+					"callee": "(Math.random() + 1).toString(36).substring",
+					"lineNumber": 66
+				},
+				{
+					"caller": "createRandomKey",
+					"callee": "(Math.random() + 1).toString",
+					"lineNumber": 66
+				},
+				{
+					"caller": "createRandomKey",
+					"callee": "Math.random",
+					"lineNumber": 66
+				},
+				{
+					"caller": "assignKeyAndIndex",
+					"callee": "createRandomKey",
+					"lineNumber": 73
+				},
+				{
+					"caller": "parseHref",
+					"callee": "href.indexOf",
+					"lineNumber": 83
+				},
+				{
+					"caller": "parseHref",
+					"callee": "href.indexOf",
+					"lineNumber": 84
+				},
+				{
+					"caller": "parseHref",
+					"callee": "href.substring",
+					"lineNumber": 87
+				},
+				{
+					"caller": "parseHref",
+					"callee": "Math.min",
+					"lineNumber": 91
+				},
+				{
+					"caller": "parseHref",
+					"callee": "href.substring",
+					"lineNumber": 97
+				},
+				{
+					"caller": "parseHref",
+					"callee": "href.slice",
+					"lineNumber": 100
+				},
+				{
+					"caller": "createPersistentHashHistory",
+					"callee": "loadPersistedState",
+					"lineNumber": 111
+				},
+				{
+					"caller": "createPersistentHashHistory",
+					"callee": "entries.map",
+					"lineNumber": 114
+				},
+				{
+					"caller": "createPersistentHashHistory",
+					"callee": "Date.now",
+					"lineNumber": 114
+				},
+				{
+					"caller": "createPersistentHashHistory",
+					"callee": "entries.map",
+					"lineNumber": 115
+				},
+				{
+					"caller": "createPersistentHashHistory",
+					"callee": "assignKeyAndIndex",
+					"lineNumber": 116
+				},
+				{
+					"caller": "getLocation",
+					"callee": "parseHref",
+					"lineNumber": 121
+				},
+				{
+					"caller": "getLocation",
+					"callee": "assignKeyAndIndex",
+					"lineNumber": 121
+				},
+				{
+					"caller": "createPersistentHashHistory",
+					"callee": "syncHash",
+					"lineNumber": 127
+				},
+				{
+					"caller": "createPersistentHashHistory",
+					"callee": "createHistory",
+					"lineNumber": 129
+				},
+				{
+					"caller": "createPersistentHashHistory",
+					"callee": "entries.splice",
+					"lineNumber": 134
+				},
+				{
+					"caller": "createPersistentHashHistory",
+					"callee": "timestamps.splice",
+					"lineNumber": 135
+				},
+				{
+					"caller": "createPersistentHashHistory",
+					"callee": "states.splice",
+					"lineNumber": 136
+				},
+				{
+					"caller": "createPersistentHashHistory",
+					"callee": "entries.push",
+					"lineNumber": 138
+				},
+				{
+					"caller": "createPersistentHashHistory",
+					"callee": "timestamps.push",
+					"lineNumber": 139
+				},
+				{
+					"caller": "createPersistentHashHistory",
+					"callee": "Date.now",
+					"lineNumber": 139
+				},
+				{
+					"caller": "createPersistentHashHistory",
+					"callee": "states.push",
+					"lineNumber": 140
+				},
+				{
+					"caller": "createPersistentHashHistory",
+					"callee": "syncHash",
+					"lineNumber": 142
+				},
+				{
+					"caller": "createPersistentHashHistory",
+					"callee": "persistState",
+					"lineNumber": 143
+				},
+				{
+					"caller": "createPersistentHashHistory",
+					"callee": "Date.now",
+					"lineNumber": 147
+				},
+				{
+					"caller": "createPersistentHashHistory",
+					"callee": "syncHash",
+					"lineNumber": 149
+				},
+				{
+					"caller": "createPersistentHashHistory",
+					"callee": "persistState",
+					"lineNumber": 150
+				},
+				{
+					"caller": "createPersistentHashHistory",
+					"callee": "Math.max",
+					"lineNumber": 153
+				},
+				{
+					"caller": "createPersistentHashHistory",
+					"callee": "syncHash",
+					"lineNumber": 154
+				},
+				{
+					"caller": "createPersistentHashHistory",
+					"callee": "persistState",
+					"lineNumber": 155
+				},
+				{
+					"caller": "createPersistentHashHistory",
+					"callee": "Math.min",
+					"lineNumber": 158
+				},
+				{
+					"caller": "createPersistentHashHistory",
+					"callee": "syncHash",
+					"lineNumber": 159
+				},
+				{
+					"caller": "createPersistentHashHistory",
+					"callee": "persistState",
+					"lineNumber": 160
+				},
+				{
+					"caller": "createPersistentHashHistory",
+					"callee": "Math.min",
+					"lineNumber": 163
+				},
+				{
+					"caller": "createPersistentHashHistory",
+					"callee": "Math.max",
+					"lineNumber": 163
+				},
+				{
+					"caller": "createPersistentHashHistory",
+					"callee": "syncHash",
+					"lineNumber": 164
+				},
+				{
+					"caller": "createPersistentHashHistory",
+					"callee": "persistState",
+					"lineNumber": 165
+				},
+				{
+					"caller": "createPersistentHashHistory",
+					"callee": "Object.assign",
+					"lineNumber": 175
+				},
+				{
+					"caller": "createPersistentHashHistory",
+					"callee": "entries.map",
+					"lineNumber": 177
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 2,
+				"functionCount": 7,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/lib/pierreTree/createPierreTreeStyle.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 84,
+			"nonEmptyLines": 76,
+			"functions": [
+				{
+					"name": "createPierreTreeStyle",
+					"startLine": 26,
+					"endLine": 84,
+					"params": [
+						"{\n\trowHeight,\n\tlevelIndent,\n\twithSearchChrome = false,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "createPierreTreeStyle",
+					"line": 26,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/lib/pierreTree/pierreGitStatus.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 46,
+			"nonEmptyLines": 43,
+			"exports": [
+				{
+					"name": "FILE_STATUS_TO_PIERRE",
+					"line": 35,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/lib/pierreTree/treePaths.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 8,
+			"nonEmptyLines": 8,
+			"functions": [
+				{
+					"name": "stripTrailingSlash",
+					"startLine": 6,
+					"endLine": 8,
+					"params": ["path"]
+				}
+			],
+			"exports": [
+				{
+					"name": "stripTrailingSlash",
+					"line": 6,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "stripTrailingSlash",
+					"callee": "path.endsWith",
+					"lineNumber": 7
+				},
+				{
+					"caller": "stripTrailingSlash",
+					"callee": "path.slice",
+					"lineNumber": 7
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/lib/workspaceBaseBranch/workspaceBaseBranch.test.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 72,
+			"nonEmptyLines": 58,
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/lib/workspaceBaseBranch/workspaceBaseBranch.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 39,
+			"nonEmptyLines": 34,
+			"functions": [
+				{
+					"name": "normalizeBranch",
+					"startLine": 12,
+					"endLine": 15,
+					"params": ["value"]
+				},
+				{
+					"name": "resolveEffectiveWorkspaceBaseBranch",
+					"startLine": 17,
+					"endLine": 39,
+					"params": [
+						"{\n\texplicitBaseBranch,\n\tworkspaceBaseBranch,\n\tdefaultBranch,\n\tbranches,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "resolveEffectiveWorkspaceBaseBranch",
+					"line": 17,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "normalizeBranch",
+					"callee": "value?.trim",
+					"lineNumber": 13
+				},
+				{
+					"caller": "resolveEffectiveWorkspaceBaseBranch",
+					"callee": "normalizeBranch",
+					"lineNumber": 23
+				},
+				{
+					"caller": "resolveEffectiveWorkspaceBaseBranch",
+					"callee": "normalizeBranch",
+					"lineNumber": 28
+				},
+				{
+					"caller": "resolveEffectiveWorkspaceBaseBranch",
+					"callee": "branches.some",
+					"lineNumber": 33
+				},
+				{
+					"caller": "resolveEffectiveWorkspaceBaseBranch",
+					"callee": "normalizeBranch",
+					"lineNumber": 38
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/react-query/projects/useFinalizeProjectSetup/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 4,
+			"nonEmptyLines": 4,
+			"exports": [
+				{
+					"name": "ProjectSetupResult",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "useFinalizeProjectSetup",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 2,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/automations/$automationId/components/AutomationDetailHeader/AutomationDetailHeader.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 114,
+			"nonEmptyLines": 111,
+			"functions": [
+				{
+					"name": "AutomationDetailHeader",
+					"startLine": 26,
+					"endLine": 114,
+					"params": [
+						"{\n\tname,\n\tenabled,\n\tonBack,\n\tonToggleEnabled,\n\tonDelete,\n\tonRunNow,\n\tonOpenHistory,\n\ttoggleDisabled,\n\tdeleteDisabled,\n\trunNowDisabled,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "AutomationDetailHeader",
+					"line": 26,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/automations/$automationId/components/AutomationDetailSidebar/components/Row/Row.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 10,
+			"nonEmptyLines": 9,
+			"functions": [
+				{
+					"name": "Row",
+					"startLine": 3,
+					"endLine": 10,
+					"params": ["{ label, value }"]
+				}
+			],
+			"exports": [
+				{
+					"name": "Row",
+					"line": 3,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/automations/$automationId/components/AutomationDetailSidebar/components/SectionTitle/SectionTitle.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 9,
+			"nonEmptyLines": 8,
+			"functions": [
+				{
+					"name": "SectionTitle",
+					"startLine": 3,
+					"endLine": 9,
+					"params": ["{ children }"]
+				}
+			],
+			"exports": [
+				{
+					"name": "SectionTitle",
+					"line": 3,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/automations/$automationId/components/VersionHistorySheet/components/VersionRow/VersionRow.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 58,
+			"nonEmptyLines": 55,
+			"functions": [
+				{
+					"name": "VersionRow",
+					"startLine": 14,
+					"endLine": 58,
+					"params": [
+						"{\n\tauthorName,\n\tsource,\n\tupdatedAt,\n\tselected,\n\tonSelect,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "VersionRow",
+					"line": 14,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "VersionRow",
+					"callee": "format",
+					"lineNumber": 21
+				},
+				{
+					"caller": "VersionRow",
+					"callee": "isSameYear",
+					"lineNumber": 23
+				},
+				{
+					"caller": "VersionRow",
+					"callee": "cn",
+					"lineNumber": 33
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/automations/components/AutomationRow/components/AutomationActionsMenuItems/AutomationActionsMenuItems.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 99,
+			"nonEmptyLines": 96,
+			"functions": [
+				{
+					"name": "AutomationActionsMenuItems",
+					"startLine": 21,
+					"endLine": 99,
+					"params": [
+						"{\n\tkind,\n\tisOwner,\n\tonEdit,\n\tonRunNow,\n\tonHistory,\n\tonDelete,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "AutomationActionsMenuItems",
+					"line": 21,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "AutomationActionsMenuItems",
+					"callee": "renderItem",
+					"lineNumber": 51
+				},
+				{
+					"caller": "AutomationActionsMenuItems",
+					"callee": "renderItem",
+					"lineNumber": 62
+				},
+				{
+					"caller": "AutomationActionsMenuItems",
+					"callee": "renderItem",
+					"lineNumber": 71
+				},
+				{
+					"caller": "AutomationActionsMenuItems",
+					"callee": "renderItem",
+					"lineNumber": 85
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/automations/components/CellWithIcon/CellWithIcon.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 16,
+			"nonEmptyLines": 15,
+			"functions": [
+				{
+					"name": "CellWithIcon",
+					"startLine": 3,
+					"endLine": 16,
+					"params": ["{\n\ticon,\n\tlabel,\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "CellWithIcon",
+					"line": 3,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/automations/layout.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 9,
+			"nonEmptyLines": 7,
+			"functions": [
+				{
+					"name": "AutomationsLayout",
+					"startLine": 7,
+					"endLine": 9,
+					"params": []
+				}
+			],
+			"exports": [
+				{
+					"name": "Route",
+					"line": 3,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/automations/templates/data.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 164,
+			"nonEmptyLines": 160,
+			"exports": [
+				{
+					"name": "AUTOMATION_TEMPLATE_CATEGORIES",
+					"line": 29,
+					"isDefault": false
+				},
+				{
+					"name": "AUTOMATION_TEMPLATES_FLAT",
+					"line": 163,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 2,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/automations/utils/hostOfflineError/hostOfflineError.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 11,
+			"nonEmptyLines": 9,
+			"functions": [
+				{
+					"name": "isHostOfflineError",
+					"startLine": 9,
+					"endLine": 11,
+					"params": ["error"]
+				}
+			],
+			"exports": [
+				{
+					"name": "HOST_OFFLINE_HELP",
+					"line": 6,
+					"isDefault": false
+				},
+				{
+					"name": "isHostOfflineError",
+					"line": 9,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "isHostOfflineError",
+					"callee": "HOST_OFFLINE_ERRORS.some",
+					"lineNumber": 10
+				},
+				{
+					"caller": "isHostOfflineError",
+					"callee": "error.includes",
+					"lineNumber": 10
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 2,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/AddRepositoryModals/hooks/useFolderFirstImport/useFolderFirstImport.test.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 160,
+			"nonEmptyLines": 141,
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/CrossVersionMismatchState/CrossVersionMismatchState.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 23,
+			"nonEmptyLines": 22,
+			"functions": [
+				{
+					"name": "CrossVersionMismatchState",
+					"startLine": 3,
+					"endLine": 23,
+					"params": []
+				}
+			],
+			"exports": [
+				{
+					"name": "CrossVersionMismatchState",
+					"line": 3,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		}
+	]
+}

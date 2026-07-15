@@ -1,0 +1,341 @@
+{
+	"nodes": [
+		{
+			"id": "function:src/shared/absolute-paths.ts:isRemotePath",
+			"type": "function",
+			"name": "isRemotePath",
+			"filePath": "src/shared/absolute-paths.ts",
+			"summary": "Function with 3 lines, params: path",
+			"tags": ["exported", "3lines"],
+			"complexity": "low",
+			"lineRange": {
+				"start": 3,
+				"end": 5
+			}
+		},
+		{
+			"id": "function:src/shared/absolute-paths.ts:isAbsoluteFilesystemPath",
+			"type": "function",
+			"name": "isAbsoluteFilesystemPath",
+			"filePath": "src/shared/absolute-paths.ts",
+			"summary": "Function with 7 lines, params: path",
+			"tags": ["exported", "7lines"],
+			"complexity": "low",
+			"lineRange": {
+				"start": 7,
+				"end": 13
+			}
+		},
+		{
+			"id": "function:src/shared/absolute-paths.ts:toAbsoluteWorkspacePath",
+			"type": "function",
+			"name": "toAbsoluteWorkspacePath",
+			"filePath": "src/shared/absolute-paths.ts",
+			"summary": "Function with 16 lines, params: worktreePath, filePath",
+			"tags": ["exported", "16lines"],
+			"complexity": "low",
+			"lineRange": {
+				"start": 15,
+				"end": 30
+			}
+		},
+		{
+			"id": "function:src/shared/absolute-paths.ts:toRelativeWorkspacePath",
+			"type": "function",
+			"name": "toRelativeWorkspacePath",
+			"filePath": "src/shared/absolute-paths.ts",
+			"summary": "Function with 25 lines, params: worktreePath, filePath",
+			"tags": ["exported", "25lines"],
+			"complexity": "medium",
+			"lineRange": {
+				"start": 32,
+				"end": 56
+			}
+		},
+		{
+			"id": "function:src/shared/absolute-paths.ts:getPathBaseName",
+			"type": "function",
+			"name": "getPathBaseName",
+			"filePath": "src/shared/absolute-paths.ts",
+			"summary": "Function with 9 lines, params: path",
+			"tags": ["exported", "9lines"],
+			"complexity": "low",
+			"lineRange": {
+				"start": 58,
+				"end": 66
+			}
+		},
+		{
+			"id": "function:src/shared/absolute-paths.ts:normalizeComparablePath",
+			"type": "function",
+			"name": "normalizeComparablePath",
+			"filePath": "src/shared/absolute-paths.ts",
+			"summary": "Function with 9 lines, params: path",
+			"tags": ["exported", "9lines"],
+			"complexity": "low",
+			"lineRange": {
+				"start": 68,
+				"end": 76
+			}
+		},
+		{
+			"id": "function:src/shared/absolute-paths.ts:pathsMatch",
+			"type": "function",
+			"name": "pathsMatch",
+			"filePath": "src/shared/absolute-paths.ts",
+			"summary": "Function with 3 lines, params: left, right",
+			"tags": ["exported", "3lines"],
+			"complexity": "low",
+			"lineRange": {
+				"start": 78,
+				"end": 80
+			}
+		},
+		{
+			"id": "function:src/shared/absolute-paths.ts:retargetAbsolutePath",
+			"type": "function",
+			"name": "retargetAbsolutePath",
+			"filePath": "src/shared/absolute-paths.ts",
+			"summary": "Function with 26 lines, params: currentPath, oldAbsolutePath, newAbsolutePath, isDirectory",
+			"tags": ["exported", "26lines"],
+			"complexity": "medium",
+			"lineRange": {
+				"start": 82,
+				"end": 107
+			}
+		},
+		{
+			"id": "file:src/shared/file-tree-types.ts",
+			"type": "file",
+			"name": "file-tree-types.ts",
+			"filePath": "src/shared/file-tree-types.ts",
+			"summary": "typescript file with 0 functions, 0 classes",
+			"tags": ["typescript", "code", "25lines"],
+			"complexity": "low"
+		},
+		{
+			"id": "file:src/shared/tabs-types.ts",
+			"type": "file",
+			"name": "tabs-types.ts",
+			"filePath": "src/shared/tabs-types.ts",
+			"summary": "typescript file with 3 functions, 0 classes",
+			"tags": ["typescript", "code", "233lines"],
+			"complexity": "high"
+		},
+		{
+			"id": "function:src/shared/tabs-types.ts:pickHigherStatus",
+			"type": "function",
+			"name": "pickHigherStatus",
+			"filePath": "src/shared/tabs-types.ts",
+			"summary": "Function with 9 lines, params: a, b",
+			"tags": ["exported", "9lines"],
+			"complexity": "low",
+			"lineRange": {
+				"start": 46,
+				"end": 54
+			}
+		},
+		{
+			"id": "function:src/shared/tabs-types.ts:getHighestPriorityStatus",
+			"type": "function",
+			"name": "getHighestPriorityStatus",
+			"filePath": "src/shared/tabs-types.ts",
+			"summary": "Function with 16 lines, params: statuses",
+			"tags": ["exported", "16lines"],
+			"complexity": "low",
+			"lineRange": {
+				"start": 60,
+				"end": 75
+			}
+		},
+		{
+			"id": "function:src/shared/tabs-types.ts:acknowledgedStatus",
+			"type": "function",
+			"name": "acknowledgedStatus",
+			"filePath": "src/shared/tabs-types.ts",
+			"summary": "Function with 4 lines, params: status",
+			"tags": ["exported", "4lines"],
+			"complexity": "low",
+			"lineRange": {
+				"start": 86,
+				"end": 89
+			}
+		}
+	],
+	"edges": [
+		{
+			"source": "file:src/renderer/screens/main/components/WorkspaceView/hooks/useWorkspaceFileEvents/useWorkspaceFileEvents.ts",
+			"target": "file:src/shared/file-tree-types.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/stores/editor-state/types.ts",
+			"target": "file:src/shared/tabs-types.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/stores/tabs/store.ts",
+			"target": "file:src/shared/tabs-types.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/stores/tabs/types.ts",
+			"target": "file:src/shared/tabs-types.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/stores/tabs/utils.ts",
+			"target": "file:src/shared/tabs-types.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/stores/tabs/workspace-run.ts",
+			"target": "file:src/shared/tabs-types.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/shared/absolute-paths.ts",
+			"target": "function:src/shared/absolute-paths.ts:isRemotePath",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "function:src/shared/absolute-paths.ts:isRemotePath",
+			"target": "file:src/shared/absolute-paths.ts",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/shared/absolute-paths.ts",
+			"target": "function:src/shared/absolute-paths.ts:isAbsoluteFilesystemPath",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "function:src/shared/absolute-paths.ts:isAbsoluteFilesystemPath",
+			"target": "file:src/shared/absolute-paths.ts",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/shared/absolute-paths.ts",
+			"target": "function:src/shared/absolute-paths.ts:toAbsoluteWorkspacePath",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "function:src/shared/absolute-paths.ts:toAbsoluteWorkspacePath",
+			"target": "file:src/shared/absolute-paths.ts",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/shared/absolute-paths.ts",
+			"target": "function:src/shared/absolute-paths.ts:toRelativeWorkspacePath",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "function:src/shared/absolute-paths.ts:toRelativeWorkspacePath",
+			"target": "file:src/shared/absolute-paths.ts",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/shared/absolute-paths.ts",
+			"target": "function:src/shared/absolute-paths.ts:getPathBaseName",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "function:src/shared/absolute-paths.ts:getPathBaseName",
+			"target": "file:src/shared/absolute-paths.ts",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/shared/absolute-paths.ts",
+			"target": "function:src/shared/absolute-paths.ts:normalizeComparablePath",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "function:src/shared/absolute-paths.ts:normalizeComparablePath",
+			"target": "file:src/shared/absolute-paths.ts",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/shared/absolute-paths.ts",
+			"target": "function:src/shared/absolute-paths.ts:pathsMatch",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "function:src/shared/absolute-paths.ts:pathsMatch",
+			"target": "file:src/shared/absolute-paths.ts",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/shared/absolute-paths.ts",
+			"target": "function:src/shared/absolute-paths.ts:retargetAbsolutePath",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "function:src/shared/absolute-paths.ts:retargetAbsolutePath",
+			"target": "file:src/shared/absolute-paths.ts",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/shared/tabs-types.ts",
+			"target": "function:src/shared/tabs-types.ts:pickHigherStatus",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "function:src/shared/tabs-types.ts:pickHigherStatus",
+			"target": "file:src/shared/tabs-types.ts",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/shared/tabs-types.ts",
+			"target": "function:src/shared/tabs-types.ts:getHighestPriorityStatus",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "function:src/shared/tabs-types.ts:getHighestPriorityStatus",
+			"target": "file:src/shared/tabs-types.ts",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/shared/tabs-types.ts",
+			"target": "function:src/shared/tabs-types.ts:acknowledgedStatus",
+			"type": "contains",
+			"weight": 1
+		},
+		{
+			"source": "function:src/shared/tabs-types.ts:acknowledgedStatus",
+			"target": "file:src/shared/tabs-types.ts",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/shared/tabs-types.ts",
+			"target": "file:src/shared/changes-types.ts",
+			"type": "imports",
+			"weight": 0.7
+		}
+	]
+}

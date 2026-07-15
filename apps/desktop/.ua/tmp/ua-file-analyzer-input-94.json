@@ -1,0 +1,28 @@
+{
+	"projectRoot": "/Users/wushengyu/Develop/hustle/superset/apps/desktop",
+	"batchFiles": [
+		{
+			"path": "src/shared/types/tab.ts",
+			"language": "typescript",
+			"sizeLines": 34,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/shared/types/workspace.ts",
+			"language": "typescript",
+			"sizeLines": 11,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/shared/types/worktree.ts",
+			"language": "typescript",
+			"sizeLines": 11,
+			"fileCategory": "code"
+		}
+	],
+	"batchImportData": {
+		"src/shared/types/tab.ts": [],
+		"src/shared/types/workspace.ts": ["src/shared/types/worktree.ts"],
+		"src/shared/types/worktree.ts": ["src/shared/types/tab.ts"]
+	}
+}

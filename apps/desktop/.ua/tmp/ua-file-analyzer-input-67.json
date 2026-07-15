@@ -1,0 +1,253 @@
+{
+	"projectRoot": "/Users/wushengyu/Develop/hustle/superset/apps/desktop",
+	"batchFiles": [
+		{
+			"path": "src/renderer/components/ThemeSwatch/ThemeSwatch.tsx",
+			"language": "typescript",
+			"sizeLines": 26,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/renderer/hooks/host-service/useSendToTerminalAgent/useSendToTerminalAgent.ts",
+			"language": "typescript",
+			"sizeLines": 90,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/renderer/lib/agent-session-orchestrator/adapters/chat-adapter.ts",
+			"language": "typescript",
+			"sizeLines": 99,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/renderer/lib/agent-session-orchestrator/adapters/terminal-adapter.ts",
+			"language": "typescript",
+			"sizeLines": 293,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/renderer/lib/agent-session-orchestrator/agent-session-orchestrator.test.ts",
+			"language": "typescript",
+			"sizeLines": 144,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/renderer/lib/agent-session-orchestrator/agent-session-orchestrator.ts",
+			"language": "typescript",
+			"sizeLines": 230,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/renderer/lib/agent-session-orchestrator/types.ts",
+			"language": "typescript",
+			"sizeLines": 84,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/renderer/lib/terminal/appearance/appearance.test.ts",
+			"language": "typescript",
+			"sizeLines": 149,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/renderer/lib/terminal/appearance/index.ts",
+			"language": "typescript",
+			"sizeLines": 209,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/renderer/lib/terminal/clipboard-base64.test.ts",
+			"language": "typescript",
+			"sizeLines": 59,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/renderer/lib/terminal/clipboard-base64.ts",
+			"language": "typescript",
+			"sizeLines": 35,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/renderer/lib/terminal/clipboard-shortcuts.test.ts",
+			"language": "typescript",
+			"sizeLines": 180,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/renderer/lib/terminal/clipboard-shortcuts.ts",
+			"language": "typescript",
+			"sizeLines": 72,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/renderer/lib/terminal/font-settle.test.ts",
+			"language": "typescript",
+			"sizeLines": 123,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/renderer/lib/terminal/font-settle.ts",
+			"language": "typescript",
+			"sizeLines": 67,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/renderer/lib/terminal/launch-command.test.ts",
+			"language": "typescript",
+			"sizeLines": 177,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/renderer/lib/terminal/launch-command.ts",
+			"language": "typescript",
+			"sizeLines": 129,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/renderer/lib/terminal/line-edit-translations.test.ts",
+			"language": "typescript",
+			"sizeLines": 78,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/renderer/lib/terminal/line-edit-translations.ts",
+			"language": "typescript",
+			"sizeLines": 60,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/renderer/lib/terminal/links/index.ts",
+			"language": "typescript",
+			"sizeLines": 20,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/renderer/lib/terminal/parser-idle-gate.test.ts",
+			"language": "typescript",
+			"sizeLines": 173,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/renderer/lib/terminal/parser-idle-gate.ts",
+			"language": "typescript",
+			"sizeLines": 49,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/renderer/lib/terminal/session-readiness.ts",
+			"language": "typescript",
+			"sizeLines": 54,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/renderer/lib/terminal/terminal-addons.ts",
+			"language": "typescript",
+			"sizeLines": 78,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/renderer/lib/terminal/terminal-image-paste-fallback.test.ts",
+			"language": "typescript",
+			"sizeLines": 237,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/renderer/lib/terminal/terminal-image-paste-fallback.ts",
+			"language": "typescript",
+			"sizeLines": 52,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/renderer/lib/terminal/terminal-key-event-handler.ts",
+			"language": "typescript",
+			"sizeLines": 94,
+			"fileCategory": "code"
+		},
+		{
+			"path": "src/renderer/lib/terminal/terminal-link-manager.test.ts",
+			"language": "typescript",
+			"sizeLines": 105,
+			"fileCategory": "code"
+		}
+	],
+	"batchImportData": {
+		"src/renderer/components/ThemeSwatch/ThemeSwatch.tsx": [
+			"src/shared/themes/index.ts"
+		],
+		"src/renderer/hooks/host-service/useSendToTerminalAgent/useSendToTerminalAgent.ts": [
+			"src/renderer/lib/terminal/launch-command.ts"
+		],
+		"src/renderer/lib/agent-session-orchestrator/adapters/chat-adapter.ts": [
+			"src/renderer/lib/agent-session-orchestrator/types.ts",
+			"src/shared/tabs-types.ts"
+		],
+		"src/renderer/lib/agent-session-orchestrator/adapters/terminal-adapter.ts": [
+			"src/renderer/lib/agent-session-orchestrator/types.ts",
+			"src/renderer/lib/terminal/launch-command.ts"
+		],
+		"src/renderer/lib/agent-session-orchestrator/agent-session-orchestrator.test.ts": [
+			"src/renderer/lib/agent-session-orchestrator/types.ts"
+		],
+		"src/renderer/lib/agent-session-orchestrator/agent-session-orchestrator.ts": [
+			"src/renderer/lib/agent-session-orchestrator/adapters/chat-adapter.ts",
+			"src/renderer/lib/agent-session-orchestrator/adapters/terminal-adapter.ts",
+			"src/renderer/lib/agent-session-orchestrator/types.ts",
+			"src/renderer/lib/posthog.ts",
+			"src/renderer/stores/workspace-init.ts"
+		],
+		"src/renderer/lib/agent-session-orchestrator/types.ts": [
+			"src/shared/tabs-types.ts"
+		],
+		"src/renderer/lib/terminal/appearance/appearance.test.ts": [
+			"src/renderer/lib/terminal/appearance/index.ts"
+		],
+		"src/renderer/lib/terminal/appearance/index.ts": [
+			"src/renderer/stores/theme/utils/index.ts",
+			"src/shared/themes/index.ts"
+		],
+		"src/renderer/lib/terminal/clipboard-base64.test.ts": [
+			"src/renderer/lib/terminal/clipboard-base64.ts"
+		],
+		"src/renderer/lib/terminal/clipboard-base64.ts": [],
+		"src/renderer/lib/terminal/clipboard-shortcuts.test.ts": [
+			"src/renderer/lib/terminal/clipboard-shortcuts.ts"
+		],
+		"src/renderer/lib/terminal/clipboard-shortcuts.ts": [],
+		"src/renderer/lib/terminal/font-settle.test.ts": [
+			"src/renderer/lib/terminal/font-settle.ts"
+		],
+		"src/renderer/lib/terminal/font-settle.ts": [],
+		"src/renderer/lib/terminal/launch-command.test.ts": [
+			"src/renderer/lib/terminal/launch-command.ts",
+			"src/renderer/lib/terminal/session-readiness.ts"
+		],
+		"src/renderer/lib/terminal/launch-command.ts": [
+			"src/renderer/lib/terminal/session-readiness.ts"
+		],
+		"src/renderer/lib/terminal/line-edit-translations.test.ts": [
+			"src/renderer/lib/terminal/line-edit-translations.ts"
+		],
+		"src/renderer/lib/terminal/line-edit-translations.ts": [],
+		"src/renderer/lib/terminal/links/index.ts": [],
+		"src/renderer/lib/terminal/parser-idle-gate.test.ts": [
+			"src/renderer/lib/terminal/parser-idle-gate.ts"
+		],
+		"src/renderer/lib/terminal/parser-idle-gate.ts": [],
+		"src/renderer/lib/terminal/session-readiness.ts": [],
+		"src/renderer/lib/terminal/terminal-addons.ts": [
+			"src/renderer/lib/terminal/clipboard-base64.ts"
+		],
+		"src/renderer/lib/terminal/terminal-image-paste-fallback.test.ts": [
+			"src/renderer/lib/terminal/terminal-image-paste-fallback.ts"
+		],
+		"src/renderer/lib/terminal/terminal-image-paste-fallback.ts": [],
+		"src/renderer/lib/terminal/terminal-key-event-handler.ts": [
+			"src/renderer/hotkeys/index.ts",
+			"src/renderer/lib/terminal/clipboard-shortcuts.ts",
+			"src/renderer/lib/terminal/line-edit-translations.ts"
+		],
+		"src/renderer/lib/terminal/terminal-link-manager.test.ts": [
+			"src/renderer/lib/terminal/terminal-link-manager.ts"
+		]
+	}
+}

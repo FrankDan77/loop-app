@@ -1,0 +1,83 @@
+{
+	"batchIndex": 130,
+	"files": [
+		{
+			"path": "packages/chat/src/client/provider/chat-service-provider.tsx",
+			"language": "typescript",
+			"sizeLines": 30,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/chat/src/server/desktop/index.ts",
+			"language": "typescript",
+			"sizeLines": 27,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/chat/src/server/trpc/service.ts",
+			"language": "typescript",
+			"sizeLines": 408,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/chat/src/server/trpc/utils/file-search/index.ts",
+			"language": "typescript",
+			"sizeLines": 6,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/chat/src/server/trpc/utils/runtime/index.ts",
+			"language": "typescript",
+			"sizeLines": 21,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/chat/src/server/trpc/utils/runtime/runtime.ts",
+			"language": "typescript",
+			"sizeLines": 537,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/chat/src/server/trpc/utils/runtime/superset-mcp.ts",
+			"language": "typescript",
+			"sizeLines": 43,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/chat/src/server/trpc/utils/runtime/utils/mcp-overview/mcp-overview.ts",
+			"language": "typescript",
+			"sizeLines": 429,
+			"fileCategory": "code"
+		},
+		{
+			"path": "packages/chat/src/server/trpc/zod.ts",
+			"language": "typescript",
+			"sizeLines": 139,
+			"fileCategory": "code"
+		}
+	],
+	"batchImportData": {
+		"packages/chat/src/client/provider/chat-service-provider.tsx": [
+			"packages/chat/src/server/desktop/index.ts"
+		],
+		"packages/chat/src/server/desktop/index.ts": [],
+		"packages/chat/src/server/trpc/service.ts": [
+			"packages/chat/src/server/trpc/utils/file-search/index.ts",
+			"packages/chat/src/server/trpc/utils/runtime/index.ts",
+			"packages/chat/src/server/trpc/utils/runtime/superset-mcp.ts",
+			"packages/chat/src/server/trpc/zod.ts"
+		],
+		"packages/chat/src/server/trpc/utils/file-search/index.ts": [],
+		"packages/chat/src/server/trpc/utils/runtime/index.ts": [],
+		"packages/chat/src/server/trpc/utils/runtime/runtime.ts": [
+			"packages/chat/src/server/desktop/index.ts",
+			"packages/chat/src/server/trpc/zod.ts"
+		],
+		"packages/chat/src/server/trpc/utils/runtime/superset-mcp.ts": [],
+		"packages/chat/src/server/trpc/utils/runtime/utils/mcp-overview/mcp-overview.ts": [
+			"packages/chat/src/server/trpc/utils/runtime/runtime.ts"
+		],
+		"packages/chat/src/server/trpc/zod.ts": []
+	},
+	"neighborMap": {}
+}

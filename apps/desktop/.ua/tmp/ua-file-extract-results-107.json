@@ -1,0 +1,978 @@
+{
+	"scriptCompleted": true,
+	"filesAnalyzed": 25,
+	"filesSkipped": [],
+	"results": [
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarChipStrip/DashboardSidebarChipStrip.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 80,
+			"nonEmptyLines": 73,
+			"functions": [
+				{
+					"name": "DashboardSidebarChipStrip",
+					"startLine": 29,
+					"endLine": 80,
+					"params": ["{\n\tclassName,\n\tchildren,\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "DashboardSidebarChipStrip",
+					"line": 29,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "DashboardSidebarChipStrip",
+					"callee": "useRef",
+					"lineNumber": 33
+				},
+				{
+					"caller": "DashboardSidebarChipStrip",
+					"callee": "useState",
+					"lineNumber": 34
+				},
+				{
+					"caller": "DashboardSidebarChipStrip",
+					"callee": "useCallback",
+					"lineNumber": 36
+				},
+				{
+					"caller": "DashboardSidebarChipStrip",
+					"callee": "getComputedStyle",
+					"lineNumber": 39
+				},
+				{
+					"caller": "DashboardSidebarChipStrip",
+					"callee": "Number.parseFloat",
+					"lineNumber": 42
+				},
+				{
+					"caller": "DashboardSidebarChipStrip",
+					"callee": "Number.parseFloat",
+					"lineNumber": 43
+				},
+				{
+					"caller": "DashboardSidebarChipStrip",
+					"callee": "Array.from",
+					"lineNumber": 45
+				},
+				{
+					"caller": "DashboardSidebarChipStrip",
+					"callee": "setIsTwoRows",
+					"lineNumber": 48
+				},
+				{
+					"caller": "DashboardSidebarChipStrip",
+					"callee": "useLayoutEffect",
+					"lineNumber": 53
+				},
+				{
+					"caller": "DashboardSidebarChipStrip",
+					"callee": "useLayoutEffect",
+					"lineNumber": 55
+				},
+				{
+					"caller": "DashboardSidebarChipStrip",
+					"callee": "observer.observe",
+					"lineNumber": 59
+				},
+				{
+					"caller": "DashboardSidebarChipStrip",
+					"callee": "observer.disconnect",
+					"lineNumber": 60
+				},
+				{
+					"caller": "DashboardSidebarChipStrip",
+					"callee": "cn",
+					"lineNumber": 67
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarHoverCardOverlay/DashboardSidebarHoverCardOverlay.css",
+			"language": "css",
+			"fileCategory": "markup",
+			"totalLines": 10,
+			"nonEmptyLines": 10,
+			"metrics": {}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarProjectSection/components/DashboardSidebarProjectContextMenu/DashboardSidebarProjectContextMenu.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 65,
+			"nonEmptyLines": 63,
+			"functions": [
+				{
+					"name": "DashboardSidebarProjectContextMenu",
+					"startLine": 25,
+					"endLine": 65,
+					"params": [
+						"{\n\tonCreateSection,\n\tonOpenInFinder,\n\tonOpenSettings,\n\tonRemoveFromSidebar,\n\tonRename,\n\tchildren,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "DashboardSidebarProjectContextMenu",
+					"line": 25,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "DashboardSidebarProjectContextMenu",
+					"callee": "event.preventDefault",
+					"lineNumber": 36
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarSection/components/DashboardSidebarSectionContextMenu/components/DashboardSidebarSectionActionsDropdown/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "DashboardSidebarSectionActionsDropdown",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarSectionRenameContext/DashboardSidebarSectionRenameContext.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 64,
+			"nonEmptyLines": 55,
+			"functions": [
+				{
+					"name": "DashboardSidebarSectionRenameProvider",
+					"startLine": 23,
+					"endLine": 54,
+					"params": ["{\n\tchildren,\n}"]
+				},
+				{
+					"name": "useDashboardSidebarSectionRename",
+					"startLine": 56,
+					"endLine": 64,
+					"params": []
+				}
+			],
+			"exports": [
+				{
+					"name": "DashboardSidebarSectionRenameProvider",
+					"line": 23,
+					"isDefault": false
+				},
+				{
+					"name": "useDashboardSidebarSectionRename",
+					"line": 56,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "DashboardSidebarSectionRenameProvider",
+					"callee": "useState",
+					"lineNumber": 26
+				},
+				{
+					"caller": "DashboardSidebarSectionRenameProvider",
+					"callee": "useCallback",
+					"lineNumber": 30
+				},
+				{
+					"caller": "DashboardSidebarSectionRenameProvider",
+					"callee": "setPendingRenameSectionId",
+					"lineNumber": 31
+				},
+				{
+					"caller": "DashboardSidebarSectionRenameProvider",
+					"callee": "useCallback",
+					"lineNumber": 34
+				},
+				{
+					"caller": "DashboardSidebarSectionRenameProvider",
+					"callee": "setPendingRenameSectionId",
+					"lineNumber": 35
+				},
+				{
+					"caller": "DashboardSidebarSectionRenameProvider",
+					"callee": "useMemo",
+					"lineNumber": 40
+				},
+				{
+					"caller": "useDashboardSidebarSectionRename",
+					"callee": "useContext",
+					"lineNumber": 57
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 2,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/components/DashboardSidebarWorkspaceContextMenu/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "DashboardSidebarWorkspaceContextMenu",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/components/DashboardSidebarWorkspaceDiffStats/DashboardSidebarWorkspaceDiffStats.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 28,
+			"nonEmptyLines": 27,
+			"functions": [
+				{
+					"name": "DashboardSidebarWorkspaceDiffStats",
+					"startLine": 7,
+					"endLine": 28,
+					"params": ["{\n\tadditions,\n\tdeletions,\n\tisActive,\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "DashboardSidebarWorkspaceDiffStats",
+					"line": 7,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/components/DashboardSidebarWorkspaceHoverCardContent/components/PullRequestStatusBadge/PullRequestStatusBadge.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 29,
+			"nonEmptyLines": 26,
+			"functions": [
+				{
+					"name": "PullRequestStatusBadge",
+					"startLine": 5,
+					"endLine": 29,
+					"params": ["{ state }"]
+				}
+			],
+			"exports": [
+				{
+					"name": "PullRequestStatusBadge",
+					"line": 5,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/components/DashboardSidebarWorkspaceHoverCardContent/components/ReviewStatus/ReviewStatus.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 38,
+			"nonEmptyLines": 35,
+			"functions": [
+				{
+					"name": "ReviewStatus",
+					"startLine": 6,
+					"endLine": 38,
+					"params": ["{\n\tstatus,\n\trequestedReviewers,\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "ReviewStatus",
+					"line": 6,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "ReviewStatus",
+					"callee": "requestedReviewers.join",
+					"lineNumber": 22
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/DashboardSidebarWorkspaceItem/components/DashboardSidebarWorkspaceStatusBadge/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "DashboardSidebarWorkspaceStatusBadge",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/DashboardSidebar/components/V2SetupScriptCard/setup-script-prompt.md",
+			"language": "markdown",
+			"fileCategory": "docs",
+			"totalLines": 54,
+			"nonEmptyLines": 37,
+			"sections": [
+				{
+					"heading": "Goal",
+					"level": 2,
+					"line": 3
+				},
+				{
+					"heading": "What each field does",
+					"level": 2,
+					"line": 7
+				},
+				{
+					"heading": "Format",
+					"level": 2,
+					"line": 15
+				},
+				{
+					"heading": "Environment variables available to scripts",
+					"level": 2,
+					"line": 25
+				},
+				{
+					"heading": "Examples",
+					"level": 2,
+					"line": 31
+				},
+				{
+					"heading": "Tips",
+					"level": 2,
+					"line": 48
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0,
+				"sectionCount": 6
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/DataTableHeader/DataTableHeader.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 26,
+			"nonEmptyLines": 24,
+			"functions": [
+				{
+					"name": "DataTableHeader",
+					"startLine": 13,
+					"endLine": 26,
+					"params": ["{\n\tclassName,\n\t...props\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "DATA_TABLE_HEAD_CELL",
+					"line": 10,
+					"isDefault": false
+				},
+				{
+					"name": "DataTableHeader",
+					"line": 13,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "DataTableHeader",
+					"callee": "cn",
+					"lineNumber": 19
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 2,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/SortableHeader/SortableHeader.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 61,
+			"nonEmptyLines": 57,
+			"functions": [
+				{
+					"name": "SortableHeader",
+					"startLine": 17,
+					"endLine": 61,
+					"params": [
+						"{\n\tfield,\n\tlabel,\n\talign = \"start\",\n\tclassName,\n\tsortField,\n\tsortDirection,\n\tonSort,\n\tsrOnlyLabel = false,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "SortableHeader",
+					"line": 17,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "SortableHeader",
+					"callee": "onSort",
+					"lineNumber": 42
+				},
+				{
+					"caller": "SortableHeader",
+					"callee": "cn",
+					"lineNumber": 44
+				},
+				{
+					"caller": "SortableHeader",
+					"callee": "cn",
+					"lineNumber": 52
+				},
+				{
+					"caller": "SortableHeader",
+					"callee": "cn",
+					"lineNumber": 54
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/components/TopBar/components/ResourceConsumption/components/MetricBadge/MetricBadge.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 31,
+			"nonEmptyLines": 27,
+			"functions": [
+				{
+					"name": "MetricBadge",
+					"startLine": 9,
+					"endLine": 31,
+					"params": ["{ label, value, tooltip }"]
+				}
+			],
+			"exports": [
+				{
+					"name": "MetricBadge",
+					"line": 9,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/tasks/$taskId/components/ActivitySection/ActivitySection.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 25,
+			"nonEmptyLines": 23,
+			"functions": [
+				{
+					"name": "ActivitySection",
+					"startLine": 9,
+					"endLine": 25,
+					"params": ["{\n\tcreatedAt,\n\tcreatorName,\n\tcreatorAvatarUrl,\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "ActivitySection",
+					"line": 9,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "ActivitySection",
+					"callee": "creatorName.charAt(0).toUpperCase",
+					"lineNumber": 18
+				},
+				{
+					"caller": "ActivitySection",
+					"callee": "creatorName.charAt",
+					"lineNumber": 18
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/tasks/$taskId/components/ActivitySection/components/ActivityItem/ActivityItem.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 40,
+			"nonEmptyLines": 38,
+			"functions": [
+				{
+					"name": "ActivityItem",
+					"startLine": 11,
+					"endLine": 40,
+					"params": [
+						"{\n\tavatarUrl,\n\tavatarFallback,\n\tactorName,\n\taction,\n\ttimestamp,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "ActivityItem",
+					"line": 11,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "ActivityItem",
+					"callee": "formatDistanceToNow",
+					"lineNumber": 35
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/tasks/$taskId/components/ActivitySection/components/ActivityItem/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "ActivityItem",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/tasks/$taskId/components/EditableTitle/EditableTitle.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 49,
+			"nonEmptyLines": 43,
+			"functions": [
+				{
+					"name": "EditableTitle",
+					"startLine": 8,
+					"endLine": 49,
+					"params": ["{ value, onSave }"]
+				}
+			],
+			"exports": [
+				{
+					"name": "EditableTitle",
+					"line": 8,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "EditableTitle",
+					"callee": "useState",
+					"lineNumber": 9
+				},
+				{
+					"caller": "EditableTitle",
+					"callee": "useRef",
+					"lineNumber": 10
+				},
+				{
+					"caller": "EditableTitle",
+					"callee": "useEffect",
+					"lineNumber": 13
+				},
+				{
+					"caller": "EditableTitle",
+					"callee": "setLocalValue",
+					"lineNumber": 14
+				},
+				{
+					"caller": "handleBlur",
+					"callee": "localValue.trim",
+					"lineNumber": 18
+				},
+				{
+					"caller": "handleBlur",
+					"callee": "onSave",
+					"lineNumber": 20
+				},
+				{
+					"caller": "handleBlur",
+					"callee": "setLocalValue",
+					"lineNumber": 22
+				},
+				{
+					"caller": "handleKeyDown",
+					"callee": "e.preventDefault",
+					"lineNumber": 28
+				},
+				{
+					"caller": "handleKeyDown",
+					"callee": "inputRef.current?.blur",
+					"lineNumber": 29
+				},
+				{
+					"caller": "handleKeyDown",
+					"callee": "setLocalValue",
+					"lineNumber": 32
+				},
+				{
+					"caller": "handleKeyDown",
+					"callee": "inputRef.current?.blur",
+					"lineNumber": 33
+				},
+				{
+					"caller": "EditableTitle",
+					"callee": "setLocalValue",
+					"lineNumber": 42
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/tasks/$taskId/hooks/useEscapeToNavigate/useEscapeToNavigate.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 46,
+			"nonEmptyLines": 38,
+			"functions": [
+				{
+					"name": "useEscapeToNavigate",
+					"startLine": 4,
+					"endLine": 46,
+					"params": ["to", "options"]
+				}
+			],
+			"exports": [
+				{
+					"name": "useEscapeToNavigate",
+					"line": 4,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "useEscapeToNavigate",
+					"callee": "useNavigate",
+					"lineNumber": 8
+				},
+				{
+					"caller": "useEscapeToNavigate",
+					"callee": "useEffect",
+					"lineNumber": 11
+				},
+				{
+					"caller": "handleKeyDown",
+					"callee": "activeElement?.closest",
+					"lineNumber": 26
+				},
+				{
+					"caller": "handleKeyDown",
+					"callee": "activeElement.blur",
+					"lineNumber": 32
+				},
+				{
+					"caller": "handleKeyDown",
+					"callee": "event.preventDefault",
+					"lineNumber": 33
+				},
+				{
+					"caller": "handleKeyDown",
+					"callee": "navigate",
+					"lineNumber": 39
+				},
+				{
+					"caller": "useEscapeToNavigate",
+					"callee": "document.addEventListener",
+					"lineNumber": 43
+				},
+				{
+					"caller": "useEscapeToNavigate",
+					"callee": "document.removeEventListener",
+					"lineNumber": 44
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/tasks/$taskId/utils/buildAgentCommand.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 6,
+			"nonEmptyLines": 6,
+			"exports": [
+				{
+					"name": "AgentType",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "buildAgentCommand",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "buildClaudeCommand",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "TaskInput",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 4,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/components/LinearCTA/LinearCTA.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 29,
+			"nonEmptyLines": 26,
+			"functions": [
+				{
+					"name": "LinearCTA",
+					"startLine": 5,
+					"endLine": 29,
+					"params": []
+				}
+			],
+			"exports": [
+				{
+					"name": "LinearCTA",
+					"line": 5,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "LinearCTA",
+					"callee": "useNavigate",
+					"lineNumber": 6
+				},
+				{
+					"caller": "handleConnectLinear",
+					"callee": "navigate",
+					"lineNumber": 9
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/components/shared/icons/AllIssuesIcon/AllIssuesIcon.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 13,
+			"nonEmptyLines": 11,
+			"functions": [
+				{
+					"name": "AllIssuesIcon",
+					"startLine": 8,
+					"endLine": 13,
+					"params": ["{\n\tcolor = \"currentColor\",\n\tclassName,\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "AllIssuesIcon",
+					"line": 8,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/components/shared/icons/AssigneeMenuIcon/AssigneeMenuIcon.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 13,
+			"nonEmptyLines": 11,
+			"functions": [
+				{
+					"name": "AssigneeMenuIcon",
+					"startLine": 8,
+					"endLine": 13,
+					"params": ["{\n\tcolor = \"currentColor\",\n\tclassName,\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "AssigneeMenuIcon",
+					"line": 8,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/components/shared/icons/AssigneeMenuIcon/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "AssigneeMenuIcon",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/tasks/components/TasksView/components/shared/PriorityIcon/PriorityIcon.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 141,
+			"nonEmptyLines": 131,
+			"functions": [
+				{
+					"name": "PriorityIcon",
+					"startLine": 12,
+					"endLine": 141,
+					"params": [
+						"{\n\tpriority,\n\tstatusType,\n\tclassName = \"\",\n\tshowHover = false,\n\tcolor,\n}"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "PriorityIcon",
+					"line": 12,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		}
+	]
+}

@@ -1,0 +1,3946 @@
+{
+	"scriptCompleted": true,
+	"filesAnalyzed": 28,
+	"filesSkipped": [],
+	"results": [
+		{
+			"path": "src/renderer/lib/terminal/terminal-link-manager.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 197,
+			"nonEmptyLines": 179,
+			"classes": [
+				{
+					"name": "TerminalLinkManager",
+					"startLine": 56,
+					"endLine": 197,
+					"methods": [
+						"constructor",
+						"setHandlers",
+						"ensureRegistered",
+						"dispose",
+						"_clearOscLinkHandler",
+						"_register"
+					],
+					"properties": [
+						"_disposables",
+						"_resolver",
+						"_handlers",
+						"_oscLinkHandler"
+					]
+				}
+			],
+			"exports": [
+				{
+					"name": "TerminalLinkManager",
+					"line": 56,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "setHandlers",
+					"callee": "this._register",
+					"lineNumber": 71
+				},
+				{
+					"caller": "ensureRegistered",
+					"callee": "this._register",
+					"lineNumber": 80
+				},
+				{
+					"caller": "dispose",
+					"callee": "d.dispose",
+					"lineNumber": 85
+				},
+				{
+					"caller": "dispose",
+					"callee": "this._clearOscLinkHandler",
+					"lineNumber": 87
+				},
+				{
+					"caller": "dispose",
+					"callee": "this._resolver?.clearCache",
+					"lineNumber": 88
+				},
+				{
+					"caller": "_register",
+					"callee": "d.dispose",
+					"lineNumber": 105
+				},
+				{
+					"caller": "_register",
+					"callee": "this._clearOscLinkHandler",
+					"lineNumber": 107
+				},
+				{
+					"caller": "_register",
+					"callee": "onLinkHover",
+					"lineNumber": 125
+				},
+				{
+					"caller": "_register",
+					"callee": "this._disposables.push",
+					"lineNumber": 132
+				},
+				{
+					"caller": "_register",
+					"callee": "this._terminal.registerLinkProvider",
+					"lineNumber": 132
+				},
+				{
+					"caller": "_register",
+					"callee": "onUrlClick",
+					"lineNumber": 140
+				},
+				{
+					"caller": "_register",
+					"callee": "onLinkHover",
+					"lineNumber": 143
+				},
+				{
+					"caller": "_register",
+					"callee": "this._disposables.push",
+					"lineNumber": 147
+				},
+				{
+					"caller": "_register",
+					"callee": "this._terminal.registerLinkProvider",
+					"lineNumber": 147
+				},
+				{
+					"caller": "_register",
+					"callee": "onUrlClick",
+					"lineNumber": 155
+				},
+				{
+					"caller": "_register",
+					"callee": "onLinkHover",
+					"lineNumber": 158
+				},
+				{
+					"caller": "_register",
+					"callee": "onLinkLeave",
+					"lineNumber": 160
+				},
+				{
+					"caller": "_register",
+					"callee": "onFileClick",
+					"lineNumber": 177
+				},
+				{
+					"caller": "_register",
+					"callee": "onLinkHover",
+					"lineNumber": 190
+				},
+				{
+					"caller": "_register",
+					"callee": "this._disposables.push",
+					"lineNumber": 194
+				},
+				{
+					"caller": "_register",
+					"callee": "this._terminal.registerLinkProvider",
+					"lineNumber": 194
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 1
+			}
+		},
+		{
+			"path": "src/renderer/lib/terminal/terminal-parking.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 31,
+			"nonEmptyLines": 29,
+			"functions": [
+				{
+					"name": "getTerminalParkingContainer",
+					"startLine": 14,
+					"endLine": 31,
+					"params": []
+				}
+			],
+			"exports": [
+				{
+					"name": "getTerminalParkingContainer",
+					"line": 14,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "getTerminalParkingContainer",
+					"callee": "document.getElementById",
+					"lineNumber": 15
+				},
+				{
+					"caller": "getTerminalParkingContainer",
+					"callee": "document.createElement",
+					"lineNumber": 18
+				},
+				{
+					"caller": "getTerminalParkingContainer",
+					"callee": "el.setAttribute",
+					"lineNumber": 20
+				},
+				{
+					"caller": "getTerminalParkingContainer",
+					"callee": "el.setAttribute",
+					"lineNumber": 21
+				},
+				{
+					"caller": "getTerminalParkingContainer",
+					"callee": "document.body.appendChild",
+					"lineNumber": 29
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/lib/terminal/terminal-runtime-registry.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 486,
+			"nonEmptyLines": 434,
+			"classes": [
+				{
+					"name": "TerminalRuntimeRegistryImpl",
+					"startLine": 41,
+					"endLine": 460,
+					"methods": [
+						"getEntryKey",
+						"getOrCreateEntry",
+						"getEntry",
+						"getPrimaryEntry",
+						"getEntries",
+						"deleteEntry",
+						"serializeExistingRuntime",
+						"mount",
+						"connect",
+						"reconnect",
+						"retryConnect",
+						"setLinkHandlers",
+						"detach",
+						"updateAppearance",
+						"disposeEntry",
+						"release",
+						"dispose",
+						"getSelection",
+						"clear",
+						"scrollToBottom",
+						"paste",
+						"writeInput",
+						"findNext",
+						"findPrevious",
+						"clearSearch",
+						"getTerminal",
+						"getDimensions",
+						"getSearchAddon",
+						"getProgressAddon",
+						"getAllTerminalIds",
+						"has",
+						"getConnectionState",
+						"getTitle",
+						"getLogs",
+						"getConnectionDiagnosis",
+						"clearLogs",
+						"onStateChange",
+						"onTitleChange",
+						"onLogsChange"
+					],
+					"properties": ["entries", "entryKeysByTerminalId"]
+				}
+			],
+			"exports": [
+				{
+					"name": "terminalRuntimeRegistry",
+					"line": 471,
+					"isDefault": false
+				},
+				{
+					"name": "ConnectionState",
+					"line": 480,
+					"isDefault": false
+				},
+				{
+					"name": "LinkHoverInfo",
+					"line": 480,
+					"isDefault": false
+				},
+				{
+					"name": "TerminalFailureClassification",
+					"line": 480,
+					"isDefault": false
+				},
+				{
+					"name": "TerminalLinkHandlers",
+					"line": 480,
+					"isDefault": false
+				},
+				{
+					"name": "TerminalLogEntry",
+					"line": 480,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "getOrCreateEntry",
+					"callee": "this.getEntryKey",
+					"lineNumber": 53
+				},
+				{
+					"caller": "getOrCreateEntry",
+					"callee": "this.entries.get",
+					"lineNumber": 54
+				},
+				{
+					"caller": "getOrCreateEntry",
+					"callee": "createTransport",
+					"lineNumber": 61
+				},
+				{
+					"caller": "getOrCreateEntry",
+					"callee": "this.entries.set",
+					"lineNumber": 66
+				},
+				{
+					"caller": "getOrCreateEntry",
+					"callee": "this.entryKeysByTerminalId.get",
+					"lineNumber": 67
+				},
+				{
+					"caller": "getOrCreateEntry",
+					"callee": "this.entryKeysByTerminalId.set",
+					"lineNumber": 70
+				},
+				{
+					"caller": "getOrCreateEntry",
+					"callee": "keys.add",
+					"lineNumber": 72
+				},
+				{
+					"caller": "getEntry",
+					"callee": "this.entries.get",
+					"lineNumber": 81
+				},
+				{
+					"caller": "getEntry",
+					"callee": "this.getEntryKey",
+					"lineNumber": 81
+				},
+				{
+					"caller": "getEntry",
+					"callee": "this.getPrimaryEntry",
+					"lineNumber": 83
+				},
+				{
+					"caller": "getPrimaryEntry",
+					"callee": "this.entries.get",
+					"lineNumber": 87
+				},
+				{
+					"caller": "getPrimaryEntry",
+					"callee": "this.getEntryKey",
+					"lineNumber": 87
+				},
+				{
+					"caller": "getPrimaryEntry",
+					"callee": "this.entryKeysByTerminalId.get",
+					"lineNumber": 90
+				},
+				{
+					"caller": "getPrimaryEntry",
+					"callee": "keys?.values().next",
+					"lineNumber": 91
+				},
+				{
+					"caller": "getPrimaryEntry",
+					"callee": "keys?.values",
+					"lineNumber": 91
+				},
+				{
+					"caller": "getPrimaryEntry",
+					"callee": "this.entries.get",
+					"lineNumber": 92
+				},
+				{
+					"caller": "getEntries",
+					"callee": "this.entryKeysByTerminalId.get",
+					"lineNumber": 96
+				},
+				{
+					"caller": "getEntries",
+					"callee": "Array.from(keys)\n\t\t\t.map((key) => this.entries.get(key))\n\t\t\t.filter",
+					"lineNumber": 98
+				},
+				{
+					"caller": "getEntries",
+					"callee": "Array.from(keys)\n\t\t\t.map",
+					"lineNumber": 98
+				},
+				{
+					"caller": "getEntries",
+					"callee": "Array.from",
+					"lineNumber": 98
+				},
+				{
+					"caller": "getEntries",
+					"callee": "this.entries.get",
+					"lineNumber": 99
+				},
+				{
+					"caller": "getEntries",
+					"callee": "Boolean",
+					"lineNumber": 100
+				},
+				{
+					"caller": "deleteEntry",
+					"callee": "this.getEntryKey",
+					"lineNumber": 104
+				},
+				{
+					"caller": "deleteEntry",
+					"callee": "this.entries.delete",
+					"lineNumber": 105
+				},
+				{
+					"caller": "deleteEntry",
+					"callee": "this.entryKeysByTerminalId.get",
+					"lineNumber": 106
+				},
+				{
+					"caller": "deleteEntry",
+					"callee": "keys.delete",
+					"lineNumber": 108
+				},
+				{
+					"caller": "deleteEntry",
+					"callee": "this.entryKeysByTerminalId.delete",
+					"lineNumber": 110
+				},
+				{
+					"caller": "serializeExistingRuntime",
+					"callee": "this.getEntries",
+					"lineNumber": 118
+				},
+				{
+					"caller": "serializeExistingRuntime",
+					"callee": "entry.runtime.serializeAddon.serialize",
+					"lineNumber": 121
+				},
+				{
+					"caller": "mount",
+					"callee": "this.getOrCreateEntry",
+					"lineNumber": 147
+				},
+				{
+					"caller": "mount",
+					"callee": "createRuntime",
+					"lineNumber": 150
+				},
+				{
+					"caller": "mount",
+					"callee": "this.serializeExistingRuntime",
+					"lineNumber": 151
+				},
+				{
+					"caller": "mount",
+					"callee": "entry.linkManager.setHandlers",
+					"lineNumber": 155
+				},
+				{
+					"caller": "mount",
+					"callee": "updateRuntimeAppearance",
+					"lineNumber": 159
+				},
+				{
+					"caller": "mount",
+					"callee": "attachToContainer",
+					"lineNumber": 163
+				},
+				{
+					"caller": "mount",
+					"callee": "sendResize",
+					"lineNumber": 167
+				},
+				{
+					"caller": "connect",
+					"callee": "this.getEntry",
+					"lineNumber": 181
+				},
+				{
+					"caller": "connect",
+					"callee": "connect",
+					"lineNumber": 183
+				},
+				{
+					"caller": "reconnect",
+					"callee": "this.getEntry",
+					"lineNumber": 199
+				},
+				{
+					"caller": "reconnect",
+					"callee": "connect",
+					"lineNumber": 203
+				},
+				{
+					"caller": "retryConnect",
+					"callee": "this.getEntry",
+					"lineNumber": 212
+				},
+				{
+					"caller": "retryConnect",
+					"callee": "connect",
+					"lineNumber": 219
+				},
+				{
+					"caller": "setLinkHandlers",
+					"callee": "this.getOrCreateEntry",
+					"lineNumber": 231
+				},
+				{
+					"caller": "setLinkHandlers",
+					"callee": "entry.linkManager.setHandlers",
+					"lineNumber": 233
+				},
+				{
+					"caller": "detach",
+					"callee": "this.getEntry",
+					"lineNumber": 245
+				},
+				{
+					"caller": "detach",
+					"callee": "detachFromContainer",
+					"lineNumber": 248
+				},
+				{
+					"caller": "updateAppearance",
+					"callee": "this.getEntry",
+					"lineNumber": 256
+				},
+				{
+					"caller": "updateAppearance",
+					"callee": "updateRuntimeAppearance",
+					"lineNumber": 261
+				},
+				{
+					"caller": "updateAppearance",
+					"callee": "sendResize",
+					"lineNumber": 264
+				},
+				{
+					"caller": "disposeEntry",
+					"callee": "entry.linkManager?.dispose",
+					"lineNumber": 272
+				},
+				{
+					"caller": "disposeEntry",
+					"callee": "disposeTransport",
+					"lineNumber": 273
+				},
+				{
+					"caller": "disposeEntry",
+					"callee": "disposeRuntime",
+					"lineNumber": 275
+				},
+				{
+					"caller": "disposeEntry",
+					"callee": "this.deleteEntry",
+					"lineNumber": 277
+				},
+				{
+					"caller": "release",
+					"callee": "[this.getEntry(terminalId, instanceId)].filter",
+					"lineNumber": 287
+				},
+				{
+					"caller": "release",
+					"callee": "this.getEntry",
+					"lineNumber": 287
+				},
+				{
+					"caller": "release",
+					"callee": "Boolean",
+					"lineNumber": 288
+				},
+				{
+					"caller": "release",
+					"callee": "this.getEntries",
+					"lineNumber": 290
+				},
+				{
+					"caller": "release",
+					"callee": "this.disposeEntry",
+					"lineNumber": 292
+				},
+				{
+					"caller": "dispose",
+					"callee": "this.getEntries",
+					"lineNumber": 301
+				},
+				{
+					"caller": "dispose",
+					"callee": "sendDispose",
+					"lineNumber": 302
+				},
+				{
+					"caller": "dispose",
+					"callee": "this.disposeEntry",
+					"lineNumber": 303
+				},
+				{
+					"caller": "getSelection",
+					"callee": "this.getEntry",
+					"lineNumber": 308
+				},
+				{
+					"caller": "getSelection",
+					"callee": "entry?.runtime?.terminal.getSelection",
+					"lineNumber": 309
+				},
+				{
+					"caller": "clear",
+					"callee": "this.getEntry",
+					"lineNumber": 313
+				},
+				{
+					"caller": "clear",
+					"callee": "entry?.runtime?.terminal.clear",
+					"lineNumber": 314
+				},
+				{
+					"caller": "scrollToBottom",
+					"callee": "this.getEntry",
+					"lineNumber": 318
+				},
+				{
+					"caller": "scrollToBottom",
+					"callee": "entry?.runtime?.terminal.scrollToBottom",
+					"lineNumber": 319
+				},
+				{
+					"caller": "paste",
+					"callee": "this.getEntry",
+					"lineNumber": 323
+				},
+				{
+					"caller": "paste",
+					"callee": "entry?.runtime?.terminal.paste",
+					"lineNumber": 324
+				},
+				{
+					"caller": "writeInput",
+					"callee": "this.getEntry",
+					"lineNumber": 329
+				},
+				{
+					"caller": "writeInput",
+					"callee": "sendInput",
+					"lineNumber": 331
+				},
+				{
+					"caller": "findNext",
+					"callee": "this.getEntry",
+					"lineNumber": 335
+				},
+				{
+					"caller": "findNext",
+					"callee": "entry?.runtime?.searchAddon?.findNext",
+					"lineNumber": 336
+				},
+				{
+					"caller": "findPrevious",
+					"callee": "this.getEntry",
+					"lineNumber": 344
+				},
+				{
+					"caller": "findPrevious",
+					"callee": "entry?.runtime?.searchAddon?.findPrevious",
+					"lineNumber": 345
+				},
+				{
+					"caller": "clearSearch",
+					"callee": "this.getEntry",
+					"lineNumber": 349
+				},
+				{
+					"caller": "clearSearch",
+					"callee": "entry?.runtime?.searchAddon?.clearDecorations",
+					"lineNumber": 350
+				},
+				{
+					"caller": "getTerminal",
+					"callee": "this.getEntry",
+					"lineNumber": 354
+				},
+				{
+					"caller": "getDimensions",
+					"callee": "this.getTerminal",
+					"lineNumber": 361
+				},
+				{
+					"caller": "getSearchAddon",
+					"callee": "this.getEntry",
+					"lineNumber": 366
+				},
+				{
+					"caller": "getProgressAddon",
+					"callee": "this.getEntry",
+					"lineNumber": 374
+				},
+				{
+					"caller": "getAllTerminalIds",
+					"callee": "this.entryKeysByTerminalId.keys",
+					"lineNumber": 379
+				},
+				{
+					"caller": "has",
+					"callee": "this.entryKeysByTerminalId.has",
+					"lineNumber": 383
+				},
+				{
+					"caller": "getConnectionState",
+					"callee": "this.getEntry",
+					"lineNumber": 388
+				},
+				{
+					"caller": "getTitle",
+					"callee": "this.getEntry",
+					"lineNumber": 394
+				},
+				{
+					"caller": "getLogs",
+					"callee": "this.getEntry",
+					"lineNumber": 401
+				},
+				{
+					"caller": "getConnectionDiagnosis",
+					"callee": "this.getEntry",
+					"lineNumber": 415
+				},
+				{
+					"caller": "clearLogs",
+					"callee": "this.getEntry",
+					"lineNumber": 420
+				},
+				{
+					"caller": "clearLogs",
+					"callee": "clearLogs",
+					"lineNumber": 422
+				},
+				{
+					"caller": "onStateChange",
+					"callee": "this.getOrCreateEntry",
+					"lineNumber": 430
+				},
+				{
+					"caller": "onStateChange",
+					"callee": "entry.transport.stateListeners.add",
+					"lineNumber": 431
+				},
+				{
+					"caller": "onStateChange",
+					"callee": "entry.transport.stateListeners.delete",
+					"lineNumber": 433
+				},
+				{
+					"caller": "onTitleChange",
+					"callee": "this.getOrCreateEntry",
+					"lineNumber": 442
+				},
+				{
+					"caller": "onTitleChange",
+					"callee": "entry.transport.titleListeners.add",
+					"lineNumber": 443
+				},
+				{
+					"caller": "onTitleChange",
+					"callee": "entry.transport.titleListeners.delete",
+					"lineNumber": 445
+				},
+				{
+					"caller": "onLogsChange",
+					"callee": "this.getOrCreateEntry",
+					"lineNumber": 454
+				},
+				{
+					"caller": "onLogsChange",
+					"callee": "entry.transport.logListeners.add",
+					"lineNumber": 455
+				},
+				{
+					"caller": "onLogsChange",
+					"callee": "entry.transport.logListeners.delete",
+					"lineNumber": 457
+				}
+			],
+			"metrics": {
+				"importCount": 5,
+				"exportCount": 6,
+				"functionCount": 0,
+				"classCount": 1
+			}
+		},
+		{
+			"path": "src/renderer/lib/terminal/terminal-runtime.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 377,
+			"nonEmptyLines": 338,
+			"functions": [
+				{
+					"name": "createTerminal",
+					"startLine": 50,
+					"endLine": 79,
+					"params": ["cols", "rows", "appearance"]
+				},
+				{
+					"name": "persistBuffer",
+					"startLine": 81,
+					"endLine": 86,
+					"params": ["terminalId", "serializeAddon"]
+				},
+				{
+					"name": "restoreBuffer",
+					"startLine": 88,
+					"endLine": 93,
+					"params": ["terminalId", "terminal"]
+				},
+				{
+					"name": "clearPersistedBuffer",
+					"startLine": 95,
+					"endLine": 99,
+					"params": ["terminalId"]
+				},
+				{
+					"name": "persistDimensions",
+					"startLine": 101,
+					"endLine": 108,
+					"params": ["terminalId", "cols", "rows"]
+				},
+				{
+					"name": "loadSavedDimensions",
+					"startLine": 110,
+					"endLine": 124,
+					"params": ["terminalId"]
+				},
+				{
+					"name": "clearPersistedDimensions",
+					"startLine": 126,
+					"endLine": 130,
+					"params": ["terminalId"]
+				},
+				{
+					"name": "hostIsVisible",
+					"startLine": 132,
+					"endLine": 135,
+					"params": ["container"]
+				},
+				{
+					"name": "measureAndResize",
+					"startLine": 137,
+					"endLine": 172,
+					"params": ["runtime", "onResize"]
+				},
+				{
+					"name": "createResizeScheduler",
+					"startLine": 174,
+					"endLine": 210,
+					"params": ["runtime", "onResize"]
+				},
+				{
+					"name": "createRuntime",
+					"startLine": 212,
+					"endLine": 270,
+					"params": ["terminalId", "appearance", "options"]
+				},
+				{
+					"name": "attachToContainer",
+					"startLine": 272,
+					"endLine": 309,
+					"params": ["runtime", "container", "onResize", "options"]
+				},
+				{
+					"name": "detachFromContainer",
+					"startLine": 311,
+					"endLine": 323,
+					"params": ["runtime"]
+				},
+				{
+					"name": "updateRuntimeAppearance",
+					"startLine": 325,
+					"endLine": 350,
+					"params": ["runtime", "appearance", "onResize"]
+				},
+				{
+					"name": "disposeRuntime",
+					"startLine": 352,
+					"endLine": 377,
+					"params": ["runtime", "options"]
+				}
+			],
+			"exports": [
+				{
+					"name": "createRuntime",
+					"line": 212,
+					"isDefault": false
+				},
+				{
+					"name": "attachToContainer",
+					"line": 272,
+					"isDefault": false
+				},
+				{
+					"name": "detachFromContainer",
+					"line": 311,
+					"isDefault": false
+				},
+				{
+					"name": "updateRuntimeAppearance",
+					"line": 325,
+					"isDefault": false
+				},
+				{
+					"name": "disposeRuntime",
+					"line": 352,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "createTerminal",
+					"callee": "terminal.loadAddon",
+					"lineNumber": 76
+				},
+				{
+					"caller": "createTerminal",
+					"callee": "terminal.loadAddon",
+					"lineNumber": 77
+				},
+				{
+					"caller": "persistBuffer",
+					"callee": "serializeAddon.serialize",
+					"lineNumber": 83
+				},
+				{
+					"caller": "persistBuffer",
+					"callee": "localStorage.setItem",
+					"lineNumber": 84
+				},
+				{
+					"caller": "restoreBuffer",
+					"callee": "localStorage.getItem",
+					"lineNumber": 90
+				},
+				{
+					"caller": "restoreBuffer",
+					"callee": "terminal.write",
+					"lineNumber": 91
+				},
+				{
+					"caller": "clearPersistedBuffer",
+					"callee": "localStorage.removeItem",
+					"lineNumber": 97
+				},
+				{
+					"caller": "persistDimensions",
+					"callee": "localStorage.setItem",
+					"lineNumber": 103
+				},
+				{
+					"caller": "persistDimensions",
+					"callee": "JSON.stringify",
+					"lineNumber": 105
+				},
+				{
+					"caller": "loadSavedDimensions",
+					"callee": "localStorage.getItem",
+					"lineNumber": 114
+				},
+				{
+					"caller": "loadSavedDimensions",
+					"callee": "JSON.parse",
+					"lineNumber": 116
+				},
+				{
+					"caller": "clearPersistedDimensions",
+					"callee": "localStorage.removeItem",
+					"lineNumber": 128
+				},
+				{
+					"caller": "measureAndResize",
+					"callee": "hostIsVisible",
+					"lineNumber": 141
+				},
+				{
+					"caller": "measureAndResize",
+					"callee": "runWhenParserIdle",
+					"lineNumber": 144
+				},
+				{
+					"caller": "measureAndResize",
+					"callee": "hostIsVisible",
+					"lineNumber": 145
+				},
+				{
+					"caller": "measureAndResize",
+					"callee": "runtime.fitAddon.fit",
+					"lineNumber": 153
+				},
+				{
+					"caller": "measureAndResize",
+					"callee": "terminal.scrollToBottom",
+					"lineNumber": 158
+				},
+				{
+					"caller": "measureAndResize",
+					"callee": "Math.min",
+					"lineNumber": 160
+				},
+				{
+					"caller": "measureAndResize",
+					"callee": "terminal.scrollToLine",
+					"lineNumber": 162
+				},
+				{
+					"caller": "measureAndResize",
+					"callee": "terminal.refresh",
+					"lineNumber": 166
+				},
+				{
+					"caller": "measureAndResize",
+					"callee": "Math.max",
+					"lineNumber": 166
+				},
+				{
+					"caller": "measureAndResize",
+					"callee": "onResize",
+					"lineNumber": 169
+				},
+				{
+					"caller": "dispose",
+					"callee": "clearTimeout",
+					"lineNumber": 185
+				},
+				{
+					"caller": "run",
+					"callee": "measureAndResize",
+					"lineNumber": 192
+				},
+				{
+					"caller": "observe",
+					"callee": "entries.some",
+					"lineNumber": 197
+				},
+				{
+					"caller": "observe",
+					"callee": "dispose",
+					"lineNumber": 202
+				},
+				{
+					"caller": "observe",
+					"callee": "dispose",
+					"lineNumber": 205
+				},
+				{
+					"caller": "observe",
+					"callee": "setTimeout",
+					"lineNumber": 206
+				},
+				{
+					"caller": "createRuntime",
+					"callee": "loadSavedDimensions",
+					"lineNumber": 217
+				},
+				{
+					"caller": "createRuntime",
+					"callee": "createTerminal",
+					"lineNumber": 221
+				},
+				{
+					"caller": "createRuntime",
+					"callee": "createParserIdleGate",
+					"lineNumber": 227
+				},
+				{
+					"caller": "createRuntime",
+					"callee": "wrapWrite",
+					"lineNumber": 228
+				},
+				{
+					"caller": "createRuntime",
+					"callee": "terminal.write.bind",
+					"lineNumber": 228
+				},
+				{
+					"caller": "createRuntime",
+					"callee": "document.createElement",
+					"lineNumber": 230
+				},
+				{
+					"caller": "createRuntime",
+					"callee": "applyTerminalFontFamilyCssVariable",
+					"lineNumber": 233
+				},
+				{
+					"caller": "createRuntime",
+					"callee": "terminal.open",
+					"lineNumber": 234
+				},
+				{
+					"caller": "createRuntime",
+					"callee": "installTerminalKeyEventHandler",
+					"lineNumber": 236
+				},
+				{
+					"caller": "createRuntime",
+					"callee": "installTerminalWheelEventHandler",
+					"lineNumber": 237
+				},
+				{
+					"caller": "createRuntime",
+					"callee": "loadAddons",
+					"lineNumber": 241
+				},
+				{
+					"caller": "createRuntime",
+					"callee": "terminal.write",
+					"lineNumber": 243
+				},
+				{
+					"caller": "createRuntime",
+					"callee": "restoreBuffer",
+					"lineNumber": 245
+				},
+				{
+					"caller": "createRuntime",
+					"callee": "installImagePasteFallback",
+					"lineNumber": 248
+				},
+				{
+					"caller": "attachToContainer",
+					"callee": "container.appendChild",
+					"lineNumber": 289
+				},
+				{
+					"caller": "attachToContainer",
+					"callee": "measureAndResize",
+					"lineNumber": 290
+				},
+				{
+					"caller": "attachToContainer",
+					"callee": "scheduleFontSettleRefit",
+					"lineNumber": 291
+				},
+				{
+					"caller": "attachToContainer",
+					"callee": "hostIsVisible",
+					"lineNumber": 293
+				},
+				{
+					"caller": "attachToContainer",
+					"callee": "measureAndResize",
+					"lineNumber": 294
+				},
+				{
+					"caller": "attachToContainer",
+					"callee": "runtime._disposeResizeObserver",
+					"lineNumber": 297
+				},
+				{
+					"caller": "attachToContainer",
+					"callee": "runtime.resizeObserver?.disconnect",
+					"lineNumber": 299
+				},
+				{
+					"caller": "attachToContainer",
+					"callee": "createResizeScheduler",
+					"lineNumber": 300
+				},
+				{
+					"caller": "attachToContainer",
+					"callee": "observer.observe",
+					"lineNumber": 302
+				},
+				{
+					"caller": "attachToContainer",
+					"callee": "runtime.terminal.focus",
+					"lineNumber": 307
+				},
+				{
+					"caller": "detachFromContainer",
+					"callee": "persistBuffer",
+					"lineNumber": 312
+				},
+				{
+					"caller": "detachFromContainer",
+					"callee": "persistDimensions",
+					"lineNumber": 313
+				},
+				{
+					"caller": "detachFromContainer",
+					"callee": "runtime._disposeResizeObserver",
+					"lineNumber": 314
+				},
+				{
+					"caller": "detachFromContainer",
+					"callee": "runtime.resizeObserver?.disconnect",
+					"lineNumber": 316
+				},
+				{
+					"caller": "detachFromContainer",
+					"callee": "cancelParserIdleWork",
+					"lineNumber": 318
+				},
+				{
+					"caller": "detachFromContainer",
+					"callee": "getTerminalParkingContainer().appendChild",
+					"lineNumber": 321
+				},
+				{
+					"caller": "detachFromContainer",
+					"callee": "getTerminalParkingContainer",
+					"lineNumber": 321
+				},
+				{
+					"caller": "updateRuntimeAppearance",
+					"callee": "applyTerminalFontFamilyCssVariable",
+					"lineNumber": 338
+				},
+				{
+					"caller": "updateRuntimeAppearance",
+					"callee": "measureAndResize",
+					"lineNumber": 341
+				},
+				{
+					"caller": "updateRuntimeAppearance",
+					"callee": "scheduleFontSettleRefit",
+					"lineNumber": 344
+				},
+				{
+					"caller": "updateRuntimeAppearance",
+					"callee": "hostIsVisible",
+					"lineNumber": 346
+				},
+				{
+					"caller": "updateRuntimeAppearance",
+					"callee": "measureAndResize",
+					"lineNumber": 347
+				},
+				{
+					"caller": "disposeRuntime",
+					"callee": "persistBuffer",
+					"lineNumber": 358
+				},
+				{
+					"caller": "disposeRuntime",
+					"callee": "persistDimensions",
+					"lineNumber": 359
+				},
+				{
+					"caller": "disposeRuntime",
+					"callee": "runtime._disposeImagePasteFallback",
+					"lineNumber": 361
+				},
+				{
+					"caller": "disposeRuntime",
+					"callee": "runtime._disposeAddons",
+					"lineNumber": 363
+				},
+				{
+					"caller": "disposeRuntime",
+					"callee": "runtime._disposeResizeObserver",
+					"lineNumber": 365
+				},
+				{
+					"caller": "disposeRuntime",
+					"callee": "runtime.resizeObserver?.disconnect",
+					"lineNumber": 367
+				},
+				{
+					"caller": "disposeRuntime",
+					"callee": "cancelParserIdleWork",
+					"lineNumber": 369
+				},
+				{
+					"caller": "disposeRuntime",
+					"callee": "runtime.wrapper.remove",
+					"lineNumber": 371
+				},
+				{
+					"caller": "disposeRuntime",
+					"callee": "runtime.terminal.dispose",
+					"lineNumber": 372
+				},
+				{
+					"caller": "disposeRuntime",
+					"callee": "clearPersistedBuffer",
+					"lineNumber": 374
+				},
+				{
+					"caller": "disposeRuntime",
+					"callee": "clearPersistedDimensions",
+					"lineNumber": 375
+				}
+			],
+			"metrics": {
+				"importCount": 8,
+				"exportCount": 5,
+				"functionCount": 15,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/lib/terminal/terminal-ws-transport.test.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 321,
+			"nonEmptyLines": 270,
+			"functions": [
+				{
+					"name": "createMockTerminal",
+					"startLine": 81,
+					"endLine": 99,
+					"params": ["cols", "rows"]
+				}
+			],
+			"classes": [
+				{
+					"name": "MockWebSocket",
+					"startLine": 19,
+					"endLine": 70,
+					"methods": [
+						"constructor",
+						"addEventListener",
+						"send",
+						"close",
+						"open",
+						"message",
+						"dispatch"
+					],
+					"properties": [
+						"CONNECTING",
+						"OPEN",
+						"CLOSING",
+						"CLOSED",
+						"instances",
+						"url",
+						"readyState",
+						"binaryType",
+						"sent",
+						"listeners"
+					]
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "constructor",
+					"callee": "MockWebSocket.instances.push",
+					"lineNumber": 35
+				},
+				{
+					"caller": "addEventListener",
+					"callee": "this.listeners.get",
+					"lineNumber": 39
+				},
+				{
+					"caller": "addEventListener",
+					"callee": "this.listeners.set",
+					"lineNumber": 42
+				},
+				{
+					"caller": "addEventListener",
+					"callee": "listeners.add",
+					"lineNumber": 44
+				},
+				{
+					"caller": "send",
+					"callee": "this.sent.push",
+					"lineNumber": 48
+				},
+				{
+					"caller": "close",
+					"callee": "this.dispatch",
+					"lineNumber": 53
+				},
+				{
+					"caller": "open",
+					"callee": "this.dispatch",
+					"lineNumber": 58
+				},
+				{
+					"caller": "message",
+					"callee": "this.dispatch",
+					"lineNumber": 62
+				},
+				{
+					"caller": "dispatch",
+					"callee": "this.listeners.get",
+					"lineNumber": 66
+				},
+				{
+					"caller": "dispatch",
+					"callee": "listener",
+					"lineNumber": 67
+				},
+				{
+					"caller": "emitData",
+					"callee": "onDataListener",
+					"lineNumber": 94
+				},
+				{
+					"caller": "fireFrame",
+					"callee": "frameCallbacks.values",
+					"lineNumber": 129
+				},
+				{
+					"caller": "fireFrame",
+					"callee": "frameCallbacks.clear",
+					"lineNumber": 130
+				},
+				{
+					"caller": "fireFrame",
+					"callee": "callback",
+					"lineNumber": 132
+				},
+				{
+					"caller": "fireFrame",
+					"callee": "performance.now",
+					"lineNumber": 132
+				},
+				{
+					"caller": "connectWithRecordingTerminal",
+					"callee": "createTransport",
+					"lineNumber": 155
+				},
+				{
+					"caller": "connectWithRecordingTerminal",
+					"callee": "createMockTerminal",
+					"lineNumber": 156
+				},
+				{
+					"caller": "connectWithRecordingTerminal",
+					"callee": "new TextDecoder().decode",
+					"lineNumber": 162
+				},
+				{
+					"caller": "connectWithRecordingTerminal",
+					"callee": "writes.push",
+					"lineNumber": 163
+				},
+				{
+					"caller": "connectWithRecordingTerminal",
+					"callee": "events.push",
+					"lineNumber": 164
+				},
+				{
+					"caller": "connectWithRecordingTerminal",
+					"callee": "events.push",
+					"lineNumber": 169
+				},
+				{
+					"caller": "connectWithRecordingTerminal",
+					"callee": "connect",
+					"lineNumber": 171
+				},
+				{
+					"caller": "connectWithRecordingTerminal",
+					"callee": "socket.open",
+					"lineNumber": 174
+				},
+				{
+					"caller": "connectWithRecordingTerminal",
+					"callee": "socket.message",
+					"lineNumber": 175
+				},
+				{
+					"caller": "connectWithRecordingTerminal",
+					"callee": "JSON.stringify",
+					"lineNumber": 175
+				},
+				{
+					"caller": "binaryFrame",
+					"callee": "new TextEncoder().encode",
+					"lineNumber": 180
+				},
+				{
+					"caller": "binaryFrame",
+					"callee": "bytes.buffer.slice",
+					"lineNumber": 181
+				},
+				{
+					"caller": "sentMessages",
+					"callee": "socket.sent.map",
+					"lineNumber": 278
+				},
+				{
+					"caller": "sentMessages",
+					"callee": "JSON.parse",
+					"lineNumber": 278
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 0,
+				"functionCount": 1,
+				"classCount": 1
+			}
+		},
+		{
+			"path": "src/renderer/lib/terminal/terminal-ws-transport.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 689,
+			"nonEmptyLines": 641,
+			"functions": [
+				{
+					"name": "setConnectionState",
+					"startLine": 100,
+					"endLine": 108,
+					"params": ["transport", "state"]
+				},
+				{
+					"name": "notifyTitleListeners",
+					"startLine": 115,
+					"endLine": 120,
+					"params": ["transport"]
+				},
+				{
+					"name": "setTerminalTitle",
+					"startLine": 122,
+					"endLine": 135,
+					"params": ["transport", "title"]
+				},
+				{
+					"name": "pushLog",
+					"startLine": 137,
+					"endLine": 160,
+					"params": ["transport", "level", "message"]
+				},
+				{
+					"name": "clearLogs",
+					"startLine": 162,
+					"endLine": 168,
+					"params": ["transport"]
+				},
+				{
+					"name": "createTransport",
+					"startLine": 174,
+					"endLine": 199,
+					"params": []
+				},
+				{
+					"name": "reconnectNow",
+					"startLine": 213,
+					"endLine": 231,
+					"params": ["transport"]
+				},
+				{
+					"name": "handleResume",
+					"startLine": 236,
+					"endLine": 251,
+					"params": ["transport"]
+				},
+				{
+					"name": "setupLiveness",
+					"startLine": 253,
+					"endLine": 274,
+					"params": ["transport"]
+				},
+				{
+					"name": "teardownLiveness",
+					"startLine": 276,
+					"endLine": 292,
+					"params": ["transport"]
+				},
+				{
+					"name": "scheduleReconnect",
+					"startLine": 294,
+					"endLine": 316,
+					"params": ["transport"]
+				},
+				{
+					"name": "cancelReconnect",
+					"startLine": 318,
+					"endLine": 323,
+					"params": ["transport"]
+				},
+				{
+					"name": "formatWsEndpoint",
+					"startLine": 325,
+					"endLine": 333,
+					"params": ["wsUrl"]
+				},
+				{
+					"name": "isRelayHostUrl",
+					"startLine": 336,
+					"endLine": 343,
+					"params": ["wsUrl"]
+				},
+				{
+					"name": "formatCloseDetails",
+					"startLine": 345,
+					"endLine": 349,
+					"params": ["event"]
+				},
+				{
+					"name": "appendQueryParam",
+					"startLine": 351,
+					"endLine": 361,
+					"params": ["url", "key", "value"]
+				},
+				{
+					"name": "connect",
+					"startLine": 363,
+					"endLine": 481,
+					"params": ["transport", "terminal", "wsUrl"]
+				},
+				{
+					"name": "attachSocketListeners",
+					"startLine": 483,
+					"endLine": 620,
+					"params": ["transport", "terminal", "socket"]
+				},
+				{
+					"name": "disconnect",
+					"startLine": 622,
+					"endLine": 639,
+					"params": ["transport"]
+				},
+				{
+					"name": "sendResize",
+					"startLine": 641,
+					"endLine": 650,
+					"params": ["transport", "cols", "rows"]
+				},
+				{
+					"name": "sendInput",
+					"startLine": 652,
+					"endLine": 657,
+					"params": ["transport", "data"]
+				},
+				{
+					"name": "sendDispose",
+					"startLine": 659,
+					"endLine": 663,
+					"params": ["transport"]
+				},
+				{
+					"name": "disposeTransport",
+					"startLine": 665,
+					"endLine": 689,
+					"params": ["transport"]
+				}
+			],
+			"exports": [
+				{
+					"name": "clearLogs",
+					"line": 162,
+					"isDefault": false
+				},
+				{
+					"name": "createTransport",
+					"line": 174,
+					"isDefault": false
+				},
+				{
+					"name": "connect",
+					"line": 363,
+					"isDefault": false
+				},
+				{
+					"name": "disconnect",
+					"line": 622,
+					"isDefault": false
+				},
+				{
+					"name": "sendResize",
+					"line": 641,
+					"isDefault": false
+				},
+				{
+					"name": "sendInput",
+					"line": 652,
+					"isDefault": false
+				},
+				{
+					"name": "sendDispose",
+					"line": 659,
+					"isDefault": false
+				},
+				{
+					"name": "disposeTransport",
+					"line": 665,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "setConnectionState",
+					"callee": "listener",
+					"lineNumber": 106
+				},
+				{
+					"caller": "notifyTitleListeners",
+					"callee": "listener",
+					"lineNumber": 118
+				},
+				{
+					"caller": "setTerminalTitle",
+					"callee": "clearTimeout",
+					"lineNumber": 129
+				},
+				{
+					"caller": "setTerminalTitle",
+					"callee": "setTimeout",
+					"lineNumber": 131
+				},
+				{
+					"caller": "setTerminalTitle",
+					"callee": "notifyTitleListeners",
+					"lineNumber": 132
+				},
+				{
+					"caller": "pushLog",
+					"callee": "Date.now",
+					"lineNumber": 145
+				},
+				{
+					"caller": "pushLog",
+					"callee": "transport.logs.slice",
+					"lineNumber": 152
+				},
+				{
+					"caller": "pushLog",
+					"callee": "listener",
+					"lineNumber": 158
+				},
+				{
+					"caller": "clearLogs",
+					"callee": "listener",
+					"lineNumber": 166
+				},
+				{
+					"caller": "reconnectNow",
+					"callee": "cancelReconnect",
+					"lineNumber": 216
+				},
+				{
+					"caller": "reconnectNow",
+					"callee": "dead.close",
+					"lineNumber": 221
+				},
+				{
+					"caller": "reconnectNow",
+					"callee": "setConnectionState",
+					"lineNumber": 229
+				},
+				{
+					"caller": "reconnectNow",
+					"callee": "connect",
+					"lineNumber": 230
+				},
+				{
+					"caller": "handleResume",
+					"callee": "reconnectNow",
+					"lineNumber": 250
+				},
+				{
+					"caller": "setupLiveness",
+					"callee": "Date.now",
+					"lineNumber": 255
+				},
+				{
+					"caller": "setupLiveness",
+					"callee": "setInterval",
+					"lineNumber": 256
+				},
+				{
+					"caller": "setupLiveness",
+					"callee": "Date.now",
+					"lineNumber": 257
+				},
+				{
+					"caller": "setupLiveness",
+					"callee": "reconnectNow",
+					"lineNumber": 260
+				},
+				{
+					"caller": "listener",
+					"callee": "handleResume",
+					"lineNumber": 264
+				},
+				{
+					"caller": "setupLiveness",
+					"callee": "window.addEventListener",
+					"lineNumber": 267
+				},
+				{
+					"caller": "setupLiveness",
+					"callee": "window.addEventListener",
+					"lineNumber": 268
+				},
+				{
+					"caller": "setupLiveness",
+					"callee": "document.addEventListener",
+					"lineNumber": 271
+				},
+				{
+					"caller": "teardownLiveness",
+					"callee": "clearInterval",
+					"lineNumber": 278
+				},
+				{
+					"caller": "teardownLiveness",
+					"callee": "window.removeEventListener",
+					"lineNumber": 284
+				},
+				{
+					"caller": "teardownLiveness",
+					"callee": "window.removeEventListener",
+					"lineNumber": 285
+				},
+				{
+					"caller": "teardownLiveness",
+					"callee": "document.removeEventListener",
+					"lineNumber": 288
+				},
+				{
+					"caller": "scheduleReconnect",
+					"callee": "Math.min",
+					"lineNumber": 300
+				},
+				{
+					"caller": "scheduleReconnect",
+					"callee": "setTimeout",
+					"lineNumber": 306
+				},
+				{
+					"caller": "scheduleReconnect",
+					"callee": "connect",
+					"lineNumber": 313
+				},
+				{
+					"caller": "cancelReconnect",
+					"callee": "clearTimeout",
+					"lineNumber": 320
+				},
+				{
+					"caller": "isRelayHostUrl",
+					"callee": "new URL(wsUrl).pathname.startsWith",
+					"lineNumber": 339
+				},
+				{
+					"caller": "appendQueryParam",
+					"callee": "u.searchParams.set",
+					"lineNumber": 354
+				},
+				{
+					"caller": "appendQueryParam",
+					"callee": "u.toString",
+					"lineNumber": 355
+				},
+				{
+					"caller": "appendQueryParam",
+					"callee": "url.includes",
+					"lineNumber": 358
+				},
+				{
+					"caller": "appendQueryParam",
+					"callee": "encodeURIComponent",
+					"lineNumber": 359
+				},
+				{
+					"caller": "appendQueryParam",
+					"callee": "encodeURIComponent",
+					"lineNumber": 359
+				},
+				{
+					"caller": "connect",
+					"callee": "transport.socket.close",
+					"lineNumber": 375
+				},
+				{
+					"caller": "connect",
+					"callee": "cancelReconnect",
+					"lineNumber": 379
+				},
+				{
+					"caller": "connect",
+					"callee": "transport._writeCoalescer?.dispose",
+					"lineNumber": 385
+				},
+				{
+					"caller": "connect",
+					"callee": "createWriteCoalescer",
+					"lineNumber": 386
+				},
+				{
+					"caller": "connect",
+					"callee": "terminal.write",
+					"lineNumber": 387
+				},
+				{
+					"caller": "connect",
+					"callee": "setupLiveness",
+					"lineNumber": 391
+				},
+				{
+					"caller": "connect",
+					"callee": "setConnectionState",
+					"lineNumber": 392
+				},
+				{
+					"caller": "connect",
+					"callee": "appendQueryParam",
+					"lineNumber": 394
+				},
+				{
+					"caller": "openSocket",
+					"callee": "pushLog",
+					"lineNumber": 412
+				},
+				{
+					"caller": "openSocket",
+					"callee": "formatWsEndpoint",
+					"lineNumber": 415
+				},
+				{
+					"caller": "openSocket",
+					"callee": "String",
+					"lineNumber": 416
+				},
+				{
+					"caller": "openSocket",
+					"callee": "setConnectionState",
+					"lineNumber": 419
+				},
+				{
+					"caller": "openSocket",
+					"callee": "scheduleReconnect",
+					"lineNumber": 420
+				},
+				{
+					"caller": "openSocket",
+					"callee": "attachSocketListeners",
+					"lineNumber": 428
+				},
+				{
+					"caller": "connect",
+					"callee": "isRelayHostUrl",
+					"lineNumber": 434
+				},
+				{
+					"caller": "connect",
+					"callee": "ensureFreshJwt().then",
+					"lineNumber": 440
+				},
+				{
+					"caller": "connect",
+					"callee": "ensureFreshJwt",
+					"lineNumber": 440
+				},
+				{
+					"caller": "connect",
+					"callee": "appendQueryParam",
+					"lineNumber": 442
+				},
+				{
+					"caller": "connect",
+					"callee": "primeRelayAffinity(signedUrl).then",
+					"lineNumber": 444
+				},
+				{
+					"caller": "connect",
+					"callee": "primeRelayAffinity",
+					"lineNumber": 444
+				},
+				{
+					"caller": "connect",
+					"callee": "classifyTerminalFailure",
+					"lineNumber": 457
+				},
+				{
+					"caller": "connect",
+					"callee": "pushLog",
+					"lineNumber": 459
+				},
+				{
+					"caller": "connect",
+					"callee": "formatWsEndpoint",
+					"lineNumber": 462
+				},
+				{
+					"caller": "connect",
+					"callee": "posthog.capture",
+					"lineNumber": 464
+				},
+				{
+					"caller": "connect",
+					"callee": "formatWsEndpoint",
+					"lineNumber": 465
+				},
+				{
+					"caller": "connect",
+					"callee": "setConnectionState",
+					"lineNumber": 472
+				},
+				{
+					"caller": "connect",
+					"callee": "openSocket",
+					"lineNumber": 475
+				},
+				{
+					"caller": "connect",
+					"callee": "openSocket",
+					"lineNumber": 479
+				},
+				{
+					"caller": "attachSocketListeners",
+					"callee": "socket.addEventListener",
+					"lineNumber": 488
+				},
+				{
+					"caller": "attachSocketListeners",
+					"callee": "socket.addEventListener",
+					"lineNumber": 493
+				},
+				{
+					"caller": "attachSocketListeners",
+					"callee": "transport._writeCoalescer?.push",
+					"lineNumber": 506
+				},
+				{
+					"caller": "attachSocketListeners",
+					"callee": "JSON.parse",
+					"lineNumber": 513
+				},
+				{
+					"caller": "attachSocketListeners",
+					"callee": "String",
+					"lineNumber": 513
+				},
+				{
+					"caller": "attachSocketListeners",
+					"callee": "transport._writeCoalescer?.flushSync",
+					"lineNumber": 515
+				},
+				{
+					"caller": "attachSocketListeners",
+					"callee": "terminal.writeln",
+					"lineNumber": 516
+				},
+				{
+					"caller": "attachSocketListeners",
+					"callee": "setTerminalTitle",
+					"lineNumber": 521
+				},
+				{
+					"caller": "attachSocketListeners",
+					"callee": "setConnectionState",
+					"lineNumber": 527
+				},
+				{
+					"caller": "attachSocketListeners",
+					"callee": "sendResize",
+					"lineNumber": 528
+				},
+				{
+					"caller": "attachSocketListeners",
+					"callee": "pushLog",
+					"lineNumber": 537
+				},
+				{
+					"caller": "attachSocketListeners",
+					"callee": "cancelReconnect",
+					"lineNumber": 540
+				},
+				{
+					"caller": "attachSocketListeners",
+					"callee": "transport._writeCoalescer?.flushSync",
+					"lineNumber": 545
+				},
+				{
+					"caller": "attachSocketListeners",
+					"callee": "cancelReconnect",
+					"lineNumber": 551
+				},
+				{
+					"caller": "attachSocketListeners",
+					"callee": "terminal.writeln",
+					"lineNumber": 552
+				},
+				{
+					"caller": "attachSocketListeners",
+					"callee": "socket.addEventListener",
+					"lineNumber": 558
+				},
+				{
+					"caller": "attachSocketListeners",
+					"callee": "transport._writeCoalescer?.flushSync",
+					"lineNumber": 562
+				},
+				{
+					"caller": "attachSocketListeners",
+					"callee": "setConnectionState",
+					"lineNumber": 563
+				},
+				{
+					"caller": "attachSocketListeners",
+					"callee": "Boolean",
+					"lineNumber": 568
+				},
+				{
+					"caller": "attachSocketListeners",
+					"callee": "formatWsEndpoint",
+					"lineNumber": 570
+				},
+				{
+					"caller": "attachSocketListeners",
+					"callee": "pushLog",
+					"lineNumber": 572
+				},
+				{
+					"caller": "attachSocketListeners",
+					"callee": "formatCloseDetails",
+					"lineNumber": 575
+				},
+				{
+					"caller": "attachSocketListeners",
+					"callee": "classifyTerminalFailure",
+					"lineNumber": 580
+				},
+				{
+					"caller": "attachSocketListeners",
+					"callee": "isRelayHostUrl",
+					"lineNumber": 582
+				},
+				{
+					"caller": "attachSocketListeners",
+					"callee": "pushLog",
+					"lineNumber": 585
+				},
+				{
+					"caller": "attachSocketListeners",
+					"callee": "formatCloseDetails",
+					"lineNumber": 588
+				},
+				{
+					"caller": "attachSocketListeners",
+					"callee": "posthog.capture",
+					"lineNumber": 590
+				},
+				{
+					"caller": "attachSocketListeners",
+					"callee": "scheduleReconnect",
+					"lineNumber": 602
+				},
+				{
+					"caller": "attachSocketListeners",
+					"callee": "socket.addEventListener",
+					"lineNumber": 605
+				},
+				{
+					"caller": "attachSocketListeners",
+					"callee": "pushLog",
+					"lineNumber": 607
+				},
+				{
+					"caller": "attachSocketListeners",
+					"callee": "formatWsEndpoint",
+					"lineNumber": 610
+				},
+				{
+					"caller": "attachSocketListeners",
+					"callee": "transport.onDataDisposable?.dispose",
+					"lineNumber": 614
+				},
+				{
+					"caller": "attachSocketListeners",
+					"callee": "terminal.onData",
+					"lineNumber": 615
+				},
+				{
+					"caller": "attachSocketListeners",
+					"callee": "socket.send",
+					"lineNumber": 618
+				},
+				{
+					"caller": "attachSocketListeners",
+					"callee": "JSON.stringify",
+					"lineNumber": 618
+				},
+				{
+					"caller": "disconnect",
+					"callee": "cancelReconnect",
+					"lineNumber": 623
+				},
+				{
+					"caller": "disconnect",
+					"callee": "teardownLiveness",
+					"lineNumber": 624
+				},
+				{
+					"caller": "disconnect",
+					"callee": "transport.socket.close",
+					"lineNumber": 626
+				},
+				{
+					"caller": "disconnect",
+					"callee": "transport._writeCoalescer?.dispose",
+					"lineNumber": 629
+				},
+				{
+					"caller": "disconnect",
+					"callee": "setTerminalTitle",
+					"lineNumber": 635
+				},
+				{
+					"caller": "disconnect",
+					"callee": "setConnectionState",
+					"lineNumber": 636
+				},
+				{
+					"caller": "disconnect",
+					"callee": "transport.onDataDisposable?.dispose",
+					"lineNumber": 637
+				},
+				{
+					"caller": "sendResize",
+					"callee": "transport.socket.send",
+					"lineNumber": 649
+				},
+				{
+					"caller": "sendResize",
+					"callee": "JSON.stringify",
+					"lineNumber": 649
+				},
+				{
+					"caller": "sendInput",
+					"callee": "transport.socket.send",
+					"lineNumber": 656
+				},
+				{
+					"caller": "sendInput",
+					"callee": "JSON.stringify",
+					"lineNumber": 656
+				},
+				{
+					"caller": "sendDispose",
+					"callee": "transport.socket.send",
+					"lineNumber": 661
+				},
+				{
+					"caller": "sendDispose",
+					"callee": "JSON.stringify",
+					"lineNumber": 661
+				},
+				{
+					"caller": "disposeTransport",
+					"callee": "cancelReconnect",
+					"lineNumber": 666
+				},
+				{
+					"caller": "disposeTransport",
+					"callee": "teardownLiveness",
+					"lineNumber": 667
+				},
+				{
+					"caller": "disposeTransport",
+					"callee": "transport.socket.close",
+					"lineNumber": 669
+				},
+				{
+					"caller": "disposeTransport",
+					"callee": "transport._writeCoalescer?.dispose",
+					"lineNumber": 672
+				},
+				{
+					"caller": "disposeTransport",
+					"callee": "setTerminalTitle",
+					"lineNumber": 678
+				},
+				{
+					"caller": "disposeTransport",
+					"callee": "transport.onDataDisposable?.dispose",
+					"lineNumber": 679
+				},
+				{
+					"caller": "disposeTransport",
+					"callee": "transport.stateListeners.clear",
+					"lineNumber": 681
+				},
+				{
+					"caller": "disposeTransport",
+					"callee": "clearTimeout",
+					"lineNumber": 683
+				},
+				{
+					"caller": "disposeTransport",
+					"callee": "transport.titleListeners.clear",
+					"lineNumber": 686
+				},
+				{
+					"caller": "disposeTransport",
+					"callee": "transport.logListeners.clear",
+					"lineNumber": 688
+				}
+			],
+			"metrics": {
+				"importCount": 4,
+				"exportCount": 8,
+				"functionCount": 23,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/lib/terminal/terminalConnectionDiagnostics.test.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 55,
+			"nonEmptyLines": 48,
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/lib/terminal/terminalConnectionDiagnostics.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 69,
+			"nonEmptyLines": 66,
+			"functions": [
+				{
+					"name": "classifyTerminalFailure",
+					"startLine": 20,
+					"endLine": 69,
+					"params": ["probe", "isHostUrl"]
+				}
+			],
+			"exports": [
+				{
+					"name": "classifyTerminalFailure",
+					"line": 20,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/lib/terminal/write-coalescer.test.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 131,
+			"nonEmptyLines": 105,
+			"functions": [
+				{
+					"name": "fireFrame",
+					"startLine": 11,
+					"endLine": 17,
+					"params": []
+				},
+				{
+					"name": "bytes",
+					"startLine": 37,
+					"endLine": 39,
+					"params": ["text"]
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "fireFrame",
+					"callee": "frameCallbacks.values",
+					"lineNumber": 12
+				},
+				{
+					"caller": "fireFrame",
+					"callee": "frameCallbacks.clear",
+					"lineNumber": 13
+				},
+				{
+					"caller": "fireFrame",
+					"callee": "callback",
+					"lineNumber": 15
+				},
+				{
+					"caller": "fireFrame",
+					"callee": "performance.now",
+					"lineNumber": 15
+				},
+				{
+					"caller": "bytes",
+					"callee": "new TextEncoder().encode",
+					"lineNumber": 38
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 0,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/lib/terminal/write-coalescer.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 86,
+			"nonEmptyLines": 80,
+			"functions": [
+				{
+					"name": "createWriteCoalescer",
+					"startLine": 31,
+					"endLine": 86,
+					"params": ["write"]
+				}
+			],
+			"exports": [
+				{
+					"name": "MAX_PENDING_BYTES",
+					"line": 17,
+					"isDefault": false
+				},
+				{
+					"name": "createWriteCoalescer",
+					"line": 31,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "flushSync",
+					"callee": "cancelAnimationFrame",
+					"lineNumber": 41
+				},
+				{
+					"caller": "flushSync",
+					"callee": "batch.set",
+					"lineNumber": 52
+				},
+				{
+					"caller": "flushSync",
+					"callee": "write",
+					"lineNumber": 58
+				},
+				{
+					"caller": "push",
+					"callee": "pending.push",
+					"lineNumber": 63
+				},
+				{
+					"caller": "push",
+					"callee": "flushSync",
+					"lineNumber": 66
+				},
+				{
+					"caller": "push",
+					"callee": "requestAnimationFrame",
+					"lineNumber": 70
+				},
+				{
+					"caller": "push",
+					"callee": "flushSync",
+					"lineNumber": 72
+				},
+				{
+					"caller": "dispose",
+					"callee": "flushSync",
+					"lineNumber": 82
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 2,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/FilePane/registry/views/CodeView/components/CodeEditor/constants.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 3,
+			"nonEmptyLines": 3,
+			"exports": [
+				{
+					"name": "DEFAULT_CODE_EDITOR_FONT_FAMILY",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "DEFAULT_CODE_EDITOR_FONT_SIZE",
+					"line": 3,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 2,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/FilePane/registry/views/CodeView/components/CodeEditor/createCodeMirrorTheme/createCodeMirrorTheme.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 171,
+			"nonEmptyLines": 168,
+			"functions": [
+				{
+					"name": "createCodeMirrorTheme",
+					"startLine": 13,
+					"endLine": 171,
+					"params": ["theme", "fontSettings", "fillHeight"]
+				}
+			],
+			"exports": [
+				{
+					"name": "createCodeMirrorTheme",
+					"line": 13,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "createCodeMirrorTheme",
+					"callee": "Math.round",
+					"lineNumber": 19
+				},
+				{
+					"caller": "createCodeMirrorTheme",
+					"callee": "getEditorTheme",
+					"lineNumber": 20
+				},
+				{
+					"caller": "createCodeMirrorTheme",
+					"callee": "withAlpha",
+					"lineNumber": 21
+				},
+				{
+					"caller": "createCodeMirrorTheme",
+					"callee": "EditorView.theme",
+					"lineNumber": 25
+				},
+				{
+					"caller": "createCodeMirrorTheme",
+					"callee": "Math.max",
+					"lineNumber": 69
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/FilePane/registry/views/CodeView/components/CodeEditor/syntax-highlighting/syntax-highlighting.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 70,
+			"nonEmptyLines": 68,
+			"functions": [
+				{
+					"name": "getCodeSyntaxHighlighting",
+					"startLine": 6,
+					"endLine": 70,
+					"params": ["theme"]
+				}
+			],
+			"exports": [
+				{
+					"name": "getCodeSyntaxHighlighting",
+					"line": 6,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "getCodeSyntaxHighlighting",
+					"callee": "getEditorTheme",
+					"lineNumber": 7
+				},
+				{
+					"caller": "getCodeSyntaxHighlighting",
+					"callee": "syntaxHighlighting",
+					"lineNumber": 9
+				},
+				{
+					"caller": "getCodeSyntaxHighlighting",
+					"callee": "HighlightStyle.define",
+					"lineNumber": 10
+				},
+				{
+					"caller": "getCodeSyntaxHighlighting",
+					"callee": "tags.special",
+					"lineNumber": 21
+				},
+				{
+					"caller": "getCodeSyntaxHighlighting",
+					"callee": "tags.function",
+					"lineNumber": 30
+				},
+				{
+					"caller": "getCodeSyntaxHighlighting",
+					"callee": "tags.function",
+					"lineNumber": 31
+				},
+				{
+					"caller": "getCodeSyntaxHighlighting",
+					"callee": "tags.definition",
+					"lineNumber": 41
+				},
+				{
+					"caller": "getCodeSyntaxHighlighting",
+					"callee": "tags.constant",
+					"lineNumber": 49
+				},
+				{
+					"caller": "getCodeSyntaxHighlighting",
+					"callee": "tags.standard",
+					"lineNumber": 49
+				},
+				{
+					"caller": "getCodeSyntaxHighlighting",
+					"callee": "tags.special",
+					"lineNumber": 53
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/TerminalPane/TerminalPane.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 501,
+			"nonEmptyLines": 464,
+			"functions": [
+				{
+					"name": "TerminalPane",
+					"startLine": 56,
+					"endLine": 475,
+					"params": [
+						"{\n\tctx,\n\tworkspaceId,\n\tonOpenFile,\n\tonRevealPath,\n}"
+					]
+				},
+				{
+					"name": "resolveHoverLabel",
+					"startLine": 481,
+					"endLine": 501,
+					"params": ["hovered", "filePolicy", "urlPolicy"]
+				}
+			],
+			"exports": [
+				{
+					"name": "TerminalPane",
+					"line": 56,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "TerminalPane",
+					"callee": "useTerminalFilePolicy",
+					"lineNumber": 62
+				},
+				{
+					"caller": "TerminalPane",
+					"callee": "useTerminalUrlPolicy",
+					"lineNumber": 63
+				},
+				{
+					"caller": "TerminalPane",
+					"callee": "useLinkHoverState",
+					"lineNumber": 68
+				},
+				{
+					"caller": "TerminalPane",
+					"callee": "useLinkClickHint",
+					"lineNumber": 69
+				},
+				{
+					"caller": "TerminalPane",
+					"callee": "useOpenInExternalEditor",
+					"lineNumber": 70
+				},
+				{
+					"caller": "TerminalPane",
+					"callee": "useRef",
+					"lineNumber": 74
+				},
+				{
+					"caller": "TerminalPane",
+					"callee": "useState",
+					"lineNumber": 75
+				},
+				{
+					"caller": "TerminalPane",
+					"callee": "useTerminalRichInputOpen",
+					"lineNumber": 80
+				},
+				{
+					"caller": "TerminalPane",
+					"callee": "useTerminalAppearance",
+					"lineNumber": 82
+				},
+				{
+					"caller": "TerminalPane",
+					"callee": "useRef",
+					"lineNumber": 83
+				},
+				{
+					"caller": "TerminalPane",
+					"callee": "useTheme",
+					"lineNumber": 88
+				},
+				{
+					"caller": "TerminalPane",
+					"callee": "resolveTerminalThemeType",
+					"lineNumber": 89
+				},
+				{
+					"caller": "TerminalPane",
+					"callee": "useWorkspaceWsUrl",
+					"lineNumber": 92
+				},
+				{
+					"caller": "TerminalPane",
+					"callee": "themedUrl.searchParams.set",
+					"lineNumber": 94
+				},
+				{
+					"caller": "TerminalPane",
+					"callee": "themedUrl.searchParams.set",
+					"lineNumber": 95
+				},
+				{
+					"caller": "TerminalPane",
+					"callee": "themedUrl.toString",
+					"lineNumber": 96
+				},
+				{
+					"caller": "TerminalPane",
+					"callee": "useRef",
+					"lineNumber": 97
+				},
+				{
+					"caller": "TerminalPane",
+					"callee": "useRef",
+					"lineNumber": 99
+				},
+				{
+					"caller": "TerminalPane",
+					"callee": "workspaceTrpc.useUtils",
+					"lineNumber": 102
+				},
+				{
+					"caller": "TerminalPane",
+					"callee": "useRef",
+					"lineNumber": 103
+				},
+				{
+					"caller": "TerminalPane",
+					"callee": "useCallback",
+					"lineNumber": 113
+				},
+				{
+					"caller": "TerminalPane",
+					"callee": "terminalRuntimeRegistry.onStateChange",
+					"lineNumber": 115
+				},
+				{
+					"caller": "TerminalPane",
+					"callee": "useCallback",
+					"lineNumber": 122
+				},
+				{
+					"caller": "TerminalPane",
+					"callee": "terminalRuntimeRegistry.getConnectionState",
+					"lineNumber": 124
+				},
+				{
+					"caller": "TerminalPane",
+					"callee": "useSyncExternalStore",
+					"lineNumber": 130
+				},
+				{
+					"caller": "TerminalPane",
+					"callee": "useEffect",
+					"lineNumber": 145
+				},
+				{
+					"caller": "TerminalPane",
+					"callee": "terminalRuntimeRegistry.mount",
+					"lineNumber": 149
+				},
+				{
+					"caller": "TerminalPane",
+					"callee": "terminalRuntimeRegistry.connect",
+					"lineNumber": 156
+				},
+				{
+					"caller": "TerminalPane",
+					"callee": "terminalRuntimeRegistry.detach",
+					"lineNumber": 163
+				},
+				{
+					"caller": "TerminalPane",
+					"callee": "useEffect",
+					"lineNumber": 167
+				},
+				{
+					"caller": "TerminalPane",
+					"callee": "terminalRuntimeRegistry\n\t\t\t.getTerminal(terminalId, terminalInstanceId)\n\t\t\t?.focus",
+					"lineNumber": 172
+				},
+				{
+					"caller": "TerminalPane",
+					"callee": "terminalRuntimeRegistry\n\t\t\t.getTerminal",
+					"lineNumber": 172
+				},
+				{
+					"caller": "TerminalPane",
+					"callee": "useRef",
+					"lineNumber": 177
+				},
+				{
+					"caller": "TerminalPane",
+					"callee": "useEffect",
+					"lineNumber": 178
+				},
+				{
+					"caller": "invalidateSessionsAfterSocketOpen",
+					"callee": "terminalRuntimeRegistry.getConnectionState",
+					"lineNumber": 181
+				},
+				{
+					"caller": "invalidateSessionsAfterSocketOpen",
+					"callee": "invalidateTerminalSessionsRef.current",
+					"lineNumber": 195
+				},
+				{
+					"caller": "TerminalPane",
+					"callee": "invalidateSessionsAfterSocketOpen",
+					"lineNumber": 200
+				},
+				{
+					"caller": "TerminalPane",
+					"callee": "terminalRuntimeRegistry.onStateChange",
+					"lineNumber": 201
+				},
+				{
+					"caller": "TerminalPane",
+					"callee": "useEffect",
+					"lineNumber": 215
+				},
+				{
+					"caller": "TerminalPane",
+					"callee": "terminalRuntimeRegistry.reconnect",
+					"lineNumber": 216
+				},
+				{
+					"caller": "TerminalPane",
+					"callee": "useEffect",
+					"lineNumber": 223
+				},
+				{
+					"caller": "TerminalPane",
+					"callee": "terminalRuntimeRegistry.updateAppearance",
+					"lineNumber": 224
+				},
+				{
+					"caller": "TerminalPane",
+					"callee": "workspaceTrpc.filesystem.statPath.useMutation",
+					"lineNumber": 235
+				},
+				{
+					"caller": "TerminalPane",
+					"callee": "useRef",
+					"lineNumber": 236
+				},
+				{
+					"caller": "TerminalPane",
+					"callee": "useEffect",
+					"lineNumber": 239
+				},
+				{
+					"caller": "TerminalPane",
+					"callee": "terminalRuntimeRegistry.setLinkHandlers",
+					"lineNumber": 240
+				},
+				{
+					"caller": "TerminalPane",
+					"callee": "statPathRef.current",
+					"lineNumber": 245
+				},
+				{
+					"caller": "TerminalPane",
+					"callee": "folderIntentFor",
+					"lineNumber": 260
+				},
+				{
+					"caller": "TerminalPane",
+					"callee": "showHint",
+					"lineNumber": 262
+				},
+				{
+					"caller": "TerminalPane",
+					"callee": "event.preventDefault",
+					"lineNumber": 265
+				},
+				{
+					"caller": "TerminalPane",
+					"callee": "openInExternalEditor",
+					"lineNumber": 267
+				},
+				{
+					"caller": "TerminalPane",
+					"callee": "onRevealPath",
+					"lineNumber": 269
+				},
+				{
+					"caller": "TerminalPane",
+					"callee": "filePolicy.getAction",
+					"lineNumber": 274
+				},
+				{
+					"caller": "TerminalPane",
+					"callee": "showHint",
+					"lineNumber": 276
+				},
+				{
+					"caller": "TerminalPane",
+					"callee": "event.preventDefault",
+					"lineNumber": 279
+				},
+				{
+					"caller": "TerminalPane",
+					"callee": "openInExternalEditor",
+					"lineNumber": 281
+				},
+				{
+					"caller": "TerminalPane",
+					"callee": "onOpenFile",
+					"lineNumber": 286
+				},
+				{
+					"caller": "TerminalPane",
+					"callee": "onOpenFile",
+					"lineNumber": 288
+				},
+				{
+					"caller": "TerminalPane",
+					"callee": "urlPolicy.getAction",
+					"lineNumber": 292
+				},
+				{
+					"caller": "TerminalPane",
+					"callee": "showHint",
+					"lineNumber": 294
+				},
+				{
+					"caller": "TerminalPane",
+					"callee": "event.preventDefault",
+					"lineNumber": 297
+				},
+				{
+					"caller": "TerminalPane",
+					"callee": "electronTrpcClient.external.openUrl.mutate(url).catch",
+					"lineNumber": 299
+				},
+				{
+					"caller": "TerminalPane",
+					"callee": "electronTrpcClient.external.openUrl.mutate",
+					"lineNumber": 299
+				},
+				{
+					"caller": "TerminalPane",
+					"callee": "console.error",
+					"lineNumber": 300
+				},
+				{
+					"caller": "TerminalPane",
+					"callee": "openUrlInV2Workspace",
+					"lineNumber": 303
+				},
+				{
+					"caller": "TerminalPane",
+					"callee": "useTerminalInterruptClear",
+					"lineNumber": 330
+				},
+				{
+					"caller": "TerminalPane",
+					"callee": "useHotkey",
+					"lineNumber": 337
+				},
+				{
+					"caller": "TerminalPane",
+					"callee": "terminalRuntimeRegistry.clear",
+					"lineNumber": 340
+				},
+				{
+					"caller": "TerminalPane",
+					"callee": "useHotkey",
+					"lineNumber": 345
+				},
+				{
+					"caller": "TerminalPane",
+					"callee": "terminalRuntimeRegistry.scrollToBottom",
+					"lineNumber": 348
+				},
+				{
+					"caller": "TerminalPane",
+					"callee": "useHotkey",
+					"lineNumber": 353
+				},
+				{
+					"caller": "TerminalPane",
+					"callee": "setIsSearchOpen",
+					"lineNumber": 353
+				},
+				{
+					"caller": "TerminalPane",
+					"callee": "useHotkey",
+					"lineNumber": 358
+				},
+				{
+					"caller": "TerminalPane",
+					"callee": "terminalRichInputOpenStore.toggle",
+					"lineNumber": 360
+				},
+				{
+					"caller": "TerminalPane",
+					"callee": "useCallback",
+					"lineNumber": 364
+				},
+				{
+					"caller": "TerminalPane",
+					"callee": "terminalRichInputOpenStore.close",
+					"lineNumber": 365
+				},
+				{
+					"caller": "TerminalPane",
+					"callee": "terminalRuntimeRegistry\n\t\t\t.getTerminal(terminalId, terminalInstanceId)\n\t\t\t?.focus",
+					"lineNumber": 366
+				},
+				{
+					"caller": "TerminalPane",
+					"callee": "terminalRuntimeRegistry\n\t\t\t.getTerminal",
+					"lineNumber": 366
+				},
+				{
+					"caller": "TerminalPane",
+					"callee": "useMemo",
+					"lineNumber": 373
+				},
+				{
+					"caller": "TerminalPane",
+					"callee": "terminalRuntimeRegistry.getTerminal",
+					"lineNumber": 374
+				},
+				{
+					"caller": "TerminalPane",
+					"callee": "useMemo",
+					"lineNumber": 379
+				},
+				{
+					"caller": "TerminalPane",
+					"callee": "terminalRuntimeRegistry.getSearchAddon",
+					"lineNumber": 381
+				},
+				{
+					"caller": "TerminalPane",
+					"callee": "useState",
+					"lineNumber": 385
+				},
+				{
+					"caller": "TerminalPane",
+					"callee": "useRef",
+					"lineNumber": 386
+				},
+				{
+					"caller": "resolveDroppedText",
+					"callee": "Array.from",
+					"lineNumber": 389
+				},
+				{
+					"caller": "resolveDroppedText",
+					"callee": "files\n\t\t\t\t.map((file) => window.webUtils.getPathForFile(file))\n\t\t\t\t.filter",
+					"lineNumber": 391
+				},
+				{
+					"caller": "resolveDroppedText",
+					"callee": "files\n\t\t\t\t.map",
+					"lineNumber": 391
+				},
+				{
+					"caller": "resolveDroppedText",
+					"callee": "window.webUtils.getPathForFile",
+					"lineNumber": 392
+				},
+				{
+					"caller": "resolveDroppedText",
+					"callee": "shellEscapePaths",
+					"lineNumber": 394
+				},
+				{
+					"caller": "resolveDroppedText",
+					"callee": "dataTransfer.getData",
+					"lineNumber": 396
+				},
+				{
+					"caller": "resolveDroppedText",
+					"callee": "shellEscapePaths",
+					"lineNumber": 397
+				},
+				{
+					"caller": "handleDragEnter",
+					"callee": "event.preventDefault",
+					"lineNumber": 401
+				},
+				{
+					"caller": "handleDragEnter",
+					"callee": "setIsDropActive",
+					"lineNumber": 403
+				},
+				{
+					"caller": "handleDragOver",
+					"callee": "event.preventDefault",
+					"lineNumber": 407
+				},
+				{
+					"caller": "handleDragLeave",
+					"callee": "event.preventDefault",
+					"lineNumber": 412
+				},
+				{
+					"caller": "handleDragLeave",
+					"callee": "setIsDropActive",
+					"lineNumber": 416
+				},
+				{
+					"caller": "handleDrop",
+					"callee": "event.preventDefault",
+					"lineNumber": 421
+				},
+				{
+					"caller": "handleDrop",
+					"callee": "setIsDropActive",
+					"lineNumber": 423
+				},
+				{
+					"caller": "handleDrop",
+					"callee": "resolveDroppedText",
+					"lineNumber": 425
+				},
+				{
+					"caller": "handleDrop",
+					"callee": "terminalRuntimeRegistry\n\t\t\t.getTerminal(terminalId, terminalInstanceId)\n\t\t\t?.focus",
+					"lineNumber": 427
+				},
+				{
+					"caller": "handleDrop",
+					"callee": "terminalRuntimeRegistry\n\t\t\t.getTerminal",
+					"lineNumber": 427
+				},
+				{
+					"caller": "handleDrop",
+					"callee": "terminalRuntimeRegistry.paste",
+					"lineNumber": 430
+				},
+				{
+					"caller": "TerminalPane",
+					"callee": "setIsSearchOpen",
+					"lineNumber": 446
+				},
+				{
+					"caller": "TerminalPane",
+					"callee": "cn",
+					"lineNumber": 463
+				},
+				{
+					"caller": "TerminalPane",
+					"callee": "resolveHoverLabel",
+					"lineNumber": 469
+				},
+				{
+					"caller": "resolveHoverLabel",
+					"callee": "urlPolicy.getAction",
+					"lineNumber": 493
+				},
+				{
+					"caller": "resolveHoverLabel",
+					"callee": "actionLabel",
+					"lineNumber": 494
+				},
+				{
+					"caller": "resolveHoverLabel",
+					"callee": "folderIntentLabel",
+					"lineNumber": 497
+				},
+				{
+					"caller": "resolveHoverLabel",
+					"callee": "folderIntentFor",
+					"lineNumber": 497
+				},
+				{
+					"caller": "resolveHoverLabel",
+					"callee": "filePolicy.getAction",
+					"lineNumber": 499
+				},
+				{
+					"caller": "resolveHoverLabel",
+					"callee": "actionLabel",
+					"lineNumber": 500
+				}
+			],
+			"metrics": {
+				"importCount": 19,
+				"exportCount": 1,
+				"functionCount": 2,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/TerminalPane/components/TerminalPaneHeaderExtras/components/TerminalConnectionIndicator/TerminalConnectionIndicator.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 172,
+			"nonEmptyLines": 165,
+			"functions": [
+				{
+					"name": "formatTime",
+					"startLine": 15,
+					"endLine": 21,
+					"params": ["timestamp"]
+				},
+				{
+					"name": "formatLogsForClipboard",
+					"startLine": 23,
+					"endLine": 30,
+					"params": ["logs"]
+				},
+				{
+					"name": "TerminalConnectionIndicator",
+					"startLine": 39,
+					"endLine": 172,
+					"params": ["{\n\tterminalId,\n\tterminalInstanceId,\n}"]
+				}
+			],
+			"exports": [
+				{
+					"name": "TerminalConnectionIndicator",
+					"line": 39,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "formatTime",
+					"callee": "String(d.getHours()).padStart",
+					"lineNumber": 17
+				},
+				{
+					"caller": "formatTime",
+					"callee": "String",
+					"lineNumber": 17
+				},
+				{
+					"caller": "formatTime",
+					"callee": "d.getHours",
+					"lineNumber": 17
+				},
+				{
+					"caller": "formatTime",
+					"callee": "String(d.getMinutes()).padStart",
+					"lineNumber": 18
+				},
+				{
+					"caller": "formatTime",
+					"callee": "String",
+					"lineNumber": 18
+				},
+				{
+					"caller": "formatTime",
+					"callee": "d.getMinutes",
+					"lineNumber": 18
+				},
+				{
+					"caller": "formatTime",
+					"callee": "String(d.getSeconds()).padStart",
+					"lineNumber": 19
+				},
+				{
+					"caller": "formatTime",
+					"callee": "String",
+					"lineNumber": 19
+				},
+				{
+					"caller": "formatTime",
+					"callee": "d.getSeconds",
+					"lineNumber": 19
+				},
+				{
+					"caller": "formatLogsForClipboard",
+					"callee": "logs\n\t\t.map(\n\t\t\t(entry) =>\n\t\t\t\t`${new Date(entry.timestamp).toISOString()} [${entry.level}] ${entry.message}`,\n\t\t)\n\t\t.join",
+					"lineNumber": 24
+				},
+				{
+					"caller": "formatLogsForClipboard",
+					"callee": "logs\n\t\t.map",
+					"lineNumber": 24
+				},
+				{
+					"caller": "formatLogsForClipboard",
+					"callee": "new Date(entry.timestamp).toISOString",
+					"lineNumber": 27
+				},
+				{
+					"caller": "TerminalConnectionIndicator",
+					"callee": "useCallback",
+					"lineNumber": 43
+				},
+				{
+					"caller": "TerminalConnectionIndicator",
+					"callee": "terminalRuntimeRegistry.onStateChange",
+					"lineNumber": 45
+				},
+				{
+					"caller": "TerminalConnectionIndicator",
+					"callee": "terminalRuntimeRegistry.onLogsChange",
+					"lineNumber": 50
+				},
+				{
+					"caller": "TerminalConnectionIndicator",
+					"callee": "unsubState",
+					"lineNumber": 56
+				},
+				{
+					"caller": "TerminalConnectionIndicator",
+					"callee": "unsubLogs",
+					"lineNumber": 57
+				},
+				{
+					"caller": "TerminalConnectionIndicator",
+					"callee": "useSyncExternalStore",
+					"lineNumber": 62
+				},
+				{
+					"caller": "TerminalConnectionIndicator",
+					"callee": "terminalRuntimeRegistry.getConnectionState",
+					"lineNumber": 63
+				},
+				{
+					"caller": "TerminalConnectionIndicator",
+					"callee": "useSyncExternalStore",
+					"lineNumber": 65
+				},
+				{
+					"caller": "TerminalConnectionIndicator",
+					"callee": "terminalRuntimeRegistry.getLogs",
+					"lineNumber": 66
+				},
+				{
+					"caller": "TerminalConnectionIndicator",
+					"callee": "useSyncExternalStore",
+					"lineNumber": 68
+				},
+				{
+					"caller": "TerminalConnectionIndicator",
+					"callee": "terminalRuntimeRegistry.getConnectionDiagnosis",
+					"lineNumber": 69
+				},
+				{
+					"caller": "TerminalConnectionIndicator",
+					"callee": "cn",
+					"lineNumber": 97
+				},
+				{
+					"caller": "TerminalConnectionIndicator",
+					"callee": "terminalRuntimeRegistry.retryConnect",
+					"lineNumber": 117
+				},
+				{
+					"caller": "TerminalConnectionIndicator",
+					"callee": "navigator.clipboard\n\t\t\t\t\t\t\t\t\t\t.writeText(formatLogsForClipboard(logs))\n\t\t\t\t\t\t\t\t\t\t.catch",
+					"lineNumber": 129
+				},
+				{
+					"caller": "TerminalConnectionIndicator",
+					"callee": "navigator.clipboard\n\t\t\t\t\t\t\t\t\t\t.writeText",
+					"lineNumber": 129
+				},
+				{
+					"caller": "TerminalConnectionIndicator",
+					"callee": "formatLogsForClipboard",
+					"lineNumber": 130
+				},
+				{
+					"caller": "TerminalConnectionIndicator",
+					"callee": "console.error",
+					"lineNumber": 132
+				},
+				{
+					"caller": "TerminalConnectionIndicator",
+					"callee": "logs\n\t\t\t\t\t\t\t\t.slice()\n\t\t\t\t\t\t\t\t.reverse()\n\t\t\t\t\t\t\t\t.map",
+					"lineNumber": 145
+				},
+				{
+					"caller": "TerminalConnectionIndicator",
+					"callee": "logs\n\t\t\t\t\t\t\t\t.slice()\n\t\t\t\t\t\t\t\t.reverse",
+					"lineNumber": 145
+				},
+				{
+					"caller": "TerminalConnectionIndicator",
+					"callee": "logs\n\t\t\t\t\t\t\t\t.slice",
+					"lineNumber": 145
+				},
+				{
+					"caller": "TerminalConnectionIndicator",
+					"callee": "formatTime",
+					"lineNumber": 154
+				},
+				{
+					"caller": "TerminalConnectionIndicator",
+					"callee": "cn",
+					"lineNumber": 157
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 3,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/TerminalPane/components/TerminalRichInput/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "TerminalRichInput",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/TerminalPane/hooks/useLinkClickHint/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "LinkClickHint",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "useLinkClickHint",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 2,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/TerminalPane/hooks/useLinkHoverState/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "HoveredLink",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "useLinkHoverState",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 2,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/TerminalPane/hooks/useLinkHoverState/useLinkHoverState.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 55,
+			"nonEmptyLines": 48,
+			"functions": [
+				{
+					"name": "useLinkHoverState",
+					"startLine": 14,
+					"endLine": 55,
+					"params": []
+				}
+			],
+			"exports": [
+				{
+					"name": "useLinkHoverState",
+					"line": 14,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "useLinkHoverState",
+					"callee": "useState",
+					"lineNumber": 15
+				},
+				{
+					"caller": "useLinkHoverState",
+					"callee": "useEffect",
+					"lineNumber": 18
+				},
+				{
+					"caller": "update",
+					"callee": "MODIFIER_KEYS.has",
+					"lineNumber": 21
+				},
+				{
+					"caller": "update",
+					"callee": "setHoveredLink",
+					"lineNumber": 22
+				},
+				{
+					"caller": "useLinkHoverState",
+					"callee": "window.addEventListener",
+					"lineNumber": 32
+				},
+				{
+					"caller": "useLinkHoverState",
+					"callee": "window.addEventListener",
+					"lineNumber": 33
+				},
+				{
+					"caller": "useLinkHoverState",
+					"callee": "window.removeEventListener",
+					"lineNumber": 35
+				},
+				{
+					"caller": "useLinkHoverState",
+					"callee": "window.removeEventListener",
+					"lineNumber": 36
+				},
+				{
+					"caller": "useLinkHoverState",
+					"callee": "useCallback",
+					"lineNumber": 40
+				},
+				{
+					"caller": "useLinkHoverState",
+					"callee": "setHoveredLink",
+					"lineNumber": 41
+				},
+				{
+					"caller": "useLinkHoverState",
+					"callee": "useCallback",
+					"lineNumber": 50
+				},
+				{
+					"caller": "useLinkHoverState",
+					"callee": "setHoveredLink",
+					"lineNumber": 51
+				}
+			],
+			"metrics": {
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/TerminalPane/hooks/useTerminalAppearance/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "useTerminalAppearance",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/TerminalPane/hooks/useTerminalAppearance/useTerminalAppearance.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 37,
+			"nonEmptyLines": 33,
+			"functions": [
+				{
+					"name": "useTerminalAppearance",
+					"startLine": 14,
+					"endLine": 37,
+					"params": []
+				}
+			],
+			"exports": [
+				{
+					"name": "useTerminalAppearance",
+					"line": 14,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "useTerminalAppearance",
+					"callee": "useTerminalTheme",
+					"lineNumber": 15
+				},
+				{
+					"caller": "useTerminalAppearance",
+					"callee": "useQuery",
+					"lineNumber": 16
+				},
+				{
+					"caller": "useTerminalAppearance",
+					"callee": "electronTrpcClient.settings.getFontSettings.query",
+					"lineNumber": 18
+				},
+				{
+					"caller": "useTerminalAppearance",
+					"callee": "useMemo",
+					"lineNumber": 22
+				},
+				{
+					"caller": "useTerminalAppearance",
+					"callee": "sanitizeTerminalFontFamily",
+					"lineNumber": 24
+				}
+			],
+			"metrics": {
+				"importCount": 3,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/TerminalPane/hooks/useTerminalInterruptClear/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1,
+			"exports": [
+				{
+					"name": "useTerminalInterruptClear",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/usePaneRegistry/components/TerminalPane/utils.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 5,
+			"nonEmptyLines": 4,
+			"functions": [
+				{
+					"name": "shellEscapePaths",
+					"startLine": 3,
+					"endLine": 5,
+					"params": ["paths"]
+				}
+			],
+			"exports": [
+				{
+					"name": "shellEscapePaths",
+					"line": 3,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "shellEscapePaths",
+					"callee": "quote",
+					"lineNumber": 4
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/$workspaceId/hooks/useV2TerminalLauncher/useV2TerminalLauncher.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 59,
+			"nonEmptyLines": 54,
+			"functions": [
+				{
+					"name": "useV2TerminalLauncher",
+					"startLine": 30,
+					"endLine": 59,
+					"params": []
+				}
+			],
+			"exports": [
+				{
+					"name": "useV2TerminalLauncher",
+					"line": 30,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "useV2TerminalLauncher",
+					"callee": "useWorkspace",
+					"lineNumber": 31
+				},
+				{
+					"caller": "useV2TerminalLauncher",
+					"callee": "useWorkspaceClient",
+					"lineNumber": 32
+				},
+				{
+					"caller": "useV2TerminalLauncher",
+					"callee": "useTheme",
+					"lineNumber": 33
+				},
+				{
+					"caller": "useV2TerminalLauncher",
+					"callee": "resolveTerminalThemeType",
+					"lineNumber": 34
+				},
+				{
+					"caller": "useV2TerminalLauncher",
+					"callee": "useCallback",
+					"lineNumber": 39
+				},
+				{
+					"caller": "useV2TerminalLauncher",
+					"callee": "crypto.randomUUID",
+					"lineNumber": 41
+				},
+				{
+					"caller": "useV2TerminalLauncher",
+					"callee": "trpcClient.terminal.createSession.mutate",
+					"lineNumber": 42
+				},
+				{
+					"caller": "useV2TerminalLauncher",
+					"callee": "useMemo",
+					"lineNumber": 58
+				}
+			],
+			"metrics": {
+				"importCount": 3,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/_dashboard/v2-workspace/providers/WorkspaceTrpcProvider/WorkspaceTrpcProvider.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 5,
+			"nonEmptyLines": 5,
+			"exports": [
+				{
+					"name": "useWorkspaceHostUrl",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "useWorkspaceWsUrl",
+					"line": 1,
+					"isDefault": false
+				},
+				{
+					"name": "WorkspaceTrpcProvider",
+					"line": 1,
+					"isDefault": false
+				}
+			],
+			"metrics": {
+				"importCount": 0,
+				"exportCount": 3,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/components/DiffThemeSync/DiffThemeSync.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 28,
+			"nonEmptyLines": 25,
+			"functions": [
+				{
+					"name": "DiffThemeSync",
+					"startLine": 12,
+					"endLine": 28,
+					"params": []
+				}
+			],
+			"exports": [
+				{
+					"name": "DiffThemeSync",
+					"line": 12,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "DiffThemeSync",
+					"callee": "useWorkerPool",
+					"lineNumber": 13
+				},
+				{
+					"caller": "DiffThemeSync",
+					"callee": "useResolvedTheme",
+					"lineNumber": 14
+				},
+				{
+					"caller": "DiffThemeSync",
+					"callee": "useEffect",
+					"lineNumber": 16
+				},
+				{
+					"caller": "DiffThemeSync",
+					"callee": "poolManager\n\t\t\t?.setRenderOptions(buildDiffPoolRenderOptions(activeTheme))\n\t\t\t.catch",
+					"lineNumber": 17
+				},
+				{
+					"caller": "DiffThemeSync",
+					"callee": "poolManager\n\t\t\t?.setRenderOptions",
+					"lineNumber": 17
+				},
+				{
+					"caller": "DiffThemeSync",
+					"callee": "buildDiffPoolRenderOptions",
+					"lineNumber": 18
+				},
+				{
+					"caller": "DiffThemeSync",
+					"callee": "console.error",
+					"lineNumber": 20
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/components/DiffThemeSync/buildDiffPoolRenderOptions.test.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 24,
+			"nonEmptyLines": 21,
+			"metrics": {
+				"importCount": 3,
+				"exportCount": 0,
+				"functionCount": 0,
+				"classCount": 0
+			}
+		},
+		{
+			"path": "src/renderer/routes/_authenticated/components/DiffThemeSync/buildDiffPoolRenderOptions.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 23,
+			"nonEmptyLines": 22,
+			"functions": [
+				{
+					"name": "buildDiffPoolRenderOptions",
+					"startLine": 18,
+					"endLine": 23,
+					"params": ["activeTheme"]
+				}
+			],
+			"exports": [
+				{
+					"name": "buildDiffPoolRenderOptions",
+					"line": 18,
+					"isDefault": false
+				}
+			],
+			"callGraph": [
+				{
+					"caller": "buildDiffPoolRenderOptions",
+					"callee": "getDiffsTheme",
+					"lineNumber": 20
+				}
+			],
+			"metrics": {
+				"importCount": 2,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 0
+			}
+		}
+	]
+}

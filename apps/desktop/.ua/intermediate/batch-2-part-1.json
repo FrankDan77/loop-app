@@ -1,0 +1,1304 @@
+{
+	"nodes": [
+		{
+			"id": "file:src/lib/trpc/routers/config/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "src/lib/trpc/routers/config/index.ts",
+			"summary": "Router entry point for config functionality",
+			"tags": ["trpc", "router", "backend", "typescript", "api"],
+			"complexity": "simple"
+		},
+		{
+			"id": "file:src/lib/trpc/routers/device.ts",
+			"type": "file",
+			"name": "device.ts",
+			"filePath": "src/lib/trpc/routers/device.ts",
+			"summary": "tRPC router for device operations",
+			"tags": ["trpc", "router", "backend", "typescript", "api"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/lib/trpc/routers/device.ts:createDeviceRouter",
+			"type": "function",
+			"name": "createDeviceRouter",
+			"filePath": "src/lib/trpc/routers/device.ts",
+			"summary": "Function implementing createDeviceRouter logic",
+			"tags": ["trpc", "router", "backend", "function"],
+			"complexity": "simple",
+			"lineRange": {
+				"start": 4,
+				"end": 10
+			}
+		},
+		{
+			"id": "file:src/lib/trpc/routers/external/helpers.test.ts",
+			"type": "file",
+			"name": "helpers.test.ts",
+			"filePath": "src/lib/trpc/routers/external/helpers.test.ts",
+			"summary": "Test suite for helpers functionality",
+			"tags": ["trpc", "router", "test", "utility", "external"],
+			"complexity": "complex"
+		},
+		{
+			"id": "file:src/lib/trpc/routers/external/helpers.ts",
+			"type": "file",
+			"name": "helpers.ts",
+			"filePath": "src/lib/trpc/routers/external/helpers.ts",
+			"summary": "tRPC router for helpers operations",
+			"tags": ["trpc", "router", "utility", "external", "backend"],
+			"complexity": "complex"
+		},
+		{
+			"id": "function:src/lib/trpc/routers/external/helpers.ts:getAppCommand",
+			"type": "function",
+			"name": "getAppCommand",
+			"filePath": "src/lib/trpc/routers/external/helpers.ts",
+			"summary": "Function implementing getAppCommand logic",
+			"tags": ["trpc", "router", "utility", "function"],
+			"complexity": "moderate",
+			"lineRange": {
+				"start": 93,
+				"end": 124
+			}
+		},
+		{
+			"id": "function:src/lib/trpc/routers/external/helpers.ts:extractEmbeddedPath",
+			"type": "function",
+			"name": "extractEmbeddedPath",
+			"filePath": "src/lib/trpc/routers/external/helpers.ts",
+			"summary": "Function implementing extractEmbeddedPath logic",
+			"tags": ["trpc", "router", "utility", "function"],
+			"complexity": "moderate",
+			"lineRange": {
+				"start": 167,
+				"end": 192
+			}
+		},
+		{
+			"id": "function:src/lib/trpc/routers/external/helpers.ts:stripTrailingPunctuation",
+			"type": "function",
+			"name": "stripTrailingPunctuation",
+			"filePath": "src/lib/trpc/routers/external/helpers.ts",
+			"summary": "Function implementing stripTrailingPunctuation logic",
+			"tags": ["trpc", "router", "utility", "function"],
+			"complexity": "moderate",
+			"lineRange": {
+				"start": 200,
+				"end": 228
+			}
+		},
+		{
+			"id": "function:src/lib/trpc/routers/external/helpers.ts:stripPathWrappers",
+			"type": "function",
+			"name": "stripPathWrappers",
+			"filePath": "src/lib/trpc/routers/external/helpers.ts",
+			"summary": "Function implementing stripPathWrappers logic",
+			"tags": ["trpc", "router", "utility", "function"],
+			"complexity": "moderate",
+			"lineRange": {
+				"start": 241,
+				"end": 268
+			}
+		},
+		{
+			"id": "function:src/lib/trpc/routers/external/helpers.ts:resolvePath",
+			"type": "function",
+			"name": "resolvePath",
+			"filePath": "src/lib/trpc/routers/external/helpers.ts",
+			"summary": "Function implementing resolvePath logic",
+			"tags": ["trpc", "router", "utility", "function"],
+			"complexity": "moderate",
+			"lineRange": {
+				"start": 293,
+				"end": 319
+			}
+		},
+		{
+			"id": "function:src/lib/trpc/routers/external/helpers.ts:spawnAsync",
+			"type": "function",
+			"name": "spawnAsync",
+			"filePath": "src/lib/trpc/routers/external/helpers.ts",
+			"summary": "Function implementing spawnAsync logic",
+			"tags": ["trpc", "router", "utility", "function"],
+			"complexity": "moderate",
+			"lineRange": {
+				"start": 325,
+				"end": 356
+			}
+		},
+		{
+			"id": "class:src/lib/trpc/routers/external/helpers.ts:RelativePathWithoutCwdError",
+			"type": "class",
+			"name": "RelativePathWithoutCwdError",
+			"filePath": "src/lib/trpc/routers/external/helpers.ts",
+			"summary": "Class implementing RelativePathWithoutCwdError behavior",
+			"tags": ["trpc", "router", "utility", "class"],
+			"complexity": "simple",
+			"lineRange": {
+				"start": 270,
+				"end": 281
+			}
+		},
+		{
+			"id": "file:src/lib/trpc/routers/external/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "src/lib/trpc/routers/external/index.ts",
+			"summary": "Router entry point for external functionality",
+			"tags": ["trpc", "router", "external", "backend", "typescript"],
+			"complexity": "complex"
+		},
+		{
+			"id": "function:src/lib/trpc/routers/external/index.ts:withResolveGuard",
+			"type": "function",
+			"name": "withResolveGuard",
+			"filePath": "src/lib/trpc/routers/external/index.ts",
+			"summary": "Function implementing withResolveGuard logic",
+			"tags": ["trpc", "router", "external", "function"],
+			"complexity": "simple",
+			"lineRange": {
+				"start": 32,
+				"end": 41
+			}
+		},
+		{
+			"id": "function:src/lib/trpc/routers/external/index.ts:ensureGlobalDefaultEditor",
+			"type": "function",
+			"name": "ensureGlobalDefaultEditor",
+			"filePath": "src/lib/trpc/routers/external/index.ts",
+			"summary": "Function implementing ensureGlobalDefaultEditor logic",
+			"tags": ["trpc", "router", "external", "function"],
+			"complexity": "simple",
+			"lineRange": {
+				"start": 48,
+				"end": 62
+			}
+		},
+		{
+			"id": "function:src/lib/trpc/routers/external/index.ts:resolveDefaultEditor",
+			"type": "function",
+			"name": "resolveDefaultEditor",
+			"filePath": "src/lib/trpc/routers/external/index.ts",
+			"summary": "Function implementing resolveDefaultEditor logic",
+			"tags": ["trpc", "router", "external", "function"],
+			"complexity": "simple",
+			"lineRange": {
+				"start": 65,
+				"end": 76
+			}
+		},
+		{
+			"id": "function:src/lib/trpc/routers/external/index.ts:openPathInApp",
+			"type": "function",
+			"name": "openPathInApp",
+			"filePath": "src/lib/trpc/routers/external/index.ts",
+			"summary": "Function implementing openPathInApp logic",
+			"tags": ["trpc", "router", "external", "function"],
+			"complexity": "moderate",
+			"lineRange": {
+				"start": 78,
+				"end": 107
+			}
+		},
+		{
+			"id": "function:src/lib/trpc/routers/external/index.ts:createExternalRouter",
+			"type": "function",
+			"name": "createExternalRouter",
+			"filePath": "src/lib/trpc/routers/external/index.ts",
+			"summary": "Function implementing createExternalRouter logic",
+			"tags": ["trpc", "router", "external", "function"],
+			"complexity": "complex",
+			"lineRange": {
+				"start": 113,
+				"end": 280
+			}
+		},
+		{
+			"id": "file:src/lib/trpc/routers/filesystem/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "src/lib/trpc/routers/filesystem/index.ts",
+			"summary": "Router entry point for filesystem functionality",
+			"tags": ["trpc", "router", "backend", "typescript", "api"],
+			"complexity": "complex"
+		},
+		{
+			"id": "function:src/lib/trpc/routers/filesystem/index.ts:createFilesystemRouter",
+			"type": "function",
+			"name": "createFilesystemRouter",
+			"filePath": "src/lib/trpc/routers/filesystem/index.ts",
+			"summary": "Function implementing createFilesystemRouter logic",
+			"tags": ["trpc", "router", "backend", "function"],
+			"complexity": "complex",
+			"lineRange": {
+				"start": 31,
+				"end": 323
+			}
+		},
+		{
+			"id": "file:src/lib/trpc/routers/host-service-coordinator/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "src/lib/trpc/routers/host-service-coordinator/index.ts",
+			"summary": "Router entry point for host-service-coordinator functionality",
+			"tags": ["trpc", "router", "backend", "typescript", "api"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:src/lib/trpc/routers/host-service-coordinator/index.ts:createHostServiceCoordinatorRouter",
+			"type": "function",
+			"name": "createHostServiceCoordinatorRouter",
+			"filePath": "src/lib/trpc/routers/host-service-coordinator/index.ts",
+			"summary": "Function implementing createHostServiceCoordinatorRouter logic",
+			"tags": ["trpc", "router", "backend", "function"],
+			"complexity": "complex",
+			"lineRange": {
+				"start": 14,
+				"end": 80
+			}
+		},
+		{
+			"id": "file:src/lib/trpc/routers/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "src/lib/trpc/routers/index.ts",
+			"summary": "Router entry point for routers functionality",
+			"tags": ["trpc", "router", "backend", "typescript", "api"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:src/lib/trpc/routers/index.ts:createAppRouter",
+			"type": "function",
+			"name": "createAppRouter",
+			"filePath": "src/lib/trpc/routers/index.ts",
+			"summary": "Function implementing createAppRouter logic",
+			"tags": ["trpc", "router", "backend", "function"],
+			"complexity": "moderate",
+			"lineRange": {
+				"start": 33,
+				"end": 65
+			}
+		},
+		{
+			"id": "file:src/lib/trpc/routers/menu.ts",
+			"type": "file",
+			"name": "menu.ts",
+			"filePath": "src/lib/trpc/routers/menu.ts",
+			"summary": "tRPC router for menu operations",
+			"tags": ["trpc", "router", "backend", "typescript", "api"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/lib/trpc/routers/menu.ts:createMenuRouter",
+			"type": "function",
+			"name": "createMenuRouter",
+			"filePath": "src/lib/trpc/routers/menu.ts",
+			"summary": "Function implementing createMenuRouter logic",
+			"tags": ["trpc", "router", "backend", "function"],
+			"complexity": "moderate",
+			"lineRange": {
+				"start": 16,
+				"end": 50
+			}
+		},
+		{
+			"id": "file:src/lib/trpc/routers/migration/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "src/lib/trpc/routers/migration/index.ts",
+			"summary": "Router entry point for migration functionality",
+			"tags": ["trpc", "router", "backend", "typescript", "api"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/lib/trpc/routers/migration/index.ts:createMigrationRouter",
+			"type": "function",
+			"name": "createMigrationRouter",
+			"filePath": "src/lib/trpc/routers/migration/index.ts",
+			"summary": "Function implementing createMigrationRouter logic",
+			"tags": ["trpc", "router", "backend", "function"],
+			"complexity": "moderate",
+			"lineRange": {
+				"start": 6,
+				"end": 31
+			}
+		},
+		{
+			"id": "file:src/lib/trpc/routers/notifications.ts",
+			"type": "file",
+			"name": "notifications.ts",
+			"filePath": "src/lib/trpc/routers/notifications.ts",
+			"summary": "tRPC router for notifications operations",
+			"tags": ["trpc", "router", "backend", "typescript", "api"],
+			"complexity": "moderate"
+		},
+		{
+			"id": "function:src/lib/trpc/routers/notifications.ts:trackNativeNotification",
+			"type": "function",
+			"name": "trackNativeNotification",
+			"filePath": "src/lib/trpc/routers/notifications.ts",
+			"summary": "Function implementing trackNativeNotification logic",
+			"tags": ["trpc", "router", "backend", "function"],
+			"complexity": "simple",
+			"lineRange": {
+				"start": 76,
+				"end": 91
+			}
+		},
+		{
+			"id": "function:src/lib/trpc/routers/notifications.ts:createNotificationsRouter",
+			"type": "function",
+			"name": "createNotificationsRouter",
+			"filePath": "src/lib/trpc/routers/notifications.ts",
+			"summary": "Function implementing createNotificationsRouter logic",
+			"tags": ["trpc", "router", "backend", "function"],
+			"complexity": "complex",
+			"lineRange": {
+				"start": 93,
+				"end": 187
+			}
+		},
+		{
+			"id": "file:src/lib/trpc/routers/permissions.ts",
+			"type": "file",
+			"name": "permissions.ts",
+			"filePath": "src/lib/trpc/routers/permissions.ts",
+			"summary": "tRPC router for permissions operations",
+			"tags": ["trpc", "router", "permissions", "backend", "typescript"],
+			"complexity": "simple"
+		},
+		{
+			"id": "function:src/lib/trpc/routers/permissions.ts:createPermissionsRouter",
+			"type": "function",
+			"name": "createPermissionsRouter",
+			"filePath": "src/lib/trpc/routers/permissions.ts",
+			"summary": "Function implementing createPermissionsRouter logic",
+			"tags": ["trpc", "router", "permissions", "function"],
+			"complexity": "moderate",
+			"lineRange": {
+				"start": 11,
+				"end": 37
+			}
+		}
+	],
+	"edges": [
+		{
+			"from": "file:src/lib/trpc/routers/device.ts",
+			"to": "function:src/lib/trpc/routers/device.ts:createDeviceRouter",
+			"type": "contains",
+			"weight": 1.0,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/device.ts",
+			"to": "function:src/lib/trpc/routers/device.ts:createDeviceRouter",
+			"type": "exports",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/external/helpers.test.ts",
+			"to": "file:src/lib/trpc/routers/external/helpers.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/external/helpers.ts",
+			"to": "file:src/lib/trpc/routers/external/helpers.test.ts",
+			"type": "tested_by",
+			"weight": 0.5,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/external/helpers.ts",
+			"to": "function:src/lib/trpc/routers/external/helpers.ts:getAppCommand",
+			"type": "contains",
+			"weight": 1.0,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/external/helpers.ts",
+			"to": "function:src/lib/trpc/routers/external/helpers.ts:getAppCommand",
+			"type": "exports",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/external/helpers.ts",
+			"to": "function:src/lib/trpc/routers/external/helpers.ts:extractEmbeddedPath",
+			"type": "contains",
+			"weight": 1.0,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/external/helpers.ts",
+			"to": "function:src/lib/trpc/routers/external/helpers.ts:stripTrailingPunctuation",
+			"type": "contains",
+			"weight": 1.0,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/external/helpers.ts",
+			"to": "function:src/lib/trpc/routers/external/helpers.ts:stripPathWrappers",
+			"type": "contains",
+			"weight": 1.0,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/external/helpers.ts",
+			"to": "function:src/lib/trpc/routers/external/helpers.ts:stripPathWrappers",
+			"type": "exports",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/external/helpers.ts",
+			"to": "function:src/lib/trpc/routers/external/helpers.ts:resolvePath",
+			"type": "contains",
+			"weight": 1.0,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/external/helpers.ts",
+			"to": "function:src/lib/trpc/routers/external/helpers.ts:resolvePath",
+			"type": "exports",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/external/helpers.ts",
+			"to": "function:src/lib/trpc/routers/external/helpers.ts:spawnAsync",
+			"type": "contains",
+			"weight": 1.0,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/external/helpers.ts",
+			"to": "function:src/lib/trpc/routers/external/helpers.ts:spawnAsync",
+			"type": "exports",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/external/helpers.ts",
+			"to": "class:src/lib/trpc/routers/external/helpers.ts:RelativePathWithoutCwdError",
+			"type": "contains",
+			"weight": 1.0,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/external/helpers.ts",
+			"to": "class:src/lib/trpc/routers/external/helpers.ts:RelativePathWithoutCwdError",
+			"type": "exports",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/external/index.ts",
+			"to": "function:src/lib/trpc/routers/external/index.ts:withResolveGuard",
+			"type": "contains",
+			"weight": 1.0,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/external/index.ts",
+			"to": "function:src/lib/trpc/routers/external/index.ts:ensureGlobalDefaultEditor",
+			"type": "contains",
+			"weight": 1.0,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/external/index.ts",
+			"to": "function:src/lib/trpc/routers/external/index.ts:resolveDefaultEditor",
+			"type": "contains",
+			"weight": 1.0,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/external/index.ts",
+			"to": "function:src/lib/trpc/routers/external/index.ts:resolveDefaultEditor",
+			"type": "exports",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/external/index.ts",
+			"to": "function:src/lib/trpc/routers/external/index.ts:openPathInApp",
+			"type": "contains",
+			"weight": 1.0,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/external/index.ts",
+			"to": "function:src/lib/trpc/routers/external/index.ts:createExternalRouter",
+			"type": "contains",
+			"weight": 1.0,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/external/index.ts",
+			"to": "function:src/lib/trpc/routers/external/index.ts:createExternalRouter",
+			"type": "exports",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/external/index.ts",
+			"to": "file:src/lib/trpc/index.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/external/index.ts",
+			"to": "file:src/lib/trpc/routers/external/helpers.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/external/index.ts",
+			"to": "file:src/lib/trpc/routers/workspaces/utils/db-helpers.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/external/index.ts",
+			"to": "file:src/lib/trpc/routers/workspaces/utils/worktree.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/external/index.ts",
+			"to": "file:src/main/lib/local-db/index.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/external/index.ts",
+			"to": "file:src/main/lib/safe-url/index.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/external/index.ts:createExternalRouter",
+			"to": "file:src/lib/trpc/index.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/external/index.ts:createExternalRouter",
+			"to": "file:src/main/lib/safe-url/index.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/external/index.ts:createExternalRouter",
+			"to": "file:src/main/lib/safe-url/index.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/external/index.ts:createExternalRouter",
+			"to": "file:src/main/lib/safe-url/index.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/external/index.ts:createExternalRouter",
+			"to": "file:src/lib/trpc/routers/workspaces/utils/db-helpers.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/external/index.ts:createExternalRouter",
+			"to": "file:src/lib/trpc/routers/workspaces/utils/worktree.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/filesystem/index.ts",
+			"to": "function:src/lib/trpc/routers/filesystem/index.ts:createFilesystemRouter",
+			"type": "contains",
+			"weight": 1.0,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/filesystem/index.ts",
+			"to": "function:src/lib/trpc/routers/filesystem/index.ts:createFilesystemRouter",
+			"type": "exports",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/filesystem/index.ts",
+			"to": "file:src/lib/trpc/index.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/filesystem/index.ts",
+			"to": "file:src/lib/trpc/routers/workspace-fs-service.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/filesystem/index.ts:createFilesystemRouter",
+			"to": "file:src/lib/trpc/index.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/filesystem/index.ts:createFilesystemRouter",
+			"to": "file:src/lib/trpc/routers/workspace-fs-service.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/filesystem/index.ts:createFilesystemRouter",
+			"to": "file:src/lib/trpc/routers/workspace-fs-service.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/filesystem/index.ts:createFilesystemRouter",
+			"to": "file:src/lib/trpc/routers/workspace-fs-service.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/filesystem/index.ts:createFilesystemRouter",
+			"to": "file:src/lib/trpc/routers/workspace-fs-service.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/filesystem/index.ts:createFilesystemRouter",
+			"to": "file:src/lib/trpc/routers/workspace-fs-service.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/filesystem/index.ts:createFilesystemRouter",
+			"to": "file:src/lib/trpc/routers/workspace-fs-service.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/filesystem/index.ts:createFilesystemRouter",
+			"to": "file:src/lib/trpc/routers/workspace-fs-service.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/filesystem/index.ts:createFilesystemRouter",
+			"to": "file:src/lib/trpc/routers/workspace-fs-service.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/filesystem/index.ts:createFilesystemRouter",
+			"to": "file:src/lib/trpc/routers/workspace-fs-service.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/filesystem/index.ts:createFilesystemRouter",
+			"to": "file:src/lib/trpc/routers/workspace-fs-service.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/filesystem/index.ts:createFilesystemRouter",
+			"to": "file:src/lib/trpc/routers/workspace-fs-service.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/host-service-coordinator/index.ts",
+			"to": "function:src/lib/trpc/routers/host-service-coordinator/index.ts:createHostServiceCoordinatorRouter",
+			"type": "contains",
+			"weight": 1.0,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/host-service-coordinator/index.ts",
+			"to": "function:src/lib/trpc/routers/host-service-coordinator/index.ts:createHostServiceCoordinatorRouter",
+			"type": "exports",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/host-service-coordinator/index.ts",
+			"to": "file:src/lib/trpc/index.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/host-service-coordinator/index.ts",
+			"to": "file:src/lib/trpc/routers/auth/utils/auth-functions.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/host-service-coordinator/index.ts",
+			"to": "file:src/main/env.main.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/host-service-coordinator/index.ts",
+			"to": "file:src/main/lib/host-service-coordinator.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/host-service-coordinator/index.ts:createHostServiceCoordinatorRouter",
+			"to": "file:src/lib/trpc/index.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/host-service-coordinator/index.ts:createHostServiceCoordinatorRouter",
+			"to": "file:src/main/lib/host-service-coordinator.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/host-service-coordinator/index.ts:createHostServiceCoordinatorRouter",
+			"to": "file:src/lib/trpc/routers/auth/utils/auth-functions.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/host-service-coordinator/index.ts:createHostServiceCoordinatorRouter",
+			"to": "file:src/main/lib/host-service-coordinator.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/host-service-coordinator/index.ts:createHostServiceCoordinatorRouter",
+			"to": "file:src/main/lib/host-service-coordinator.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/host-service-coordinator/index.ts:createHostServiceCoordinatorRouter",
+			"to": "file:src/main/lib/host-service-coordinator.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/host-service-coordinator/index.ts:createHostServiceCoordinatorRouter",
+			"to": "file:src/lib/trpc/routers/auth/utils/auth-functions.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/host-service-coordinator/index.ts:createHostServiceCoordinatorRouter",
+			"to": "file:src/main/lib/host-service-coordinator.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/host-service-coordinator/index.ts:createHostServiceCoordinatorRouter",
+			"to": "file:src/lib/trpc/routers/auth/utils/auth-functions.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/host-service-coordinator/index.ts:createHostServiceCoordinatorRouter",
+			"to": "file:src/main/lib/host-service-coordinator.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/index.ts",
+			"to": "function:src/lib/trpc/routers/index.ts:createAppRouter",
+			"type": "contains",
+			"weight": 1.0,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/index.ts",
+			"to": "function:src/lib/trpc/routers/index.ts:createAppRouter",
+			"type": "exports",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/index.ts",
+			"to": "file:src/lib/trpc/routers/analytics/index.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/index.ts",
+			"to": "file:src/lib/trpc/routers/auth/index.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/index.ts",
+			"to": "file:src/lib/trpc/routers/auto-update/index.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/index.ts",
+			"to": "file:src/lib/trpc/routers/browser-history/index.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/index.ts",
+			"to": "file:src/lib/trpc/routers/browser/browser.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/index.ts",
+			"to": "file:src/lib/trpc/routers/cache/index.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/index.ts",
+			"to": "file:src/lib/trpc/routers/changes/index.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/index.ts",
+			"to": "file:src/lib/trpc/routers/chat-runtime-service/index.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/index.ts",
+			"to": "file:src/lib/trpc/routers/chat-service/index.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/index.ts",
+			"to": "file:src/lib/trpc/routers/config/index.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/index.ts",
+			"to": "file:src/lib/trpc/routers/device.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/index.ts",
+			"to": "file:src/lib/trpc/routers/external/index.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/index.ts",
+			"to": "file:src/lib/trpc/routers/filesystem/index.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/index.ts",
+			"to": "file:src/lib/trpc/routers/host-service-coordinator/index.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/index.ts",
+			"to": "file:src/lib/trpc/routers/keyboardLayout.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/index.ts",
+			"to": "file:src/lib/trpc/routers/menu.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/index.ts",
+			"to": "file:src/lib/trpc/routers/migration/index.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/index.ts",
+			"to": "file:src/lib/trpc/routers/notifications.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/index.ts",
+			"to": "file:src/lib/trpc/routers/permissions.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/index.ts",
+			"to": "file:src/lib/trpc/routers/ports/index.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/index.ts",
+			"to": "file:src/lib/trpc/routers/projects/index.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/index.ts",
+			"to": "file:src/lib/trpc/routers/resource-metrics.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/index.ts",
+			"to": "file:src/lib/trpc/routers/ringtone/index.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/index.ts",
+			"to": "file:src/lib/trpc/routers/settings/index.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/index.ts",
+			"to": "file:src/lib/trpc/routers/system.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/index.ts",
+			"to": "file:src/lib/trpc/routers/terminal/index.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/index.ts",
+			"to": "file:src/lib/trpc/routers/ui-state/index.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/index.ts",
+			"to": "file:src/lib/trpc/routers/window.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/index.ts",
+			"to": "file:src/lib/trpc/routers/workspaces/index.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/index.ts:createAppRouter",
+			"to": "file:src/lib/trpc/index.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/index.ts:createAppRouter",
+			"to": "file:src/lib/trpc/routers/chat-runtime-service/index.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/index.ts:createAppRouter",
+			"to": "file:src/lib/trpc/routers/chat-service/index.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/index.ts:createAppRouter",
+			"to": "file:src/lib/trpc/routers/analytics/index.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/index.ts:createAppRouter",
+			"to": "file:src/lib/trpc/routers/browser/browser.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/index.ts:createAppRouter",
+			"to": "file:src/lib/trpc/routers/browser-history/index.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/index.ts:createAppRouter",
+			"to": "file:src/lib/trpc/routers/auth/index.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/index.ts:createAppRouter",
+			"to": "file:src/lib/trpc/routers/auto-update/index.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/index.ts:createAppRouter",
+			"to": "file:src/lib/trpc/routers/cache/index.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/index.ts:createAppRouter",
+			"to": "file:src/lib/trpc/routers/window.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/index.ts:createAppRouter",
+			"to": "file:src/lib/trpc/routers/workspaces/index.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/index.ts:createAppRouter",
+			"to": "file:src/lib/trpc/routers/changes/index.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/index.ts:createAppRouter",
+			"to": "file:src/lib/trpc/routers/ui-state/index.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/index.ts:createAppRouter",
+			"to": "file:src/lib/trpc/routers/keyboardLayout.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/menu.ts",
+			"to": "function:src/lib/trpc/routers/menu.ts:createMenuRouter",
+			"type": "contains",
+			"weight": 1.0,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/menu.ts",
+			"to": "function:src/lib/trpc/routers/menu.ts:createMenuRouter",
+			"type": "exports",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/menu.ts",
+			"to": "file:src/main/lib/menu-events.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/migration/index.ts",
+			"to": "function:src/lib/trpc/routers/migration/index.ts:createMigrationRouter",
+			"type": "contains",
+			"weight": 1.0,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/migration/index.ts",
+			"to": "function:src/lib/trpc/routers/migration/index.ts:createMigrationRouter",
+			"type": "exports",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/migration/index.ts",
+			"to": "file:src/lib/trpc/index.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/migration/index.ts",
+			"to": "file:src/main/lib/local-db/index.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/migration/index.ts:createMigrationRouter",
+			"to": "file:src/lib/trpc/index.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/notifications.ts",
+			"to": "function:src/lib/trpc/routers/notifications.ts:trackNativeNotification",
+			"type": "contains",
+			"weight": 1.0,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/notifications.ts",
+			"to": "function:src/lib/trpc/routers/notifications.ts:createNotificationsRouter",
+			"type": "contains",
+			"weight": 1.0,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/notifications.ts",
+			"to": "function:src/lib/trpc/routers/notifications.ts:createNotificationsRouter",
+			"type": "exports",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/notifications.ts",
+			"to": "file:src/main/lib/dock-icon.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/notifications.ts",
+			"to": "file:src/main/lib/notifications/server.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/notifications.ts",
+			"to": "file:src/shared/constants.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/notifications.ts",
+			"to": "file:src/shared/notification-types.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		},
+		{
+			"from": "function:src/lib/trpc/routers/notifications.ts:createNotificationsRouter",
+			"to": "file:src/main/lib/dock-icon.ts",
+			"type": "calls",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/permissions.ts",
+			"to": "function:src/lib/trpc/routers/permissions.ts:createPermissionsRouter",
+			"type": "contains",
+			"weight": 1.0,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/permissions.ts",
+			"to": "function:src/lib/trpc/routers/permissions.ts:createPermissionsRouter",
+			"type": "exports",
+			"weight": 0.8,
+			"direction": "forward"
+		},
+		{
+			"from": "file:src/lib/trpc/routers/permissions.ts",
+			"to": "file:src/lib/trpc/routers/permissions/native-permissions.ts",
+			"type": "imports",
+			"weight": 0.7,
+			"direction": "forward"
+		}
+	]
+}

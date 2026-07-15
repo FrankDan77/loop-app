@@ -1,0 +1,232 @@
+{
+	"nodes": [
+		{
+			"id": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/link-providers/multi-line-link-provider.ts",
+			"type": "file",
+			"name": "multi-line-link-provider.ts",
+			"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/link-providers/multi-line-link-provider.ts",
+			"language": "typescript",
+			"category": "code",
+			"metrics": {
+				"totalLines": 244,
+				"nonEmptyLines": 211,
+				"importCount": 0,
+				"exportCount": 1,
+				"functionCount": 0,
+				"classCount": 1
+			}
+		},
+		{
+			"id": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/link-providers/url-link-provider.test.ts",
+			"type": "file",
+			"name": "url-link-provider.test.ts",
+			"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/link-providers/url-link-provider.test.ts",
+			"language": "typescript",
+			"category": "code",
+			"metrics": {
+				"totalLines": 909,
+				"nonEmptyLines": 762,
+				"importCount": 1,
+				"exportCount": 0,
+				"functionCount": 3,
+				"classCount": 0
+			}
+		},
+		{
+			"id": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/link-providers/url-link-provider.ts",
+			"type": "file",
+			"name": "url-link-provider.ts",
+			"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/link-providers/url-link-provider.ts",
+			"language": "typescript",
+			"category": "code",
+			"metrics": {
+				"totalLines": 358,
+				"nonEmptyLines": 312,
+				"importCount": 1,
+				"exportCount": 1,
+				"functionCount": 1,
+				"classCount": 1
+			}
+		},
+		{
+			"id": "class:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/link-providers/multi-line-link-provider.ts:MultiLineLinkProvider",
+			"type": "class",
+			"name": "MultiLineLinkProvider",
+			"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/link-providers/multi-line-link-provider.ts",
+			"startLine": 34,
+			"endLine": 244,
+			"methods": [
+				"constructor",
+				"getPattern",
+				"shouldSkipMatch",
+				"handleActivation",
+				"transformMatch",
+				"buildRangesForMatch",
+				"buildContextLines",
+				"provideLinks",
+				"offsetToPosition",
+				"calculateLinkRange"
+			]
+		},
+		{
+			"id": "class:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/link-providers/url-link-provider.ts:UrlLinkProvider",
+			"type": "class",
+			"name": "UrlLinkProvider",
+			"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/link-providers/url-link-provider.ts",
+			"startLine": 48,
+			"endLine": 358,
+			"methods": [
+				"createContextLine",
+				"getContextText",
+				"getLine",
+				"getLineText",
+				"isLikelyHardWrapBoundary",
+				"getContinuationSegment",
+				"isBoundaryMarkerLine",
+				"shouldAcceptContinuation",
+				"isLikelyContinuationLine",
+				"tryExtendForward",
+				"tryExtendBackward",
+				"buildContextLines",
+				"constructor",
+				"handleHover",
+				"handleLeave",
+				"getPattern",
+				"shouldSkipMatch",
+				"transformMatch",
+				"handleActivation"
+			],
+			"properties": ["URL_PATTERN"]
+		},
+		{
+			"id": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/link-providers/url-link-provider.ts:trimUnbalancedParens",
+			"type": "function",
+			"name": "trimUnbalancedParens",
+			"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/link-providers/url-link-provider.ts",
+			"startLine": 22,
+			"endLine": 46,
+			"params": ["url"]
+		},
+		{
+			"id": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/link-providers/url-link-provider.test.ts:createMockLine",
+			"type": "function",
+			"name": "createMockLine",
+			"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/link-providers/url-link-provider.test.ts",
+			"startLine": 5,
+			"endLine": 13,
+			"params": ["text", "isWrapped"]
+		},
+		{
+			"id": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/link-providers/url-link-provider.test.ts:createMockTerminal",
+			"type": "function",
+			"name": "createMockTerminal",
+			"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/link-providers/url-link-provider.test.ts",
+			"startLine": 15,
+			"endLine": 34,
+			"params": ["lines", "cols"]
+		},
+		{
+			"id": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/link-providers/url-link-provider.test.ts:getLinks",
+			"type": "function",
+			"name": "getLinks",
+			"path": "src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/link-providers/url-link-provider.test.ts",
+			"startLine": 36,
+			"endLine": 45,
+			"params": ["provider", "lineNumber"]
+		}
+	],
+	"edges": [
+		{
+			"from": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/link-providers/url-link-provider.test.ts",
+			"to": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/link-providers/url-link-provider.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/link-providers/url-link-provider.ts",
+			"to": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/link-providers/multi-line-link-provider.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"from": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/link-providers/multi-line-link-provider.ts",
+			"to": "class:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/link-providers/multi-line-link-provider.ts:MultiLineLinkProvider",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/link-providers/url-link-provider.ts",
+			"to": "class:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/link-providers/url-link-provider.ts:UrlLinkProvider",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/link-providers/url-link-provider.ts",
+			"to": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/link-providers/url-link-provider.ts:trimUnbalancedParens",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/link-providers/url-link-provider.test.ts",
+			"to": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/link-providers/url-link-provider.test.ts:createMockLine",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/link-providers/url-link-provider.test.ts",
+			"to": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/link-providers/url-link-provider.test.ts:createMockTerminal",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/link-providers/url-link-provider.test.ts",
+			"to": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/link-providers/url-link-provider.test.ts:getLinks",
+			"type": "contains",
+			"weight": 1.0
+		},
+		{
+			"from": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/link-providers/multi-line-link-provider.ts",
+			"to": "class:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/link-providers/multi-line-link-provider.ts:MultiLineLinkProvider",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"from": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/link-providers/url-link-provider.ts",
+			"to": "class:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/link-providers/url-link-provider.ts:UrlLinkProvider",
+			"type": "exports",
+			"weight": 0.8
+		},
+		{
+			"from": "class:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/link-providers/url-link-provider.ts:UrlLinkProvider",
+			"to": "class:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/link-providers/multi-line-link-provider.ts:MultiLineLinkProvider",
+			"type": "depends_on",
+			"weight": 0.6,
+			"note": "UrlLinkProvider extends MultiLineLinkProvider"
+		},
+		{
+			"from": "class:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/link-providers/url-link-provider.ts:UrlLinkProvider",
+			"to": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/link-providers/url-link-provider.ts:trimUnbalancedParens",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/link-providers/url-link-provider.test.ts:createMockTerminal",
+			"to": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/link-providers/url-link-provider.test.ts:createMockLine",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"from": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/link-providers/url-link-provider.test.ts",
+			"to": "class:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/link-providers/url-link-provider.ts:UrlLinkProvider",
+			"type": "tested_by",
+			"weight": 0.5
+		}
+	],
+	"metadata": {
+		"batchIndex": 93,
+		"totalBatches": 117,
+		"filesProcessed": 3,
+		"nodesCreated": 9,
+		"edgesCreated": 14
+	}
+}

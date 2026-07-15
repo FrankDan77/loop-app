@@ -1,0 +1,103 @@
+{
+	"batchIndex": 92,
+	"totalBatches": 117,
+	"nodes": [
+		{
+			"id": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/AnthropicOAuthDialog/AnthropicOAuthDialog.tsx",
+			"type": "file",
+			"path": "src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/AnthropicOAuthDialog/AnthropicOAuthDialog.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 24,
+			"nonEmptyLines": 21
+		},
+		{
+			"id": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OAuthDialog/index.ts",
+			"type": "file",
+			"path": "src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OAuthDialog/index.ts",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 1,
+			"nonEmptyLines": 1
+		},
+		{
+			"id": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OpenAIOAuthDialog/OpenAIOAuthDialog.tsx",
+			"type": "file",
+			"path": "src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OpenAIOAuthDialog/OpenAIOAuthDialog.tsx",
+			"language": "typescript",
+			"fileCategory": "code",
+			"totalLines": 17,
+			"nonEmptyLines": 14
+		},
+		{
+			"id": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/AnthropicOAuthDialog/AnthropicOAuthDialog.tsx:AnthropicOAuthDialog",
+			"type": "function",
+			"name": "AnthropicOAuthDialog",
+			"path": "src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/AnthropicOAuthDialog/AnthropicOAuthDialog.tsx",
+			"startLine": 16,
+			"endLine": 24,
+			"params": ["props"]
+		},
+		{
+			"id": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OpenAIOAuthDialog/OpenAIOAuthDialog.tsx:OpenAIOAuthDialog",
+			"type": "function",
+			"name": "OpenAIOAuthDialog",
+			"path": "src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OpenAIOAuthDialog/OpenAIOAuthDialog.tsx",
+			"startLine": 15,
+			"endLine": 17,
+			"params": ["props"]
+		}
+	],
+	"edges": [
+		{
+			"type": "imports",
+			"weight": 0.7,
+			"from": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/AnthropicOAuthDialog/AnthropicOAuthDialog.tsx",
+			"to": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OAuthDialog/index.ts"
+		},
+		{
+			"type": "imports",
+			"weight": 0.7,
+			"from": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OpenAIOAuthDialog/OpenAIOAuthDialog.tsx",
+			"to": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OAuthDialog/index.ts"
+		},
+		{
+			"type": "contains",
+			"weight": 1.0,
+			"from": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/AnthropicOAuthDialog/AnthropicOAuthDialog.tsx",
+			"to": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/AnthropicOAuthDialog/AnthropicOAuthDialog.tsx:AnthropicOAuthDialog"
+		},
+		{
+			"type": "contains",
+			"weight": 1.0,
+			"from": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OpenAIOAuthDialog/OpenAIOAuthDialog.tsx",
+			"to": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OpenAIOAuthDialog/OpenAIOAuthDialog.tsx:OpenAIOAuthDialog"
+		},
+		{
+			"type": "exports",
+			"weight": 0.8,
+			"from": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/AnthropicOAuthDialog/AnthropicOAuthDialog.tsx",
+			"to": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/AnthropicOAuthDialog/AnthropicOAuthDialog.tsx:AnthropicOAuthDialog"
+		},
+		{
+			"type": "exports",
+			"weight": 0.8,
+			"from": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OpenAIOAuthDialog/OpenAIOAuthDialog.tsx",
+			"to": "function:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OpenAIOAuthDialog/OpenAIOAuthDialog.tsx:OpenAIOAuthDialog"
+		},
+		{
+			"type": "exports",
+			"weight": 0.8,
+			"from": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OAuthDialog/index.ts",
+			"to": "symbol:OAuthDialog",
+			"note": "re-export, no dedicated node"
+		},
+		{
+			"type": "exports",
+			"weight": 0.8,
+			"from": "file:src/renderer/components/Chat/ChatInterface/components/ModelPicker/components/OAuthDialog/index.ts",
+			"to": "symbol:OAuthDialogProps",
+			"note": "re-export type, no dedicated node"
+		}
+	]
+}

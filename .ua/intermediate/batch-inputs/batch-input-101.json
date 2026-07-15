@@ -1,0 +1,412 @@
+{
+	"batchIndex": 101,
+	"files": [
+		{
+			"path": "apps/api/src/app/api/integrations/linear/jobs/initial-sync/route.ts",
+			"language": "typescript",
+			"sizeLines": 213,
+			"fileCategory": "code"
+		},
+		{
+			"path": "apps/api/src/app/api/integrations/linear/jobs/initial-sync/syncWorkflowStates.ts",
+			"language": "typescript",
+			"sizeLines": 67,
+			"fileCategory": "code"
+		},
+		{
+			"path": "apps/api/src/app/api/integrations/linear/jobs/initial-sync/utils.ts",
+			"language": "typescript",
+			"sizeLines": 218,
+			"fileCategory": "code"
+		},
+		{
+			"path": "apps/api/src/app/api/integrations/linear/jobs/refresh-tokens/route.ts",
+			"language": "typescript",
+			"sizeLines": 79,
+			"fileCategory": "code"
+		},
+		{
+			"path": "apps/api/src/app/api/integrations/linear/jobs/sync-task/route.ts",
+			"language": "typescript",
+			"sizeLines": 301,
+			"fileCategory": "code"
+		},
+		{
+			"path": "apps/api/src/app/api/integrations/linear/webhook/route.ts",
+			"language": "typescript",
+			"sizeLines": 270,
+			"fileCategory": "code"
+		},
+		{
+			"path": "apps/api/src/app/api/integrations/slack/callback/route.ts",
+			"language": "typescript",
+			"sizeLines": 161,
+			"fileCategory": "code"
+		},
+		{
+			"path": "apps/api/src/app/api/integrations/slack/connect/route.ts",
+			"language": "typescript",
+			"sizeLines": 67,
+			"fileCategory": "code"
+		},
+		{
+			"path": "apps/api/src/app/api/integrations/slack/constants.ts",
+			"language": "typescript",
+			"sizeLines": 7,
+			"fileCategory": "code"
+		},
+		{
+			"path": "apps/api/src/app/api/integrations/slack/events/process-app-home-opened/build-home-view.ts",
+			"language": "typescript",
+			"sizeLines": 181,
+			"fileCategory": "code"
+		},
+		{
+			"path": "apps/api/src/app/api/integrations/slack/events/process-app-home-opened/index.ts",
+			"language": "typescript",
+			"sizeLines": 1,
+			"fileCategory": "code"
+		},
+		{
+			"path": "apps/api/src/app/api/integrations/slack/events/process-app-home-opened/process-app-home-opened.ts",
+			"language": "typescript",
+			"sizeLines": 65,
+			"fileCategory": "code"
+		},
+		{
+			"path": "apps/api/src/app/api/integrations/slack/events/process-assistant-message/index.ts",
+			"language": "typescript",
+			"sizeLines": 1,
+			"fileCategory": "code"
+		},
+		{
+			"path": "apps/api/src/app/api/integrations/slack/events/process-assistant-message/process-assistant-message.ts",
+			"language": "typescript",
+			"sizeLines": 304,
+			"fileCategory": "code"
+		},
+		{
+			"path": "apps/api/src/app/api/integrations/slack/events/process-entity-details/index.ts",
+			"language": "typescript",
+			"sizeLines": 1,
+			"fileCategory": "code"
+		},
+		{
+			"path": "apps/api/src/app/api/integrations/slack/events/process-entity-details/process-entity-details.ts",
+			"language": "typescript",
+			"sizeLines": 128,
+			"fileCategory": "code"
+		},
+		{
+			"path": "apps/api/src/app/api/integrations/slack/events/process-link-shared/index.ts",
+			"language": "typescript",
+			"sizeLines": 1,
+			"fileCategory": "code"
+		},
+		{
+			"path": "apps/api/src/app/api/integrations/slack/events/process-link-shared/process-link-shared.ts",
+			"language": "typescript",
+			"sizeLines": 92,
+			"fileCategory": "code"
+		},
+		{
+			"path": "apps/api/src/app/api/integrations/slack/events/process-mention/index.ts",
+			"language": "typescript",
+			"sizeLines": 1,
+			"fileCategory": "code"
+		},
+		{
+			"path": "apps/api/src/app/api/integrations/slack/events/process-mention/process-mention.ts",
+			"language": "typescript",
+			"sizeLines": 321,
+			"fileCategory": "code"
+		},
+		{
+			"path": "apps/api/src/app/api/integrations/slack/events/route.ts",
+			"language": "typescript",
+			"sizeLines": 171,
+			"fileCategory": "code"
+		},
+		{
+			"path": "apps/api/src/app/api/integrations/slack/events/utils/generate-connect-url/generate-connect-url.ts",
+			"language": "typescript",
+			"sizeLines": 21,
+			"fileCategory": "code"
+		},
+		{
+			"path": "apps/api/src/app/api/integrations/slack/events/utils/generate-connect-url/index.ts",
+			"language": "typescript",
+			"sizeLines": 1,
+			"fileCategory": "code"
+		},
+		{
+			"path": "apps/api/src/app/api/integrations/slack/events/utils/run-agent/index.ts",
+			"language": "typescript",
+			"sizeLines": 6,
+			"fileCategory": "code"
+		}
+	],
+	"batchImportData": {
+		"apps/api/src/app/api/integrations/linear/jobs/initial-sync/route.ts": [
+			"apps/api/src/app/api/integrations/linear/jobs/initial-sync/syncWorkflowStates.ts",
+			"apps/api/src/app/api/integrations/linear/jobs/initial-sync/utils.ts",
+			"apps/api/src/env.ts"
+		],
+		"apps/api/src/app/api/integrations/linear/jobs/initial-sync/syncWorkflowStates.ts": [
+			"apps/api/src/app/api/integrations/linear/jobs/initial-sync/utils.ts"
+		],
+		"apps/api/src/app/api/integrations/linear/jobs/initial-sync/utils.ts": [],
+		"apps/api/src/app/api/integrations/linear/jobs/refresh-tokens/route.ts": [
+			"apps/api/src/env.ts"
+		],
+		"apps/api/src/app/api/integrations/linear/jobs/sync-task/route.ts": [
+			"apps/api/src/env.ts"
+		],
+		"apps/api/src/app/api/integrations/linear/webhook/route.ts": [
+			"apps/api/src/env.ts"
+		],
+		"apps/api/src/app/api/integrations/slack/callback/route.ts": [
+			"apps/api/src/env.ts",
+			"apps/api/src/lib/analytics.ts",
+			"apps/api/src/lib/oauth-state.ts"
+		],
+		"apps/api/src/app/api/integrations/slack/connect/route.ts": [
+			"apps/api/src/env.ts",
+			"apps/api/src/lib/oauth-state.ts"
+		],
+		"apps/api/src/app/api/integrations/slack/constants.ts": [],
+		"apps/api/src/app/api/integrations/slack/events/process-app-home-opened/build-home-view.ts": [
+			"apps/api/src/app/api/integrations/slack/constants.ts"
+		],
+		"apps/api/src/app/api/integrations/slack/events/process-app-home-opened/index.ts": [],
+		"apps/api/src/app/api/integrations/slack/events/process-app-home-opened/process-app-home-opened.ts": [
+			"apps/api/src/app/api/integrations/slack/events/process-app-home-opened/build-home-view.ts",
+			"apps/api/src/app/api/integrations/slack/events/utils/generate-connect-url/index.ts",
+			"apps/api/src/app/api/integrations/slack/events/utils/slack-client/index.ts"
+		],
+		"apps/api/src/app/api/integrations/slack/events/process-assistant-message/index.ts": [],
+		"apps/api/src/app/api/integrations/slack/events/process-assistant-message/process-assistant-message.ts": [
+			"apps/api/src/app/api/integrations/slack/events/utils/generate-connect-url/index.ts",
+			"apps/api/src/app/api/integrations/slack/events/utils/run-agent/index.ts",
+			"apps/api/src/app/api/integrations/slack/events/utils/slack-blocks/index.ts",
+			"apps/api/src/app/api/integrations/slack/events/utils/slack-client/index.ts",
+			"apps/api/src/app/api/integrations/slack/events/utils/slack-image-assets/index.ts",
+			"apps/api/src/lib/analytics.ts"
+		],
+		"apps/api/src/app/api/integrations/slack/events/process-entity-details/index.ts": [],
+		"apps/api/src/app/api/integrations/slack/events/process-entity-details/process-entity-details.ts": [
+			"apps/api/src/app/api/integrations/slack/events/utils/slack-client/index.ts",
+			"apps/api/src/app/api/integrations/slack/events/utils/work-objects/index.ts"
+		],
+		"apps/api/src/app/api/integrations/slack/events/process-link-shared/index.ts": [],
+		"apps/api/src/app/api/integrations/slack/events/process-link-shared/process-link-shared.ts": [
+			"apps/api/src/app/api/integrations/slack/events/utils/slack-client/index.ts",
+			"apps/api/src/app/api/integrations/slack/events/utils/work-objects/index.ts"
+		],
+		"apps/api/src/app/api/integrations/slack/events/process-mention/index.ts": [],
+		"apps/api/src/app/api/integrations/slack/events/process-mention/process-mention.ts": [
+			"apps/api/src/app/api/integrations/slack/events/utils/generate-connect-url/index.ts",
+			"apps/api/src/app/api/integrations/slack/events/utils/run-agent/index.ts",
+			"apps/api/src/app/api/integrations/slack/events/utils/slack-blocks/index.ts",
+			"apps/api/src/app/api/integrations/slack/events/utils/slack-client/index.ts",
+			"apps/api/src/app/api/integrations/slack/events/utils/slack-image-assets/index.ts",
+			"apps/api/src/lib/analytics.ts"
+		],
+		"apps/api/src/app/api/integrations/slack/events/route.ts": [
+			"apps/api/src/app/api/integrations/slack/events/process-app-home-opened/index.ts",
+			"apps/api/src/app/api/integrations/slack/events/process-entity-details/index.ts",
+			"apps/api/src/app/api/integrations/slack/events/process-link-shared/index.ts",
+			"apps/api/src/app/api/integrations/slack/verify-signature.ts",
+			"apps/api/src/env.ts"
+		],
+		"apps/api/src/app/api/integrations/slack/events/utils/generate-connect-url/generate-connect-url.ts": [
+			"apps/api/src/env.ts"
+		],
+		"apps/api/src/app/api/integrations/slack/events/utils/generate-connect-url/index.ts": [],
+		"apps/api/src/app/api/integrations/slack/events/utils/run-agent/index.ts": []
+	},
+	"neighborMap": {
+		"apps/api/src/app/api/integrations/linear/jobs/initial-sync/route.ts": [
+			{ "path": "apps/api/src/env.ts", "batchIndex": 102, "symbols": ["env"] }
+		],
+		"apps/api/src/app/api/integrations/linear/jobs/refresh-tokens/route.ts": [
+			{ "path": "apps/api/src/env.ts", "batchIndex": 102, "symbols": ["env"] }
+		],
+		"apps/api/src/app/api/integrations/linear/jobs/sync-task/route.ts": [
+			{ "path": "apps/api/src/env.ts", "batchIndex": 102, "symbols": ["env"] }
+		],
+		"apps/api/src/app/api/integrations/linear/webhook/route.ts": [
+			{ "path": "apps/api/src/env.ts", "batchIndex": 102, "symbols": ["env"] }
+		],
+		"apps/api/src/app/api/integrations/slack/callback/route.ts": [
+			{ "path": "apps/api/src/env.ts", "batchIndex": 102, "symbols": ["env"] },
+			{
+				"path": "apps/api/src/lib/analytics.ts",
+				"batchIndex": 102,
+				"symbols": ["posthog"]
+			},
+			{
+				"path": "apps/api/src/lib/oauth-state.ts",
+				"batchIndex": 102,
+				"symbols": ["createSignedState", "verifySignedState"]
+			}
+		],
+		"apps/api/src/app/api/integrations/slack/connect/route.ts": [
+			{ "path": "apps/api/src/env.ts", "batchIndex": 102, "symbols": ["env"] },
+			{
+				"path": "apps/api/src/lib/oauth-state.ts",
+				"batchIndex": 102,
+				"symbols": ["createSignedState", "verifySignedState"]
+			}
+		],
+		"apps/api/src/app/api/integrations/slack/constants.ts": [
+			{
+				"path": "apps/api/src/app/api/integrations/slack/events/utils/run-agent/run-agent.ts",
+				"batchIndex": 102,
+				"symbols": [
+					"resolveUserMentions",
+					"formatErrorForSlack",
+					"runSlackAgent"
+				]
+			},
+			{
+				"path": "apps/api/src/app/api/integrations/slack/interactions/route.ts",
+				"batchIndex": 102,
+				"symbols": ["POST"]
+			}
+		],
+		"apps/api/src/app/api/integrations/slack/events/process-app-home-opened/index.ts": [
+			{
+				"path": "apps/api/src/app/api/integrations/slack/interactions/route.ts",
+				"batchIndex": 102,
+				"symbols": ["POST"]
+			}
+		],
+		"apps/api/src/app/api/integrations/slack/events/process-app-home-opened/process-app-home-opened.ts": [
+			{
+				"path": "apps/api/src/app/api/integrations/slack/events/utils/slack-client/index.ts",
+				"batchIndex": 102,
+				"symbols": ["createSlackClient"]
+			}
+		],
+		"apps/api/src/app/api/integrations/slack/events/process-assistant-message/index.ts": [
+			{
+				"path": "apps/api/src/app/api/integrations/slack/jobs/process-assistant-message/route.ts",
+				"batchIndex": 102,
+				"symbols": ["POST"]
+			}
+		],
+		"apps/api/src/app/api/integrations/slack/events/process-assistant-message/process-assistant-message.ts": [
+			{
+				"path": "apps/api/src/app/api/integrations/slack/events/utils/slack-blocks/index.ts",
+				"batchIndex": 102,
+				"symbols": [
+					"AgentAction",
+					"formatActionsAsText",
+					"formatSideEffectsMessage"
+				]
+			},
+			{
+				"path": "apps/api/src/app/api/integrations/slack/events/utils/slack-client/index.ts",
+				"batchIndex": 102,
+				"symbols": ["createSlackClient"]
+			},
+			{
+				"path": "apps/api/src/app/api/integrations/slack/events/utils/slack-image-assets/index.ts",
+				"batchIndex": 102,
+				"symbols": [
+					"SlackImageAsset",
+					"extractSlackImageAssets",
+					"formatSlackImageAssetError",
+					"SlackImageAssetError"
+				]
+			},
+			{
+				"path": "apps/api/src/lib/analytics.ts",
+				"batchIndex": 102,
+				"symbols": ["posthog"]
+			}
+		],
+		"apps/api/src/app/api/integrations/slack/events/process-entity-details/process-entity-details.ts": [
+			{
+				"path": "apps/api/src/app/api/integrations/slack/events/utils/slack-client/index.ts",
+				"batchIndex": 102,
+				"symbols": ["createSlackClient"]
+			},
+			{
+				"path": "apps/api/src/app/api/integrations/slack/events/utils/work-objects/index.ts",
+				"batchIndex": 102,
+				"symbols": [
+					"createTaskFlexpaneObject",
+					"createTaskWorkObject",
+					"parseTaskSlugFromUrl"
+				]
+			}
+		],
+		"apps/api/src/app/api/integrations/slack/events/process-link-shared/process-link-shared.ts": [
+			{
+				"path": "apps/api/src/app/api/integrations/slack/events/utils/slack-client/index.ts",
+				"batchIndex": 102,
+				"symbols": ["createSlackClient"]
+			},
+			{
+				"path": "apps/api/src/app/api/integrations/slack/events/utils/work-objects/index.ts",
+				"batchIndex": 102,
+				"symbols": [
+					"createTaskFlexpaneObject",
+					"createTaskWorkObject",
+					"parseTaskSlugFromUrl"
+				]
+			}
+		],
+		"apps/api/src/app/api/integrations/slack/events/process-mention/index.ts": [
+			{
+				"path": "apps/api/src/app/api/integrations/slack/jobs/process-mention/route.ts",
+				"batchIndex": 102,
+				"symbols": ["POST"]
+			}
+		],
+		"apps/api/src/app/api/integrations/slack/events/process-mention/process-mention.ts": [
+			{
+				"path": "apps/api/src/app/api/integrations/slack/events/utils/slack-blocks/index.ts",
+				"batchIndex": 102,
+				"symbols": [
+					"AgentAction",
+					"formatActionsAsText",
+					"formatSideEffectsMessage"
+				]
+			},
+			{
+				"path": "apps/api/src/app/api/integrations/slack/events/utils/slack-client/index.ts",
+				"batchIndex": 102,
+				"symbols": ["createSlackClient"]
+			},
+			{
+				"path": "apps/api/src/app/api/integrations/slack/events/utils/slack-image-assets/index.ts",
+				"batchIndex": 102,
+				"symbols": [
+					"SlackImageAsset",
+					"extractSlackImageAssets",
+					"formatSlackImageAssetError",
+					"SlackImageAssetError"
+				]
+			},
+			{
+				"path": "apps/api/src/lib/analytics.ts",
+				"batchIndex": 102,
+				"symbols": ["posthog"]
+			}
+		],
+		"apps/api/src/app/api/integrations/slack/events/route.ts": [
+			{
+				"path": "apps/api/src/app/api/integrations/slack/verify-signature.ts",
+				"batchIndex": 102,
+				"symbols": ["verifySlackSignature"]
+			},
+			{ "path": "apps/api/src/env.ts", "batchIndex": 102, "symbols": ["env"] }
+		],
+		"apps/api/src/app/api/integrations/slack/events/utils/generate-connect-url/generate-connect-url.ts": [
+			{ "path": "apps/api/src/env.ts", "batchIndex": 102, "symbols": ["env"] }
+		]
+	}
+}

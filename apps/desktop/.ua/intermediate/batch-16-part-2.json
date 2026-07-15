@@ -1,0 +1,336 @@
+{
+	"nodes": [
+		{
+			"id": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/components/PresetsBar/PresetsBar.tsx",
+			"type": "file",
+			"name": "PresetsBar.tsx",
+			"filePath": "src/renderer/screens/main/components/WorkspaceView/ContentView/components/PresetsBar/PresetsBar.tsx",
+			"summary": "typescript code file with 1 exports, 5 functions",
+			"tags": ["component"],
+			"complexity": "high"
+		},
+		{
+			"id": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/components/PresetsBar/PresetsBar.tsx:getTargetIndexForPinnedReorder",
+			"type": "function",
+			"name": "getTargetIndexForPinnedReorder",
+			"filePath": "src/renderer/screens/main/components/WorkspaceView/ContentView/components/PresetsBar/PresetsBar.tsx",
+			"lineRange": [81, 125],
+			"summary": "Function with 1 parameters (45 lines)",
+			"tags": [],
+			"complexity": "low"
+		},
+		{
+			"id": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/components/PresetsBar/PresetsBar.tsx:PresetsBar",
+			"type": "function",
+			"name": "PresetsBar",
+			"filePath": "src/renderer/screens/main/components/WorkspaceView/ContentView/components/PresetsBar/PresetsBar.tsx",
+			"lineRange": [127, 469],
+			"summary": "Function with 0 parameters (343 lines)",
+			"tags": ["exported"],
+			"complexity": "high"
+		},
+		{
+			"id": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/components/PresetsBar/components/PresetBarItem/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "src/renderer/screens/main/components/WorkspaceView/ContentView/components/PresetsBar/components/PresetBarItem/index.ts",
+			"summary": "typescript code file with 1 exports, 0 functions",
+			"tags": ["component", "barrel"],
+			"complexity": "low"
+		},
+		{
+			"id": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/components/PresetsBar/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "src/renderer/screens/main/components/WorkspaceView/ContentView/components/PresetsBar/index.ts",
+			"summary": "typescript code file with 1 exports, 0 functions",
+			"tags": ["component", "barrel"],
+			"complexity": "low"
+		},
+		{
+			"id": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/components/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "src/renderer/screens/main/components/WorkspaceView/ContentView/components/index.ts",
+			"summary": "typescript code file with 8 exports, 0 functions",
+			"tags": ["component", "barrel", "hook"],
+			"complexity": "low"
+		},
+		{
+			"id": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/hooks/useShowPresetsBar/index.ts",
+			"type": "file",
+			"name": "index.ts",
+			"filePath": "src/renderer/screens/main/components/WorkspaceView/ContentView/hooks/useShowPresetsBar/index.ts",
+			"summary": "typescript code file with 1 exports, 0 functions",
+			"tags": ["component", "hook", "barrel", "hook"],
+			"complexity": "low"
+		},
+		{
+			"id": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/index.tsx",
+			"type": "file",
+			"name": "index.tsx",
+			"filePath": "src/renderer/screens/main/components/WorkspaceView/ContentView/index.tsx",
+			"summary": "typescript code file with 1 exports, 1 functions",
+			"tags": ["component", "barrel"],
+			"complexity": "low"
+		},
+		{
+			"id": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/index.tsx:ContentView",
+			"type": "function",
+			"name": "ContentView",
+			"filePath": "src/renderer/screens/main/components/WorkspaceView/ContentView/index.tsx",
+			"lineRange": [17, 48],
+			"summary": "Function with 1 parameters (32 lines)",
+			"tags": ["exported"],
+			"complexity": "low"
+		}
+	],
+	"edges": [
+		{
+			"source": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/pane-guards.test.ts",
+			"target": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/pane-guards.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/pane-guards.test.ts",
+			"target": "file:src/shared/tabs-types.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/pane-guards.ts",
+			"target": "file:src/shared/tabs-types.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/index.tsx",
+			"target": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/EmptyTabView.tsx",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/index.tsx",
+			"target": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/index.tsx",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/index.tsx",
+			"target": "file:src/renderer/stores/tabs/store.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/index.tsx",
+			"target": "file:src/renderer/stores/tabs/utils.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/components/EditorContextMenu/EditorContextMenu.tsx",
+			"target": "file:src/renderer/lib/electron-trpc.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/components/EditorContextMenu/EditorContextMenu.tsx",
+			"target": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/components/PaneContextMenuItems/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/components/EditorContextMenu/useEditorActions.ts",
+			"target": "file:src/renderer/hooks/useCopyToClipboard.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/components/EditorContextMenu/useEditorActions.ts",
+			"target": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/components/CodeEditorAdapter/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/components/EditorContextMenu/useEditorActions.ts",
+			"target": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/components/EditorContextMenu/EditorContextMenu.tsx",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/components/PresetsBar/PresetsBar.tsx",
+			"target": "file:src/renderer/assets/app-icons/preset-icons/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/components/PresetsBar/PresetsBar.tsx",
+			"target": "file:src/renderer/components/HotkeyMenuShortcut/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/components/PresetsBar/PresetsBar.tsx",
+			"target": "file:src/renderer/lib/electron-trpc.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/components/PresetsBar/PresetsBar.tsx",
+			"target": "file:src/renderer/react-query/presets/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/components/PresetsBar/PresetsBar.tsx",
+			"target": "file:src/renderer/routes/_authenticated/_dashboard/components/TopBar/components/WorkspaceRunButton/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/components/PresetsBar/PresetsBar.tsx",
+			"target": "file:src/renderer/routes/_authenticated/_dashboard/workspace/$workspaceId/hooks/usePresetHotkeys.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/components/PresetsBar/PresetsBar.tsx",
+			"target": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/components/PresetsBar/components/PresetBarItem/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/components/PresetsBar/PresetsBar.tsx",
+			"target": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/hooks/useShowPresetsBar/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/components/PresetsBar/PresetsBar.tsx",
+			"target": "file:src/renderer/stores/tabs/store.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/components/PresetsBar/PresetsBar.tsx",
+			"target": "file:src/renderer/stores/tabs/useTabsWithPresets.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/components/PresetsBar/PresetsBar.tsx",
+			"target": "file:src/renderer/stores/tabs/utils.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/index.tsx",
+			"target": "file:src/renderer/lib/electron-trpc.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/index.tsx",
+			"target": "file:src/renderer/screens/main/components/SidebarControl/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/index.tsx",
+			"target": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/components/PresetsBar/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/index.tsx",
+			"target": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/ContentHeader/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/index.tsx",
+			"target": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/hooks/useShowPresetsBar/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/index.tsx",
+			"target": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/GroupStrip/index.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/index.tsx",
+			"target": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/index.tsx",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/index.tsx",
+			"target": "file:src/renderer/stores/sidebar-state.ts",
+			"type": "imports",
+			"weight": 0.7
+		},
+		{
+			"source": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/FileViewerPane/components/FileViewerContent/FileViewerContent.tsx:FileViewerContent",
+			"target": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/FileViewerPane/components/FileViewerContent/FileViewerContent.tsx:hasActiveSelectionWithinElement",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/components/MosaicSplitOverlay/MosaicSplitOverlay.tsx:splitBox",
+			"target": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/components/MosaicSplitOverlay/MosaicSplitOverlay.tsx:getAbsoluteSplitPercentage",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/components/MosaicSplitOverlay/MosaicSplitOverlay.tsx:collectSplits",
+			"target": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/components/MosaicSplitOverlay/MosaicSplitOverlay.tsx:splitBox",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/components/MosaicSplitOverlay/MosaicSplitOverlay.tsx:collectSplits",
+			"target": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/components/MosaicSplitOverlay/MosaicSplitOverlay.tsx:collectSplits",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/components/MosaicSplitOverlay/MosaicSplitOverlay.tsx:collectSplits",
+			"target": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/components/MosaicSplitOverlay/MosaicSplitOverlay.tsx:collectSplits",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/components/MosaicSplitOverlay/MosaicSplitOverlay.tsx:updateSplitPercentage",
+			"target": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/components/MosaicSplitOverlay/MosaicSplitOverlay.tsx:updateSplitPercentage",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/components/MosaicSplitOverlay/MosaicSplitOverlay.tsx:MosaicSplitOverlay",
+			"target": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/components/MosaicSplitOverlay/MosaicSplitOverlay.tsx:collectSplits",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/components/MosaicSplitOverlay/MosaicSplitOverlay.tsx:SplitHandle",
+			"target": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/TabView/components/MosaicSplitOverlay/MosaicSplitOverlay.tsx:getAbsoluteSplitPercentage",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"source": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/components/PresetsBar/PresetsBar.tsx:PresetsBar",
+			"target": "function:src/renderer/screens/main/components/WorkspaceView/ContentView/components/PresetsBar/PresetsBar.tsx:getTargetIndexForPinnedReorder",
+			"type": "calls",
+			"weight": 0.8
+		},
+		{
+			"source": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/pane-guards.ts",
+			"target": "file:src/renderer/screens/main/components/WorkspaceView/ContentView/TabsContent/Terminal/pane-guards.test.ts",
+			"type": "tested_by",
+			"weight": 0.5
+		}
+	]
+}
