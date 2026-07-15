@@ -1,18 +1,13 @@
-import { type AuthProvider, COMPANY } from "@superset/shared/constants";
 import {
 	DEV_EMAIL,
 	DEV_NAME,
 	DEV_PASSWORD,
 } from "@superset/shared/dev-credentials";
-import { Badge } from "@superset/ui/badge";
 import { Button } from "@superset/ui/button";
 import { Spinner } from "@superset/ui/spinner";
 import { createFileRoute, Navigate, useNavigate } from "@tanstack/react-router";
-import { useState } from "react";
-import { FaGithub } from "react-icons/fa";
-import { FcGoogle } from "react-icons/fc";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { env } from "renderer/env.renderer";
-import { track } from "renderer/lib/analytics";
 import { setAuthToken } from "renderer/lib/auth-client";
 import { electronTrpc } from "renderer/lib/electron-trpc";
 import { LoopLogo } from "./components/LoopLogo";
@@ -22,60 +17,18 @@ export const Route = createFileRoute("/sign-in/")({
 	component: SignInPage,
 });
 
-const LAST_USED_METHOD_KEY = "superset-last-auth-method";
-
-type AuthMethod = AuthProvider | "dev";
-
-function readLastUsedMethod(): AuthMethod | null {
-	const stored = window.localStorage.getItem(LAST_USED_METHOD_KEY);
-	return stored === "github" || stored === "google" || stored === "dev"
-		? stored
-		: null;
-}
-
 function SignInPage() {
-	const signInMutation = electronTrpc.auth.signIn.useMutation();
 	const persistToken = electronTrpc.auth.persistToken.useMutation();
 	const navigate = useNavigate();
 	const [isLoadingDev, setIsLoadingDev] = useState(false);
 	const [devError, setDevError] = useState<string | null>(null);
-	const [lastUsedMethod, setLastUsedMethod] = useState(readLastUsedMethod);
 	const { hasLocalToken, isPending, session } = useSessionRecovery();
+	const hasAttemptedRef = useRef(false);
+	const isDev = env.NODE_ENV === "development";
 
-	// Dev bypass: skip sign-in entirely
-	if (env.SKIP_ENV_VALIDATION) {
-		return <Navigate to="/workspace" replace />;
-	}
-
-	// Show loading while session is being fetched
-	if (isPending) {
-		return (
-			<div className="flex h-screen w-screen items-center justify-center bg-background">
-				<Spinner className="size-8" />
-			</div>
-		);
-	}
-
-	// If already signed in, redirect to workspace
-	if (session?.user) {
-		return <Navigate to="/workspace" replace />;
-	}
-
-	const rememberLastUsedMethod = (method: AuthMethod) => {
-		window.localStorage.setItem(LAST_USED_METHOD_KEY, method);
-		setLastUsedMethod(method);
-	};
-
-	const signIn = (provider: AuthProvider) => {
-		track("auth_started", { provider });
-		rememberLastUsedMethod(provider);
-		signInMutation.mutate({ provider });
-	};
-
-	const signInAsDev = async () => {
+	const signInAsDev = useCallback(async () => {
 		setIsLoadingDev(true);
 		setDevError(null);
-		rememberLastUsedMethod("dev");
 
 		const postAuth = async (path: string, body: Record<string, unknown>) => {
 			const response = await fetch(`${env.NEXT_PUBLIC_API_URL}${path}`, {
@@ -132,9 +85,51 @@ function SignInPage() {
 			);
 			setIsLoadingDev(false);
 		}
-	};
+	}, [navigate, persistToken]);
 
-	const lastUsedBadge = <Badge variant="secondary">Last used</Badge>;
+	// Auto sign-in as the local dev account. GitHub/Google auth is intentionally
+	// disabled for the local Loop client; local dev is the default identity.
+	useEffect(() => {
+		if (!isDev) return;
+		if (isPending) return;
+		if (session?.user || hasLocalToken) return;
+		if (isLoadingDev || devError) return;
+		if (hasAttemptedRef.current) return;
+		hasAttemptedRef.current = true;
+		void signInAsDev();
+	}, [
+		isDev,
+		isPending,
+		session?.user,
+		hasLocalToken,
+		isLoadingDev,
+		devError,
+		signInAsDev,
+	]);
+
+	// Dev bypass: skip sign-in entirely
+	if (env.SKIP_ENV_VALIDATION) {
+		return <Navigate to="/workspace" replace />;
+	}
+
+	// Show loading while session is being fetched
+	if (isPending) {
+		return (
+			<div className="flex h-screen w-screen items-center justify-center bg-background">
+				<Spinner className="size-8" />
+			</div>
+		);
+	}
+
+	// If already signed in, redirect to workspace
+	if (session?.user) {
+		return <Navigate to="/workspace" replace />;
+	}
+
+	const retryDevSignIn = () => {
+		hasAttemptedRef.current = true;
+		void signInAsDev();
+	};
 
 	return (
 		<div className="flex flex-col h-full w-full bg-background">
@@ -151,77 +146,37 @@ function SignInPage() {
 							Welcome to Loop
 						</h1>
 						<p className="text-sm text-muted-foreground">
-							{hasLocalToken
-								? "Restoring your session"
-								: "Sign in to get started"}
+							{isDev
+								? "Signing in as Local Admin…"
+								: "Local development sign-in only"}
 						</p>
 					</div>
 
-					<div className="flex flex-col gap-3 w-full max-w-xs">
-						{env.NODE_ENV === "development" && (
-							<Button
-								variant="outline"
-								size="lg"
-								onClick={signInAsDev}
-								className="w-full gap-3"
-								disabled={isLoadingDev}
-							>
-								{isLoadingDev
-									? "Signing in..."
-									: "Sign in as Local Admin (dev)"}
-								{lastUsedMethod === "dev" && lastUsedBadge}
-							</Button>
-						)}
-						{devError && (
-							<p className="text-xs text-destructive text-center select-text cursor-text">
-								{devError}
-							</p>
-						)}
-						<Button
-							variant="outline"
-							size="lg"
-							onClick={() => signIn("github")}
-							className="w-full gap-3"
-							disabled={signInMutation.isPending}
-						>
-							<FaGithub className="size-5" />
-							Continue with GitHub
-							{lastUsedMethod === "github" && lastUsedBadge}
-						</Button>
-
-						<Button
-							variant="outline"
-							size="lg"
-							onClick={() => signIn("google")}
-							className="w-full gap-3"
-							disabled={signInMutation.isPending}
-						>
-							<FcGoogle className="size-5" />
-							Continue with Google
-							{lastUsedMethod === "google" && lastUsedBadge}
-						</Button>
-					</div>
-
-					<p className="mt-8 text-xs text-muted-foreground/70 text-center max-w-xs">
-						By signing in, you agree to our{" "}
-						<a
-							href={COMPANY.TERMS_URL}
-							target="_blank"
-							rel="noopener noreferrer"
-							className="underline hover:text-muted-foreground transition-colors"
-						>
-							Terms of Service
-						</a>{" "}
-						and{" "}
-						<a
-							href={COMPANY.PRIVACY_URL}
-							target="_blank"
-							rel="noopener noreferrer"
-							className="underline hover:text-muted-foreground transition-colors"
-						>
-							Privacy Policy
-						</a>
-					</p>
+					{isDev ? (
+						devError ? (
+							<div className="flex flex-col items-center gap-3 w-full max-w-xs">
+								<p className="text-xs text-destructive text-center select-text cursor-text">
+									{devError}
+								</p>
+								<Button
+									variant="outline"
+									size="lg"
+									onClick={retryDevSignIn}
+									className="w-full gap-3"
+									disabled={isLoadingDev}
+								>
+									{isLoadingDev ? "Signing in…" : "Retry"}
+								</Button>
+							</div>
+						) : (
+							<Spinner className="size-6" />
+						)
+					) : (
+						<p className="text-sm text-muted-foreground text-center max-w-xs">
+							This build only supports the local development account. Run in
+							development mode to sign in.
+						</p>
+					)}
 				</div>
 			</div>
 		</div>

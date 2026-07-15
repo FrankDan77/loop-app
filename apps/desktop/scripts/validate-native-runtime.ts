@@ -161,7 +161,7 @@ function validateWorkspacePackagesBundled(): void {
 				continue;
 			}
 			// Allow package.json imports from workspace packages (metadata access only)
-			if (specifier && specifier.endsWith("/package.json")) {
+			if (specifier?.endsWith("/package.json")) {
 				continue;
 			}
 			fail(

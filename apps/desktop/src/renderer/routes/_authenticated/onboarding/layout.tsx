@@ -27,7 +27,7 @@ const STEPS = [
 	{
 		path: "/onboarding/project",
 		match: (p: string) => p === "/onboarding/project",
-		title: "Point Superset at some code",
+		title: "Point Loop at some code",
 		subtitle: "Open a folder or clone a repo to finish setup.",
 	},
 ] as const;

@@ -6,10 +6,7 @@ interface LoopLogoProps {
 	gradient?: boolean;
 }
 
-export function LoopLogo({
-	className,
-	gradient = false,
-}: LoopLogoProps) {
+export function LoopLogo({ className, gradient = false }: LoopLogoProps) {
 	const reactId = useId();
 	const gradientId = `loop-logo-gradient-${reactId}`;
 
@@ -52,23 +49,119 @@ export function LoopLogo({
 			{/* Loop icon - interlocking squares forming infinity pattern */}
 			<g opacity="0.95">
 				{/* Left loop */}
-				<rect x="0" y="12" width="6" height="6" fill={gradient ? `url(#${gradientId})` : "currentColor"} />
-				<rect x="0" y="18" width="6" height="6" fill={gradient ? `url(#${gradientId})` : "currentColor"} />
-				<rect x="0" y="24" width="6" height="6" fill={gradient ? `url(#${gradientId})` : "currentColor"} />
-				<rect x="6" y="12" width="6" height="6" fill={gradient ? `url(#${gradientId})` : "currentColor"} />
-				<rect x="6" y="24" width="6" height="6" fill={gradient ? `url(#${gradientId})` : "currentColor"} />
-				<rect x="12" y="12" width="6" height="6" fill={gradient ? `url(#${gradientId})` : "currentColor"} />
-				<rect x="12" y="18" width="6" height="6" fill={gradient ? `url(#${gradientId})` : "currentColor"} />
-				<rect x="12" y="24" width="6" height="6" fill={gradient ? `url(#${gradientId})` : "currentColor"} />
+				<rect
+					x="0"
+					y="12"
+					width="6"
+					height="6"
+					fill={gradient ? `url(#${gradientId})` : "currentColor"}
+				/>
+				<rect
+					x="0"
+					y="18"
+					width="6"
+					height="6"
+					fill={gradient ? `url(#${gradientId})` : "currentColor"}
+				/>
+				<rect
+					x="0"
+					y="24"
+					width="6"
+					height="6"
+					fill={gradient ? `url(#${gradientId})` : "currentColor"}
+				/>
+				<rect
+					x="6"
+					y="12"
+					width="6"
+					height="6"
+					fill={gradient ? `url(#${gradientId})` : "currentColor"}
+				/>
+				<rect
+					x="6"
+					y="24"
+					width="6"
+					height="6"
+					fill={gradient ? `url(#${gradientId})` : "currentColor"}
+				/>
+				<rect
+					x="12"
+					y="12"
+					width="6"
+					height="6"
+					fill={gradient ? `url(#${gradientId})` : "currentColor"}
+				/>
+				<rect
+					x="12"
+					y="18"
+					width="6"
+					height="6"
+					fill={gradient ? `url(#${gradientId})` : "currentColor"}
+				/>
+				<rect
+					x="12"
+					y="24"
+					width="6"
+					height="6"
+					fill={gradient ? `url(#${gradientId})` : "currentColor"}
+				/>
 				{/* Right loop */}
-				<rect x="18" y="12" width="6" height="6" fill={gradient ? `url(#${gradientId})` : "currentColor"} />
-				<rect x="18" y="18" width="6" height="6" fill={gradient ? `url(#${gradientId})` : "currentColor"} />
-				<rect x="18" y="24" width="6" height="6" fill={gradient ? `url(#${gradientId})` : "currentColor"} />
-				<rect x="24" y="12" width="6" height="6" fill={gradient ? `url(#${gradientId})` : "currentColor"} />
-				<rect x="24" y="24" width="6" height="6" fill={gradient ? `url(#${gradientId})` : "currentColor"} />
-				<rect x="30" y="12" width="6" height="6" fill={gradient ? `url(#${gradientId})` : "currentColor"} />
-				<rect x="30" y="18" width="6" height="6" fill={gradient ? `url(#${gradientId})` : "currentColor"} />
-				<rect x="30" y="24" width="6" height="6" fill={gradient ? `url(#${gradientId})` : "currentColor"} />
+				<rect
+					x="18"
+					y="12"
+					width="6"
+					height="6"
+					fill={gradient ? `url(#${gradientId})` : "currentColor"}
+				/>
+				<rect
+					x="18"
+					y="18"
+					width="6"
+					height="6"
+					fill={gradient ? `url(#${gradientId})` : "currentColor"}
+				/>
+				<rect
+					x="18"
+					y="24"
+					width="6"
+					height="6"
+					fill={gradient ? `url(#${gradientId})` : "currentColor"}
+				/>
+				<rect
+					x="24"
+					y="12"
+					width="6"
+					height="6"
+					fill={gradient ? `url(#${gradientId})` : "currentColor"}
+				/>
+				<rect
+					x="24"
+					y="24"
+					width="6"
+					height="6"
+					fill={gradient ? `url(#${gradientId})` : "currentColor"}
+				/>
+				<rect
+					x="30"
+					y="12"
+					width="6"
+					height="6"
+					fill={gradient ? `url(#${gradientId})` : "currentColor"}
+				/>
+				<rect
+					x="30"
+					y="18"
+					width="6"
+					height="6"
+					fill={gradient ? `url(#${gradientId})` : "currentColor"}
+				/>
+				<rect
+					x="30"
+					y="24"
+					width="6"
+					height="6"
+					fill={gradient ? `url(#${gradientId})` : "currentColor"}
+				/>
 			</g>
 			{/* L */}
 			<path

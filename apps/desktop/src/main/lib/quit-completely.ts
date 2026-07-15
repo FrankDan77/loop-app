@@ -11,7 +11,7 @@ export async function confirmAndQuitCompletely(): Promise<void> {
 			title: "Quit Loop Completely",
 			message: "Quit Loop and stop all background services?",
 			detail:
-				"All open terminal sessions will be killed and any running host-services will be stopped. Use \"Close Loop\" instead if you want services to keep running for the next launch.",
+				'All open terminal sessions will be killed and any running host-services will be stopped. Use "Close Loop" instead if you want services to keep running for the next launch.',
 		});
 		if (response === 0) {
 			quitAppCompletely();
