@@ -2,8 +2,8 @@
 	"name": "@loop/email",
 	"version": "0.1.0",
 	"devDependencies": {
-		"@react-email/preview-server": "5.0.7",
 		"@loop/typescript": "workspace:*",
+		"@react-email/preview-server": "5.0.7",
 		"@types/node": "24.12.0",
 		"@types/react": "19.2.14",
 		"@types/tailwindcss": "3.1.0",
@@ -22,9 +22,9 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@loop/db": "workspace:*",
 		"@react-email/components": "1.0.1",
 		"@react-email/tailwind": "2.0.3",
-		"@loop/db": "workspace:*",
 		"@t3-oss/env-core": "0.13.11",
 		"date-fns": "4.1.0",
 		"drizzle-orm": "0.45.2",
