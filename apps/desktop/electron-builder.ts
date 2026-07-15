@@ -74,6 +74,13 @@ const config: Configuration = {
 			to: "resources/bin",
 			filter: ["**/*"],
 		},
+		// Vendored loop plugin (Claude Code plugin + Codex skills/hooks + scripts).
+		// Must be outside asar so `claude --plugin-dir` and shell scripts can read it.
+		{
+			from: "dist/resources/loop",
+			to: "resources/loop",
+			filter: ["**/*"],
+		},
 	],
 
 	files: [

@@ -1,0 +1,30 @@
+# Scratchpad
+temp
+private/
+
+# Local Claude client settings
+/.claude/settings.json
+/.claude/scheduled_tasks.lock
+
+# Loop state directories (runtime-generated, project-local)
+.loop/
+.claude-flow/
+.swarm/
+
+# Local Python environment and generated lockfile
+.venv/
+uv.lock
+
+# Python cache
+__pycache__/
+*.pyc
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo

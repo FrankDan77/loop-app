@@ -16,6 +16,7 @@ import {
 	LuLayers,
 	LuLayoutTemplate,
 	LuPlus,
+	LuRefreshCw,
 } from "react-icons/lu";
 import { GATED_FEATURES, usePaywall } from "renderer/components/Paywall";
 import { ZoomStable } from "renderer/components/ZoomStable";
@@ -82,6 +83,7 @@ export function DashboardSidebarHeader({
 	const isWorkspacesListOpen = !!matchRoute({ to: "/v2-workspaces" });
 	const isTasksOpen = !!matchRoute({ to: "/tasks", fuzzy: true });
 	const isAutomationsOpen = !!matchRoute({ to: "/automations", fuzzy: true });
+	const isLoopOpen = !!matchRoute({ to: "/loop", fuzzy: true });
 	const { myFailedCount } = useFailedAutomations();
 
 	const {
@@ -99,6 +101,10 @@ export function DashboardSidebarHeader({
 
 	const handleAutomationsClick = () => {
 		navigate({ to: "/automations" });
+	};
+
+	const handleLoopClick = () => {
+		navigate({ to: "/loop" });
 	};
 
 	const handleTasksClick = () => {
@@ -171,6 +177,24 @@ export function DashboardSidebarHeader({
 							? `Automations (${myFailedCount} failing)`
 							: "Automations"}
 					</TooltipContent>
+				</Tooltip>
+
+				<Tooltip delayDuration={300}>
+					<TooltipTrigger asChild>
+						<button
+							type="button"
+							onClick={handleLoopClick}
+							className={cn(
+								"flex size-8 items-center justify-center rounded-md transition-colors",
+								isLoopOpen
+									? "bg-accent text-foreground"
+									: "text-muted-foreground hover:bg-accent/50 hover:text-foreground",
+							)}
+						>
+							<LuRefreshCw className="size-4" />
+						</button>
+					</TooltipTrigger>
+					<TooltipContent side="right">Loop</TooltipContent>
 				</Tooltip>
 
 				<Tooltip delayDuration={300}>
@@ -313,6 +337,20 @@ export function DashboardSidebarHeader({
 						{myFailedCount > 9 ? "9+" : myFailedCount}
 					</span>
 				)}
+			</button>
+
+			<button
+				type="button"
+				onClick={handleLoopClick}
+				className={cn(
+					"flex w-full items-center gap-2 rounded-md px-2 py-1.5 text-sm font-medium transition-colors",
+					isLoopOpen
+						? "bg-accent text-foreground"
+						: "text-muted-foreground hover:bg-accent/50 hover:text-foreground",
+				)}
+			>
+				<LuRefreshCw className="size-4 shrink-0" />
+				<span className="flex-1 text-left">Loop</span>
 			</button>
 
 			<button

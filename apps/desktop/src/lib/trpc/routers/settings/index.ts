@@ -41,6 +41,10 @@ import { hasCustomRingtone } from "main/lib/custom-ringtones";
 import { getHostServiceCoordinator } from "main/lib/host-service-coordinator";
 import { localDb } from "main/lib/local-db";
 import {
+	detectLoopPrereqs,
+	installLoopPlugin,
+} from "main/lib/loop-plugin/install";
+import {
 	DEFAULT_AUTO_APPLY_DEFAULT_PRESET,
 	DEFAULT_CONFIRM_ON_QUIT,
 	DEFAULT_EXPOSE_HOST_SERVICE_VIA_RELAY,
@@ -1019,6 +1023,21 @@ export const createSettingsRouter = () => {
 				const ran = setupSingleAgent(input.agentId);
 				return { ran };
 			}),
+
+		/**
+		 * Report whether the vendored loop plugin is bundled and which of the
+		 * required CLIs (claude/codex/jq/git) are available on PATH.
+		 */
+		loopStatus: publicProcedure.query(async () => {
+			return await detectLoopPrereqs();
+		}),
+
+		/**
+		 * Force a re-install of the loop plugin into the local Codex runtime.
+		 */
+		reinstallLoop: publicProcedure.mutation(async () => {
+			return await installLoopPlugin({ force: true });
+		}),
 
 		// TODO: remove telemetry procedures once telemetry_enabled column is dropped
 		getTelemetryEnabled: publicProcedure.query(() => {

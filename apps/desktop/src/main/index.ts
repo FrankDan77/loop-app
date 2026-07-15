@@ -34,6 +34,7 @@ import { loadWebviewBrowserExtension } from "./lib/extensions";
 import { getHostServiceCoordinator } from "./lib/host-service-coordinator";
 import { localDb } from "./lib/local-db";
 import { requestLocalNetworkAccess } from "./lib/local-network-permission";
+import { installLoopPlugin } from "./lib/loop-plugin/install";
 import {
 	initTanstackDbPersistence,
 	shutdownTanstackDbPersistence,
@@ -416,6 +417,11 @@ if (!gotTheLock) {
 		} catch (error) {
 			console.error("[main] Failed to install bundled CLI shim:", error);
 		}
+		// Install the vendored loop plugin into the local Codex runtime.
+		// Async + version-stamped; kept off the critical startup path.
+		void installLoopPlugin().catch((error) => {
+			console.error("[main] Failed to install loop plugin:", error);
+		});
 
 		if (IS_DEV) {
 			getHostServiceCoordinator().enableDevReload(async () => {
