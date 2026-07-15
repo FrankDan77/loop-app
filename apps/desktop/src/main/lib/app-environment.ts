@@ -9,8 +9,10 @@ export const SUPERSET_HOME_DIR =
 	process.env[SUPERSET_HOME_DIR_ENV] || join(homedir(), SUPERSET_DIR_NAME);
 process.env[SUPERSET_HOME_DIR_ENV] = SUPERSET_HOME_DIR;
 
+export const LOOP_HOME_DIR = SUPERSET_HOME_DIR;
 export const SUPERSET_HOME_DIR_MODE = 0o700;
-export const SUPERSET_SENSITIVE_FILE_MODE = 0o600;
+export const LOOP_SENSITIVE_FILE_MODE = 0o600;
+export const SUPERSET_SENSITIVE_FILE_MODE = LOOP_SENSITIVE_FILE_MODE;
 
 export function ensureLoopHomeDirExists(): void {
 	if (!existsSync(SUPERSET_HOME_DIR)) {
