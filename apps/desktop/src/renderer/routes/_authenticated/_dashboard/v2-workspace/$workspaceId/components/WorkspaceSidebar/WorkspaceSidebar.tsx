@@ -13,6 +13,8 @@ import { FilesTab } from "./components/FilesTab";
 import { PRActionHeader } from "./components/PRActionHeader";
 import { SidebarHeader } from "./components/SidebarHeader";
 import { useChangesTab } from "./hooks/useChangesTab";
+import type { CreateLoopTerminal } from "./hooks/useLoopOrchestrator";
+import { useLoopTab } from "./hooks/useLoopTab";
 import { type OpenChatFn, usePRFlowDispatch } from "./hooks/usePRFlowDispatch";
 import { usePRFlowState } from "./hooks/usePRFlowState";
 import { useReviewTab } from "./hooks/useReviewTab";
@@ -23,9 +25,14 @@ import type { SidebarTabDefinition } from "./types";
 // always renders so users can see PR state and merge once a PR exists.
 const CREATE_PR_BUTTON_ENABLED = false;
 
-type SidebarTabId = "changes" | "files" | "review";
+type SidebarTabId = "changes" | "files" | "review" | "loop";
 
-const VALID_TAB_IDS: readonly SidebarTabId[] = ["changes", "files", "review"];
+const VALID_TAB_IDS: readonly SidebarTabId[] = [
+	"changes",
+	"files",
+	"review",
+	"loop",
+];
 
 function isSidebarTabId(tab: string): tab is SidebarTabId {
 	return (VALID_TAB_IDS as readonly string[]).includes(tab);
@@ -51,6 +58,10 @@ interface WorkspaceSidebarProps {
 	selectedFilePath?: string;
 	pendingReveal?: PendingReveal | null;
 	workspaceId: string;
+	/** Worktree root, used by the Loop tab to watch `.loop/**` artifacts. */
+	worktreePath: string;
+	/** Launches the loop Claude terminal and returns its terminalId. */
+	onCreateLoopTerminal: CreateLoopTerminal;
 }
 
 function IconButton({
@@ -88,6 +99,8 @@ export function WorkspaceSidebar({
 	selectedFilePath,
 	pendingReveal,
 	workspaceId,
+	worktreePath,
+	onCreateLoopTerminal,
 }: WorkspaceSidebarProps) {
 	const gitStatus = useWorkspaceGitStatus();
 	const collections = useCollections();
@@ -174,7 +187,19 @@ export function WorkspaceSidebar({
 		),
 	};
 
-	const tabs: SidebarTabDefinition[] = [filesTab, changesTab, reviewTab];
+	const loopTab = useLoopTab({
+		workspaceId,
+		worktreePath,
+		onCreateLoopTerminal,
+		onRequestFocus: () => setActiveTab("loop"),
+	});
+
+	const tabs: SidebarTabDefinition[] = [
+		filesTab,
+		changesTab,
+		reviewTab,
+		loopTab,
+	];
 	const activeTabDef = tabs.find((t) => t.id === activeTab);
 
 	return (

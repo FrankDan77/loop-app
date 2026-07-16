@@ -1,9 +1,12 @@
 import { toast } from "@superset/ui/sonner";
 import { useMatchRoute, useNavigate } from "@tanstack/react-router";
 import { useCallback } from "react";
+import { LOOP_AGENT_ID } from "renderer/hooks/useV2AgentChoices";
 import { authClient } from "renderer/lib/auth-client";
+import { electronTrpcClient } from "renderer/lib/trpc-client";
 import { showWorkspaceAutoNameWarningToast } from "renderer/lib/workspaces/showWorkspaceAutoNameWarningToast";
 import { useLocalHostService } from "renderer/routes/_authenticated/providers/LocalHostServiceProvider";
+import { useLoopPendingIdeasStore } from "renderer/stores/loop-pending-ideas";
 import type { NewWorkspacePromptContextApi } from "renderer/stores/new-workspace-prompt-context";
 import { useWorkspaceCreates } from "renderer/stores/workspace-creates";
 import { useDashboardNewWorkspaceDraft } from "../../../../../DashboardNewWorkspaceDraftContext";
@@ -32,6 +35,8 @@ export function useSubmitWorkspace(
 	const { machineId } = useLocalHostService();
 	const { data: session } = authClient.useSession();
 	const activeOrganizationId = session?.session?.activeOrganizationId;
+	const setPendingLoopIdea = useLoopPendingIdeasStore((s) => s.set);
+	const rekeyPendingLoopIdea = useLoopPendingIdeasStore((s) => s.rekey);
 
 	return useCallback(async () => {
 		if (!projectId) {
@@ -47,6 +52,36 @@ export function useSubmitWorkspace(
 		if (!hostId) {
 			toast.error("No active host");
 			return;
+		}
+
+		// Loop drives Claude Code with the desktop-bundled loop plugin, whose
+		// on-disk path is only valid on this local machine. Guard prerequisites
+		// up front so we fail fast before creating the workspace; the Loop
+		// sidebar re-resolves the plugin dir when it launches the terminal.
+		const isLoop = selectedAgent === LOOP_AGENT_ID;
+		if (isLoop) {
+			if (hostId !== machineId) {
+				toast.error("Loop is only available on this local machine");
+				return;
+			}
+			try {
+				const status = await electronTrpcClient.settings.loopStatus.query();
+				if (!status.loopDir) {
+					toast.error("Bundled loop plugin not found");
+					return;
+				}
+				if (!status.prereqs.claude) {
+					toast.error("Claude Code CLI not found on PATH");
+					return;
+				}
+			} catch (error) {
+				toast.error(
+					`Failed to resolve loop plugin: ${
+						error instanceof Error ? error.message : String(error)
+					}`,
+				);
+				return;
+			}
 		}
 
 		const { readyIds: attachmentIds, errors } =
@@ -75,6 +110,9 @@ export function useSubmitWorkspace(
 			draft.linkedIssues.length > 0 ||
 			attachmentIds.length > 0;
 		const wantAgent = selectedAgent !== "none" && hasAnyContext;
+		// Loop drives a raw command terminal (not a host_agent_config), so it
+		// never populates the `agents` sugar.
+		const wantTerminalAgent = wantAgent && !isLoop;
 
 		const finalPrompt = wantAgent
 			? await promptContext.build({
@@ -85,7 +123,7 @@ export function useSubmitWorkspace(
 				})
 			: null;
 
-		const agents = wantAgent
+		const agents = wantTerminalAgent
 			? [
 					{
 						agent: selectedAgent,
@@ -117,11 +155,20 @@ export function useSubmitWorkspace(
 			baseBranch: draft.baseBranch ?? undefined,
 			taskId: linkedTaskId,
 			agents,
+			// Loop has no `agents` prompt for the server to name from, so pass the
+			// idea as namingPrompt (like the no-agent path) to keep AI naming.
 			namingPrompt:
-				!isPrCheckout && !wantAgent && trimmedPrompt
+				!isPrCheckout && (!wantAgent || isLoop) && trimmedPrompt
 					? trimmedPrompt
 					: undefined,
 		};
+
+		// Loop hands the idea to the workspace's Loop sidebar (keyed by the
+		// optimistic id) instead of baking a launch command; the sidebar
+		// auto-starts gen-idea → gen-plan when it mounts.
+		if (isLoop && trimmedPrompt) {
+			setPendingLoopIdea(workspaceId, finalPrompt ?? trimmedPrompt);
+		}
 
 		closeAndResetDraft();
 		const { completed } = submit({ hostId, snapshot });
@@ -156,6 +203,9 @@ export function useSubmitWorkspace(
 			// The server can resolve the optimistic workspace to a different
 			// canonical id; follow it only if we're still on the optimistic route.
 			if (outcome.workspaceId === workspaceId) return;
+			// Move any queued Loop idea to the canonical id so the sidebar still
+			// finds it after the redirect.
+			rekeyPendingLoopIdea(workspaceId, outcome.workspaceId);
 			if (!isViewingOptimisticWorkspace()) return;
 			void navigate({
 				to: "/v2-workspace/$workspaceId",
@@ -182,5 +232,7 @@ export function useSubmitWorkspace(
 		selectedEffort,
 		submit,
 		uploadAttachments,
+		setPendingLoopIdea,
+		rekeyPendingLoopIdea,
 	]);
 }

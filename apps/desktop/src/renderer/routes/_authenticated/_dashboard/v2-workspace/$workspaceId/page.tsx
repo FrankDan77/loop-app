@@ -1,13 +1,15 @@
 import { Workspace } from "@superset/panes";
 import { workspaceTrpc } from "@superset/workspace-client";
 import { createFileRoute } from "@tanstack/react-router";
-import { useCallback, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import { useQuickOpenStore } from "renderer/commandPalette/ui/QuickOpen/quickOpenStore";
 import { useV2UserPreferences } from "renderer/hooks/useV2UserPreferences";
 import { useHotkey } from "renderer/hotkeys";
+import { useCollections } from "renderer/routes/_authenticated/providers/CollectionsProvider";
 import { CommandPalette } from "renderer/screens/main/components/CommandPalette";
 import { ResizablePanel } from "renderer/screens/main/components/ResizablePanel";
+import { useLoopPendingIdeasStore } from "renderer/stores/loop-pending-ideas";
 import { getV2NotificationSourcesForTab } from "renderer/stores/v2-notifications";
 import { useWorkspace } from "../providers/WorkspaceProvider";
 import { AddTabMenu } from "./components/AddTabMenu";
@@ -181,6 +183,7 @@ function V2WorkspaceContent() {
 	const {
 		openDiffPane,
 		addTerminalTab,
+		createLoopTerminal,
 		addChatTab,
 		addBrowserTab,
 		openCommentPane,
@@ -190,6 +193,31 @@ function V2WorkspaceContent() {
 		newTabPresets,
 		executePreset,
 	});
+
+	const collections = useCollections();
+	const workspaceInfoQuery = workspaceTrpc.workspace.get.useQuery({
+		id: workspaceId,
+	});
+	const worktreePath = workspaceInfoQuery.data?.worktreePath ?? "";
+
+	// Opens the right sidebar and focuses the Loop tab. Used by the "+"
+	// tab-menu Loop entry and when a modal-queued idea is waiting.
+	const openLoopSidebar = useCallback(() => {
+		setRightSidebarOpen(true);
+		if (!collections.v2WorkspaceLocalState.get(workspaceId)) return;
+		collections.v2WorkspaceLocalState.update(workspaceId, (draft) => {
+			draft.sidebarState.activeTab = "loop";
+		});
+	}, [collections, workspaceId, setRightSidebarOpen]);
+
+	// When the new-workspace modal queued a Loop idea for this workspace,
+	// surface the Loop sidebar so the tab mounts and auto-starts the flow.
+	const hasPendingLoopIdea = useLoopPendingIdeasStore(
+		(s) => s.ideas[workspaceId] !== undefined,
+	);
+	useEffect(() => {
+		if (hasPendingLoopIdea) openLoopSidebar();
+	}, [hasPendingLoopIdea, openLoopSidebar]);
 
 	const quickOpenOpen = useQuickOpenStore(
 		(s) => s.open && s.target?.workspaceId === workspaceId,
@@ -304,6 +332,7 @@ function V2WorkspaceContent() {
 							renderAddTabMenu={() => (
 								<AddTabMenu
 									onAddTerminal={addTerminalTab}
+									onAddLoop={openLoopSidebar}
 									onAddChat={addChatTab}
 									onAddBrowser={addBrowserTab}
 									showPresetsBar={showPresetsBar}
@@ -348,6 +377,8 @@ function V2WorkspaceContent() {
 						>
 							<WorkspaceSidebar
 								workspaceId={workspaceId}
+								worktreePath={worktreePath}
+								onCreateLoopTerminal={createLoopTerminal}
 								onSelectFile={openFilePaneFromTreeClick}
 								onSelectDiffFile={openDiffPane}
 								onOpenComment={openCommentPane}

@@ -13,6 +13,17 @@ const SUPERSET_AGENT: AgentSelectAgent = {
 	iconId: "superset",
 };
 
+// Loop isn't a host_agent_config either — selecting it makes the modal launch
+// Claude Code with the vendored loop plugin loaded (see useSubmitWorkspace).
+// The unknown `iconId` ("loop") keeps the model/effort pickers hidden, since
+// loop bakes its own launch command.
+export const LOOP_AGENT_ID = "loop";
+const LOOP_AGENT: AgentSelectAgent = {
+	id: LOOP_AGENT_ID,
+	label: "Loop",
+	iconId: "loop",
+};
+
 // Superset chat isn't in the host's `host_agent_configs` table — it's
 // routed by id inside `runAgentInWorkspace`. Append after the host's
 // terminal rows so the user's preferred terminal agents stay on top.
@@ -30,7 +41,7 @@ export function useV2AgentChoices(
 				iconId: config.iconId ?? config.presetId,
 			}),
 		);
-		return [...terminalAgents, SUPERSET_AGENT];
+		return [...terminalAgents, SUPERSET_AGENT, LOOP_AGENT];
 	}, [query.data]);
 
 	return { agents, isFetched: query.isFetched };

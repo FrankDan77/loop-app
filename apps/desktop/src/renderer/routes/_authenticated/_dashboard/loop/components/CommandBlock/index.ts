@@ -1,1 +1,0 @@
-export { CommandBlock } from "./CommandBlock";

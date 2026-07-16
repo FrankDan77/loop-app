@@ -119,6 +119,59 @@ export const workspaceRunTerminalStateSchema = z.object({
 	stopRequestedAt: z.number().optional(),
 });
 
+// Persisted state machine for the workspace-scoped Loop sidebar. Tracks which
+// phase of the half-automatic gen-idea → gen-plan → start-rlcr workflow the
+// workspace is in, plus the terminal + on-disk artifact paths the orchestrator
+// watches. Nullable fields are unset until the relevant phase produces them.
+export const loopSessionPhaseSchema = z.enum([
+	"idle",
+	"genIdea",
+	"genPlan",
+	"planReview",
+	"rlcrRunning",
+	"done",
+	"ended",
+]);
+
+export type LoopSessionPhase = z.infer<typeof loopSessionPhaseSchema>;
+
+export const loopSessionStateSchema = z.object({
+	phase: loopSessionPhaseSchema.default("idle"),
+	/** Terminal running the loop Claude session that we inject commands into. */
+	terminalId: z.string().nullable().default(null),
+	/** Raw idea text the user submitted. */
+	ideaText: z.string().nullable().default(null),
+	/** Absolute path of the gen-idea draft we asked the plugin to write. */
+	ideaPath: z.string().nullable().default(null),
+	/** Absolute path of the gen-plan plan output. */
+	planPath: z.string().nullable().default(null),
+	/** Worktree-relative plan path (positional arg for start-rlcr-loop). */
+	planRelPath: z.string().nullable().default(null),
+	/** Absolute path of the active `.loop/rlcr/<session>` directory. */
+	sessionDir: z.string().nullable().default(null),
+	/**
+	 * Session directory names that existed the moment start-rlcr-loop was
+	 * injected. The monitor ignores these so a prior (e.g. completed) loop is
+	 * never mistaken for the run we just kicked off.
+	 */
+	preStartSessions: z.array(z.string()).default([]),
+	updatedAt: z.number().default(0),
+});
+
+export type LoopSessionState = z.infer<typeof loopSessionStateSchema>;
+
+export const DEFAULT_LOOP_SESSION_STATE: LoopSessionState = {
+	phase: "idle",
+	terminalId: null,
+	ideaText: null,
+	ideaPath: null,
+	planPath: null,
+	planRelPath: null,
+	sessionDir: null,
+	preStartSessions: [],
+	updatedAt: 0,
+};
+
 export const workspaceLocalStateSchema = z.object({
 	workspaceId: z.string().uuid(),
 	createdAt: persistedDateSchema,
@@ -128,9 +181,12 @@ export const workspaceLocalStateSchema = z.object({
 		sectionId: z.string().uuid().nullable().default(null),
 		changesFilter: changesFilterSchema.default({ kind: "all" }),
 		changesViewMode: z.enum(["folders", "tree"]).default("folders"),
-		activeTab: z.enum(["changes", "files", "review"]).default("changes"),
+		activeTab: z
+			.enum(["changes", "files", "review", "loop"])
+			.default("changes"),
 		isHidden: z.boolean().default(false),
 	}),
+	loopState: loopSessionStateSchema.default(DEFAULT_LOOP_SESSION_STATE),
 	paneLayout: paneWorkspaceStateSchema,
 	viewedFiles: z.array(z.string()).default([]),
 	recentlyViewedFiles: z
@@ -366,6 +422,7 @@ export function healWorkspaceLocalState(raw: unknown): WorkspaceLocalStateRow {
 		workspaceRunTerminals:
 			r.workspaceRunTerminals ??
 			WORKSPACE_LOCAL_STATE_OPTIONAL_DEFAULTS.workspaceRunTerminals,
+		loopState: { ...DEFAULT_LOOP_SESSION_STATE, ...(r.loopState ?? {}) },
 		sidebarState: {
 			...SIDEBAR_STATE_DEFAULTS,
 			...sidebar,

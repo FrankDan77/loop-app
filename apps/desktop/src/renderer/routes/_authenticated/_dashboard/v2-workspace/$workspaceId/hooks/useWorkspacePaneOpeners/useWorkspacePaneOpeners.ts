@@ -1,5 +1,12 @@
 import type { WorkspaceStore } from "@superset/panes";
+import {
+	buildLoopClaudeLaunchCommand,
+	buildLoopClaudeLaunchWithPrompt,
+	buildLoopClaudeResumeCommand,
+} from "@superset/shared/loop-commands";
+import { toast } from "@superset/ui/sonner";
 import { useCallback } from "react";
+import { electronTrpcClient } from "renderer/lib/trpc-client";
 import type { V2TerminalPresetRow } from "renderer/routes/_authenticated/providers/CollectionsProvider/dashboardSidebarLocal";
 import type { StoreApi } from "zustand/vanilla";
 import type {
@@ -35,6 +42,10 @@ export function useWorkspacePaneOpeners({
 		changeKey?: string,
 	) => void;
 	addTerminalTab: () => Promise<void>;
+	createLoopTerminal: (options?: {
+		initialPrompt?: string;
+		resumeSessionId?: string;
+	}) => Promise<string | null>;
 	addChatTab: () => void;
 	addBrowserTab: () => void;
 	openCommentPane: (comment: CommentPaneData) => void;
@@ -138,6 +149,67 @@ export function useWorkspacePaneOpeners({
 		}
 	}, [addBlankTerminalTab, executePreset, newTabPresets]);
 
+	// Launches a dedicated terminal running Claude Code with the vendored loop
+	// plugin loaded, scoped to this workspace's worktree (host defaults cwd to
+	// the worktree when we omit it). An optional initial prompt (e.g. the
+	// gen-idea slash command) is baked as Claude's first prompt so it runs on
+	// startup; `resumeSessionId` instead resumes an existing loop's Claude
+	// session (`claude --resume`) so injected controls drive the real run.
+	// Returns the terminalId so the Loop sidebar can inject follow-up commands;
+	// returns null (after toasting) when prerequisites are missing.
+	const createLoopTerminal = useCallback(
+		async (options?: {
+			initialPrompt?: string;
+			resumeSessionId?: string;
+		}): Promise<string | null> => {
+			let loopDir: string | null;
+			let hasClaude: boolean;
+			try {
+				const status = await electronTrpcClient.settings.loopStatus.query();
+				loopDir = status.loopDir;
+				hasClaude = status.prereqs.claude;
+			} catch (error) {
+				toast.error(
+					`Failed to resolve loop plugin: ${
+						error instanceof Error ? error.message : String(error)
+					}`,
+				);
+				return null;
+			}
+
+			if (!loopDir) {
+				toast.error("Bundled loop plugin not found");
+				return null;
+			}
+			if (!hasClaude) {
+				toast.error("Claude Code CLI not found on PATH");
+				return null;
+			}
+
+			const command = options?.resumeSessionId
+				? buildLoopClaudeResumeCommand(
+						loopDir,
+						options.resumeSessionId,
+						options.initialPrompt,
+					)
+				: options?.initialPrompt
+					? buildLoopClaudeLaunchWithPrompt(loopDir, options.initialPrompt)
+					: buildLoopClaudeLaunchCommand(loopDir);
+			const terminalId = await launcher.create({ command });
+			store.getState().addTab({
+				panes: [
+					{
+						kind: "terminal",
+						titleOverride: "Loop",
+						data: { terminalId } as TerminalPaneData,
+					},
+				],
+			});
+			return terminalId;
+		},
+		[store, launcher],
+	);
+
 	const addChatTab = useCallback(() => {
 		store.getState().addTab({
 			panes: [
@@ -192,6 +264,7 @@ export function useWorkspacePaneOpeners({
 	return {
 		openDiffPane,
 		addTerminalTab,
+		createLoopTerminal,
 		addChatTab,
 		addBrowserTab,
 		openCommentPane,

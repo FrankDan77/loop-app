@@ -1,1 +1,1 @@
-export { useV2AgentChoices } from "./useV2AgentChoices";
+export { LOOP_AGENT_ID, useV2AgentChoices } from "./useV2AgentChoices";
