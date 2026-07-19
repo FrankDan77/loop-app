@@ -135,19 +135,19 @@ CI
 
 ## Runtime State
 
-CLI runtime state is under `SUPERSET_HOME_DIR`, defaulting to
-`~/.superset`.
+CLI runtime state is under `LOOP_HOME_DIR`, defaulting to
+`~/.loop`.
 
 | Path | Purpose |
 | --- | --- |
-| `~/.superset/config.json` | OAuth token, expiry, and active organization ID. |
-| `~/.superset/host/<organizationId>/manifest.json` | Host service PID, endpoint, auth token, and organization ID. |
-| `~/.superset/host/<organizationId>/host.db` | Host service SQLite database. |
+| `~/.loop/config.json` | OAuth token, expiry, and active organization ID. |
+| `~/.loop/host/<organizationId>/manifest.json` | Host service PID, endpoint, auth token, and organization ID. |
+| `~/.loop/host/<organizationId>/host.db` | Host service SQLite database. |
 
 ## Desktop Shim And Standalone Install
 
 The desktop app installs an app-managed shim at
-`<SUPERSET_HOME_DIR>/bin/superset` (`~/.superset/bin/superset` by default)
+`<LOOP_HOME_DIR>/bin/superset` (`~/.loop/bin/superset` by default)
 when the app starts. Superset desktop terminals prepend that directory to
 `PATH`, so the bundled CLI is available in app-launched terminals without a
 standalone install.

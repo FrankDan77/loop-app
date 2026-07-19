@@ -23,10 +23,10 @@ function isFishAvailable(): boolean {
 describe("teardown initial command", () => {
 	test("uses exec instead of shell-specific exit status syntax", () => {
 		const command = buildTeardownInitialCommand(
-			"/tmp/worktree/.superset/teardown.sh",
+			"/tmp/worktree/.loop/teardown.sh",
 		);
 
-		expect(command).toBe("exec bash '/tmp/worktree/.superset/teardown.sh'");
+		expect(command).toBe("exec bash '/tmp/worktree/.loop/teardown.sh'");
 		expect(command).not.toContain("$?");
 	});
 
@@ -80,7 +80,7 @@ describe("resolveTeardownCommand", () => {
 		const root = mkdtempSync(join(tmpdir(), "host-service-teardown-resolve-"));
 		const repoPath = join(root, "repo");
 		const homeDir = join(root, "home");
-		mkdirSync(join(repoPath, ".superset"), { recursive: true });
+		mkdirSync(join(repoPath, ".loop"), { recursive: true });
 		mkdirSync(homeDir, { recursive: true });
 		return {
 			repoPath,
@@ -91,7 +91,7 @@ describe("resolveTeardownCommand", () => {
 
 	function writeConfig(repoPath: string, config: unknown): void {
 		writeFileSync(
-			join(repoPath, ".superset", "config.json"),
+			join(repoPath, ".loop", "config.json"),
 			JSON.stringify(config),
 		);
 	}
@@ -99,7 +99,7 @@ describe("resolveTeardownCommand", () => {
 	// Reproduces #5486: configured `teardown` commands must run on delete.
 	// Before the fix, teardown never consulted the resolved config and
 	// silently skipped when no teardown.sh script existed.
-	test("runs configured teardown commands from .superset/config.json", () => {
+	test("runs configured teardown commands from .loop/config.json", () => {
 		const sb = makeSandbox();
 		try {
 			writeConfig(sb.repoPath, {
@@ -128,7 +128,7 @@ describe("resolveTeardownCommand", () => {
 		try {
 			writeConfig(sb.repoPath, { teardown: ["echo configured"] });
 			writeFileSync(
-				join(sb.repoPath, ".superset", "teardown.sh"),
+				join(sb.repoPath, ".loop", "teardown.sh"),
 				"#!/usr/bin/env bash\n",
 			);
 
@@ -147,14 +147,14 @@ describe("resolveTeardownCommand", () => {
 		}
 	});
 
-	test("falls back to <repoPath>/.superset/teardown.sh when no teardown is configured", () => {
+	test("falls back to <repoPath>/.loop/teardown.sh when no teardown is configured", () => {
 		const sb = makeSandbox();
 		try {
 			// Config exists but only defines setup — teardown must fall back.
 			// The main repo is the source, matching setup.sh resolution:
 			// gitignored scripts don't exist in worktrees.
 			writeConfig(sb.repoPath, { setup: ["bash setup.sh"] });
-			const scriptPath = join(sb.repoPath, ".superset", "teardown.sh");
+			const scriptPath = join(sb.repoPath, ".loop", "teardown.sh");
 			writeFileSync(scriptPath, "#!/usr/bin/env bash\n");
 
 			const resolved = resolveTeardownCommand({
@@ -174,12 +174,12 @@ describe("resolveTeardownCommand", () => {
 		const sb = makeSandbox();
 		try {
 			writeFileSync(
-				join(sb.repoPath, ".superset", "teardown.sh"),
+				join(sb.repoPath, ".loop", "teardown.sh"),
 				"#!/usr/bin/env bash\n",
 			);
 			const worktreePath = join(sb.repoPath, ".worktrees", "feature");
-			mkdirSync(join(worktreePath, ".superset"), { recursive: true });
-			const worktreeScript = join(worktreePath, ".superset", "teardown.sh");
+			mkdirSync(join(worktreePath, ".loop"), { recursive: true });
+			const worktreeScript = join(worktreePath, ".loop", "teardown.sh");
 			writeFileSync(worktreeScript, "#!/usr/bin/env bash\n");
 
 			const resolved = resolveTeardownCommand({

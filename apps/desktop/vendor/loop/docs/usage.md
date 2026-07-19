@@ -313,7 +313,7 @@ Set up the monitoring helper for real-time progress tracking:
 
 ```bash
 # Add to your .bashrc or .zshrc
-source ~/.claude/plugins/cache/FrankDan77/loop/<LATEST.VERSION>/scripts/loop.sh
+source ~/.claude/plugins/cache/FrankDan77/loop-app/<LATEST.VERSION>/scripts/loop.sh
 
 # Monitor RLCR loop progress
 loop monitor rlcr

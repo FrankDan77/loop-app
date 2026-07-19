@@ -45,7 +45,7 @@ export interface PendingPermission {
  * the wire verbatim (D7), so the extra picks travel as metadata. `optionId`
  * stays the first pick, keeping single-select consumers correct.
  */
-const SELECTED_OPTION_IDS_META = "sh.superset/selectedOptionIds";
+const SELECTED_OPTION_IDS_META = "sh.loop/selectedOptionIds";
 
 export function makeSelectedOutcome(
 	optionIds: readonly string[],

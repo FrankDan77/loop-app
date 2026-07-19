@@ -41,5 +41,7 @@ export interface HostServiceContext {
 	terminalAgentStore: TerminalAgentStore;
 	organizationId: string;
 	isAuthenticated: boolean;
+	/** Local-only alpha: skip all cloud/Electric calls when true. */
+	localMode: boolean;
 	clientMachineId?: string;
 }

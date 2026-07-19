@@ -12,6 +12,12 @@ export const env = createEnv({
 		ORGANIZATION_ID: z.string().min(1),
 		DESKTOP_VITE_PORT: z.coerce.number().int().positive(),
 		RELAY_URL: z.string().url().optional(),
+		// Local-only alpha: the coordinator sets LOCAL_MODE="1" so the
+		// host-service skips every cloud call and runs SQLite-only.
+		LOCAL_MODE: z
+			.enum(["0", "1"])
+			.default("0")
+			.transform((v) => v === "1"),
 	},
 	runtimeEnv: process.env,
 	emptyStringAsUndefined: true,

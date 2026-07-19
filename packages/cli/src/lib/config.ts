@@ -23,33 +23,33 @@ export type SupersetConfig = {
 	organizationId?: string;
 };
 
-export const SUPERSET_HOME_DIR =
-	process.env.SUPERSET_HOME_DIR ?? join(homedir(), ".superset");
-export const SUPERSET_CONFIG_PATH = join(SUPERSET_HOME_DIR, "config.json");
+export const LOOP_HOME_DIR =
+	process.env.LOOP_HOME_DIR ?? join(homedir(), ".loop");
+export const LOOP_CONFIG_PATH = join(LOOP_HOME_DIR, "config.json");
 
 function ensureDir() {
-	if (!existsSync(SUPERSET_HOME_DIR)) {
-		mkdirSync(SUPERSET_HOME_DIR, { recursive: true, mode: 0o700 });
+	if (!existsSync(LOOP_HOME_DIR)) {
+		mkdirSync(LOOP_HOME_DIR, { recursive: true, mode: 0o700 });
 	}
 	try {
-		const stat = statSync(SUPERSET_HOME_DIR);
-		if ((stat.mode & 0o077) !== 0) chmodSync(SUPERSET_HOME_DIR, 0o700);
+		const stat = statSync(LOOP_HOME_DIR);
+		if ((stat.mode & 0o077) !== 0) chmodSync(LOOP_HOME_DIR, 0o700);
 	} catch {}
 }
 
 export function readConfig(): SupersetConfig {
-	if (!existsSync(SUPERSET_CONFIG_PATH)) return {};
+	if (!existsSync(LOOP_CONFIG_PATH)) return {};
 	try {
-		const stat = statSync(SUPERSET_CONFIG_PATH);
-		if ((stat.mode & 0o077) !== 0) chmodSync(SUPERSET_CONFIG_PATH, 0o600);
+		const stat = statSync(LOOP_CONFIG_PATH);
+		if ((stat.mode & 0o077) !== 0) chmodSync(LOOP_CONFIG_PATH, 0o600);
 	} catch {}
-	return JSON.parse(readFileSync(SUPERSET_CONFIG_PATH, "utf-8"));
+	return JSON.parse(readFileSync(LOOP_CONFIG_PATH, "utf-8"));
 }
 
 export function writeConfig(config: SupersetConfig): void {
 	ensureDir();
 	const tempPath = join(
-		SUPERSET_HOME_DIR,
+		LOOP_HOME_DIR,
 		`.${randomUUID()}.${process.pid}.config.tmp`,
 	);
 	writeFileSync(tempPath, JSON.stringify(config, null, 2), { mode: 0o600 });
@@ -57,7 +57,7 @@ export function writeConfig(config: SupersetConfig): void {
 		chmodSync(tempPath, 0o600);
 	} catch {}
 	try {
-		renameSync(tempPath, SUPERSET_CONFIG_PATH);
+		renameSync(tempPath, LOOP_CONFIG_PATH);
 	} catch (error) {
 		try {
 			unlinkSync(tempPath);
@@ -65,7 +65,7 @@ export function writeConfig(config: SupersetConfig): void {
 		throw error;
 	}
 	try {
-		chmodSync(SUPERSET_CONFIG_PATH, 0o600);
+		chmodSync(LOOP_CONFIG_PATH, 0o600);
 	} catch {}
 }
 

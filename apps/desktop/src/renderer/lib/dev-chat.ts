@@ -1,6 +1,7 @@
 import type { ModelOption } from "renderer/components/Chat/ChatInterface/types";
 import { env } from "renderer/env.renderer";
-import { MOCK_ORG_ID } from "shared/constants";
+import { LOCAL_MODE } from "renderer/lib/local-session";
+import { LOCAL_ORG_ID, MOCK_ORG_ID } from "shared/constants";
 
 export const DEV_CHAT_MODELS: ModelOption[] = [
 	{
@@ -48,13 +49,15 @@ export const DEV_CHAT_MODELS: ModelOption[] = [
 export function isDesktopChatDevMode(
 	skipEnvValidation = env.SKIP_ENV_VALIDATION,
 ): boolean {
-	return skipEnvValidation;
+	// Local-only alpha runs the Chat pane on the dev/local path (no cloud tRPC).
+	return skipEnvValidation || LOCAL_MODE;
 }
 
 export function resolveDesktopChatOrganizationId(
 	activeOrganizationId: string | null | undefined,
 	skipEnvValidation = env.SKIP_ENV_VALIDATION,
 ): string | null {
+	if (LOCAL_MODE) return LOCAL_ORG_ID;
 	if (skipEnvValidation) return MOCK_ORG_ID;
 	return activeOrganizationId ?? null;
 }

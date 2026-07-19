@@ -125,7 +125,7 @@ export function getDroidSettingsJsonContent(
 		existing.hooks = {};
 	}
 
-	const managedHookCommand = `SUPERSET_AGENT_ID=droid ${quoteShellPath(notifyScriptPath)}`;
+	const managedHookCommand = `LOOP_AGENT_ID=droid ${quoteShellPath(notifyScriptPath)}`;
 
 	const managedEvents: Array<{
 		eventName:

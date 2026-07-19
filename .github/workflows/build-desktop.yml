@@ -105,7 +105,7 @@ jobs:
           SENTRY_DSN_DESKTOP: ${{ secrets.SENTRY_DSN_DESKTOP }}
           SENTRY_AUTH_TOKEN: ${{ secrets.SENTRY_AUTH_TOKEN }}
           RELAY_URL: ${{ secrets.RELAY_URL }}
-          SUPERSET_WORKSPACE_NAME: superset
+          LOOP_WORKSPACE_NAME: loop
           TARGET_ARCH: ${{ matrix.arch }}
         run: bun run compile:app
 
@@ -251,7 +251,7 @@ jobs:
           SENTRY_DSN_DESKTOP: ${{ secrets.SENTRY_DSN_DESKTOP }}
           SENTRY_AUTH_TOKEN: ${{ secrets.SENTRY_AUTH_TOKEN }}
           RELAY_URL: ${{ secrets.RELAY_URL }}
-          SUPERSET_WORKSPACE_NAME: superset
+          LOOP_WORKSPACE_NAME: loop
           TARGET_ARCH: x64
         run: bun run compile:app
 

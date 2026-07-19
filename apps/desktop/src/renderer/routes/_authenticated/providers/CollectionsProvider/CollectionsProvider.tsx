@@ -9,7 +9,8 @@ import {
 } from "react";
 import { env } from "renderer/env.renderer";
 import { authClient } from "renderer/lib/auth-client";
-import { MOCK_ORG_ID } from "shared/constants";
+import { LOCAL_MODE } from "renderer/lib/local-session";
+import { LOCAL_ORG_ID, MOCK_ORG_ID } from "shared/constants";
 import { getCollections, preloadCollections } from "./collections";
 
 type CollectionsContextType = ReturnType<typeof getCollections> & {
@@ -33,9 +34,11 @@ export function preloadActiveOrganizationCollections(
 export function CollectionsProvider({ children }: { children: ReactNode }) {
 	const { data: session, refetch: refetchSession } = authClient.useSession();
 	const [isSwitching, setIsSwitching] = useState(false);
-	const activeOrganizationId = env.SKIP_ENV_VALIDATION
-		? MOCK_ORG_ID
-		: session?.session?.activeOrganizationId;
+	const activeOrganizationId = LOCAL_MODE
+		? LOCAL_ORG_ID
+		: env.SKIP_ENV_VALIDATION
+			? MOCK_ORG_ID
+			: session?.session?.activeOrganizationId;
 
 	const switchOrganization = useCallback(
 		async (organizationId: string) => {

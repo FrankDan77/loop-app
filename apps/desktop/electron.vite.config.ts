@@ -53,6 +53,12 @@ export default defineConfig({
 				process.env.SKIP_ENV_VALIDATION,
 				"",
 			),
+			// Local-only alpha mode: boots into a stub session with no remote backend.
+			// Defaults to "true" for this fork; set LOOP_LOCAL_MODE=false to restore cloud behavior.
+			"process.env.LOOP_LOCAL_MODE": defineEnv(
+				process.env.LOOP_LOCAL_MODE,
+				"true",
+			),
 			"process.env.NEXT_PUBLIC_API_URL": defineEnv(
 				process.env.NEXT_PUBLIC_API_URL,
 				"https://api.superset.sh",
@@ -93,8 +99,8 @@ export default defineConfig({
 				process.env.DESKTOP_NOTIFICATIONS_PORT,
 			),
 			"process.env.ELECTRIC_PORT": defineEnv(process.env.ELECTRIC_PORT),
-			"process.env.SUPERSET_WORKSPACE_NAME": defineEnv(
-				process.env.SUPERSET_WORKSPACE_NAME,
+			"process.env.LOOP_WORKSPACE_NAME": defineEnv(
+				process.env.LOOP_WORKSPACE_NAME,
 			),
 		},
 
@@ -173,6 +179,12 @@ export default defineConfig({
 				process.env.SKIP_ENV_VALIDATION,
 				"",
 			),
+			// Local-only alpha mode: boots into a stub session with no remote backend.
+			// Defaults to "true" for this fork; set LOOP_LOCAL_MODE=false to restore cloud behavior.
+			"process.env.LOOP_LOCAL_MODE": defineEnv(
+				process.env.LOOP_LOCAL_MODE,
+				"true",
+			),
 			"process.platform": defineEnv(process.platform),
 			"process.env.NEXT_PUBLIC_API_URL": defineEnv(
 				process.env.NEXT_PUBLIC_API_URL,
@@ -214,8 +226,8 @@ export default defineConfig({
 				process.env.DESKTOP_NOTIFICATIONS_PORT,
 			),
 			"process.env.ELECTRIC_PORT": defineEnv(process.env.ELECTRIC_PORT),
-			"process.env.SUPERSET_WORKSPACE_NAME": defineEnv(
-				process.env.SUPERSET_WORKSPACE_NAME,
+			"process.env.LOOP_WORKSPACE_NAME": defineEnv(
+				process.env.LOOP_WORKSPACE_NAME,
 			),
 		},
 

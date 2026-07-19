@@ -25,13 +25,17 @@ import type { SidebarTabDefinition } from "./types";
 // always renders so users can see PR state and merge once a PR exists.
 const CREATE_PR_BUTTON_ENABLED = false;
 
+// Review tab is temporarily hidden — only Files, Changes, and Loop are shown.
+// Flip to true to bring it back.
+const REVIEW_TAB_ENABLED = false;
+
 type SidebarTabId = "changes" | "files" | "review" | "loop";
 
 const VALID_TAB_IDS: readonly SidebarTabId[] = [
 	"changes",
 	"files",
-	"review",
 	"loop",
+	...(REVIEW_TAB_ENABLED ? (["review"] as const) : []),
 ];
 
 function isSidebarTabId(tab: string): tab is SidebarTabId {
@@ -197,10 +201,12 @@ export function WorkspaceSidebar({
 	const tabs: SidebarTabDefinition[] = [
 		filesTab,
 		changesTab,
-		reviewTab,
+		...(REVIEW_TAB_ENABLED ? [reviewTab] : []),
 		loopTab,
 	];
-	const activeTabDef = tabs.find((t) => t.id === activeTab);
+	const activeTabDef =
+		tabs.find((t) => t.id === activeTab) ??
+		tabs.find((t) => t.id === "changes");
 
 	return (
 		<div

@@ -55,8 +55,8 @@ const IS_AUTO_UPDATE_PLATFORM = PLATFORM.IS_MAC || PLATFORM.IS_LINUX;
 // - Stable: fetches from /releases/latest/download/ (latest non-prerelease)
 // - Canary: fetches from /releases/download/desktop-canary/ (rolling canary tag)
 const UPDATE_FEED_URL = IS_PRERELEASE
-	? "https://github.com/FrankDan77/loop/releases/download/desktop-canary"
-	: "https://github.com/FrankDan77/loop/releases/latest/download";
+	? "https://github.com/FrankDan77/loop-app/releases/download/desktop-canary"
+	: "https://github.com/FrankDan77/loop-app/releases/latest/download";
 
 export type { AutoUpdateStatusEvent } from "shared/auto-update";
 

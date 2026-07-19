@@ -64,7 +64,7 @@ c) **If user declines**: Thank them, write completion marker to `{{LOOP_DIR}}/me
 d) **If user agrees**:
    - Draft a GitHub issue title and body from the analysis report
    - Show the draft via a second `AskUserQuestion` for the user to review and confirm
-   - If confirmed: run `gh issue create --repo FrankDan77/loop --title "..." --body "..."`
+   - If confirmed: run `gh issue create --repo FrankDan77/loop-app --title "..." --body "..."`
    - If `gh` is not available, provide the title and body so the user can create the issue manually
    - Write completion marker to `{{LOOP_DIR}}/methodology-analysis-done.md` and exit
 

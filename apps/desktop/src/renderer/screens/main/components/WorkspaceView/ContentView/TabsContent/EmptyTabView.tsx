@@ -12,8 +12,6 @@ import { useWorkspaceDeleteHandler } from "renderer/react-query/workspaces";
 import { DeleteWorkspaceDialog } from "renderer/screens/main/components/WorkspaceSidebar/WorkspaceListItem/components/DeleteWorkspaceDialog/DeleteWorkspaceDialog";
 import { useTabsStore } from "renderer/stores/tabs/store";
 import { useTabsWithPresets } from "renderer/stores/tabs/useTabsWithPresets";
-import { useTheme } from "renderer/stores/theme";
-import supersetEmptyStateWordmark from "./assets/superset-empty-state-wordmark.svg";
 import { EmptyTabActionButton } from "./components/EmptyTabActionButton";
 
 interface EmptyTabViewProps {
@@ -40,7 +38,6 @@ export function EmptyTabView({
 	});
 	const addChatTab = useTabsStore((s) => s.addChatTab);
 	const addBrowserTab = useTabsStore((s) => s.addBrowserTab);
-	const activeTheme = useTheme();
 
 	const { data: workspace } = electronTrpc.workspaces.get.useQuery({
 		id: workspaceId,
@@ -136,18 +133,6 @@ export function EmptyTabView({
 	return (
 		<div className="flex h-full flex-1 items-center justify-center px-6 py-10">
 			<div className="w-full max-w-xl">
-				<div className="mb-7 flex items-center justify-center py-3">
-					<img
-						alt="Loop"
-						className={`h-8 w-auto select-none ${
-							activeTheme?.type === "dark"
-								? "opacity-85"
-								: "brightness-0 opacity-75"
-						}`}
-						draggable={false}
-						src={supersetEmptyStateWordmark}
-					/>
-				</div>
 				<div className="mx-auto grid w-full max-w-md gap-0.5">
 					{actions.map((action) => (
 						<EmptyTabActionButton

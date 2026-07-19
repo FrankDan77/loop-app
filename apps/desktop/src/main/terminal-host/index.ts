@@ -8,8 +8,8 @@
  *
  * IPC Protocol:
  * - Uses NDJSON (newline-delimited JSON) over Unix domain socket
- * - Socket: ~/.superset/terminal-host.sock
- * - Auth token: ~/.superset/terminal-host.token
+ * - Socket: ~/.loop/terminal-host.sock
+ * - Auth token: ~/.loop/terminal-host.token
  */
 
 import { randomBytes } from "node:crypto";
@@ -24,7 +24,7 @@ import {
 import { createServer, type Server, Socket } from "node:net";
 import { homedir } from "node:os";
 import { join } from "node:path";
-import { SUPERSET_DIR_NAME } from "shared/constants";
+import { LOOP_DIR_NAME } from "shared/constants";
 import {
 	type CancelCreateOrAttachRequest,
 	type ClearScrollbackRequest,
@@ -55,9 +55,9 @@ import { TerminalHost } from "./terminal-host";
 
 const DAEMON_VERSION = "1.0.0";
 
-// SUPERSET_DIR_NAME is imported from shared/constants for multi-worktree support
-// This allows workspace-specific home directories (e.g., ~/.superset-my-feature)
-const LOOP_HOME_DIR = join(homedir(), SUPERSET_DIR_NAME);
+// LOOP_DIR_NAME is imported from shared/constants for multi-worktree support
+// This allows workspace-specific home directories (e.g., ~/.loop-my-feature)
+const LOOP_HOME_DIR = join(homedir(), LOOP_DIR_NAME);
 
 // Socket and token paths
 const SOCKET_PATH = join(LOOP_HOME_DIR, "terminal-host.sock");

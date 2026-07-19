@@ -82,6 +82,7 @@ export async function adoptExistingWorktree(
 		eventBus: ctx.eventBus,
 		organizationId: ctx.organizationId,
 		clientMachineId: ctx.clientMachineId,
+		localMode: ctx.localMode,
 	};
 
 	// Cloud-push latency pre-warm; failures surface (non-fatally) inside

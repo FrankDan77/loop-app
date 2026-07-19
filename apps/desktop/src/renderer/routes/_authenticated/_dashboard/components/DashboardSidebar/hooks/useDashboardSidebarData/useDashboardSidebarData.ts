@@ -1,9 +1,10 @@
 import { eq } from "@tanstack/db";
 import { useLiveQuery } from "@tanstack/react-db";
-import { useQueries, useQueryClient } from "@tanstack/react-query";
+import { useQueries, useQuery, useQueryClient } from "@tanstack/react-query";
 import { useCallback, useMemo, useRef } from "react";
 import { useRelayUrl } from "renderer/hooks/useRelayUrl";
 import { getHostServiceClientByUrl } from "renderer/lib/host-service-client";
+import { LOCAL_MODE } from "renderer/lib/local-session";
 import { useDashboardSidebarState } from "renderer/routes/_authenticated/hooks/useDashboardSidebarState";
 import { useCollections } from "renderer/routes/_authenticated/providers/CollectionsProvider";
 import {
@@ -17,7 +18,10 @@ import type {
 	DashboardSidebarProject,
 	DashboardSidebarWorkspace,
 } from "../../types";
-import { buildDashboardSidebarProjects } from "./buildDashboardSidebarProjects";
+import {
+	buildDashboardSidebarProjects,
+	type SidebarProjectInput,
+} from "./buildDashboardSidebarProjects";
 import {
 	derivePullRequestQueryTargets,
 	getDashboardSidebarPullRequestQueryKey,
@@ -179,7 +183,7 @@ export function useDashboardSidebarData() {
 		[collections],
 	);
 
-	const sidebarProjects = useMemo(
+	const electricSidebarProjects = useMemo(
 		() =>
 			rawSidebarProjects.map((project) => ({
 				...project,
@@ -188,6 +192,64 @@ export function useDashboardSidebarData() {
 			})),
 		[rawSidebarProjects],
 	);
+
+	// Local-only alpha: the Electric `v2Projects` collection is empty, so the
+	// inner join above yields nothing. Source projects from host-service
+	// `project.list` and join with the local `v2SidebarProjects` (localStorage)
+	// rows for ordering + collapse state.
+	const { data: hostProjects = [] } = useQuery({
+		queryKey: ["local-sidebar-host-projects", activeHostUrl],
+		enabled: LOCAL_MODE && !!activeHostUrl,
+		refetchInterval: 5_000,
+		queryFn: () =>
+			getHostServiceClientByUrl(activeHostUrl as string).project.list.query(),
+	});
+
+	const { data: localSidebarProjectRows = [] } = useLiveQuery(
+		(q) =>
+			q
+				.from({ sidebarProjects: collections.v2SidebarProjects })
+				.orderBy(({ sidebarProjects }) => sidebarProjects.tabOrder, "asc")
+				.select(({ sidebarProjects }) => ({
+					projectId: sidebarProjects.projectId,
+					tabOrder: sidebarProjects.tabOrder,
+					isCollapsed: sidebarProjects.isCollapsed,
+					createdAt: sidebarProjects.createdAt,
+				})),
+		[collections],
+	);
+
+	const localSidebarProjects = useMemo<SidebarProjectInput[]>(() => {
+		if (!LOCAL_MODE) return [];
+		const byId = new Map(hostProjects.map((project) => [project.id, project]));
+		return localSidebarProjectRows.flatMap((row) => {
+			const project = byId.get(row.projectId);
+			if (!project) return [];
+			const name =
+				project.name ||
+				project.repoName ||
+				project.repoPath.split(/[/\\]/).filter(Boolean).pop() ||
+				"Project";
+			return [
+				{
+					id: project.id,
+					name,
+					slug: project.slug ?? "",
+					githubRepositoryId: null,
+					githubOwner: project.repoOwner ?? null,
+					githubRepoName: project.repoName ?? null,
+					iconUrl: null,
+					createdAt: row.createdAt,
+					updatedAt: row.createdAt,
+					isCollapsed: row.isCollapsed,
+				},
+			];
+		});
+	}, [hostProjects, localSidebarProjectRows]);
+
+	const sidebarProjects = LOCAL_MODE
+		? localSidebarProjects
+		: electricSidebarProjects;
 
 	const { data: sidebarSections = [] } = useLiveQuery(
 		(q) =>

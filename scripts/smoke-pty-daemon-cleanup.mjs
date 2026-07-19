@@ -506,8 +506,7 @@ async function findProductionDaemon(orgId) {
 }
 
 function listProductionDaemonManifests() {
-	const home =
-		process.env.SUPERSET_HOME_DIR || path.join(os.homedir(), ".superset");
+	const home = process.env.LOOP_HOME_DIR || path.join(os.homedir(), ".loop");
 	const hostDir = path.join(home, "host");
 	if (!existsSync(hostDir)) return [];
 

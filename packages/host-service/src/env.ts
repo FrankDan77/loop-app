@@ -12,7 +12,7 @@ export const env = createEnv({
 		HOST_DB_PATH: z.string().min(1),
 		HOST_MIGRATIONS_FOLDER: z.string().min(1),
 		AUTH_TOKEN: z.string().min(1),
-		SUPERSET_AUTH_CONFIG_PATH: z.string().min(1).optional(),
+		LOOP_AUTH_CONFIG_PATH: z.string().min(1).optional(),
 		SUPERSET_API_URL: z.string().url(),
 		CORS_ORIGINS: z
 			.string()
@@ -20,6 +20,12 @@ export const env = createEnv({
 			.optional(),
 		PORT: z.coerce.number().int().positive().default(4879),
 		RELAY_URL: z.string().url().optional(),
+		// Local-only alpha: when "1", skip all cloud/Electric calls and operate
+		// purely against the local SQLite DB.
+		LOCAL_MODE: z
+			.enum(["0", "1"])
+			.default("0")
+			.transform((v) => v === "1"),
 	},
 	runtimeEnv: process.env,
 	emptyStringAsUndefined: true,

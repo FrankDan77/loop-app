@@ -11,21 +11,39 @@ import { loadToken } from "../auth/utils/auth-functions";
 
 const orgInput = z.object({ organizationId: z.string() });
 
+/**
+ * In local-only alpha mode there is no remote auth; skip the token check and
+ * hand the coordinator a placeholder token + inert cloud API URL. Otherwise
+ * require a real disk token.
+ */
+async function resolveCoordinatorAuth(): Promise<{
+	authToken: string;
+	cloudApiUrl: string;
+}> {
+	if (env.LOOP_LOCAL_MODE) {
+		return {
+			authToken: "local-mode-token",
+			cloudApiUrl: env.NEXT_PUBLIC_API_URL,
+		};
+	}
+	const { token } = await loadToken();
+	if (!token) {
+		throw new TRPCError({
+			code: "UNAUTHORIZED",
+			message: "No auth token available — user must be logged in",
+		});
+	}
+	return { authToken: token, cloudApiUrl: env.NEXT_PUBLIC_API_URL };
+}
+
 export const createHostServiceCoordinatorRouter = () => {
 	return router({
 		start: publicProcedure.input(orgInput).mutation(async ({ input }) => {
 			const coordinator = getHostServiceCoordinator();
-			const { token } = await loadToken();
-			if (!token) {
-				throw new TRPCError({
-					code: "UNAUTHORIZED",
-					message: "No auth token available — user must be logged in",
-				});
-			}
-			return coordinator.start(input.organizationId, {
-				authToken: token,
-				cloudApiUrl: env.NEXT_PUBLIC_API_URL,
-			});
+			return coordinator.start(
+				input.organizationId,
+				await resolveCoordinatorAuth(),
+			);
 		}),
 
 		getConnection: publicProcedure.input(orgInput).query(({ input }) => {
@@ -40,32 +58,18 @@ export const createHostServiceCoordinatorRouter = () => {
 
 		restart: publicProcedure.input(orgInput).mutation(async ({ input }) => {
 			const coordinator = getHostServiceCoordinator();
-			const { token } = await loadToken();
-			if (!token) {
-				throw new TRPCError({
-					code: "UNAUTHORIZED",
-					message: "No auth token available — user must be logged in",
-				});
-			}
-			return coordinator.restart(input.organizationId, {
-				authToken: token,
-				cloudApiUrl: env.NEXT_PUBLIC_API_URL,
-			});
+			return coordinator.restart(
+				input.organizationId,
+				await resolveCoordinatorAuth(),
+			);
 		}),
 
 		reset: publicProcedure.input(orgInput).mutation(async ({ input }) => {
 			const coordinator = getHostServiceCoordinator();
-			const { token } = await loadToken();
-			if (!token) {
-				throw new TRPCError({
-					code: "UNAUTHORIZED",
-					message: "No auth token available — user must be logged in",
-				});
-			}
-			return coordinator.reset(input.organizationId, {
-				authToken: token,
-				cloudApiUrl: env.NEXT_PUBLIC_API_URL,
-			});
+			return coordinator.reset(
+				input.organizationId,
+				await resolveCoordinatorAuth(),
+			);
 		}),
 
 		onStatusChange: publicProcedure.subscription(() => {

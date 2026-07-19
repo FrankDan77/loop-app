@@ -231,9 +231,9 @@ describe("shouldKillStaleDaemonForDev", () => {
 describe("DaemonSupervisor.tryAdopt", () => {
 	test("recovers adoption from a live expected socket when the manifest is missing", async () => {
 		const orgId = "org-socket-fallback";
-		const originalHome = process.env.SUPERSET_HOME_DIR;
+		const originalHome = process.env.LOOP_HOME_DIR;
 		const tmpHome = fs.mkdtempSync(path.join(os.tmpdir(), "pty-daemon-unit-"));
-		process.env.SUPERSET_HOME_DIR = tmpHome;
+		process.env.LOOP_HOME_DIR = tmpHome;
 		const socketPath = ptyDaemonSocketPath(orgId);
 		try {
 			try {
@@ -277,9 +277,9 @@ describe("DaemonSupervisor.tryAdopt", () => {
 			}
 		} finally {
 			if (originalHome !== undefined) {
-				process.env.SUPERSET_HOME_DIR = originalHome;
+				process.env.LOOP_HOME_DIR = originalHome;
 			} else {
-				delete process.env.SUPERSET_HOME_DIR;
+				delete process.env.LOOP_HOME_DIR;
 			}
 			fs.rmSync(tmpHome, { recursive: true, force: true });
 			try {
@@ -305,9 +305,9 @@ describe("DaemonSupervisor.tryAdopt", () => {
 			return;
 		}
 
-		const originalHome = process.env.SUPERSET_HOME_DIR;
+		const originalHome = process.env.LOOP_HOME_DIR;
 		const tmpHome = fs.mkdtempSync(path.join(os.tmpdir(), "pty-daemon-unit-"));
-		process.env.SUPERSET_HOME_DIR = tmpHome;
+		process.env.LOOP_HOME_DIR = tmpHome;
 		try {
 			writePtyDaemonManifest({
 				pid: childPid,
@@ -339,9 +339,9 @@ describe("DaemonSupervisor.tryAdopt", () => {
 				}
 			}
 			if (originalHome !== undefined) {
-				process.env.SUPERSET_HOME_DIR = originalHome;
+				process.env.LOOP_HOME_DIR = originalHome;
 			} else {
-				delete process.env.SUPERSET_HOME_DIR;
+				delete process.env.LOOP_HOME_DIR;
 			}
 			fs.rmSync(tmpHome, { recursive: true, force: true });
 		}
@@ -1053,13 +1053,13 @@ describe("ptyDaemonSocketPath", () => {
 		expect(
 			ptyDaemonSocketPath(ORG, {
 				NODE_ENV: "production",
-				SUPERSET_HOME_DIR: path.join(os.homedir(), ".superset"),
+				LOOP_HOME_DIR: path.join(os.homedir(), ".loop"),
 			}),
 		).toBe(legacyPath());
 		expect(
 			ptyDaemonSocketPath(ORG, {
 				NODE_ENV: "production",
-				SUPERSET_HOME_DIR: "/tmp/custom-production-home",
+				LOOP_HOME_DIR: "/tmp/custom-production-home",
 			}),
 		).toBe(legacyPath());
 	});
@@ -1067,11 +1067,11 @@ describe("ptyDaemonSocketPath", () => {
 	test("non-default development homes get their own stable daemon socket", () => {
 		const a = ptyDaemonSocketPath(ORG, {
 			NODE_ENV: "development",
-			SUPERSET_HOME_DIR: "/tmp/home-a",
+			LOOP_HOME_DIR: "/tmp/home-a",
 		});
 		const b = ptyDaemonSocketPath(ORG, {
 			NODE_ENV: "development",
-			SUPERSET_HOME_DIR: "/tmp/home-b",
+			LOOP_HOME_DIR: "/tmp/home-b",
 		});
 		expect(a).not.toBe(legacyPath());
 		expect(b).not.toBe(legacyPath());
@@ -1079,7 +1079,7 @@ describe("ptyDaemonSocketPath", () => {
 		expect(
 			ptyDaemonSocketPath(ORG, {
 				NODE_ENV: "development",
-				SUPERSET_HOME_DIR: "/tmp/home-a",
+				LOOP_HOME_DIR: "/tmp/home-a",
 			}),
 		).toBe(a);
 	});
@@ -1091,7 +1091,7 @@ describe("ptyDaemonSocketPath", () => {
 		expect(
 			ptyDaemonSocketPath(ORG, {
 				NODE_ENV: "development",
-				SUPERSET_HOME_DIR: `${path.join(os.homedir(), ".superset")}/../.superset/`,
+				LOOP_HOME_DIR: `${path.join(os.homedir(), ".loop")}/../.loop/`,
 			}),
 		).toBe(legacyPath());
 	});
@@ -1099,8 +1099,8 @@ describe("ptyDaemonSocketPath", () => {
 	test("stays under Darwin's 104-byte sun_path limit for long worktree homes", () => {
 		const socket = ptyDaemonSocketPath("a1b2c3d4-e5f6-7890-abcd-ef1234567890", {
 			NODE_ENV: "development",
-			SUPERSET_HOME_DIR:
-				"/Users/someone/.superset/worktrees/0123456789abcdef-0123/very-long-branch-name-for-a-feature/superset-dev-data",
+			LOOP_HOME_DIR:
+				"/Users/someone/.loop/worktrees/0123456789abcdef-0123/very-long-branch-name-for-a-feature/loop-dev-data",
 		});
 		expect(Buffer.byteLength(socket)).toBeLessThan(104);
 	});

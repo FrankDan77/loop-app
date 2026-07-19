@@ -5,7 +5,10 @@ import path from "node:path";
 /** Rotate per-org host-service.log once it exceeds this size. */
 export const MAX_HOST_LOG_BYTES = 5 * 1024 * 1024;
 
-export const HEALTH_POLL_TIMEOUT_MS = 10_000;
+// First launch runs the SQLite migration/WAL cold start synchronously before
+// the health endpoint responds, which can exceed a 10s budget. Give the cold
+// start room so the child isn't SIGTERM'd mid-migration.
+export const HEALTH_POLL_TIMEOUT_MS = 30_000;
 
 const HEALTH_POLL_INTERVAL_MS = 200;
 

@@ -46,7 +46,10 @@ async function getOrganization(
 
 export const hostRouter = router({
 	info: protectedProcedure.query(async ({ ctx }) => {
-		const organization = await getOrganization(ctx.api, ctx.organizationId);
+		// Local-only alpha: no cloud org to fetch — return a synthetic one.
+		const organization = ctx.localMode
+			? { id: ctx.organizationId, name: "Local", slug: "local" }
+			: await getOrganization(ctx.api, ctx.organizationId);
 
 		return {
 			hostId: getHostId(),

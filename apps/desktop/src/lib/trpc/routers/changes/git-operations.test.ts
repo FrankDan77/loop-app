@@ -121,7 +121,7 @@ describe("existing PR push target resolution", () => {
 				remotes: [
 					{
 						name: "origin",
-						fetchUrl: "git@github.com:FrankDan77/loop.git",
+						fetchUrl: "git@github.com:FrankDan77/loop-app.git",
 					},
 				],
 				pr: {
@@ -138,7 +138,7 @@ describe("existing PR push target resolution", () => {
 				remotes: [
 					{
 						name: "origin",
-						fetchUrl: "git@github.com:FrankDan77/loop.git",
+						fetchUrl: "git@github.com:FrankDan77/loop-app.git",
 					},
 					{
 						name: "kitenite",
@@ -162,7 +162,7 @@ describe("existing PR push target resolution", () => {
 				remotes: [
 					{
 						name: "origin",
-						fetchUrl: "git@github.com:FrankDan77/loop.git",
+						fetchUrl: "git@github.com:FrankDan77/loop-app.git",
 					},
 				],
 				pr: {

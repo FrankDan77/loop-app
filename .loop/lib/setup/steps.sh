@@ -3,19 +3,19 @@
 step_load_env() {
   echo "📂 Loading environment variables..."
 
-  if [ -z "${SUPERSET_ROOT_PATH:-}" ]; then
-    error "SUPERSET_ROOT_PATH not set"
+  if [ -z "${LOOP_ROOT_PATH:-}" ]; then
+    error "LOOP_ROOT_PATH not set"
     return 1
   fi
 
-  if [ ! -f "$SUPERSET_ROOT_PATH/.env" ]; then
-    error "Root .env file not found at $SUPERSET_ROOT_PATH/.env"
+  if [ ! -f "$LOOP_ROOT_PATH/.env" ]; then
+    error "Root .env file not found at $LOOP_ROOT_PATH/.env"
     return 1
   fi
 
   set -a
   # shellcheck source=/dev/null
-  source "$SUPERSET_ROOT_PATH/.env"
+  source "$LOOP_ROOT_PATH/.env"
   set +a
 
   success "Environment variables loaded"
@@ -94,7 +94,7 @@ step_setup_neon_branch() {
     return 1
   fi
 
-  WORKSPACE_NAME="${SUPERSET_WORKSPACE_NAME:-$(basename "$PWD")}"
+  WORKSPACE_NAME="${LOOP_WORKSPACE_NAME:-$(basename "$PWD")}"
 
   # Check if branch already exists
   local branches_output
@@ -438,13 +438,13 @@ allocate_port_base() {
 step_write_env() {
   echo "📝 Writing .env file..."
 
-  if [ -z "${SUPERSET_ROOT_PATH:-}" ] || [ ! -f "$SUPERSET_ROOT_PATH/.env" ]; then
+  if [ -z "${LOOP_ROOT_PATH:-}" ] || [ ! -f "$LOOP_ROOT_PATH/.env" ]; then
     error "Root .env file not available"
     return 1
   fi
 
   # Copy root .env
-  if ! cp "$SUPERSET_ROOT_PATH/.env" .env; then
+  if ! cp "$LOOP_ROOT_PATH/.env" .env; then
     error "Failed to copy root .env"
     return 1
   fi
@@ -453,8 +453,8 @@ step_write_env() {
   {
     echo ""
     echo "# Workspace Identity"
-    write_env_var "SUPERSET_WORKSPACE_NAME" "${WORKSPACE_NAME:-$(basename "$PWD")}"
-    write_env_var "SUPERSET_HOME_DIR" "$PWD/superset-dev-data"
+    write_env_var "LOOP_WORKSPACE_NAME" "${WORKSPACE_NAME:-$(basename "$PWD")}"
+    write_env_var "LOOP_HOME_DIR" "$PWD/loop-dev-data"
     echo ""
     echo "# Workspace Database (Neon Branch)"
     if [ -n "${BRANCH_ID:-}" ]; then
@@ -644,10 +644,10 @@ step_setup_local_mcp() {
 }
 
 step_seed_auth_token() {
-  echo "🔑 Seeding auth token into superset-dev-data/..."
+  echo "🔑 Seeding auth token into loop-dev-data/..."
 
   local source_token="$HOME/.loop/auth-token.enc"
-  local dev_data_dir="superset-dev-data"
+  local dev_data_dir="loop-dev-data"
   local dest_token="$dev_data_dir/auth-token.enc"
 
   if [ ! -f "$source_token" ]; then
@@ -676,10 +676,10 @@ step_seed_auth_token() {
 }
 
 step_seed_host_dbs() {
-  echo "🛰️  Seeding host-service DBs into superset-dev-data/host/..."
+  echo "🛰️  Seeding host-service DBs into loop-dev-data/host/..."
 
   local source_root="$HOME/.loop/host"
-  local dev_data_dir="superset-dev-data"
+  local dev_data_dir="loop-dev-data"
   local dest_root="$dev_data_dir/host"
   local force_overwrite="$FORCE_OVERWRITE_DATA"
 
@@ -766,10 +766,10 @@ step_seed_host_dbs() {
 }
 
 step_seed_local_db() {
-  echo "💾 Seeding local DB into superset-dev-data/..."
+  echo "💾 Seeding local DB into loop-dev-data/..."
 
   local source_db="$HOME/.loop/local.db"
-  local dev_data_dir="superset-dev-data"
+  local dev_data_dir="loop-dev-data"
   local dest_db="$dev_data_dir/local.db"
   local force_overwrite="$FORCE_OVERWRITE_DATA"
 

@@ -45,6 +45,8 @@ export interface CreateAppOptions {
 		cloudApiUrl: string;
 		migrationsFolder: string;
 		allowedOrigins: string[];
+		/** Local-only alpha: skip all cloud/Electric calls. Defaults to false. */
+		localMode?: boolean;
 	};
 	providers: {
 		auth: ApiAuthProvider;
@@ -79,6 +81,7 @@ export interface CreateAppResult {
 
 export function createApp(options: CreateAppOptions): CreateAppResult {
 	const { config, providers } = options;
+	const localMode = config.localMode ?? false;
 
 	const api =
 		options.api ??
@@ -198,34 +201,39 @@ export function createApp(options: CreateAppOptions): CreateAppResult {
 	// or reconciler touch them (the reconciler skips unbackfilled rows).
 	let workspaceCloudSync: ReturnType<typeof startWorkspaceCloudSync> | null =
 		null;
-	void (async () => {
-		await runWorkspaceBackfill({
-			api,
-			db,
-			eventBus,
-			organizationId: config.organizationId,
-		}).catch((err) => {
-			console.warn("[host-service] workspace backfill failed:", err);
-		});
-		// Backfill `kind='main'` workspaces for projects already set up before
-		// this column shipped. Idempotent — only does real work the first
-		// time after upgrade.
-		await runMainWorkspaceSweep({
-			api,
-			db,
-			git,
-			eventBus,
-			organizationId: config.organizationId,
-		}).catch((err) => {
-			console.warn("[host-service] main-workspace sweep failed:", err);
-		});
-		workspaceCloudSync = startWorkspaceCloudSync({
-			api,
-			db,
-			eventBus,
-			organizationId: config.organizationId,
-		});
-	})();
+	// In local-only mode there's no cloud to sync with; skip the backfill,
+	// main-workspace sweep, and the JWT-minting reconciler entirely so we don't
+	// hammer an unreachable API with retries.
+	if (!localMode) {
+		void (async () => {
+			await runWorkspaceBackfill({
+				api,
+				db,
+				eventBus,
+				organizationId: config.organizationId,
+			}).catch((err) => {
+				console.warn("[host-service] workspace backfill failed:", err);
+			});
+			// Backfill `kind='main'` workspaces for projects already set up before
+			// this column shipped. Idempotent — only does real work the first
+			// time after upgrade.
+			await runMainWorkspaceSweep({
+				api,
+				db,
+				git,
+				eventBus,
+				organizationId: config.organizationId,
+			}).catch((err) => {
+				console.warn("[host-service] main-workspace sweep failed:", err);
+			});
+			workspaceCloudSync = startWorkspaceCloudSync({
+				api,
+				db,
+				eventBus,
+				organizationId: config.organizationId,
+			});
+		})();
+	}
 
 	const wsAuth: MiddlewareHandler = async (c, next) => {
 		const token = c.req.query("token");
@@ -272,6 +280,7 @@ export function createApp(options: CreateAppOptions): CreateAppResult {
 					terminalAgentStore,
 					organizationId: config.organizationId,
 					isAuthenticated,
+					localMode,
 					clientMachineId:
 						c.req.header("x-superset-client-machine-id") ?? undefined,
 				} as Record<string, unknown>;

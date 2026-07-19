@@ -17,7 +17,7 @@ sanitize_name() {
   echo "$1" | tr '[:upper:]' '[:lower:]' | sed 's/[^a-z0-9._-]/-/g; s/--*/-/g; s/^-//; s/-$//' | cut -c1-48
 }
 
-project="superset-$(sanitize_name "${SUPERSET_WORKSPACE_NAME:-$(basename "$PWD")}")"
+project="superset-$(sanitize_name "${LOOP_WORKSPACE_NAME:-$(basename "$PWD")}")"
 
 echo "🧹 Tearing down local DB stack ($project)..."
 if docker compose -p "$project" -f "$ROOT_DIR/docker-compose.yml" down -v; then

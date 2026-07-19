@@ -7,7 +7,7 @@ const FETCHED_CONTENT = `# Workspaces
 Superset workspaces are isolated git worktrees. Each workspace gets:
 
 - Its own branch, checked out from the repo default branch
-- An isolated working directory under ~/.superset/worktrees
+- An isolated working directory under ~/.loop/worktrees
 - A dedicated terminal session wired to the host service
 
 ## Creating a workspace

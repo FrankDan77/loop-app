@@ -1,4 +1,4 @@
-source: https://github.com/FrankDan77/loop
+source: https://github.com/FrankDan77/loop-app
 ref: main
 commit: 99fd5f293cea22104ba8c62b69a3704c1739f652
 vendored_at: 2026-07-16

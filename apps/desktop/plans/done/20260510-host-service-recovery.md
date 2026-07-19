@@ -1,6 +1,6 @@
 # Host-service recovery (#4299) — shipped
 
-**Issue:** [FrankDan77/loop#4299](https://github.com/FrankDan77/loop/issues/4299) — after Cmd+R the v2 right pane goes blank because the renderer keeps getting handed a dead host-service port.
+**Issue:** [FrankDan77/loop-app#4299](https://github.com/FrankDan77/loop-app/issues/4299) — after Cmd+R the v2 right pane goes blank because the renderer keeps getting handed a dead host-service port.
 
 **Root cause:** `tryAdopt` only checked `isProcessAlive(pid)` + app-version. A live-but-not-serving host-service (hung on migrations, deadlocked, port no longer bound) got adopted as `running`, and `getConnection` returned its dead port forever — an absorbing state nothing climbed out of.
 
@@ -13,7 +13,7 @@
 
 ## Considered, not shipped
 
-- **Full-screen "host stopped" recovery screen** in the v2-workspace layout — dropped. [#4430](https://github.com/FrankDan77/loop/pull/4430) removed the analogous remote `WorkspaceHostOfflineState` ("render optimistically; downstream queries surface their own errors"); a local equivalent would swim against that. A non-blocking banner could be a future PR.
+- **Full-screen "host stopped" recovery screen** in the v2-workspace layout — dropped. [#4430](https://github.com/FrankDan77/loop-app/pull/4430) removed the analogous remote `WorkspaceHostOfflineState` ("render optimistically; downstream queries surface their own errors"); a local equivalent would swim against that. A non-blocking banner could be a future PR.
 - **Renderer retry-with-backoff** in `LocalHostServiceProvider` — built, then dropped: heavier than the bug needs and invisible without the recovery screen.
 - **`reset({ wipeHostDb })`** (archive `host.db` → `host.db.broken-<ts>`) + a Settings "Reset and clear local data" button — deferred until there's a caller.
-- **The white-screen-before-Cmd+R variant** — tracked separately at [#4396](https://github.com/FrankDan77/loop/issues/4396): `getHostId()` shells out to `ioreg` via `execFileSync` with no timeout, blocking the main event loop when subprocess spawning is sandboxed.
+- **The white-screen-before-Cmd+R variant** — tracked separately at [#4396](https://github.com/FrankDan77/loop-app/issues/4396): `getHostId()` shells out to `ioreg` via `execFileSync` with no timeout, blocking the main event loop when subprocess spawning is sandboxed.

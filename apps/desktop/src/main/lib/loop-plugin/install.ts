@@ -10,7 +10,7 @@ import {
 } from "node:fs";
 import path from "node:path";
 import { getProcessEnvWithShellPath } from "../../../lib/trpc/routers/workspaces/utils/shell-env";
-import { SUPERSET_HOME_DIR } from "../app-environment";
+import { LOOP_HOME_DIR } from "../app-environment";
 import { resolveLoopPluginDir } from "./paths";
 
 /**
@@ -18,7 +18,7 @@ import { resolveLoopPluginDir } from "./paths";
  */
 const LOOP_INSTALL_SCHEMA_VERSION = 1;
 
-const STAMP_PATH = path.join(SUPERSET_HOME_DIR, "loop-install-state.json");
+const STAMP_PATH = path.join(LOOP_HOME_DIR, "loop-install-state.json");
 
 const REQUIRED_PREREQS = ["claude", "codex", "jq", "git"] as const;
 export type LoopPrereq = (typeof REQUIRED_PREREQS)[number];

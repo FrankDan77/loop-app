@@ -25,6 +25,11 @@ const envSchema = z.object({
 	NEXT_PUBLIC_POSTHOG_HOST: z.string().default("https://us.i.posthog.com"),
 	SENTRY_DSN_DESKTOP: z.string().optional(),
 	RELAY_URL: z.url().default("https://relay.superset.sh"),
+	// Local-only alpha mode flag (baked in by Vite define; "true"/"false" string).
+	// Kept as a string here (not transformed to boolean) so the SKIP_ENV_VALIDATION
+	// `rawEnv as z.infer<...>` cast below still type-checks; consumers compare to
+	// "true" (see renderer/lib/local-session.ts).
+	LOOP_LOCAL_MODE: z.enum(["true", "false"]).default("true"),
 });
 
 /**
@@ -48,6 +53,7 @@ const rawEnv = {
 		| undefined,
 	SENTRY_DSN_DESKTOP: import.meta.env.SENTRY_DSN_DESKTOP as string | undefined,
 	RELAY_URL: process.env.RELAY_URL,
+	LOOP_LOCAL_MODE: process.env.LOOP_LOCAL_MODE,
 };
 
 // Only allow skipping validation in development (never in production)

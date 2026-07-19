@@ -34,7 +34,7 @@ function OnboardingProjectPage() {
 	const hostReady = !isV2CloudEnabled || activeHostUrl !== null;
 	const openNewWorkspaceModal = useOpenNewWorkspaceModal();
 	const { data: homeDir } = electronTrpc.window.getHomeDir.useQuery();
-	const cloneTargetDir = homeDir ? `${homeDir}/.superset/projects` : null;
+	const cloneTargetDir = homeDir ? `${homeDir}/.loop/projects` : null;
 	const [url, setUrl] = useState("");
 	const [busy, setBusy] = useState(false);
 	const [templateOpen, setTemplateOpen] = useState(false);

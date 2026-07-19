@@ -30,9 +30,9 @@ async function main(): Promise<void> {
 	// daemon takes time to come up or fails entirely.
 	startDaemonBootstrap(env.ORGANIZATION_ID);
 
-	const configTokenSource = env.SUPERSET_AUTH_CONFIG_PATH
+	const configTokenSource = env.LOOP_AUTH_CONFIG_PATH
 		? new ConfigFileSessionTokenSource({
-				configPath: env.SUPERSET_AUTH_CONFIG_PATH,
+				configPath: env.LOOP_AUTH_CONFIG_PATH,
 				apiUrl: env.SUPERSET_API_URL,
 			})
 		: null;
@@ -53,6 +53,7 @@ async function main(): Promise<void> {
 			cloudApiUrl: env.SUPERSET_API_URL,
 			migrationsFolder: env.HOST_MIGRATIONS_FOLDER,
 			allowedOrigins: env.CORS_ORIGINS ?? [],
+			localMode: env.LOCAL_MODE,
 		},
 		providers: {
 			auth: authProvider,

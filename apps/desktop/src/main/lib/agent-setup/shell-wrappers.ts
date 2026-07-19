@@ -26,14 +26,14 @@ function getShellName(shell: string): string {
 }
 
 /**
- * Shell snippet to save all SUPERSET_* env vars before sourcing user RC files.
- * Used in tandem with {@link SUPERSET_ENV_RESTORE} to prevent user shell
- * configs from overriding Superset-managed environment variables (e.g.
- * SUPERSET_WORKSPACE_NAME).
+ * Shell snippet to save all SUPERSET_ and LOOP_ prefixed env vars before
+ * sourcing user RC files. Used with {@link SUPERSET_ENV_RESTORE} to prevent user shell
+ * configs from overriding Loop-managed environment variables (e.g.
+ * LOOP_WORKSPACE_NAME).
  *
  * @see https://github.com/AidenIO/superset/issues/2386
  */
-const SUPERSET_ENV_SAVE = `_superset_saved_env="$(export -p 2>/dev/null | grep ' SUPERSET_')"`;
+const SUPERSET_ENV_SAVE = `_superset_saved_env="$(export -p 2>/dev/null | grep -E ' (SUPERSET_|LOOP_)')"`;
 
 /**
  * Shell snippet to restore previously saved SUPERSET_* env vars after

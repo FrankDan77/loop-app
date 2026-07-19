@@ -80,7 +80,7 @@ export default function supersetAmpLifecyclePlugin(amp: AmpApi) {
 		return;
 	}
 
-	const supersetHome = env.SUPERSET_HOME_DIR || join(homedir(), ".superset");
+	const supersetHome = env.LOOP_HOME_DIR || join(homedir(), ".loop");
 	const notifyPath = join(supersetHome, "hooks", "notify.sh");
 	if (!existsSync(notifyPath)) {
 		debugLog("disabled: notify hook missing at " + notifyPath);
@@ -108,7 +108,7 @@ export default function supersetAmpLifecyclePlugin(amp: AmpApi) {
 			const child = spawn(notifyPath, [], {
 				stdio: ["pipe", "ignore", "ignore"],
 				detached: true,
-				env: { ...env, SUPERSET_AGENT_ID: "amp" },
+				env: { ...env, LOOP_AGENT_ID: "amp" },
 			});
 			child.on("error", (error) => {
 				debugLog("spawn failed event=" + hookEventName + " error=" + error.message);

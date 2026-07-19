@@ -40,6 +40,9 @@ export const projectRouter = router({
 				repoName: projects.repoName,
 				repoUrl: projects.repoUrl,
 				worktreeBaseDir: projects.worktreeBaseDir,
+				// Local-only display metadata (null in cloud mode).
+				name: projects.name,
+				slug: projects.slug,
 			})
 			.from(projects)
 			.all();
@@ -233,7 +236,9 @@ export const projectRouter = router({
 					};
 				}
 				const { parsed } = resolved;
-				if (!parsed) return { candidates: [], cloudErrors: [] };
+				// Local-only alpha: no cloud to consult beyond the local DB hit above.
+				if (!parsed || ctx.localMode)
+					return { candidates: [], cloudErrors: [] };
 				try {
 					const { candidates } =
 						await ctx.api.v2Project.findByGitHubRemote.query({
@@ -290,8 +295,9 @@ export const projectRouter = router({
 			}
 
 			// Cloud lookup for every URL we know about.
+			// Local-only alpha: skip cloud entirely; local-DB candidates stand alone.
 			const cloudErrors: { url: string; message: string }[] = [];
-			for (const parsed of urlsToQuery.values()) {
+			for (const parsed of ctx.localMode ? [] : urlsToQuery.values()) {
 				try {
 					const { candidates } =
 						await ctx.api.v2Project.findByGitHubRemote.query({
@@ -338,7 +344,7 @@ export const projectRouter = router({
 			// cloud project was deleted by another device or user. Skip
 			// when the cloud loop already saw this id (cloudConfirmed) —
 			// no need for a second round-trip.
-			if (localProject) {
+			if (localProject && !ctx.localMode) {
 				const candidate = byId.get(localProject.id);
 				if (
 					candidate &&
@@ -594,7 +600,7 @@ export const projectRouter = router({
 						};
 					}
 
-					if (!cloudProject.repoCloneUrl && resolved.parsed) {
+					if (!ctx.localMode && !cloudProject.repoCloneUrl && resolved.parsed) {
 						await ctx.api.v2Project.linkRepoCloneUrl.mutate({
 							organizationId: ctx.organizationId,
 							id: input.projectId,
@@ -635,10 +641,13 @@ export const projectRouter = router({
 	remove: protectedProcedure
 		.input(z.object({ projectId: z.string().uuid() }))
 		.mutation(async ({ ctx, input }) => {
-			await ctx.api.v2Project.delete.mutate({
-				organizationId: ctx.organizationId,
-				id: input.projectId,
-			});
+			// Local-only alpha: no cloud row to delete — operate purely on local DB.
+			if (!ctx.localMode) {
+				await ctx.api.v2Project.delete.mutate({
+					organizationId: ctx.organizationId,
+					id: input.projectId,
+				});
+			}
 
 			const localProject = ctx.db.query.projects
 				.findFirst({ where: eq(projects.id, input.projectId) })

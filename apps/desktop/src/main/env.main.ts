@@ -26,6 +26,11 @@ export const env = createEnv({
 		SENTRY_DSN_DESKTOP: z.string().optional(),
 		STREAMS_URL: z.url().default("https://superset-stream.fly.dev"),
 		RELAY_URL: z.url().default("https://relay.superset.sh"),
+		// Local-only alpha mode flag (baked in by Vite define; "true"/"false" string).
+		LOOP_LOCAL_MODE: z
+			.enum(["true", "false"])
+			.default("true")
+			.transform((v) => v === "true"),
 	},
 
 	runtimeEnv: {
@@ -43,6 +48,7 @@ export const env = createEnv({
 		SENTRY_DSN_DESKTOP: process.env.SENTRY_DSN_DESKTOP,
 		STREAMS_URL: process.env.STREAMS_URL,
 		RELAY_URL: process.env.RELAY_URL,
+		LOOP_LOCAL_MODE: process.env.LOOP_LOCAL_MODE,
 	},
 	emptyStringAsUndefined: true,
 	// Only allow skipping validation in development (never in production)

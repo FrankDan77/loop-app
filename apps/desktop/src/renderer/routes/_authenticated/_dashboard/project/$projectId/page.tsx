@@ -615,13 +615,13 @@ function ProjectPage() {
 													<div className="flex flex-wrap items-center gap-1.5 border-t px-1 pt-2 text-[11px] text-muted-foreground">
 														<span className="mr-1">Variables</span>
 														<span className="rounded bg-muted px-1.5 py-0.5 font-mono">
-															$SUPERSET_ROOT_PATH
+															$LOOP_ROOT_PATH
 														</span>
 														<span className="rounded bg-muted px-1.5 py-0.5 font-mono">
-															$SUPERSET_WORKSPACE_PATH
+															$LOOP_WORKSPACE_PATH
 														</span>
 														<span className="rounded bg-muted px-1.5 py-0.5 font-mono">
-															$SUPERSET_WORKSPACE_NAME
+															$LOOP_WORKSPACE_NAME
 														</span>
 													</div>
 												</div>

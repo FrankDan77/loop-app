@@ -29,7 +29,7 @@ The loop has two phases: **Implementation** (Claude works, Codex reviews summari
 Loop currently installs locally (Marketplace distribution is not yet available). Clone the repo and start Claude Code with the plugin directory:
 
 ```bash
-git clone https://github.com/FrankDan77/loop.git
+git clone https://github.com/FrankDan77/loop-app.git
 claude --plugin-dir /path/to/loop
 ```
 

@@ -7,6 +7,7 @@
 
 import { serve } from "@hono/node-server";
 import {
+	type ApiAuthProvider,
 	createApp,
 	installProcessSafetyNet,
 	JwtApiAuthProvider,
@@ -76,17 +77,27 @@ async function main(): Promise<void> {
 	const terminalBaseEnv = await resolveTerminalBaseEnv();
 	initTerminalBaseEnv(terminalBaseEnv);
 
-	const authProvider = new JwtApiAuthProvider({
-		// Read fresh from disk every time we need to mint a new JWT, so that
-		// re-logins in the desktop renderer (which rewrites auth-token.enc)
-		// are picked up without restarting the host-service child. Falls back
-		// to the boot-time token if the file is missing for any reason.
-		getSessionToken: async () => {
-			const { token } = await loadToken();
-			return token ?? env.AUTH_TOKEN;
-		},
-		apiUrl: env.SUPERSET_API_URL,
-	});
+	// Local-only alpha: never mint a JWT or reach the cloud. The relay needs a
+	// real JwtApiAuthProvider (it calls getJwt()), so only build it outside
+	// local mode; in local mode the no-op provider returns empty headers so any
+	// (guarded-miss) cloud call fails locally instead of 401-ing the cloud.
+	const jwtAuthProvider = env.LOCAL_MODE
+		? null
+		: new JwtApiAuthProvider({
+				// Read fresh from disk every time we need to mint a new JWT, so that
+				// re-logins in the desktop renderer (which rewrites auth-token.enc)
+				// are picked up without restarting the host-service child. Falls back
+				// to the boot-time token if the file is missing for any reason.
+				getSessionToken: async () => {
+					const { token } = await loadToken();
+					return token ?? env.AUTH_TOKEN;
+				},
+				apiUrl: env.SUPERSET_API_URL,
+			});
+	const authProvider: ApiAuthProvider = jwtAuthProvider ?? {
+		getHeaders: async () => ({}),
+		invalidateCache: () => {},
+	};
 
 	const { app, injectWebSocket, api, db } = createApp({
 		config: {
@@ -94,6 +105,7 @@ async function main(): Promise<void> {
 			dbPath: env.HOST_DB_PATH,
 			cloudApiUrl: env.SUPERSET_API_URL,
 			migrationsFolder: env.HOST_MIGRATIONS_FOLDER,
+			localMode: env.LOCAL_MODE,
 			allowedOrigins: [
 				`http://localhost:${env.DESKTOP_VITE_PORT}`,
 				`http://127.0.0.1:${env.DESKTOP_VITE_PORT}`,
@@ -132,13 +144,13 @@ async function main(): Promise<void> {
 				}
 			}
 
-			if (env.RELAY_URL && env.ORGANIZATION_ID) {
+			if (jwtAuthProvider && env.RELAY_URL && env.ORGANIZATION_ID) {
 				void connectRelay({
 					api,
 					relayUrl: env.RELAY_URL,
 					localPort: info.port,
 					organizationId: env.ORGANIZATION_ID,
-					authProvider,
+					authProvider: jwtAuthProvider,
 					hostServiceSecret: env.HOST_SERVICE_SECRET,
 				});
 			}

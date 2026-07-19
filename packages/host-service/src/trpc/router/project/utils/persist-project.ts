@@ -6,6 +6,7 @@ export function persistLocalProject(
 	ctx: HostServiceContext,
 	projectId: string,
 	resolved: ResolvedRepo,
+	display?: { name?: string | null; slug?: string | null },
 ): void {
 	const repoFields = {
 		repoPath: resolved.repoPath,
@@ -14,6 +15,9 @@ export function persistLocalProject(
 		repoName: resolved.parsed?.name ?? null,
 		repoUrl: resolved.parsed?.url ?? null,
 		remoteName: resolved.remoteName,
+		// Local-only display metadata; cloud mode leaves these null.
+		name: display?.name ?? null,
+		slug: display?.slug ?? null,
 	};
 	ctx.db
 		.insert(projects)

@@ -1,5 +1,5 @@
 /**
- * Helpers for driving the vendored loop plugin (https://github.com/FrankDan77/loop)
+ * Helpers for driving the vendored loop plugin (https://github.com/FrankDan77/loop-app)
  * from the desktop UI. The loop plugin is a Claude Code plugin whose commands use
  * the `/rloop:` prefix, plus a `loop monitor` CLI sourced from `scripts/loop.sh`.
  *

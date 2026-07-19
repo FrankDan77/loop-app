@@ -85,7 +85,7 @@ export function getAnthropicEnvConfigPath(
 ): string {
 	if (options?.configPath) return options.configPath;
 	const supersetHome =
-		process.env.SUPERSET_HOME_DIR?.trim() || join(homedir(), ".superset");
+		process.env.LOOP_HOME_DIR?.trim() || join(homedir(), ".loop");
 	return join(supersetHome, CONFIG_FILE_NAME);
 }
 

@@ -8,7 +8,7 @@ const originalEnv = {
 	ORGANIZATION_ID: process.env.ORGANIZATION_ID,
 	PORT: process.env.PORT,
 	SUPERSET_API_URL: process.env.SUPERSET_API_URL,
-	SUPERSET_AUTH_CONFIG_PATH: process.env.SUPERSET_AUTH_CONFIG_PATH,
+	LOOP_AUTH_CONFIG_PATH: process.env.LOOP_AUTH_CONFIG_PATH,
 };
 
 process.env.AUTH_TOKEN = "access-token";
@@ -18,7 +18,7 @@ process.env.HOST_SERVICE_SECRET = "host-secret";
 process.env.ORGANIZATION_ID = "00000000-0000-4000-8000-000000000001";
 process.env.PORT = "4879";
 process.env.SUPERSET_API_URL = "https://api.superset.test";
-delete process.env.SUPERSET_AUTH_CONFIG_PATH;
+delete process.env.LOOP_AUTH_CONFIG_PATH;
 
 const { env } = await import("./env");
 
@@ -33,8 +33,8 @@ afterAll(() => {
 });
 
 describe("host-service env", () => {
-	test("SUPERSET_AUTH_CONFIG_PATH is optional", () => {
-		expect(env.SUPERSET_AUTH_CONFIG_PATH).toBeUndefined();
+	test("LOOP_AUTH_CONFIG_PATH is optional", () => {
+		expect(env.LOOP_AUTH_CONFIG_PATH).toBeUndefined();
 		expect(env.AUTH_TOKEN).toBe("access-token");
 	});
 });

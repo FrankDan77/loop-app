@@ -38,7 +38,7 @@ export function MainPanel({ activeDemo }: MainPanelProps) {
 								</div>
 								<div>Opus 4.5 · Claude Max</div>
 								<div className="text-muted-foreground/65">
-									~/.superset/worktrees/superset/cloud-ws
+									~/.loop/worktrees/superset/cloud-ws
 								</div>
 							</div>
 						</div>

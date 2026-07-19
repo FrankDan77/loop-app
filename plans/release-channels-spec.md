@@ -2,7 +2,7 @@
 
 ## Background
 
-`FrankDan77/loop` publishes multiple distinct release streams to a single
+`FrankDan77/loop-app` publishes multiple distinct release streams to a single
 GitHub repo:
 
 - Desktop stable (`desktop-v*` tags)
@@ -54,10 +54,10 @@ release stream" (what's actually going on). The proper fix is below.
 
 ## Source-of-truth URLs per consumer
 
-- **Desktop stable build** → `https://github.com/FrankDan77/loop/releases/download/desktop-latest/latest-{mac,linux}.yml`. Today reads from `/releases/latest/download/`. **Must move to `desktop-latest`.**
-- **Desktop canary build** → `https://github.com/FrankDan77/loop/releases/download/desktop-canary/latest-{mac,linux}.yml`. Already correct.
-- **CLI stable** → `https://github.com/FrankDan77/loop/releases/download/cli-latest/version.txt` and matching tarballs. Already correct.
-- **CLI canary** (future) → `https://github.com/FrankDan77/loop/releases/download/cli-canary/version.txt` and tarballs.
+- **Desktop stable build** → `https://github.com/FrankDan77/loop-app/releases/download/desktop-latest/latest-{mac,linux}.yml`. Today reads from `/releases/latest/download/`. **Must move to `desktop-latest`.**
+- **Desktop canary build** → `https://github.com/FrankDan77/loop-app/releases/download/desktop-canary/latest-{mac,linux}.yml`. Already correct.
+- **CLI stable** → `https://github.com/FrankDan77/loop-app/releases/download/cli-latest/version.txt` and matching tarballs. Already correct.
+- **CLI canary** (future) → `https://github.com/FrankDan77/loop-app/releases/download/cli-canary/version.txt` and tarballs.
 
 After migration, **no consumer reads `/releases/latest`**. That endpoint becomes irrelevant for our update flows, which removes the cross-stream collision class entirely.
 
@@ -112,8 +112,8 @@ gh release create desktop-latest /tmp/desktop-bootstrap/* \
 `apps/desktop/src/main/lib/auto-updater.ts:52`:
 
 ```diff
--  : "https://github.com/FrankDan77/loop/releases/latest/download";
-+  : "https://github.com/FrankDan77/loop/releases/download/desktop-latest";
+-  : "https://github.com/FrankDan77/loop-app/releases/latest/download";
++  : "https://github.com/FrankDan77/loop-app/releases/download/desktop-latest";
 ```
 
 Ship in next desktop release (`desktop-v1.7.3` or whatever's next). Verify the new build picks up `desktop-latest/latest-mac.yml` correctly in a manual smoke test before publishing.
@@ -134,7 +134,7 @@ Before step 5:
 - ✅ `desktop-latest` rolling release exists and is current.
 - ✅ A test desktop build pointing at `desktop-latest` successfully auto-updates.
 - ✅ The pre-step-2 desktop build (still pointing at `/releases/latest`) successfully auto-updates AS LONG AS no non-prerelease CLI release has been published in the interim.
-- ✅ `gh api repos/FrankDan77/loop/releases/latest --jq .tag_name` returns a `desktop-v*` tag (i.e. CLI's `--prerelease` workaround is still effective).
+- ✅ `gh api repos/FrankDan77/loop-app/releases/latest --jq .tag_name` returns a `desktop-v*` tag (i.e. CLI's `--prerelease` workaround is still effective).
 
 ### Step 5 — Drop `--prerelease` workaround from `build-cli.yml`
 

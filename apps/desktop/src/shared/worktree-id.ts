@@ -5,7 +5,7 @@
  * In-app code should use getWorkspaceName() from env.shared.ts instead.
  */
 export function normalizeWorkspaceName(name?: string): string | undefined {
-	if (!name || name === "superset") return undefined;
+	if (!name || name === "loop") return undefined;
 	return name
 		.toLowerCase()
 		.replace(/[^a-z0-9-]/g, "-")
@@ -14,12 +14,12 @@ export function normalizeWorkspaceName(name?: string): string | undefined {
 
 /**
  * Derive a workspace name from worktree path segments relative to:
- * ~/.superset/worktrees/<project>/...
+ * ~/.loop/worktrees/<project>/...
  *
  * Examples:
- * - ["superset", "my-branch", "apps", "desktop"] -> "my-branch"
- * - ["superset", "owner", "workspace", "apps", "desktop"] -> "owner-workspace"
- * - ["superset", "owner", "feature", "x", "apps", "desktop"] -> "owner-feature-x"
+ * - ["loop", "my-branch", "apps", "desktop"] -> "my-branch"
+ * - ["loop", "owner", "workspace", "apps", "desktop"] -> "owner-workspace"
+ * - ["loop", "owner", "feature", "x", "apps", "desktop"] -> "owner-feature-x"
  */
 export function deriveWorkspaceNameFromWorktreeSegments(
 	segments: string[],
@@ -43,5 +43,5 @@ export function deriveWorkspaceNameFromWorktreeSegments(
 }
 
 export function getWorkspaceName(): string | undefined {
-	return normalizeWorkspaceName(process.env.SUPERSET_WORKSPACE_NAME);
+	return normalizeWorkspaceName(process.env.LOOP_WORKSPACE_NAME);
 }

@@ -7,10 +7,10 @@ step_load_env() {
   WORKSPACE_ENV_LOADED=false
 
   # Source root .env first (contains NEON_PROJECT_ID), then local .env for overrides
-  if [ -n "${SUPERSET_ROOT_PATH:-}" ] && [ -f "$SUPERSET_ROOT_PATH/.env" ]; then
+  if [ -n "${LOOP_ROOT_PATH:-}" ] && [ -f "$LOOP_ROOT_PATH/.env" ]; then
     set -a
     # shellcheck source=/dev/null
-    source "$SUPERSET_ROOT_PATH/.env"
+    source "$LOOP_ROOT_PATH/.env"
     set +a
     sourced_any=true
   fi
@@ -25,7 +25,7 @@ step_load_env() {
   fi
 
   if [ "$sourced_any" = false ]; then
-    warn "No .env file found (set SUPERSET_ROOT_PATH or run from a workspace with .env); using existing environment"
+    warn "No .env file found (set LOOP_ROOT_PATH or run from a workspace with .env); using existing environment"
     step_skipped "env sourcing (no .env files found)"
     return 0
   fi
@@ -130,7 +130,7 @@ step_stop_electric() {
     return 0
   fi
 
-  WORKSPACE_NAME="${SUPERSET_WORKSPACE_NAME:-$(basename "$PWD")}"
+  WORKSPACE_NAME="${LOOP_WORKSPACE_NAME:-$(basename "$PWD")}"
 
   # Sanitize workspace name for Docker (same logic as setup)
   local container_suffix
@@ -275,7 +275,7 @@ step_delete_neon_branch() {
     return 0
   fi
 
-  WORKSPACE_NAME="${SUPERSET_WORKSPACE_NAME:-$(basename "$PWD")}"
+  WORKSPACE_NAME="${LOOP_WORKSPACE_NAME:-$(basename "$PWD")}"
 
   # Check if branch exists before attempting deletion
   if ! neonctl branches get "$BRANCH_ID" --project-id "$NEON_PROJECT_ID" &> /dev/null; then
@@ -346,10 +346,10 @@ step_deallocate_port() {
 }
 
 step_remove_dev_data() {
-  local dev_data_dir="superset-dev-data"
+  local dev_data_dir="loop-dev-data"
 
   if [ "$REMOVE_DEV_DATA" != "1" ]; then
-    step_skipped "Remove superset-dev-data (flag not set)"
+    step_skipped "Remove loop-dev-data (flag not set)"
     return 0
   fi
 
@@ -357,7 +357,7 @@ step_remove_dev_data() {
 
   if [ ! -d "$dev_data_dir" ]; then
     warn "$dev_data_dir/ not found, skipping"
-    step_skipped "Remove superset-dev-data (not found)"
+    step_skipped "Remove loop-dev-data (not found)"
     return 0
   fi
 

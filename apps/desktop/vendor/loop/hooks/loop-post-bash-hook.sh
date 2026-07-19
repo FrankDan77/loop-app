@@ -78,7 +78,7 @@ if [[ -n "$COMMAND_SIGNATURE" ]]; then
     # normalizes its own path via cd+pwd (removing double slashes), but the
     # tool_input.command preserves the original string. Without normalization,
     # the string comparison below always fails and session_id is never written.
-    # See: https://github.com/FrankDan77/loop/issues/67
+    # See: https://github.com/FrankDan77/loop-app/issues/67
     HOOK_COMMAND=$(printf '%s' "$HOOK_COMMAND" | tr -s '/')
     COMMAND_SIGNATURE=$(printf '%s' "$COMMAND_SIGNATURE" | tr -s '/')
 

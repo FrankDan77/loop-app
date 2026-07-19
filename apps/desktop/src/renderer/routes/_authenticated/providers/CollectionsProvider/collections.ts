@@ -42,6 +42,7 @@ import type {
 } from "@tanstack/react-db";
 import {
 	createCollection,
+	localOnlyCollectionOptions,
 	localStorageCollectionOptions,
 } from "@tanstack/react-db";
 import { createTRPCProxyClient, httpBatchLink } from "@trpc/client";
@@ -49,6 +50,7 @@ import type { inferRouterOutputs } from "@trpc/server";
 import { env } from "renderer/env.renderer";
 import { getAuthToken, getJwt } from "renderer/lib/auth-client";
 import { refreshJwtAfterUnauthorized } from "renderer/lib/jwt-refresh";
+import { LOCAL_MODE } from "renderer/lib/local-session";
 import superjson from "superjson";
 import { z } from "zod";
 import {
@@ -108,6 +110,20 @@ const createIndexedCollection = ((
 
 type ElectricSyncConfig = ReturnType<typeof electricCollectionOptions>;
 const createPersistedElectricCollection = ((config: ElectricSyncConfig) => {
+	// Local-only alpha: never touch the network. Every Electric-backed
+	// collection becomes an empty in-memory (local-only) collection, so
+	// useLiveQuery returns [] with zero network traffic — no JWT 401 storm
+	// against the unreachable Electric proxy.
+	if (LOCAL_MODE) {
+		return createCollection({
+			...localOnlyCollectionOptions({
+				id: config.id,
+				getKey: config.getKey,
+			}),
+			...indexDefaults,
+			// biome-ignore lint/suspicious/noExplicitAny: local-only utils widen generics
+		} as any);
+	}
 	const persisted = persistedCollectionOptions({
 		...config,
 		persistence,
@@ -902,12 +918,29 @@ function createOrgCollections(organizationId: string): OrgCollections {
  * Collections are lazy — they don't fetch data until subscribed or preloaded.
  * Call this eagerly so data is ready when the user switches orgs.
  */
+// localStorage-backed collections that are safe to preload in local-only mode
+// (no network). Everything else is Electric-backed and would storm the
+// unreachable Electric URL with retries, so we skip it in local mode.
+const LOCAL_MODE_PRELOAD_COLLECTIONS = new Set<keyof AppCollections>([
+	"v2SidebarProjects",
+	"v2WorkspaceLocalState",
+	"v2SidebarSections",
+	"v2TerminalPresets",
+	"v2UserPreferences",
+	"failedWorkspaceCreates",
+]);
+
 export async function preloadCollections(
 	organizationId: string,
 ): Promise<void> {
 	const collections = getCollections(organizationId);
 	const collectionsToPreload = Object.entries(collections)
 		.filter(([name]) => name !== "organizations")
+		.filter(
+			([name]) =>
+				!LOCAL_MODE ||
+				LOCAL_MODE_PRELOAD_COLLECTIONS.has(name as keyof AppCollections),
+		)
 		.map(([, collection]) => collection as Collection<object>);
 
 	await Promise.allSettled(

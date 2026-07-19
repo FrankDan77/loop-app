@@ -1,5 +1,6 @@
 import { type ReactNode, useEffect, useState } from "react";
 import { authClient, setAuthToken, setJwt } from "renderer/lib/auth-client";
+import { LOCAL_AUTH_TOKEN, LOCAL_MODE } from "renderer/lib/local-session";
 import { LoopLogo } from "renderer/routes/sign-in/components/LoopLogo/LoopLogo";
 import { electronTrpc } from "../../lib/electron-trpc";
 
@@ -11,9 +12,20 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 		electronTrpc.auth.getStoredToken.useQuery(undefined, {
 			refetchOnWindowFocus: false,
 			refetchOnReconnect: false,
+			// In local mode we never hit the remote auth server.
+			enabled: !LOCAL_MODE,
 		});
 
+	// Local-only alpha: no remote auth. Set a placeholder token and mark hydrated.
 	useEffect(() => {
+		if (!LOCAL_MODE || isHydrated) return;
+		setAuthToken(LOCAL_AUTH_TOKEN);
+		setJwt(null);
+		setIsHydrated(true);
+	}, [isHydrated]);
+
+	useEffect(() => {
+		if (LOCAL_MODE) return;
 		if (!isSuccess || isHydrated) return;
 
 		let cancelled = false;
@@ -86,6 +98,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 	});
 
 	useEffect(() => {
+		if (LOCAL_MODE) return;
 		if (!isHydrated) return;
 
 		const refreshJwt = () =>

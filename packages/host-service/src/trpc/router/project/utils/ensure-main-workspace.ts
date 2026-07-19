@@ -11,7 +11,10 @@ import {
 export type EnsureMainWorkspaceContext = Pick<
 	HostServiceContext,
 	"api" | "db" | "git" | "organizationId" | "clientMachineId" | "eventBus"
->;
+> & {
+	// Optional so background sweeps (which always run in cloud mode) can omit it.
+	localMode?: boolean;
+};
 
 async function getCurrentBranchName(
 	git: Awaited<ReturnType<EnsureMainWorkspaceContext["git"]>>,
@@ -84,6 +87,9 @@ export async function ensureMainWorkspaceStrict(
 		clientMachineId: ctx.clientMachineId,
 	};
 
+	// Local-only alpha: never push to the (unreachable) cloud mirror.
+	const skipCloud = ctx.localMode ?? false;
+
 	const existing = ctx.db.query.workspaces
 		.findFirst({
 			where: and(
@@ -101,8 +107,9 @@ export async function ensureMainWorkspaceStrict(
 				worktreePath: repoPath,
 				...(existing.name === existing.branch ? { name: branch } : {}),
 			});
-			if (updated) void pushWorkspaceCreateToCloud(syncCtx, updated);
-		} else if (existing.cloudSyncedAt === null) {
+			if (updated && !skipCloud)
+				void pushWorkspaceCreateToCloud(syncCtx, updated);
+		} else if (existing.cloudSyncedAt === null && !skipCloud) {
 			void pushWorkspaceCreateToCloud(syncCtx, existing);
 		}
 		return { id: existing.id };
@@ -132,6 +139,8 @@ export async function ensureMainWorkspaceStrict(
 		if (winner) return { id: winner.id };
 		throw err;
 	}
+
+	if (skipCloud) return { id: inserted.id };
 
 	// Cloud may already hold a main for this (project, host) under another
 	// id (created by an older build); the push re-keys the local row onto

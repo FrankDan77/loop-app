@@ -19,8 +19,8 @@ describe("clearGitHubCachesForWorktree", () => {
 
 		const status: GitHubStatus = {
 			pr: null,
-			repoUrl: "https://github.com/FrankDan77/loop",
-			upstreamUrl: "https://github.com/FrankDan77/loop",
+			repoUrl: "https://github.com/FrankDan77/loop-app",
+			upstreamUrl: "https://github.com/FrankDan77/loop-app",
 			isFork: false,
 			branchExistsOnRemote: true,
 			lastRefreshed: Date.now(),
@@ -36,19 +36,19 @@ describe("clearGitHubCachesForWorktree", () => {
 
 		setCachedGitHubStatus(worktreePath, status);
 		setCachedRepoContext(worktreePath, {
-			repoUrl: "https://github.com/FrankDan77/loop",
-			upstreamUrl: "https://github.com/FrankDan77/loop",
+			repoUrl: "https://github.com/FrankDan77/loop-app",
+			upstreamUrl: "https://github.com/FrankDan77/loop-app",
 			isFork: false,
 		});
 
 		const commentsCacheKey = makePullRequestCommentsCacheKey({
 			worktreePath,
-			repoNameWithOwner: "FrankDan77/loop",
+			repoNameWithOwner: "FrankDan77/loop-app",
 			pullRequestNumber: 2681,
 		});
 		const otherCommentsCacheKey = makePullRequestCommentsCacheKey({
 			worktreePath: otherWorktreePath,
-			repoNameWithOwner: "FrankDan77/loop",
+			repoNameWithOwner: "FrankDan77/loop-app",
 			pullRequestNumber: 2682,
 		});
 
@@ -73,8 +73,8 @@ describe("getCachedGitHubStatusState", () => {
 		const worktreePath = "/tmp/worktrees/review-cache-stale-test";
 		const status: GitHubStatus = {
 			pr: null,
-			repoUrl: "https://github.com/FrankDan77/loop",
-			upstreamUrl: "https://github.com/FrankDan77/loop",
+			repoUrl: "https://github.com/FrankDan77/loop-app",
+			upstreamUrl: "https://github.com/FrankDan77/loop-app",
 			isFork: false,
 			branchExistsOnRemote: true,
 			lastRefreshed: 1000,

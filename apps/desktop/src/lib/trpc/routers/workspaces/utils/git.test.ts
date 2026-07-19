@@ -980,7 +980,9 @@ describe("hasUnpushedCommits", () => {
 
 describe("parsePrUrl", () => {
 	test("parses canonical GitHub PR URL", () => {
-		expect(parsePrUrl("https://github.com/FrankDan77/loop/pull/1781")).toEqual({
+		expect(
+			parsePrUrl("https://github.com/FrankDan77/loop-app/pull/1781"),
+		).toEqual({
 			owner: "superset-sh",
 			repo: "superset",
 			number: 1781,
@@ -988,7 +990,7 @@ describe("parsePrUrl", () => {
 	});
 
 	test("parses GitHub URL without protocol", () => {
-		expect(parsePrUrl("github.com/FrankDan77/loop/pull/1781")).toEqual({
+		expect(parsePrUrl("github.com/FrankDan77/loop-app/pull/1781")).toEqual({
 			owner: "superset-sh",
 			repo: "superset",
 			number: 1781,
@@ -996,8 +998,8 @@ describe("parsePrUrl", () => {
 	});
 
 	test("returns null for non-PR URLs", () => {
-		expect(parsePrUrl("https://github.com/FrankDan77/loop/issues/1781")).toBe(
-			null,
-		);
+		expect(
+			parsePrUrl("https://github.com/FrankDan77/loop-app/issues/1781"),
+		).toBe(null);
 	});
 });

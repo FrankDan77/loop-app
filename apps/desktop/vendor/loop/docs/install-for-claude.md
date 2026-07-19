@@ -11,7 +11,7 @@
 Clone the repo and start Claude Code with the plugin directory:
 
 ```bash
-git clone https://github.com/FrankDan77/loop.git
+git clone https://github.com/FrankDan77/loop-app.git
 claude --plugin-dir /path/to/loop
 ```
 
@@ -22,7 +22,7 @@ Marketplace distribution is not yet available; use the local install for now.
 The `dev` branch contains experimental features that are not yet released to `main`. To try them locally:
 
 ```bash
-git clone https://github.com/FrankDan77/loop.git
+git clone https://github.com/FrankDan77/loop-app.git
 cd loop
 git checkout dev
 ```

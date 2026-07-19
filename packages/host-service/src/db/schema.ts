@@ -60,6 +60,10 @@ export const projects = sqliteTable(
 	{
 		id: text().primaryKey(),
 		repoPath: text("repo_path").notNull(),
+		// Local-only display metadata (populated in LOCAL_MODE; cloud mode leaves
+		// these null and sources names from the v2Projects cloud collection).
+		name: text("name"),
+		slug: text("slug"),
 		repoProvider: text("repo_provider"),
 		repoOwner: text("repo_owner"),
 		repoName: text("repo_name"),

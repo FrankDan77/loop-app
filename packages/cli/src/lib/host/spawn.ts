@@ -112,7 +112,7 @@ export async function spawnHostService(
 			ORGANIZATION_ID: options.organizationId,
 			AUTH_TOKEN: options.sessionToken,
 			...(options.authConfigPath
-				? { SUPERSET_AUTH_CONFIG_PATH: options.authConfigPath }
+				? { LOOP_AUTH_CONFIG_PATH: options.authConfigPath }
 				: {}),
 			SUPERSET_API_URL: env.SUPERSET_API_URL,
 			RELAY_URL: relayUrl,

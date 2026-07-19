@@ -60,10 +60,10 @@ export function findRealBinary(name: string): string | null {
 
 		const homedir = os.homedir();
 		// Filter out wrapper scripts from all superset directories:
-		// - ~/.superset/bin
-		// - ~/.superset-*/bin (workspace-specific instances)
-		const supersetBinDir = path.join(homedir, ".superset", "bin");
-		const supersetPrefix = path.join(homedir, ".superset-");
+		// - ~/.loop/bin
+		// - ~/.loop-*/bin (workspace-specific instances)
+		const supersetBinDir = path.join(homedir, ".loop", "bin");
+		const supersetPrefix = path.join(homedir, ".loop-");
 		const paths = allPaths.filter(
 			(p) =>
 				p &&

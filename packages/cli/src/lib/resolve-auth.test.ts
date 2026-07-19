@@ -3,11 +3,11 @@ import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
 
-const originalSupersetHomeDir = process.env.SUPERSET_HOME_DIR;
+const originalSupersetHomeDir = process.env.LOOP_HOME_DIR;
 const tempHome = fs.mkdtempSync(
 	path.join(os.tmpdir(), "superset-cli-resolve-auth-"),
 );
-process.env.SUPERSET_HOME_DIR = tempHome;
+process.env.LOOP_HOME_DIR = tempHome;
 
 const { resolveAuth } = await import("./resolve-auth");
 const { writeConfig } = await import("./config");
@@ -29,9 +29,9 @@ afterEach(() => {
 afterAll(() => {
 	fs.rmSync(tempHome, { recursive: true, force: true });
 	if (originalSupersetHomeDir === undefined) {
-		delete process.env.SUPERSET_HOME_DIR;
+		delete process.env.LOOP_HOME_DIR;
 	} else {
-		process.env.SUPERSET_HOME_DIR = originalSupersetHomeDir;
+		process.env.LOOP_HOME_DIR = originalSupersetHomeDir;
 	}
 	if (originalEnvKey === undefined) delete process.env.SUPERSET_API_KEY;
 	else process.env.SUPERSET_API_KEY = originalEnvKey;

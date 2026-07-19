@@ -84,7 +84,7 @@ local_allocate_ports() {
   # var beats the .env file, so this overrides any stale DATABASE_URL.
   export DATABASE_URL="postgres://postgres:postgres@db.localtest.me:$LOCAL_NEON_PROXY_PORT/main"
   export DATABASE_URL_UNPOOLED="postgres://postgres:postgres@localhost:$LOCAL_PG_PORT/main"
-  LOCAL_DB_PROJECT="superset-$(sanitize_name "${SUPERSET_WORKSPACE_NAME:-$(basename "$PWD")}")"
+  LOCAL_DB_PROJECT="superset-$(sanitize_name "${LOOP_WORKSPACE_NAME:-$(basename "$PWD")}")"
   success "Base $base → pg=$LOCAL_PG_PORT proxy=$LOCAL_NEON_PROXY_PORT electric=$LOCAL_ELECTRIC_PORT redis=$LOCAL_REDIS_PORT srh=$LOCAL_SRH_PORT (project $LOCAL_DB_PROJECT)"
   return 0
 }
@@ -204,8 +204,8 @@ local_write_env() {
   {
     echo ""
     echo "# ===== Local workspace overrides (setup.local.sh) ====="
-    write_env_var "SUPERSET_WORKSPACE_NAME" "${SUPERSET_WORKSPACE_NAME:-$(basename "$PWD")}"
-    write_env_var "SUPERSET_HOME_DIR" "$PWD/superset-dev-data"
+    write_env_var "LOOP_WORKSPACE_NAME" "${LOOP_WORKSPACE_NAME:-$(basename "$PWD")}"
+    write_env_var "LOOP_HOME_DIR" "$PWD/loop-dev-data"
     write_env_var "SUPERSET_PORT_BASE" "$BASE"
     echo ""
     echo "# Per-workspace local DB stack (docker compose project $LOCAL_DB_PROJECT)"

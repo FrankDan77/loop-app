@@ -21,6 +21,10 @@ interface LoopPhaseViewProps {
 
 function rlcrStepIndex(status: LoopRlcrStatus | null): number {
 	switch (status?.phaseLabel) {
+		// "Reviewing" (Codex reviewing the current round's summary) and "Review"
+		// (the plugin's true Review Phase) both land on the Review step — only
+		// "Build" (Claude implementing) sits on Build.
+		case "Reviewing":
 		case "Review":
 			return 3;
 		case "Finalize":

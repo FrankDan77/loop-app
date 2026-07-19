@@ -48,7 +48,7 @@ describe("terminal router integration", () => {
 		resetTerminalBaseEnvForTests();
 		__setAccountShellForTesting(undefined);
 		delete process.env.SUPERSET_PTY_DAEMON_SOCKET;
-		delete process.env.SUPERSET_HOME_DIR;
+		delete process.env.LOOP_HOME_DIR;
 		await scenario?.dispose();
 	});
 
@@ -111,7 +111,7 @@ describe("terminal router integration", () => {
 		try {
 			await server.listen();
 			process.env.SUPERSET_PTY_DAEMON_SOCKET = socketPath;
-			process.env.SUPERSET_HOME_DIR = tmp;
+			process.env.LOOP_HOME_DIR = tmp;
 			__setAccountShellForTesting(fakeFishPath);
 			resetTerminalBaseEnvForTests();
 			initTerminalBaseEnv({
@@ -211,7 +211,7 @@ describe("terminal router integration", () => {
 					].join("\n"),
 			);
 			process.env.SUPERSET_PTY_DAEMON_SOCKET = socketPath;
-			process.env.SUPERSET_HOME_DIR = tmp;
+			process.env.LOOP_HOME_DIR = tmp;
 
 			await scenario.host.trpc.terminal.createSession.mutate({
 				workspaceId: scenario.workspaceId,

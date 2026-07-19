@@ -18,6 +18,8 @@ export interface WorkspaceCloudSyncContext {
 	eventBus: EventBus;
 	organizationId: string;
 	clientMachineId?: string;
+	/** Local-only alpha: skip every cloud round-trip (no JWT, offline). */
+	localMode?: boolean;
 }
 
 export type CloudCreateResult = Awaited<
@@ -40,8 +42,13 @@ const hostEnsureCache = new WeakMap<ApiClient, HostEnsureCacheEntry>();
  * in-flight/recent promise; failures evict so retries re-register.
  */
 export function ensureHostRegistered(
-	ctx: Pick<WorkspaceCloudSyncContext, "api" | "organizationId">,
+	ctx: Pick<WorkspaceCloudSyncContext, "api" | "organizationId" | "localMode">,
 ): Promise<{ machineId: string }> {
+	// Local-only alpha: never register with the cloud. The local host id is
+	// authoritative offline, so hand it back without a round-trip (no JWT 401).
+	if (ctx.localMode) {
+		return Promise.resolve({ machineId: getHostId() });
+	}
 	const now = Date.now();
 	const cached = hostEnsureCache.get(ctx.api);
 	if (cached && now - cached.at < HOST_ENSURE_TTL_MS) {
@@ -76,6 +83,9 @@ export async function pushWorkspaceCreateToCloud(
 	ctx: WorkspaceCloudSyncContext,
 	row: HostWorkspaceRow,
 ): Promise<CloudCreateResult | null> {
+	// Local-only alpha: the local row is authoritative and there is no cloud
+	// mirror to push to, so short-circuit before any tRPC/JWT call.
+	if (ctx.localMode) return null;
 	try {
 		const host = await ensureHostRegistered(ctx);
 		const cloudRow = await ctx.api.v2Workspace.create.mutate({

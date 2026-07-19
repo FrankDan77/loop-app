@@ -32,7 +32,7 @@ describe("getWebSearchViewModel", () => {
 				text: `Answer: summary
 
 ## superset/README.md at main - GitHub
-https://github.com/FrankDan77/loop/blob/main/README.md
+https://github.com/FrankDan77/loop-app/blob/main/README.md
 Description text
 
 ## Loop - Run 10+ parallel coding agents on your machine
@@ -43,7 +43,7 @@ https://superset.sh/`,
 		expect(viewModel.results).toEqual([
 			{
 				title: "superset/README.md at main - GitHub",
-				url: "https://github.com/FrankDan77/loop/blob/main/README.md",
+				url: "https://github.com/FrankDan77/loop-app/blob/main/README.md",
 			},
 			{
 				title: "Loop - Run 10+ parallel coding agents on your machine",

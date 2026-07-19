@@ -7,25 +7,25 @@ import { BIN_DIR } from "./paths";
 export const WRAPPER_MARKER = "# Superset agent-wrapper v3";
 export { SUPERSET_MANAGED_BINARIES };
 
-/** Path (under SUPERSET_HOME_DIR) of the runtime notify hook script. */
+/** Path (under LOOP_HOME_DIR) of the runtime notify hook script. */
 export const MANAGED_NOTIFY_RELATIVE_PATH = `hooks/${NOTIFY_SCRIPT_NAME}`;
 
 /**
  * Shell command written into an agent's global hook config. The notify path is
- * resolved at runtime from SUPERSET_HOME_DIR so one shared config works for both
- * dev and prod installs, and `SUPERSET_AGENT_ID` is inlined so the v2 hook
+ * resolved at runtime from LOOP_HOME_DIR so one shared config works for both
+ * dev and prod installs, and `LOOP_AGENT_ID` is inlined so the v2 hook
  * payload carries wrapper-level identity even when the agent is launched outside
  * the Superset wrapper (system PATH resolves the real binary directly).
  */
 export function getManagedNotifyHookCommand(agentId: string): string {
-	return `[ -n "$SUPERSET_HOME_DIR" ] && [ -x "$SUPERSET_HOME_DIR/${MANAGED_NOTIFY_RELATIVE_PATH}" ] && SUPERSET_AGENT_ID=${agentId} "$SUPERSET_HOME_DIR/${MANAGED_NOTIFY_RELATIVE_PATH}" || true`;
+	return `[ -n "$LOOP_HOME_DIR" ] && [ -x "$LOOP_HOME_DIR/${MANAGED_NOTIFY_RELATIVE_PATH}" ] && LOOP_AGENT_ID=${agentId} "$LOOP_HOME_DIR/${MANAGED_NOTIFY_RELATIVE_PATH}" || true`;
 }
 
-// Dev setup (.superset/lib/setup/steps.sh) points SUPERSET_HOME_DIR at
-// $PWD/superset-dev-data — without a leading dot — so we must recognize that
+// Dev setup (.loop/lib/setup/steps.sh) points LOOP_HOME_DIR at
+// $PWD/loop-dev-data — without a leading dot — so we must recognize that
 // variant to reap stale notify.sh paths from deleted worktrees.
 const SUPERSET_MANAGED_HOOK_PATH_PATTERN =
-	/\/(?:\.superset(?:-[^/'"\s\\]+)?|superset-dev-data)\//;
+	/\/(?:\.loop(?:-[^/'"\s\\]+)?|loop-dev-data)\//;
 
 export function writeFileIfChanged(
 	filePath: string,
@@ -104,7 +104,7 @@ function buildRealBinaryResolver(): string {
     [ -z "$dir" ] && continue
     dir="\${dir%/}"
     case "$dir" in
-      "${BIN_DIR}"|"$HOME"/.superset/bin|"$HOME"/.superset-*/bin) continue ;;
+      "${BIN_DIR}"|"$HOME"/.loop/bin|"$HOME"/.loop-*/bin) continue ;;
     esac
     if [ -x "$dir/$name" ] && [ ! -d "$dir/$name" ]; then
       printf "%s\\n" "$dir/$name"
@@ -127,7 +127,7 @@ export function getWrapperPath(binaryName: string): string {
 export interface BuildWrapperScriptOptions {
 	/**
 	 * `BuiltinAgentId` for the wrapped binary (e.g. "claude", "codex"). When
-	 * set, the wrapper exports `SUPERSET_AGENT_ID` so the agent process and
+	 * set, the wrapper exports `LOOP_AGENT_ID` so the agent process and
 	 * any hook subprocess it spawns inherit the wrapper-level identity. The
 	 * notify-hook script forwards this into the v2 hook payload.
 	 */
@@ -140,7 +140,7 @@ export function buildWrapperScript(
 	options: BuildWrapperScriptOptions = {},
 ): string {
 	const exportAgentId = options.agentId
-		? `export SUPERSET_AGENT_ID="${options.agentId}"\n\n`
+		? `export LOOP_AGENT_ID="${options.agentId}"\n\n`
 		: "";
 	return `#!/bin/bash
 ${WRAPPER_MARKER}

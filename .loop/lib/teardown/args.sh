@@ -7,7 +7,7 @@ teardown_print_usage() {
 Usage: .loop/teardown.sh [options]
 
 Options:
-  -f, --force              Remove superset-dev-data/ in current workspace
+  -f, --force              Remove loop-dev-data/ in current workspace
   -h, --help               Show this help message
 EOT
 }

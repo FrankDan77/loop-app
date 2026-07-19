@@ -166,7 +166,7 @@ export type AgentRunResult =
 	| { kind: "terminal"; sessionId: string; label: string }
 	| { kind: "chat"; sessionId: string; label: string };
 
-const SUPERSET_AGENT_ID = "superset";
+const LOOP_AGENT_ID = "superset";
 const SUPERSET_AGENT_LABEL = "Superset";
 
 async function resolveAttachmentsAsFiles(
@@ -288,7 +288,7 @@ export async function runAgentInWorkspace(
 	ctx: HostServiceContext,
 	input: AgentRunInput,
 ): Promise<AgentRunResult> {
-	if (input.agent === SUPERSET_AGENT_ID) {
+	if (input.agent === LOOP_AGENT_ID) {
 		return runChatAgent(ctx, input, SUPERSET_AGENT_LABEL);
 	}
 	return runTerminalAgent(ctx, input);

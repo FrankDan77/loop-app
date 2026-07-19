@@ -61,7 +61,7 @@ const clearWorktreeStatusCachesMock = mock(
 const openPullRequest = {
 	number: 42,
 	title: "Test PR",
-	url: "https://github.com/FrankDan77/loop/pull/42",
+	url: "https://github.com/FrankDan77/loop-app/pull/42",
 	state: "open" as const,
 	additions: 0,
 	deletions: 0,
@@ -148,8 +148,8 @@ describe("mergePullRequest", () => {
 		getRepoContextMock.mockReset();
 		getRepoContextMock.mockResolvedValue({
 			isFork: false,
-			repoUrl: "https://github.com/FrankDan77/loop",
-			upstreamUrl: "https://github.com/FrankDan77/loop",
+			repoUrl: "https://github.com/FrankDan77/loop-app",
+			upstreamUrl: "https://github.com/FrankDan77/loop-app",
 		});
 		getPRForBranchMock.mockReset();
 		getPRForBranchMock.mockResolvedValue(null);
@@ -209,8 +209,8 @@ describe("mergePullRequest", () => {
 			"feature/unborn",
 			{
 				isFork: false,
-				repoUrl: "https://github.com/FrankDan77/loop",
-				upstreamUrl: "https://github.com/FrankDan77/loop",
+				repoUrl: "https://github.com/FrankDan77/loop-app",
+				upstreamUrl: "https://github.com/FrankDan77/loop-app",
 			},
 			undefined,
 		);

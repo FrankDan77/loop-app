@@ -490,6 +490,7 @@ async function registerCloudAndLocal(args: {
 			eventBus: ctx.eventBus,
 			organizationId: ctx.organizationId,
 			clientMachineId: ctx.clientMachineId,
+			localMode: ctx.localMode,
 		},
 		localRow,
 	);

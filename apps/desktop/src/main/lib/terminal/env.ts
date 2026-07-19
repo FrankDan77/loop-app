@@ -353,6 +353,7 @@ const ALLOWED_ENV_VARS = new Set([
  */
 const ALLOWED_PREFIXES = [
 	"SUPERSET_", // Our own metadata vars
+	"LOOP_", // Our own metadata vars (home dir, workspace name/path, root path)
 	"LC_", // Locale settings
 ];
 
@@ -483,9 +484,9 @@ export function buildTerminalEnv(params: {
 		SUPERSET_PANE_ID: paneId,
 		SUPERSET_TAB_ID: tabId,
 		SUPERSET_WORKSPACE_ID: workspaceId,
-		SUPERSET_WORKSPACE_NAME: workspaceName || "",
-		SUPERSET_WORKSPACE_PATH: workspacePath || "",
-		SUPERSET_ROOT_PATH: rootPath || "",
+		LOOP_WORKSPACE_NAME: workspaceName || "",
+		LOOP_WORKSPACE_PATH: workspacePath || "",
+		LOOP_ROOT_PATH: rootPath || "",
 		SUPERSET_PORT: String(env.DESKTOP_NOTIFICATIONS_PORT),
 		// Environment identifier for dev/prod separation
 		SUPERSET_ENV: env.NODE_ENV === "development" ? "development" : "production",

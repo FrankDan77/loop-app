@@ -7,7 +7,7 @@ This guide explains how to install Loop for Codex CLI, including the skill runti
 One-line install from anywhere:
 
 ```bash
-tmp_dir="$(mktemp -d)" && git clone --depth 1 https://github.com/FrankDan77/loop.git "$tmp_dir/loop" && "$tmp_dir/loop/scripts/install-skills-codex.sh"
+tmp_dir="$(mktemp -d)" && git clone --depth 1 https://github.com/FrankDan77/loop-app.git "$tmp_dir/loop" && "$tmp_dir/loop/scripts/install-skills-codex.sh"
 ```
 
 From the Loop repo root:

@@ -29,15 +29,15 @@ _superset_toml_escape() {
 }
 
 _superset_configure_project_trust() {
-  [ -n "${SUPERSET_WORKSPACE_PATH:-}" ] || return 0
+  [ -n "${LOOP_WORKSPACE_PATH:-}" ] || return 0
 
-  local _superset_workspace_codex_home="$SUPERSET_WORKSPACE_PATH/.codex"
+  local _superset_workspace_codex_home="$LOOP_WORKSPACE_PATH/.codex"
   [ -f "$_superset_workspace_codex_home/config.toml" ] || return 0
 
   local _superset_workspace_path_toml
-  _superset_workspace_path_toml="$(_superset_toml_escape "$SUPERSET_WORKSPACE_PATH")"
+  _superset_workspace_path_toml="$(_superset_toml_escape "$LOOP_WORKSPACE_PATH")"
   _superset_codex_args+=("-c" "projects={\"$_superset_workspace_path_toml\"={trust_level=\"trusted\"}}")
-  _superset_debug "using trusted workspace Codex project config path=$SUPERSET_WORKSPACE_PATH"
+  _superset_debug "using trusted workspace Codex project config path=$LOOP_WORKSPACE_PATH"
 }
 
 _superset_configure_project_trust

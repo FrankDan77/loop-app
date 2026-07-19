@@ -2,7 +2,7 @@ Set up [Superset workspace setup & teardown scripts](https://docs.superset.sh/se
 
 ## Goal
 
-Create `.superset/config.json` in the repository root with `setup` and `teardown` commands tailored to this project — plus a `run` command if it has a dev server. First inspect the codebase to figure out the right commands: detect the package manager, how dependencies are installed, how the dev server starts, and any services (databases, Docker, etc.) that need to start and stop. Then write commands that match what you find.
+Create `.loop/config.json` in the repository root with `setup` and `teardown` commands tailored to this project — plus a `run` command if it has a dev server. First inspect the codebase to figure out the right commands: detect the package manager, how dependencies are installed, how the dev server starts, and any services (databases, Docker, etc.) that need to start and stop. Then write commands that match what you find.
 
 ## What each field does
 
@@ -16,24 +16,24 @@ Setup and teardown commands run sequentially in the workspace directory.
 
 ```json
 {
-  "setup": ["bun install", "cp \"$SUPERSET_ROOT_PATH/.env\" .env"],
+  "setup": ["bun install", "cp \"$LOOP_ROOT_PATH/.env\" .env"],
   "teardown": ["docker-compose down"],
-  "run": ["./.superset/run.sh"]
+  "run": ["./.loop/run.sh"]
 }
 ```
 
 ## Environment variables available to scripts
 
-- `SUPERSET_ROOT_PATH` — path to the root repository
-- `SUPERSET_WORKSPACE_NAME` — current workspace name
-- `SUPERSET_WORKSPACE_PATH` — path to the workspace worktree
+- `LOOP_ROOT_PATH` — path to the root repository
+- `LOOP_WORKSPACE_NAME` — current workspace name
+- `LOOP_WORKSPACE_PATH` — path to the workspace worktree
 
 ## Examples
 
 **Node.js**
 
 ```json
-{ "setup": ["bun install", "cp \"$SUPERSET_ROOT_PATH/.env\" .env"] }
+{ "setup": ["bun install", "cp \"$LOOP_ROOT_PATH/.env\" .env"] }
 ```
 
 **Docker**
@@ -48,7 +48,7 @@ Setup and teardown commands run sequentially in the workspace directory.
 ## Tips
 
 - Keep setup fast — it runs on every workspace creation.
-- For anything non-trivial, put the logic in a shell script and call it: `"setup": ["./.superset/setup.sh"]` (create the script too).
-- Commit `.superset/` so your team shares the same setup.
+- For anything non-trivial, put the logic in a shell script and call it: `"setup": ["./.loop/setup.sh"]` (create the script too).
+- Commit `.loop/` so your team shares the same setup.
 
 When you're done, briefly summarize what you configured and why.

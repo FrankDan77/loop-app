@@ -7,7 +7,7 @@ const dest = resolve(desktopDir, "dist/resources/loop");
 
 if (!existsSync(source)) {
 	throw new Error(
-		`[desktop] Vendored loop plugin not found at ${source}. Re-vendor from https://github.com/FrankDan77/loop`,
+		`[desktop] Vendored loop plugin not found at ${source}. Re-vendor from https://github.com/FrankDan77/loop-app`,
 	);
 }
 

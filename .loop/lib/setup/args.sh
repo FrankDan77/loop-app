@@ -8,7 +8,7 @@ setup_print_usage() {
 Usage: .loop/setup.sh [options]
 
 Options:
-  -f, --force              Reset superset-dev-data/ before seeding local DB
+  -f, --force              Reset loop-dev-data/ before seeding local DB
   -m, --mcp              Add superset-local MCP entry to .mcp.json
   -h, --help               Show this help message
 EOT

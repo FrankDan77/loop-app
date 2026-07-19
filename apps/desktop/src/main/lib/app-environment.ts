@@ -1,41 +1,39 @@
 import { chmodSync, existsSync, mkdirSync } from "node:fs";
 import { homedir } from "node:os";
 import { join } from "node:path";
-import { SUPERSET_DIR_NAME } from "shared/constants";
+import { LOOP_DIR_NAME } from "shared/constants";
 
-const SUPERSET_HOME_DIR_ENV = "SUPERSET_HOME_DIR";
+const LOOP_HOME_DIR_ENV = "LOOP_HOME_DIR";
 
-export const SUPERSET_HOME_DIR =
-	process.env[SUPERSET_HOME_DIR_ENV] || join(homedir(), SUPERSET_DIR_NAME);
-process.env[SUPERSET_HOME_DIR_ENV] = SUPERSET_HOME_DIR;
+export const LOOP_HOME_DIR =
+	process.env[LOOP_HOME_DIR_ENV] || join(homedir(), LOOP_DIR_NAME);
+process.env[LOOP_HOME_DIR_ENV] = LOOP_HOME_DIR;
 
-export const LOOP_HOME_DIR = SUPERSET_HOME_DIR;
-export const SUPERSET_HOME_DIR_MODE = 0o700;
+export const LOOP_HOME_DIR_MODE = 0o700;
 export const LOOP_SENSITIVE_FILE_MODE = 0o600;
-export const SUPERSET_SENSITIVE_FILE_MODE = LOOP_SENSITIVE_FILE_MODE;
 
 export function ensureLoopHomeDirExists(): void {
-	if (!existsSync(SUPERSET_HOME_DIR)) {
-		mkdirSync(SUPERSET_HOME_DIR, {
+	if (!existsSync(LOOP_HOME_DIR)) {
+		mkdirSync(LOOP_HOME_DIR, {
 			recursive: true,
-			mode: SUPERSET_HOME_DIR_MODE,
+			mode: LOOP_HOME_DIR_MODE,
 		});
 	}
 
 	// Best-effort repair if the directory already existed with weak permissions.
 	try {
-		chmodSync(SUPERSET_HOME_DIR, SUPERSET_HOME_DIR_MODE);
+		chmodSync(LOOP_HOME_DIR, LOOP_HOME_DIR_MODE);
 	} catch (error) {
 		console.warn(
 			"[app-environment] Failed to chmod Loop home dir (best-effort):",
-			SUPERSET_HOME_DIR,
+			LOOP_HOME_DIR,
 			error,
 		);
 	}
 }
 
 // For lowdb - use our own path instead of app.getPath("userData")
-export const APP_STATE_PATH = join(SUPERSET_HOME_DIR, "app-state.json");
+export const APP_STATE_PATH = join(LOOP_HOME_DIR, "app-state.json");
 
 // Window geometry state (separate from UI state - main process only, sync I/O)
-export const WINDOW_STATE_PATH = join(SUPERSET_HOME_DIR, "window-state.json");
+export const WINDOW_STATE_PATH = join(LOOP_HOME_DIR, "window-state.json");

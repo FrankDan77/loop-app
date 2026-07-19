@@ -8,8 +8,8 @@ import {
 describe("pull-request-url", () => {
 	test("normalizes GitHub remote URLs", () => {
 		expect(
-			normalizeGitHubRepoUrl("https://github.com/FrankDan77/loop.git"),
-		).toBe("https://github.com/FrankDan77/loop");
+			normalizeGitHubRepoUrl("https://github.com/FrankDan77/loop-app.git"),
+		).toBe("https://github.com/FrankDan77/loop-app");
 		expect(normalizeGitHubRepoUrl("git@github.com:Kitenite/superset.git")).toBe(
 			"https://github.com/Kitenite/superset",
 		);
@@ -28,13 +28,13 @@ describe("pull-request-url", () => {
 	test("builds compare URLs for fork branches", () => {
 		expect(
 			buildPullRequestCompareUrl({
-				baseRepoUrl: "https://github.com/FrankDan77/loop.git",
+				baseRepoUrl: "https://github.com/FrankDan77/loop-app.git",
 				baseBranch: "main",
 				headRepoOwner: "Kitenite",
 				headBranch: "kitenite/halved-position",
 			}),
 		).toBe(
-			"https://github.com/FrankDan77/loop/compare/main...Kitenite:kitenite/halved-position?expand=1",
+			"https://github.com/FrankDan77/loop-app/compare/main...Kitenite:kitenite/halved-position?expand=1",
 		);
 	});
 });

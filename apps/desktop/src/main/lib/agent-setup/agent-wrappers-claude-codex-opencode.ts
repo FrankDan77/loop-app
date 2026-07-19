@@ -67,7 +67,7 @@ interface ClaudeSettingsJson {
 	[key: string]: unknown;
 }
 
-const CLAUDE_DYNAMIC_NOTIFY_PATH_MARKER = `$SUPERSET_HOME_DIR/${MANAGED_NOTIFY_RELATIVE_PATH}`;
+const CLAUDE_DYNAMIC_NOTIFY_PATH_MARKER = `$LOOP_HOME_DIR/${MANAGED_NOTIFY_RELATIVE_PATH}`;
 
 function isPlainObject(value: unknown): value is Record<string, unknown> {
 	return typeof value === "object" && value !== null && !Array.isArray(value);
@@ -388,11 +388,11 @@ export function getCodexGlobalHooksJsonContent(
 		existing.hooks[eventName] = filtered;
 	}
 
-	// Inline SUPERSET_AGENT_ID like getClaudeManagedHookCommand so the v2
+	// Inline LOOP_AGENT_ID like getClaudeManagedHookCommand so the v2
 	// payload carries identity even when codex is launched outside the wrapper.
 	// Quote the path: codex executes via /bin/sh -lc, so a space in $HOME
 	// (e.g. "/Users/Some User/...") would otherwise word-split.
-	const codexCommand = `SUPERSET_AGENT_ID=codex "${notifyScriptPath}"`;
+	const codexCommand = `LOOP_AGENT_ID=codex "${notifyScriptPath}"`;
 
 	const managedEvents: Array<{
 		eventName: "SessionStart" | "UserPromptSubmit" | "Stop";

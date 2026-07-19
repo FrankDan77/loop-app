@@ -15,7 +15,7 @@
  */
 const HOST_SERVICE_RUNTIME_KEYS = new Set([
 	"AUTH_TOKEN",
-	"SUPERSET_AUTH_CONFIG_PATH",
+	"LOOP_AUTH_CONFIG_PATH",
 	"SUPERSET_API_URL",
 	"DESKTOP_VITE_PORT",
 	"HOST_CLIENT_ID",
@@ -25,6 +25,14 @@ const HOST_SERVICE_RUNTIME_KEYS = new Set([
 ]);
 
 const NODE_APP_KEYS = new Set(["NODE_ENV", "NODE_OPTIONS", "NODE_PATH"]);
+
+/**
+ * Desktop terminal metadata that host-service must not forward to v2 PTYs.
+ * v2 re-injects its own metadata (SUPERSET_WORKSPACE_ID, LOOP_WORKSPACE_PATH,
+ * LOOP_ROOT_PATH). LOOP_WORKSPACE_NAME is a LOOP_-prefixed var, so it escapes
+ * the SUPERSET_ strip rule below and must be dropped explicitly.
+ */
+const LEGACY_DESKTOP_METADATA_KEYS = new Set(["LOOP_WORKSPACE_NAME"]);
 
 const STRIP_PREFIXES = [
 	"npm_",
@@ -37,7 +45,7 @@ const STRIP_PREFIXES = [
 ];
 
 const SUPERSET_KEEP_KEYS = new Set([
-	"SUPERSET_HOME_DIR",
+	"LOOP_HOME_DIR",
 	"SUPERSET_AGENT_HOOK_PORT",
 	"SUPERSET_AGENT_HOOK_VERSION",
 ]);
@@ -62,6 +70,7 @@ export function stripTerminalRuntimeEnv(
 	for (const [key, value] of Object.entries(baseEnv)) {
 		if (SENSITIVE_AUTH_KEYS.has(key)) continue;
 		if (HOST_SERVICE_RUNTIME_KEYS.has(key)) continue;
+		if (LEGACY_DESKTOP_METADATA_KEYS.has(key)) continue;
 		if (NODE_APP_KEYS.has(key)) continue;
 		if (STRIP_PREFIXES.some((prefix) => key.startsWith(prefix))) continue;
 		if (key.startsWith("SUPERSET_") && !SUPERSET_KEEP_KEYS.has(key)) continue;

@@ -615,15 +615,15 @@ echo wrapper
 	});
 
 	describe("SUPERSET_* env var protection from user RC overrides", () => {
-		it("bash wrapper restores SUPERSET_WORKSPACE_NAME after user .bashrc overrides it", () => {
+		it("bash wrapper restores LOOP_WORKSPACE_NAME after user .bashrc overrides it", () => {
 			const integrationRoot = path.join(TEST_ROOT, "bash-env-protect");
 			const homeDir = path.join(integrationRoot, "home");
 			mkdirSync(homeDir, { recursive: true });
 
-			// User .bashrc overrides SUPERSET_WORKSPACE_NAME with corrupted value
+			// User .bashrc overrides LOOP_WORKSPACE_NAME with corrupted value
 			writeFileSync(
 				path.join(homeDir, ".bashrc"),
-				`export SUPERSET_WORKSPACE_NAME="user@host:~/path/to/worktree"\n`,
+				`export LOOP_WORKSPACE_NAME="user@host:~/path/to/worktree"\n`,
 			);
 
 			createBashWrapper(TEST_PATHS);
@@ -632,14 +632,14 @@ echo wrapper
 				"--rcfile",
 				path.join(TEST_BASH_DIR, "rcfile"),
 				"-ic",
-				'echo "$SUPERSET_WORKSPACE_NAME"',
+				'echo "$LOOP_WORKSPACE_NAME"',
 			];
 			const output = execFileSync("bash", args, {
 				encoding: "utf-8",
 				env: {
 					HOME: homeDir,
 					PATH: "/usr/bin:/bin",
-					SUPERSET_WORKSPACE_NAME: "my-clean-workspace",
+					LOOP_WORKSPACE_NAME: "my-clean-workspace",
 				},
 			}).trim();
 
@@ -650,15 +650,15 @@ echo wrapper
 			expect(lines[lines.length - 1]).toBe("my-clean-workspace");
 		});
 
-		it("bash wrapper restores SUPERSET_WORKSPACE_NAME after user .bash_profile overrides it", () => {
+		it("bash wrapper restores LOOP_WORKSPACE_NAME after user .bash_profile overrides it", () => {
 			const integrationRoot = path.join(TEST_ROOT, "bash-profile-env-protect");
 			const homeDir = path.join(integrationRoot, "home");
 			mkdirSync(homeDir, { recursive: true });
 
-			// User .bash_profile overrides SUPERSET_WORKSPACE_NAME
+			// User .bash_profile overrides LOOP_WORKSPACE_NAME
 			writeFileSync(
 				path.join(homeDir, ".bash_profile"),
-				`export SUPERSET_WORKSPACE_NAME="$(whoami)@$(hostname):$(pwd)"\n`,
+				`export LOOP_WORKSPACE_NAME="$(whoami)@$(hostname):$(pwd)"\n`,
 			);
 
 			createBashWrapper(TEST_PATHS);
@@ -667,14 +667,14 @@ echo wrapper
 				"--rcfile",
 				path.join(TEST_BASH_DIR, "rcfile"),
 				"-ic",
-				'echo "$SUPERSET_WORKSPACE_NAME"',
+				'echo "$LOOP_WORKSPACE_NAME"',
 			];
 			const output = execFileSync("bash", args, {
 				encoding: "utf-8",
 				env: {
 					HOME: homeDir,
 					PATH: "/usr/bin:/bin",
-					SUPERSET_WORKSPACE_NAME: "correct-name",
+					LOOP_WORKSPACE_NAME: "correct-name",
 				},
 			}).trim();
 
@@ -692,8 +692,8 @@ echo wrapper
 
 			writeFileSync(
 				path.join(homeDir, ".bashrc"),
-				`export SUPERSET_WORKSPACE_NAME="corrupted"
-export SUPERSET_WORKSPACE_PATH="/wrong/path"
+				`export LOOP_WORKSPACE_NAME="corrupted"
+export LOOP_WORKSPACE_PATH="/wrong/path"
 `,
 			);
 
@@ -703,15 +703,15 @@ export SUPERSET_WORKSPACE_PATH="/wrong/path"
 				"--rcfile",
 				path.join(TEST_BASH_DIR, "rcfile"),
 				"-ic",
-				'echo "$SUPERSET_WORKSPACE_NAME|$SUPERSET_WORKSPACE_PATH"',
+				'echo "$LOOP_WORKSPACE_NAME|$LOOP_WORKSPACE_PATH"',
 			];
 			const output = execFileSync("bash", args, {
 				encoding: "utf-8",
 				env: {
 					HOME: homeDir,
 					PATH: "/usr/bin:/bin",
-					SUPERSET_WORKSPACE_NAME: "correct-name",
-					SUPERSET_WORKSPACE_PATH: "/correct/path",
+					LOOP_WORKSPACE_NAME: "correct-name",
+					LOOP_WORKSPACE_PATH: "/correct/path",
 				},
 			}).trim();
 
@@ -722,7 +722,7 @@ export SUPERSET_WORKSPACE_PATH="/wrong/path"
 			expect(lines[lines.length - 1]).toBe("correct-name|/correct/path");
 		});
 
-		it("zsh wrapper restores SUPERSET_WORKSPACE_NAME after user .zshrc overrides it", () => {
+		it("zsh wrapper restores LOOP_WORKSPACE_NAME after user .zshrc overrides it", () => {
 			if (!isZshAvailable()) return;
 
 			const integrationRoot = path.join(TEST_ROOT, "zsh-env-protect");
@@ -736,10 +736,10 @@ export SUPERSET_WORKSPACE_PATH="/wrong/path"
 			mkdirSync(integrationBashDir, { recursive: true });
 			mkdirSync(homeDir, { recursive: true });
 
-			// User .zshrc overrides SUPERSET_WORKSPACE_NAME with corrupted value
+			// User .zshrc overrides LOOP_WORKSPACE_NAME with corrupted value
 			writeFileSync(
 				path.join(homeDir, ".zshrc"),
-				`export SUPERSET_WORKSPACE_NAME="user@host:~/path/to/worktree"\n`,
+				`export LOOP_WORKSPACE_NAME="user@host:~/path/to/worktree"\n`,
 			);
 
 			createZshWrapper({
@@ -750,7 +750,7 @@ export SUPERSET_WORKSPACE_PATH="/wrong/path"
 
 			const output = execFileSync(
 				"zsh",
-				["-lic", 'echo "$SUPERSET_WORKSPACE_NAME"'],
+				["-lic", 'echo "$LOOP_WORKSPACE_NAME"'],
 				{
 					encoding: "utf-8",
 					env: {
@@ -758,7 +758,7 @@ export SUPERSET_WORKSPACE_PATH="/wrong/path"
 						PATH: "/usr/bin:/bin",
 						SUPERSET_ORIG_ZDOTDIR: homeDir,
 						ZDOTDIR: integrationZshDir,
-						SUPERSET_WORKSPACE_NAME: "my-clean-workspace",
+						LOOP_WORKSPACE_NAME: "my-clean-workspace",
 					},
 				},
 			).trim();
@@ -770,7 +770,7 @@ export SUPERSET_WORKSPACE_PATH="/wrong/path"
 			expect(lines[lines.length - 1]).toBe("my-clean-workspace");
 		});
 
-		it("zsh wrapper restores SUPERSET_WORKSPACE_NAME after user .zlogin overrides it", () => {
+		it("zsh wrapper restores LOOP_WORKSPACE_NAME after user .zlogin overrides it", () => {
 			if (!isZshAvailable()) return;
 
 			const integrationRoot = path.join(TEST_ROOT, "zsh-zlogin-env-protect");
@@ -786,7 +786,7 @@ export SUPERSET_WORKSPACE_PATH="/wrong/path"
 
 			writeFileSync(
 				path.join(homeDir, ".zlogin"),
-				`export SUPERSET_WORKSPACE_NAME="overridden-by-zlogin"\n`,
+				`export LOOP_WORKSPACE_NAME="overridden-by-zlogin"\n`,
 			);
 
 			createZshWrapper({
@@ -797,7 +797,7 @@ export SUPERSET_WORKSPACE_PATH="/wrong/path"
 
 			const output = execFileSync(
 				"zsh",
-				["-lic", 'echo "$SUPERSET_WORKSPACE_NAME"'],
+				["-lic", 'echo "$LOOP_WORKSPACE_NAME"'],
 				{
 					encoding: "utf-8",
 					env: {
@@ -805,7 +805,7 @@ export SUPERSET_WORKSPACE_PATH="/wrong/path"
 						PATH: "/usr/bin:/bin",
 						SUPERSET_ORIG_ZDOTDIR: homeDir,
 						ZDOTDIR: integrationZshDir,
-						SUPERSET_WORKSPACE_NAME: "correct-name",
+						LOOP_WORKSPACE_NAME: "correct-name",
 					},
 				},
 			).trim();

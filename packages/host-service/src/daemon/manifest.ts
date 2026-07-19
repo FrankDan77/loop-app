@@ -1,5 +1,5 @@
 // Manifest for a running pty-daemon instance. Lives under
-// $SUPERSET_HOME_DIR/host/{organizationId}/. Different lifecycle from
+// $LOOP_HOME_DIR/host/{organizationId}/. Different lifecycle from
 // host-service's own manifest — the daemon outlives host-service restarts.
 
 import {
@@ -31,7 +31,7 @@ export interface PtyDaemonManifest {
 }
 
 function supersetHomeDir(): string {
-	return process.env.SUPERSET_HOME_DIR || join(homedir(), ".superset");
+	return process.env.LOOP_HOME_DIR || join(homedir(), ".loop");
 }
 
 export function ptyDaemonManifestDir(organizationId: string): string {

@@ -1,6 +1,6 @@
 # Developing Superset
 
-This guide is for contributors building Superset from source. If you just want to use Superset, [download the macOS app](https://github.com/FrankDan77/loop/releases/latest) instead.
+This guide is for contributors building Superset from source. If you just want to use Superset, [download the macOS app](https://github.com/FrankDan77/loop-app/releases/latest) instead.
 
 ## Prerequisites
 
@@ -17,9 +17,9 @@ macOS is the primary supported platform. Windows / Linux are untested.
 ## Run it (one command)
 
 ```bash
-git clone https://github.com/FrankDan77/loop.git
+git clone https://github.com/FrankDan77/loop-app.git
 cd superset
-./.superset/setup.local.sh
+./.loop/setup.local.sh
 bun run dev
 ```
 
@@ -32,12 +32,12 @@ That's it. **You do not need a Neon account, Stripe keys, or any other third-par
 3. Brings up Postgres + neon-proxy + Electric + Redis (behind an HTTP shim, for the relay) via `docker compose` (project-scoped to this worktree)
 4. Runs `bun install` and `bun run db:migrate`
 5. Seeds a `Local Admin` dev account via `bun run db:seed-dev`
-6. Writes a gitignored `.superset/config.local.json` overlay so subsequent worktrees automatically use this setup
+6. Writes a gitignored `.loop/config.local.json` overlay so subsequent worktrees automatically use this setup
 
 Re-run the script any time to refresh the workspace. To tear the local DB stack down:
 
 ```bash
-./.superset/teardown.local.sh
+./.loop/teardown.local.sh
 ```
 
 ### Signing in
@@ -83,8 +83,8 @@ See [`AGENTS.md`](./AGENTS.md) for repo structure, monorepo conventions, and dat
 
 - **`caddy trust` prompts for sudo**: expected, once per machine. Without it Chromium rejects `https://localhost:*` with `ERR_CERT_AUTHORITY_INVALID`.
 - **Port collision**: `setup.local.sh` allocates a fresh port window per worktree. If you ran the script before this change landed, re-run it to migrate.
-- **DB connection errors after pulling main**: re-run `./.superset/setup.local.sh`; it's idempotent and will apply any new migrations.
-- **Stuck Docker stack**: `./.superset/teardown.local.sh` then re-run setup.
+- **DB connection errors after pulling main**: re-run `./.loop/setup.local.sh`; it's idempotent and will apply any new migrations.
+- **Stuck Docker stack**: `./.loop/teardown.local.sh` then re-run setup.
 
 ## Contributing
 

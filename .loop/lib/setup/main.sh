@@ -31,17 +31,17 @@ setup_main() {
     step_failed "Install dependencies"
   fi
 
-  # Step 4: Seed local DB into superset-dev-data/
+  # Step 4: Seed local DB into loop-dev-data/
   if ! step_seed_local_db; then
     step_failed "Seed local DB"
   fi
 
-  # Step 5: Seed host-service DBs into superset-dev-data/host/
+  # Step 5: Seed host-service DBs into loop-dev-data/host/
   if ! step_seed_host_dbs; then
     step_failed "Seed host-service DBs"
   fi
 
-  # Step 6: Seed auth token into superset-dev-data/
+  # Step 6: Seed auth token into loop-dev-data/
   if ! step_seed_auth_token; then
     step_failed "Seed auth token"
   fi

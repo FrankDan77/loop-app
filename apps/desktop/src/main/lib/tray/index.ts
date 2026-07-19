@@ -59,7 +59,7 @@ function createTrayIcon(): Electron.NativeImage | null {
 	}
 
 	try {
-		let image = nativeImage.createFromPath(iconPath);
+		const image = nativeImage.createFromPath(iconPath);
 		const size = image.getSize();
 
 		if (image.isEmpty() || size.width === 0 || size.height === 0) {
@@ -67,10 +67,8 @@ function createTrayIcon(): Electron.NativeImage | null {
 			return null;
 		}
 
-		// 16x16 is standard menu bar size, auto-scales for Retina
-		if (size.width > 22 || size.height > 22) {
-			image = image.resize({ width: 16, height: 16 });
-		}
+		// iconTemplate.png is the 16pt menu-bar asset; Electron auto-loads the
+		// sibling iconTemplate@2x.png for Retina, so don't force-resize here.
 		image.setTemplateImage(true);
 		return image;
 	} catch (error) {
@@ -216,7 +214,7 @@ async function updateTrayMenu(): Promise<void> {
 		},
 		{ type: "separator" },
 		{
-			label: "Open Superset",
+			label: "Open Loop",
 			click: focusMainWindow,
 		},
 		{
@@ -233,12 +231,12 @@ async function updateTrayMenu(): Promise<void> {
 		},
 		{ type: "separator" },
 		{
-			label: "Close Superset",
+			label: "Close Loop",
 			click: () => quitApp(),
 		},
 		{ type: "separator" },
 		{
-			label: "Quit Superset Completely",
+			label: "Quit Loop Completely",
 			click: () => {
 				void confirmAndQuitCompletely();
 			},
@@ -267,7 +265,7 @@ export function initTray(): void {
 		}
 
 		tray = new Tray(icon);
-		tray.setToolTip("Superset");
+		tray.setToolTip("Loop");
 
 		void updateTrayMenu();
 

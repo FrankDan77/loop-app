@@ -122,15 +122,24 @@ async function persistFromResolved(
 	let cloudProjectCreated = false;
 
 	try {
-		persistLocalProject(ctx, projectId, args.resolved);
+		// In local mode, persist a display name + slug so the sidebar can render
+		// the project without the cloud v2Projects collection.
+		const localDisplay = ctx.localMode
+			? { name: args.name, slug: slugifyProjectName(args.name) }
+			: undefined;
+		persistLocalProject(ctx, projectId, args.resolved, localDisplay);
 		localProjectInserted = true;
 
-		await createCloudProjectWithSlugRetry(ctx, {
-			id: projectId,
-			name: args.name,
-			repoCloneUrl: args.repoCloneUrlForCloud,
-		});
-		cloudProjectCreated = true;
+		// Local-only alpha: the project lives purely in the host-service SQLite
+		// DB — skip the cloud v2Project.create (and its rollback below).
+		if (!ctx.localMode) {
+			await createCloudProjectWithSlugRetry(ctx, {
+				id: projectId,
+				name: args.name,
+				repoCloneUrl: args.repoCloneUrlForCloud,
+			});
+			cloudProjectCreated = true;
+		}
 
 		const mainWorkspace = await ensureMainWorkspaceStrict(
 			ctx,

@@ -7,9 +7,10 @@ import { settings } from "@superset/local-db";
 import { getHostId, getHostName } from "@superset/shared/host-info";
 import { app, dialog } from "electron";
 import log from "electron-log/main";
+import { env } from "main/env.main";
 import { env as sharedEnv } from "shared/env.shared";
 import { getProcessEnvWithShellPath } from "../../lib/trpc/routers/workspaces/utils/shell-env";
-import { SUPERSET_HOME_DIR } from "./app-environment";
+import { LOOP_HOME_DIR } from "./app-environment";
 import { isInternalBuild } from "./build-channel";
 import {
 	isProcessAlive,
@@ -191,7 +192,7 @@ export class HostServiceCoordinator extends EventEmitter {
 	 * tracked in this process (e.g. a stale manifest left by a CLI-spawned
 	 * host-service) — then removes the manifest so callers can't pick up the
 	 * stale entry, and respawns. Used by the recovery path for
-	 * FrankDan77/loop#4299 where a wedged host-service keeps serving
+	 * FrankDan77/loop-app#4299 where a wedged host-service keeps serving
 	 * stale state.
 	 */
 	async reset(
@@ -473,13 +474,15 @@ export class HostServiceCoordinator extends EventEmitter {
 				? path.join(process.resourcesPath, "resources/host-migrations")
 				: path.join(app.getAppPath(), "../../packages/host-service/drizzle"),
 			DESKTOP_VITE_PORT: String(sharedEnv.DESKTOP_VITE_PORT),
-			SUPERSET_HOME_DIR: SUPERSET_HOME_DIR,
+			LOOP_HOME_DIR: LOOP_HOME_DIR,
 			SUPERSET_LEGACY_WORKTREE_BASE_DIR: row?.worktreeBaseDir ?? "",
 			SUPERSET_AGENT_HOOK_PORT: String(sharedEnv.DESKTOP_NOTIFICATIONS_PORT),
 			SUPERSET_AGENT_HOOK_VERSION: HOOK_PROTOCOL_VERSION,
 			AUTH_TOKEN: config.authToken,
-			SUPERSET_AUTH_CONFIG_PATH: path.join(SUPERSET_HOME_DIR, "config.json"),
+			LOOP_AUTH_CONFIG_PATH: path.join(LOOP_HOME_DIR, "config.json"),
 			SUPERSET_API_URL: config.cloudApiUrl,
+			// Local-only alpha: host-service skips all cloud calls when set.
+			...(env.LOOP_LOCAL_MODE ? { LOCAL_MODE: "1" } : {}),
 			// Pre-release ACP session harness, internal-channel only: enabled on
 			// canary and dev builds, never on stable. The host gates its router
 			// and WS stream route on this env var.

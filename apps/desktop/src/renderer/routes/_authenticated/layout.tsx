@@ -19,6 +19,7 @@ import { useOnlineStatus } from "renderer/hooks/useOnlineStatus";
 import { authClient, getAuthToken } from "renderer/lib/auth-client";
 import { dragDropManager } from "renderer/lib/dnd";
 import { electronTrpc } from "renderer/lib/electron-trpc";
+import { LOCAL_MODE } from "renderer/lib/local-session";
 import { showWorkspaceAutoNameWarningToast } from "renderer/lib/workspaces/showWorkspaceAutoNameWarningToast";
 import { InitGitDialog } from "renderer/react-query/projects/InitGitDialog";
 import { DaemonAutoUpdateFailureDialog } from "renderer/routes/_authenticated/components/DaemonAutoUpdateFailureDialog";
@@ -31,7 +32,11 @@ import { useTabsStore } from "renderer/stores/tabs/store";
 import { useAgentHookListener } from "renderer/stores/tabs/useAgentHookListener";
 import { setPaneWorkspaceRunState } from "renderer/stores/tabs/workspace-run";
 import { useWorkspaceInitStore } from "renderer/stores/workspace-init";
-import { MOCK_ORG_ID, NOTIFICATION_EVENTS } from "shared/constants";
+import {
+	LOCAL_ORG_ID,
+	MOCK_ORG_ID,
+	NOTIFICATION_EVENTS,
+} from "shared/constants";
 import { AgentHooks } from "./components/AgentHooks";
 import { DockBadgeController } from "./components/DockBadgeController";
 import { FileMenuListener } from "./components/FileMenuListener";
@@ -64,10 +69,13 @@ function AuthenticatedLayout() {
 	const shownWorkspaceInitWarningsRef = useRef(new Set<string>());
 	const isV2CloudEnabled = useIsV2CloudEnabled();
 
-	const isSignedIn = env.SKIP_ENV_VALIDATION || !!session?.user;
-	const activeOrganizationId = env.SKIP_ENV_VALIDATION
-		? MOCK_ORG_ID
-		: session?.session?.activeOrganizationId;
+	const bypassAuth = LOCAL_MODE || env.SKIP_ENV_VALIDATION;
+	const isSignedIn = bypassAuth || !!session?.user;
+	const activeOrganizationId = LOCAL_MODE
+		? LOCAL_ORG_ID
+		: env.SKIP_ENV_VALIDATION
+			? MOCK_ORG_ID
+			: session?.session?.activeOrganizationId;
 
 	useAgentHookListener();
 
@@ -155,17 +163,23 @@ function AuthenticatedLayout() {
 				const section = event.data.section || "account";
 				navigate({ to: `/settings/${section}` as "/settings/account" });
 			} else if (event.type === "open-workspace") {
-				navigate({ to: `/workspace/${event.data.workspaceId}` });
+				// Local-only alpha is v2-only; the v1 route would trip the
+				// version-mismatch gate and render a blank state.
+				navigate({
+					to: LOCAL_MODE
+						? `/v2-workspace/${event.data.workspaceId}`
+						: `/workspace/${event.data.workspaceId}`,
+				});
 			}
 		},
 	});
 
-	if (isPending && !hasLocalToken && !env.SKIP_ENV_VALIDATION) {
+	if (isPending && !hasLocalToken && !bypassAuth) {
 		return <Navigate to="/sign-in" replace />;
 	}
 	if (
 		(isPending || (isRefetching && !session?.user && hasLocalToken)) &&
-		!env.SKIP_ENV_VALIDATION
+		!bypassAuth
 	) {
 		return (
 			<div className="flex h-screen w-screen items-center justify-center bg-background">

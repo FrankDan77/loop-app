@@ -289,13 +289,13 @@ describe("env", () => {
 
 			it("should include shell wrapper control vars", () => {
 				const env = {
-					ZDOTDIR: "/Users/test/.superset-dev/zsh",
-					BASH_ENV: "/Users/test/.superset-dev/bash/rcfile",
+					ZDOTDIR: "/Users/test/.loop-dev/zsh",
+					BASH_ENV: "/Users/test/.loop-dev/bash/rcfile",
 					PATH: "/usr/bin",
 				};
 				const result = buildSafeEnv(env);
-				expect(result.ZDOTDIR).toBe("/Users/test/.superset-dev/zsh");
-				expect(result.BASH_ENV).toBe("/Users/test/.superset-dev/bash/rcfile");
+				expect(result.ZDOTDIR).toBe("/Users/test/.loop-dev/zsh");
+				expect(result.BASH_ENV).toBe("/Users/test/.loop-dev/bash/rcfile");
 			});
 
 			it("should include proxy vars (both cases)", () => {
@@ -592,7 +592,7 @@ describe("env", () => {
 			"DATABASE_URL",
 			"CLERK_SECRET_KEY",
 			"SSL_CERT_FILE",
-			"SUPERSET_HOME_DIR",
+			"LOOP_HOME_DIR",
 		];
 
 		beforeEach(() => {
@@ -684,17 +684,17 @@ describe("env", () => {
 					rootPath: "/root/path",
 				});
 
-				expect(result.SUPERSET_WORKSPACE_NAME).toBe("my-workspace");
-				expect(result.SUPERSET_WORKSPACE_PATH).toBe("/path/to/workspace");
-				expect(result.SUPERSET_ROOT_PATH).toBe("/root/path");
+				expect(result.LOOP_WORKSPACE_NAME).toBe("my-workspace");
+				expect(result.LOOP_WORKSPACE_PATH).toBe("/path/to/workspace");
+				expect(result.LOOP_ROOT_PATH).toBe("/root/path");
 			});
 
 			it("should default optional params to empty string", () => {
 				const result = buildTerminalEnv(baseParams);
 
-				expect(result.SUPERSET_WORKSPACE_NAME).toBe("");
-				expect(result.SUPERSET_WORKSPACE_PATH).toBe("");
-				expect(result.SUPERSET_ROOT_PATH).toBe("");
+				expect(result.LOOP_WORKSPACE_NAME).toBe("");
+				expect(result.LOOP_WORKSPACE_PATH).toBe("");
+				expect(result.LOOP_ROOT_PATH).toBe("");
 			});
 
 			it("should set LANG to a UTF-8 locale", () => {
@@ -708,10 +708,10 @@ describe("env", () => {
 				expect(typeof result.SUPERSET_PORT).toBe("string");
 			});
 
-			it("should preserve SUPERSET_HOME_DIR for app-launched hooks", () => {
-				process.env.SUPERSET_HOME_DIR = "/tmp/superset-home";
+			it("should preserve LOOP_HOME_DIR for app-launched hooks", () => {
+				process.env.LOOP_HOME_DIR = "/tmp/superset-home";
 				const result = buildTerminalEnv(baseParams);
-				expect(result.SUPERSET_HOME_DIR).toBe("/tmp/superset-home");
+				expect(result.LOOP_HOME_DIR).toBe("/tmp/superset-home");
 			});
 		});
 

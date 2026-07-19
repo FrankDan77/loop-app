@@ -32,7 +32,7 @@ export default function (pi: ExtensionAPI) {
 	if (!process.env.SUPERSET_TERMINAL_ID) return;
 
 	const supersetHome =
-		process.env.SUPERSET_HOME_DIR || join(homedir(), ".superset");
+		process.env.LOOP_HOME_DIR || join(homedir(), ".loop");
 	const notifyScript = join(supersetHome, "hooks", "notify.sh");
 	if (!existsSync(notifyScript)) return;
 
@@ -41,7 +41,7 @@ export default function (pi: ExtensionAPI) {
 			const child = spawn(notifyScript, [], {
 				stdio: ["pipe", "ignore", "ignore"],
 				detached: true,
-				env: { ...process.env, SUPERSET_AGENT_ID: "pi" },
+				env: { ...process.env, LOOP_AGENT_ID: "pi" },
 			});
 			child.on("error", () => {
 				/* swallow — never let hook failures affect pi */

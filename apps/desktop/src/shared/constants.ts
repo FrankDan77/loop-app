@@ -8,14 +8,12 @@ export const PLATFORM = {
 };
 
 const workspace = getWorkspaceName();
-export const SUPERSET_DIR_NAME = workspace
-	? `.superset-${workspace}`
-	: ".superset";
+export const LOOP_DIR_NAME = workspace ? `.loop-${workspace}` : ".loop";
 export const PROTOCOL_SCHEME = workspace
 	? `superset-${workspace}`
 	: PROTOCOL_SCHEMES.PROD;
-// Project-level directory name (always .superset, not conditional)
-export const PROJECT_SUPERSET_DIR_NAME = ".superset";
+// Project-level directory name (always .loop, not conditional)
+export const PROJECT_LOOP_DIR_NAME = ".loop";
 export const WORKTREES_DIR_NAME = "worktrees";
 export const PROJECTS_DIR_NAME = "projects";
 export const CONFIG_FILE_NAME = "config.json";
@@ -37,6 +35,12 @@ export const NOTIFICATION_EVENTS = {
 
 // Development/testing mock values (used when SKIP_ENV_VALIDATION is set)
 export const MOCK_ORG_ID = "mock-org-id";
+
+// Local-only alpha mode identities.
+// Stable real UUIDs (not "mock-org-id") so any UUID validation passes.
+export const LOCAL_ORG_ID = "00000000-0000-4000-8000-000000000001";
+export const LOCAL_USER_ID = "00000000-0000-4000-8000-000000000002";
+export const LOCAL_ORG_NAME = "Local";
 
 // Terminal defaults
 export const DEFAULT_TERMINAL_SCROLLBACK = 5000;

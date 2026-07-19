@@ -30,7 +30,7 @@ describe("GitHub pull request REST queries", () => {
 				{
 					number: 42,
 					title: "Fix sidebar",
-					html_url: "https://github.com/FrankDan77/loop/pull/42",
+					html_url: "https://github.com/FrankDan77/loop-app/pull/42",
 					state: "open",
 					draft: false,
 					merged_at: null,
@@ -45,7 +45,7 @@ describe("GitHub pull request REST queries", () => {
 					},
 					base: {
 						repo: {
-							full_name: "FrankDan77/loop",
+							full_name: "FrankDan77/loop-app",
 						},
 					},
 				},
@@ -61,7 +61,7 @@ describe("GitHub pull request REST queries", () => {
 		expect(result).toEqual({
 			number: 42,
 			title: "Fix sidebar",
-			url: "https://github.com/FrankDan77/loop/pull/42",
+			url: "https://github.com/FrankDan77/loop-app/pull/42",
 			state: "OPEN",
 			isDraft: false,
 			headRefName: "fix/sidebar",
@@ -77,7 +77,7 @@ describe("GitHub pull request REST queries", () => {
 					"api",
 					"--method",
 					"GET",
-					"repos/FrankDan77/loop/pulls",
+					"repos/FrankDan77/loop-app/pulls",
 					"-f",
 					"state=all",
 					"-f",
@@ -99,7 +99,7 @@ describe("GitHub pull request REST queries", () => {
 				{
 					number: 41,
 					title: "Wrong fork",
-					html_url: "https://github.com/FrankDan77/loop/pull/41",
+					html_url: "https://github.com/FrankDan77/loop-app/pull/41",
 					state: "open",
 					draft: false,
 					merged_at: null,
@@ -114,14 +114,14 @@ describe("GitHub pull request REST queries", () => {
 					},
 					base: {
 						repo: {
-							full_name: "FrankDan77/loop",
+							full_name: "FrankDan77/loop-app",
 						},
 					},
 				},
 				{
 					number: 42,
 					title: "Right fork",
-					html_url: "https://github.com/FrankDan77/loop/pull/42",
+					html_url: "https://github.com/FrankDan77/loop-app/pull/42",
 					state: "open",
 					draft: false,
 					merged_at: null,
@@ -136,7 +136,7 @@ describe("GitHub pull request REST queries", () => {
 					},
 					base: {
 						repo: {
-							full_name: "FrankDan77/loop",
+							full_name: "FrankDan77/loop-app",
 						},
 					},
 				},
@@ -163,7 +163,7 @@ describe("GitHub pull request REST queries", () => {
 				{
 					number: 43,
 					title: "Case drift",
-					html_url: "https://github.com/FrankDan77/loop/pull/43",
+					html_url: "https://github.com/FrankDan77/loop-app/pull/43",
 					state: "open",
 					draft: false,
 					merged_at: null,
@@ -178,7 +178,7 @@ describe("GitHub pull request REST queries", () => {
 					},
 					base: {
 						repo: {
-							full_name: "FrankDan77/loop",
+							full_name: "FrankDan77/loop-app",
 						},
 					},
 				},
@@ -200,7 +200,7 @@ describe("GitHub pull request REST queries", () => {
 				{
 					number: 44,
 					title: "Open sweep",
-					html_url: "https://github.com/FrankDan77/loop/pull/44",
+					html_url: "https://github.com/FrankDan77/loop-app/pull/44",
 					state: "open",
 					draft: false,
 					merged_at: null,
@@ -215,7 +215,7 @@ describe("GitHub pull request REST queries", () => {
 					},
 					base: {
 						repo: {
-							full_name: "FrankDan77/loop",
+							full_name: "FrankDan77/loop-app",
 						},
 					},
 				},
@@ -236,7 +236,7 @@ describe("GitHub pull request REST queries", () => {
 					"api",
 					"--method",
 					"GET",
-					"repos/FrankDan77/loop/pulls",
+					"repos/FrankDan77/loop-app/pulls",
 					"-f",
 					"state=open",
 					"-f",
@@ -280,7 +280,7 @@ describe("GitHub pull request REST queries", () => {
 					"api",
 					"--method",
 					"GET",
-					"repos/FrankDan77/loop/pulls/42/reviews",
+					"repos/FrankDan77/loop-app/pulls/42/reviews",
 					"-f",
 					"per_page=100",
 				],
@@ -308,7 +308,7 @@ describe("GitHub pull request REST queries", () => {
 					{
 						name: "Typecheck",
 						conclusion: "success",
-						details_url: "https://github.com/FrankDan77/loop/actions/1",
+						details_url: "https://github.com/FrankDan77/loop-app/actions/1",
 						status: "completed",
 						started_at: "2026-05-08T12:00:00Z",
 						completed_at: "2026-05-08T12:03:00Z",
@@ -336,7 +336,7 @@ describe("GitHub pull request REST queries", () => {
 				__typename: "CheckRun",
 				name: "Typecheck",
 				conclusion: "SUCCESS",
-				detailsUrl: "https://github.com/FrankDan77/loop/actions/1",
+				detailsUrl: "https://github.com/FrankDan77/loop-app/actions/1",
 				status: "COMPLETED",
 				startedAt: "2026-05-08T12:00:00Z",
 				completedAt: "2026-05-08T12:03:00Z",
@@ -356,7 +356,7 @@ describe("GitHub pull request REST queries", () => {
 					"api",
 					"--method",
 					"GET",
-					"repos/FrankDan77/loop/commits/abc123/check-runs",
+					"repos/FrankDan77/loop-app/commits/abc123/check-runs",
 					"-f",
 					"per_page=100",
 				],
@@ -366,7 +366,7 @@ describe("GitHub pull request REST queries", () => {
 					"api",
 					"--method",
 					"GET",
-					"repos/FrankDan77/loop/commits/abc123/statuses",
+					"repos/FrankDan77/loop-app/commits/abc123/statuses",
 					"-f",
 					"per_page=100",
 				],

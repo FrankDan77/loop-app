@@ -80,7 +80,7 @@ describe("stripTerminalRuntimeEnv", () => {
 	const secretsEnv: Record<string, string> = {
 		// Host-service runtime keys that must not leak
 		AUTH_TOKEN: "secret-token",
-		SUPERSET_AUTH_CONFIG_PATH: "/Users/test/.superset/config.json",
+		LOOP_AUTH_CONFIG_PATH: "/Users/test/.loop/config.json",
 		HOST_SERVICE_SECRET: "secret",
 		ORGANIZATION_ID: "org-123",
 		HOST_CLIENT_ID: "device-abc",
@@ -111,7 +111,7 @@ describe("stripTerminalRuntimeEnv", () => {
 		SUPERSET_TAB_ID: "tab-1",
 		SUPERSET_PORT: "51741",
 		SUPERSET_HOOK_VERSION: "2",
-		SUPERSET_WORKSPACE_NAME: "my-ws",
+		LOOP_WORKSPACE_NAME: "my-ws",
 		// Auth refresh tokens inherited from parent (CLI/desktop) env
 		OAUTH_REFRESH_TOKEN: "oauth-refresh-secret",
 		SUPERSET_REFRESH_TOKEN: "superset-refresh-secret",
@@ -120,7 +120,7 @@ describe("stripTerminalRuntimeEnv", () => {
 		PATH: "/usr/bin:/usr/local/bin",
 		SHELL: "/bin/zsh",
 		EDITOR: "vim",
-		SUPERSET_HOME_DIR: "/Users/test/.superset",
+		LOOP_HOME_DIR: "/Users/test/.loop",
 		SUPERSET_AGENT_HOOK_PORT: "51741",
 		SUPERSET_AGENT_HOOK_VERSION: "2",
 	};
@@ -128,7 +128,7 @@ describe("stripTerminalRuntimeEnv", () => {
 	test("app/runtime secrets do not reach PTY env", () => {
 		const result = stripTerminalRuntimeEnv(secretsEnv);
 		expect(result.AUTH_TOKEN).toBeUndefined();
-		expect(result.SUPERSET_AUTH_CONFIG_PATH).toBeUndefined();
+		expect(result.LOOP_AUTH_CONFIG_PATH).toBeUndefined();
 		expect(result.HOST_SERVICE_SECRET).toBeUndefined();
 		expect(result.ORGANIZATION_ID).toBeUndefined();
 		expect(result.HOST_CLIENT_ID).toBeUndefined();
@@ -209,7 +209,7 @@ describe("stripTerminalRuntimeEnv", () => {
 		expect(result.SUPERSET_TAB_ID).toBeUndefined();
 		expect(result.SUPERSET_PORT).toBeUndefined();
 		expect(result.SUPERSET_HOOK_VERSION).toBeUndefined();
-		expect(result.SUPERSET_WORKSPACE_NAME).toBeUndefined();
+		expect(result.LOOP_WORKSPACE_NAME).toBeUndefined();
 	});
 
 	test("user shell env vars survive stripping", () => {
@@ -222,7 +222,7 @@ describe("stripTerminalRuntimeEnv", () => {
 
 	test("explicit Superset support keys are kept", () => {
 		const result = stripTerminalRuntimeEnv(secretsEnv);
-		expect(result.SUPERSET_HOME_DIR).toBe("/Users/test/.superset");
+		expect(result.LOOP_HOME_DIR).toBe("/Users/test/.loop");
 		expect(result.SUPERSET_AGENT_HOOK_PORT).toBe("51741");
 		expect(result.SUPERSET_AGENT_HOOK_VERSION).toBe("2");
 	});
@@ -401,10 +401,10 @@ describe("buildV2TerminalEnv", () => {
 			HOME: "/Users/test",
 			PATH: "/usr/bin",
 			SHELL: "/bin/zsh",
-			SUPERSET_HOME_DIR: "/Users/test/.superset",
+			LOOP_HOME_DIR: "/Users/test/.loop",
 		},
 		shell: "/bin/zsh",
-		supersetHomeDir: "/Users/test/.superset",
+		supersetHomeDir: "/Users/test/.loop",
 		cwd: "/tmp/workspace",
 		terminalId: "term-1",
 		workspaceId: "ws-1",
@@ -425,8 +425,8 @@ describe("buildV2TerminalEnv", () => {
 			PWD: "/tmp/workspace",
 			SUPERSET_TERMINAL_ID: "term-1",
 			SUPERSET_WORKSPACE_ID: "ws-1",
-			SUPERSET_WORKSPACE_PATH: "/tmp/workspace",
-			SUPERSET_ROOT_PATH: "/tmp/repo",
+			LOOP_WORKSPACE_PATH: "/tmp/workspace",
+			LOOP_ROOT_PATH: "/tmp/repo",
 			SUPERSET_ENV: "production",
 			SUPERSET_AGENT_HOOK_PORT: "51741",
 			SUPERSET_AGENT_HOOK_VERSION: "2",
@@ -447,7 +447,7 @@ describe("buildV2TerminalEnv", () => {
 
 	test("allows empty root path and alternate Superset env without breaking the contract", () => {
 		const env = buildV2TerminalEnv({ ...baseParams, rootPath: "" });
-		expect(env.SUPERSET_ROOT_PATH).toBe("");
+		expect(env.LOOP_ROOT_PATH).toBe("");
 
 		const devEnv = buildV2TerminalEnv({
 			...baseParams,
@@ -455,7 +455,7 @@ describe("buildV2TerminalEnv", () => {
 			supersetEnv: "development",
 		});
 		expect(devEnv.SUPERSET_ENV).toBe("development");
-		expect(devEnv.SUPERSET_ROOT_PATH).toBe("");
+		expect(devEnv.LOOP_ROOT_PATH).toBe("");
 	});
 
 	test("defaults COLORFGBG to dark mode", () => {
@@ -501,7 +501,7 @@ describe("buildV2TerminalEnv", () => {
 				SUPERSET_TAB_ID: "tab-1",
 				SUPERSET_PORT: "51741",
 				SUPERSET_HOOK_VERSION: "2",
-				SUPERSET_WORKSPACE_NAME: "my-workspace",
+				LOOP_WORKSPACE_NAME: "my-workspace",
 				NVM_DIR: "/Users/test/.nvm",
 				SSH_AUTH_SOCK: "/tmp/ssh.sock",
 			},
@@ -510,7 +510,7 @@ describe("buildV2TerminalEnv", () => {
 		expect(env.SUPERSET_TAB_ID).toBeUndefined();
 		expect(env.SUPERSET_PORT).toBeUndefined();
 		expect(env.SUPERSET_HOOK_VERSION).toBeUndefined();
-		expect(env.SUPERSET_WORKSPACE_NAME).toBeUndefined();
+		expect(env.LOOP_WORKSPACE_NAME).toBeUndefined();
 		expect(env.NVM_DIR).toBe("/Users/test/.nvm");
 		expect(env.SSH_AUTH_SOCK).toBe("/tmp/ssh.sock");
 	});
@@ -536,7 +536,7 @@ describe("v2 env contract boundary", () => {
 				ELECTRON_IS_DEV: "1",
 			},
 			shell: "/bin/zsh",
-			supersetHomeDir: "/Users/test/.superset",
+			supersetHomeDir: "/Users/test/.loop",
 			cwd: "/tmp/ws",
 			terminalId: "t-1",
 			workspaceId: "w-1",

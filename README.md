@@ -43,7 +43,7 @@ Loop orchestrates CLI-based coding agents across isolated git worktrees, providi
 - **Monitor all your agents** from one place and get notified when they need attention
 - **Review and edit changes quickly** with the built-in diff viewer and editor
 - **Open any workspace where you need it** with one-click handoff to your editor or terminal
-- **Reach your workspaces from anywhere** via remote hosts, the CLI, the SDK, or MCP
+- **Reach your workspaces from anywhere** via remote hosts, the CLI, or MCP
 
 ## Features
 
@@ -61,22 +61,18 @@ Loop orchestrates CLI-based coding agents across isolated git worktrees, providi
 | **Custom Agents** | Add your own terminal agents with custom icons |
 | **Workspace Presets** | Automate env setup, dependency installation, and more |
 | **Slack & Linear** | Spin up workspaces from Slack messages or Linear issues |
-| **Universal Compatibility** | Works with any CLI agent that runs in a terminal |
 | **IDE Integration** | Open any workspace in your favorite editor with one click |
 
 ## Supported Agents
 
-Loop works with any CLI-based coding agent, including:
+Loop currently supports Claude Code and Codex:
 
 | Agent | Status |
 |:------|:-------|
 | <img height="16" align="top" alt="Claude Code" src="packages/ui/src/assets/icons/preset-icons/claude.svg" /> &nbsp;[Claude Code](https://github.com/anthropics/claude-code) | Fully supported |
 | <picture><source media="(prefers-color-scheme: dark)" srcset="packages/ui/src/assets/icons/preset-icons/codex-white.svg" /><img height="16" align="top" alt="OpenAI Codex CLI" src="packages/ui/src/assets/icons/preset-icons/codex.svg" /></picture> &nbsp;[OpenAI Codex CLI](https://github.com/openai/codex) | Fully supported |
-| <picture><source media="(prefers-color-scheme: dark)" srcset="packages/ui/src/assets/icons/preset-icons/droid-white.svg" /><img height="16" align="top" alt="Droid" src="packages/ui/src/assets/icons/preset-icons/droid.svg" /></picture> &nbsp;[Droid](https://www.factory.ai/) | Fully supported |
-| <picture><source media="(prefers-color-scheme: dark)" srcset="packages/ui/src/assets/icons/preset-icons/pi-white.svg" /><img height="16" align="top" alt="Pi" src="packages/ui/src/assets/icons/preset-icons/pi.svg" /></picture> &nbsp;[Pi](https://github.com/badlogic/pi-mono/tree/main/packages/coding-agent) | Fully supported |
-| Any other CLI agent | Works without configuration |
 
-If it runs in a terminal, it runs on Loop
+Support for more CLI agents is coming soon.
 
 Agents get more than a terminal:
 
@@ -94,7 +90,7 @@ Every surface talks to the same workspaces, so you can start a task in the app a
 |:--------|:-------------|
 | [**Desktop App**](https://github.com/FrankDan77/loop-app/releases/latest) | The full IDE: terminals, diff viewer, in-app browser, automations |
 | [**CLI**](https://docs.superset.sh/cli/getting-started) | A single `loop` binary to manage workspaces, agents, terminals, and hosts from any shell |
-| [**TypeScript SDK**](https://docs.superset.sh/sdk/getting-started) | Drive Loop programmatically with [`@loop/sdk`](https://www.npmjs.com/package/@loop/sdk) from Node, Bun, or Deno |
+| **TypeScript SDK** _(coming soon)_ | Drive Loop programmatically with `@loop/sdk` from Node, Bun, or Deno — not yet available |
 | [**MCP Server**](https://docs.superset.sh/mcp) | Let Claude Code, Codex, Cursor, and other agents create and manage workspaces themselves |
 
 The CLI comes bundled with the desktop app.
@@ -124,7 +120,7 @@ Want to hack on Loop or contribute a PR? Spin up a local dev environment in one 
 ```bash
 git clone https://github.com/FrankDan77/loop-app.git
 cd loop
-./.superset/setup.local.sh
+./.loop/setup.local.sh
 bun run dev
 ```
 
@@ -238,7 +234,7 @@ This repo uses the published upstream `mastracode` and `@mastra/*` packages dire
 We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for how to get set up and open a PR. Bugs and feature requests go in [issues](https://github.com/FrankDan77/loop-app/issues).
 
 <a href="https://github.com/FrankDan77/loop-app/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=FrankDan77/loop" />
+  <img src="https://contrib.rocks/image?repo=FrankDan77/loop-app" />
 </a>
 
 ## License

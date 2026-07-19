@@ -26,13 +26,13 @@ function createSandbox(): Sandbox {
 }
 
 function writeConfig(repoPath: string, content: object) {
-	const dir = join(repoPath, ".superset");
+	const dir = join(repoPath, ".loop");
 	mkdirSync(dir, { recursive: true });
 	writeFileSync(join(dir, "config.json"), JSON.stringify(content), "utf-8");
 }
 
 function writeFallbackScript(repoPath: string) {
-	const dir = join(repoPath, ".superset");
+	const dir = join(repoPath, ".loop");
 	mkdirSync(dir, { recursive: true });
 	writeFileSync(join(dir, "setup.sh"), "#!/bin/bash\necho hi\n", "utf-8");
 }
@@ -74,19 +74,19 @@ describe("resolveInitialCommand", () => {
 		expect(resolve()).toEqual({ initialCommand: "bun install" });
 	});
 
-	it("falls back to bash <repoPath>/.superset/setup.sh when config is empty", () => {
+	it("falls back to bash <repoPath>/.loop/setup.sh when config is empty", () => {
 		writeConfig(sandbox.repoPath, { setup: [], teardown: [] });
 		writeFallbackScript(sandbox.repoPath);
 
 		expect(resolve()).toEqual({
-			initialCommand: `bash '${join(sandbox.repoPath, ".superset", "setup.sh")}'`,
+			initialCommand: `bash '${join(sandbox.repoPath, ".loop", "setup.sh")}'`,
 		});
 	});
 
 	it("falls back to setup.sh when no config.json exists at all", () => {
 		writeFallbackScript(sandbox.repoPath);
 		expect(resolve()).toEqual({
-			initialCommand: `bash '${join(sandbox.repoPath, ".superset", "setup.sh")}'`,
+			initialCommand: `bash '${join(sandbox.repoPath, ".loop", "setup.sh")}'`,
 		});
 	});
 
@@ -132,7 +132,7 @@ describe("resolveInitialCommand", () => {
 			expect(cmd).toContain("'\\''");
 			// Verify the escape sequence wraps the single quote correctly.
 			expect(cmd).toBe(
-				`bash '${trickyRepo.replace("'", "'\\''")}/.superset/setup.sh'`,
+				`bash '${trickyRepo.replace("'", "'\\''")}/.loop/setup.sh'`,
 			);
 		} finally {
 			sandboxWithQuote.cleanup();
@@ -167,7 +167,7 @@ describe("resolveInitialCommand", () => {
 				homeDir: sandbox.homeDir,
 			}),
 		).toEqual({
-			initialCommand: `bash '${join(worktreePath, ".superset", "setup.sh")}'`,
+			initialCommand: `bash '${join(worktreePath, ".loop", "setup.sh")}'`,
 		});
 	});
 });

@@ -110,7 +110,7 @@ export function createVibeHooksToml(): void {
 
 /**
  * Wrapper for `vibe`: enables experimental hooks (so hooks.toml loads) and
- * stamps SUPERSET_AGENT_ID so the notify payload carries identity. Modeled on
+ * stamps LOOP_AGENT_ID so the notify payload carries identity. Modeled on
  * createOpenCodeWrapper (plain export + exec — no session-log watcher).
  */
 export function getVibeWrapperScript(): string {

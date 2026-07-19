@@ -44,8 +44,8 @@ let originalNodeEnv: string | undefined;
 
 beforeEach(() => {
 	tmpHome = fs.mkdtempSync(path.join(os.tmpdir(), "pty-daemon-it-"));
-	originalHome = process.env.SUPERSET_HOME_DIR;
-	process.env.SUPERSET_HOME_DIR = tmpHome;
+	originalHome = process.env.LOOP_HOME_DIR;
+	process.env.LOOP_HOME_DIR = tmpHome;
 	// Force production semantics for these tests: in dev mode the
 	// supervisor kills any leftover daemon on startup, which breaks the
 	// adoption tests that intentionally seed a running daemon. Real dev
@@ -65,9 +65,9 @@ afterEach(async () => {
 		}
 	}
 	if (originalHome !== undefined) {
-		process.env.SUPERSET_HOME_DIR = originalHome;
+		process.env.LOOP_HOME_DIR = originalHome;
 	} else {
-		delete process.env.SUPERSET_HOME_DIR;
+		delete process.env.LOOP_HOME_DIR;
 	}
 	if (originalNodeEnv !== undefined) {
 		process.env.NODE_ENV = originalNodeEnv;

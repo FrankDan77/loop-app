@@ -10,6 +10,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { env } from "renderer/env.renderer";
 import { setAuthToken } from "renderer/lib/auth-client";
 import { electronTrpc } from "renderer/lib/electron-trpc";
+import { LOCAL_MODE } from "renderer/lib/local-session";
 import { LoopLogo } from "./components/LoopLogo";
 import { useSessionRecovery } from "./hooks/useSessionRecovery";
 
@@ -18,6 +19,17 @@ export const Route = createFileRoute("/sign-in/")({
 });
 
 function SignInPage() {
+	// Local-only alpha: the app is always "signed in" via the stub session,
+	// so skip sign-in entirely and go straight to the v2 workspaces list
+	// (local mode is v2-only; the v1 route would trip the version-mismatch gate).
+	if (LOCAL_MODE) {
+		return <Navigate to="/v2-workspaces" replace />;
+	}
+
+	return <SignInPageInner />;
+}
+
+function SignInPageInner() {
 	const persistToken = electronTrpc.auth.persistToken.useMutation();
 	const navigate = useNavigate();
 	const [isLoadingDev, setIsLoadingDev] = useState(false);
