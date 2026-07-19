@@ -1,9 +1,13 @@
 import os from "node:os";
-import hostServicePackageJson from "@superset/host-service/package.json" with {
-	type: "json",
-};
 import { getHostId, getHostName } from "@superset/shared/host-info";
 import { TRPCError } from "@trpc/server";
+// Relative path (not the "@loop/host-service" package alias) so the bundler
+// inlines this JSON at build time. A bare-specifier import gets externalized
+// into a runtime `require(...)` that cannot be resolved inside the packaged
+// app.asar, which crashes host-service on startup.
+import hostServicePackageJson from "../../../../package.json" with {
+	type: "json",
+};
 import type { ApiClient } from "../../../types";
 import { protectedProcedure, router } from "../../index";
 

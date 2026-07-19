@@ -124,11 +124,7 @@ export default defineConfig({
 				output: {
 					dir: resolve(devPath, "main"),
 				},
-				external: [
-					"electron",
-					"@superset/host-service/package.json",
-					...mainExternalizedDependencies,
-				],
+				external: ["electron", ...mainExternalizedDependencies],
 				plugins: [sentryPlugin].filter(Boolean),
 			},
 		},
