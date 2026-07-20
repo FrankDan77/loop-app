@@ -7,12 +7,6 @@ interface UseV2AgentChoicesResult {
 	isFetched: boolean;
 }
 
-const SUPERSET_AGENT: AgentSelectAgent = {
-	id: "superset",
-	label: "Superset",
-	iconId: "superset",
-};
-
 // Loop isn't a host_agent_config either — selecting it makes the modal launch
 // Claude Code with the vendored loop plugin loaded (see useSubmitWorkspace).
 // The unknown `iconId` ("loop") keeps the model/effort pickers hidden, since
@@ -41,7 +35,7 @@ export function useV2AgentChoices(
 				iconId: config.iconId ?? config.presetId,
 			}),
 		);
-		return [...terminalAgents, SUPERSET_AGENT, LOOP_AGENT];
+		return [...terminalAgents, LOOP_AGENT];
 	}, [query.data]);
 
 	return { agents, isFetched: query.isFetched };

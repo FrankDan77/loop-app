@@ -222,6 +222,10 @@ export function GeneralSettings({ matchCounts }: GeneralSettingsProps) {
 	return (
 		<>
 			{SECTION_GROUPS.map((group, groupIndex) => {
+				// Temporarily surface only the Editor & Workflow group; the other
+				// groups' entries stay defined but hidden from the sidebar.
+				if (group.label !== "Editor & Workflow") return null;
+
 				const platformItems = group.items.filter(
 					(item) =>
 						(!item.macOnly || isMac) && allowedSections.has(item.section),

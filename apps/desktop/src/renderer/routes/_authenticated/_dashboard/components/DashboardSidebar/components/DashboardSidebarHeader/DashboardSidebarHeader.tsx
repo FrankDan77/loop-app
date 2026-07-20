@@ -8,16 +8,14 @@ import { toast } from "@superset/ui/sonner";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@superset/ui/tooltip";
 import { cn } from "@superset/ui/utils";
 import { useMatchRoute, useNavigate } from "@tanstack/react-router";
-import { HiMiniPlus, HiOutlineClipboardDocumentList } from "react-icons/hi2";
+import { HiMiniPlus } from "react-icons/hi2";
 import {
-	LuClock,
 	LuFolderInput,
 	LuFolderPlus,
 	LuLayers,
 	LuLayoutTemplate,
 	LuPlus,
 } from "react-icons/lu";
-import { GATED_FEATURES, usePaywall } from "renderer/components/Paywall";
 import { ZoomStable } from "renderer/components/ZoomStable";
 import { useZoomFactor } from "renderer/hooks/useZoomFactor";
 import { useHotkeyDisplay } from "renderer/hotkeys";
@@ -25,13 +23,7 @@ import { electronTrpc } from "renderer/lib/electron-trpc";
 import { useFolderFirstImport } from "renderer/routes/_authenticated/_dashboard/components/AddRepositoryModals/hooks/useFolderFirstImport";
 import { NavigationControls } from "renderer/routes/_authenticated/_dashboard/components/NavigationControls";
 import { SidebarToggle } from "renderer/routes/_authenticated/_dashboard/components/SidebarToggle";
-import { OrganizationDropdown } from "renderer/routes/_authenticated/_dashboard/components/TopBar/components/OrganizationDropdown";
 import { ResourceConsumption } from "renderer/routes/_authenticated/_dashboard/components/TopBar/components/ResourceConsumption";
-import { useFailedAutomations } from "renderer/routes/_authenticated/_dashboard/hooks/useFailedAutomations";
-import {
-	tasksSearchFromFilters,
-	useTasksFilterStore,
-} from "renderer/routes/_authenticated/_dashboard/tasks/stores/tasks-filter-state";
 import { STROKE_WIDTH_THICK } from "renderer/screens/main/components/WorkspaceSidebar/constants";
 import {
 	useOpenNewProjectModal,
@@ -78,50 +70,15 @@ export function DashboardSidebarHeader({
 	const isMac = platform === undefined || platform === "darwin";
 	const zoomFactor = useZoomFactor();
 	const matchRoute = useMatchRoute();
-	const { gateFeature } = usePaywall();
 	const isWorkspacesListOpen = !!matchRoute({ to: "/v2-workspaces" });
-	const isTasksOpen = !!matchRoute({ to: "/tasks", fuzzy: true });
-	const isAutomationsOpen = !!matchRoute({ to: "/automations", fuzzy: true });
-	const { myFailedCount } = useFailedAutomations();
-
-	const {
-		tab: lastTab,
-		assignee: lastAssignee,
-		search: lastSearch,
-		typeTab: lastTypeTab,
-		projectFilter: lastProjectFilter,
-		linearProjectFilter: lastLinearProjectFilter,
-	} = useTasksFilterStore();
 
 	const handleWorkspacesClick = () => {
 		navigate({ to: "/v2-workspaces" });
 	};
 
-	const handleAutomationsClick = () => {
-		navigate({ to: "/automations" });
-	};
-
-	const handleTasksClick = () => {
-		gateFeature(GATED_FEATURES.TASKS, () => {
-			navigate({
-				to: "/tasks",
-				search: tasksSearchFromFilters({
-					tab: lastTab,
-					assignee: lastAssignee,
-					search: lastSearch,
-					typeTab: lastTypeTab,
-					projectFilter: lastProjectFilter,
-					linearProjectFilter: lastLinearProjectFilter,
-				}),
-			});
-		});
-	};
-
 	if (isCollapsed) {
 		return (
 			<div className="flex flex-col items-center gap-2 border-b border-border py-2">
-				<OrganizationDropdown variant="collapsed" />
-
 				<Tooltip delayDuration={300}>
 					<TooltipTrigger asChild>
 						<button
@@ -138,57 +95,6 @@ export function DashboardSidebarHeader({
 						</button>
 					</TooltipTrigger>
 					<TooltipContent side="right">Workspaces</TooltipContent>
-				</Tooltip>
-
-				<Tooltip delayDuration={300}>
-					<TooltipTrigger asChild>
-						<button
-							type="button"
-							onClick={handleAutomationsClick}
-							aria-label={
-								myFailedCount > 0
-									? `Automations, ${myFailedCount} failing`
-									: "Automations"
-							}
-							className={cn(
-								"relative flex size-8 items-center justify-center rounded-md transition-colors",
-								isAutomationsOpen
-									? "bg-accent text-foreground"
-									: "text-muted-foreground hover:bg-accent/50 hover:text-foreground",
-							)}
-						>
-							<LuClock className="size-4" />
-							{myFailedCount > 0 && (
-								<span
-									aria-hidden="true"
-									className="absolute right-1 top-1 size-1.5 rounded-full bg-red-500"
-								/>
-							)}
-						</button>
-					</TooltipTrigger>
-					<TooltipContent side="right">
-						{myFailedCount > 0
-							? `Automations (${myFailedCount} failing)`
-							: "Automations"}
-					</TooltipContent>
-				</Tooltip>
-
-				<Tooltip delayDuration={300}>
-					<TooltipTrigger asChild>
-						<button
-							type="button"
-							onClick={handleTasksClick}
-							className={cn(
-								"flex size-8 items-center justify-center rounded-md transition-colors",
-								isTasksOpen
-									? "bg-accent text-foreground"
-									: "text-muted-foreground hover:bg-accent/50 hover:text-foreground",
-							)}
-						>
-							<HiOutlineClipboardDocumentList className="size-4" />
-						</button>
-					</TooltipTrigger>
-					<TooltipContent side="right">Tasks & PRs</TooltipContent>
 				</Tooltip>
 
 				<Tooltip delayDuration={300}>
@@ -277,7 +183,6 @@ export function DashboardSidebarHeader({
 					<ResourceConsumption surface="v2" />
 				</ZoomStable>
 			</div>
-			<OrganizationDropdown variant="expanded" />
 
 			<button
 				type="button"
@@ -291,42 +196,6 @@ export function DashboardSidebarHeader({
 			>
 				<LuLayers className="size-4 shrink-0" />
 				<span className="flex-1 text-left">Workspaces</span>
-			</button>
-
-			<button
-				type="button"
-				onClick={handleAutomationsClick}
-				className={cn(
-					"flex w-full items-center gap-2 rounded-md px-2 py-1.5 text-sm font-medium transition-colors",
-					isAutomationsOpen
-						? "bg-accent text-foreground"
-						: "text-muted-foreground hover:bg-accent/50 hover:text-foreground",
-				)}
-			>
-				<LuClock className="size-4 shrink-0" />
-				<span className="flex-1 text-left">Automations</span>
-				{myFailedCount > 0 && (
-					<span
-						title={`${myFailedCount} of your automations failed their last run`}
-						className="flex h-4 min-w-4 shrink-0 items-center justify-center rounded-full bg-red-500/15 px-1 text-[10px] font-medium tabular-nums text-red-600 dark:text-red-400"
-					>
-						{myFailedCount > 9 ? "9+" : myFailedCount}
-					</span>
-				)}
-			</button>
-
-			<button
-				type="button"
-				onClick={handleTasksClick}
-				className={cn(
-					"flex w-full items-center gap-2 rounded-md px-2 py-1.5 text-sm font-medium transition-colors",
-					isTasksOpen
-						? "bg-accent text-foreground"
-						: "text-muted-foreground hover:bg-accent/50 hover:text-foreground",
-				)}
-			>
-				<HiOutlineClipboardDocumentList className="size-4 shrink-0" />
-				<span className="flex-1 text-left">Tasks & PRs</span>
 			</button>
 
 			<div className="flex items-center gap-1">
