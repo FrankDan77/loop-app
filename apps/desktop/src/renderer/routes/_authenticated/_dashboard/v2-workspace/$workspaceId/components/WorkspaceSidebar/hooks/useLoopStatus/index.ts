@@ -1,4 +1,7 @@
 export {
+	type AcItem,
+	type AcStatus,
+	isResumableTerminalStatus,
 	isTerminalLoopStatus,
 	type LoopRunStatus,
 	type TaskItem,

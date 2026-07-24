@@ -1,10 +1,19 @@
 import { Badge } from "@superset/ui/badge";
 import { Button } from "@superset/ui/button";
 import { Spinner } from "@superset/ui/spinner";
-import { LuCircleCheck, LuOctagonX, LuPlug, LuRotateCcw } from "react-icons/lu";
+import {
+	LuCircleCheck,
+	LuOctagonX,
+	LuPlug,
+	LuRotateCcw,
+	LuRotateCw,
+} from "react-icons/lu";
 import type { LoopSessionState } from "renderer/routes/_authenticated/providers/CollectionsProvider/dashboardSidebarLocal";
 import type { LoopOrchestratorApi } from "../../../../hooks/useLoopOrchestrator";
-import type { LoopRlcrStatus } from "../../../../hooks/useLoopStatus";
+import {
+	isResumableTerminalStatus,
+	type LoopRlcrStatus,
+} from "../../../../hooks/useLoopStatus";
 import { LoopControls } from "../LoopControls";
 import { LoopIdeaForm } from "../LoopIdeaForm";
 import { LoopMonitor } from "../LoopMonitor";
@@ -105,6 +114,11 @@ export function LoopPhaseView({
 
 	if (phase === "done" || phase === "ended") {
 		const isDone = phase === "done";
+		// A stopped/cancelled/maxiter/unexpected run can be picked back up in
+		// place (restore state.md + `claude --resume`). `complete` is terminal —
+		// only "Start a new Loop" is offered there.
+		const canResume =
+			!isDone && !!status && isResumableTerminalStatus(status.status);
 		return (
 			<div className="flex min-h-0 flex-1 flex-col gap-4 p-3">
 				<div className="flex items-center gap-2">
@@ -130,10 +144,40 @@ export function LoopPhaseView({
 					state={isDone ? "done" : "error"}
 				/>
 				{status ? <LoopMonitor status={status} /> : null}
-				<Button className="w-full gap-2" onClick={orchestrator.reset}>
-					<LuRotateCcw className="size-4" />
-					Start a new Loop
-				</Button>
+				<div className="flex flex-col gap-2">
+					{canResume && status ? (
+						<>
+							<Button
+								className="w-full gap-2"
+								disabled={orchestrator.isSending}
+								onClick={() =>
+									void orchestrator.resumeTerminal({
+										sessionDir: status.sessionDir,
+										reason: status.status,
+										planRelPath: status.planFile,
+										claudeSessionId: status.claudeSessionId,
+									})
+								}
+							>
+								<LuRotateCw className="size-4" />
+								Resume this loop
+							</Button>
+							<p className="text-[11px] text-muted-foreground">
+								Restores the loop's state and resumes its Claude session (
+								<code>claude --resume</code>), then auto-sends “continue” so the
+								run picks back up under live controls.
+							</p>
+						</>
+					) : null}
+					<Button
+						variant={canResume ? "outline" : "default"}
+						className="w-full gap-2"
+						onClick={orchestrator.reset}
+					>
+						<LuRotateCcw className="size-4" />
+						Start a new Loop
+					</Button>
+				</div>
 			</div>
 		);
 	}

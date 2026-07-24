@@ -55,6 +55,10 @@ export function LoopTab({
 						setHistoryOpen(false);
 					}}
 					onReturnToLive={() => setHistoryOpen(false)}
+					onResume={(args) => {
+						void orchestrator.resumeTerminal(args);
+						setHistoryOpen(false);
+					}}
 				/>
 			) : (
 				<LoopPhaseView

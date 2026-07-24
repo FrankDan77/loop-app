@@ -1,10 +1,22 @@
 import { Badge } from "@superset/ui/badge";
 import { Button } from "@superset/ui/button";
 import { Spinner } from "@superset/ui/spinner";
-import { LuArrowLeft, LuPlay } from "react-icons/lu";
+import { LuArrowLeft, LuPlay, LuRotateCw } from "react-icons/lu";
 import type { LoopSessionState } from "renderer/routes/_authenticated/providers/CollectionsProvider/dashboardSidebarLocal";
-import { useLoopStatus } from "../../../../../../hooks/useLoopStatus";
+import {
+	isResumableTerminalStatus,
+	type LoopRunStatus,
+	useLoopStatus,
+} from "../../../../../../hooks/useLoopStatus";
 import { LoopMonitor } from "../../../LoopMonitor";
+
+/** Args for resuming a terminated-but-resumable session from history. */
+export interface LoopResumeArgs {
+	sessionDir: string;
+	reason: LoopRunStatus;
+	planRelPath: string | null;
+	claudeSessionId: string | null;
+}
 
 interface LoopHistoryDetailProps {
 	workspaceId: string;
@@ -17,13 +29,16 @@ interface LoopHistoryDetailProps {
 	onAdopt: (sessionDir: string, planFile: string | null) => void;
 	/** Return to the live controls panel (this is already the tracked loop). */
 	onReturnToLive: () => void;
+	/** Restore + reattach a terminated-but-resumable (stop/cancel/maxiter/…) run. */
+	onResume: (args: LoopResumeArgs) => void;
 }
 
 /**
- * Monitor snapshot of a single RLCR session. Terminal (finished) sessions are
- * read-only. An active (non-terminal) session offers an entry point to operate
- * it: "Return to controls" when it is already the loop the panel tracks, or
- * "Take over this loop" to adopt it (reusing the live `LoopMonitor` view).
+ * Monitor snapshot of a single RLCR session. `complete` sessions are read-only.
+ * An active (non-terminal) session offers "Return to controls" (already the
+ * tracked loop) or "Take over this loop" (adopt). A terminated-but-resumable
+ * session (stop/cancel/maxiter/unexpected) offers "Resume this loop", which
+ * restores the plugin state file and reattaches the loop's Claude session.
  */
 export function LoopHistoryDetail({
 	workspaceId,
@@ -33,6 +48,7 @@ export function LoopHistoryDetail({
 	onBack,
 	onAdopt,
 	onReturnToLive,
+	onResume,
 }: LoopHistoryDetailProps) {
 	const { status, isLoading } = useLoopStatus({
 		workspaceId,
@@ -42,6 +58,8 @@ export function LoopHistoryDetail({
 	});
 
 	const isActive = status != null && !status.isTerminal;
+	const isResumableTerminal =
+		status?.isTerminal && isResumableTerminalStatus(status.status);
 	const isTrackedLive =
 		loopState.phase === "rlcrRunning" &&
 		loopState.sessionDir === sessionDir &&
@@ -79,6 +97,22 @@ export function LoopHistoryDetail({
 							Take over this loop
 						</Button>
 					)
+				) : isResumableTerminal && status ? (
+					<Button
+						size="sm"
+						className="h-7 gap-1.5 text-xs"
+						onClick={() =>
+							onResume({
+								sessionDir,
+								reason: status.status,
+								planRelPath: status.planFile,
+								claudeSessionId: status.claudeSessionId,
+							})
+						}
+					>
+						<LuRotateCw className="size-3.5" />
+						Resume this loop
+					</Button>
 				) : (
 					<Badge variant="secondary" className="text-[10px]">
 						Read-only

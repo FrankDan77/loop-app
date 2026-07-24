@@ -33,6 +33,24 @@ export function isTerminalLoopStatus(status: LoopRunStatus): boolean {
 }
 
 /**
+ * Terminal statuses that can be re-entered and resumed. `complete` is
+ * intentionally excluded — a finished loop is view-only. The others left the
+ * run interrupted (circuit-breaker stop, user cancel, max iterations, or an
+ * unexpected error), so restoring the active state file + `claude --resume`
+ * can pick the loop back up.
+ */
+const RESUMABLE_TERMINAL_STATUSES: ReadonlySet<LoopRunStatus> = new Set([
+	"cancel",
+	"maxiter",
+	"stop",
+	"unexpected",
+]);
+
+export function isResumableTerminalStatus(status: LoopRunStatus): boolean {
+	return RESUMABLE_TERMINAL_STATUSES.has(status);
+}
+
+/**
  * Which state file is present, and the status it implies. Mirrors
  * `monitor_find_state_file`: active files win, then `<reason>-state.md`.
  * Returns the state-file basename (to read its frontmatter) or null.
@@ -211,8 +229,12 @@ export function parseMarkdownTable(
 	return out;
 }
 
-/** Per-criterion status, highest-priority first: verified > blocked > in_progress > pending. */
-export type AcStatus = "verified" | "blocked" | "in_progress" | "pending";
+/**
+ * Per-criterion status, highest-priority first: finished > in_progress >
+ * pending. Derived by checking `Completed and Verified` first (finished), then
+ * `Active Tasks` (in_progress if a targeting task is in_progress, else pending).
+ */
+export type AcStatus = "finished" | "in_progress" | "pending";
 
 export interface AcItem {
 	/** Normalized id, e.g. `AC-1`. */
@@ -224,8 +246,6 @@ export interface AcItem {
 	verifiedRound: number | null;
 	/** Evidence note recorded when verified. */
 	evidence: string | null;
-	/** Issue title blocking this criterion (from Blocking Side Issues). */
-	blockingIssue: string | null;
 	/** Active task titles that target this criterion. */
 	tasks: string[];
 }
@@ -312,9 +332,13 @@ function extractAcDefinitions(
 
 /**
  * Parse each acceptance criterion and derive its live status by cross-
- * referencing the goal tracker's Active Tasks, Blocking Side Issues, and
- * Completed and Verified tables. Status priority: verified > blocked >
- * in_progress > pending.
+ * referencing the goal tracker's two mutable tables. Status priority
+ * (per product spec): check `Completed and Verified` first — if the AC id is
+ * there it's `finished`. Otherwise look at `Active Tasks`: a targeting task
+ * marked `in_progress` makes it `in_progress`, else it stays `pending`.
+ *
+ * The canonical AC list + text comes from the immutable `Acceptance Criteria`
+ * section, so criteria that no task has started yet still show up as pending.
  */
 export function parseAcceptanceCriteria(md: string): AcItem[] {
 	const lines = md.split(/\r?\n/);
@@ -324,11 +348,6 @@ export function parseAcceptanceCriteria(md: string): AcItem[] {
 		/^(---\s*$|##\s)/,
 	);
 	const activeSection = sliceSection(lines, /^####\s+Active Tasks/, /^###/);
-	const blockingSection = sliceSection(
-		lines,
-		/^###\s+Blocking Side Issues/,
-		/^###/,
-	);
 	const completedSection = sliceSection(
 		lines,
 		/^###\s+Completed and Verified/,
@@ -346,7 +365,6 @@ export function parseAcceptanceCriteria(md: string): AcItem[] {
 				status: "pending",
 				verifiedRound: null,
 				evidence: null,
-				blockingIssue: null,
 				tasks: [],
 			};
 			byId.set(id, item);
@@ -359,7 +377,7 @@ export function parseAcceptanceCriteria(md: string): AcItem[] {
 
 	for (const def of extractAcDefinitions(acSection)) ensure(def.id, def.text);
 
-	// Active tasks → record targets; in_progress bumps status from pending.
+	// Active tasks → record targets; an in_progress task bumps pending criteria.
 	for (const row of parseMarkdownTable(activeSection)) {
 		const target = row["Target AC"] ?? "";
 		const taskName = (row.Task ?? "").trim();
@@ -375,24 +393,14 @@ export function parseAcceptanceCriteria(md: string): AcItem[] {
 		}
 	}
 
-	// Blocking side issues → mark blocked (overrides pending/in_progress).
-	for (const row of parseMarkdownTable(blockingSection)) {
-		const issue = (row.Issue ?? "").trim();
-		for (const id of acIdsIn(row["Blocking AC"] ?? "")) {
-			const item = byId.get(id);
-			if (!item) continue;
-			if (item.status !== "verified") item.status = "blocked";
-			if (issue && issue !== "-") item.blockingIssue = issue;
-		}
-	}
-
-	// Completed and Verified → verified (highest priority). Add if unseen so the
-	// completed count stays accurate even when defs missed it.
+	// Completed and Verified → finished (highest priority, overrides the above).
+	// Add if unseen so the completed count stays accurate even when the
+	// immutable section missed the id.
 	for (const row of parseMarkdownTable(completedSection)) {
 		const id = normalizeAcId(row.AC ?? "");
 		if (!id) continue;
 		const item = ensure(id, (row.Task ?? "").trim() || undefined);
-		item.status = "verified";
+		item.status = "finished";
 		item.verifiedRound = toNumberOrNull((row["Verified Round"] ?? "").trim());
 		const evidence = (row.Evidence ?? "").trim();
 		item.evidence = evidence && evidence !== "-" ? evidence : null;
@@ -520,7 +528,7 @@ export function parseGoalTracker(md: string): GoalTrackerSummary {
 	const acsTotal = acs.length > 0 ? acs.length : countUniqueAcs(acSection);
 	const acsCompleted =
 		acs.length > 0
-			? acs.filter((a) => a.status === "verified").length
+			? acs.filter((a) => a.status === "finished").length
 			: countUniqueAcs(completedSection);
 
 	return {

@@ -1,1 +1,4 @@
-export { LoopHistoryDetail } from "./LoopHistoryDetail";
+export {
+	LoopHistoryDetail,
+	type LoopResumeArgs,
+} from "./LoopHistoryDetail";

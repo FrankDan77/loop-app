@@ -9,7 +9,10 @@ import {
 	type LoopHistoryEntry,
 	useLoopHistory,
 } from "../../../../hooks/useLoopHistory";
-import { LoopHistoryDetail } from "./components/LoopHistoryDetail";
+import {
+	LoopHistoryDetail,
+	type LoopResumeArgs,
+} from "./components/LoopHistoryDetail";
 
 interface LoopHistoryProps {
 	workspaceId: string;
@@ -19,6 +22,8 @@ interface LoopHistoryProps {
 	onAdopt: (sessionDir: string, planFile: string | null) => void;
 	/** Return to the live controls panel (already the tracked loop). */
 	onReturnToLive: () => void;
+	/** Restore + reattach a terminated-but-resumable run from history. */
+	onResume: (args: LoopResumeArgs) => void;
 }
 
 function statusVariant(
@@ -48,6 +53,7 @@ export function LoopHistory({
 	loopState,
 	onAdopt,
 	onReturnToLive,
+	onResume,
 }: LoopHistoryProps) {
 	const [selectedDir, setSelectedDir] = useState<string | null>(null);
 	const { entries, isLoading } = useLoopHistory({
@@ -66,6 +72,7 @@ export function LoopHistory({
 				onBack={() => setSelectedDir(null)}
 				onAdopt={onAdopt}
 				onReturnToLive={onReturnToLive}
+				onResume={onResume}
 			/>
 		);
 	}

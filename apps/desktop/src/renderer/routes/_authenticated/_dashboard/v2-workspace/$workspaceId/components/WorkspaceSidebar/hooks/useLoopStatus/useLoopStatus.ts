@@ -2,6 +2,7 @@ import { workspaceTrpc } from "@superset/workspace-client";
 import { useQuery } from "@tanstack/react-query";
 import { useWorkspaceEvent } from "renderer/hooks/host-service/useWorkspaceEvent";
 import {
+	type AcItem,
 	derivePhaseLabel,
 	detectStatusFromFiles,
 	findLatestRoundFile,
@@ -38,6 +39,8 @@ export interface LoopRlcrStatus {
 	goal: string | null;
 	/** Active tasks from the goal tracker with their raw per-task status. */
 	tasks: TaskItem[];
+	/** Acceptance criteria with per-criterion status (finished/in_progress/pending). */
+	acs: AcItem[];
 	acsTotal: number;
 	acsCompleted: number;
 	tasksActive: number;
@@ -155,7 +158,7 @@ export function useLoopStatus({
 			? parseGoalTracker(goalMd)
 			: {
 					goal: null,
-					acs: [],
+					acs: [] as AcItem[],
 					acsTotal: 0,
 					acsCompleted: 0,
 					tasks: [],
@@ -205,6 +208,7 @@ export function useLoopStatus({
 			mainlineStallCount: fields.mainlineStallCount,
 			goal: goal.goal,
 			tasks: goal.tasks,
+			acs: goal.acs,
 			acsTotal: goal.acsTotal,
 			acsCompleted: goal.acsCompleted,
 			tasksActive: goal.tasksActive,

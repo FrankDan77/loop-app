@@ -15,11 +15,20 @@ import { toast } from "@superset/ui/sonner";
 import { workspaceTrpc } from "@superset/workspace-client";
 import { useCallback, useEffect, useRef } from "react";
 import type { LoopSessionState } from "renderer/routes/_authenticated/providers/CollectionsProvider/dashboardSidebarLocal";
-import type { LoopRlcrStatus } from "../useLoopStatus";
+import type { LoopRlcrStatus, LoopRunStatus } from "../useLoopStatus";
 
 /** Delay between typing a command and pressing Enter, so the Claude Code REPL
  *  registers the full line before it submits. */
 const SUBMIT_DELAY_MS = 150;
+
+/** After resuming a terminal loop, ignore a still-terminal status for this long
+ *  so the restored `state.md` has time to surface in the monitor poll (which
+ *  would otherwise bounce the panel straight back to the ended view). */
+const RESUME_GUARD_MS = 8000;
+
+/** How much to raise `max_iterations` when resuming a maxiter'd loop, so the
+ *  run can actually make progress instead of re-hitting the ceiling at once. */
+const MAXITER_RESUME_INCREMENT = 10;
 
 const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
@@ -68,6 +77,17 @@ export interface LoopOrchestratorApi {
 	 * (if any) so callers can decide whether to reattach a control terminal.
 	 */
 	adopt: (sessionDir: string, planRelPath: string | null) => void;
+	/**
+	 * Re-enter a terminated-but-resumable RLCR session (stop/cancel/maxiter/
+	 * unexpected). Restores the plugin's active state file, then reattaches the
+	 * loop's Claude session so the run picks back up under live controls.
+	 */
+	resumeTerminal: (args: {
+		sessionDir: string;
+		reason: LoopRunStatus;
+		planRelPath: string | null;
+		claudeSessionId: string | null;
+	}) => Promise<void>;
 	/** Launch a fresh loop Claude terminal and pin it as the control terminal. */
 	reattach: () => Promise<void>;
 	/** Reset back to the idle idea form (does not touch the terminal). */
@@ -105,6 +125,13 @@ export function useLoopOrchestrator({
 }: UseLoopOrchestratorOptions): LoopOrchestratorApi {
 	const utils = workspaceTrpc.useUtils();
 	const writeInput = workspaceTrpc.terminal.writeInput.useMutation();
+	const movePath = workspaceTrpc.filesystem.movePath.useMutation();
+	const deletePath = workspaceTrpc.filesystem.deletePath.useMutation();
+	const writeFile = workspaceTrpc.filesystem.writeFile.useMutation();
+
+	// Set when `resumeTerminal` restores a state file, so the settle effect
+	// doesn't bounce back to "ended" on a stale terminal status poll.
+	const justResumedRef = useRef(0);
 
 	// Type a command into the loop Claude REPL, then press Enter. Claude Code
 	// runs in raw mode where Enter is a CR (`\r`); a lone `\n` only inserts a
@@ -260,6 +287,104 @@ export function useLoopOrchestrator({
 		[worktreePath, setLoopState],
 	);
 
+	const resumeTerminal = useCallback(
+		async (args: {
+			sessionDir: string;
+			reason: LoopRunStatus;
+			planRelPath: string | null;
+			claudeSessionId: string | null;
+		}) => {
+			const { sessionDir, reason, planRelPath, claudeSessionId } = args;
+			if (!sessionDir) return;
+			const stateFile = joinPath(sessionDir, "state.md");
+
+			// 1. Restore the active state file (`<reason>-state.md` → state.md) so
+			//    the loop's Stop hook re-arms instead of exiting early.
+			try {
+				await movePath.mutateAsync({
+					workspaceId,
+					sourceAbsolutePath: joinPath(sessionDir, `${reason}-state.md`),
+					destinationAbsolutePath: stateFile,
+				});
+			} catch (error) {
+				toast.error("Couldn't restore the loop state file", {
+					description: error instanceof Error ? error.message : String(error),
+				});
+				return;
+			}
+
+			// 2. Cancel drops a `.cancel-requested` signal — clear it so the loop is
+			//    no longer treated as cancelled.
+			if (reason === "cancel") {
+				try {
+					await deletePath.mutateAsync({
+						workspaceId,
+						absolutePath: joinPath(sessionDir, ".cancel-requested"),
+					});
+				} catch {
+					// Signal file may be absent — ignore.
+				}
+			}
+
+			// 3. maxiter: raise max_iterations so the resumed run can progress
+			//    instead of immediately re-hitting the ceiling and ending again.
+			if (reason === "maxiter") {
+				const md = await readText(stateFile);
+				const bumped = md?.replace(
+					/^(max_iterations:\s*)(\d+)/m,
+					(_all, prefix: string, value: string) =>
+						`${prefix}${Number(value) + MAXITER_RESUME_INCREMENT}`,
+				);
+				if (md && bumped && bumped !== md) {
+					try {
+						await writeFile.mutateAsync({
+							workspaceId,
+							absolutePath: stateFile,
+							content: bumped,
+							options: { create: false, overwrite: true },
+						});
+					} catch (error) {
+						toast.error("Couldn't raise max iterations", {
+							description:
+								error instanceof Error ? error.message : String(error),
+						});
+					}
+				}
+			}
+
+			// 4. Reattach the loop's Claude session and nudge it to continue, which
+			//    re-arms the Stop hook against the restored state.md.
+			const terminalId = await onCreateLoopTerminal({
+				resumeSessionId: claudeSessionId ?? undefined,
+				initialPrompt: LOOP_RESUME_TEXT,
+			});
+
+			// 5. Pin the session + return to the live controls view. Guard the
+			//    settle effect so a stale terminal poll doesn't bounce us out.
+			justResumedRef.current = Date.now();
+			setLoopState({
+				phase: "rlcrRunning",
+				sessionDir,
+				planRelPath,
+				planPath: planRelPath ? joinPath(worktreePath, planRelPath) : null,
+				preStartSessions: [],
+				ideaText: null,
+				ideaPath: null,
+				terminalId: terminalId ?? null,
+			});
+		},
+		[
+			workspaceId,
+			worktreePath,
+			movePath,
+			deletePath,
+			writeFile,
+			readText,
+			onCreateLoopTerminal,
+			setLoopState,
+		],
+	);
+
 	const reattach = useCallback(async () => {
 		// Resume the loop's own Claude session when we know it, so injected
 		// controls drive the real run; otherwise fall back to a fresh session.
@@ -382,6 +507,10 @@ export function useLoopOrchestrator({
 	useEffect(() => {
 		if (loopState.phase !== "rlcrRunning" || !status) return;
 		if (status.isTerminal) {
+			// Just resumed a terminal loop: the restored state.md may not have
+			// surged through the poll yet, so ignore the stale terminal status
+			// for a short window instead of bouncing back to the ended view.
+			if (Date.now() - justResumedRef.current < RESUME_GUARD_MS) return;
 			setLoopState({
 				phase: status.status === "complete" ? "done" : "ended",
 				sessionDir: status.sessionDir,
@@ -402,6 +531,7 @@ export function useLoopOrchestrator({
 		resume,
 		refinePlan,
 		adopt,
+		resumeTerminal,
 		reattach,
 		reset,
 		isSending: writeInput.isPending,
